@@ -1,0 +1,106 @@
+{
+  "unit": "accepted prompt receipt, within the named batch",
+  "main18": {
+    "opportunities": 18,
+    "completed_png_records": 18,
+    "sampler_cached": 0,
+    "sampler_uncached": 18,
+    "accepted_without_recovered_image": 0,
+    "distinct_png_bytes": 18,
+    "distinct_rgba_rasters": 18
+  },
+  "additional39": {
+    "opportunities": 39,
+    "completed_png_records": 38,
+    "sampler_cached": 5,
+    "sampler_uncached": 33,
+    "accepted_without_recovered_image": 1,
+    "distinct_png_bytes": 38,
+    "distinct_rgba_rasters": 33
+  },
+  "S1": {
+    "opportunities": 6,
+    "completed_png_records": 6,
+    "sampler_cached": 0,
+    "sampler_uncached": 6,
+    "accepted_without_recovered_image": 0,
+    "distinct_png_bytes": 6,
+    "distinct_rgba_rasters": 6
+  },
+  "additional_stages": {
+    "design4-actual": {
+      "opportunities": 4,
+      "completed_png_records": 4,
+      "sampler_cached": 0,
+      "sampler_uncached": 4,
+      "accepted_without_recovered_image": 0,
+      "distinct_png_bytes": 4,
+      "distinct_rgba_rasters": 4
+    },
+    "expression-v5": {
+      "opportunities": 1,
+      "completed_png_records": 0,
+      "sampler_cached": 0,
+      "sampler_uncached": 0,
+      "accepted_without_recovered_image": 1,
+      "distinct_png_bytes": 0,
+      "distinct_rgba_rasters": 0
+    },
+    "expression-v6": {
+      "opportunities": 4,
+      "completed_png_records": 4,
+      "sampler_cached": 0,
+      "sampler_uncached": 4,
+      "accepted_without_recovered_image": 0,
+      "distinct_png_bytes": 4,
+      "distinct_rgba_rasters": 4
+    },
+    "feedback1-actual": {
+      "opportunities": 10,
+      "completed_png_records": 10,
+      "sampler_cached": 5,
+      "sampler_uncached": 5,
+      "accepted_without_recovered_image": 0,
+      "distinct_png_bytes": 10,
+      "distinct_rgba_rasters": 5
+    },
+    "feedback2-actual": {
+      "opportunities": 8,
+      "completed_png_records": 8,
+      "sampler_cached": 0,
+      "sampler_uncached": 8,
+      "accepted_without_recovered_image": 0,
+      "distinct_png_bytes": 8,
+      "distinct_rgba_rasters": 8
+    },
+    "hexa4-actual": {
+      "opportunities": 4,
+      "completed_png_records": 4,
+      "sampler_cached": 0,
+      "sampler_uncached": 4,
+      "accepted_without_recovered_image": 0,
+      "distinct_png_bytes": 4,
+      "distinct_rgba_rasters": 4
+    },
+    "junction2": {
+      "opportunities": 2,
+      "completed_png_records": 2,
+      "sampler_cached": 0,
+      "sampler_uncached": 2,
+      "accepted_without_recovered_image": 0,
+      "distinct_png_bytes": 2,
+      "distinct_rgba_rasters": 2
+    },
+    "mechanism6-actual": {
+      "opportunities": 6,
+      "completed_png_records": 6,
+      "sampler_cached": 0,
+      "sampler_uncached": 6,
+      "accepted_without_recovered_image": 0,
+      "distinct_png_bytes": 6,
+      "distinct_rgba_rasters": 6
+    }
+  },
+  "record_ids_disjoint_across_batches": true,
+  "rgba_definition": "SHA256 of decoded 1024 x 1024 RGBA bytes without resizing; no perceptual clustering"
+}
