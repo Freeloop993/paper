@@ -6,7 +6,7 @@
 
 | 编号 | 条目 | 已核信息 | 对本研究的含义 |
 |---|---|---|---|
-| N01 | Qwen-Image 2.1 Fun ControlNet Union（Alibaba PAI；ComfyUI 支持约 2026-09-28；[发布说明](https://comfyui-wiki.com/en/news/2026-09-24-qwen-image-2-1-fun-controlnet-union)） | 挂在冻结的 Qwen-Image 2.1 上，一个文件含 Canny、Depth、Grayscale、HED、Lineart、MLSD、Pose、Scribble 及局部重绘；发布说明的结果均用 `control_context_scale=1.0`；ComfyUI 用 Load Model Patch → Apply Qwen Image DiffSynth ControlNet；画布边长须为 16 的倍数；许可证页面未写 | 现行后端正是 `qwen_image_2.1`。S1 的 L/F 路线没有 ControlNet 节点。开题第（2）项原文写的就是“ControlNet Canny/Lineart 强约束”。**这是 G2 首选的控制路线**，前提是 Codex 核实模型卡、许可证、文件摘要与现有 ComfyUI 版本兼容 |
+| N01 | Qwen-Image 2.1 Fun ControlNet Union（Alibaba PAI；ComfyUI 支持约 2026-09-28；[发布说明](https://comfyui-wiki.com/en/news/2026-09-24-qwen-image-2-1-fun-controlnet-union)） | 挂在冻结的 Qwen-Image 2.1 上，一个文件含 Canny、Depth、Grayscale、HED、Lineart、MLSD、Pose、Scribble 及局部重绘；发布说明的结果均用 `control_context_scale=1.0`；ComfyUI 用 Load Model Patch → Apply Qwen Image DiffSynth ControlNet；画布边长须为 16 的倍数；许可证页面未写 | 现行后端正是 `qwen_image_2.1`。**更正：** S1 的 L/F 路线已经使用这一控制器（Canny，强度 0.35），只有 T 路线无控制（Codex 11/10 核查）。G2 沿用同一控制器，改变输入编码、强度与比值水平；开题第（2）项原文写的就是“ControlNet Canny/Lineart 强约束”。许可证与模型卡仍须 Codex 核实 |
 | N02 | InstantX Qwen-Image-ControlNet-Union（[模型页](https://huggingface.co/InstantX/Qwen-Image-ControlNet-Union)） | 面向 Qwen-Image 早期版本 | 与 2.1 是否兼容未核；仅作备选 |
 | N03 | 7Bench：布局引导 T2I 基准（arXiv 2508.12919） | 用检测框与目标框 IoU 的 accuracy@k 曲线下面积计分，位置与尺度**不分开**；小框（占画面 3%—10%）最难 | 支持本研究把**尺度、位置、相对布局分开报告**，而不是只报一个重合度；S1 的主要误差恰是尺度 |
 
