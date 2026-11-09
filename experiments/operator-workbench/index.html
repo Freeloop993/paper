@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>随行航拍 · 离线改稿台</title><link rel="stylesheet" href="/style.css"><script defer src="/ui.js"></script></head>
+<body><header><strong>随行航拍 / 概念改稿台</strong><span>本机离线演练</span></header>
+<main><p class="eyebrow">四旋翼造型研究</p><h1>日常随行航拍</h1>
+<p class="brief">设计一款紧凑、简洁、细节精整的四旋翼。让前部相机融入机身体量，让机臂与机身自然衔接。机身轮廓、截面与材料由你决定。</p>
+<section id="setup"><h2>开始一场演练</h2><form id="start">
+<label>任务<select name="task"><option value="A">A · 相机与机身整合</option><option value="B">B · 机臂与机身过渡</option></select></label>
+<label>输入方式<select name="method"><option value="D">自由文字</option><option value="S">部位、改变与保持</option></select></label>
+<button>开始</button></form></section>
+<div id="work" hidden><div class="sessionline"><h2 id="card"></h2><span id="phase"></span></div>
+<p id="focus"></p><div class="columns"><section><h2>版本记录</h2><div id="versions"></div>
+<a id="receipt" download="rehearsal.zip">导出本场原始请求与记录</a></section>
+<section><form id="editor" hidden><h2 id="editTitle"></h2><div id="fields"></div>
+<label id="refRow" hidden><input type="checkbox" id="ref">将初稿图片作为这次修改的参考</label>
+<button>保存本版请求</button></form>
+<div id="result" hidden><h2>登记本版结果</h2><p>演练使用手边已有的 1024 × 1024 PNG。原图会保存到本场记录。</p>
+<label>演练样图<input id="file" type="file" accept="image/png"></label><button id="attach">登记样图</button>
+<details><summary>记录失败或状态未知</summary><label>原因<input id="failureReason" maxlength="2000"></label><button class="light" id="failed">登记失败</button> <button class="light" id="unknown">登记未知</button></details></div>
+<button id="stop" class="light" hidden>停止修订</button>
+<form id="finish" hidden><h2>选择终稿</h2><label>交付版本<select id="choice"></select></label>
+<label>选择理由<textarea id="why" required maxlength="2000" rows="2"></textarea></label><button>确认并锁定终稿</button></form>
+<div id="locked" hidden><h2>终稿已锁定</h2><p id="decision"></p><a href="/">开始另一场演练</a></div></section></div></div>
+<p id="message" role="alert"></p></main></body></html>

@@ -1,0 +1,87 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "qwen_image_2.1_bf16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_8b_bf16.safetensors",
+        "type": "qwen_image",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "TextEncodeQwenImage21",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+        "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+        "resolution": 1024
+      }
+    },
+    "10": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026110711,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    "11": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "10",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "12": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "11",
+          0
+        ],
+        "filename_prefix": "S1-B1-T"
+      }
+    }
+  }
+}

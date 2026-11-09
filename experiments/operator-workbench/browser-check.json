@@ -1,0 +1,86 @@
+{
+  "scope": "offline browser exercise",
+  "model_calls": 0,
+  "human_sessions": 0,
+  "input_example_sha256": [
+    "4acb541fc7749a734052b7e4a7573cb4e87323025c38e7a6750113748071fa8a",
+    "ac35060507d2694ab6ffe46c18d1b99e46841e6ea3c79181b697505bb818fdc5"
+  ],
+  "page_errors": [],
+  "results": [
+    {
+      "case": "A-D-parent",
+      "versions": 2,
+      "choice": 1,
+      "phase": "locked",
+      "graph_sha256": [
+        "e9e3b3c2dd1118c0fb6c8393dbc8c8353dbd501e7222f074e1f419de97bfa209",
+        "bdfe85f4f794cf140457aaa13ecae449e3614f3ed63941cbe1379eff6ce4cac7"
+      ],
+      "width": 1280
+    },
+    {
+      "case": "A-S-parent",
+      "versions": 2,
+      "choice": 1,
+      "phase": "locked",
+      "graph_sha256": [
+        "0e9274f6e46fa672697fa473a7f2a594c8cf0817532679bb0d01951b3e68fd45",
+        "a170d18a3ee6ea08bc43324b440678d56e0a972d069a909b6fd5d71fe9e54098"
+      ],
+      "width": 390
+    },
+    {
+      "case": "B-D-text",
+      "versions": 2,
+      "choice": 2,
+      "phase": "locked",
+      "graph_sha256": [
+        "8980b6d3a7fc8d3dee9fac49de200e458acc65be707e3db343261254612e8a50",
+        "f5c6bed3664c1c2c9e11f6805cf013d8f24df346b82bf427c14423cf0ca63a4d"
+      ],
+      "width": 1280
+    },
+    {
+      "case": "B-S-text",
+      "versions": 2,
+      "choice": 2,
+      "phase": "locked",
+      "graph_sha256": [
+        "c1bac90e9e5dac716b0ccec5a367ac8a820c07385a90b150f149a303535c960a",
+        "bdfe0b1d80b0830dd4003d30b424c0473887f2ecb32ec5ac972f20fe7c97a947"
+      ],
+      "width": 390
+    },
+    {
+      "case": "A-D-failed",
+      "versions": 1,
+      "choice": null,
+      "phase": "locked",
+      "graph_sha256": [
+        "e9e3b3c2dd1118c0fb6c8393dbc8c8353dbd501e7222f074e1f419de97bfa209"
+      ],
+      "width": 1280
+    },
+    {
+      "case": "B-S-unknown",
+      "versions": 1,
+      "choice": null,
+      "phase": "locked",
+      "graph_sha256": [
+        "c1bac90e9e5dac716b0ccec5a367ac8a820c07385a90b150f149a303535c960a"
+      ],
+      "width": 390
+    },
+    {
+      "case": "A-S-stop_early",
+      "versions": 1,
+      "choice": 1,
+      "phase": "locked",
+      "graph_sha256": [
+        "0e9274f6e46fa672697fa473a7f2a594c8cf0817532679bb0d01951b3e68fd45"
+      ],
+      "width": 390
+    }
+  ]
+}
