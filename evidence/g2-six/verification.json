@@ -1,0 +1,66 @@
+{
+  "phase": "six_complete",
+  "attempted": 6,
+  "accepted": 6,
+  "completed": 6,
+  "retries": 0,
+  "archive_sha": "d28b62a0d6b7be16a45c6e61605825bcf8fe32b986a72f06b8fd349bb48b8232",
+  "cases": [
+    {
+      "case": "G2-n4-r085-s2026111001",
+      "seed": 2026111001,
+      "level": 0.85,
+      "png_sha": "bf4d1b4b32ff5d8e310c7060336c126b1fed3842b385176634947389b5a67824",
+      "rgb_sha": "121637d18a7ce3676075ef0c7b4ade7d6005026cafb34c3335ef129b8a666654",
+      "prompt_id": "e1b4f1ec-0fc7-46fc-8f92-6446f6ef52f5",
+      "sampler_cached": false
+    },
+    {
+      "case": "G2-n4-r085-s2026111002",
+      "seed": 2026111002,
+      "level": 0.85,
+      "png_sha": "20b9707bfb8de604b2af89d1a3ea423be8807fc1b342f87c02b9877b7c00a65e",
+      "rgb_sha": "70539d03628835b8835ffa5e99ce0bd0e7a61e7abc6e288ad492acbc3191a84a",
+      "prompt_id": "80dccf96-5aeb-4c77-859e-6d043399466a",
+      "sampler_cached": false
+    },
+    {
+      "case": "G2-n4-r100-s2026111001",
+      "seed": 2026111001,
+      "level": 1.0,
+      "png_sha": "b81493e0786b8dd6ff582b0925440ddfc028a856b4ee1d262bd7c0633e1b9469",
+      "rgb_sha": "0c90afac2ad334ae8cf5ff53bfd75bcdfa567354749cf8d0949f48e4fc6433e8",
+      "prompt_id": "48e1e87b-fdaf-472b-858d-9a2abee87341",
+      "sampler_cached": false
+    },
+    {
+      "case": "G2-n4-r100-s2026111002",
+      "seed": 2026111002,
+      "level": 1.0,
+      "png_sha": "23dd7c0675d42dc2bc2a401cb94ac4087c1b287ac8df9c2adba09548bfab3d84",
+      "rgb_sha": "5e3a78c45d8be6688cfa6071069608dcc2f434b8e0f8d9be32af935e9acd4084",
+      "prompt_id": "eac476c6-b369-467b-ba5e-ad432d5df5dc",
+      "sampler_cached": false
+    },
+    {
+      "case": "G2-n4-r115-s2026111001",
+      "seed": 2026111001,
+      "level": 1.15,
+      "png_sha": "4f3775af4e5102a0db022393b5cd8138447a2a87d43b123b738b4832906a3442",
+      "rgb_sha": "2eafd03b17a1e852ca092955a12e32625fc1f15a736c9d74efac643275941e27",
+      "prompt_id": "8f53e7ba-f58f-40c1-9ca4-0698ebb1b0b0",
+      "sampler_cached": false
+    },
+    {
+      "case": "G2-n4-r115-s2026111002",
+      "seed": 2026111002,
+      "level": 1.15,
+      "png_sha": "029622775ed588083c39580fc8ed0c0d615be4fbe49a9c1157c3e5f6c08b8901",
+      "rgb_sha": "073fcb863150f4cd19debebc73f23fd7f9791dbee82f106dd583db440b9b2e47",
+      "prompt_id": "e9de1d81-164a-4a0b-9f37-5d0f50298f66",
+      "sampler_cached": false
+    }
+  ],
+  "started_utc": "2026-11-09T15:08:04.495613+00:00",
+  "finished_utc": "2026-11-09T15:15:18.156311+00:00"
+}

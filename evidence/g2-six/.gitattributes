@@ -1,0 +1,4 @@
+*.png -text
+*.json -text
+runtime/* -text
+readings/*.json -text

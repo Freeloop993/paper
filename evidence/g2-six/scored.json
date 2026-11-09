@@ -1,0 +1,171 @@
+{
+  "readers": {
+    "A": {
+      "rows": [
+        {
+          "case": "G2-n4-r085-s2026111001",
+          "seed": 2026111001,
+          "target": 0.85,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r085-s2026111002",
+          "seed": 2026111002,
+          "target": 0.85,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r100-s2026111001",
+          "seed": 2026111001,
+          "target": 1.0,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r100-s2026111002",
+          "seed": 2026111002,
+          "target": 1.0,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r115-s2026111001",
+          "seed": 2026111001,
+          "target": 1.15,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r115-s2026111002",
+          "seed": 2026111002,
+          "target": 1.15,
+          "readable": false,
+          "ratio": null
+        }
+      ],
+      "strict_monotonic_by_seed": {
+        "2026111001": null,
+        "2026111002": null
+      },
+      "all_six_within_and_both_strict": false,
+      "unreadable": 6,
+      "reader": "A",
+      "reader_sha256": "1e489093f26f42e4167c4d52e2b8fb8e7dbb970440b2c55d1ba5e63a37cf9859",
+      "conclusion_under_this_reading": "失败"
+    },
+    "B": {
+      "rows": [
+        {
+          "case": "G2-n4-r085-s2026111001",
+          "seed": 2026111001,
+          "target": 0.85,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r085-s2026111002",
+          "seed": 2026111002,
+          "target": 0.85,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r100-s2026111001",
+          "seed": 2026111001,
+          "target": 1.0,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r100-s2026111002",
+          "seed": 2026111002,
+          "target": 1.0,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r115-s2026111001",
+          "seed": 2026111001,
+          "target": 1.15,
+          "readable": false,
+          "ratio": null
+        },
+        {
+          "case": "G2-n4-r115-s2026111002",
+          "seed": 2026111002,
+          "target": 1.15,
+          "readable": false,
+          "ratio": null
+        }
+      ],
+      "strict_monotonic_by_seed": {
+        "2026111001": null,
+        "2026111002": null
+      },
+      "all_six_within_and_both_strict": false,
+      "unreadable": 6,
+      "reader": "B",
+      "reader_sha256": "42cfb286e5eeda3601afebb41105260f8bc99f15f693f15b5ef5c9df66c7548d",
+      "conclusion_under_this_reading": "失败"
+    }
+  },
+  "between": [
+    {
+      "case": "G2-n4-r115-s2026111002",
+      "per_hub_px": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "G2-n4-r100-s2026111002",
+      "per_hub_px": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "G2-n4-r100-s2026111001",
+      "per_hub_px": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "G2-n4-r085-s2026111002",
+      "per_hub_px": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "G2-n4-r115-s2026111001",
+      "per_hub_px": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "case": "G2-n4-r085-s2026111001",
+      "per_hub_px": [
+        null,
+        null,
+        null,
+        null
+      ]
+    }
+  ],
+  "independent_human_readings_at_report": 0
+}

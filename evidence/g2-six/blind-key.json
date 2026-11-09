@@ -1,0 +1,38 @@
+[
+  {
+    "id": "U7DC2E4F9",
+    "case": "G2-n4-r115-s2026111002",
+    "rgb_sha": "073fcb863150f4cd19debebc73f23fd7f9791dbee82f106dd583db440b9b2e47",
+    "blind_sha": "0c22308f1dafcda1995a533ca5e5e5930df376577cfa69986a9dc72c4e344f2f"
+  },
+  {
+    "id": "U68A09CFC",
+    "case": "G2-n4-r100-s2026111002",
+    "rgb_sha": "5e3a78c45d8be6688cfa6071069608dcc2f434b8e0f8d9be32af935e9acd4084",
+    "blind_sha": "1878e80479cc02d561f3c74f1a1ece928c66db418ca7fb79fbfdeb0ace400e2a"
+  },
+  {
+    "id": "U2D46B7DB",
+    "case": "G2-n4-r100-s2026111001",
+    "rgb_sha": "0c90afac2ad334ae8cf5ff53bfd75bcdfa567354749cf8d0949f48e4fc6433e8",
+    "blind_sha": "e36da809ee1fe81434c5831e8a1c5fc386a8538a00807668e4f9381e804f1729"
+  },
+  {
+    "id": "U5F1C3EB8",
+    "case": "G2-n4-r085-s2026111002",
+    "rgb_sha": "70539d03628835b8835ffa5e99ce0bd0e7a61e7abc6e288ad492acbc3191a84a",
+    "blind_sha": "c3327d678c2ab1b06cc1c7c3b1e82278feec6eab5685f8b5aea279c32559fa52"
+  },
+  {
+    "id": "U4409EA29",
+    "case": "G2-n4-r115-s2026111001",
+    "rgb_sha": "2eafd03b17a1e852ca092955a12e32625fc1f15a736c9d74efac643275941e27",
+    "blind_sha": "4c6834e79c9276ba08ccb215d367c1e55ec41049490f44a781d2013d9d60b40e"
+  },
+  {
+    "id": "U334AE2C0",
+    "case": "G2-n4-r085-s2026111001",
+    "rgb_sha": "121637d18a7ce3676075ef0c7b4ade7d6005026cafb34c3335ef129b8a666654",
+    "blind_sha": "d7fd7c316296ef19f782a7813a35be206c0d6a85cef565e9406fd959b992de6b"
+  }
+]

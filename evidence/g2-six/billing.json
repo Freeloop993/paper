@@ -1,0 +1,23 @@
+{
+  "platform": "CompShare",
+  "product": "container compute",
+  "same_instance_order_verified": true,
+  "ui_start_utc": "2026-11-09T15:01:53.481Z",
+  "conservative_window_start_utc": "2026-11-09T15:01:50Z",
+  "confirmed_shutdown_ui_utc": "2026-11-09T15:17:22.677Z",
+  "independent_reload_off_utc": "2026-11-09T15:17:54.823Z",
+  "wall_window_through_verification_seconds": 964.823,
+  "posted_compute_start_CST": "2026-11-09 23:05:13",
+  "posted_compute_end_CST": "2026-11-09 23:17:22",
+  "posted_compute_seconds": 729,
+  "posted_compute_CNY": 0.41,
+  "quoted_disk_CNY_per_hour": 0.0,
+  "shutdown_charge_items_displayed": "无",
+  "balance_before_CNY": 6.64,
+  "balance_after_CNY": 6.23,
+  "posted_other_current_window_CNY": null,
+  "quoted_instance_CNY_per_hour": 2.04,
+  "admission_all_in_with_reserves_CNY": 5.34,
+  "maximum_paid_minutes": 102,
+  "maximum_all_categories_CNY": 6
+}

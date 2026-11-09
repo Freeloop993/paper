@@ -1,0 +1,46 @@
+{
+  "name": "G2",
+  "authorization_receipt": "6743231591",
+  "max_paid_seconds": 6120,
+  "all_categories_cap_cny": 6,
+  "maximum_submissions": 6,
+  "automatic_retries": 0,
+  "cases": [
+    {
+      "case_id": "G2-n4-r085-s2026111001",
+      "guide": "G2-n4-r085.png",
+      "seed": 2026111001,
+      "level": 0.85
+    },
+    {
+      "case_id": "G2-n4-r085-s2026111002",
+      "guide": "G2-n4-r085.png",
+      "seed": 2026111002,
+      "level": 0.85
+    },
+    {
+      "case_id": "G2-n4-r100-s2026111001",
+      "guide": "G2-n4-r100.png",
+      "seed": 2026111001,
+      "level": 1.0
+    },
+    {
+      "case_id": "G2-n4-r100-s2026111002",
+      "guide": "G2-n4-r100.png",
+      "seed": 2026111002,
+      "level": 1.0
+    },
+    {
+      "case_id": "G2-n4-r115-s2026111001",
+      "guide": "G2-n4-r115.png",
+      "seed": 2026111001,
+      "level": 1.15
+    },
+    {
+      "case_id": "G2-n4-r115-s2026111002",
+      "guide": "G2-n4-r115.png",
+      "seed": 2026111002,
+      "level": 1.15
+    }
+  ]
+}

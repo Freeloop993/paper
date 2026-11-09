@@ -1,0 +1,62 @@
+{
+  "assets.json": {
+    "bytes": 2056,
+    "sha256": "0212d027e290e849a08d1ab35c42f3797792fc29c31d82f47d15f2036770ad7f"
+  },
+  "design-manifest.json": {
+    "bytes": 3564,
+    "sha256": "47702a997151face92a4a3da939c4e2bd92bcef856d07a6ab179753e378f7918"
+  },
+  "G2-n4-r085-s2026111001.json": {
+    "bytes": 3129,
+    "sha256": "fb9fec0db81082e358151359e94be1c8997255003fcdb988fe92db736a235865"
+  },
+  "G2-n4-r085-s2026111002.json": {
+    "bytes": 3129,
+    "sha256": "3469ae97fc561d46f14981c63c90cb8981968cc59c1b88994f7458e0b1611799"
+  },
+  "G2-n4-r085.png": {
+    "bytes": 7631,
+    "sha256": "6d4de836d4965ea530fa9d741f535df11318951c7bbaa77ce3149ee9ac7036fb"
+  },
+  "G2-n4-r100-s2026111001.json": {
+    "bytes": 3129,
+    "sha256": "9e3b41f4f0eddc73b8a4bf50a8c5236bc24d6adf57c9e409e38021f22f4d5323"
+  },
+  "G2-n4-r100-s2026111002.json": {
+    "bytes": 3129,
+    "sha256": "6396377eee922a48d9b02d18ae9656d210c151f11cef4cca18bd8b5355b8aa93"
+  },
+  "G2-n4-r100.png": {
+    "bytes": 7618,
+    "sha256": "12995caedc3c43ed9db560f622a2ca8c8ba143d8baed42211f56d713dd250bf6"
+  },
+  "G2-n4-r115-s2026111001.json": {
+    "bytes": 3129,
+    "sha256": "38895a8dba2ddb569811cc0482c10c72d7e0af1b98487b4e6bf5c265d5ca2d83"
+  },
+  "G2-n4-r115-s2026111002.json": {
+    "bytes": 3129,
+    "sha256": "79113fe44a2c314145bf1f0b09b598538b26163a92370005d999551c84d773f7"
+  },
+  "G2-n4-r115.png": {
+    "bytes": 7672,
+    "sha256": "732553848b03b21b07f588eec77aa1302f6ada8d922c8a7f2e2872e8361fa0b7"
+  },
+  "g2_runner.py": {
+    "bytes": 16734,
+    "sha256": "a89d7bf946246dee479d936c616fa3702235eac0a8a53d463973aa6b71a68a6f"
+  },
+  "measure_g2.py": {
+    "bytes": 3083,
+    "sha256": "63f95ceb7582a5315aaae192fa106de4ca71880529ba900ca8d19facac408e40"
+  },
+  "protocol.json": {
+    "bytes": 998,
+    "sha256": "5af8ebe6cde4700c74018345d2e50fd21d7ab6688b21742e63c6ef4ddeeb1706"
+  },
+  "s1_client.py": {
+    "bytes": 11551,
+    "sha256": "dd02094afee8a86f77b1425075d2b4fe058467b43bd71b2863a1fb2981b127eb"
+  }
+}
