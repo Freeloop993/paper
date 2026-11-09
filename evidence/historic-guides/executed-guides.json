@@ -1,0 +1,2043 @@
+[
+  {
+    "case": "L1S1C1",
+    "guide": "control_L1.png",
+    "guide_sha256": "b0d5ff712f909bbd03f7b685a25213999285337fac757c2b0ed0180bd56d4b5c",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.2500; shell width/opposite-motor diagonal is 0.3358; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L1.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110201,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L1S1C1"
+        }
+      }
+    },
+    "prompt_id": "51935ccf-f8fc-4422-8ba2-e1fd81f4804b",
+    "history_sha256": "0f55327c12f7181a8d0978252ce9e3690bcac57c2df5630949bfbe580f6aa07d",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "L1S2C1",
+    "guide": "control_L1.png",
+    "guide_sha256": "b0d5ff712f909bbd03f7b685a25213999285337fac757c2b0ed0180bd56d4b5c",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.2500; shell width/opposite-motor diagonal is 0.3358; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L1.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110202,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L1S2C1"
+        }
+      }
+    },
+    "prompt_id": "cf2bed8a-b0c6-42c7-a041-671c5c35c93d",
+    "history_sha256": "d396bd4ce40c3f5c27b8e904cfc4041c05fe034553dae45a52cfdb8fd444d96b",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "L1S3C1",
+    "guide": "control_L1.png",
+    "guide_sha256": "b0d5ff712f909bbd03f7b685a25213999285337fac757c2b0ed0180bd56d4b5c",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.2500; shell width/opposite-motor diagonal is 0.3358; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L1.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110203,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L1S3C1"
+        }
+      }
+    },
+    "prompt_id": "e6f8b04a-57be-4187-9537-709f59cc3496",
+    "history_sha256": "4fcd0aed2fffe4b430d7131092c37524615b105d5bf8447dca80a3372111ecc2",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "L2S1C1",
+    "guide": "control_L2.png",
+    "guide_sha256": "c96626bccfbb67313bde13e48f8c2fe57105dfecd738e5cc25aa9bae59c8854f",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.5000; shell width/opposite-motor diagonal is 0.3054; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L2.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110201,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L2S1C1"
+        }
+      }
+    },
+    "prompt_id": "8e423a39-aa7b-4e77-b839-93014e4ad986",
+    "history_sha256": "44333155a8ed720dea78324e55ae8c117aee1fb40942715b06b0e263660ec3c2",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "L2S2C1",
+    "guide": "control_L2.png",
+    "guide_sha256": "c96626bccfbb67313bde13e48f8c2fe57105dfecd738e5cc25aa9bae59c8854f",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.5000; shell width/opposite-motor diagonal is 0.3054; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L2.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110202,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L2S2C1"
+        }
+      }
+    },
+    "prompt_id": "5365c055-e0b3-4fde-8b87-5af4565bdc8e",
+    "history_sha256": "e01899082f92b98aed24fe951890a351e95dcd548764f2374e4d99a7497ec732",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "L2S3C1",
+    "guide": "control_L2.png",
+    "guide_sha256": "c96626bccfbb67313bde13e48f8c2fe57105dfecd738e5cc25aa9bae59c8854f",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.5000; shell width/opposite-motor diagonal is 0.3054; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L2.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110203,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L2S3C1"
+        }
+      }
+    },
+    "prompt_id": "40f0866a-00a3-4d37-bb32-7a1def47c8e5",
+    "history_sha256": "9c93c2384f2f2b2f2b92281a3a06a96b23d2e03e3cff2f1dc4ee3e18940ba9e5",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "L3S1C1",
+    "guide": "control_L3.png",
+    "guide_sha256": "b38796a1189c2dff4466c918160b650530e9fcacc1755806eb346dcb140bfc63",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.8000; shell width/opposite-motor diagonal is 0.2780; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L3.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110201,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L3S1C1"
+        }
+      }
+    },
+    "prompt_id": "d8d2c76a-539b-4abc-af08-b1b4eedacaad",
+    "history_sha256": "a704e852bb106087a85df9882344c4420f430aa453a19c6a9486cf604e0efa76",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "L3S2C1",
+    "guide": "control_L3.png",
+    "guide_sha256": "b38796a1189c2dff4466c918160b650530e9fcacc1755806eb346dcb140bfc63",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.8000; shell width/opposite-motor diagonal is 0.2780; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L3.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110202,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L3S2C1"
+        }
+      }
+    },
+    "prompt_id": "13f4c76b-f359-4e66-b8a9-2c68ceebf9c1",
+    "history_sha256": "eccd45aa97a32b588c0fab189103700313c7de701c8347edc6c512708a8ba29a",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "L3S3C1",
+    "guide": "control_L3.png",
+    "guide_sha256": "b38796a1189c2dff4466c918160b650530e9fcacc1755806eb346dcb140bfc63",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.8000; shell width/opposite-motor diagonal is 0.2780; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+          "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "formal_main18_20261102_control_L3.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.7,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110203,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "formal_main18_20261102_L3S3C1"
+        }
+      }
+    },
+    "prompt_id": "5b87b1fb-5ca8-4957-916e-83c04c42c873",
+    "history_sha256": "1b27aed415108e42bb907982f07e425a5280d6e12f2c50157509dcb39fcdfe29",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  },
+  {
+    "case": "S1-B1-F",
+    "guide": "F-guide.png",
+    "guide_sha256": "51e35660eb292410ceecdd2b8193e6aa90e2057409c73ba01161e0559d4a67f7",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+          "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "F-guide.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.35,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110711,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "S1-B1-F"
+        }
+      }
+    },
+    "prompt_id": "5a22181a-2212-4370-bc8e-ebea42b6c8e9",
+    "history_sha256": "4a746d09542d9026ce198e7ba14ed94c6a459f08351ee8f527356f579d1e6119",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "bytes": 7550977992,
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1"
+    }
+  },
+  {
+    "case": "S1-B1-L",
+    "guide": "L-guide.png",
+    "guide_sha256": "c6a82ca91ee6c5a2c7a39ad7807ac12ffd697b58be7e3809c92baa43acb2dde2",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+          "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "L-guide.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.35,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110711,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "S1-B1-L"
+        }
+      }
+    },
+    "prompt_id": "2f9402d0-d399-44c5-8ab5-2e5e063f32c4",
+    "history_sha256": "5fa081bbe2ba8f632aa01b5eb8b49def7941799fb0d57d756317145b638abc9e",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "bytes": 7550977992,
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1"
+    }
+  },
+  {
+    "case": "S1-B2-F",
+    "guide": "F-guide.png",
+    "guide_sha256": "51e35660eb292410ceecdd2b8193e6aa90e2057409c73ba01161e0559d4a67f7",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+          "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "F-guide.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.35,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110712,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "S1-B2-F"
+        }
+      }
+    },
+    "prompt_id": "3b50db41-bfd3-441c-a50b-7039788d32d9",
+    "history_sha256": "be712c41c05691acd2e40a435d462bcc3dee82a4fbc640124e79ae5b48ef92b8",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "bytes": 7550977992,
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1"
+    }
+  },
+  {
+    "case": "S1-B2-L",
+    "guide": "L-guide.png",
+    "guide_sha256": "c6a82ca91ee6c5a2c7a39ad7807ac12ffd697b58be7e3809c92baa43acb2dde2",
+    "graph": {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+          "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+          "resolution": 1024
+        }
+      },
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "L-guide.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "ModelPatchLoader",
+        "inputs": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "9": {
+        "class_type": "QwenImageDiffsynthControlnet",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "model_patch": [
+            "8",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ],
+          "image": [
+            "7",
+            0
+          ],
+          "strength": 0.35,
+          "start_percent": 0,
+          "end_percent": 1
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "9",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026110712,
+          "steps": 40,
+          "cfg": 1,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "S1-B2-L"
+        }
+      }
+    },
+    "prompt_id": "cb296150-23af-4ed3-8fe4-1f075be74282",
+    "history_sha256": "3c57a49c46f44eec94eb3025806593fbefb74a6b36cd6484c3414a9ca86f469b",
+    "patch": {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "bytes": 7550977992,
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1"
+    }
+  }
+]

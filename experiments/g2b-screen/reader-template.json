@@ -1,0 +1,16 @@
+{
+  "cases": {
+    "blind_id": {
+      "points_UL_UR_LL_LR": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "body_connected_all_four": null,
+      "copied_flat_marks": null,
+      "readable_as_drone": null,
+      "visible_evidence": ""
+    }
+  }
+}

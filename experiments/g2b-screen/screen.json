@@ -1,0 +1,115 @@
+{
+  "cases": [
+    {
+      "case": "G2b-a",
+      "guide": "skeleton.png",
+      "strength": 0.7,
+      "end": 1.0,
+      "seed": 2026111104,
+      "target": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "request_sha256": "f0b4504ae7cc061aebb76499f857560e158b9c4aec91dfd18767e0b0dba1d17e",
+      "guide_sha256": "c27fcb1101ab021f137e9f5279b29a24936315ca853e208011188832d715512c"
+    },
+    {
+      "case": "G2b-b",
+      "guide": "skeleton.png",
+      "strength": 0.7,
+      "end": 0.5,
+      "seed": 2026111104,
+      "target": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "request_sha256": "03935c613f540c462879ce42bd68a0ed1ce5e0bdf74c4f72535d8f90f93269ca",
+      "guide_sha256": "c27fcb1101ab021f137e9f5279b29a24936315ca853e208011188832d715512c"
+    },
+    {
+      "case": "G2b-c",
+      "guide": "marks.png",
+      "strength": 0.7,
+      "end": 0.5,
+      "seed": 2026111104,
+      "target": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "request_sha256": "0743a441a77cd09fc34920e567f5ae692390b083f74a380f7d3ce12afadc2f8d",
+      "guide_sha256": "12995caedc3c43ed9db560f622a2ca8c8ba143d8baed42211f56d713dd250bf6"
+    },
+    {
+      "case": "G2b-d",
+      "guide": "skeleton.png",
+      "strength": 0.5,
+      "end": 1.0,
+      "seed": 2026111104,
+      "target": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "request_sha256": "514ac01695866d02f8a22a97a3fb60b72a3337f59025f62e9eb389428e6c20c4",
+      "guide_sha256": "c27fcb1101ab021f137e9f5279b29a24936315ca853e208011188832d715512c"
+    }
+  ],
+  "primary": "All four actual motor hubs localizable, continuous body and four arms, complete drone readable, and no copied guide marks.",
+  "tie_break": "Require both independent AI readers to pass all items. Select lowest mean of per-reader mean Euclidean error to nominal targets; if an exact tie use alphabetical ID. Append independently sealed human responses when available.",
+  "waiver": false
+}

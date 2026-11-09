@@ -1,0 +1,3 @@
+*.json -text
+guides/*.png -text
+requests/*.json -text
