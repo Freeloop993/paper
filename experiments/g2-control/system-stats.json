@@ -1,0 +1,5 @@
+{
+  "comfyui_version": "0.39.0",
+  "pytorch_version": "2.8.0+cu128",
+  "source_tree": "e8665ca8e4089ab917567cdb491308e1397663d4"
+}

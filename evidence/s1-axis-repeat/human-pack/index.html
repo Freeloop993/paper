@@ -1,0 +1,19 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>旋翼轴心独立读图</title>
+<style>body{font:17px system-ui,sans-serif;background:#f2f4f4;color:#142628;max-width:960px;margin:16px auto;padding:0 12px}button,input,select{font:inherit;margin:3px;padding:6px}canvas{background:#ddd;max-width:100%;max-height:65vh;aspect-ratio:1;touch-action:manipulation;cursor:crosshair}#state{font-weight:bold}small{display:block}</style>
+<h1>旋翼轴心独立读图</h1><p>只看图，不查目标或其他人的读数。按画面左上、右上、左下、右下，依次点桨叶绕其旋转的中心。不是叶尖或机臂末端。看不清就记“不可判”。坐标按原图像素保存。</p>
+<label>本次匿名代号 <input id="code" maxlength="16" placeholder="例如 R7（不填姓名）"></label><button id="start">开始</button>
+<section id="work" hidden><p id="state" aria-live="polite"></p><canvas id="cv" width="1024" height="1024"></canvas><br><button id="zoom">放大：先点要看的区域</button><button id="reset">看全图</button><button id="skip">本轴不可判</button><button id="undo">撤销上一点</button><br>
+<label>机头朝向 <select id="front"><option value="">请选择</option><option value="up">朝上</option><option value="not_up">不朝上</option><option value="unknown">不可判</option></select></label><button id="next">保存本图，继续</button></section>
+<p id="end" aria-live="polite"></p><button id="download" hidden>下载全部读数 JSON</button><small>离线使用。关闭或刷新会丢失尚未下载的读数。六张均完成后下载；此页不向任何服务器上传。</small><script src="order.js"></script><script>
+'use strict';
+const el=id=>document.getElementById(id),cv=el('cv'),ctx=cv.getContext('2d'),labels=['左上','右上','左下','右下'];
+let idx=0,points=[],rows=[],frame=[0,0,1024],armed=false,im=null,ts=0,code='',ready=false;
+function msg(s){el('end').textContent=s}
+function redraw(){if(!ready)return;let [x,y,k]=frame;ctx.drawImage(im,x,y,k,k,0,0,1024,1024);points.forEach((p,i)=>{if(!p)return;let a=(p[0]+.5-x)*1024/k,b=(p[1]+.5-y)*1024/k;ctx.beginPath();ctx.arc(a,b,6,0,7);ctx.strokeStyle='#ff6b18';ctx.lineWidth=3;ctx.stroke()});el('state').textContent='图 '+(idx+1)+' / '+ORDER.length+' · '+(armed?'点要放大的部位（此步不记录）':points.length<4?'请点：'+labels[points.length]:'四轴已记录，请选机头朝向');}
+function load(){ready=false;points=[];armed=false;frame=[0,0,1024];el('front').value='';im=new Image();im.onload=()=>{if(im.width!==1024||im.height!==1024){msg('图幅有误');return}ready=true;ts=performance.now();redraw()};im.onerror=()=>msg('缺少图像，请完整解压材料');im.src=ORDER[idx]+'.png'}
+el('start').onclick=()=>{code=el('code').value.trim();if(!/^[A-Za-z0-9_-]{1,16}$/.test(code)){msg('请输入字母或数字代号，不填姓名');return}el('start').disabled=el('code').disabled=true;el('work').hidden=false;msg('');load()};
+cv.onclick=e=>{if(!ready)return;let b=cv.getBoundingClientRect(),[x,y,k]=frame;let px=Math.max(0,Math.min(1023,Math.floor(x+(e.clientX-b.left)/b.width*k))),py=Math.max(0,Math.min(1023,Math.floor(y+(e.clientY-b.top)/b.height*k)));if(armed){frame=[Math.max(0,Math.min(768,px-128)),Math.max(0,Math.min(768,py-128)),256];armed=false}else if(points.length<4){points.push([px,py]);frame=[0,0,1024]}redraw()};
+el('zoom').onclick=()=>{armed=true;redraw()};el('reset').onclick=()=>{frame=[0,0,1024];armed=false;redraw()};el('undo').onclick=()=>{points.pop();armed=false;redraw()};el('skip').onclick=()=>{if(ready&&points.length<4)points.push(null);frame=[0,0,1024];armed=false;redraw()};
+el('next').onclick=()=>{if(!ready||points.length!==4||!el('front').value){msg('逐项点选或标不可判，并选择朝向。');return}if(new Set(points.filter(Boolean).map(p=>p.join(','))).size!==points.filter(Boolean).length){msg('有重复位置，请撤销重选。');return}rows.push({image:ORDER[idx],points,front:el('front').value,seconds:(performance.now()-ts)/1000});msg('');if(++idx<ORDER.length)load();else{el('work').hidden=true;ready=false;el('download').hidden=false;msg('六图已保存，请下载交回。')}};
+el('download').onclick=()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify({schema:'s1-hub-human-v1',code,rows},null,2)],{type:'application/json'}));a.download='s1-hubs-'+code+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),5000)};
+</script></html>

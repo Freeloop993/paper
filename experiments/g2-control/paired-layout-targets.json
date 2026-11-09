@@ -1,0 +1,185 @@
+{
+  "status": "proposal_only_numeric_targets_not_model_conditions",
+  "coordinate_frame": "1024 square; x right, y down; fixed center and orientation",
+  "parameter": "(horizontal span / vertical span) divided by unperturbed span ratio for that topology",
+  "body_outline": null,
+  "physical_units": null,
+  "levels_validated_by_author": false,
+  "new_model_outputs": 0,
+  "targets": [
+    {
+      "rotors": 4,
+      "relative_span_target": 0.85,
+      "base_span_ratio": 1.0,
+      "relative_span_after_pixel_rounding": 0.8471615720524017,
+      "motor_centers_xy_px": [
+        [
+          706,
+          741
+        ],
+        [
+          318,
+          741
+        ],
+        [
+          318,
+          283
+        ],
+        [
+          706,
+          283
+        ]
+      ],
+      "opposed_diagonal_before_rounding_px": 600.0
+    },
+    {
+      "rotors": 4,
+      "relative_span_target": 1.0,
+      "base_span_ratio": 1.0,
+      "relative_span_after_pixel_rounding": 1.0,
+      "motor_centers_xy_px": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "opposed_diagonal_before_rounding_px": 600.0
+    },
+    {
+      "rotors": 4,
+      "relative_span_target": 1.15,
+      "base_span_ratio": 1.0,
+      "relative_span_after_pixel_rounding": 1.1472081218274113,
+      "motor_centers_xy_px": [
+        [
+          738,
+          709
+        ],
+        [
+          286,
+          709
+        ],
+        [
+          286,
+          315
+        ],
+        [
+          738,
+          315
+        ]
+      ],
+      "opposed_diagonal_before_rounding_px": 600.0
+    },
+    {
+      "rotors": 6,
+      "relative_span_target": 0.85,
+      "base_span_ratio": 1.1547005383792517,
+      "relative_span_after_pixel_rounding": 0.8499282773200438,
+      "motor_centers_xy_px": [
+        [
+          776,
+          512
+        ],
+        [
+          644,
+          781
+        ],
+        [
+          380,
+          781
+        ],
+        [
+          248,
+          512
+        ],
+        [
+          380,
+          243
+        ],
+        [
+          644,
+          243
+        ]
+      ],
+      "opposed_diagonal_before_rounding_px": 600.0
+    },
+    {
+      "rotors": 6,
+      "relative_span_target": 1.0,
+      "base_span_ratio": 1.1547005383792517,
+      "relative_span_after_pixel_rounding": 0.9992600812897366,
+      "motor_centers_xy_px": [
+        [
+          812,
+          512
+        ],
+        [
+          662,
+          772
+        ],
+        [
+          362,
+          772
+        ],
+        [
+          212,
+          512
+        ],
+        [
+          362,
+          252
+        ],
+        [
+          662,
+          252
+        ]
+      ],
+      "opposed_diagonal_before_rounding_px": 600.0
+    },
+    {
+      "rotors": 6,
+      "relative_span_target": 1.15,
+      "base_span_ratio": 1.1547005383792517,
+      "relative_span_after_pixel_rounding": 1.149591243961644,
+      "motor_centers_xy_px": [
+        [
+          812,
+          512
+        ],
+        [
+          662,
+          738
+        ],
+        [
+          362,
+          738
+        ],
+        [
+          212,
+          512
+        ],
+        [
+          362,
+          286
+        ],
+        [
+          662,
+          286
+        ]
+      ],
+      "opposed_diagonal_before_rounding_px": 600.0
+    }
+  ]
+}

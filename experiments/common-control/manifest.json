@@ -1,0 +1,389 @@
+{
+  "kind": "offline_candidate_not_authorized",
+  "batch": "COMMON",
+  "strength": 1.0,
+  "source_targets_sha256": "38c9e7af73bbf93c7a8a9915ad20a0f29df409e1e1e5c219639c4be25d511713",
+  "radius_px": 69,
+  "cases": [
+    {
+      "case": "COMMON-n4-r085-s2026111201",
+      "n": 4,
+      "level": 0.85,
+      "seed": 2026111201,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          706,
+          741
+        ],
+        [
+          318,
+          741
+        ],
+        [
+          318,
+          283
+        ],
+        [
+          706,
+          283
+        ]
+      ],
+      "guide": "COMMON-n4-r085.png"
+    },
+    {
+      "case": "COMMON-n4-r085-s2026111202",
+      "n": 4,
+      "level": 0.85,
+      "seed": 2026111202,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          706,
+          741
+        ],
+        [
+          318,
+          741
+        ],
+        [
+          318,
+          283
+        ],
+        [
+          706,
+          283
+        ]
+      ],
+      "guide": "COMMON-n4-r085.png"
+    },
+    {
+      "case": "COMMON-n4-r100-s2026111201",
+      "n": 4,
+      "level": 1.0,
+      "seed": 2026111201,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "guide": "COMMON-n4-r100.png"
+    },
+    {
+      "case": "COMMON-n4-r100-s2026111202",
+      "n": 4,
+      "level": 1.0,
+      "seed": 2026111202,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "guide": "COMMON-n4-r100.png"
+    },
+    {
+      "case": "COMMON-n4-r115-s2026111201",
+      "n": 4,
+      "level": 1.15,
+      "seed": 2026111201,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          738,
+          709
+        ],
+        [
+          286,
+          709
+        ],
+        [
+          286,
+          315
+        ],
+        [
+          738,
+          315
+        ]
+      ],
+      "guide": "COMMON-n4-r115.png"
+    },
+    {
+      "case": "COMMON-n4-r115-s2026111202",
+      "n": 4,
+      "level": 1.15,
+      "seed": 2026111202,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          738,
+          709
+        ],
+        [
+          286,
+          709
+        ],
+        [
+          286,
+          315
+        ],
+        [
+          738,
+          315
+        ]
+      ],
+      "guide": "COMMON-n4-r115.png"
+    },
+    {
+      "case": "COMMON-n6-r085-s2026111201",
+      "n": 6,
+      "level": 0.85,
+      "seed": 2026111201,
+      "base_wh": 1.1547005383792517,
+      "targets": [
+        [
+          776,
+          512
+        ],
+        [
+          644,
+          781
+        ],
+        [
+          380,
+          781
+        ],
+        [
+          248,
+          512
+        ],
+        [
+          380,
+          243
+        ],
+        [
+          644,
+          243
+        ]
+      ],
+      "guide": "COMMON-n6-r085.png"
+    },
+    {
+      "case": "COMMON-n6-r085-s2026111202",
+      "n": 6,
+      "level": 0.85,
+      "seed": 2026111202,
+      "base_wh": 1.1547005383792517,
+      "targets": [
+        [
+          776,
+          512
+        ],
+        [
+          644,
+          781
+        ],
+        [
+          380,
+          781
+        ],
+        [
+          248,
+          512
+        ],
+        [
+          380,
+          243
+        ],
+        [
+          644,
+          243
+        ]
+      ],
+      "guide": "COMMON-n6-r085.png"
+    },
+    {
+      "case": "COMMON-n6-r100-s2026111201",
+      "n": 6,
+      "level": 1.0,
+      "seed": 2026111201,
+      "base_wh": 1.1547005383792517,
+      "targets": [
+        [
+          812,
+          512
+        ],
+        [
+          662,
+          772
+        ],
+        [
+          362,
+          772
+        ],
+        [
+          212,
+          512
+        ],
+        [
+          362,
+          252
+        ],
+        [
+          662,
+          252
+        ]
+      ],
+      "guide": "COMMON-n6-r100.png"
+    },
+    {
+      "case": "COMMON-n6-r100-s2026111202",
+      "n": 6,
+      "level": 1.0,
+      "seed": 2026111202,
+      "base_wh": 1.1547005383792517,
+      "targets": [
+        [
+          812,
+          512
+        ],
+        [
+          662,
+          772
+        ],
+        [
+          362,
+          772
+        ],
+        [
+          212,
+          512
+        ],
+        [
+          362,
+          252
+        ],
+        [
+          662,
+          252
+        ]
+      ],
+      "guide": "COMMON-n6-r100.png"
+    },
+    {
+      "case": "COMMON-n6-r115-s2026111201",
+      "n": 6,
+      "level": 1.15,
+      "seed": 2026111201,
+      "base_wh": 1.1547005383792517,
+      "targets": [
+        [
+          812,
+          512
+        ],
+        [
+          662,
+          738
+        ],
+        [
+          362,
+          738
+        ],
+        [
+          212,
+          512
+        ],
+        [
+          362,
+          286
+        ],
+        [
+          662,
+          286
+        ]
+      ],
+      "guide": "COMMON-n6-r115.png"
+    },
+    {
+      "case": "COMMON-n6-r115-s2026111202",
+      "n": 6,
+      "level": 1.15,
+      "seed": 2026111202,
+      "base_wh": 1.1547005383792517,
+      "targets": [
+        [
+          812,
+          512
+        ],
+        [
+          662,
+          738
+        ],
+        [
+          362,
+          738
+        ],
+        [
+          212,
+          512
+        ],
+        [
+          362,
+          286
+        ],
+        [
+          662,
+          286
+        ]
+      ],
+      "guide": "COMMON-n6-r115.png"
+    }
+  ],
+  "files": {
+    "guides/COMMON-n4-r085.png": "6d4de836d4965ea530fa9d741f535df11318951c7bbaa77ce3149ee9ac7036fb",
+    "requests/COMMON-n4-r085-s2026111201.json": "82d8ed54df6b466a50c2e459e30dc984a153016673601d2a81c084ce33924f94",
+    "requests/COMMON-n4-r085-s2026111202.json": "54070641927c77f1310fb47cef76f673925ceacc1cd78cd039f05541ef0ebff2",
+    "guides/COMMON-n4-r100.png": "12995caedc3c43ed9db560f622a2ca8c8ba143d8baed42211f56d713dd250bf6",
+    "requests/COMMON-n4-r100-s2026111201.json": "b6c437290f20e07adeef4eb77f0dee5f83e47b43a69f54b74709bca615002498",
+    "requests/COMMON-n4-r100-s2026111202.json": "5937718122dbe5906a908fe47af233d12c3dce989a8da730a514a65a8aa4a640",
+    "guides/COMMON-n4-r115.png": "732553848b03b21b07f588eec77aa1302f6ada8d922c8a7f2e2872e8361fa0b7",
+    "requests/COMMON-n4-r115-s2026111201.json": "fe985da0c104bc7a0b61d9e3a312145e6802b3acbfc993d0da91b70ade53409e",
+    "requests/COMMON-n4-r115-s2026111202.json": "509335fbfe44fa7f1f3e9e870d82261f2a5f40c06157f96c3d72c611f60af2c3",
+    "guides/COMMON-n6-r085.png": "3a75165f513226a1a1250fc0eabf89f308d07e85aa4b11fad103a18c962ab1f5",
+    "requests/COMMON-n6-r085-s2026111201.json": "5d8e6859acfb20bdfa403e39787b41e275f2ada9d1f4f84cea88049e1983c5ad",
+    "requests/COMMON-n6-r085-s2026111202.json": "304113e8bf3e457ae73f274078da70d6ff3125098f1a1164a3259951cc425f75",
+    "guides/COMMON-n6-r100.png": "2e972bf37ccea38ae5e89af3f16f48d9f00d145c07c7aef15333d3c17fe80a2d",
+    "requests/COMMON-n6-r100-s2026111201.json": "7079f4f58c97a19dd7af04516449600932065982a009c80412748b8ee236c7ec",
+    "requests/COMMON-n6-r100-s2026111202.json": "2384338d7c6a51b169833bd987cbe7fcc1a4566ff8f98065478a6c63519ddbfd",
+    "guides/COMMON-n6-r115.png": "59d891d43278bfc9aa9de448f51b90fbdb25edaaaf2418b4740d60d846c11c87",
+    "requests/COMMON-n6-r115-s2026111201.json": "4a0d58cde6d37853cac062f7eba2632940aa013684a4fce7207659f945841b3e",
+    "requests/COMMON-n6-r115-s2026111202.json": "6fd9e0e0afb4bb39c3a32a137b8d34174b59df820cb0d58dae37f4bd995e9489"
+  }
+}

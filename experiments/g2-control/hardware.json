@@ -1,0 +1,6 @@
+{
+  "gpu": "NVIDIA GeForce RTX 4090",
+  "vram_bytes": 25280839680,
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8"
+}

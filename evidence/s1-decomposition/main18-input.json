@@ -1,0 +1,1622 @@
+[
+  {
+    "case": "L3S2C0",
+    "seed": 2026110202,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        224,
+        269
+      ],
+      [
+        794,
+        266
+      ],
+      [
+        234,
+        769
+      ],
+      [
+        786,
+        771
+      ]
+    ],
+    "original_sha256": "dffabd49b3f57528ca5895096e9fc86579888d3e35e3f6ef45a96ea69609485c",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L3S2C1",
+    "seed": 2026110202,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        301
+      ],
+      [
+        724,
+        301
+      ],
+      [
+        300,
+        723
+      ],
+      [
+        724,
+        722
+      ]
+    ],
+    "original_sha256": "c253723838197ec3dc93e6c1cb1257ce07ae56709292f89b90caadbfde5926f4",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L1S1C0",
+    "seed": 2026110201,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        217,
+        244
+      ],
+      [
+        809,
+        244
+      ],
+      [
+        222,
+        791
+      ],
+      [
+        809,
+        792
+      ]
+    ],
+    "original_sha256": "7ecac65ee0665ed7af2565baf43321f69892fbbc144b7c8b08efb8457d195260",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L1S3C1",
+    "seed": 2026110203,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        723,
+        300
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        723,
+        725
+      ]
+    ],
+    "original_sha256": "2c357fcff8354e5e1982eaeb99cef2510dfa2276d9f45da830872d4332f42a7a",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L2S2C0",
+    "seed": 2026110202,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        224,
+        267
+      ],
+      [
+        794,
+        265
+      ],
+      [
+        234,
+        768
+      ],
+      [
+        786,
+        770
+      ]
+    ],
+    "original_sha256": "1fa3f6ff530cc1738d71537d166b273a6cc14326eceef6b76e94cc027a287775",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L1S1C1",
+    "seed": 2026110201,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        302
+      ],
+      [
+        723,
+        301
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        723,
+        725
+      ]
+    ],
+    "original_sha256": "9cdb9491b41e16df41efca061e9154e4a3adcd2b14b56d0e2ff1dd6e21e41833",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L3S1C1",
+    "seed": 2026110201,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        301
+      ],
+      [
+        723,
+        301
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        723,
+        725
+      ]
+    ],
+    "original_sha256": "8f5f1165570bedeab36056328ca9a626afadf196bd757208b73246906ed3c700",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L1S2C0",
+    "seed": 2026110202,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        223,
+        267
+      ],
+      [
+        793,
+        265
+      ],
+      [
+        232,
+        767
+      ],
+      [
+        788,
+        768
+      ]
+    ],
+    "original_sha256": "d8e65b81c4fa483bebada885e05fc901f8f4197ef5e0104b5b587a2263a81b9a",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L1S2C1",
+    "seed": 2026110202,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        301
+      ],
+      [
+        724,
+        301
+      ],
+      [
+        300,
+        723
+      ],
+      [
+        724,
+        722
+      ]
+    ],
+    "original_sha256": "2b38f5188c2be9aff544cc23bb882fd3b5c8d9f49a081b78e254ad0d425dcd48",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L1S3C0",
+    "seed": 2026110203,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        254,
+        216
+      ],
+      [
+        750,
+        214
+      ],
+      [
+        246,
+        755
+      ],
+      [
+        750,
+        757
+      ]
+    ],
+    "original_sha256": "474ce4b0dc8d370cfe1bb1d1b069f82dc4b9131212d23987a657e359bac78412",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L2S3C1",
+    "seed": 2026110203,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        723,
+        300
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        723,
+        725
+      ]
+    ],
+    "original_sha256": "5223bb2c8a7e208701afb200b14bea5af30b18ea0e62abb32bc6b589b4c04a84",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L2S2C1",
+    "seed": 2026110202,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        301
+      ],
+      [
+        724,
+        301
+      ],
+      [
+        300,
+        723
+      ],
+      [
+        724,
+        722
+      ]
+    ],
+    "original_sha256": "d2081093c39a3f3db24668f1f1c5842c6231cb4b3f3ada2a8cc0613ebd585936",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L2S3C0",
+    "seed": 2026110203,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        253,
+        216
+      ],
+      [
+        750,
+        214
+      ],
+      [
+        245,
+        755
+      ],
+      [
+        750,
+        757
+      ]
+    ],
+    "original_sha256": "8e4f2e46efaa52229b5f910600219adb0031ac6fc690c88098fb62209416c854",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L2S1C1",
+    "seed": 2026110201,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        302
+      ],
+      [
+        723,
+        301
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        723,
+        725
+      ]
+    ],
+    "original_sha256": "e19dd48c7ea30959980adb964b9a0a4b83872f7370575bb9ce428e5eff824c8b",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L3S3C1",
+    "seed": 2026110203,
+    "reader": "a",
+    "condition": "C1",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        723,
+        300
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        723,
+        725
+      ]
+    ],
+    "original_sha256": "dc2c9c94d5bc9a66b2a7e91ddeb3e9878269fc3a22884029752ba9d4a800630d",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L3S1C0",
+    "seed": 2026110201,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        217,
+        244
+      ],
+      [
+        809,
+        244
+      ],
+      [
+        221,
+        791
+      ],
+      [
+        808,
+        792
+      ]
+    ],
+    "original_sha256": "6550c34eca05e28415d533710dacf5ec3937d8402383783130db49293a31ba94",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L3S3C0",
+    "seed": 2026110203,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        253,
+        215
+      ],
+      [
+        750,
+        214
+      ],
+      [
+        245,
+        755
+      ],
+      [
+        750,
+        757
+      ]
+    ],
+    "original_sha256": "2cc05d0e01cda931c218fe01691a299765cf7ecdef0dd4a130addc9eb9472e21",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L2S1C0",
+    "seed": 2026110201,
+    "reader": "a",
+    "condition": "C0",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        217,
+        244
+      ],
+      [
+        809,
+        244
+      ],
+      [
+        224,
+        793
+      ],
+      [
+        807,
+        793
+      ]
+    ],
+    "original_sha256": "a10bcf94a7f18ce018f729b2441e54cfb427cc3ad672f8362ecfeaf6babf97cf",
+    "raw_annotation_sha256": "d095d3369944a88e3424287c12c5545d6d4d5d1924637a45451e74f241b5d20d"
+  },
+  {
+    "case": "L3S2C0",
+    "seed": 2026110202,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        223,
+        268
+      ],
+      [
+        793,
+        265
+      ],
+      [
+        233,
+        767
+      ],
+      [
+        786,
+        769
+      ]
+    ],
+    "original_sha256": "dffabd49b3f57528ca5895096e9fc86579888d3e35e3f6ef45a96ea69609485c",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L3S2C1",
+    "seed": 2026110202,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        723
+      ],
+      [
+        724,
+        722
+      ]
+    ],
+    "original_sha256": "c253723838197ec3dc93e6c1cb1257ce07ae56709292f89b90caadbfde5926f4",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L1S1C0",
+    "seed": 2026110201,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        218,
+        244
+      ],
+      [
+        810,
+        245
+      ],
+      [
+        221,
+        793
+      ],
+      [
+        809,
+        793
+      ]
+    ],
+    "original_sha256": "7ecac65ee0665ed7af2565baf43321f69892fbbc144b7c8b08efb8457d195260",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L1S3C1",
+    "seed": 2026110203,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        723,
+        300
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        724,
+        725
+      ]
+    ],
+    "original_sha256": "2c357fcff8354e5e1982eaeb99cef2510dfa2276d9f45da830872d4332f42a7a",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L2S2C0",
+    "seed": 2026110202,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        223,
+        266
+      ],
+      [
+        793,
+        264
+      ],
+      [
+        233,
+        767
+      ],
+      [
+        786,
+        767
+      ]
+    ],
+    "original_sha256": "1fa3f6ff530cc1738d71537d166b273a6cc14326eceef6b76e94cc027a287775",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L1S1C1",
+    "seed": 2026110201,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        299,
+        301
+      ],
+      [
+        724,
+        301
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        724,
+        725
+      ]
+    ],
+    "original_sha256": "9cdb9491b41e16df41efca061e9154e4a3adcd2b14b56d0e2ff1dd6e21e41833",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L3S1C1",
+    "seed": 2026110201,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        301
+      ],
+      [
+        724,
+        301
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        724,
+        725
+      ]
+    ],
+    "original_sha256": "8f5f1165570bedeab36056328ca9a626afadf196bd757208b73246906ed3c700",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L1S2C0",
+    "seed": 2026110202,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        223,
+        266
+      ],
+      [
+        793,
+        264
+      ],
+      [
+        231,
+        767
+      ],
+      [
+        786,
+        768
+      ]
+    ],
+    "original_sha256": "d8e65b81c4fa483bebada885e05fc901f8f4197ef5e0104b5b587a2263a81b9a",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L1S2C1",
+    "seed": 2026110202,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        723
+      ],
+      [
+        724,
+        722
+      ]
+    ],
+    "original_sha256": "2b38f5188c2be9aff544cc23bb882fd3b5c8d9f49a081b78e254ad0d425dcd48",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L1S3C0",
+    "seed": 2026110203,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.25,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        253,
+        215
+      ],
+      [
+        750,
+        213
+      ],
+      [
+        245,
+        756
+      ],
+      [
+        750,
+        756
+      ]
+    ],
+    "original_sha256": "474ce4b0dc8d370cfe1bb1d1b069f82dc4b9131212d23987a657e359bac78412",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L2S3C1",
+    "seed": 2026110203,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        723,
+        300
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        724,
+        725
+      ]
+    ],
+    "original_sha256": "5223bb2c8a7e208701afb200b14bea5af30b18ea0e62abb32bc6b589b4c04a84",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L2S2C1",
+    "seed": 2026110202,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        723
+      ],
+      [
+        724,
+        722
+      ]
+    ],
+    "original_sha256": "d2081093c39a3f3db24668f1f1c5842c6231cb4b3f3ada2a8cc0613ebd585936",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L2S3C0",
+    "seed": 2026110203,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        253,
+        214
+      ],
+      [
+        750,
+        213
+      ],
+      [
+        245,
+        756
+      ],
+      [
+        750,
+        756
+      ]
+    ],
+    "original_sha256": "8e4f2e46efaa52229b5f910600219adb0031ac6fc690c88098fb62209416c854",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L2S1C1",
+    "seed": 2026110201,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        301
+      ],
+      [
+        724,
+        301
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        724,
+        725
+      ]
+    ],
+    "original_sha256": "e19dd48c7ea30959980adb964b9a0a4b83872f7370575bb9ce428e5eff824c8b",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L3S3C1",
+    "seed": 2026110203,
+    "reader": "b",
+    "condition": "C1",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        300,
+        300
+      ],
+      [
+        723,
+        300
+      ],
+      [
+        300,
+        725
+      ],
+      [
+        724,
+        725
+      ]
+    ],
+    "original_sha256": "dc2c9c94d5bc9a66b2a7e91ddeb3e9878269fc3a22884029752ba9d4a800630d",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L3S1C0",
+    "seed": 2026110201,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        218,
+        244
+      ],
+      [
+        810,
+        245
+      ],
+      [
+        221,
+        793
+      ],
+      [
+        809,
+        793
+      ]
+    ],
+    "original_sha256": "6550c34eca05e28415d533710dacf5ec3937d8402383783130db49293a31ba94",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L3S3C0",
+    "seed": 2026110203,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.8,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        253,
+        214
+      ],
+      [
+        750,
+        213
+      ],
+      [
+        245,
+        756
+      ],
+      [
+        750,
+        756
+      ]
+    ],
+    "original_sha256": "2cc05d0e01cda931c218fe01691a299765cf7ecdef0dd4a130addc9eb9472e21",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  },
+  {
+    "case": "L2S1C0",
+    "seed": 2026110201,
+    "reader": "b",
+    "condition": "C0",
+    "body_ratio_target": 1.5,
+    "targets": [
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        724,
+        724
+      ]
+    ],
+    "observed": [
+      [
+        218,
+        244
+      ],
+      [
+        810,
+        245
+      ],
+      [
+        221,
+        793
+      ],
+      [
+        809,
+        793
+      ]
+    ],
+    "original_sha256": "a10bcf94a7f18ce018f729b2441e54cfb427cc3ad672f8362ecfeaf6babf97cf",
+    "raw_annotation_sha256": "51615841fb28fab9ad37174c02c4dd307ca2bc901253b6116350b5fbb68aea97"
+  }
+]

@@ -1,0 +1,4 @@
+*.json -text
+*.png -text
+*.html -text
+*.js -text

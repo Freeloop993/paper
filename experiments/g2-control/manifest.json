@@ -1,0 +1,176 @@
+{
+  "kind": "offline_candidate_not_authorized",
+  "batch": "G2",
+  "strength": 1.0,
+  "source_targets_sha256": "38c9e7af73bbf93c7a8a9915ad20a0f29df409e1e1e5c219639c4be25d511713",
+  "radius_px": 69,
+  "cases": [
+    {
+      "case": "G2-n4-r085-s2026111001",
+      "n": 4,
+      "level": 0.85,
+      "seed": 2026111001,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          706,
+          741
+        ],
+        [
+          318,
+          741
+        ],
+        [
+          318,
+          283
+        ],
+        [
+          706,
+          283
+        ]
+      ],
+      "guide": "G2-n4-r085.png"
+    },
+    {
+      "case": "G2-n4-r085-s2026111002",
+      "n": 4,
+      "level": 0.85,
+      "seed": 2026111002,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          706,
+          741
+        ],
+        [
+          318,
+          741
+        ],
+        [
+          318,
+          283
+        ],
+        [
+          706,
+          283
+        ]
+      ],
+      "guide": "G2-n4-r085.png"
+    },
+    {
+      "case": "G2-n4-r100-s2026111001",
+      "n": 4,
+      "level": 1.0,
+      "seed": 2026111001,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "guide": "G2-n4-r100.png"
+    },
+    {
+      "case": "G2-n4-r100-s2026111002",
+      "n": 4,
+      "level": 1.0,
+      "seed": 2026111002,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "guide": "G2-n4-r100.png"
+    },
+    {
+      "case": "G2-n4-r115-s2026111001",
+      "n": 4,
+      "level": 1.15,
+      "seed": 2026111001,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          738,
+          709
+        ],
+        [
+          286,
+          709
+        ],
+        [
+          286,
+          315
+        ],
+        [
+          738,
+          315
+        ]
+      ],
+      "guide": "G2-n4-r115.png"
+    },
+    {
+      "case": "G2-n4-r115-s2026111002",
+      "n": 4,
+      "level": 1.15,
+      "seed": 2026111002,
+      "base_wh": 1.0,
+      "targets": [
+        [
+          738,
+          709
+        ],
+        [
+          286,
+          709
+        ],
+        [
+          286,
+          315
+        ],
+        [
+          738,
+          315
+        ]
+      ],
+      "guide": "G2-n4-r115.png"
+    }
+  ],
+  "files": {
+    "guides/G2-n4-r085.png": "6d4de836d4965ea530fa9d741f535df11318951c7bbaa77ce3149ee9ac7036fb",
+    "requests/G2-n4-r085-s2026111001.json": "fb9fec0db81082e358151359e94be1c8997255003fcdb988fe92db736a235865",
+    "requests/G2-n4-r085-s2026111002.json": "3469ae97fc561d46f14981c63c90cb8981968cc59c1b88994f7458e0b1611799",
+    "guides/G2-n4-r100.png": "12995caedc3c43ed9db560f622a2ca8c8ba143d8baed42211f56d713dd250bf6",
+    "requests/G2-n4-r100-s2026111001.json": "9e3b41f4f0eddc73b8a4bf50a8c5236bc24d6adf57c9e409e38021f22f4d5323",
+    "requests/G2-n4-r100-s2026111002.json": "6396377eee922a48d9b02d18ae9656d210c151f11cef4cca18bd8b5355b8aa93",
+    "guides/G2-n4-r115.png": "732553848b03b21b07f588eec77aa1302f6ada8d922c8a7f2e2872e8361fa0b7",
+    "requests/G2-n4-r115-s2026111001.json": "38895a8dba2ddb569811cc0482c10c72d7e0af1b98487b4e6bf5c265d5ca2d83",
+    "requests/G2-n4-r115-s2026111002.json": "79113fe44a2c314145bf1f0b09b598538b26163a92370005d999551c84d773f7"
+  }
+}

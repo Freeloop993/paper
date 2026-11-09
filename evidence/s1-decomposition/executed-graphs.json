@@ -1,0 +1,791 @@
+{
+  "zip_sha256": "67a03cf39c7732bbbf9ee22a55afd10f01fb67abf457230d738d8f65537c4604",
+  "cases": {
+    "S1-B1-F": {
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "5": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "F-guide.png"
+          }
+        },
+        "6": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "5",
+              0
+            ],
+            "upscale_method": "nearest-exact",
+            "width": 1024,
+            "height": 1024,
+            "crop": "disabled"
+          }
+        },
+        "7": {
+          "class_type": "Canny",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "low_threshold": 0.4,
+            "high_threshold": 0.8
+          }
+        },
+        "8": {
+          "class_type": "ModelPatchLoader",
+          "inputs": {
+            "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+          }
+        },
+        "9": {
+          "class_type": "QwenImageDiffsynthControlnet",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "model_patch": [
+              "8",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "image": [
+              "7",
+              0
+            ],
+            "strength": 0.35,
+            "start_percent": 0,
+            "end_percent": 1
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "9",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026110711,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "S1-B1-F"
+          }
+        }
+      },
+      "original_request_sha256": "14d2e9977e0fd47fb404014bf9cbeca966850b79fa65a5b58e146e79f67a1ae0",
+      "history_sha256": "4a746d09542d9026ce198e7ba14ed94c6a459f08351ee8f527356f579d1e6119",
+      "history_graph_matches": true,
+      "output_sha256": "3e6d68d173a6c4ec0dd712403e2e11ae9d0f3255c13009c83960417055cc3c15"
+    },
+    "S1-B1-L": {
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "5": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "L-guide.png"
+          }
+        },
+        "6": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "5",
+              0
+            ],
+            "upscale_method": "nearest-exact",
+            "width": 1024,
+            "height": 1024,
+            "crop": "disabled"
+          }
+        },
+        "7": {
+          "class_type": "Canny",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "low_threshold": 0.4,
+            "high_threshold": 0.8
+          }
+        },
+        "8": {
+          "class_type": "ModelPatchLoader",
+          "inputs": {
+            "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+          }
+        },
+        "9": {
+          "class_type": "QwenImageDiffsynthControlnet",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "model_patch": [
+              "8",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "image": [
+              "7",
+              0
+            ],
+            "strength": 0.35,
+            "start_percent": 0,
+            "end_percent": 1
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "9",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026110711,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "S1-B1-L"
+          }
+        }
+      },
+      "original_request_sha256": "faa16b65fae91b7808d74cf6ee09e7b28146027ad1c0bf9b5e50cda1d4efc0e7",
+      "history_sha256": "5fa081bbe2ba8f632aa01b5eb8b49def7941799fb0d57d756317145b638abc9e",
+      "history_graph_matches": true,
+      "output_sha256": "87cf489e67fa87efd23e3119b0ff7dcfd673e766163179ee60ad6a18412dbc43"
+    },
+    "S1-B1-T": {
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026110711,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "S1-B1-T"
+          }
+        }
+      },
+      "original_request_sha256": "7af12bb9f9186f1af3faa783082ae58b991bc4b38c42258645970f03e18f66f3",
+      "history_sha256": "2aa7fddbecbd21e9433c37bda83ef7e6b75e9cb3f43733bac646156abaf6734c",
+      "history_graph_matches": true,
+      "output_sha256": "ac35060507d2694ab6ffe46c18d1b99e46841e6ea3c79181b697505bb818fdc5"
+    },
+    "S1-B2-F": {
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "5": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "F-guide.png"
+          }
+        },
+        "6": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "5",
+              0
+            ],
+            "upscale_method": "nearest-exact",
+            "width": 1024,
+            "height": 1024,
+            "crop": "disabled"
+          }
+        },
+        "7": {
+          "class_type": "Canny",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "low_threshold": 0.4,
+            "high_threshold": 0.8
+          }
+        },
+        "8": {
+          "class_type": "ModelPatchLoader",
+          "inputs": {
+            "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+          }
+        },
+        "9": {
+          "class_type": "QwenImageDiffsynthControlnet",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "model_patch": [
+              "8",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "image": [
+              "7",
+              0
+            ],
+            "strength": 0.35,
+            "start_percent": 0,
+            "end_percent": 1
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "9",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026110712,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "S1-B2-F"
+          }
+        }
+      },
+      "original_request_sha256": "e7b6df8ad0677cddaac7cf44b19439b941531a7558de136338385bd59e4f8cb4",
+      "history_sha256": "be712c41c05691acd2e40a435d462bcc3dee82a4fbc640124e79ae5b48ef92b8",
+      "history_graph_matches": true,
+      "output_sha256": "ddb1eda9cdc496c70acc441fac442f1777baed80ddf26d5311052616e8edd0d7"
+    },
+    "S1-B2-L": {
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "5": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "L-guide.png"
+          }
+        },
+        "6": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "5",
+              0
+            ],
+            "upscale_method": "nearest-exact",
+            "width": 1024,
+            "height": 1024,
+            "crop": "disabled"
+          }
+        },
+        "7": {
+          "class_type": "Canny",
+          "inputs": {
+            "image": [
+              "6",
+              0
+            ],
+            "low_threshold": 0.4,
+            "high_threshold": 0.8
+          }
+        },
+        "8": {
+          "class_type": "ModelPatchLoader",
+          "inputs": {
+            "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+          }
+        },
+        "9": {
+          "class_type": "QwenImageDiffsynthControlnet",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "model_patch": [
+              "8",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "image": [
+              "7",
+              0
+            ],
+            "strength": 0.35,
+            "start_percent": 0,
+            "end_percent": 1
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "9",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026110712,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "S1-B2-L"
+          }
+        }
+      },
+      "original_request_sha256": "978f6bbf60f17c16c913d67a7174f7de3a4211dbc9a418e456edb0b7b09a6fdd",
+      "history_sha256": "3c57a49c46f44eec94eb3025806593fbefb74a6b36cd6484c3414a9ca86f469b",
+      "history_graph_matches": true,
+      "output_sha256": "b342d343135325a6088e1409df939f8a40d2137852f8b2561730138017f99028"
+    },
+    "S1-B2-T": {
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Design one coherent four-rotor drone concept for personal everyday aerial photography. The design should communicate compactness, simplicity and careful detailing, without looking generic or like a decorated flat plate. Develop a deliberate three-dimensional body volume, well-resolved transitions from body to arms, an integrated forward camera region and a restrained hierarchy of panels. Explore the body silhouette, surface sections and junction shapes wherever no contour is specified. Do not imitate a named brand.\n\nUse a strict orthographic top view with the front pointing up. On the 1024 by 1024 image, place the four motor centers at (300,300), (724,300), (300,724) and (724,724). These are image coordinates, not physical dimensions or text to draw. Show four rotors and visually continuous connections to one central body. Keep the complete object and its rotor tips within the image. When a guide is present, its small round markers locate motor centers; any additional closed contour specifies the body footprint only. Do not render the guide itself as markings on the product.\n\nRender a considered industrial-design concept with convincing surface curvature, matte neutral-gray housing, darker motors and a dark camera window. Use a white background, a soft upper-left light and restrained shadows. Show volume through shading without tilting the camera. Produce one design, not a collage. No annotations, dimensions, coordinate axes, logo or infographic. This is an appearance concept, not a claim of airworthiness or a manufactured mechanism.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026110712,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "S1-B2-T"
+          }
+        }
+      },
+      "original_request_sha256": "897227c56149cdd0077e79b608f8b5807d5ac8e355f66209e90a7e666ab6cb03",
+      "history_sha256": "b9e2d82db0e50a983f38d21309b885b5a91afb30de98d172909013c79669cee3",
+      "history_graph_matches": true,
+      "output_sha256": "4acb541fc7749a734052b7e4a7573cb4e87323025c38e7a6750113748071fa8a"
+    }
+  }
+}
