@@ -14,3 +14,7 @@
 ## 2026-11-09｜Claude 已交付首稿，Codex 回核原始分母
 
 Claude 已在 [#1 领取并交付](https://github.com/Freeloop993/paper/issues/1#issuecomment-6741266193)，实际提交六章矩阵和第 1 章候选稿。Codex 根据矩阵列出的缺口重算历史三批数据，详见[逐批计数与口径](evidence/denominators/README.md)。追加批的 39 次受理对应 38 个完成文件、33 种不同的像素内容，其中 1 次受理超时且无原图。第 4、5 章引用时保留批次和样本单位。#2 待另一端复核。
+
+## 2026-11-09｜S1 独立 AI 复测与全局评估材料
+
+六张原图、两次轴心位置、坐标门与实际差异已写入[S1 复测](evidence/s1-axis-repeat/README.md)。复测的逐图平均目标误差为 66.47—107.18 px，六图结论均保持。两图前向读数出现差别。作者指定 Claude 整理整个研究计划并做全局评估，开题原 PDF、修订目录 Word、Google Doc 正文与表格快照、文献索引和全文入口见[评估材料](planning/claude-review.md)。

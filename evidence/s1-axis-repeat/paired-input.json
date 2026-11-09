@@ -1,0 +1,195 @@
+{
+  "coordinate_system": "original image x right, y down, no registration",
+  "targets": [
+    [
+      300,
+      300
+    ],
+    [
+      724,
+      300
+    ],
+    [
+      300,
+      724
+    ],
+    [
+      724,
+      724
+    ]
+  ],
+  "thresholds": {
+    "mean_hub_error_max": 0.03,
+    "max_hub_error_max": 0.05,
+    "ratio_abs_error_max": 0.1,
+    "normalization": "target diagonal sqrt(424^2+424^2)",
+    "no_registration": true
+  },
+  "protocol_sha256": "d9ab939241c5310b2ef3fe0251b76ae1d51e84443d77bc8f64ec350f6ca4b53f",
+  "first_original_record_sha256": "12e9c793017afe8ff51d4844e233ac5b08e34089efdae7ad4b7a4cb079f88dc7",
+  "independent_sealed_sha256": "2eac428d8495376b22267ac7a849f544f9e336f6586f737dc5f9f2f89c27a3aa",
+  "cases": [
+    {
+      "case": "S1-B1-L",
+      "blind_id": "Q01",
+      "original_sha256": "87cf489e67fa87efd23e3119b0ff7dcfd673e766163179ee60ad6a18412dbc43",
+      "blind_sha256": "53b685ad81865fe3b3195477abdbec4b54f2f6eb6ef5b66e65ceb2514f08f128",
+      "first_points": [
+        [
+          236,
+          224
+        ],
+        [
+          786,
+          226
+        ],
+        [
+          237,
+          789
+        ],
+        [
+          781,
+          791
+        ]
+      ],
+      "first_front_up": null,
+      "first_recorded_gate": false,
+      "first_recorded_mean_px": 93.59617605555874
+    },
+    {
+      "case": "S1-B1-T",
+      "blind_id": "Q02",
+      "original_sha256": "ac35060507d2694ab6ffe46c18d1b99e46841e6ea3c79181b697505bb818fdc5",
+      "blind_sha256": "2880b937bdf2e1407c40182238d54b4f73636b429bbed0e94c94b90e0f354834",
+      "first_points": [
+        [
+          224,
+          217
+        ],
+        [
+          799,
+          217
+        ],
+        [
+          216,
+          794
+        ],
+        [
+          789,
+          795
+        ]
+      ],
+      "first_front_up": null,
+      "first_recorded_gate": false,
+      "first_recorded_mean_px": 107.50210832465903
+    },
+    {
+      "case": "S1-B1-F",
+      "blind_id": "Q03",
+      "original_sha256": "3e6d68d173a6c4ec0dd712403e2e11ae9d0f3255c13009c83960417055cc3c15",
+      "blind_sha256": "285bdd4f08be5002ac004567077fa7ba0dfed6cdac8c74a0aee75998ad10e2d8",
+      "first_points": [
+        [
+          258,
+          234
+        ],
+        [
+          767,
+          239
+        ],
+        [
+          253,
+          775
+        ],
+        [
+          766,
+          778
+        ]
+      ],
+      "first_front_up": false,
+      "first_recorded_gate": false,
+      "first_recorded_mean_px": 72.65688763354001
+    },
+    {
+      "case": "S1-B2-T",
+      "blind_id": "Q04",
+      "original_sha256": "4acb541fc7749a734052b7e4a7573cb4e87323025c38e7a6750113748071fa8a",
+      "blind_sha256": "500a72162ae6315ecbdfd7a0a6f577d4be90fddb39891ae5f07e7691f65ed8bd",
+      "first_points": [
+        [
+          245,
+          229
+        ],
+        [
+          785,
+          230
+        ],
+        [
+          233,
+          730
+        ],
+        [
+          790,
+          731
+        ]
+      ],
+      "first_front_up": false,
+      "first_recorded_gate": false,
+      "first_recorded_mean_px": 79.07463676708707
+    },
+    {
+      "case": "S1-B2-L",
+      "blind_id": "Q05",
+      "original_sha256": "b342d343135325a6088e1409df939f8a40d2137852f8b2561730138017f99028",
+      "blind_sha256": "f75ee82d1161c03bf9ed477f95bdbade6458e8ccdb57c992d22b87eb94a15af0",
+      "first_points": [
+        [
+          239,
+          249
+        ],
+        [
+          785,
+          251
+        ],
+        [
+          235,
+          722
+        ],
+        [
+          786,
+          725
+        ]
+      ],
+      "first_front_up": false,
+      "first_recorded_gate": false,
+      "first_recorded_mean_px": 71.19826050971938
+    },
+    {
+      "case": "S1-B2-F",
+      "blind_id": "Q06",
+      "original_sha256": "ddb1eda9cdc496c70acc441fac442f1777baed80ddf26d5311052616e8edd0d7",
+      "blind_sha256": "c257a89b8a5b39ad8d0a9619ca18fdc6ba0c5584e620d1f8d3653caf368f370f",
+      "first_points": [
+        [
+          248,
+          243
+        ],
+        [
+          774,
+          245
+        ],
+        [
+          242,
+          722
+        ],
+        [
+          777,
+          724
+        ]
+      ],
+      "first_front_up": false,
+      "first_recorded_gate": false,
+      "first_recorded_mean_px": 65.63012575365538
+    }
+  ]
+}

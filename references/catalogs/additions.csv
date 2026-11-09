@@ -1,0 +1,8 @@
+paper_id,title,year,doi,source,relevance_role,quality_decision,pages,sha256,writing_use,repo_fulltext
+N001,Challenges hindering the application of GenAI methods in engineering design and the product development process: a meta-analysis,2026,10.1017/pds.2026.10576,Proceedings of the Design Society 6,生成式设计风险与评价边界,A｜边界核心,10,a094913b0bad5078ac6222133493a56cb06dc372d86d68334cb7e532ad0c0301,第1章问题提出；第6章局限与讨论,
+N002,From geometry to function: towards context-aware generative AI for engineering design,2026,10.1017/pds.2026.10577,Proceedings of the Design Society 6,几何指标与工程功能的边界,B｜工程边界,10,e826b4a76b3ee4e8420a0fb3b70795616ba8c437b8f8b4624b7ffcf1f4fc7367,第2章工程边界；第6章局限,
+N003,A Method for Product Form Design Based on User Perceptual Imagination and Product Modeling Constraints,2023,10.54941/ahfe1002993,AHFE 2023 / Kansei Engineering 101,感性意象到造型约束的方法桥梁,A｜方法核心,7,6394068238f79f1cb624981520910c3ee3e5d825a62d8bca8da3c4662d090fd6,第2章理论；第3章变量构建,
+N004,Kansei engineering review and challenges as an ergonomic consumer-oriented technology for product development,2026,10.1016/j.ergon.2026.104033,International Journal of Industrial Ergonomics 115,最新感性工学综述,A｜元数据核心,,,第2章研究现状,
+N005,"Design and Development of a Modular, Low-Cost 3D Printed Multirotor UAV Airframe",2026,10.3233/ATDE260095,Advances in Transdisciplinary Engineering / ICMAE 2025,多旋翼参数化与跨构型工程边界,A｜直接边界,,,第3章参数变量边界；第6章迁移讨论,
+N006,Research Study Concerning the Structural Design of a Drone Using 3D Print Technology,2026,10.1002/masy.70405,Macromolecular Symposia 415(4),3D打印结构工程边界,C｜仅边界,,,第6章工程外延（可选）,
+N007,Drone design for Circularity,2026,10.1088/1757-899X/1342/1/012012,IOP Conference Series: Materials Science and Engineering 1342,可拆解与循环设计边界,B｜可持续边界,12,,第6章局限与展望（可选）,

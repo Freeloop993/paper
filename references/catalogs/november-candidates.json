@@ -1,0 +1,107 @@
+[
+  {
+    "work_id": "doi:10.1145/3830398.3830504",
+    "title": "MaterialVellum: Steering Generative AI by Leveraging Expressive Material Affordances to Form Design Constraints",
+    "authors": [
+      "Chu Li",
+      "Nicolai Marquardt",
+      "Hugo Romat",
+      "Ken Hinckley",
+      "Nathalie Riche",
+      "Kwon Ko",
+      "Fanny Chevalier"
+    ],
+    "year": 2026,
+    "venue": "UIST 2026",
+    "doi": "10.1145/3830398.3830504",
+    "source_urls": [
+      "https://arxiv.org/abs/2611.01800v1",
+      "https://arxiv.org/html/2611.01800v1",
+      "https://doi.org/10.1145/3830398.3830504",
+      "https://programs.sigchi.org/uist/2026/people/affiliations/university-of-washington"
+    ],
+    "version_read": "arXiv:2611.01800v1; related UIST2026 publication identity confirmed via publisher-deposited Crossref metadata and SIGCHI program; not byte-matched to publisher PDF",
+    "valid_fulltext_obtained": true,
+    "reviewed_pdf_pages": [
+      8,
+      9,
+      11
+    ],
+    "classification": "background",
+    "supported_use": "借用约束实现层级的区分，不复制材质隐喻界面。",
+    "limits": "未设基线，也未评价设计输出质量；不能证明比文本提示更有效，更不能作为无人机美学或几何精度证据。"
+  },
+  {
+    "work_id": "doi:10.3390/sym18020352",
+    "title": "A Generative AI-Driven Industrial Design Framework for Human–GenAI Co-Creation",
+    "authors": [
+      "Chen Chen",
+      "Fangmin Cheng",
+      "Boyi Zhang",
+      "Ruozhen Jin",
+      "Chaoyi Dong",
+      "Zhixue Sun",
+      "Yaxuan Zhou"
+    ],
+    "year": 2026,
+    "venue": "Symmetry18(2),352",
+    "doi": "10.3390/sym18020352",
+    "source_urls": [
+      "https://www.mdpi.com/2073-8994/18/2/352",
+      "https://www.mdpi.com/2073-8994/18/2/352/notes"
+    ],
+    "version_read": "Publisher-indexed original HTML sections3.1–3.2,5.1,6; not a complete PDF review. Version notes report a2026-02-15 updated PDF. The indexed HTML snapshot was not byte-matched to that PDF.",
+    "valid_fulltext_obtained": false,
+    "reviewed_pdf_pages": [],
+    "classification": "background",
+    "supported_use": "用作已有约束连续性框架的背景与研究定位对照。",
+    "limits": "作者承认没有纯人工传统流程的受控比较，迭代策略较粗、人机贡献未量化；不作效率、制造性能或我们系统有效性的证据。"
+  },
+  {
+    "work_id": "doi:10.1109/TVCG.2025.3626754",
+    "title": "GenFODrawing: Supporting Creative Found Object Drawing With Generative AI",
+    "authors": [
+      "Jiaye Leng",
+      "Hui Ye",
+      "Pengfei Xu",
+      "Miu-Ling Lam",
+      "Hongbo Fu"
+    ],
+    "year": 2026,
+    "venue": "IEEE Transactions on Visualization and Computer Graphics32(2),1978–1992",
+    "doi": "10.1109/TVCG.2025.3626754",
+    "source_urls": [
+      "https://researchportal.hkust.edu.hk/en/publications/genfodrawing-supporting-creative-found-object-drawing-with-genera/",
+      "https://scholars.hkbu.edu.hk/en/publications/genfodrawing-supporting-creative-found-object-drawing-with-genera/",
+      "https://hongbofu.people.ust.hk/doc/GenFODrawing_TVCG2025.pdf",
+      "https://jiayeleng.github.io/static/homepage/papers/GenFODrawing.pdf"
+    ],
+    "version_read": "Institutional publication record and abstract only.2025online/2026issue are one work, not two papers.",
+    "valid_fulltext_obtained": false,
+    "reviewed_pdf_pages": [],
+    "classification": "pending",
+    "supported_use": "仅登记发现及相关性，暂不纳入方法效果论证。",
+    "limits": "作者站证书校验失败，未绕过；另一作者站文件下载过慢已中止，仅保留.partial，不算有效PDF。摘要中的正向结论不能替代方法审读。"
+  },
+  {
+    "work_id": "doi:10.1016/j.cad.2026.104063",
+    "title": "D²Design: Dual-conditioned diffusion AI for accelerating product form generation",
+    "authors": [
+      "B. Sankar",
+      "Amogh A.S."
+    ],
+    "year": 2026,
+    "venue": "Computer-Aided Design195,104063",
+    "doi": "10.1016/j.cad.2026.104063",
+    "source_urls": [
+      "https://www.sciencedirect.com/science/article/pii/S0010448526000333",
+      "https://www.sciencedirect.com/science/article/abs/pii/S0010448526000333"
+    ],
+    "version_read": "Publisher abstract/highlights and Crossref metadata only",
+    "valid_fulltext_obtained": false,
+    "reviewed_pdf_pages": [],
+    "classification": "pending",
+    "supported_use": "登记为最近邻和创新性核查对象，不把出版页效果数字当已复核证据。",
+    "limits": "全文显示需机构访问或购买，本轮没有取得，不购买、不绕付费墙；不能复述其倍数改善来证明本研究。"
+  }
+]

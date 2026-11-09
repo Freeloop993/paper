@@ -1,0 +1,243 @@
+id,title,doi,year,historical_status,use_and_limits
+A001,A001｜Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion,10.1299/jamdsm.2026jamdsm0008,2026,citable-with-restrictions,### 可直接引用 - 需求语义可经Kansei与QFD转换为概念形态生成的设计特征与语义约束。 - prompt权重在该文中是相对语义引导，不是几何特征的决定性控制。
+A002,A002｜Exploring generative design in context of mass personalization,10.1017/pds.2025.10180,2025,background-only,1. 单患者、单基台、单基线案例，不能做群体或跨产品外推。 2. 没有多次运行、随机种子、统计检验、效应量或不确定性。 3. 分段、目标数减少和范围收紧同时发生，未用消融实验区分每个因素的贡献。 ### 可直接引用 - 显式GD要求设计师预先定义种子模型、参数范围、依赖关系和目标约束。 - 在该单案例中，工作流分段与搜索范围收紧后，作者报告收敛结果改善。
+A003,A003｜Generating preinventive structures: AI-driven creativity in product repurposing,10.1017/pds.2025.10207,2025,background-only,### 可直接引用 - 作者把Geneplore的preinventive structures用于生成式AI设计方法，提出AI先生成中间构型、设计师再探索和解释。 - 单一家具案例中，7个AI类别与部分既有hack重合，同时12/49例出现AI列表之外的5类结构。
+A004,A004｜Evolving a Model of Gen-AI Enhanced Design Visualisation Workflow,10.35199/EPDE.2025.112,2025,exclude-from-thesis,### 若必须提及 - 可如实描述两次课堂介入的规模与短时性质。 - 可说明一个学生个案在AI渲染后仍回到CAD手工重建。
+A005,A005｜Embrace the Era of Drones: A New Practical Design Approach to Emergency Rescue Drones,10.3390/app15010135,2025,background-only,### 可直接引用 - Wang等在应急救援无人机案例中将需求分为造型、功能和交互三类，并用fuzzy Kano-QFD-FBS辅助人工设计。 - 该案例从36条初始需求筛为19项评价条目，并形成17项二级设计要素。
+A006,A006｜五种方法串联，不等于参数化或人智协同,10.1371/journal.pone.0326630,2025,background-only,
+A007,A007｜Multimodal generative AI for conceptual design,10.1017/pds.2025.10264,2025,citable-with-restrictions,
+A008,A008｜A Product’s Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation,10.3390/su16208837,2024,citable-with-restrictions,
+A009,A009｜复杂产品HKE评价方法,10.3390/sym17020306,2025,exclude-from-thesis,
+A010,A010｜Grasshopper Algorithmic Modelling: Parametric Design for Product Platform Customisation,10.3390/app15116243,2025,citable-with-restrictions,
+A011,A011｜高草图熟练度在2D生成AI交通工具设计中仍有优势吗？,10.35199/epde.2025.124,2025,background-only,
+A012,A012｜流程可借，PCA、回归和眼动不必照搬,10.3390/app131910674,2023,citable-with-restrictions,
+A013,A013｜方向相关，但关键计算不自洽,10.3390/app132413345,2023,excluded-from-formal-evidence,
+A014,A014｜可借形态拆解，不借回归结论,10.15376/biores.19.1.805-822,2024,background-only,
+A015,A015｜Augmented design automation,10.1017/pds.2025.10081,2025,citable-with-restrictions,
+A016,A016｜AI更像设计师？只在单品类、弱相关范围内成立,10.1017/pds.2025.10098,2025,citable-with-restrictions,
+A017,A017｜Sketch2Prototype,10.1017/pds.2024.201,2024,citable-with-restrictions,
+A018,A018｜ShipGen,10.3390/jmse11122215,2023,background-only,
+A019,A019｜Midjourney 与 AMP-Cards,10.3390/systems11120566,2023,background-only,
+A020,A020｜LLM建议—设计者确认—图像生成,10.1017/pds.2026.10619,2026,citable-with-restrictions,
+A021,A021｜AI能画故事场景，不等于能控产品造型,10.35199/epde.2024.52,2024,background-only,
+A022,A022｜文本到CAD：自动化不等于造型可控,10.1017/pds.2025.10203,2025,background-only,
+A023,A023｜AI参与设计前期工作坊,10.1017/pds.2025.10056,2025,background-only,
+A024,A024｜参数先定范围，再按依赖逐步收窄,10.1017/pds.2024.79,2024,background-only,
+A025,A025｜生成数量多，不等于造型方向多,10.1017/pds.2024.223,2024,citable-with-restrictions,
+A026,A026｜是造型评价，但证据不足以指导本课题,10.3390/su151914538,2023,background-only,
+A027,A027｜有UAV，但不是无人机造型研究,10.1017/pds.2026.10585,2026,background-only,
+A028,A028｜用来界定人—AI责任，不用来证明效果,10.1017/pds.2026.10419,2026,citable-with-restrictions,
+A029,A029｜感性工学的理论主干，可以正式引用,10.5057/ijae.IJAE-D-23-00003,2023,citable-with-restrictions,- p.2：Kansei不能被直接观察，只能通过感官反应、心理/生理测量与行为后果间接、部分地评估。 - p.2：感性工学把消费者整体感受与产品物理属性分别分解、排序，再建立关键因素模型。 - p.3：感性测量需要同时考虑效度、信度、时间变化和伦理问题。
+A030,A030｜AI构思时设计师仍在判断，但比例数据不可靠,10.1017/pds.2024.94,2024,background-only,
+A031,A031｜可用于组织造型方向，不可当作审美规律,10.1017/pds.2024.244,2024,citable-with-restrictions,- 叙述综述没有检索数据库、时间窗、纳入标准或质量评价。 - 测试只有5个在售机器人和5个概念机器人，选择原则仅为“足够不同、保证图面清晰”。 - 图像全部由作者解释和放置，没有用户、设计师评审、编码者一致性或统计。
+B001,ID-B001｜提示词越长，不保证越接近原方案,10.35199/epde.2024.20,2024,background-only,
+B002,ID-B002｜AI放在发散阶段，人工负责策展收敛,10.35199/epde.2024.104,2024,background-only,
+B003,ID-B003｜可借表达对照形式，不能写成“AI与手绘等效”,10.35199/epde.2024.34,2024,background-only,
+B004,ID-B004｜能说明评价要受控，不能拿来给AI工具排名,10.35199/epde.2024.3,2024,background-only,
+B005,ID-B005｜自然观察可转成节点链，但不等于参数可控,10.35199/epde.2025.98,2025,background-only,
+B006,ID-B006｜二维纹饰文法不能直接当三维产品文法,10.2991/978-94-6463-815-8_2,2025,background-only,
+B007,ID-B007｜流程可看，SVR高精度不可引,10.3390/wevj15090389,2024,background-only,
+B008,ID-B008｜短工作坊有启发，不等于长期设计效果,10.35199/epde.2025.74,2025,background-only,
+B009,ID-B009｜本课题要设计“解空间”，不是只做一架无人机,10.35199/epde.2024.82,2024,citable-with-restrictions,
+B010,ID-B010｜抽象感受需要经过“词—草图—形体”转译,10.35199/epde.2025.81,2025,background-only,
+B011,ID-B011｜可借“缩减方案”，不必搬复杂算法,10.3390/sym17050758,2025,background-only,
+B012,ID-B012｜提醒先有人类初始意图，不证明AI提高新颖性,10.35199/epde.2024.23,2024,background-only,
+B013,"B013｜EXPLORING THE IMPACT OF GENERATIVE AI ON CONCEPT GENERATION, IDEATION, AND DESIGN METHODOLOGY: IN PRODUCT DESIGN EDUCATION",10.35199/epde.2024.7,2024,active,### 原文局限 - 样本量小（Phase 1为26人、Phase 2为12人）且为单校单届学生，外部效度有限 - 未设对照组，无法剥离AI工具效应与教学干预效应
+B014,ID-B014｜不同阶段用不同AI，但仍需结构化引导,10.35199/epde.2025.84,2025,background-only,
+B015,ID-B015｜“不显著”不等于“AI等同人类”,10.35199/epde.2025.102,2025,background-only,
+B016,ID-B016｜可借迭代回路，不采用课程效果,10.35199/epde.2024.31,2024,background-only,
+B017,ID-B017｜用五要素检查人智协同流程是否闭环,10.1017/pds.2026.10608,2026,citable-with-restrictions,- p.1、p.3–5：五要素是作者提出的概念框架，尚非成熟量表。 - p.5–7：只有一个科研管理信息系统案例，无对照、无统计、多个干预同时发生。 - p.8：作者承认框架过宏观，需跨领域、定量和纵向验证。
+B018,ID-B018｜专利图可辅助发现部件位置，但不是造型语言,10.1017/pds.2026.10582,2026,background-only,
+B019,B019｜Research on the Sanxingdui cultural and creative product design based on an AIGC design framework,,2025,active,### 原文局限 - 样本量较小且未控制年龄结构，影响结论普适性 - 主观问卷评估，缺乏眼动等客观测量验证
+B020,ID-B020｜CMF三层映射是分析框架，不是用户证据,10.1017/pds.2026.10624,2026,background-only,
+B021,ID-B021｜可借阶段化生成思路，不能把两个极端个案当规律,10.1017/pds.2026.10468,2026,citable-with-restrictions,
+B022,B022｜THE ROLE OF “GOOD” BEHAVIOURS IN BEHAVIOURAL DESIGN,10.35199/epde.2025.35,2025,active,### 原文局限 - 样本仅 16 名在校学生且新手与熟练者比例悬殊（12:4），统计代表性不足。 - 实验对象为筷子这一具有强文化符号意义的产品，可能限制结论向一般产品的迁移性。
+B023,ID-B023｜只能说明一次性AI图片刺激不稳定,10.35199/epde.2025.4,2025,background-only,
+B024,ID-B024｜静态图可能够用，但原研究不足以定论,10.1017/pds.2025.10179,2025,background-only,
+B025,B025｜Sustainability through Biomimicry: A Comprehensive Review of Bionic Design Applications,10.3390/biomimetics9090507,2024,active,### 原文局限 - 该文为综述性论文，无用户实验、无量化评价指标、无对照实验 [PAGE 1-18] - 案例多为定性描述，缺乏对仿生造型与产品性能/可持续性的量化关联分析
+B026,B026｜Strategies for applying shape grammar to wooden furniture design: Taking traditional Chinese Ming-style recessed-leg table as an example,10.15376/biores.19.1.1707-1727,2024,active,### 原文局限 - 仅做二维轮廓线的文法演绎，未涉及三维造型[PAGE 18] - 语义差异量表由5位研究者拟定、20名消费者填写，样本量小且未报告被试人口学特征与信效度[PAGE 16]
+B027,B027｜Application of symbolic language and pattern innovation of Chaoshan peach cake mold in paper packaging design,10.15376/biores.20.1.482-499,2024,active,### 原文局限 - 被试量小（80人）且仅与自身阈值对比，未设对照组或随机分组，缺乏统计推断 - 所有造型操作在Illustrator手工完成，未引入真正的算法/AI，无法体现“参数化可控生成”中的可控参数化搜索
+B028,ID-B028｜可借开放式印象采集，未建成设计规格,10.1017/pds.2024.239,2024,background-only,
+B029,ID-B029｜线索对齐可作提醒，原文分类不能直接照搬,10.1017/pds.2026.10454,2026,background-only,
+B030,ID-B030｜AI适合哪一步，要靠任务匹配而不是工具排名,10.1017/pds.2025.10237,2025,background-only,
+B031,ID-B031｜交互日志值得保留，二分行为只是探索性解释,10.1017/pds.2025.10070,2025,background-only,
+B032,ID-B032｜大量出图仍解决不了多视与局部控制,10.3390/jtaer19010035,2024,background-only,
+B033,B033｜DREAMWORLDS: A CASE STUDY PRESENTING THE POTENTIAL OF TEXT-TO-IMAGE AI IN PRODUCT DESIGN EDUCATION,10.35199/epde.2024.30,2024,active,### 原文局限 - 研究对象为一年级本科生，未涉及硕士/专业设计师，迁移到硕士级造型研究需谨慎 - 没有对最终玩具造型进行客观造型质量或用户评价的量化数据
+B034,B034｜Product Styling Cognition Based on Kansei Engineering Theory and Implicit Measurement,10.3390/app13179577,2023,active,### 原文局限 - ERP空间分辨率有限，难以精确脑功能定位，未来拟融合fMRI以提高空间分辨率。 - 仅基于意象匹配度评价展开，未涉及颜色与材质认知的差异化生理测量。
+B035,B035｜CONCEPT TO PRODUCTION WITH A GEN AI DESIGN ASSISTANT: AIDA,10.35199/epde.2024.40,2024,active,### 原文局限 - 无用户参与评估，无定量指标，结果仅为作者主观印象 - 示例产品（椅子）为单件，产品造型变量与参数化深度有限，未覆盖四旋翼无人机等多组件系统
+B036,B036｜Study on Function and Appearance Design of Smart Street Lamps Based on Kansei Engineering: A Literature Review,10.17576/jkukm-2023-35(5)-22,2023,active,### 原文局限 - 本文为综述，未提出新算法或新实验；6篇KE-路灯文献数量有限且年代较早（2018–2021），代表性受限 - 仅做描述性归纳，未对纳入文献进行系统质量评估或元分析
+B037,B037｜Bridging LCA and design: an LLM-driven pipeline for generating sustainable design alternatives from LCA hotspot analysis,,2026,active,### 原文局限 - 仅1个产品案例（小样本量） - 评估专家仅3人，统计意义有限，未含焦点小组或访谈
+B038,ID-B038｜人类保留发起、监督与最终决定,10.1017/pds.2026.10459,2026,citable-with-restrictions,
+B039,ID-B039｜可借“探索—整理—承诺—人工确认”，不照搬效果数值,10.1017/pds.2026.10604,2026,citable-with-restrictions,
+B040,ID-B040｜AI评委可以参考，不能独立裁决,10.1017/pds.2026.10603,2026,background-only,
+B041,ID-B041｜AI建议多不等于协作好，也不等于更高效,10.1017/pds.2025.10298,2025,background-only,
+B042,B042｜The influence of aesthetic taste on product choice: does mode of evaluation impact decision making?,,2025,active,### 原文局限 - 样本量小，专家招募困难（6 个月仅招到 26 位设计师） - 主持人-受试者关系与在线双工限制可能影响作答，仅 6% 选独立浏览
+B043,ID-B043｜虚拟原型评价应按目的选指标，不必全做,10.1017/pds.2025.10174,2025,citable-with-restrictions,
+B044,ID-B044｜只提醒“不要只给文字”，不增加眼动实验,10.1017/pds.2025.10092,2025,background-only,
+B045,ID-B045｜AI可辅助整理理由，不能担任毕业论文裁判,10.1017/pds.2025.10191,2025,background-only,
+B046,B046｜Creating design catalog from patent documents with large language model for design concept generation,,2025,active,### 原文局限 - 未做设计师主观评价与可用性统计，案例为单一跆拳道场景 - LLM存在错误抽取，需依赖人工核验Source字段
+B047,ID-B047｜系统复杂度指标不等于视觉造型复杂度,10.1017/pds.2026.10363,2026,background-only,
+B048,B048｜How are professional practices adopting generative AI? The case of an engineering design and product development team,,2026,active,### 原文局限 - 单组织单地区（欧洲汽车OEM）嵌入式案例，缺乏跨企业、跨地域统计可推广性。 - 三周田野周期较短，且访谈未与实际设计成果的量化效果挂钩。
+B049,ID-B049｜尺寸级差必须服从真实部件与工程约束,10.1017/pds.2026.10413,2026,background-only,
+B050,B050｜Engineering design through dialogue: a method for analysing speech-based human-AI conversation,,2026,active,### 原文局限 - 所有转写与编码由单一研究者完成，未评估评分者一致性 - 样本仅10名来自同一院系的学生，且实验未完全平衡（先H-H再H-AI）
+B051,ID-B051｜资源同质性不是视觉家族一致性,10.1017/pds.2026.10364,2026,background-only,
+B052,B052｜Towards Fostering Human Ownership in GenAI-Assisted Design,,2025,active,### 原文局限 - 依赖自我报告的问卷与工作坊数据，存在主观性，未做观察法或纵向追踪 - 样本集中于Autodesk客户网络与单一行业会议，可能存在选择偏差
+B053,B053｜Innovation of meaning: design-driven study based on the interpretive theory of new meaning,,2024,active,### 原文局限 - 开发对象限定为消费品，目标用户限定为千禧一代与Z世代，更广泛领域可复现性未验证。 - 视觉与功能层设计流程的详细方法未给出。
+B054,B054｜D³IKIT: data-driven design innovation kit,,2024,active,### 原文局限 - 仅 8 个数据驱动创新概念，样本较小且按团队生成，统计意义有限 - 工具与流程仍偏高层，缺少对单个工具深入使用指引
+B055,B055｜Design Knowledge Interaction Model: A Proposal from a Cognitive Perspective,10.35199/norddesign2024.64,2024,active,### 原文局限 - 纯理论构建，缺乏实证验证，作者已声明未来需长期观察实验。 - 未给出可操作的AI工具开发方案或知识库结构化方法。
+B056,B056｜Explaining a Jewelry Design Process: Using a generative Design Method Called Shape Grammars and Producing the Product with 3D Printing,10.4236/adr.2024.121001,2023,active,### 原文局限 - 单一案例，无用户或专家评价，结论难以泛化 - 形文法规则为手工序列，未实现计算化生成或参数化扫描
+B057,B057｜How would engineers use LLMs for assembly search if they could? – An empirical study for fostering generative AI-driven design reuse in the future,,2026,active,### 原文局限 - 样本来源单一（仅Bosch Manufacturing Solutions专用机械领域），非标产品导向，结果难以推广到标准化产品设计 - 调查未接入真实检索系统，提示词为假设情境下自发性撰写，与真实工作流存在偏差
+B058,B058｜More AI means less design? Empirical insights from design education,,2026,active,"### 原文局限 - 样本来自单一学期单一课程（149人/49团队），横向相关而非因果，未来需多学期纵向数据 - 相关分析无法确立因果，AI可能反向与低先验知识/低动机学生的""补偿性""使用相关"
+B059,B059｜Design and evaluation of an AI-based application to enhance creativity in design thinking workshops,,2026,active,### 原文局限 - 无法控制不同主题与不同班级参与者差异，WS-A与WS-B在主题（太空酒店 vs 新食品）和DT理解程度上存在显著差异 - AI组最终评价组数（19组）显著多于纯人类组（15组），样本不对称
+B060,B060｜Paradigmatic design thinking: how generative AI changes the role of human designers,,2025,active,### 原文局限 - 本文为理论/概念框架建构，未报告针对生成式造型设计（如无人机造型）的实证实验与定量结果 - 案例仅以太阳能板阵列思想实验形式呈现，未涉及工业产品造型设计实践
+B061,B061｜The balance between a usable and emotional product design – a comparison of different methods for prioritising relevant influencing factors,,2024,active,### 原文局限 - 示例案例为游戏机而非工业产品设计对象，不涉及造型参数化或生成式流程。 - 案例评估由论文作者完成，未报告受试者数量、招募与人口学信息。
+B062,ID-B062｜可看感性工学版图，不用百分比替本课题选方法,10.25077/josi.v23.n1.p92-108.2024,2024,background-only,
+B063,B063｜A Framework for Defining Innovation in the New Development of Modular Product Families,10.35199/norddesign2024.27,2024,active,### 原文局限 - 论文主体为工程产品架构与产品族管理，不是工业设计造型或人智协同生成方法 - 未涉及任何生成式AI、参数化造型或设计师在环流程
+B064,B064｜Structuring the design space while exploring it: a cognitive perspective on design space exploration,,2026,active,### 原文局限 - Extended-DSE模型主要为概念性，缺乏实证验证 - 认知机制（抽象、校准、再框定等）与数字界面/可视化的交互尚未深入探讨
+B065,ID-B065｜把连续形态变量与离散拓扑变量分开,10.1017/pds.2026.10691,2026,citable-with-restrictions,
+B066,B066｜Developing a Process Model for Future-Robust Advancement of Product Portfolios,10.35199/norddesign2024.49,2024,active,### 原文局限 - RQ3未能被现有结果明确回答，过程模型的支持效果尚待企业内数月至数年级别的落地验证 - 评估样本规模小（方法学者12人+企业专家4人），且企业专家来自单一企业，缺乏跨行业比较
+B067,"B067｜AI-powered inventive design: idea funnelling, concept creation, and hybrid problem-solving teams",,2025,active,### 原文局限 - 工程任务样本数量有限（文中承认样本较小） - AI方案的描述通常缺乏技术细节与图形化呈现，难以直接进入工程实施
+B068,B068｜DS-Viz: a method for visualising design spaces,,2024,active,### 原文局限 - 依赖研究者对维度表的设计，距离度量选择具有主观性 - UMAP为近似算法，二维嵌入存在失真，需要敏感性分析
+B069,"B069｜Human-AI Co-Design and Co-Creation: A Review of Emerging Approaches, Challenges, and Future Directions",10.1609/aaaiss.v6i1.36061,2025,active,### 原文局限 - 综述未给出统一的样本与定量数据，结论质量受限于被引研究 - 主要聚焦HCI/AI与教育语境，对工业造型生成的工程化、人因约束讨论较薄
+HCI-C0004,HCI-C0004｜AI适合前期发散，最终造型仍由设计师收敛,10.1145/3706598.3714148,2025,citable-with-restrictions,- 对象是影视、动画和游戏的环境概念设计师，不是工业设计师或无人机设计师。 - 16人研究比较的是参与者各自不同的原流程，混合Pinterest、Midjourney、DALL-E与ChatGPT，无法定位哪个系统组件产生作用。 - 14项7点偏好指标分别检验，原文未报告多重比较校正；p=.033和p=.046等边缘结果不宜强调。
+HCI-C0026,HCI-C0026｜把模糊想法拆成可选的设计维度,10.1145/3706598.3714211,2025,citable-with-restrictions,
+HCI-C0031,HCI-C0031｜空间修改用图，语义修改用文字,10.1145/3742413.3789080,2026,citable-with-restrictions,- 研究的是二维生成图像精修，不是CAD、三维建模或参数化造型。 - 工业设计背景参与者很少，样本大量来自UI/UX、平面、建筑等领域。 - visual-only和combination用数位笔，text-only的局部选择用鼠标；更快可能部分来自设备差异。
+HCI-C0525,HCI-C0525｜工具管可计算目标，设计师保留审美取舍,10.1007/s00163-024-00440-y,2024,citable-with-restrictions,
+HCI-C0543,HCI-C0543｜图像更不相似，不等于工业设计更可用,10.1017/dsj.2024.13,2024,background-only,
+HCI-N008,HCI-N008｜图文双条件多视生成的边界,10.1109/iccv51701.2025.01739,2025,background-only,
+HCI-N009,HCI-N009｜单图补多视角仍怕大角度,10.1109/iccv51701.2025.01107,2025,background-only,
+HCI-N011,HCI-N011｜二维主体相似不等于三维造型一致,10.1109/cvpr52733.2024.00648,2024,background-only,
+HCI-N012,HCI-N012｜少参数定制仍有控制权衡,10.1109/cvpr52733.2024.00782,2024,background-only,
+HCI-N023,HCI-N023｜把实体原型拆成可核验的虚拟部件,10.1145/3706598.3713686,2025,citable-with-restrictions,
+HCI-V006,HCI-V006｜图像受控不等于造型参数化,10.52202/075280-3472,2023,background-only,
+HCI-V010,HCI-V010｜直接3D生成仍不是可制造CAD,10.48550/arxiv.2311.09217,2024,background-only,
+HCI-V013,HCI-V013｜题目有UAV，但不是多旋翼造型研究,10.2514/6.2024-1708,2024,background-only,
+HCI-X0163,HCI-X0163｜把AI理解的设计意图变成可编辑对象,10.1145/3800645.3813064,2026,citable-with-restrictions,
+HCI-X0165,HCI-X0165｜把发散意图拆成属性、方向和范围,10.1145/3800645.3813005,2026,citable-with-restrictions,
+HCI-X0337,HCI-X0337｜底模迁移不是产品族迁移,10.1109/iccv51701.2025.01702,2025,background-only,
+HCI-X0430,HCI-X0430｜角色跨图一致不等于产品多视一致,10.1145/3658157,2024,background-only,
+HCI-X0504,HCI-X0504｜看起来像AI共创，不等于AI真的生成,10.1145/3706598.3713720,2025,background-only,
+HCI-X1037,HCI-X1037｜多视图可供拟合，但不是参数化CAD,10.1109/cvpr52733.2024.00482,2024,background-only,
+HCI-X1246,HCI-X1246｜二维遮罩控制不了精细产品结构,10.1109/iccv51070.2023.00708,2023,background-only,
+HCI-X1321,HCI-X1321｜风格LoRA也会改坏内容,10.1145/3680528.3687642,2024,background-only,
+HCI-X1459,HCI-X1459｜先纠正AI看错了什么，再讨论怎么改,10.1145/3772318.3790929,2026,citable-with-restrictions,
+HCI-X2010,HCI-X2010｜让AI推动问题空间与方案空间往返,10.1145/3706598.3713869,2025,citable-with-restrictions,
+HCI-X2069,HCI-X2069｜LLM规划正确，生成器也可能不执行,10.1109/cvpr52733.2024.00758,2024,background-only,
+X0806,HCI-X0806｜可借“生成—组合—局部编辑”，不能引用已验证可制造,10.1145/3746059.3747691,2025,citable-with-restrictions,
+U001,UAV-U001｜AI图像先变成部件库，再进入无人机方案,10.1016/j.ijadr.2024.03.001,2024,citable-with-restrictions,
+U002,UAV-U002｜保留形态表，放弃有问题的权重,10.21606/drs.2020.164,2020,citable-with-restrictions,
+U003,UAV-U003｜只作气动边界，数值结论不采用,10.13841/j.cnki.jxsj.2025.02.023,2025,background-only,
+N001,NEW-N001｜为什么AI结果必须由设计师复核,10.1017/pds.2026.10576,2026,citable-with-restrictions,- 这是“综述的综述”，会叠加原始研究与综述作者两层选择偏差。 - 时间窗只含2024–2025，适合反映近期议题，不能代替历史基础文献。 - LLM初筛只说抽查50篇“确认”，没有报告precision、recall或一致性系数。
+N002,NEW-N002｜几何像，不等于工程上可用,10.1017/pds.2026.10577,2026,background-only,- 作者明确说演示是`existence proof`，未覆盖真实设计复杂度。 - 虽称“自学习/RL”，演示中LLM没有权重更新，实际是工具调用和仿真反馈循环。 - 未报告定量结果、失败率、比较基线、统计或可复现协议。
+N003,NEW-N003｜“感性＋约束”可启发，但还没被验证,10.54941/ahfe1002993,2023,background-only,- 无具体设计对象，无用户或产品样本。 - 无问卷、SD量表、统计、方案或对照。 - 无参数化建模、生成式AI、人智协同或无人机内容。
+N004,N004｜Kansei engineering review and challenges as an ergonomic consumer-oriented technology for product development,10.1016/j.ergon.2026.104033,2026,metadata-only,
+N005,"N005｜Design and Development of a Modular, Low-Cost 3D Printed Multirotor UAV Airframe",10.3233/ATDE260095,2026,official-html-fulltext,
+N006,N006｜Research Study Concerning the Structural Design of a Drone Using 3D Print Technology,10.1002/masy.70405,2026,official-html-fulltext,
+N007,N007｜Drone design for Circularity,10.1088/1757-899X/1342/1/012012,2026,metadata-and-abstract,
+2026-10-12-方法草稿三篇定位复核,方法草稿三篇定位复核,,,active,
+2026-10-12-条件忠实度与设计评价的局部复核,条件忠实度与设计评价：别混成一个通过,,,active,
+2026-10-13-A007协同留痕与人的判断,协同研究记录什么,,,active,
+2026-10-14-A008最近邻方法与对照边界,最近邻能借方法，不能替我们证明效果,,,active,
+2026-11-01-前三章整合的原文定位复核,前三章整合的原文定位复核,,,selected-pages-reviewed,
+2026-11-07-原文输入与评价方法复核,原文输入与评价方法复核,,,targeted-passages-reviewed,
+2026-11-07-飞书文献补充第一批,飞书文献补充第一批：先核对证据，不凑篇数,,,partial-review-pending-feishu-access,
+HCI-C0004,HCI-C0004 全文复核结论,,,citable-with-restrictions,1. 14个偏好指标分别检验，论文没有报告Bonferroni、Holm或FDR校正；边缘p值不宜作为核心结果。 2. 所有条件和系统来源对参与者可见，主要结果是自报偏好而非盲评输出。 3. 设计产出没有外部专家统一评分；作者在p.20也承认总结性研究主要依赖自报。
+HCI-C0026,HCI-C0026 全文复核结论,,,citable-with-restrictions,
+HCI-C0031,HCI-C0031 全文复核结论,,,citable-with-restrictions,1. 自研量表主要测表达体验与感知控制，未与客观结果质量建立联系。 2. 视觉/组合条件使用数位笔，文本条件的局部选择用鼠标；模态与设备没有解耦。 3. 约1/3参与者为UI/UX背景，工业设计相关参与者只有少数学生/实习生及汽车内饰设计师。
+HCI-C0525,HCI-C0525 全文复核,,,citable-with-restrictions,
+HCI-C0543,HCI-C0543 全文复核,,,background-only,
+HCI-N008,HCI-N008 全文复核,,,background-only,
+HCI-N009,HCI-N009 全文复核,,,background-only,
+HCI-N011,HCI-N011 全文复核,,,background-only,
+HCI-N012,HCI-N012 全文复核,,,background-only,
+HCI-N023,HCI-N023 全文复核,,,citable-with-restrictions,
+HCI-V006,HCI-V006 全文复核,,,background-only,
+HCI-V010,HCI-V010 全文复核,,,background-only,
+HCI-V013,HCI-V013 全文复核结论,,,background-only,
+HCI-X0163,HCI-X0163 全文复核,,,citable-with-restrictions,
+HCI-X0165,HCI-X0165 全文复核,,,citable-with-restrictions,
+HCI-X0337,HCI-X0337 全文复核,,,background-only,
+HCI-X0430,HCI-X0430 全文复核,,,background-only,
+HCI-X0504,HCI-X0504 全文复核,,,background-only,
+HCI-X0806,HCI-X0806 全文复核,,,citable-with-restrictions,
+HCI-X1037,HCI-X1037 全文复核,,,background-only,
+HCI-X1246,HCI-X1246 全文复核,,,background-only,
+HCI-X1321,HCI-X1321 全文复核,,,background-only,
+HCI-X1459,HCI-X1459 全文复核,,,citable-with-restrictions,
+HCI-X2010,HCI-X2010 全文复核,,,citable-with-restrictions,
+HCI-X2069,HCI-X2069 全文复核,,,background-only,
+ID-A001,A001 全文复核结论,,,citable-with-restrictions,
+ID-A002,A002 全文复核结论,,,background-only,
+ID-A003,A003 全文复核结论,,,background-only,
+ID-A004,A004 全文复核结论,,,exclude-from-thesis,
+ID-A005,A005 全文复核结论,,,background-only,
+ID-A006,A006 全文复核结论,,,background-only,
+ID-A007,A007 全文复核结论,,,citable-with-restrictions,
+ID-A008,A008 全文复核结论,,,citable-with-restrictions,
+ID-A009,A009 全文复核结论,,,exclude-from-thesis,
+ID-A010,A010 全文复核结论,,,citable-with-restrictions,
+ID-A011,A011 全文复核结论,,,background-only,
+ID-A012,A012 全文复核结论,,,citable-with-restrictions,
+ID-A013,A013 全文复核结论,,,excluded-from-formal-evidence,
+ID-A014,A014 全文复核结论,,,background-only,
+ID-A015,A015 全文复核结论,,,citable-with-restrictions,
+ID-A016,A016 全文复核结论,,,citable-with-restrictions,
+ID-A017,A017 全文复核结论,,,citable-with-restrictions,
+ID-A018,A018 全文复核结论,,,background-only,
+ID-A019,A019 全文复核结论,,,background-only,
+ID-A020,A020 全文复核结论,,,citable-with-restrictions,
+ID-A021,A021 全文复核结论,,,background-only,
+ID-A022,A022 全文复核结论,,,background-only,
+ID-A023,A023 全文复核结论,,,background-only,
+ID-A024,A024 全文复核结论,,,background-only,
+ID-A025,A025 全文复核结论,,,citable-with-restrictions,1. **非随机分组。** 学生自行选择GenAI或传统方法，可能存在工具偏好、能力和项目类型差异。 2. **项目题目各不相同。** 21个自定brief没有同任务控制，类别本身可能影响可找到/可生成素材的多样性。 3. **样本很小。** n=12与n=9；作者也承认样本量影响显著性可靠性。
+ID-A026,A026 全文复核结论,,,background-only,
+ID-A027,A027 全文复核结论,,,background-only,
+ID-A028,A028 全文复核结论,,,citable-with-restrictions,- 概念框架未在多领域、多任务或多AI配置中实证验证。 - 未进行控制实验或工业场景应用。 - 示例不提供效度、效率、协同模式有效性、AI性能或方法质量证据。
+ID-A029,A029 全文复核结论,,,citable-with-restrictions,
+ID-A030,A030 全文复核结论,,,background-only,
+ID-A031,A031 全文复核结论,,,citable-with-restrictions,
+ID-B001,ID-B001 全文复核,,,background-only,
+ID-B002,ID-B002 全文复核,,,background-only,
+ID-B003,ID-B003 全文复核,,,background-only,
+ID-B004,ID-B004 全文复核,,,background-only,
+ID-B005,ID-B005 全文复核,,,background-only,
+ID-B006,ID-B006 全文复核,,,background-only,
+ID-B007,ID-B007 全文复核,,,background-only,
+ID-B008,ID-B008 全文复核,,,background-only,
+ID-B009,ID-B009 全文复核,,,citable-with-restrictions,
+ID-B010,ID-B010 全文复核,,,background-only,
+ID-B011,ID-B011 全文复核,,,background-only,
+ID-B012,ID-B012 全文复核,,,background-only,
+ID-B014,ID-B014 全文复核,,,background-only,
+ID-B015,ID-B015 全文复核,,,background-only,
+ID-B016,ID-B016 全文复核,,,background-only,
+ID-B017,ID-B017 全文复核,,,citable-with-restrictions,
+ID-B018,ID-B018 全文复核,,,background-only,
+ID-B020,ID-B020 全文复核,,,background-only,
+ID-B021,ID-B021 全文复核,,,citable-with-restrictions,
+ID-B023,ID-B023 全文复核,,,background-only,
+ID-B024,ID-B024 全文复核,,,background-only,
+ID-B028,ID-B028 全文复核,,,background-only,
+ID-B029,ID-B029 全文复核,,,background-only,
+ID-B030,ID-B030 全文复核,,,background-only,
+ID-B031,ID-B031 全文复核,,,background-only,
+ID-B032,ID-B032 全文复核,,,background-only,
+ID-B038,ID-B038 全文复核,,,citable-with-restrictions,
+ID-B039,ID-B039 全文复核,,,citable-with-restrictions,
+ID-B040,ID-B040 全文复核,,,background-only,
+ID-B041,ID-B041 全文复核,,,background-only,
+ID-B043,ID-B043 全文复核,,,citable-with-restrictions,
+ID-B044,ID-B044 全文复核,,,background-only,
+ID-B045,ID-B045 全文复核,,,background-only,
+ID-B047,ID-B047 全文复核,,,background-only,
+ID-B049,ID-B049 全文复核,,,background-only,
+ID-B051,ID-B051 全文复核,,,background-only,
+ID-B062,ID-B062 全文复核,,,background-only,
+ID-B065,ID-B065 全文复核,,,citable-with-restrictions,
+NEW-N001,NEW-N001 全文复核结论,,,citable-with-restrictions,
+NEW-N002,NEW-N002 全文复核结论,,,background-only,
+NEW-N003,NEW-N003 全文复核结论,,,background-only,
+UAV-U001,UAV-U001 全文复核结论,,,citable-with-restrictions,
+UAV-U002,UAV-U002 全文复核结论,,,citable-with-restrictions,
+UAV-U003,UAV-U003 全文复核结论,,,background-only,
