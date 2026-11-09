@@ -1,0 +1,12 @@
+[
+  {
+    "blind": "R94FB8558",
+    "case": "G3-with-reference",
+    "rgb_sha256": "801fcab8b8888c614aac4bed8e0f68ba7d898361c952c11cdc62e0152a22b400"
+  },
+  {
+    "blind": "RF7AF1ECE",
+    "case": "G3-text-only",
+    "rgb_sha256": "554622d7b5ea625049ff74fc937366506372f3da2cee0334ba9c45f8bb194b53"
+  }
+]

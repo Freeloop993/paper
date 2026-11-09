@@ -1,0 +1,47 @@
+{
+  "cases": {
+    "G2b-a": {
+      "A": {
+        "usable": false,
+        "mean_target_px": null
+      },
+      "B": {
+        "usable": false,
+        "mean_target_px": null
+      }
+    },
+    "G2b-c": {
+      "A": {
+        "usable": false,
+        "mean_target_px": null
+      },
+      "B": {
+        "usable": false,
+        "mean_target_px": null
+      }
+    },
+    "G2b-d": {
+      "A": {
+        "usable": false,
+        "mean_target_px": null
+      },
+      "B": {
+        "usable": false,
+        "mean_target_px": null
+      }
+    },
+    "G2b-b": {
+      "A": {
+        "usable": false,
+        "mean_target_px": null
+      },
+      "B": {
+        "usable": false,
+        "mean_target_px": null
+      }
+    }
+  },
+  "eligible": [],
+  "selected": null,
+  "human_records_received": 0
+}

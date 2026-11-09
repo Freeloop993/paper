@@ -1,0 +1,22 @@
+[
+  {
+    "blind": "R92180970",
+    "case": "G2b-a",
+    "rgb_sha256": "3bb3d23b75d4d03bddd4a7a468753fb0287a716c76ba2284e9bc7b5be848b693"
+  },
+  {
+    "blind": "RE185C8E9",
+    "case": "G2b-c",
+    "rgb_sha256": "03235af9f8967289e24b026a1d2e592472ce9550a9a4aa4951aa6efc1bab5983"
+  },
+  {
+    "blind": "RDACD3707",
+    "case": "G2b-d",
+    "rgb_sha256": "82187ea5e556b23cfb989163dae90f9a46b40d701e96b41fe28255589a98f141"
+  },
+  {
+    "blind": "RC708B23F",
+    "case": "G2b-b",
+    "rgb_sha256": "17075134b236b5b8a94ec9b8137b9f4b476fa87c57b03c63368fd33c92055c68"
+  }
+]

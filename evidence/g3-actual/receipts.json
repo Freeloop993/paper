@@ -1,0 +1,283 @@
+{
+  "archive_sha256": "9595ea74e87d8076f71b1ce8ac3b24cecfa2737070b3f1b12884ef913346b6ed",
+  "remote_package_manifest_sha256": "54ba00108919eebcffc9e327ef4e77dd3c7029705b11393b5cb0901a84020f54",
+  "phase_whole_worker": "six_complete",
+  "whole_worker_error": null,
+  "started_utc": "2026-11-09T15:56:58.202916+00:00",
+  "finished_utc": "2026-11-09T16:03:44.645780+00:00",
+  "attempted": [
+    "G3-text-only",
+    "G3-with-reference"
+  ],
+  "accepted": [
+    "G3-text-only",
+    "G3-with-reference"
+  ],
+  "completed": [
+    "G3-text-only",
+    "G3-with-reference"
+  ],
+  "retries": 0,
+  "cases": [
+    {
+      "case": "G3-text-only",
+      "prompt_id": "64f62420-8d73-4f4a-a10d-74424d207a31",
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Revise one everyday aerial photography quadrotor concept. Integrate the front camera more smoothly into the nose. Retain the body's main silhouette, panel divisions, motor layout and arm-root transitions. Keep the same strict orthographic top view, lighting and framing.",
+            "negative_prompt": "cropped product, collage, labels, watermark, disconnected arms, extra rotor",
+            "resolution": 1024
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026111101,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "G3-text-only"
+          }
+        }
+      },
+      "png_sha256": "e442abc02199b856d1d68ddcc46ea3bd2ee49fe087c7a215b74058cc080cc2c8",
+      "rgb_sha256": "554622d7b5ea625049ff74fc937366506372f3da2cee0334ba9c45f8bb194b53",
+      "raw_request_sha256": "013279eb224245ca2abf5ba59f1d30fec3bf559a780369c924bd4466f64de703",
+      "raw_history_sha256": "89f79a27327cb665e8b3b1967c4076f6b2bca843b5d1bf70e1564ffffe115f13",
+      "status": {
+        "status_str": "success",
+        "completed": true,
+        "messages": [
+          [
+            "execution_start",
+            {
+              "prompt_id": "64f62420-8d73-4f4a-a10d-74424d207a31",
+              "timestamp": 1794240121790
+            }
+          ],
+          [
+            "execution_cached",
+            {
+              "nodes": [],
+              "prompt_id": "64f62420-8d73-4f4a-a10d-74424d207a31",
+              "timestamp": 1794240121791
+            }
+          ],
+          [
+            "execution_success",
+            {
+              "prompt_id": "64f62420-8d73-4f4a-a10d-74424d207a31",
+              "timestamp": 1794240165911
+            }
+          ]
+        ]
+      },
+      "identical_to_frozen_and_history": true,
+      "sampler_cached": false
+    },
+    {
+      "case": "G3-with-reference",
+      "prompt_id": "b91811d7-6453-4fb1-bf47-0d8c6c890faf",
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Revise one everyday aerial photography quadrotor concept. Integrate the front camera more smoothly into the nose. Retain the body's main silhouette, panel divisions, motor layout and arm-root transitions. Keep the same strict orthographic top view, lighting and framing.",
+            "negative_prompt": "cropped product, collage, labels, watermark, disconnected arms, extra rotor",
+            "resolution": 1024,
+            "images.image_1": [
+              "15",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026111101,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "G3-with-reference"
+          }
+        },
+        "15": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "parent-ac35060507d2694ab6ffe46c18d1b99e46841e6ea3c79181b697505bb818fdc5.png"
+          }
+        }
+      },
+      "png_sha256": "d687bfb3197e0542bb19ce7ad42d1758d0fb2a37289cf9a41b0be42034dfbdae",
+      "rgb_sha256": "801fcab8b8888c614aac4bed8e0f68ba7d898361c952c11cdc62e0152a22b400",
+      "raw_request_sha256": "bfdfeb8cc77bf53fe56cfa3e402e9e277f8efa6a9aa692f5eedf2369c2a7c2c6",
+      "raw_history_sha256": "bffa0a5839c94e659b75e5e1a18c7afb6bf264dced74a2f59b8cb37fb6652565",
+      "status": {
+        "status_str": "success",
+        "completed": true,
+        "messages": [
+          [
+            "execution_start",
+            {
+              "prompt_id": "b91811d7-6453-4fb1-bf47-0d8c6c890faf",
+              "timestamp": 1794240170095
+            }
+          ],
+          [
+            "execution_cached",
+            {
+              "nodes": [],
+              "prompt_id": "b91811d7-6453-4fb1-bf47-0d8c6c890faf",
+              "timestamp": 1794240170095
+            }
+          ],
+          [
+            "execution_success",
+            {
+              "prompt_id": "b91811d7-6453-4fb1-bf47-0d8c6c890faf",
+              "timestamp": 1794240219093
+            }
+          ]
+        ]
+      },
+      "identical_to_frozen_and_history": true,
+      "sampler_cached": false
+    }
+  ]
+}

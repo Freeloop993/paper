@@ -1,0 +1,52 @@
+{
+  "cases": {
+    "R92180970": {
+      "points": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "body_connected_all_four": false,
+      "copied_flat_marks": true,
+      "readable_as_drone": true,
+      "note": "四处圆心均仅见黑色实心点，没有可辨认的实体轴帽、轴承或桨根。圆圈与细斜线呈平面示意标记；未见四条实体机臂。中央机身、相机及四旋翼布局仍能表达无人机概念。"
+    },
+    "RC708B23F": {
+      "points": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "body_connected_all_four": false,
+      "copied_flat_marks": true,
+      "readable_as_drone": true,
+      "note": "四处圆心是形状不规则的黑色平面标记，无法定位实体电机中心。重复圆圈和细斜线明显呈示意图形；机身侧面的浅轮廓不足以确认四条实体机臂。整体仍可读作无人机概念。"
+    },
+    "RDACD3707": {
+      "points": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "body_connected_all_four": true,
+      "copied_flat_marks": true,
+      "readable_as_drone": true,
+      "note": "四个圆心只有黑点，未见实体电机结构。机身两侧可见四条与机身连续的灰色短臂，但短臂没有延伸至圆心；外围圆圈和细斜线仍是平面示意标记。整体可读作无人机。"
+    },
+    "RE185C8E9": {
+      "points": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "body_connected_all_four": true,
+      "copied_flat_marks": true,
+      "readable_as_drone": true,
+      "note": "四处圆心均为十字标记，没有可定位的实体轴帽、轴承或桨根。四条较宽的灰色短臂与连续机身相接，但末端未到达圆心。重复圆圈与十字呈平面引导标记，整体仍可读作无人机。"
+    }
+  }
+}

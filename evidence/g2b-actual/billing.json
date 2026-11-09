@@ -1,0 +1,34 @@
+{
+  "timezone": "Asia/Shanghai",
+  "single_shared_container": true,
+  "includes": [
+    "G2b",
+    "G3"
+  ],
+  "utc_start_bound": "2026-11-09T15:55:38+00:00",
+  "start_ui_utc": "2026-11-09T15:55:39.420Z",
+  "shutdown_ui_utc": "2026-11-09T16:05:18.059Z",
+  "verified_off_utc": "2026-11-09T16:05:39.598Z",
+  "elapsed_through_verified_off_seconds": 601.598,
+  "price_CNY_hour": 2.04,
+  "disk_quote_CNY_hour": 0.0,
+  "posted_compute_orders": [
+    {
+      "from": "2026-11-09 23:55:44",
+      "to": "2026-11-10 00:00:00",
+      "CNY": 0.14
+    },
+    {
+      "from": "2026-11-10 00:00:00",
+      "to": "2026-11-10 00:05:17",
+      "CNY": 0.18
+    }
+  ],
+  "billed_seconds": 573,
+  "posted_compute_CNY": 0.32,
+  "balance_before_CNY": 6.23,
+  "balance_after_CNY": 5.91,
+  "prior_G2_0_41_excluded": true,
+  "combined_authorized_ceiling_CNY": 4,
+  "combined_authorized_minutes": 54
+}

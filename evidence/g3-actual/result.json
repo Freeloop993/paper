@@ -1,0 +1,23 @@
+{
+  "reader": "AI",
+  "pair_identical_rgb": false,
+  "cases": {
+    "G3-with-reference": {
+      "features_kept": 3,
+      "all_three_judged": true,
+      "camera_edit": "不可辨",
+      "possible_copy": "否",
+      "rgb_equals_parent": false
+    },
+    "G3-text-only": {
+      "features_kept": 0,
+      "all_three_judged": true,
+      "camera_edit": "不可辨",
+      "possible_copy": "否",
+      "rgb_equals_parent": false
+    }
+  },
+  "retention_signal_by_this_reader": true,
+  "human_readers": 0,
+  "combined_decision": "awaiting independent human return"
+}

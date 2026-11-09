@@ -1,0 +1,717 @@
+{
+  "archive_sha256": "9595ea74e87d8076f71b1ce8ac3b24cecfa2737070b3f1b12884ef913346b6ed",
+  "remote_package_manifest_sha256": "54ba00108919eebcffc9e327ef4e77dd3c7029705b11393b5cb0901a84020f54",
+  "phase_whole_worker": "six_complete",
+  "whole_worker_error": null,
+  "started_utc": "2026-11-09T15:56:58.202916+00:00",
+  "finished_utc": "2026-11-09T16:03:44.645780+00:00",
+  "attempted": [
+    "G2b-a",
+    "G2b-b",
+    "G2b-c",
+    "G2b-d"
+  ],
+  "accepted": [
+    "G2b-a",
+    "G2b-b",
+    "G2b-c",
+    "G2b-d"
+  ],
+  "completed": [
+    "G2b-a",
+    "G2b-b",
+    "G2b-c",
+    "G2b-d"
+  ],
+  "retries": 0,
+  "cases": [
+    {
+      "case": "G2b-a",
+      "prompt_id": "388c51f5-ef72-40c6-b43b-6a01fba58c82",
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Exactly 4 rotors. Interpret the circles and crosses only as rotor disk and motor center locations. Choose the fuselage silhouette, sections and material transitions freely. Show one complete drone in strict orthographic top view, front up, on white. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "5": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "skeleton.png"
+          }
+        },
+        "6": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "5",
+              0
+            ],
+            "upscale_method": "nearest-exact",
+            "width": 1024,
+            "height": 1024,
+            "crop": "disabled"
+          }
+        },
+        "8": {
+          "class_type": "ModelPatchLoader",
+          "inputs": {
+            "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+          }
+        },
+        "9": {
+          "class_type": "QwenImageDiffsynthControlnet",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "model_patch": [
+              "8",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ],
+            "strength": 0.7,
+            "start_percent": 0,
+            "end_percent": 1.0
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "9",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026111104,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "G2b-a"
+          }
+        }
+      },
+      "png_sha256": "360f0c4a1ffc5ab1561da6a0745c7665986f2c1daa204ce946b17f211e5ddc81",
+      "rgb_sha256": "3bb3d23b75d4d03bddd4a7a468753fb0287a716c76ba2284e9bc7b5be848b693",
+      "raw_request_sha256": "cec618173f279f9bcd45435f5a58ca4bbecae88bfe7d6200b68a43359e6a4795",
+      "raw_history_sha256": "b9e04a9f87b461f130df78ff9579ce1ef49ed36766ffe3474a1ca073f4dbad81",
+      "status": {
+        "status_str": "success",
+        "completed": true,
+        "messages": [
+          [
+            "execution_start",
+            {
+              "prompt_id": "388c51f5-ef72-40c6-b43b-6a01fba58c82",
+              "timestamp": 1794239872385
+            }
+          ],
+          [
+            "execution_cached",
+            {
+              "nodes": [],
+              "prompt_id": "388c51f5-ef72-40c6-b43b-6a01fba58c82",
+              "timestamp": 1794239872385
+            }
+          ],
+          [
+            "execution_success",
+            {
+              "prompt_id": "388c51f5-ef72-40c6-b43b-6a01fba58c82",
+              "timestamp": 1794239925959
+            }
+          ]
+        ]
+      },
+      "identical_to_frozen_and_history": true,
+      "sampler_cached": false
+    },
+    {
+      "case": "G2b-b",
+      "prompt_id": "5be7f04c-e678-49a4-8620-70c7252beae0",
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Exactly 4 rotors. Interpret the circles and crosses only as rotor disk and motor center locations. Choose the fuselage silhouette, sections and material transitions freely. Show one complete drone in strict orthographic top view, front up, on white. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "5": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "skeleton.png"
+          }
+        },
+        "6": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "5",
+              0
+            ],
+            "upscale_method": "nearest-exact",
+            "width": 1024,
+            "height": 1024,
+            "crop": "disabled"
+          }
+        },
+        "8": {
+          "class_type": "ModelPatchLoader",
+          "inputs": {
+            "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+          }
+        },
+        "9": {
+          "class_type": "QwenImageDiffsynthControlnet",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "model_patch": [
+              "8",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ],
+            "strength": 0.7,
+            "start_percent": 0,
+            "end_percent": 0.5
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "9",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026111104,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "G2b-b"
+          }
+        }
+      },
+      "png_sha256": "361ee94c6461e678039aa74e7042029a918ce545fc568ae049e7c2818438e14a",
+      "rgb_sha256": "17075134b236b5b8a94ec9b8137b9f4b476fa87c57b03c63368fd33c92055c68",
+      "raw_request_sha256": "3c6ef8635aabde227c916b17e28ff4b76ff48f107f67e37f93558e8f6edfc95b",
+      "raw_history_sha256": "20bb17d1181abf500791d1e769db7bb3005987470c00ed87a3ad54245b373474",
+      "status": {
+        "status_str": "success",
+        "completed": true,
+        "messages": [
+          [
+            "execution_start",
+            {
+              "prompt_id": "5be7f04c-e678-49a4-8620-70c7252beae0",
+              "timestamp": 1794239930718
+            }
+          ],
+          [
+            "execution_cached",
+            {
+              "nodes": [],
+              "prompt_id": "5be7f04c-e678-49a4-8620-70c7252beae0",
+              "timestamp": 1794239930718
+            }
+          ],
+          [
+            "execution_success",
+            {
+              "prompt_id": "5be7f04c-e678-49a4-8620-70c7252beae0",
+              "timestamp": 1794239989540
+            }
+          ]
+        ]
+      },
+      "identical_to_frozen_and_history": true,
+      "sampler_cached": false
+    },
+    {
+      "case": "G2b-c",
+      "prompt_id": "e6abdfb8-ebe0-4e25-a2cf-924311c7f37f",
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Exactly 4 rotors. Interpret the circles and crosses only as rotor disk and motor center locations. Choose the fuselage silhouette, sections and material transitions freely. Show one complete drone in strict orthographic top view, front up, on white. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "5": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "marks.png"
+          }
+        },
+        "6": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "5",
+              0
+            ],
+            "upscale_method": "nearest-exact",
+            "width": 1024,
+            "height": 1024,
+            "crop": "disabled"
+          }
+        },
+        "8": {
+          "class_type": "ModelPatchLoader",
+          "inputs": {
+            "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+          }
+        },
+        "9": {
+          "class_type": "QwenImageDiffsynthControlnet",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "model_patch": [
+              "8",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ],
+            "strength": 0.7,
+            "start_percent": 0,
+            "end_percent": 0.5
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "9",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026111104,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "G2b-c"
+          }
+        }
+      },
+      "png_sha256": "7e04b191f42c65dde2eb25c9db2ff890af6030fd4df5bfb2b0b677b6d36fa334",
+      "rgb_sha256": "03235af9f8967289e24b026a1d2e592472ce9550a9a4aa4951aa6efc1bab5983",
+      "raw_request_sha256": "dd5647483efc02cc176d95fc85ca1538df278cbe435d1ae9eb6e5a0226efc0cf",
+      "raw_history_sha256": "a06809feed015044d4ff68416d6b509089c08fe192db2d6ec599c315092cbaf7",
+      "status": {
+        "status_str": "success",
+        "completed": true,
+        "messages": [
+          [
+            "execution_start",
+            {
+              "prompt_id": "e6abdfb8-ebe0-4e25-a2cf-924311c7f37f",
+              "timestamp": 1794239995097
+            }
+          ],
+          [
+            "execution_cached",
+            {
+              "nodes": [],
+              "prompt_id": "e6abdfb8-ebe0-4e25-a2cf-924311c7f37f",
+              "timestamp": 1794239995097
+            }
+          ],
+          [
+            "execution_success",
+            {
+              "prompt_id": "e6abdfb8-ebe0-4e25-a2cf-924311c7f37f",
+              "timestamp": 1794240050041
+            }
+          ]
+        ]
+      },
+      "identical_to_frozen_and_history": true,
+      "sampler_cached": false
+    },
+    {
+      "case": "G2b-d",
+      "prompt_id": "0028adcc-f8fa-44eb-ac3f-5704f71a183a",
+      "graph": {
+        "1": {
+          "class_type": "UNETLoader",
+          "inputs": {
+            "unet_name": "qwen_image_2.1_bf16.safetensors",
+            "weight_dtype": "default"
+          }
+        },
+        "2": {
+          "class_type": "CLIPLoader",
+          "inputs": {
+            "clip_name": "qwen3vl_8b_bf16.safetensors",
+            "type": "qwen_image",
+            "device": "default"
+          }
+        },
+        "3": {
+          "class_type": "VAELoader",
+          "inputs": {
+            "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+          }
+        },
+        "4": {
+          "class_type": "TextEncodeQwenImage21",
+          "inputs": {
+            "clip": [
+              "2",
+              0
+            ],
+            "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Exactly 4 rotors. Interpret the circles and crosses only as rotor disk and motor center locations. Choose the fuselage silhouette, sections and material transitions freely. Show one complete drone in strict orthographic top view, front up, on white. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings.",
+            "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+            "resolution": 1024
+          }
+        },
+        "5": {
+          "class_type": "LoadImage",
+          "inputs": {
+            "image": "skeleton.png"
+          }
+        },
+        "6": {
+          "class_type": "ImageScale",
+          "inputs": {
+            "image": [
+              "5",
+              0
+            ],
+            "upscale_method": "nearest-exact",
+            "width": 1024,
+            "height": 1024,
+            "crop": "disabled"
+          }
+        },
+        "8": {
+          "class_type": "ModelPatchLoader",
+          "inputs": {
+            "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+          }
+        },
+        "9": {
+          "class_type": "QwenImageDiffsynthControlnet",
+          "inputs": {
+            "model": [
+              "1",
+              0
+            ],
+            "model_patch": [
+              "8",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ],
+            "image": [
+              "6",
+              0
+            ],
+            "strength": 0.5,
+            "start_percent": 0,
+            "end_percent": 1.0
+          }
+        },
+        "10": {
+          "class_type": "KSampler",
+          "inputs": {
+            "model": [
+              "9",
+              0
+            ],
+            "positive": [
+              "4",
+              0
+            ],
+            "negative": [
+              "4",
+              1
+            ],
+            "latent_image": [
+              "4",
+              2
+            ],
+            "seed": 2026111104,
+            "steps": 40,
+            "cfg": 1,
+            "sampler_name": "euler",
+            "scheduler": "simple",
+            "denoise": 1
+          }
+        },
+        "11": {
+          "class_type": "VAEDecode",
+          "inputs": {
+            "samples": [
+              "10",
+              0
+            ],
+            "vae": [
+              "3",
+              0
+            ]
+          }
+        },
+        "12": {
+          "class_type": "SaveImage",
+          "inputs": {
+            "images": [
+              "11",
+              0
+            ],
+            "filename_prefix": "G2b-d"
+          }
+        }
+      },
+      "png_sha256": "b6284014ffb5366f5497d1477a8eafd67540d040a3d19234706164239fa1bd64",
+      "rgb_sha256": "82187ea5e556b23cfb989163dae90f9a46b40d701e96b41fe28255589a98f141",
+      "raw_request_sha256": "622714f7bb0376a0b3c7ad9a8e3e421ece27e85d7926b339ef93077b28c55888",
+      "raw_history_sha256": "f03a2cd05c7640d047f6838c5589f35d4a70518212b123f020f77b820cab82fd",
+      "status": {
+        "status_str": "success",
+        "completed": true,
+        "messages": [
+          [
+            "execution_start",
+            {
+              "prompt_id": "0028adcc-f8fa-44eb-ac3f-5704f71a183a",
+              "timestamp": 1794240055445
+            }
+          ],
+          [
+            "execution_cached",
+            {
+              "nodes": [],
+              "prompt_id": "0028adcc-f8fa-44eb-ac3f-5704f71a183a",
+              "timestamp": 1794240055445
+            }
+          ],
+          [
+            "execution_success",
+            {
+              "prompt_id": "0028adcc-f8fa-44eb-ac3f-5704f71a183a",
+              "timestamp": 1794240116098
+            }
+          ]
+        ]
+      },
+      "identical_to_frozen_and_history": true,
+      "sampler_cached": false
+    }
+  ]
+}
