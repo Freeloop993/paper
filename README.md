@@ -1,1 +1,12 @@
 # paper
+# 多旋翼无人机造型论文协作仓库
+
+**当前：研究进行中；第1—3章和已核结果可以写，不能定稿整篇结论。** 本私有库是 Claude、Codex 和作者的跨设备交接入口。它保存共享进度、论文要求、可编辑文字与脱敏证据；原始研究档案仍按原权限保存。
+
+1. 开工先读 [当前状态与写作门槛](STATUS.md)，再看 [开放工单](https://github.com/Freeloop993/paper/issues?q=is%3Aissue+is%3Aopen)。**Issues 是双方唯一共享待办**，不是每端再建一套。
+2. **Claude｜全局规划与论文写作：**从 [C01 六章证据矩阵](https://github.com/Freeloop993/paper/issues/1) 接手，读[开题五项](docs/requirements.md)、[现行目录](manuscript/outline.md)和[文献阅读地图](references/reading-map.md)。[前三章既有草稿](manuscript/source-drafts/)供复用，不代表已定稿。
+3. **Codex｜图像实验、数据处理与分析：**从 [X01 两种流程输入验收](https://github.com/Freeloop993/paper/issues/2) 接手，按[方法与限制](docs/methods.md)交回请求、原件校验、分母、失败和可支持的结论。已有[第5章六旋结果段](manuscript/ch05-hexa-results.md)与[可复算数据](evidence/README.md)。
+4. **作者/必要时导师｜方向与范围决定：**见 [A01 六旋、LoRA与正式采集条件](https://github.com/Freeloop993/paper/issues/3)。Issue、日期和历史预算本身不授权开机、招募或训练。
+5. 领取、交付、复核按[协作规则](CONTRIBUTING.md)。发生实质变化就在本次工作结束前提交并回读；没有变化不空刷。[进度日志](PROGRESS.md)按日期保留历史。
+
+Google 总记录、Obsidian、飞书文献库和原始材料是既有来源，不要求更改其权限。不能访问原件时仅使用仓库已提供的内容，并标明局限。
