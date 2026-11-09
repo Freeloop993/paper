@@ -1,7 +1,7 @@
 # 阶段阅读地图
 
 ## 文献地图 R01—R14
-以下是原研究地图中各条的版本、用途、页码与边界，不是把14篇统称为本轮全文通读，也不是本次向远端传了14篇PDF。精确引用前核原文；无法访问的，先标“待核”。补记：R02于11/9核本地PDF 10、12、13、20、21页相关片段；R08于11/9核作者版§4.2—4.4及§7.5—7.6有关段落。R14有候选同名文件线索，未因此升级为已核全文。
+以下是原研究地图中各条的版本、用途、页码与边界，不是把14篇统称为本轮全文通读，也不是本次向远端传了14篇PDF。精确引用前核原文；无法访问的，先标“待核”。补记：R02于11/9核本地PDF 10、12、13、20、21页相关片段；R08于11/9核作者版§4.2—4.4及§7.5—7.6有关段落。本轮新增[14篇原文版本交叉表](catalogs/priority-fulltexts.md)，其中 R14 已核原 PDF 身份，方法与结果待审读。
 #### R01｜最直接近邻：需求到无人机生成
 
 Chen等，Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion，2026；DOI 10.1299/jamdsm.2026jamdsm0008。身份与2026-03-16发布信息已由J-STAGE页面核实；本地原PDF相关页已定向核读，不称本轮全文通读。
@@ -100,7 +100,7 @@ GenPara，CHI 2025；DOI 10.1145/3706598.3713502。既有库的局部参数/版�
 
 #### R14｜有条件补读，不阻塞现有结果评价
 
-When Designers Sweat: Behavioral Traces of GenAI Co-Creation，CHI 2026；DOI 10.1145/3772318.3791776。当前仅找到出版/作者仓储条目及摘要信息，未完成全文核读。若P3缺少专业设计师过程指标，可用一个限定时段获取并核方法/操作定义/局限；拿不到则保留候选，不凭摘要写正文结论。
+When Designers Sweat: Behavioral Traces of GenAI Co-Creation，CHI 2026；DOI 10.1145/3772318.3791776。2026-11-09 核到 17 页本地原 PDF，第一页题名、作者与 DOI 相符，可从[原件表](catalogs/priority-fulltexts.md)读取；方法及结果尚待定向核读。若P3缺少专业设计师过程指标，可用一个限定时段获取并核方法/操作定义/局限；拿不到则保留候选，不凭摘要写正文结论。
 
 作者仓储：https://air.iuav.it/handle/11578/377009
 
