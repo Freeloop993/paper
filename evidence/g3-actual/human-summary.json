@@ -1,0 +1,26 @@
+{
+  "schema": "G3-human-summary-v1",
+  "unit": "one non-author human reader of one pair, one parent, one seed",
+  "blinding_basis": "Author confirmed the reader had seen neither the condition labels nor the AI conclusions before submitting.",
+  "private_source_sha256": "c4e576203384f779b54984d67ad5bb88c60cdd1c8ede541713eb43d1fbf080f8",
+  "cases": {
+    "G3-with-reference": {
+      "structure": {
+        "silhouette": "不可判",
+        "panel_divisions": "保持",
+        "arm_roots": "保持"
+      },
+      "camera_edit": "可辨",
+      "possible_copy": "否"
+    },
+    "G3-text-only": {
+      "structure": {
+        "silhouette": "改变",
+        "panel_divisions": "改变",
+        "arm_roots": "改变"
+      },
+      "camera_edit": "可辨",
+      "possible_copy": "否"
+    }
+  }
+}

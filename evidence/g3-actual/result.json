@@ -18,6 +18,26 @@
     }
   },
   "retention_signal_by_this_reader": true,
-  "human_readers": 0,
-  "combined_decision": "awaiting independent human return"
+  "human_readers": 1,
+  "human_feature_counts": {
+    "G3-with-reference": {
+      "保持": 2,
+      "改变": 0,
+      "不可判": 1
+    },
+    "G3-text-only": {
+      "保持": 0,
+      "改变": 3,
+      "不可判": 0
+    }
+  },
+  "human_all_three_judged_both_cases": false,
+  "joint_retention_criterion_met": false,
+  "readers_agree_on_camera_item": {
+    "G3-with-reference": false,
+    "G3-text-only": false
+  },
+  "camera_edit_visible_to_both_on_reference": false,
+  "enable_reference_revision_under_G3": false,
+  "combined_decision": "insufficient evidence under frozen G3 criteria"
 }
