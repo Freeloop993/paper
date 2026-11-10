@@ -1,6 +1,6 @@
 # G2d 部件控制图，出图前记录
 
-本批按作者经 Claude 转达的决定，属于 G2b 停止规则之外的最后一次参数验证。依据是新核回的历史 C1 原件。G2b 仍为 0/4 可用。G2d 的六份请求及输入均已离线编译。实机费用上限须在 #3 记录。[研究规格](../../docs/protocols/G2d-G3b-spec.md)
+本批按作者经 Claude 转达的决定，属于 G2b 停止规则之外的最后一次参数验证。依据是新核回的历史 C1 原件。G2b 仍为 0/4 可用。G2d 的六份请求及输入均已离线编译。实机额度现已由作者确认，最后 6 次、整批 ≤4 元、累计付费 ≤54 分钟。[授权记录](https://github.com/Freeloop993/paper/issues/3#issuecomment-6763328111)。[研究规格](../../docs/protocols/G2d-G3b-spec.md)
 
 ![旧 C1 中间档与三个新布局的输入控制图](guide-comparison.png)
 
