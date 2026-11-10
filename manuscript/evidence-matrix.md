@@ -2,7 +2,7 @@
 
 > 已吸收 Codex 的[分母复算](../evidence/denominators/README.md)与 [S1 盲测复测](../evidence/s1-axis-repeat/README.md)。逐项计划见 [docs/research-plan.md](../docs/research-plan.md)。开题第6—7页已直接核读原 PDF。
 
-**输入版本：** main `a44695fcb6ab404644c5392badef46e734d0f46f`；依据仓库内 README、STATUS、docs/requirements.md、docs/methods.md、manuscript/outline.md、manuscript/ch05-hexa-results.md、manuscript/source-drafts/01—03.md、references/reading-map.md、evidence/README.md。**未访问**私有原件、开题原PDF、文献PDF；页码均转引自仓库内已登记的定向核读记录，终稿前须回核版本/页码。本表是写作排序工具，不是研究完成证明。
+**输入版本：** main `a44695fcb6ab404644c5392badef46e734d0f46f`；依据仓库内 README、STATUS、docs/requirements.md、docs/methods.md、manuscript/outline.md、manuscript/ch05-hexa-results.md、manuscript/source-drafts/01—03.md、references/reading-map.md、evidence/README.md。**未访问**私有原件；开题原 PDF 第6—7页已于第三版计划时直接核读，文献 PDF 仅 priority-fulltexts 所列数篇可在仓库内回核，其余页码仍转引自已登记的定向核读记录，终稿前须回核版本/页码。本表是写作排序工具，不是研究完成证明。
 
 **标记：** 可写＝现有证据足以写成正文（仍需回核引文）；描述＝只能写设计/协议/现状，不能写结果或效果；缺证＝缺直接证据，暂不写结论，只留占位与待核项。
 
