@@ -1,0 +1,22 @@
+[
+  {
+    "file": "front-three-quarter.png",
+    "role": "外观参照，机头朝画面左下",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "843c8f83ec93faf1e9d114c365122b4f7e4fc20ab0f667d545ee2b3a5ffb9a46",
+    "source": "Built-in GPT Image",
+    "reference": null,
+    "prompt": "Create one original photoreal industrial design concept render for a portable everyday aerial photography quadcopter, one object, square canvas. A usable parent image for a later design revision experiment. Centered front three-quarter view looking down from about 32 degrees; nose points toward lower left foreground, tail toward upper right, with all four separate motor hubs and all four arms visible, wide clean margins around prop tips. Design the product as a coherent piece of industrial design. Compact softly tapering warm mineral grey shell with satin polymer finish and a graphite lower keel; an uninterrupted shoulder line flows from the nose to the tail. One identifiable photographic optical lens mounted in a small recessed gimbal within the forward center of the nose, elegantly framed by the shell cheeks; a believable clearance gap around the camera, avoid extra lens-like circles at the tail. The aircraft has a clear front, one central fuselage, four real sculpted load-bearing arms that blend into its shoulders, restrained slender two-bladed propellers, delicate mechanically credible seams, mild radius and material transitions, trim silhouette without giant fins or exposed electronics. Arms visibly have thickness at the root and taper out towards the motors. No forced polygonal shell or template silhouette. Balanced mass and strong surface definition in a clean editorial product photograph with soft directional studio light from upper left, a faint contact shadow on matte neutral off-white. Consistent surface language, physically plausible scale relationships; convey a carefully resolved yet revisable prototype, not a flat drawing. Neutral material color story with a single understated warm orange index on the forebody. Single standalone image, no captions, diagrams, arrows, watermarks, text, dimensions, accessories, scene props or logos."
+  },
+  {
+    "file": "top-front-up.png",
+    "role": "顶视改稿用新父图候选，机头朝画面上方",
+    "width": 1254,
+    "height": 1254,
+    "sha256": "c9c837d0ceecd5640c20e1309c1265776cc6b95eab1af9e334ffeef569388451",
+    "source": "Built-in GPT Image",
+    "reference": "front-three-quarter.png",
+    "prompt": "Re-render this quadcopter concept as a single, strict orthographic TOP PLAN product render, camera aimed straight vertically down at the horizontal rotor plane (90 degree elevation), no perspective or vanishing point, absolutely no oblique or isometric angle. Align its longitudinal centerline vertically with the NOSE / front camera housing at the TOP (12 o'clock) edge of the object and the tapering tail toward the bottom. Keep the specific coherent design character of the supplied reference: the same softly sculpted warm mineral-grey satin upper shell and graphite lower trim, same tapered rear panel seam, tiny single orange index near the nose, the recessed forward-facing camera under a sculpted lip, four smoothly blended load-bearing arm roots tapering into the same four cylindrical motor housings and two blades per motor. The camera is a forward camera: only the housing lip and its peek of graphite bezel might show from exactly above; DO NOT tilt a lens upwards to show off the lens and DO NOT tilt the aircraft or camera. Show all four circular motor top caps as truly circular, all complete propeller tips with generous equal padding on a square canvas. Left/right mirror-symmetric design and consistent scale at front/rear; no overlapping rotor tips. neutral pale studio background, soft ambient occlusion and restrained studio shading define forms, photoreal industrial design product concept, one aircraft only. Full image for a future image-to-image revision, no orthographic grid, text, arrows, compass, annotations, guides, rulers or technical lines."
+  }
+]
