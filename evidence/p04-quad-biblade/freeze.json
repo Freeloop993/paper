@@ -1,0 +1,53 @@
+{
+  "role": "4.1.3/5.2 新版布局响应技术预试，不计正式样本",
+  "source_example": "https://www.dji.com/mini-4-pro/faq",
+  "scope_of_source": "仅借鉴便携航拍机每电机两叶；250 mm、5 英寸均为本研究设计输入",
+  "fixed": [
+    "四旋共面等长X机架、正交俯视、机头向上",
+    "每桨两叶、完全展开、叶尖相对、目标180度；桨径127mm，电机倾角0度",
+    "对置轴距250mm、固定画幅映射、相同背景和部件整合要求",
+    "同一内置 image_gen 工具、每次只附本档四点定位图、无外观父图、无软件自动再试"
+  ],
+  "single_factor": "W/L 水平，轴心坐标和角度随之计算",
+  "levels": {
+    "r085": {
+      "target_ratio": 0.85,
+      "guide_sha256": "43d900d13c717b14db1bd26ebe208481d719f2387d1f4eb1f262585fd75be2ae",
+      "prompt_sha256": "c7557fb55140130b412dfb16584b0a05848f56e7e5b6b141104502ff5d8d465d",
+      "min_projected_disk_gap_mm": 34.91
+    },
+    "r100": {
+      "target_ratio": 1,
+      "guide_sha256": "8b8b706357a364dc567a3219455f9c011e9dbb15b91bf3f91ebadb8389b26d7c",
+      "prompt_sha256": "0dd6ee26d0861c6839880c90639de3cb2437eb3af53d9c702a229d65076a6bf9",
+      "min_projected_disk_gap_mm": 49.78
+    },
+    "r115": {
+      "target_ratio": 1.15,
+      "guide_sha256": "11b23a49abf2bc8820aba5fe93f0fa0202711f0547964ff16da1c7e29af59588",
+      "prompt_sha256": "09d3d50bc34a4c4f200cf127f67357ec2ed12743ff033e3af3805fce7a0b007a",
+      "min_projected_disk_gap_mm": 37.04
+    }
+  },
+  "planned_blocks": [
+    [
+      "r100",
+      "r115",
+      "r085"
+    ],
+    [
+      "r085",
+      "r100",
+      "r115"
+    ]
+  ],
+  "seed": null,
+  "blocks_are_matched_seeds": false,
+  "readouts": [
+    "每图单列四轴可读、各桨叶数、以轴为顶点的两叶尖较小夹角。约180°按>=165°作本批探索性筛查，另报原角度；不可辨不补填。",
+    "由原图读出4轴，W/L及与目标误差、各点归一化误差；不平移、配准或放缩修正。",
+    "本轮采用既有候选跨度比绝对误差<=0.10、每个重复块严格单调。叶相对关系与布局指标分开报告。两次重复仅描述。"
+  ],
+  "next": "通过或不足按全部输出写入。若旋翼展开或跨度响应不足，保留失败，不进入正式 D/S 真人场次。",
+  "formal_participants": 0
+}

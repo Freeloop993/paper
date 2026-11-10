@@ -65,3 +65,7 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 - 2026-11-10 · Codex 按作者要求移交[脱敏配置器源码](prototypes/drone-configurator/README.md)与[讨论决定及改动验收](docs/configurator-realignment.md)。旧程序区分俯视示意和产品呈现；旧主生图请求仅发文字。私有评论文件核到 5,614 片段、3,603 个不同评论 ID。本次新增模型提交与评议均为 0。Claude 接原型优化，Codex 核实际请求。
 
 - 2026-11-11 · 旧约束造型系列 12 张原图与衍生材料退出新版正式集；保留原反馈。P03 重做技术校验 2 张、正式纳入 0。四旋叶数控制、角度与跨度耦合、桨盘净距及 D/S 主研究见 [变量表](docs/research-variables.md) 和 [样本清单](evidence/formal-reset/README.md)。
+
+## 2026-11-11｜随行航拍四旋双叶桨与三档布局
+
+[六份原图与读数](evidence/p04-quad-biblade/README.md)已存档；两轮三档中仅一轮严格递增。逐图、逐桨、两项边界灵敏度与单次知条件 AI 读数限制见原记录。当前正式样本仍为 0。

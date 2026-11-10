@@ -174,6 +174,66 @@
         1254,
         1254
       ]
+    },
+    {
+      "id": "P04-b1-r085",
+      "use": "technical_pilot_only",
+      "sha256": "bae6d7fcbb9f8c02c957449b6fe3a273a93660ec4c4f1f6aed73bbab9a4929e9",
+      "rgb_sha256": "2b1f8a51e7972f97ccaa85913cdeb495883ee2db12796ed6688560801e3c858b",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "P04-b1-r100",
+      "use": "technical_pilot_only",
+      "sha256": "8036d90c464ed1c4f09ee71d02d73a3746eb0807bde5aac2615363de94273310",
+      "rgb_sha256": "be4c9d74484ba6f9f4670590deff49ae7f76a98c078039747cec02f792390043",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "P04-b1-r115",
+      "use": "technical_pilot_only",
+      "sha256": "3a1584fdd486523f7b498c07d74562084680094e960024191d11e06cb131339c",
+      "rgb_sha256": "d31ab295bdabdbf700b1f66fb72e018963036ed59425dc103dc29574270869d5",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "P04-b2-r085",
+      "use": "technical_pilot_only",
+      "sha256": "37a4baff5e92cac0e1cea30ba780d5c07e66d3ac3bd53ca4b2394606340be6ee",
+      "rgb_sha256": "c417b5f5bd52a1e61a4d88deeed5bff78a7bed771582fdcb3eaf8cff3b85acd5",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "P04-b2-r100",
+      "use": "technical_pilot_only",
+      "sha256": "73a26cc621b4bde45b81822802f8283de5c1a496cc3e97aeae81149583c7105f",
+      "rgb_sha256": "00134f47341b53d0f9dc67e77c52e10b4044457459b35dcf32461f36872b4600",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "P04-b2-r115",
+      "use": "technical_pilot_only",
+      "sha256": "2aef00ac3ee98ec392c4eb9f408a77f11067e7a27efbd0096ff02082001913a9",
+      "rgb_sha256": "a730e1e95bdc2ffce249448accc2018305738dd9ca0e884aa917b39b264fcf7a",
+      "size": [
+        1254,
+        1254
+      ]
     }
   ],
   "other_legacy_images": "not_admitted_pending_batch_review",

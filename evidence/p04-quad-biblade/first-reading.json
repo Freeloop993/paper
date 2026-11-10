@@ -1,0 +1,368 @@
+{
+  "b1-r085": {
+    "source_png": "exec-5b4163ce-99a7-4038-89f6-fd72043b1bf7.png",
+    "rotors": [
+      {
+        "hub_initial": [
+          420,
+          457
+        ],
+        "tip_outboard": [
+          130,
+          451
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          832,
+          457
+        ],
+        "tip_outboard": [
+          1122,
+          451
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          832,
+          815
+        ],
+        "tip_outboard": [
+          1122,
+          814
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          420,
+          815
+        ],
+        "tip_outboard": [
+          130,
+          814
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      }
+    ]
+  },
+  "b1-r100": {
+    "source_png": "exec-3a38ad86-a6be-4a53-ab06-df78a3dadf12.png",
+    "rotors": [
+      {
+        "hub_initial": [
+          424,
+          442
+        ],
+        "tip_outboard": [
+          192,
+          443
+        ],
+        "tip_inboard": null,
+        "visible_blades": 2,
+        "inboard_status": "blade_visible_tip_occluded"
+      },
+      {
+        "hub_initial": [
+          830,
+          442
+        ],
+        "tip_outboard": [
+          1061,
+          443
+        ],
+        "tip_inboard": null,
+        "visible_blades": 2,
+        "inboard_status": "blade_visible_tip_occluded"
+      },
+      {
+        "hub_initial": [
+          830,
+          810
+        ],
+        "tip_outboard": [
+          1062,
+          812
+        ],
+        "tip_inboard": [
+          691,
+          811
+        ],
+        "visible_blades": 2,
+        "inboard_status": "tip_readable"
+      },
+      {
+        "hub_initial": [
+          423,
+          810
+        ],
+        "tip_outboard": [
+          191,
+          811
+        ],
+        "tip_inboard": [
+          562,
+          812
+        ],
+        "visible_blades": 2,
+        "inboard_status": "tip_readable"
+      }
+    ]
+  },
+  "b1-r115": {
+    "source_png": "exec-aa114114-0d09-4ecf-9bf2-38d8a4a91d1f.png",
+    "rotors": [
+      {
+        "hub_initial": [
+          371,
+          452
+        ],
+        "tip_outboard": [
+          127,
+          453
+        ],
+        "tip_inboard": null,
+        "visible_blades": 2,
+        "inboard_status": "blade_visible_tip_occluded"
+      },
+      {
+        "hub_initial": [
+          882,
+          452
+        ],
+        "tip_outboard": [
+          1126,
+          453
+        ],
+        "tip_inboard": null,
+        "visible_blades": 2,
+        "inboard_status": "blade_visible_tip_occluded"
+      },
+      {
+        "hub_initial": [
+          882,
+          860
+        ],
+        "tip_outboard": [
+          1126,
+          860
+        ],
+        "tip_inboard": [
+          659,
+          864
+        ],
+        "visible_blades": 2,
+        "inboard_status": "tip_readable"
+      },
+      {
+        "hub_initial": [
+          371,
+          860
+        ],
+        "tip_outboard": [
+          127,
+          859
+        ],
+        "tip_inboard": [
+          595,
+          863
+        ],
+        "visible_blades": 2,
+        "inboard_status": "tip_readable"
+      }
+    ]
+  },
+  "b2-r085": {
+    "source_png": "exec-7fe5e1fb-1a40-4fff-8591-d7476554e7e9.png",
+    "rotors": [
+      {
+        "hub_initial": [
+          459,
+          456
+        ],
+        "tip_outboard": [
+          198,
+          458
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          795,
+          456
+        ],
+        "tip_outboard": [
+          1056,
+          458
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          795,
+          800
+        ],
+        "tip_outboard": [
+          1056,
+          805
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          459,
+          800
+        ],
+        "tip_outboard": [
+          198,
+          806
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      }
+    ]
+  },
+  "b2-r100": {
+    "source_png": "exec-a4c9a20d-aed8-41c5-9abc-2d33bee41e85.png",
+    "rotors": [
+      {
+        "hub_initial": [
+          451,
+          453
+        ],
+        "tip_outboard": [
+          211,
+          459
+        ],
+        "tip_inboard": [
+          581,
+          454
+        ],
+        "visible_blades": 2,
+        "inboard_status": "tip_readable"
+      },
+      {
+        "hub_initial": [
+          803,
+          453
+        ],
+        "tip_outboard": [
+          1042,
+          459
+        ],
+        "tip_inboard": [
+          672,
+          453
+        ],
+        "visible_blades": 2,
+        "inboard_status": "tip_readable"
+      },
+      {
+        "hub_initial": [
+          803,
+          801
+        ],
+        "tip_outboard": [
+          1042,
+          793
+        ],
+        "tip_inboard": [
+          674,
+          802
+        ],
+        "visible_blades": 2,
+        "inboard_status": "tip_readable"
+      },
+      {
+        "hub_initial": [
+          451,
+          801
+        ],
+        "tip_outboard": [
+          211,
+          793
+        ],
+        "tip_inboard": [
+          579,
+          803
+        ],
+        "visible_blades": 2,
+        "inboard_status": "tip_readable"
+      }
+    ]
+  },
+  "b2-r115": {
+    "source_png": "exec-7dc55717-dd39-4972-8710-9353bd54890c.png",
+    "rotors": [
+      {
+        "hub_initial": [
+          442,
+          480
+        ],
+        "tip_outboard": [
+          195,
+          477
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          812,
+          480
+        ],
+        "tip_outboard": [
+          1058,
+          474
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          812,
+          793
+        ],
+        "tip_outboard": [
+          1059,
+          796
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      },
+      {
+        "hub_initial": [
+          442,
+          793
+        ],
+        "tip_outboard": [
+          195,
+          796
+        ],
+        "tip_inboard": null,
+        "visible_blades": 1,
+        "inboard_status": "no_second_blade_distinguishable"
+      }
+    ]
+  }
+}
