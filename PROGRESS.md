@@ -51,3 +51,5 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 - 2026-11-10｜X12 一位评者复填 r2，已按六图与三项配对判断验收。两份答卷仅计一位真人。见[复填记录](evidence/x12-calibration/r2-return.md)。
 
 - 2026-11-10（北京时间）｜复核并合入 [#16](https://github.com/Freeloop993/paper/pull/16)、[#17](https://github.com/Freeloop993/paper/pull/17)。四旋视角、已选顶视父图、六旋测绘任务和公开仓库见 [#3](https://github.com/Freeloop993/paper/issues/3)。X12 新制包 r3 同步实体构型题和细节判断，旧六图仅作表单预读。本轮四旋 B02 与 G2d 均无新增生成。
+
+- 2026-11-10｜作者提醒六旋原有植保方向。对照开题第 7、8 页与 10/15 两版六旋资料表，D2 标为重新核对。已有测绘图沿用原任务标记。[出处核对](https://github.com/Freeloop993/paper/issues/3#issuecomment-6769225591)。
