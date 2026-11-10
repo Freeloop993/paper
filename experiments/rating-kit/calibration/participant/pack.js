@@ -1,0 +1,1 @@
+const PACK = {"schema": "rating-kit-v1", "pack": "7e05d763eb46b8ee", "mode": "calibration", "images": [{"id": "A7F0516CAE", "task": "A"}, {"id": "2D7B6F1ACA", "task": "B"}, {"id": "8785D2A615", "task": "A"}, {"id": "58E2E1099B", "task": "B"}, {"id": "E7562327D5", "task": "A"}, {"id": "14CE5BFD12", "task": "B"}], "pairs": [["A7F0516CAE", "2D7B6F1ACA"]]};

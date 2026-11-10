@@ -1,0 +1,67 @@
+{
+  "pack": "7e05d763eb46b8ee",
+  "mode": "calibration",
+  "images": [
+    {
+      "id": "A7F0516CAE",
+      "source": "G2b-a.png",
+      "key": "G2b-a",
+      "task": "A",
+      "original_sha256": "360f0c4a1ffc5ab1561da6a0745c7665986f2c1daa204ce946b17f211e5ddc81",
+      "png_sha256": "5ca1be61a6c2d59bf45032d1c5f7770fd3e0a6bccf9c778185e176769ad7f891",
+      "rgb_sha256": "3bb3d23b75d4d03bddd4a7a468753fb0287a716c76ba2284e9bc7b5be848b693"
+    },
+    {
+      "id": "2D7B6F1ACA",
+      "source": "G2b-b.png",
+      "key": "G2b-b",
+      "task": "B",
+      "original_sha256": "361ee94c6461e678039aa74e7042029a918ce545fc568ae049e7c2818438e14a",
+      "png_sha256": "433772be5afc2896ac55ea9c5d44ca572d1282746b703d1ecc6077a0aadcd5f2",
+      "rgb_sha256": "17075134b236b5b8a94ec9b8137b9f4b476fa87c57b03c63368fd33c92055c68"
+    },
+    {
+      "id": "8785D2A615",
+      "source": "G2b-c.png",
+      "key": "G2b-c",
+      "task": "A",
+      "original_sha256": "7e04b191f42c65dde2eb25c9db2ff890af6030fd4df5bfb2b0b677b6d36fa334",
+      "png_sha256": "5d54ab16335c61413e7d163335784976d74d3725acd53fa992d30c201d46860e",
+      "rgb_sha256": "03235af9f8967289e24b026a1d2e592472ce9550a9a4aa4951aa6efc1bab5983"
+    },
+    {
+      "id": "58E2E1099B",
+      "source": "G2b-d.png",
+      "key": "G2b-d",
+      "task": "B",
+      "original_sha256": "b6284014ffb5366f5497d1477a8eafd67540d040a3d19234706164239fa1bd64",
+      "png_sha256": "b5d1bccc2b85902074a0b68e4d50f2af7f4304c3779a53952e91c804ea466ac3",
+      "rgb_sha256": "82187ea5e556b23cfb989163dae90f9a46b40d701e96b41fe28255589a98f141"
+    },
+    {
+      "id": "E7562327D5",
+      "source": "J2-01.png",
+      "key": "J2-01",
+      "task": "A",
+      "original_sha256": "ad5bda5e54623c3d44c9a0f1b885606b9149bd4b23ce9a469b3bfeb9d3a94c78",
+      "png_sha256": "a0d199d1f14820e8c75411527f76c7b3e66f4208ae5e810cfab5c270d3b4025c",
+      "rgb_sha256": "c55c49e2d7e439deabb4442e5a1a3a285fcf88e1940e59d7405e9e3fe2a796ed"
+    },
+    {
+      "id": "14CE5BFD12",
+      "source": "J2-02.png",
+      "key": "J2-02",
+      "task": "B",
+      "original_sha256": "9db4b9f989feb8349606286dc7aca63076f0bd53284e8a2d1eb95ebf7d24c3da",
+      "png_sha256": "f71743994ab59c4bb71aadc6e354950e780a7a0d475504985b87796e46086d5f",
+      "rgb_sha256": "d8c08f4ec166d7bc67336d2e6b7c27d1146fde988af1df95e8e1ad0c11ee74d7"
+    }
+  ],
+  "pairs": [
+    [
+      "G2b-a",
+      "G2b-b"
+    ]
+  ],
+  "plan_sha256": "4655f0b5b42c011fbc4cb20d5e6bbcffd85dab90e6000c669383e908184a90af"
+}
