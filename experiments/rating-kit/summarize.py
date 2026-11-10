@@ -21,6 +21,8 @@ def summarize(key, files, rule=None):
                 or rule["missing"] != "undetermined" or type(rule["expected_readers"]) is not int
                 or rule["expected_readers"] < 1):
             raise ValueError("Invalid rule, denominator or pack")
+        if key.get("wording") == "X12-r3" and rule.get("detailSufficiency") != "all_readers_at_least_partial":
+            raise ValueError("X12-r3 needs a registered detail-sufficiency rule")
         for k in ("taskFit", "coherence"):
             if type(rule[k]) not in (int, float) or not 1 <= rule[k] <= 7:
                 raise ValueError("Invalid rating threshold")
@@ -53,10 +55,17 @@ def summarize(key, files, rule=None):
                 raise ValueError("Unknown score")
             row["scores"][k] = {"median": median(map(int, values)) if values else None,
                                 "rated": len(values), "uncertain": len(ratings)-len(values)}
+        detail_known = True
+        if key.get("wording") == "X12-r3":
+            details = Counter(r.get("detailSufficiency") for r in ratings)
+            if set(details) - {"够", "只够判断一部分", "不够"}:
+                raise ValueError("Unknown or missing detail-sufficiency option")
+            row["detailSufficiency"] = dict(details)
+            detail_known = details["不够"] == 0
         row["joint"] = None
         if rule:
             core = [row["scores"][k] for k in ("taskFit", "coherence")]
-            if (len(seen) == rule["expected_readers"] and all(x["uncertain"] == 0 for x in core)
+            if (detail_known and len(seen) == rule["expected_readers"] and all(x["uncertain"] == 0 for x in core)
                     and not any(c.get("不可判") for c in row["construction"].values())):
                 row["joint"] = (all(c.get("是", 0) == len(seen) for c in row["construction"].values())
                                 and all(row["scores"][k]["median"] >= rule[k] for k in ("taskFit","coherence")))

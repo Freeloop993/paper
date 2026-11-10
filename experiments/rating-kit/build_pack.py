@@ -56,7 +56,7 @@ def build(plan_path, destination):
                      "rgb_sha256": hashlib.sha256(clean.tobytes()).hexdigest()})
     secrets.SystemRandom().shuffle(images)
     manifest = {"schema":"rating-kit-v1", "pack":secrets.token_hex(8),
-                "mode":plan["mode"], "wording":"X12-r2", "images":images,
+                "mode":plan["mode"], "wording":"X12-r3", "images":images,
                 "pairs":[[ids[a],ids[b]] for a,b in pairs]}
     (share / "pack.js").write_text("const PACK = "+json.dumps(manifest)+";\n", encoding="utf-8")
     for name in ("index.html", "review.js"):

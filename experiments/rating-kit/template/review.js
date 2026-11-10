@@ -5,7 +5,12 @@ const cards = {
   A: "相机与机身的整合。拍摄方向清楚，相机与机身连接自然，机臂连接仍可辨。",
   B: "机身到四臂的过渡。机身与机臂的形体连贯，前置相机仍可辨。"
 };
-const construction = {rotors:"能数出四个旋翼", body:"能辨出一体机身", arms:"能辨出与机身相连的机臂", camera:"能辨出前置相机"};
+const construction = {
+  rotors:"能数出四个有桨叶或电机实体的旋翼位置吗？",
+  body:"能看到一个完整的机身实体吗？",
+  arms:"能看到有粗细、连入机身的机臂吗？",
+  camera:"能辨认机身前部的相机部件吗？"
+};
 const ratings = {taskFit:"任务契合", coherence:"整体协调与完成度（比例、体量、部件关系）", appeal:"外观吸引力", novelty:"新颖性"};
 const features = {surface:"机身外壳上可见的分块和接缝，两图是否相似？", armBody:"机臂接到机身处的形状，两图是否相似？", payload:"相机或载荷与机身相接的位置和形状，两图是否相似？"};
 const yesNo = ["是","否"], uncertain = "不可判";
@@ -74,11 +79,11 @@ function render() {
       field("observation","你在图中看到了什么？");
       onPage=(v,t)=>record.images.push({id:item.id,card:item.task,...v,observationSeconds:t});
     } else {
-      begin("评价这张图","日常随行航拍四旋翼。任务重点为"+cards[item.task]+" 评分锚点为 1 明显不成立或有严重问题，4 可以接受但有明显不足，7 出色、几乎无需修改。能看清但评价低时可选低分；图中细节不足以评价某一项时，该项可选“不可判”。",[item.id]);
+      begin("评价这张图","日常随行航拍四旋翼。任务重点为"+cards[item.task]+" 构型题按可见的实体部件作答。只有圆圈、十字或细线时选“否”，部位被遮挡、无法确定时选“不可判”。评分锚点为 1 明显不成立或有严重问题，4 可以接受但有明显不足，7 出色、几乎无需修改。能看清但评价低时可选低分；图中细节不足以评价某一项时，该项可选“不可判”。",[item.id]);
       for(const [key,title] of Object.entries(construction))field(key,title,[...yesNo,uncertain]);
+      field("detailSufficiency","这张图的细节够你判断任务卡上的重点吗？",["够","只够判断一部分","不够"]);
       for(const [key,title] of Object.entries(ratings))field(key,title,scale);
       field("taskEvidence",item.task==="A"?"相机与机身交接处具体是什么样？看不清可以直说。":"机臂与机身交接处具体是什么样？看不清可以直说。");
-      field("detailSufficiency","这张图的细节够你判断这个造型方向吗？",["够","只够判断一部分","不够"]);
       field("worthDeveloping","依据已经看得见的设计，你会推荐沿这个造型方向继续设计吗？",[...yesNo,uncertain]);
       field("reason","哪处可见设计影响了你的推荐？若不可判，写明还需要看清哪处。");
       onPage=(v,t)=>Object.assign(record.images[i],{evaluation:v,evaluationSeconds:t});
