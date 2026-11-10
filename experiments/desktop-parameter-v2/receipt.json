@@ -1,0 +1,40 @@
+{
+  "source": "one built-in GPT Image call using the exported PNG and prompt via Codex",
+  "prompt": "四旋 · 日常随行航拍。日常随行航拍。整机紧凑，前向相机融入机鼻，机臂与机身自然过渡。\n重点表现：前摄与机鼻的整合。\n保留：四个清楚的旋翼、相连的机臂和可辨认的前向相机。\n壳面自由，前部保留一圈柔和转折。\n参考随附定位图，原画幅正交顶视，机头朝右。红点定位电机转轴，蓝线表示骨架连接。\n使用4个电机转轴，X 型布局。最大轴距设计值 40 cm；从 R1（相对机头顺时针 145°）起相邻射线夹角依次为 70、110、70、110°。\n生成一张完整的产品概念效果图，保留轴心在画幅中的相对位置，实体部件替代示意符号。画面无坐标、标号和辅助线。",
+  "input_png": "drone-quad-x-2388ecdcbc9a.png",
+  "input_png_sha256": "d0dfc40e8ffe26edb7ac91b88e7bd2cf13a5f1bb2803a401c03f60760d92449b",
+  "output_png": "gpt-image-top.png",
+  "output_png_sha256": "7a1c2ca619662304597940d431d994d04239cd700844c3f1c34865fd1c685034",
+  "width": 1254,
+  "height": 1254,
+  "reader": "one nonblind visual estimate by Codex",
+  "centers_raw_px_R1_to_R4": [
+    [
+      221,
+      899
+    ],
+    [
+      220,
+      333
+    ],
+    [
+      1033,
+      333
+    ],
+    [
+      1032,
+      899
+    ]
+  ],
+  "angle_origin": "image center, positive x right, clockwise",
+  "estimated_gaps_deg": [
+    69.66,
+    108.25,
+    69.8,
+    112.29
+  ],
+  "estimated_span_ratio": 1.4363957597173145,
+  "mean_error_on_1024_canvas_px": 9.92,
+  "coord_transform": "uniform output canvas scaling only",
+  "human_reviews": 0
+}

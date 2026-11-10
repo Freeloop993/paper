@@ -1,0 +1,70 @@
+{
+  "method": "synthetic UI inputs; distances and gaps recomputed from exported PNG red pixel centroids",
+  "cases": [
+    {
+      "case": "四旋 X 不等夹角",
+      "file": "drone-quad-x-2388ecdcbc9a.png",
+      "n": 4,
+      "axis_cm": 40,
+      "axis_from_red_pixels_cm": 40.0,
+      "actual_ratio": 1.4283,
+      "gaps": [
+        69.99,
+        110.01,
+        70.0,
+        110.0
+      ]
+    },
+    {
+      "case": "四旋仅轴心 + 跨度比",
+      "file": "drone-quad-x-1a8d9820b7c7.png",
+      "n": 4,
+      "axis_cm": 40,
+      "axis_from_red_pixels_cm": 40.006,
+      "actual_ratio": 1.25,
+      "gaps": [
+        77.32,
+        102.68,
+        77.32,
+        102.68
+      ]
+    },
+    {
+      "case": "六旋农业植保 + 桨盘",
+      "file": "drone-hexa-x-6d6137527565.png",
+      "n": 6,
+      "axis_cm": 160,
+      "axis_from_red_pixels_cm": 160.059,
+      "actual_ratio": 0.8659,
+      "gaps": [
+        49.98,
+        70.02,
+        49.98,
+        70.01,
+        49.99,
+        70.01
+      ]
+    },
+    {
+      "case": "六旋 H 型",
+      "file": "drone-hexa-h-ab291800d59d.png",
+      "n": 6,
+      "axis_cm": 160,
+      "axis_from_red_pixels_cm": 159.989,
+      "actual_ratio": 1.2002,
+      "gaps": [
+        50.21,
+        50.21,
+        79.61,
+        50.19,
+        50.19,
+        79.6
+      ]
+    }
+  ],
+  "narrow": {
+    "screen": 390,
+    "doc": 390
+  },
+  "model_calls": 0
+}
