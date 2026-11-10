@@ -1,0 +1,85 @@
+{
+  "tool": "Built-in GPT Image (image_gen)",
+  "role": "external examples for concept-image readability",
+  "prompt": "Develop one four-rotor concept for everyday personal aerial photography. Communicate compactness, simplicity and considered detailing. Resolve the camera/body relationship and the transitions from the body to the four arms. Choose the body silhouette, sections, surface language and distribution of materials to serve your concept.\n\nShow the complete drone in one front three-quarter view from slightly above. Use a plain background and soft lighting so the body depth, camera region and junctions are readable.\n\nAvoid: cropped product, collage, labels, watermark, disconnected arms, extra rotor.\nSquare image.",
+  "input_images": [],
+  "transparent_background": false,
+  "seed": null,
+  "model_build": null,
+  "controlnet_settings": null,
+  "sampling_steps": null,
+  "brief_source": "experiments/b02-view-calibration/protocol.json",
+  "brief_source_sha256": "1342e2a0190dc58a8fe6a93a2cbecddccb4089b846de9325c3e7084848a4500b",
+  "calls": 6,
+  "images": 6,
+  "human_ratings": 0,
+  "cloud_instance_starts_this_run": 0,
+  "outputs": [
+    {
+      "file": "originals/01.png",
+      "ordinal": 1,
+      "start_utc": "2026-11-10T14:06:52.631Z",
+      "finish_utc": "2026-11-10T14:07:13.687Z",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1886640,
+      "sha256": "083c110aaeeaf1505721d6b709e9e06dd391ac68acff7acc28c4044aae9ac5b5",
+      "rgb_sha256": "8d2556d690485e49c2344aa82d97e30ec68c997de3402b83666512da34476934"
+    },
+    {
+      "file": "originals/02.png",
+      "ordinal": 2,
+      "start_utc": "2026-11-10T14:07:13.688Z",
+      "finish_utc": "2026-11-10T14:07:39.326Z",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1816175,
+      "sha256": "df583acc607d59fa908ff1db25241e8b2b3cbc3c9cbcd1fdf31f14e30a8e5d53",
+      "rgb_sha256": "dea5c1b199c47f1773991cab4c74dd8400fe2b1d906aa7a79790438b4b7fab2f"
+    },
+    {
+      "file": "originals/03.png",
+      "ordinal": 3,
+      "start_utc": "2026-11-10T14:07:39.327Z",
+      "finish_utc": "2026-11-10T14:08:00.672Z",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1944745,
+      "sha256": "f70d42ffd8133c7bc398b6b56d1c3ecb9cab18dbf2cb9df7f97f85819890f8f2",
+      "rgb_sha256": "30f5a5113ffcdb6f417326456748bf44b8766385e25e736f34d6befeea556d1e"
+    },
+    {
+      "file": "originals/04.png",
+      "ordinal": 4,
+      "start_utc": "2026-11-10T14:08:00.673Z",
+      "finish_utc": "2026-11-10T14:08:19.605Z",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1854064,
+      "sha256": "ddb77b61e344145940cc17ddd476e858c9b89dd231f9d180a9cd0fc31834ab7c",
+      "rgb_sha256": "0d3547f9f600940955b90d6f851ead9bbd3e552e45263b39e73c772b4a4f8750"
+    },
+    {
+      "file": "originals/05.png",
+      "ordinal": 5,
+      "start_utc": "2026-11-10T14:08:19.606Z",
+      "finish_utc": "2026-11-10T14:08:40.010Z",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1884952,
+      "sha256": "86fc505337da0b297e5c1d3d5cc1bc27ea3ee838d7153b18bced0af595694561",
+      "rgb_sha256": "42c5d13b4695e1e9bf9d59ad98e86f5bc6be8982219af7572e7af05e38dc9e19"
+    },
+    {
+      "file": "originals/06.png",
+      "ordinal": 6,
+      "start_utc": "2026-11-10T14:08:40.010Z",
+      "finish_utc": "2026-11-10T14:09:01.827Z",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 1920003,
+      "sha256": "07264e9e00653b1e08c754c84e5c59915f35d0b4859ba0e486403a8cf9749507",
+      "rgb_sha256": "04653602c91a78f71f2dbda5ba309dc655f6dabc1fb2c54aba34071fb535021d"
+    }
+  ]
+}
