@@ -9,6 +9,8 @@
 4. **作者/必要时导师｜方向与范围决定：**见 [A01 六旋、LoRA与正式采集条件](https://github.com/Freeloop993/paper/issues/3)。Issue、日期和历史预算本身不授权开机、招募或训练。
 5. 领取、交付、复核按[协作规则](CONTRIBUTING.md)。发生实质变化就在本次工作结束前提交并回读；没有变化不空刷。[进度日志](PROGRESS.md)按日期保留历史。
 
+**作者找回的无人机配置器**：[可编辑源码和本地启动](prototypes/drone-configurator/README.md) · [研究纠偏和 Claude 首个修改任务](docs/configurator-realignment.md)。
+
 Google 总记录、Obsidian、飞书文献库和原始材料是既有来源，不要求更改其权限。不能访问原件时仅使用仓库已提供的内容，并标明局限。
 
 作者交办的[全局评估材料与执行要求](planning/claude-review.md)汇集开题原件、带修订的目录、Google Doc 快照、文献入口与最新 S1 复测。

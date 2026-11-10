@@ -2,6 +2,8 @@
 
 **更新：** 2026-11-11 北京时间，Claude，输入版本 main `8216631`。Codex 已复核并合入 PR #16、#17，STATUS、PROGRESS 与 X12-r3 工具已同步。**规则：** 每次工作结束前，谁改变了下表任一格，谁更新这一页并改日期；详细事实仍以 [STATUS](../STATUS.md)、[PROGRESS](../PROGRESS.md) 与工单回执为准，本页只做导航，不写新结论。待办仍只在 Issues。
 
+**原型接续（作者最新交办）。** Claude 从[历史配置器源码与启动入口](../prototypes/drone-configurator/README.md)和[讨论决定、首个 PR 与验收](configurator-realignment.md)开始；Codex 复核请求与离线导出。此项只推进原型和方法说明。
+
 ## 1. 一句话现状
 
 方法与部分负结果可写；真人设计过程、独立评议、六旋应用与共同对照都还没有数据；开题偏离尚无导师意见原件。全篇结论不可写。

@@ -39,3 +39,5 @@
 **内部节点**：11/10核输入/双案例证据，11/12冻结或列待裁定项；11/22主数据收口，11/26数据冻结，12/10初稿、12/15内部终稿。均为目标，不保证外部提交或发表。
 
 Claude 已提交[六章证据矩阵](manuscript/evidence-matrix.md)和[第 1 章修订稿](manuscript/revisions/ch01-1.3-1.4.md)。旧主 18、追加 39 和 S1 六图的受理数、采样缓存与原图去重已按[原始回执复算](evidence/denominators/README.md)。
+
+**原型与写作入口。** 作者找回的[配置器源码](prototypes/drone-configurator/README.md)与[纠偏交接](docs/configurator-realignment.md)已整理。可据此描述第 3 章意图转译和第 4.1 节历史实现。集成定位图、确认请求和双案例任务入口仍待修改、验收。
