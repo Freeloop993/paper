@@ -56,12 +56,12 @@ def build(plan_path, destination):
                      "rgb_sha256": hashlib.sha256(clean.tobytes()).hexdigest()})
     secrets.SystemRandom().shuffle(images)
     manifest = {"schema":"rating-kit-v1", "pack":secrets.token_hex(8),
-                "mode":plan["mode"], "images":images,
+                "mode":plan["mode"], "wording":"X12-r2", "images":images,
                 "pairs":[[ids[a],ids[b]] for a,b in pairs]}
     (share / "pack.js").write_text("const PACK = "+json.dumps(manifest)+";\n", encoding="utf-8")
     for name in ("index.html", "review.js"):
         shutil.copyfile(HERE / "template" / name, share / name)
-    private = {"pack": manifest["pack"], "mode": plan["mode"], "images": rows,
+    private = {"pack": manifest["pack"], "mode": plan["mode"], "wording":manifest["wording"], "images": rows,
                "pairs":pairs, "plan_sha256":digest(plan_path)}
     (destination / "researcher-key.json").write_text(
         json.dumps(private, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")

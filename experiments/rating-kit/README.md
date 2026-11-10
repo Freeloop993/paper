@@ -2,6 +2,8 @@
 
 依据 [正式采集材料包第 5–7 节](../../docs/protocols/formal-collection-kit.md)。本版可用于离线校准。正式采集仍需作者落实人选、同意程序、抽签登记和评分规则。研究者保管本目录，评议者只收下述 participant 文件夹。
 
+已收到[首份真实校准反馈](../../evidence/x12-calibration/README.md)。下列 calibration/participant 是首轮封存包。当前 build_pack.py 新制包采用 X12-r2，新增细节充分性问题，并将“值得深化”改问是否推荐沿当前造型继续设计。后续评议者使用同一版包。
+
 ## 打开校准包
 
 1. 下载或克隆仓库，将 `calibration/participant/` 整个文件夹拷出，可以压缩后交付。接收方先解压，再用桌面版 Edge、Chrome 或 Firefox 打开其中的 `index.html`。直接打开 GitHub 预览不能填写。网页离线运行，包含图片、两份脚本和 HTML。
@@ -38,7 +40,7 @@ python -c "import hashlib,pathlib; print(hashlib.sha256(pathlib.Path('plan.json'
 python allocate.py plan.json 已事先登记的64位摘要 新封存目录
 ```
 
-每四人块中四种任务与方法顺序各一次，固定种子和计划可在另一台电脑重现。每人两个场次都列于 allocation.csv，seal.json 留有计划和表的 SHA-256。输出目录须为新目录。正式招募按封存槽位执行，记录退出与缺席，保留原分配。不要向评议者提供分配表。至本次交付，正式抽签和真人校准均待执行。
+每四人块中四种任务与方法顺序各一次，固定种子和计划可在另一台电脑重现。每人两个场次都列于 allocation.csv，seal.json 留有计划和表的 SHA-256。输出目录须为新目录。正式招募按封存槽位执行，记录退出与缺席，保留原分配。不要向评议者提供分配表。正式抽签仍待作者登记。
 
 
 ## 回收与研究者分析

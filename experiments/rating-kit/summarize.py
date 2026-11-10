@@ -27,6 +27,7 @@ def summarize(key, files, rule=None):
     for f in files:
         v = read(f)
         if (v["pack"] != key["pack"] or v["mode"] != key["mode"] or v["schema"] != "rating-kit-v1"
+                or v.get("wording") != key.get("wording")
                 or v["responseId"] in seen or not v.get("ended")):
             raise ValueError("Mismatched, duplicate or unfinished response: " + f.name)
         seen.add(v["responseId"])
