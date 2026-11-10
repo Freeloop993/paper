@@ -1,0 +1,71 @@
+{
+  "scope": "One unblinded desktop export integration example",
+  "image_tool": "Built-in GPT Image",
+  "model_version": null,
+  "seed": null,
+  "actual_prompt": "日常随行航拍，观察前摄和臂根。以所附顶视定位图为布局依据，生成一张四旋翼航拍无人机工业设计概念效果图。保持正上方垂直观察、方形画布、机头朝画面右。把四个红色圆心当作四个电机转轴在画面上的目标位置，每个转轴配真实桨叶。蓝线只表示连接，中央绿点只给中心位置；机壳的轮廓、表面、臂根过渡、材质与分件由你设计。前向相机融入右侧机鼻。全机完整入画，浅色背景、柔和光照，能看到机壳和桨叶的真实形体。画面仅呈现产品，不出现坐标、文字、彩色骨架、标签或比例尺。",
+  "input_png": "drone-quad-x-af19f1313ba0.png",
+  "input_json": "drone-quad-x-af19f1313ba0.json",
+  "input_png_sha256": "7f6961db430b19aeabad46678768482959619486618fb3acd92cde97ddb658c2",
+  "output_png": "gpt-image-top.png",
+  "output_png_sha256": "a50243cbbcc8b71542babe88009b1494a7e38498377025d6777518b6561f9fa2",
+  "raw_output_size": [
+    1254,
+    1254
+  ],
+  "inputs": 1,
+  "completed": 1,
+  "reference_mode": "one original PNG supplied by path to GPT Image by Codex; no ComfyUI request from the webpage",
+  "reader": "Codex nonblind visual estimate, one reading; no fitted transform, only uniform raster-size scaling",
+  "hubs": [
+    {
+      "id": "R1",
+      "target_1024": [
+        222.3690625,
+        801.6309375000001
+      ],
+      "estimated_raw_output_px": [
+        292,
+        994
+      ],
+      "estimated_error_at_1024_px": 18.96
+    },
+    {
+      "id": "R2",
+      "target_1024": [
+        222.3690625,
+        222.3690625
+      ],
+      "estimated_raw_output_px": [
+        293,
+        249
+      ],
+      "estimated_error_at_1024_px": 25.45
+    },
+    {
+      "id": "R3",
+      "target_1024": [
+        801.6309375000001,
+        222.3690625
+      ],
+      "estimated_raw_output_px": [
+        960,
+        249
+      ],
+      "estimated_error_at_1024_px": 26.0
+    },
+    {
+      "id": "R4",
+      "target_1024": [
+        801.6309375000001,
+        801.6309375000001
+      ],
+      "estimated_raw_output_px": [
+        960,
+        994
+      ],
+      "estimated_error_at_1024_px": 20.36
+    }
+  ],
+  "mean_error_at_1024_px": 22.69
+}

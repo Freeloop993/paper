@@ -1,0 +1,48 @@
+{
+  "schema": "desktop-drone-layout-v1",
+  "view": "top",
+  "parameters": {
+    "rotorType": "quad",
+    "frameType": "x",
+    "angleConfig": "90-90-90-90",
+    "axisLength_cm": 40,
+    "armRatio": 1,
+    "armLength_cm": 15
+  },
+  "prompt": "日常随行航拍，观察前摄和臂根",
+  "terms": [],
+  "image": {
+    "width_px": 1024,
+    "height_px": 1024,
+    "sha256": "7f6961db430b19aeabad46678768482959619486618fb3acd92cde97ddb658c2",
+    "filename": "drone-quad-x-af19f1313ba0.png"
+  },
+  "coordinates": {
+    "origin": "top-left",
+    "x_positive": "right",
+    "y_positive": "down",
+    "pixels_per_cm": 20.48
+  },
+  "motor_centers": [
+    {
+      "id": "R1",
+      "x_px": 222.3690625,
+      "y_px": 801.6309375000001
+    },
+    {
+      "id": "R2",
+      "x_px": 222.3690625,
+      "y_px": 222.3690625
+    },
+    {
+      "id": "R3",
+      "x_px": 801.6309375000001,
+      "y_px": 222.3690625
+    },
+    {
+      "id": "R4",
+      "x_px": 801.6309375000001,
+      "y_px": 801.6309375000001
+    }
+  ]
+}
