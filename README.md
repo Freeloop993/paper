@@ -1,7 +1,7 @@
 # paper
 # 多旋翼无人机造型论文协作仓库
 
-**当前：研究进行中；第1—3章和已核结果可以写，不能定稿整篇结论。** 本私有库是 Claude、Codex 和作者的跨设备交接入口。它保存共享进度、论文要求、可编辑文字与脱敏证据；原始研究档案仍按原权限保存。
+**当前：研究进行中；第1—3章和已核结果可以写，不能定稿整篇结论。** 本公开仓库是 Claude、Codex 和作者的跨设备交接入口。它保存共享进度、论文要求、可编辑文字与脱敏证据；原始研究档案仍按原权限保存。
 
 1. 开工先读 [接手快照](docs/handoff.md)（一页全局看板与待决事项，每次工作结束前更新）和 [当前状态与写作门槛](STATUS.md)，再看 [开放工单](https://github.com/Freeloop993/paper/issues?q=is%3Aissue+is%3Aopen)。**Issues 是双方唯一共享待办**，不是每端再建一套。
 2. **Claude｜全局规划与论文写作：**从 [C01 六章证据矩阵](https://github.com/Freeloop993/paper/issues/1) 接手，读[开题五项](docs/requirements.md)、[现行目录](manuscript/outline.md)和[文献阅读地图](references/reading-map.md)。[前三章既有草稿](manuscript/source-drafts/)供复用，不代表已定稿。
