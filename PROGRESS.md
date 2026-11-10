@@ -53,3 +53,5 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 - 2026-11-10（北京时间）｜复核并合入 [#16](https://github.com/Freeloop993/paper/pull/16)、[#17](https://github.com/Freeloop993/paper/pull/17)。四旋视角、已选顶视父图、六旋测绘任务和公开仓库见 [#3](https://github.com/Freeloop993/paper/issues/3)。X12 新制包 r3 同步实体构型题和细节判断，旧六图仅作表单预读。本轮四旋 B02 与 G2d 均无新增生成。
 
 - 2026-11-10｜作者提醒六旋原有植保方向。对照开题第 7、8 页与 10/15 两版六旋资料表，D2 标为重新核对。已有测绘图沿用原任务标记。[出处核对](https://github.com/Freeloop993/paper/issues/3#issuecomment-6769225591)。
+
+- 2026-11-10｜[D2 作者决定](https://github.com/Freeloop993/paper/issues/3#issuecomment-6769273544)确定农业植保，回看三款厂家手册的部件总览，登记药箱及喷洒组件的可见性，编制一份六旋植保离线输入。约 22:00 北京时间，原 CompShare 实例关机，同区 4090 24GB 单卡、14 核/64GB 的库存页显示暂无资源。G2d、B02 校准及六旋植保本轮模型提交均为 0。

@@ -1,0 +1,87 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "qwen_image_2.1_bf16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_8b_bf16.safetensors",
+        "type": "qwen_image",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "TextEncodeQwenImage21",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "prompt": "Design one six-rotor agricultural plant-protection aircraft for crop spraying. Show six rotor units on six arms connected to a central frame. Develop how the spray tank sits in the frame and how the spraying assembly is supported by the airframe. Show the relation of the outlets to their support, using hose runs where visible. Choose the tank shape, frame construction, arm profiles and spray assembly layout to form a coherent working aircraft. Show one complete concept at a front-side oblique angle that keeps the tank-to-frame joint and the near-side spray mount visible together, with soft lighting and a plain background.",
+        "negative_prompt": "collage, text labels, watermark, cropped aircraft, disconnected arms",
+        "resolution": 1024
+      }
+    },
+    "10": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026112301,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    "11": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "10",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "12": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "11",
+          0
+        ],
+        "filename_prefix": "HEXA-agri-offline-v1"
+      }
+    }
+  }
+}

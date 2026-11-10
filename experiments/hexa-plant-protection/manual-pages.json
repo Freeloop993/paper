@@ -1,0 +1,47 @@
+[
+  {
+    "model": "T16",
+    "url": "https://dl.djicdn.com/downloads/t16/20200520/T16_User_Manual_v1.4_EN.pdf",
+    "pdf_page": 13,
+    "printed_page": 11,
+    "source_sha256": "d0b8acaf2a40ed065efd6e9dc78155bb13826ee41a8c1bcc8a1660b06060d27a",
+    "page_png_sha256": "53eef6ff0fb41f70c0ea742957f8c8e2d56640145f7af729f04030b2f7adfaff",
+    "figure_labels": {
+      "spray_tank": 17,
+      "frame_arms": 4,
+      "hoses": 6,
+      "sprinklers": 7,
+      "nozzles": 9
+    }
+  },
+  {
+    "model": "T20",
+    "url": "https://dl.djicdn.com/downloads/t20/20201201/Agras_T20_User_Manual_v1.4_EN.pdf",
+    "pdf_page": 13,
+    "printed_page": 11,
+    "source_sha256": "8403633a4af4ab81ce0f837c57c1643e20b6d0b0b7cc66bfe06b0fb5800a3bb9",
+    "page_png_sha256": "22ddddab11a3c486a68fd85c07b2c87d3b96eab21a9a4431443331311c71a3c3",
+    "figure_labels": {
+      "spray_tank": 17,
+      "frame_arms": 4,
+      "hoses": 6,
+      "sprinklers": 7,
+      "nozzles": 9
+    }
+  },
+  {
+    "model": "T30",
+    "url": "https://dl.djicdn.com/downloads/t30/all_update/T30_User_Manual_v1.4_EN.pdf",
+    "pdf_page": 13,
+    "printed_page": 11,
+    "source_sha256": "6c48cf683169f6e0b794121dd680e946bff17ac644e0e68155ab6ba5af066fa1",
+    "page_png_sha256": "5365251c4df97b3d913c8941bdbf2d7c0a499dcf5318021293a05d4f5785e24e",
+    "figure_labels": {
+      "spray_tank": 15,
+      "frame_arms": 5,
+      "hoses": 7,
+      "sprinklers": 8,
+      "nozzles": 9
+    }
+  }
+]
