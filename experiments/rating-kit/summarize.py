@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 from statistics import median
+from eligibility import read_registry, require_eligible
 
 
 def read(path):
@@ -12,6 +13,10 @@ def read(path):
 
 
 def summarize(key, files, rule=None):
+    if key.get("mode") == "formal":
+        registry = read_registry()
+        for image in key["images"]:
+            require_eligible("formal", image["original_sha256"], image["rgb_sha256"], registry)
     items = {row["id"]: row for row in key["images"]}
     grouped = {code: [] for code in items}
     seen = set()

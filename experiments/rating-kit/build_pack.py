@@ -6,6 +6,7 @@ import secrets
 import shutil
 from pathlib import Path
 from PIL import Image
+from eligibility import read_registry, require_eligible
 
 HERE = Path(__file__).resolve().parent
 
@@ -31,6 +32,7 @@ def build(plan_path, destination):
     if len(set(ids.values())) != len(keys):
         raise RuntimeError("Image ID collision")
     checked = []
+    registry = read_registry()
     for item in inputs:
         source = plan_path.parent / item["path"]
         if item["task"] not in ("A", "B"):
@@ -40,20 +42,23 @@ def build(plan_path, destination):
                 raise ValueError(f"Expected a curated 1024-square input: {source.name}")
             rgb = im.convert("RGB")
             clean = Image.frombytes("RGB", rgb.size, rgb.tobytes())
-        checked.append((item, source, clean))
+        original_sha = digest(source)
+        rgb_sha = hashlib.sha256(clean.tobytes()).hexdigest()
+        require_eligible(plan["mode"], original_sha, rgb_sha, registry)
+        checked.append((item, source, clean, original_sha, rgb_sha))
     destination.mkdir(parents=True, exist_ok=False)
     share = destination / "participant"
     (share / "images").mkdir(parents=True)
     rows, images = [], []
-    for item, source, clean in checked:
+    for item, source, clean, original_sha, rgb_sha in checked:
         code = ids[item["key"]]
         output = share / "images" / (code + ".png")
         clean.save(output)
         images.append({"id": code, "task": item["task"]})
         rows.append({"id": code, "source": source.name, "key": item["key"],
-                     "task": item["task"], "original_sha256": digest(source),
+                     "task": item["task"], "original_sha256": original_sha,
                      "png_sha256": digest(output),
-                     "rgb_sha256": hashlib.sha256(clean.tobytes()).hexdigest()})
+                     "rgb_sha256": rgb_sha})
     secrets.SystemRandom().shuffle(images)
     manifest = {"schema":"rating-kit-v1", "pack":secrets.token_hex(8),
                 "mode":plan["mode"], "wording":"X12-r3", "images":images,
@@ -61,7 +66,7 @@ def build(plan_path, destination):
     (share / "pack.js").write_text("const PACK = "+json.dumps(manifest)+";\n", encoding="utf-8")
     for name in ("index.html", "review.js"):
         shutil.copyfile(HERE / "template" / name, share / name)
-    private = {"pack": manifest["pack"], "mode": plan["mode"], "wording":manifest["wording"], "images": rows,
+    private = {"registry_revision": registry["revision"], "pack": manifest["pack"], "mode": plan["mode"], "wording":manifest["wording"], "images": rows,
                "pairs":pairs, "plan_sha256":digest(plan_path)}
     (destination / "researcher-key.json").write_text(
         json.dumps(private, indent=2, ensure_ascii=False)+"\n", encoding="utf-8")

@@ -1,0 +1,181 @@
+{
+  "revision": "formal-reset-2026-11-11",
+  "scope": "新版正式样本仅从正式批次完整登记后进入，原研究各自保留全分母。",
+  "formal_images": [],
+  "excluded_images": [
+    {
+      "id": "D8-01",
+      "use": "retired_design_series",
+      "sha256": "331ead3b42fe11350eab713e11817e52e4d1b69b0c19f906accede08c5d6c594",
+      "rgb_sha256": "e144b3ef1633c46faa911bcb582af5e3883dea193bfb6da8cda8d1ea95f85289",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "D8-02",
+      "use": "retired_design_series",
+      "sha256": "634cbf697310dadcca5a15b2484140bb1c177fdd513e439b9b8cfe7597fc1cee",
+      "rgb_sha256": "a5bda5677708559f547449a7cd705391dfe06b7adce9b12c002358fca775e836",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "D8-03",
+      "use": "retired_design_series",
+      "sha256": "b1deda6b065c6e7d2e48d002878099359af5cac0eed146f3fa2a3eedd051b3b0",
+      "rgb_sha256": "7aaa0f168dee2ccfaff1f421b77807563059b721ee076ac91af1c9a9a54b417d",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "D8-04",
+      "use": "retired_design_series",
+      "sha256": "7c553b9b936188c29c8ae1e60af15f92886e84fe265d446032d539bd1ed9d8be",
+      "rgb_sha256": "b3e24029c00ac22777a5a527632acff10714dad53cb2478edec30abb8ac4d6a0",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "E4-03",
+      "use": "retired_design_series",
+      "sha256": "b879b200e32a5df4967692ce5fcea717153e3c4448513a282529c096ebcaf347",
+      "rgb_sha256": "ba86754a9227135c5191801c0110143f214ad7b3ea631661bf60ab4480383e92",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "E4-02",
+      "use": "retired_design_series",
+      "sha256": "1f90fb3d20c2134ae341154fcbb2ea8898e97f1d70e915742d4f555b1c52f659",
+      "rgb_sha256": "bc019db74f80760e8799f905df10a302dfdcb70f4514d0d8b62d383d04f493df",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "E4-01",
+      "use": "retired_design_series",
+      "sha256": "34b906f2689cf14d5bd8339a20d0d2ceac1475915f4caf72745e512e74ea587b",
+      "rgb_sha256": "c988359083f351b750e8448f95128ee83baa88b7836b1d55621ecc30e79f8ae6",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "E4-04",
+      "use": "retired_design_series",
+      "sha256": "74c49f06dd91e4fd232beba15dea62a152ce7be9805c62f1c916791e70c973f2",
+      "rgb_sha256": "b982cc6ab57c85b6af512f148eecf7c744327ff5c1689885273abd62522d8f7d",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "J2-02",
+      "use": "retired_design_series",
+      "sha256": "9db4b9f989feb8349606286dc7aca63076f0bd53284e8a2d1eb95ebf7d24c3da",
+      "rgb_sha256": "d8c08f4ec166d7bc67336d2e6b7c27d1146fde988af1df95e8e1ad0c11ee74d7",
+      "size": [
+        1024,
+        1024
+      ],
+      "rating_alias": "H06"
+    },
+    {
+      "id": "J2-01",
+      "use": "retired_design_series",
+      "sha256": "ad5bda5e54623c3d44c9a0f1b885606b9149bd4b23ce9a469b3bfeb9d3a94c78",
+      "rgb_sha256": "c55c49e2d7e439deabb4442e5a1a3a285fcf88e1940e59d7405e9e3fe2a796ed",
+      "size": [
+        1024,
+        1024
+      ],
+      "rating_alias": "H05"
+    },
+    {
+      "id": "BI-01",
+      "use": "retired_same_J2_input",
+      "sha256": "318e8e3ea554aee604bcbcc44ac5cee26f9b1cd8d7fa689ca8fc67f0ad6b7311",
+      "rgb_sha256": "b6139a6d4c6bd9e7ce30a6a8849cd00cad7fe47cf04c4cc2a04bd3e5c6b3cd2f",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "BI-02",
+      "use": "retired_same_J2_input",
+      "sha256": "97142156ab5fa63115ca55bf14cbcda093160fef3ab6afc0e6fff5b92f1a65e2",
+      "rgb_sha256": "d94b8d075f9fd1192767a3b0bda70e168eedc6220489062512920f8bee32822b",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "J2-02_parametric_v0.1",
+      "use": "retired_manual_derivative",
+      "sha256": "b7d82fe9cf1f69bcb9d88f68e4a612356549f02898d7b572f0938bf1eea3a599",
+      "rgb_sha256": "d605fde0ee44301c66a9ab0083830f7f0d21f9589dd3b6567de070af2a51b445",
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "id": "2026-11-11-quad-reference-p01",
+      "use": "pilot_only",
+      "sha256": "6d9945a0cc6173fd0d0d7afd5adf29df54e93d12ea46b70951a2bd6ff1e78d89",
+      "rgb_sha256": "13e80440851ad0253b3e566403e3973de1044ae7ddff92fe024d59bdd523b23f",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "2026-11-11-quad-reference-p02-top",
+      "use": "pilot_only",
+      "sha256": "987a2eabfacd63de99ffcce74a39bd5e96fee63003cbbfece4f2507770e007d1",
+      "rgb_sha256": "918640110b1af60bbf4d544407087685ef9048aea9a43f44397c735a1ce12ec0",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "P03-T",
+      "use": "redo_technical_only",
+      "sha256": "15b2572450a0f1ce82b79f6c230af4db3ac2176d0d35e6ec186ebbceca1a88fe",
+      "rgb_sha256": "113ae1e9c095f99c14cb86d064be5915f82ecf854dfcad3ec58e3c13cf759134",
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "P03-T+4",
+      "use": "redo_technical_only",
+      "sha256": "62137d01881480b12e85ae55124fc038f9429ac0bc22366fea3207adba6dc37f",
+      "rgb_sha256": "0c7d6ce3c511eac4b0abdf95f28deaa6692a1ca9090e97362bf234138ec1f913",
+      "size": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "other_legacy_images": "not_admitted_pending_batch_review",
+  "calibration_images": []
+}

@@ -63,3 +63,5 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 - 2026-11-10｜3.3.2、3.4.2–3.4.4、4.1.2–4.1.3：桌面原型接入四旋航拍与六旋植保需求、按夹角或跨度比布局、可选桨盘，实际核验四组 PNG/JSON。一组四旋 70°/110° 以网页提示和定位图完成一次 GPT Image 调用，原件及非盲读数见[原型 v2](experiments/desktop-parameter-v2/README.md)。
 
 - 2026-11-10 · Codex 按作者要求移交[脱敏配置器源码](prototypes/drone-configurator/README.md)与[讨论决定及改动验收](docs/configurator-realignment.md)。旧程序区分俯视示意和产品呈现；旧主生图请求仅发文字。私有评论文件核到 5,614 片段、3,603 个不同评论 ID。本次新增模型提交与评议均为 0。Claude 接原型优化，Codex 核实际请求。
+
+- 2026-11-11 · 旧约束造型系列 12 张原图与衍生材料退出新版正式集；保留原反馈。P03 重做技术校验 2 张、正式纳入 0。四旋叶数控制、角度与跨度耦合、桨盘净距及 D/S 主研究见 [变量表](docs/research-variables.md) 和 [样本清单](evidence/formal-reset/README.md)。

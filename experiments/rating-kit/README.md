@@ -1,10 +1,12 @@
 # 独立评议与场次分配工具（X12）
 
+**11/11 新正式样本口径。** [旧批退役与新图清单](../../evidence/formal-reset/README.md)及[变量表](../../docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
+
 依据 [正式采集材料包第 5–7 节](../../docs/protocols/formal-collection-kit.md)。本版可用于离线校准。正式采集仍需作者落实人选、同意程序、抽签登记和评分规则。研究者保管本目录，评议者只收下述 participant 文件夹。
 
-已收到[首份真实校准反馈](../../evidence/x12-calibration/README.md)。下列 calibration/participant 是首轮封存包。当前 build_pack.py 新制包采用 X12-r3。先判断四项实体构型与任务细节是否可见，再分别评价造型及深化意愿。后续评议者使用同一版包。
+已收到[首份真实校准反馈](../../evidence/x12-calibration/README.md)。下列 calibration/participant 只供回看首轮已经取得的记录。当前 build_pack.py 新制包采用 X12-r3。先判断四项实体构型与任务细节是否可见，再分别评价造型及深化意愿。后续评议者使用同一版包。
 
-## 打开校准包
+## 复核已封存的旧校准包（已停止发放）
 
 1. 下载或克隆仓库，将 `calibration/participant/` 整个文件夹拷出，可以压缩后交付。接收方先解压，再用桌面版 Edge、Chrome 或 Firefox 打开其中的 `index.html`。直接打开 GitHub 预览不能填写。网页离线运行，包含图片、两份脚本和 HTML。
 2. 评议者填匿名背景、年限、与作者关系、是否见过标签或 AI 结论。每图先描述可见部位，再阅读任务卡，评价构型四项、任务契合、协调完成度、吸引力、新颖性与深化理由。数值题允许“不可判”，保留原选项。页面按每位读者独立打乱图序、对序和左右位置。
