@@ -1,0 +1,20 @@
+{
+  "stage": "local_preparation",
+  "generated_outputs": 0,
+  "submitted": 0,
+  "source_commit": "e8c94d1",
+  "old_middle_guide_sha256": "c96626bccfbb67313bde13e48f8c2fe57105dfecd738e5cc25aa9bae59c8854f",
+  "identical_disk_radius_72px_pixels_in_four_hub_regions": true,
+  "offline_tests": [
+    "all graph and guide hashes",
+    "only seed, guide and output name change across six graphs",
+    "original C1 Canny route",
+    "ideal six synthetic points sets pass",
+    "fully missing control fails",
+    "original G2 scoring sanity controls pass"
+  ],
+  "once_payload_bytes": 86102,
+  "once_payload_sha256": "12b315bd6b3ef3b4b0bcd2ccdc9e60c79124452f8ef47253344fc49d5a0a83d4",
+  "conditional_proposed_ceiling_CNY": 4,
+  "conditional_proposed_minutes": 54
+}

@@ -8,8 +8,8 @@ def spans(a):return [max(v)-min(v) for v in zip(*a)]
 def qualify(points):
     return (isinstance(points,list) and len(points)==4 and all(isinstance(p,list) and len(p)==2 and all(type(v)==int and 0<=v<1024 for v in p) for p in points) and len(set(map(tuple,points)))==4)
 def vec(a):return sorted(sorted(a,key=lambda p:p[1])[:2])+sorted(sorted(a,key=lambda p:p[1])[2:])
-def report(dataset):
-    manifest=read(P/'manifest.json')['cases']; ids={i['case'] for i in manifest}
+def report(dataset, *, manifest_path=None):
+    manifest=read(P/'manifest.json' if manifest_path is None else manifest_path)['cases']; ids={i['case'] for i in manifest}
     if set(dataset)!=ids:raise ValueError('supply exactly the registered cases; null means missing')
     rows=[]
     for c in manifest:

@@ -1,0 +1,180 @@
+{
+  "batch": "G2d",
+  "shape": {
+    "source_sha256": "c96626bccfbb67313bde13e48f8c2fe57105dfecd738e5cc25aa9bae59c8854f",
+    "arm_axis_lengths_px": [
+      168.29141392239833,
+      169.7056274847714,
+      168.29141392239833,
+      169.7056274847714
+    ],
+    "fixed_arm_length_px": 168.999,
+    "blade_radius_px": 68.95705330131211,
+    "arm_width_px": 12,
+    "shaft_ring_radius_px": 10,
+    "shaft_ring_stroke_px": 3
+  },
+  "cases": [
+    {
+      "case": "G2d-r085-s2026111105",
+      "level": 0.85,
+      "seed": 2026111105,
+      "targets": [
+        [
+          706,
+          741
+        ],
+        [
+          318,
+          741
+        ],
+        [
+          318,
+          283
+        ],
+        [
+          706,
+          283
+        ]
+      ],
+      "base_wh": 1.0,
+      "guide": "parts-r085.png"
+    },
+    {
+      "case": "G2d-r085-s2026111106",
+      "level": 0.85,
+      "seed": 2026111106,
+      "targets": [
+        [
+          706,
+          741
+        ],
+        [
+          318,
+          741
+        ],
+        [
+          318,
+          283
+        ],
+        [
+          706,
+          283
+        ]
+      ],
+      "base_wh": 1.0,
+      "guide": "parts-r085.png"
+    },
+    {
+      "case": "G2d-r100-s2026111105",
+      "level": 1.0,
+      "seed": 2026111105,
+      "targets": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "base_wh": 1.0,
+      "guide": "parts-r100.png"
+    },
+    {
+      "case": "G2d-r100-s2026111106",
+      "level": 1.0,
+      "seed": 2026111106,
+      "targets": [
+        [
+          724,
+          724
+        ],
+        [
+          300,
+          724
+        ],
+        [
+          300,
+          300
+        ],
+        [
+          724,
+          300
+        ]
+      ],
+      "base_wh": 1.0,
+      "guide": "parts-r100.png"
+    },
+    {
+      "case": "G2d-r115-s2026111105",
+      "level": 1.15,
+      "seed": 2026111105,
+      "targets": [
+        [
+          738,
+          709
+        ],
+        [
+          286,
+          709
+        ],
+        [
+          286,
+          315
+        ],
+        [
+          738,
+          315
+        ]
+      ],
+      "base_wh": 1.0,
+      "guide": "parts-r115.png"
+    },
+    {
+      "case": "G2d-r115-s2026111106",
+      "level": 1.15,
+      "seed": 2026111106,
+      "targets": [
+        [
+          738,
+          709
+        ],
+        [
+          286,
+          709
+        ],
+        [
+          286,
+          315
+        ],
+        [
+          738,
+          315
+        ]
+      ],
+      "base_wh": 1.0,
+      "guide": "parts-r115.png"
+    }
+  ],
+  "files": {
+    "guides/parts-r085.png": "6c3b958c5e0350e0e5da6b598d9681defbc2294c2c9094327f53f4e7bc30dc1f",
+    "requests/G2d-r085-s2026111105.json": "4ebaa1e4c9cf84ca7ba7dee502ae90de6334d2576643e4b21305b2f33273fec8",
+    "requests/G2d-r085-s2026111106.json": "c7f5bb09d922b3cb4680afe31d7a185489eac35baab9a1b7031a7233c93c8c9a",
+    "guides/parts-r100.png": "6fa24be0da47f38a84df50dec947fdda54e8bf8edd11b8e5138b49bcb24adab5",
+    "requests/G2d-r100-s2026111105.json": "db30c485951e00c721c00e7dee78587924aeab3dd3246c2b110d73c21e784765",
+    "requests/G2d-r100-s2026111106.json": "43d63bd329e83d22f1c082fa491b91c3dd2c19224834361ba5a8a5c080cb8d41",
+    "guides/parts-r115.png": "5b044041d5656bf75a54bd3656351384b82c03db4f6b2eef5c5e60072d572cfb",
+    "requests/G2d-r115-s2026111105.json": "8b8a6196eea95433cb5c1d4428e24f57410f7ed3e73e3789a52010aaf0389977",
+    "requests/G2d-r115-s2026111106.json": "55b69594fd5abe9b8f91e19e1af1b4008c3bafd9a38d053d02031da0595ca6a6"
+  }
+}

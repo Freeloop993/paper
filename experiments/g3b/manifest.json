@@ -1,0 +1,36 @@
+{
+  "batch": "G3b",
+  "seed": 2026111101,
+  "source_parent_sha256": "ac35060507d2694ab6ffe46c18d1b99e46841e6ea3c79181b697505bb818fdc5",
+  "parent_upload_name": "parent-ac35060507d2694ab6ffe46c18d1b99e46841e6ea3c79181b697505bb818fdc5.png",
+  "cases": [
+    {
+      "case": "G3b-i",
+      "reference_condition": true,
+      "parent_initial_latent": false,
+      "denoise": 1.0,
+      "request_sha256": "aedf0dc51ef86c0b9b9cacf9468ce34e9f0bada65193d6e40b3eefdd23b871cd"
+    },
+    {
+      "case": "G3b-ii",
+      "reference_condition": true,
+      "parent_initial_latent": true,
+      "denoise": 0.8,
+      "request_sha256": "07bd80965d991ed0a7ac8c8a5f509605548d228ecc71eeb7fcd6d94d60dfd77f"
+    },
+    {
+      "case": "G3b-iii",
+      "reference_condition": true,
+      "parent_initial_latent": true,
+      "denoise": 0.65,
+      "request_sha256": "dbde5fee7dcc6578e09e1bc618479a19ab455eaaa4e2bdafc68c5d90083a11c9"
+    },
+    {
+      "case": "G3b-iv",
+      "reference_condition": false,
+      "parent_initial_latent": true,
+      "denoise": 0.8,
+      "request_sha256": "801b636ff612f8bd8b53b075f306d1453952bb001015d20d1c89477c1c60313b"
+    }
+  ]
+}
