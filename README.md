@@ -3,7 +3,7 @@
 
 **当前：研究进行中；第1—3章和已核结果可以写，不能定稿整篇结论。** 本私有库是 Claude、Codex 和作者的跨设备交接入口。它保存共享进度、论文要求、可编辑文字与脱敏证据；原始研究档案仍按原权限保存。
 
-1. 开工先读 [当前状态与写作门槛](STATUS.md)，再看 [开放工单](https://github.com/Freeloop993/paper/issues?q=is%3Aissue+is%3Aopen)。**Issues 是双方唯一共享待办**，不是每端再建一套。
+1. 开工先读 [接手快照](docs/handoff.md)（一页全局看板与待决事项，每次工作结束前更新）和 [当前状态与写作门槛](STATUS.md)，再看 [开放工单](https://github.com/Freeloop993/paper/issues?q=is%3Aissue+is%3Aopen)。**Issues 是双方唯一共享待办**，不是每端再建一套。
 2. **Claude｜全局规划与论文写作：**从 [C01 六章证据矩阵](https://github.com/Freeloop993/paper/issues/1) 接手，读[开题五项](docs/requirements.md)、[现行目录](manuscript/outline.md)和[文献阅读地图](references/reading-map.md)。[前三章既有草稿](manuscript/source-drafts/)供复用，不代表已定稿。
 3. **Codex｜图像实验、数据处理与分析：**从 [X01 两种流程输入验收](https://github.com/Freeloop993/paper/issues/2) 接手，按[方法与限制](docs/methods.md)交回请求、原件校验、分母、失败和可支持的结论。已有[第5章六旋结果段](manuscript/ch05-hexa-results.md)与[可复算数据](evidence/README.md)。
 4. **作者/必要时导师｜方向与范围决定：**见 [A01 六旋、LoRA与正式采集条件](https://github.com/Freeloop993/paper/issues/3)。Issue、日期和历史预算本身不授权开机、招募或训练。
