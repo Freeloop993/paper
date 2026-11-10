@@ -30,3 +30,14 @@
 
 - Qwen-Image 2.1 Fun ControlNet 的**定量空间精度**评估：发布说明未讨论。G2 本身就是在本任务上补这一证据。
 - 无训练风格一致性在**产品**而非插画上的评估：检索到电商场景（arXiv 2409.04750）与 CVPR 2026 FREESTYLE 补充材料，尚未核读，留给 C02。
+
+## 五、六旋任务背景的厂商资料（11/11 入册）
+
+**核读程度：** 两条均已打开原网页／PDF，按抽取文本逐项核对下列数字；PDF 未目视核对版面。均为厂商自述，本研究不验证，正文引用时写明“厂商资料”。
+
+| 编号 | 条目 | 已核信息 | 用途与限制 |
+|---|---|---|---|
+| N10 | Inspired Flight：IF1200 产品单页（[PDF](https://www.unmannedsystemstechnology.com/wp-content/uploads/2024/08/IFT-IF1200-Product-Flier-8.5-x-11-in.pdf)，第三方站点托管） | 载荷“19 lb / 8.6 kg payload capacity”；电机故障冗余带脚注条件：重心居中且起飞重量 ≤47 lb（约 21.3 kg）；应用列有 survey、mapping、inspection、agriculture 等 | 用于 2.1 六旋段，说明载荷与冗余是这类机型的卖点。文件本身没有日期，“2024/08”只出现在 URL 路径里，不能写成出版年 |
+| N11 | DJI：DJI Introduces Next-Generation Matrice 600 Aerial Platform，2016-04-17（[新闻稿](https://www.dji.com/media-center/announcements/dji-introduces-next-generation-matrice-600-aerial-platform)） | 六旋翼；最大载荷 6.0 kg；六块电池，单块失效仍可维持飞行；起落架可收起以实现 360° 无遮挡拍摄 | 用于 2.1，说明“载荷—起落架—视场”的关系。2016 年的产品，不代表现行机型 |
+
+**编号说明：** 本文件的 N01—N11 与 [additions.csv](../references/catalogs/additions.csv) 的 N001—N007 是两套临时编号，条目不同，不可互换；终稿统一编号时一并处理。
