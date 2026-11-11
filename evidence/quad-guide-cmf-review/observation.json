@@ -1,0 +1,186 @@
+{
+  "calls": 1,
+  "formal_images": 0,
+  "human_reviewers": 0,
+  "ai_reading": "condition-aware; spindle centers and tip regions visually identified",
+  "product_sha256": "86893c89152706cb7f7ebb9f572dfe5e1d56e4c8b3febc684d24350dcd93ef4a",
+  "rgb_sha256": "1d6fc6939f39f238e5337d8a7c9f854b758b31a9069d3efda4a52d04e03ac400",
+  "size": [
+    1254,
+    1254
+  ],
+  "rotors": [
+    {
+      "hub": [
+        311,
+        298
+      ],
+      "tip_windows_px": [
+        [
+          480,
+          115
+        ],
+        [
+          140,
+          478
+        ]
+      ],
+      "tips_px": [
+        [
+          484.0,
+          113.0
+        ],
+        [
+          135.5,
+          479.5
+        ]
+      ],
+      "phase_deg": 133.55789337154678,
+      "target_deg": 135,
+      "phase_error_deg": 1.4421066284532174,
+      "prior_phase_deg": 179.86644364629407,
+      "prior_error_deg": 44.86644364629407,
+      "blade_radii_px": [
+        253.28639916110774,
+        252.4727708090518
+      ],
+      "midspan_widths_px": [
+        50.25,
+        52.0
+      ]
+    },
+    {
+      "hub": [
+        942,
+        298
+      ],
+      "tip_windows_px": [
+        [
+          772,
+          115
+        ],
+        [
+          1114,
+          477
+        ]
+      ],
+      "tips_px": [
+        [
+          767.5,
+          112.5
+        ],
+        [
+          1118.0,
+          479.0
+        ]
+      ],
+      "phase_deg": 46.27835474165903,
+      "target_deg": 45,
+      "phase_error_deg": 1.2783547416590295,
+      "prior_phase_deg": 179.93368546998983,
+      "prior_error_deg": 45.066314530010175,
+      "blade_radii_px": [
+        254.6772467261259,
+        252.46187831036985
+      ],
+      "midspan_widths_px": [
+        51.25,
+        52.25
+      ]
+    },
+    {
+      "hub": [
+        944,
+        901
+      ],
+      "tip_windows_px": [
+        [
+          773,
+          1091
+        ],
+        [
+          1115,
+          724
+        ]
+      ],
+      "tips_px": [
+        [
+          770.6666666666666,
+          1094.0
+        ],
+        [
+          1118.0,
+          721.0
+        ]
+      ],
+      "phase_deg": 132.95932005608125,
+      "target_deg": 135,
+      "phase_error_deg": 2.0406799439187466,
+      "prior_phase_deg": 179.93368546998983,
+      "prior_error_deg": 44.933685469989825,
+      "blade_radii_px": [
+        259.40980020894443,
+        250.3517525403008
+      ],
+      "midspan_widths_px": [
+        54.0,
+        52.25
+      ]
+    },
+    {
+      "hub": [
+        311,
+        901
+      ],
+      "tip_windows_px": [
+        [
+          140,
+          724
+        ],
+        [
+          484,
+          1090
+        ]
+      ],
+      "tips_px": [
+        [
+          136.5,
+          720.5
+        ],
+        [
+          485.8,
+          1093.0
+        ]
+      ],
+      "phase_deg": 46.84095956613903,
+      "target_deg": 45,
+      "phase_error_deg": 1.84095956613902,
+      "prior_phase_deg": 179.86644364629407,
+      "prior_error_deg": 45.13355635370593,
+      "blade_radii_px": [
+        251.05875806272923,
+        259.65176679545243
+      ],
+      "midspan_widths_px": [
+        52.75,
+        54.75
+      ]
+    }
+  ],
+  "ratio": 1.0497512437810945,
+  "span_norm": [
+    0.5047846889952153,
+    0.48086124401913877
+  ],
+  "target_span_norm": [
+    0.27621358640099514,
+    0.27621358640099514
+  ],
+  "mean_hub_error_norm": 0.15400559944700157,
+  "cmf_visual": {
+    "upper_shell": "blue, fine texture and broad light gradients visible",
+    "exposed_arms": "contrasting dark woven pattern visible; appears coarse",
+    "propellers": "dark graphite, smooth with less visible texture than arms"
+  },
+  "nose_camera": "Not established from this top view."
+}

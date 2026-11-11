@@ -263,6 +263,17 @@
         1254,
         1254
       ]
+    },
+    {
+      "id": "quad-guide-cmf-square",
+      "use": "technical_pilot_only",
+      "scale": "hub span exceeds target",
+      "sha256": "86893c89152706cb7f7ebb9f572dfe5e1d56e4c8b3febc684d24350dcd93ef4a",
+      "rgb_sha256": "1d6fc6939f39f238e5337d8a7c9f854b758b31a9069d3efda4a52d04e03ac400",
+      "size": [
+        1254,
+        1254
+      ]
     }
   ],
   "other_legacy_images": "not_admitted_pending_batch_review",
