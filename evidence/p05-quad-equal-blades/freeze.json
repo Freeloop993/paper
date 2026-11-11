@@ -1,0 +1,20 @@
+{
+  "purpose": "单张基准技术排错，提示词与定位图同时已修订，批间不作因果比较",
+  "calls": 1,
+  "ratio_target": 1,
+  "diameter_in": 5,
+  "hub_diagonal_mm": 250,
+  "view": "正交俯视",
+  "guide": "四个红轴心和八个青色叶尖，叶尖径向距离相同，桨轴线沿机臂的切向",
+  "screen_each_hub": {
+    "all_free_tips_required": true,
+    "angle_min_deg": 165,
+    "short_to_long_radius_min": 0.9,
+    "short_to_long_midchord_width_min": 0.85,
+    "measure": "中心至最远可辨叶尖的直线距离；在两侧各自轴心至叶尖的半径中点沿垂线量可见轮廓宽；遮挡、混入机臂或边界不可读记不可判。"
+  },
+  "layout_ratio_abs_tol": 0.1,
+  "production_evidence": "单张验证，正式评图0。角度、比例为本次先定的图像筛查，非工程标准。",
+  "prompt_sha256": "79cbeaa376a0d8e543743b28be806bdd71101d51490a9044eee0c996b9a37420",
+  "guide_sha256": "48591451525b4fe60462ccac88948f516b9adfcc504a05593d46f769e03ddea1"
+}

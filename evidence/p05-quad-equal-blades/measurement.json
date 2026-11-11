@@ -1,0 +1,136 @@
+{
+  "calls": 1,
+  "formal_new_images": 0,
+  "independent_readers": 0,
+  "size": [
+    1254,
+    1254
+  ],
+  "sha256": "73c3e290e6addc09081a4cc30681e1520c2a87acb17254e916a1289b6ebbd9eb",
+  "rgb_sha256": "0a580fc2845702ad1799c85c819f03630fd964a733ff5e8b8070422cb5d14b6a",
+  "geometry": {
+    "ratio": 1.1139240506329113,
+    "span_px": [
+      528,
+      474
+    ],
+    "ratio_pass": false
+  },
+  "symmetry_screen_passes": 4,
+  "rotors": [
+    {
+      "hub": [
+        363,
+        412
+      ],
+      "tips": [
+        [
+          178.0,
+          412.5
+        ],
+        [
+          548.0,
+          412.0
+        ]
+      ],
+      "radii_px": [
+        185.0006756744418,
+        185.0
+      ],
+      "short_long_radius": 0.9999963477190592,
+      "mid_chords_px": [
+        42.25,
+        42.25
+      ],
+      "narrow_wide_mid_chord": 1.0,
+      "tip_angle_deg": 179.845146918902
+    },
+    {
+      "hub": [
+        891,
+        412
+      ],
+      "tips": [
+        [
+          705.0,
+          412.0
+        ],
+        [
+          1076.0,
+          412.5
+        ]
+      ],
+      "radii_px": [
+        186.0,
+        185.0006756744418
+      ],
+      "short_long_radius": 0.9946272885722677,
+      "mid_chords_px": [
+        42.5,
+        42.0
+      ],
+      "narrow_wide_mid_chord": 0.9882352941176471,
+      "tip_angle_deg": 179.84514691890433
+    },
+    {
+      "hub": [
+        891,
+        886
+      ],
+      "tips": [
+        [
+          705.0,
+          886.5
+        ],
+        [
+          1076.0,
+          886.5
+        ]
+      ],
+      "radii_px": [
+        186.00067204179666,
+        185.0006756744418
+      ],
+      "short_long_radius": 0.9946236948696069,
+      "mid_chords_px": [
+        43.0,
+        42.25
+      ],
+      "narrow_wide_mid_chord": 0.9825581395348837,
+      "tip_angle_deg": 179.69112637723077
+    },
+    {
+      "hub": [
+        363,
+        886
+      ],
+      "tips": [
+        [
+          178.0,
+          886.5
+        ],
+        [
+          548.0,
+          886.0
+        ]
+      ],
+      "radii_px": [
+        185.0006756744418,
+        185.0
+      ],
+      "short_long_radius": 0.9999963477190592,
+      "mid_chords_px": [
+        42.25,
+        42.75
+      ],
+      "narrow_wide_mid_chord": 0.9883040935672515,
+      "tip_angle_deg": 179.845146918902
+    }
+  ],
+  "sensitivity_120_165": [
+    true,
+    true
+  ],
+  "orientation_observed": "Four nearly horizontal blade axes. Guide requests tangents at 45/135 degrees.",
+  "tip_read_method": "AI selected centers and tip windows. Local grayscale threshold 145 with sensitivity 120 and 165; perpendicular midspan connected width."
+}

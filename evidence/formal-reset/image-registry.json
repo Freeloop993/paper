@@ -183,7 +183,8 @@
       "size": [
         1254,
         1254
-      ]
+      ],
+      "author_disposition": "rejected_as_design_or_parent_or_review_stimulus"
     },
     {
       "id": "P04-b1-r100",
@@ -193,7 +194,8 @@
       "size": [
         1254,
         1254
-      ]
+      ],
+      "author_disposition": "rejected_as_design_or_parent_or_review_stimulus"
     },
     {
       "id": "P04-b1-r115",
@@ -203,7 +205,8 @@
       "size": [
         1254,
         1254
-      ]
+      ],
+      "author_disposition": "rejected_as_design_or_parent_or_review_stimulus"
     },
     {
       "id": "P04-b2-r085",
@@ -213,7 +216,8 @@
       "size": [
         1254,
         1254
-      ]
+      ],
+      "author_disposition": "rejected_as_design_or_parent_or_review_stimulus"
     },
     {
       "id": "P04-b2-r100",
@@ -223,13 +227,26 @@
       "size": [
         1254,
         1254
-      ]
+      ],
+      "author_disposition": "rejected_as_design_or_parent_or_review_stimulus"
     },
     {
       "id": "P04-b2-r115",
       "use": "technical_pilot_only",
       "sha256": "2aef00ac3ee98ec392c4eb9f408a77f11067e7a27efbd0096ff02082001913a9",
       "rgb_sha256": "a730e1e95bdc2ffce249448accc2018305738dd9ca0e884aa917b39b264fcf7a",
+      "size": [
+        1254,
+        1254
+      ],
+      "author_disposition": "rejected_as_design_or_parent_or_review_stimulus"
+    },
+    {
+      "id": "P05-square",
+      "use": "technical_pilot_only",
+      "geometry_pass": false,
+      "sha256": "73c3e290e6addc09081a4cc30681e1520c2a87acb17254e916a1289b6ebbd9eb",
+      "rgb_sha256": "0a580fc2845702ad1799c85c819f03630fd964a733ff5e8b8070422cb5d14b6a",
       "size": [
         1254,
         1254
