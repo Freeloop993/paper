@@ -251,6 +251,18 @@
         1254,
         1254
       ]
+    },
+    {
+      "id": "P06-square",
+      "use": "technical_pilot_only",
+      "camera_integration": "unverified",
+      "geometry_pass": false,
+      "sha256": "915b978f3a5a57cc3730aa613665a0de99b978eb99f7d26b5086cfe6821cf8ed",
+      "rgb_sha256": "5d84d87b9b502691e8323d99a8c9686d8ad38191a98c17d3a9fd545ae7b59159",
+      "size": [
+        1254,
+        1254
+      ]
     }
   ],
   "other_legacy_images": "not_admitted_pending_batch_review",

@@ -1,0 +1,140 @@
+{
+  "calls": 1,
+  "formal_new_images": 0,
+  "independent_readers": 0,
+  "size": [
+    1254,
+    1254
+  ],
+  "sha256": "915b978f3a5a57cc3730aa613665a0de99b978eb99f7d26b5086cfe6821cf8ed",
+  "rgb_sha256": "5d84d87b9b502691e8323d99a8c9686d8ad38191a98c17d3a9fd545ae7b59159",
+  "geometry": {
+    "ratio": 1.2769857433808554,
+    "span_px": [
+      627,
+      491
+    ],
+    "ratio_pass": false
+  },
+  "symmetry_screen_passes": 4,
+  "rotors": [
+    {
+      "hub": [
+        314,
+        400
+      ],
+      "tips": [
+        [
+          99.0,
+          402.0
+        ],
+        [
+          528.0,
+          401.0
+        ]
+      ],
+      "radii_px": [
+        215.00930212434997,
+        214.0023364358436
+      ],
+      "short_long_radius": 0.9953166412868779,
+      "mid_chords_px": [
+        49.5,
+        49.75
+      ],
+      "narrow_wide_mid_chord": 0.9949748743718593,
+      "tip_angle_deg": 179.19929603864375
+    },
+    {
+      "hub": [
+        941,
+        400
+      ],
+      "tips": [
+        [
+          725.0,
+          401.5
+        ],
+        [
+          1157.0,
+          401.0
+        ]
+      ],
+      "radii_px": [
+        216.0052082705415,
+        216.00231480241132
+      ],
+      "short_long_radius": 0.999986604637206,
+      "mid_chords_px": [
+        49.25,
+        49.5
+      ],
+      "narrow_wide_mid_chord": 0.9949494949494949,
+      "tip_angle_deg": 179.33686269478926
+    },
+    {
+      "hub": [
+        941,
+        891
+      ],
+      "tips": [
+        [
+          725.0,
+          892.5
+        ],
+        [
+          1157.0,
+          892.0
+        ]
+      ],
+      "radii_px": [
+        216.0052082705415,
+        216.00231480241132
+      ],
+      "short_long_radius": 0.999986604637206,
+      "mid_chords_px": [
+        50.0,
+        50.0
+      ],
+      "narrow_wide_mid_chord": 1.0,
+      "tip_angle_deg": 179.33686269478926
+    },
+    {
+      "hub": [
+        314,
+        891
+      ],
+      "tips": [
+        [
+          99.0,
+          893.0
+        ],
+        [
+          528.0,
+          892.0
+        ]
+      ],
+      "radii_px": [
+        215.00930212434997,
+        214.0023364358436
+      ],
+      "short_long_radius": 0.9953166412868779,
+      "mid_chords_px": [
+        49.75,
+        50.0
+      ],
+      "narrow_wide_mid_chord": 0.995,
+      "tip_angle_deg": 179.19929603864375
+    }
+  ],
+  "sensitivity_120_165": [
+    true,
+    true
+  ],
+  "camera_top_projection": "Continuous upper shell. No round optical front face visible from above.",
+  "camera_presence": "unverified",
+  "camera_orientation": "unverified",
+  "camera_integration": "unverified",
+  "orientation_observed": "Four nearly horizontal blade axes. Guide requests tangents at 45/135 degrees.",
+  "tip_read_method": "AI selected centers and tip windows. Local grayscale threshold 145 with sensitivity 120 and 165; perpendicular midspan connected width."
+}
