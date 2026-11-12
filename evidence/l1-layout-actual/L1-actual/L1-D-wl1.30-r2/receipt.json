@@ -1,0 +1,20 @@
+{
+  "position": "L1-D-wl1.30-r2",
+  "prompt_id": "0302563e-cf0c-46c1-84a9-983a692bbaa7",
+  "completed_at": "2026-11-12T16:01:57.658659+00:00",
+  "request_sha256": "934ec27bc8fa67b45a0423b0dae70f3cc3e40e515347994eaaee34c12e993a9c",
+  "input_sha256": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22",
+  "original_sha256": "d3a6fa500484205feae764a2ac49f7c4bb232638861895b759a312468ac74348",
+  "bytes": 885182,
+  "server_output": {
+    "filename": "L1-D-wl1.30-r2_00001_.png",
+    "subfolder": "",
+    "type": "output",
+    "metadata": {
+      "kind": "image",
+      "width": 1024,
+      "height": 1024
+    },
+    "id": "a23df1e3-1872-4c5e-ab38-9fbda99dc7bc"
+  }
+}
