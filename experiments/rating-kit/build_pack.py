@@ -17,6 +17,9 @@ def digest(path):
 
 def build(plan_path, destination):
     plan = json.loads(plan_path.read_text(encoding="utf-8-sig"))
+    if plan["mode"] in ("r1", "e5-semantic"):
+        from build_instrument import build_instrument
+        return build_instrument(plan_path, destination, plan)
     if plan["mode"] not in ("calibration", "formal"):
         raise ValueError("Unknown mode")
     inputs = plan["images"]

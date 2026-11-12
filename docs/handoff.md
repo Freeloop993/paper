@@ -4,6 +4,8 @@
 
 ## 此刻从哪里接
 
+T04 的 [36 张去标识评论卡](../evidence/semantic-cards/cards.csv)已入库，来自 35 个来源。40 条第二编码盲表已备，真人答卷待收。按 [语义到 E3 的规格](protocols/semantic-to-E3-spec.md)编制了[作者三方向填写页](../prototypes/drone-configurator/public/research-guides/design-brief.html)和 [R1 三题、E5 词对附表](../experiments/rating-kit/README.md)。这些为离线软件；正式词对、作者规格、评议人数和实拍图另行登记。
+
 11 月 12 日晚更新：R0 环境复现 2/2；[E0 开源原件及盲读](../evidence/e0-open-20261112/open-gate.json)为 6/6，两位 AI 独立读取的三档 W/L 均值均递增。真人抽读待收，闭源 0/6。E1 已在同机按先 24 张条件图、后 12 张纯文字的顺序启动。R1 排在 E1 之后、E2 之前，[PR #54](https://github.com/Freeloop993/paper/pull/54)收录 16 份离线请求，2 张将引用 E1，新增最多 14 张。以下保留开跑时登记。
 
 #50、#51、#52 已合并。优云 48 GB 单卡已开机，R0 先验收四份权重、十二节点和原图 Canny 输出，再做两次复现。E0 的六个闭源位置使用官方 `gpt-image-2.6-flare`。两名盲态 AI 全读和一名真人抽读 12 张的种子、脚本与说明见[冻结单](../experiments/r0-e0-e1/README.md)。#3 登记作者决定，#19 留实际运行回执；E2 继续用同一实例，六次运行授权另记 #3。

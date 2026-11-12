@@ -13,6 +13,11 @@ def read(path):
 
 
 def summarize(key, files, rule=None):
+    if key.get("mode") in ("r1", "e5-semantic"):
+        from instrument_summary import summarize_instrument
+        if rule is not None:
+            raise ValueError("The X12 joint decision rule does not apply to this instrument")
+        return summarize_instrument(key, (read(f) for f in files))
     if key.get("mode") == "formal":
         registry = read_registry()
         for image in key["images"]:
