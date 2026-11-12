@@ -1,0 +1,168 @@
+{
+  "generator": "Codex built-in image generation",
+  "requested_model": "GPT Image 2.6",
+  "verified_backend_version": null,
+  "cases": [
+    {
+      "id": "01",
+      "paired_qwen_position": "D2-KD-s0.7-e0.5-wl0.70",
+      "prompt_file": "prompts/01-D2-KD-s0.7-e0.5-wl0.70.txt",
+      "prompt_sha256": "9eee59c2d7c324916e5fa5218272bc17e466dc26e2fa91d8d9572f17ac3c3d80",
+      "prompt": "Use the reference as a grayscale spatial relief guide for the motor locations.\n\nStudio product photograph of one compact camera drone for everyday personal aerial photography, seen from directly above in a strict orthographic top view, centered on a seamless white background with a soft contact shadow. A quadcopter with four arms, one motor at the end of each arm and one two-blade propeller on each motor. The nose points toward the top edge of the picture. A small forward-facing gimbal camera sits under the nose; from above only the top of its housing shows at the front edge, and the lens faces forward, not upward. Design the body silhouette, the arm sections and the way the arm roots blend into the body freely. Materials: fine-textured matte polycarbonate body shell in light warm gray, darker graphite-gray arms and motor mounts, satin anodized aluminium motor bells, semi-gloss black propellers, glossy black camera glass, thin precise panel seams. Soft overhead softbox lighting with gentle highlights on edges and chamfers. The left-right motor spacing is 0.70 times the front-back motor spacing.\n\nAvoid: flat shading, vector illustration, schematic, line drawing, clay render, blurry, text, labels, logo, cropped propeller, disconnected arm, extra rotor, propeller guard, perspective view, lens facing the viewer",
+      "transparent_background": false,
+      "references": [
+        {
+          "path": "references/depth-wl0.70.png",
+          "sha256": "caaa2a2df2ff3fe6715a976b69a894c0b6becb5a2d682281c658d4d92789c773",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "input_order": 1,
+          "role": "窄布局灰度图",
+          "repository_source": "experiments/l1-layout/guides/depth-wl0.70.png"
+        }
+      ],
+      "output": {
+        "path": "outputs/01-D2-KD-s0.7-e0.5-wl0.70.png",
+        "sha256": "917e54e3e3d1cf825f36d73a274ffc5153bc11553ad71327e0ea773a70295e0d",
+        "size_px": [
+          1254,
+          1254
+        ]
+      }
+    },
+    {
+      "id": "02",
+      "paired_qwen_position": "D2-KD-s0.7-e0.5-wl1.30",
+      "prompt_file": "prompts/02-D2-KD-s0.7-e0.5-wl1.30.txt",
+      "prompt_sha256": "6248b0f99648f9a98e3e4396a0ff374adc3c4da1b992465c6f7f3145844e8b27",
+      "prompt": "Use the reference as a grayscale spatial relief guide for the motor locations.\n\nStudio product photograph of one compact camera drone for everyday personal aerial photography, seen from directly above in a strict orthographic top view, centered on a seamless white background with a soft contact shadow. A quadcopter with four arms, one motor at the end of each arm and one two-blade propeller on each motor. The nose points toward the top edge of the picture. A small forward-facing gimbal camera sits under the nose; from above only the top of its housing shows at the front edge, and the lens faces forward, not upward. Design the body silhouette, the arm sections and the way the arm roots blend into the body freely. Materials: fine-textured matte polycarbonate body shell in light warm gray, darker graphite-gray arms and motor mounts, satin anodized aluminium motor bells, semi-gloss black propellers, glossy black camera glass, thin precise panel seams. Soft overhead softbox lighting with gentle highlights on edges and chamfers. The left-right motor spacing is 1.30 times the front-back motor spacing.\n\nAvoid: flat shading, vector illustration, schematic, line drawing, clay render, blurry, text, labels, logo, cropped propeller, disconnected arm, extra rotor, propeller guard, perspective view, lens facing the viewer",
+      "transparent_background": false,
+      "references": [
+        {
+          "path": "references/depth-wl1.30.png",
+          "sha256": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "input_order": 1,
+          "role": "宽布局灰度图",
+          "repository_source": "experiments/l1-layout/guides/depth-wl1.30.png"
+        }
+      ],
+      "output": {
+        "path": "outputs/02-D2-KD-s0.7-e0.5-wl1.30.png",
+        "sha256": "dd39047d6ee6a3d6c99aadfcd2ff6e9de10917bae50a38bbef310c72a1a3687f",
+        "size_px": [
+          1254,
+          1254
+        ]
+      }
+    },
+    {
+      "id": "03",
+      "paired_qwen_position": "D2-G2-wl1.30-r1",
+      "prompt_file": "prompts/03-D2-G2-wl1.30-r1.txt",
+      "prompt_sha256": "d785c389c2f0e3b9ba32a996c21fa1b13dc1333ab3974a218fa457b4758c17ae",
+      "prompt": "Redraw this flat drawing as a studio product photograph of a real compact camera drone, seen from directly above in a strict orthographic top view on a seamless white background with a soft contact shadow. Keep the four motor hubs and the propellers exactly where they are. Replace the flat body with a sculpted three-dimensional shell and join each arm to it with a smooth arm root. Remove the camera window from the top surface: the camera is a small forward-facing gimbal under the nose at the top edge of the picture, only the top of its housing is visible and the lens faces forward, not upward. Materials: fine-textured matte polycarbonate body shell in light warm gray, darker graphite-gray arms and motor mounts, satin anodized aluminium motor bells, semi-gloss black propellers, glossy black camera glass, thin precise panel seams. Soft overhead softbox lighting with gentle highlights on edges and chamfers.\n\nAvoid: flat shading, vector illustration, schematic, line drawing, clay render, blurry, text, labels, logo, cropped propeller, disconnected arm, extra rotor, propeller guard, perspective view, lens facing the viewer",
+      "transparent_background": false,
+      "references": [
+        {
+          "path": "references/E1-control-wl1.30-r1.png",
+          "sha256": "160d9f70ee69bf0b0230f4b54902b75f55e40f023bcf4b3296af0be3df3201b9",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "input_order": 1,
+          "role": "E1 父图",
+          "repository_source": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r1/original.png"
+        }
+      ],
+      "output": {
+        "path": "outputs/03-D2-G2-wl1.30-r1.png",
+        "sha256": "48b844d4403f5e2e56f676d7c56a808c021d26b042a04ad585059eae2a015d97",
+        "size_px": [
+          1254,
+          1254
+        ]
+      }
+    },
+    {
+      "id": "04",
+      "paired_qwen_position": "D2-G3-e0.3-wl1.30",
+      "prompt_file": "prompts/04-D2-G3-e0.3-wl1.30.txt",
+      "prompt_sha256": "0c85b742b00627665356408bfe225d84823463385ce393bb39cdde4b3bcdb085",
+      "prompt": "The first reference is the image to redraw. The second reference supplies the positions of the arms and propellers.\n\nRedraw this flat drawing as a studio product photograph of a real compact camera drone, seen from directly above in a strict orthographic top view on a seamless white background with a soft contact shadow. Keep the four motor hubs and the propellers exactly where they are. Replace the flat body with a sculpted three-dimensional shell and join each arm to it with a smooth arm root. Remove the camera window from the top surface: the camera is a small forward-facing gimbal under the nose at the top edge of the picture, only the top of its housing is visible and the lens faces forward, not upward. Materials: fine-textured matte polycarbonate body shell in light warm gray, darker graphite-gray arms and motor mounts, satin anodized aluminium motor bells, semi-gloss black propellers, glossy black camera glass, thin precise panel seams. Soft overhead softbox lighting with gentle highlights on edges and chamfers.\n\nAvoid: flat shading, vector illustration, schematic, line drawing, clay render, blurry, text, labels, logo, cropped propeller, disconnected arm, extra rotor, propeller guard, perspective view, lens facing the viewer",
+      "transparent_background": false,
+      "references": [
+        {
+          "path": "references/E1-control-wl1.30-r1.png",
+          "sha256": "160d9f70ee69bf0b0230f4b54902b75f55e40f023bcf4b3296af0be3df3201b9",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "input_order": 1,
+          "role": "E1 父图",
+          "repository_source": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r1/original.png"
+        },
+        {
+          "path": "references/wl-1.30-dd-0.50.png",
+          "sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797",
+          "size_px": [
+            1024,
+            1024
+          ],
+          "input_order": 2,
+          "role": "桨臂定位图",
+          "repository_source": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png"
+        }
+      ],
+      "output": {
+        "path": "outputs/04-D2-G3-e0.3-wl1.30.png",
+        "sha256": "27ee67bf6cbfb5dac5bb18a6819d67a7fdc101fd01f508eef8d3b59460fe193b",
+        "size_px": [
+          1254,
+          1254
+        ]
+      }
+    },
+    {
+      "id": "05",
+      "paired_qwen_position": "D2-P6-s1",
+      "prompt_file": "prompts/05-D2-P6-s1.txt",
+      "prompt_sha256": "f33dbb93838f875a95dca58a0804ce22072c9f2ef6ff1966fadc3112b8bea18c",
+      "prompt": "Studio product photograph of one compact camera drone for everyday personal aerial photography, seen from directly above in a strict orthographic top view, centered on a seamless white background with a soft contact shadow. A quadcopter with four arms, one motor at the end of each arm and one two-blade propeller on each motor. The nose points toward the top edge of the picture. A small forward-facing gimbal camera sits under the nose; from above only the top of its housing shows at the front edge, and the lens faces forward, not upward. Form language: the body is one smooth seamless pebble, widest behind the middle and tapering to a rounded nose; the four arms are thick, flow out of the shell like branches without any visible joint, and swell into round motor pods. No panel lines, no hinges, no fasteners. Materials: fine-textured matte polycarbonate body shell in light warm gray, darker graphite-gray arms and motor mounts, satin anodized aluminium motor bells, semi-gloss black propellers, glossy black camera glass, thin precise panel seams. Soft overhead softbox lighting with gentle highlights on edges and chamfers.\n\nAvoid: flat shading, vector illustration, schematic, line drawing, clay render, blurry, text, labels, logo, cropped propeller, disconnected arm, extra rotor, propeller guard, perspective view, lens facing the viewer",
+      "transparent_background": false,
+      "references": [],
+      "output": {
+        "path": "outputs/05-D2-P6-s1.png",
+        "sha256": "54021abf52ac4ccf63657da710bfea11737b33f0e5911c6c035a69c63954c6b7",
+        "size_px": [
+          1536,
+          1024
+        ]
+      }
+    },
+    {
+      "id": "06",
+      "paired_qwen_position": "D2-P7-s1",
+      "prompt_file": "prompts/06-D2-P7-s1.txt",
+      "prompt_sha256": "5a3bfda9eef2a5d813db85f2f4b1d71d4c1f695625c0d4e4393838cbaa8ad022",
+      "prompt": "Studio product photograph of one compact camera drone for everyday personal aerial photography, seen from directly above in a strict orthographic top view, centered on a seamless white background with a soft contact shadow. A quadcopter with four arms, one motor at the end of each arm and one two-blade propeller on each motor. The nose points toward the top edge of the picture. A small forward-facing gimbal camera sits under the nose; from above only the top of its housing shows at the front edge, and the lens faces forward, not upward. Form language: the body is a low flat slab with a sharply faceted, chamfered outline and visible panel breaks; the four arms are straight rectangular beams fixed on top of the body with visible brackets and fasteners; the motors sit on square mounts. Materials: fine-textured matte polycarbonate body shell in light warm gray, darker graphite-gray arms and motor mounts, satin anodized aluminium motor bells, semi-gloss black propellers, glossy black camera glass, thin precise panel seams. Soft overhead softbox lighting with gentle highlights on edges and chamfers.\n\nAvoid: flat shading, vector illustration, schematic, line drawing, clay render, blurry, text, labels, logo, cropped propeller, disconnected arm, extra rotor, propeller guard, perspective view, lens facing the viewer",
+      "transparent_background": false,
+      "references": [],
+      "output": {
+        "path": "outputs/06-D2-P7-s1.png",
+        "sha256": "6fd5295abea15d74dec893ad9828d83344e6e7fd6f1956c301f4e17a60b40bc5",
+        "size_px": [
+          1536,
+          1024
+        ]
+      }
+    }
+  ]
+}

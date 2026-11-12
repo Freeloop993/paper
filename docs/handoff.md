@@ -1,5 +1,7 @@
 # 接手快照 · 2026-11-12
 
+**11 月 13 日交接。** 作者已[取消本轮余项并关机](https://github.com/Freeloop993/paper/issues/19#issuecomment-6830744463)，准备调整研究思路。讨论请从[六张闭源原图、各自的完整提示词与实际参考图](../evidence/d2-closed-six/README.md)进入，按 01–06 引用图号。补充 18 个开源位置只完成了离线编译。
+
 [L1 全部 28 张原件与总览](../evidence/l1-layout-actual/README.md)已完成回收核验，28 个不同 RGB，采样缓存命中 0。[Claude 逐图复核入口](../evidence/prompt-parameter-review/README.md)包含完整实参和提示词。作者已在 [#3 授权 D2 的 42 个位置](https://github.com/Freeloop993/paper/issues/3#issuecomment-6828927053)，后续按 [#63](https://github.com/Freeloop993/paper/pull/63) 开发调参；L1 真人读数待回收。
 
 先读[研究地基](foundation.md)，再读[六章执行清单](execution-playbook.md)、[状态](../STATUS.md)、[Google执行总记录](https://docs.google.com/document/d/1Ek_Ne35sFQFC0FcMU4uNbeFCGl28ipOj9wYOQRN_2ro/edit)及[#1交接](https://github.com/Freeloop993/paper/issues/1)。
