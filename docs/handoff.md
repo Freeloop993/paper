@@ -1,6 +1,6 @@
 # 接手快照 · 2026-11-12
 
-L1 以 [PR #61](https://github.com/Freeloop993/paper/pull/61) 为当前入口。[28 份冻结请求](../experiments/l1-layout/manifest.json)已绑定输入，[第 0 步](../experiments/l1-layout/step0/README.md)已在 E1 原服务器完成，[逐图读数表](../experiments/l1-layout/reading-sheet.csv)已纳入标记残留。作者的 [L1 授权已登记](https://github.com/Freeloop993/paper/issues/3#issuecomment-6826422989)。原实例已接受首个请求，按 manifest 顺序执行，完成后交 [#19](https://github.com/Freeloop993/paper/issues/19) 判读。
+[L1 全部 28 张原件与总览](../evidence/l1-layout-actual/README.md)已完成回收核验，28 个不同 RGB，采样缓存命中 0。[Claude 逐图复核入口](../evidence/prompt-parameter-review/README.md)包含完整实参和提示词。作者已在 [#3 授权 D2 的 42 个位置](https://github.com/Freeloop993/paper/issues/3#issuecomment-6828927053)，后续按 [#63](https://github.com/Freeloop993/paper/pull/63) 开发调参；L1 真人读数待回收。
 
 先读[研究地基](foundation.md)，再读[六章执行清单](execution-playbook.md)、[状态](../STATUS.md)、[Google执行总记录](https://docs.google.com/document/d/1Ek_Ne35sFQFC0FcMU4uNbeFCGl28ipOj9wYOQRN_2ro/edit)及[#1交接](https://github.com/Freeloop993/paper/issues/1)。
 
