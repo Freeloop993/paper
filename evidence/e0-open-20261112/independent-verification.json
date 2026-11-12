@@ -1,0 +1,50 @@
+[
+  {
+    "case": "E0-control-wl0.70-r1",
+    "prompt_id": "0fa38ffd-db9f-4bdd-9aaa-22eb8125497c",
+    "image_sha256": "89246263600ed751b6a3d41a23e2a934d52b4a0fe3502e81186e40c101dc1414",
+    "history_seconds": 172.874,
+    "gpu_peak_observed_mib": 37982,
+    "cached_nodes": []
+  },
+  {
+    "case": "E0-control-wl0.70-r2",
+    "prompt_id": "e5aadaf9-b0aa-4952-b53e-20c244731bea",
+    "image_sha256": "1abe199504b4694323d6324b1cb8ea1fadb4ca1b39466484b548413cde88f3e7",
+    "history_seconds": 195.693,
+    "gpu_peak_observed_mib": 37982,
+    "cached_nodes": []
+  },
+  {
+    "case": "E0-control-wl1.00-r1",
+    "prompt_id": "23f81ef7-47b8-440e-9c0d-89898ae5c9f5",
+    "image_sha256": "09352851141ba59ce62a8cd70c3e78317ef15c84986cda7e8fac279f2a819953",
+    "history_seconds": 189.106,
+    "gpu_peak_observed_mib": 37644,
+    "cached_nodes": []
+  },
+  {
+    "case": "E0-control-wl1.00-r2",
+    "prompt_id": "350ce850-0333-475a-a89f-ad30fa78b2f0",
+    "image_sha256": "f5a3263965f560a71d5426253e1fce5da49d2a9dbb214f1e1ebb0ddfe47d926b",
+    "history_seconds": 254.988,
+    "gpu_peak_observed_mib": 37982,
+    "cached_nodes": []
+  },
+  {
+    "case": "E0-control-wl1.30-r1",
+    "prompt_id": "43e83b70-204d-452a-bab6-77cdcbc0e3ca",
+    "image_sha256": "2e81d336850080ae6d02872b86b9a8e549e743f906c37a991336d4fea4b88875",
+    "history_seconds": 246.894,
+    "gpu_peak_observed_mib": 37726,
+    "cached_nodes": []
+  },
+  {
+    "case": "E0-control-wl1.30-r2",
+    "prompt_id": "8f48b5e6-5a86-4215-8ebc-926f082d7e7b",
+    "image_sha256": "6feafadc2e33321801e0d39b7ca7c63df897ac1917a128982975f4b14240925e",
+    "history_seconds": 94.527,
+    "gpu_peak_observed_mib": 37982,
+    "cached_nodes": []
+  }
+]

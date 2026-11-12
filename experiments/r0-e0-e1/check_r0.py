@@ -1,4 +1,4 @@
-"""Verify the two R0 receipts and original pixels independently of the submission loop."""
+"""Verify archived open-backend receipts and original pixels independently of the submission loop."""
 import argparse
 import csv
 from hashlib import sha256
@@ -11,16 +11,21 @@ from PIL import Image
 HERE = Path(__file__).resolve().parent
 
 
-def inspect(archive):
-    rows = [r for r in json.loads((HERE / "manifest.json").read_bytes())["cases"] if r["stage"] == "R0"]
+def inspect(archive, stage="R0"):
+    rows = [r for r in json.loads((HERE / "manifest.json").read_bytes())["cases"] if r["stage"] == stage and r["arm"] in {"control", "text"}]
     results = []
     with ZipFile(archive) as z:
         assert z.testzip() is None
         assert len(z.namelist()) == len(set(z.namelist()))
-        summary = json.loads(z.read("R0-actual/summary.json"))
-        assert [s["case"] for s in summary] == [r["case"] for r in rows]
-        for row, observation in zip(rows, summary):
-            directory = "R0-actual/" + row["case"] + "/"
+        summary = json.loads(z.read(f"{stage}-actual/summary.json"))
+        expected = [row["case"] for row in rows]
+        if stage != "R0":
+            expected.sort(key=lambda case: ("-text-" in case, case))
+        assert [s["case"] for s in summary] == expected
+        by_case = {r["case"]: r for r in rows}
+        for observation in summary:
+            row = by_case[observation["case"]]
+            directory = f"{stage}-actual/" + row["case"] + "/"
             raw = z.read(directory + "request.json")
             assert raw == (HERE / row["request"]).read_bytes() and sha256(raw).hexdigest() == row["sha256"]
             ack = json.loads(z.read(directory + "ack.json"))
@@ -49,11 +54,13 @@ def inspect(archive):
             results.append(dict(case=row["case"], prompt_id=pid, image_sha256=digest,
                                 history_seconds=seconds, gpu_peak_observed_mib=peak,
                                 cached_nodes=[n for k, v in msgs if k == "execution_cached" for n in v["nodes"]]))
-    assert len({r["prompt_id"] for r in results}) == 2
+    assert len({r["prompt_id"] for r in results}) == {"R0": 2, "E0": 6, "E1": 36}[stage]
     return results
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("archive", type=Path)
-    print(json.dumps(inspect(parser.parse_args().archive), indent=2))
+    parser.add_argument("--stage", choices=["R0", "E0", "E1"], default="R0")
+    args = parser.parse_args()
+    print(json.dumps(inspect(args.archive, args.stage), indent=2))
