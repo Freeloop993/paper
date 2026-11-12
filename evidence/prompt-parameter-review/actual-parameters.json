@@ -1,0 +1,6390 @@
+{
+  "scope": "Actual Qwen runs in R0, E0, E1, L1 and D2. Each batch retains its own denominator.",
+  "counts": {
+    "R0": 2,
+    "E0-open": 6,
+    "E1-open": 36,
+    "L1": 20,
+    "D2": 0
+  },
+  "prompt_pairs": {
+    "45317cab93f028a6": {
+      "prompt": "One consumer 4-rotor drone concept for everyday aerial photography. Strict orthographic top view, front toward the top, centered on white, fully unfolded, all components visible. Exactly 4 motor hubs, continuous arms, two opposite blades per rotor. Matte gray faceted central shell, crisp planar transitions, precise subtle details, dark gray motors and propellers. Motor-center positions on the 1024x1024 canvas are (300.00,300.00); (724.00,300.00); (724.00,724.00); (300.00,724.00). Preserve this explicitly specified layout. The complete central shell length/width ratio is 1.5000; shell width/opposite-motor diagonal is 0.3054; rotor swept diameter/opposite-motor diagonal is 0.2300. No perspective, labels, logos, extra rotors, guard rings or accessories. Design intent: 希望显得小巧，同时保留精致细节和切面语言. Scenario: 个人日常航拍. 在原轴心布局、桨叶尺度和完整机壳比例关系内表现真实的哑光灰色切面体积、克制的接缝与材质层次。正交顶视，无倾斜透视。不把输入黑色线条当作表面花纹，不添加装饰、标尺或文字；不能通过移动旋翼或放大整机换取细节感。",
+      "negative_prompt": "perspective view, side view, cropped parts, colorful schematic, green arms, yellow blades, text, labels, guard rings, extra rotors"
+    },
+    "a9a1a0f1d9e9c74f": {
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 0.70 times the front-back motor spacing.",
+      "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera"
+    },
+    "bf28a0bc3d781c8a": {
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing.",
+      "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera"
+    },
+    "569062cf1c551bfc": {
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.30 times the front-back motor spacing.",
+      "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera"
+    },
+    "931e4839a9326cff": {
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. Each rotor diameter is 0.40 of the diagonal motor distance.",
+      "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera"
+    },
+    "b0508c2e8788ff3f": {
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. Each rotor diameter is 0.50 of the diagonal motor distance.",
+      "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera"
+    },
+    "6645752488903d7c": {
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. Each rotor diameter is 0.60 of the diagonal motor distance.",
+      "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera"
+    },
+    "c0d5eb8fb652a72b": {
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white, with one two-blade propeller on each of the four motors. Choose the fuselage silhouette, arm sections, propeller shape and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 0.70 times the front-back motor spacing.",
+      "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera"
+    },
+    "8fe4105fecf1194f": {
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white, with one two-blade propeller on each of the four motors. Choose the fuselage silhouette, arm sections, propeller shape and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.30 times the front-back motor spacing.",
+      "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera"
+    }
+  },
+  "images": [
+    {
+      "batch": "R0",
+      "position": "R0-2026110201",
+      "prompt_pair": "45317cab93f028a6",
+      "prompt_id": "d1dea61a-f748-404c-9c59-96740341587f",
+      "files": {
+        "image": "evidence/r0-20261112/actual/R0-2026110201/original.png",
+        "request": "evidence/r0-20261112/actual/R0-2026110201/request.json",
+        "history": "evidence/r0-20261112/actual/R0-2026110201/history.json",
+        "ack": "evidence/r0-20261112/actual/R0-2026110201/ack.json"
+      },
+      "raw_request_sha256": "b84fb8ec215d85c2d101ff16e8fac916e0e8ac0accd2281d0819678cee1f1f78",
+      "original_png_sha256": "00415260578a5ff41b563da16d656dd54f6eee7a22de01c6211d9d08f72a3148",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026110201,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "formal_main18_20261102_control_L2.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "evidence/historic-guides/control_L2.png",
+      "input_sha256": "c96626bccfbb67313bde13e48f8c2fe57105dfecd738e5cc25aa9bae59c8854f"
+    },
+    {
+      "batch": "R0",
+      "position": "R0-2026111200",
+      "prompt_pair": "45317cab93f028a6",
+      "prompt_id": "98cdc324-9da0-4015-be2d-84c9f8f63031",
+      "files": {
+        "image": "evidence/r0-20261112/actual/R0-2026111200/original.png",
+        "request": "evidence/r0-20261112/actual/R0-2026111200/request.json",
+        "history": "evidence/r0-20261112/actual/R0-2026111200/history.json",
+        "ack": "evidence/r0-20261112/actual/R0-2026111200/ack.json"
+      },
+      "raw_request_sha256": "eae5bfcf0b81a39d238f7bb9cbf19901bbc91d2ef9cb82e95b1a9d2f98fd0e67",
+      "original_png_sha256": "3957027513875bad665fd2279b7af4aeae351886ac1522b819ebb35dacad87cb",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111200,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "formal_main18_20261102_control_L2.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "evidence/historic-guides/control_L2.png",
+      "input_sha256": "c96626bccfbb67313bde13e48f8c2fe57105dfecd738e5cc25aa9bae59c8854f"
+    },
+    {
+      "batch": "E0-open",
+      "position": "E0-control-wl0.70-r1",
+      "prompt_pair": "a9a1a0f1d9e9c74f",
+      "prompt_id": "0fa38ffd-db9f-4bdd-9aaa-22eb8125497c",
+      "files": {
+        "image": "evidence/e0-open-20261112/E0-actual/E0-control-wl0.70-r1/original.png",
+        "request": "evidence/e0-open-20261112/E0-actual/E0-control-wl0.70-r1/request.json",
+        "history": "evidence/e0-open-20261112/E0-actual/E0-control-wl0.70-r1/history.json",
+        "ack": "evidence/e0-open-20261112/E0-actual/E0-control-wl0.70-r1/ack.json"
+      },
+      "raw_request_sha256": "fcdcebd53f25530a7f8a697c24136d4f8a2eb227e3f6315e05b32731522a8c17",
+      "original_png_sha256": "89246263600ed751b6a3d41a23e2a934d52b4a0fe3502e81186e40c101dc1414",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111201,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-0.70-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-0.70-dd-0.50.png",
+      "input_sha256": "4bd9d29b41b8d71c453931046a749d835202c12112301b1d528ba750854dc92f"
+    },
+    {
+      "batch": "E0-open",
+      "position": "E0-control-wl0.70-r2",
+      "prompt_pair": "a9a1a0f1d9e9c74f",
+      "prompt_id": "e5aadaf9-b0aa-4952-b53e-20c244731bea",
+      "files": {
+        "image": "evidence/e0-open-20261112/E0-actual/E0-control-wl0.70-r2/original.png",
+        "request": "evidence/e0-open-20261112/E0-actual/E0-control-wl0.70-r2/request.json",
+        "history": "evidence/e0-open-20261112/E0-actual/E0-control-wl0.70-r2/history.json",
+        "ack": "evidence/e0-open-20261112/E0-actual/E0-control-wl0.70-r2/ack.json"
+      },
+      "raw_request_sha256": "8e48f14f3b1fc05c7de9f9d5d3fecb3423bfc24ab44aeb0e19d21510822d39a7",
+      "original_png_sha256": "1abe199504b4694323d6324b1cb8ea1fadb4ca1b39466484b548413cde88f3e7",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111202,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-0.70-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-0.70-dd-0.50.png",
+      "input_sha256": "4bd9d29b41b8d71c453931046a749d835202c12112301b1d528ba750854dc92f"
+    },
+    {
+      "batch": "E0-open",
+      "position": "E0-control-wl1.00-r1",
+      "prompt_pair": "bf28a0bc3d781c8a",
+      "prompt_id": "23f81ef7-47b8-440e-9c0d-89898ae5c9f5",
+      "files": {
+        "image": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.00-r1/original.png",
+        "request": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.00-r1/request.json",
+        "history": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.00-r1/history.json",
+        "ack": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.00-r1/ack.json"
+      },
+      "raw_request_sha256": "56424f33a98916f075413dbbae2e6956c3298bea912c6f6730636727abfb7deb",
+      "original_png_sha256": "09352851141ba59ce62a8cd70c3e78317ef15c84986cda7e8fac279f2a819953",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111201,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E0-open",
+      "position": "E0-control-wl1.00-r2",
+      "prompt_pair": "bf28a0bc3d781c8a",
+      "prompt_id": "350ce850-0333-475a-a89f-ad30fa78b2f0",
+      "files": {
+        "image": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.00-r2/original.png",
+        "request": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.00-r2/request.json",
+        "history": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.00-r2/history.json",
+        "ack": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.00-r2/ack.json"
+      },
+      "raw_request_sha256": "63698a99dae33e1e39208fa1253e4d5a45865d27ac2584ded2926ca1f78a71b3",
+      "original_png_sha256": "f5a3263965f560a71d5426253e1fce5da49d2a9dbb214f1e1ebb0ddfe47d926b",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111202,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E0-open",
+      "position": "E0-control-wl1.30-r1",
+      "prompt_pair": "569062cf1c551bfc",
+      "prompt_id": "43e83b70-204d-452a-bab6-77cdcbc0e3ca",
+      "files": {
+        "image": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.30-r1/original.png",
+        "request": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.30-r1/request.json",
+        "history": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.30-r1/history.json",
+        "ack": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.30-r1/ack.json"
+      },
+      "raw_request_sha256": "a3b57f0b6ad674977f52db313e742e1721248d2748606c36be025142412b7fb2",
+      "original_png_sha256": "2e81d336850080ae6d02872b86b9a8e549e743f906c37a991336d4fea4b88875",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111201,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.30-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png",
+      "input_sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797"
+    },
+    {
+      "batch": "E0-open",
+      "position": "E0-control-wl1.30-r2",
+      "prompt_pair": "569062cf1c551bfc",
+      "prompt_id": "8f48b5e6-5a86-4215-8ebc-926f082d7e7b",
+      "files": {
+        "image": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.30-r2/original.png",
+        "request": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.30-r2/request.json",
+        "history": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.30-r2/history.json",
+        "ack": "evidence/e0-open-20261112/E0-actual/E0-control-wl1.30-r2/ack.json"
+      },
+      "raw_request_sha256": "dfaca231b43be150e221f6ba07e8891ee5a3f670ba480af6de7cb321e19fd869",
+      "original_png_sha256": "6feafadc2e33321801e0d39b7ca7c63df897ac1917a128982975f4b14240925e",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111202,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.30-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png",
+      "input_sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.40-r1",
+      "prompt_pair": "931e4839a9326cff",
+      "prompt_id": "41ab2a59-cb40-4014-89a6-37e2628a3a90",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r1/ack.json"
+      },
+      "raw_request_sha256": "9ece5eb9663ff3ac59ec3e491dfd028eb22df5b94f61d5a642d6f4a483038cf4",
+      "original_png_sha256": "b3a19254b52746310dae7d9f2f80092fbdd0f1b43b1799cbc88bccf4ec532cfe",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.40.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.40.png",
+      "input_sha256": "97d9c5a844cb1edff31178299e3fc3b96e7e200e82189f91f0414b2b565ef79c"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.40-r2",
+      "prompt_pair": "931e4839a9326cff",
+      "prompt_id": "61bc4861-244f-4c2b-b9db-36652885d2a6",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r2/ack.json"
+      },
+      "raw_request_sha256": "956cb2991cb52630d23fdfad2f05214a74057020f9d74383cb117a638b007fbb",
+      "original_png_sha256": "95ed0174fe4688e5dc17a19640f6702022f399781a02cc468264254cab62831d",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.40.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.40.png",
+      "input_sha256": "97d9c5a844cb1edff31178299e3fc3b96e7e200e82189f91f0414b2b565ef79c"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.40-r3",
+      "prompt_pair": "931e4839a9326cff",
+      "prompt_id": "d258b18d-41c9-470b-b215-dc61165177a0",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r3/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r3/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r3/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r3/ack.json"
+      },
+      "raw_request_sha256": "6e369c0b6f0b8aed8acba5742cded75734128a7423e5a797eed1dfac277af3b3",
+      "original_png_sha256": "65c79a784da0b43241aa90ff677f6d45c8728c3a15f35b3a130d4d9691a616da",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111213,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.40.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.40.png",
+      "input_sha256": "97d9c5a844cb1edff31178299e3fc3b96e7e200e82189f91f0414b2b565ef79c"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.40-r4",
+      "prompt_pair": "931e4839a9326cff",
+      "prompt_id": "5de828f6-0610-4aec-a503-3ea38b8cf0fd",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r4/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r4/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r4/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.40-r4/ack.json"
+      },
+      "raw_request_sha256": "454f2b5fc96df232c73c3e460eb52bb5c081fc6a10d780a31edb560c2bcac34b",
+      "original_png_sha256": "6c370825e8bc9c26ffb6317eecff370928d25dc1c52f02201c27a22c2d0b5259",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111214,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.40.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.40.png",
+      "input_sha256": "97d9c5a844cb1edff31178299e3fc3b96e7e200e82189f91f0414b2b565ef79c"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.50-r1",
+      "prompt_pair": "b0508c2e8788ff3f",
+      "prompt_id": "56819d13-92eb-4a23-8566-a66d30c95317",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/ack.json"
+      },
+      "raw_request_sha256": "72743ae3185b4ca5b154500164d4d0b7ef397c563be4b8934618e33b159f7619",
+      "original_png_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.50-r2",
+      "prompt_pair": "b0508c2e8788ff3f",
+      "prompt_id": "eed925ce-3555-4170-83bf-ccccf06d6be5",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r2/ack.json"
+      },
+      "raw_request_sha256": "e680cbabaf86988ed94673bcbf8533122163c1f1aad553d3073b0a884764f805",
+      "original_png_sha256": "3832d815e6037a296f75abe058ee46c2c5c29b980b85d37284929653e4d1c7ea",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.50-r3",
+      "prompt_pair": "b0508c2e8788ff3f",
+      "prompt_id": "ab113f97-da9f-4e60-bfbb-85cef8a890fd",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r3/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r3/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r3/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r3/ack.json"
+      },
+      "raw_request_sha256": "ad92022c79151209bb8d7f0c9023e18d5d13ae574e7fab084269d9e72f7818ec",
+      "original_png_sha256": "3636308765628deb922bbabf2842f0804fe87f1fe02dd5991160806afd916862",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111213,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.50-r4",
+      "prompt_pair": "b0508c2e8788ff3f",
+      "prompt_id": "6405f4a6-0f2a-436a-83af-97c33cb23cef",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r4/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r4/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r4/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r4/ack.json"
+      },
+      "raw_request_sha256": "085b9582a5bede9ce5501fad5a186a198de889ed91037ca381260a9ef8b68909",
+      "original_png_sha256": "10372b6d3ce6df4a52ae5975ecb9a3c20f0865e32881c8d1e3da05b5922da03b",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111214,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.60-r1",
+      "prompt_pair": "6645752488903d7c",
+      "prompt_id": "899aa368-94b2-4717-b223-c7884e9475cc",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r1/ack.json"
+      },
+      "raw_request_sha256": "e810175a41d97630b8e0568694056095f8b28a155d12f5def4d450aa91de8029",
+      "original_png_sha256": "c44b3803bf11741d6e252c0c95453a39ec2d272e76f3b7c03ce14db3a53c05cd",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.60.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.60.png",
+      "input_sha256": "d882008ef198e2a5403bae93b8d49590ab82dce48ac203885368b7f2eb20bc3a"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.60-r2",
+      "prompt_pair": "6645752488903d7c",
+      "prompt_id": "2ed6acd3-975c-41a8-92b9-d51afa252f43",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r2/ack.json"
+      },
+      "raw_request_sha256": "738cc1cc60dcb6fe2860405e67d58de953aebfa973aad405ce56bb4d72c0e316",
+      "original_png_sha256": "eab14aca0763040e24fa031f288096e9d22621afd7523b2de3c442ac207ede67",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.60.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.60.png",
+      "input_sha256": "d882008ef198e2a5403bae93b8d49590ab82dce48ac203885368b7f2eb20bc3a"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.60-r3",
+      "prompt_pair": "6645752488903d7c",
+      "prompt_id": "856a50c3-5e26-4570-ae6c-329f2a9bb7b3",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r3/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r3/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r3/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r3/ack.json"
+      },
+      "raw_request_sha256": "a022cbd6a5cc5dd0225b77283d4cb837df03aa1c902f0a689fc534cfafa5c83b",
+      "original_png_sha256": "0bf8e3de4c357b1910552c7558f5c9f3185941429559c6694a16974a7c1256c4",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111213,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.60.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.60.png",
+      "input_sha256": "d882008ef198e2a5403bae93b8d49590ab82dce48ac203885368b7f2eb20bc3a"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-dd0.60-r4",
+      "prompt_pair": "6645752488903d7c",
+      "prompt_id": "daf3557e-1345-4de5-a7c1-7dc0384e4154",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r4/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r4/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r4/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.60-r4/ack.json"
+      },
+      "raw_request_sha256": "a88f1590e3ea313aa209c9411d197fed1b7b8391fd5907bdad29b401ebd134e8",
+      "original_png_sha256": "133119507fd0c90df67e4fdb7266c69f556cc4d3dd2831d4146adf9e90b2471c",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111214,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.60.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.60.png",
+      "input_sha256": "d882008ef198e2a5403bae93b8d49590ab82dce48ac203885368b7f2eb20bc3a"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl0.70-r1",
+      "prompt_pair": "a9a1a0f1d9e9c74f",
+      "prompt_id": "4bbd36f0-fa7e-4a73-9acf-373c493e8945",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r1/ack.json"
+      },
+      "raw_request_sha256": "7652f9e682ae955461f1be35dbfcf9121cccd935e70e3e7fecacf2618799e838",
+      "original_png_sha256": "f377ec3e8077177c0926f2c042e96e00f7963ffb778615b195729d7a99046ee4",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-0.70-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-0.70-dd-0.50.png",
+      "input_sha256": "4bd9d29b41b8d71c453931046a749d835202c12112301b1d528ba750854dc92f"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl0.70-r2",
+      "prompt_pair": "a9a1a0f1d9e9c74f",
+      "prompt_id": "c05de6af-4cea-4004-ac85-c20cf6b32294",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r2/ack.json"
+      },
+      "raw_request_sha256": "17f638bbc7675465547af9a6347be58c8fbd25f3dd7e65fce94211b70e5ee512",
+      "original_png_sha256": "c46d9a9e45927ceaf7e4ca4ff60cdcef4067f80a5fae627a36b919b8ab33c777",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-0.70-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-0.70-dd-0.50.png",
+      "input_sha256": "4bd9d29b41b8d71c453931046a749d835202c12112301b1d528ba750854dc92f"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl0.70-r3",
+      "prompt_pair": "a9a1a0f1d9e9c74f",
+      "prompt_id": "cb4a65b0-f080-483c-8fca-d8e85daedba1",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r3/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r3/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r3/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r3/ack.json"
+      },
+      "raw_request_sha256": "1ad514fdeb48b4e21bd4898e5e37baf7260b900a8271f55a0f569c8955c4b022",
+      "original_png_sha256": "20fc1a108f7e8f4d676c9b0084a22b033abe4858bc3647b58af274fc47a1755d",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111213,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-0.70-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-0.70-dd-0.50.png",
+      "input_sha256": "4bd9d29b41b8d71c453931046a749d835202c12112301b1d528ba750854dc92f"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl0.70-r4",
+      "prompt_pair": "a9a1a0f1d9e9c74f",
+      "prompt_id": "7a8d496b-a29a-48fb-941f-f814d869a47f",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r4/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r4/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r4/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r4/ack.json"
+      },
+      "raw_request_sha256": "7138476f22eb92e32b0cbd8c3f2faa48cd930527d296239d57a5f7b782d79a0e",
+      "original_png_sha256": "3839917777d0db48c6e2ba8154289372c42f4f80d165bc90642b60a92744b5d9",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111214,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-0.70-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-0.70-dd-0.50.png",
+      "input_sha256": "4bd9d29b41b8d71c453931046a749d835202c12112301b1d528ba750854dc92f"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl1.00-r1",
+      "prompt_pair": "bf28a0bc3d781c8a",
+      "prompt_id": "66ffa10f-e4be-48f2-b8a1-96cfd3977263",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/ack.json"
+      },
+      "raw_request_sha256": "26f998de3b380a1dc07e9434474f4ba24e51e574f4d9e76113d883d271a275d6",
+      "original_png_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl1.00-r2",
+      "prompt_pair": "bf28a0bc3d781c8a",
+      "prompt_id": "fdaa02ea-d767-48d8-b36f-887149ebb48b",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r2/ack.json"
+      },
+      "raw_request_sha256": "7ae86b50f383b1f8618016ddda4408c6d022d71e20516befac5f7a6d21341398",
+      "original_png_sha256": "2e277d53b9e6478697d72c2d790e30472b63177236e146f9d56334b1e61bf5f5",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl1.00-r3",
+      "prompt_pair": "bf28a0bc3d781c8a",
+      "prompt_id": "6a763d34-1f9e-4dc0-b14f-1b6faefc26a0",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r3/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r3/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r3/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r3/ack.json"
+      },
+      "raw_request_sha256": "e2e5ebcb285b1e2196900a9092df115cda9e1f78679f9ffcac6e73656b68b5d8",
+      "original_png_sha256": "2eeeff42beb3b242232ab17314a56f4854a0eafbae5e2dc3d027a30cca3a0522",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111213,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl1.00-r4",
+      "prompt_pair": "bf28a0bc3d781c8a",
+      "prompt_id": "574244ad-5232-4c52-97ec-b83f10a0e7b8",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r4/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r4/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r4/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r4/ack.json"
+      },
+      "raw_request_sha256": "3332114f9e0ffeb1a7ceeecc09c237bdc83bd15b838cc180f4fbbe823ddc4c8c",
+      "original_png_sha256": "90caf780c0611ebdc00e9978a194f118f094cd9eb170d727155e2d0b1f438b09",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111214,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl1.30-r1",
+      "prompt_pair": "569062cf1c551bfc",
+      "prompt_id": "1e2a05de-3c37-4113-b636-585f979b5b93",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r1/ack.json"
+      },
+      "raw_request_sha256": "b7757bb66013deda1a54d4b8ff2276f90a43cf90f65b7fe13c9e2560c5fcbea7",
+      "original_png_sha256": "160d9f70ee69bf0b0230f4b54902b75f55e40f023bcf4b3296af0be3df3201b9",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.30-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png",
+      "input_sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl1.30-r2",
+      "prompt_pair": "569062cf1c551bfc",
+      "prompt_id": "463f44c6-9a9c-46a9-a045-861de00443e1",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r2/ack.json"
+      },
+      "raw_request_sha256": "145bb0349d2b3f96aa97fc540d07ffdf853a62e44df6ab4afdf1cbbdeabe80db",
+      "original_png_sha256": "5d97a7b04ac27805c418e52c4518d0f0ef4e8c385de64fec69461748b36ff603",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.30-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png",
+      "input_sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl1.30-r3",
+      "prompt_pair": "569062cf1c551bfc",
+      "prompt_id": "b10abb5e-d556-4239-866a-0a06b7f59267",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r3/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r3/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r3/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r3/ack.json"
+      },
+      "raw_request_sha256": "c79b71c29c75aa6b2270a779eb9827064aad7fc0b003a96556a87cf2e8364044",
+      "original_png_sha256": "590e6a96b820e3579f13e7afb045b81ca3da2a416831f29f68edd50bf4874c13",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111213,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.30-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png",
+      "input_sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-control-wl1.30-r4",
+      "prompt_pair": "569062cf1c551bfc",
+      "prompt_id": "af70eac7-3c95-4319-8843-4743864b0089",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r4/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r4/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r4/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r4/ack.json"
+      },
+      "raw_request_sha256": "2944e368aaeaf81df1a92e102d7660b6dae6e8ecb92bb64a10317cf2b285ce58",
+      "original_png_sha256": "3eee1ef352a306e875a13332c61029132b4b74275001d51b5017e3a9a6d1b36b",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111214,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "wl-1.30-dd-0.50.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_file": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png",
+      "input_sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797"
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-dd0.40-r1",
+      "prompt_pair": "931e4839a9326cff",
+      "prompt_id": "cbf68bcb-7776-4e5c-9ab2-29ce68149273",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.40-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.40-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.40-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.40-r1/ack.json"
+      },
+      "raw_request_sha256": "134725304247ede61099a48f86129c9c6024487ef511f4d33fee7542af343570",
+      "original_png_sha256": "25756a2a96a8ce71716b46a050992dee54d9a2f66f051fe68dfe6517ba30780b",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-dd0.40-r2",
+      "prompt_pair": "931e4839a9326cff",
+      "prompt_id": "52436f74-c5bb-4943-8d34-9b3ef3e68ecf",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.40-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.40-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.40-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.40-r2/ack.json"
+      },
+      "raw_request_sha256": "4670ce40f90e9b2f6eec7d1ae7fd547837240e6182a65ed5f990199f631fe722",
+      "original_png_sha256": "687ddb60e1c4e69f939e3fe24ac06d1f830fa0309218afd90224a5049b12e69c",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-dd0.50-r1",
+      "prompt_pair": "b0508c2e8788ff3f",
+      "prompt_id": "be192d93-a38b-4599-9ef3-3cfb522417f5",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.50-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.50-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.50-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.50-r1/ack.json"
+      },
+      "raw_request_sha256": "8c36538dcb8523bac4834bd5b530e7070a8febd56fc48e29cd55307f669ac443",
+      "original_png_sha256": "314506375a2a145f710c3c2c182525e680f0f5a44758e1c43ec167f3c20970c7",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-dd0.50-r2",
+      "prompt_pair": "b0508c2e8788ff3f",
+      "prompt_id": "53ab42c2-379e-4941-9a57-26af972b91e0",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.50-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.50-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.50-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.50-r2/ack.json"
+      },
+      "raw_request_sha256": "e6713bff2a39584c575a484307f27dbb070e1283c6f4129391683043b0d9252a",
+      "original_png_sha256": "3a0609cf080bf1b673148bed4d3eed8ae88f562913eba3fad2ae3ef144ac8394",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-dd0.60-r1",
+      "prompt_pair": "6645752488903d7c",
+      "prompt_id": "de89057e-7247-450e-8642-0b9abcea9a87",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.60-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.60-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.60-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.60-r1/ack.json"
+      },
+      "raw_request_sha256": "037418ffec1ad09addf26151e13a12b57de2afae8592c67a47d7603f7ec48b21",
+      "original_png_sha256": "1951480dca6c38a11742a4a13054c4daa2a3fcd7519d2e9d4d13865fe8deb59c",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-dd0.60-r2",
+      "prompt_pair": "6645752488903d7c",
+      "prompt_id": "2395d9d7-1e94-4b5d-b9f1-7db87ad53edb",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.60-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.60-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.60-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-dd0.60-r2/ack.json"
+      },
+      "raw_request_sha256": "93dc53d3cb7b17660a1fe7da341e6730f8efcff6906781968d96b3b3401b6b91",
+      "original_png_sha256": "1101282a2dd10076da2e85483c1fdd3b2ced6acc5143239a04e85e2f35993db9",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-wl0.70-r1",
+      "prompt_pair": "a9a1a0f1d9e9c74f",
+      "prompt_id": "e978d739-82da-4d19-9be7-dff192a2fa37",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-wl0.70-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-wl0.70-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-wl0.70-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-wl0.70-r1/ack.json"
+      },
+      "raw_request_sha256": "cfcb8215e3c84e958aead67aeb818e010cb2b27ae301bd6cc035d8e8f5565c0b",
+      "original_png_sha256": "8fac44da1b9c2e4da7461e0a8452588ae73eaec9088f986b20984623a1d98933",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-wl0.70-r2",
+      "prompt_pair": "a9a1a0f1d9e9c74f",
+      "prompt_id": "a24f3a45-c75a-4795-91ad-d0cba10212e6",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-wl0.70-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-wl0.70-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-wl0.70-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-wl0.70-r2/ack.json"
+      },
+      "raw_request_sha256": "2d9e6830c5aabc0fc60646ec2de009218b1d1dd10c2b5e6780412778e74cd559",
+      "original_png_sha256": "8c8ad092ad5480c8fc39387289e15c229540e3c55e002ad65a14fa231d783c5e",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-wl1.00-r1",
+      "prompt_pair": "bf28a0bc3d781c8a",
+      "prompt_id": "1dfc33b4-5d95-401c-8020-6a6c3e3b5c47",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.00-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.00-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.00-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.00-r1/ack.json"
+      },
+      "raw_request_sha256": "25dfaa802b4aeed49ac5b0d87e59f4bb36b678006da5859b1aa53a62bc832a32",
+      "original_png_sha256": "12d2b32af84f4a4c83b17986d699eae75916c9af1dfd58d83d710008690c2224",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-wl1.00-r2",
+      "prompt_pair": "bf28a0bc3d781c8a",
+      "prompt_id": "4f27f727-7aa4-477d-9609-2477a87471dd",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.00-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.00-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.00-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.00-r2/ack.json"
+      },
+      "raw_request_sha256": "e79e3653e27c9caa677bc3cbb4c981eaedd0a2a5641eda3824db0e2e2bfec089",
+      "original_png_sha256": "c0d72b7c48af1131b015b5479b1e6679682aa13037581cc748d54f828e73142b",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-wl1.30-r1",
+      "prompt_pair": "569062cf1c551bfc",
+      "prompt_id": "95abcf31-6526-44e8-92db-f40293f993b9",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.30-r1/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.30-r1/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.30-r1/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.30-r1/ack.json"
+      },
+      "raw_request_sha256": "6842fb572b421abfa9b5e7cfbdfae1a90639b3c512f5ad5a5de44842124cb716",
+      "original_png_sha256": "d285687182dd1b7ab5e3b5dd819648301ceea42ef1cbeaefedc1bc9b2c6dc617",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "E1-open",
+      "position": "E1-text-wl1.30-r2",
+      "prompt_pair": "569062cf1c551bfc",
+      "prompt_id": "1d3e48c9-c2ff-432a-842f-fee72caf9f8d",
+      "files": {
+        "image": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.30-r2/original.png",
+        "request": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.30-r2/request.json",
+        "history": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.30-r2/history.json",
+        "ack": "evidence/e1-open-20261112/E1-actual/E1-text-wl1.30-r2/ack.json"
+      },
+      "raw_request_sha256": "9daae302cf07c983e000597f79373f8f3e02ae7fdfbb5c26fa9891b7345f6aa2",
+      "original_png_sha256": "190d50cd69752b8b9293a746b72ae38a534753cbb926ebd4a6bbc046a7a84668",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111212,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": null,
+      "canny": null,
+      "image_scale": null,
+      "load_images": [],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "cached_nodes": []
+    },
+    {
+      "batch": "L1",
+      "position": "L1-A-wl0.70-r1",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "7c6ad0d9-fbc7-4622-801a-0b34be0cff9d",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r1/response.original.json"
+      },
+      "raw_request_sha256": "c75e6232a38c1bcd055850f859592cd710a74d9f1d60d17ed9112a31659a2f72",
+      "original_png_sha256": "4e7e965e9002f3e0c3901e3bdeaa2482e2c8c63a624ba2a36cb3d333cc42041c",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "line-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+      "input_file": "experiments/l1-layout/guides/line-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-A-wl0.70-r2",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "9b007de1-d735-4c1d-8709-59fcf2675539",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r2/response.original.json"
+      },
+      "raw_request_sha256": "bd099b3e70248b529f2e7db29ef2619e07237c31d1ba953e91ffd753b141acc1",
+      "original_png_sha256": "51ce1d74741576d1104869b0eecd078bd0780ec610262c05b97e3e3f53993572",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "line-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+      "input_file": "experiments/l1-layout/guides/line-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-A-wl1.30-r1",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "1882e224-0de2-40e8-8841-a7cb10793e87",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r1/response.original.json"
+      },
+      "raw_request_sha256": "76ed8f55ea4478d4d8a40930677cdfa37f5c26bc8a3abb0d9418b0942f5ad076",
+      "original_png_sha256": "2131411ed23ff2bc749d59c3aacc4cd903789bd9011913a117cfa2615a92b546",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "line-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b",
+      "input_file": "experiments/l1-layout/guides/line-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-A-wl1.30-r2",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "ab150df5-11a9-48e2-b4fd-fac63464cab7",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r2/response.original.json"
+      },
+      "raw_request_sha256": "5ccddf7c955496ea8aada57ad7d040347fbbf5b4163b18084052bbcc58c52425",
+      "original_png_sha256": "28ce350d1727b523b9b8ef4a20bb065d45048e40de7d76d220c7987f15418f14",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "line-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b",
+      "input_file": "experiments/l1-layout/guides/line-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-B-wl0.70-r1",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "20e508fe-64e0-4067-9cf7-a688d4e1b04a",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r1/response.original.json"
+      },
+      "raw_request_sha256": "26dcacf716f7a414daee6c6ca914c2d6bf498cc113c50e957e72d9e8934e504e",
+      "original_png_sha256": "b15f0e48f5443d1ccca9febe8bca80506fb68e24c27dee2630f03f659a70ad6f",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "blades-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "c55b3c788b26cde123bff4f332b10f3d2554bd9b2fe589949a0e45986bd3f1d1",
+      "input_file": "experiments/l1-layout/guides/blades-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-B-wl0.70-r2",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "94a2e6f7-8899-4c04-99a7-67bb9394b3ed",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r2/response.original.json"
+      },
+      "raw_request_sha256": "9944cfa1b379a4e4b6854c6ce3e15f74d6f2ccefd6e95bbcc489a47336432660",
+      "original_png_sha256": "4a5b3de8406d6c71d8abbeb51d5a68e0a11755a5e3766d60062ee0aa3e208fad",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "blades-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "c55b3c788b26cde123bff4f332b10f3d2554bd9b2fe589949a0e45986bd3f1d1",
+      "input_file": "experiments/l1-layout/guides/blades-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-B-wl1.30-r1",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "7a7dac09-1369-4ac2-a380-1e09cad46b78",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r1/response.original.json"
+      },
+      "raw_request_sha256": "75777dac91b6b629e7d5e92af6c1775e469e8656dfb9f9e7bfb704ceff3a0423",
+      "original_png_sha256": "ee4f318997d3fc51cc3f373f96fe3c8e8badc90f0ddfd85e4d1ba76b4e603ee2",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "blades-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "70743cd7da67d06a594fd4e18a3146a646a65ef9ca6239bfa96e7827f85bdfc7",
+      "input_file": "experiments/l1-layout/guides/blades-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-B-wl1.30-r2",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "96b92792-96dc-4e06-a3dd-f770ebe8cbd3",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r2/response.original.json"
+      },
+      "raw_request_sha256": "4eda650b8676c4dc737c1a8e0a88b36993a129bc4c5883a75472d4ab1f7f8f4b",
+      "original_png_sha256": "1ada65f4f3bdd3e8252755d1d1e296af9a6b55552cec4f9be9fc528cdf0f3dd7",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "blades-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "70743cd7da67d06a594fd4e18a3146a646a65ef9ca6239bfa96e7827f85bdfc7",
+      "input_file": "experiments/l1-layout/guides/blades-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-C-wl0.70-r1",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "8c8c2cfc-0794-49aa-93b5-bee425f0c0a0",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-C-wl0.70-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-C-wl0.70-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-C-wl0.70-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-C-wl0.70-r1/response.original.json"
+      },
+      "raw_request_sha256": "a45ba69e022304d79cbd9d740e83bf3331e94c1d908bf9913c83e3226b4d28a1",
+      "original_png_sha256": "a68617bcf0415d9cf69f6bb81aad32396a3a40ba447e41ad4051f1862cb9b15d",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 0.35
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "line-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+      "input_file": "experiments/l1-layout/guides/line-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-C-wl0.70-r2",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "476f8074-1327-433c-8537-36dae36287c9",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-C-wl0.70-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-C-wl0.70-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-C-wl0.70-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-C-wl0.70-r2/response.original.json"
+      },
+      "raw_request_sha256": "b2879581acd3c38a5aa3b0834b5d3dc52315f3ee8dbb37d0fc8661c76afeb088",
+      "original_png_sha256": "1b030ea34ad19d062987a4bd2b9d1bbcfd6fd578cd33936ca49c13a3397d7818",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 0.35
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "line-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+      "input_file": "experiments/l1-layout/guides/line-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-C-wl1.30-r1",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "a596b975-7dbf-48c6-9a59-28acf32f57ef",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-C-wl1.30-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-C-wl1.30-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-C-wl1.30-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-C-wl1.30-r1/response.original.json"
+      },
+      "raw_request_sha256": "c5091fc371edaab54390b77f7de1e4e6bcac07efbc2c58429843273a34b73edc",
+      "original_png_sha256": "42f1c64c11f5a94127eb930c524993bfd0e533372821dc8712f9fef53bfafaba",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 0.35
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "line-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b",
+      "input_file": "experiments/l1-layout/guides/line-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-C-wl1.30-r2",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "f581ff0c-4ce3-42d8-969c-75a2534af93f",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-C-wl1.30-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-C-wl1.30-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-C-wl1.30-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-C-wl1.30-r2/response.original.json"
+      },
+      "raw_request_sha256": "51fea4ca3f8bb14520e06a65817961aa790bcce94c6f133399870073bd0af6c5",
+      "original_png_sha256": "25db086a541a1323e95ad2f0aad54f76164353deeb5cdcbdb1fe7101cfa93738",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 0.35
+      },
+      "canny": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      },
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "line-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b",
+      "input_file": "experiments/l1-layout/guides/line-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-D-wl0.70-r1",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "c9d72d1e-945f-45ba-9db7-86ffa84d1f3b",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-D-wl0.70-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-D-wl0.70-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-D-wl0.70-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-D-wl0.70-r1/response.original.json"
+      },
+      "raw_request_sha256": "a8186a9a185313a86de77cf0c400bf5dbdb8147b55ef1c9443ad0c5b01539359",
+      "original_png_sha256": "8cb0d078aa1e5f3094f6ff4e15b08ed0dcf54b0e2a9fdc740c2eb7f012c4689d",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "6",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": null,
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "depth-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "caaa2a2df2ff3fe6715a976b69a894c0b6becb5a2d682281c658d4d92789c773",
+      "input_file": "experiments/l1-layout/guides/depth-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-D-wl0.70-r2",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "5de3562d-09ea-44ff-b7b3-383e8572749f",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-D-wl0.70-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-D-wl0.70-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-D-wl0.70-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-D-wl0.70-r2/response.original.json"
+      },
+      "raw_request_sha256": "50d9638b5567efec4ceb0823b6b79ac66be7bd9da9d65424085283ac0bc8dc4c",
+      "original_png_sha256": "54c3ce75f92df6a3782016cb172f0c489195803671bc6959234889c55d1920d9",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "6",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": null,
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "depth-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "caaa2a2df2ff3fe6715a976b69a894c0b6becb5a2d682281c658d4d92789c773",
+      "input_file": "experiments/l1-layout/guides/depth-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-D-wl1.30-r1",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "a3ad1479-c0c7-42dc-a57c-f1ce8a559698",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-D-wl1.30-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-D-wl1.30-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-D-wl1.30-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-D-wl1.30-r1/response.original.json"
+      },
+      "raw_request_sha256": "53b171f2d0076029d11db4a0d9f0a871afa8cbb6536fb0b304c415a4983058fe",
+      "original_png_sha256": "ff92494cbaa956e84c8d01aa7de6fd78607865a325e690b16f2231b13c3b6a99",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "6",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": null,
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "depth-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22",
+      "input_file": "experiments/l1-layout/guides/depth-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-D-wl1.30-r2",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "0302563e-cf0c-46c1-84a9-983a692bbaa7",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-D-wl1.30-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-D-wl1.30-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-D-wl1.30-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-D-wl1.30-r2/response.original.json"
+      },
+      "raw_request_sha256": "934ec27bc8fa67b45a0423b0dae70f3cc3e40e515347994eaaee34c12e993a9c",
+      "original_png_sha256": "d3a6fa500484205feae764a2ac49f7c4bb232638861895b759a312468ac74348",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "6",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1.0
+      },
+      "canny": null,
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "depth-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22",
+      "input_file": "experiments/l1-layout/guides/depth-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-E-wl0.70-r1",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "85ba90ba-b3b9-47d9-a790-f4cd01735a01",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-E-wl0.70-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-E-wl0.70-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-E-wl0.70-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-E-wl0.70-r1/response.original.json"
+      },
+      "raw_request_sha256": "d49fc9ec3c22dd255d79cca4a684691ada576d4df852c37815211c403a92a463",
+      "original_png_sha256": "a506231c3b9322715c6739d6c160c2c7b76b130858df81dcccf156cf05434319",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "6",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 0.5
+      },
+      "canny": null,
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "depth-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "caaa2a2df2ff3fe6715a976b69a894c0b6becb5a2d682281c658d4d92789c773",
+      "input_file": "experiments/l1-layout/guides/depth-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-E-wl0.70-r2",
+      "prompt_pair": "c0d5eb8fb652a72b",
+      "prompt_id": "8dbcadb0-2b41-49f1-86bc-a9847b26027f",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-E-wl0.70-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-E-wl0.70-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-E-wl0.70-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-E-wl0.70-r2/response.original.json"
+      },
+      "raw_request_sha256": "de647c9e751b703fea60727509ed23779446489738cd8363ad81c22f2f92dc67",
+      "original_png_sha256": "bf1819f3858adb4055be565efe7a33ddbf32d03246ec7bb164bda6ca9b94bf5c",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "6",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 0.5
+      },
+      "canny": null,
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "depth-wl0.70.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "caaa2a2df2ff3fe6715a976b69a894c0b6becb5a2d682281c658d4d92789c773",
+      "input_file": "experiments/l1-layout/guides/depth-wl0.70.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-E-wl1.30-r1",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "77616f05-9d46-4078-8901-d3cdf3bacfd9",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-E-wl1.30-r1/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-E-wl1.30-r1/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-E-wl1.30-r1/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-E-wl1.30-r1/response.original.json"
+      },
+      "raw_request_sha256": "e1c898cb305eedd1465afad3c91f4bdf2012a8c68a3829df345dda6f41cfb73f",
+      "original_png_sha256": "aa555f96d0a2f993c4f2288c15163ec32b5b75fac0070cd69c53ebfc1467a8b2",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111301,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "6",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 0.5
+      },
+      "canny": null,
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "depth-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22",
+      "input_file": "experiments/l1-layout/guides/depth-wl1.30.png"
+    },
+    {
+      "batch": "L1",
+      "position": "L1-E-wl1.30-r2",
+      "prompt_pair": "8fe4105fecf1194f",
+      "prompt_id": "b213a829-0e12-4614-aade-190ebdbdb538",
+      "files": {
+        "image": "evidence/l1-layout-actual/L1-actual/L1-E-wl1.30-r2/original.png",
+        "request": "evidence/l1-layout-actual/L1-actual/L1-E-wl1.30-r2/request.actual.json",
+        "history": "evidence/l1-layout-actual/L1-actual/L1-E-wl1.30-r2/history.original.json",
+        "ack": "evidence/l1-layout-actual/L1-actual/L1-E-wl1.30-r2/response.original.json"
+      },
+      "raw_request_sha256": "563c13d4d9ec06281b8ca0cbb882307ed5d5dd66c3ca32aac06306506d6c2e9e",
+      "original_png_sha256": "262930de6d52c30649429190dee11978b0daf19174105016960b57390306b1ae",
+      "text_node_other_inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "resolution": 1024
+      },
+      "sampler": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111302,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      },
+      "control": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "6",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 0.5
+      },
+      "canny": null,
+      "image_scale": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      },
+      "load_images": [
+        "depth-wl1.30.png"
+      ],
+      "vae_encode": null,
+      "models": {
+        "UNETLoader": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        },
+        "CLIPLoader": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        },
+        "VAELoader": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        },
+        "ModelPatchLoader": {
+          "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+        }
+      },
+      "cached_nodes": [],
+      "input_sha256": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22",
+      "input_file": "experiments/l1-layout/guides/depth-wl1.30.png"
+    }
+  ]
+}
