@@ -1,0 +1,52 @@
+{
+  "criteria": "Four identifiable hubs with two blades at the original guide positions on both images",
+  "blind_AI_readings": [
+    {
+      "reader": "A",
+      "case": "R0-2026110201",
+      "random_file": "066028d34f29b2ac.png",
+      "center_distances_px": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "reader": "A",
+      "case": "R0-2026111200",
+      "random_file": "6f9ee167138b022d.png",
+      "center_distances_px": [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "reader": "B",
+      "case": "R0-2026110201",
+      "random_file": "cde80e3259676ce5.png",
+      "center_distances_px": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "reader": "B",
+      "case": "R0-2026111200",
+      "random_file": "da8a96b1bee17653.png",
+      "center_distances_px": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "informed_AI_initial_read": "Both images show four hubs near the registered centers and two visible blades per hub.",
+  "human_readings": 0,
+  "passed": true
+}

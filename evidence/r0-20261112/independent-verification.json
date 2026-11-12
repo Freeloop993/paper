@@ -1,0 +1,21 @@
+{
+  "zip_sha256": "7decac3269178101378ecbe5ad474e08a8cf62a572c4dea54acf4228f92357b5",
+  "cases": [
+    {
+      "case": "R0-2026110201",
+      "prompt_id": "d1dea61a-f748-404c-9c59-96740341587f",
+      "image_sha256": "00415260578a5ff41b563da16d656dd54f6eee7a22de01c6211d9d08f72a3148",
+      "history_seconds": 127.908,
+      "gpu_peak_observed_mib": 37982,
+      "cached_nodes": []
+    },
+    {
+      "case": "R0-2026111200",
+      "prompt_id": "98cdc324-9da0-4015-be2d-84c9f8f63031",
+      "image_sha256": "3957027513875bad665fd2279b7af4aeae351886ac1522b819ebb35dacad87cb",
+      "history_seconds": 186.94,
+      "gpu_peak_observed_mib": 37708,
+      "cached_nodes": []
+    }
+  ]
+}

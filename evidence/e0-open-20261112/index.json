@@ -1,0 +1,26 @@
+{
+  "E0-control-wl0.70-r1": {
+    "path": "E0-actual/E0-control-wl0.70-r1/original.png",
+    "sha256": "89246263600ed751b6a3d41a23e2a934d52b4a0fe3502e81186e40c101dc1414"
+  },
+  "E0-control-wl0.70-r2": {
+    "path": "E0-actual/E0-control-wl0.70-r2/original.png",
+    "sha256": "1abe199504b4694323d6324b1cb8ea1fadb4ca1b39466484b548413cde88f3e7"
+  },
+  "E0-control-wl1.00-r1": {
+    "path": "E0-actual/E0-control-wl1.00-r1/original.png",
+    "sha256": "09352851141ba59ce62a8cd70c3e78317ef15c84986cda7e8fac279f2a819953"
+  },
+  "E0-control-wl1.00-r2": {
+    "path": "E0-actual/E0-control-wl1.00-r2/original.png",
+    "sha256": "f5a3263965f560a71d5426253e1fce5da49d2a9dbb214f1e1ebb0ddfe47d926b"
+  },
+  "E0-control-wl1.30-r1": {
+    "path": "E0-actual/E0-control-wl1.30-r1/original.png",
+    "sha256": "2e81d336850080ae6d02872b86b9a8e549e743f906c37a991336d4fea4b88875"
+  },
+  "E0-control-wl1.30-r2": {
+    "path": "E0-actual/E0-control-wl1.30-r2/original.png",
+    "sha256": "6feafadc2e33321801e0d39b7ca7c63df897ac1917a128982975f4b14240925e"
+  }
+}

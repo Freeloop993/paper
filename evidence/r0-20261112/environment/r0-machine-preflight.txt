@@ -1,0 +1,16 @@
+Thu Nov 12 10:49:48 UTC 2026
+name, memory.total [MiB], driver_version
+NVIDIA GeForce RTX 4090, 49140 MiB, 610.57.04
+Filesystem      Size  Used Avail Use% Mounted on
+overlay         150G  3.0G  148G   2% /
+/usr/local/miniconda3/envs/py312/bin/python
+3.12.11 2.8.0+cu128 12.8 True
+r0-machine-preflight.txt
+HuggingFace
+ModelScope
+Sinapisai
+comfyui
+offline
+ollama
+other
+stable-diffusion-webui

@@ -1,14 +1,12 @@
 {
-  "model": "gpt-image-2.5-flare",
-  "promptText": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.30 times the front-back motor spacing. Use the attached layout only for rotor positions and blade size; do not reproduce its black marks.",
-  "ratio": "1:1",
-  "imageSize": "1K",
-  "count": 1,
-  "referenceImages": [
+  "model": "gpt-image-2.6-flare",
+  "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.30 times the front-back motor spacing. Use the attached layout only for rotor positions and blade size; do not reproduce its black marks.",
+  "size": "1024x1024",
+  "n": 1,
+  "output_format": "png",
+  "images": [
     {
-      "tag": "layout",
-      "url": "https://raw.githubusercontent.com/Freeloop993/paper/5ec145398674ebc771211662681f84885594ee75/prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png"
+      "image_url": "https://raw.githubusercontent.com/Freeloop993/paper/5ec145398674ebc771211662681f84885594ee75/prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png"
     }
-  ],
-  "rationale": "E0 closed reference-image comparison for a registered UAV industrial design study."
+  ]
 }

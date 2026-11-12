@@ -1,0 +1,30 @@
+[
+  {
+    "case": "R0-2026110201",
+    "request_sha256": "78dcb88c9c4bad7c5a69d2c5fac1e9e759f22f3e3708bbd5776652d82cdd893c",
+    "attempted_at": "2026-11-12T11:09:30.021787+00:00",
+    "accepted": true,
+    "completed": true,
+    "prompt_id": "d1dea61a-f748-404c-9c59-96740341587f",
+    "output_sha256": "00415260578a5ff41b563da16d656dd54f6eee7a22de01c6211d9d08f72a3148",
+    "end_utc": "2026-11-12T11:11:42.166472+00:00",
+    "wall_seconds": 132.143,
+    "history_seconds": 127.908,
+    "gpu_peak_observed_mib": 37982,
+    "gpu_sampling_period_ms": 200
+  },
+  {
+    "case": "R0-2026111200",
+    "request_sha256": "f1d1c6f4339efb0f589a898eaa7ae0b6a1caee86362bcd1adb79007ebda7bb0a",
+    "attempted_at": "2026-11-12T11:11:42.231997+00:00",
+    "accepted": true,
+    "completed": true,
+    "prompt_id": "98cdc324-9da0-4015-be2d-84c9f8f63031",
+    "output_sha256": "3957027513875bad665fd2279b7af4aeae351886ac1522b819ebb35dacad87cb",
+    "end_utc": "2026-11-12T11:14:54.461382+00:00",
+    "wall_seconds": 192.219,
+    "history_seconds": 186.94,
+    "gpu_peak_observed_mib": 37708,
+    "gpu_sampling_period_ms": 200
+  }
+]

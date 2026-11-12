@@ -62,10 +62,9 @@ def main(commit):
                     for repeat, seed in enumerate(seeds if arm == "control" else seeds[:2], 1):
                         case = f"{stage}-{arm}-{factor}{level:.2f}-r{repeat}"
                         if arm == "closed":
-                            body = {"model":"gpt-image-2.5-flare", "promptText":positive+" "+CLOSED_SUFFIX,
-                                    "ratio":"1:1", "imageSize":"1K", "count":1,
-                                    "referenceImages":[{"tag":"layout","url":f"https://raw.githubusercontent.com/Freeloop993/paper/{commit}/{guide_path}"}],
-                                    "rationale":"E0 closed reference-image comparison for a registered UAV industrial design study."}
+                            body = {"model": "gpt-image-2.6-flare", "prompt": positive + " " + CLOSED_SUFFIX,
+                                    "size": "1024x1024", "n": 1, "output_format": "png",
+                                    "images": [{"image_url": f"https://raw.githubusercontent.com/Freeloop993/paper/{commit}/{guide_path}"}]}
                         else:
                             graph = copy.deepcopy(template)
                             graph["4"]["inputs"]["prompt"] = positive
