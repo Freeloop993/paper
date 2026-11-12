@@ -20,7 +20,7 @@ def inspect(archive, stage="R0"):
         summary = json.loads(z.read(f"{stage}-actual/summary.json"))
         expected = [row["case"] for row in rows]
         if stage != "R0":
-            expected.sort(key=lambda case: ("-text-" in case, case))
+            expected.sort(key=lambda case: "-text-" in case)
         assert [s["case"] for s in summary] == expected
         by_case = {r["case"]: r for r in rows}
         for observation in summary:
