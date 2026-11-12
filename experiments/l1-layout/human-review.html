@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>顶视概念图独立评议</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f4f2;color:#182c29;font:16px/1.55 system-ui,sans-serif}
+main{max-width:1180px;margin:auto;padding:22px}h1{font-size:24px;margin:0}p{margin:5px 0 16px}
+section{display:grid;grid-template-columns:minmax(280px,1.25fr) minmax(285px,1fr);gap:22px;align-items:start}
+img{width:100%;height:auto;display:block;background:white}fieldset{border:1px solid #b5c8c3;margin:0 0 13px;padding:10px 14px}
+legend{font-weight:600}label{display:inline-block;margin:4px 13px 4px 0;cursor:pointer}textarea{width:100%;min-height:55px}
+nav{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}button{font:inherit;padding:7px 14px;cursor:pointer}strong{display:block;margin:0 0 10px}button:disabled{cursor:default}
+@media(max-width:720px){main{padding:12px}section{grid-template-columns:1fr;gap:14px}}
+</style>
+<main><h1>顶视概念图独立评议</h1>
+<p>请逐张观察，按自己的第一判断选择。可以前后翻看并修改答案。全程匿名，最后导出答卷。</p>
+<strong id="count" aria-live="polite"></strong>
+<section><img id="picture" alt="待评议的顶视概念图"><div><div id="qs"></div>
+<label for="note">补充说明（选填）</label><textarea id="note"></textarea>
+<nav><button id="prev">上一张</button><button id="next">下一张</button><button id="save">导出答卷</button></nav><span id="status" aria-live="polite"></span></div></section></main>
+<script>
+const pack = "L1_PACK_ID";
+const questions=[
+ ["这张图像一件产品的效果图，还是像示意图或线稿？",["像产品图","介于两者之间","像示意图"]],
+ ["能否指出相机在哪里？",["能，位置明确","大概能","不能"]],
+ ["臂与机身相接的地方是有过渡的造型，还是直杆插入？",["有过渡","不明显","直杆"]],
+ ["成图里是否能看到条件图的线、圈或文字被照画出来？",["有","无","看不清"]]
+];
+const id=n=>"L"+String(n+1).padStart(2,"0");
+const $=x=>document.getElementById(x);
+const blank=()=>({answers:[null,null,null,null],note:""});
+let rows=Array.from({length:28},blank), i=0;
+try{const saved=JSON.parse(localStorage.getItem(pack));if(saved&&saved.rows.length===28){rows=saved.rows;i=saved.i}}catch{}
+function remember(){try{localStorage.setItem(pack,JSON.stringify({rows,i}))}catch{}}
+function progress(){const done=rows.filter(r=>r.answers.every(a=>a!==null)).length;$("count").textContent="图 "+id(i)+"（"+(i+1)+" / 28）　已评 "+done+" 张";$("save").disabled=done!==28}
+function draw(){const row=rows[i];$("picture").src=id(i)+".png";$("qs").replaceChildren();questions.forEach(([question,opts],j)=>{
+ const f=document.createElement("fieldset"),l=document.createElement("legend");l.textContent=question;f.append(l);
+ for(const option of opts){const label=document.createElement("label"),r=document.createElement("input");r.type="radio";r.name="q"+j;r.checked=row.answers[j]===option;
+ r.onchange=()=>{row.answers[j]=option;remember();progress()};label.append(r," "+option);f.append(label)}$("qs").append(f)});
+ $("note").value=row.note;$("prev").disabled=i===0;$("next").disabled=i===27;$("status").textContent="";progress();remember()}
+$("note").oninput=()=>{rows[i].note=$("note").value;remember()};
+$("prev").onclick=()=>{if(i>0)i--;draw()};$("next").onclick=()=>{if(i<27)i++;draw()};
+$("save").onclick=()=>{const value={pack,completed_at:new Date().toISOString(),rows:rows.map((r,n)=>({code:id(n),...r}))};
+ const a=document.createElement("a"),url=URL.createObjectURL(new Blob([JSON.stringify(value,null,2)],{type:"application/json"}));a.href=url;a.download="L1-真人评议-"+pack+".json";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);$("status").textContent="请把下载的 JSON 答卷交回。"};draw();
+</script></html>

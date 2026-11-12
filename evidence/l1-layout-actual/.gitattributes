@@ -1,0 +1,4 @@
+L1-actual/** -text
+readings/reader-*.json -text
+*.png binary
+*.jpg binary
