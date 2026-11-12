@@ -1,0 +1,34 @@
+{
+  "bladesonly-wl0.70.png": {
+    "sha256": "20eb09a389ac4ecb50d534402e51c8d9dfc05184dd881ce18d46bfc82fa95a1d",
+    "source": "experiments/d2-tuning/guides/bladesonly-wl0.70.png"
+  },
+  "bladesonly-wl1.30.png": {
+    "sha256": "716bf8e57bd4e6116f3968c445f6af50a49791d98c39e0789c21bbabf80ee385",
+    "source": "experiments/d2-tuning/guides/bladesonly-wl1.30.png"
+  },
+  "wl-0.70-dd-0.50.png": {
+    "sha256": "4bd9d29b41b8d71c453931046a749d835202c12112301b1d528ba750854dc92f",
+    "source": "prototypes/drone-configurator/public/research-guides/wl-0.70-dd-0.50.png"
+  },
+  "wl-1.30-dd-0.50.png": {
+    "sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797",
+    "source": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png"
+  },
+  "line-wl0.70.png": {
+    "sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+    "source": "experiments/l1-layout/guides/line-wl0.70.png"
+  },
+  "line-wl1.30.png": {
+    "sha256": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b",
+    "source": "experiments/l1-layout/guides/line-wl1.30.png"
+  },
+  "E1-control-wl0.70-r1.png": {
+    "sha256": "f377ec3e8077177c0926f2c042e96e00f7963ffb778615b195729d7a99046ee4",
+    "source": "evidence/e1-open-20261112/E1-actual/E1-control-wl0.70-r1/original.png"
+  },
+  "E1-control-wl1.30-r1.png": {
+    "sha256": "160d9f70ee69bf0b0230f4b54902b75f55e40f023bcf4b3296af0be3df3201b9",
+    "source": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.30-r1/original.png"
+  }
+}
