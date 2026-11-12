@@ -1,0 +1,17 @@
+{
+  "seed": "2026111219",
+  "planned_human_sample": [
+    "E0-control-wl0.70-r2",
+    "E0-control-wl1.30-r1",
+    "E0-control-wl1.30-r2",
+    "E0-control-wl0.70-r1",
+    "E1-control-dd0.50-r3",
+    "E1-control-wl1.00-r3",
+    "E1-control-wl1.30-r3",
+    "E1-control-wl0.70-r1",
+    "E1-control-dd0.60-r2",
+    "E1-control-dd0.40-r4",
+    "E1-text-wl0.70-r2",
+    "E1-text-dd0.40-r2"
+  ]
+}

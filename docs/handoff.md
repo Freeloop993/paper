@@ -4,7 +4,7 @@
 
 ## 此刻从哪里接
 
-[PR #50](https://github.com/Freeloop993/paper/pull/50) 与 [PR #51](https://github.com/Freeloop993/paper/pull/51) 均已合并。按[当前规格](protocols/E0-E1-guide-prompt-spec.md)编译了五种正式条件图及 [R0/E0/E1 冻结包](../experiments/r0-e0-e1/README.md)。计划 2/12/36，实际提交 0。作者要求约 2 元/小时的单卡，#3 记录总额及授权，#19、#20 留运行回执。闭源接口的账号只读检查提示重新授权。下一步为低价卡库存、预算核准、新机复核及 R0 两张。
+#50、#51、#52 已合并。优云 48 GB 单卡已开机，R0 先验收四份权重、十二节点和原图 Canny 输出，再做两次复现。E0 的六个闭源位置使用官方 `gpt-image-2.6-flare`。两名盲态 AI 全读和一名真人抽读 12 张的种子、脚本与说明见[冻结单](../experiments/r0-e0-e1/README.md)。#3 登记作者决定，#19 留实际运行回执；E2 继续用同一实例，六次运行授权另记 #3。
 
 作者已确定开源 Qwen-Image 2.1＋ControlNet Union 为主后端；闭源 API 仅E0三档×2次。正式视图统一正交顶视。费用、招募、伦理和导师意见在[#3](https://github.com/Freeloop993/paper/issues/3)由作者处理。禁止单张预试；服务器与API到位后核标识与摘要，先交冻结文件再执行。E0→E1→E2任一步失败，停止并向对应工单报告。
 

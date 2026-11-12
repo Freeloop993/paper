@@ -32,9 +32,10 @@ for c in rows:
                 if factor=="wl" else f"Each rotor diameter is {level:.2f} of the diagonal motor distance.")
     text = base["4"]["inputs"]["prompt"]+" "+sentence
     if c["arm"]=="closed":
-        assert c["seed"] is None and body["promptText"] == text+" Use the attached layout only for rotor positions and blade size; do not reproduce its black marks."
-        assert body["referenceImages"][0]["url"].endswith("/"+data["guide_commit"]+"/"+c["guide"])
-        assert body["count"]==1 and body["ratio"]=="1:1" and body["imageSize"]=="1K"
+        assert c["seed"] is None and body["prompt"] == text+" Use the attached layout only for rotor positions and blade size; do not reproduce its black marks."
+        assert body["images"][0]["image_url"].endswith("/"+data["guide_commit"]+"/"+c["guide"])
+        assert body["n"] == 1 and body["size"] == "1024x1024" and body["output_format"] == "png"
+        assert body["model"] == "gpt-image-2.6-flare" and len(body["images"]) == 1
         continue
     g=body["prompt"]
     assert g["4"]["inputs"]["prompt"] == text
