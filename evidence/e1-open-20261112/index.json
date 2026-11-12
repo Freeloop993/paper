@@ -1,0 +1,146 @@
+{
+  "E1-control-wl0.70-r1": {
+    "path": "E1-actual/E1-control-wl0.70-r1/original.png",
+    "sha256": "f377ec3e8077177c0926f2c042e96e00f7963ffb778615b195729d7a99046ee4"
+  },
+  "E1-control-wl0.70-r2": {
+    "path": "E1-actual/E1-control-wl0.70-r2/original.png",
+    "sha256": "c46d9a9e45927ceaf7e4ca4ff60cdcef4067f80a5fae627a36b919b8ab33c777"
+  },
+  "E1-control-wl0.70-r3": {
+    "path": "E1-actual/E1-control-wl0.70-r3/original.png",
+    "sha256": "20fc1a108f7e8f4d676c9b0084a22b033abe4858bc3647b58af274fc47a1755d"
+  },
+  "E1-control-wl0.70-r4": {
+    "path": "E1-actual/E1-control-wl0.70-r4/original.png",
+    "sha256": "3839917777d0db48c6e2ba8154289372c42f4f80d165bc90642b60a92744b5d9"
+  },
+  "E1-control-wl1.00-r1": {
+    "path": "E1-actual/E1-control-wl1.00-r1/original.png",
+    "sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f"
+  },
+  "E1-control-wl1.00-r2": {
+    "path": "E1-actual/E1-control-wl1.00-r2/original.png",
+    "sha256": "2e277d53b9e6478697d72c2d790e30472b63177236e146f9d56334b1e61bf5f5"
+  },
+  "E1-control-wl1.00-r3": {
+    "path": "E1-actual/E1-control-wl1.00-r3/original.png",
+    "sha256": "2eeeff42beb3b242232ab17314a56f4854a0eafbae5e2dc3d027a30cca3a0522"
+  },
+  "E1-control-wl1.00-r4": {
+    "path": "E1-actual/E1-control-wl1.00-r4/original.png",
+    "sha256": "90caf780c0611ebdc00e9978a194f118f094cd9eb170d727155e2d0b1f438b09"
+  },
+  "E1-control-wl1.30-r1": {
+    "path": "E1-actual/E1-control-wl1.30-r1/original.png",
+    "sha256": "160d9f70ee69bf0b0230f4b54902b75f55e40f023bcf4b3296af0be3df3201b9"
+  },
+  "E1-control-wl1.30-r2": {
+    "path": "E1-actual/E1-control-wl1.30-r2/original.png",
+    "sha256": "5d97a7b04ac27805c418e52c4518d0f0ef4e8c385de64fec69461748b36ff603"
+  },
+  "E1-control-wl1.30-r3": {
+    "path": "E1-actual/E1-control-wl1.30-r3/original.png",
+    "sha256": "590e6a96b820e3579f13e7afb045b81ca3da2a416831f29f68edd50bf4874c13"
+  },
+  "E1-control-wl1.30-r4": {
+    "path": "E1-actual/E1-control-wl1.30-r4/original.png",
+    "sha256": "3eee1ef352a306e875a13332c61029132b4b74275001d51b5017e3a9a6d1b36b"
+  },
+  "E1-control-dd0.40-r1": {
+    "path": "E1-actual/E1-control-dd0.40-r1/original.png",
+    "sha256": "b3a19254b52746310dae7d9f2f80092fbdd0f1b43b1799cbc88bccf4ec532cfe"
+  },
+  "E1-control-dd0.40-r2": {
+    "path": "E1-actual/E1-control-dd0.40-r2/original.png",
+    "sha256": "95ed0174fe4688e5dc17a19640f6702022f399781a02cc468264254cab62831d"
+  },
+  "E1-control-dd0.40-r3": {
+    "path": "E1-actual/E1-control-dd0.40-r3/original.png",
+    "sha256": "65c79a784da0b43241aa90ff677f6d45c8728c3a15f35b3a130d4d9691a616da"
+  },
+  "E1-control-dd0.40-r4": {
+    "path": "E1-actual/E1-control-dd0.40-r4/original.png",
+    "sha256": "6c370825e8bc9c26ffb6317eecff370928d25dc1c52f02201c27a22c2d0b5259"
+  },
+  "E1-control-dd0.50-r1": {
+    "path": "E1-actual/E1-control-dd0.50-r1/original.png",
+    "sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b"
+  },
+  "E1-control-dd0.50-r2": {
+    "path": "E1-actual/E1-control-dd0.50-r2/original.png",
+    "sha256": "3832d815e6037a296f75abe058ee46c2c5c29b980b85d37284929653e4d1c7ea"
+  },
+  "E1-control-dd0.50-r3": {
+    "path": "E1-actual/E1-control-dd0.50-r3/original.png",
+    "sha256": "3636308765628deb922bbabf2842f0804fe87f1fe02dd5991160806afd916862"
+  },
+  "E1-control-dd0.50-r4": {
+    "path": "E1-actual/E1-control-dd0.50-r4/original.png",
+    "sha256": "10372b6d3ce6df4a52ae5975ecb9a3c20f0865e32881c8d1e3da05b5922da03b"
+  },
+  "E1-control-dd0.60-r1": {
+    "path": "E1-actual/E1-control-dd0.60-r1/original.png",
+    "sha256": "c44b3803bf11741d6e252c0c95453a39ec2d272e76f3b7c03ce14db3a53c05cd"
+  },
+  "E1-control-dd0.60-r2": {
+    "path": "E1-actual/E1-control-dd0.60-r2/original.png",
+    "sha256": "eab14aca0763040e24fa031f288096e9d22621afd7523b2de3c442ac207ede67"
+  },
+  "E1-control-dd0.60-r3": {
+    "path": "E1-actual/E1-control-dd0.60-r3/original.png",
+    "sha256": "0bf8e3de4c357b1910552c7558f5c9f3185941429559c6694a16974a7c1256c4"
+  },
+  "E1-control-dd0.60-r4": {
+    "path": "E1-actual/E1-control-dd0.60-r4/original.png",
+    "sha256": "133119507fd0c90df67e4fdb7266c69f556cc4d3dd2831d4146adf9e90b2471c"
+  },
+  "E1-text-wl0.70-r1": {
+    "path": "E1-actual/E1-text-wl0.70-r1/original.png",
+    "sha256": "8fac44da1b9c2e4da7461e0a8452588ae73eaec9088f986b20984623a1d98933"
+  },
+  "E1-text-wl0.70-r2": {
+    "path": "E1-actual/E1-text-wl0.70-r2/original.png",
+    "sha256": "8c8ad092ad5480c8fc39387289e15c229540e3c55e002ad65a14fa231d783c5e"
+  },
+  "E1-text-wl1.00-r1": {
+    "path": "E1-actual/E1-text-wl1.00-r1/original.png",
+    "sha256": "12d2b32af84f4a4c83b17986d699eae75916c9af1dfd58d83d710008690c2224"
+  },
+  "E1-text-wl1.00-r2": {
+    "path": "E1-actual/E1-text-wl1.00-r2/original.png",
+    "sha256": "c0d72b7c48af1131b015b5479b1e6679682aa13037581cc748d54f828e73142b"
+  },
+  "E1-text-wl1.30-r1": {
+    "path": "E1-actual/E1-text-wl1.30-r1/original.png",
+    "sha256": "d285687182dd1b7ab5e3b5dd819648301ceea42ef1cbeaefedc1bc9b2c6dc617"
+  },
+  "E1-text-wl1.30-r2": {
+    "path": "E1-actual/E1-text-wl1.30-r2/original.png",
+    "sha256": "190d50cd69752b8b9293a746b72ae38a534753cbb926ebd4a6bbc046a7a84668"
+  },
+  "E1-text-dd0.40-r1": {
+    "path": "E1-actual/E1-text-dd0.40-r1/original.png",
+    "sha256": "25756a2a96a8ce71716b46a050992dee54d9a2f66f051fe68dfe6517ba30780b"
+  },
+  "E1-text-dd0.40-r2": {
+    "path": "E1-actual/E1-text-dd0.40-r2/original.png",
+    "sha256": "687ddb60e1c4e69f939e3fe24ac06d1f830fa0309218afd90224a5049b12e69c"
+  },
+  "E1-text-dd0.50-r1": {
+    "path": "E1-actual/E1-text-dd0.50-r1/original.png",
+    "sha256": "314506375a2a145f710c3c2c182525e680f0f5a44758e1c43ec167f3c20970c7"
+  },
+  "E1-text-dd0.50-r2": {
+    "path": "E1-actual/E1-text-dd0.50-r2/original.png",
+    "sha256": "3a0609cf080bf1b673148bed4d3eed8ae88f562913eba3fad2ae3ef144ac8394"
+  },
+  "E1-text-dd0.60-r1": {
+    "path": "E1-actual/E1-text-dd0.60-r1/original.png",
+    "sha256": "1951480dca6c38a11742a4a13054c4daa2a3fcd7519d2e9d4d13865fe8deb59c"
+  },
+  "E1-text-dd0.60-r2": {
+    "path": "E1-actual/E1-text-dd0.60-r2/original.png",
+    "sha256": "1101282a2dd10076da2e85483c1fdd3b2ced6acc5143239a04e85e2f35993db9"
+  }
+}

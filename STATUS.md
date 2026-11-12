@@ -1,6 +1,6 @@
 # 当前研究状态 · 2026-11-12（中国时间）
 
-当前规则见[研究地基](docs/foundation.md)、[六章清单](docs/execution-playbook.md)和[接手快照](docs/handoff.md)。本轮正式生成0次，独立真人正式场次0。
+当前规则见[研究地基](docs/foundation.md)、[六章清单](docs/execution-playbook.md)和[接手快照](docs/handoff.md)。E0 已回收开源 6/6，闭源 0/6；E1 已回收条件图 24/24、纯文字 12/12。R0 的 2 张环境复现单列。独立真人正式场次 0。
 
 [技术排错记录（P03—P06、CMF 示范，均不进正式分母）](evidence/formal-reset/README.md)
 
@@ -12,7 +12,7 @@
 | 两种工作方式 | 已有[离线改稿台](experiments/operator-workbench/README.md) | E2服务证据与T16动作核验待完成 |
 | S1诊断 | 3 条输入路线 × 2 个种子，6/6 真实生成。两次 AI 读图均为 0/6 达到坐标门槛。第二次读数在匿名原图上独立封存，24 个轴心与首次平均相差 1.81 px，最大 6 px。[数据及复算](evidence/s1-axis-repeat/README.md) | 两次 AI 判读仍可能共享偏差，机头朝向有两图由未知变为朝上。非作者真人评图为 1 份，原定最低 3 / 目标 5。设计质量和真人协同效果尚待评价 |
 | 六旋第二案例 | 农业植保已定；已按[三款手册第13页](experiments/hexa-plant-protection/manual-pages.json)核药箱、喷洒件与机架。4张旧测绘图仅作历史资料 | E6植保单案、归一化W/L响应及独立读数待采 |
-| 参数实验 | E0为后端对照、E1为唯一四旋参数批、E6为六旋应用与W/L比较 | 模型身份和独立读数待核，未生成 |
+| 参数实验 | [E0 开源 6 张](evidence/e0-open-20261112/gallery.md)、[E1 开源 36 张](evidence/e1-open-20261112/README.md)均已核验 | 闭源 E0 待采，真人点选 12 张待回收；E6 尚待执行 |
 | LoRA与人评 | 不训练LoRA，作者转述导师口头同意；E2检验父图参考 | 费用、实际招募、伦理及导师原记录由作者在 #3 跟进 |
 
 ## 历史账与预读（以下日期的行动安排已归档）
