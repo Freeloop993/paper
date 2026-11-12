@@ -1,0 +1,1155 @@
+{
+  "human_forms": 0,
+  "observed": [
+    {
+      "reader": "A",
+      "code": "L01",
+      "position": "L1-D-wl0.70-r2",
+      "group": "D",
+      "target_wl": 0.7,
+      "normalized_error": 0.04950089026342222,
+      "wl": 0.7913385826771654,
+      "dd": 0.5130271135762111,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L02",
+      "position": "L1-B-wl1.30-r2",
+      "group": "B",
+      "target_wl": 1.3,
+      "normalized_error": 0.0004166666666666667,
+      "wl": 1.2970027247956404,
+      "dd": 0.4878880899574028,
+      "residue": "有",
+      "scores": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L03",
+      "position": "L1-G-wl0.70-r2",
+      "group": "G",
+      "target_wl": 0.7,
+      "normalized_error": 0.04924422959343903,
+      "wl": 0.7247191011235955,
+      "dd": 0.509804329328165,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L04",
+      "position": "L1-F-wl0.70-r2",
+      "group": "F",
+      "target_wl": 0.7,
+      "normalized_error": 0.12595745494337288,
+      "wl": 1.1046770601336302,
+      "dd": 0.48394667012686277,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L05",
+      "position": "L1-A-wl1.30-r2",
+      "group": "A",
+      "target_wl": 1.3,
+      "normalized_error": 0.0018392556509887895,
+      "wl": 1.3024523160762942,
+      "dd": 0.46622089873626943,
+      "residue": "无",
+      "scores": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L06",
+      "position": "L1-F-wl1.30-r2",
+      "group": "F",
+      "target_wl": 1.3,
+      "normalized_error": 0.07676609786763658,
+      "wl": 1.0923076923076922,
+      "dd": 0.4860883201499938,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L07",
+      "position": "L1-F-wl0.70-r1",
+      "group": "F",
+      "target_wl": 0.7,
+      "normalized_error": 0.08976554031549511,
+      "wl": 1.0173697270471465,
+      "dd": 0.4664228832786334,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L08",
+      "position": "L1-C-wl1.30-r2",
+      "group": "C",
+      "target_wl": 1.3,
+      "normalized_error": 0.05861863356432854,
+      "wl": 1.1790697674418604,
+      "dd": 0.5323031203572727,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L09",
+      "position": "L1-A-wl0.70-r2",
+      "group": "A",
+      "target_wl": 0.7,
+      "normalized_error": 0.0016666666666666668,
+      "wl": 0.6991869918699187,
+      "dd": null,
+      "residue": "有",
+      "scores": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L10",
+      "position": "L1-D-wl1.30-r1",
+      "group": "D",
+      "target_wl": 1.3,
+      "normalized_error": 0.030823933011333474,
+      "wl": 1.3324468085106382,
+      "dd": 0.5370140325186121,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L11",
+      "position": "L1-D-wl1.30-r2",
+      "group": "D",
+      "target_wl": 1.3,
+      "normalized_error": 0.051058962084315616,
+      "wl": 1.2839506172839505,
+      "dd": 0.5699441740831582,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L12",
+      "position": "L1-G-wl1.30-r2",
+      "group": "G",
+      "target_wl": 1.3,
+      "normalized_error": 0.061357821778392795,
+      "wl": 1.1828703703703705,
+      "dd": 0.5049555115666089,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L13",
+      "position": "L1-F-wl1.30-r1",
+      "group": "F",
+      "target_wl": 1.3,
+      "normalized_error": 0.040597059454101796,
+      "wl": 1.2797927461139897,
+      "dd": 0.42691808183911284,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L14",
+      "position": "L1-G-wl0.70-r1",
+      "group": "G",
+      "target_wl": 0.7,
+      "normalized_error": 0.0020118446353109124,
+      "wl": 0.7004048582995951,
+      "dd": 0.4911746147050299,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L15",
+      "position": "L1-A-wl0.70-r1",
+      "group": "A",
+      "target_wl": 0.7,
+      "normalized_error": 0.26101698967511916,
+      "wl": 1.2358490566037736,
+      "dd": 0.558619031627443,
+      "residue": "有",
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L16",
+      "position": "L1-G-wl1.30-r1",
+      "group": "G",
+      "target_wl": 1.3,
+      "normalized_error": 0.0487118668169601,
+      "wl": 1.2335766423357664,
+      "dd": 0.4912897824635927,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L17",
+      "position": "L1-B-wl0.70-r1",
+      "group": "B",
+      "target_wl": 0.7,
+      "normalized_error": 0.0,
+      "wl": 0.6991869918699187,
+      "dd": 0.4946999898031228,
+      "residue": "有",
+      "scores": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L18",
+      "position": "L1-B-wl1.30-r1",
+      "group": "B",
+      "target_wl": 1.3,
+      "normalized_error": 0.0,
+      "wl": 1.3005464480874316,
+      "dd": 0.4899009775821218,
+      "residue": "有",
+      "scores": [
+        0,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L19",
+      "position": "L1-C-wl1.30-r1",
+      "group": "C",
+      "target_wl": 1.3,
+      "normalized_error": 0.18304073894767367,
+      "wl": 1.1818181818181819,
+      "dd": 0.5216724419537936,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L20",
+      "position": "L1-E-wl1.30-r1",
+      "group": "E",
+      "target_wl": 1.3,
+      "normalized_error": 0.030458747287064453,
+      "wl": 1.3386666666666667,
+      "dd": 0.536072556926611,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L21",
+      "position": "L1-D-wl0.70-r1",
+      "group": "D",
+      "target_wl": 0.7,
+      "normalized_error": null,
+      "wl": null,
+      "dd": null,
+      "residue": "无",
+      "scores": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L22",
+      "position": "L1-E-wl0.70-r1",
+      "group": "E",
+      "target_wl": 0.7,
+      "normalized_error": null,
+      "wl": null,
+      "dd": null,
+      "residue": "无",
+      "scores": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L23",
+      "position": "L1-B-wl0.70-r2",
+      "group": "B",
+      "target_wl": 0.7,
+      "normalized_error": null,
+      "wl": null,
+      "dd": null,
+      "residue": "有",
+      "scores": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L24",
+      "position": "L1-E-wl0.70-r2",
+      "group": "E",
+      "target_wl": 0.7,
+      "normalized_error": 0.04967784882813632,
+      "wl": 0.7964426877470355,
+      "dd": 0.5152978955435904,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L25",
+      "position": "L1-E-wl1.30-r2",
+      "group": "E",
+      "target_wl": 1.3,
+      "normalized_error": 0.053212602145765175,
+      "wl": 1.2832512315270936,
+      "dd": 0.5688744451900566,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L26",
+      "position": "L1-C-wl0.70-r1",
+      "group": "C",
+      "target_wl": 0.7,
+      "normalized_error": 0.2550424595352603,
+      "wl": 1.2329545454545454,
+      "dd": 0.5439473303248156,
+      "residue": "有",
+      "scores": [
+        2,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L27",
+      "position": "L1-A-wl1.30-r1",
+      "group": "A",
+      "target_wl": 1.3,
+      "normalized_error": 0.20509014664555186,
+      "wl": 1.0716783216783217,
+      "dd": 0.47208225675589044,
+      "residue": "有",
+      "scores": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "A",
+      "code": "L28",
+      "position": "L1-C-wl0.70-r2",
+      "group": "C",
+      "target_wl": 0.7,
+      "normalized_error": 0.15629994967865432,
+      "wl": 1.0211946050096339,
+      "dd": 0.47453230351937586,
+      "residue": "有",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L01",
+      "position": "L1-D-wl0.70-r2",
+      "group": "D",
+      "target_wl": 0.7,
+      "normalized_error": 0.048141212243287046,
+      "wl": 0.7924901185770751,
+      "dd": 0.5160825019931647,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L02",
+      "position": "L1-C-wl0.70-r2",
+      "group": "C",
+      "target_wl": 0.7,
+      "normalized_error": 0.1560782912289862,
+      "wl": 1.0270793036750483,
+      "dd": 0.47624645512920843,
+      "residue": "有",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L03",
+      "position": "L1-C-wl1.30-r2",
+      "group": "C",
+      "target_wl": 1.3,
+      "normalized_error": 0.05841668533786394,
+      "wl": 1.1790697674418604,
+      "dd": 0.5314349642782057,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L04",
+      "position": "L1-A-wl1.30-r1",
+      "group": "A",
+      "target_wl": 1.3,
+      "normalized_error": 0.20496025889293273,
+      "wl": 1.073555166374781,
+      "dd": 0.47140088019484144,
+      "residue": "有",
+      "scores": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L05",
+      "position": "L1-B-wl0.70-r2",
+      "group": "B",
+      "target_wl": 0.7,
+      "normalized_error": null,
+      "wl": null,
+      "dd": null,
+      "residue": "有",
+      "scores": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L06",
+      "position": "L1-C-wl1.30-r1",
+      "group": "C",
+      "target_wl": 1.3,
+      "normalized_error": 0.18394014384814739,
+      "wl": 1.1852551984877127,
+      "dd": 0.519150260011583,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L07",
+      "position": "L1-B-wl1.30-r2",
+      "group": "B",
+      "target_wl": 1.3,
+      "normalized_error": 0.0010059223176554562,
+      "wl": 1.2970027247956404,
+      "dd": 0.48854830300456137,
+      "residue": "有",
+      "scores": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L08",
+      "position": "L1-B-wl0.70-r1",
+      "group": "B",
+      "target_wl": 0.7,
+      "normalized_error": 0.0004166666666666667,
+      "wl": 0.6977687626774848,
+      "dd": 0.4928914723276174,
+      "residue": "有",
+      "scores": [
+        0,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L09",
+      "position": "L1-F-wl1.30-r2",
+      "group": "F",
+      "target_wl": 1.3,
+      "normalized_error": 0.07692390148552318,
+      "wl": 1.0921052631578947,
+      "dd": 0.4821690550317538,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L10",
+      "position": "L1-D-wl1.30-r1",
+      "group": "D",
+      "target_wl": 1.3,
+      "normalized_error": 0.029962200615368383,
+      "wl": 1.336,
+      "dd": 0.5358912542849325,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L11",
+      "position": "L1-E-wl1.30-r1",
+      "group": "E",
+      "target_wl": 1.3,
+      "normalized_error": 0.030458747287064453,
+      "wl": 1.3386666666666667,
+      "dd": 0.5337460041342024,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L12",
+      "position": "L1-F-wl0.70-r1",
+      "group": "F",
+      "target_wl": 0.7,
+      "normalized_error": 0.09016167312219782,
+      "wl": 1.022332506203474,
+      "dd": 0.46482616559883655,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L13",
+      "position": "L1-G-wl1.30-r1",
+      "group": "G",
+      "target_wl": 1.3,
+      "normalized_error": 0.0496050732249296,
+      "wl": 1.2276029055690072,
+      "dd": 0.49038280216360786,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L14",
+      "position": "L1-C-wl0.70-r1",
+      "group": "C",
+      "target_wl": 0.7,
+      "normalized_error": 0.25510271776925453,
+      "wl": 1.2333965844402277,
+      "dd": 0.5427067817678607,
+      "residue": "有",
+      "scores": [
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L15",
+      "position": "L1-E-wl0.70-r2",
+      "group": "E",
+      "target_wl": 0.7,
+      "normalized_error": 0.049758147503093375,
+      "wl": 0.7964426877470355,
+      "dd": 0.5135643976616152,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L16",
+      "position": "L1-D-wl1.30-r2",
+      "group": "D",
+      "target_wl": 1.3,
+      "normalized_error": 0.05159223282073731,
+      "wl": 1.2783251231527093,
+      "dd": 0.5686195537128891,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L17",
+      "position": "L1-A-wl0.70-r1",
+      "group": "A",
+      "target_wl": 0.7,
+      "normalized_error": 0.26143149568357754,
+      "wl": 1.2377358490566037,
+      "dd": 0.5589231653226793,
+      "residue": "有",
+      "scores": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L18",
+      "position": "L1-G-wl0.70-r2",
+      "group": "G",
+      "target_wl": 0.7,
+      "normalized_error": 0.04862012813595958,
+      "wl": 0.724202626641651,
+      "dd": 0.5114004111969921,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L19",
+      "position": "L1-F-wl0.70-r2",
+      "group": "F",
+      "target_wl": 0.7,
+      "normalized_error": 0.12742244727175642,
+      "wl": 1.1069042316258353,
+      "dd": 0.48168530753380323,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L20",
+      "position": "L1-E-wl0.70-r1",
+      "group": "E",
+      "target_wl": 0.7,
+      "normalized_error": null,
+      "wl": null,
+      "dd": null,
+      "residue": "无",
+      "scores": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L21",
+      "position": "L1-A-wl1.30-r2",
+      "group": "A",
+      "target_wl": 1.3,
+      "normalized_error": 0.001595177968644246,
+      "wl": 1.3024523160762942,
+      "dd": 0.45052253157305006,
+      "residue": "无",
+      "scores": [
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L22",
+      "position": "L1-A-wl0.70-r2",
+      "group": "A",
+      "target_wl": 0.7,
+      "normalized_error": null,
+      "wl": null,
+      "dd": null,
+      "residue": "有",
+      "scores": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L23",
+      "position": "L1-G-wl1.30-r2",
+      "group": "G",
+      "target_wl": 1.3,
+      "normalized_error": 0.060971464737432784,
+      "wl": 1.1879350348027842,
+      "dd": 0.5043265754159689,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L24",
+      "position": "L1-B-wl1.30-r1",
+      "group": "B",
+      "target_wl": 1.3,
+      "normalized_error": 0.0,
+      "wl": 1.3005464480874316,
+      "dd": 0.4904926155880091,
+      "residue": "有",
+      "scores": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L25",
+      "position": "L1-E-wl1.30-r2",
+      "group": "E",
+      "target_wl": 1.3,
+      "normalized_error": 0.05284590603316881,
+      "wl": 1.2864197530864196,
+      "dd": 0.5677347899454197,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L26",
+      "position": "L1-D-wl0.70-r1",
+      "group": "D",
+      "target_wl": 0.7,
+      "normalized_error": null,
+      "wl": null,
+      "dd": null,
+      "residue": "无",
+      "scores": [
+        1,
+        2,
+        0
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L27",
+      "position": "L1-G-wl0.70-r1",
+      "group": "G",
+      "target_wl": 0.7,
+      "normalized_error": 0.002184433619633036,
+      "wl": 0.7004048582995951,
+      "dd": 0.490652485367622,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "reader": "B",
+      "code": "L28",
+      "position": "L1-F-wl1.30-r1",
+      "group": "F",
+      "target_wl": 1.3,
+      "normalized_error": 0.04044355692784318,
+      "wl": 1.2790697674418605,
+      "dd": 0.42647199927720525,
+      "residue": "无",
+      "scores": [
+        2,
+        2,
+        2
+      ]
+    }
+  ],
+  "groups": {
+    "A": {
+      "A": {
+        "max_offset": 0.26101698967511916,
+        "readable": 4,
+        "wl_means": [
+          0.9675180242368462,
+          1.187065318877308
+        ],
+        "geometry_pass": false,
+        "residue_yes": 3,
+        "residue_unclear": 0,
+        "residue_excluded": true,
+        "scores": [
+          0.25,
+          1.5,
+          0.5
+        ]
+      },
+      "B": {
+        "max_offset": null,
+        "readable": 3,
+        "wl_means": [
+          null,
+          1.1880037412255375
+        ],
+        "geometry_pass": false,
+        "residue_yes": 3,
+        "residue_unclear": 0,
+        "residue_excluded": true,
+        "scores": [
+          0.5,
+          1.25,
+          1
+        ]
+      }
+    },
+    "B": {
+      "A": {
+        "max_offset": null,
+        "readable": 3,
+        "wl_means": [
+          null,
+          1.298774586441536
+        ],
+        "geometry_pass": false,
+        "residue_yes": 4,
+        "residue_unclear": 0,
+        "residue_excluded": true,
+        "scores": [
+          0,
+          1.75,
+          0.5
+        ]
+      },
+      "B": {
+        "max_offset": null,
+        "readable": 3,
+        "wl_means": [
+          null,
+          1.298774586441536
+        ],
+        "geometry_pass": false,
+        "residue_yes": 4,
+        "residue_unclear": 0,
+        "residue_excluded": true,
+        "scores": [
+          0.25,
+          1.75,
+          0.5
+        ]
+      }
+    },
+    "C": {
+      "A": {
+        "max_offset": 0.2550424595352603,
+        "readable": 4,
+        "wl_means": [
+          1.1270745752320896,
+          1.180443974630021
+        ],
+        "geometry_pass": false,
+        "residue_yes": 2,
+        "residue_unclear": 0,
+        "residue_excluded": true,
+        "scores": [
+          2,
+          2,
+          1.5
+        ]
+      },
+      "B": {
+        "max_offset": 0.25510271776925453,
+        "readable": 4,
+        "wl_means": [
+          1.130237944057638,
+          1.1821624829647865
+        ],
+        "geometry_pass": false,
+        "residue_yes": 2,
+        "residue_unclear": 0,
+        "residue_excluded": true,
+        "scores": [
+          2,
+          2,
+          1.75
+        ]
+      }
+    },
+    "D": {
+      "A": {
+        "max_offset": null,
+        "readable": 3,
+        "wl_means": [
+          null,
+          1.3081987128972945
+        ],
+        "geometry_pass": false,
+        "residue_yes": 0,
+        "residue_unclear": 0,
+        "residue_excluded": false,
+        "scores": [
+          1.75,
+          2,
+          1.25
+        ]
+      },
+      "B": {
+        "max_offset": null,
+        "readable": 3,
+        "wl_means": [
+          null,
+          1.3071625615763547
+        ],
+        "geometry_pass": false,
+        "residue_yes": 0,
+        "residue_unclear": 0,
+        "residue_excluded": false,
+        "scores": [
+          1.75,
+          2,
+          1.25
+        ]
+      }
+    },
+    "E": {
+      "A": {
+        "max_offset": null,
+        "readable": 3,
+        "wl_means": [
+          null,
+          1.31095894909688
+        ],
+        "geometry_pass": false,
+        "residue_yes": 0,
+        "residue_unclear": 0,
+        "residue_excluded": false,
+        "scores": [
+          1.75,
+          2,
+          1.25
+        ]
+      },
+      "B": {
+        "max_offset": null,
+        "readable": 3,
+        "wl_means": [
+          null,
+          1.312543209876543
+        ],
+        "geometry_pass": false,
+        "residue_yes": 0,
+        "residue_unclear": 0,
+        "residue_excluded": false,
+        "scores": [
+          1.75,
+          2,
+          1.25
+        ]
+      }
+    },
+    "F": {
+      "A": {
+        "max_offset": 0.12595745494337288,
+        "readable": 4,
+        "wl_means": [
+          1.0610233935903883,
+          1.1860502192108409
+        ],
+        "geometry_pass": false,
+        "residue_yes": 0,
+        "residue_unclear": 0,
+        "residue_excluded": false,
+        "scores": [
+          2,
+          2,
+          2
+        ]
+      },
+      "B": {
+        "max_offset": 0.12742244727175642,
+        "readable": 4,
+        "wl_means": [
+          1.0646183689146547,
+          1.1855875152998776
+        ],
+        "geometry_pass": false,
+        "residue_yes": 0,
+        "residue_unclear": 0,
+        "residue_excluded": false,
+        "scores": [
+          2,
+          2,
+          2
+        ]
+      }
+    },
+    "G": {
+      "A": {
+        "max_offset": 0.061357821778392795,
+        "readable": 4,
+        "wl_means": [
+          0.7125619797115953,
+          1.2082235063530684
+        ],
+        "geometry_pass": false,
+        "residue_yes": 0,
+        "residue_unclear": 0,
+        "residue_excluded": false,
+        "scores": [
+          2,
+          2,
+          2
+        ]
+      },
+      "B": {
+        "max_offset": 0.060971464737432784,
+        "readable": 4,
+        "wl_means": [
+          0.7123037424706231,
+          1.2077689701858958
+        ],
+        "geometry_pass": false,
+        "residue_yes": 0,
+        "residue_unclear": 0,
+        "residue_excluded": false,
+        "scores": [
+          2,
+          2,
+          2
+        ]
+      }
+    }
+  }
+}
