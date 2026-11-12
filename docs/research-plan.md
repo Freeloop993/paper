@@ -1,5 +1,8 @@
 # 全局研究计划（C01 第三版，按开题五项）
 
+**2026-11-12 六章执行入口**　[打开24项任务、逐节对照、思维导图及验收条件](../docs/execution-playbook.md)。五项承诺及历史计划保留下文；现行次序、依赖和证据门见总清单。
+
+
 **输入版本：** main `cd69542`（Codex S1 盲测复测、开题原件与评估材料）及其前序 `830ccdb`（分母复算）。已直接核读 [开题原PDF](../planning/proposal-original.pdf) 第6—7页；另读 STATUS、PROGRESS、现行目录、证据矩阵、requirements、methods、Google Doc 快照（v0.7，11/7）、evidence/s1-axis-repeat、evidence/denominators、references/catalogs、#1—#3 全部评论。**本文是计划与评估，不是授权**：开机、招募、训练、付费须作者在 #3 另批。日期为中国时间。
 
 ## 0. 总判定

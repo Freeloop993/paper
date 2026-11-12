@@ -1,5 +1,8 @@
 # 六章写作证据矩阵（按已修订目录执行）
 
+**2026-11-12 六章执行入口**　[打开24项任务、逐节对照、思维导图及验收条件](../docs/execution-playbook.md)。每条新主张带任务号、样本分母、反例与对应原件，T23–24据此回填。
+
+
 **11/11 新正式样本口径。** [旧批退役与新图清单](../evidence/formal-reset/README.md)及[变量表](../docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
 
 > 已吸收 Codex 的[分母复算](../evidence/denominators/README.md)与 [S1 盲测复测](../evidence/s1-axis-repeat/README.md)。逐项计划见 [docs/research-plan.md](../docs/research-plan.md)。开题第6—7页已直接核读原 PDF。
