@@ -1,0 +1,126 @@
+{
+  "planned_open": 6,
+  "verified_open": 6,
+  "readable_A": 6,
+  "readable_B": 6,
+  "closed_submitted": 0,
+  "human_readings": 0,
+  "target_levels": [
+    0.7,
+    1,
+    1.3
+  ],
+  "mean_WL": {
+    "A": [
+      0.7018255578093306,
+      0.9988290527478598,
+      1.2979697010084854
+    ],
+    "B": [
+      0.7028397565922921,
+      1.0011764705882353,
+      1.2979697010084854
+    ]
+  },
+  "open_gate_passed": true,
+  "method": "W/L = range(x)/range(y) across four observable hubs, computed independently per reader; d/D is mean of four tip-pair lengths divided by mean opposite-hub distance.",
+  "results": [
+    {
+      "case": "E0-control-wl0.70-r1",
+      "target_wl": 0.7,
+      "readers": {
+        "A": {
+          "file": "73b6b33396620432.png",
+          "wl": 0.7018255578093306,
+          "dd": 0.4933786377549379
+        },
+        "B": {
+          "file": "0a6b549148913a8c.png",
+          "wl": 0.7018255578093306,
+          "dd": 0.4933786377549379
+        }
+      }
+    },
+    {
+      "case": "E0-control-wl0.70-r2",
+      "target_wl": 0.7,
+      "readers": {
+        "A": {
+          "file": "9644e1f0baffd5dc.png",
+          "wl": 0.7018255578093306,
+          "dd": 0.4953777544725657
+        },
+        "B": {
+          "file": "905dd9eb72db7e0a.png",
+          "wl": 0.7038539553752535,
+          "dd": 0.4946542977200199
+        }
+      }
+    },
+    {
+      "case": "E0-control-wl1.00-r1",
+      "target_wl": 1.0,
+      "readers": {
+        "A": {
+          "file": "a73a2a159e4f735c.png",
+          "wl": 1.0023529411764707,
+          "dd": 0.49294983199555
+        },
+        "B": {
+          "file": "89f7cb65af0b6276.png",
+          "wl": 1.0047058823529411,
+          "dd": 0.4920726653569502
+        }
+      }
+    },
+    {
+      "case": "E0-control-wl1.00-r2",
+      "target_wl": 1.0,
+      "readers": {
+        "A": {
+          "file": "05f3e8e8469c49ff.png",
+          "wl": 0.9953051643192489,
+          "dd": 0.4941162792647879
+        },
+        "B": {
+          "file": "3d1d6224ee00d39b.png",
+          "wl": 0.9976470588235294,
+          "dd": 0.4946993034838104
+        }
+      }
+    },
+    {
+      "case": "E0-control-wl1.30-r1",
+      "target_wl": 1.3,
+      "readers": {
+        "A": {
+          "file": "2a2ee8a5df05e211.png",
+          "wl": 1.2953929539295392,
+          "dd": 0.49181413631012283
+        },
+        "B": {
+          "file": "114bff3c22a707b1.png",
+          "wl": 1.2953929539295392,
+          "dd": 0.4923114798417262
+        }
+      }
+    },
+    {
+      "case": "E0-control-wl1.30-r2",
+      "target_wl": 1.3,
+      "readers": {
+        "A": {
+          "file": "337060f6f49f914e.png",
+          "wl": 1.3005464480874316,
+          "dd": 0.49313842247087375
+        },
+        "B": {
+          "file": "dfb10a82f4c1f8c3.png",
+          "wl": 1.3005464480874316,
+          "dd": 0.49402270420029926
+        }
+      }
+    }
+  ],
+  "product_observation": "Both blind AI readers describe visible shell volume and four connected straight arms in the six images. A camera or camera window is described on four, at the lower image end. A dark panel with an unclear lens is described on two. Front-up orientation was requested; actual physical camera placement is not verified. No human aesthetic outcome."
+}
