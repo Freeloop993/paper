@@ -1,0 +1,42 @@
+[
+  {
+    "input_image": "line-wl0.70.png",
+    "input_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd"
+  },
+  {
+    "input_image": "line-wl1.30.png",
+    "input_sha256": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b"
+  },
+  {
+    "input_image": "blades-wl0.70.png",
+    "input_sha256": "c55b3c788b26cde123bff4f332b10f3d2554bd9b2fe589949a0e45986bd3f1d1"
+  },
+  {
+    "input_image": "blades-wl1.30.png",
+    "input_sha256": "70743cd7da67d06a594fd4e18a3146a646a65ef9ca6239bfa96e7827f85bdfc7"
+  },
+  {
+    "input_image": "depth-wl0.70.png",
+    "input_sha256": "caaa2a2df2ff3fe6715a976b69a894c0b6becb5a2d682281c658d4d92789c773"
+  },
+  {
+    "input_image": "depth-wl1.30.png",
+    "input_sha256": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22"
+  },
+  {
+    "input_image": "E1-control-wl0.70-r1.png",
+    "input_sha256": "f377ec3e8077177c0926f2c042e96e00f7963ffb778615b195729d7a99046ee4"
+  },
+  {
+    "input_image": "E1-control-wl0.70-r2.png",
+    "input_sha256": "c46d9a9e45927ceaf7e4ca4ff60cdcef4067f80a5fae627a36b919b8ab33c777"
+  },
+  {
+    "input_image": "E1-control-wl1.30-r1.png",
+    "input_sha256": "160d9f70ee69bf0b0230f4b54902b75f55e40f023bcf4b3296af0be3df3201b9"
+  },
+  {
+    "input_image": "E1-control-wl1.30-r2.png",
+    "input_sha256": "5d97a7b04ac27805c418e52c4518d0f0ef4e8c385de64fec69461748b36ff603"
+  }
+]
