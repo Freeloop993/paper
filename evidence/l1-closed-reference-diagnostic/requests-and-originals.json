@@ -1,0 +1,75 @@
+{
+  "frozen_utc": "2026-11-12T15:42:49.361724+00:00",
+  "purpose": "exploratory comparison outside L1/E0; all four outputs retained",
+  "endpoint": "Codex built-in image_gen",
+  "requested_model": "GPT Image 2.6",
+  "verified_model": null,
+  "seed": null,
+  "cfg": null,
+  "steps": null,
+  "controlnet": null,
+  "denoise": null,
+  "negative_mode": "text suffix",
+  "rows": [
+    {
+      "id": "A-0.70",
+      "source": "L1-A-wl0.70-r1",
+      "input": "experiments/l1-layout/guides/line-wl0.70.png",
+      "input_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+      "request_sha256": "c75e6232a38c1bcd055850f859592cd710a74d9f1d60d17ed9112a31659a2f72",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white, with one two-blade propeller on each of the four motors. Choose the fuselage silhouette, arm sections, propeller shape and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 0.70 times the front-back motor spacing.\n\nAvoid: flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+      "open_original": "evidence/l1-layout-actual/L1-actual/L1-A-wl0.70-r1/original.png",
+      "output": "A-0.70.png",
+      "output_sha256": "e98d5281961e47f09b25d49b1abff0ced1cd69ec7dea5a9ab9c6ccdbb8f61a97",
+      "native_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "A-1.30",
+      "source": "L1-A-wl1.30-r1",
+      "input": "experiments/l1-layout/guides/line-wl1.30.png",
+      "input_sha256": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b",
+      "request_sha256": "76ed8f55ea4478d4d8a40930677cdfa37f5c26bc8a3abb0d9418b0942f5ad076",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white, with one two-blade propeller on each of the four motors. Choose the fuselage silhouette, arm sections, propeller shape and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.30 times the front-back motor spacing.\n\nAvoid: flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+      "open_original": "evidence/l1-layout-actual/L1-actual/L1-A-wl1.30-r1/original.png",
+      "output": "A-1.30.png",
+      "output_sha256": "77e739223e07c486dc25f0387e8fa3695d616034995ae16349cf0f736b590741",
+      "native_size": [
+        1430,
+        1100
+      ]
+    },
+    {
+      "id": "B-0.70",
+      "source": "L1-B-wl0.70-r1",
+      "input": "experiments/l1-layout/guides/blades-wl0.70.png",
+      "input_sha256": "c55b3c788b26cde123bff4f332b10f3d2554bd9b2fe589949a0e45986bd3f1d1",
+      "request_sha256": "26dcacf716f7a414daee6c6ca914c2d6bf498cc113c50e957e72d9e8934e504e",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white, with one two-blade propeller on each of the four motors. Choose the fuselage silhouette, arm sections, propeller shape and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 0.70 times the front-back motor spacing.\n\nAvoid: flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+      "open_original": "evidence/l1-layout-actual/L1-actual/L1-B-wl0.70-r1/original.png",
+      "output": "B-0.70.png",
+      "output_sha256": "11b679839f8ace6d126c2edb32fa9757028464f482e0b2962af3b87c687bbe62",
+      "native_size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "id": "B-1.30",
+      "source": "L1-B-wl1.30-r1",
+      "input": "experiments/l1-layout/guides/blades-wl1.30.png",
+      "input_sha256": "70743cd7da67d06a594fd4e18a3146a646a65ef9ca6239bfa96e7827f85bdfc7",
+      "request_sha256": "75777dac91b6b629e7d5e92af6c1775e469e8656dfb9f9e7bfb704ceff3a0423",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white, with one two-blade propeller on each of the four motors. Choose the fuselage silhouette, arm sections, propeller shape and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.30 times the front-back motor spacing.\n\nAvoid: flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+      "open_original": "evidence/l1-layout-actual/L1-actual/L1-B-wl1.30-r1/original.png",
+      "output": "B-1.30.png",
+      "output_sha256": "f84a74d0a8c80d0fab9d2f59f95363f4c64e58f068b33481bb6b8906e19163c3",
+      "native_size": [
+        1254,
+        1254
+      ]
+    }
+  ]
+}
