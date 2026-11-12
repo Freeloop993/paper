@@ -1,0 +1,147 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "qwen_image_2.1_bf16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_8b_bf16.safetensors",
+        "type": "qwen_image",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "TextEncodeQwenImage21",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 0.70 times the front-back motor spacing.",
+        "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+        "resolution": 1024
+      }
+    },
+    "5": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "wl-0.70-dd-0.50.png"
+      }
+    },
+    "6": {
+      "class_type": "ImageScale",
+      "inputs": {
+        "image": [
+          "5",
+          0
+        ],
+        "upscale_method": "nearest-exact",
+        "width": 1024,
+        "height": 1024,
+        "crop": "disabled"
+      }
+    },
+    "7": {
+      "class_type": "Canny",
+      "inputs": {
+        "image": [
+          "6",
+          0
+        ],
+        "low_threshold": 0.4,
+        "high_threshold": 0.8
+      }
+    },
+    "8": {
+      "class_type": "ModelPatchLoader",
+      "inputs": {
+        "name": "qwen_image_2.1_fun_controlnet_union_bf16.safetensors"
+      }
+    },
+    "9": {
+      "class_type": "QwenImageDiffsynthControlnet",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "model_patch": [
+          "8",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "image": [
+          "7",
+          0
+        ],
+        "strength": 0.7,
+        "start_percent": 0,
+        "end_percent": 1
+      }
+    },
+    "10": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "9",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026111211,
+        "steps": 40,
+        "cfg": 1,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    "11": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "10",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "12": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "11",
+          0
+        ],
+        "filename_prefix": "E1-control-wl0.70-r1"
+      }
+    }
+  }
+}
