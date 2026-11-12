@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>四旋造型规格 · 作者工作页</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f2f5f4;color:#143532;font:16px/1.6 system-ui,sans-serif}main{max-width:990px;margin:26px auto;padding:0 20px}header,nav,.actions{display:flex;align-items:center;flex-wrap:wrap;gap:10px}header{justify-content:space-between}h1{font-size:1.6rem;margin:10px 0}h2{font-size:1.12rem;margin:0 0 12px}a{color:#12655d}.card{border:1px solid #cbd9d6;background:#fff;border-radius:12px;padding:20px;margin:14px 0}.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}.fields{display:grid;gap:12px}.help{color:#49625f;font-size:.9rem}label{display:block}input,textarea,select,button{font:inherit}input:not([type=file]):not([type=checkbox]),textarea,select{width:100%;padding:7px 10px;border:1px solid #9eb6b2;border-radius:6px}textarea{min-height:64px;resize:vertical}button{border:1px solid #799b95;color:#115c54;background:white;padding:6px 14px;border-radius:7px;cursor:pointer}button[aria-pressed=true],button.primary{background:#155f56;color:white}:focus-visible{outline:3px solid #d48227;outline-offset:2px}fieldset{border:0;margin:0;padding:0}legend{font-weight:600}.spot{margin:.35rem 0}.actions{margin-bottom:12px}#status{min-height:1.6rem}details{margin-top:10px}code{overflow-wrap:anywhere}@media(max-width:650px){.cols{grid-template-columns:1fr}.card{padding:15px}main{padding:0 12px}}
+</style>
+<main>
+<header><h1>四旋造型规格</h1><a href="index.html">查看顶视条件图</a></header>
+<nav id="tabs" aria-label="设计方向"></nav>
+<form id="brief">
+<section class="card"><h2>方向与语义目标</h2><label>方向名称<input name="title" maxlength="120"></label>
+<div id="terms"></div><details><summary>载入已冻结的词对文件</summary>
+<p class="help">文件应含 version、freezeReference 和 pairs。每个词对包含 id、left、right。三个方向共用同一版本。</p>
+<input id="importTerms" type="file" accept=".json,application/json"></details></section>
+<section class="card cols"><div><h2>可见部位</h2><fieldset id="sites"><legend>选 1 至 2 项</legend></fieldset></div>
+<div class="fields"><label>这些部位希望怎样改变<textarea name="change"></textarea></label><label>自由项 · 哪些部位留给模型探索<textarea name="free"></textarea></label></div></section>
+<section class="card"><h2>保持项</h2><p>四旋翼，每副双叶，展开状态，正交顶视，机头朝上。</p>
+<div class="cols"><label>横纵轴心跨度比 W/L<select name="wl"><option value="">请选择</option><option>0.70</option><option>1.00</option><option>1.30</option></select></label>
+<label>桨径与对置轴距比 d/D<select name="dd"><option value="">请选择</option><option>0.40</option><option>0.50</option><option>0.60</option></select></label></div>
+<label>该方向另需保持的细节（可留空）<textarea name="keep"></textarea></label></section>
+<section class="card"><h2>依据与取舍</h2><label>证据卡号，或注明哪些取舍来自设计者判断<textarea name="source"></textarea></label></section>
+<div class="actions"><button type="button" id="draft">导出当前草稿</button><button type="submit" class="primary">确认并导出当前规格</button></div>
+<output id="status" aria-live="polite"></output></form></main>
+<script src="design-brief.js"></script></html>

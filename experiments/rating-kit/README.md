@@ -1,5 +1,14 @@
 # 独立评议与场次分配工具（X12）
 
+## 顶视渲染与语义评议
+
+同一 `build_pack.py sources.json new-pack` 入口支持下列两种表。只分发 `participant`，保管 `researcher-key.json`。按 [11 月 12 日规格](../../docs/protocols/semantic-to-E3-spec.md)先冻结样本来源，再打包。每个输入均需 `key, path, sha256, evidence, block`，最外层填写 `mode, freezeReference, images`。
+
+- `r1` 接收 16 个已核实的位置（含两张复用的 E1），均标 `block: render`。逐图保留产品感、相机、臂根三道三级题的原判。汇总输出逐项中位数；正式格内汇总及并列按 R1 冻结文件执行。
+- `e5-semantic` 是 X12 评议的词对附表。先做 `block: product` 的实拍参考，再做 `block: final` 的锁定终稿。真实产品须登记 `permission`，少于 8 张时登记 `product_shortfall`。用 `terms_file` 指向作者已冻结的 JSON，内含 `version, freezeReference, pairs`，每对含 `id, left, right`。左右端逐评者逐题随机，同时保留呈现次序、屏幕原判、换算为固定方向的读数和“看不出”。每组单独报告。尚无冻结词对和锁定终稿。
+
+用 `python summarize.py researcher-key.json 答卷.json` 复核答卷身份、覆盖和换向。工具不发送问卷或生图。参与者曝光史随答卷保留，独立人数在招募台账核实。
+
 **11/11 新正式样本口径。** [旧批退役与新图清单](../../evidence/formal-reset/README.md)及[变量表](../../docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
 
 依据 [正式采集材料包第 5–7 节](../../docs/protocols/formal-collection-kit.md)。本版可用于离线校准。正式采集仍需作者落实人选、同意程序、抽签登记和评分规则。研究者保管本目录，评议者只收下述 participant 文件夹。
