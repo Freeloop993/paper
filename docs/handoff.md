@@ -1,67 +1,55 @@
-# 接手快照（任何电脑、任何新会话先读这一页）
+# 接手快照 · 2026-11-12
 
-**2026-11-12 六章执行入口**　[打开24项任务、逐节对照、思维导图及验收条件](../docs/execution-playbook.md)。换设备时先核总清单、main及#1/#2/#3，再读所领任务列的原件。
+先读[研究地基](foundation.md)，再读[六章执行清单](execution-playbook.md)、[状态](../STATUS.md)、[Google执行总记录](https://docs.google.com/document/d/1Ek_Ne35sFQFC0FcMU4uNbeFCGl28ipOj9wYOQRN_2ro/edit)及[#1交接](https://github.com/Freeloop993/paper/issues/1)。
 
+## 此刻从哪里接
 
-**11/11 结构与外观示范。** E 盘配置器恢复机架线与夹角的直观读法，显示导出图并按部件发送 CMF。一张示例中双叶方向吻合、三类表面可区分，轴心横跨仍显著超出目标。正式图 0。[输入与成图对照](../evidence/quad-guide-cmf-review/README.md)
+[PR #18](https://github.com/Freeloop993/paper/pull/18)已合并至 main，合并提交 `cf347ed`。第二步修改集中在 `codex/foundation-section8`，由 Claude 逐行复核地基第7、8节、材料包、冻结单与第1/2/3/5章修订片段。稿件PR尚待复核，研究未完成。E0—E6实际生成0次，当前无真人正式场次；尚未验收本轮 GPU 服务器或闭源接口。
 
-**11/11 前摄复核。** 作者指出 P05 的镜头朝向错误。P06 增补机载光轴与制图视线，实图中机鼻顶面圆镜片消失；相机是否存在及如何整合仍不可判。轴位比 1.277，正式图 0。[原图、提示词和测量](../evidence/p06-quad-front-camera/README.md)
+作者已确定开源 Qwen-Image 2.1＋ControlNet Union 为主后端；闭源 API 仅E0三档×2次。正式视图统一正交顶视。费用、招募、伦理和导师意见在[#3](https://github.com/Freeloop993/paper/issues/3)由作者处理。禁止单张预试；服务器与API到位后核标识与摘要，先交冻结文件再执行。E0→E1→E2任一步失败，停止并向对应工单报告。
 
-**11/11 作者否决 P04 六张造型。** 新四旋默认导出八个等距叶尖，可选仅四个轴心。单张验证四副桨等长、等宽筛查通过；轴位宽纵比 1.114 超出容限，桨的方位没有跟随参考，正式图 0。[实图及逐桨测量](../evidence/p05-quad-equal-blades/README.md)
+## 逐项工单
 
-**11/11 双叶桨 P04 技术预试。** 六次出图；四轴可读 6/6，跨度比误差 ≤0.10 的初读为 2/6（另两图在读数边界附近），四副双叶完全可辨且展开 1/6，该图桨叶长短明显不对称。正式样本 0。[六图与本轮可写结论](../evidence/p04-quad-biblade/README.md)
+- [E0 后端对照](https://github.com/Freeloop993/paper/issues/19)
+- [E1 参数响应与纯文字对照](https://github.com/Freeloop993/paper/issues/20)
+- [E2 父图修订能力](https://github.com/Freeloop993/paper/issues/21)
+- [E3 四旋方案展开与深化](https://github.com/Freeloop993/paper/issues/22)
+- [E4 D/S 协同对照](https://github.com/Freeloop993/paper/issues/23)
+- [E5 顶视终稿独立评议](https://github.com/Freeloop993/paper/issues/24)
+- [E6 农业植保六旋应用与响应](https://github.com/Freeloop993/paper/issues/25)
 
-**11/11 新正式样本口径。** [旧批退役与新图清单](../evidence/formal-reset/README.md)及[变量表](../docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
+| 章节任务与交付 | 工单 |
+|---|---|
+| T01 核对开题五项及指标去向 | [#26](https://github.com/Freeloop993/paper/issues/26) |
+| T02 固定研究问题与证据单位 | [#27](https://github.com/Freeloop993/paper/issues/27) |
+| T03 补齐理论与任务来源 | [#28](https://github.com/Freeloop993/paper/issues/28) |
+| T04 对真实评论做双人编码 | [#29](https://github.com/Freeloop993/paper/issues/29) |
+| T05 锁定语义差异词对 | [#30](https://github.com/Freeloop993/paper/issues/30) |
+| T06 编制两案规格和任务卡 | [#31](https://github.com/Freeloop993/paper/issues/31) |
+| T07 定义几何变量与条件图 | [#32](https://github.com/Freeloop993/paper/issues/32) |
+| T08 编入E1同信息量对照 | [#33](https://github.com/Freeloop993/paper/issues/33) |
+| T09 固定独立量尺和读数误差 | [#34](https://github.com/Freeloop993/paper/issues/34) |
+| T10 按E1检验两个参数响应 | [#35](https://github.com/Freeloop993/paper/issues/35) |
+| T11 由作者筛选四旋候选 | [#36](https://github.com/Freeloop993/paper/issues/36) |
+| T12 记录作者的一案修订 | [#37](https://github.com/Freeloop993/paper/issues/37) |
+| T13 完成一案深化表达 | [#38](https://github.com/Freeloop993/paper/issues/38) |
+| T14 实施植保六旋单案 | [#39](https://github.com/Freeloop993/paper/issues/39) |
+| T15 冻结三组参与者和协议 | [#40](https://github.com/Freeloop993/paper/issues/40) |
+| T16 核对D/S动作与机会 | [#41](https://github.com/Freeloop993/paper/issues/41) |
+| T17 采集另招设计者的配对场次 | [#42](https://github.com/Freeloop993/paper/issues/42) |
+| T18 用r3开展独立顶视盲评 | [#43](https://github.com/Freeloop993/paper/issues/43) |
+| T19 复算参数误差与效应 | [#44](https://github.com/Freeloop993/paper/issues/44) |
+| T20 归纳协同效果与代价 | [#45](https://github.com/Freeloop993/paper/issues/45) |
+| T21 做E6归一化响应比较 | [#46](https://github.com/Freeloop993/paper/issues/46) |
+| T22 封存原件与分母 | [#47](https://github.com/Freeloop993/paper/issues/47) |
+| T23 把证据写入六章 | [#48](https://github.com/Freeloop993/paper/issues/48) |
+| T24 汇总结论与适用范围 | [#49](https://github.com/Freeloop993/paper/issues/49) |
 
-**更新：** 2026-11-11 北京时间，Claude，输入版本 main `8216631`。Codex 已复核并合入 PR #16、#17，STATUS、PROGRESS 与 X12-r3 工具已同步。**规则：** 每次工作结束前，谁改变了下表任一格，谁更新这一页并改日期；详细事实仍以 [STATUS](../STATUS.md)、[PROGRESS](../PROGRESS.md) 与工单回执为准，本页只做导航，不写新结论。待办仍只在 Issues。
+## 写作与数据边界
 
-**原型接续（作者最新交办）。** Claude 从[历史配置器源码与启动入口](../prototypes/drone-configurator/README.md)和[讨论决定、首个 PR 与验收](configurator-realignment.md)开始；Codex 复核请求与离线导出。此项只推进原型和方法说明。
+Claude先查第8节五份稿件，另补T01开题对照与2.1文献页证。Codex等待复核后再准备E0冻结包。E3由作者设计，E4为另招设计者；E5在E6以后统一评锁定终稿。原件、请求、失败与缺失逐实验保留。AI知条件初读与独立真人分列；仅合成检查或历史图不能填正式分母。历史#4—#13保留各自原始回执，#14工具可用于T18改版。
 
-## 1. 一句话现状
-
-方法与部分负结果可写；真人设计过程、独立评议、六旋应用与共同对照都还没有数据；开题偏离尚无导师意见原件。全篇结论不可写。
-
-## 2. 开题五项看板
-
-| 开题项 | 已有证据 | 卡在哪里 | 等谁 | 工单 |
-|---|---|---|---|---|
-| （1）参数→控制图 | 自由外形下全为负结果：S1 0/6、G2 0/6、G2b 0/4（均 AI 读数）。旧 C1 命中但属旧机壳口径、目标全为正方布局 | G2d（最后一批，6 次）已获批，原实例无 GPU，提交 0/6。人工轴心复测 0 | 平台资源；作者定是否换实例 | #11 #7 #8 |
-| （2）协同流程 | 改稿台软件验收；G3 一对图（带父图有结构保持信号，联合判据证据不足） | 真人设计者场次 0；G3b 未获批运行，作者已选定新顶视父图，后续比较须另版绑定（见 [G3b 修订建议](protocols/G3b-amendment-orientation.md)）；斜前上视在真实后端上从未出过图 | 作者：招募、伦理；修订小测是否改在斜前上视、以后端初稿为主父图（G3c，见修订建议第 6 节）及其授权 | #2 #12 #13 #3 |
-| （3）LoRA | 作者已选方案 B（Qwen＋参考图，不训练） | 导师意见无原件；参考图是否可用待 G3b | 作者找导师 | #3 |
-| （4）评价与协议 | 指标定义、冻结单草案、正式采集材料包、X12 离线评议与抽签工具；表单预读 1 人 2 份 | 现有六张校准图是示意图，不能校准阈值，Qwen 的 B02 斜前上视校准批尚未产出可评概念图；评议者名单、阈值、风格特征（D4）未冻结 | 平台资源（B02 校准批 6 份请求已冻结，0 提交）；作者：校准批费用与时限上限、评议者名单。评议表已改：构型题问实体部件，细节充分性为联合合格前置条件 | #14 #1 #3 |
-| （5）四/六旋双案例 | 六旋 4 张历史图；共同对照 12 份请求仅离线编译 | D2 已定农业植保。[药箱和喷洒部件与机架整合](https://github.com/Freeloop993/paper/issues/3#issuecomment-6769273544)的应用图、过程和评议待采集；共同对照暂停，等 G2d | 作者；G2d 结果 | #7 #3 |
-
-## 3. 章节写作状态
-
-| 章 | 状态 | 文件 |
-|---|---|---|
-| 1 | 1.3—1.4、1.5 已修订（1.5 在 PR #17）；技术路线图待绘制，文字版结构已附；1.3 与 1.4 中“巡检测绘（或农业作业）”“LoRA 待裁定”的措辞待按 D2、D1 更新 | manuscript/revisions/ch01-1.3-1.4.md、ch01-1.5.md |
-| 2 | 2.4—2.5 已修订；2.1 已有测绘背景稿。Claude 待按植保任务改写药箱、喷洒组件及六臂机架段落 | manuscript/revisions/ch02-2.4-2.5.md、ch02-2.1-hexa.md |
-| 3 | 3.3—3.4、3.6 已修订（3.6.2 已加“题目分层”段）；3.3.2 六旋规格草案已写（PR #17，待作者核对保持项）；3.4.3 所述 G2 线稿已失败，等 G2d 后重写 | manuscript/revisions/ch03-*.md |
-| 4 | 4.1 已有参数原型与预试资料；4.2–4.4 尚缺真实方向筛选、迭代取舍与一案深化 | [按小节安排实验与应用](../manuscript/evidence-matrix.md#从目录安排实验与应用) |
-| 5 | 5.1、5.2 G2 失效记录、5.2.3 S1、六旋历史段已有；5.3—5.4 无数据 | manuscript/revisions/ch05-*.md、manuscript/ch05-hexa-results.md |
-| 6 | 不可写 | — |
-
-逐节依据见[证据矩阵](../manuscript/evidence-matrix.md)，整体计划见[研究计划](research-plan.md)。
-
-## 4. 已决定与待决定（均回填 #3）
-
-**11/10 已定：** 真人评正式终稿统一斜前上视；参数量测用正交顶视。校准批单列，执行上先计划 6 张，尚未生成，不计入正式样本。见[视角与校准批决定](https://github.com/Freeloop993/paper/issues/3#issuecomment-6766834004)。作者随后决定公开协作仓库，未登录访问已复核可读。[可见性最新决定](https://github.com/Freeloop993/paper/issues/3#issuecomment-6766934813)。
-
-六旋植保任务已定。Claude 按新载荷改写原测绘草稿；植保评议视角待实际图验证两个安装部位的可见性。[三款手册的逐图记录](../experiments/hexa-plant-protection/README.md)。
-
-已落实 R2：S1-B1-T 前后未定，作者认为造型不协调并要求更换。作者已认可并选定[这张顶视父图](../evidence/b02-parent-reference/top-front-up.png)，机头在画面上方的橙标端。见[选定记录](https://github.com/Freeloop993/paper/issues/3#issuecomment-6767139205)与[作者决定](https://github.com/Freeloop993/paper/issues/3#issuecomment-6767081194)。
-1. GPU：G2d 与 B02 校准批都卡在原实例 226604（资源不足）。继续等，还是授权同平台其他可用区或同规格新实例；换机须重核权重摘要与节点版本，G2d 的“原实例”限定须由作者明确改写。
-1. B02 校准批的费用与时限上限：#3 只写了“可支持必要开支”，冻结单已登记原实例执行包自限 ≤4 元、≤54 分钟。作者尚未指定费用与累计时长数字，换机或扩大窗口需另行决定。
-1. [G3b 修订建议第 6 节](protocols/G3b-amendment-orientation.md)四条（改在斜前上视、主父图用后端初稿并事先写死选取规则、GPT Image 父图的边界、另起 G3c）。
-2. D4 风格特征清单、D5 招募与伦理（名单节点 11/14）。
-3. 导师对 D1（LoRA）、D7（参数覆盖）及消融对应的意见，需有原件。
-
-## 5. 各角色的下一动作
-
-- **Claude：** 1.3—1.4 措辞按 D1、D2 更新；2.6 比较表补行；6.3 研究不足起草（可先写）；5.1.3 与 3.3.2 已合入，六旋规格按植保重写，视角待试读；G2d 结果后重写 3.4.3。
-- **Codex：** G2d 等资源；用 B02 概念图核查 X12-r3 表单；#12 按 R1 更新判读表（随 G3c 一并）；B02 纯文字六图请求已冻结，平台本次提示资源不足，0 提交；#14 两份旧答卷的构型四项逐图计数[已补报](https://github.com/Freeloop993/paper/issues/14#issuecomment-6766838329)；人工读数到达后逐人追加。
-- **作者：** 第 4 节各项；从 11/15 起的 B02 方案深化（第 4.4 节唯一来源）。
+[原型](../prototypes/drone-configurator/README.md) · [证据矩阵](../manuscript/evidence-matrix.md) · [旧批原始分母](../evidence/denominators/README.md) · [上版接手快照](https://github.com/Freeloop993/paper/blob/cf347ededaedc59a85a9c25fbcda73ce3bfec9b3/docs/handoff.md)
 
 ## 6. 新会话怎样接上（操作备忘）
 
