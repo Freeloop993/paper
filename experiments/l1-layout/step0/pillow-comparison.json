@@ -1,0 +1,56 @@
+[
+  {
+    "file": "blades-wl0.70.png",
+    "submitted_11_2_1": "c55b3c788b26cde123bff4f332b10f3d2554bd9b2fe589949a0e45986bd3f1d1",
+    "reference_12_3_0": "404e7fdc2f93dac48fd931b7b23bfc44f936e2f467873e478d6f625b8cc9f33d",
+    "different_rgb_pixels": 0
+  },
+  {
+    "file": "blades-wl1.00.png",
+    "submitted_11_2_1": "cdaf0821f3f4f0862592915a83debc0c088d6e6d2b01d45c943cdf2ea0edb002",
+    "reference_12_3_0": "d4c8072076011982c3696f1599337022b2f9fc829d3416a8abd0041cae268c10",
+    "different_rgb_pixels": 0
+  },
+  {
+    "file": "blades-wl1.30.png",
+    "submitted_11_2_1": "70743cd7da67d06a594fd4e18a3146a646a65ef9ca6239bfa96e7827f85bdfc7",
+    "reference_12_3_0": "debdb23007e1a488f0458538af917eaaf8d6d3961d40b5429490ec1637f50624",
+    "different_rgb_pixels": 0
+  },
+  {
+    "file": "depth-wl0.70.png",
+    "submitted_11_2_1": "caaa2a2df2ff3fe6715a976b69a894c0b6becb5a2d682281c658d4d92789c773",
+    "reference_12_3_0": "2c0484f8f64d8d9c198f929d96c2e769fc1ed88743110af353b09fd153f138a4",
+    "different_rgb_pixels": 0
+  },
+  {
+    "file": "depth-wl1.00.png",
+    "submitted_11_2_1": "bb1cf7ff039aa0552b7696d68a1b9d37620d6341a99d9794d4d7f5bb4d122e11",
+    "reference_12_3_0": "e9b42fcbd2bc4aedc4638ced13ed4f35df8f17d5a36e0431024f27246ee7b180",
+    "different_rgb_pixels": 0
+  },
+  {
+    "file": "depth-wl1.30.png",
+    "submitted_11_2_1": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22",
+    "reference_12_3_0": "b16bac513eb51a3067b69134799a18d841e6c4d31a6f8b6906aca9e0143e86b7",
+    "different_rgb_pixels": 0
+  },
+  {
+    "file": "line-wl0.70.png",
+    "submitted_11_2_1": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+    "reference_12_3_0": "89626b312e69c7e5e006130b02000419110f1f1554807046bce699dde94230a0",
+    "different_rgb_pixels": 0
+  },
+  {
+    "file": "line-wl1.00.png",
+    "submitted_11_2_1": "9806011e7ab919a9696e6de2fcedf8750fb9e7bdd2230519ff3b763f36ff086e",
+    "reference_12_3_0": "746887c302c5981596d2824b863d8f136e4922e940dab4a4d2edffe4ff0e4a51",
+    "different_rgb_pixels": 0
+  },
+  {
+    "file": "line-wl1.30.png",
+    "submitted_11_2_1": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b",
+    "reference_12_3_0": "f200c4c4c316760968282b42c985fcd000197142543d656b03f27ed8307f3ab1",
+    "different_rgb_pixels": 0
+  }
+]

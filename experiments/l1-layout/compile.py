@@ -104,7 +104,7 @@ def main():
                 (REQ / f"{name}.json").write_bytes(data)
                 rows.append(dict(position=name, condition=cid, role=role, path=path, wl=wl, repeat=rep,
                                  seed=seed, input_image=image,
-                                 input_sha256=guides.get(image, {}).get("sha256", "bind from evidence/e1-open-20261112"),
+                                 input_sha256=bound_input_sha(image, guides),
                                  canny=canny, strength=strength, end_percent=end, cfg=cfg,
                                  steps=graph["10"]["inputs"]["steps"], sampler=graph["10"]["inputs"]["sampler_name"],
                                  scheduler=graph["10"]["inputs"]["scheduler"],
@@ -112,6 +112,14 @@ def main():
     (HERE / "manifest.json").write_text(json.dumps(rows, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     digest = sha256("".join(r["request_sha256"] for r in rows).encode()).hexdigest()
     print(len(rows), "requests; manifest digest", digest)
+
+
+def bound_input_sha(image, guides):
+    if image in guides:
+        return guides[image]["sha256"]
+    case = Path(image).stem
+    original = ROOT / "evidence/e1-open-20261112/E1-actual" / case / "original.png"
+    return sha256(original.read_bytes()).hexdigest()
 
 
 if __name__ == "__main__":

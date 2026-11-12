@@ -1,0 +1,254 @@
+[
+  {
+    "file": "line-wl0.70.png",
+    "kind": "line",
+    "wl": 0.7,
+    "front_arm_angle_deg": 69.984,
+    "D_px": 600,
+    "W_px": 344.077,
+    "L_px": 491.539,
+    "hubs_px": [
+      [
+        684,
+        758
+      ],
+      [
+        340,
+        758
+      ],
+      [
+        340,
+        266
+      ],
+      [
+        684,
+        266
+      ]
+    ],
+    "sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd"
+  },
+  {
+    "file": "blades-wl0.70.png",
+    "kind": "blades",
+    "wl": 0.7,
+    "front_arm_angle_deg": 69.984,
+    "D_px": 600,
+    "W_px": 344.077,
+    "L_px": 491.539,
+    "hubs_px": [
+      [
+        684,
+        758
+      ],
+      [
+        340,
+        758
+      ],
+      [
+        340,
+        266
+      ],
+      [
+        684,
+        266
+      ]
+    ],
+    "sha256": "c55b3c788b26cde123bff4f332b10f3d2554bd9b2fe589949a0e45986bd3f1d1"
+  },
+  {
+    "file": "depth-wl0.70.png",
+    "kind": "depth",
+    "wl": 0.7,
+    "front_arm_angle_deg": 69.984,
+    "D_px": 600,
+    "W_px": 344.077,
+    "L_px": 491.539,
+    "hubs_px": [
+      [
+        684,
+        758
+      ],
+      [
+        340,
+        758
+      ],
+      [
+        340,
+        266
+      ],
+      [
+        684,
+        266
+      ]
+    ],
+    "sha256": "caaa2a2df2ff3fe6715a976b69a894c0b6becb5a2d682281c658d4d92789c773"
+  },
+  {
+    "file": "line-wl1.00.png",
+    "kind": "line",
+    "wl": 1.0,
+    "front_arm_angle_deg": 90.0,
+    "D_px": 600,
+    "W_px": 424.264,
+    "L_px": 424.264,
+    "hubs_px": [
+      [
+        724,
+        724
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ]
+    ],
+    "sha256": "9806011e7ab919a9696e6de2fcedf8750fb9e7bdd2230519ff3b763f36ff086e"
+  },
+  {
+    "file": "blades-wl1.00.png",
+    "kind": "blades",
+    "wl": 1.0,
+    "front_arm_angle_deg": 90.0,
+    "D_px": 600,
+    "W_px": 424.264,
+    "L_px": 424.264,
+    "hubs_px": [
+      [
+        724,
+        724
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ]
+    ],
+    "sha256": "cdaf0821f3f4f0862592915a83debc0c088d6e6d2b01d45c943cdf2ea0edb002"
+  },
+  {
+    "file": "depth-wl1.00.png",
+    "kind": "depth",
+    "wl": 1.0,
+    "front_arm_angle_deg": 90.0,
+    "D_px": 600,
+    "W_px": 424.264,
+    "L_px": 424.264,
+    "hubs_px": [
+      [
+        724,
+        724
+      ],
+      [
+        300,
+        724
+      ],
+      [
+        300,
+        300
+      ],
+      [
+        724,
+        300
+      ]
+    ],
+    "sha256": "bb1cf7ff039aa0552b7696d68a1b9d37620d6341a99d9794d4d7f5bb4d122e11"
+  },
+  {
+    "file": "line-wl1.30.png",
+    "kind": "line",
+    "wl": 1.3,
+    "front_arm_angle_deg": 104.863,
+    "D_px": 600,
+    "W_px": 475.574,
+    "L_px": 365.826,
+    "hubs_px": [
+      [
+        750,
+        695
+      ],
+      [
+        274,
+        695
+      ],
+      [
+        274,
+        329
+      ],
+      [
+        750,
+        329
+      ]
+    ],
+    "sha256": "8aa62578a9f9f4dae4c59a9f38b1ef4260d890889a7ea13e05737573508d192b"
+  },
+  {
+    "file": "blades-wl1.30.png",
+    "kind": "blades",
+    "wl": 1.3,
+    "front_arm_angle_deg": 104.863,
+    "D_px": 600,
+    "W_px": 475.574,
+    "L_px": 365.826,
+    "hubs_px": [
+      [
+        750,
+        695
+      ],
+      [
+        274,
+        695
+      ],
+      [
+        274,
+        329
+      ],
+      [
+        750,
+        329
+      ]
+    ],
+    "sha256": "70743cd7da67d06a594fd4e18a3146a646a65ef9ca6239bfa96e7827f85bdfc7"
+  },
+  {
+    "file": "depth-wl1.30.png",
+    "kind": "depth",
+    "wl": 1.3,
+    "front_arm_angle_deg": 104.863,
+    "D_px": 600,
+    "W_px": 475.574,
+    "L_px": 365.826,
+    "hubs_px": [
+      [
+        750,
+        695
+      ],
+      [
+        274,
+        695
+      ],
+      [
+        274,
+        329
+      ],
+      [
+        750,
+        329
+      ]
+    ],
+    "sha256": "690c11c594c84a07e7ba8a335eebbb633f97059b6971a8f40ff9c3dfcbdade22"
+  }
+]

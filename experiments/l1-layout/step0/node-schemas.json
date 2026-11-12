@@ -1,0 +1,278 @@
+{
+  "TextEncodeQwenImage21": {
+    "input": {
+      "required": {
+        "clip": [
+          "CLIP",
+          {}
+        ],
+        "prompt": [
+          "STRING",
+          {
+            "multiline": true,
+            "dynamicPrompts": true
+          }
+        ],
+        "negative_prompt": [
+          "STRING",
+          {
+            "multiline": true,
+            "dynamicPrompts": true
+          }
+        ],
+        "resolution": [
+          "INT",
+          {
+            "tooltip": "Reference images are resized to about resolution x resolution pixels, at multiples of 32, preserving aspect ratio. 0 keeps each reference at its own size, rounded to a multiple of 32. ",
+            "default": 1024,
+            "min": 0,
+            "max": 4096,
+            "step": 32
+          }
+        ],
+        "images": [
+          "COMFY_AUTOGROW_V3",
+          {
+            "tooltip": "Reference images, seen by the text encoder and spliced into the sequence as VAE latents.",
+            "template": {
+              "input": {
+                "required": {
+                  "image": [
+                    "IMAGE",
+                    {}
+                  ]
+                }
+              },
+              "names": [
+                "image_1",
+                "image_2",
+                "image_3",
+                "image_4",
+                "image_5",
+                "image_6",
+                "image_7",
+                "image_8",
+                "image_9",
+                "image_10",
+                "image_11",
+                "image_12",
+                "image_13",
+                "image_14",
+                "image_15",
+                "image_16"
+              ],
+              "min": 0
+            }
+          }
+        ]
+      },
+      "optional": {
+        "vae": [
+          "VAE",
+          {}
+        ]
+      }
+    },
+    "input_order": {
+      "required": [
+        "clip",
+        "prompt",
+        "negative_prompt",
+        "resolution",
+        "images"
+      ],
+      "optional": [
+        "vae"
+      ]
+    },
+    "is_input_list": false,
+    "output": [
+      "CONDITIONING",
+      "CONDITIONING",
+      "LATENT"
+    ],
+    "output_is_list": [
+      false,
+      false,
+      false
+    ],
+    "output_name": [
+      "positive",
+      "negative",
+      "latent"
+    ],
+    "output_tooltips": [
+      null,
+      null,
+      "Empty latent on the first reference image's size, to match with sampling as any other size shifts the edit."
+    ],
+    "output_matchtypes": null,
+    "name": "TextEncodeQwenImage21",
+    "display_name": "Text Encode Qwen Image 2.1",
+    "description": "",
+    "python_module": "comfy_extras.nodes_qwen",
+    "category": "model/conditioning/qwen image",
+    "output_node": false,
+    "deprecated": false,
+    "experimental": false,
+    "dev_only": false,
+    "api_node": false,
+    "price_badge": null,
+    "search_aliases": null,
+    "essentials_category": null,
+    "has_intermediate_output": false
+  },
+  "Canny": {
+    "input": {
+      "required": {
+        "image": [
+          "IMAGE",
+          {}
+        ],
+        "low_threshold": [
+          "FLOAT",
+          {
+            "default": 0.4,
+            "min": 0.01,
+            "max": 0.99,
+            "step": 0.01
+          }
+        ],
+        "high_threshold": [
+          "FLOAT",
+          {
+            "default": 0.8,
+            "min": 0.01,
+            "max": 0.99,
+            "step": 0.01
+          }
+        ]
+      }
+    },
+    "input_order": {
+      "required": [
+        "image",
+        "low_threshold",
+        "high_threshold"
+      ]
+    },
+    "is_input_list": false,
+    "output": [
+      "IMAGE"
+    ],
+    "output_is_list": [
+      false
+    ],
+    "output_name": [
+      "IMAGE"
+    ],
+    "output_tooltips": [
+      null
+    ],
+    "output_matchtypes": null,
+    "name": "Canny",
+    "display_name": "Detect Edges (Canny)",
+    "description": "",
+    "python_module": "comfy_extras.nodes_canny",
+    "category": "image/filters",
+    "output_node": false,
+    "deprecated": false,
+    "experimental": false,
+    "dev_only": false,
+    "api_node": false,
+    "price_badge": null,
+    "search_aliases": [
+      "edge detection",
+      "outline",
+      "contour detection",
+      "line art"
+    ],
+    "essentials_category": "Image Tools",
+    "has_intermediate_output": false
+  },
+  "QwenImageDiffsynthControlnet": {
+    "input": {
+      "required": {
+        "model": [
+          "MODEL"
+        ],
+        "model_patch": [
+          "MODEL_PATCH"
+        ],
+        "vae": [
+          "VAE"
+        ],
+        "image": [
+          "IMAGE"
+        ],
+        "strength": [
+          "FLOAT",
+          {
+            "default": 1.0,
+            "min": -10.0,
+            "max": 10.0,
+            "step": 0.01
+          }
+        ]
+      },
+      "optional": {
+        "mask": [
+          "MASK"
+        ],
+        "start_percent": [
+          "FLOAT",
+          {
+            "default": 0.0,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.001,
+            "advanced": true
+          }
+        ],
+        "end_percent": [
+          "FLOAT",
+          {
+            "default": 1.0,
+            "min": 0.0,
+            "max": 1.0,
+            "step": 0.001,
+            "advanced": true
+          }
+        ]
+      }
+    },
+    "input_order": {
+      "required": [
+        "model",
+        "model_patch",
+        "vae",
+        "image",
+        "strength"
+      ],
+      "optional": [
+        "mask",
+        "start_percent",
+        "end_percent"
+      ]
+    },
+    "is_input_list": false,
+    "output": [
+      "MODEL"
+    ],
+    "output_is_list": [
+      false
+    ],
+    "output_name": [
+      "MODEL"
+    ],
+    "name": "QwenImageDiffsynthControlnet",
+    "display_name": "Apply Qwen Image DiffSynth ControlNet",
+    "description": "",
+    "python_module": "comfy_extras.nodes_model_patch",
+    "category": "model/patch/qwen",
+    "output_node": false,
+    "has_intermediate_output": false,
+    "experimental": true,
+    "search_aliases": []
+  }
+}

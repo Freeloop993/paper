@@ -1,0 +1,120 @@
+[
+  {
+    "kind": "line",
+    "input_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+    "node_graph": {
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "l1-step0/line-wl0.70.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "7",
+            0
+          ],
+          "filename_prefix": "L1_step0_line"
+        }
+      }
+    },
+    "prompt_id": "8339f041-0fe6-4d5b-8bbf-d6b8bab5849a",
+    "server_output": {
+      "filename": "L1_step0_line_00001_.png",
+      "subfolder": "",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 1024,
+        "height": 1024
+      },
+      "id": "039b6074-057e-4090-b879-f67799296753"
+    },
+    "output_sha256": "b2e938a1c59a1052b4a720002b8a5ec8b2b3ef243ee26895e10e7cabf8ac6d4f"
+  },
+  {
+    "kind": "blades",
+    "input_sha256": "c55b3c788b26cde123bff4f332b10f3d2554bd9b2fe589949a0e45986bd3f1d1",
+    "node_graph": {
+      "5": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "l1-step0/blades-wl0.70.png"
+        }
+      },
+      "6": {
+        "class_type": "ImageScale",
+        "inputs": {
+          "image": [
+            "5",
+            0
+          ],
+          "upscale_method": "nearest-exact",
+          "width": 1024,
+          "height": 1024,
+          "crop": "disabled"
+        }
+      },
+      "7": {
+        "class_type": "Canny",
+        "inputs": {
+          "image": [
+            "6",
+            0
+          ],
+          "low_threshold": 0.4,
+          "high_threshold": 0.8
+        }
+      },
+      "8": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "7",
+            0
+          ],
+          "filename_prefix": "L1_step0_blades"
+        }
+      }
+    },
+    "prompt_id": "44e04ec2-b081-41fe-937e-a7b30a51072c",
+    "server_output": {
+      "filename": "L1_step0_blades_00001_.png",
+      "subfolder": "",
+      "type": "output",
+      "metadata": {
+        "kind": "image",
+        "width": 1024,
+        "height": 1024
+      },
+      "id": "9127821e-ac02-4160-b251-45f74a8511bb"
+    },
+    "output_sha256": "af52a04cd25ea27eb86cc0142dae7ffbbc06e2faecd0c5f74386fce91750e1ec"
+  }
+]
