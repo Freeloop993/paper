@@ -1,0 +1,30 @@
+flowchart TB
+  A["01 范围与开题"] --> B["02 评论与产品样本"]
+  A --> C["03 近邻与文献"]
+  B --> D["04 两项设计简报"]
+  C --> D
+  D --> E["05 参数与定位图"]
+  E --> F["06 布局、尺度复测"]
+  E --> G["07 提示词与参考图"]
+  D --> H["08 四旋造型与 CMF"]
+  H --> I["09 四旋修订与深化"]
+  D --> J["10 植保六旋案例"]
+  F --> K{"11 冻结范围与评议规则"}
+  G --> K
+  H --> K
+  K --> L["12 真实 D/S 比较"]
+  L --> M["13 盲评与独立复测"]
+  K --> N["14 跨构型共同对照"]
+  I --> O["15 分母与数据冻结"]
+  J --> O
+  M --> O
+  N --> O
+  O --> P["16 六章写作与结论"]
+  classDef base fill:#f3f1e9,stroke:#9b9b88,color:#263830
+  classDef design fill:#e1eadf,stroke:#74927d,color:#1c3c2c
+  classDef focus fill:#fff0df,stroke:#ad623f,color:#673b29,stroke-width:2px
+  classDef endnode fill:#264639,stroke:#264639,color:#ffffff
+  class A,B,C,D,E,F,G,L,M,N,O base
+  class I,J design
+  class H,K focus
+  class P endnode
