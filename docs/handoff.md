@@ -4,7 +4,7 @@
 
 ## 此刻从哪里接
 
-[PR #18](https://github.com/Freeloop993/paper/pull/18)已合并至 main，合并提交 `cf347ed`。第二步修改集中在 `codex/foundation-section8`，由 Claude 逐行复核地基第7、8节、材料包、冻结单与第1/2/3/5章修订片段。稿件PR尚待复核，研究未完成。E0—E6实际生成0次，当前无真人正式场次；尚未验收本轮 GPU 服务器或闭源接口。
+[PR #50](https://github.com/Freeloop993/paper/pull/50) 与 [PR #51](https://github.com/Freeloop993/paper/pull/51) 均已合并。按[当前规格](protocols/E0-E1-guide-prompt-spec.md)编译了五种正式条件图及 [R0/E0/E1 冻结包](../experiments/r0-e0-e1/README.md)。计划 2/12/36，实际提交 0。作者要求约 2 元/小时的单卡，#3 记录总额及授权，#19、#20 留运行回执。闭源接口的账号只读检查提示重新授权。下一步为低价卡库存、预算核准、新机复核及 R0 两张。
 
 作者已确定开源 Qwen-Image 2.1＋ControlNet Union 为主后端；闭源 API 仅E0三档×2次。正式视图统一正交顶视。费用、招募、伦理和导师意见在[#3](https://github.com/Freeloop993/paper/issues/3)由作者处理。禁止单张预试；服务器与API到位后核标识与摘要，先交冻结文件再执行。E0→E1→E2任一步失败，停止并向对应工单报告。
 

@@ -48,7 +48,7 @@ def measure_middle():
             "blade_radius_px": diagonal * 0.23 / 2, "arm_width_px": 12,
             "shaft_ring_radius_px": 10, "shaft_ring_stroke_px": 3}
 
-def render(centers, shape, target):
+def render(centers, shape, target, *, blade_scale=1.0):
     scale = 3
     canvas = Image.new("RGB", (1024*scale, 1024*scale), "white")
     draw = ImageDraw.Draw(canvas)
@@ -60,7 +60,7 @@ def render(centers, shape, target):
         tip = (x+dx*length/norm, y+dy*length/norm)
         draw.line(scaled([tip,(x,y)]), fill="#222222", width=shape["arm_width_px"]*scale)
     radius = shape["blade_radius_px"]
-    blade = [(9,-4),(.4*radius,-9),(.8*radius,-7),(radius,0),(.8*radius,7),(.4*radius,9),(9,4)]
+    blade = [(9*blade_scale,-4*blade_scale),(.4*radius,-9*blade_scale),(.8*radius,-7*blade_scale),(radius,0),(.8*radius,7*blade_scale),(.4*radius,9*blade_scale),(9*blade_scale,4*blade_scale)]
     for x,y in centers:
         # Take the orientation at the same quadrant of the archived square, at every target level.
         ax = -math.copysign(212/math.hypot(212,212), y-512)
