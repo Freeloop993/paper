@@ -11,7 +11,7 @@ from PIL import Image
 HERE = Path(__file__).resolve().parent
 
 
-def inspect(archive, stage="R0"):
+def inspect(archive, stage="R0", *, e1_window=None):
     rows = [r for r in json.loads((HERE / "manifest.json").read_bytes())["cases"] if r["stage"] == stage and r["arm"] in {"control", "text"}]
     results = []
     with ZipFile(archive) as z:
@@ -21,6 +21,11 @@ def inspect(archive, stage="R0"):
         expected = [row["case"] for row in rows]
         if stage != "R0":
             expected.sort(key=lambda case: "-text-" in case)
+        if e1_window is not None:
+            start, stop = e1_window
+            if stage != "E1" or not 0 <= start < stop <= 36:
+                raise ValueError("A partial inspection needs a declared E1 index window")
+            expected = expected[start:stop]
         assert [s["case"] for s in summary] == expected
         by_case = {r["case"]: r for r in rows}
         for observation in summary:
@@ -54,7 +59,8 @@ def inspect(archive, stage="R0"):
             results.append(dict(case=row["case"], prompt_id=pid, image_sha256=digest,
                                 history_seconds=seconds, gpu_peak_observed_mib=peak,
                                 cached_nodes=[n for k, v in msgs if k == "execution_cached" for n in v["nodes"]]))
-    assert len({r["prompt_id"] for r in results}) == {"R0": 2, "E0": 6, "E1": 36}[stage]
+    expected_count = len(expected) if e1_window is not None else {"R0": 2, "E0": 6, "E1": 36}[stage]
+    assert len({r["prompt_id"] for r in results}) == expected_count
     return results
 
 

@@ -58,6 +58,14 @@ def main():
             with Image.open(target) as saved:
                 assert saved.tobytes() == clean.tobytes() and not saved.info
     (args.out / "instructions.txt").write_bytes((HERE / "reader-instructions.txt").read_bytes())
+    if args.reader == "human" and set(sample) <= receipts.keys():
+        codes = sorted(rank("human", c)[:16] for c in sample)
+        ids = [(rank("human", c)[:16], receipts[c]["sha256"]) for c in sample]
+        pack_id = sha256(json.dumps(sorted(ids)).encode()).hexdigest()
+        plan = {"id":pack_id,"images":codes}
+        (args.out / "point-order.js").write_text("const POINT_PACK = "+json.dumps(plan)+";\n", encoding="utf-8")
+        for source, dest in (("point-reader.html","index.html"),("point-reader.js","point-reader.js")):
+            (args.out / dest).write_bytes((HERE / source).read_bytes())
 
 
 if __name__ == "__main__":
