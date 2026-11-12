@@ -1,5 +1,7 @@
 # 接手快照 · 2026-11-12
 
+L1 以 [PR #61](https://github.com/Freeloop993/paper/pull/61) 为当前入口。[28 份冻结请求](../experiments/l1-layout/manifest.json)已绑定输入，[第 0 步](../experiments/l1-layout/step0/README.md)已在 E1 原服务器完成，[逐图读数表](../experiments/l1-layout/reading-sheet.csv)已纳入标记残留。此交接时 L1 生成 0 次，等待作者在 [#3](https://github.com/Freeloop993/paper/issues/3) 登记 L1 后按顺序运行，再交 [#19](https://github.com/Freeloop993/paper/issues/19) 判读。
+
 先读[研究地基](foundation.md)，再读[六章执行清单](execution-playbook.md)、[状态](../STATUS.md)、[Google执行总记录](https://docs.google.com/document/d/1Ek_Ne35sFQFC0FcMU4uNbeFCGl28ipOj9wYOQRN_2ro/edit)及[#1交接](https://github.com/Freeloop993/paper/issues/1)。
 
 ## 此刻从哪里接

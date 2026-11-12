@@ -1,0 +1,45 @@
+{
+  "UNETLoader": [
+    "unet_name",
+    "weight_dtype"
+  ],
+  "CLIPLoader": [
+    "clip_name",
+    "device",
+    "type"
+  ],
+  "VAELoader": [
+    "vae_name"
+  ],
+  "TextEncodeQwenImage21": [
+    "clip",
+    "images.image_1",
+    "negative_prompt",
+    "prompt",
+    "resolution",
+    "vae"
+  ],
+  "KSampler": [
+    "cfg",
+    "denoise",
+    "latent_image",
+    "model",
+    "negative",
+    "positive",
+    "sampler_name",
+    "scheduler",
+    "seed",
+    "steps"
+  ],
+  "VAEDecode": [
+    "samples",
+    "vae"
+  ],
+  "SaveImage": [
+    "filename_prefix",
+    "images"
+  ],
+  "LoadImage": [
+    "image"
+  ]
+}

@@ -1,0 +1,2 @@
+requests/*.json text eol=lf
+guides/*.png binary
