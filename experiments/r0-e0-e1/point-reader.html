@@ -1,0 +1,17 @@
+<!doctype html><html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>顶视图独立点选</title>
+<style>
+*{box-sizing:border-box}body{background:#f0f4f3;color:#153b36;font:16px/1.55 system-ui,sans-serif;margin:0}main{max-width:1080px;margin:20px auto;padding:0 16px}h1{font-size:1.55rem}section{background:white;border:1px solid #cbd9d5;border-radius:10px;padding:16px;margin:10px 0}#work:not([hidden]){display:grid;grid-template-columns:minmax(0,1.6fr) minmax(235px,.7fr);gap:18px}canvas{display:block;width:100%;height:auto;aspect-ratio:1;cursor:crosshair;touch-action:manipulation}label{display:block;margin-bottom:10px}select,button,textarea{font:inherit;padding:5px 9px}button{cursor:pointer;border:1px solid #85a29b;background:#fff;border-radius:6px;color:#17564b;margin:3px 1px}button.primary{background:#145e51;color:white}button:disabled{opacity:.5;cursor:default}textarea{width:100%;min-height:60px}#point{font-size:1.18rem;font-weight:bold}#msg{color:#804420}.help{color:#4e625e;font-size:.94rem}select{max-width:100%}@media(max-width:700px){main{padding:0 8px}#work:not([hidden]){grid-template-columns:1fr}section{padding:10px}}
+</style>
+<main><h1>顶视图独立点选</h1>
+<section id="intro"><p>每张图按画面左上、右上、右下、左下的顺序查看四副桨。每副先点电机中心，再点该副桨两个最远的叶尖。先点画面中较靠上的叶尖；等高时先点左侧。看不清的点可以跳过。</p>
+<label>之前看过这些图的条件标签吗？ <select id="labels"><option value="">请选择</option><option>未看过</option><option>看过</option><option>不确定</option></select></label>
+<label>之前看过这些图的 AI 读数或结论吗？ <select id="ai"><option value="">请选择</option><option>未看过</option><option>看过</option><option>不确定</option></select></label>
+<button class="primary" id="start">开始点选</button></section>
+<section id="work" hidden><div><canvas id="canvas" width="1024" height="1024" aria-label="待点选的原尺寸顶视图"></canvas></div>
+<div><span id="progress"></span><p id="point" aria-live="polite"></p><button id="zoom">放大局部</button> <button id="reset">看全图</button> <button id="undo">撤销一点</button>
+<label>当前点无法量测时 <select id="reason"><option value="">选择原因</option><option>部位遮挡</option><option>叶片数量不符</option><option>边界看不清</option><option>无法确定属于哪副桨</option><option>电机数量或排列无法对应</option><option>其他</option></select></label><button id="skip">记录此点不可判</button>
+<label>这张图的补充说明（可选）<textarea id="note"></textarea></label><button id="next" class="primary">确认本图</button>
+<p class="help">放大后先点要看的区域，再点原图位置。圈标只显示自己的点选。进度尽量保存在当前浏览器。</p></div></section>
+<section id="done" hidden><p>本组点选已保存。请下载答卷后交给研究者。</p><button class="primary" id="download">下载读数 JSON</button></section>
+<p id="msg" role="status"></p></main><script src="point-order.js"></script><script src="point-reader.js"></script></html>
