@@ -15,7 +15,7 @@ SHA = lambda raw: hashlib.sha256(raw).hexdigest()
 DIGEST = "714dd8fde416c0602581fbd7ac3f020178bfd2c41d9e58a4c9a15f00b0635ac8"
 
 
-def verify(archive, remote_sha, dest):
+def verify(archive, remote_sha, dest, checkpoint=None):
     assert SHA(archive.read_bytes()) == remote_sha
     rows = json.loads((HERE/"manifest.json").read_bytes())
     assert len(rows)==42 and SHA("".join(r["request_sha256"] for r in rows).encode())==DIGEST
@@ -30,19 +30,23 @@ def verify(archive, remote_sha, dest):
         assert json.loads(read("bound-inputs.json"))==bindings
         state=json.loads(read("progress.json"))
         assert state["digest"]==DIGEST and state["manifest_positions"]==42
-        assert state["state"] in ("completed","finished_with_missing")
         missing=state["unavailable"]
-        assert missing in ([],[r["position"] for r in rows if r["arm"]=="I"])
-        assert state["completed"]==[n for n in planned if n not in missing]
+        if checkpoint is None:
+            assert state["state"] in ("completed","finished_with_missing")
+            assert missing in ([],[r["position"] for r in rows if r["arm"]=="I"])
+            assert state["completed"]==[n for n in planned if n not in missing]
+        else:
+            assert checkpoint in (10,22,38) and not missing and state["completed"]==planned[:checkpoint]
         after=json.loads(z.read("D2-cache-change/after.json"))
         before=json.loads(z.read("D2-cache-change/before.json"))
         assert before["cmd"].count("--cache-none")==1
         assert [("--cache-classic" if x=="--cache-none" else x) for x in before["cmd"]]==after["cmd"]
-        assert bool(after["vae_encode"]) == (len(missing)==0)
+        if checkpoint is None:
+            assert bool(after["vae_encode"]) == (len(missing)==0)
         last=None
         required={"D2-actual/bound-inputs.json","D2-actual/progress.json",
                   *("D2-cache-change/"+n+".json" for n in ("after","before","launch","l1-timings"))}
-        for row in rows:
+        for row in rows[:checkpoint]:
             name=row["position"]
             if name in missing: continue
             position_files=("attempt.json","request.actual.json","response.original.json","history.original.json",
@@ -89,7 +93,7 @@ def verify(archive, remote_sha, dest):
     report=dict(archive_sha256=remote_sha,archive_bytes=archive.stat().st_size,planned=42,attempted=len(index),
                 accepted=len(index),completed=len(index),unavailable=missing,by_arm=dict(Counter(r["arm"] for r in index)),
                 unique_rgb=len({r["rgb_sha256"] for r in index}),sampler_cache_hits=sum(r["sampler_cached"] for r in index),
-                runner_started_utc=state["started_at"],batch_end_utc=state["ended_at"],results=index)
+                runner_started_utc=state["started_at"],batch_end_utc=state.get("ended_at"),checkpoint=checkpoint,results=index)
     (dest/"verification.json").write_bytes((json.dumps(report,indent=2)+"\n").encode())
     return report
 
@@ -99,6 +103,7 @@ if __name__=="__main__":
     parser.add_argument("zip",type=Path)
     parser.add_argument("remote_sha")
     parser.add_argument("dest",type=Path)
+    parser.add_argument("--checkpoint",type=int,choices=(10,22,38))
     args=parser.parse_args()
-    report=verify(args.zip,args.remote_sha,args.dest)
+    report=verify(args.zip,args.remote_sha,args.dest,args.checkpoint)
     print(json.dumps({k:v for k,v in report.items() if k!="results"},indent=2))

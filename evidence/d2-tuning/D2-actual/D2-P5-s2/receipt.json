@@ -1,0 +1,20 @@
+{
+  "position": "D2-P5-s2",
+  "prompt_id": "836bd95d-32da-4200-872a-6db3f7890d70",
+  "completed_at": "2026-11-12T16:55:16.101872+00:00",
+  "request_sha256": "da233d2b31a65a1c2ea3359828433f91e51e6a9ce0cb9de11e1b6c8a266a2d3a",
+  "input_sha256": null,
+  "original_sha256": "ebea634ba819b0e7d8c66566773946f8e5cc708dd3b647c2cad1cfdb132e7097",
+  "bytes": 999472,
+  "server_output": {
+    "filename": "D2-P5-s2_00001_.png",
+    "subfolder": "",
+    "type": "output",
+    "metadata": {
+      "kind": "image",
+      "width": 1024,
+      "height": 1024
+    },
+    "id": "7d795520-59f5-48d9-b2d3-a751087f6216"
+  }
+}

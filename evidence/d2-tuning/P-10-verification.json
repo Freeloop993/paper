@@ -1,0 +1,170 @@
+{
+  "archive_sha256": "c345a6b8757ea2033bc9d9871f3f8ca671d54bf3f027265ba57c73dda5b8a9d0",
+  "archive_bytes": 10165452,
+  "planned": 42,
+  "attempted": 10,
+  "accepted": 10,
+  "completed": 10,
+  "unavailable": [],
+  "by_arm": {
+    "P": 10
+  },
+  "unique_rgb": 10,
+  "sampler_cache_hits": 0,
+  "runner_started_utc": "2026-11-12T16:47:33.647482+00:00",
+  "batch_end_utc": null,
+  "checkpoint": 10,
+  "results": [
+    {
+      "position": "D2-P1-s1",
+      "arm": "P",
+      "prompt_id": "42ea1833-bd0d-4ca4-8a4e-e65a32a3dd31",
+      "seconds": 57.044404,
+      "rgb_sha256": "9411aac17b693b9d9bbeeb40d7d7dc0f929c71d040c06d4771aa12b24bdf2fbe",
+      "original_sha256": "d6725180a14133fb21884f7730e6067b91e3a4ca02ee859fa4df1f2bc18d937d",
+      "cached_nodes": [],
+      "sampler_cached": false,
+      "disk_read_bytes": 29658624000
+    },
+    {
+      "position": "D2-P1-s2",
+      "arm": "P",
+      "prompt_id": "3acc85ae-1235-4946-8fa6-22ddd9d5baeb",
+      "seconds": 45.0352,
+      "rgb_sha256": "4dec16df5e7bb27945ca992d43f29a1528ca3a8627a5856e22f689be76fccee4",
+      "original_sha256": "09be60e71524803e518915a6ee54c143054308a11f0b751ce083ddb535efd085",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 65536
+    },
+    {
+      "position": "D2-P2-s1",
+      "arm": "P",
+      "prompt_id": "a143ebd9-04d3-4d83-bc18-0d860b1fc4fc",
+      "seconds": 45.036796,
+      "rgb_sha256": "87df43993c29ccd80cd09b79c6d361535d63c22c48575f30c1f1663ebe55483e",
+      "original_sha256": "1c4b8d7e89a198d4f5963ffc841eef854f9b616bb0f64d406a01269e7fd9c768",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 73728
+    },
+    {
+      "position": "D2-P2-s2",
+      "arm": "P",
+      "prompt_id": "2e441d95-60ae-46ca-8c23-4141c9d45c47",
+      "seconds": 45.035443,
+      "rgb_sha256": "c4bc741fac1b1aaaa27ba4db2b04e8b5e4f776ee2418fefb7fec08f11dd1c20c",
+      "original_sha256": "5f604b56572c1daa25ea2ff2168296eaaea2915f3acf2ffee25ffb507c54b319",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 57344
+    },
+    {
+      "position": "D2-P3-s1",
+      "arm": "P",
+      "prompt_id": "6e05b1c4-fee1-43cf-b092-62374e9b2d28",
+      "seconds": 45.038815,
+      "rgb_sha256": "e3f9b380a0dc9367cb30ad9d8bfd52030b384565b65deb1f1f43131daf65ef09",
+      "original_sha256": "0042433cfe00ecce6380020564740950689b32d90ccfe5863c3e0596fac40f7a",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 57344
+    },
+    {
+      "position": "D2-P3-s2",
+      "arm": "P",
+      "prompt_id": "e69c3fc7-02c7-43c9-9e61-d727af5e396b",
+      "seconds": 45.034393,
+      "rgb_sha256": "85396ce603e60cb99f858e63c6178b262f27c2e4f37d51ffc266318f2fa82191",
+      "original_sha256": "5e4c1415e90a9a8329f1eb093675ecd81e8b14926b2f3c5da5aed99cb4acad87",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 65536
+    },
+    {
+      "position": "D2-P4-s1",
+      "arm": "P",
+      "prompt_id": "c0c0c385-937e-4270-b194-6ddaa706a7d9",
+      "seconds": 45.032541,
+      "rgb_sha256": "b7357605b35d2b71a6c33ac041239e05380010c23ec31b38522f00d7d13b6f78",
+      "original_sha256": "4bb6324c45a2aef5146d2eaa0413bb68513d157fa93836ab458d30b3a47f933e",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 57344
+    },
+    {
+      "position": "D2-P4-s2",
+      "arm": "P",
+      "prompt_id": "9506cb48-f41d-449b-a126-673b8771fcdf",
+      "seconds": 45.034808,
+      "rgb_sha256": "5b7d01dce1c13741e9040284a1c07d369b2674bc897c821f1f2093350aa07939",
+      "original_sha256": "05d093f8517e580ba24e1ad8beea1d0bb99475a9898cdbb162cbff6e950671c1",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 57344
+    },
+    {
+      "position": "D2-P5-s1",
+      "arm": "P",
+      "prompt_id": "dd1385bc-2c17-4808-91e1-015d4e199087",
+      "seconds": 45.038694,
+      "rgb_sha256": "031c8c8a01712a51d3aa111c44b889359d787d5c811ef76396a766712194aa25",
+      "original_sha256": "880d81f790ff11195f220870081e439027d5fb21872438e29e1a7f7de0793821",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 57344
+    },
+    {
+      "position": "D2-P5-s2",
+      "arm": "P",
+      "prompt_id": "836bd95d-32da-4200-872a-6db3f7890d70",
+      "seconds": 45.040643,
+      "rgb_sha256": "ec66f4de6afcbf3986eb5debeca0f21ed486d0a139ce466a58ebfe0f541e32ec",
+      "original_sha256": "ebea634ba819b0e7d8c66566773946f8e5cc708dd3b647c2cad1cfdb132e7097",
+      "cached_nodes": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "sampler_cached": false,
+      "disk_read_bytes": 57344
+    }
+  ]
+}

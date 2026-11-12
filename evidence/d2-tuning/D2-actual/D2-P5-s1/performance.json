@@ -1,0 +1,62 @@
+{
+  "utc": "2026-11-12T16:54:31.058635+00:00",
+  "pid": 5382,
+  "process_disk_read_bytes": 57344,
+  "cached_nodes": [
+    "1",
+    "2",
+    "3"
+  ],
+  "sampler_cached": false,
+  "server_log": [
+    "100%|██████████| 40/40 [00:41<00:00,  1.04s/it]",
+    "100%|██████████| 40/40 [00:41<00:00,  1.03s/it]",
+    "\u001b[32m[INFO]\u001b[0m \u001b[32mPrompt executed in 43.27 seconds\u001b[0m"
+  ],
+  "stage_events": [
+    {
+      "seconds": 0.3,
+      "log": "\u001b[32m[INFO]\u001b[0m got prompt"
+    },
+    {
+      "seconds": 0.3,
+      "log": "\u001b[32m[INFO]\u001b[0m Model QwenImage21TEModel_ prepared for dynamic VRAM loading. 16721MB Staged. 0 patches attached. Force pre-loaded 255 weights: 849 KB."
+    },
+    {
+      "seconds": 0.3,
+      "log": "\u001b[32m[INFO]\u001b[0m Model QwenImage21TEModel_ prepared for dynamic VRAM loading. 16721MB Staged. 0 patches attached. Force pre-loaded 255 weights: 849 KB."
+    },
+    {
+      "seconds": 0.6,
+      "log": "\u001b[32m[INFO]\u001b[0m Model QwenImage21 prepared for dynamic VRAM loading. 13571MB Staged. 0 patches attached. Force pre-loaded 65 weights: 63 KB."
+    },
+    {
+      "seconds": 0.6,
+      "log": "  0%|          | 0/40 [00:00<?, ?it/s]"
+    },
+    {
+      "seconds": 2.1,
+      "log": "  0%|          | 0/40 [00:00<?, ?it/s,   Model Initializing ...  ]"
+    },
+    {
+      "seconds": 2.1,
+      "log": "  0%|          | 0/40 [00:01<?, ?it/s,  Model Initialization complete!  ]"
+    },
+    {
+      "seconds": 42.62,
+      "log": "100%|██████████| 40/40 [00:41<00:00,  1.04s/it]"
+    },
+    {
+      "seconds": 42.62,
+      "log": "100%|██████████| 40/40 [00:41<00:00,  1.03s/it]"
+    },
+    {
+      "seconds": 42.92,
+      "log": "\u001b[32m[INFO]\u001b[0m Model WanVAE prepared for dynamic VRAM loading. 644MB Staged. 0 patches attached. Force pre-loaded 68 weights: 102 KB."
+    },
+    {
+      "seconds": 43.52,
+      "log": "\u001b[32m[INFO]\u001b[0m \u001b[32mPrompt executed in 43.27 seconds\u001b[0m"
+    }
+  ]
+}

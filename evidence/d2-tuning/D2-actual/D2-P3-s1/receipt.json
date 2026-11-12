@@ -1,0 +1,20 @@
+{
+  "position": "D2-P3-s1",
+  "prompt_id": "6e05b1c4-fee1-43cf-b092-62374e9b2d28",
+  "completed_at": "2026-11-12T16:51:30.895427+00:00",
+  "request_sha256": "4f39cf356c0b0e3c880da5774d0ae4f31a11d1e5c3928f434fd30053faf9c5ba",
+  "input_sha256": null,
+  "original_sha256": "0042433cfe00ecce6380020564740950689b32d90ccfe5863c3e0596fac40f7a",
+  "bytes": 1071556,
+  "server_output": {
+    "filename": "D2-P3-s1_00001_.png",
+    "subfolder": "",
+    "type": "output",
+    "metadata": {
+      "kind": "image",
+      "width": 1024,
+      "height": 1024
+    },
+    "id": "42551afb-84d8-4475-ae63-3dbac4fe70ee"
+  }
+}
