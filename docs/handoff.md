@@ -10,6 +10,8 @@
 
 ## 逐项工单
 
+2026-11-12 晚更新：最新顺序为 E0 → E1 → R1 → E2。[R1 渲染设置冻结单](../experiments/r1-render/README.md)含 8 格 16 个位置，其中 2 张引用 E1，最多新出 14 张。R0 两张仅作环境复现；E0、E1 的比例响应与后续设计表现分别记录。实际运行以 [#19](https://github.com/Freeloop993/paper/issues/19) 的逐项回执为准。
+
 - [E0 后端对照](https://github.com/Freeloop993/paper/issues/19)
 - [E1 参数响应与纯文字对照](https://github.com/Freeloop993/paper/issues/20)
 - [E2 父图修订能力](https://github.com/Freeloop993/paper/issues/21)
