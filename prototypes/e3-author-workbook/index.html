@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; connect-src 'self'; object-src 'none'; base-uri 'none'">
+<link rel="icon" href="data:,"><title>E3 作者造型工作簿</title><link rel="stylesheet" href="workbook.css"></head>
+<body><header><div><p>四旋造型配置器 / E3</p><h1>作者造型工作簿</h1></div><div class="actions"><label class="button">打开工作簿<input id="restore" type="file" accept=".json,application/json"></label><button id="save" class="primary">下载工作簿</button></div></header>
+<main><p id="status" role="status">正在载入离线字典…</p>
+<nav aria-label="工作步骤"><button data-view="spec" aria-current="page">方向规格</button><button data-view="gallery">九图选稿</button><button data-view="chain">修订与锁稿</button></nav>
+<section id="spec"><div class="heading"><h2>三个方向的规格卡</h2><span>正交顶视 · True X · 双叶</span></div>
+<p>填写各方向的词对目标与依据卡号。档位是可改的起点。B 的轴距先用 250 mm，320 mm 尚无通过的响应依据。</p><div id="cards" class="grid"></div></section>
+<section id="gallery" hidden><div class="heading"><h2>九张初稿的取舍</h2><button id="loadArchive">载入已有九张开发原图</button></div>
+<p>也可逐格导入自己的 PNG 或 JPEG。写明每张希望保留或舍弃的细节，再选一张作为父图。缺少的来源、实发词、请求、种子、回执与参考图均记为“未核”。</p>
+<div id="picks"></div></section>
+<section id="chain" hidden><h2>父图与版本记录</h2><div id="history"></div></section>
+<noscript>请启用 JavaScript 并按 README 启动本地页面。</noscript></main>
+<script defer src="form342-core.js"></script><script defer src="model.js"></script><script defer src="workbook.js"></script></body></html>

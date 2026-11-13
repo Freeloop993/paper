@@ -1,4 +1,12 @@
-# 当前研究状态 · 2026-11-12（中国时间）
+# 论文研究状态
+
+## 11 月 14 日 · 当前待签署与离线准备
+
+Qwen 的 [E2 六份修订请求](experiments/e2-registered/) 和 [十二份造型小测请求](experiments/qwen-shape-pilot/) 已离线核对，正式运行等方法冻结单第 2 节更新和作者签署第 3 节。K 未过，本次 5.2.1 计划保留六个条件。
+
+[E3 作者工作簿](prototypes/e3-author-workbook/) 支持三张规格卡、九格候选的逐张取舍和父图修订。历史开发九图可用于演练，正式 E3 初稿仍是 0/9。
+
+[E4 两种流程工作台](prototypes/e4-ds-session/) 已完成断网浏览器配对演练；[E5 实拍](evidence/real-product-topview/)已核四个型号，目标八到十个，评议表可分阶段发包；[E6 植保六旋](experiments/hexa-plant-protection/topview-prep/)已有三档点线与部件条件图，各档六个轴心均已核验。本轮 E3、E4 均无正式场次。
 
 **11 月 14 日 · H3 第三轮实收 8/8，独立 AI 盲读已封存。** S0 两轮合计 4 无外突／1 前伸／2 待判，轴距组壳长/轴距均值差 0.0286 小于组内 SD 0.0842，两项均未过。A/B 臂根统一记无缝；E3 可选外露碳纹臂，5.2.1 保持同色。正式 E2 为 0/6，E3 为 0/9。下一步由 Claude 写入冻结单第 2 节，作者签署第 3 节，再安排 Qwen。[第三轮全量与读数](evidence/form342-h3-dev/round-3/README.md) · [方向卡](evidence/section421-h3-span/specs-after-review.md)。
 

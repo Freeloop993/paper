@@ -8,4 +8,4 @@
 
 [图 6536172](https://www.pexels.com/photo/close-up-shot-of-a-gray-drone-camera-6536172/) 的 5593 × 3939 原件可读，四个轴心可见，机背可辨 DJI 标识。现有证据不足以辨认具体型号，先保留为候选，未计入四个已核型号。SHA-256 为 95fc9d2b0a4a9c1a7ca3e44d8b831a80dc3e5dc928f417cde8f8999881a61d3c。
 
-**评议表接续。** 已复核 [PR #57 的词对附表](https://github.com/Freeloop993/paper/blob/21223be/experiments/rating-kit/instrument/instrument.js)：每对可选 1–7 或“看不出”，4 表示居中。页面先展示实拍、再展示终稿；该版[打包器](https://github.com/Freeloop993/paper/blob/21223be/experiments/rating-kit/build_instrument.py)需要两者一起提供。如要提前独立发放实拍，需支持分批发包，并保留两阶段相同的词对版本。当前尚未发放或新增评分。
+**评议表接续。** 已复核 [PR #57 的词对附表](https://github.com/Freeloop993/paper/blob/21223be/experiments/rating-kit/instrument/instrument.js)：每对可选 1–7 或“看不出”，4 表示居中。页面先展示实拍、再展示终稿；该版[打包器](https://github.com/Freeloop993/paper/blob/21223be/experiments/rating-kit/build_instrument.py)需要两者一起提供。已在 [PR #57 的更新](https://github.com/Freeloop993/paper/commit/62a00b1) 加入实拍包和锁定终稿包的独立导出；每包记录词表原件摘要。7 项软件控制通过，覆盖两类单阶段包、旧合包及错配拒绝。该 PR 待复核；当前尚未发放或新增评分。

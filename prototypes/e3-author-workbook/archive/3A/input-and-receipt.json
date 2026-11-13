@@ -1,0 +1,136 @@
+{
+  "submitted_utc": "2026-11-13T10:54:15.884495+00:00",
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "request": {
+    "model": "MiniMax-H3-Image",
+    "n": 1,
+    "size": "1024x1024",
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：相机舱与机身读成一个紧凑体量，机臂收拢到机身两侧。\n保持：机头朝画面上沿。机载相机朝画面上沿的地平线平视拍摄。制图者从飞机正上方看见相机外壳的顶面，前向镜面在这个视角接近一条边。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。",
+    "images": [
+      {
+        "file": "A.png",
+        "sha256": "db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78"
+      }
+    ]
+  },
+  "input_guide": "../row3-guide.png",
+  "configurator_design_fields": {
+    "task": "quad",
+    "need": "设计一台便于日常携带的航拍四旋翼。",
+    "source": "开发提案。E001 小巧便携，E011 外观简约；E016 仅为配件集成愿望。",
+    "target": "航拍相机舱与机身，四处臂根与机身。",
+    "change": "相机舱与机身读成一个紧凑体量，机臂收拢到机身两侧。",
+    "keep": "机头朝画面上沿。机载相机朝画面上沿的地平线平视拍摄。制图者从飞机正上方看见相机外壳的顶面，前向镜面在这个视角接近一条边。机身冷灰色。",
+    "free": "舱体安装、机身轮廓、臂根曲面和分件。",
+    "method": "structured",
+    "instruction": "探索适合日常携带的整机方案。\n保留四个电机轴心、相连的机臂和前向相机。\n机身外轮廓、相机安装位置与接合方式、机臂过渡、壳体曲面和分件可探索。",
+    "view": "top",
+    "route": "guide",
+    "guideLines": true,
+    "guideTips": false,
+    "guideBladeLines": false,
+    "applyCmf": false,
+    "shellFinish": "matte",
+    "gaps": "",
+    "groups": [
+      "propulsion"
+    ],
+    "guideNose": true
+  },
+  "configurator_layout": {
+    "noseMarker": true,
+    "size": 1024,
+    "nose": "up",
+    "origin": "top-left",
+    "mm_origin": "frame-center",
+    "pxPerMm": 1.6,
+    "max_motor_distance_mm": 250,
+    "hubs": [
+      {
+        "id": "R1",
+        "x_mm": -88.38834764831842,
+        "y_mm": -88.38834764831843,
+        "x_px": 370.5786437626905,
+        "y_px": 370.5786437626905
+      },
+      {
+        "id": "R2",
+        "x_mm": 88.38834764831842,
+        "y_mm": -88.38834764831843,
+        "x_px": 653.4213562373095,
+        "y_px": 370.5786437626905
+      },
+      {
+        "id": "R3",
+        "x_mm": 88.38834764831843,
+        "y_mm": 88.38834764831842,
+        "x_px": 653.4213562373095,
+        "y_px": 653.4213562373095
+      },
+      {
+        "id": "R4",
+        "x_mm": -88.38834764831842,
+        "y_mm": 88.38834764831844,
+        "x_px": 370.5786437626905,
+        "y_px": 653.4213562373095
+      }
+    ],
+    "links": [
+      [
+        512,
+        512,
+        370.5786437626905,
+        370.5786437626905
+      ],
+      [
+        512,
+        512,
+        653.4213562373095,
+        370.5786437626905
+      ],
+      [
+        512,
+        512,
+        653.4213562373095,
+        653.4213562373095
+      ],
+      [
+        512,
+        512,
+        370.5786437626905,
+        653.4213562373095
+      ]
+    ],
+    "bladeTips": [],
+    "adjacent_deg": [
+      90,
+      90,
+      90,
+      90
+    ],
+    "r1_clockwise_from_nose_deg": 315
+  },
+  "provider_http_status": 200,
+  "provider_revised_prompt": "The orthographic top-down layout and spatial positioning of the four motor-axis points, diagonal frame lines, and upward-pointing nose-direction indicator in <Picture 1> is <Subject 1>. The target image transforms the schematic diagram of <Subject 1> into a photorealistic industrial product rendering of a compact, portable everyday aerial quadcopter seen from directly overhead against a light neutral studio background. <Subject 1> is partially preserved; its exact orthographic top-down camera angle, upward-pointing nose orientation, normalized motor-center coordinates, equal 90-degree spacing between adjacent arms, and surrounding canvas margins are retained, while the solid black background, red dots, blue lines, and white arrow are replaced by the physical drone structure and studio environment. The drone features a unified, compact cool-gray fuselage and integrated front aerial camera pod pointing toward the top edge of the frame, where the forward-facing lens sits nearly flush as a thin edge beneath its top housing shell. Four sleek arms with smooth root fillets fold neatly along the sides of the main body before extending outward to the exact positions defined by <Subject 1> in a true X-configuration with zero-degree vertical motors. Each of the four motors is fitted with a stationary, fully unfolded two-blade propeller (5-inch scale relative to the 250 mm diagonal wheelbase), showing slender blades resting horizontally without motion blur. Soft studio side lighting models the matte cool-gray chassis, subtle panel seams, and rotor hubs, casting gentle contact shadows onto the clean, unadorned light gray surface below, with no auxiliary lines, scales, or text present.",
+  "response_model": null,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9841,
+    "input_tokens": 5745,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3695,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "verification": {
+    "file_sha256": "290b94b4ecb628f0f2a31b5a85fc7a58d745ff8b198097ebfc30968341c5555b",
+    "rgb_sha256": "b5918391df7a7636a8c3e2452d17e6b4be868ba6c1384e9626cfd6a8bfc014a6",
+    "bytes": 1177364
+  }
+}
