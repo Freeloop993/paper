@@ -1,6 +1,8 @@
 # Preserve the byte streams used in SHA-256 checks across Windows/Linux clones.
 blind-readings.jsonl -text
 unblind.json -text
+audit-key.json -text
+audit-readings.jsonl -text
 blind-instructions.md text eol=lf
 *.png binary
 *.jpg binary

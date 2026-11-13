@@ -1,0 +1,201 @@
+{
+  "S": [
+    {
+      "condition": "S0",
+      "correct": 0,
+      "planned": 3,
+      "pass_gate": false,
+      "offtarget_known": 2,
+      "offtarget_unknown": 7,
+      "known_drift_images": 2,
+      "unknown_images": 3,
+      "baseline_also_reads_target": null,
+      "baseline_unreadable": null
+    },
+    {
+      "condition": "S1",
+      "correct": 3,
+      "planned": 3,
+      "pass_gate": true,
+      "offtarget_known": 0,
+      "offtarget_unknown": 7,
+      "known_drift_images": 0,
+      "unknown_images": 3,
+      "baseline_also_reads_target": 0,
+      "baseline_unreadable": 0
+    },
+    {
+      "condition": "S2",
+      "correct": 2,
+      "planned": 3,
+      "pass_gate": true,
+      "offtarget_known": 0,
+      "offtarget_unknown": 5,
+      "known_drift_images": 0,
+      "unknown_images": 3,
+      "baseline_also_reads_target": 2,
+      "baseline_unreadable": 1
+    },
+    {
+      "condition": "S3",
+      "correct": 3,
+      "planned": 3,
+      "pass_gate": true,
+      "offtarget_known": 0,
+      "offtarget_unknown": 5,
+      "known_drift_images": 0,
+      "unknown_images": 3,
+      "baseline_also_reads_target": 0,
+      "baseline_unreadable": 1
+    },
+    {
+      "condition": "S4",
+      "correct": 3,
+      "planned": 3,
+      "pass_gate": true,
+      "offtarget_known": 0,
+      "offtarget_unknown": 4,
+      "known_drift_images": 0,
+      "unknown_images": 3,
+      "baseline_also_reads_target": 0,
+      "baseline_unreadable": 3
+    },
+    {
+      "condition": "S5",
+      "correct": 2,
+      "planned": 3,
+      "pass_gate": true,
+      "offtarget_known": 1,
+      "offtarget_unknown": 5,
+      "known_drift_images": 1,
+      "unknown_images": 3,
+      "baseline_also_reads_target": 0,
+      "baseline_unreadable": 3
+    }
+  ],
+  "G": [
+    {
+      "condition": "G-w10",
+      "metric": "width_D",
+      "n": 3,
+      "values": [
+        0.03980283037318394,
+        0.04351760671822796,
+        0.036007538335340865
+      ],
+      "mean": 0.03977599180891759,
+      "sd": 0.003755106125039477,
+      "residue_yes": 1,
+      "residue_U": 0
+    },
+    {
+      "condition": "G-w15",
+      "metric": "width_D",
+      "n": 3,
+      "values": [
+        0.04842066572139161,
+        0.054163696868085795,
+        0.05689278224151573
+      ],
+      "mean": 0.05315904827699771,
+      "sd": 0.004324485943591615,
+      "residue_yes": 3,
+      "residue_U": 0
+    },
+    {
+      "condition": "G-w20",
+      "metric": "width_D",
+      "n": 3,
+      "values": [
+        0.0656229559976624,
+        0.050074739585902944,
+        0.06172088065673867
+      ],
+      "mean": 0.05913952541343467,
+      "sd": 0.008089147332434134,
+      "residue_yes": 1,
+      "residue_U": 0
+    },
+    {
+      "condition": "G-r1.4",
+      "metric": "L_B",
+      "n": 0,
+      "values": [],
+      "mean": null,
+      "sd": null,
+      "residue_yes": 0,
+      "residue_U": 0
+    },
+    {
+      "condition": "G-r1.8",
+      "metric": "L_B",
+      "n": 1,
+      "values": [
+        2.2214285714285715
+      ],
+      "mean": 2.2214285714285715,
+      "sd": null,
+      "residue_yes": 1,
+      "residue_U": 0
+    },
+    {
+      "condition": "G-r2.4",
+      "metric": "L_B",
+      "n": 0,
+      "values": [],
+      "mean": null,
+      "sd": null,
+      "residue_yes": 0,
+      "residue_U": 0
+    }
+  ],
+  "axes": {
+    "w": {
+      "complete": true,
+      "no_marks": false,
+      "pairs": [
+        {
+          "diff": 0.01338305646808012,
+          "max_sd": 0.004324485943591615,
+          "clears": true
+        },
+        {
+          "diff": 0.005980477136436957,
+          "max_sd": 0.008089147332434134,
+          "clears": false
+        }
+      ],
+      "pass_gate": false
+    },
+    "r": {
+      "complete": false,
+      "no_marks": false,
+      "pairs": [
+        {
+          "diff": null,
+          "max_sd": null,
+          "clears": null
+        },
+        {
+          "diff": null,
+          "max_sd": null,
+          "clears": null
+        }
+      ],
+      "pass_gate": false
+    }
+  },
+  "common": {
+    "available": 36,
+    "double": 35,
+    "camera_not_observed_wrong": 36,
+    "product": 36,
+    "joint": 35,
+    "invisible": 27,
+    "ambiguous": 6,
+    "wrong": 0,
+    "planned": 36,
+    "pass_gate": true
+  },
+  "confirmed_CNY": null
+}

@@ -1,0 +1,218 @@
+{
+  "IAA77A0F2": {
+    "slot": "G-r2.4-2",
+    "original": "cabfe7b452562731afa5cf7ac91b8bb67522b327dbfc620618d369ab75f1df23",
+    "rgb": "e0e1b761d3e83ef1d59d1b553a42c12b06aee8da81bb2a017f92e7653edd2e29",
+    "blind_png": "8a4146168e633e68ed5f2b5d115eca7a45b3b6161b9dc65df8c47c82c45309df"
+  },
+  "I20429CC0": {
+    "slot": "S3-3",
+    "original": "89f595debf9ba95b54a818b744d749186a1d6746abcdf338b0f0173f970d9aa6",
+    "rgb": "9e9486926100cac657c22c9448c352d490034b15d566e535c667880342655a21",
+    "blind_png": "1c5205c38255145d686febaaea6410ba948900e33afa14afc968a395f7da8cf2"
+  },
+  "I8072D25C": {
+    "slot": "G-r1.8-2",
+    "original": "3bea826748118f711e0ccc3a388ffc6b6b0912fd3cb26043101edb094de55045",
+    "rgb": "ca24ceb26f8d5f8f39d2e47df4dad908c035c6f60168a15f1cce33f2dc7b8cfd",
+    "blind_png": "476a424406197cfee8a2a046f5d38a567cb87fdcef3ef42116e05b0f38b221fd"
+  },
+  "I3648D99A": {
+    "slot": "G-r2.4-1",
+    "original": "7ffab7165a2070850802c04b7ab0b739348a48f424316128ea42d67e11b153a1",
+    "rgb": "4febbb0cbdd5b0e37bbd200d5c50a7d5d749c12ce06e197c21240f0e79b474e1",
+    "blind_png": "309d561c4ec4da2a19d6ee50f7c2f32a1b4e2176dcf019220f69c3d11d448eb9"
+  },
+  "I8DCC2103": {
+    "slot": "G-r1.8-1",
+    "original": "75d76118143a1b7c3aa2d5193d2849e385a9ece9997e93a2792505ccb93b32c3",
+    "rgb": "9c375c1e22b69d0bbb95570e6a7545529bf5f9d3a89094d835a3dc0eb18d5b82",
+    "blind_png": "20de6174182647fd3fc38ede50e56a49bf16ce8e8a2c728abb3d5a5381090e1b"
+  },
+  "I224B493E": {
+    "slot": "G-w10-2",
+    "original": "e845c78b496e9cf5a5268d187aab35419f312c37570b153f0af5a8356c81eba0",
+    "rgb": "10da80da642f3903b76cfda969c97274de7f160ebecacf7dc52d543254d5e587",
+    "blind_png": "120a6b27aeafe0f92fcc0b06c3b37a7b57f09045ddf8a154681634fde3749241"
+  },
+  "I289D5117": {
+    "slot": "G-w15-1",
+    "original": "733474f6a4c2be1ef6ba45926f7a792d9b24123bf8734d086ff5090ee4b56068",
+    "rgb": "e763f0e1dfa53f607406ed115693eafb60badd982e3cd7b80ca2387957bf73d8",
+    "blind_png": "2f2b23a826c214be887d4303fbb8f077f0fba9e1d2446f778149c2e9c890bb11"
+  },
+  "I2256A25D": {
+    "slot": "S1-3",
+    "original": "2077f8fad5a3f3e54c1ccabebfd66a7e06626997f96920125021ed582b7ffe24",
+    "rgb": "49623ac8a0925bac745aad98f9ca23d074a614982010a50ef8a257a2b86e074b",
+    "blind_png": "b9202225a0e75d178171120397311ad038bde59ccd8f22a482ac24fd8269aead"
+  },
+  "I7B16C748": {
+    "slot": "S4-3",
+    "original": "099ab8e62517419eb44ddee207d7feba5c8d540699696eb1705310dc4bf840b6",
+    "rgb": "a15a0bf81b352bc82dbbd51e98dbd69ef84410621b40851ea141d32fb738f5c2",
+    "blind_png": "d670495adda644a14be567f4f6983077a8061cea9bfb56e56064b07b50e682b4"
+  },
+  "I7E38D30C": {
+    "slot": "S5-2",
+    "original": "e822587946f8f11993763ced0fa52d55187a6d999025368f3b18ed7025a46892",
+    "rgb": "4ffed17748fda270ebd10da904801bed647f177386b07caa99048650d3a2c8b6",
+    "blind_png": "edfeaea2cb123c2dbcc61d1163324ef9c3f5012517d0d7ca415c3cdeab20c730"
+  },
+  "I8AD1F360": {
+    "slot": "G-r1.8-3",
+    "original": "b61901ae0178f27172c61676f0750d3d88fc2c1871aca369ad4e53c4ee698363",
+    "rgb": "f9cf0e56de0a7eb5effd4f39eb6dc58f4685992ceeb0bbe9b774a927d8bca7f2",
+    "blind_png": "bc462d9b51cc5be4eea7c1f36d4ace1757a896ee90acbd10c1dc37bcdb8f8e3b"
+  },
+  "I6F79ECCB": {
+    "slot": "G-w20-3",
+    "original": "8c8228427d96155d77f3e6653db69d94e94ab6978ba85c351ef74f54f1e5c886",
+    "rgb": "040ea85cedcb3947c157c84c95525528ddaf7b81372a5e52eb2da72e1142b3e4",
+    "blind_png": "76c14d7fa8e2ad2a398776332891254abf9687034c6cab4adc900c3d3766469c"
+  },
+  "I12D095E7": {
+    "slot": "G-w15-3",
+    "original": "67862098f4b10be6cba5fd85bd9730f72daa7633b886834389289fd4b370206e",
+    "rgb": "36fae9caf6423ee9bc985d0ace697ee15adda597ad45d65a27197e08531e9766",
+    "blind_png": "87598b175185931252d55da98bf42fe9a638bb8c9fda2824ba4aafa29d198022"
+  },
+  "IA4E53CEB": {
+    "slot": "S2-2",
+    "original": "3d143d492ac896483d0b4e4a41b0b16d84a4d9ba6ad28ebedfde59790cf877f0",
+    "rgb": "ec80c89ea29f0bce60759514c09ed578d1ac3ca70061e55ba5ce8cad39cb8b12",
+    "blind_png": "d64cc4e71e7e544262cf9efcad152dd447a9a87bebc49a5d95d847bf77c45a12"
+  },
+  "I7B0248FD": {
+    "slot": "S0-2",
+    "original": "a9751d4a9887592584dc4d112b13c17d620d645f56db078812449fd2c9b8a0e3",
+    "rgb": "6e46f6871c4737565d6a36918f7e58b7c83f8a8e7fbb37025da2a575c72e3ba4",
+    "blind_png": "c992480d6f513a27be8f480c5fc53c793d2d50207b54c84df41097cd3eae5127"
+  },
+  "IF5E24E2A": {
+    "slot": "S1-2",
+    "original": "e9e544614c884d43956a86df44ea7480dd6a04020403ed6dc32c72df9ea1d6b2",
+    "rgb": "ea279a9d9e1524da21c44d35fed8741c2e3c46d6c511dbb81d13647c377025e3",
+    "blind_png": "d10cdbeed8189a4ad0f452fe95558d3277275f3da76e6345edc3070c6d543af5"
+  },
+  "IBE761452": {
+    "slot": "G-r1.4-3",
+    "original": "85e7ac4cca1eba0df3b0bf3ab951b512e83b0f35c94eff012ad5a35eb4ea2a2c",
+    "rgb": "019a0a0041e8cd6b1b574e1538bac9d3607986f221c68cb82f4e8df0d85ebec9",
+    "blind_png": "df965c5660e26cf3e38b7e1fa5898d6c09bf15b17c246ee6d8f83d603d334d4e"
+  },
+  "I3B09A778": {
+    "slot": "G-r1.4-1",
+    "original": "eb52de7ab1a25528149450a7a716d94c73ef875a72cce67220860d9a71a21677",
+    "rgb": "1e17729de434d250c657517b332441e5c384337164316aa740aac984b4b13894",
+    "blind_png": "e856961c8640bf67067ee0b59cf2ee0b7b6fb66f4d896d96308060c5b868af98"
+  },
+  "I1D806C4B": {
+    "slot": "S5-1",
+    "original": "06a6a740b7e0eebbde7ce2df1f65929cbc668d8ef364f0dbe68268a623e03f20",
+    "rgb": "826c06588359ab69a7cd6fa740170a959ab7858f44bb87053e9639c06d5dbc1f",
+    "blind_png": "0c50c5801a3b710b1d0aae4afe264d3638f3cfb6509b1943410a0e999182e8e5"
+  },
+  "I09C31476": {
+    "slot": "S2-1",
+    "original": "34e1b8d383857b4b957a5dc62ead022e54eb7664bebffcb4760aea5b28e3bc12",
+    "rgb": "df382147f06185e29a5c54f8ae7acaf4065dc9ba39059b6547398e0faa516b3e",
+    "blind_png": "c3bb2381a7ba38484fee84856f2bbdfb56352a33a89a60d0e4b029879135cc15"
+  },
+  "I1BD90372": {
+    "slot": "S1-1",
+    "original": "c6b5c9fe954650a7c6816b2f5dfb8e7c171a416638bda3b0cf8c2e371b5471c7",
+    "rgb": "70645464c8a43abd8307bff2a4f79770ce141701c1e89d2807c4c192eb91b6f0",
+    "blind_png": "d182ab3903b5366bb7d0a32970daa4c9127563bf491853fdc49a950e55ac7c3d"
+  },
+  "I7F1E4C8D": {
+    "slot": "G-r2.4-3",
+    "original": "090c3f4f19baf8eb33f212796b441761dd582e523c803f8541a69713410cfa1e",
+    "rgb": "b3398001a91574e8ad6661f13185cf8a51bab906af18543ef959d04e6cafd1ed",
+    "blind_png": "67dac66636debdaa1e5225058834189a37a944a3f0761e9ab6af5d9add082da7"
+  },
+  "I7E95F524": {
+    "slot": "G-w10-1",
+    "original": "456be21f3892a11af8423829b6764b2a5c62bb42c2f20ea0af0d203231832283",
+    "rgb": "702a0f2f3c1dc739ff160a05ddc06a82ad09ba9324d189c163796681046875d5",
+    "blind_png": "770fd4317b096122eb80c571807effb0baa187eefdfe28ab0371c98b0435d222"
+  },
+  "ICD2544C1": {
+    "slot": "G-r1.4-2",
+    "original": "b117fbcf3f47fff8c1d9390cc8077e1184f2ce40a0775fd5db0351f78a2a12a5",
+    "rgb": "b0b8e99e2921b30c2aaf9512618f24391631e1387ccbaa9043f4875bb7582753",
+    "blind_png": "ba548ba684c58898ca03c3ad6cd93160efcb5ac578da7cf7afd62733d9f1a695"
+  },
+  "I1775844B": {
+    "slot": "S2-3",
+    "original": "99ec9b2ba957f34f3eda90552bb81988987dd92419d983fa46b151060d11eb52",
+    "rgb": "cffaccc8f1e49a4bcf0807926494fe9bf62b660228865208c49aa754d493a8a5",
+    "blind_png": "c5fb31880302034fcf22defc5bd95490f6d83ef0ba251061f76853aafeddb0dc"
+  },
+  "I6256AE24": {
+    "slot": "S0-3",
+    "original": "10cf6727d773caf434d6a477d23e2053e1c2c1be06c0c1cfe9e6884f655b9ac4",
+    "rgb": "994a6e6b18c9153296abf934bc6348b5165b6f87be6640e9c27e9198c5406369",
+    "blind_png": "12874adbc4abdd7d099e7f8933c737a510443a707b5140591016a0b11b7a988b"
+  },
+  "I4C607200": {
+    "slot": "G-w10-3",
+    "original": "0d6f13b49e4680f18ae3e12fe9689d0dc1a537dbd40dbbb2248c47b4b6afd14d",
+    "rgb": "c3df5de0952ca21dfa109cd45f00b28912ad2acd966c0d165d76ee6a505bd68f",
+    "blind_png": "425e83d306a8df741a63049ef510d342068e7a931205f0cc1f4aeefc5e9c41fb"
+  },
+  "IDEA84F3F": {
+    "slot": "S0-1",
+    "original": "6a881d3d185cd78eadb7d51e746a5000c113d1cfc21ee9b9fbf8ee6159802044",
+    "rgb": "3dc22c56148b2381907b9de953de11132b3b2f8f3e78b6841ef30f0fa4df7426",
+    "blind_png": "2be7ed0778c82ad42aab56f5e36ed8fa6c7216b76356960ed2ea9e57f3d7e20a"
+  },
+  "I296C13E5": {
+    "slot": "S3-2",
+    "original": "7344e133b4db40be561e19bdd054cf4f360ec778a231e30b446705060b7249b4",
+    "rgb": "d50251f6966b433efae1e8a2fc1445eb1ae76ef82c25d40f9281612169d14b00",
+    "blind_png": "b6eaf4cdd2500610212fe30fe8e12f2a897c94d2d535e9a91c6a98cb7b1d3e3e"
+  },
+  "I0ED5718C": {
+    "slot": "S3-1",
+    "original": "462b4833344539faebbbd0fc0e2a133e16e14533501c330082ce948ce59d142b",
+    "rgb": "54bd497fec5d5517dc50b153e731d29adfd1fbcf93449069e303c82ff932015a",
+    "blind_png": "5f4cb7e3430e99117ff7c6faa49e6ced66a79c2a194df5c59f777030b7e0e3b3"
+  },
+  "I2D8A1590": {
+    "slot": "S4-2",
+    "original": "ee074820ad902b91eecf8a83bbf5e9efc5948580f833cd922500d93abff856cb",
+    "rgb": "f7bd249cf43e53d59bb61ad1df6ef3c0c3ac5a138ba2b11e5e9d80d22794a2e2",
+    "blind_png": "0fe4f009502b9e9a4bf8acc460e359fd2825250b6dd767972276b633c4feb3bc"
+  },
+  "I96EB821E": {
+    "slot": "S5-3",
+    "original": "b562598a3d5a3ceab09b8adea21d281a0212c62508beaed87135fb98482d82e6",
+    "rgb": "41b471683e804f2f41dee03cac607345823e841fdd975bd2822aab856709b337",
+    "blind_png": "5ffbf9c1f5711894fac782d69ba768a3359433aa1b5ff00b3339a13838e8212b"
+  },
+  "I094F69A4": {
+    "slot": "G-w20-2",
+    "original": "eda6b355a4327f24babbca69c3ef5b869372ad55dc23ed8569a22d2270379af3",
+    "rgb": "035c36d133a238835769ccfc3084bfacf6516b515479cd55d553074f8b161cfe",
+    "blind_png": "ae1373b14d8e8c90482aa9531bd874d4fa01ec0b7a64963a631d36a5189a06a3"
+  },
+  "I1CEB82E6": {
+    "slot": "S4-1",
+    "original": "55df5489ddc34b1d9d47286f2bc69b83a461cfe33ca83dfecd5336f599c0d3e6",
+    "rgb": "1a9b6fe6c34b43c02518bf319aca837349dcde4634c0407548c276acfe9a0e2a",
+    "blind_png": "4b8813e2c2729877e4edec6b8d8795ea1ad1eb8f12e1e95769b73fe7512ba23e"
+  },
+  "I4549D45B": {
+    "slot": "G-w15-2",
+    "original": "22c79c984c6aebb5f8ee3288827fa43e8f08eb6793f215d28c504ad0fbb27fd5",
+    "rgb": "79c188139a8063cbfd5ce77bd5a965bf24cce5854cb8b00bc9eb7cccd674be02",
+    "blind_png": "d834ad2c82ee97b58eea19abdfa575a6e0cf1a46a00893aec061140baa5cf3bb"
+  },
+  "IB7B8613C": {
+    "slot": "G-w20-1",
+    "original": "451ac49fa24dee5b8b9f2757409a3342cc7aa1eddd05a052c4ded09e80c97dc3",
+    "rgb": "56a5a7257c8b3ac5d56de85dca9c8d29bd4848da2cb78cfa76e426374adbb879",
+    "blind_png": "d415f21d6a063a4528b38d6e814449e16c2a0e3b829013c3c0a48ec31ff47b55"
+  }
+}
