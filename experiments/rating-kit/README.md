@@ -5,7 +5,8 @@
 同一 `build_pack.py sources.json new-pack` 入口支持下列两种表。只分发 `participant`，保管 `researcher-key.json`。按 [11 月 12 日规格](../../docs/protocols/semantic-to-E3-spec.md)先冻结样本来源，再打包。每个输入均需 `key, path, sha256, evidence, block`，最外层填写 `mode, freezeReference, images`。
 
 - `r1` 接收 16 个已核实的位置（含两张复用的 E1），均标 `block: render`。逐图保留产品感、相机、臂根三道三级题的原判。汇总输出逐项中位数；正式格内汇总及并列按 R1 冻结文件执行。
-- `e5-semantic` 是 X12 评议的词对附表。先做 `block: product` 的实拍参考，再做 `block: final` 的锁定终稿。真实产品须登记 `permission`，少于 8 张时登记 `product_shortfall`。用 `terms_file` 指向作者已冻结的 JSON，内含 `version, freezeReference, pairs`，每对含 `id, left, right`。左右端逐评者逐题随机，同时保留呈现次序、屏幕原判、换算为固定方向的读数和“看不出”。每组单独报告。尚无冻结词对和锁定终稿。
+- `e5-semantic` 是 X12 评议的词对附表。先做 `block: product` 的实拍参考，再做 `block: final` 的锁定终稿。真实产品须登记 `permission`，少于 8 张时登记 `product_shortfall`。用 `terms_file` 指向作者已冻结的 JSON，内含 `version, freezeReference, pairs`，每对含 `id, left, right`。左右端逐评者逐题随机，同时保留呈现次序、屏幕原判、换算为固定方向的读数和“看不出”。每组单独报告。
+  11 月 14 日新增分阶段发包：计划可填 `phase: product` 分发实拍，或 `phase: final` 分发已锁定终稿。省略仍按原合包处理。两阶段沿用同一份词对原件；研究者核对两包私钥表中的 `termsFileSha256`，分开报告人数与缺项。实拍许可、少于八个型号的缺口说明和终稿来源仍须登记。
 
 用 `python summarize.py researcher-key.json 答卷.json` 复核答卷身份、覆盖和换向。工具不发送问卷或生图。参与者曝光史随答卷保留，独立人数在招募台账核实。
 

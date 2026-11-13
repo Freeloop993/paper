@@ -41,9 +41,16 @@ def build_instrument(plan_path, destination, plan):
         terms = load_terms(plan_path.parent / plan["terms_file"])
         products = [r for r in items if r["block"] == "product"]
         final = [r for r in items if r["block"] == "final"]
-        if len(products)+len(final) != len(items) or not final or len(products)>10:
-            raise ValueError("Supply at most ten real product photos and the locked final designs")
-        if len(products)<8 and not plan.get("product_shortfall"):
+        phase = plan.get("phase", "combined")
+        if phase not in ("combined", "product", "final"):
+            raise ValueError("Select combined, product or final as the E5 phase")
+        if len(products)+len(final) != len(items) or len(products)>10:
+            raise ValueError("Expected product photos or locked final designs; at most ten product photos")
+        if phase == "combined" and not final:
+            raise ValueError("A combined pack requires locked final designs")
+        if phase != "combined" and any(r["block"] != phase for r in items):
+            raise ValueError("Single-phase packs must contain only the declared image block")
+        if phase != "final" and len(products)<8 and not plan.get("product_shortfall"):
             raise ValueError("Record the actual product-photo shortfall")
     else:
         raise ValueError("Unknown instrument")
@@ -88,4 +95,7 @@ def build_instrument(plan_path, destination, plan):
     key = {**manifest,"images":private_rows,"freezeReference":plan["freezeReference"],
            "plan_sha256":hashlib.sha256(plan_path.read_bytes()).hexdigest(),"termsFreeze":terms and terms["freezeReference"],
            "productShortfall":plan.get("product_shortfall")}
+    if mode == "e5-semantic":
+        key["phase"] = phase
+        key["termsFileSha256"] = hashlib.sha256((plan_path.parent / plan["terms_file"]).read_bytes()).hexdigest()
     (destination/"researcher-key.json").write_text(json.dumps(key,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
