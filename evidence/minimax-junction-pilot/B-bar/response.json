@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 11.5,
+  "model": null,
+  "request_id": null,
+  "created": 1794542249,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8839,
+    "input_tokens": 4743,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2693,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The X-shaped geometric layout with four circular endpoints at 45-degree diagonals in <Picture 1> is <Subject 1>. The target image replaces the flat schematic diagram of <Picture 1> with a photorealistic orthographic overhead industrial design photograph of a daily-carry aerial camera quadcopter aligned to <Subject 1>. <Subject 1> supplies the exact spatial placement and diagonal geometry transferred to the quadcopter's four motor hubs, central intersection, and sweeping arms. Seen from a true 90-degree top-down view with its nose pointing at twelve o'clock, the full unlettered aircraft features a slender spindle-shaped fuselage with a 2.6:1 length-to-width ratio finished in a satin warm-grey molded shell. Twin longitudinal ridges run along the body, cradling a slim flush camera hood at the nose whose tapered U-shaped rim is visible from above. Four matte graphite composite arms originate as long blade-like roots running alongside the fuselage before sweeping outward in one uninterrupted taper along the 45-degree diagonals to terminate precisely at the four dark grey circular endpoint locations of <Subject 1>, forming a square hub layout with opposite hubs spaced 250 mm apart. Mounted atop each hub is a stationary propeller consisting of a single balanced pair of opposite equal charcoal blades spanning 125 mm tip-to-tip. Soft 5500 K sidelight illuminates the scene against a pale seamless background, creating smooth highlights across the curved shell and defined contact shadows beneath the airframe and rotor blades.",
+  "error": null
+}

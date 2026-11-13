@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 11.8,
+  "answer": {
+    "created": 1794541410,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The X-shaped airframe skeleton of four diagonal bars and four circular motor mounts in <Picture 1> is <Subject 1>. The light neutral background in <Picture 1> is <Subject 2>. The target image is a strict orthographic top-view industrial design rendering of a compact quadcopter for everyday aerial photography, built around the exact layout and scale of <Subject 1> against <Subject 2>. <Subject 1> is partially preserved; its exact framing, scale, diagonal bar trajectories, and the positions of the four circular motor mounts remain fixed, while the flat grey plan shapes are replaced by three-dimensional dark graphite arms and motor assemblies. <Subject 2> is fully preserved. At the center of <Subject 1>, a chamfered rectangular fuselage with a matte light grey shell is oriented vertically with its nose toward the top edge, measuring about 1.6 times as long as wide. The top shell features crisp panel lines dividing it into distinct sections and two symmetrical groups of recessed cooling slots, all completely free of text, logos, or markings. Each of the four diagonal bars of <Subject 1> becomes a sleek dark graphite arm that connects to the central body via a visible clamp block at each corner, showing a clear mechanical step and joint line where the separate member meets the chassis. At the exact circular mount locations of <Subject 1>, cylindrical dark graphite motors hold unfolded two-blade propellers in dark graphite, with both blades on each rotor having identical length and clean aerodynamic profiles. Extending from the top end of the fuselage toward the upper edge is a separate forward-facing camera pod module, narrower than the main body and separated from the front face by a distinct gap line; because the camera lens points straight ahead along the flight axis, only the sculpted matte light grey top housing of the pod is visible from directly above. Soft, even studio lighting illuminates the assembly from above, casting subtle contact shadows and smooth tonal gradients across the chamfered edges, clamp joints, and curved shells to convey solid three-dimensional volume.",
+        "sha256": "56f4026d057450b43ed13f95b4bf215b1905ecb05f7e9e8683d2c4675816c3d3"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 10150,
+      "input_tokens": 6054,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 4004,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745ba573cfd415b0a3b5604d3b2fc97"
+  }
+}

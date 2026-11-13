@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 16.8,
+  "model": null,
+  "request_id": null,
+  "created": 1794542725,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 16897,
+    "input_tokens": 12801,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4093,
+      "image_tokens": 8708
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The square X-shaped layout with four dark circular endpoint markers at 45-degree diagonals in <Picture 1> is <Subject 1>. The opaque dark-grey rounded optical pod crown and its flanking side supports in <Picture 2> are <Subject 2>. The target image is an orthographic 90-degree overhead photorealistic industrial design photograph of a daily-carry aerial camera quadcopter on a pale seamless background, aligned to the motor positions of <Subject 1> and incorporating a forward optical carriage modeled after <Subject 2>. <Subject 1> supplies the exact spatial placement and diagonal geometry transferred to the four motors and arms of the quadcopter. <Subject 2> serves as a weak reference for the appearance of the forward optical module's opaque crown and housing; its matte charcoal finish and contoured cap shape are adapted into a slim graphite optical carriage integrated into the nose of the new airframe. Seen from directly above with the nose pointing at twelve o'clock, the full unlettered aircraft features a slender spindle body with a 2.6:1 length-to-width ratio wrapped in a satin warm-grey molded shell. Two long dorsal rails run along the fuselage and converge at twelve o'clock, flanking a shallow front scoop that exposes the rear crown and side clearances of the forward optical carriage derived from <Subject 2>, while its glass lens faces forward out of view. The module sits at the tip of a narrow projecting spine, with a long teardrop fairing running aft from its crown, separated from two parallel body shoulders by twin fine channels. Four stationary propellers, each formed as a single balanced pair of opposite equal charcoal blades measuring 125 mm tip to tip, sit centered over the four endpoint locations of <Subject 1>. Long blade-like arm roots run alongside the fuselage before sweeping diagonally outward in one uninterrupted taper into graphite composite arms positioned at 45 degrees to the nose axis, placing opposite hubs 250 mm apart. Soft 5500 K sidelighting casts defined contact shadows across the recessed channels, rail edges, and pale background.",
+  "error": null
+}

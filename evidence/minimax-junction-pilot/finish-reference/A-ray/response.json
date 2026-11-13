@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 14.27,
+  "model": null,
+  "request_id": null,
+  "created": 1794542365,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 12881,
+    "input_tokens": 8785,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3021,
+      "image_tokens": 5764
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The square X-shaped layout of four diagonal lines and circular endpoint markers in <Picture 1> is <Subject 1>. The matte satin warm-grey molded shell finish, graphite composite arm texture, and smooth shoulder-to-arm highlight transitions on the central hub assembly in <Picture 2> are <Subject 2>. The target image is a photorealistic orthographic 90-degree overhead industrial design photograph of a complete, unlettered daily-carry aerial camera quadcopter centered against a pale seamless background, with its four motor hubs aligned to <Subject 1> and its surface materials and shoulder highlights guided by <Subject 2>. <Subject 1> supplies the exact spatial placement and 45-degree diagonal geometry transferred to the quadcopter's four motor hubs and arms. <Subject 2> serves as an attribute transfer reference for the surface finishes and specular shoulder transitions applied to the new quadcopter body and arms. Viewed from directly above with the nose pointing at twelve o'clock, the aircraft features a pebble-shaped central body with a 1.6:1 length-to-width ratio and a square hub layout where opposite motors sit 250 mm apart. At the rounded nose, two sculpted shell cheeks wrap around a recessed forward-camera pod so that only a narrow crescent of its dark crown peeks between them. Four stationary arms extend outward at 45 degrees from the central body toward the four endpoints of <Subject 1>, each growing from a broad radiused shoulder where the upper warm-grey satin skin sweeps smoothly into the first third of the tapered graphite composite arm. Each motor mount terminates in a stationary charcoal propeller consisting of a single balanced pair of opposite equal blades spanning 125 mm tip to tip. Soft 5500 K sidelight illuminates the full aircraft within the frame, creating crisp specular highlights along the radiused shoulders and defined contact shadows across the pale seamless background.",
+  "error": null
+}

@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 12.44,
+  "model": null,
+  "request_id": null,
+  "created": 1794542202,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10216,
+    "input_tokens": 6120,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4070,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four circular endpoint markers at the corners of the X-shaped diagram in <Picture 1> are <Subject 1>. The intersecting diagonal lines connecting the endpoints in <Picture 1> are <Subject 2>. The target image is a photorealistic, orthographic 90-degree overhead industrial design photograph of a daily-carry aerial camera quadcopter positioned with its nose pointing toward twelve o'clock, replacing the flat schematic diagram with a physical aircraft whose four motors align with <Subject 1> and whose arms follow <Subject 2>. <Subject 1> supplies the exact spatial positions transferred to the four motor hubs of the quadcopter. <Subject 2> serves as a weak structural reference for the placement and 45-degree diagonal orientation of the quadcopter's four arms relative to the central body axis. The full unlettered aircraft sits centered within the frame against a pale seamless background, oriented vertically along the twelve-to-six o'clock axis so that opposite motor hubs sit 250 mm apart across a square hub layout aligned with <Subject 1>. At the top rounded nose (twelve o'clock), the pebble-shaped central fuselage features a 1.6:1 length-to-width ratio wrapped in a satin warm-grey molded shell; two sculpted shell cheeks curve around a recessed forward-camera pod at the front tip, leaving only a narrow crescent of the dark lens crown peeking between them. From the lower rear and mid-body radiused shoulders, four matte graphite composite arms extend outward along the diagonals of <Subject 2>, with the upper warm-grey skin sweeping smoothly into the first third of each arm before transitioning into the darker composite material. Each arm terminates precisely at one of the four locations defined by <Subject 1>, supporting a compact cylindrical motor housing topped with a stationary propeller. Each propeller consists of a single balanced pair of opposite equal blades with a 125 mm tip-to-tip span, crafted from smooth charcoal composite. Soft 5500 K sidelighting illuminates the scene from the side, creating gentle specular highlights along the curved satin warm-grey shell, subtle tonal separation on the graphite arms and charcoal blades, and crisp, defined contact shadows cast onto the pale surface beneath the aircraft.",
+  "error": null
+}

@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 15.95,
+  "model": null,
+  "request_id": null,
+  "created": 1794542758,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 16330,
+    "input_tokens": 12234,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3526,
+      "image_tokens": 8708
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark grey circular endpoint dots at the corners of the central X in <Picture 1> are <Subject 1>. The two intersecting thin diagonal lines connecting <Subject 1> in <Picture 1> are <Subject 2>. The pale off-white background shared across <Picture 1> and <Picture 2> is <Subject 3>. The compact bevelled graphite optical pod with a flat opaque crown, flanking side pivot supports, and surrounding light-grey nose housing in <Picture 2> is <Subject 4>. The target image is an orthographic 90-degree overhead industrial design photograph of a complete unlettered daily-carry quadcopter centered on <Subject 3>, using <Subject 1> as the exact motor locations along <Subject 2> and integrating <Subject 4> into the twelve o'clock nose. <Subject 1> is partially preserved; its four corner positions remain while each dot is replaced by a stationary motor hub and propeller assembly. <Subject 2> serves as a weak spatial reference for the quadcopter's geometry; its 45-degree diagonal orientation guides the four arms and square hub layout without keeping the literal thin lines. <Subject 3> is fully preserved. <Subject 4> is partially preserved; its top-down appearance, flat smoked-graphite crown, dual lateral pivot discs, and warm-grey molded shell aesthetic are retained and adapted to fit the twelve o'clock nose recess of the new quadcopter body. The aircraft has a compact bevelled satin warm-grey molded shell with a 1.6:1 length-to-width proportion, oriented with its nose pointing straight up at twelve o'clock and the full airframe inside the frame. At twelve o'clock, the adapted <Subject 4> sits flush within a close-fitting three-sided nose recess, bridged around the cheeks by a separate U-shaped metal carrier that leaves two visible lateral pivot discs and a fitted transverse parting seam behind it. Four dark graphite composite arms extend at 45 degrees from a square central hub layout toward <Subject 1>, with opposite hubs spaced 250 mm apart. Each arm seats flush into a recessed shoulder socket with one fitted collar, tight joints, and two banks of inset cooling slots. At each of the four <Subject 1> locations, a stationary charcoal propeller with a single balanced pair of opposite equal blades spans 125 mm tip to tip. Soft 5500 K sidelight casts defined contact shadows beneath the shell, carrier, arms, and blades.",
+  "error": null
+}

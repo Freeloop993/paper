@@ -1,0 +1,21 @@
+{
+  "endpoint": "/v1/images/edits",
+  "round": "R1",
+  "card": "C",
+  "change": "first run of the draft cards",
+  "body": {
+    "model": "MiniMax-H3-Image",
+    "n": 1,
+    "aspect_ratio": "1:1",
+    "area": "1K",
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "Industrial design rendering of a compact quadcopter for everyday carry-along aerial photography. Strict orthographic top view, looking straight down, nose toward the top edge, light neutral background. X layout, four motors, one fully unfolded two-blade propeller on each motor, both blades the same length. Fuselage: chamfered rectangular outline, about 1.6 times as long as wide. Arm roots: each arm is a separate member held by a visible clamp block at a corner of the body, with a clear step and joint line. Nose: the camera pod is a separate front module narrower than the body, with a visible gap line between pod and body. Top shell: at least four panel lines and two groups of cooling slots. A forward-facing camera sits under the nose with its lens pointing forward, so from above only the top of the camera pod shows. Matte light grey shell, dark graphite arms and propellers, no accent colour. Soft even studio light; shading shows the volume. No text, lines or markings. Picture 1 is a top-view plan of the airframe skeleton at the same scale and framing as the output image: four arms and four motor mounts. Keep every motor mount where it is in Picture 1 and run each arm along its bar; arm width and shape are free. The fuselage, the propellers and all other parts are not in the plan; design them from the description. Do not keep the flat grey shapes.",
+    "images": [
+      {
+        "file": "skeleton-light-wl1.0.png",
+        "sha256": "0bab7568a06d9c37188ea9f4aea950ca83cf8a6627150b0ae188ee3386217542"
+      }
+    ]
+  }
+}

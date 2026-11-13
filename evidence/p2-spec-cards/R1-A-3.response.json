@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 15.4,
+  "answer": {
+    "created": 1794541333,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The four dark grey circular motor mounts at the corners of the X-shaped layout in <Picture 1> are <Subject 1>. The light neutral background and centered framing in <Picture 1> are <Subject 2>. The target image is a strict orthographic top-view industrial design rendering of a compact quadcopter on <Subject 2>, replacing the flat diagonal bars from <Picture 1> with sculpted arms, a central pebble-shaped fuselage, and unfolded two-blade propellers while keeping <Subject 1> anchored in place. <Subject 1> is partially preserved; the exact positions, scale, and count of the four motor mounts remain unchanged, while their flat 2D appearance transforms into three-dimensional cylindrical dark graphite motor housings. <Subject 2> is fully preserved. Centered between the four mounts of <Subject 1> is a newly introduced matte light grey fuselage with a smooth, unbroken rounded pebble outline about 1.6 times as long as it is wide, widest at the mid-body and oriented with its nose toward the top edge. At the top nose end, the leading edge curves continuously over an internal forward-facing camera pod so that only the smooth upper shell of the pod is visible from above. The top surface features a single clean cover seam and no vents, text, lines, or markings. Four dark graphite arms extend outward along the exact diagonal paths previously occupied by the bars in <Picture 1>, emerging seamlessly from the matte light grey central shell through smooth continuous fillets without joint lines and tapering to connect flush with <Subject 1>. Mounted directly atop each mount of <Subject 1> is a fully unfolded, symmetrical two-blade dark graphite propeller with both blades of equal length, oriented cleanly across the arm axis. Soft, even studio lighting illuminates the scene from above, casting subtle gradients and contact shadows beneath the raised propellers, arms, and curved shell edges to convey realistic three-dimensional volume against <Subject 2>.",
+        "sha256": "0d6392de8d2d6638f931289c4af603f1effbad5f7fa91063f4d7cd11f2285132"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 10091,
+      "input_tokens": 5995,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3945,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745ba094d68f0d28a33be48edb735d3"
+  }
+}

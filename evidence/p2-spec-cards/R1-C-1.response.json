@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 13.4,
+  "answer": {
+    "created": 1794541384,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The light neutral background in <Picture 1> is <Subject 1>. The central intersection and four diagonal bars of the X-shaped skeleton plan in <Picture 1> are <Subject 2>. The four circular motor mounts at the ends of the bars in <Picture 1> are <Subject 3>. The target image shows a strict orthographic top-view industrial design rendering of a compact quadcopter on <Subject 1>, replacing the flat shapes of <Subject 2> and <Subject 3> with a three-dimensional matte light grey fuselage, dark graphite arms and propellers, and a front camera pod. <Subject 1> is fully preserved. <Subject 2> is partially preserved; its scale, framing, central position, and four diagonal arm trajectories remain, while the flat grey lines are replaced by sculpted dark graphite arms and a chamfered rectangular fuselage. <Subject 3> is partially preserved; the exact positions and scale of the four mounts remain, while the flat circles become three-dimensional motor housings topped with unfolded two-blade propellers. Centered over the intersection of <Subject 2> is a chamfered rectangular fuselage with a length-to-width ratio of approximately 1.6 to 1, oriented with its nose toward the top edge. At each corner of the body, a distinct clamp block with a clear step and joint line secures one of the four separate dark graphite arms running along the diagonals of <Subject 2> out to <Subject 3>. The matte light grey top shell features crisp panel seams forming at least four distinct panels and two symmetrical groups of recessed cooling slots, completely free of text, lines, or markings. Extending from the top end of the fuselage is a narrower, separate front module for the camera pod, separated from the main body by a visible gap line; because the forward-facing camera points toward the top edge, only the smooth top housing of the pod is visible. At each of the four locations of <Subject 3>, a cylindrical dark graphite motor mount supports a fully unfolded, symmetrical two-blade dark graphite propeller with both blades equal in length. Soft, even studio lighting casts subtle shading across the beveled edges, clamp blocks, and panel seams to convey volume without any accent colors.",
+        "sha256": "fe2851cbf220be86e0a216633a42d6172148a4b89c100fcc97e7c54b9d984763"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9420,
+      "input_tokens": 5324,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3274,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745ba3d60be820ec89075a5978a30ec"
+  }
+}

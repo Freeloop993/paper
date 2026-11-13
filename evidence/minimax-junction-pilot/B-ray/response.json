@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 12.66,
+  "model": null,
+  "request_id": null,
+  "created": 1794542214,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10160,
+    "input_tokens": 6064,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4014,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark circular endpoint dots at the corners of the X-shaped wireframe in <Picture 1> are <Subject 1>. The diagonal line segments connecting the center to <Subject 1> in <Picture 1> are <Subject 2>. The pale light-grey background in <Picture 1> is <Subject 3>. The target image is a photorealistic, strictly orthographic 90-degree overhead industrial design photograph of an unlettered daily-carry aerial camera quadcopter centered on <Subject 3>, with its four stationary motors positioned directly at <Subject 1> and its arms extending along <Subject 2>. <Subject 1> is partially preserved; the exact positions of the four points remain fixed as the motor locations, while the flat dots are replaced by physical quadcopter motors. <Subject 2> serves as a weak spatial reference for the arm geometry; the 45-degree diagonal angles and central hub intersection guide the layout, while the thin lines become solid tapered arms. <Subject 3> is partially preserved; its pale seamless tone remains while gaining soft contact shadows beneath the aircraft. Seen from directly above with the nose pointing at twelve o'clock, the quadcopter features a slender spindle-shaped central body with a 2.6:1 length-to-width ratio finished in a satin warm-grey molded shell. Twin longitudinal ridges run along the upper deck to cradle a slim, flush-mounted camera hood at the nose, whose tapered U-shaped rim is visible from above. From the square central hub layout, long blade-like arm roots emerge alongside the fuselage and sweep diagonally outward at 45 degrees in one uninterrupted taper into matte graphite composite arms aligned with <Subject 2>. At the four endpoints of <Subject 1>, opposite hubs sit 250 mm apart across each axis, mounting compact cylindrical brushless motors topped with stationary charcoal propellers. Each propeller consists of a single balanced pair of opposite equal blades spanning 125 mm tip to tip. Soft 5500 K sidelighting illuminates the entire aircraft within the frame, casting subtle highlights along the curved shell and defined contact shadows onto <Subject 3>.",
+  "error": null
+}

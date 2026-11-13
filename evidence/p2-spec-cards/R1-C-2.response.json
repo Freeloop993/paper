@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 13.4,
+  "answer": {
+    "created": 1794541398,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The light neutral background in <Picture 1> is <Subject 1>. The square framing and centered scale of the diagram in <Picture 1> are <Subject 2>. The X-shaped structural layout of four diagonal bars and four circular motor mounts in <Picture 1> is <Subject 3>. The target image transforms the flat schematic into a strict orthographic top-view industrial design rendering of a compact quadcopter, keeping the exact positions of <Subject 3> while replacing the flat grey shapes with a three-dimensional matte light-grey fuselage, dark-graphite arms and propellers, and soft studio shading against <Subject 1> within <Subject 2>. <Subject 1> is fully preserved. <Subject 2> is fully preserved. <Subject 3> is partially preserved; the exact positions of the four motor mounts and the diagonal trajectories of the four arms remain, while the flat grey bars and circles are replaced by sculpted dark-graphite carbon-fiber or polymer arms and cylindrical brushless motor housings. The central body features a chamfered rectangular outline oriented vertically with its nose toward the top edge, measuring approximately 1.6 times as long as it is wide, finished in a smooth matte light-grey shell free of any text, logos, lines, or markings. At each of the four corners of this central body, a distinct mechanical clamp block holds an arm root, showing a clear step and joint line where the dark-graphite arm attaches and extends outward along the exact path of <Subject 3> to terminate at the original motor mount locations. Each motor mount is rendered as a realistic dark-graphite cylindrical motor bell with subtle metallic sheen. Mounted atop all four motors are fully unfolded two-blade propellers in matching dark graphite, with both blades on each rotor having identical length and streamlined airfoil geometry. Attached to the front (top) end of the main body is a separate forward-facing camera pod module that is narrower than the main fuselage, separated from the main shell by a crisp recessed gap line; because the camera lens points straight forward under the nose, only the contoured matte light-grey top housing of the gimbal pod is visible from above. The top shell of the main fuselage is articulated with at least four clean panel seam lines dividing the upper cover into sections, along with two symmetrical groups of linear cooling slots cut into the surface near the mid-body. Soft, even overhead studio lighting illuminates the assembly, casting gentle contact shadows beneath the propeller blades, clamp blocks, and chamfered edges onto the matte surfaces and <Subject 1>, clearly defining the volumetric form.",
+        "sha256": "09a6789c3ead5414589bc415a2897eef7a74d8465d3a3ff702dbd88121f066ad"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9642,
+      "input_tokens": 5546,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3496,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745ba4a64c2cfda8abe588b4f59298f"
+  }
+}

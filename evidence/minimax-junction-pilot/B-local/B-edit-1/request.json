@@ -1,0 +1,18 @@
+{
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "body": {
+    "model": "MiniMax-H3-Image",
+    "size": "1024x1024",
+    "n": 1,
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "Edit only the upper nose of this everyday aerial-camera quadcopter. Fit one shallow, elongated teardrop camera fairing along the dorsal centerline, one third of body length. The front is an open-forward hood over the existing charcoal camera crown; two low silver cheeks taper rearward into a single narrow tail on the upper shell. Show the fairing by paired fine side reveals and a soft rim highlight; the forward optical face stays occluded from overhead. Preserve the supplied slender body, long swept arm roots, motor locations, four balanced two-blade propellers, scale, grey materials, lighting and orthographic top view.",
+    "images": [
+      {
+        "file": "evidence/minimax-junction-pilot/pod-reference/B-ray/original.png",
+        "sha256": "c57c917187d2fc4473992736daeb77cc484cd15126a95cc35f0c7fa51a8a4557"
+      }
+    ]
+  },
+  "submitted_utc": "2026-11-13T04:06:46.252351+00:00"
+}

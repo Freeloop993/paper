@@ -1,0 +1,20 @@
+[
+  {
+    "id": "B-ray",
+    "guide": "experiments/minimax-junction-pilot/points-rays.png",
+    "sha256": "775ca2be175a2333a899e52985620de0f4c68516a74afd9705c4873fbe4e6339",
+    "prompt": "Photorealistic industrial design photograph of a daily-carry aerial camera quadcopter. Orthographic 90-degree overhead, nose at twelve o'clock. True X, four motors, arms at 45 degrees to the nose axis, square hub layout, opposite hubs 250 mm apart. Four stationary propellers, each a single balanced pair of opposite equal blades, 125 mm tip to tip. Slender spindle body, 2.6:1. Two long dorsal rails converge at twelve o'clock to flank a slim graphite optical carriage. A shallow scoop exposes its rear crown and side clearances; the glass looks over the front edge, out of view. Long blade-like arm roots run alongside the body then sweep diagonally outward in one uninterrupted taper. Satin warm-grey molded shell, graphite composite arms, charcoal blades. Soft 5500 K sidelight, defined contact shadows, pale seamless background. Use the four reference endpoints for motor locations. Unlettered product, full aircraft in frame."
+  },
+  {
+    "id": "A-ray",
+    "guide": "experiments/minimax-junction-pilot/points-rays.png",
+    "sha256": "775ca2be175a2333a899e52985620de0f4c68516a74afd9705c4873fbe4e6339",
+    "prompt": "Photorealistic industrial design photograph of a daily-carry aerial camera quadcopter. Orthographic 90-degree overhead, nose at twelve o'clock. True X, four motors, arms at 45 degrees to the nose axis, square hub layout, opposite hubs 250 mm apart. Four stationary propellers, each a single balanced pair of opposite equal blades, 125 mm tip to tip. Pebble body, 1.6:1. At twelve o'clock the pale nose forms a shallow scalloped visor over a recessed charcoal optical housing. Its small smoked crown and two side reveals are visible from above; the glass aperture is concealed on the vertical forward face. Each arm grows from a broad radiused shoulder, the upper skin sweeping into the first third of the arm. Satin warm-grey molded shell, graphite composite arms, charcoal blades. Soft 5500 K sidelight, defined contact shadows, pale seamless background. Use the four reference endpoints for motor locations. Unlettered product, full aircraft in frame."
+  },
+  {
+    "id": "C-ray",
+    "guide": "experiments/minimax-junction-pilot/points-rays.png",
+    "sha256": "775ca2be175a2333a899e52985620de0f4c68516a74afd9705c4873fbe4e6339",
+    "prompt": "Photorealistic industrial design photograph of a daily-carry aerial camera quadcopter. Orthographic 90-degree overhead, nose at twelve o'clock. True X, four motors, arms at 45 degrees to the nose axis, square hub layout, opposite hubs 250 mm apart. Four stationary propellers, each a single balanced pair of opposite equal blades, 125 mm tip to tip. Compact bevelled body, 1.6:1. At twelve o'clock a compact graphite camera with a flat smoked crown sits in a close-fitting three-sided nose recess. Two small side pivots attach it to the shell; the lens looks ahead through the vertical front face, hidden from this overhead view. Four separate arms seat flush in recessed shoulder sockets, each with one fitted collar. Tight joints and two banks of inset cooling slots. Satin warm-grey molded shell, graphite composite arms, charcoal blades. Soft 5500 K sidelight, defined contact shadows, pale seamless background. Use the four reference endpoints for motor locations. Unlettered product, full aircraft in frame."
+  }
+]

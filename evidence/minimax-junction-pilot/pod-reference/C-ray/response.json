@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 15.83,
+  "model": null,
+  "request_id": null,
+  "created": 1794542636,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 16930,
+    "input_tokens": 12834,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4126,
+      "image_tokens": 8708
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark circular endpoint markers arranged in an X pattern at 45-degree diagonals on the light grey background in <Picture 1> are <Subject 1>. The matte graphite optical pod crown with a rounded rectangular top and flanking side pivot supports in <Picture 2> is <Subject 2>. The target image is a photorealistic, orthographic 90-degree overhead industrial design photograph of a compact daily-carry aerial camera quadcopter centered on a pale seamless background, using <Subject 1> to mark the four motor hub locations and adapting <Subject 2> as the forward nose-mounted optical pod. <Subject 1> supplies the exact spatial placement transferred to the four motor hubs of the quadcopter. <Subject 2> serves as a weak reference for the appearance and housing structure of the forward optical pod, whose proportions and surrounding shell integration are adapted to fit the twelve o'clock nose of the new aircraft. Seen from directly above with its nose pointing at twelve o'clock, the complete unlettered quadcopter features a compact bevelled satin warm-grey molded central body with a 1.6:1 length-to-width ratio and a square hub layout where opposite motor hubs align with <Subject 1> at 250 mm spacing. Four separate matte graphite composite arms extend outward along the 45-degree diagonals toward <Subject 1>, each seating flush into a recessed shoulder socket on the main shell via a single fitted collar with tight joints and two banks of inset cooling slots. At each hub position of <Subject 1> sits a stationary propeller consisting of a single balanced pair of opposite equal charcoal blades spanning 125 mm tip to tip. At the twelve o'clock nose, the opaque flat-topped smoked graphite crown inspired by <Subject 2> rests inside a close-fitting three-sided recess in the warm-grey shell, attached by two small dark side pivots so that its vertical front lens face remains hidden from this direct overhead perspective. Soft 5500 K sidelighting illuminates the scene, casting defined contact shadows beneath the bevelled shell edges, arm collars, and rotor blades against the clean pale studio surface.",
+  "error": null
+}

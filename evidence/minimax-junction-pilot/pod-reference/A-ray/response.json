@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 16.52,
+  "model": null,
+  "request_id": null,
+  "created": 1794542620,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 17020,
+    "input_tokens": 12924,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4216,
+      "image_tokens": 8708
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark circular endpoint dots and their intersecting diagonal line layout in <Picture 1> are <Subject 1>. The pale background in <Picture 1> is <Subject 2>. The recessed charcoal optical pod with a rounded smoked crown, two side supports, and a surrounding pale scalloped visor seen from above in <Picture 2> is <Subject 3>. The target image is an orthographic 90-degree overhead photorealistic industrial design photograph of a daily-carry aerial camera quadcopter centered on <Subject 2>, using <Subject 1> to place the four motors and incorporating <Subject 3> at the twelve o'clock nose. <Subject 1> supplies the exact motor locations and X-arm geometry transferred to the quadcopter's four motors and arms. <Subject 2> is partially preserved; its uniform pale tone remains while it gains soft contact shadows beneath the aircraft. <Subject 3> is partially preserved; its top-down appearance, opaque smoked crown, side reveals, and scalloped pale visor remain while it is scaled and integrated into the full nose of the quadcopter body. The unlettered quadcopter has a pebble-shaped satin warm-grey molded shell with a 1.6:1 length-to-width ratio, oriented with its nose pointing straight up at twelve o'clock. At the twelve o'clock nose, <Subject 3> sits recessed inside a shallow scalloped pale visor, showing only the small smoked crown and two dark side reveals from directly above while the glass aperture stays hidden on the vertical forward face. From the central square hub layout, four graphite composite arms extend outward at 45-degree angles to the nose axis, terminating precisely at the four positions of <Subject 1> where opposite hubs sit 250 mm apart. Each arm grows smoothly from a broad radiused shoulder as the upper warm-grey skin sweeps seamlessly into the first third of the arm before transitioning into the matte graphite composite shaft. Mounted at the four endpoints of <Subject 1> are four stationary propellers, each formed as a single balanced pair of opposite equal charcoal blades spanning 125 mm tip to tip. Soft 5500 K sidelight illuminates the entire aircraft within the frame, casting defined contact shadows onto <Subject 2>.",
+  "error": null
+}

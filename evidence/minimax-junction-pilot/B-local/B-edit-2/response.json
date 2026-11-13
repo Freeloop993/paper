@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 12.73,
+  "model": null,
+  "request_id": null,
+  "created": 1794542833,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9577,
+    "input_tokens": 5481,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3431,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The quadcopter in <Picture 1> is <Subject 1>. The plain light-grey background and orthographic top-down lighting setup in <Picture 1> are <Subject 2>. The target image shows <Subject 1> against <Subject 2>, modified with a shallow, elongated teardrop camera fairing fitted along the dorsal centerline of its upper nose. <Subject 1> is partially preserved; its slender body shell, long swept arm roots, motor locations, four balanced two-blade propellers, scale, grey materials, and orthographic top view remain unchanged, while its upper nose region gains the new camera fairing over the front optical assembly. <Subject 2> is fully preserved. Along the dorsal centerline of the nose on <Subject 1>, spanning approximately one-third of the main body length, the new shallow teardrop fairing forms an open-forward hood that bridges across the existing charcoal camera crown without covering the forward optical face from overhead. Two low, smoothly contoured silver cheeks flank the recessed charcoal crown at the front opening and taper rearward to merge seamlessly into a single narrow tail ridge running down the upper shell. The integration of the fairing is defined by paired fine side reveals where the tapered silver cheeks meet the matte grey upper casing, accompanied by a soft rim highlight along the raised edges consistent with the illumination of <Subject 2>.",
+  "error": null
+}

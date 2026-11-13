@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 14.1,
+  "answer": {
+    "created": 1794541318,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The light neutral background in <Picture 1> is <Subject 1>. The central X-shaped airframe skeleton plan consisting of four diagonal bars and four circular motor mounts at the tips in <Picture 1> is <Subject 2>. The target image is a strict orthographic top-view industrial design rendering of a compact quadcopter drone centered on <Subject 1>, built around the exact layout and scale of <Subject 2> while replacing its flat grey shapes with three-dimensional fuselage, arm, motor, and propeller components. <Subject 1> is fully preserved. <Subject 2> is partially preserved; the exact positions of the four circular motor mounts, the diagonal paths of the four bars, and the overall scale and framing are retained, while the flat two-dimensional grey bars and circles are replaced by sculpted dark graphite arms, cylindrical motor housings, and unfolded two-blade propellers. The newly introduced central fuselage features a smooth, rounded pebble outline approximately 1.6 times as long as it is wide, widest at mid-body and defined by one unbroken outer curve with its nose oriented toward the top edge. The top shell is rendered in matte light grey with a single clean cover seam and no vents, text, lines, or markings. At the front, a forward-facing camera pod sits recessed inside the nose contour beneath a continuous rounded leading edge, showing only its smooth upper housing from above. Each of the four arms follows the exact diagonal trajectory of <Subject 2> in dark graphite, emerging seamlessly from the fuselage shell via a continuous fillet without any joint line and terminating at the exact mount locations of <Subject 2>. Mounted vertically on each of the four dark graphite motor hubs is a fully unfolded, symmetrical two-blade propeller in matching dark graphite, with both blades equal in length. Soft, even studio lighting illuminates the scene from above, casting subtle gradients across the curved matte light grey shell and dark graphite arms and rotors to convey three-dimensional volume.",
+        "sha256": "9b6c55293e4ce112790b9d3487286b3566fd4a2b21ddd7abc5200c66f54ec71c"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 10095,
+      "input_tokens": 5999,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3949,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745b9fb8919a2b2ae0ff4cd6c1775d6"
+  }
+}

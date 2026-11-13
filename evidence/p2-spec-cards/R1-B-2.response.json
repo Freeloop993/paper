@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 12.8,
+  "answer": {
+    "created": 1794541359,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The four diagonal bars forming an X-shaped skeleton in <Picture 1> are <Subject 1>. The four circular motor mounts at the ends of the bars in <Picture 1> are <Subject 2>. The light neutral background and centered top-down framing in <Picture 1> are <Subject 3>. The target image transforms the flat schematic plan into a realistic industrial design rendering of a compact quadcopter seen in a strict orthographic top view, keeping the exact positions of <Subject 2> and the trajectories of <Subject 1> while replacing the flat grey shapes with three-dimensional fuselage, arms, motors, and propellers. <Subject 1> is partially preserved; its four diagonal paths and scale remain, while the flat medium-grey bars become slender dark-graphite structural arms that merge smoothly into the central body. <Subject 2> is partially preserved; the exact positions and spacing of the four circular nodes remain, while the flat dark-grey circles become three-dimensional cylindrical motor bells at the tips of the arms. <Subject 3> is fully preserved. At the center where <Subject 1> intersects, a new spindle-shaped fuselage oriented vertically with its nose pointing toward the top edge spans about 2.6 times as long as it is wide, measuring narrower than one-quarter of the distance between <Subject 2>. The fuselage features a smooth matte light-grey top shell divided by a single clean lengthwise seam along its centerline, free of vents, text, lines, or markings. Toward the top edge, the fuselage narrows to a small rounded tip housing an integrated forward-facing camera pod inside the outline, so only the smooth upper casing of the pod is visible from directly above. The four dark-graphite arms of <Subject 1> extend outward from <Subject 2> and taper seamlessly into the left and right sides of the fuselage through long, smooth blends without joint lines. Mounted directly atop each of <Subject 2> is a newly added, fully unfolded two-blade propeller in matching dark graphite, with both blades equal in length and swept back slightly in a clean aerodynamic profile. Soft, even studio lighting illuminates the assembly from above, creating gentle gradients and subtle contact shadows across the curved matte light-grey shell, tapered arm roots, cylindrical motors, and flat propeller blades to clearly define their three-dimensional volume.",
+        "sha256": "46bf22cf6eeb6a3fe8b825dc803f4e189eefa885339bff218916c974ef2d57ac"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9459,
+      "input_tokens": 5363,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3313,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745ba24b5bd39eb6c852af2005162e0"
+  }
+}
