@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 8.0,
+  "answer": {
+    "created": 1794536386,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "An 8K resolution, photorealistic industrial design rendering of a quadcopter with an X-shaped layout, 30cm rotor-to-rotor distance, 1:1 arm span ratio, 45° rotor angle, faceted fuselage, 80cm wing curvature radius, 30° fuselage edge angle, foldable arms, carbon fiber frame, ABS propellers with nano-coating, anodized aluminum honeycomb grille, cold grey color scheme, blue LED light band, reinforced motor covers, modular quick-release connectors, and a GPS antenna discreetly integrated into the top surface, all highlighted under a 90° overhead view with soft 5500K lighting and high-contrast shadows.",
+        "sha256": "2dc214913a23f6c23aef317f50de6600666ae6a0870114192fe06a85167f721e"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 4247,
+      "input_tokens": 151,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 151,
+        "image_tokens": 0
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a6bb2669ab2ba5594ea7a4b70a4a"
+  }
+}

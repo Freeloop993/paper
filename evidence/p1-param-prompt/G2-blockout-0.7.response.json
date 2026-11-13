@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 15.3,
+  "answer": {
+    "created": 1794536676,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The top-view quadcopter blockout in <Picture 1>, featuring a central rounded-rectangular body, four diagonal arms, and four circular rotor discs, is <Subject 1>. The plain white background and overhead framing in <Picture 1> are <Subject 2>. The target image transforms <Subject 1> into an 8K photorealistic industrial design rendering of a finished cold-grey quadcopter while maintaining its exact layout on <Subject 2>. <Subject 1> is partially preserved; its top-down spatial placement, scale, stretched X-shaped proportions, arm span ratio, and rotor positions remain, while its flat grey geometric shapes change into detailed three-dimensional hardware components. <Subject 2> is partially preserved; the overhead camera angle and clean studio backdrop remain, while soft 5500K lighting introduces realistic contact shadows beneath the rendered aircraft. The central fuselage of <Subject 1> becomes a streamlined carbon-fiber shell with sharp 60-degree beveled edges, an anodized aluminum honeycomb grille venting across the mid-section, and a flush-mounted GPS antenna integrated into the top surface. A glowing blue LED light band traces the perimeter of the fuselage. The four diagonal arms become foldable carbon-fiber booms connected to the body via metallic modular quick-release hinges. At the tips of the arms, the dark circular hubs transform into reinforced cylindrical motor covers with machined cooling fins, topped by translucent ABS propeller blades coated in a sleek nano-finish that occupy the original rotor disc footprints. Soft overhead illumination casts crisp, high-contrast shadows directly onto the white surface below.",
+        "sha256": "b8618fcfc5762e451527d7dfd322e96ac373fdc4037c15fea655711d69bf432d"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9789,
+      "input_tokens": 5693,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3643,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a7d88dc87d215e5491383bdebf7b"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 13.3,
+  "answer": {
+    "created": 1794536422,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The spatial layout of the four red dots and two intersecting blue lines forming an X-shape in <Picture 1> is <Subject 1>. The target image is a photorealistic, top-down industrial design rendering of a cold grey quadcopter replacing the diagram from <Picture 1>, with its motor positions and arm directions guided by <Subject 1>. <Subject 1> serves as a weak reference for the quadcopter's spatial geometry; the four red dot positions guide the placement of the four motors at a 30cm rotor-to-rotor distance, while the blue line trajectories guide the stretched X-shaped foldable arms with a 0.7:1 arm span ratio and a 35° rotor angle, without rendering the literal dots or lines. Viewed from a direct 90-degree overhead perspective against a clean studio surface, the drone features a streamlined central fuselage with a 60-degree edge angle, matte carbon fiber framing, and anodized aluminum honeycomb grilles. A discreet GPS antenna module sits on the top center surface, and a glowing blue LED light band runs along the fuselage perimeter. Four foldable arms extend outward via modular quick-release connectors toward the four corners defined by <Subject 1>, each tipped with reinforced motor covers and translucent ABS propellers featuring a glossy nano-coating. Soft 5500K studio lighting illuminates the airframe, casting crisp, high-contrast shadows directly beneath the fuselage, arms, and spinning rotors.",
+        "sha256": "26f7195d5bae5ec9117ca1444005cef3167cc0b686298b2257757672982ce29f"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9697,
+      "input_tokens": 5601,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3551,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a6dc8b9c3decf9b922cd83166a2c"
+  }
+}

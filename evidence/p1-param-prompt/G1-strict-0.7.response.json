@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 13.8,
+  "answer": {
+    "created": 1794536648,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The spatial layout and scale of the central X-shaped diagram in <Picture 1>, defined by four red dots at the corners and two intersecting blue diagonal lines, is <Subject 1>. The target image is an 8K photorealistic industrial design rendering of a quadcopter seen from a direct 90-degree overhead view, replacing the schematic diagram of <Picture 1> while strictly adhering to the placement and proportions of <Subject 1>. <Subject 1> supplies the exact spatial positions, spacing, and arm trajectories transferred to the new quadcopter's motor hubs and foldable arms. The flat red dots and blue lines are completely absent, replaced by a physical drone centered against a clean dark studio background with high-contrast shadows. Four circular motor hubs sit precisely at the coordinates of the former red dots, connected to a streamlined central fuselage along the exact diagonal paths of the former blue lines. The frame features a matte carbon fiber texture in a cold grey color scheme, engineered with a stretched X-layout, a 30 cm rotor-to-rotor span, a 0.7:1 arm span ratio, and modular quick-release connectors where the foldable arms meet the body. Each hub houses a reinforced motor cover supporting two-bladed ABS propellers with a subtle nano-coating sheen, angled at 35 degrees. The central fuselage has sharp 60-degree beveled edges, an 80 cm wing curvature radius, a recessed anodized aluminum honeycomb grille on the underside edge, a discreet flush GPS antenna module integrated into the top shell, and a glowing blue LED light band running along the perimeter.",
+        "sha256": "03a3e8b159a0a9f40ff00e2a8baffb38200ec14e795eb901042b0d5622d91ba1"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9816,
+      "input_tokens": 5720,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3670,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a7bd168a267c21fd41ade8c9d7de"
+  }
+}

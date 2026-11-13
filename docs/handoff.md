@@ -1,4 +1,8 @@
-# 接手快照 · 2026-11-12
+# 接手快照 · 2026-11-13
+
+**11 月 13 日，Claude 已从云端会话迁到作者本机的 Claude Code。** 本机能连 `api.minimax.io`。P1 在 MiniMax H3-Image 上跑了三轮 23 张，全部成功：[原图、读数和结论](../evidence/p1-param-prompt/README.md)，脚本在 [experiments/p1-param-prompt](../experiments/p1-param-prompt/README.md)。作者原句关闭提示词改写即可出产品级的图；造型、材质、配色参数有响应；句子里的布局数值和点线图不移动电机；只画机臂和电机座的骨架图把电机锚在目标位置（4 格 W/L 读数与目标相差不超过 0.02，Claude 非盲目测，每格一张）。下一步等作者看图并确认提示词结构和参考图画法，之后才在 Qwen 上做小测。GPU 保持关机。
+
+本机 `gh` 登录的账号对本仓库只有读权限，提交留在本地分支 `claude/p1-param-prompt`，未推送；推送和 #19 的回复要等作者给出有写权限的凭证。
 
 **11 月 13 日交接。** 作者已[取消本轮余项并关机](https://github.com/Freeloop993/paper/issues/19#issuecomment-6830744463)，准备调整研究思路。讨论请从[六张闭源原图、各自的完整提示词与实际参考图](../evidence/d2-closed-six/README.md)进入，按 01–06 引用图号。补充 18 个开源位置只完成了离线编译。
 

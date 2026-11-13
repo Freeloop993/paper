@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 15.1,
+  "answer": {
+    "created": 1794536705,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The quadcopter drone in <Picture 1> is <Subject 1>. The dark grey gradient background and overhead lighting setup in <Picture 1> are <Subject 2>. The spatial layout of the intersecting blue diagonal lines and four red endpoint dots in <Picture 2> is <Subject 3>. The target image shows <Subject 1> against <Subject 2>, with its four arms, motor hubs, and propellers repositioned to match the exact geometry of <Subject 3>. <Subject 1> is partially preserved; its central fuselage, materials, cold grey color scheme, blue LED light band, top antenna, and rotor blade designs remain unchanged, while the placement and span of its four foldable arms and motors change. <Subject 2> is fully preserved. <Subject 3> supplies the exact spatial positions and arm angles transferred to the arms and motor hubs of <Subject 1>, without rendering the visible red dots or blue lines themselves. The four segmented carbon-fiber arms of <Subject 1> extend outward from the central fuselage along the diagonal trajectories defined by <Subject 3>, terminating at the four corner positions marked by the red dots in <Subject 3>. At each of these four terminal points, a reinforced motor hub holds two-bladed matte grey ABS propellers angled at 35 degrees. Because the arms are stretched into this wider X-shaped configuration, the cast shadows on <Subject 2> beneath the extended arms and rotors shift outward accordingly to maintain consistent high-contrast overhead illumination.",
+        "sha256": "1d8efdd72fa24a2a56f602f55f08918945dc5d80dbea5608034f9865b3b79850"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 12424,
+      "input_tokens": 8328,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 4228,
+        "image_tokens": 4100
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a7f37cebec6ef47d150804f8b56e"
+  }
+}

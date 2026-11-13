@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 11.1,
+  "answer": {
+    "created": 1794536447,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The X-shaped geometric layout formed by the four red endpoint dots and two intersecting blue lines in <Picture 1> is <Subject 1>. The target image replaces the black diagram from <Picture 1> with an 8K photorealistic overhead industrial design rendering of a cold grey quadcopter arranged according to <Subject 1>. <Subject 1> supplies the exact spatial placement and angular orientation transferred to the four rotor positions and foldable arms of the new quadcopter, while the literal red dots and blue lines are not drawn. Viewed directly from a 90-degree overhead perspective against a clean studio surface, the drone features a streamlined fuselage with a 60-degree edge angle, an anodized aluminum honeycomb grille, a discreetly integrated top-surface GPS antenna, and a glowing blue LED light band along its perimeter. Four foldable carbon fiber arms extend outward along the diagonals of <Subject 1> at a 52-degree rotor angle with a 1.3:1 arm span ratio and a 30-centimeter rotor-to-rotor distance, connecting via modular quick-release connectors to reinforced motor covers at the four corner positions. Each motor mounts ABS propellers with a sleek nano-coating finish that follow an 80-centimeter wing curvature radius. Soft 5500K lighting illuminates the matte carbon fiber weave and metallic surfaces, casting crisp, high-contrast shadows beneath the chassis and spinning blades.",
+        "sha256": "0784cdcd2690da57238073e60599541b9dbad4c124b00276e57fd508dee4f396"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9664,
+      "input_tokens": 5568,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3518,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a6f5d1f5cb2004bb12041ac36e18"
+  }
+}

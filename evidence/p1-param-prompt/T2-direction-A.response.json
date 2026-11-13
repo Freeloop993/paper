@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 9.9,
+  "answer": {
+    "created": 1794536351,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "An 8K resolution, photorealistic industrial design rendering of a quadcopter with an X-shaped layout, 25cm rotor-to-rotor distance, 1:1 arm span ratio, 45° rotor angle, pebble-shaped fuselage, 120cm wing curvature radius, 90° fuselage edge angle, fixed integrated arms, matte ABS unibody frame, matte ABS propellers, warm light grey color scheme, seamless top shell, and a flush battery hatch, all highlighted under a 90° overhead view with soft 5500K lighting and high-contrast shadows.",
+        "sha256": "d314da11535406c2a60e1fae30fbf5b720a61e35427a082a3c3161bc54bbb35e"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 4226,
+      "input_tokens": 130,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 130,
+        "image_tokens": 0
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a697449a25eddcaf7d9c2ca45d67"
+  }
+}

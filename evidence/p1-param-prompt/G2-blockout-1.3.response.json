@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 12.3,
+  "answer": {
+    "created": 1794536689,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The top-down spatial layout, scale, and framing of the quadcopter diagram in <Picture 1> is <Subject 1>. The central rounded-rectangle body block in <Picture 1> is <Subject 2>. The four diagonal arm bars with circular motor hubs and large translucent rotor discs in <Picture 1> are <Subject 3>. The target image transforms the flat schematic diagram into an 8K photorealistic industrial design rendering of a cold-grey quadcopter viewed from a direct 90-degree overhead angle under soft 5500K lighting. <Subject 1> is fully preserved. <Subject 2> is partially preserved; its central position and footprint remain, while its flat grey shape changes into a streamlined carbon-fiber fuselage with detailed hardware. <Subject 3> is partially preserved; the positions, angles, and proportions of the arms, motor hubs, and rotor discs remain, while their flat geometric shapes change into realistic mechanical components and spinning propellers. <Subject 2> features a matte cold-grey woven carbon-fiber shell with sharp 60-degree beveled edges, a recessed anodized aluminum honeycomb grille along the center, a discreet flush-mounted GPS antenna module on the upper surface, and a glowing blue LED light band tracing the perimeter. <Subject 3> consists of foldable dark-grey carbon-fiber arms connected to the fuselage via metallic modular quick-release connectors, terminating in cylindrical reinforced dark-anodized motor covers at the four hub positions. Each motor cover supports two-blade ABS propellers coated with a subtle nano-coating sheen, captured in rapid rotation so the blades blend into the exact circular boundaries of the original rotor discs with faint motion blur and semi-transparent aerodynamic wash.",
+        "sha256": "b57b20e629a191dc17bade8cece778bd6891aeb50e54340b03076ccf04eedb35"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9876,
+      "input_tokens": 5780,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3730,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a7e6f19959c501591aa6d95565c2"
+  }
+}

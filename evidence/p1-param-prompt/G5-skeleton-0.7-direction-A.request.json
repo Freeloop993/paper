@@ -1,0 +1,18 @@
+{
+  "endpoint": "/v1/images/edits",
+  "body": {
+    "model": "MiniMax-H3-Image",
+    "n": 1,
+    "aspect_ratio": "1:1",
+    "area": "1K",
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "An 8K resolution, photorealistic industrial design rendering of a quadcopter with a stretched X-shaped layout, 25cm rotor-to-rotor distance, 0.7:1 arm span ratio, 35° rotor angle, pebble-shaped fuselage, 120cm wing curvature radius, 90° fuselage edge angle, fixed integrated arms, matte ABS unibody frame, matte ABS propellers, warm light grey color scheme, seamless top shell, and a flush battery hatch, all highlighted under a 90° overhead view with soft 5500K lighting and high-contrast shadows. Picture 1 is a top-view plan of the airframe skeleton at the same scale and framing as the output image: four arms and four motor mounts. Keep every motor mount and every arm where it is in Picture 1. The fuselage, the propellers and all other parts are not in the plan; design them from the description. Do not keep the flat grey shapes.",
+    "images": [
+      {
+        "file": "skeleton-wl0.7.png",
+        "sha256": "5cc8b1da70965a45eaf662ce86756ed54e34b6264dd683bef0f44f22d3e79d2a"
+      }
+    ]
+  }
+}

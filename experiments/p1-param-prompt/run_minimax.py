@@ -22,6 +22,7 @@ from hashlib import sha256
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
+ROOT = HERE.parents[1]
 sys.path.insert(0, str(HERE))
 import param_prompt as pp  # noqa: E402
 
@@ -31,13 +32,13 @@ COMMON = dict(model=MODEL, n=1, aspect_ratio="1:1", area="1K", output_format="pn
 
 
 def build(cell):
-    params, mode, wl, enhanced = pp.MATRIX[cell]
-    payload = dict(COMMON, prompt=pp.prompt_for(cell))
-    if mode == "diagram":
-        diagram = HERE / "diagrams" / f"layout-wl{wl:.1f}.png"
-        raw = diagram.read_bytes()
-        payload["images"] = [{"image_url": "data:image/png;base64," + base64.b64encode(raw).decode()}]
-        record = dict(payload, images=[{"file": diagram.name, "sha256": sha256(raw).hexdigest()}])
+    prompt, refs, enhanced = pp.spec(cell)
+    payload = dict(COMMON, prompt=prompt)
+    if refs:
+        raws = [(ROOT / ref).read_bytes() for ref in refs]
+        payload["images"] = [{"image_url": "data:image/png;base64," + base64.b64encode(raw).decode()} for raw in raws]
+        record = dict(payload, images=[{"file": Path(ref).name, "sha256": sha256(raw).hexdigest()}
+                                       for ref, raw in zip(refs, raws)])
         return "/v1/images/edits", payload, record
     payload["disable_prompt_enhanced"] = not enhanced
     return "/v1/images/generations", payload, dict(payload)
@@ -86,7 +87,7 @@ def run(cells, out, dry):
         print(cell, status, "saved" if encoded else "NO IMAGE", f"{time.time() - started:.0f}s")
 
 
-def sheet(cells, out):
+def sheet(cells, out, name):
     from PIL import Image, ImageDraw
     tile, label, columns = 512, 36, 4
     out.mkdir(parents=True, exist_ok=True)
@@ -100,20 +101,21 @@ def sheet(cells, out):
             with Image.open(picture) as source:
                 page.paste(source.convert("RGB").resize((tile, tile), Image.Resampling.LANCZOS), (x, y))
         pen.text((x + 8, y + tile + 10), cell + ("" if picture.exists() else "  (missing)"), fill=(0, 0, 0))
-    page.save(out / "P1-contact-sheet.jpg", quality=88)
-    print("P1-contact-sheet.jpg", len(cells), "cells")
+    page.save(out / name, quality=88)
+    print(name, len(cells), "cells")
 
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--only", nargs="*", help="cell ids or prefixes")
-    parser.add_argument("--out", default=str(HERE / "results"))
+    parser.add_argument("--only", nargs="*", default=["T"], help="cell ids or prefixes; default is round 1 (T)")
+    parser.add_argument("--out", default=str(ROOT / "evidence" / "p1-param-prompt"))
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--sheet", action="store_true")
+    parser.add_argument("--name", default="P1-contact-sheet.jpg", help="file name of the contact sheet")
     args = parser.parse_args()
-    cells = [c for c in pp.MATRIX if not args.only or any(c.startswith(p) for p in args.only)]
+    cells = [c for c in pp.CELLS if any(c.startswith(p) for p in args.only)]
     if args.sheet:
-        sheet(cells, Path(args.out))
+        sheet(cells, Path(args.out), args.name)
     else:
         run(cells, Path(args.out), args.dry_run)
 

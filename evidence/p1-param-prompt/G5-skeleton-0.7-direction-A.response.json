@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 11.7,
+  "answer": {
+    "created": 1794536817,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The top-down framing and scale in <Picture 1> is <Subject 1>. The X-shaped arrangement of four diagonal arms and four circular motor mounts in <Picture 1> is <Subject 2>. The target image is a photorealistic 8K industrial design rendering of a warm light grey matte ABS quadcopter seen from a direct overhead view, replacing the flat grey plan shapes of <Subject 2> with a three-dimensional unibody airframe while keeping its exact layout within <Subject 1>. <Subject 1> is fully preserved. <Subject 2> is partially preserved; the exact positions, angles, and spacing of the four arms and four motor mounts remain fixed, while their flat 2D grey geometry transforms into solid, sculpted 3D structural components integrated into a complete drone assembly. The central intersection of <Subject 2> expands into a pebble-shaped fuselage crafted from a seamless matte ABS unibody frame with a 90-degree edge angle along its perimeter and a flush-mounted battery hatch on the top shell. Extending outward from this central body to the exact mount locations of <Subject 2>, four fixed, integrated arms feature a sleek profile with a 120cm wing curvature radius and a 0.7:1 arm span ratio, spanning a 25cm rotor-to-rotor distance at a 35-degree rotor angle. Each terminal point of <Subject 2> becomes a detailed cylindrical motor mount housing, topped by newly introduced two-blade matte ABS propellers in a matching warm light grey finish that cover the rotor hubs. The entire airframe is illuminated from directly above by soft 5500K studio lighting against a clean dark neutral surface, casting crisp, high-contrast shadows beneath the raised fuselage edges, tapered arms, and spinning or poised propeller blades.",
+        "sha256": "2136f923842260895b58377aa96230a2c9a59c54fd59591be340a8ceddfe9b16"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9947,
+      "input_tokens": 5851,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3801,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a866e61db13334b6d0e978cf0bce"
+  }
+}
