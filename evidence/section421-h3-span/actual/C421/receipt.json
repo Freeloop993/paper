@@ -1,0 +1,25 @@
+{
+  "created": 1794585593,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8995,
+    "input_tokens": 4899,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2849,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T15:59:55.068211+00:00",
+  "elapsed_s": 12.77,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four intersecting diagonal lines with circular endpoints in <Picture 1> is <Subject 1>. The target image presents a strict orthographic top-down view of a newly designed everyday aerial photography quadcopter, aligned to the spatial geometry of <Subject 1> against a plain white background. <Subject 1> supplies the exact motor center positions, arm directions, and overall scale transferred to the new quadcopter design, while its blue lines and red dots are replaced by the physical aircraft components. The quadcopter features a true X-configuration with fully unfolded arms spanning between the four motor centers defined by <Subject 1>, maintaining equal horizontal and vertical spacing. At the center is a box-shaped main shell with straight sides and clipped corners, finished in satin neutral mid-gray, featuring at least four distinct recessed top cover seams and ending in an uninterrupted flat tail profile at the bottom edge. Extending from the front of the shell toward the top edge is a single forward-facing camera gimbal that projects beyond the nose outline; oriented horizontally forward, its optical lens face is completely hidden from the direct overhead viewpoint. Four slender arms, each measuring 15 mm wide at midspan in matching satin neutral mid-gray, extend diagonally outward from the central body. Each arm enters the main shell through a distinct socket marked by a visible transverse joint seam and connects cleanly at its outer tip to a cylindrical motor mount. Mounted atop each of the four motor centers is a stationary, unguarded two-blade 5-inch propeller in matte charcoal gray, with blades positioned symmetrically along the arm axes. Soft overhead studio lighting illuminates the complete product evenly, casting subtle contact shadows onto the clean, unlettered white surface below."
+  }
+}

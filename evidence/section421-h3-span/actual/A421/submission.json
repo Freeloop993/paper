@@ -1,0 +1,16 @@
+{
+  "id": "A421",
+  "input_source": "exports/A421/guide.png",
+  "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+  "prompt_sha256": "35fb5c15882e77fe758b22e1e5176675d5c2254361b044eadce69cd613d26ae5",
+  "fields": {
+    "model": "MiniMax-H3-Image",
+    "size": "1024x1024",
+    "n": 1,
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "Design a quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. Main shell plan envelope 90 mm long by 50 mm wide.\nEach arm is 15 mm wide at midspan.\nEach arm reaches its running width within one arm width of the shell, through a short, seamless, rounded shoulder.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nOne forward camera only; the tail ends in uninterrupted shell. Join each arm visibly to its motor mount. Satin neutral mid-gray shell and arms, charcoal rotors, soft overhead studio light on white. Preserve the layout scale and framing.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+  },
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "start": "2026-11-13T15:59:24.829365+00:00"
+}

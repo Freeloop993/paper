@@ -1,0 +1,142 @@
+{
+  "reader": "知条件 AI 初读；原始1024方图，单次近似读数，无独立复测。",
+  "measurement": "轴心以机械中心为准。d 为四副桨的相对桨尖距离均值；D 为两条电机对角线长度均值。",
+  "cases": {
+    "B250": {
+      "hubs": [
+        [
+          274,
+          278
+        ],
+        [
+          750,
+          278
+        ],
+        [
+          750,
+          747
+        ],
+        [
+          274,
+          747
+        ]
+      ],
+      "blade_tips": [
+        [
+          [
+            162,
+            403
+          ],
+          [
+            386,
+            153
+          ]
+        ],
+        [
+          [
+            640,
+            153
+          ],
+          [
+            862,
+            403
+          ]
+        ],
+        [
+          [
+            861,
+            629
+          ],
+          [
+            639,
+            874
+          ]
+        ],
+        [
+          [
+            162,
+            629
+          ],
+          [
+            385,
+            874
+          ]
+        ]
+      ],
+      "target_front_horizontal_px": 419.84,
+      "observed_front_horizontal_px": 476,
+      "observed_mean_diagonal_px": 668.2,
+      "observed_mean_visible_prop_diameter_px": 333.0,
+      "observed_d_over_D": 0.498,
+      "target_d_over_D": 0.508
+    },
+    "B421": {
+      "hubs": [
+        [
+          256,
+          255
+        ],
+        [
+          768,
+          255
+        ],
+        [
+          768,
+          767
+        ],
+        [
+          256,
+          767
+        ]
+      ],
+      "blade_tips": [
+        [
+          [
+            150,
+            372
+          ],
+          [
+            363,
+            141
+          ]
+        ],
+        [
+          [
+            661,
+            141
+          ],
+          [
+            875,
+            371
+          ]
+        ],
+        [
+          [
+            874,
+            654
+          ],
+          [
+            663,
+            883
+          ]
+        ],
+        [
+          [
+            150,
+            653
+          ],
+          [
+            361,
+            883
+          ]
+        ]
+      ],
+      "target_front_horizontal_px": 503.81,
+      "observed_front_horizontal_px": 512,
+      "observed_mean_diagonal_px": 724.1,
+      "observed_mean_visible_prop_diameter_px": 313.0,
+      "observed_d_over_D": 0.432,
+      "target_d_over_D": 0.423
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794585563,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10009,
+    "input_tokens": 5913,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3863,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T15:59:24.794375+00:00",
+  "elapsed_s": 14.78,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red endpoint dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down studio product view of an everyday aerial photography quadcopter aligned to the geometry of <Subject 1>, replacing the solid black background with a plain white background and omitting all guide marks. <Subject 1> supplies the exact motor center positions, arm directions, scale, and framing transferred to the quadcopter's motors and unfolded arms. The complete quadcopter is centered on a clean, uniform white studio surface under soft overhead lighting that casts gentle contact shadows beneath the airframe. The central fuselage is a sleek rounded pod with a continuous curved outline, proportioned at 90 mm long by 50 mm wide relative to the 300 mm opposite-motor span defined by <Subject 1>. Its main body features a satin neutral mid-gray finish divided by a single clean top cover seam running along its length. At the nose end (oriented toward the top edge), a compact forward-facing camera housing sits recessed within the front shell contour so its horizontally oriented optical face remains hidden from directly overhead, while the tail end terminates smoothly as an uninterrupted rounded shell without any rear sensor or gimbal protrusion. Four fully unfolded arms extend diagonally outward from the corners of the central pod along the exact trajectories of <Subject 1>; each arm emerges seamlessly from the main shell without a joint seam, tapering gradually over at least two arm widths before reaching a constant 15 mm midspan width. Each arm joins visibly into a dark structural motor mount at the exact four corner coordinates of <Subject 1>. Mounted atop each motor is a single stationary two-blade, 5-inch propeller rendered in matte charcoal with slim aerodynamic blades and no propeller guards, leaving clear visibility of the motor mounts and arm tips between the blades."
+  }
+}

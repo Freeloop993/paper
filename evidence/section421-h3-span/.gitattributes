@@ -1,0 +1,3 @@
+manifest.json -text
+exports/** -text
+actual/** -text

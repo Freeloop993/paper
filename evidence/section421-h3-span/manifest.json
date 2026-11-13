@@ -1,0 +1,87 @@
+{
+  "stage": "4.2.1 H3 development; no E2 or E3 positions",
+  "rows": [
+    {
+      "id": "B250",
+      "input_source": "exports/B250/guide.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "prompt_sha256": "551f8060e49f4bc141316131270c0f71b87a6135c78386d5a2c0864054cadfca",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. Main shell plan envelope 90 mm long by 50 mm wide.\nEach arm is 15 mm wide at midspan.\nEach arm tapers gradually out of the shell for at least two arm widths before reaching its running width, with no joint seam.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nOne forward camera only; the tail ends in uninterrupted shell. Join each arm visibly to its motor mount. Satin neutral mid-gray shell and arms, charcoal rotors, soft overhead studio light on white. Preserve the layout scale and framing.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "B421",
+      "input_source": "exports/B421/guide.png",
+      "input_sha256": "73d693020c74ace962f4ce85f8b8b5ce8c5ebccd7392eb1e937cd6dbb7a730bd",
+      "prompt_sha256": "3bac63cef72318ae63ad3c022384275e905be9963eb4a57e7aa0b91e022e98e9",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 300 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. Main shell plan envelope 90 mm long by 50 mm wide.\nEach arm is 15 mm wide at midspan.\nEach arm tapers gradually out of the shell for at least two arm widths before reaching its running width, with no joint seam.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nOne forward camera only; the tail ends in uninterrupted shell. Join each arm visibly to its motor mount. Satin neutral mid-gray shell and arms, charcoal rotors, soft overhead studio light on white. Preserve the layout scale and framing.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "A421",
+      "input_source": "exports/A421/guide.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "prompt_sha256": "35fb5c15882e77fe758b22e1e5176675d5c2254361b044eadce69cd613d26ae5",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. Main shell plan envelope 90 mm long by 50 mm wide.\nEach arm is 15 mm wide at midspan.\nEach arm reaches its running width within one arm width of the shell, through a short, seamless, rounded shoulder.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nOne forward camera only; the tail ends in uninterrupted shell. Join each arm visibly to its motor mount. Satin neutral mid-gray shell and arms, charcoal rotors, soft overhead studio light on white. Preserve the layout scale and framing.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "C421",
+      "input_source": "exports/C421/guide.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "prompt_sha256": "7310d1e73239fe2fed9697dc404ec1e39b5e588a51593125c67ca3e0a1d36da1",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA box-shaped shell with straight sides and clipped corners. Main shell plan envelope 90 mm long by 50 mm wide.\nEach arm is 15 mm wide at midspan.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe camera gimbal projects beyond the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nFour or more distinct top cover seams.\nOne forward camera only; the tail ends in uninterrupted shell. Join each arm visibly to its motor mount. Satin neutral mid-gray shell and arms, charcoal rotors, soft overhead studio light on white. Preserve the layout scale and framing.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    }
+  ],
+  "repeat": 1,
+  "submitted_seed": null,
+  "sequence": [
+    "B250",
+    "B421",
+    "A421",
+    "C421"
+  ],
+  "comparisons": {
+    "wheelbase": [
+      "B250",
+      "B421"
+    ],
+    "directions": [
+      "A421",
+      "B421",
+      "C421"
+    ]
+  },
+  "readouts": [
+    "motor spacing in canvas; mean prop diameter / diagonal spacing as scale-free visual check",
+    "body-to-arm transitions; camera at nose and tail ambiguity; four two-blade props; source guide marks; unintended differences incl tone and framing"
+  ],
+  "failure": "preserve all slots; stop on transport or invalid image; no automatic retry",
+  "decision": "authors have retained B continuous root; no parent selection or semantic rating",
+  "frozen_utc": "2026-11-13T15:57:45.491433+00:00"
+}

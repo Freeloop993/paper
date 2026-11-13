@@ -1,0 +1,25 @@
+{
+  "created": 1794585577,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10081,
+    "input_tokens": 5985,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3935,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T15:59:42.256806+00:00",
+  "elapsed_s": 17.42,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of the four red circular motor centers and their intersecting diagonal blue arm-direction lines in <Picture 1> is <Subject 1>. The target image replaces the black background and schematic diagram of <Picture 1> with a strict orthographic top-down studio product view of an everyday aerial photography quadcopter aligned to <Subject 1> on a plain white background. <Subject 1> is partially preserved; its exact center positions, equal horizontal and vertical spacing, square canvas framing, and true-X arm angles are retained as the structural placement for the aircraft's motors and arms, while the red dots and blue lines themselves are replaced by the physical drone components. Centered within the layout defined by <Subject 1>, the quadcopter features a rounded central fuselage pod with a continuous curved outline measuring 90 mm long by 50 mm wide in plan view, oriented with its nose toward the top edge. At the nose tip, a single forward-facing camera housing sits recessed inside the shell contour so its optical lens faces horizontally forward and remains hidden from directly overhead. A single clean top cover seam runs along the upper shell, and the tail end terminates in an uninterrupted smooth curve without any rear sensor or gimbal. Four fully unfolded arms extend outward along the diagonals of <Subject 1> at a 15 mm midspan width, tapering into short, seamless, rounded shoulders that join the central pod within one arm width of the shell. Each arm connects visibly to a cylindrical motor mount positioned precisely at the four corners of <Subject 1>, representing a 250 mm opposite-motor span. Mounted atop each motor is a stationary two-blade, 5-inch propeller rendered in dark charcoal with no propeller guards, leaving the motor mounts and arm tips clearly visible beneath the blades. Both the main shell and the arms have a uniform satin neutral mid-gray finish, illuminated by soft overhead studio lighting that casts subtle contact shadows onto the seamless plain white background, with no guide marks or lettering present."
+  }
+}
