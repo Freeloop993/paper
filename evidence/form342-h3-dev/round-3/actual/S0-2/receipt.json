@@ -1,0 +1,25 @@
+{
+  "created": 1794587022,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9674,
+    "input_tokens": 5578,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3528,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T16:23:43.116532+00:00",
+  "elapsed_s": 13.41,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of four red circular points connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image presents a strict orthographic top-down view of a newly designed compact quadcopter on a plain light background, replacing the black background and omitting the guide marks from <Picture 1>, while aligning its four motor centers and unfolded arm trajectories with <Subject 1>. <Subject 1> supplies the exact spatial positions for the four motor centers and the X-configuration arm angles transferred to the new quadcopter. Centered on a clean, uniform off-white studio surface with soft ambient contact shadows, the quadcopter features a true X-frame geometry with equal horizontal and vertical spacing between the motors. At the four outer positions defined by <Subject 1>, dark grey cylindrical brushless motors are mounted vertically, each topped with a stationary, unguarded 5-inch two-blade matte black propeller. A central rounded pod forms the fuselage, crafted from a continuous matte light grey shell that blends seamlessly into the four tapered arms without visible joint lines at the roots. The nose section extends toward the top edge of the canvas, wrapping smoothly around an internally mounted forward-facing camera so that only the uninterrupted curved top of the nose shell is visible from overhead, free of exposed gimbal arms or side lugs. The rear of the pod features a plain, smooth top cover completely free of seams, fasteners, lettering, or markings."
+  }
+}

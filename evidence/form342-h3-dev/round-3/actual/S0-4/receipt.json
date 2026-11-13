@@ -1,0 +1,25 @@
+{
+  "created": 1794587088,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9879,
+    "input_tokens": 5783,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3733,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T16:24:50.553354+00:00",
+  "elapsed_s": 14.25,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four red corner points connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down view of a compact quadcopter designed for everyday aerial photography, aligned with the motor centers and arm directions of <Subject 1> on a plain light background. <Subject 1> supplies the exact spatial placement and diagonal symmetry transferred to the four motors and unfolded arms of the new quadcopter. The solid black background and the visible red dots and blue lines from <Picture 1> are omitted, replaced by a clean, uniform off-white studio backdrop with no guide marks or lettering. Centered within the square frame with its nose pointing straight toward the top edge, the quadcopter features a symmetrical true-X configuration corresponding to a 250 mm opposite-motor span with equal horizontal and vertical spacing. At the center is a rounded fuselage pod with a continuous curved outline and a plain, smooth top cover free of seams. The front nose shell wraps smoothly around an internal forward-facing horizontal camera so that only the unadorned curved top surface of the nose is visible from overhead, with no exposed gimbal arms or side lugs. Four slender arms extend outward along the diagonals of <Subject 1>, each emerging seamlessly from the central shell without any joint line at the root. Both the central pod and the four arms share a single continuous matte light grey finish. Mounted at the four outer ends of the arms, precisely at the corner positions of <Subject 1>, are four cylindrical dark grey brushless motors. Each motor carries a single stationary, flat two-blade black propeller measuring 5 inches in diameter, positioned with open clearance and no propeller guards."
+  }
+}

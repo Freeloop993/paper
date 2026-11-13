@@ -1,0 +1,25 @@
+{
+  "created": 1794587075,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9066,
+    "input_tokens": 4970,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2920,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T16:24:36.260503+00:00",
+  "elapsed_s": 13.31,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four-point X-shaped spatial layout of the red dots and intersecting blue lines in <Picture 1> is <Subject 1>. The target image presents a strict orthographic top-down product view of a newly designed compact quadcopter for everyday aerial photography, positioned with its nose toward the top edge on a plain light background while matching the motor centers and arm directions of <Subject 1>. <Subject 1> supplies the exact four-corner motor center positions, equal horizontal and vertical spacing, and diagonal X-arm orientations transferred to the new quadcopter's motors and arms. The black background, red dots, and blue lines from <Picture 1> are replaced by a clean, uniform, plain light studio background free of guide marks or lettering. Centered within the frame, the complete quadcopter features a true X configuration corresponding to a 320 mm opposite-motor span. Its central fuselage is a rounded pod with a continuous curved outline and a smooth, unbroken top cover with no crossing seams. At the bottom (nose) end, the shell wraps smoothly around an internal forward-facing horizontal camera so that only the sleek, uninterrupted top surface of the nose is visible from overhead, without any exposed gimbal arms or side lugs. Extending outward from the pod along the four diagonals of <Subject 1> are four fully unfolded arms that grow seamlessly out of the central shell through smooth, continuous blends with no joint lines at their roots. Both the central pod and the four arms share one continuous matte light grey finish. Mounted precisely at the four outer motor centers defined by <Subject 1> are four cylindrical dark grey brushless motors, each fitted with a single stationary, guardless two-blade 5-inch propeller finished in matte black. Soft, even overhead studio lighting casts subtle, realistic contact shadows beneath the airframe onto the plain light surface below."
+  }
+}

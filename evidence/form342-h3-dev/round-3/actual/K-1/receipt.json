@@ -1,0 +1,25 @@
+{
+  "created": 1794587008,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9657,
+    "input_tokens": 5561,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3511,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T16:23:29.679477+00:00",
+  "elapsed_s": 15.94,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red circular motor-center markers connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view with its nose toward the top edge, replacing the black background and guide marks of <Picture 1> while matching the geometry of <Subject 1>. <Subject 1> supplies the exact four motor center positions and diagonal arm directions transferred to the quadcopter's motors and unfolded arms. The complete product sits centered on a plain light background with no guide marks or lettering. The airframe features a rounded central pod with a continuous curved outline and a plain, seamless top cover. Four fully unfolded arms grow out of the shell through smooth, seamless blends without joint lines at their roots, extending along the diagonals of <Subject 1> to form a true X configuration with equal horizontal and vertical spacing and a 320 mm opposite-motor span. The shell and arms share one continuous matte light grey color. At the four motor centers defined by <Subject 1>, dark grey cylindrical motors are mounted, each carrying one stationary, unguarded two-blade black 5-inch propeller. Toward the top edge, the smooth, rounded nose shell wraps completely around the forward-facing horizontal camera so that only its uninterrupted upper surface is visible from directly overhead, hiding any gimbal arms or side lugs."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794587061,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9822,
+    "input_tokens": 5726,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3676,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T16:24:22.900480+00:00",
+  "elapsed_s": 13.88,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four red corner dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image presents a strict orthographic top-down view of a newly designed compact quadcopter for everyday aerial photography, positioned with its nose pointing toward the top edge and its arms fully unfolded to match the motor centers and arm directions of <Subject 1>, while replacing the black background and guide marks of <Picture 1> with a plain light background. <Subject 1> supplies the exact spatial placement, equal horizontal and vertical spacing, and diagonal arm orientations transferred to the four motors and unfolded arms of the new quadcopter. The quadcopter features a true-X configuration corresponding to a 320 mm opposite-motor span, centered within the square frame. Its central body is a rounded pod with a continuous curved outline and a plain, seamless top cover finished in a uniform matte light grey that extends continuously across the smooth arms. Each arm emerges from the central shell through a smooth, seamless blend without any visible root joint line or seam. At the front, the smooth, rounded matte light grey nose shell wraps completely around the forward-facing horizontal camera so that no gimbal arms or side lugs are visible from directly overhead. Mounted at the four outer ends matching <Subject 1> are four cylindrical dark grey brushless motors, each carrying a single stationary, unguarded two-blade 5-inch propeller in matte black with slender blades aligned parallel to the diagonal axes. The entire product is rendered with clean studio lighting that casts soft, subtle contact shadows onto the plain, uniform light background, with all guide marks, lines, and lettering omitted."
+  }
+}

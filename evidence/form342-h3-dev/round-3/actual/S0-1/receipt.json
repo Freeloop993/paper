@@ -1,0 +1,25 @@
+{
+  "created": 1794586992,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9782,
+    "input_tokens": 5686,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3636,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T16:23:13.678732+00:00",
+  "elapsed_s": 14.95,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of the four red circular motor centers and two intersecting blue diagonal arm-direction lines in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top-down view with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background while matching the spatial geometry of <Subject 1>. <Subject 1> supplies the exact four-corner motor positions, true-X symmetry, equal horizontal and vertical spacing, and diagonal arm trajectories transferred to the quadcopter's motors and arms. The complete quadcopter features a central rounded pod with a continuous curved outline and a smooth, seamless matte light grey top cover free of panel seams or lettering. The nose section wraps smoothly around a forward-facing horizontal camera so that only the unadorned, rounded matte light grey top shell is visible from directly overhead, without exposed gimbal arms or side lugs. Four unfolded tubular arms extend diagonally outward along the trajectories of <Subject 1>, emerging directly from the central shell through a smooth, continuous matte light grey blend with no root joint line. Each arm terminates at one of the four motor centers defined by <Subject 1>, corresponding to a 250 mm opposite-motor span. Mounted at each center is a cylindrical dark grey brushless motor topped with a stationary, guard-free, five-inch black two-blade propeller aligned cleanly for orthographic viewing. Even studio lighting casts soft contact shadows beneath the fuselage, arms, and blades against the uniform, featureless light grey-white background."
+  }
+}

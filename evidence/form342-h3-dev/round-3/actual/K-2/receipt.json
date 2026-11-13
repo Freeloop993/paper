@@ -1,0 +1,25 @@
+{
+  "created": 1794587036,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9809,
+    "input_tokens": 5713,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3663,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T16:23:56.751665+00:00",
+  "elapsed_s": 13.59,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The symmetric X-shaped spatial layout in <Picture 1>, defined by the positions of the four red corner dots and the two intersecting blue diagonal lines, is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter seen in a strict orthographic top view with its nose pointing toward the top edge, aligned to the motor centers and arm directions of <Subject 1> while omitting the black background, red dots, and blue guide lines from <Picture 1>. <Subject 1> supplies the exact geometric placement and diagonal symmetry transferred to the four motor centers and unfolded arms of the new quadcopter. The quadcopter features a central rounded pod shell with a continuous curved outline that tapers smoothly toward the top nose section, which wraps completely around an internal forward-facing horizontal camera so that only the smooth, unbroken top surface of the nose is visible without any gimbal arms or side lugs. Four fully unfolded arms grow seamlessly out of the main shell through smooth blended roots with no joint lines, matching the equal horizontal and vertical spacing of a 320 mm opposite-motor span. Each arm terminates at one of the four motor centers of <Subject 1>, where it supports a cylindrical dark grey motor topped with a single stationary, guardless two-blade black propeller with rounded tips. Both the central pod and the four arms share a uniform matte light grey finish, and the top cover of the pod is completely plain and uninterrupted with no seams crossing it. The complete product is centered on a clean, plain light neutral studio background under even overhead lighting with soft contact shadows beneath the body and arms, free of any guide marks or lettering."
+  }
+}

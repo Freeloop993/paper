@@ -1,0 +1,25 @@
+{
+  "created": 1794587048,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9802,
+    "input_tokens": 5706,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3656,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T16:24:08.979412+00:00",
+  "elapsed_s": 12.19,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the black background and schematic diagram of <Picture 1> with a strict orthographic top-view product render of a compact everyday aerial photography quadcopter on a plain light background, aligned to <Subject 1>. <Subject 1> supplies the exact four-corner motor-center positions, equal horizontal and vertical spacing, and unfolded true-X arm directions transferred to the quadcopter's motors and arms. Centered on a clean, uniform off-white studio background with no guide marks or lettering, the quadcopter is oriented with its nose pointing straight toward the top edge. The central fuselage features a rounded pod with a continuous curved outline and a plain, unseamed matte light grey top cover. Four slender arms in the same continuous matte light grey grow seamlessly out of the pod shell through smooth fillets without visible root joint lines, extending along the diagonals of <Subject 1>. At each of the four corner motor centers defined by <Subject 1>, a cylindrical dark grey brushless motor sits atop the arm tip, carrying a single stationary, guardless five-inch two-blade matte black propeller with subtle overlap at the hub. At the front (top) end of the pod, the matte light grey nose shell wraps smoothly around an internally mounted forward-facing camera so that only the uninterrupted curved top surface of the nose is visible from directly overhead, hiding all gimbal arms and side lugs. Soft, even overhead studio lighting casts gentle contact shadows beneath the pod, arms, and propellers onto the light background."
+  }
+}
