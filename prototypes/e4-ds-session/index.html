@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+<title>E4 · 四旋翼设计工作台</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="protocol.js"></script><script defer src="session.js"></script>
+</head>
+<body>
+<header><div class="brand"><span class="mark" aria-hidden="true">⌖</span> 四旋翼设计工作台</div><span class="mode">E4 / 离线演练</span></header>
+<main>
+<div class="intro"><div><p class="kicker" id="context">配对场次</p><h1 id="title">准备工作台</h1></div><p class="clock" id="clock" aria-label="场次计时"></p></div>
+<div class="layout"><aside><figure><figcaption>共同参考图 <small>正交顶视</small></figcaption><div class="plate"><img src="reference.png" alt="四电机与机臂方向的共同布局参考" id="reference"></div><p class="caption">True X · 对置轴距 250 mm · 5 英寸双叶桨<br><a href="reference.png" target="_blank" rel="noopener">打开参考原图</a></p></figure><section class="brief"><h2>设计简报</h2><p>日常随行航拍四旋翼。机头朝上、四轴双叶、无护圈，相机在机头端水平朝前。</p><p id="task"></p></section></aside>
+<section aria-label="场次操作"><div id="panel">正在打开本地记录…</div><p id="notice" role="status"></p></section></div>
+<footer><span id="progress">初稿 1 次 · 可选修订 1 次</span><div id="actions"></div></footer>
+</main></body></html>
