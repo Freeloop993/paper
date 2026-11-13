@@ -1,0 +1,112 @@
+{
+  "packs": {
+    "01-H3-01.zip": {
+      "files": 60,
+      "bytes": 26867481,
+      "sha256": "3aac8fd28ef936ffb77b6c74c55c2d7a70b8a96c16fb093e3f5724c87e997aa9"
+    },
+    "01-H3-02.zip": {
+      "files": 88,
+      "bytes": 26946682,
+      "sha256": "46797784d8b91d7150da0f046bdab7beb5dc6f966c26eeb0cb7385920f0f91b8"
+    },
+    "01-H3-03.zip": {
+      "files": 104,
+      "bytes": 26015853,
+      "sha256": "6b0003e0e25fd66434684ab2818efb49a458879f7abdeaa16556a8476d26a37f"
+    },
+    "01-H3-04.zip": {
+      "files": 134,
+      "bytes": 26185931,
+      "sha256": "312f493994ae68e2c63436c44c0307f2eb04d3ecc0f46ba1f032287112fc1b24"
+    },
+    "01-H3-05.zip": {
+      "files": 114,
+      "bytes": 26530749,
+      "sha256": "c23c3fa32b63a9eae4dced7b04f866c674ae867a2201bd6977f6710edb061560"
+    },
+    "01-H3-06.zip": {
+      "files": 12,
+      "bytes": 3198703,
+      "sha256": "d3099b1f6ff8f644bb4aec34a9a4a572639d4f276cbfb87f16859083a9cdd55c"
+    },
+    "02-repository-01.zip": {
+      "files": 41,
+      "bytes": 26808702,
+      "sha256": "bb48b8b95fa88f4bbc263dd6d72b893b3a2d9364e2df54051de836cc2600187b"
+    },
+    "02-repository-02.zip": {
+      "files": 86,
+      "bytes": 27082272,
+      "sha256": "cbc4fbf8dc0276e542b1472f52f991ddbdc9dd28e6c41297d80fd79919ec1bd6"
+    },
+    "02-repository-03.zip": {
+      "files": 61,
+      "bytes": 26326428,
+      "sha256": "66f08c025387c4aa57c179c33580660517ae52e4ae556a68c4443ba9f9bea2ac"
+    },
+    "02-repository-04.zip": {
+      "files": 53,
+      "bytes": 26579544,
+      "sha256": "61229640d15d12850f6e2e8127e2f19cab7d0e658979da9d7a92dc70e30e5023"
+    },
+    "02-repository-05.zip": {
+      "files": 43,
+      "bytes": 26624085,
+      "sha256": "dc4c8030adebf517242461630d58782f7bcd80d36a3d3f1271f28123e1dad9c1"
+    },
+    "02-repository-06.zip": {
+      "files": 63,
+      "bytes": 19271330,
+      "sha256": "e8abfd413bfd2d41aa5f3c5d84d1fbecae65aac5ff90b93e392a33ceb5c52b27"
+    },
+    "03-historical-01.zip": {
+      "files": 39,
+      "bytes": 26457076,
+      "sha256": "6666a323355b1ff5bd0ad4bfdf5ef0a6f22be08717dbf94c5a6ff0511c0e13b3"
+    },
+    "03-historical-02.zip": {
+      "files": 35,
+      "bytes": 26799953,
+      "sha256": "c7fa23190e2286f8f0404944c8c25043097463ed257ac3f369c37bf50202a9a7"
+    },
+    "03-historical-03.zip": {
+      "files": 32,
+      "bytes": 27027804,
+      "sha256": "1c8f6af4dd2190896e351dd02d127d59595eadeb8930fee060d02dec21681bb2"
+    },
+    "03-historical-04.zip": {
+      "files": 6,
+      "bytes": 6471077,
+      "sha256": "1422a1e816009648083c414de50ed85505e286f9bdc13b0796fa9bee348ce2b2"
+    }
+  },
+  "indexed_slots": 104,
+  "unique_h3_image_bytes": 102,
+  "group_slots": {
+    "01-p1": 23,
+    "02-p2": 9,
+    "03-junction": 20,
+    "04-configurator": 24,
+    "05-recent": 28
+  },
+  "visual_file_entries": 499,
+  "groups": {
+    "01-H3": 512,
+    "02-repository": 347,
+    "03-historical": 112
+  },
+  "h3_ref_links": 105,
+  "h3_text_only": 10,
+  "aliases": {
+    "b2b5a6cbccccf9da8069b1be817de17ba2909744c7ae117d14a0879c49577b66": [
+      "H3/05-recent/h3-camera-facing-pair/after/original.png",
+      "H3/05-recent/h3-camera-guide-wording/01-baseline/original.png"
+    ],
+    "2732af40573a1583e571f1f2070af76073b3918c0d091b50865b80a787c882df": [
+      "H3/05-recent/h3-camera-facing-pair/before/original.png",
+      "H3/05-recent/h3-product-reference-pair/layout-guide/original.png"
+    ]
+  },
+  "missing_historical_dir": []
+}
