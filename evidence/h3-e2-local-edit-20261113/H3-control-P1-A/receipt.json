@@ -1,0 +1,25 @@
+{
+  "created": 1794570167,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9572,
+    "input_tokens": 5476,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3426,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T11:42:50.639024+00:00",
+  "elapsed_s": 12.97,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four diagonal arms with circular pivot rings and angled two-blade rotor assemblies arranged in a 2 rows and 2 columns layout in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a complete compact quadrotor drone in strict orthographic top view on <Subject 2>, formed by integrating a central fuselage with an integrated camera into <Subject 1> while narrowing and rounding the front nose at the top of the frame. <Subject 1> is partially preserved; its four diagonal arms, circular root joints, and angled two-blade rotors remain unchanged in shape, orientation, and square spacing where left-right motor spacing equals 1.00 times front-back motor spacing, while their inner ends connect cleanly to the new central body. <Subject 2> is fully preserved. A newly introduced matte neutral-gray fuselage occupies the center between <Subject 1>, featuring a compact silhouette with resolved arm roots that blend smoothly into the chassis. At the top (front) of the fuselage, the leading edge is narrower and more rounded, housing a flush-mounted dark camera window that follows this curved front contour. Soft overhead lighting casts gentle gradients across the matte gray shell and subtle contact shadows beneath the arms and rotor blades against <Subject 2>, with no guide markings present."
+  }
+}

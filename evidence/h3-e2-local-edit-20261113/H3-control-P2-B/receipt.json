@@ -1,0 +1,25 @@
+{
+  "created": 1794570181,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9748,
+    "input_tokens": 5652,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3602,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T11:43:04.098237+00:00",
+  "elapsed_s": 13.7,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four diagonal arms with their circular motor hubs and two-bladed propellers arranged in 2 rows and 2 columns in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a complete, compact quadrotor drone for everyday personal aerial photography in a strict orthographic top view with the front oriented upward on <Subject 2>, integrating a central matte neutral gray fuselage with an embedded forward camera window and smoothly blended arm roots connecting to <Subject 1>. <Subject 1> is partially preserved; the four rotor positions, diagonal orientation, circular motor mounts, and two-bladed propeller shapes remain unchanged, while the inner ends of the four arms are reshaped at their roots to blend seamlessly into the new central body with wider, smoother fillets. <Subject 2> is fully preserved. Centered between the four rotor assemblies of <Subject 1>, the newly introduced fuselage features a sleek, compact rounded-rectangular silhouette with its nose pointing straight toward the top edge of the frame. Constructed from a smooth matte neutral gray shell, the body exhibits subtle panel seams and soft, even studio shading that defines its three-dimensional volume against <Subject 2>. Each of the four diagonal arms of <Subject 1> transitions into the corners of the central chassis through a broad, aerodynamic, smoothly curved fillet rather than a sharp joint. Flush-mounted near the front nose of the fuselage is a distinct dark, glossy rectangular camera window recessed cleanly into the gray housing, with no guide markings or text present anywhere on the airframe."
+  }
+}

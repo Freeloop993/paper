@@ -1,0 +1,25 @@
+{
+  "created": 1794570167,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9421,
+    "input_tokens": 5325,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3275,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T11:42:50.375196+00:00",
+  "elapsed_s": 13.31,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The top-down gray drone in <Picture 1> is <Subject 1>. The four diagonal arm roots where the arms meet the central fuselage of <Subject 1> in <Picture 1> are <Subject 2>. The plain white background in <Picture 1> is <Subject 3>. The target image shows <Subject 1> on <Subject 3> with <Subject 2> reshaped to blend smoothly into the central body. <Subject 1> is partially preserved; its overall layout, nose, central camera housing, four rotor positions, and propellers remain unchanged, while only <Subject 2> is modified. <Subject 2> is partially preserved; the attachment locations at the four corners of the fuselage remain, while their sharp junctions change to wider, smoother fillets. <Subject 3> is fully preserved. At each of the four diagonal junctions of <Subject 2>, the narrow, abrupt transition between the outer fuselage contour and the straight arm shafts is replaced by a broad, gently curved aerodynamic fairing that flares outward from the gray body shell into the base of each arm, maintaining the flat vector-like medium-gray shading and clean edges of the surrounding hull."
+  }
+}

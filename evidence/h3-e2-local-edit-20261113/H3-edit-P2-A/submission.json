@@ -1,0 +1,17 @@
+{
+  "id": "H3-edit-P2-A",
+  "source_request": "b4c8933fbf5bac662652e5733183ea5911f48f1c7f274b0c43b43da51b5228f4",
+  "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/original.png",
+  "input_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+  "input_kind": "E1 parent",
+  "fields": {
+    "model": "MiniMax-H3-Image",
+    "size": "1024x1024",
+    "n": 1,
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "The top of the picture is the front. Reshape only the nose at the top: make its leading edge narrower and more rounded, with the camera window following the new edge. Keep the four rotors, the arms and the rest of the body unchanged."
+  },
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "start": "2026-11-13T11:42:23.669891+00:00"
+}

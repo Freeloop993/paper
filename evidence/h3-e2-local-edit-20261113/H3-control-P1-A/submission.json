@@ -1,0 +1,17 @@
+{
+  "id": "H3-control-P1-A",
+  "source_request": "bf503140956ce9e51771a7d1c63ea9c2c65464bb3bd7213e34c545f58749a597",
+  "input_source": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+  "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+  "input_kind": "layout guide only",
+  "fields": {
+    "model": "MiniMax-H3-Image",
+    "size": "1024x1024",
+    "n": 1,
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing. The top of the picture is the front. Reshape only the nose at the top: make its leading edge narrower and more rounded, with the camera window following the new edge. Keep the four rotors, the arms and the rest of the body unchanged."
+  },
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "start": "2026-11-13T11:42:37.670529+00:00"
+}

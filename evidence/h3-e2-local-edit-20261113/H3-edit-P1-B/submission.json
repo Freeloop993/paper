@@ -1,0 +1,17 @@
+{
+  "id": "H3-edit-P1-B",
+  "source_request": "fb1d4a7e354ec39931808274ff17b40763097b3d88d865ebd36c97364c2a95e9",
+  "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/original.png",
+  "input_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+  "input_kind": "E1 parent",
+  "fields": {
+    "model": "MiniMax-H3-Image",
+    "size": "1024x1024",
+    "n": 1,
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "The top of the picture is the front. Reshape only the four arm roots: blend each arm into the body with a wider, smoother fillet. Keep the four rotor positions, the propellers and the nose unchanged."
+  },
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "start": "2026-11-13T11:42:23.666229+00:00"
+}

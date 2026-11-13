@@ -1,0 +1,25 @@
+{
+  "created": 1794570154,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9765,
+    "input_tokens": 5669,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3619,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T11:42:37.632102+00:00",
+  "elapsed_s": 13.95,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The central elongated gray fuselage of the drone in <Picture 1> is <Subject 1>. The dark rounded-rectangular camera window on the upper portion of <Subject 1> in <Picture 1> is <Subject 2>. The four diagonal arms, circular motor hubs, and eight two-bladed rotors extending from <Subject 1> in <Picture 1> are <Subject 3>. The plain white background in <Picture 1> is <Subject 4>. The target image shows the top-down drone with a narrower, more rounded front nose at the top of <Subject 1> and a correspondingly reshaped <Subject 2>, while <Subject 3> and <Subject 4> remain unchanged. <Subject 1> is partially preserved; its main body width, rear end, color, and flat vector style remain, while its upper leading edge is narrowed and curved into a tighter, more rounded nose. <Subject 2> is partially preserved; its dark fill, black lens circle, and position near the front of <Subject 1> remain, while its outer contour narrows and rounds to follow the reshaped nose edge. <Subject 3> is fully preserved. <Subject 4> is fully preserved. At the top of <Subject 1>, the front profile tapers inward slightly before curving smoothly across the leading edge, creating a sleeker, more bulbous tip that leaves a slightly wider margin of <Subject 4> beside the upper corners where <Subject 3> attaches. Within this reshaped nose, <Subject 2> adopts a matching narrower, more semicircular upper boundary parallel to the new leading edge while keeping its centered black circular lens."
+  }
+}

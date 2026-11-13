@@ -1,0 +1,97 @@
+{
+  "stage": "H3 E2 development transfer only",
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "seed_submitted": false,
+  "cells": [
+    {
+      "id": "H3-edit-P1-A",
+      "source_request": "1f27f6bd72c828635a614d6a188a625b5a3af3143d1c6fcf48c032890c557c81",
+      "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/original.png",
+      "input_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+      "input_kind": "E1 parent",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "The top of the picture is the front. Reshape only the nose at the top: make its leading edge narrower and more rounded, with the camera window following the new edge. Keep the four rotors, the arms and the rest of the body unchanged."
+      }
+    },
+    {
+      "id": "H3-edit-P1-B",
+      "source_request": "fb1d4a7e354ec39931808274ff17b40763097b3d88d865ebd36c97364c2a95e9",
+      "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/original.png",
+      "input_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+      "input_kind": "E1 parent",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "The top of the picture is the front. Reshape only the four arm roots: blend each arm into the body with a wider, smoother fillet. Keep the four rotor positions, the propellers and the nose unchanged."
+      }
+    },
+    {
+      "id": "H3-edit-P2-A",
+      "source_request": "b4c8933fbf5bac662652e5733183ea5911f48f1c7f274b0c43b43da51b5228f4",
+      "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/original.png",
+      "input_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+      "input_kind": "E1 parent",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "The top of the picture is the front. Reshape only the nose at the top: make its leading edge narrower and more rounded, with the camera window following the new edge. Keep the four rotors, the arms and the rest of the body unchanged."
+      }
+    },
+    {
+      "id": "H3-edit-P2-B",
+      "source_request": "53c5a3314f2469cea9d82888d7902aca60e1db1687466d303e2a9c496d05c476",
+      "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/original.png",
+      "input_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+      "input_kind": "E1 parent",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "The top of the picture is the front. Reshape only the four arm roots: blend each arm into the body with a wider, smoother fillet. Keep the four rotor positions, the propellers and the nose unchanged."
+      }
+    },
+    {
+      "id": "H3-control-P1-A",
+      "source_request": "bf503140956ce9e51771a7d1c63ea9c2c65464bb3bd7213e34c545f58749a597",
+      "input_source": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+      "input_kind": "layout guide only",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing. The top of the picture is the front. Reshape only the nose at the top: make its leading edge narrower and more rounded, with the camera window following the new edge. Keep the four rotors, the arms and the rest of the body unchanged."
+      }
+    },
+    {
+      "id": "H3-control-P2-B",
+      "source_request": "811a18612f0dff3883ecdbb241d8f6b803095867841135a288e9aadb45452356",
+      "input_source": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+      "input_kind": "layout guide only",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. Each rotor diameter is 0.50 of the diagonal motor distance. The top of the picture is the front. Reshape only the four arm roots: blend each arm into the body with a wider, smoother fillet. Keep the four rotor positions, the propellers and the nose unchanged."
+      }
+    }
+  ]
+}

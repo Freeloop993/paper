@@ -1,0 +1,25 @@
+{
+  "created": 1794570140,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9425,
+    "input_tokens": 5329,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3279,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T11:42:23.607223+00:00",
+  "elapsed_s": 14.5,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The gray quadcopter drone in <Picture 1> is <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows <Subject 1> on <Subject 2> with its upper front nose section narrowed and more tightly rounded, while the camera window conforms to the reshaped leading edge. <Subject 1> is partially preserved; its four rotors, four diagonal arms, rear body section, and flat top-down illustration style remain unchanged, while only the upper front nose contour and the top boundary of the dark camera window are reshaped. <Subject 2> is fully preserved. At the top end of <Subject 1>, the forward-most tip is narrower and more smoothly rounded than before, tapering inward slightly from the main fuselage width into a compact, curved nose cone. The dark charcoal-gray rounded-rectangle camera window at the front of <Subject 1> follows this new contour, with its upper horizontal edge curving downward along the narrower rounded nose profile while keeping the circular black lens centered within it. The small triangular light-gray shoulder accents where the upper two arms meet the body adjust slightly outward to accommodate the narrower nose without altering the arms or rotors themselves."
+  }
+}

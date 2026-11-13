@@ -1,0 +1,25 @@
+{
+  "created": 1794570153,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9287,
+    "input_tokens": 5191,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3141,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T11:42:37.026203+00:00",
+  "elapsed_s": 13.36,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The top-down gray drone in <Picture 1> is <Subject 1>. The plain white background in <Picture 1> is <Subject 2>. The target image shows <Subject 1> on <Subject 2> with the four arm roots reshaped to blend smoothly into the central fuselage. <Subject 1> is partially preserved; its elongated nose, dark front sensor window, four diagonal arms, circular motor hubs, and eight two-blade propellers remain unchanged in position and geometry, while only the junction where each arm meets the main body changes from a sharp corner to a wider, smoother fillet. <Subject 2> is fully preserved. At all four diagonal attachment points along the sides of the central hull of <Subject 1>, the abrupt transitions between the straight arm shafts and the rounded body contour are replaced by broader, gently curved concave fillets that flow seamlessly from the outer edge of the fuselage into the base of each arm, maintaining the same flat medium-gray tone and clean vector-like edges."
+  }
+}
