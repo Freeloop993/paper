@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 11.4,
+  "answer": {
+    "created": 1794536342,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The image is a highly detailed 8K resolution photorealistic industrial design rendering of a foldable quadcopter drone, presented from a strict 90-degree top-down overhead view. The drone is centered in the frame on a dark matte grey studio surface with a clean technical aesthetic. The drone features a streamlined fuselage with a cold grey color scheme and a visible woven carbon fiber frame pattern. Its arms form an X-shaped layout, with the central body featuring a blue LED light band and a discreetly integrated GPS antenna on the top surface. The four arms each hold a reinforced motor cover with an anodized aluminum honeycomb grille underneath. The propellers are made of ABS with a nano-coating, displaying a matte dark grey finish. At the joints where the arms connect to the fuselage, modular quick-release connectors are visible. Around the drone, precise technical annotations and dashed measurement lines connect to specific components. On the left, a dashed line spans between the left propellers with the label '30cm rotor-to-rotor distance' and '1:1 arm span ratio'. An arc diagram near the front-left arm indicates '45° rotor angle'. Near the bottom-right propeller, an arc annotation reads '80cm wing curvature radius'. On the right side, a label points to the central nose with the text '60° fuselage edge angle'. Additional callouts on the upper right identify the 'Reinforced motor covers', 'Modular quick-release connectors', and 'Foldable arms'. At the upper left, a callout labels the 'GPS antenna'. On the lower left, a callout reads 'ABS propellers with nano-coating' and 'Anodized aluminum honeycomb grille'. The lighting is a soft 5500K studio light from above, casting crisp high-contrast shadows below the drone arms and propellers. The typography for all annotations is a clean white sans-serif font with thin white leader lines and arrows, perfectly matching the high-contrast technical illustration style.",
+        "sha256": "a6d08967d9c406ec9e51f417b17f3185cc9fc1c83a8b2f0fa15c469a5162e0f4"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 7241,
+      "input_tokens": 3145,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3145,
+        "image_tokens": 0
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a68b36880e08583a9afa84696a87"
+  }
+}

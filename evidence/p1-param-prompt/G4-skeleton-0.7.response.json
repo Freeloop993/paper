@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 12.4,
+  "answer": {
+    "created": 1794536792,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The four-arm X-shaped skeleton with four circular motor mounts in <Picture 1> is <Subject 1>. The centered top-down framing and scale of the airframe plan in <Picture 1> is <Subject 2>. The target image transforms <Subject 1> into a photorealistic 8K industrial design rendering of a quadcopter with a stretched X-shaped layout, streamlined fuselage, and propellers while maintaining <Subject 2>, replacing the flat dark background from <Picture 1> with a studio surface under soft overhead lighting. <Subject 1> is partially preserved; the exact positions, angles, and proportions of its four arms and four circular motor mounts remain, while its flat grey vector shapes change into three-dimensional carbon fiber foldable arms with modular quick-release connectors and reinforced anodized aluminum motor covers. <Subject 2> is fully preserved. The central intersection of <Subject 1> connects to a newly introduced streamlined fuselage featuring a 60-degree edge angle, a cold grey color scheme, an anodized aluminum honeycomb grille, and a discreetly integrated GPS antenna on its top surface. A glowing blue LED light band traces the fuselage contours. Four large ABS propellers with a glossy nano-coating and a 35-degree rotor blade angle are mounted atop the motor housings at the tips of <Subject 1>, spanning a 30-centimeter rotor-to-rotor distance with an 80-centimeter wing curvature radius. Soft 5500K overhead lighting casts crisp, high-contrast shadows beneath the raised arms, fuselage, and spinning propeller blades onto the neutral dark matte studio floor.",
+        "sha256": "f315a308ba894cbf99af3d5f5c3ae1d03abd889b77a854dcee99120d390c04d2"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9827,
+      "input_tokens": 5731,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3681,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a84df11df2639fa9c289987ef06f"
+  }
+}

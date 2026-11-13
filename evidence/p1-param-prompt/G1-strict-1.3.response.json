@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 13.0,
+  "answer": {
+    "created": 1794536662,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The X-shaped geometric layout of four red dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The solid black background in <Picture 1> is <Subject 2>. The target image shows a photorealistic 8K industrial design rendering of a cold-grey quadcopter seen from a direct overhead view, positioned according to the exact spatial geometry of <Subject 1> against <Subject 2>, with the original red dots and blue lines replaced by physical aircraft components. <Subject 1> supplies the exact motor hub positions, spacing, arm trajectories, and framing transferred to the new quadcopter. <Subject 2> is fully preserved. The quadcopter features a streamlined central fuselage with a 60-degree edge angle, crafted from matte carbon fiber and finished in a cold grey color scheme, with a discreetly integrated GPS antenna on its top surface. Four foldable arms extend outward along the exact paths of the former blue lines of <Subject 1>, utilizing modular quick-release connectors at their joints and featuring an 80-centimeter wing curvature radius profile. Each arm terminates precisely at the four corner coordinates of <Subject 1> in place of the removed red dots, where reinforced motor covers house the four motor hubs. Translucent ABS propellers with a subtle nano-coating sheen are mounted over each hub, angled at 52 degrees relative to the frame. Anodized aluminum honeycomb grilles are recessed into the fuselage panels, accented by a glowing blue LED light band tracing the structural edges. Soft 5500K overhead lighting illuminates the craft from directly above, casting crisp, high-contrast shadows across the carbon fiber weave, chamfered edges, and rotor blades while maintaining the exact scale and centered framing of <Subject 1>.",
+        "sha256": "c07f2aecbb05d0575e092c36ca99fcbff41498b87c02b061582d77fb085141cb"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9943,
+      "input_tokens": 5847,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3797,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745a7ca0a14bf1f897cffcca6b20235"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "reader": "Claude, by eye, knowing the condition of every cell (non-blind). Not a reader denominator.",
+  "date": "2026-11-13",
+  "unit": "pixels in the 1024 x 1024 output; x_left/x_right and y_top/y_bottom are the mean hub columns and rows",
+  "precision": "round 1 (T cells) and G4-skeleton-0.7 read on the full image; the other G cells read on the 512 px contact-sheet tiles and doubled: about +-20 px, about +-0.05 in W/L. G4-skeleton-0.7 was first read on the tile as 350 x 494 and corrected to 363 x 528 on the full image",
+  "targets": {
+    "0.7": {"x": [340, 684], "y": [266, 758], "W": 344, "L": 492},
+    "1.3": {"x": [274, 750], "y": [329, 695], "W": 476, "L": 366}
+  },
+  "readings": {
+    "T3-ratio-0.7": {"x": [210, 813], "y": [226, 800], "W": 603, "L": 574, "WL": 1.05},
+    "T3-ratio-1.3": {"x": [196, 827], "y": [205, 815], "W": 631, "L": 610, "WL": 1.03},
+    "T4-diagram-0.7": {"x": [246, 771], "y": [240, 792], "W": 525, "L": 552, "WL": 0.95},
+    "T4-diagram-1.3": {"x": [191, 830], "y": [200, 795], "W": 639, "L": 595, "WL": 1.07},
+    "G1-strict-0.7": {"x": [256, 764], "y": [256, 760], "W": 508, "L": 504, "WL": 1.01},
+    "G1-strict-1.3": {"x": [276, 746], "y": [310, 700], "W": 470, "L": 390, "WL": 1.21},
+    "G2-blockout-0.7": {"x": [336, 682], "y": [260, 752], "W": 346, "L": 492, "WL": 0.70},
+    "G2-blockout-1.3": {"x": [272, 748], "y": [320, 690], "W": 476, "L": 370, "WL": 1.29},
+    "G3-move-0.7": {"x": [210, 810], "y": [174, 794], "W": 600, "L": 620, "WL": 0.97},
+    "G3-move-1.3": {"x": [210, 810], "y": [174, 794], "W": 600, "L": 620, "WL": 0.97},
+    "G4-skeleton-0.7": {"x": [329, 692], "y": [240, 768], "W": 363, "L": 528, "WL": 0.69},
+    "G4-skeleton-1.3": {"x": [272, 746], "y": [320, 690], "W": 474, "L": 370, "WL": 1.28},
+    "G5-skeleton-0.7-direction-A": {"x": [342, 688], "y": [260, 756], "W": 346, "L": 496, "WL": 0.70},
+    "G5-skeleton-1.3-direction-B": {"x": [278, 752], "y": [320, 690], "W": 474, "L": 370, "WL": 1.28}
+  },
+  "not_read": ["T4-diagram-1.0", "all other T cells (no layout question)"]
+}

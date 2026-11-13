@@ -1,0 +1,13 @@
+{
+  "endpoint": "/v1/images/generations",
+  "body": {
+    "model": "MiniMax-H3-Image",
+    "n": 1,
+    "aspect_ratio": "1:1",
+    "area": "1K",
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "An 8K resolution, photorealistic industrial design rendering of a quadcopter with an X-shaped layout, 30cm rotor-to-rotor distance, 1:1 arm span ratio, 45° rotor angle, faceted fuselage, 80cm wing curvature radius, 30° fuselage edge angle, foldable arms, carbon fiber frame, ABS propellers with nano-coating, anodized aluminum honeycomb grille, cold grey color scheme, blue LED light band, reinforced motor covers, modular quick-release connectors, and a GPS antenna discreetly integrated into the top surface, all highlighted under a 90° overhead view with soft 5500K lighting and high-contrast shadows.",
+    "disable_prompt_enhanced": true
+  }
+}
