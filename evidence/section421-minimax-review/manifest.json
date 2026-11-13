@@ -1,0 +1,114 @@
+{
+  "n_originals": 9,
+  "batch": "three adaptive development rounds (3 directions per round), MiniMax-H3-Image, 1024x1024; no seed specified; formal E3 contribution 0",
+  "rows": [
+    {
+      "id": "1A",
+      "original": "1A/original.png",
+      "bytes": 1196921,
+      "sha256": "a9243984ee186ece8093183512dedb58e9854e379c5df0b7eb84f3da6b9b95d2",
+      "rgb_sha256": "32d4675eb2a01a3b9ab601d4a3925641c75dee7e4afd00fcc406d1a284212f50",
+      "guide": "row1-guide.png",
+      "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+      "prompt": "1A/prompt.txt",
+      "prompt_sha256": "39e29ebd8344a8768bf4095efbc99d3331ad166ebf6b6c7de2e028ed7b81632b",
+      "receipt": "1A/input-and-receipt.json"
+    },
+    {
+      "id": "1B",
+      "original": "1B/original.png",
+      "bytes": 1119320,
+      "sha256": "81f28e6c924f5ba828b88142874b2e09228950b3069a0a7ba772f7b2a05d1279",
+      "rgb_sha256": "3c90984210911223f13b5b64d837894763ec58921c47344f58d55c3b33a4ad65",
+      "guide": "row1-guide.png",
+      "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+      "prompt": "1B/prompt.txt",
+      "prompt_sha256": "c9190a842e0e32910cdee22c3f1cfc45df01399d0d16191c2d9ffeeefe62f705",
+      "receipt": "1B/input-and-receipt.json"
+    },
+    {
+      "id": "1C",
+      "original": "1C/original.png",
+      "bytes": 1217444,
+      "sha256": "b01528afdb7fe6ea2599628551c41d3756c05d32c3067d191784aed702a812b3",
+      "rgb_sha256": "c8538ea017082f7d340c5d68ab019876ee729661c2b82246d15ad8146296f041",
+      "guide": "row1-guide.png",
+      "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+      "prompt": "1C/prompt.txt",
+      "prompt_sha256": "f426f78f5e5a0339a887d7137350f547776165c7f0756d753ec3d3cc8e22898b",
+      "receipt": "1C/input-and-receipt.json"
+    },
+    {
+      "id": "2A",
+      "original": "2A/original.png",
+      "bytes": 1212131,
+      "sha256": "d5fbeb0a48d3aa3f33ef8ad1ce60ea62e2b1d2835543dc55602e05cd7ffd7c4b",
+      "rgb_sha256": "22f28dcc86e281de2849eba95cbb0e534ad55213222dc72bf55bba2476c2dd4b",
+      "guide": "row2-guide.png",
+      "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+      "prompt": "2A/prompt.txt",
+      "prompt_sha256": "567771fff59c0389659a19a74923fe16825cdb5041bbfd86bd46dac809c759e4",
+      "receipt": "2A/input-and-receipt.json"
+    },
+    {
+      "id": "2B",
+      "original": "2B/original.png",
+      "bytes": 1179066,
+      "sha256": "2203d9b0924f4fe235f189c7965c0380f26966f2750cc2853a602856c7e8edcd",
+      "rgb_sha256": "d9af7d2f98a596155760f8cb59d8a65de4209b2a0371aadac179efe241ef472a",
+      "guide": "row2-guide.png",
+      "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+      "prompt": "2B/prompt.txt",
+      "prompt_sha256": "520675a75829b6d7a678dbaeb80e984fbac8302055429601f120ee98a6aac46e",
+      "receipt": "2B/input-and-receipt.json"
+    },
+    {
+      "id": "2C",
+      "original": "2C/original.png",
+      "bytes": 1124154,
+      "sha256": "9fe519c4a45ed9bac6c777d3c4fcd2b11cec50021caad6e9ee774f6bc3ef5252",
+      "rgb_sha256": "0b5f726a9909855c4188473e7d7acb8878e467db1a0894ce004ba0410d3db75d",
+      "guide": "row2-guide.png",
+      "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+      "prompt": "2C/prompt.txt",
+      "prompt_sha256": "ac08f8c14350f97a1d22b9015fda48127126209ad22233862deaa1e2e3f46a8c",
+      "receipt": "2C/input-and-receipt.json"
+    },
+    {
+      "id": "3A",
+      "original": "3A/original.png",
+      "bytes": 1177364,
+      "sha256": "290b94b4ecb628f0f2a31b5a85fc7a58d745ff8b198097ebfc30968341c5555b",
+      "rgb_sha256": "b5918391df7a7636a8c3e2452d17e6b4be868ba6c1384e9626cfd6a8bfc014a6",
+      "guide": "row3-guide.png",
+      "guide_sha256": "db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78",
+      "prompt": "3A/prompt.txt",
+      "prompt_sha256": "567771fff59c0389659a19a74923fe16825cdb5041bbfd86bd46dac809c759e4",
+      "receipt": "3A/input-and-receipt.json"
+    },
+    {
+      "id": "3B",
+      "original": "3B/original.png",
+      "bytes": 1159926,
+      "sha256": "55611034f92adbcdc7a90f07875f63def9fbf57cb6057801d6658e9763f532cd",
+      "rgb_sha256": "68cd5a3dd506139dd9ecf1e343e99bf181ffc13b8e31a31fead53f643efc60a3",
+      "guide": "row3-guide.png",
+      "guide_sha256": "db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78",
+      "prompt": "3B/prompt.txt",
+      "prompt_sha256": "520675a75829b6d7a678dbaeb80e984fbac8302055429601f120ee98a6aac46e",
+      "receipt": "3B/input-and-receipt.json"
+    },
+    {
+      "id": "3C",
+      "original": "3C/original.png",
+      "bytes": 1187287,
+      "sha256": "6b1b4673ff845d78bfeeb0decc3c8835b22db0bd931630dacf3945deaa38da9e",
+      "rgb_sha256": "1a6218672368376734c8afa19a93204b03860de5b8dc7f2e6d953b8d6fcc78ae",
+      "guide": "row3-guide.png",
+      "guide_sha256": "db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78",
+      "prompt": "3C/prompt.txt",
+      "prompt_sha256": "ac08f8c14350f97a1d22b9015fda48127126209ad22233862deaa1e2e3f46a8c",
+      "receipt": "3C/input-and-receipt.json"
+    }
+  ]
+}
