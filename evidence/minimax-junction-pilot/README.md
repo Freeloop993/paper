@@ -1,6 +1,6 @@
 # 相机舱与臂根的 MiniMax 预试复核 · 2026-11-13
 
-[最后一组，含机鼻局部](mount-three.jpg) · [三方向全部 18 张](all-18.jpg) · [18 张局部](junctions-18.jpg) · [B 的父图及另两次局部修订](B-local.jpg) · [输入条件与出图前登记](../../experiments/minimax-junction-pilot/README.md)
+[五份输入图与 20 次逐字提示词](actual-inputs.md) · [最后一组，含机鼻局部](mount-three.jpg) · [三方向全部 18 张](all-18.jpg) · [18 张局部](junctions-18.jpg) · [B 的父图及另两次局部修订](B-local.jpg) · [输入条件与出图前登记](../../experiments/minimax-junction-pilot/README.md)
 
 **已取回 20 张新增开发图，18 张比较三个方向，另 2 张从同一 B 父图局部修订。** 历史 P1 的 23 张和 Claude P2 首轮的 9 张均另记。P2 九份已核原图摘要，阅览原始请求及改写。下文是 Codex 知条件看图和手读，不构成作者选稿、独立评议或正式通过。GPU 未启动。
 
