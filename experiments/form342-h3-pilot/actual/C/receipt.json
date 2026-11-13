@@ -1,0 +1,25 @@
+{
+  "created": 1794575344,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9837,
+    "input_tokens": 5741,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3691,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:09:06.143266+00:00",
+  "elapsed_s": 13.52,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red endpoint dots connected by intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view, aligned to the motor centers and arm directions of <Subject 1> on a plain light background, with the black background and geometric guide marks from <Picture 1> removed. <Subject 1> supplies the exact spatial layout, equal horizontal and vertical spacing, and four diagonal arm directions transferred to the quadcopter's motor centers and unfolded arms, while the visible red dots and blue lines are omitted. The complete quadcopter is centered with its nose pointing toward the top edge, featuring a 250 mm opposite-motor span in a true X configuration. At the center sits a matte dark-gray polymer shell that is 1.4 times as long as it is wide, built with straight sides and clipped corners. The top cover features four distinct panel seams dividing the housing into separate access sections around the central electronics bay. Four slender carbon-fiber arms, each measuring 20 mm wide at midspan, extend diagonally outward to the four motor positions defined by <Subject 1>. Each arm plugs into a distinct recessed socket along the shell perimeter, marked by a crisp transverse joint seam. At the end of each arm, a cylindrical brushless motor mount holds a single stationary two-blade, 5-inch propeller with no propeller guards. Projecting slightly beyond the front clipped-edge nose outline is a forward-facing camera gimbal assembly; because of the strict overhead viewpoint, only its upper housing and side profile are visible while its horizontally oriented optical lens face remains hidden."
+  }
+}

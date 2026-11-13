@@ -1,0 +1,25 @@
+{
+  "created": 1794575317,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9845,
+    "input_tokens": 5749,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3699,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:08:39.241471+00:00",
+  "elapsed_s": 13.73,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four-point X-shaped spatial layout of the red circular markers and intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top-down view on a plain light background, with its nose pointing toward the top edge and its four arms aligned to <Subject 1>, while the black background, blue lines, and red dots from <Picture 1> are omitted. <Subject 1> supplies the exact motor center positions, arm directions, and equal horizontal and vertical spacing transferred to the quadcopter's unfolded arms and motors. The quadcopter features a true X-frame geometry corresponding to a 250 mm opposite-motor span, centered in the frame. The central body is a rounded pod with a continuous curved outline and a length-to-width ratio of 1.8 to 1. Its matte dark-gray main shell displays three distinct recessed top cover seams dividing the upper surface cleanly. At the forward tip, a low-profile camera housing sits flush within the nose outline, facing horizontally forward so only its upper casing is visible from directly overhead. Four straight arms extend diagonally outward at 45-degree angles to the corners defined by <Subject 1>; each arm narrows to 15 mm wide at midspan and reaches that running width within one arm width of the central pod via a short, seamless, rounded shoulder transition. Each arm terminates in a cylindrical motor hub topped with a stationary two-blade, 5-inch propeller with no propeller guards. Soft, even studio lighting casts subtle contact shadows beneath the shell, arms, and blades against the clean off-white background, with no guide marks or lettering present."
+  }
+}

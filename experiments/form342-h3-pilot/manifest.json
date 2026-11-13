@@ -1,0 +1,86 @@
+{
+  "stage": "development; independent samples for illustration, outside E2/E3/E4",
+  "model": "MiniMax-H3-Image",
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "submitted_seed": null,
+  "reference": "red motor centres and blue arm rays only",
+  "hub_span_fraction": 0.4099999999999999,
+  "per_condition": 1,
+  "rows": [
+    {
+      "id": "R1",
+      "input_source": "guide.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "prompt_sha256": "8a840d127a0526f4c0d84a7763c760a5e1341b43ce80728cb611bc619765d6d7",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. The main shell is 1.8 times as long as wide.\nEach arm is 15 mm wide at midspan.\nEach arm reaches its running width within one arm width of the shell, through a short, seamless, rounded shoulder.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nTwo or three distinct top cover seams.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "R2",
+      "input_source": "guide.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "prompt_sha256": "c947e4e7aee9feeba286c5851fbac61ebda8c5ebbad8bdcc1477406e9edb5214",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. The main shell is 1.8 times as long as wide.\nEach arm is 15 mm wide at midspan.\nEach arm tapers gradually out of the shell for at least two arm widths before reaching its running width, with no joint seam.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nTwo or three distinct top cover seams.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "A",
+      "input_source": "guide.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "prompt_sha256": "e08c6d576dccadcf58d0adcc9eb065bf8c6a690c000b928c831db72530cd00e1",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. The main shell is 1.4 times as long as wide.\nEach arm is 20 mm wide at midspan.\nEach arm reaches its running width within one arm width of the shell, through a short, seamless, rounded shoulder.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "B",
+      "input_source": "guide.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "prompt_sha256": "274b87936ef633428a30a80458a4f2856fae9ba5bf09ff489e9e67c54b521a2a",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. The main shell is 2.4 times as long as wide.\nEach arm is 10 mm wide at midspan.\nEach arm tapers gradually out of the shell for at least two arm widths before reaching its running width, with no joint seam.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "C",
+      "input_source": "guide.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "prompt_sha256": "f13a4c5e65d91197cb068368e87bd1ac93f499407a3beb796cfe6fc098f19b55",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA box-shaped shell with straight sides and clipped corners. The main shell is 1.4 times as long as wide.\nEach arm is 20 mm wide at midspan.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe camera gimbal projects beyond the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nFour or more distinct top cover seams.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    }
+  ],
+  "checks": [
+    "R1/R2 differ only in shape.root and prompt line 5",
+    "one identical PNG for all 5; PNG separately exported for every condition",
+    "record camera visibility, four hub blade counts, guards, marker residue and appearance; all images retained without retry"
+  ]
+}

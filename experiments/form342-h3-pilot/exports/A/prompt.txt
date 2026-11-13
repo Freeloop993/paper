@@ -1,0 +1,8 @@
+Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.
+Match the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.
+A rounded pod with a continuous curved outline. The main shell is 1.4 times as long as wide.
+Each arm is 20 mm wide at midspan.
+Each arm reaches its running width within one arm width of the shell, through a short, seamless, rounded shoulder.
+The camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.
+One top cover seam.
+Show the complete product on a plain light background. Omit guide marks and lettering.

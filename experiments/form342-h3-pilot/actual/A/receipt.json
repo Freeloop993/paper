@@ -1,0 +1,25 @@
+{
+  "created": 1794575330,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10072,
+    "input_tokens": 5976,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3926,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:08:52.593041+00:00",
+  "elapsed_s": 13.28,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout in <Picture 1>, defined by four red circular motor-center markers connected by two intersecting blue diagonal lines, is <Subject 1>. The target image replaces the black background and schematic diagram of <Picture 1> with a clean, strict orthographic top-down studio product render of a compact everyday aerial photography quadcopter whose unfolded arms and motor centers align directly with <Subject 1>. <Subject 1> supplies the exact spatial placement, true-X symmetry, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's central frame and four motors. Viewed from directly overhead with its nose pointing straight toward the top edge of the square canvas, the quadcopter features a smooth, rounded central pod with a continuous curved outline whose main shell length is 1.4 times its width. Four fully unfolded arms extend outward along the diagonals of <Subject 1> at a 250 mm opposite-motor span; each arm measures 20 mm wide at midspan and transitions smoothly into the central pod through a short, seamless, rounded shoulder within one arm width of the shell. At the outer tip of each arm, aligned precisely with the four corner positions of <Subject 1>, sits a cylindrical brushless motor hub carrying a single stationary, unguarded five-inch two-blade propeller with slender, aerodynamically tapered blades positioned symmetrically across the top view. The forward nose section houses an integrated camera module contained entirely within the continuous outer nose contour; because the camera is angled horizontally forward for level flight photography, only the sleek upper casing of the gimbal housing is visible from this strictly vertical overhead viewpoint, while its optical lens face remains hidden underneath. A single crisp top cover seam runs cleanly along the upper surface of the central pod, indicating the removable canopy assembly. The entire quadcopter is rendered in matte light-gray and charcoal composite materials with subtle, even studio lighting and soft contact shadows against a plain, uniform off-white background, completely free of any guide marks, crosshairs, or lettering."
+  }
+}

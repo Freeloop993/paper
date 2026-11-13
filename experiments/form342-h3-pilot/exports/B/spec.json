@@ -1,0 +1,92 @@
+{
+  "schema": "form342-h3/1",
+  "shape": {
+    "body": "pod",
+    "ratio": "2.4",
+    "arm": "10",
+    "root": "taper",
+    "camera": "inside",
+    "seams": "one"
+  },
+  "layout": {
+    "size": 1024,
+    "nose": "up",
+    "origin": "top-left",
+    "mm_origin": "frame-center",
+    "pxPerMm": 2.374973688106881,
+    "max_motor_distance_mm": 250,
+    "hubs": [
+      {
+        "id": "R1",
+        "x_mm": -88.38834764831842,
+        "y_mm": -88.38834764831843,
+        "x_px": 302.08000000000004,
+        "y_px": 302.08000000000004
+      },
+      {
+        "id": "R2",
+        "x_mm": 88.38834764831842,
+        "y_mm": -88.38834764831843,
+        "x_px": 721.92,
+        "y_px": 302.08000000000004
+      },
+      {
+        "id": "R3",
+        "x_mm": 88.38834764831843,
+        "y_mm": 88.38834764831842,
+        "x_px": 721.92,
+        "y_px": 721.92
+      },
+      {
+        "id": "R4",
+        "x_mm": -88.38834764831842,
+        "y_mm": 88.38834764831844,
+        "x_px": 302.08000000000004,
+        "y_px": 721.9200000000001
+      }
+    ],
+    "links": [
+      [
+        512,
+        512,
+        302.08000000000004,
+        302.08000000000004
+      ],
+      [
+        512,
+        512,
+        721.92,
+        302.08000000000004
+      ],
+      [
+        512,
+        512,
+        721.92,
+        721.92
+      ],
+      [
+        512,
+        512,
+        302.08000000000004,
+        721.9200000000001
+      ]
+    ],
+    "bladeTips": [],
+    "adjacent_deg": [
+      90,
+      90,
+      90,
+      90
+    ],
+    "r1_clockwise_from_nose_deg": 315
+  },
+  "bladeCount": 2,
+  "designDimensionsMm": {
+    "length": 120,
+    "width": 50,
+    "height": 40
+  },
+  "armWidthMm": 10,
+  "requestedPropDiameterMm": 127,
+  "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. The main shell is 2.4 times as long as wide.\nEach arm is 10 mm wide at midspan.\nEach arm tapers gradually out of the shell for at least two arm widths before reaching its running width, with no joint seam.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794575345,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10609,
+    "input_tokens": 6513,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4463,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:09:07.289062+00:00",
+  "elapsed_s": 14.66,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four red circular motor-center markers arranged in a square with equal horizontal and vertical spacing in <Picture 1> are <Subject 1>. The two intersecting blue diagonal lines connecting the opposite markers to form an X layout in <Picture 1> are <Subject 2>. The target image replaces the black background, red markers, and blue guide lines of <Picture 1> with a strict orthographic top-down product render of a compact everyday aerial photography quadcopter on a plain light background, aligned to the geometry of <Subject 1> and <Subject 2>. <Subject 1> supplies the exact four-corner motor-center positions transferred to the four motors of the quadcopter. <Subject 2> supplies the exact diagonal arm directions and intersecting X-axis alignment transferred to the four unfolded arms of the quadcopter. Seen from directly overhead with its nose pointing toward the top edge of the frame, the complete quadcopter is centered within the square canvas against a clean, uniform off-white studio background free of any guide marks, dimension lines, or lettering. The central body is a smooth, rounded aerodynamic pod with a continuous curved outline and a length-to-width ratio of 2.4 to 1, finished in matte pearl-white polymer with subtle soft-gray studio shading that defines its convex upper curvature. A single crisp top-cover seam runs cleanly along the centerline of the pod, dividing the upper shell into symmetrical left and right halves. At the forward nose section, the camera housing sits recessed entirely inside the pod's outer nose contour; because the gimbal-mounted camera points horizontally forward parallel to the ground plane, only the contoured top fairing of the housing is visible from directly overhead while its optical lens face remains hidden beneath the nose profile. Four fully unfolded tubular arms extend outward along the exact diagonals of <Subject 2> toward the four corner centers defined by <Subject 1>, representing a compact 250 mm opposite-motor span. Each arm emerges seamlessly from the side walls of the central pod without any joint seam or hinge gap, tapering gradually outward over an initial transition zone at least two arm widths long before settling into a constant midspan width equivalent to 10 mm on a 250 mm scale. Each arm terminates in a cylindrical dark-anodized brushless motor bell positioned precisely at its respective marker location in <Subject 1>. Mounted atop each motor shaft is a single stationary, unrotated five-inch two-blade propeller crafted from translucent smoked polycarbonate, with one blade oriented along the longitudinal axis of its supporting arm and the opposite blade extending perpendicular to it, completely bare and unobstructed by any propeller guards. Soft, even overhead illumination casts gentle contact shadows beneath the propeller blades, arms, and rounded fuselage onto the plain light surface below."
+  }
+}

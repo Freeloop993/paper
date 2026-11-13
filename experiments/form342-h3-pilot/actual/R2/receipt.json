@@ -1,0 +1,25 @@
+{
+  "created": 1794575330,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10267,
+    "input_tokens": 6171,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4121,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:08:51.400644+00:00",
+  "elapsed_s": 12.08,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The spatial layout of the four red endpoint dots and two intersecting blue diagonal lines forming an X in <Picture 1> is <Subject 1>. The target image shows a newly designed compact quadcopter for everyday aerial photography in a strict orthographic top view with its nose pointing toward the top edge, replacing the black background, blue lines, and red dots of <Picture 1> while matching the motor centers and arm directions of <Subject 1> on a plain light background. <Subject 1> supplies the exact four-corner motor center positions, equal horizontal and vertical spacing, and diagonal X-configuration arm directions transferred to the new quadcopter's motors and arms. The complete product is centered within the square frame against a clean, uniform off-white studio background with soft, even overhead lighting and subtle contact shadows beneath the airframe, omitting all guide marks, dimension lines, and lettering. The central fuselage is a smooth, rounded pod with a continuous curved outline and a length-to-width ratio of 1.8 to 1, finished in matte pearl-white polymer with fine dark-gray carbon-fiber accents. Two clean, recessed top cover seams divide the upper shell into three distinct panels: a forward nose module, a central battery hatch secured by a flush latch near the middle, and a rear tail cap. At the front tip, a low-profile camera housing sits entirely within the forward contour of the nose outline; it is oriented horizontally forward so that from directly overhead only its sculpted top fairing is visible and its optical lens face remains hidden below the rim. Four fully unfolded arms extend diagonally outward from the four sides of the pod along the exact trajectories of <Subject 1>, each seamlessly molded out of the main shell without any joint seam and tapering gradually over a distance of at least two arm widths before reaching a constant midspan width of 15 mm scaled proportionally to the 250 mm opposite-motor span. Each arm terminates precisely at one of the four corner motor centers of <Subject 1> in a cylindrical brushed-aluminum brushless motor bell topped with a metallic prop nut. Mounted on each of the four motors is a single stationary, unblurred five-inch two-blade propeller made of semi-translucent dark-smoke polycarbonate with symmetrical aerodynamic blades and no propeller guards."
+  }
+}

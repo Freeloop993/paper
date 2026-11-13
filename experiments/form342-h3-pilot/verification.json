@@ -1,0 +1,67 @@
+[
+  {
+    "id": "R1",
+    "output_sha256": "46236a62baa557032c3e461d53ce44d0520b0fb9453ba6906eceafbdcbe5ffc2",
+    "rgb_sha256": "3685a79e577511389210e57c4a310c1fb7b368c0085de628d57b4265d6728273",
+    "size": [
+      1024,
+      1024
+    ],
+    "inputs_match": true,
+    "http": 200,
+    "tokens": 9845,
+    "api_elapsed_seconds": 13.73
+  },
+  {
+    "id": "R2",
+    "output_sha256": "82173867a9b0be3dd63174c4e69900c65f0e86113b85bffc764646996194b5e9",
+    "rgb_sha256": "93e96e511822ce7ad5274cf4cfd636d29c09f544a324d5d2ed45e55a076f481f",
+    "size": [
+      1024,
+      1024
+    ],
+    "inputs_match": true,
+    "http": 200,
+    "tokens": 10267,
+    "api_elapsed_seconds": 12.08
+  },
+  {
+    "id": "A",
+    "output_sha256": "d079d8e6540899bc81b34da52c9faf2536aaa4e8ff69dd3c699ad5c9e3012494",
+    "rgb_sha256": "df44bc78d481de453056f61bf9e9178ce3b6d8ce63723a5a00a71e433f8df767",
+    "size": [
+      1024,
+      1024
+    ],
+    "inputs_match": true,
+    "http": 200,
+    "tokens": 10072,
+    "api_elapsed_seconds": 13.28
+  },
+  {
+    "id": "B",
+    "output_sha256": "bca1468c8c7891a46c836069d48ac5cea90fdf3b881244a5e3875cde90b13f97",
+    "rgb_sha256": "3c197155e1121017a2335479c22699af5545dc0ecae92d4755fb134ec8953d82",
+    "size": [
+      1024,
+      1024
+    ],
+    "inputs_match": true,
+    "http": 200,
+    "tokens": 10609,
+    "api_elapsed_seconds": 14.66
+  },
+  {
+    "id": "C",
+    "output_sha256": "a2fef3c6a409d15b0d36974881c141f48065d407d5d1ebd816a2935914bfccf9",
+    "rgb_sha256": "7959bf17666037c4a65b73493f3c9cd305ebd19d7c21514781f15da092d62886",
+    "size": [
+      1024,
+      1024
+    ],
+    "inputs_match": true,
+    "http": 200,
+    "tokens": 9837,
+    "api_elapsed_seconds": 13.52
+  }
+]
