@@ -1,0 +1,21 @@
+[
+  {
+    "role": "作者反馈后的设计修订样张，独立于 E1，供讨论",
+    "source": "E1-text-wl0.70-r2",
+    "reference": "../e1-open-20261112/E1-actual/E1-text-wl0.70-r2/original.png",
+    "tool": "Codex 内置图像编辑（具体模型版本未暴露）",
+    "count": 1,
+    "checks": [
+      "正顶视、机头向上；顶视允许镜片被遮住",
+      "前后两对的臂根、机臂、电机座接续；遮住的下支架记为无法从本图验证",
+      "四副等径双叶、W/L 目标 0.70"
+    ],
+    "prompt": "Edit the supplied picture of a compact everyday aerial photography quadcopter into one coherent industrial-design concept, shown directly from above. The source shows the nose toward the viewer at the bottom; turn the craft so the nose points to the TOP of the page and lift the viewing camera to true orthographic plan. Keep the recognizable neutral gray central shell and single long cover seam. Make the plan sensibly longer than wide: left–right motor spacing approximately 70% of front–back spacing. Show four connected unfolded arms, two symmetric pairs: a continuous structural path at each corner from the shell shoulder to the motor mount, comparable motor housing and mounting collar at all four corners. Take the existing front pair of landing feet as the design cue for four integrated compact landing feet: a small outboard shoulder at each motor mount, vertical foot below, with only the naturally visible edge from above. Do not splay four feet out just to expose them. Use four rotors of the same diameter and exactly TWO opposed blades of equal length per rotor, on four separate hubs. Put the forward-facing camera under the nose front lip, with its optical axis horizontal and pointing forward toward the top edge. From straight overhead its enclosing hood or top rim may be visible while its lens face is occluded. No lens circle or camera window aimed at the viewer from the roof. Show a designed, portable photographic product with legible molded satin shell, finer-grained dark reinforced polymer at the mounts and plausible contact shadows. White seamless background, whole craft in frame, square canvas, plain single top-view product photograph without labels, insets, guide lines, or ground grid."
+  },
+  {
+    "source": "revision-01.png",
+    "guide": "../../experiments/l1-layout/guides/line-wl0.70.png",
+    "trigger": "知条件 AI 初读第一张 W/L 约 1.00，偏离 0.70。保留第一张，第二张加入同期项目存档的 L1 点线图作为附加输入，仍为开放设计修订。",
+    "prompt": "One realistic portable camera quadcopter, orthographic view straight down. The SECOND reference (black X with four circles on white) defines the exact composition; those four circle centres are literal motor centres. Keep the square white canvas and put the four hubs at fractional image coordinates (0.332,0.26),(0.668,0.26),(0.332,0.74),(0.668,0.74). This rectangle is tall and narrow. Its width is seven tenths its height. Keep ample blank margins rather than expanding the subject. Do not draw the black diagram itself. Use the FIRST reference for the designed shell, four matching motor seats, four compact integrated landing feet and continuous arm-to-shell connections. Make the satin grey shell compact and softly faceted with one service panel and discreet dark warm graphite trim. Nose at top of image, forward-facing camera fitted below its front edge; only its hood top can be seen, no roof lens or upward-facing glass. Four mechanically connected arm ends and four motors, each with an equal diameter two-blade propeller, blades elegantly tapered and opposed across their hub; all four propellers have identical length, hub-to-blade-tip distance about one seventh of the image height. Rotate each stationary two-blade pair diagonally for natural product presentation. Vertical landing feet tucked close beneath each motor seat; the same attachment logic at front and rear with a subtly visible outer rim. Treat the first photo as prior design only: explicitly correct its erroneous square motor layout to match the second reference exactly. Soft neutral studio light on an eggshell-white ground, realistic subtle surface grain, tidy interfaces, complete silhouette, true top view, no perspective, captions, labels, construction lines or diagram marks."
+  }
+]

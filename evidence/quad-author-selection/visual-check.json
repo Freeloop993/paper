@@ -1,0 +1,62 @@
+{
+  "role": "Exploratory design edits outside E1; source verified RGB-identical to returned anonymous image.",
+  "reader": "Condition-aware AI initial visual reading on native images. Approximate motor centres; no independent validation.",
+  "target_wl": 0.7,
+  "generated": [
+    {
+      "file": "revision-01.png",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "sha256": "fcdc878e6563b9448b27714b18bf41f6e688f9f1d0d0d20dc045def9e6bc43a5",
+      "motor_centre_pixels_approx": [
+        [
+          302,
+          281
+        ],
+        [
+          950,
+          281
+        ],
+        [
+          950,
+          930
+        ],
+        [
+          302,
+          930
+        ]
+      ],
+      "wl": 0.9984591679506933
+    },
+    {
+      "file": "revision-02.png",
+      "pixels": [
+        1254,
+        1254
+      ],
+      "sha256": "c1504472ef56504b7ac7853d8d3946e4ab5f5a221551842404fe667986e08855",
+      "motor_centre_pixels_approx": [
+        [
+          412,
+          349
+        ],
+        [
+          842,
+          349
+        ],
+        [
+          842,
+          869
+        ],
+        [
+          412,
+          869
+        ]
+      ],
+      "wl": 0.8269230769230769
+    }
+  ],
+  "observations": "Both show four two-blade rotors, connected arms and motor mounts, cues at four outer supports. Nose module top visible with no face-on roof optic. Lens axis and full lower landing gear concealed. Edit 02 still misses target spacing and has long uniform central cover; design not approved."
+}
