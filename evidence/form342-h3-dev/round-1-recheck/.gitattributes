@@ -1,0 +1,4 @@
+key.json -text
+blind.jsonl -text
+rubric.md text eol=lf
+*.jpg binary
