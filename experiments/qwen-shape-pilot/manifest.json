@@ -1,0 +1,291 @@
+{
+  "batch": "qwen-shape-pilot",
+  "status": "offline_compiled_unsigned",
+  "planned": 12,
+  "source_issue": "https://github.com/Freeloop993/paper/issues/1#issuecomment-6858488547",
+  "edit_route_order": "https://github.com/Freeloop993/paper/issues/1#issuecomment-6854091119",
+  "method_freeze_pr": 68,
+  "method_freeze_head": "638db88bc08b1b828da88436d598061f3afe1ae4",
+  "method_section_3_signed": false,
+  "dictionary": "shape-dictionary-v1.2",
+  "dictionary_sha256": "22ca89232e010ae603f34096dd3f5ccfcf62b7faa91161b157fb6007514f06a9",
+  "reading_protocol": "v2.1",
+  "guide_source": "evidence/form342-h3-dev/round-2/guides/dots.png",
+  "guide": {
+    "span_mm": 250,
+    "hub_span_fraction_approx": 0.41,
+    "palette": "regular"
+  },
+  "template_sources": [
+    {
+      "path": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r1",
+      "prompt_id": "46477b17-b50b-4aa7-9a16-ca59ea6f2548",
+      "request_sha256": "06e8f6aee5e47665b5cbd165490d359e112b9386220d8e31b0115a00f0f4bc9b",
+      "history_sha256": "f46ed3e6edf9b933af70555f225a4fa78ca97969ac9b47c11e4d4bce8e328a6d",
+      "receipt_sha256": "de4cc2815e26cbb9312f12c89b32ba508a29f18f95841d9fff036e60c8ba2085"
+    },
+    {
+      "path": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r2",
+      "prompt_id": "a81a12ec-bf79-4e96-9b0d-1503169c35ca",
+      "request_sha256": "c3170d6c0e6d0ffb0f10d856d9a65ea691a301df2f283291cb49ded70a407324",
+      "history_sha256": "81ff1cf9f7ad7ba309d2aecd5756d72ee5c7f2569a185fdb91d917464020640f",
+      "receipt_sha256": "b4e60dcd433a9940510396f4416ac2fc13de16b09c5e5e7596bb9ac6c4acca3e"
+    }
+  ],
+  "weights_sha256": "8894fac5380cea2d9eed69330a587ce83313685ff3c71d0ab61c1606dede0771",
+  "seed_policy": "Reuse the two L1-F seeds, paired across all six conditions; fixed before generation.",
+  "backend_gate": {
+    "nonbaseline_target_hits_min_per_two": 1,
+    "overall_pass_min_per_twelve": 9
+  },
+  "platform_observed_for_this_batch": null,
+  "pending_on_platform": [
+    "original instance and listener identity",
+    "live node schemas and exact weight bytes/SHA-256",
+    "served input bytes",
+    "per-position acceptance, sampler/cache evidence, PNG and history",
+    "fees"
+  ],
+  "rows": [
+    {
+      "id": "QSP-S0-r1",
+      "condition": "S0",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "seed": 2026111301,
+      "request": "requests/QSP-S0-r1.json",
+      "request_sha256": "b7737c250801e9bb6553b3d5661832a552864a37ed8d6bf5aa5523772bd1281e",
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r1",
+      "h3_submission": "S0-1"
+    },
+    {
+      "id": "QSP-S0-r2",
+      "condition": "S0",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "seed": 2026111302,
+      "request": "requests/QSP-S0-r2.json",
+      "request_sha256": "f11076b59c89202f6b8bd0364cb8b596f4c0d251157f4a034923202b22724ad7",
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r2",
+      "h3_submission": "S0-2"
+    },
+    {
+      "id": "QSP-S1-r1",
+      "condition": "S1",
+      "rep": 1,
+      "target": {
+        "body_plan": "box",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "seed": 2026111301,
+      "request": "requests/QSP-S1-r1.json",
+      "request_sha256": "cbc3570119087bfddf7bd9303c253795e048687460495b83e1f2a28b49af8ecf",
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r1",
+      "h3_submission": "S1-1"
+    },
+    {
+      "id": "QSP-S1-r2",
+      "condition": "S1",
+      "rep": 2,
+      "target": {
+        "body_plan": "box",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "seed": 2026111302,
+      "request": "requests/QSP-S1-r2.json",
+      "request_sha256": "471eeaac95a285f0365754bb55314584fb95e362c1bf006873c1614ecdc2909f",
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r2",
+      "h3_submission": "S1-2"
+    },
+    {
+      "id": "QSP-S2-r1",
+      "condition": "S2",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "socket",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "seed": 2026111301,
+      "request": "requests/QSP-S2-r1.json",
+      "request_sha256": "02f3ac81471a1ff8d93135b12c524585a4dc0663aa33bde23a2de663ff666574",
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r1",
+      "h3_submission": "S2-1"
+    },
+    {
+      "id": "QSP-S2-r2",
+      "condition": "S2",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "socket",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "seed": 2026111302,
+      "request": "requests/QSP-S2-r2.json",
+      "request_sha256": "371eaaefb3690372373b4f3d88273125566ce69221be3023ded962a50894d3c8",
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r2",
+      "h3_submission": "S2-2"
+    },
+    {
+      "id": "QSP-S3-r1",
+      "condition": "S3",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "hinge",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "seed": 2026111301,
+      "request": "requests/QSP-S3-r1.json",
+      "request_sha256": "d624c0114d5d6d4cfc18200acc37f9cb39de482c8a481263b685ea80d95fb93c",
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r1",
+      "h3_submission": "S3-1"
+    },
+    {
+      "id": "QSP-S3-r2",
+      "condition": "S3",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "hinge",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "seed": 2026111302,
+      "request": "requests/QSP-S3-r2.json",
+      "request_sha256": "26b77495d1a23bd3f0daced0a56b91c719ed2d1a45bde3be5e2e9b6ce60ccf05",
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r2",
+      "h3_submission": "S3-2"
+    },
+    {
+      "id": "QSP-S4-r1",
+      "condition": "S4",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "projecting",
+        "cover": "single"
+      },
+      "seed": 2026111301,
+      "request": "requests/QSP-S4-r1.json",
+      "request_sha256": "0747a373d2dc139d25582a22640434959ace80ec09ab3ef651f7d18dcfec29bf",
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r1",
+      "h3_submission": "S4-1"
+    },
+    {
+      "id": "QSP-S4-r2",
+      "condition": "S4",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "projecting",
+        "cover": "single"
+      },
+      "seed": 2026111302,
+      "request": "requests/QSP-S4-r2.json",
+      "request_sha256": "2829e1be9f68a2abd438d82020b2a6b49bbf44843fde1b5af7434ea96965251b",
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r2",
+      "h3_submission": "S4-2"
+    },
+    {
+      "id": "QSP-S5-r1",
+      "condition": "S5",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi"
+      },
+      "seed": 2026111301,
+      "request": "requests/QSP-S5-r1.json",
+      "request_sha256": "e52b6edf997efffac30584cddc6a71b3d13fafd7e65ddd007fd6a649578f0d90",
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r1",
+      "h3_submission": "S5-1"
+    },
+    {
+      "id": "QSP-S5-r2",
+      "condition": "S5",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi"
+      },
+      "seed": 2026111302,
+      "request": "requests/QSP-S5-r2.json",
+      "request_sha256": "e4e925a3d80bc3b2d60c2f9eae2851b3dc7214d6e07b4231b1c3e7cb761847b3",
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "input_name": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_file": "input/qwen-shape-dots-250-15c5ad1c924b.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "historical_template": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r2",
+      "h3_submission": "S5-2"
+    }
+  ]
+}
