@@ -72,12 +72,18 @@ def run():
         raw = (ROOT / row["guide"]).read_bytes()
         if digest(raw) != row["sha256"]:
             raise SystemExit("Guide mismatch")
+        inputs = [(row["guide"], raw)]
+        if "second_guide" in row:
+            extra = (ROOT / row["second_guide"]).read_bytes()
+            if digest(extra) != row["second_sha256"]:
+                raise SystemExit("Second guide mismatch")
+            inputs.append((row["second_guide"], extra))
         cell.mkdir(exist_ok=False)
         body = dict(model="MiniMax-H3-Image", size="1024x1024", n=1, output_format="png",
                     response_format="b64_json", prompt=row["prompt"])
-        save(cell / "request.json", dict(endpoint=URL, body=dict(body, images=[dict(file=row["guide"], sha256=row["sha256"])]),
+        save(cell / "request.json", dict(endpoint=URL, body=dict(body, images=[dict(file=path, sha256=digest(data)) for path, data in inputs]),
                                          submitted_utc=datetime.now(timezone.utc).isoformat()))
-        body["images"] = [dict(image_url="data:image/png;base64," + base64.b64encode(raw).decode())]
+        body["images"] = [dict(image_url="data:image/png;base64," + base64.b64encode(data).decode()) for _, data in inputs]
         started = time.monotonic()
         try:
             response = session.post(URL, headers={"Authorization":"Bearer " + key.strip()}, json=body, timeout=(15,240), allow_redirects=False)
