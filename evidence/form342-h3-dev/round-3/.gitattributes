@@ -1,2 +1,3 @@
 manifest.json -text
 actual/** -text
+blind-readings.json -text
