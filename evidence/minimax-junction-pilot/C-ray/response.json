@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 12.05,
+  "model": null,
+  "request_id": null,
+  "created": 1794542261,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9882,
+    "input_tokens": 5786,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3736,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark grey circular endpoint dots at the corners of the central X-shaped wireframe in <Picture 1> are <Subject 1>. The pale off-white background in <Picture 1> is <Subject 2>. The target image is an orthographic 90-degree overhead industrial design photograph of a daily-carry aerial camera quadcopter centered on <Subject 2>, with its nose pointing toward twelve o'clock and its four motors positioned directly at <Subject 1>. <Subject 1> is partially preserved; the exact four-point spatial coordinates remain as the motor hub locations, while the flat dots are replaced by three-dimensional cylindrical motor housings. <Subject 2> is partially preserved; its pale seamless tone remains, now receiving soft contact shadows from the aircraft above. Replacing the thin intersecting lines of <Picture 1>, the quadcopter features a compact bevelled central body with a 1.6:1 length-to-width ratio crafted from a satin warm-grey molded shell, completely unlettered. A narrower transverse camera cartridge nests between short nose lugs at the top, showing a fine parting seam and satin metal end caps from above. Four separate graphite composite arms seat flush into recessed shoulder sockets along the square hub layout, each secured by one fitted collar and featuring two banks of inset cooling slots, extending outward at 45 degrees to the nose axis so opposite hubs align with the 250 mm spacing of <Subject 1>. At <Subject 1>, each stationary propeller consists of a single balanced pair of opposite equal charcoal blades spanning 125 mm tip to tip. Soft 5500 K sidelight illuminates the full aircraft within the frame, casting defined contact shadows onto <Subject 2>.",
+  "error": null
+}

@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 11.22,
+  "model": null,
+  "request_id": null,
+  "created": 1794542226,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10149,
+    "input_tokens": 6053,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4003,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark-gray circular endpoint markers at the corners of the X-shaped diagram in <Picture 1> are <Subject 1>. The square canvas framing and centered layout of <Picture 1> is <Subject 2>. The target image replaces the flat schematic diagram from <Picture 1> with a photorealistic, orthographic 90-degree overhead industrial design photograph of an unlettered daily-carry aerial camera quadcopter positioned nose-up at twelve o'clock against a pale seamless background, using <Subject 1> to mark the four motor locations within <Subject 2>. <Subject 1> supplies the exact spatial coordinates transferred to the four motor hubs of the quadcopter. <Subject 2> is fully preserved. The quadcopter features a compact, beveled central body with a 1.6:1 length-to-width ratio finished in a satin warm-grey molded shell, oriented vertically along the longitudinal axis. At the front nose, a narrower transverse camera cartridge nests between short nose lugs, displaying a fine parting seam and two visible satin metal end caps from above. Along the flanks of the central hub, two banks of inset cooling slots are recessed into the warm-grey shell, while the opposite motor hubs sit 250 mm apart across the square diagonal geometry. Four separate arms in matte graphite composite extend outward at 45 degrees to the nose axis, seating flush into recessed shoulder sockets on the central body, with each arm secured by a single fitted collar around its base and featuring tight mechanical joints. At the four exact positions defined by <Subject 1>, the arms terminate in cylindrical motor pods topped with stationary propellers. Each propeller consists of a single balanced pair of opposite equal blades in dark charcoal, spanning 125 mm tip-to-tip, aligned diagonally along the respective arm axes. Soft 5500 K sidelight illuminates the aircraft from the side, creating gentle specular highlights along the beveled edges, satin metal caps, and collar rims, while casting crisp contact shadows beneath the overlapping propeller blades, motor housings, and recessed seams onto the clean, pale seamless studio surface.",
+  "error": null
+}

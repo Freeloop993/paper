@@ -1,0 +1,22 @@
+{
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "body": {
+    "model": "MiniMax-H3-Image",
+    "size": "1024x1024",
+    "n": 1,
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "Photorealistic industrial design photograph of a daily-carry aerial camera quadcopter. Orthographic 90-degree overhead, nose at twelve o'clock. True X, four motors, arms at 45 degrees to the nose axis, square hub layout, opposite hubs 250 mm apart. Four stationary propellers, each a single balanced pair of opposite equal blades, 125 mm tip to tip. Pebble body, 1.6:1. At twelve o'clock the pale nose forms a shallow scalloped visor over a recessed charcoal optical housing. Its small smoked crown and two side reveals are visible from above; the glass aperture is concealed on the vertical forward face. Each arm grows from a broad radiused shoulder, the upper skin sweeping into the first third of the arm. Satin warm-grey molded shell, graphite composite arms, charcoal blades. Soft 5500 K sidelight, defined contact shadows, pale seamless background. Use the four reference endpoints for motor locations. Unlettered product, full aircraft in frame. The body itself cups the dark module inside a shallow crescent notch; its broad continuous lip is almost flush with the crown. Picture 2 is only the appearance of the opaque crown of a forward optical pod seen from above. Suit its housing and side supports to this brief.",
+    "images": [
+      {
+        "file": "experiments/minimax-junction-pilot/points-rays.png",
+        "sha256": "775ca2be175a2333a899e52985620de0f4c68516a74afd9705c4873fbe4e6339"
+      },
+      {
+        "file": "experiments/minimax-junction-pilot/pod-reference/parent-pod.png",
+        "sha256": "af6ad764ad5ecf26213ec2a9b28eaa81ba3b8071c16958776718aeefc0334a7d"
+      }
+    ]
+  },
+  "submitted_utc": "2026-11-13T04:05:26.895627+00:00"
+}

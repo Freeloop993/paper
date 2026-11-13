@@ -1,0 +1,68 @@
+{
+  "role": "condition-aware AI visual estimate, 400px grid, not blind",
+  "order": "TL TR BR BL",
+  "hubs": [
+    [
+      110,
+      113
+    ],
+    [
+      290,
+      113
+    ],
+    [
+      290,
+      291
+    ],
+    [
+      110,
+      291
+    ]
+  ],
+  "tips": [
+    [
+      [
+        64,
+        167
+      ],
+      [
+        151,
+        63
+      ]
+    ],
+    [
+      [
+        247,
+        63
+      ],
+      [
+        337,
+        167
+      ]
+    ],
+    [
+      [
+        247,
+        343
+      ],
+      [
+        337,
+        239
+      ]
+    ],
+    [
+      [
+        63,
+        240
+      ],
+      [
+        151,
+        343
+      ]
+    ]
+  ],
+  "WL": 1.0112359550561798,
+  "dD": 0.5393436431363652,
+  "max_relative_blade_radius_difference": 0.08847251662872142,
+  "definition": "difference divided by longer blade; digitizing error several preview pixels"
+}

@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 11.84,
+  "model": null,
+  "request_id": null,
+  "created": 1794542238,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9971,
+    "input_tokens": 5875,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3825,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four circular endpoint markers at the corners of the X-shaped wireframe diagram in <Picture 1> are <Subject 1>. The pale neutral background in <Picture 1> is <Subject 2>. The target image replaces the wireframe lines of <Picture 1> with a photorealistic, orthographic 90-degree overhead industrial design photograph of an unlettered daily-carry aerial camera quadcopter centered on <Subject 2>, using <Subject 1> as the exact motor hub locations. <Subject 1> supplies the exact spatial positions transferred to the four motor hubs of the quadcopter. <Subject 2> is partially preserved; its pale seamless tone remains while gaining soft contact shadows beneath the aircraft. Seen from directly above with its nose pointing toward twelve o'clock, the quadcopter features a pebble-shaped central body with a 1.6:1 length-to-width ratio and a square hub layout where opposite motor hubs align with <Subject 1> at 45 degrees to the longitudinal axis, spaced 250 mm apart. At the rounded nose, two sculpted shell cheeks wrap around a recessed forward-camera pod so that only a narrow crescent of its dark glossy crown peeks out between them. Each arm extends from a broad radiused shoulder where the upper skin sweeps smoothly into the first third of the arm before transitioning into matte graphite composite tubing. The main body has a satin warm-grey molded shell finish, completely free of any text or logos. Mounted precisely at <Subject 1>, the four stationary motors hold charcoal propellers, each formed as a single balanced pair of opposite equal blades measuring 125 mm tip-to-tip. Soft 5500 K sidelight illuminates the scene, creating gentle specular highlights along the curved shell shoulders and casting defined contact shadows onto <Subject 2>, with the entire aircraft fully contained within the frame.",
+  "error": null
+}

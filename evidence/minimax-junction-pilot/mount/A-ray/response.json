@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 17.14,
+  "model": null,
+  "request_id": null,
+  "created": 1794542742,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 16217,
+    "input_tokens": 12121,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3413,
+      "image_tokens": 8708
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark circular endpoint dots and the intersecting diagonal lines connecting them in <Picture 1> are <Subject 1>. The pale background in <Picture 1> is <Subject 2>. The top-down appearance of the recessed charcoal optical pod with its opaque smoked crown, flanking side supports, and surrounding pale grey scalloped visor housing in <Picture 2> is <Subject 3>. The target image is a photorealistic orthographic 90-degree overhead industrial design photograph of a daily-carry aerial camera quadcopter centered on <Subject 2>, using <Subject 1> as the exact motor locations and incorporating <Subject 3> at the twelve o'clock nose. <Subject 1> is partially preserved; the four endpoint positions remain fixed while the thin intersecting guide lines are replaced by the physical quadcopter arms and motors. <Subject 2> is partially preserved; its uniform pale seamless tone remains while gaining soft contact shadows beneath the aircraft. <Subject 3> is partially preserved; its top-down optical pod geometry, materials, and colors are retained and integrated into the front nose of the full quadcopter body. Seen from directly above with its nose oriented at twelve o'clock, the complete unlettered quadcopter features a pebble-shaped central hub with a 1.6:1 length-to-width ratio crafted from a satin warm-grey molded shell. At the twelve o'clock tip, the pale nose forms a shallow crescent notch and scalloped visor that cups <Subject 3>, whose broad continuous lip sits nearly flush with the small smoked crown and two side reveals while the glass aperture remains hidden on the vertical forward face. Four stationary motors sit precisely at the four endpoints of <Subject 1>, arranged in a square hub layout with opposite hubs spaced 250 mm apart and arms extending at 45 degrees to the longitudinal nose axis. Each arm emerges from a broad radiused shoulder where the upper warm-grey skin sweeps smoothly into the first third of the arm before transitioning into a graphite composite shaft. Mounted atop each motor is a stationary propeller consisting of a single balanced pair of opposite equal blades in matte charcoal, spanning 125 mm tip to tip. Soft 5500 K sidelighting illuminates the scene, creating subtle specular highlights along the curved satin shell, smoked crown, and blade surfaces, while casting defined contact shadows onto <Subject 2>.",
+  "error": null
+}

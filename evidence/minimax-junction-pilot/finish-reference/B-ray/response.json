@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 16.34,
+  "model": null,
+  "request_id": null,
+  "created": 1794542351,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 13903,
+    "input_tokens": 9807,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4043,
+      "image_tokens": 5764
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark circular endpoint markers arranged in an X-pattern at 45-degree angles on the light grey background in <Picture 1> are <Subject 1>. The matte metallic surface finish and crisp specular shoulder highlights of the central housing and angled arms in <Picture 2> are <Subject 2>. The target image is a photorealistic, unlettered industrial design photograph showing a daily-carry aerial camera quadcopter from a strict 90-degree orthographic overhead view with its nose pointing to twelve o'clock, replacing the thin intersecting lines of <Picture 1> while placing its four motors directly over <Subject 1> and applying <Subject 2> across the airframe. <Subject 1> is partially preserved; the exact four-point spatial coordinates and square hub geometry remain, while the flat dots are replaced by physical motor hubs and propellers. <Subject 2> supplies the surface treatment and highlight behavior transferred to the new quadcopter's molded shell and arm roots. Centered along the vertical axis, the slender spindle body features a 2.6:1 length-to-width ratio clad in a satin warm-grey molded shell that catches soft 5500 K sidelight with clean, defined shoulder highlights along its longitudinal edges. Twin longitudinal ridges run down the front of the fuselage to cradle a slim, flush-mounted camera hood at the twelve o'clock nose, whose tapered U-shaped rim is clearly visible from above. From the mid-body, long blade-like arm roots run parallel alongside the fuselage before sweeping diagonally outward in one uninterrupted taper into graphite composite arms positioned at 45 degrees to the nose axis, with opposite hubs spaced proportionally to 250 mm apart. Each of the four diagonal arms terminates precisely at the locations of <Subject 1> in a compact cylindrical motor hub topped by a stationary charcoal propeller, where each rotor consists of a single balanced pair of opposite equal blades spanning 125 mm tip-to-tip. The entire aircraft fits comfortably within the frame against a pale seamless studio background, grounded by crisp contact shadows cast beneath the recessed body and arms.",
+  "error": null
+}

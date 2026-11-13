@@ -1,0 +1,18 @@
+{
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "body": {
+    "model": "MiniMax-H3-Image",
+    "size": "1024x1024",
+    "n": 1,
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "Photorealistic industrial design photograph of a daily-carry aerial camera quadcopter. Orthographic 90-degree overhead, nose at twelve o'clock. True X, four motors, arms at 45 degrees to the nose axis, square hub layout, opposite hubs 250 mm apart. Four stationary propellers, each a single balanced pair of opposite equal blades, 125 mm tip to tip. Pebble body, 1.6:1. At the rounded nose, two shell cheeks wrap a recessed forward-camera pod; only a narrow crescent of its dark crown peeks between the cheeks. Each arm grows from a broad radiused shoulder, the upper skin sweeping into the first third of the arm. Satin warm-grey molded shell, graphite composite arms, charcoal blades. Soft 5500 K sidelight, defined contact shadows, pale seamless background. Use the four reference endpoints for motor locations. Unlettered product, full aircraft in frame.",
+    "images": [
+      {
+        "file": "experiments/minimax-junction-pilot/points-rays.png",
+        "sha256": "775ca2be175a2333a899e52985620de0f4c68516a74afd9705c4873fbe4e6339"
+      }
+    ]
+  },
+  "submitted_utc": "2026-11-13T03:57:07.809386+00:00"
+}
