@@ -1,0 +1,15 @@
+{
+  "outputs": 36,
+  "distinct_hashes": 36,
+  "revised": 36,
+  "usage": {
+    "generated_images": 36,
+    "total_tokens": 337960,
+    "input_tokens": 190504,
+    "output_tokens": 147456
+  },
+  "actual_fee": null,
+  "http_request_ids": 0,
+  "first_start": "2026-11-13T14:30:28.007453+00:00",
+  "last_received": "2026-11-13T14:33:23.779144+00:00"
+}

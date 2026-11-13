@@ -1,0 +1,440 @@
+{
+  "S": {
+    "S0": {
+      "root": 3,
+      "nose": 1,
+      "cover": 3
+    },
+    "S0_socket": 0,
+    "targets": {
+      "S1": 3,
+      "S2": 3,
+      "S3": 3,
+      "S4": 2,
+      "S5": 3
+    },
+    "morph_pass": false,
+    "combined_ai_gate": false
+  },
+  "W": {
+    "levels": {
+      "W10": {
+        "values": [
+          0.039572298909372125,
+          0.05231753759911548
+        ],
+        "n": 2,
+        "mean": 0.0459449182542438,
+        "sd": 0.009012244705358672,
+        "residue": {
+          "yes": 2,
+          "no": 1
+        }
+      },
+      "W25": {
+        "values": [
+          0.08072852716632192,
+          0.09338912405824289
+        ],
+        "n": 2,
+        "mean": 0.0870588256122824,
+        "sd": 0.00895239391614664,
+        "residue": {
+          "yes": 1,
+          "no": 2
+        }
+      }
+    },
+    "delta": null,
+    "max_sd": null,
+    "ai_pass": false
+  },
+  "L": {
+    "pairs": [
+      {
+        "condition": "S0",
+        "regular": {
+          "no": 2,
+          "U": 1
+        },
+        "low": {
+          "no": 3
+        }
+      },
+      {
+        "condition": "S2",
+        "regular": {
+          "no": 3
+        },
+        "low": {
+          "no": 2,
+          "U": 1
+        }
+      },
+      {
+        "condition": "S4",
+        "regular": {
+          "no": 3
+        },
+        "low": {
+          "no": 3
+        }
+      },
+      {
+        "condition": "W25",
+        "regular": {
+          "yes": 1,
+          "no": 2
+        },
+        "low": {
+          "no": 3
+        }
+      }
+    ],
+    "regular": {
+      "no": 10,
+      "U": 1,
+      "yes": 1
+    },
+    "low": {
+      "no": 11,
+      "U": 1
+    },
+    "regularS2": 3,
+    "lowS2": 2,
+    "regularS4": 2,
+    "lowS4": 3,
+    "ai_pass": false
+  },
+  "overall": {
+    "joint": 30,
+    "double": 31,
+    "camera": {
+      "U": 18,
+      "invisible": 14,
+      "consistent": 3,
+      "wrong": 1
+    },
+    "nose": {
+      "N": 21,
+      "U": 10,
+      "P": 5
+    },
+    "guard": {
+      "no": 36
+    },
+    "quality": {
+      "product": 36
+    }
+  },
+  "groups": {
+    "L-S0": {
+      "root": {
+        "B": 3
+      },
+      "nose": {
+        "N": 2,
+        "U": 1
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "U": 2,
+        "invisible": 1
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 3
+      }
+    },
+    "L-S2": {
+      "root": {
+        "U": 1,
+        "S": 2
+      },
+      "nose": {
+        "N": 3
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "U": 2,
+        "invisible": 1
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 2,
+        "U": 1
+      }
+    },
+    "L-S4": {
+      "root": {
+        "B": 3
+      },
+      "nose": {
+        "P": 3
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "consistent": 3
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 3
+      }
+    },
+    "L-W25": {
+      "root": {
+        "B": 2,
+        "U": 1
+      },
+      "nose": {
+        "U": 1,
+        "N": 2
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "U": 2,
+        "wrong": 1
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 3
+      }
+    },
+    "S0": {
+      "root": {
+        "B": 3
+      },
+      "nose": {
+        "U": 2,
+        "N": 1
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "U": 2,
+        "invisible": 1
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 2,
+        "U": 1
+      }
+    },
+    "S1": {
+      "root": {
+        "B": 3
+      },
+      "nose": {
+        "N": 1,
+        "U": 2
+      },
+      "cover": {
+        "U": 1,
+        "C": 2
+      },
+      "body": {
+        "box": 3
+      },
+      "camera": {
+        "invisible": 1,
+        "U": 2
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 3
+      }
+    },
+    "S2": {
+      "root": {
+        "S": 3
+      },
+      "nose": {
+        "N": 2,
+        "U": 1
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "invisible": 1,
+        "U": 2
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 3
+      }
+    },
+    "S3": {
+      "root": {
+        "H": 3
+      },
+      "nose": {
+        "N": 3
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "invisible": 2,
+        "U": 1
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 2,
+        "U": 1
+      }
+    },
+    "S4": {
+      "root": {
+        "B": 3
+      },
+      "nose": {
+        "P": 2,
+        "U": 1
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "U": 3
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 3
+      }
+    },
+    "S5": {
+      "root": {
+        "B": 3
+      },
+      "nose": {
+        "N": 3
+      },
+      "cover": {
+        "M": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "invisible": 3
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "no": 3
+      }
+    },
+    "W10": {
+      "root": {
+        "B": 3
+      },
+      "nose": {
+        "N": 2,
+        "U": 1
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "invisible": 2,
+        "U": 1
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "yes": 2,
+        "no": 1
+      }
+    },
+    "W25": {
+      "root": {
+        "B": 3
+      },
+      "nose": {
+        "U": 1,
+        "N": 2
+      },
+      "cover": {
+        "C": 3
+      },
+      "body": {
+        "pod": 3
+      },
+      "camera": {
+        "U": 1,
+        "invisible": 2
+      },
+      "quality": {
+        "product": 3
+      },
+      "residue": {
+        "yes": 1,
+        "no": 2
+      }
+    }
+  },
+  "human_pending": {
+    "morph": {},
+    "visible": {
+      "guard": "no",
+      "quality": "product"
+    }
+  }
+}

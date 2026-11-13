@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-11-13T14:44:47.993114+00:00",
+  "file_sha": "355e2f21fa5bcf3fa5f75fdd0e379a21a79de6cfe61653d619311270628cee66",
+  "key_sha": "e02ebee42175e24b8465b96726a9f9694929e196e3311c50da87baf2b619e31f",
+  "rows": 36,
+  "constant_columns_needing_human_confirmation": {
+    "guard": "no",
+    "quality": "product"
+  }
+}

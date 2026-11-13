@@ -1,0 +1,16 @@
+# 第二轮全部原图与盲读
+组内三次独立请求。每个编号点开可看 1024 原件。
+| 条件与输入 | 重复 1 | 重复 2 | 重复 3 |
+|---|---|---|---|
+| [S0](guides/dots.png) | [![S0-1](actual/S0-1/original.png)](actual/S0-1/original.png) S0-1 · 无缝/待判 | [![S0-2](actual/S0-2/original.png)](actual/S0-2/original.png) S0-2 · 无缝/待判 | [![S0-3](actual/S0-3/original.png)](actual/S0-3/original.png) S0-3 · 无缝/无外突 |
+| [S1](guides/dots.png) | [![S1-1](actual/S1-1/original.png)](actual/S1-1/original.png) S1-1 · 无缝/无外突 | [![S1-2](actual/S1-2/original.png)](actual/S1-2/original.png) S1-2 · 无缝/待判 | [![S1-3](actual/S1-3/original.png)](actual/S1-3/original.png) S1-3 · 无缝/待判 |
+| [S2](guides/dots.png) | [![S2-1](actual/S2-1/original.png)](actual/S2-1/original.png) S2-1 · 承座/无外突 | [![S2-2](actual/S2-2/original.png)](actual/S2-2/original.png) S2-2 · 承座/无外突 | [![S2-3](actual/S2-3/original.png)](actual/S2-3/original.png) S2-3 · 承座/待判 |
+| [S3](guides/dots.png) | [![S3-1](actual/S3-1/original.png)](actual/S3-1/original.png) S3-1 · 铰接/无外突 | [![S3-2](actual/S3-2/original.png)](actual/S3-2/original.png) S3-2 · 铰接/无外突 | [![S3-3](actual/S3-3/original.png)](actual/S3-3/original.png) S3-3 · 铰接/无外突 |
+| [S4](guides/dots.png) | [![S4-1](actual/S4-1/original.png)](actual/S4-1/original.png) S4-1 · 无缝/前伸 | [![S4-2](actual/S4-2/original.png)](actual/S4-2/original.png) S4-2 · 无缝/待判 | [![S4-3](actual/S4-3/original.png)](actual/S4-3/original.png) S4-3 · 无缝/前伸 |
+| [S5](guides/dots.png) | [![S5-1](actual/S5-1/original.png)](actual/S5-1/original.png) S5-1 · 无缝/无外突 | [![S5-2](actual/S5-2/original.png)](actual/S5-2/original.png) S5-2 · 无缝/无外突 | [![S5-3](actual/S5-3/original.png)](actual/S5-3/original.png) S5-3 · 无缝/无外突 |
+| [W10](guides/W10.png) | [![W10-1](actual/W10-1/original.png)](actual/W10-1/original.png) W10-1 · 无缝/无外突 | [![W10-2](actual/W10-2/original.png)](actual/W10-2/original.png) W10-2 · 无缝/待判 | [![W10-3](actual/W10-3/original.png)](actual/W10-3/original.png) W10-3 · 无缝/无外突 |
+| [W25](guides/W25.png) | [![W25-1](actual/W25-1/original.png)](actual/W25-1/original.png) W25-1 · 无缝/待判 | [![W25-2](actual/W25-2/original.png)](actual/W25-2/original.png) W25-2 · 无缝/无外突 | [![W25-3](actual/W25-3/original.png)](actual/W25-3/original.png) W25-3 · 无缝/无外突 |
+| [L-S0](guides/low-dots.png) | [![L-S0-1](actual/L-S0-1/original.png)](actual/L-S0-1/original.png) L-S0-1 · 无缝/无外突 | [![L-S0-2](actual/L-S0-2/original.png)](actual/L-S0-2/original.png) L-S0-2 · 无缝/无外突 | [![L-S0-3](actual/L-S0-3/original.png)](actual/L-S0-3/original.png) L-S0-3 · 无缝/待判 |
+| [L-S2](guides/low-dots.png) | [![L-S2-1](actual/L-S2-1/original.png)](actual/L-S2-1/original.png) L-S2-1 · 待判/无外突 | [![L-S2-2](actual/L-S2-2/original.png)](actual/L-S2-2/original.png) L-S2-2 · 承座/无外突 | [![L-S2-3](actual/L-S2-3/original.png)](actual/L-S2-3/original.png) L-S2-3 · 承座/无外突 |
+| [L-S4](guides/low-dots.png) | [![L-S4-1](actual/L-S4-1/original.png)](actual/L-S4-1/original.png) L-S4-1 · 无缝/前伸 | [![L-S4-2](actual/L-S4-2/original.png)](actual/L-S4-2/original.png) L-S4-2 · 无缝/前伸 | [![L-S4-3](actual/L-S4-3/original.png)](actual/L-S4-3/original.png) L-S4-3 · 无缝/前伸 |
+| [L-W25](guides/low-W25.png) | [![L-W25-1](actual/L-W25-1/original.png)](actual/L-W25-1/original.png) L-W25-1 · 无缝/待判 | [![L-W25-2](actual/L-W25-2/original.png)](actual/L-W25-2/original.png) L-W25-2 · 待判/无外突 | [![L-W25-3](actual/L-W25-3/original.png)](actual/L-W25-3/original.png) L-W25-3 · 无缝/无外突 |
