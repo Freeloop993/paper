@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 13.11,
+  "model": null,
+  "request_id": null,
+  "created": 1794542491,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10077,
+    "input_tokens": 5981,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3931,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark grey circular endpoint dots arranged in a square X pattern in <Picture 1> are <Subject 1>. The thin intersecting diagonal guide lines connecting the endpoints in <Picture 1> are <Subject 2>. The solid pale light-grey background in <Picture 1> is <Subject 3>. The target image replaces the minimalist diagram with a photorealistic, orthographic 90-degree overhead industrial design photograph of an unlettered daily-carry aerial camera quadcopter positioned with its nose at twelve o'clock against <Subject 3>, using <Subject 1> as the exact motor locations and <Subject 2> as the structural arm axes. <Subject 1> is partially preserved; the exact four-point spatial coordinates remain while the flat dots become the centers of four physical brushless motors. <Subject 2> is partially preserved; the 45-degree diagonal intersection geometry remains while the thin lines transform into four physical graphite composite arms extending from a central hub to the motors. <Subject 3> is partially preserved; its pale seamless tone remains while gaining soft contact shadows cast by the aircraft. Centered over the intersection of <Subject 2>, the pebble-shaped central body has a 1.6:1 length-to-width ratio with a satin warm-grey molded shell and rounded radiused shoulders that sweep smoothly into the first third of each graphite arm. At the twelve o'clock forward end, the pale nose forms a shallow scalloped visor over a recessed charcoal optical housing; viewed directly from above, only the small smoked-glass crown and two side reveals appear, concealing the vertical forward glass aperture. At each point of <Subject 1>, a stationary propeller spans 125 mm tip-to-tip, formed as a single balanced pair of opposite equal blades in matte charcoal with subtle leading-edge contours. Soft 5500 K sidelight illuminates the full aircraft within the frame, creating gentle specular highlights along the curved warm-grey shell and casting defined contact shadows onto <Subject 3>.",
+  "error": null
+}

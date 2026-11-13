@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 18.03,
+  "model": null,
+  "request_id": null,
+  "created": 1794542477,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9902,
+    "input_tokens": 5806,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3756,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four diagonal endpoint dots and their intersecting X-axis layout in <Picture 1> are <Subject 1>. The target image is a photorealistic overhead industrial design photograph of an unlettered daily-carry aerial camera quadcopter positioned in strict orthographic 90-degree top-down view with its nose pointing at twelve o'clock, replacing the schematic lines of <Picture 1> while using <Subject 1> as the exact motor hub locations. <Subject 1> supplies the exact spatial positions and 45-degree diagonal geometry transferred to the four motor hubs and arms of the quadcopter. The full aircraft fits cleanly within the frame against a pale seamless background. At the center sits a slender spindle-shaped fuselage with a 2.6:1 length-to-width ratio, finished in a satin warm-grey molded shell. Two long dorsal rails run along the top of the body, converging toward the twelve o'clock nose to flank a slim graphite optical carriage; the front lens glass looks forward over the nose edge and remains hidden from this top-down angle. Toward the rear, a shallow scoop cutout exposes the crown and side clearances of the housing. From the central square hub layout, four blade-like arm roots emerge alongside the fuselage and sweep diagonally outward at 45 degrees in one uninterrupted taper, crafted from dark graphite composite to reach the four motor hubs located precisely at <Subject 1>, with opposite hubs spaced 250 mm apart. Mounted atop each hub is a stationary propeller featuring a single balanced pair of opposite equal blades in matte charcoal, measuring 125 mm tip-to-tip. Soft 5500 K sidelight illuminates the scene, creating subtle highlights across the curved warm-grey shell and casting defined contact shadows onto the pale surface below.",
+  "error": null
+}

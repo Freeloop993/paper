@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 14.94,
+  "model": null,
+  "request_id": null,
+  "created": 1794542380,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 13816,
+    "input_tokens": 9720,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3956,
+      "image_tokens": 5764
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The centered X-shaped geometric diagram with four circular endpoint markers and intersecting diagonal lines in <Picture 1> is <Subject 1>. The matte metallic surface finish, cyan-accented collar detail, and crisp shoulder highlights of the mechanical assembly in <Picture 2> are <Subject 2>. The target image is a photorealistic, orthographic 90-degree overhead industrial design photograph of an unlettered daily-carry aerial camera quadcopter on a pale seamless background, replacing the flat graphic of <Subject 1> while applying the material finish and highlight treatment of <Subject 2>. <Subject 1> is partially preserved; its centered square hub layout, four 45-degree arm angles, and exact four-corner motor positions remain as the structural footprint, while its flat grey lines and dots transform into a three-dimensional quadcopter. <Subject 2> serves as an attribute transfer for the quadcopter's satin metallic surface finish, specular edge highlights, and collar accent styling. The full aircraft sits in frame with its nose at twelve o'clock, featuring a compact beveled central body with a 1.6:1 length-to-width ratio in a satin warm-grey molded shell. A narrower transverse camera cartridge nests between short nose lugs, showing a fine parting seam and satin metal end caps from above. Four separate graphite composite arms seat flush into recessed shoulder sockets at the four corners defined by <Subject 1>, opposite hubs spaced proportionally to 250 mm apart. Each arm features one fitted collar with a subtle cyan accent band and tight joints, plus two banks of inset cooling slots along the fuselage sides. At each of the four corner motor locations, a stationary propeller made of charcoal blades forms a single balanced pair of opposite equal blades spanning proportionally to 125 mm tip-to-tip. Soft 5500 K sidelight creates crisp shoulder highlights matching <Subject 2> and casts defined contact shadows onto the pale seamless studio floor.",
+  "error": null
+}

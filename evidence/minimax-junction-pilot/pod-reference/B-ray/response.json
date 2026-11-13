@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 17.83,
+  "model": null,
+  "request_id": null,
+  "created": 1794542604,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 16805,
+    "input_tokens": 12709,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4001,
+      "image_tokens": 8708
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four dark circular endpoint dots arranged in an X pattern in <Picture 1> are <Subject 1>. The top-down appearance of the rounded dark-grey opaque optical pod crown and its flanking side supports inside a warm-grey housing in <Picture 2> is <Subject 2>. The target image is a photorealistic, orthographic 90-degree overhead industrial design photograph of a complete unlettered daily-carry aerial camera quadcopter centered on a pale seamless background, with its nose pointing at twelve o'clock and its four motors positioned at <Subject 1>. <Subject 1> is partially preserved; the exact four-corner spatial coordinates remain as the motor hub locations while the thin crossing lines are replaced by the physical quadcopter arms and stationary propellers. <Subject 2> serves as an attribute transfer reference for the material finish, color palette, and structural styling of the central fuselage's forward dorsal optical carriage, adapted into a slimmer profile suited to the new airframe. The aircraft features a slender spindle-shaped body with a 2.6:1 length-to-width ratio, constructed from a satin warm-grey molded shell matching the outer tone of <Subject 2>. Along the upper surface, two long dorsal rails sweep forward to converge at twelve o'clock, framing a slim graphite optical carriage modeled after <Subject 2>; this carriage has a smooth matte charcoal-grey opaque crown nestled between curved side clearance supports within a shallow front scoop that conceals the forward glass edge. Four dark graphite composite arms emerge from blade-like roots running parallel to the fuselage before sweeping diagonally outward at 45 degrees in one uninterrupted taper to reach the hubs at <Subject 1>, forming a square hub layout with opposite hubs spaced 250 mm apart. Each hub holds a stationary two-bladed propeller with opposite equal blades spanning 125 mm tip to tip in matte charcoal. Soft 5500 K sidelighting casts crisp contact shadows across the recessed mechanical joints and onto the pale background beneath the full aircraft.",
+  "error": null
+}

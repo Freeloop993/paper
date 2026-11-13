@@ -1,0 +1,23 @@
+{
+  "http_status": 200,
+  "elapsed_s": 12.23,
+  "model": null,
+  "request_id": null,
+  "created": 1794542503,
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10356,
+    "input_tokens": 6260,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4210,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "size": "1024x1024",
+  "revised_prompt": "The four circular endpoint markers at the corners of an X in <Picture 1> are <Subject 1>. The intersecting diagonal lines connecting the endpoints in <Picture 1> are <Subject 2>. The pale neutral background in <Picture 1> is <Subject 3>. The target image is a photorealistic, strictly orthographic 90-degree overhead industrial design photograph of an unlettered daily-carry aerial camera quadcopter centered on <Subject 3>, with its nose pointing toward twelve o'clock and its four motors positioned directly over <Subject 1>. <Subject 1> is partially preserved; the exact spatial coordinates and symmetrical square-hub geometry remain as the motor locations, while the simple dark dots are replaced by physical quadcopter motor hubs. <Subject 2> serves as a weak structural reference for the arm layout; the 45-degree diagonal axes guide the placement of the four arms extending from the central hub to <Subject 1>. <Subject 3> is partially preserved; its clean, pale seamless appearance remains while gaining soft contact shadows beneath the aircraft. Replacing the flat schematic marks, the quadcopter features a compact, bevelled central body with a 1.6:1 length-to-width proportion crafted from a satin warm-grey molded shell with tight joints and two banks of inset cooling slots along its flanks. At the twelve o'clock leading edge, a compact graphite camera module sits nestled inside a close-fitting three-sided nose recess, secured by two small side pivots; it has a flat smoked crown facing upward, while its lens looks straight ahead through the vertical front face so it remains hidden from this direct top-down view. Extending outward at 45 degrees to the nose axis along the trajectories of <Subject 2>, four separate matte graphite composite arms seat flush into recessed shoulder sockets on the central shell, each featuring a single fitted collar at the socket joint and spanning 250 mm between opposite motor hubs at <Subject 1>. Mounted atop each of the four hubs at <Subject 1> is a stationary propeller with a 125 mm tip-to-tip span, consisting of a single balanced pair of opposite equal charcoal blades. Soft 5500 K sidelight illuminates the entire aircraft within the frame, casting subtle highlights across the beveled edges, collars, and blade surfaces, while producing defined contact shadows against <Subject 3>.",
+  "error": null
+}
