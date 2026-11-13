@@ -1,6 +1,6 @@
 # 当前研究状态 · 2026-11-12（中国时间）
 
-**11 月 13 日 · 目录与进度待 Claude 复核。** [本次实际九图与作者对第二排的反馈](evidence/section421-minimax-review/README.md)已交接；该批为 MiniMax 开发记录，正式 E3 作者选稿待采。
+**11 月 13 日 · Claude 已复核实际九图、开题与目录。** 六章和 85 个小节保留。3.4.4 和 5.2.1 有正式数据，4.1.3 有开发预试，4.2.1 规格卡待作者定稿。[裁定与缺口](https://github.com/Freeloop993/paper/issues/1#issuecomment-6851454162) · [九图](evidence/section421-minimax-review/README.md) · [E2 离线六份请求](experiments/e2-registered/README.md)。作者安排独立真人读数。当前 H3 先行预实验与正式 Qwen E2 分开计数。
 
 当前规则见[研究地基](docs/foundation.md)、[六章清单](docs/execution-playbook.md)和[接手快照](docs/handoff.md)。E0 已回收开源 6/6，闭源 0/6；E1 已回收条件图 24/24、纯文字 12/12。R0 的 2 张环境复现单列。独立真人正式场次 0。
 

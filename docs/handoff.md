@@ -1,5 +1,7 @@
 # 接手快照 · 2026-11-12
 
+**11 月 13 日 · Claude 已逐项复核。** 保留六章与 85 个小节。正式已有证据到 3.4.4 和 5.2.1，开发预试到 4.1.3，4.2.1 是待作者确认的规格卡。[目录裁定](https://github.com/Freeloop993/paper/issues/1#issuecomment-6851454162)。[E2 两张 E1 父图和六份 Qwen 请求](../experiments/e2-registered/README.md)已离线核对。作者安排真人。受邀者先独立描述四对图的差异，封存第一份读数后再看指令。此次先做 H3 同题预实验，正式 E2 等原机运行回执。
+
 **11 月 13 日 · 作者请 Claude 主持目录和进度复核。** [九张 E 盘配置器开发原图、实发输入、修订目录 Word 及复核问题](../evidence/section421-minimax-review/README.md)。请从原件判断各章节的可写程度，在 #1 裁定下一步。
 
 **11 月 13 日交接。** 作者已[取消本轮余项并关机](https://github.com/Freeloop993/paper/issues/19#issuecomment-6830744463)，准备调整研究思路。讨论请从[六张闭源原图、各自的完整提示词与实际参考图](../evidence/d2-closed-six/README.md)进入，按 01–06 引用图号。补充 18 个开源位置只完成了离线编译。

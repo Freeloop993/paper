@@ -1,0 +1,90 @@
+{
+  "stage": "E2",
+  "instruction_sha256": "3cac0950cc8afc0b13b79ef83c509a24de423c79fc7ec3f9a8ebeac34cc6dfc6",
+  "rows": [
+    {
+      "id": "E2-edit-P1-A",
+      "arm": "edit",
+      "instruction_key": "A",
+      "parent_id": "E1-control-wl1.00-r1",
+      "parent_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+      "seed": 2026111401,
+      "request": "requests/E2-edit-P1-A.json",
+      "request_sha256": "1f27f6bd72c828635a614d6a188a625b5a3af3143d1c6fcf48c032890c557c81",
+      "input_name": "E1-control-wl1.00-r1.png",
+      "input_file": "input/E1-control-wl1.00-r1.png",
+      "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/original.png",
+      "input_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f"
+    },
+    {
+      "id": "E2-edit-P1-B",
+      "arm": "edit",
+      "instruction_key": "B",
+      "parent_id": "E1-control-wl1.00-r1",
+      "parent_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+      "seed": 2026111402,
+      "request": "requests/E2-edit-P1-B.json",
+      "request_sha256": "fb1d4a7e354ec39931808274ff17b40763097b3d88d865ebd36c97364c2a95e9",
+      "input_name": "E1-control-wl1.00-r1.png",
+      "input_file": "input/E1-control-wl1.00-r1.png",
+      "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r1/original.png",
+      "input_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f"
+    },
+    {
+      "id": "E2-edit-P2-A",
+      "arm": "edit",
+      "instruction_key": "A",
+      "parent_id": "E1-control-dd0.50-r1",
+      "parent_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+      "seed": 2026111403,
+      "request": "requests/E2-edit-P2-A.json",
+      "request_sha256": "b4c8933fbf5bac662652e5733183ea5911f48f1c7f274b0c43b43da51b5228f4",
+      "input_name": "E1-control-dd0.50-r1.png",
+      "input_file": "input/E1-control-dd0.50-r1.png",
+      "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/original.png",
+      "input_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b"
+    },
+    {
+      "id": "E2-edit-P2-B",
+      "arm": "edit",
+      "instruction_key": "B",
+      "parent_id": "E1-control-dd0.50-r1",
+      "parent_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+      "seed": 2026111404,
+      "request": "requests/E2-edit-P2-B.json",
+      "request_sha256": "53c5a3314f2469cea9d82888d7902aca60e1db1687466d303e2a9c496d05c476",
+      "input_name": "E1-control-dd0.50-r1.png",
+      "input_file": "input/E1-control-dd0.50-r1.png",
+      "input_source": "evidence/e1-open-20261112/E1-actual/E1-control-dd0.50-r1/original.png",
+      "input_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b"
+    },
+    {
+      "id": "E2-control-P1-A",
+      "arm": "control",
+      "instruction_key": "A",
+      "parent_id": "E1-control-wl1.00-r1",
+      "parent_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+      "seed": 2026111405,
+      "request": "requests/E2-control-P1-A.json",
+      "request_sha256": "bf503140956ce9e51771a7d1c63ea9c2c65464bb3bd7213e34c545f58749a597",
+      "input_name": "wl-1.00-dd-0.50.png",
+      "input_file": "input/wl-1.00-dd-0.50.png",
+      "input_source": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    },
+    {
+      "id": "E2-control-P2-B",
+      "arm": "control",
+      "instruction_key": "B",
+      "parent_id": "E1-control-dd0.50-r1",
+      "parent_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+      "seed": 2026111406,
+      "request": "requests/E2-control-P2-B.json",
+      "request_sha256": "811a18612f0dff3883ecdbb241d8f6b803095867841135a288e9aadb45452356",
+      "input_name": "wl-1.00-dd-0.50.png",
+      "input_file": "input/wl-1.00-dd-0.50.png",
+      "input_source": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+      "input_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    }
+  ]
+}
