@@ -1,0 +1,763 @@
+{
+  "rows": [
+    {
+      "id": "S0-1",
+      "condition": "S0",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "S5-1",
+      "condition": "S5",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nThree or more distinct top cover panels separated by seams.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-w10-1",
+      "condition": "G-w10",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w10.png",
+      "input_sha256": "e2a8fbe3562351fff34e0c73163989d5a5ad33c59595a32ef1cf15794896e23c",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "S3-1",
+      "condition": "S3",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "hinge",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm is attached to the shell by a visible folding hinge with a pivot pin.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-w15-1",
+      "condition": "G-w15",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w15.png",
+      "input_sha256": "ed565b9360d6205c9a7deec1c96c30d3d5cff06a4ef04b523eabfe5a59ffe303",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "G-r1.8-1",
+      "condition": "G-r1.8",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r1.8.png",
+      "input_sha256": "0071912df0ccf73768a63126fe22cab125832e5b0b4d35829715856471cbccd6",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "S4-1",
+      "condition": "S4",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "projecting",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nA small camera gimbal with visible side arms projects in front of the nose. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-r1.4-1",
+      "condition": "G-r1.4",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r1.4.png",
+      "input_sha256": "328b0204e6151b18601566a1c2f9711238e890bad35c0ecfaf5e9090cb344754",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "G-w20-1",
+      "condition": "G-w20",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w20.png",
+      "input_sha256": "0fa602b5f4da9acda083fef53e5cacf86c6d2830044e1fe3708ac4efb93d9377",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "S2-1",
+      "condition": "S2",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "socket",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-r2.4-1",
+      "condition": "G-r2.4",
+      "rep": 1,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r2.4.png",
+      "input_sha256": "2e647628af21b68b62c0369fdbe3332194ecc031527871379d0bb8efb26545c2",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "S1-1",
+      "condition": "S1",
+      "rep": 1,
+      "target": {
+        "body_plan": "box",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA box-shaped shell with straight sides and clipped corners.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-w15-2",
+      "condition": "G-w15",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w15.png",
+      "input_sha256": "ed565b9360d6205c9a7deec1c96c30d3d5cff06a4ef04b523eabfe5a59ffe303",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "S1-2",
+      "condition": "S1",
+      "rep": 2,
+      "target": {
+        "body_plan": "box",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA box-shaped shell with straight sides and clipped corners.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-r2.4-2",
+      "condition": "G-r2.4",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r2.4.png",
+      "input_sha256": "2e647628af21b68b62c0369fdbe3332194ecc031527871379d0bb8efb26545c2",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "S3-2",
+      "condition": "S3",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "hinge",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm is attached to the shell by a visible folding hinge with a pivot pin.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-r1.8-2",
+      "condition": "G-r1.8",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r1.8.png",
+      "input_sha256": "0071912df0ccf73768a63126fe22cab125832e5b0b4d35829715856471cbccd6",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "G-w20-2",
+      "condition": "G-w20",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w20.png",
+      "input_sha256": "0fa602b5f4da9acda083fef53e5cacf86c6d2830044e1fe3708ac4efb93d9377",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "S4-2",
+      "condition": "S4",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "projecting",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nA small camera gimbal with visible side arms projects in front of the nose. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "S2-2",
+      "condition": "S2",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "socket",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-r1.4-2",
+      "condition": "G-r1.4",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r1.4.png",
+      "input_sha256": "328b0204e6151b18601566a1c2f9711238e890bad35c0ecfaf5e9090cb344754",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "S5-2",
+      "condition": "S5",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nThree or more distinct top cover panels separated by seams.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "S0-2",
+      "condition": "S0",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-w10-2",
+      "condition": "G-w10",
+      "rep": 2,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w10.png",
+      "input_sha256": "e2a8fbe3562351fff34e0c73163989d5a5ad33c59595a32ef1cf15794896e23c",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "S2-3",
+      "condition": "S2",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "socket",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "S3-3",
+      "condition": "S3",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "hinge",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm is attached to the shell by a visible folding hinge with a pivot pin.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-w15-3",
+      "condition": "G-w15",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w15.png",
+      "input_sha256": "ed565b9360d6205c9a7deec1c96c30d3d5cff06a4ef04b523eabfe5a59ffe303",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "G-w20-3",
+      "condition": "G-w20",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w20.png",
+      "input_sha256": "0fa602b5f4da9acda083fef53e5cacf86c6d2830044e1fe3708ac4efb93d9377",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "S4-3",
+      "condition": "S4",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "projecting",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nA small camera gimbal with visible side arms projects in front of the nose. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "S5-3",
+      "condition": "S5",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nThree or more distinct top cover panels separated by seams.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "S0-3",
+      "condition": "S0",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    },
+    {
+      "id": "G-r1.8-3",
+      "condition": "G-r1.8",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r1.8.png",
+      "input_sha256": "0071912df0ccf73768a63126fe22cab125832e5b0b4d35829715856471cbccd6",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "G-r1.4-3",
+      "condition": "G-r1.4",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r1.4.png",
+      "input_sha256": "328b0204e6151b18601566a1c2f9711238e890bad35c0ecfaf5e9090cb344754",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "G-w10-3",
+      "condition": "G-w10",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-w10.png",
+      "input_sha256": "e2a8fbe3562351fff34e0c73163989d5a5ad33c59595a32ef1cf15794896e23c",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe blue bars in the layout show the arm width."
+      }
+    },
+    {
+      "id": "G-r2.4-3",
+      "condition": "G-r2.4",
+      "rep": 3,
+      "target": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/G-r2.4.png",
+      "input_sha256": "2e647628af21b68b62c0369fdbe3332194ecc031527871379d0bb8efb26545c2",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+      }
+    },
+    {
+      "id": "S1-3",
+      "condition": "S1",
+      "rep": 3,
+      "target": {
+        "body_plan": "box",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single"
+      },
+      "input_source": "guides/dots.png",
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "fields": {
+        "model": "MiniMax-H3-Image",
+        "size": "1024x1024",
+        "n": 1,
+        "output_format": "png",
+        "response_format": "b64_json",
+        "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA box-shaped shell with straight sides and clipped corners.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+      }
+    }
+  ],
+  "guide_origin": "e997109:experiments/form342-h3-pilot/guide.png",
+  "px_per_mm": 2.374973688106881,
+  "endpoint": "https://api.minimax.io/v1/images/edits"
+}
