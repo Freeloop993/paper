@@ -1,0 +1,25 @@
+{
+  "created": 1794576926,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9111,
+    "input_tokens": 5015,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2965,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:28.418202+00:00",
+  "elapsed_s": 13.3,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped spatial layout in <Picture 1>, featuring four red circular endpoint markers connected by two intersecting blue diagonal lines, is <Subject 1>. The target image presents a strict orthographic top-down product view of a compact everyday aerial photography quadcopter on a plain light background, omitting the black background and guide marks of <Picture 1> while aligning its unfolded arms and motor centers to <Subject 1>. <Subject 1> supplies the exact motor center positions, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's frame. The drone features a true X-frame configuration with a 250 mm opposite-motor span, oriented with its nose pointing toward the top edge of the canvas. At the center is a rounded fuselage pod with a smooth, continuous curved outline in a matte light grey finish, divided by a single clean top cover seam running along its longitudinal axis. The pointed front nose section wraps smoothly around an internally mounted forward-facing horizontal camera, so that from directly overhead only the unadorned, smooth matte light grey top surface of the nose shell is visible, completely concealing any gimbal arms or side lugs. Extending outward along the four diagonals of <Subject 1> are four straight, slender dark grey arms, each connected to the central shell via a distinct mechanical folding hinge housing with a visible cylindrical pivot pin. At the outer tip of each arm sits a compact dark grey brushless motor aligned precisely with the four marker points of <Subject 1>. Mounted atop each motor is a single stationary, flat two-blade 5-inch propeller in matte black, completely free of propeller guards. The entire quadcopter is centered within the square frame against a uniform, featureless off-white studio background with soft, even overhead lighting that casts subtle contact shadows beneath the shell, hinges, motors, and blades, with no text, labels, or measurement markings anywhere in the scene."
+  }
+}

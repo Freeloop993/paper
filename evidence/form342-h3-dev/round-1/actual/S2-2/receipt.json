@@ -1,0 +1,25 @@
+{
+  "created": 1794576900,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8890,
+    "input_tokens": 4794,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2744,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:02.080762+00:00",
+  "elapsed_s": 14.06,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of the four red corner dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the solid black background of <Picture 1> with a plain light background and presents a newly designed compact quadcopter in a strict orthographic top-down view, oriented with its nose toward the top edge and its unfolded arms and motor centers aligned to <Subject 1>. <Subject 1> supplies the exact spatial positions of the four motor centers and the diagonal arm directions transferred to the new quadcopter's geometry. The quadcopter features a true X-frame configuration with equal horizontal and vertical spacing across a proportional 250 mm opposite-motor span. At the center, a rounded pod shell with a continuous curved outline and a matte light grey finish encloses the body, featuring a single clean top cover seam. The forward nose section of the matte light grey shell wraps smoothly around the internal horizontally forward-facing camera, presenting an unbroken, smooth upper surface from directly overhead without any exposed gimbal arms or side lugs. Four dark grey tubular arms extend diagonally outward from the central pod along the paths defined by <Subject 1>, each entering the main shell through a distinct recessed socket marked by a visible transverse joint seam. Mounted at the four outer endpoints matching the red dots of <Subject 1> are four cylindrical dark grey motors, each topped with a stationary, flat-profiled black two-blade 5-inch propeller without propeller guards. The entire product is cleanly isolated on the uniform light background with soft contact shadows and no guide marks or lettering."
+  }
+}

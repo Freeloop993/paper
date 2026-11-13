@@ -1,0 +1,25 @@
+{
+  "created": 1794576857,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10002,
+    "input_tokens": 5906,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3856,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:18.082047+00:00",
+  "elapsed_s": 12.75,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped layout of four intersecting diagonal bars in <Picture 1> is <Subject 1>. The four red circular markers at the outer tips of the blue bars in <Picture 1> are <Subject 2>. The target image shows a compact everyday aerial photography quadcopter seen in a strict orthographic top view with its nose pointing toward the top edge, replacing the black background and omitting the red guide marks from <Picture 1> while matching the arm directions, width, and motor positions of <Subject 1> and <Subject 2> on a plain light background. <Subject 1> supplies the exact diagonal X-arm directions, equal horizontal and vertical spacing, intersection geometry, and arm width transferred to the quadcopter's four arms. <Subject 2> supplies the exact four corner motor center locations transferred to the quadcopter's four motors. The complete product sits centered on a clean, uniform, plain off-white studio background with soft contact shadows and no text or guide marks. At the center, a rounded pod features a continuous curved outline finished in smooth matte light grey. The forward nose section wraps completely around the horizontally facing camera so that only the smooth, uninterrupted top surface of the nose shell is visible from directly overhead, hiding any gimbal arms or side lugs. A single crisp top cover seam runs cleanly across the upper shell. Extending outward along the exact diagonals of <Subject 1>, four dark grey arms emerge from the central light grey shell through smooth, seamless fillet blends with no joint line at their roots, maintaining the bar width defined by <Subject 1>. Each arm terminates at the exact positions of <Subject 2> in a cylindrical dark grey motor housing with a metallic shaft nut. Mounted atop each motor is a stationary, unblurred two-blade black 5-inch propeller with no propeller guards, arranged symmetrically within the 250 mm opposite-motor span."
+  }
+}

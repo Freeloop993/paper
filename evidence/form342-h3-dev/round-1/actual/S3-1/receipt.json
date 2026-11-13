@@ -1,0 +1,25 @@
+{
+  "created": 1794576811,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9667,
+    "input_tokens": 5571,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3521,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:33:33.297997+00:00",
+  "elapsed_s": 13.59,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of the two intersecting diagonal blue lines with four red circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top view on a plain light background, replacing the black background and guide marks from <Picture 1> while matching the motor positions and arm angles of <Subject 1>. <Subject 1> supplies the exact spatial placement, equal horizontal and vertical spacing, true X-frame geometry, and diagonal arm directions transferred to the quadcopter's motors and arms. The quadcopter is oriented with its nose pointing toward the top edge and its four dark grey arms fully unfolded along the diagonals of <Subject 1>, proportioned for a 250 mm opposite-motor span. Each arm connects to the central body via a visible folding hinge with a distinct pivot pin. At the four endpoints of <Subject 1>, each dark grey cylindrical motor mount holds a stationary black two-blade, 5-inch propeller with no propeller guards. The central body features a matte light grey rounded pod shell with a continuous curved outline, a single clean top cover seam, and a smooth, uninterrupted nose section that wraps around the internal forward-facing horizontal camera so no gimbal arms or side lugs are visible from overhead. The complete product is evenly lit against a solid, unmarked off-white studio background with soft contact shadows and no text, labels, or guide marks."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794576886,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9776,
+    "input_tokens": 5680,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3630,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:47.653200+00:00",
+  "elapsed_s": 12.8,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four intersecting diagonal blue bars in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, replacing the black background and red corner dots of <Picture 1> with a plain light background while matching the geometry of <Subject 1>. <Subject 1> supplies the exact arm directions, equal horizontal and vertical spacing, motor center positions, and bar width transferred to the quadcopter's arms and motors. The complete product features a true X configuration with a 250 mm opposite-motor span and fully unfolded arms. At the center is a rounded pod shell with a continuous curved outline and a single clean top cover seam, finished in matte light grey. The front nose section wraps smoothly around an internally mounted forward-facing camera so that only the uninterrupted smooth top surface of the nose is visible from overhead, without any exposed gimbal arms or side lugs. Four dark grey cylindrical motors sit at the four outer centers corresponding to the ends of <Subject 1>, each connected to the central pod by a straight dark grey arm of the same width as <Subject 1>. Each arm emerges directly from the matte light grey pod through a smooth, seamless blend with no joint line at the root. Mounted on each motor is a single stationary two-blade, 5-inch black propeller with no propeller guards, aligned cleanly for flight. Even studio lighting casts soft, subtle contact shadows beneath the airframe onto the plain light background, with all guide marks and lettering omitted."
+  }
+}

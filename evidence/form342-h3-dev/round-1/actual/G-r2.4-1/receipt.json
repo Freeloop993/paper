@@ -1,0 +1,25 @@
+{
+  "created": 1794576860,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10153,
+    "input_tokens": 6057,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4007,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:21.524871+00:00",
+  "elapsed_s": 16.19,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The vertical grey rectangular footprint in the center of <Picture 1> is <Subject 1>. The four diagonal blue arm-direction lines and red circular motor-center markers arranged in an X configuration around the central rectangle in <Picture 1> are <Subject 2>. The target image shows a strict orthographic top-down product render of a compact everyday aerial photography quadcopter on a plain light background, replacing the black background of <Picture 1>, with its central fuselage designed within <Subject 1> and its unfolded arms and motors aligned to <Subject 2>. <Subject 1> is partially preserved; its centered position, vertical orientation, and outer boundary proportions remain as the maximum body footprint, while its sharp-cornered flat grey graphic shape changes into a smooth, continuous curved pod shell. <Subject 2> is partially preserved; the exact four-way diagonal X directions, equal horizontal and vertical spacing, and four corner motor-center coordinates remain, while the thin blue guide lines and red dots are replaced by solid physical quadcopter arms, motors, and stationary propellers. Viewed from directly overhead with the nose pointing toward the top edge, the central fuselage fits cleanly inside the bounds of <Subject 1> as a rounded pod with a matte light grey shell and a single clean top cover seam running along its upper surface. At the front end, the smooth nose shell wraps completely around the forward-facing horizontal camera so that only the sleek, uninterrupted top contour of the nose is visible, with no gimbal arms or side lugs protruding. Extending outward from the four corners of the pod along the trajectories of <Subject 2> are four dark grey tubular arms that grow seamlessly out of the matte light grey shell with smooth blended roots and no visible joint lines. Each arm terminates at the exact motor centers marked by <Subject 2> in a cylindrical dark grey brushless motor carrying a single stationary, unguarded two-blade black 5-inch propeller, forming a true X geometry across the frame. Even studio lighting casts subtle contact shadows beneath the pod, arms, and blades onto the uniform plain light background, with all diagram guide marks and lettering omitted."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794576859,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8772,
+    "input_tokens": 4676,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2626,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:20.956127+00:00",
+  "elapsed_s": 15.62,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red endpoint dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter on a plain light background, omitting the black background and guide marks of <Picture 1> while aligning its motors and unfolded arms to <Subject 1>. <Subject 1> supplies the exact motor-center positions, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's four motors and arms. The quadcopter is oriented with its nose toward the top edge in a true X configuration representing a 250 mm opposite-motor span. At the center is a matte light grey box-shaped shell with straight sides, clipped corners, and a single clean top cover seam. Each dark grey arm grows seamlessly out of the shell through a smooth blend without any root joint line. At the front, the matte light grey nose shell wraps smoothly around the internal horizontally forward-facing camera so that only its smooth top surface is visible from overhead, with no gimbal arms or side lugs exposed. Positioned at the four endpoints of <Subject 1>, each dark grey motor carries one stationary black two-blade 5-inch propeller with no propeller guards. Even studio lighting casts soft contact shadows beneath the shell, arms, and blades against the plain light background, with no lettering or guide marks present."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794576912,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8885,
+    "input_tokens": 4789,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2739,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:14.560866+00:00",
+  "elapsed_s": 11.91,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped spatial layout of four red endpoint dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down product render of a compact everyday aerial photography quadcopter with its nose oriented toward the top edge, aligned to the motor centers and arm directions of <Subject 1> on a plain light background. <Subject 1> supplies the exact four-corner motor-center positions and equal horizontal and vertical spacing transferred to the quadcopter's unfolded arms and motors, while the red dots and blue lines themselves are omitted. The quadcopter features a true X-frame configuration corresponding to a 250 mm opposite-motor span. At the center is a rounded pod shell with a continuous curved outline and a matte light grey finish, featuring a single clean top cover seam. The forward nose section wraps smoothly around an internally mounted horizontally forward-facing camera so that from directly overhead only the smooth upper curve of the nose shell is visible, with no exposed gimbal arms or side lugs. Four dark grey arms extend outward along the diagonals of <Subject 1>, each emerging from the central matte light grey shell through a smooth, seamless aerodynamic blend without any root joint line. At the four terminal points defined by <Subject 1>, each dark grey cylindrical motor carries a single stationary black two-blade 5-inch propeller with no propeller guards. The complete drone is centered within the frame against a uniform, plain light studio background with soft, even overhead illumination and subtle contact shadows beneath the body and rotor blades, free of any guide marks or lettering."
+  }
+}

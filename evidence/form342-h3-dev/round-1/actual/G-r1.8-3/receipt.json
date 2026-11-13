@@ -1,0 +1,25 @@
+{
+  "created": 1794576955,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9918,
+    "input_tokens": 5822,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3772,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:56.929136+00:00",
+  "elapsed_s": 13.33,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The central vertical rounded-corner rectangular footprint in <Picture 1> is <Subject 1>. The four diagonal blue guide lines with red circular endpoints extending from the center toward the four corners in <Picture 1> are <Subject 2>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top view on a plain light background, replacing the black background of <Picture 1>, with its body fitted within <Subject 1> and its unfolded arms and motors aligned to <Subject 2>. <Subject 1> serves as a spatial-layout reference for the fuselage; the quadcopter's pod shell is designed within this central boundary while adopting a continuous curved outline. <Subject 2> supplies the exact arm directions and motor-center positions transferred to the quadcopter's four unfolded arms and stationary propellers. Viewed directly from above with the nose pointing toward the top edge, the quadcopter features a matte light grey rounded pod shell that fits inside <Subject 1> and tapers smoothly at the front so the nose wraps around the forward-facing horizontal camera, leaving only the smooth top surface visible without gimbal arms or side lugs. A single clean seam runs along the top cover of the shell. Four dark grey arms extend outward in a true X configuration matching <Subject 2> with equal horizontal and vertical spacing corresponding to a 250 mm opposite-motor span, each emerging seamlessly from the matte light grey shell without any root joint line. At the four outer endpoints of <Subject 2>, each dark grey cylindrical motor carries one stationary two-blade, 5-inch matte black propeller with no propeller guards. The complete product is evenly lit against a uniform, featureless off-white studio background with subtle contact shadows beneath the airframe and no guide marks or lettering."
+  }
+}

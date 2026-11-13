@@ -1,0 +1,25 @@
+{
+  "created": 1794576955,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9928,
+    "input_tokens": 5832,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3782,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:57.148435+00:00",
+  "elapsed_s": 13.55,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The central vertical rounded grey rectangle in <Picture 1> is <Subject 1>. The four diagonal blue lines with red circular endpoints radiating from the corners of the central shape in <Picture 1> are <Subject 2>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, designed around the body footprint of <Subject 1> and the unfolded arm geometry of <Subject 2>, replacing the black background and schematic guide marks of <Picture 1> with a plain light background. <Subject 1> supplies the exact central body footprint transferred to the quadcopter's main fuselage shell. <Subject 2> supplies the exact four-arm X-configuration directions, equal horizontal and vertical spacing, and motor center positions transferred to the quadcopter's arms and motors. The quadcopter features a true X-frame layout with a 250 mm opposite-motor span and fully unfolded arms. The fuselage sits strictly within the boundary of <Subject 1>, formed as a smooth, continuous curved pod finished in matte light grey. The elongated front nose section wraps smoothly over a forward-facing horizontal camera so that only the uninterrupted curved top surface of the nose shell is visible from overhead, without any exposed gimbal arms or side lugs. A single clean top cover seam runs along the upper shell, while the four dark grey arms emerge directly from the matte light grey pod through smooth, seamless fillet blends with no joint line at the roots. At the four outer motor centers defined by <Subject 2>, each dark grey cylindrical motor mount carries one stationary, guardless two-blade black propeller with a 5-inch diameter, oriented cleanly above the plain, uniform light studio background with soft contact shadows and no guide marks or lettering."
+  }
+}

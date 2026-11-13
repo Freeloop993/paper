@@ -1,0 +1,25 @@
+{
+  "created": 1794576873,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8953,
+    "input_tokens": 4857,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2807,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:34.817395+00:00",
+  "elapsed_s": 13.25,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four red circular dots and two intersecting blue diagonal lines in <Picture 1> are <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top-down view, replacing the black background of <Picture 1> with a plain light background while aligning its unfolded arms and motor centers to <Subject 1>. <Subject 1> is partially preserved; its exact four-point X-configuration, equal horizontal and vertical spacing, and diagonal arm trajectories remain as the structural layout anchor, while the red dots and blue guide lines themselves are omitted from the finished scene. The complete quadcopter is centered with its nose pointing straight toward the top edge of the frame, proportioned to a 250 mm opposite-motor span. At the center sits a box-shaped central shell with straight sides and clipped corners, rendered in a matte light grey finish with a single clean top cover seam running across it. The front nose section smoothly wraps around an internal forward-facing horizontal camera so that only the uninterrupted, rounded top surface of the nose shell is visible from directly overhead, with no gimbal arms or side lugs protruding. Extending outward along the four diagonal paths defined by <Subject 1> are four dark grey arms that emerge seamlessly from the central shell without any root joint line. Each arm terminates at one of the four corner positions of <Subject 1> in a cylindrical dark grey motor hub topped by a stationary, unguarded black two-blade 5-inch propeller with slender aerodynamic blades. Soft, even studio lighting casts subtle contact shadows beneath the airframe onto the uniform, unadorned light background, free of any text, labels, or guide marks."
+  }
+}

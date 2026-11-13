@@ -1,0 +1,25 @@
+{
+  "created": 1794576826,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9955,
+    "input_tokens": 5859,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3809,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:33:48.382159+00:00",
+  "elapsed_s": 15.05,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four red circular dots at the corners of the X-shaped layout in <Picture 1> are <Subject 1>. The two intersecting diagonal blue bars in <Picture 1> are <Subject 2>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top view with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background while aligning its motor centers and arm geometry to <Subject 1> and <Subject 2>. <Subject 1> supplies the exact four-point spatial positions transferred to the centers of the quadcopter's four motors. <Subject 2> supplies the diagonal directions, equal horizontal and vertical spacing, and bar width transferred to the quadcopter's four unfolded arms. The complete drone features a true X-frame configuration corresponding to a 250 mm opposite-motor span. At the center is a rounded pod shell with a continuous curved outline finished in matte light grey, featuring a single clean top cover seam running along its length. The front nose section of the shell smoothly wraps around an internally mounted forward-facing camera so that from directly overhead only the uninterrupted smooth top surface of the nose is visible, with no exposed gimbal arms or side lugs. Extending outward from the central pod toward <Subject 1> are four dark grey arms matching the width and trajectory of <Subject 2>, each emerging from the matte light grey body shell through a smooth, seamless structural blend without any visible joint line at the root. Mounted at the outer ends of the arms at the exact locations of <Subject 1> are four dark grey cylindrical brushless motors. Each motor carries a single stationary two-blade 5-inch propeller in matte black with no propeller guards, positioned cleanly against the uniform plain light background free of any lettering or guide marks."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794576941,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8963,
+    "input_tokens": 4867,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2817,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:43.558527+00:00",
+  "elapsed_s": 15.09,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of the four red endpoint dots and intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image presents a strict orthographic top-down product render of a compact everyday aerial photography quadcopter with its nose oriented toward the top edge, aligned to the motor positions and arm trajectories of <Subject 1>, while omitting the black background, red dots, and blue lines from <Picture 1>. <Subject 1> supplies the exact spatial placement and diagonal orientation transferred to the four motors and unfolded arms of the new quadcopter. The quadcopter features a central rounded pod with a continuous curved outline finished in matte light grey, accented by a single clean top cover seam running along its upper surface. Four fully unfolded dark grey arms extend outward from the pod at the exact angles of <Subject 1>, each growing seamlessly out of the matte light grey shell without any visible joint line or hinge gap at the root. At the outer tips matching the four points of <Subject 1>, each dark grey cylindrical motor carries a stationary, guardless two-blade black propeller with a 5-inch span, arranged in a true X configuration with equal horizontal and vertical spacing corresponding to a 250 mm opposite-motor span. Projecting forward from the front nose (toward the top edge) is a compact camera gimbal with distinct side arms extending laterally; the camera housing faces horizontally forward so that only its top casing is seen from directly overhead, keeping its optical lens face hidden from view. The complete drone rests centered against a plain, uniform light studio background with soft, even overhead lighting and subtle contact shadows beneath the body, arms, and motors, completely free of guide marks or lettering."
+  }
+}

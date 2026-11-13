@@ -1,0 +1,25 @@
+{
+  "created": 1794576842,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9872,
+    "input_tokens": 5776,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3726,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:03.501121+00:00",
+  "elapsed_s": 12.25,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout in <Picture 1>, defined by two intersecting blue diagonal lines with four red circular endpoint markers arranged symmetrically, is <Subject 1>. The target image presents a strict orthographic top-down view of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light studio background while aligning its unfolded arms and motor centers to <Subject 1>. <Subject 1> supplies the exact spatial layout, equal horizontal and vertical spacing, and four-corner motor-center positions transferred to the quadcopter's unfolded arms and motors. The quadcopter features a true-X configuration representing a 250 mm opposite-motor span. At the center is a rounded fuselage pod with a continuous curved outline, finished in a matte light grey shell with a single clean top cover seam. The forward nose section wraps smoothly around an internally mounted horizontally forward-facing camera so that only the smooth, uninterrupted top surface of the nose shell is visible from directly overhead, with no exposed gimbal arms or side lugs. Four straight, unfolded dark grey tubular arms extend diagonally outward from the central pod toward the four corners of <Subject 1>. Each arm enters the central shell through a distinct recessed socket marked by a visible transverse joint seam. Mounted at each of the four corner motor centers is a compact dark grey cylindrical brushless motor topped with a single stationary, guardless two-blade black propeller with sleek aerodynamic blades. Even, diffused overhead studio lighting casts subtle contact shadows beneath the pod, arms, and motors onto the plain light background, clearly delineating the matte textures, seams, and structural contours without any text, lettering, or diagram guides."
+  }
+}

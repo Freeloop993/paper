@@ -1,0 +1,25 @@
+{
+  "created": 1794576825,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10069,
+    "input_tokens": 5973,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3923,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:33:47.194095+00:00",
+  "elapsed_s": 13.86,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The central vertical grey rounded rectangle in <Picture 1> is <Subject 1>. The four diagonal blue lines extending outward from the sides of the central rectangle in <Picture 1> are <Subject 2>. The four red circular dots at the outer ends of the blue lines in <Picture 1> are <Subject 3>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, designed within the footprint of <Subject 1>, following the arm directions of <Subject 2> and placing motors at the positions of <Subject 3>, while omitting the black background and guide marks of <Picture 1>. <Subject 1> supplies the exact body footprint and rounded rectangular boundary transferred to the quadcopter's central shell. <Subject 2> supplies the exact X-configuration diagonal directions and placement transferred to the four unfolded arms. <Subject 3> supplies the exact motor center coordinates and equal horizontal and vertical spacing transferred to the four motors. Set against a plain, uniform light background with no lettering or guide marks, the complete product features a true X-frame layout representing a 250 mm opposite-motor span. The central fuselage fits strictly inside the boundary of <Subject 1> as a continuous, smoothly curved pod finished in matte light grey. The front nose section wraps seamlessly around a forward-facing horizontal camera so that only the smooth, uninterrupted top surface of the nose shell is visible from directly overhead, with no exposed gimbal arms or side lugs. A single clean top cover seam runs along the upper shell. Each of the four dark grey arms extends outward along the trajectories of <Subject 2>, emerging directly from the matte light grey shell through a smooth, seamless structural blend without any joint line at the root. At the exact centers of <Subject 3>, each dark grey cylindrical motor mounts a stationary, unguarded two-blade black propeller (5-inch diameter), with the blades positioned cleanly over the plain light background."
+  }
+}

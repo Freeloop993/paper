@@ -1,0 +1,25 @@
+{
+  "created": 1794576926,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9780,
+    "input_tokens": 5684,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3634,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:28.352055+00:00",
+  "elapsed_s": 13.22,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped arm layout in <Picture 1> is <Subject 1>. The four red circular endpoint markers at the tips of <Subject 1> in <Picture 1> are <Subject 2>. The target image shows a compact quadcopter drone for everyday aerial photography in a strict orthographic top view against a plain light background, replacing the black background and omitting the red guide marks while matching the geometry of <Subject 1> and the motor centers of <Subject 2>. <Subject 1> supplies the exact diagonal X-configuration, equal horizontal and vertical spacing, and bar width transferred to the drone's four unfolded arms. <Subject 2> supplies the exact four-corner spatial positions transferred to the drone's four motor centers. Centered with its nose pointing toward the top edge, the drone features a rounded central pod with a continuous curved outline and a matte light grey shell divided by a single clean top cover seam. At the front, the smooth nose shell wraps completely around the horizontally forward-facing camera so that only the uninterrupted upper surface is visible from overhead, with no gimbal arms or side lugs protruding. Four dark grey arms extend outward along the exact diagonals and widths of <Subject 1>, growing seamlessly out of the central shell through smooth blends without any root joint lines. At the four corner positions defined by <Subject 2>, each dark grey cylindrical motor carries a stationary two-blade, 5-inch matte black propeller with no propeller guards. Even studio lighting casts soft contact shadows beneath the body and blades onto the plain light background, with no lettering or guide marks present."
+  }
+}

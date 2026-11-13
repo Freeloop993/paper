@@ -1,0 +1,25 @@
+{
+  "created": 1794576914,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8826,
+    "input_tokens": 4730,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2680,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:14.784989+00:00",
+  "elapsed_s": 12.12,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four red circular motor centers and two intersecting blue diagonal arm lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top-down view, replacing the black background and guide marks of <Picture 1> with a plain light background while aligning its unfolded arms and motors to <Subject 1>. <Subject 1> supplies the exact spatial layout, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's four motor centers and unfolded arms. The complete drone is centered with its nose pointing toward the top edge, featuring a true X-frame geometry corresponding to a 250 mm opposite-motor span. At the center is a rounded pod shell with a continuous curved outline, finished in matte light grey with a single clean top cover seam. The front nose shell wraps smoothly around the forward-facing horizontal camera so that only the uninterrupted smooth top surface of the nose is visible from overhead, with no exposed gimbal arms or side lugs. Four dark grey tubular arms extend outward along the diagonals of <Subject 1>, each entering the central shell through a distinct socket marked by a visible transverse joint seam. Each arm terminates at one of the four dark grey cylindrical motors positioned at the red dot locations of <Subject 1>. Mounted on each motor is a single stationary, unguarded five-inch propeller with two sleek black blades, rendered without any guide marks or lettering against the uniform light background."
+  }
+}

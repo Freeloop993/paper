@@ -1,0 +1,25 @@
+{
+  "created": 1794576972,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10157,
+    "input_tokens": 6061,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 4011,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:36:13.269137+00:00",
+  "elapsed_s": 16.09,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The central vertical rounded-corner grey rectangle in <Picture 1> is <Subject 1>. The four diagonal blue lines extending outward from the sides of the central rectangle in <Picture 1> are <Subject 2>. The four red circular dots at the outer ends of the diagonal lines in <Picture 1> are <Subject 3>. The target image shows a strict orthographic top-view product render of a compact everyday aerial photography quadcopter on a plain light background, replacing the black background and omitting the blue guide lines and red dots while matching the body footprint of <Subject 1>, the arm directions of <Subject 2>, and the motor center positions of <Subject 3>. <Subject 1> is partially preserved; its central position, vertical orientation with the nose toward the top edge, and overall footprint are retained as the exact boundary for the newly designed fuselage shell. <Subject 2> supplies the exact diagonal X-configuration directions transferred to the four unfolded quadcopter arms. <Subject 3> supplies the exact spatial coordinates transferred to the centers of the four corner motors. The quadcopter features a matte light grey fuselage pod shaped strictly within the footprint of <Subject 1>, featuring a continuous curved outline that tapers smoothly toward the top nose. Seen directly from overhead, the smooth, unbroken top surface of the nose wraps completely over the forward-facing horizontal camera, showing no exposed gimbal arms or side lugs. A single clean top cover seam runs along the upper shell. Four dark grey tubular arms grow seamlessly out of the matte light grey shell along the exact trajectories of <Subject 2> without any visible joint line at the roots. Each arm terminates at the exact motor locations of <Subject 3> in a true X layout with equal horizontal and vertical spacing corresponding to a 250 mm opposite-motor span. At each dark grey cylindrical motor hub sits one stationary, unguarded black two-blade 5-inch propeller aligned cleanly for a crisp orthographic presentation. Soft, even studio lighting casts subtle contact shadows beneath the pod and arms onto the uniform, plain light background, with no guide marks or lettering present."
+  }
+}

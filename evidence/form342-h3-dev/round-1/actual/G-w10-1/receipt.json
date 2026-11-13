@@ -1,0 +1,25 @@
+{
+  "created": 1794576811,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9908,
+    "input_tokens": 5812,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3762,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:33:32.766419+00:00",
+  "elapsed_s": 13.06,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped cross layout in <Picture 1> is <Subject 1>. The four red circular endpoint markers at the tips of the arms in <Picture 1> are <Subject 2>. The target image shows a strict orthographic top-down product render of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, replacing the solid black background and omitting the red guide marks from <Picture 1>, while matching the exact geometry and arm width of <Subject 1> and the motor center positions of <Subject 2>. <Subject 1> supplies the exact diagonal X-configuration, equal horizontal and vertical spacing, and arm width transferred to the quadcopter's four unfolded arms. <Subject 2> supplies the exact four-corner motor center locations transferred to the quadcopter's motors. The complete product sits centered on a plain, uniform light background without any guide marks or lettering. At the center, the fuselage forms a rounded pod with a continuous curved outline and a matte light grey shell finish, featuring a single clean top cover seam running along its centerline. The pointed front nose shell wraps smoothly around an internal horizontally forward-facing camera so that only the uninterrupted smooth top surface of the nose is visible from directly overhead, with no exposed gimbal arms or side lugs. Four dark grey arms grow outward from the central shell through a smooth, seamless blend with no joint line at the root, matching the width and diagonal trajectories of <Subject 1>. Each arm terminates at the exact positions of <Subject 2> in a cylindrical dark grey brushless motor housing. Mounted atop each motor is a stationary, unblurred two-blade 5-inch propeller in matte black, proportioned for a 250 mm opposite-motor span with no propeller guards."
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "G-r1.4-1",
+  "condition": "G-r1.4",
+  "rep": 1,
+  "target": {
+    "body_plan": "pod",
+    "arm_root": "seamless",
+    "camera": "inside",
+    "cover": "single"
+  },
+  "input_source": "guides/G-r1.4.png",
+  "input_sha256": "328b0204e6151b18601566a1c2f9711238e890bad35c0ecfaf5e9090cb344754",
+  "fields": {
+    "model": "MiniMax-H3-Image",
+    "size": "1024x1024",
+    "n": 1,
+    "output_format": "png",
+    "response_format": "b64_json",
+    "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.\nOne top cover seam.\nMatte light grey shell, dark grey arms and motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe grey shape in the layout marks the body footprint; design the shell within it."
+  },
+  "endpoint": "https://api.minimax.io/v1/images/edits",
+  "start": "2026-11-13T13:33:51.258137+00:00"
+}

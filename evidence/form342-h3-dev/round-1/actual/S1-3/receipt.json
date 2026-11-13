@@ -1,0 +1,25 @@
+{
+  "created": 1794576968,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8819,
+    "input_tokens": 4723,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2673,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:36:09.894487+00:00",
+  "elapsed_s": 12.72,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red circular nodes connected by two intersecting diagonal blue lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-view product render of a compact everyday aerial photography quadcopter on a plain light background, aligned with the motor centers and arm directions of <Subject 1>, while omitting the black background and the guide marks themselves. <Subject 1> supplies the exact spatial positions of the four motor centers, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's arms and motors. The complete quadcopter is centered with its nose pointing toward the top edge, representing a true-X configuration with a 250 mm opposite-motor span and fully unfolded arms. The central body features a matte light grey box-shaped shell with straight sides, clipped corners, and a single clean top cover seam. At the front (top), the smooth nose shell wraps completely around the forward-facing horizontal camera so that only its uninterrupted upper surface is visible from overhead, with no gimbal arms or side lugs exposed. Four dark grey arms extend diagonally outward from the shell toward the four motor centers defined by <Subject 1>, each growing seamlessly out of the matte light grey shell without any root joint line. Each arm terminates in a dark grey cylindrical motor housing topped with one stationary, unguarded 5-inch black two-blade propeller. Even studio lighting casts soft contact shadows beneath the frame and blades against the uniform, unlettered light background."
+  }
+}

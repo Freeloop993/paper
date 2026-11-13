@@ -1,0 +1,25 @@
+{
+  "created": 1794576926,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8942,
+    "input_tokens": 4846,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2796,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:27.712097+00:00",
+  "elapsed_s": 12.58,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped cross layout in <Picture 1> is <Subject 1>. The four red circular dots at the tips of the blue bars in <Picture 1> are <Subject 2>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background. <Subject 1> supplies the exact arm directions, equal horizontal and vertical spacing, and bar width transferred to the four unfolded arms of the new quadcopter. <Subject 2> supplies the exact motor center positions transferred to the four motors of the new quadcopter. The complete product features a true X-frame configuration corresponding to a 250 mm opposite-motor span, centered on a clean, uniform off-white studio surface without any lettering or guide marks. At the center is a rounded pod shell with a continuous curved outline, finished in matte light grey with a single visible top cover seam. Each dark grey cylindrical arm extends outward along the diagonal trajectories of <Subject 1>, matching its width and emerging from the central pod through a smooth, seamless blend with no joint line at the root. The front nose section wraps smoothly around the forward-facing horizontal camera, showing only the unbroken, rounded matte light grey top surface of the nose shell from directly overhead, completely concealing any gimbal arms or side lugs. Mounted at the outer centers defined by <Subject 2> are four dark grey cylindrical brushless motors, each carrying one stationary, flat two-blade 5-inch propeller in matte black, aligned symmetrically with no propeller guards."
+  }
+}

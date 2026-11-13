@@ -1,0 +1,25 @@
+{
+  "created": 1794576941,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9179,
+    "input_tokens": 5083,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3033,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:42.643174+00:00",
+  "elapsed_s": 14.19,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The symmetric X-shaped layout of four red endpoint dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter seen in strict orthographic top view on a plain light background, with its nose pointing toward the top edge and its four unfolded arms and motors aligned to the centers and directions of <Subject 1>, while omitting the black background, red dots, and blue lines of <Picture 1>. <Subject 1> supplies the exact motor center positions, equal horizontal and vertical spacing, and arm directions transferred to the quadcopter's four motor mounts and arms. The quadcopter features a true X-frame geometry corresponding to a 250 mm opposite-motor span, centered within the square frame. At the center is a rounded pod shell with a continuous curved outline finished in matte light grey. The nose section at the top wraps smoothly around an internally mounted forward-facing horizontal camera so that from directly overhead only the smooth upper surface of the nose shell is visible, with no exposed gimbal arms or side lugs. The top cover of the central pod is divided into three distinct panels separated by crisp recessed panel seams running longitudinally and transversely across the matte light grey surface. Four dark grey arms extend outward along the diagonals of <Subject 1>, each emerging from the central shell through a smooth, seamless aerodynamic blend without any joint line or step at the root. At the tip of each arm sits a cylindrical dark grey brushless motor mount matching the four red dot locations of <Subject 1>. Mounted atop each motor is a single stationary, unguarded black two-blade 5-inch propeller with slender aerodynamic blades lying flat in the orthographic plane. Even, diffused studio lighting illuminates the product against the clean, uniform off-white background, casting soft contact shadows beneath the hull and subtle shading across the matte light grey panels, dark grey arms, and black propellers, with no guide marks or lettering anywhere in the scene."
+  }
+}

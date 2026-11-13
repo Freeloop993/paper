@@ -1,0 +1,25 @@
+{
+  "created": 1794576811,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9699,
+    "input_tokens": 5603,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3553,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:33:32.881566+00:00",
+  "elapsed_s": 13.17,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red motor-center dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the black background and guide marks of <Picture 1> with a strict orthographic top-down product render of a compact everyday aerial photography quadcopter on a plain light background, aligned to <Subject 1>. <Subject 1> supplies the exact four-corner motor center positions, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's motors and unfolded arms. Seen from directly overhead with its nose pointing toward the top edge, the complete drone features a true-X geometry with a 250 mm opposite-motor span and fully unfolded dark grey arms that grow seamlessly out of the central body shell without any root joint line. At the four motor centers defined by <Subject 1>, cylindrical dark grey motors sit beneath stationary, guardless 5-inch two-blade black propellers. The central fuselage is a rounded pod with a continuous curved outline finished in matte light grey, divided into three distinct top cover panels separated by fine recessed panel seams. At the front nose, the smooth matte light grey shell wraps completely around the forward-facing camera so that only the clean, uninterrupted upper surface of the nose is visible from above, with no gimbal arms or side lugs protruding. Soft, even studio lighting casts subtle contact shadows beneath the propellers and hull onto the plain light neutral background, with all guide marks and lettering omitted."
+  }
+}

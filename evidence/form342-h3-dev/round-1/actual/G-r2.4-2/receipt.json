@@ -1,0 +1,25 @@
+{
+  "created": 1794576872,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10005,
+    "input_tokens": 5909,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3859,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:33.454712+00:00",
+  "elapsed_s": 11.89,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The central vertical grey rounded rectangle in <Picture 1> is <Subject 1>. The four diagonal blue lines and red circular endpoint markers arranged in an X formation around the center in <Picture 1> are <Subject 2>. The target image shows a strict orthographic top-view product render of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, replacing the black background and guide graphics of <Picture 1> with a plain light background while matching the body footprint of <Subject 1> and the motor layout of <Subject 2>. <Subject 1> serves as a weak reference for the central fuselage footprint; its vertical rectangular proportions and centered placement guide the main body shell, which is reshaped into a continuous curved pod. <Subject 2> supplies the exact four-corner motor center positions and diagonal arm directions transferred to the quadcopter's unfolded arms and motors. The complete quadcopter is centered on a clean, uniform off-white studio background with no guide marks or lettering. Within the footprint defined by <Subject 1>, the central fuselage features a matte light grey shell with a smooth, continuous rounded outline that tapers at the top into a seamless nose cap wrapping completely over the forward-facing horizontal camera so no gimbal arms or side lugs are visible from overhead. A single crisp top cover seam runs along the upper surface of the matte light grey pod. Four dark grey cylindrical arms extend diagonally outward along the trajectories of <Subject 2>, emerging directly from the sides of the central shell through smooth, organic fillet blends without any joint line at the root. At the four outer endpoints corresponding to the red markers of <Subject 2>, each dark grey motor mount holds one stationary, unguarded two-blade matte black 5-inch propeller oriented cleanly across the hub. Soft, even overhead studio lighting casts subtle contact shadows beneath the shell, blended arm roots, and motors onto the light background."
+  }
+}

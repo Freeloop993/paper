@@ -1,0 +1,25 @@
+{
+  "created": 1794576886,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8818,
+    "input_tokens": 4722,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2672,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:47.675092+00:00",
+  "elapsed_s": 12.81,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red terminal dots connected by intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a newly designed compact quadcopter in a strict orthographic top-down view, aligned to the geometry of <Subject 1> on a plain light background, with the black background and guide marks from <Picture 1> removed. <Subject 1> supplies the exact spatial layout, arm directions, and motor-center positions transferred to the quadcopter's frame. Viewed directly from above with its nose pointing toward the top edge, the drone features a central rounded pod shell with a continuous curved outline and a single clean top cover seam. The shell has a matte light grey finish. Four dark grey arms extend outward along the diagonals defined by <Subject 1>, emerging seamlessly from the pod shell without visible root joint lines. At each of the four motor centers matching the red dots of <Subject 1>, a dark grey cylindrical motor mounts a stationary, guardless, two-blade black 5-inch propeller, arranged symmetrically with equal horizontal and vertical spacing for a 250 mm opposite-motor span. Projecting slightly ahead of the front nose is a compact camera gimbal with visible side arms; the camera lens faces horizontally forward so its optical face remains hidden from the overhead perspective. The complete product sits cleanly against an even, unadorned light studio background with soft contact shadows beneath the body and arms, free of any text, labels, or guide marks."
+  }
+}

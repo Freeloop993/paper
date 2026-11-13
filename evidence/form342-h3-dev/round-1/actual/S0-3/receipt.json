@@ -1,0 +1,25 @@
+{
+  "created": 1794576941,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9063,
+    "input_tokens": 4967,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2917,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:43.467246+00:00",
+  "elapsed_s": 15.02,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout in <Picture 1>, consisting of two intersecting diagonal blue lines with four red circular endpoints at the corners, is <Subject 1>. The target image shows a strict orthographic top-down product view of a compact everyday aerial photography quadcopter centered on a plain light background, replacing the black background and omitting the visible guide marks of <Subject 1> while matching its exact motor centers and arm directions. <Subject 1> supplies the spatial layout, equal horizontal and vertical spacing, and four diagonal arm directions transferred to the quadcopter's unfolded arms and motor positions, while the blue lines and red endpoint dots themselves are omitted from the final scene. Viewed directly from above with its nose pointing toward the top edge, the drone features a symmetrical rounded central pod with a continuous curved outline and a matte light grey shell finish. A single clean top cover seam runs longitudinally along the centerline of the pod. At the front nose, the smooth matte light grey shell wraps completely around the internal forward-facing horizontal camera so that only the uninterrupted curved top surface of the nose is visible, with no gimbal arms or side lugs protruding. Four dark grey arms extend outward along the exact diagonals of <Subject 1> to form a true X configuration corresponding to a 250 mm opposite-motor span; each arm grows seamlessly out of the central pod shell through a smooth aerodynamic blend without any root joint line. At the four outer motor centers aligned with the corner positions of <Subject 1>, each dark grey cylindrical brushless motor sits beneath a stationary, unguarded black two-blade 5-inch propeller with slender tapered blades. Soft, even studio lighting casts subtle contact shadows beneath the motors, propellers, and central body onto the plain, uniform light off-white background, with no text, labels, or measurement markings anywhere in the frame."
+  }
+}

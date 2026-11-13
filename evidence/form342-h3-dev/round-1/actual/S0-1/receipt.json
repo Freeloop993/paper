@@ -1,0 +1,25 @@
+{
+  "created": 1794576797,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9800,
+    "input_tokens": 5704,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3654,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:33:19.656171+00:00",
+  "elapsed_s": 19.55,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red endpoint dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-view product render of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background while aligning its four unfolded arms and motor centers to <Subject 1>. <Subject 1> supplies the exact spatial layout, true-X geometry, equal horizontal and vertical spacing, and four motor-center positions transferred to the quadcopter's arms and motors. The quadcopter features a central rounded pod shell with a continuous curved outline finished in matte light grey, divided by a single clean top cover seam. At the front (top), the nose shell smoothly wraps around the internal forward-facing camera so that only the smooth, uninterrupted top surface of the nose is visible from directly overhead, with no gimbal arms or side lugs protruding. Four fully unfolded arms grow seamlessly out of the central shell through a smooth, continuous blend at their roots without any joint line; the arms and the four cylindrical motors mounted at their tips are finished in dark grey. Each motor hub holds one stationary, unguarded five-inch two-blade propeller in matte black, positioned symmetrically over the four corners defined by <Subject 1> corresponding to a 250 mm opposite-motor span. The complete drone is centered on a uniform, plain light studio background with soft, even overhead lighting and subtle contact shadows beneath the body and blades, completely free of any guide marks, lines, dots, or lettering."
+  }
+}

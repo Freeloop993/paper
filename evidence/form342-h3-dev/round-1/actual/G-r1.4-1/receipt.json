@@ -1,0 +1,25 @@
+{
+  "created": 1794576841,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9666,
+    "input_tokens": 5570,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3520,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:04.599000+00:00",
+  "elapsed_s": 13.34,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The central rounded grey rectangle in <Picture 1> is <Subject 1>. The four diagonal blue lines and red circular endpoints in <Picture 1> are <Subject 2>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view on a plain light background, replacing the black background of <Picture 1> while omitting all guide marks. <Subject 1> is partially preserved; its centered position, vertical orientation with the nose toward the top edge, and footprint bounds remain, while it transforms into the matte light grey body shell of the quadcopter. <Subject 2> serves as a spatial-layout reference transferred to the new arms and motors, matching the exact motor centers and equal horizontal and vertical spacing of the true X configuration. The quadcopter features a continuous curved matte light grey pod shell contained within the footprint of <Subject 1>, with the smooth top of the nose wrapping completely over a horizontally forward-facing camera so no gimbal arms or side lugs are visible from overhead, accented by a single clean top cover seam. Four dark grey cylindrical motors sit at the outer endpoints of <Subject 2>, connected to the central pod by four unfolded dark grey arms that emerge from the shell through smooth, seamless blends without root joint lines. Each motor hub holds one stationary, unguarded five-inch two-blade black propeller with symmetrical blades extending outward against the uniform, shadowless light background."
+  }
+}

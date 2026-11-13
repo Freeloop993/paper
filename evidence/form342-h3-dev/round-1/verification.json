@@ -1,0 +1,16 @@
+{
+  "expected": 36,
+  "outputs": 36,
+  "distinct_original_sha256": 36,
+  "distinct_nonempty_http_request_ids": 0,
+  "returned_revised_prompts": 36,
+  "provider_usage": {
+    "generated_images": 36,
+    "total_tokens": 343116,
+    "input_tokens": 195660,
+    "output_tokens": 147456
+  },
+  "first_submitted_utc": "2026-11-13T13:33:00.111187+00:00",
+  "last_received_utc": "2026-11-13T13:36:13.269137+00:00",
+  "billed_amount": null
+}

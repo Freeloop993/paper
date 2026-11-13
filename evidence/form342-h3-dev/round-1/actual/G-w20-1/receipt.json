@@ -1,0 +1,25 @@
+{
+  "created": 1794576842,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9807,
+    "input_tokens": 5711,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3661,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:05.301144+00:00",
+  "elapsed_s": 14.05,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped layout diagram with four red circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top-down view on a plain light background, matching the arm directions and motor centers of <Subject 1> while omitting the black background and red guide marks. <Subject 1> serves as an attribute transfer reference whose diagonal X-configuration, four corner motor-center positions, equal horizontal and vertical spacing, and bar widths are transferred to the quadcopter's arms and motors, while its flat blue color and schematic style are replaced by three-dimensional industrial product geometry. Centered with its nose pointing toward the top edge, the drone features a rounded central pod shell finished in matte light grey with a continuous curved outline and a single clean top-cover seam running along its centerline. The tapered front nose wraps smoothly around the forward-facing horizontal camera so that only the unbroken upper nose surface is visible from overhead, with no gimbal arms or side lugs protruding. Four dark grey cylindrical arms emerge seamlessly from the lower shell without root joint lines, maintaining the exact width of the bars in <Subject 1> and extending outward to the four red-marker coordinates of <Subject 1> to form a true-X frame corresponding to a 250 mm opposite-motor span. At each arm tip sits a dark grey brushless motor hub topped with one stationary, symmetrical two-blade black propeller representing a 5-inch rotor diameter, completely free of propeller guards. Soft, even studio lighting casts subtle contact shadows beneath the hull and rotors onto the uniform off-white background."
+  }
+}

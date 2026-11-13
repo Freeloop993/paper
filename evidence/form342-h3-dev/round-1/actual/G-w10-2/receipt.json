@@ -1,0 +1,25 @@
+{
+  "created": 1794576914,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9056,
+    "input_tokens": 4960,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2910,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:15.073829+00:00",
+  "elapsed_s": 12.41,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The intersecting diagonal blue X-shaped bar layout in <Picture 1> is <Subject 1>. The four red circular dots at the outer tips of the bars in <Picture 1> are <Subject 2>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view on a plain light background, replacing the solid black background of <Picture 1> and aligning its unfolded arms with <Subject 1> and its motor centers with <Subject 2>. <Subject 1> supplies the exact arm directions, width proportions, and centered intersection transferred to the quadcopter's four dark grey arms. <Subject 2> supplies the exact opposite-motor span and four corner positions transferred to the quadcopter's four motor centers. The quadcopter features a true X-frame geometry with equal horizontal and vertical spacing and a nose pointing toward the top edge. At the center sits a rounded pod shell with a continuous curved outline in matte light grey, divided by a single clean top cover seam running along its longitudinal axis. The tapered front nose wraps smoothly around an internal horizontally forward-facing camera so that only the uninterrupted smooth top surface of the nose is visible from overhead, without any exposed gimbal arms or side lugs. Four dark grey arms extend outward from the central pod along the paths of <Subject 1>, emerging from the matte light grey shell through a smooth, seamless root blend with no joint lines. Each arm terminates at the positions of <Subject 2> in a cylindrical dark grey motor housing topped with a single stationary, unguarded two-blade matte black 5-inch propeller oriented cleanly across the motor shaft. The entire product is evenly lit with soft studio shading that defines the curved pod contours, arm tapers, and flat propeller blades against the uniform, unmarked light background, with all guide marks omitted."
+  }
+}

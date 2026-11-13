@@ -1,0 +1,25 @@
+{
+  "created": 1794576872,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9818,
+    "input_tokens": 5722,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3672,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:34.775054+00:00",
+  "elapsed_s": 13.2,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four diagonal blue lines and four red circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top-down view with its nose pointing toward the top edge, aligned to the motor centers and arm directions of <Subject 1> on a plain light background, omitting the black background, blue guide lines, and red endpoint dots of <Picture 1>. <Subject 1> supplies the exact spatial layout, equal horizontal and vertical spacing, true-X symmetry, and four diagonal arm directions transferred to the quadcopter's central pod and unfolded arms. The complete product features a 250 mm opposite-motor span with four fully unfolded dark grey tubular arms extending diagonally from the central body to the four motor positions defined by <Subject 1>. Each arm connects to the main shell via a distinct folding hinge housing with a visible metallic pivot pin at its base. At the outer ends of the arms sit four cylindrical dark grey brushless motors, each topped with a stationary two-blade matte black 5-inch propeller without any propeller guards. The central frame consists of a rounded rectangular pod finished in a smooth matte light grey shell with a single clean longitudinal top cover seam running down the centerline. The forward-pointing nose section has a continuous curved outline that smoothly wraps around the internal front-facing camera assembly, showing only the uninterrupted upper shell surface overhead with no exposed gimbal arms or side lugs. Soft, even studio lighting casts subtle contact shadows beneath the overlapping rotor blades, hinges, and fuselage onto the uniform off-white background, with no guide marks or lettering present."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794576900,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8919,
+    "input_tokens": 4823,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2773,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:02.631540+00:00",
+  "elapsed_s": 14.61,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four red circular endpoints connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the black background and schematic diagram with a strict orthographic top-down product render of a compact quadcopter aligned to the geometry of <Subject 1>. <Subject 1> supplies the exact spatial layout, motor center positions, equal horizontal and vertical spacing, and unfolded arm directions transferred to the quadcopter's frame. The drone is centered on a plain, uniform light grey studio background with no guide marks or lettering, oriented with its nose pointing toward the top edge. At the four corner centers defined by <Subject 1>, dark grey cylindrical brushless motors are mounted at the tips of four straight, tapered dark grey arms extending inward along the diagonals. Each motor holds one stationary, flat, matte black two-blade 5-inch propeller with rounded tips and no propeller guards. The central body is a compact, rounded pod with a continuous curved outline finished in a smooth matte light grey shell. The four dark grey arms emerge from the central pod through a smooth, seamless blend without any visible joint line at the root. The front nose section features a solid, smoothly contoured top surface that wraps completely around the forward-facing horizontal camera, hiding all gimbal mechanisms and side lugs from this overhead view. The upper surface of the light grey pod is divided into three distinct top cover panels separated by crisp, recessed seam lines running symmetrically across the shell. Soft, even overhead studio lighting illuminates the product, casting subtle contact shadows beneath the fuselage and rotor blades while highlighting the matte surface textures."
+  }
+}

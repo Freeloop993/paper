@@ -1,0 +1,25 @@
+{
+  "created": 1794576886,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10039,
+    "input_tokens": 5943,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3893,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:34:47.968092+00:00",
+  "elapsed_s": 13.11,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The central rounded vertical rectangle in <Picture 1> is <Subject 1>. The four diagonal blue lines and their terminal red dots arranged in an X pattern in <Picture 1> are <Subject 2>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top view on a plain light background, with its fuselage footprint fitting within <Subject 1> and its unfolded arms and motors aligned to <Subject 2>, replacing the solid black background of <Picture 1>. <Subject 1> supplies the exact footprint and rounded rectangular boundary transferred to the quadcopter's main body shell. <Subject 2> supplies the exact arm directions, motor center positions, and equal horizontal and vertical spacing transferred to the quadcopter's four unfolded arms and motors. The complete product is centered with its nose pointing toward the top edge, rendered as a clean studio design without guide marks, lettering, or propeller guards against a uniform, neutral light grey-white background. Within the boundary of <Subject 1>, the fuselage features a matte light grey shell with a continuous curved outline and a single subtle longitudinal top cover seam running down the centerline. At the front end, the smooth, unbroken nose shell wraps completely around the forward-facing horizontal camera so that no gimbal arms or side lugs are visible from directly overhead. Extending outward along the diagonals of <Subject 2> in a true X configuration representing a 250 mm opposite-motor span, four dark grey tubular arms emerge seamlessly from the matte light grey body shell with smooth filleted roots and no joint lines. Each arm terminates at the motor centers of <Subject 2> in a cylindrical dark grey brushless motor topped with one stationary, symmetrical two-blade 5-inch matte black propeller with rounded tips. Soft, even overhead studio lighting defines the smooth contours of the matte light grey shell, the darker grey arms and motors, and the subtle contact shadows beneath the stationary blades."
+  }
+}

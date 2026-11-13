@@ -1,0 +1,25 @@
+{
+  "created": 1794576955,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9820,
+    "input_tokens": 5724,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3674,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T13:35:56.884908+00:00",
+  "elapsed_s": 13.28,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four intersecting blue diagonal bars with red circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter on a plain light background, omitting the black background and guide marks of <Picture 1> while matching the geometry of <Subject 1>. <Subject 1> supplies the exact motor center positions, arm directions, true-X symmetry, equal horizontal and vertical spacing, and bar width transferred to the quadcopter's arms and motors. The complete quadcopter is centered with its nose pointing toward the top edge and all four arms fully unfolded along the diagonals of <Subject 1>. At the center is a rounded pod shell with a continuous curved outline in matte light grey, featuring a single clean top cover seam running longitudinally down the fuselage. The front nose shell wraps smoothly around the forward-facing horizontal camera so that only the uninterrupted curved top surface of the nose is visible from directly overhead, with no gimbal arms or side lugs protruding. Each dark grey cylindrical arm emerges from the central shell through a smooth, seamless blend into the matte light grey body without any joint line at the root, maintaining the exact width indicated by the bars of <Subject 1>. At the four outer endpoints corresponding to the markers of <Subject 1>, each dark grey motor mount carries a single stationary two-blade black 5-inch propeller with a central hub, completely free of propeller guards. Soft, even studio lighting casts subtle contact shadows beneath the shell, arms, and motors against the uniform plain light background, with no lettering or graphic overlays present."
+  }
+}
