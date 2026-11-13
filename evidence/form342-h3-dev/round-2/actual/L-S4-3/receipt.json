@@ -1,0 +1,25 @@
+{
+  "created": 1794580346,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9779,
+    "input_tokens": 5683,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3633,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:27.257790+00:00",
+  "elapsed_s": 12.7,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of four intersecting diagonal lines with circular endpoints in <Picture 1> is <Subject 1>. The target image presents a strict orthographic top-down view of a compact everyday aerial photography quadcopter, aligned to the structural geometry of <Subject 1> against a plain light background while omitting the dark background and guide marks from <Picture 1>. <Subject 1> supplies the exact motor center positions, equal horizontal and vertical spacing, and unfolded X-arm directions transferred to the quadcopter's frame. Viewed directly from above with its nose oriented toward the top edge, the quadcopter features a central rounded pod with a continuous curved outline and a plain, seamless top cover finished in uniform matte light grey. Four fully unfolded arms extend outward along the diagonals of <Subject 1>, emerging from the central shell through smooth, seamless blends without visible root joint lines and sharing the same continuous matte light grey finish. Each arm terminates at one of the four motor centers defined by <Subject 1>, corresponding to a 250 mm opposite-motor span, where it supports a cylindrical dark grey brushless motor. Mounted atop each motor is a stationary black two-blade 5-inch propeller with no propeller guards, positioned cleanly so the blades do not overlap across adjacent motors. Projecting forward from the nose at the top is a compact camera gimbal featuring visible side arms; the camera points horizontally forward, leaving its optical lens face hidden from the overhead viewpoint. Soft, even studio lighting casts subtle contact shadows beneath the arms, motors, and spinning-free propellers onto the clean, unlettered light surface."
+  }
+}

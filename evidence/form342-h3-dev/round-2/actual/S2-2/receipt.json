@@ -1,0 +1,25 @@
+{
+  "created": 1794580320,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8838,
+    "input_tokens": 4742,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2692,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:01.852755+00:00",
+  "elapsed_s": 12.78,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of the four red circular motor-center markers and the two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background while matching the exact motor positions and arm directions of <Subject 1>. <Subject 1> supplies the exact spatial layout, true-X geometry, equal horizontal and vertical spacing, opposite-motor span proportions, and diagonal arm angles transferred to the quadcopter's motors and unfolded arms. The complete quadcopter features a central rounded pod with a continuous curved outline and a smooth, seamless plain top cover. Its nose shell wraps cleanly around a horizontally forward-facing camera so that from directly overhead only the smooth top surface of the nose is visible, with no exposed gimbal arms or side lugs. Four fully unfolded arms extend diagonally outward along the X-axis trajectories of <Subject 1>, each entering the central pod shell through a distinct socket marked by a visible transverse joint seam. Both the central pod shell and the four arms share a uniform matte light grey color as one continuous finish. At the four outer corners defined by <Subject 1>, each dark grey cylindrical motor carries a single stationary, unguarded black two-blade 5-inch propeller. The entire product is centered on a clean, plain light background with no guide marks, lines, dots, or lettering."
+  }
+}

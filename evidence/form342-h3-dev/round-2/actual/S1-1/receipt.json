@@ -1,0 +1,25 @@
+{
+  "created": 1794580253,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8891,
+    "input_tokens": 4795,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2745,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:30:55.467542+00:00",
+  "elapsed_s": 14.12,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four red circular nodes and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter drone for everyday aerial photography in a strict orthographic top view, positioned on a plain light background with its nose pointing toward the top edge and its arms aligned to match <Subject 1>, while the black background of <Picture 1> is replaced. <Subject 1> supplies the exact motor-center positions, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's four motors and unfolded arms. The complete product is centered within a true X configuration representing a 250 mm opposite-motor span, with no guide marks or lettering present. At the center sits a box-shaped main shell with straight sides, clipped corners, and a plain, unseamed top cover. Extending outward from the shell along the diagonals of <Subject 1> are four fully unfolded arms that grow directly out of the central body through smooth, seamless blends without any root joint line. At the front of the shell, the nose section wraps smoothly around a horizontally forward-facing camera so that only the clean, continuous top surface of the nose is visible from overhead, with no gimbal arms or side lugs exposed. Each arm terminates at one of the four motor centers defined by <Subject 1>, mounting a cylindrical dark grey motor topped with a stationary, guardless five-inch two-blade black propeller. Both the central shell and the four arms share a single continuous matte light grey finish, illuminated evenly against the plain light background."
+  }
+}

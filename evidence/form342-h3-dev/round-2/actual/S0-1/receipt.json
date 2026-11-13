@@ -1,0 +1,25 @@
+{
+  "created": 1794580254,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9886,
+    "input_tokens": 5790,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3740,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:30:55.792611+00:00",
+  "elapsed_s": 14.44,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout in <Picture 1>, consisting of four red circular endpoint markers at the corners and two intersecting blue diagonal lines, is <Subject 1>. The target image shows a strict orthographic top-down product render of a compact everyday aerial photography quadcopter with its nose oriented toward the top edge, built directly upon the spatial geometry of <Subject 1> while replacing the black background and diagrammatic marks of <Picture 1> with a plain light background. <Subject 1> supplies the exact motor center positions, arm directions, and equal horizontal and vertical spacing transferred to the quadcopter's four motors and unfolded arms. The quadcopter features a central rounded pod shell with a continuous curved outline and a plain, seamless top cover finished in uniform matte light grey. At the top edge, the nose shell wraps smoothly around an internal forward-facing horizontal camera so that only the smooth, unbroken top surface of the nose is visible from overhead, without any exposed gimbal arms or side lugs. Four straight arms extend diagonally outward from the central pod along the four diagonal vectors of <Subject 1>, emerging from the shell through a smooth, seamless blend with no joint line at the root and sharing the same continuous matte light grey finish as the body. Positioned precisely at the four corner coordinates of <Subject 1> are four cylindrical dark grey brushless motors, representing a true X configuration with a 250 mm opposite-motor span. Mounted flat on each motor is a single stationary, unguarded two-blade 5-inch propeller in solid black, with all blades aligned consistently across the four rotors. The entire complete product is centered against a clean, uniform, plain light studio background free of guide marks, lettering, or shadows cast by extra accessories."
+  }
+}

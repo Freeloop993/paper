@@ -1,0 +1,25 @@
+{
+  "created": 1794580306,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8776,
+    "input_tokens": 4680,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2630,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:47.225245+00:00",
+  "elapsed_s": 12.0,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four dark red terminal dots connected by intersecting grey diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top view on a plain light background, omitting the black background and guide marks of <Picture 1> while aligning its four motors and unfolded arms with <Subject 1>. <Subject 1> supplies the exact motor center positions, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's geometry. The quadcopter is oriented with its nose toward the top edge and arms fully unfolded in a true X configuration representing a 250 mm opposite-motor span. At the four terminal points of <Subject 1>, dark grey cylindrical motors are mounted, each carrying one stationary, unguarded two-blade black 5-inch propeller with rounded tips. A central rounded pod features a continuous curved outline and a plain, seamless matte light grey top cover. Four matching matte light grey arms grow outward from the pod shell through smooth, seamless blends without root joint lines, sharing one continuous color across the entire body and arms. The front nose shell wraps smoothly around the forward-facing horizontal camera so that only its uninterrupted curved top surface is visible from directly overhead, with no gimbal arms or side lugs exposed. Soft, even studio lighting casts subtle contact shadows beneath the airframe onto the clean, uniform light background."
+  }
+}

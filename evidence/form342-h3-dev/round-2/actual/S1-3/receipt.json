@@ -1,0 +1,25 @@
+{
+  "created": 1794580359,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9894,
+    "input_tokens": 5798,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3748,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:40.631633+00:00",
+  "elapsed_s": 12.19,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of four red circular motor-center markers and two intersecting blue diagonal lines forming an X in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top-down view, replacing the black background and guide marks of <Picture 1> with a plain light background while aligning its unfolded arms and motor centers to <Subject 1>. <Subject 1> supplies the exact spatial positions, equal horizontal and vertical spacing, and true X-shaped arm directions transferred to the quadcopter's motors and arms. The complete quadcopter is centered with its nose pointing toward the top edge and its arms fully unfolded along the diagonals of <Subject 1>, representing a 250 mm opposite-motor span. The central body features a box-shaped shell with straight sides, clipped corners, and a completely plain, seamless matte light grey top cover. The four slender arms extend outward from the shell through smooth, continuous blends without any visible joint lines at their roots, sharing the same uniform matte light grey finish as the main shell. At the four motor centers defined by <Subject 1>, dark grey cylindrical brushless motors are mounted without propeller guards. Each motor holds a stationary, symmetrical two-blade 5-inch propeller in matte black, oriented cleanly across the top-down plane. At the front end, the matte light grey nose shell wraps smoothly around the forward-facing horizontal camera assembly so that only its clean, rounded top surface is visible from directly overhead, with no exposed gimbal arms or side lugs. Even, diffused studio lighting casts soft, subtle contact shadows beneath the fuselage, arms, and stationary blades against the plain, unadorned light background, which contains no guide marks or lettering."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580377,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8922,
+    "input_tokens": 4826,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2776,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:59.004404+00:00",
+  "elapsed_s": 12.81,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four-point X-shaped layout of red dots and intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the black background and diagram elements of <Picture 1> with a strict orthographic top-down product render of a compact everyday aerial photography quadcopter on a plain light background, aligned to <Subject 1>. <Subject 1> supplies the exact motor-center positions, equal horizontal and vertical spacing, and four unfolded diagonal arm directions transferred to the quadcopter's motors and arms. Viewed directly from above with its nose pointing toward the top edge, the complete quadcopter features a true-X geometry corresponding to a 250 mm opposite-motor span. At the four terminal centers defined by <Subject 1>, each dark grey cylindrical motor carries a single stationary two-blade black 5-inch propeller without any propeller guards. Four straight tubular arms extend diagonally inward from the motors to the central body, rendered in a uniform matte light grey finish that matches the shell. Each arm enters the central pod through a distinct socket featuring a visible transverse joint seam across the shell wall. The central rounded pod has a continuous curved outline in the same matte light grey color and a plain, unbroken top cover free of crossing seams or lettering. At the front, the smooth, rounded nose shell wraps completely around the forward-facing horizontal camera so that only its sleek upper surface is visible from overhead, with no exposed gimbal arms or side lugs. Soft, even studio lighting casts subtle contact shadows beneath the pod, arms, and rotors onto the clean, plain light grey-white background, with all guide marks omitted."
+  }
+}

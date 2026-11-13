@@ -1,0 +1,25 @@
+{
+  "created": 1794580401,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9007,
+    "input_tokens": 4911,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2861,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:33:22.709379+00:00",
+  "elapsed_s": 12.0,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped crossed bar layout in <Picture 1> is <Subject 1>. The four small red circular markers at the outer ends of the bars in <Picture 1> are <Subject 2>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view with its nose oriented toward the top edge, replacing the black background and guide marks from <Picture 1> with a plain light background while aligning its arms and motors to <Subject 1> and <Subject 2>. <Subject 1> supplies the exact diagonal arm directions, equal horizontal and vertical spacing, and arm width transferred to the quadcopter's four unfolded arms. <Subject 2> supplies the exact four motor center positions transferred to the quadcopter's motors. The quadcopter features a central rounded pod with a continuous curved outline and a smooth, seamless top cover free of any seams. Extending diagonally outward along <Subject 1>, the four fully unfolded arms grow directly out of the central shell through a smooth, seamless blend without any joint line at the root, matching the width of <Subject 1>. The forward-facing nose shell wraps smoothly around the horizontally forward-facing camera so that only the clean, rounded top surface of the nose is visible from overhead, with no gimbal arms or side lugs exposed. At the four centers defined by <Subject 2>, each dark grey cylindrical motor mounts a single stationary, two-blade, 5-inch matte black propeller with no propeller guards, sized proportionally to a 250 mm opposite-motor span. Both the central pod shell and the four arms share one continuous, uniform matte light grey finish, casting soft, even studio contact shadows onto the plain, unmarked light background."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580306,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9910,
+    "input_tokens": 5814,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3764,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:46.558382+00:00",
+  "elapsed_s": 11.33,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four dark red circular dots connected by two intersecting grey diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the black background and guide marks of <Picture 1> with a strict orthographic top-down view of a compact everyday aerial photography quadcopter positioned on a plain light background, aligned to the motor centers and arm directions of <Subject 1>. <Subject 1> serves as an attribute transfer reference that supplies the exact four-corner motor center positions, equal horizontal and vertical spacing, and true-X diagonal arm directions for the new quadcopter, while its visible dots, connecting lines, and black backdrop are omitted. Viewed directly from overhead with the nose oriented toward the top edge, the complete drone features a central rounded pod with a continuous curved outline and a smooth, seamless matte light-grey top cover free of panel seams or lettering. Four straight arms grow outward from the shell along the diagonals of <Subject 1> through a smooth, continuous blend at their roots without joint lines, sharing the same uniform matte light-grey finish. Each arm terminates at one of the four motor centers of <Subject 1>, supporting a cylindrical dark-grey brushless motor with no propeller guards. Mounted atop each motor is a stationary, slender two-blade black propeller scaled for a 5-inch diameter within the 250 mm opposite-motor span. Projecting slightly forward from the front tip of the pod toward the top edge is a compact camera gimbal with small dark-grey side mounting arms; the lens barrel points horizontally forward so only its upper casing and side arms are visible from directly above, hiding the optical face. Soft, even studio lighting casts subtle contact shadows beneath the pod, blended arms, motors, and stationary blades onto the clean, unmarked light-grey surface."
+  }
+}

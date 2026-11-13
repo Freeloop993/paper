@@ -1,0 +1,25 @@
+{
+  "created": 1794580346,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9764,
+    "input_tokens": 5668,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3618,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:28.406511+00:00",
+  "elapsed_s": 13.86,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped layout of four intersecting bars in <Picture 1> is <Subject 1>. The four small red circular markers at the outer ends of the bars in <Picture 1> are <Subject 2>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter on a plain light background, replacing the black background and omitting guide marks while matching the arm geometry of <Subject 1> and motor centers of <Subject 2>. <Subject 1> supplies the exact X-configuration, equal horizontal and vertical spacing, and bar width transferred to the quadcopter's unfolded arms. <Subject 2> supplies the exact positions transferred to the four motor centers. The complete quadcopter is centered with its nose pointing toward the top edge, featuring a 250 mm opposite-motor span and no propeller guards. Its central body is a rounded pod with a continuous curved outline and a plain matte light grey top cover free of seams. Four straight arms of uniform width matching <Subject 1> extend diagonally from the pod in a seamless blend without root joint lines, sharing the same continuous matte light grey finish. At each center defined by <Subject 2>, a cylindrical dark grey motor sits beneath a stationary two-blade 5-inch black propeller aligned cleanly along the arm axes. The forward nose shell smoothly wraps around the internal horizontally facing camera so only its uninterrupted upper surface is visible from overhead, with no exposed gimbal arms or side lugs. Soft, even studio lighting casts subtle contact shadows onto the plain light background."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580281,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9976,
+    "input_tokens": 5880,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3830,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:22.330843+00:00",
+  "elapsed_s": 12.64,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped layout of four intersecting bars in <Picture 1> is <Subject 1>. The four small red circular dots at the outer corners of the bars in <Picture 1> are <Subject 2>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top-down view with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background while aligning its unfolded arms and motor centers to <Subject 1> and <Subject 2>. <Subject 1> supplies the exact diagonal arm directions, equal horizontal and vertical spacing, central intersection geometry, and bar widths transferred to the quadcopter's four unfolded arms. <Subject 2> supplies the exact outer motor-center positions transferred to the quadcopter's four motors. The quadcopter features a rounded central pod with a continuous curved outline and a plain top cover free of crossing seams or lettering. At the front (top), the smooth matte light grey nose shell wraps seamlessly around the forward-facing horizontal camera so that only the uninterrupted curved top surface is visible from overhead, hiding any gimbal arms or side lugs. The four arms grow directly out of the central shell through smooth, seamless blends without root joint lines, matching the width and true-X diagonal alignment of <Subject 1> across a 250 mm opposite-motor span. Both the central shell and the four arms share one continuous matte light grey color. Mounted precisely at the four corner positions of <Subject 2> are dark grey cylindrical motors, each carrying a single stationary, unguarded black two-blade 5-inch propeller oriented cleanly over the arm tip. Soft, even studio lighting defines the smooth contours of the pod, blended arm roots, and flat blades against the uniform light background, with no red guide dots, text, or dimension labels present."
+  }
+}

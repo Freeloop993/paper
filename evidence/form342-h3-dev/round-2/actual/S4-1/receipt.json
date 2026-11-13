@@ -1,0 +1,25 @@
+{
+  "created": 1794580267,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8944,
+    "input_tokens": 4848,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2798,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:07.799105+00:00",
+  "elapsed_s": 11.64,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The symmetric X-shaped geometric layout of four red circular nodes connected by two intersecting diagonal blue lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-view product render of a compact everyday aerial photography quadcopter aligned to the motor centers and arm directions of <Subject 1>, replacing the black background, red dots, and blue lines from <Picture 1> with a plain light background. <Subject 1> supplies the exact spatial placement, equal horizontal and vertical spacing, and diagonal arm angles transferred to the quadcopter's four motors and unfolded arms. Viewed directly from above with its nose pointing toward the top edge, the quadcopter features a central rounded pod with a continuous curved outline and a smooth, seam-free matte light grey top cover. Four fully unfolded arms extend outward along the diagonals of <Subject 1> in a true X configuration corresponding to a 250 mm opposite-motor span; each arm grows seamlessly out of the central shell without any root joint line, sharing the same uniform matte light grey color. At the four outer node positions of <Subject 1>, dark grey cylindrical brushless motors are mounted vertically, each topped with a stationary, unguarded black two-blade 5-inch propeller whose blades lie flat in the overhead plane. Projecting slightly past the front tip of the pod at the top is a compact camera gimbal with visible side yoke arms holding the lens barrel horizontally forward, so only the upper housing and side arms are visible from directly overhead while the optical face remains hidden. Soft, even studio lighting casts subtle contact shadows beneath the pod, arms, and propellers onto the clean, unmarked light surface."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580293,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9797,
+    "input_tokens": 5701,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3651,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:34.161326+00:00",
+  "elapsed_s": 11.27,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout in <Picture 1>, defined by four dark red circular points connected by two intersecting grey diagonal lines, is <Subject 1>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter with its nose oriented toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background while aligning its unfolded arms and motor centers to <Subject 1>. <Subject 1> supplies the exact spatial placement, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's four motors and arms. The complete product features a true X-frame geometry corresponding to a 250 mm opposite-motor span, rendered without any guide marks or lettering. At the center is a rounded pod with a continuous curved outline and a plain matte light grey top cover free of crossing seams. Extending diagonally outward from the pod along the trajectories of <Subject 1> are four fully unfolded arms in the same continuous matte light grey color as the shell; each arm enters a distinct socket at the pod shell marked by a visible transverse joint seam. The tapered nose shell wraps smoothly around the front-facing horizontal camera so that only its smooth matte light grey top surface is visible from directly overhead, with no gimbal arms or side lugs protruding. Positioned precisely at the four outer points of <Subject 1> at the tips of the arms are four cylindrical dark grey brushless motors. Mounted atop each motor is a single stationary, unguarded five-inch two-blade propeller in matte black, with all four rotors aligned in a consistent orientation."
+  }
+}

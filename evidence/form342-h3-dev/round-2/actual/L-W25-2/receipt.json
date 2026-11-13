@@ -1,0 +1,25 @@
+{
+  "created": 1794580333,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10074,
+    "input_tokens": 5978,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3928,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:14.520022+00:00",
+  "elapsed_s": 12.62,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The centered X-shaped layout of four intersecting dark grey diagonal bars in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, matching the arm directions and motor positions of <Subject 1> while omitting the four small red circular guide marks at the bar tips in <Picture 1> and replacing the solid black background from <Picture 1> with a plain light background. <Subject 1> is partially preserved; its centered placement, exact diagonal X-axis angles, equal horizontal and vertical spacing representing a 250 mm opposite-motor span, and bar widths are retained as the structural footprint for the four unfolded arms, while the flat graphic bars themselves are transformed into three-dimensional aerodynamic quadcopter arms and rotor mounts. The complete product is rendered in a clean industrial design style under even studio lighting against a uniform, unmarked off-white surface with soft contact shadows beneath the airframe. At the center sits a rounded fuselage pod with a continuous curved outline and a plain, seamless matte light grey top cover free of panel lines or fasteners. The forward nose section wraps smoothly around an internal horizontally forward-facing camera so that only the smooth, uninterrupted matte light grey upper shell of the nose is visible from directly overhead, without any exposed gimbal arms or side lugs. Each of the four straight arms extends diagonally outward along the axes of <Subject 1>, emerging seamlessly from the central shell with a smooth fillet blend and no joint line at the root, maintaining the exact width indicated by the bars of <Subject 1> before tapering slightly toward the tips. Mounted precisely at the four outer tip positions corresponding to the ends of <Subject 1> are four compact cylindrical dark grey brushless motors. Each motor carries a single stationary two-blade black propeller sized for 5-inch blades, oriented symmetrically across the four corners with no propeller guards, resulting in slight overlapping between adjacent diagonal propellers."
+  }
+}

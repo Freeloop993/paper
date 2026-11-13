@@ -1,0 +1,25 @@
+{
+  "created": 1794580294,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8946,
+    "input_tokens": 4850,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2800,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:35.178389+00:00",
+  "elapsed_s": 12.28,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four intersecting diagonal blue bars with four red circular endpoint markers in <Picture 1> is <Subject 1>. The target image presents a strict orthographic top-down view of a compact everyday aerial photography quadcopter on a plain light background, replacing the black background and guide graphics of <Picture 1> while matching the motor centers, arm directions, and bar widths defined by <Subject 1>. <Subject 1> supplies the exact spatial geometry, equal horizontal and vertical spacing, 45-degree diagonal arm angles, four motor center positions, and arm width transferred to the quadcopter's frame and arms. The quadcopter features a true X-configuration with its nose pointing toward the top edge and all four arms fully unfolded. A central rounded pod shell has a continuous curved outline and a smooth, unseamed matte light grey top cover. The front nose section wraps smoothly around a horizontally forward-facing camera so that only the sleek, uninterrupted top curve of the nose is visible from directly overhead, with no gimbal arms or side lugs exposed. Each of the four arms extends diagonally outward from the pod through a seamless, blended root transition without any joint line, maintaining the uniform width of the bars in <Subject 1> and sharing the same continuous matte light grey finish as the central shell. Positioned precisely at the four red marker locations of <Subject 1> are four cylindrical dark grey brushless motors mounted at the tips of the arms. Mounted atop each motor is a single stationary, guard-free two-blade black propeller with a 5-inch diameter, rendered flat against the plain, evenly lit off-white studio background with soft contact shadows beneath the airframe."
+  }
+}

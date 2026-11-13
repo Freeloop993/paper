@@ -1,0 +1,25 @@
+{
+  "created": 1794580377,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9076,
+    "input_tokens": 4980,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2930,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:58.281000+00:00",
+  "elapsed_s": 12.09,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red circular motor centers and two intersecting blue diagonal arm-direction lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter designed for everyday aerial photography in a strict orthographic top view with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background while aligning its unfolded arms and motors to <Subject 1>. <Subject 1> supplies the exact spatial positions of the four motor centers and the diagonal directions of the four arms transferred to the new quadcopter. The complete quadcopter is centered on a clean, uniform off-white studio background with no guide marks or lettering, built around a true X-frame geometry corresponding to a 250 mm opposite-motor span with equal horizontal and vertical spacing between the four corners. At the center sits a compact rounded pod with a continuous curved outline and a smooth, uninterrupted nose shell at the top that wraps completely around the forward-facing horizontal camera so only the sleek upper surface of the nose is visible from directly overhead, hiding any gimbal arms or side lugs. The top of the central pod is divided into three distinct top cover panels separated by crisp, narrow recessed seams. Extending diagonally outward from the pod along the vectors of <Subject 1> are four slender, aerodynamic arms that grow seamlessly out of the central shell through a smooth, blended transition without any joint line at the root. Both the central pod and the four arms share one continuous matte light grey finish. Mounted vertically at each of the four motor centers defined by <Subject 1> is a cylindrical dark grey brushless motor topped with a single stationary, unguarded two-blade 5-inch propeller in matte black, oriented symmetrically within the frame under soft, even overhead lighting that casts subtle contact shadows beneath the airframe."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580389,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9741,
+    "input_tokens": 5645,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3595,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:33:10.595982+00:00",
+  "elapsed_s": 11.55,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The centered X-shaped layout of four intersecting blue diagonal bars with red circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter drone in a strict orthographic top-down view on a plain light background, matching the arm geometry and motor positions of <Subject 1> while omitting the black background and red guide marks. <Subject 1> supplies the exact spatial layout, equal horizontal and vertical spacing, diagonal arm directions, bar widths, and four motor center locations transferred to the new quadcopter's arms and motors. The complete drone is oriented with its nose pointing toward the top edge of the frame, representing a 250 mm opposite-motor span with fully unfolded arms. A central rounded pod features a continuous curved outline and a seamless matte light grey shell that blends smoothly into each of the four diagonal arms without visible root joints or seams across the plain top cover. The forward nose section wraps smoothly around an internal horizontally facing camera so that only the unadorned curved top surface of the nose shell is visible from directly overhead, with no gimbal arms or side lugs protruding. Each arm matches the width of the corresponding bar in <Subject 1> and terminates at the exact red marker coordinates of <Subject 1> in a cylindrical dark grey brushless motor. Mounted atop each motor is a single stationary, guardless black two-blade 5-inch propeller with symmetrical blades extending outward. Soft, even studio lighting casts subtle contact shadows beneath the airframe onto the uniform off-white background."
+  }
+}

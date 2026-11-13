@@ -1,0 +1,25 @@
+{
+  "created": 1794580403,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8867,
+    "input_tokens": 4771,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2721,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:33:23.779144+00:00",
+  "elapsed_s": 13.08,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of four red circular points connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view with its nose pointing toward the top edge, replacing the black background and guide marks of <Picture 1> with a plain light background while matching the motor centers and arm directions of <Subject 1>. <Subject 1> supplies the exact spatial placement and diagonal X-configuration transferred to the four motors and unfolded arms of the quadcopter. The quadcopter features a true X-frame geometry with equal horizontal and vertical spacing between the opposite-motor centers. At each of the four positions defined by <Subject 1>, a cylindrical dark grey motor is mounted at the tip of an unfolded arm, carrying a single stationary black two-blade five-inch propeller without any propeller guards. The central body consists of a rounded pod with a continuous curved outline and a plain matte light grey top cover free of seams or lettering. Each arm extends outward from the pod shell through a smooth, seamless blend into the same uniform matte light grey color, with no joint line at the root. At the front end facing the top edge, the nose shell wraps smoothly around the forward-facing horizontal camera so that only the sleek, uninterrupted top surface of the nose is visible from directly overhead, hiding any gimbal arms or side lugs. Soft, even studio lighting illuminates the complete product against the clean, unadorned light background, casting subtle contact shadows beneath the airframe."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580359,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8890,
+    "input_tokens": 4794,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2744,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:40.344749+00:00",
+  "elapsed_s": 11.91,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The spatial layout of the four red circular motor-center markers and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a newly designed compact quadcopter for everyday aerial photography in a strict orthographic top view on a plain light background, aligned with the motor positions and arm directions of <Subject 1> while omitting the black background, red dots, and blue lines from <Picture 1>. <Subject 1> supplies the exact motor-center positions, equal horizontal and vertical spacing, and symmetrical X-shaped diagonal arm directions transferred to the new quadcopter's motors and arms. The complete product is centered with its nose pointing toward the top edge, representing a 250 mm opposite-motor span with all four arms fully unfolded along the diagonals of <Subject 1>. At each of the four motor centers defined by <Subject 1> sits a cylindrical dark grey motor carrying a single stationary two-blade black 5-inch propeller with no propeller guards. The central body is a rounded pod with a continuous curved outline and a plain, seamless matte light grey top cover free of crossing seams or lettering. Each of the four tubular arms shares this same continuous matte light grey color as the shell and grows directly out of the pod through a smooth, seamless blend with no joint line at the root. Projecting forward from the front nose is a small camera gimbal with visible side arms; the camera points horizontally forward so its optical face is hidden from directly overhead. Soft, even studio lighting illuminates the matte surfaces and casts subtle contact shadows onto the plain light background."
+  }
+}

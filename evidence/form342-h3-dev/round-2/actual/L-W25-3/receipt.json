@@ -1,0 +1,25 @@
+{
+  "created": 1794580389,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9835,
+    "input_tokens": 5739,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3689,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:33:10.663904+00:00",
+  "elapsed_s": 11.61,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The centered X-shaped layout of four intersecting dark grey diagonal bars with small red circular markers at their outer tips in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down product view of a compact everyday aerial photography quadcopter on a plain light background, replacing the solid black background and omitting the red guide dots from <Picture 1>, while matching the arm directions, motor centers, and bar widths of <Subject 1>. <Subject 1> supplies the exact spatial layout, equal horizontal and vertical spacing, diagonal arm orientations, outer tip positions, and arm width transferred to the quadcopter's central pod and four unfolded arms. Viewed directly from above with its nose pointing toward the top edge, the complete drone features a continuous matte light grey finish across both its central rounded pod shell and its four fully unfolded arms, which grow seamlessly out of the pod without visible joint lines or seams. The pod has a smooth, curved outline with a plain, unseamed top cover; its forward nose section wraps smoothly around an internally mounted horizontally forward-facing camera so that only the clean, uninterrupted top surface of the nose shell is visible, with no exposed gimbal arms or side lugs. At the four outer tip positions corresponding to the markers of <Subject 1>, representing a 250 mm opposite-motor span, sit four cylindrical dark grey motors. Each motor holds a single stationary, unguarded black two-blade 5-inch propeller oriented cleanly for static presentation. Soft, even studio lighting defines the three-dimensional curvature of the matte light grey body, dark grey motors, and black blades against the uniform light background, free of any guide marks or text."
+  }
+}

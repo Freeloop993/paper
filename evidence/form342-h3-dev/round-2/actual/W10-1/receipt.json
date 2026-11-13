@@ -1,0 +1,25 @@
+{
+  "created": 1794580281,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 10050,
+    "input_tokens": 5954,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3904,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:22.310854+00:00",
+  "elapsed_s": 12.62,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The blue X-shaped line layout in <Picture 1> is <Subject 1>. The four red circular endpoint markers at the tips of the lines in <Picture 1> are <Subject 2>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter with its nose oriented toward the top edge, replacing the solid black background and red guide dots of <Picture 1> with a plain light background while matching the arm directions, spacing, and bar widths of <Subject 1> and the motor centers of <Subject 2>. <Subject 1> supplies the exact diagonal arm directions, equal horizontal and vertical spacing, intersection geometry, and arm width transferred to the quadcopter's four unfolded arms. <Subject 2> supplies the exact center positions for the four motors transferred to the quadcopter's motor mounts. The complete product is centered on a clean, uniform off-white studio background with no guide marks or lettering. At the center, a rounded pod features a continuous curved outline that tapers toward the top into an elongated nose shell wrapping smoothly around the internal forward-facing camera; from directly overhead, only the smooth matte light grey top surface of the nose is visible, with no exposed gimbal arms or side lugs. The central body has a plain, unseamed top cover in a uniform matte light grey finish. Four straight arms of uniform width—matching the thickness of the bars in <Subject 1> and arranged along the exact diagonals of <Subject 1> to form a true X with a 250 mm opposite-motor span—grow seamlessly out of the central shell without any root joint lines, sharing the same continuous matte light grey color. Positioned precisely at the four tip locations of <Subject 2>, each cylindrical dark grey motor mount carries a single stationary two-blade, 5-inch matte black propeller with no propeller guards. Soft, even overhead studio lighting casts subtle contact shadows beneath the airframe onto the light background."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580346,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8887,
+    "input_tokens": 4791,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2741,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:28.223375+00:00",
+  "elapsed_s": 13.67,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The symmetric X-shaped spatial layout formed by the four red circular endpoints and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-down view of a newly designed compact quadcopter for everyday aerial photography, aligned to <Subject 1> on a plain light background with the guide marks from <Picture 1> omitted. <Subject 1> supplies the exact motor-center positions and arm directions transferred to the new quadcopter's unfolded arms and motors. The quadcopter is centered with its nose pointing straight toward the top edge, featuring equal horizontal and vertical spacing across a true X configuration corresponding to a 250 mm opposite-motor span. A central rounded pod features a continuous curved outline that tapers into a smooth, unbroken nose shell wrapping completely around the forward-facing horizontal camera, hiding any gimbal arms or side lugs so only the sleek top surface is visible from overhead. Three distinct top cover panels are separated by crisp recessed seam lines across the upper shell. Four fully unfolded arms grow outward from the pod along the diagonals of <Subject 1>, emerging through a smooth, seamless blend at their roots without any joint line. Both the central shell and the four arms share one continuous matte light grey finish. At the outer ends of the arms, matching the four points of <Subject 1>, sit four dark grey cylindrical motors. Each motor mounts a single stationary black two-blade 5-inch propeller with no propeller guards, positioned cleanly against the plain, uniform light background free of any text, labels, or construction marks."
+  }
+}

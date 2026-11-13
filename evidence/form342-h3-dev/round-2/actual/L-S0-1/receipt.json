@@ -1,0 +1,25 @@
+{
+  "created": 1794580267,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9863,
+    "input_tokens": 5767,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3717,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:08.090376+00:00",
+  "elapsed_s": 11.94,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red terminal dots and two intersecting diagonal grey guide lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter designed for everyday aerial photography, presented in a strict orthographic top view with its nose pointing toward the top edge against a plain light background, replacing the black background and omitting the guide marks of <Picture 1> while aligning to <Subject 1>. <Subject 1> supplies the exact four motor center positions, equal horizontal and vertical spacing, and unfolded diagonal arm directions transferred to the quadcopter's motors and arms. The quadcopter features a true X configuration corresponding to a 250 mm opposite-motor span. At the four motor centers defined by <Subject 1>, four dark grey cylindrical motors are mounted, each carrying one stationary, unguarded two-blade black 5-inch propeller with slim blades extending symmetrically from the central hub. A rounded central pod with a continuous curved outline forms the fuselage, topped by a plain, seamless matte light grey top cover with no panel seams crossing it. Four slender arms extend outward along the diagonal trajectories of <Subject 1>, growing seamlessly out of the central shell through smooth, continuous blends without any joint line or crease at the root. Both the arms and the central pod share one continuous matte light grey finish. At the front end (top edge), the nose shell wraps smoothly around the forward-facing horizontal camera so that only the clean, uninterrupted curve of the nose top is visible from directly overhead, with no exposed gimbal arms or side lugs. Soft, even studio lighting illuminates the product from above, casting subtle contact shadows beneath the stationary propellers and hull onto the uniform light background."
+  }
+}

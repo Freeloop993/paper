@@ -1,0 +1,25 @@
+{
+  "created": 1794580332,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9731,
+    "input_tokens": 5635,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3585,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:14.454923+00:00",
+  "elapsed_s": 12.56,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four red endpoint dots and the intersecting diagonal grey lines in <Picture 1> are <Subject 1>. The target image shows a strict orthographic top-down view of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, replacing the black background of <Picture 1> with a plain light background while aligning its unfolded arms and motor centers to <Subject 1>. <Subject 1> is partially preserved; the exact spatial positions of the four motor centers, their equal horizontal and vertical spacing, and the true-X diagonal arm directions remain, while the visible red dots and grey guide lines are replaced by the physical quadcopter components. The complete product is centered on a clean, uniform off-white studio surface without any guide marks or lettering. The fuselage is a compact rounded pod with a continuous curved outline and a smooth, seamless matte light grey top cover. At the top end (nose), the shell wraps smoothly around the forward-facing camera housing so that only the uninterrupted curved top surface is visible from overhead, with no gimbal arms or side lugs protruding. Four straight tubular arms in the same continuous matte light grey color extend diagonally outward along the trajectories of <Subject 1>, each entering a distinct socket on the pod shell with a clearly defined transverse folding-joint seam. Each arm terminates at one of the four motor centers of <Subject 1>, mounting a cylindrical dark grey brushless motor topped with a stationary, unguarded five-inch two-blade black propeller positioned symmetrically in a resting orientation."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580389,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9008,
+    "input_tokens": 4912,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2862,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:33:09.938209+00:00",
+  "elapsed_s": 10.89,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red dots connected by intersecting grey diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the black background and schematic diagram of <Picture 1> with a strict orthographic top-view product render of a compact everyday aerial photography quadcopter positioned on a plain light background, aligned to <Subject 1>. <Subject 1> supplies the exact motor center positions, arm directions, and equal horizontal and vertical spacing transferred to the quadcopter's four motors and unfolded arms. Viewed directly from above with its nose oriented toward the top edge, the complete drone features a true X configuration with a 250 mm opposite-motor span. A central rounded pod with a continuous curved outline forms the fuselage, topped by a smooth, plain matte light grey cover free of any crossing seams. The forward nose section wraps smoothly around an internally mounted horizontally forward-facing camera so that only the unbroken curved top surface of the nose shell is visible from overhead, with no exposed gimbal arms or side lugs. Four straight, fully unfolded arms extend outward along the diagonals of <Subject 1>, growing seamlessly out of the central pod shell through smooth blended roots without any joint lines, all finished in the same uniform matte light grey color as the body. At the outer ends of the arms, matching the four corner points of <Subject 1>, sit four cylindrical dark grey brushless motors with no propeller guards. Mounted atop each motor is a single stationary two-blade 5-inch propeller in matte black, with blades extending symmetrically across the rotor plane. Even studio lighting casts soft contact shadows beneath the chassis and rotors onto the clean, unadorned light background, which contains no guide marks, lines, dots, or lettering."
+  }
+}

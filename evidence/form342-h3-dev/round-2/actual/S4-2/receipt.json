@@ -1,0 +1,25 @@
+{
+  "created": 1794580307,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9789,
+    "input_tokens": 5693,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3643,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:49.026763+00:00",
+  "elapsed_s": 13.8,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The spatial layout of the four red endpoint dots and intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter designed for everyday aerial photography, viewed from a strict orthographic top-down perspective on a plain light background, replacing the black background and geometric guide marks of <Picture 1> while matching the geometry of <Subject 1>. <Subject 1> supplies the exact motor center positions, equal horizontal and vertical spacing, and unfolded X-arm directions transferred to the quadcopter's motors and arms. The quadcopter is oriented with its nose pointing toward the top edge of the frame, featuring a true X-frame configuration corresponding to a 250 mm opposite-motor span. At the center sits a rounded fuselage pod with a continuous curved outline and a plain, seamless top cover. Extending outward from the pod along the four diagonals of <Subject 1> are four fully unfolded arms that grow out of the central shell through smooth, seamless blends without any root joint lines. Both the central pod and the four arms share one continuous matte light grey finish. Positioned precisely at the four corner coordinates of <Subject 1> are four cylindrical dark grey motors, each fitted with a single stationary two-blade, 5-inch black propeller with no propeller guards. Projecting forward from the front tip of the nose is a small camera gimbal with visible side arms; because the camera points horizontally forward, its optical face is hidden from directly overhead. The entire product is cleanly lit against an unadorned, uniform light background, completely free of any guide marks or lettering."
+  }
+}

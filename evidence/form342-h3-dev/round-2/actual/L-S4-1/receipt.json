@@ -1,0 +1,25 @@
+{
+  "created": 1794580267,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9681,
+    "input_tokens": 5585,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3535,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:09.650512+00:00",
+  "elapsed_s": 13.48,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The four red circular motor-center markers and their intersecting diagonal gray arm-direction lines in <Picture 1> are <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top view with its nose pointing toward the top edge, replacing the black background of <Picture 1> with a plain light background while omitting any guide marks or lettering. <Subject 1> is partially preserved; the exact positions of the four motor centers, equal horizontal and vertical spacing, true-X geometry, and unfolded diagonal arm directions remain as the structural layout, while the red dots and gray lines themselves are replaced by the physical components of the drone. The quadcopter features a central rounded pod with a continuous curved outline and a plain top cover free of crossing seams. Four fully unfolded arms grow directly out of the shell through smooth, seamless blends without root joint lines, all rendered in one continuous matte light grey color across both the shell and arms. At the four motor centers defined by <Subject 1>, each dark grey cylindrical motor carries a single stationary two-blade black 5-inch propeller with no propeller guards. Projecting forward from the top nose along the vertical centerline is a small camera gimbal with visible side arms; because it faces horizontally forward, only its upper housing and side-arm tops are visible from directly overhead, hiding its optical face. The complete product is centered on the clean, uniform light background under even studio lighting with soft contact shadows."
+  }
+}

@@ -1,0 +1,4 @@
+*-ai.jsonl -text
+*-key.json -text
+*.png binary
+*.jpg binary

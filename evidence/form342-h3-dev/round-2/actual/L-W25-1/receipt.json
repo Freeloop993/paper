@@ -1,0 +1,25 @@
+{
+  "created": 1794580280,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9842,
+    "input_tokens": 5746,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3696,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:22.842608+00:00",
+  "elapsed_s": 13.16,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four intersecting dark grey diagonal bars and four small dark red circular markers at their outer tips in <Picture 1> is <Subject 1>. The target image presents a strict orthographic top-view product render of a compact everyday aerial photography quadcopter with its nose pointing toward the top edge, replacing the solid black background of <Picture 1> with a plain light background while omitting the guide marks. <Subject 1> is partially preserved; the exact four-corner motor center positions, equal horizontal and vertical spacing, 45-degree arm directions, and bar widths are retained to define the quadcopter's geometry, while the flat graphic bars and red dots themselves are replaced by physical drone components. Centered within the footprint defined by <Subject 1>, the drone features a continuous rounded central pod shell and four unfolded arms rendered in a single uniform matte light grey color. Each arm emerges from the central shell through a smooth, seamless blend without any visible root joint line or seam, maintaining the width specified by the bars of <Subject 1>. The top cover of the central pod is completely plain and uninterrupted, and the forward-facing nose section wraps smoothly around an internal horizontally oriented camera so that only the clean, curved top surface of the nose shell is visible from overhead, with no exposed gimbal arms or side lugs. Positioned precisely at the four outer tip locations of <Subject 1>, each cylindrical dark grey motor mounts a stationary, unguarded two-blade black propeller with a 5-inch span. Soft, even studio lighting casts subtle contact shadows beneath the fuselage, arms, and motors onto the plain light background, emphasizing the smooth three-dimensional curvature of the matte light grey body."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580319,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8934,
+    "input_tokens": 4838,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2788,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:01.009998+00:00",
+  "elapsed_s": 11.94,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red motor-center dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the black background and schematic markers of <Picture 1> with a strict orthographic top-view industrial design render of a compact everyday aerial photography quadcopter centered on a plain light background, aligned to <Subject 1>. <Subject 1> supplies the exact four-corner motor center positions, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's motors and unfolded arms. The quadcopter has its nose oriented toward the top edge of the frame and features a continuous rounded pod fuselage finished in uniform matte light grey. The front nose shell wraps smoothly around an internally mounted forward-facing camera so that only the clean, uninterrupted curved top surface of the nose is visible from directly overhead, without any protruding gimbal arms or side lugs. The top cover of the central body is completely plain and smooth, free of panel seams or markings. Four straight, slender arms extend outward along the diagonals defined by <Subject 1>, each emerging seamlessly from the rounded body shell through a smooth blended root transition with no joint line. Each arm terminates at one of the four motor centers corresponding to <Subject 1>, representing a 250 mm opposite-motor span. Mounted at each of the four corners is a cylindrical dark grey brushless motor carrying a single stationary, unguarded two-blade 5-inch propeller in matte black. Soft, even studio lighting illuminates the product from above against the clean, unadorned light background, with all guide marks, lines, dots, and lettering omitted."
+  }
+}

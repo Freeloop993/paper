@@ -1,0 +1,25 @@
+{
+  "created": 1794580376,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8935,
+    "input_tokens": 4839,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2789,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:58.322043+00:00",
+  "elapsed_s": 12.12,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four red endpoint dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the solid black background of <Picture 1> with a plain light background to present a strict orthographic top-down view of a compact everyday aerial photography quadcopter, whose unfolded arms and motor centers align with <Subject 1>. <Subject 1> supplies the exact spatial placement, equal horizontal and vertical spacing, and diagonal arm directions transferred to the quadcopter's four motors and unfolded arms. Centered on the canvas with its nose pointing straight toward the top edge, the drone features a continuous matte light grey finish across both its central rounded pod shell and its four fully extended arms. The pod has a smooth, uninterrupted curved outline with a plain top cover free of crossing seams; at the front (top), the shell smoothly wraps around the forward-facing horizontal camera so that only the clean, rounded top surface of the nose is visible from directly overhead, hiding any gimbal arms or side lugs. Each of the four arms connects seamlessly to the central shell via a distinct folding hinge featuring a small cylindrical pivot pin. At the four outer corners defined by <Subject 1>, representing a 250 mm opposite-motor span, each arm terminates in a dark grey cylindrical motor housing. Mounted onto each motor is a single stationary, unguarded two-blade propeller in matte black, oriented cleanly in plan view without overlapping adjacent rotors. Soft, even studio lighting casts subtle contact shadows beneath the shell, hinges, arms, and motors against the uniform light-colored background, with no guide marks, text, or lettering anywhere in the frame."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580294,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8934,
+    "input_tokens": 4838,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2788,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:31:34.773526+00:00",
+  "elapsed_s": 11.88,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The diagonal X-shaped layout of four intersecting blue lines and four red circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top-down view on a plain light background, replacing the black background and geometric guide marks of <Picture 1> while matching the motor centers and arm directions of <Subject 1>. <Subject 1> supplies the exact spatial positions of the four motor centers and the diagonal arm orientations transferred to the quadcopter's arms and motors. The quadcopter is centered with its nose pointing toward the top edge and all four arms fully unfolded in a true X configuration with equal horizontal and vertical spacing corresponding to a 250 mm opposite-motor span. The central body is a rounded pod with a continuous curved outline finished in a uniform matte light grey across both the shell and the four arms. Each arm grows seamlessly out of the pod shell without any joint line at the root. The nose shell wraps smoothly around a forward-facing horizontal camera so that only the smooth top surface of the nose is visible from directly overhead, with no gimbal arms or side lugs exposed. The top cover is divided by crisp panel seams into three distinct panels: a central upper nose panel, a wider mid-body section, and a rear tail cap. At the four motor centers defined by <Subject 1>, each dark grey cylindrical motor carries one stationary two-blade 5-inch black propeller with no propeller guards. Soft, even studio lighting casts subtle contact shadows beneath the frame and rotors against the clean, unadorned light background, omitting all guide marks and lettering."
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "created": 1794580239,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9908,
+    "input_tokens": 5812,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3762,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:30:41.299662+00:00",
+  "elapsed_s": 13.3,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout in <Picture 1>, consisting of four red circular endpoint markers connected by two intersecting blue diagonal lines, is <Subject 1>. The target image shows a newly designed compact quadcopter drone rendered in a strict orthographic top-down view on a plain light background, replacing the black background and omitting the guide marks of <Picture 1> while matching the motor centers and arm directions of <Subject 1>. <Subject 1> supplies the exact spatial positions of the four motor centers, equal horizontal and vertical spacing, and diagonal arm orientations transferred to the new quadcopter's arms and rotors. The complete product is centered with its nose pointing toward the top edge and all four arms fully unfolded in a true X configuration corresponding to a 250 mm opposite-motor span. The central fuselage features a rounded pod with a continuous curved outline and a smooth, seamless matte light grey top cover free of any crossing seams or lettering. At the front, the nose shell wraps smoothly around the forward-facing horizontal camera so that only its uninterrupted top surface is visible from overhead, with no gimbal arms or side lugs protruding. Extending diagonally outward from the pod to the four corners defined by <Subject 1>, the four slender matte light grey arms share the same continuous color as the shell; each arm enters the central pod through a distinct socket marked by a visible transverse joint seam. Mounted at the tip of each arm, aligned precisely with the four marker positions of <Subject 1>, is a cylindrical dark grey motor carrying a single stationary, unguarded two-blade 5-inch black propeller with narrow blades and a small central hub cap. Soft, even studio lighting casts subtle contact shadows beneath the body, arms, and stationary blades against the clean, uniform off-white background."
+  }
+}

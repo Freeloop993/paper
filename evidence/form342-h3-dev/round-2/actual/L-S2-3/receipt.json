@@ -1,0 +1,25 @@
+{
+  "created": 1794580365,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8905,
+    "input_tokens": 4809,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2759,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:46.147625+00:00",
+  "elapsed_s": 17.7,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped geometric layout of four intersecting diagonal lines with circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows a compact quadcopter for everyday aerial photography in a strict orthographic top-down view on a plain light background, omitting the dark background and red-and-grey guide marks of <Picture 1> while aligning its motor centers and arm directions to <Subject 1>. <Subject 1> supplies the exact spatial layout transferred to the quadcopter's unfolded arms and motor positions. Viewed directly from above with its nose pointing toward the top edge, the complete product features a true X-frame geometry with equal horizontal and vertical spacing corresponding to a 250 mm opposite-motor span. A central rounded pod with a continuous curved outline houses a plain, seamless matte light grey top cover. At the front, the smooth, unbroken top surface of the nose shell wraps cleanly around the forward-facing horizontal camera, showing no gimbal arms or side lugs. Four fully unfolded arms extend diagonally outward from the pod in a single continuous matte light grey color matching the shell; each arm enters a distinct socket along the pod's perimeter marked by a visible transverse joint seam. Each arm terminates at one of the four motor centers defined by <Subject 1>, supporting a cylindrical dark grey brushless motor without propeller guards. Mounted atop each motor is a stationary, flat two-blade 5-inch black propeller. Soft, even overhead studio lighting illuminates the drone against the clean, unadorned light backdrop, casting subtle contact shadows beneath the arms and motors with no guide marks or lettering present."
+  }
+}

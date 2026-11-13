@@ -1,0 +1,25 @@
+{
+  "created": 1794580254,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 9934,
+    "input_tokens": 5838,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 3788,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:30:56.125418+00:00",
+  "elapsed_s": 14.78,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The geometric layout of four red endpoint dots connected by two intersecting diagonal blue lines in <Picture 1> is <Subject 1>. The target image shows a compact everyday aerial photography quadcopter in a strict orthographic top-down view, aligned to the motor centers and diagonal arm directions of <Subject 1> on a plain light background. <Subject 1> supplies the exact spatial placement, symmetric X-configuration, equal horizontal and vertical spacing, and diagonal arm angles transferred to the quadcopter's four motors and unfolded arms, while the red dots, blue lines, and black background from <Picture 1> are omitted. The quadcopter is oriented with its nose pointing straight toward the top edge of the frame, representing a 250 mm opposite-motor span. At the center sits a rounded pod shell with a continuous curved outline and a smooth, seamless matte light grey top cover. The front nose section wraps smoothly around an internal horizontally forward-facing camera so that only the clean, uninterrupted top surface of the nose is visible from directly overhead, without any exposed gimbal arms or side lugs. Extending outward along the four diagonals of <Subject 1> are four unfolded arms rendered in the same uniform matte light grey color as the central shell. Each arm connects to the main body via a distinct folding hinge featuring a visible cylindrical pivot pin at the joint. Mounted at the four outer motor positions matching the endpoints of <Subject 1> are four compact dark grey brushless motors. Each motor holds a single stationary, unguarded two-blade 5-inch propeller finished in matte black, with the blades positioned symmetrically across the hubs. The entire aircraft is presented cleanly against a flat, uniform off-white studio background with soft, even overhead lighting and subtle contact shadows beneath the chassis, completely free of guide marks, dimension lines, or lettering."
+  }
+}

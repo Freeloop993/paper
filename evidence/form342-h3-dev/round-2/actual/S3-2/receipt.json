@@ -1,0 +1,25 @@
+{
+  "created": 1794580332,
+  "output_format": "png",
+  "usage": {
+    "generated_images": 1,
+    "total_tokens": 8935,
+    "input_tokens": 4839,
+    "output_tokens": 4096,
+    "input_tokens_details": {
+      "text_tokens": 2789,
+      "image_tokens": 2050
+    },
+    "output_tokens_details": {
+      "image_tokens": 4096
+    }
+  },
+  "http": 200,
+  "request_id": null,
+  "received": "2026-11-13T14:32:13.074850+00:00",
+  "elapsed_s": 11.2,
+  "item": {
+    "size": "1024x1024",
+    "revised_prompt": "The X-shaped layout of four red endpoint dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image replaces the black background and schematic diagram of <Picture 1> with a strict orthographic top-down product view of a compact everyday aerial photography quadcopter on a plain light background, aligned to the motor centers and arm directions of <Subject 1>. <Subject 1> serves as an attribute transfer reference whose four corner positions and diagonal arm angles define the exact placement and spacing of the quadcopter's four motors and unfolded arms. Seen from directly overhead with its nose pointing toward the top edge, the complete drone features a true-X configuration with equal horizontal and vertical spacing corresponding to a 250 mm opposite-motor span. At the center sits a rounded pod shell with a continuous curved outline and a plain, unseamed matte light grey top cover. The forward nose section smoothly wraps around a horizontally forward-facing camera so that only the smooth top surface of the nose is visible from above, without exposed gimbal arms or side lugs. Four unfolded arms extend diagonally outward from the central shell along the trajectories of <Subject 1>, sharing the same uniform matte light grey color as the body and connecting to the shell via visible folding hinges with distinct pivot pins. Each arm terminates at one of the four motor centers defined by <Subject 1>, carrying a dark grey cylindrical motor topped by a single stationary, unguarded 5-inch two-blade black propeller. Soft, even studio lighting casts subtle contact shadows beneath the fuselage, arms, and blades onto the clean, unmarked light background, with all guide marks and lettering omitted."
+  }
+}
