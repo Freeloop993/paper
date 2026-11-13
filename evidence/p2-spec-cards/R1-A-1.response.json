@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 13.3,
+  "answer": {
+    "created": 1794541305,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The X-shaped skeleton layout of four diagonal bars and four circular motor mounts in <Picture 1> is <Subject 1>. The light neutral background in <Picture 1> is <Subject 2>. The target image presents a strict orthographic top-view industrial design rendering of a compact quadcopter centered on <Subject 2>, built directly upon the spatial footprint of <Subject 1>. <Subject 1> is partially preserved; its exact scale, framing, center position, four circular motor mount locations, and diagonal bar trajectories are retained, while the flat grey planar shapes are replaced by three-dimensional dark graphite arms and motor housings. <Subject 2> is fully preserved. The central fuselage features a smooth, rounded pebble outline with an unbroken perimeter curve, oriented vertically with its nose toward the top edge and measuring approximately 1.6 times as long as it is wide, reaching maximum width at mid-body. The shell has a matte light grey finish with a single clean cover seam along the top and no vents, text, lines, or markings. At the top nose end, a forward-facing camera pod remains recessed within the continuous rounded leading edge so that only the curved upper housing of the pod is visible from above. Each of the four dark graphite arms extends outward from the fuselage shell through a smooth, continuous fillet without any joint line, following the exact paths of <Subject 1> to terminate at the four circular motor mounts. Mounted atop each motor mount is a fully unfolded two-blade propeller rendered in dark graphite, with both blades equal in length and arranged cleanly around the hub. Soft, even studio lighting illuminates the airframe from above, casting subtle gradients across the matte light grey shell and dark graphite components to convey three-dimensional volume against <Subject 2>.",
+        "sha256": "637d6dc348d6eecd5af4156ee8cfcc2b89b66f3fc12179689c51ead15fc41870"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 9949,
+      "input_tokens": 5853,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3803,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745b9ee64ea6f0cc1df26dc839cee6e"
+  }
+}

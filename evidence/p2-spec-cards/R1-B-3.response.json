@@ -1,0 +1,29 @@
+{
+  "http_status": 200,
+  "seconds": 11.7,
+  "answer": {
+    "created": 1794541371,
+    "data": [
+      {
+        "size": "1024x1024",
+        "revised_prompt": "The four circular motor mounts at the ends of the diagonal bars in <Picture 1> are <Subject 1>. The light neutral background and centered framing in <Picture 1> are <Subject 2>. The target image is a strict orthographic top-view industrial design rendering of a compact X-layout quadcopter on <Subject 2>, keeping <Subject 1> in place while replacing the flat grey bars with three-dimensional dark graphite arms, a matte light grey spindle-shaped fuselage, and unfolded two-blade propellers. <Subject 1> is partially preserved; its exact positions, scale, and spacing remain unchanged, while its flat grey circles become realistic cylindrical motor bells with central mounting nuts and subtle metallic shading. <Subject 2> is fully preserved. Replacing the flat intersecting bars from <Picture 1>, four slender dark graphite arms run diagonally from the center to <Subject 1>, tapering outward and merging smoothly into the sides of the central body through long, seamless tapered blends without joint lines. At the center, a slender spindle-shaped fuselage oriented vertically with its nose toward the top edge features a matte light grey top shell about 2.6 times as long as wide, occupying less than a quarter of the distance between opposite motors. A single clean lengthwise seam runs down the center of the smooth, vent-free top shell, which narrows at the top into a small rounded tip enclosing a forward-facing camera pod whose lens points straight ahead and remains hidden beneath the nose profile. Each of the four motors at <Subject 1> carries one fully unfolded, symmetrical two-blade dark graphite propeller with equal-length blades resting cleanly over the arm roots. Soft, even studio lighting creates gentle gradients across the curved matte light grey shell and dark graphite components, clearly defining their three-dimensional volume against <Subject 2> with no text, markings, or accent colors.",
+        "sha256": "933a5c5042794c623da6dd8820fa5370b9dc0b38e8babb22792d54e65d6d6f35"
+      }
+    ],
+    "output_format": "png",
+    "usage": {
+      "generated_images": 1,
+      "total_tokens": 10008,
+      "input_tokens": 5912,
+      "output_tokens": 4096,
+      "input_tokens_details": {
+        "text_tokens": 3862,
+        "image_tokens": 2050
+      },
+      "output_tokens_details": {
+        "image_tokens": 4096
+      }
+    },
+    "request_id": "0745ba31163e5c987225c6e98ba1f43b"
+  }
+}
