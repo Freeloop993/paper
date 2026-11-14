@@ -39,7 +39,7 @@ def main():
         rid = req["prompt"]["12"]["inputs"]["filename_prefix"]
         (out / f"{rid}.request.json").write_bytes(raw)
         t0 = time.time()
-        ack = json.loads(call(a.comfy + "/prompt", json.dumps({"prompt": req["prompt"], "client_id": "e3-quad-qwen"}).encode()))
+        ack = json.loads(call(a.comfy + "/prompt", raw))  # 原样提交请求字节
         (out / f"{rid}.ack.json").write_text(json.dumps(ack, ensure_ascii=False, indent=2))
         pid = ack["prompt_id"]
         hist = None
@@ -54,6 +54,11 @@ def main():
         if hist is None:
             raise SystemExit(f"{rid} 超时或状态未知，停止")
         (out / f"{rid}.history.json").write_text(json.dumps(hist, ensure_ascii=False, indent=2))
+        assert hist["status"]["status_str"] == "success", f"{rid} 终态 {hist['status']['status_str']}"
+        actual = {k: (v["class_type"], v["inputs"]) for k, v in hist["prompt"][2].items()}
+        assert actual == {k: (v["class_type"], v["inputs"]) for k, v in req["prompt"].items()}, f"{rid} 执行图与请求不一致"
+        cached = [n for kind, d in hist["status"]["messages"] if kind == "execution_cached" for n in d.get("nodes", [])]
+        assert "10" not in cached, f"{rid} 采样节点命中缓存"
         imgs = [im for node in hist["outputs"].values() for im in node.get("images", [])]
         assert len(imgs) == 1, f"{rid} 输出图数量为 {len(imgs)}"
         im = imgs[0]
