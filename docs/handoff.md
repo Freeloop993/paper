@@ -2,7 +2,7 @@
 
 ## 11 月 14 日 · 当前待签署与离线准备
 
-Qwen 的 [E2 六份修订请求](../experiments/e2-registered/) 和 [十二份造型小测请求](../experiments/qwen-shape-pilot/) 已离线核对，正式运行等方法冻结单第 2 节更新和作者签署第 3 节。K 未过，本次 5.2.1 计划保留六个条件。
+Qwen 的 [E2 六份修订请求](../experiments/e2-registered/) 和 [十二份造型小测请求](../experiments/qwen-shape-pilot/) 已离线核对，PR #70 已合并，第 2 节已填写；[第三轮八张通用项补读](../evidence/form342-h3-dev/round-3-common-v22/)已归档，正式运行待作者签署第 3 节。K 未过，本次 5.2.1 计划保留六个条件。
 
 [E3 作者工作簿](../prototypes/e3-author-workbook/) 支持三张规格卡、九格候选的逐张取舍和父图修订。历史开发九图可用于演练，正式 E3 初稿仍是 0/9。
 

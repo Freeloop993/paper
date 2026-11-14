@@ -1,6 +1,6 @@
 # paper
 
-**11 月 14 日 · H3 第三轮实收 8/8，独立 AI 盲读已封存。** S0 两轮合计 4 无外突／1 前伸／2 待判，轴距组壳长/轴距均值差 0.0286 小于组内 SD 0.0842，两项均未过。A/B 臂根统一记无缝；E3 可选外露碳纹臂，5.2.1 保持同色。正式 E2 为 0/6，E3 为 0/9。下一步由 Claude 写入冻结单第 2 节，作者签署第 3 节，再安排 Qwen。[第三轮全量与读数](evidence/form342-h3-dev/round-3/README.md) · [方向卡](evidence/section421-h3-span/specs-after-review.md)。
+**11 月 14 日 · H3 第三轮实收 8/8，独立 AI 盲读已封存。** S0 两轮合计 4 无外突／1 前伸／2 待判，轴距组壳长/轴距均值差 0.0286 小于组内 SD 0.0842，两项均未过。A/B 臂根统一记无缝；E3 可选外露碳纹臂，5.2.1 保持同色。正式 E2 为 0/6，E3 为 0/9。[冻结单第 2 节](docs/protocols/method-freeze-v1.md)已并入主线；[八图通用项补读](evidence/form342-h3-dev/round-3-common-v22/)另行归档，作者签署第 3 节后安排同机 E2 六张和 Qwen 小测十二张。[第三轮全量与读数](evidence/form342-h3-dev/round-3/README.md) · [方向卡](evidence/section421-h3-span/specs-after-review.md)。
 
 **当前优先 · 4.2.1 规格复核。** H3 本轮实收四张，B 的 250／300 mm 轴距组与 A/B/C 组共用 B300。作者保留 B 曲面过渡，反馈新版 C 不如上一版。E0 开源 6/6、闭源正式位置尚缺 6，E1 开源 36/36，一份真人点选 12/12 可量；Qwen E2 正式 0/6，E3 正式 0/9。请先读[本轮原图、新旧 C 与按章节交接](evidence/section421-h3-span/claude-review.md)。以下较早的运行与待办记录按各自日期解读。
 

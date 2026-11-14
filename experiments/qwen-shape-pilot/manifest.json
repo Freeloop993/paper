@@ -4,23 +4,60 @@
   "planned": 12,
   "source_issue": "https://github.com/Freeloop993/paper/issues/1#issuecomment-6858488547",
   "edit_route_order": "https://github.com/Freeloop993/paper/issues/1#issuecomment-6854091119",
-  "method_freeze_pr": 68,
-  "method_freeze_head": "638db88bc08b1b828da88436d598061f3afe1ae4",
+  "method_freeze_pr": 70,
+  "method_freeze_head": "d3290ebbaccb1319ec1ee48365630a6e4cd1427f",
   "method_section_3_signed": false,
   "dictionary": "shape-dictionary-v1.2",
   "dictionary_sha256": "22ca89232e010ae603f34096dd3f5ccfcf62b7faa91161b157fb6007514f06a9",
-  "reading_protocol": "v2.1",
+  "reading_protocol": "v2.2",
   "guide_source": "evidence/form342-h3-dev/round-2/guides/dots.png",
   "guide": {
     "span_mm": 250,
+    "layout_wl": 1.0,
     "hub_span_fraction_approx": 0.41,
     "palette": "regular"
+  },
+  "per_image_reading": {
+    "all_positions": true,
+    "order": [
+      "front_left",
+      "front_right",
+      "rear_right",
+      "rear_left"
+    ],
+    "appearance": [
+      "nose_end",
+      "nose_projection",
+      "body_plan",
+      "four_roots",
+      "cover"
+    ],
+    "common": [
+      "four_motor_hubs_xy",
+      "blade_count_per_hub",
+      "guard",
+      "marker_residue",
+      "camera_including_tail",
+      "product_appearance"
+    ],
+    "camera_codes": [
+      "consistent",
+      "invisible",
+      "wrong",
+      "U"
+    ],
+    "overall": "four distinct motors each with two blades AND no observed camera misplacement AND product appearance; report camera invisible and U separately",
+    "descriptive_wl": "(max(hub_x)-min(hub_x))/(max(hub_y)-min(hub_y)); null if any hub unreadable or vertical span zero, no pass threshold"
   },
   "template_sources": [
     {
       "path": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r1",
       "prompt_id": "46477b17-b50b-4aa7-9a16-ca59ea6f2548",
       "request_sha256": "06e8f6aee5e47665b5cbd165490d359e112b9386220d8e31b0115a00f0f4bc9b",
+      "guide": "line-wl0.70.png",
+      "guide_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+      "layout_wl": 0.7,
+      "original_png_sha256": "dcadab67ec78841389440adbac306b98e853b0076295468f65b2d91c70c507cc",
       "history_sha256": "f46ed3e6edf9b933af70555f225a4fa78ca97969ac9b47c11e4d4bce8e328a6d",
       "receipt_sha256": "de4cc2815e26cbb9312f12c89b32ba508a29f18f95841d9fff036e60c8ba2085"
     },
@@ -28,12 +65,17 @@
       "path": "evidence/l1-layout-actual/L1-actual/L1-F-wl0.70-r2",
       "prompt_id": "a81a12ec-bf79-4e96-9b0d-1503169c35ca",
       "request_sha256": "c3170d6c0e6d0ffb0f10d856d9a65ea691a301df2f283291cb49ded70a407324",
+      "guide": "line-wl0.70.png",
+      "guide_sha256": "71e491b5379a808314f9e3f94e6ed754d5daae2b37e66db9cb070fe328463bcd",
+      "layout_wl": 0.7,
+      "original_png_sha256": "c9c97ab9c7e4e4058ebea3f675f8ef76fb23f45d8ec751a181f880832626c4b0",
       "history_sha256": "81ff1cf9f7ad7ba309d2aecd5756d72ee5c7f2569a185fdb91d917464020640f",
       "receipt_sha256": "b4e60dcd433a9940510396f4416ac2fc13de16b09c5e5e7596bb9ac6c4acca3e"
     }
   ],
   "weights_sha256": "8894fac5380cea2d9eed69330a587ce83313685ff3c71d0ab61c1606dede0771",
-  "seed_policy": "Reuse the two L1-F seeds, paired across all six conditions; fixed before generation.",
+  "seed_policy": "L1-F seeds 2026111301/2026111302 paired by repeat across S0-S5. Within each repeat only the positive prompt varies as an experimental input.",
+  "historical_comparison": "L1-F ran W/L 0.70 and 1.30, not 1.00; the historical reference PNG and positive prompt both differ. Same-seed side-by-side is descriptive only.",
   "backend_gate": {
     "nonbaseline_target_hits_min_per_two": 1,
     "overall_pass_min_per_twelve": 9

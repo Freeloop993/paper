@@ -1,0 +1,48 @@
+{
+  "scope": "retrospective, exploratory, eight existing images; one isolated AI reader, no human, zero calls for generation",
+  "reader_inputs": "eight randomly renamed, lossless RGB PNGs and field definitions; no conditions, claims, previous readings, key or examples from this batch",
+  "sealed_reader_sha256": "e7bd476fc53551685fc513a57f5d674a9733992fb6095addb3d92f2ab4c08e23",
+  "prior_reading_sha256": "dc11a1d8e9003bba24ed291422d94ed34b68964a185feeadb2519aeaaa115276",
+  "images": {
+    "3a1e09fd": {
+      "slot": "S0-1",
+      "reader_rgb_sha256": "ed99955551e4cb3f741fb6801632dd92e8c0fb3f1f925e3e146d604ed6aa1eee",
+      "original_sha256": "9f0a4408936a1bea69ee2340d77331e421fd560c495247264f4eb28258bf19f5"
+    },
+    "ff609ca1": {
+      "slot": "K-1",
+      "reader_rgb_sha256": "94b4ade2aed9add5a678fa55ad0a325e279c6dc643d7b9cc171155add5921bc1",
+      "original_sha256": "2079d46403614f5b8b8b3ff482c68edbb23a8944494f8177ffbc50a837979af6"
+    },
+    "5b8868e9": {
+      "slot": "K-4",
+      "reader_rgb_sha256": "5a2456cb91f4ca32cbd268c702800bc502eaeacfb593eede1948746369d354b6",
+      "original_sha256": "7355b343f9c994b0aeb333e7fc14cd91f450e76735cd7c8165ebeee72001aed1"
+    },
+    "b3037e83": {
+      "slot": "S0-4",
+      "reader_rgb_sha256": "5b8d3ef35a46afb9b3a59120e7ea5c3a0c7d4a2a668d65e760d068634e6591a2",
+      "original_sha256": "1360d2f69011d640922a6ba4bbcb1573284f2fde093b0f608f6099b149ff9fc1"
+    },
+    "4aa1219a": {
+      "slot": "K-3",
+      "reader_rgb_sha256": "c9d7021b1890e645aac307c0e89eefcd67f9532bb3376f7a7dbe1f6754386bf6",
+      "original_sha256": "35201c752ad7c3f166fb47767d5493819facd8f5485c640fdf0ad296326547f9"
+    },
+    "c519715f": {
+      "slot": "K-2",
+      "reader_rgb_sha256": "5271a586fcf3c0a2e004c5b74a0e9ed898ffd8845684f28026bb8535b4e65348",
+      "original_sha256": "a166a881099fa1d1764d6b0e6f210cb2d5589a36594e11f4e8688e249a77b4be"
+    },
+    "3fab1c20": {
+      "slot": "S0-2",
+      "reader_rgb_sha256": "01276cbdabd7c581b8f788bf2472989435ec388e78e7b1253f5f3c6c6f30a346",
+      "original_sha256": "1c4b37543c45db47d2425975a20ad47963a8af8b1ff398c3adec21d9e1b938ff"
+    },
+    "d67ce257": {
+      "slot": "S0-3",
+      "reader_rgb_sha256": "f4a82a8bdc31ffa8519da5285d85d33de08a8fe4ab1275a0fcdcf61390d447b3",
+      "original_sha256": "a4f21721427d9c25c3f977dc9845dff1f5d7845ceac1b0e39b2856409a9fbda5"
+    }
+  }
+}

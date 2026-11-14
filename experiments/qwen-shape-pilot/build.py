@@ -69,7 +69,12 @@ def template(rep, registration):
             and hist["outputs"]["12"]["images"] == [receipt["server_output"]], f"Receipt mismatch: {case}")
     require(len(read(source / "original.png", receipt["original_sha256"])) == receipt["bytes"],
             f"Original PNG size differs: {case}")
+    guide = row["input_image"]
+    require(guide == request["prompt"]["15"]["inputs"]["image"], f"Input differs: {case}")
+    read(L1 / "guides" / guide, row["input_sha256"])
     return request, {"path": source.as_posix(), "prompt_id": pid, "request_sha256": digest(original),
+                     "guide": guide, "guide_sha256": row["input_sha256"], "layout_wl": row["wl"],
+                     "original_png_sha256": receipt["original_sha256"],
                      "history_sha256": digest(read(source / "history.original.json")),
                      "receipt_sha256": digest(read(source / "receipt.json"))}
 
@@ -119,12 +124,22 @@ def pack_files():
         "batch": "qwen-shape-pilot", "status": "offline_compiled_unsigned", "planned": 12,
         "source_issue": "https://github.com/Freeloop993/paper/issues/1#issuecomment-6858488547",
         "edit_route_order": "https://github.com/Freeloop993/paper/issues/1#issuecomment-6854091119",
-        "method_freeze_pr": 68, "method_freeze_head": "638db88bc08b1b828da88436d598061f3afe1ae4",
+        "method_freeze_pr": 70, "method_freeze_head": "d3290ebbaccb1319ec1ee48365630a6e4cd1427f",
         "method_section_3_signed": False, "dictionary": d["version"], "dictionary_sha256": digest(dictionary),
-        "reading_protocol": "v2.1", "guide_source": (ROUND2 / "guides/dots.png").as_posix(),
-        "guide": {"span_mm": 250, "hub_span_fraction_approx": 0.41, "palette": "regular"},
+        "reading_protocol": "v2.2", "guide_source": (ROUND2 / "guides/dots.png").as_posix(),
+        "guide": {"span_mm": 250, "layout_wl": 1.0, "hub_span_fraction_approx": 0.41, "palette": "regular"},
+        "per_image_reading": {
+            "all_positions": True, "order": ["front_left", "front_right", "rear_right", "rear_left"],
+            "appearance": ["nose_end", "nose_projection", "body_plan", "four_roots", "cover"],
+            "common": ["four_motor_hubs_xy", "blade_count_per_hub", "guard", "marker_residue",
+                       "camera_including_tail", "product_appearance"],
+            "camera_codes": ["consistent", "invisible", "wrong", "U"],
+            "overall": "four distinct motors each with two blades AND no observed camera misplacement AND product appearance; report camera invisible and U separately",
+            "descriptive_wl": "(max(hub_x)-min(hub_x))/(max(hub_y)-min(hub_y)); null if any hub unreadable or vertical span zero, no pass threshold",
+        },
         "template_sources": sources, "weights_sha256": digest(files["weights.json"]),
-        "seed_policy": "Reuse the two L1-F seeds, paired across all six conditions; fixed before generation.",
+        "seed_policy": "L1-F seeds 2026111301/2026111302 paired by repeat across S0-S5. Within each repeat only the positive prompt varies as an experimental input.",
+        "historical_comparison": "L1-F ran W/L 0.70 and 1.30, not 1.00; the historical reference PNG and positive prompt both differ. Same-seed side-by-side is descriptive only.",
         "backend_gate": {"nonbaseline_target_hits_min_per_two": 1, "overall_pass_min_per_twelve": 9},
         "platform_observed_for_this_batch": None,
         "pending_on_platform": ["original instance and listener identity", "live node schemas and exact weight bytes/SHA-256",

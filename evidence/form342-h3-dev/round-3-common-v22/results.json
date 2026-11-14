@@ -1,0 +1,188 @@
+{
+  "n": 8,
+  "double": 7,
+  "joint_as_in_round2": 6,
+  "camera": {
+    "U": 4,
+    "invisible": 3,
+    "wrong": 1
+  },
+  "rows": [
+    {
+      "slot": "S0-1",
+      "id": "3a1e09fd",
+      "root": "U",
+      "blades": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "double": false,
+      "camera": "U",
+      "quality": "product",
+      "guard": "no",
+      "residue": "no",
+      "nose": "N",
+      "prior_nose": "N",
+      "body": "box",
+      "cover": "C",
+      "wl": 1.0,
+      "joint_as_in_round2": false
+    },
+    {
+      "slot": "S0-2",
+      "id": "3fab1c20",
+      "root": "B",
+      "blades": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "double": true,
+      "camera": "U",
+      "quality": "product",
+      "guard": "no",
+      "residue": "no",
+      "nose": "U",
+      "prior_nose": "P",
+      "body": "pod",
+      "cover": "C",
+      "wl": 1.0310262529832936,
+      "joint_as_in_round2": true
+    },
+    {
+      "slot": "S0-3",
+      "id": "d67ce257",
+      "root": "B",
+      "blades": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "double": true,
+      "camera": "invisible",
+      "quality": "product",
+      "guard": "no",
+      "residue": "no",
+      "nose": "N",
+      "prior_nose": "N",
+      "body": "pod",
+      "cover": "C",
+      "wl": 1.0068649885583525,
+      "joint_as_in_round2": true
+    },
+    {
+      "slot": "S0-4",
+      "id": "b3037e83",
+      "root": "B",
+      "blades": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "double": true,
+      "camera": "U",
+      "quality": "product",
+      "guard": "no",
+      "residue": "no",
+      "nose": "N",
+      "prior_nose": "N",
+      "body": "pod",
+      "cover": "C",
+      "wl": 1.084033613445378,
+      "joint_as_in_round2": true
+    },
+    {
+      "slot": "K-1",
+      "id": "ff609ca1",
+      "root": "B",
+      "blades": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "double": true,
+      "camera": "U",
+      "quality": "product",
+      "guard": "no",
+      "residue": "no",
+      "nose": "U",
+      "prior_nose": "U",
+      "body": "pod",
+      "cover": "C",
+      "wl": 0.9963702359346642,
+      "joint_as_in_round2": true
+    },
+    {
+      "slot": "K-2",
+      "id": "c519715f",
+      "root": "B",
+      "blades": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "double": true,
+      "camera": "invisible",
+      "quality": "product",
+      "guard": "no",
+      "residue": "no",
+      "nose": "N",
+      "prior_nose": "N",
+      "body": "pod",
+      "cover": "C",
+      "wl": 1.0433962264150944,
+      "joint_as_in_round2": true
+    },
+    {
+      "slot": "K-3",
+      "id": "4aa1219a",
+      "root": "B",
+      "blades": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "double": true,
+      "camera": "invisible",
+      "quality": "product",
+      "guard": "no",
+      "residue": "no",
+      "nose": "N",
+      "prior_nose": "N",
+      "body": "pod",
+      "cover": "C",
+      "wl": 1.036190476190476,
+      "joint_as_in_round2": true
+    },
+    {
+      "slot": "K-4",
+      "id": "5b8868e9",
+      "root": "B",
+      "blades": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "double": true,
+      "camera": "wrong",
+      "quality": "product",
+      "guard": "no",
+      "residue": "no",
+      "nose": "N",
+      "prior_nose": "N",
+      "body": "pod",
+      "cover": "C",
+      "wl": 0.9945652173913043,
+      "joint_as_in_round2": false
+    }
+  ]
+}
