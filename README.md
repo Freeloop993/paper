@@ -1,5 +1,7 @@
 # paper
 
+S4 第三轮两张已实收。机鼻相机舱前缘明确外伸 1/2、待判 1/2；两张均未见机背或朝观察者的清晰镜面，均有四副双叶桨。光轴在顶视下不可辨。[三轮并排与本轮原图](evidence/qwen-shape-s4-20261114/s4-nose-edge-2/) · [历史 H3 输入、全词和原图](evidence/h3-camera-layout-originals/)。
+
 11 月 14 日实测已补齐：[Qwen 十二张＋S4 修订两张的原图、实际请求、逐图读数](evidence/qwen-shape-s4-20261114/README.md)。S4 仅见顶部 0/2 → 0/2，E3 仍为 0/9。[四篇同校硕士论文全文、结构和页码](references/peer-theses.md)。
 
 **11 月 14 日 · H3 第三轮实收 8/8，独立 AI 盲读已封存。** S0 两轮合计 4 无外突／1 前伸／2 待判，轴距组壳长/轴距均值差 0.0286 小于组内 SD 0.0842，两项均未过。A/B 臂根统一记无缝；E3 可选外露碳纹臂，5.2.1 保持同色。正式 E2 为 0/6，E3 为 0/9。[冻结单第 2 节](docs/protocols/method-freeze-v1.md)已并入主线；[八图通用项补读](evidence/form342-h3-dev/round-3-common-v22/)另行归档，作者签署第 3 节后安排同机 E2 六张和 Qwen 小测十二张。[第三轮全量与读数](evidence/form342-h3-dev/round-3/README.md) · [方向卡](evidence/section421-h3-span/specs-after-review.md)。

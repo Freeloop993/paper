@@ -1,0 +1,33 @@
+{
+  "records": [
+    {
+      "id": "QSP-S4-r1",
+      "seed": 2026111301,
+      "prompt_id": "72898bd7-6f79-4541-a791-220f85147594",
+      "png": "QSP-S4-r1.png",
+      "actual_request": "QSP-S4-r1.request.json",
+      "png_sha256": "6aee432907d613514e9956992ea2c60de95e8e14006845a3c8ac0e0e325f008f",
+      "request_sha256": "3f565874d46be07a96f5673a2f3d88349efbe0e94062377003e1aa7da1a8b25c",
+      "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "completed_at": "2026-11-14T14:38:05.558991+00:00",
+      "prior_png_sha256": "61240faaad8dd89f491ba8bbcf7c160910f40b90d4aa6368644fef987d803da0"
+    },
+    {
+      "id": "QSP-S4-r2",
+      "seed": 2026111302,
+      "prompt_id": "bc2bbc09-ccd9-4044-bb13-b89dbde199a1",
+      "png": "QSP-S4-r2.png",
+      "actual_request": "QSP-S4-r2.request.json",
+      "png_sha256": "7b49212b8ff19d44fd9387e4783ae9813f18b8a24b5236285e39e8071bdeda82",
+      "request_sha256": "10c8335fd7eca5e8430eb96ca5938a27c3afb27e84535641acdba7563f52f295",
+      "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+      "completed_at": "2026-11-14T14:39:23.664875+00:00",
+      "prior_png_sha256": "08827123fb188c8d4f448bf39227f0136008990e204fb38cc556d439984929d6"
+    }
+  ],
+  "archive_sha256": "c121b07e6fe0012b31762b55f223dc864bf05ac63de42dc3be298e6f65f44411",
+  "gpu": "NVIDIA GeForce RTX 4080 SUPER",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "sampler_cache_hits": 0
+}

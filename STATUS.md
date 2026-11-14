@@ -1,5 +1,7 @@
 # 论文研究状态
 
+S4 第三轮两张已实收。机鼻相机舱前缘明确外伸 1/2、待判 1/2；两张均未见机背或朝观察者的清晰镜面，均有四副双叶桨。光轴在顶视下不可辨。[三轮并排与本轮原图](evidence/qwen-shape-s4-20261114/s4-nose-edge-2/) · [历史 H3 输入、全词和原图](evidence/h3-camera-layout-originals/)。
+
 11 月 14 日实测已补齐：[Qwen 十二张＋S4 修订两张的原图、实际请求、逐图读数](evidence/qwen-shape-s4-20261114/README.md)。S4 仅见顶部 0/2 → 0/2，E3 仍为 0/9。[四篇同校硕士论文全文、结构和页码](references/peer-theses.md)。
 
 ## 11 月 14 日 · 当前待签署与离线准备
