@@ -1,6 +1,6 @@
 """把 E3 九张原图拼成按方向并排的比较图，附机头与臂根等倍放大。
 
-用法：python3 make_sheets.py <原图目录> <输出目录>
+用法：python3 make_sheets.py <原图目录> <输出目录> [清单 manifest.json] [图号前缀，默认 E3-] [方向标签 JSON]
 原图目录内应有 E3-A1.png … E3-C3.png（1024×1024）。输出 sheet-A.jpg、sheet-B.jpg、sheet-C.jpg、all-nine.jpg。
 放大区域按固定像素矩形截取，九张一致：机头 x 312–712、y 110–410；四个臂根各取 240×240，中心在画面中心 ±150 px。
 """
@@ -29,12 +29,12 @@ def root_mosaic(img, cell=300):
     return m
 
 
-def sheet(direction, imgs, seeds, out):
+def sheet(direction, imgs, seeds, out, labels=LABEL):
     W, gap, top = 606, 24, 70
     nose_h = int(W * (NOSE[3] - NOSE[1]) / (NOSE[2] - NOSE[0]))
     H = top + W + 50 + nose_h + 50 + W + 30
     S = Image.new("RGB", (3 * W + 4 * gap, H), "white"); d = ImageDraw.Draw(S)
-    d.text((gap, 18), LABEL[direction], font=font(34), fill=(20, 20, 20))
+    d.text((gap, 18), labels[direction], font=font(34), fill=(20, 20, 20))
     for i, (img, seed) in enumerate(zip(imgs, seeds)):
         x = gap + i * (W + gap)
         S.paste(img.resize((W, W), Image.LANCZOS), (x, top))
@@ -50,16 +50,19 @@ def sheet(direction, imgs, seeds, out):
 
 def main():
     src, dst = Path(sys.argv[1]), Path(sys.argv[2]); dst.mkdir(parents=True, exist_ok=True)
-    manifest = json.loads((Path(__file__).resolve().parent / "manifest.json").read_text(encoding="utf-8"))
+    mpath = Path(sys.argv[3]) if len(sys.argv) > 3 else Path(__file__).resolve().parent / "manifest.json"
+    prefix = sys.argv[4] if len(sys.argv) > 4 else "E3-"
+    labels = json.loads(Path(sys.argv[5]).read_text(encoding="utf-8")) if len(sys.argv) > 5 else LABEL
+    manifest = json.loads(mpath.read_text(encoding="utf-8"))
     seeds = {r["id"]: r["seed"] for r in manifest["requests"]}
     grid = Image.new("RGB", (3 * 520 + 40, 3 * 560 + 40), "white"); g = ImageDraw.Draw(grid)
     for r, direction in enumerate("ABC"):
-        ids = [f"E3-{direction}{i}" for i in (1, 2, 3)]
+        ids = [f"{prefix}{direction}{i}" for i in (1, 2, 3)]
         imgs = [Image.open(src / f"{i}.png").convert("RGB") for i in ids]
-        sheet(direction, imgs, [seeds[i] for i in ids], dst / f"sheet-{direction}.jpg")
+        sheet(direction, imgs, [seeds[i] for i in ids], dst / f"sheet-{direction}.jpg", labels)
         for c, (i, img) in enumerate(zip(ids, imgs)):
             grid.paste(img.resize((500, 500), Image.LANCZOS), (20 + c * 520, 20 + r * 560))
-            g.text((20 + c * 520, 20 + r * 560 + 505), i.replace("E3-", ""), font=font(28), fill=(20, 20, 20))
+            g.text((20 + c * 520, 20 + r * 560 + 505), i.replace(prefix, ""), font=font(28), fill=(20, 20, 20))
     grid.save(dst / "all-nine.jpg", quality=90)
     print("ok")
 
