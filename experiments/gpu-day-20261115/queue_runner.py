@@ -53,6 +53,10 @@ def main():
         (root / d).mkdir(exist_ok=True)
     log = (root / "progress.jsonl").open("a", buffering=1)
     while not (root / "STOP").exists():
+        try:
+            call(a.comfy + "/system_stats", timeout=10)
+        except Exception:
+            time.sleep(30); continue  # 服务不在线时不消耗队列，等守护脚本重启
         items = sorted((root / "queue").glob("*.json"))
         if not items:
             time.sleep(20); continue
