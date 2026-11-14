@@ -1,0 +1,61 @@
+{
+  "method": "知条件 AI 初读；每个方向一张，非独立盲评或正式样本。",
+  "crop_coordinates_1024": {
+    "机头与机鼻前缘": [
+      395,
+      320,
+      629,
+      453
+    ],
+    "左前臂根与机身侧壁": [
+      298,
+      333,
+      478,
+      494
+    ]
+  },
+  "rows": [
+    {
+      "direction": "A",
+      "sha256": "39460841ff492adf1d4e90f3a87567dee388be6daba79dd44bee52345426e727",
+      "rgb_sha256": "a694559686b020679877bf94f4a6bba6d34a9a295bb1591dc982bfec8821e855",
+      "blade_counts": {
+        "front_left": 2,
+        "front_right": 2,
+        "rear_left": 2,
+        "rear_right": 2
+      },
+      "dorsal_lens_facing_viewer": "not clearly visible",
+      "physical_optical_axis": "unobservable from this view",
+      "form_observation": "独立顶盖沿纵向突出，短肩与细臂相接；上盖遮挡，顶视无法确认航拍功能。"
+    },
+    {
+      "direction": "B",
+      "sha256": "a126005a0fac764cc6c456c2cc0ae2eba3d0dc2fae16560f65474317d73948d9",
+      "rgb_sha256": "3d4407f3ec5c7a9a70916b82af6d7098d4d81afa43acbf474ffcb59b2da84b02",
+      "blade_counts": {
+        "front_left": 2,
+        "front_right": 2,
+        "rear_left": 2,
+        "rear_right": 2
+      },
+      "dorsal_lens_facing_viewer": "not clearly visible",
+      "physical_optical_axis": "unobservable from this view",
+      "form_observation": "壳侧、肩面与臂上沿连续，高光和侧面阴影可追踪；前端矩形接缝无明显镜片。"
+    },
+    {
+      "direction": "C",
+      "sha256": "ba7fdaceb18b8b9832ccbe660522281d5c38203b63f74f322afdcb46bb72ef5a",
+      "rgb_sha256": "bb76cf92e333f26bbdcf5058eed08ac8d31f50abbeff031782209b86b0820cbf",
+      "blade_counts": {
+        "front_left": 2,
+        "front_right": 2,
+        "rear_left": 2,
+        "rear_right": 2
+      },
+      "dorsal_lens_facing_viewer": "not clearly visible",
+      "physical_optical_axis": "unobservable from this view",
+      "form_observation": "鼻端双支撑与模组外壳可读，实际光轴未知；大面积切角盖板只显一圈主缝，臂根与壳侧仍大面积相连，四处独立承座与多盖不充分。"
+    }
+  ]
+}

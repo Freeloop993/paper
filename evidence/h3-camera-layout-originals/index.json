@@ -1,0 +1,937 @@
+[
+  {
+    "batch": "2026-11-13-configurator-abc",
+    "case": "A",
+    "original": "2026-11-13-configurator-abc/A/original.png",
+    "png_sha256": "a088e38a56423db141aa908a826f06e9661816e192c48ae4dccc10af5a5e7b0c",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n固定旋翼规格：4 个电机，每个电机一副完全展开的共毂双叶桨（每桨 2 叶、全机 8 叶），两片桨叶从同一桨毂向相反方向伸出，叶尖—轴心—叶尖夹角约 180°。同一副桨的两片叶使用同一片叶绕轴心旋转 180° 的形状，轴心到两个叶尖等长，对应截面的叶宽和叶尖形状一致。\n目标部位：整机、航拍相机和机臂\n本次改变：以所选舱体包络组织机身和机臂。\n保持：四轴布局、双叶和前向航拍功能。\n自由项：机鼻轮廓、相机安装方式、臂根过渡、壳面曲率和接缝走向。\nArms: Carbon Fiber, 15mm wide and 4mm thick.\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\nBody: Aerodynamic Pod; design envelope 100 × 75 × 40 mm (length × width × height).\nLanding gear: low-profile skids, 40 mm ground clearance.\nCamera gimbal fitted. Primary colour #0ea5e9.\nCMF 外观：上壳主色 #0ea5e9，细砂哑光聚合物，细密纹理与柔和宽高光；外露机架为炭灰碳纤维，细编织纹与半哑光清漆；石墨黑模塑桨叶，低光泽，平滑无编织纹。同一中性侧光下清楚表现部件交界、细纹与高光差异，整机清晰对焦。\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The square canvas layout, normalized motor-axis positions, and surrounding margin spacing in <Picture 1> are <Subject 1>. The four red circular dots at the four corners of a centered X in <Picture 1> are <Subject 2>. The two intersecting blue diagonal lines connecting the opposite corner dots through the center in <Picture 1> are <Subject 3>. The target image is a photorealistic top-down orthographic industrial product rendering of a portable quadcopter drone positioned according to <Subject 1>, replacing the black background of <Picture 1> with a light neutral studio surface while translating <Subject 2> into four upright motors with coaxial dual-blade propellers and <Subject 3> into carbon-fiber arms supporting an aerodynamic pod fuselage and forward camera gimbal. <Subject 1> is fully preserved. <Subject 2> is partially preserved; its four-point spatial coordinates remain as the exact motor shaft centers, while the flat red circles are replaced by four physical brushless motors and their coaxial two-blade propellers. <Subject 3> is partially preserved; its intersecting X-geometry remains as the structural frame linkage, while the thin blue lines are replaced by four physical carbon-fiber arms radiating from the central body to the four motors. Viewed vertically from directly above with the nose pointing toward the top edge of the frame, the drone features a compact aerodynamic pod fuselage at the intersection of <Subject 3>, finished in fine-sand matte polymer in primary color #0ea5e9 with subtle panel seams, soft highlights, and a streamlined nose contour. Extending outward along the paths of <Subject 3> are four straight, flat-profile carbon-fiber arms measuring 15 mm wide by 4 mm thick, rendered in charcoal-gray with a fine woven texture under a semi-matte clear coat and smooth root transitions into the central pod. At each of the four axis locations marked by <Subject 2>, arranged in a true X configuration with equal 90-degree angular spacing and a 250 mm diagonal motor-to-motor span, sits an upright 0-degree-tilt motor topped by a single hub carrying a fully deployed coaxial two-blade propeller (eight blades total across the aircraft). Each propeller consists of two opposing graphite-black molded blades with a low-gloss, weave-free finish extending 180 degrees apart from the shared hub with point symmetry, equal radial length, and matching airfoil width and tip geometry, leaving all four motor hubs and all eight blades completely visible within the frame. Beneath the front nose of the #0ea5e9 pod, the lower housing of a fitted forward-facing aerial camera gimbal peeks out slightly, while low-profile landing skids sit beneath the chassis. The entire drone rests on or hovers just above a clean, light neutral gray-white studio background with no auxiliary lines, scales, or text, illuminated by soft neutral side studio lighting that casts gentle contact shadows onto the ground plane and clearly differentiates the material boundaries between the matte #0ea5e9 shell, woven charcoal carbon fiber, and smooth graphite-black blades in sharp focus."
+  },
+  {
+    "batch": "2026-11-13-configurator-abc",
+    "case": "B",
+    "original": "2026-11-13-configurator-abc/B/original.png",
+    "png_sha256": "701c89a84e34a9421cd9092cf8e2a742ec9d7bd2db8e7692e7a8824b3c923874",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n固定旋翼规格：4 个电机，每个电机一副完全展开的共毂双叶桨（每桨 2 叶、全机 8 叶），两片桨叶从同一桨毂向相反方向伸出，叶尖—轴心—叶尖夹角约 180°。同一副桨的两片叶使用同一片叶绕轴心旋转 180° 的形状，轴心到两个叶尖等长，对应截面的叶宽和叶尖形状一致。\n目标部位：整机、航拍相机和机臂\n本次改变：以所选舱体包络组织机身和机臂。\n保持：四轴布局、双叶和前向航拍功能。\n自由项：机鼻轮廓、相机安装方式、臂根过渡、壳面曲率和接缝走向。\nArms: Carbon Fiber, 15mm wide and 4mm thick.\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\nBody: Aerodynamic Pod; design envelope 145 × 55 × 40 mm (length × width × height).\nLanding gear: low-profile skids, 40 mm ground clearance.\nCamera gimbal fitted. Primary colour #0ea5e9.\nCMF 外观：上壳主色 #0ea5e9，细砂哑光聚合物，细密纹理与柔和宽高光；外露机架为炭灰碳纤维，细编织纹与半哑光清漆；石墨黑模塑桨叶，低光泽，平滑无编织纹。同一中性侧光下清楚表现部件交界、细纹与高光差异，整机清晰对焦。\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The X-shaped geometric layout of four red circular motor-axis markers connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image is a photorealistic top-down orthographic industrial product rendering of a compact everyday portable quadcopter drone aligned to the exact spatial positions and margins of <Subject 1>, set against a clean light neutral studio background with all auxiliary lines, red dots, and black backdrop from <Picture 1> removed. <Subject 1> is partially preserved; its centered square framing, normalized whitespace margins, true-X symmetry, and four 90-degree spaced motor-axis coordinates remain as the exact placement guide, while the abstract red dots and blue connecting lines are replaced by the physical drone components viewed vertically from directly above with the nose pointing toward the top edge of the frame. At the center of the X-configuration sits an aerodynamic fuselage pod measuring 145 by 55 by 40 mm, featuring a sleek tapered nose contour at the top, smooth shell curvature, crisp panel seams, and a fine-sand matte polymer upper shell in primary sky-blue (#0ea5e9) with soft highlights. Extending outward along the four diagonal axes of <Subject 1> are four straight carbon-fiber arms, each 15 mm wide and 4 mm thick, finished in charcoal-gray woven carbon fiber under a semi-matte clearcoat with smooth arm-root transitions into the central pod. Each arm terminates at a vertical 0-degree tilted brushless motor positioned precisely on the four axis points of <Subject 1>, driving a fully deployed 5-inch co-axial dual-blade propeller assembly (two blades per rotor, eight blades total across the aircraft). Every pair of opposing blades extends collinearly at approximately 180 degrees through the motor hub with equal hub-to-tip lengths, identical airfoil widths, matching tip shapes, and 180-degree rotational symmetry between the two blades of the same propeller, crafted from smooth, weave-free low-gloss graphite-black molded material. Beneath the forward nose section, a fitted aerial camera gimbal projects slightly ahead of the leading edge, while low-profile landing skids sit underneath to provide 40 mm ground clearance, subtly visible along the lower chassis edges. Soft neutral studio side lighting illuminates the entire drone in sharp focus, clearly differentiating the material boundaries between the matte #0ea5e9 polymer shell, the textured charcoal carbon-fiber arms, and the smooth graphite-black propellers, while casting gentle contact shadows onto the light neutral surface below without any text, scale marks, or diagram lines."
+  },
+  {
+    "batch": "2026-11-13-configurator-abc",
+    "case": "C",
+    "original": "2026-11-13-configurator-abc/C/original.png",
+    "png_sha256": "31a7c175d4e4fcaca46e4ae7a6e17040a0904a14ac6bffe6ed19756ec13526fe",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n固定旋翼规格：4 个电机，每个电机一副完全展开的共毂双叶桨（每桨 2 叶、全机 8 叶），两片桨叶从同一桨毂向相反方向伸出，叶尖—轴心—叶尖夹角约 180°。同一副桨的两片叶使用同一片叶绕轴心旋转 180° 的形状，轴心到两个叶尖等长，对应截面的叶宽和叶尖形状一致。\n目标部位：整机、航拍相机和机臂\n本次改变：在箱式机身与独立机架之间组织分件。\n保持：四轴布局、双叶和前向航拍功能。\n自由项：机鼻轮廓、相机安装方式、臂根过渡、壳面曲率和接缝走向。\nArms: Carbon Fiber, 15mm wide and 4mm thick.\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\nBody: Boxy Enclosure; design envelope 100 × 75 × 40 mm (length × width × height).\nLanding gear: low-profile skids, 40 mm ground clearance.\nCamera gimbal fitted. Primary colour #0ea5e9.\nCMF 外观：上壳主色 #0ea5e9，细砂哑光聚合物，细密纹理与柔和宽高光；外露机架为炭灰碳纤维，细编织纹与半哑光清漆；石墨黑模塑桨叶，低光泽，平滑无编织纹。同一中性侧光下清楚表现部件交界、细纹与高光差异，整机清晰对焦。\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The X-shaped layout of four red circular motor-center markers connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image transforms <Subject 1> into a photorealistic top-down orthographic industrial design rendering of a compact everyday-carry quadcopter drone with a primary color of #0ea5e9 against a light neutral studio background. <Subject 1> is partially preserved; the normalized positions, equal spacing, and X-configuration of the four motor axes and connecting arm paths remain, while the flat diagram graphics are replaced by three-dimensional physical drone components viewed vertically from directly above. Centered within the frame with its nose pointing toward the top edge, the drone features a central boxy polymer enclosure measuring 100 by 75 by 40 mm in length, width, and height, finished in a fine-sand matte #0ea5e9 texture with subtle grain and soft highlights along its chamfered edges and clean panel seams. Extending diagonally from the corners of this upper shell to the four motor axes defined by <Subject 1> are exposed structural arms made of charcoal-gray carbon fiber, rendered at 15 mm wide and 4 mm thick with a fine woven pattern under a semi-matte clear coat and smooth transitions into the housing. At the end of each arm sits an upright brushless motor with zero-degree tilt, driving a fully deployed 5-inch co-axial dual-blade propeller assembly where each rotor has two blades extending in opposite directions at a 180-degree angle from a central hub, totaling eight blades across the aircraft. Each pair of opposing blades exhibits exact 180-degree rotational symmetry in root-to-tip length, chord width, and rounded tip geometry, crafted from low-gloss graphite-black molded material with a smooth, weave-free surface. Beneath the forward nose of the #0ea5e9 body, a fitted aerial camera gimbal is partially visible from the overhead perspective, while low-profile landing skids provide 40 mm of ground clearance below the chassis. Soft studio side lighting casts gentle contact shadows onto the plain light-neutral surface beneath the drone, clearly differentiating the material boundaries between the matte sky-blue shell, woven carbon-fiber arms, and smooth dark propellers, with all auxiliary guide lines, tick marks, text, and the original black background completely absent."
+  },
+  {
+    "batch": "2026-11-13-hub-word",
+    "case": "A1",
+    "original": "2026-11-13-hub-word/A1/original.png",
+    "png_sha256": "152127834ee27d8f915809e8819e76332490cd41446f51fd68834b3667f9f3a7",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The central X-shaped geometric layout formed by four red endpoint dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image transforms the abstract diagram of <Subject 1> into a photorealistic, orthographic top-down industrial design product photograph of a compact everyday portable quadcopter drone on a clean light neutral background. <Subject 1> serves as a spatial-layout reference for the drone's structural arrangement; the four red dots define the exact motor positions while the intersecting blue lines guide the diagonal arm connections, with all flat graphic colors, dots, and lines replaced by three-dimensional hardware. The drone features a sleek, matte cool-gray molded body centered at the intersection, oriented with its nose pointing straight up toward the top edge of the frame. A forward-facing aerial camera module is mounted at the front tip of the fuselage. Four slender, rigid cool-gray arms extend outward along the diagonal paths to connect the central frame to the four motors positioned precisely at the former red dot locations, forming a true X configuration where adjacent arms meet at 90-degree angles and the diagonal distance between opposite motor centers corresponds proportionally to 250 mm. Each of the four brushless motors is fitted with a stationary, fully unfolded five-inch two-blade propeller consisting of exactly two symmetrical blades extending from the hub. All four complete propellers are fully visible within the square frame without cropping. Soft side lighting illuminates the scene against the plain, light neutral studio surface, casting gentle, realistic contact shadows beneath the fuselage, arms, and rotor blades while highlighting the smooth metallic and composite textures, with no text, registration marks, or auxiliary guide lines present."
+  },
+  {
+    "batch": "2026-11-13-hub-word",
+    "case": "A2",
+    "original": "2026-11-13-hub-word/A2/original.png",
+    "png_sha256": "71b51de548fce97f9fef9c830386f88a88315c969cc3275ba7f7b01b2e8f4f85",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The square canvas and central spatial layout of the four red dots in <Picture 1> is <Subject 1>. The target image transforms the schematic diagram into a photorealistic top-down orthographic industrial design product photograph of a cold-gray quadcopter drone on a light neutral background, replacing the solid black backdrop and blue connecting lines from <Picture 1> while placing four motors at the positions defined by <Subject 1>. <Subject 1> is partially preserved; the exact center-to-center diagonal spacing and four-corner placement of the red dots remain, while the flat red dots themselves are replaced by physical brushless motors and the surrounding empty space becomes a studio surface. The drone features a True X frame with four adjacent arms spaced at 90-degree angles and a 250 mm diagonal motor-to-motor center distance, oriented with its nose pointing straight up. Each corner position of <Subject 1> holds a cylindrical metallic motor topped with a stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two sleek blades per rotor, all completely within the frame. The central fuselage is crafted from matte cold-gray carbon-fiber and molded polymer plates with clean chamfered edges, subtle fastener details, and an aerodynamic canopy housing a forward-facing aerial camera lens protruding slightly at the top front edge. The blue lines from <Picture 1> serve only as structural connection guides realized as solid, integrated cold-gray frame arms linking the central body to the four motors. Soft side lighting illuminates the scene against the seamless light gray-white background, casting gentle directional shadows across the matte gray chassis and beneath the stationary propellers, with no text, markers, or guide lines present."
+  },
+  {
+    "batch": "2026-11-13-hub-word",
+    "case": "A3",
+    "original": "2026-11-13-hub-word/A3/original.png",
+    "png_sha256": "77a518cd471ad365fc949da2173940c7a72875e64f692b892ed8aa159d2fcb6b",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The four red circular dots arranged in a square X-pattern in <Picture 1> are <Subject 1>. The two intersecting blue diagonal lines connecting the opposite red dots in <Picture 1> are <Subject 2>. The target image is a photorealistic top-down orthographic industrial design product photograph of a daily-follow-me quadcopter drone on a clean light neutral background, replacing the black background of <Picture 1> while using <Subject 1> to position the four motors and <Subject 2> to guide the structural frame connections. <Subject 1> supplies the exact spatial positions transferred to the centers of the four brushless motors. <Subject 2> serves as a weak structural reference for the central frame layout; its diagonal intersection guides the internal X-frame connection paths without rendering literal blue lines. Viewed from directly above with the nose pointing straight up, the drone features a matte cool-gray molded composite body with a compact central fuselage, an integrated forward-facing aerial camera module at the front tip, and four adjacent arms spaced at 90-degree angles extending toward the motor locations defined by <Subject 1>, corresponding to a 250 mm diagonal motor center-to-center distance. Each motor mounts a single stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two sleek dark-gray blades per hub, with all four propellers completely inside the frame boundaries. Soft side lighting casts gentle, realistic contact shadows onto the smooth light-gray studio surface beneath the airframe and blades, creating subtle specular highlights along the cool-gray chassis edges, with no text, markers, or guide lines present."
+  },
+  {
+    "batch": "2026-11-13-hub-word",
+    "case": "A4",
+    "original": "2026-11-13-hub-word/A4/original.png",
+    "png_sha256": "f154b2ed5eedea711392d2355580929630142a9b84573679c43668324fffeecb",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The central X-shaped layout formed by the four red dots at the diagonal corners and the two intersecting blue lines in <Picture 1> is <Subject 1>. The target image shows a photorealistic top-down orthographic industrial design photograph of a cool-gray quadcopter drone with its nose pointing straight up against a clean, light neutral background, following the structural placement of <Subject 1> while omitting the black background, red dots, and blue lines. <Subject 1> supplies the exact spatial arrangement transferred to the drone's central fuselage, four arms, and four corner motors. The drone features a sleek cool-gray matte composite body oriented vertically with its front facing upward, equipped with a forward-facing aerial camera mounted on the nose. Four rigid, evenly spaced arms extend diagonally from the center at 90-degree angles to one another, corresponding to the intersecting lines of <Subject 1>, leading to four cylindrical brushless motors positioned at the exact corner locations of the four red dots of <Subject 1>, scaled to a 250 mm diagonal motor-to-motor center distance. Each of the four motors is fitted with a stationary, fully unfolded 5-inch dual-blade propeller consisting of exactly two symmetrical blades. Soft side lighting illuminates the scene, casting gentle, realistic contact shadows across the cool-gray chassis, arms, and propellers onto the plain light neutral surface below, with all four propellers fully visible inside the frame and no text, markers, or guide lines present."
+  },
+  {
+    "batch": "2026-11-13-hub-word",
+    "case": "B1",
+    "original": "2026-11-13-hub-word/B1/original.png",
+    "png_sha256": "50d699700da2ea12918ff92c925ebb2fc0b07df1657a77f4e8c66235bac87a23",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸共毂双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The central X-shaped geometric layout of four red corner dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image transforms <Subject 1> into a photorealistic top-down orthographic industrial design product photograph of a compact everyday FPV quadcopter drone on a clean light neutral background, with the solid black backdrop of <Picture 1> replaced. <Subject 1> serves as a spatial-layout reference for the drone's frame and motor placement; the four red dots define the exact centers of the four motors, while the blue lines represent only the internal structural arm connections without appearing as literal colored dots or lines in the final scene. Viewed from directly overhead with the nose pointing straight up, the drone features a sleek, cool-gray molded composite fuselage with subtle chamfered edges, ventilation slots, and a forward-facing aerial camera module mounted at the front tip. Four tubular carbon-fiber arms extend diagonally outward along the paths indicated by <Subject 1>, meeting at a 90-degree angle between adjacent arms and spacing the diagonal opposing motor centers to correspond to a 250 mm wheelbase. Each of the four motor mounts holds a stationary, fully extended 5-inch coaxial dual-blade propeller assembly where each visible upper rotor carries exactly two symmetrical blades, forming four distinct pairs of twin-blade rotors that fit completely within the square frame. Soft side lighting casts gentle, realistic contact shadows across the matte gray bodywork, dark metallic motors, and semi-translucent dark propeller blades onto the smooth, unblemished light-gray studio surface below, with no text, registration marks, or guide lines present."
+  },
+  {
+    "batch": "2026-11-13-hub-word",
+    "case": "B2",
+    "original": "2026-11-13-hub-word/B2/original.png",
+    "png_sha256": "42f15d10767470fe9e7f67348a9a8487778f341c7d43959002b2cd0fa8be6477",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸共毂双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The square canvas framing and centered composition in <Picture 1> is <Subject 1>. The central intersection point of the blue lines in <Picture 1> is <Subject 2>. The four red circular dots at the ends of the diagonal blue lines in <Picture 1> are <Subject 3>. The two intersecting diagonal blue lines connecting the red dots in <Picture 1> are <Subject 4>. The target image transforms the schematic diagram into a photorealistic top-down orthographic industrial design product photograph of a daily-use aerial photography quadcopter drone with a cool gray fuselage, four arms extending to <Subject 3>, and stationary dual-blade propellers against a light neutral background. <Subject 1> is fully preserved. <Subject 2> is partially preserved; its central position remains while it becomes the center of the drone's main body housing. <Subject 3> is partially preserved; the exact positions of the four points remain while they are replaced by the centers of four brushless motors. <Subject 4> serves as a weak reference for the structural layout; the diagonal axes indicate the alignment of the four X-configuration arms, which are realized as solid physical carbon-fiber or composite arms rather than thin blue lines. At <Subject 2>, the compact cool-gray fuselage features a matte metallic finish, chamfered edges, ventilation slots, and an integrated forward-facing gimbal camera protruding slightly toward the top edge to establish the nose-up orientation. Four sleek, straight arms extend diagonally from the central body along the axes of <Subject 4> to terminate at <Subject 3>, forming a True X layout with 90-degree angles between adjacent arms. Mounted precisely at each of the four locations of <Subject 3> is a cylindrical dark-gray motor topped with a stationary, fully extended 5-inch coaxial dual-blade propeller, where each motor has exactly two symmetrical, aerodynamically curved blades. The entire quadcopter, including all four propellers, fits completely within the frame under soft side lighting that casts gentle gradients across the cool-gray surfaces and subtle contact shadows onto the clean, unadorned light neutral studio background, with no text, registration marks, or guide lines present."
+  },
+  {
+    "batch": "2026-11-13-hub-word",
+    "case": "B3",
+    "original": "2026-11-13-hub-word/B3/original.png",
+    "png_sha256": "e92fbdfbd0e1dbcd7bf98a71955422b2dc40ac87fc7f64933e93920d09af019f",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸共毂双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The square X-shaped layout defined by the four red corner dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image transforms the schematic diagram of <Subject 1> into a photorealistic top-down orthographic industrial design product photograph of a cool-gray quadcopter drone with an upward-pointing nose on a clean light neutral background, removing the literal red dots, blue lines, and black backdrop of <Picture 1>. <Subject 1> serves as a spatial-layout reference for the drone's True X frame; its four red dot positions define the exact locations of the four corner motors, while its two intersecting blue diagonal lines guide the structural arm connections without appearing as visible lines. Centered in the frame and oriented with the front facing straight up toward the top edge, the drone features a compact central fuselage crafted from matte cool-gray carbon-fiber and anodized aluminum plates with chamfered edges, subtle fastener recesses, and clean aerodynamic contours. A forward-facing aerial camera gimbal module protrudes cleanly from the front nose section, featuring a dark glass lens housing and metallic dampeners. Extending diagonally outward along the paths indicated by <Subject 1> are four sleek, tapered tubular arms arranged in a strict True X configuration where the angle between adjacent arms is exactly 90 degrees, proportioned so the diagonal distance between opposite motor centers corresponds to 250 mm at realistic scale. Mounted directly at the four terminal positions of <Subject 1> are four cylindrical brushless motors finished in matching cool gray with subtle copper coil accents visible through ventilation slots. Each motor is fitted with a single stationary, fully unfolded 5-inch coaxial two-blade propeller consisting of only two symmetrical blades extending outward in a straight line across the hub, rendered in semi-translucent dark smoke-gray polymer with smooth airfoil curvature. All four two-blade propellers are completely visible within the canvas boundaries. The entire assembly rests against a seamless, uncluttered off-white studio surface free of any text, registration marks, or guide lines, illuminated by soft directional side lighting that casts gentle, diffused contact shadows beneath the fuselage, arms, motors, and propeller blades while highlighting the matte metallic and composite textures."
+  },
+  {
+    "batch": "2026-11-13-hub-word",
+    "case": "B4",
+    "original": "2026-11-13-hub-word/B4/original.png",
+    "png_sha256": "a42183e5711fcc41e68f3a636292f1d08cb9a672ec0e6cf72677131044372696",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸共毂双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The X-shaped spatial layout of the four red dots at the corners and the intersecting blue lines in <Picture 1> is <Subject 1>. The target image transforms the schematic diagram into a photorealistic, orthographic top-down industrial design product photograph of a compact everyday aerial quadcopter on a clean light neutral background, replacing the solid black background and removing the visible red dots and blue lines. <Subject 1> supplies the exact geometric placement and structural topology transferred to the quadcopter's central fuselage, four motor arms, and four motors. Viewed from directly overhead with the nose pointing straight up, the aircraft features a sleek, cool-gray central body housing an upward-angled forward-facing aerial camera module near the front edge. Four slender, cool-gray carbon-fiber-style arms extend outward along the diagonals defined by <Subject 1> at 90-degree angles between adjacent arms, corresponding to a 250 mm diagonal motor-to-motor center distance. At each of the four corner positions indicated by <Subject 1>, a cylindrical brushless motor is mounted vertically. Each motor is fitted with a single stationary, fully unfolded 5-inch coaxial two-blade propeller consisting of exactly two symmetrical blades extending outward in opposite directions. All four propellers are completely visible within the square frame without cropping. Soft directional side lighting casts gentle, realistic shadows across the matte and satin-finished cool-gray surfaces and onto the seamless light neutral studio surface below, creating a clean presentation free of any text, markers, or guide lines."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "A",
+    "original": "../../prototypes/e3-author-workbook/archive/1A/original.png",
+    "png_sha256": "a9243984ee186ece8093183512dedb58e9854e379c5df0b7eb84f3da6b9b95d2",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：相机舱与机身读成一个紧凑体量，机臂收拢到机身两侧。\n保持：机头朝画面上沿。机载相机水平拍向机头前方。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The spatial layout of the four red circular motor-axis markers and intersecting blue diagonal frame-connection lines in <Picture 1> is <Subject 1>. The target image replaces the solid black background of <Picture 1> with a photorealistic orthographic top-down industrial product rendering of a compact everyday-carry quadcopter drone aligned to <Subject 1> against a light neutral studio background. <Subject 1> supplies the exact normalized plan-view positions, true-X geometry, equal 90-degree angular spacing, and surrounding canvas margins transferred to the four motors and folding arms of the new drone. Viewed vertically from directly above with its nose pointing toward the top edge of the frame, the drone features a unified, compact cool-gray fuselage and forward-facing aerodynamic camera pod at the upper center, with the onboard gimbal camera aimed horizontally toward the top edge. Four sleek folding arms extend diagonally outward from smoothly contoured arm roots integrated into the central body along the paths of <Subject 1>, terminating precisely at the four motor-axis locations marked by the red dots in <Subject 1>. Each upright 0-degree-tilt motor mount carries a single stationary, fully deployed two-blade propeller consisting of exactly two slender dark-gray blades arranged symmetrically across the hub, with all four hubs and full blade spans completely visible inside the frame. Soft studio side lighting models the matte cool-gray shell seams, curved arm-root transitions, and subtle specular highlights on the motor bells and propeller blades, while gentle contact shadows ground the aircraft against the clean, unmarked light neutral surface without any auxiliary lines, scales, or text."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "B",
+    "original": "../../prototypes/e3-author-workbook/archive/1B/original.png",
+    "png_sha256": "81f28e6c924f5ba828b88142874b2e09228950b3069a0a7ba772f7b2a05d1279",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：沿机身纵向展开相机舱与主体的比例关系，四处臂根的轮廓顺着机臂延伸。\n保持：机头朝画面上沿。机载相机水平拍向机头前方。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The square canvas framing, centered placement, and normalized whitespace of <Picture 1> are <Subject 1>. The X-shaped layout of four diagonal motor-axis positions in <Picture 1> is <Subject 2>. The target image replaces the black background, blue connecting lines, and red dots of <Picture 1> with a photorealistic top-down orthographic industrial design rendering of a portable quadcopter drone aligned to <Subject 1> and <Subject 2> against a light neutral studio background. <Subject 1> is fully preserved. <Subject 2> supplies the exact four-corner spatial arrangement transferred to the four upright motors of the new drone. Viewed vertically from directly above with the nose pointing toward the top edge of the frame, the drone features a sleek cool-gray fuselage with a longitudinally extended front camera pod housing a forward-facing gimbal lens aimed horizontally ahead along the central axis. Four tubular arms extend diagonally outward from smoothly blended root fillets that transition into the main body shell, each terminating at one of the four upright 0-degree-tilted brushless motors positioned at <Subject 2> in a true-X configuration with equal 90-degree angular spacing. Each motor shaft is fitted with a stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two slender dark-gray blades, completely visible within the frame without any auxiliary lines, scales, or text. Soft studio side lighting models the matte cool-gray composite surfaces and subtle panel seams, casting gentle contact shadows onto the clean, light neutral surface beneath the airframe."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "C",
+    "original": "../../prototypes/e3-author-workbook/archive/1C/original.png",
+    "png_sha256": "b01528afdb7fe6ea2599628551c41d3756c05d32c3067d191784aed702a812b3",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：保持紧凑，让相机舱与主壳、机臂与机身的接合边界容易辨认。\n保持：机头朝画面上沿。机载相机水平拍向机头前方。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The X-shaped geometric layout of the four red circular motor-axis markers and intersecting blue diagonal frame-connection lines in <Picture 1> is <Subject 1>. The target image is a photorealistic top-down orthographic industrial product rendering of a compact everyday portable quadcopter drone on a light neutral background, positioned according to <Subject 1>. <Subject 1> supplies the exact normalized spatial positions, equal 90-degree clockwise angular spacing from the upper-right axis, and surrounding canvas margins transferred to the four motors and true-X airframe of the new drone. Viewed vertically from directly above with the nose pointing toward the top edge of the frame, the drone features a sleek cool-gray main fuselage shell with clearly defined part seams and distinct curved mounting boundaries where the four arms join the central body. At the four corner positions marked by <Subject 1>, upright zero-degree tilt brushless motors hold stationary, fully extended two-blade 5-inch propellers with two blades per rotor. Beneath the forward nose section, an onboard gimbal camera pod is mounted with crisp assembly edges against the main shell, aimed horizontally forward toward the top edge of the canvas. Soft studio side lighting illuminates the matte and satin cool-gray surfaces, casting gentle contact shadows onto the clean, unannotated light neutral backdrop without any guide lines, scales, or text."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "camera-phrase/A",
+    "original": "../../prototypes/e3-author-workbook/archive/2A/original.png",
+    "png_sha256": "d5fbeb0a48d3aa3f33ef8ad1ce60ea62e2b1d2835543dc55602e05cd7ffd7c4b",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：相机舱与机身读成一个紧凑体量，机臂收拢到机身两侧。\n保持：机头朝画面上沿。机载相机朝画面上沿的地平线平视拍摄。制图者从飞机正上方看见相机外壳的顶面，前向镜面在这个视角接近一条边。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The X-shaped spatial layout and normalized center-frame positioning of the four diagonal motor-axis points in <Picture 1> is <Subject 1>. The target image is a photorealistic orthographic top-down industrial design product render of a compact, portable quadcopter drone folded for everyday carry, aligned to <Subject 1> on a light neutral studio background. <Subject 1> supplies the exact normalized planar positions and spacing transferred to the four motor hubs of the drone. Seen from directly overhead with its nose pointing toward the top edge of the frame, the drone features a cool-gray fuselage and an integrated front camera pod merged into a single compact central volume. At the front of this central body, the airborne camera housing shows its flat top shell, while its forward-facing lens bezel appears nearly as a thin horizontal edge aimed straight ahead toward the top border. Four motor arms are neatly tucked inward along the sides of the fuselage, with smooth curved arm-root housings and clean panel seams connecting seamlessly into the main chassis. Extending outward from the tucked arm tips to the exact coordinates of <Subject 1> are four upright 0-degree-tilt brushless motors arranged in a true X configuration with equal 90-degree angular intervals and symmetrical margins around the perimeter. Each motor mounts a stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two slender dark-gray blades extending in opposite directions across its axis, completely visible within the canvas without overlapping the central body. Soft studio side lighting models the matte cool-gray composite surfaces, subtle bevels, and propeller blades with gentle highlights and soft contact shadows cast onto the seamless light neutral background, with no guide lines, tick marks, or text present."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "camera-phrase/B",
+    "original": "../../prototypes/e3-author-workbook/archive/2B/original.png",
+    "png_sha256": "2203d9b0924f4fe235f189c7965c0380f26966f2750cc2853a602856c7e8edcd",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：沿机身纵向展开相机舱与主体的比例关系，四处臂根的轮廓顺着机臂延伸。\n保持：机头朝画面上沿。机载相机朝画面上沿的地平线平视拍摄。制图者从飞机正上方看见相机外壳的顶面，前向镜面在这个视角接近一条边。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The X-shaped layout of four red circular motor-axis markers and two intersecting blue diagonal frame lines in <Picture 1> is <Subject 1>. The target image shows a photorealistic orthographic top-down industrial product rendering of a portable aerial quadcopter positioned directly over the spatial footprint of <Subject 1> against a light neutral studio background. <Subject 1> is partially preserved; its exact normalized center positions, 90-degree rotational symmetry, diagonal arm trajectories, nose-up orientation toward the top edge of the canvas, and surrounding whitespace proportions are retained as the strict geometric alignment for the quadcopter's four motor axes and frame arms, while the flat red dots, blue lines, and black background from <Picture 1> are replaced by the three-dimensional drone and studio environment. Viewed vertically from directly above with the nose pointing straight up, the drone features a compact cold-gray fuselage with smoothly contoured four-point arm roots that flow seamlessly into slender diagonal arms extending to the four motor mounts at the positions defined by <Subject 1>. Each upright 0-degree-tilt motor mount carries one stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two symmetrical blades per rotor, clearly displaying all four motor hubs and eight blades without overlap or cropping. At the front-center longitudinal axis of the fuselage, an integrated aerial camera pod extends forward; its housing is seen from directly overhead so that its curved top shell is visible and its front-facing lens plane aligns nearly flush with the leading front edge of the pod, aimed horizontally toward the top edge of the frame. Soft studio side lighting models the matte and satin cold-gray surfaces, panel seams, and subtle contact shadows beneath the airframe on the clean, unannotated light neutral surface, with no auxiliary lines, scales, or text anywhere in the frame."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "camera-phrase/C",
+    "original": "../../prototypes/e3-author-workbook/archive/2C/original.png",
+    "png_sha256": "9fe519c4a45ed9bac6c777d3c4fcd2b11cec50021caad6e9ee774f6bc3ef5252",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：保持紧凑，让相机舱与主壳、机臂与机身的接合边界容易辨认。\n保持：机头朝画面上沿。机载相机朝画面上沿的地平线平视拍摄。制图者从飞机正上方看见相机外壳的顶面，前向镜面在这个视角接近一条边。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The four-point X-shaped motor layout with two intersecting diagonal blue lines and four red dots at the corners in <Picture 1> is <Subject 1>. The target image shows a photorealistic orthographic top-down industrial design rendering of a compact everyday portable quadcopter drone positioned directly over the alignment positions of <Subject 1> against a light neutral background. <Subject 1> supplies the exact spatial placement, normalized canvas proportions, margin whitespace, and true-X frame topology transferred to the drone's four motors and structural arms, while its flat graphic lines and dots are replaced by the three-dimensional hardware. Viewed vertically from directly above with the nose pointing toward the top edge of the frame, the drone features a cool-gray main fuselage shell with clearly defined part seams and distinct curved root transitions where the four slender structural arms join the central body along the diagonal paths of <Subject 1>. At each of the four corner axis centers marked by <Subject 1>, an upright zero-degree-tilt brushless motor is mounted on the arm tip, fitted with a stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two sleek dark-gray blades per motor, all completely visible within the frame. Beneath the front section of the fuselage, a forward-mounted aerial camera pod extends slightly ahead of the main shell; seen from this strict overhead projection, the top surface of the camera housing is visible while its forward-facing lens plane aligns nearly edge-on toward the top border, aimed level toward the horizon. Soft studio side lighting models the matte cool-gray composite surfaces, subtle bevels, and recessed panel gaps, casting gentle contact shadows onto the clean, unlined light neutral background without any auxiliary graphics, scale marks, or text."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "nose-cue/A",
+    "original": "../../prototypes/e3-author-workbook/archive/3A/original.png",
+    "png_sha256": "290b94b4ecb628f0f2a31b5a85fc7a58d745ff8b198097ebfc30968341c5555b",
+    "guide": "guides/db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78.png",
+    "guide_sha256": "db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：相机舱与机身读成一个紧凑体量，机臂收拢到机身两侧。\n保持：机头朝画面上沿。机载相机朝画面上沿的地平线平视拍摄。制图者从飞机正上方看见相机外壳的顶面，前向镜面在这个视角接近一条边。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The orthographic top-down layout and spatial positioning of the four motor-axis points, diagonal frame lines, and upward-pointing nose-direction indicator in <Picture 1> is <Subject 1>. The target image transforms the schematic diagram of <Subject 1> into a photorealistic industrial product rendering of a compact, portable everyday aerial quadcopter seen from directly overhead against a light neutral studio background. <Subject 1> is partially preserved; its exact orthographic top-down camera angle, upward-pointing nose orientation, normalized motor-center coordinates, equal 90-degree spacing between adjacent arms, and surrounding canvas margins are retained, while the solid black background, red dots, blue lines, and white arrow are replaced by the physical drone structure and studio environment. The drone features a unified, compact cool-gray fuselage and integrated front aerial camera pod pointing toward the top edge of the frame, where the forward-facing lens sits nearly flush as a thin edge beneath its top housing shell. Four sleek arms with smooth root fillets fold neatly along the sides of the main body before extending outward to the exact positions defined by <Subject 1> in a true X-configuration with zero-degree vertical motors. Each of the four motors is fitted with a stationary, fully unfolded two-blade propeller (5-inch scale relative to the 250 mm diagonal wheelbase), showing slender blades resting horizontally without motion blur. Soft studio side lighting models the matte cool-gray chassis, subtle panel seams, and rotor hubs, casting gentle contact shadows onto the clean, unadorned light gray surface below, with no auxiliary lines, scales, or text present."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "nose-cue/B",
+    "original": "../../prototypes/e3-author-workbook/archive/3B/original.png",
+    "png_sha256": "55611034f92adbcdc7a90f07875f63def9fbf57cb6057801d6658e9763f532cd",
+    "guide": "guides/db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78.png",
+    "guide_sha256": "db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：沿机身纵向展开相机舱与主体的比例关系，四处臂根的轮廓顺着机臂延伸。\n保持：机头朝画面上沿。机载相机朝画面上沿的地平线平视拍摄。制图者从飞机正上方看见相机外壳的顶面，前向镜面在这个视角接近一条边。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The spatial layout and normalized positioning of the four red circular motor-axis markers at the corners of an X-shaped frame in <Picture 1> is <Subject 1>. The target image transforms the schematic diagram into a photorealistic top-down orthographic industrial product render of a portable aerial photography quadcopter aligned to <Subject 1>, replacing the black background, blue connecting lines, red dots, and white upward arrow from <Picture 1> with a physical drone on a light neutral studio surface. <Subject 1> is partially preserved; its normalized canvas placement, centered margins, nose-up orientation toward the top edge, and true-X geometry with four equally spaced 90-degree intervals remain, while the flat schematic markers are replaced by physical motors and propellers. Viewed vertically from directly above with the nose pointing to the top edge, the cool-gray quadcopter features a sleek central fuselage with longitudinal proportions extending along the body axis and four tapered arms whose root contours flow smoothly from the chassis into the arm shafts. At the four positions defined by <Subject 1>, upright zero-degree-tilt brushless motors sit atop the arm tips, each fitted with a stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two symmetrical blades. Beneath the forward fuselage section, a compact gimbal camera pod extends longitudinally; seen from directly overhead, its top housing shell is visible while its forward-facing lens plane aligns nearly edge-on toward the top border, aimed horizontally toward the upper horizon. Soft studio side lighting models the matte and satin cool-gray surfaces, casting gentle contact shadows onto the clean, unannotated light neutral background with no auxiliary lines, scales, or text."
+  },
+  {
+    "batch": "2026-11-13-section421",
+    "case": "nose-cue/C",
+    "original": "../../prototypes/e3-author-workbook/archive/3C/original.png",
+    "png_sha256": "6b1b4673ff845d78bfeeb0decc3c8835b22db0bd931630dacf3945deaa38da9e",
+    "guide": "guides/db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78.png",
+    "guide_sha256": "db1a06e93d16e05a2b49eedaf6ff51321ed69b61aac79eda605935a76cd9ce78",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "日常随行航拍。设计一台便于日常携带的航拍四旋翼。\n四个电机各装一副静止、完全展开的双叶螺旋桨，每个电机只装两片桨叶。\n目标部位：航拍相机舱与机身，四处臂根与机身。\n本次改变：保持紧凑，让相机舱与主壳、机臂与机身的接合边界容易辨认。\n保持：机头朝画面上沿。机载相机朝画面上沿的地平线平视拍摄。制图者从飞机正上方看见相机外壳的顶面，前向镜面在这个视角接近一条边。机身冷灰色。\n自由项：舱体安装、机身轮廓、臂根曲面和分件。\nPropulsion: 5-inch 2-blade propellers; motor tilt 0°.\n4 个电机，True X 布局。最大电机中心距设计值 250 mm，相邻夹角从 R1 起顺时针为 90、90、90、90°。\n随附正交俯视定位图，机头朝上，红点定位电机轴心。蓝线表示机架连接。\n输出正交俯视产品图，制图观察方向从无人机正上方垂直向下，机头指向画面上沿，完整显示所有电机轴心和桨叶。保持各轴心在定位图画幅内的归一化位置和留白。\n浅色中性背景，照片级工业产品设计渲染，柔和棚拍侧光与接触阴影，画面无辅助线、刻度或文字。"
+    },
+    "service_revised_prompt": "The spatial layout and normalized positioning of the four red motor-axis dots, the intersecting blue frame lines, and the central upward-pointing white arrow in <Picture 1> is <Subject 1>. The target image is a photorealistic top-down orthographic industrial design render of a compact everyday-carry quadcopter drone with a cool-gray fuselage and four stationary fully deployed two-blade propellers, positioned according to <Subject 1> against a light neutral studio background. <Subject 1> supplies the exact X-configuration geometry, normalized motor-center spacing, and upward nose orientation transferred to the drone's motors, arms, and forward heading, while the schematic graphic marks themselves are replaced by the physical aircraft. Viewed vertically from directly above with the nose pointing toward the top edge of the canvas, the drone features a compact cool-gray main shell with crisp, easily recognizable parting seams where the four cylindrical arm roots blend into the central body via smooth fillets. At each of the four motor positions defined by <Subject 1>, an upright zero-degree-tilt brushless motor sits at the tip of a sleek carbon-fiber-textured or matte gray arm, topped with a stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two symmetrical dark-gray blades per rotor. Beneath the front of the fuselage, a compact gimbal camera pod is mounted so that its lens points horizontally toward the top edge of the frame; from this vertical overhead viewpoint, only the rounded top housing of the camera pod is visible, with its forward-facing transparent lens plane foreshortened into a thin leading edge aligned with the nose direction. Soft studio side lighting models the matte and satin cool-gray surfaces, casting gentle gradients across the fuselage contours, subtle highlights along the arm-root junctions and propeller blades, and soft contact shadows onto the clean, unadorned light neutral surface below, with no auxiliary lines, scales, or text present."
+  },
+  {
+    "batch": "2026-11-13-two-blade-check",
+    "case": "S1",
+    "original": "2026-11-13-two-blade-check/S1/original.png",
+    "png_sha256": "ea3560699fe7acc504a1eb738a7b8d1b29b8010808790c5f905830af2528c5c9",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The central blue X-shaped line layout in <Picture 1> is <Subject 1>. The four red circular dots at the ends of the diagonal lines in <Picture 1> are <Subject 2>. The target image is a photorealistic top-down orthographic industrial design product photograph of a cool-gray quadcopter drone on a clean light neutral background, replacing the black background and schematic graphics with physical hardware positioned according to <Subject 1> and <Subject 2>. <Subject 1> serves as a spatial-layout reference for the drone's frame geometry; its intersecting diagonal axes define the placement of the four arms while the blue lines themselves are replaced by solid structural arms. <Subject 2> is partially preserved; the exact positions and count of the four points remain as the locations for the four motors, while the flat red circles are replaced by cylindrical brushless motors. Viewed from directly overhead with the nose pointing straight up, the drone features a compact central fuselage in matte cool-gray composite material with a forward-facing aerial camera module mounted at the front tip. Four sleek cool-gray arms extend diagonally outward along the paths defined by <Subject 1>, connecting the central body to the four dark metallic motors placed precisely at the coordinates of <Subject 2>, forming a true X-configuration where adjacent arms meet at 90-degree angles. Each motor holds a stationary, fully extended 5-inch two-blade propeller made of semi-translucent dark gray carbon fiber, with exactly two blades per motor arranged cleanly so all four propellers fit completely within the square frame without overlapping. Soft side lighting casts gentle, realistic shadows across the matte gray chassis, motor bells, and propeller blades onto the seamless off-white studio surface below, with no text, markers, or guide lines present."
+  },
+  {
+    "batch": "2026-11-13-two-blade-check",
+    "case": "S2",
+    "original": "2026-11-13-two-blade-check/S2/original.png",
+    "png_sha256": "a4f98a07112ae4f10c1283c35b4ca8326628d55d38ae81293d9c6e7e3213b989",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸双叶螺旋桨，每个电机只装两片桨叶。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The square spatial layout of the four red dots in <Picture 1> is <Subject 1>. The target image replaces the black background, blue connecting lines, and red dots from <Picture 1> with a photorealistic top-down industrial design product photograph of a cold-gray quadcopter drone positioned according to <Subject 1> against a clean light neutral background. <Subject 1> supplies the exact motor placement geometry transferred to the four motors of the new quadcopter frame. The drone features a sleek cold-gray X-layout frame with four arms extending at 90-degree angles between adjacent arms, matching the diagonal center-to-center spacing defined by <Subject 1>, while omitting any visible measurement text or guide lines. A forward-facing aerial camera module protrudes from the front nose pointing straight upward in the orthographic top view. Each of the four motor mounts holds a stationary, fully unfolded 5-inch two-blade propeller consisting of exactly two blades per motor, with all four propellers completely within the frame. Soft side lighting casts gentle gradients across the matte and metallic cold-gray surfaces and subtle contact shadows onto the seamless light neutral studio backdrop."
+  },
+  {
+    "batch": "2026-11-13-two-blade-check",
+    "case": "V1",
+    "original": "2026-11-13-two-blade-check/V1/original.png",
+    "png_sha256": "43b520e3620ad0019604785c46b83cac4a5ef03412496a9ce159c5f4ee1cc510",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸双叶螺旋桨，每个电机只装两片桨叶。\n从正上方看，每个圆形桨毂的两侧各伸出一片桨叶，一左一右，两个叶尖与桨毂在同一直线上，相隔 180°、离桨毂等远。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The square canvas framing in <Picture 1> is <Subject 1>. The central X-shaped layout formed by the four red dots and intersecting blue diagonal lines in <Picture 1> is <Subject 2>. The target image transforms <Subject 2> into a photorealistic orthographic top-down industrial design photograph of a cool-gray quadcopter drone with four stationary two-blade propellers on a light neutral background, replacing the black background and schematic graphics of <Picture 1>. <Subject 1> is fully preserved. <Subject 2> serves as a spatial-layout reference for the drone's frame geometry; the four red dot positions mark the exact centers of the four motors at 90-degree intervals between adjacent arms with a 250 mm diagonal motor-to-motor spacing, while the blue lines guide the structural frame connections without appearing as literal graphic lines. Viewed from directly overhead with the nose pointing straight up, the compact central fuselage features matte cool-gray composite panels, subtle chamfered edges, and an integrated forward-facing aerial camera gimbal protruding slightly from the front edge. Four sleek cool-gray carbon-fiber arms extend diagonally outward along the paths indicated by <Subject 2>, terminating at cylindrical brushless motors placed precisely at the four former red-dot coordinates. Each motor mounts a single stationary, fully extended 5-inch two-blade propeller made of dark semi-translucent polymer with a circular central hub; each pair of blades extends symmetrically to the left and right so the two blade tips and the hub lie on a single straight line separated by 180 degrees at equal distance from the hub. All four propellers fit completely within <Subject 1> against a clean, solid light-neutral studio backdrop illuminated by soft side lighting that casts gentle directional shadows across the gray body, arms, and blades, with no text, markers, or guide lines."
+  },
+  {
+    "batch": "2026-11-13-two-blade-check",
+    "case": "V2",
+    "original": "2026-11-13-two-blade-check/V2/original.png",
+    "png_sha256": "3f40195e78324eb442cda7e0b5c8ded14a8ad4c1065bd690dfa764b5c3671828",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "n": 1,
+      "size": "1024x1024",
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "一幅日常随行航拍四旋翼的照片级工业设计产品图。True X 布局，四个相邻机臂夹角均为 90°，对角电机中心距 250 mm。机身冷灰色，前向航拍相机。按参考图的四个红点放置电机，蓝线只表示机架连接。\n四个电机各装一副静止、完全展开的 5 英寸双叶螺旋桨，每个电机只装两片桨叶。\n从正上方看，每个圆形桨毂的两侧各伸出一片桨叶，一左一右，两个叶尖与桨毂在同一直线上，相隔 180°、离桨毂等远。\n正交顶视，机头朝上，浅色中性背景，柔和侧光，四副桨完整入画。画面干净，无文字、定位点或辅助线。"
+    },
+    "service_revised_prompt": "The four red circular dots at the corners of the central X in <Picture 1> are <Subject 1>. The two intersecting blue diagonal lines connecting the four red dots in <Picture 1> are <Subject 2>. The target image is a photorealistic industrial design product photograph of a daily-use quadcopter drone seen from an orthographic top-down view against a clean light neutral background, replacing the solid black background of <Picture 1>, with its four motors placed at <Subject 1> and its structural frame following the layout of <Subject 2>. <Subject 1> supplies the exact spatial positions transferred to the centers of the four drone motors. <Subject 2> serves as a weak structural reference for the drone's X-frame arm geometry; its diagonal intersection defines the four arms extending outward toward the motors while transforming from flat blue lines into three-dimensional cold-gray mechanical arms with 90-degree angles between adjacent arms and a 250 mm diagonal motor-to-motor center distance. Seen directly from above with the nose pointing straight up, the drone features a sleek cold-gray central fuselage with a forward-facing aerial camera module mounted at the front edge. Four symmetrical cold-gray arms extend diagonally from the central body to the four corner positions of <Subject 1>, where cylindrical brushless motors are mounted. Each motor holds a stationary, fully deployed 5-inch two-blade propeller consisting of exactly two blades; viewed from directly overhead, each circular propeller hub has one blade extending to the left and one to the right along a single straight 180-degree line equidistant from the hub. All four propellers fit completely within the square frame, illuminated by soft side lighting that casts gentle, realistic shadows across the matte and satin cold-gray surfaces onto the unadorned light neutral backdrop, with no text, registration marks, or guide lines present."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L0-1",
+    "original": "h3-camera-blade-diagnostic/L0-1/original.png",
+    "png_sha256": "e84b531ee2bd4e213a5ac334f970648abb78049ba6a9326b02861a97e0d6d518",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The X-shaped layout of four red endpoint dots and two intersecting blue lines in <Picture 1> is <Subject 1>. The target image shows a compact personal aerial photography quadrotor drone in strict orthographic top view on a clean white background, replacing the schematic diagram with a realistic three-dimensional product render while following the spatial footprint of <Subject 1>. <Subject 1> serves as a weak reference for the spatial layout; its four corner endpoints guide the placement of the four motors and propellers, and its intersecting diagonals guide the arm directions, while the left-right motor spacing is adjusted to equal 1.00 times the front-back motor spacing so the four rotors form a square configuration centered in the frame. The black background of <Picture 1> is replaced by a pure, uniform white studio backdrop with no guide markings or text. The drone is oriented with its nose pointing straight toward the top edge of the canvas. It features a streamlined, rounded-rectangular fuselage shell crafted from matte neutral gray polymer, transitioning smoothly into darker charcoal-gray structural sections around the arm roots. A flush-mounted camera module is seamlessly integrated into the forward nose section; because it points horizontally forward toward the top edge, only its contoured matte gray top housing is visible from directly overhead, completely hiding the front lens glass. Four sturdy, tapered arms extend diagonally outward from cleanly blended, reinforced root joints along the sides of the central body, terminating at cylindrical dark gray brushless motor pods. Each motor pod supports a flat, two-blade translucent dark gray propeller that lies within the circular rotor plane corresponding to the corners of <Subject 1>. Soft, diffused overhead studio lighting illuminates the scene, casting gentle gradients across the curved matte gray surfaces and subtle contact shadows beneath the overlapping rotor blades and recessed panel seams to clearly convey volume."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L0-2",
+    "original": "h3-camera-blade-diagnostic/L0-2/original.png",
+    "png_sha256": "89bf80f4083c3f94ab05816fe6f80a989b74bfe23795ec35ddcc180ad71614d0",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The X-shaped four-arm layout defined by the two intersecting blue diagonal lines and four red endpoint dots in <Picture 1> is <Subject 1>. The target image shows a compact personal aerial photography quadrotor drone in strict orthographic top view on a solid white background, replacing the schematic diagram of <Picture 1> while following the motor geometry of <Subject 1>. <Subject 1> supplies the exact spatial placement and square-proportioned X-configuration transferred to the drone's four rotor motors. The complete drone is oriented with its nose pointing straight up toward the top edge of the frame, centered so the left-to-right motor spacing equals 1.00 times the front-to-back motor spacing. A sculpted matte neutral-gray polymer fuselage features smooth panel seams, subtle chamfered edges, and soft directional shading that conveys three-dimensional volume without any guide markings or text. Four sturdy arm roots emerge cleanly from the central chassis corners along the diagonals of <Subject 1>, tapering outward into cylindrical motor pods capped with dark metallic brushless motors and thin translucent propeller blades spanning each rotor hub. At the forward tip of the fuselage, an aerodynamic camera housing is seamlessly integrated into the body shell; because it is viewed strictly from directly overhead, only its contoured matte gray top casing is visible, completely hiding the horizontally forward-facing front lens glass from view."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L0-3",
+    "original": "h3-camera-blade-diagnostic/L0-3/original.png",
+    "png_sha256": "c2a8bed56c2d6b46e18752b6a8c7850e4d9f5d01da431cfb9618d95d5b81f2ae",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The square canvas framing and the centered X-shaped four-point layout of the blue lines and red dots in <Picture 1> are <Subject 1>. The target image replaces the black background, blue lines, and red dots of <Picture 1> with a compact personal aerial photography quadrotor drone shown in a strict orthographic top-down view on a pure white background, aligned to the motor positions of <Subject 1>. <Subject 1> is partially preserved; its centered placement, front-up orientation, and left-right motor spacing equal to 1.00 times the front-back motor spacing remain, while the abstract diagram lines and dots are replaced by the physical drone structure. The drone features a unified matte neutral gray fuselage with sculpted aerodynamic sections, subtle panel seams, and smooth material transitions that resolve cleanly into four integrated arm roots extending diagonally toward the corners defined by <Subject 1>. At each of the four arm tips sits a compact cylindrical brushless motor housing topped with a two-blade dark gray propeller. The nose points straight up toward the top edge of the frame, where a streamlined camera gimbal housing is seamlessly integrated into the forward fuselage; because the camera lens points horizontally forward along the top-edge axis, only the contoured top shell of the camera housing is visible from directly overhead, completely hiding the front lens glass. Soft, diffused overhead studio lighting creates gentle gradients and subtle contact shadows across the matte gray surfaces and beneath the rotor arms against the clean white background, clearly defining the three-dimensional volume without any guide markings."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L1-1",
+    "original": "h3-camera-blade-diagnostic/L1-1/original.png",
+    "png_sha256": "1fe6d891cefeabf4288d617fc5479802eb2093ee458f5a8b6428bf63ab09bb9b",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The square canvas framing and centered placement in <Picture 1> is <Subject 1>. The X-shaped layout of four red endpoint dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 2>. The target image replaces the solid black background of <Picture 1> with a clean white background and transforms <Subject 2> into a compact quadrotor personal aerial photography drone seen in strict orthographic top view within <Subject 1>. <Subject 1> is fully preserved. <Subject 2> is partially preserved; its centered X-shaped four-corner motor geometry, front-up orientation, and equal left-right to front-back spacing ratio of 1.00 are retained, while the schematic dots and lines are replaced by a physical drone airframe with integrated arms and a nose-mounted camera. The drone features a matte neutral gray fuselage with smoothly resolved arm roots that blend seamlessly from the central body into the four diagonal motor pods without guide markings. At the 12 o'clock frontmost edge of the fuselage, a compact forward-facing camera module protrudes slightly, angled toward the top of the frame so that its opaque matte gray upper housing completely occludes the lens glass in this vertical overhead perspective. Each of the four corner nodes terminates in a cylindrical brushless motor hub topped with a dark propeller spinner and thin two-blade rotors. Soft, diffused overhead studio lighting creates gentle gradients and subtle ambient contact shadows across the contoured shell panels and recessed seams, defining the three-dimensional volume of the chassis against the pure white backdrop."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L1-2",
+    "original": "h3-camera-blade-diagnostic/L1-2/original.png",
+    "png_sha256": "7f31ea12a4e3d7003178e31c85ef99f4433aad80f99f66adf4089022095ebb97",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four red endpoint dots in <Picture 1> are <Subject 1>. The two intersecting blue diagonal lines connecting the endpoints in <Picture 1> are <Subject 2>. The target image shows a compact everyday personal aerial photography quadrotor drone in strict orthographic top-down view with its front oriented upward at 12 o'clock on a solid white background, replacing the black background of <Picture 1>, while <Subject 1> and <Subject 2> serve as spatial placement references for the motor mounts and structural layout. <Subject 1> is partially preserved; the four corner positions remain anchored to define the left-right and front-back motor spacing at a 1.00 ratio, while the flat red dots themselves are replaced by integrated rotor assemblies. <Subject 2> is partially preserved; the X-shaped diagonal connectivity between the four corners remains as the structural arm routing, while the thin blue lines are transformed into solid, tapered drone arms with resolved roots blending into the central fuselage. The newly introduced drone features a sleek, rounded rectangular central fuselage crafted from a matte neutral gray polymer shell, seamlessly transitioning into four sturdy, aerodynamically tapered diagonal arms that extend outward to the exact coordinates of <Subject 1> and <Subject 2>. At each of the four arm tips corresponding to <Subject 1>, a dark charcoal-gray brushless motor housing supports a symmetric two-blade matte black propeller, with subtle circular guard rings framing the rotor paths. At the frontmost edge of the fuselage at 12 o'clock, an integrated forward-facing gimbal camera module protrudes slightly; because of the strict vertical overhead orthographic projection, the opaque matte gray top casing of the camera housing completely occludes the internal lens glass, showing only its contoured upper shell and clean mechanical seam lines where it meets the nose of the body. Soft, diffused overhead studio lighting illuminates the scene against the pure white background, casting gentle, graduated contact shadows beneath the overlapping arm roots, central body, and raised camera housing to clearly articulate three-dimensional volume and smooth surface transitions without any guide markings or text."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L1-3",
+    "original": "h3-camera-blade-diagnostic/L1-3/original.png",
+    "png_sha256": "f75f52258cc3e44aca77e0af1271329d6b66f77dfb0039d85eb0759cdced2b47",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The central X-shaped layout of four red endpoint dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact personal aerial photography quadrotor drone in strict orthographic top view on a solid white background, replacing the black background of <Picture 1> while aligning its four motor positions with <Subject 1>. <Subject 1> serves as a spatial-layout reference for the drone's geometry; its four red endpoint dots mark the exact centers of the four rotor motors, and its intersecting blue diagonals define the equal-length left-right and front-back motor spacing at a 1.00 ratio, while the guide lines and dots themselves are replaced by the physical airframe. Centered with its front pointing toward the 12 o'clock position, the drone features a sleek, rounded-triangular fuselage crafted from a matte neutral gray polymer shell with subtle material transitions to dark anodized aluminum at the structural arm roots. The four arms emerge smoothly from the reinforced chassis corners and taper cleanly into cylindrical motor pods at the four vertices defined by <Subject 1>, each topped with a low-profile brushless motor hub surrounded by a translucent smoke-gray propeller guard ring and blurred two-blade rotors indicating idle spin. At the extreme frontmost edge of the fuselage, a compact gimbal-less camera module is seamlessly integrated into the nose, oriented straight ahead so that its opaque matte charcoal upper housing completely occludes the internal lens glass from this vertical overhead perspective. Soft, diffused overhead studio lighting models the three-dimensional volume of the hull, casting gentle gradients across the contoured gray panels, recessed vent seams, and curved arm shoulders against the clean white backdrop without any schematic markings."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L2-1",
+    "original": "h3-camera-blade-diagnostic/L2-1/original.png",
+    "png_sha256": "b4fd4f96b514cbbe97f8f6cdce076bbc10a314a9598abd4ae62d6b864e18e60b",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing. Each motor carries one stationary two-blade propeller."
+    },
+    "service_revised_prompt": "The square canvas framing and centered X-shaped motor layout in <Picture 1> is <Subject 1>. The target image shows a compact personal aerial photography quadrotor drone in strict orthographic top view on a solid white background, replacing the schematic blue lines and red dots of <Picture 1> while following <Subject 1>. <Subject 1> is partially preserved; its centered symmetrical placement and equal left-right to front-back motor spacing ratio of 1.00 remain, while the schematic markers are replaced by a physical drone assembly. The drone features a matte neutral gray fuselage with smooth volume shading under soft overhead lighting, divided into distinct structural sections with subtle material transitions from a central core to integrated arm roots. At the frontmost edge at 12 o'clock, an integrated camera module sits flush with the nose, facing toward the top edge so its opaque upper casing completely occludes the lens glass from this vertical perspective. Four sleek arms extend diagonally from resolved structural roots at the corners of the body to four cylindrical motors positioned at the four diagonal vertices of <Subject 1>. Each motor hub holds a stationary two-blade propeller with slender dark blades resting at a fixed angle. No guide markings or text appear anywhere."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L2-2",
+    "original": "h3-camera-blade-diagnostic/L2-2/original.png",
+    "png_sha256": "d176372ecc251cd1f1048dd3db1e5adcdf03a891ce1fc994260deef859f92e70",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing. Each motor carries one stationary two-blade propeller."
+    },
+    "service_revised_prompt": "The X-shaped geometric layout of the four red corner dots and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a compact personal aerial photography quadrotor drone rendered in strict orthographic top view against a solid white background, replacing the black background of <Picture 1> while aligning its four motors with the corner positions of <Subject 1>. <Subject 1> is partially preserved; its centered square-like motor spacing ratio of 1.00 between left-right and front-back distances and its X-shaped symmetry are retained as the structural placement guide, while the red dots and blue lines themselves are replaced by the physical drone components. The newly introduced drone features a sleek, contoured central fuselage finished in a matte neutral gray shell with subtle material transitions and smooth section seams that define its volume through soft overhead shading. At the 12 o'clock frontmost edge of the fuselage, a gimbal-less camera module is seamlessly integrated into the nose; its optical face points outward toward the top edge of the frame, so from this vertical top-down perspective, only the opaque dark-gray top housing of the camera unit is visible, completely occluding the lens glass beneath it. Four sturdy, tapered arms extend cleanly from resolved root joints at the corners of the central body along the diagonals of <Subject 1>, terminating at four cylindrical brushless motor pods positioned directly at the four corner coordinates. Mounted atop each motor pod is a single stationary, slender two-blade propeller in matte charcoal gray, oriented symmetrically without motion blur. Soft, diffused studio lighting illuminates the drone from above, creating gentle gradients across the curved matte gray surfaces and casting faint, soft contact shadows onto the pure white background."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "L2-3",
+    "original": "h3-camera-blade-diagnostic/L2-3/original.png",
+    "png_sha256": "ab5f78d405b0dacda74a1ceb327e798a19673fdd8d6b1dc76dbde275b27edbf1",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing. Each motor carries one stationary two-blade propeller."
+    },
+    "service_revised_prompt": "The square canvas framing and centered placement in <Picture 1> is <Subject 1>. The X-shaped layout of the two intersecting diagonal lines with four red endpoint dots in <Picture 1> is <Subject 2>. The target image replaces the black background and schematic diagram of <Picture 1> with a strict orthographic top-down view of a compact matte neutral-gray personal quadrotor drone centered on a clean white background, aligned to the geometry of <Subject 2> within <Subject 1>. <Subject 1> is fully preserved. <Subject 2> supplies the exact spatial layout and motor positions transferred to the drone's fuselage arms and motors, while the blue lines and red dots themselves are replaced by physical hardware. The drone features a sculpted, streamlined central fuselage shell made of smooth matte neutral gray polymer with subtle material transitions to darker gray structural joints where the four tapered arms emerge seamlessly from the body corners along the diagonals of <Subject 2>, maintaining a 1.00 left-right to front-back motor spacing ratio. At the 12 o'clock frontmost edge of the fuselage, a compact gimbal camera housing protrudes slightly forward; its optical face points toward the top of the frame so that the opaque matte gray top cover of the camera unit completely occludes the lens glass in this vertical overhead perspective. Each of the four arm tips terminates in a cylindrical dark-gray brushless motor hub topped with a stationary, unblurred two-blade propeller with slender aerodynamic blades oriented consistently across all four corners. Soft, diffused overhead studio lighting illuminates the drone against the pure white background, creating gentle tonal gradients across the contoured gray surfaces and casting soft contact shadows beneath the fuselage, arms, and stationary propeller blades to clearly define three-dimensional volume without any guide markings."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "P0-1",
+    "original": "h3-camera-blade-diagnostic/P0-1/original.png",
+    "png_sha256": "f4dd4d7a12eab352a568497563d73ed86aee25166be6637cc8bc80d8405d66a0",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black wireframe rotor-arm and motor schematics arranged in a square pattern in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a compact everyday personal aerial photography quadrotor drone in strict orthographic top-down view with front oriented upward on <Subject 2>, integrating a central fuselage, body-mounted camera housing, and resolved arm roots around the layout of <Subject 1>. <Subject 1> is partially preserved; its four-corner motor positions and outward-angled diagonal arm directions remain, while the flat schematic lines and open circles are replaced by three-dimensional matte neutral gray arms, resolved mechanical root joints, and cylindrical brushless motors. <Subject 2> is fully preserved. The new central fuselage has a rounded rectangular silhouette with chamfered corners, crafted from smooth matte neutral gray polymer with subtle seam lines and soft directional shading that conveys physical volume under diffused overhead lighting. At the top center edge of the fuselage, a compact forward-facing camera pod protrudes slightly toward the nose; because of the strict top-down perspective, only its sculpted matte gray upper casing is visible, completely hiding the horizontal lens glass from view. The four arms of <Subject 1> transition seamlessly into the fuselage via reinforced aerodynamic root fairings, eliminating any gap or floating joint, and terminate at each corner in dark gray metallic motor bells with small central mounting nuts. The left-to-right distance between the left and right motors equals the front-to-back distance between the front and rear motors in a 1.00 to 1.00 ratio, with no guide markings, text, or propellers present."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "P0-2",
+    "original": "h3-camera-blade-diagnostic/P0-2/original.png",
+    "png_sha256": "b2f12a89f5147cecd91fdc8fc696606552e7875ed6cdd9e8290d082f0c2e1471",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black diagonal arm-and-motor silhouettes arranged in a square X-configuration in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a compact consumer quadrotor drone in strict orthographic top-down view on <Subject 2>, replacing the small hollow circles at the inner ends of <Subject 1> with an integrated matte neutral-gray fuselage and nose-mounted camera housing while maintaining equal left-right and front-back motor spacing. <Subject 1> is partially preserved; its four-arm layout, diagonal orientation, and outer angled motor mounts remain, while the thin flat arms and separate circular pivot rings are resolved into continuous three-dimensional tubular arms with shaded volume that merge seamlessly into the central body. <Subject 2> is fully preserved. At the center where the four arms meet, a compact aerodynamic fuselage features a smooth, rounded diamond-like silhouette crafted from a matte neutral-gray polymer shell with subtle material transitions to darker gray structural joints and soft ambient shading that defines its curved upper surfaces. Extending toward the top edge (the front nose) along the vertical axis, a streamlined camera gimbal housing protrudes slightly past the forward fuselage contour; because it is viewed strictly from directly overhead with the lens aimed horizontally forward, only the sculpted top casing of the housing is visible, completely concealing the front lens glass. Each of the four arms in <Subject 1> exhibits cylindrical thickness, smooth root fillets blending into the central chassis, and softly shaded motor pods at the tips, all evenly spaced so the horizontal distance between the left and right motors equals the vertical distance between the front and back motors."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "P0-3",
+    "original": "h3-camera-blade-diagnostic/P0-3/original.png",
+    "png_sha256": "7d6e359882c58a12ef1a2b7b411a1aaf93344bb0f5a546b45c535a61794a94aa",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black schematic rotor-and-arm icons arranged in a 2 rows and 2 columns layout in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a compact everyday personal aerial photography quadrotor drone in strict orthographic top-down view on <Subject 2>, replacing the separated schematic icons of <Subject 1> with a unified, integrated product render. <Subject 1> is partially preserved; its four-corner X-arm motor positions and diagonal arm orientations remain as the structural anchor, while the flat black line-art icons are transformed into a single three-dimensional matte neutral gray fuselage with resolved arm roots and an integrated nose camera. <Subject 2> is fully preserved. The drone is centered in a front-up orientation with the left-to-right motor spacing equal to 1.00 times the front-to-back motor spacing, forming a symmetrical square motor layout. A central elongated rounded-rectangular fuselage unifies the four arms at smoothly blended, filleted arm roots that taper outward toward the four corner motor pods. Each motor pod features a dark charcoal cylindrical hub topped with two-blade propellers aligned along the diagonal axes corresponding to the blade angles of <Subject 1>. At the forward nose edge, a streamlined camera housing is seamlessly molded into the top shell; because of the strict overhead projection, only the contoured matte neutral gray upper casing of the gimbal housing is visible, completely hiding the front-facing lens glass. Soft studio lighting casts gentle gradients and subtle contact shadows across the matte neutral gray shell, recessed vents, and overlapping propeller blades to convey three-dimensional volume without any guide markings."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "P1-1",
+    "original": "h3-camera-blade-diagnostic/P1-1/original.png",
+    "png_sha256": "24769a34cecbf29977d3c14e1463d0a98bbf58c5de3c73f1c9cb014fbdea7f2b",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four diagonal arm-and-motor assemblies arranged symmetrically in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a complete, compact quadrotor drone in a strict orthographic top-down view centered on <Subject 2>, with <Subject 1> integrated into a newly developed central fuselage and front-mounted camera module. <Subject 1> is partially preserved; its four-corner layout, diagonal orientation, and equal left-right to front-back motor spacing remain, while the open circular ring roots are resolved into solid structural joints connected to the new body and rendered as three-dimensional matte neutral gray components. <Subject 2> is fully preserved. The new central fuselage has a sleek, rounded-rectangular silhouette crafted from a smooth matte neutral gray polymer shell, seamlessly merging with the inner ends of <Subject 1> through reinforced, chamfered arm roots that eliminate the hollow rings. At the 12 o'clock frontmost edge of the fuselage, a compact gimbal housing projects slightly forward, holding an integrated camera whose opaque matte gray top casing completely occludes the internal lens glass from this overhead perspective. Soft, diffused studio lighting illuminates the drone from above, creating gentle tonal gradients and subtle contact shadows across the curved gray surfaces, recessed vents, and cylindrical motor pods to convey three-dimensional volume without any text or guide markings."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "P1-2",
+    "original": "h3-camera-blade-diagnostic/P1-2/original.png",
+    "png_sha256": "9fb2b0cf41f633af44da6f3edb1b73f1836d8eb8baa5f7f3defb0af6b8307f36",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black schematic quadrotor arm-and-motor layouts arranged in 2 rows and 2 columns on a white background in <Picture 1> are <Subject 1>. The target image presents a single compact everyday personal aerial photography quadrotor drone in a strict orthographic top-down view, front oriented toward the top of the frame at 12 o'clock on a clean white background, synthesized from one layout of <Subject 1>. <Subject 1> serves as a weak structural reference for the quadrotor's diagonal arm topology; the four small circular motor hubs are resolved into complete, solid rotor assemblies with integrated arms attached to a newly designed central fuselage, while the remaining three schematic variants are omitted. Centered in the square canvas, the drone features a compact, rounded-rectangular matte neutral gray polymer shell with subtle chamfered edges and smooth material transitions that convey three-dimensional volume through soft overhead studio lighting and gentle contact shading. At the 12 o'clock frontmost edge of the fuselage, a forward-facing gimbal camera module is seamlessly integrated into the nose, pointing outward toward the top edge so that its opaque matte gray upper housing completely occludes the lens glass from this vertical overhead perspective. Four sleek, tapered matte gray arms extend diagonally from resolved internal mounting roots tucked cleanly beneath the outer shell corners to the four corner positions, arranged so that the horizontal left-to-right motor spacing equals 1.00 times the vertical front-to-back motor spacing. Each arm terminates in a cylindrical brushed-aluminum brushless motor capped with a dark metallic bell and topped by a flat two-blade matte charcoal propeller with a central silver retaining nut. The surrounding background is pure, unmarked white with no text, labels, or guide markings."
+  },
+  {
+    "batch": "h3-camera-blade-diagnostic",
+    "case": "P1-3",
+    "original": "h3-camera-blade-diagnostic/P1-3/original.png",
+    "png_sha256": "0781e6de72a5b3fc5b0ab0c4874432a9cb51a0d52915809ea16e8d2b53785ab3",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Place the camera at the frontmost edge of the fuselage, at 12 o’clock in the picture; its optical face looks out past that edge toward the top of the picture, and the camera’s own opaque top occludes the lens glass in this vertical overhead view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black schematic quadrotor arm-and-motor icons arranged in 2 rows and 2 columns on a plain white background in <Picture 1> are <Subject 1>. The target image shows a compact everyday personal aerial photography quadrotor drone rendered in strict orthographic top view with its front oriented toward the top of the frame, centered on a clean white background. <Subject 1> serves as a weak structural reference for the four-arm quadrotor layout; the diagonal arms, circular motor hubs, and outer rotor positions guide the overall X-frame geometry while being consolidated from four separate diagrams into one complete aircraft with resolved arm roots, a central fuselage, an integrated forward camera, and equalized left-right to front-back motor spacing at a ratio of 1.00. The newly designed drone features a rounded-rectangular matte neutral gray upper shell with subtle chamfered edges and recessed side vents, seamlessly joining four straight tubular carbon-gray arms that extend diagonally outward from reinforced molded root housings inside the body perimeter. At the 12 o'clock frontmost edge of the fuselage, a compact gimbal-free camera module protrudes slightly forward; its optical lens faces straight ahead toward the top of the picture and is completely hidden from this overhead viewpoint beneath its solid, opaque dark charcoal top housing. Each of the four arm tips terminates in a cylindrical matte black brushless motor hub surrounded by a thin, symmetrical circular propeller ring positioned so the horizontal distance between the left and right motors equals the vertical distance between the front and rear motors. Soft, diffused overhead studio lighting casts gentle gradients across the curved matte gray shell, beveled arm transitions, and motor mounts to define three-dimensional volume without harsh specular highlights or any graphic guide markings."
+  },
+  {
+    "batch": "h3-camera-facing-pair",
+    "case": "after",
+    "original": "h3-camera-facing-pair/after/original.png",
+    "png_sha256": "b2b5a6cbccccf9da8069b1be817de17ba2909744c7ae117d14a0879c49577b66",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black motor-and-propeller assemblies arranged in a square pattern in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a complete, compact everyday personal aerial photography quadrotor drone in strict orthographic top-down view with its front oriented upward against <Subject 2>, integrating a body-mounted camera and connecting the four rotor units of <Subject 1> via resolved structural arms. <Subject 1> is partially preserved; the four corner positions, equal left-right and front-back spacing, and angled two-blade propeller orientations remain, while the flat black schematic lines are transformed into three-dimensional cylindrical brushless motors and dark matte composite propellers mounted on integrated arm tips. <Subject 2> is fully preserved. The newly introduced central fuselage features a sleek, rounded rectangular silhouette crafted from a matte neutral gray shell, tapering toward the top edge to form the nose. At the front nose tip, a forward-facing gimbal camera housing protrudes slightly; because of the strict overhead viewpoint and horizontal forward lens orientation, only the sculpted matte gray top casing of the camera module is visible, completely hiding the front lens glass from view, while a distinct dark tinted sensor window is recessed into the upper surface of the housing. Four sturdy, tapered matte gray arms extend diagonally outward from the corners of the central body, smoothly resolving the arm roots with subtle structural fillets and material transitions where they meet the chassis and the circular motor mounts of <Subject 1>. Soft, diffused overhead studio lighting illuminates the drone from above, casting gentle gradients and soft contact shadows across the curved matte gray surfaces, recessed vents, and raised motor bells to clearly define the three-dimensional volume without any guide markings or text."
+  },
+  {
+    "batch": "h3-camera-facing-pair",
+    "case": "before",
+    "original": "h3-camera-facing-pair/before/original.png",
+    "png_sha256": "2732af40573a1583e571f1f2070af76073b3918c0d091b50865b80a787c882df",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black schematic quadrotor arm and rotor layouts in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a single compact everyday personal aerial photography drone in a strict orthographic top view, front up, centered on <Subject 2>, replacing the four schematic layouts of <Subject 1> with one complete three-dimensional quadrotor whose left-right motor spacing equals 1.00 times its front-back motor spacing. <Subject 1> serves as a weak reference for the X-configuration quadrotor layout; its diagonal arm arrangement guides the general concept while the four separate schematic diagrams are replaced by a single integrated drone with equalized left-right and front-back motor spacing, resolved arm roots, an integrated fuselage, and realistic materials. <Subject 2> is fully preserved. The newly developed compact quadrotor features a rounded-square matte neutral gray central fuselage shell with subtle chamfered edges and smooth material transitions into four short, tapered structural arms that emerge seamlessly from the body corners without exposed pivot rings or gaps. Each arm extends outward at a 45-degree angle to support a cylindrical dark-gray brushless motor hub topped with a two-blade propeller oriented along the arm axis. The overall footprint forms a square alignment where the distance between the left and right motors equals 1.00 times the distance between the front and rear motors. At the front nose of the fuselage, a compact gimbal-less camera module is flush-integrated into the leading edge, featuring a recessed bezel and a distinct circular dark glass lens window facing forward. Soft overhead studio lighting illuminates the matte neutral gray surfaces, creating gentle tonal gradients, subtle specular highlights along the curved housing ridges and motor cylinders, and soft contact shadows beneath the arms and rotor blades that convey physical volume against <Subject 2>, with no guide markings present."
+  },
+  {
+    "batch": "h3-camera-guide-wording",
+    "case": "01-baseline",
+    "original": "h3-camera-facing-pair/after/original.png",
+    "png_sha256": "b2b5a6cbccccf9da8069b1be817de17ba2909744c7ae117d14a0879c49577b66",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black motor-and-propeller assemblies arranged in a square pattern in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a complete, compact everyday personal aerial photography quadrotor drone in strict orthographic top-down view with its front oriented upward against <Subject 2>, integrating a body-mounted camera and connecting the four rotor units of <Subject 1> via resolved structural arms. <Subject 1> is partially preserved; the four corner positions, equal left-right and front-back spacing, and angled two-blade propeller orientations remain, while the flat black schematic lines are transformed into three-dimensional cylindrical brushless motors and dark matte composite propellers mounted on integrated arm tips. <Subject 2> is fully preserved. The newly introduced central fuselage features a sleek, rounded rectangular silhouette crafted from a matte neutral gray shell, tapering toward the top edge to form the nose. At the front nose tip, a forward-facing gimbal camera housing protrudes slightly; because of the strict overhead viewpoint and horizontal forward lens orientation, only the sculpted matte gray top casing of the camera module is visible, completely hiding the front lens glass from view, while a distinct dark tinted sensor window is recessed into the upper surface of the housing. Four sturdy, tapered matte gray arms extend diagonally outward from the corners of the central body, smoothly resolving the arm roots with subtle structural fillets and material transitions where they meet the chassis and the circular motor mounts of <Subject 1>. Soft, diffused overhead studio lighting illuminates the drone from above, casting gentle gradients and soft contact shadows across the curved matte gray surfaces, recessed vents, and raised motor bells to clearly define the three-dimensional volume without any guide markings or text."
+  },
+  {
+    "batch": "h3-camera-guide-wording",
+    "case": "02-no-window",
+    "original": "h3-camera-guide-wording/02-no-window/original.png",
+    "png_sha256": "01df9cc60f11b1b7ed4c0f719ebd68b998372100628677262d208aae32d0b5a8",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black schematic quadrotor arm-and-motor icons arranged in 2 rows and 2 columns in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a compact everyday personal aerial photography drone in strict orthographic top view, front oriented upward on <Subject 2>, integrating the four rotor positions of <Subject 1> into a unified matte neutral gray fuselage with an integrated forward-facing camera housing. <Subject 1> is partially preserved; its four-rotor layout and diagonal arm angles remain traceable, while the separate flat black line-art icons are consolidated into one complete three-dimensional quadrotor centered on the canvas with resolved arm roots and equal left-right and front-back motor spacing at a 1.00 ratio. <Subject 2> is fully preserved. The new drone features a sleek, rounded rectangular matte neutral gray polymer shell with subtle chamfered edges and recessed dark gray structural seams along the central spine. Smoothly tapered arms extend diagonally from reinforced circular root collars built seamlessly into the main body corners, terminating in cylindrical matte black brushless motor housings topped with low-profile metallic silver rotor nuts and two-blade carbon-fiber propellers. At the top center edge (the nose), a streamlined forward-projecting camera gimbal housing sits flush within the front chassis contour; because of the strict overhead orthographic projection and horizontal forward pitch of the lens, only the smooth top surface of the dark gray housing and a thin hint of the protective rim are visible, completely hiding the front lens glass from view. Soft, diffused studio lighting from above creates gentle gradients and subtle contact shadows across the curved gray shell, arm joints, and motor mounts to convey three-dimensional volume without any guide markings or text."
+  },
+  {
+    "batch": "h3-camera-guide-wording",
+    "case": "03-point-line",
+    "original": "h3-camera-guide-wording/03-point-line/original.png",
+    "png_sha256": "ffda158f3c184dba7dad5de1acca685022781d6b83e663ed5cdac867ea02a841",
+    "guide": "guides/abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3.png",
+    "guide_sha256": "abcd274b3888fd8c6a358f55d0fa5dee7bbad3c957b7f51b17358fcd7550daa3",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. The camera lens points horizontally forward toward the nose at the top edge of the image, so from directly overhead only the top of the camera housing is visible and the front lens glass is hidden from view. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The centered X-shaped layout of two intersecting diagonal blue lines with four red endpoint dots in <Picture 1> is <Subject 1>. The target image shows a compact personal aerial photography quadrotor drone in strict orthographic top view against a solid white background, replacing the black background and geometric diagram of <Picture 1> while following the spatial geometry of <Subject 1>. <Subject 1> serves as a weak reference for the structural layout; its four outer red dots guide the placement of the four corner brushless motors and propellers at a 1.00 to 1.00 left-right to front-back spacing ratio, and its intersecting blue lines guide the four diagonal arms extending from the central fuselage, while the flat graphic lines and dots are replaced by a three-dimensional mechanical assembly. The drone features a streamlined, rounded-rectangular matte neutral gray polymer fuselage shell with subtle panel seams and soft directional shading that conveys volume under diffused overhead lighting. At the top edge of the frame, the nose section integrates a flush-mounted gimbal camera housing whose sloped upper cover faces the viewer directly, completely concealing the horizontally forward-pointing lens glass inside the body. Four short, tapered matte gray arm roots emerge cleanly from the reinforced corners of the main chassis, angling outward toward the four symmetrically positioned motor pods. Each motor pod is topped by a circular hub and thin dark-gray rotor blades spanning across the corners. The entire craft is centered on a pure, unadorned white background with no guide markings."
+  },
+  {
+    "batch": "h3-e2-edit-preview",
+    "case": "H3-control-P1-A",
+    "original": "../h3-e2-local-edit-20261113/H3-control-P1-A/original.png",
+    "png_sha256": "cc8c2b0a27eb241d39fd1d17201db2f0e5d5a4d6be83a8ac73e37a8c9df26492",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing. The top of the picture is the front. Reshape only the nose at the top: make its leading edge narrower and more rounded, with the camera window following the new edge. Keep the four rotors, the arms and the rest of the body unchanged."
+    },
+    "service_revised_prompt": "The four diagonal arms with circular pivot rings and angled two-blade rotor assemblies arranged in a 2 rows and 2 columns layout in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a complete compact quadrotor drone in strict orthographic top view on <Subject 2>, formed by integrating a central fuselage with an integrated camera into <Subject 1> while narrowing and rounding the front nose at the top of the frame. <Subject 1> is partially preserved; its four diagonal arms, circular root joints, and angled two-blade rotors remain unchanged in shape, orientation, and square spacing where left-right motor spacing equals 1.00 times front-back motor spacing, while their inner ends connect cleanly to the new central body. <Subject 2> is fully preserved. A newly introduced matte neutral-gray fuselage occupies the center between <Subject 1>, featuring a compact silhouette with resolved arm roots that blend smoothly into the chassis. At the top (front) of the fuselage, the leading edge is narrower and more rounded, housing a flush-mounted dark camera window that follows this curved front contour. Soft overhead lighting casts gentle gradients across the matte gray shell and subtle contact shadows beneath the arms and rotor blades against <Subject 2>, with no guide markings present."
+  },
+  {
+    "batch": "h3-e2-edit-preview",
+    "case": "H3-control-P2-B",
+    "original": "../h3-e2-local-edit-20261113/H3-control-P2-B/original.png",
+    "png_sha256": "861423caf8c7d3b6362410b3c3eaeb7f1253abf2346553627e118b6deb3dd3da",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. Each rotor diameter is 0.50 of the diagonal motor distance. The top of the picture is the front. Reshape only the four arm roots: blend each arm into the body with a wider, smoother fillet. Keep the four rotor positions, the propellers and the nose unchanged."
+    },
+    "service_revised_prompt": "The four diagonal arms with their circular motor hubs and two-bladed propellers arranged in 2 rows and 2 columns in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a complete, compact quadrotor drone for everyday personal aerial photography in a strict orthographic top view with the front oriented upward on <Subject 2>, integrating a central matte neutral gray fuselage with an embedded forward camera window and smoothly blended arm roots connecting to <Subject 1>. <Subject 1> is partially preserved; the four rotor positions, diagonal orientation, circular motor mounts, and two-bladed propeller shapes remain unchanged, while the inner ends of the four arms are reshaped at their roots to blend seamlessly into the new central body with wider, smoother fillets. <Subject 2> is fully preserved. Centered between the four rotor assemblies of <Subject 1>, the newly introduced fuselage features a sleek, compact rounded-rectangular silhouette with its nose pointing straight toward the top edge of the frame. Constructed from a smooth matte neutral gray shell, the body exhibits subtle panel seams and soft, even studio shading that defines its three-dimensional volume against <Subject 2>. Each of the four diagonal arms of <Subject 1> transitions into the corners of the central chassis through a broad, aerodynamic, smoothly curved fillet rather than a sharp joint. Flush-mounted near the front nose of the fuselage is a distinct dark, glossy rectangular camera window recessed cleanly into the gray housing, with no guide markings or text present anywhere on the airframe."
+  },
+  {
+    "batch": "h3-e2-edit-preview",
+    "case": "H3-edit-P1-A",
+    "original": "../h3-e2-local-edit-20261113/H3-edit-P1-A/original.png",
+    "png_sha256": "ce6c68b6f5805fa5a34a5a23a6d7c924fe1ae8a2f5c4be2f33f4f5325d6a262e",
+    "guide": "guides/a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f.png",
+    "guide_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "The top of the picture is the front. Reshape only the nose at the top: make its leading edge narrower and more rounded, with the camera window following the new edge. Keep the four rotors, the arms and the rest of the body unchanged."
+    },
+    "service_revised_prompt": "The gray quadcopter drone in <Picture 1> is <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows <Subject 1> on <Subject 2> with its upper front nose section narrowed and more tightly rounded, while the camera window conforms to the reshaped leading edge. <Subject 1> is partially preserved; its four rotors, four diagonal arms, rear body section, and flat top-down illustration style remain unchanged, while only the upper front nose contour and the top boundary of the dark camera window are reshaped. <Subject 2> is fully preserved. At the top end of <Subject 1>, the forward-most tip is narrower and more smoothly rounded than before, tapering inward slightly from the main fuselage width into a compact, curved nose cone. The dark charcoal-gray rounded-rectangle camera window at the front of <Subject 1> follows this new contour, with its upper horizontal edge curving downward along the narrower rounded nose profile while keeping the circular black lens centered within it. The small triangular light-gray shoulder accents where the upper two arms meet the body adjust slightly outward to accommodate the narrower nose without altering the arms or rotors themselves."
+  },
+  {
+    "batch": "h3-e2-edit-preview",
+    "case": "H3-edit-P1-B",
+    "original": "../h3-e2-local-edit-20261113/H3-edit-P1-B/original.png",
+    "png_sha256": "7d32f7d56cc98886adcb52b8f79b443a75f29c703d1e87bef78387f6ceaa7645",
+    "guide": "guides/a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f.png",
+    "guide_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "The top of the picture is the front. Reshape only the four arm roots: blend each arm into the body with a wider, smoother fillet. Keep the four rotor positions, the propellers and the nose unchanged."
+    },
+    "service_revised_prompt": "The top-down gray drone in <Picture 1> is <Subject 1>. The plain white background in <Picture 1> is <Subject 2>. The target image shows <Subject 1> on <Subject 2> with the four arm roots reshaped to blend smoothly into the central fuselage. <Subject 1> is partially preserved; its elongated nose, dark front sensor window, four diagonal arms, circular motor hubs, and eight two-blade propellers remain unchanged in position and geometry, while only the junction where each arm meets the main body changes from a sharp corner to a wider, smoother fillet. <Subject 2> is fully preserved. At all four diagonal attachment points along the sides of the central hull of <Subject 1>, the abrupt transitions between the straight arm shafts and the rounded body contour are replaced by broader, gently curved concave fillets that flow seamlessly from the outer edge of the fuselage into the base of each arm, maintaining the same flat medium-gray tone and clean vector-like edges."
+  },
+  {
+    "batch": "h3-e2-edit-preview",
+    "case": "H3-edit-P2-A",
+    "original": "../h3-e2-local-edit-20261113/H3-edit-P2-A/original.png",
+    "png_sha256": "31c154ce8ec4516494d4bc1e839620336373eb63a9b39a650f09d88f9652e706",
+    "guide": "guides/2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b.png",
+    "guide_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "The top of the picture is the front. Reshape only the nose at the top: make its leading edge narrower and more rounded, with the camera window following the new edge. Keep the four rotors, the arms and the rest of the body unchanged."
+    },
+    "service_revised_prompt": "The central elongated gray fuselage of the drone in <Picture 1> is <Subject 1>. The dark rounded-rectangular camera window on the upper portion of <Subject 1> in <Picture 1> is <Subject 2>. The four diagonal arms, circular motor hubs, and eight two-bladed rotors extending from <Subject 1> in <Picture 1> are <Subject 3>. The plain white background in <Picture 1> is <Subject 4>. The target image shows the top-down drone with a narrower, more rounded front nose at the top of <Subject 1> and a correspondingly reshaped <Subject 2>, while <Subject 3> and <Subject 4> remain unchanged. <Subject 1> is partially preserved; its main body width, rear end, color, and flat vector style remain, while its upper leading edge is narrowed and curved into a tighter, more rounded nose. <Subject 2> is partially preserved; its dark fill, black lens circle, and position near the front of <Subject 1> remain, while its outer contour narrows and rounds to follow the reshaped nose edge. <Subject 3> is fully preserved. <Subject 4> is fully preserved. At the top of <Subject 1>, the front profile tapers inward slightly before curving smoothly across the leading edge, creating a sleeker, more bulbous tip that leaves a slightly wider margin of <Subject 4> beside the upper corners where <Subject 3> attaches. Within this reshaped nose, <Subject 2> adopts a matching narrower, more semicircular upper boundary parallel to the new leading edge while keeping its centered black circular lens."
+  },
+  {
+    "batch": "h3-e2-edit-preview",
+    "case": "H3-edit-P2-B",
+    "original": "../h3-e2-local-edit-20261113/H3-edit-P2-B/original.png",
+    "png_sha256": "97fea8d84862cf223b93ffdd713330dba6d2b39be2e24f1594a6e9b5d014b686",
+    "guide": "guides/2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b.png",
+    "guide_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "The top of the picture is the front. Reshape only the four arm roots: blend each arm into the body with a wider, smoother fillet. Keep the four rotor positions, the propellers and the nose unchanged."
+    },
+    "service_revised_prompt": "The top-down gray drone in <Picture 1> is <Subject 1>. The four diagonal arm roots where the arms meet the central fuselage of <Subject 1> in <Picture 1> are <Subject 2>. The plain white background in <Picture 1> is <Subject 3>. The target image shows <Subject 1> on <Subject 3> with <Subject 2> reshaped to blend smoothly into the central body. <Subject 1> is partially preserved; its overall layout, nose, central camera housing, four rotor positions, and propellers remain unchanged, while only <Subject 2> is modified. <Subject 2> is partially preserved; the attachment locations at the four corners of the fuselage remain, while their sharp junctions change to wider, smoother fillets. <Subject 3> is fully preserved. At each of the four diagonal junctions of <Subject 2>, the narrow, abrupt transition between the outer fuselage contour and the straight arm shafts is replaced by a broad, gently curved aerodynamic fairing that flares outward from the gray body shell into the base of each arm, maintaining the flat vector-like medium-gray shading and clean edges of the surrounding hull."
+  },
+  {
+    "batch": "h3-product-reference-pair",
+    "case": "flat-parent",
+    "original": "h3-product-reference-pair/flat-parent/original.png",
+    "png_sha256": "5b09b57afeac6610644f69f947e0c26a5e7aecb9881c46c05b70df23daca879e",
+    "guide": "guides/a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f.png",
+    "guide_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The top-down quadrotor drone in <Picture 1> is <Subject 1>. The plain white background in <Picture 1> is <Subject 2>. The target image shows a redesigned, volumetric version of <Subject 1> rendered as a realistic compact personal aerial photography drone with an integrated camera and smoothly resolved arm roots on <Subject 2>. <Subject 1> is partially preserved; its strict orthographic top-view orientation facing straight up, four-arm quadrotor configuration, and centered placement remain, while its flat vector appearance transforms into a shaded three-dimensional form with a refined fuselage silhouette, integrated camera housing, resolved arm-root transitions, and equalized left-right and front-back motor spacing. <Subject 2> is fully preserved. The redesigned <Subject 1> features a sculpted, rounded-rectangular matte neutral gray shell with subtle panel seams and material transitions that convey physical volume under soft overhead studio lighting. At the forward section of the fuselage, the camera is seamlessly integrated into the body behind a distinct, recessed dark rectangular glass window containing a circular central lens element with a faint specular highlight. Four slender, tapered arms extend diagonally from the corners of the main body through smooth, blended structural fillets that resolve the arm roots cleanly without abrupt joints or gaps. Each arm terminates in a cylindrical brushed-metal motor mount topped with two-blade propellers matching the diagonal blade angles of the original layout. The four motors are positioned symmetrically so that the horizontal left-to-right motor spacing equals the vertical front-to-back motor spacing at a ratio of 1.00 to 1.00, forming a square motor footprint."
+  },
+  {
+    "batch": "h3-product-reference-pair",
+    "case": "layout-guide",
+    "original": "h3-camera-facing-pair/before/original.png",
+    "png_sha256": "2732af40573a1583e571f1f2070af76073b3918c0d091b50865b80a787c882df",
+    "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
+    "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Develop one compact drone for everyday personal aerial photography. Integrate the camera into the body and resolve the arm roots. Show a complete quadrotor in strict orthographic top view, front up, on white. Choose the fuselage silhouette, sections and material transitions freely. Soft lighting, matte neutral gray shell, distinct dark camera window. Show volume with shading. No guide markings. The left-right motor spacing is 1.00 times the front-back motor spacing."
+    },
+    "service_revised_prompt": "The four black schematic quadrotor arm and rotor layouts in <Picture 1> are <Subject 1>. The solid white background in <Picture 1> is <Subject 2>. The target image shows a single compact everyday personal aerial photography drone in a strict orthographic top view, front up, centered on <Subject 2>, replacing the four schematic layouts of <Subject 1> with one complete three-dimensional quadrotor whose left-right motor spacing equals 1.00 times its front-back motor spacing. <Subject 1> serves as a weak reference for the X-configuration quadrotor layout; its diagonal arm arrangement guides the general concept while the four separate schematic diagrams are replaced by a single integrated drone with equalized left-right and front-back motor spacing, resolved arm roots, an integrated fuselage, and realistic materials. <Subject 2> is fully preserved. The newly developed compact quadrotor features a rounded-square matte neutral gray central fuselage shell with subtle chamfered edges and smooth material transitions into four short, tapered structural arms that emerge seamlessly from the body corners without exposed pivot rings or gaps. Each arm extends outward at a 45-degree angle to support a cylindrical dark-gray brushless motor hub topped with a two-blade propeller oriented along the arm axis. The overall footprint forms a square alignment where the distance between the left and right motors equals 1.00 times the distance between the front and rear motors. At the front nose of the fuselage, a compact gimbal-less camera module is flush-integrated into the leading edge, featuring a recessed bezel and a distinct circular dark glass lens window facing forward. Soft overhead studio lighting illuminates the matte neutral gray surfaces, creating gentle tonal gradients, subtle specular highlights along the curved housing ridges and motor cylinders, and soft contact shadows beneath the arms and rotor blades that convey physical volume against <Subject 2>, with no guide markings present."
+  },
+  {
+    "batch": "h3-abc-dots-review",
+    "case": "A",
+    "original": "h3-abc-dots-review/A/original.png",
+    "png_sha256": "39460841ff492adf1d4e90f3a87567dee388be6daba79dd44bee52345426e727",
+    "guide": "guides/15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338.png",
+    "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Everyday travel camera drone, unfolded for flight. Orthographic plan view from directly above, nose at the top. Show the whole product.\r\nFour motor centres on the four guide points, arms along the X. Equal left–right and front–back spacing; opposite motors 250 mm apart. Each motor carries one stationary two-blade 5-inch propeller with equal opposing blades. No guards.\r\nRounded centre body, one top cover. A short rounded shoulder draws in close to the shell, leaving a distinct slender arm. The nose shelter ends over the forward camera.\r\nOne flight camera looks horizontally forwards from the nose. From above, the shell can hide it completely. Any visible part is the top of the housing or its supports. Keep the upper deck and the tail free of lenses.\r\nLight grey satin shell and arms, dark grey motors, black blades. Soft light across the shoulder reveals its change in section; a faint contact shadow on a plain light background. No lettering or coloured guide marks."
+    },
+    "service_revised_prompt": "The X-shaped geometric layout of two intersecting diagonal lines with four circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows an orthographic top-down plan view of a newly introduced everyday travel camera drone unfolded for flight, aligned to the geometry of <Subject 1> against a plain light background. <Subject 1> serves as a spatial-layout reference for the drone's arm alignment and motor placement; its intersecting diagonals define the axis directions of the four arms and its four endpoint positions mark the centers of the four motors, while the blue lines, red dots, and black background are replaced by the physical drone and light backdrop. Seen from directly above with its nose pointing toward the top edge of the frame, the complete drone features a rounded central body enclosed in a single smooth light grey satin top cover. At the front, a short rounded shoulder curves inward close to the main shell before extending outward along the diagonal axes of <Subject 1> into four distinct, slender light grey satin arms. The forward nose shelter terminates cleanly over the front, completely hiding the horizontal forward-facing flight camera beneath the upper shell so that no lens appears on the clean upper deck or tail. Positioned precisely at the four guide points of <Subject 1>, equidistant left-to-right and front-to-back with opposite motors spaced 250 mm apart in scale, are four compact dark grey cylindrical motors. Each motor hub holds one stationary, unguarded two-blade 5-inch propeller in matte black with equal opposing blades extending symmetrically across the arm axes. Soft overhead lighting casts gentle gradients across the curved shoulders to highlight their cross-sectional transition into the slender arms, while the entire unfolded airframe rests over a plain, uniform light background with a faint, soft contact shadow directly beneath the body, arms, and propellers, free of any lettering or colored guide marks."
+  },
+  {
+    "batch": "h3-abc-dots-review",
+    "case": "B",
+    "original": "h3-abc-dots-review/B/original.png",
+    "png_sha256": "a126005a0fac764cc6c456c2cc0ae2eba3d0dc2fae16560f65474317d73948d9",
+    "guide": "guides/15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338.png",
+    "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Everyday travel camera drone, unfolded for flight. Orthographic plan view from directly above, nose at the top. Show the whole product.\r\nFour motor centres on the four guide points, arms along the X. Equal left–right and front–back spacing; opposite motors 250 mm apart. Each motor carries one stationary two-blade 5-inch propeller with equal opposing blades. No guards.\r\nRounded centre body, one top cover. The shell side flows into a broad shoulder that tapers along the arm. Carry one continuous highlight from the shell into the arm. The nose shelter ends over the forward camera.\r\nOne flight camera looks horizontally forwards from the nose. From above, the shell can hide it completely. Any visible part is the top of the housing or its supports. Keep the upper deck and the tail free of lenses.\r\nLight grey satin shell and arms, dark grey motors, black blades. Soft light across the shoulder reveals its change in section; a faint contact shadow on a plain light background. No lettering or coloured guide marks."
+    },
+    "service_revised_prompt": "The X-shaped geometric layout formed by the two intersecting blue diagonal lines and four red circular endpoint markers in <Picture 1> is <Subject 1>. The target image shows an orthographic top-down plan view of an unfolded everyday travel camera drone centered on a plain light background, using <Subject 1> as its exact structural alignment. <Subject 1> supplies the exact spatial placement transferred to the drone's central fuselage, four tapered arms, and four motor centers, while the blue lines and red dots themselves are removed. Seen from directly above with its nose pointing straight toward the top edge, the complete drone features a rounded rectangular center body with a single smooth light grey satin top cover. At the front end, the shell forms a forward nose shelter that terminates cleanly over the nose, completely hiding the horizontal forward-looking flight camera underneath so no lens appears on the upper deck or tail. From the sides of the central shell, the surface flows seamlessly into broad shoulders that taper outward along the four diagonal axes of <Subject 1>, carrying one continuous highlight line from the shell across each shoulder and down the length of all four light grey satin arms. Positioned precisely at the four guide points of <Subject 1>—with equal left-to-right and front-to-back spacing and opposite motors aligned 250 mm apart in scale—are four cylindrical dark grey brushless motors without propeller guards. Each motor hub holds one stationary, unblurred two-blade 5-inch matte black propeller with symmetrical opposing blades extending evenly to either side. Soft overhead lighting models the stepped transition across the broad shoulders and casts a faint, even contact shadow beneath the entire airframe onto the clean, unmarked light grey-white studio background, with no lettering or colored guide marks anywhere."
+  },
+  {
+    "batch": "h3-abc-dots-review",
+    "case": "C",
+    "original": "h3-abc-dots-review/C/original.png",
+    "png_sha256": "ba7fdaceb18b8b9832ccbe660522281d5c38203b63f74f322afdcb46bb72ef5a",
+    "guide": "guides/15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338.png",
+    "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+    "submitted_fields": {
+      "model": "MiniMax-H3-Image",
+      "size": "1024x1024",
+      "n": 1,
+      "output_format": "png",
+      "response_format": "b64_json",
+      "prompt": "Everyday travel camera drone, unfolded for flight. Orthographic plan view from directly above, nose at the top. Show the whole product.\r\nFour motor centres on the four guide points, arms along the X. Equal left–right and front–back spacing; opposite motors 250 mm apart. Each motor carries one stationary two-blade 5-inch propeller with equal opposing blades. No guards.\r\nStraight-sided centre body with clipped corners. Separate top cover panels follow the body edges. Each arm meets a socket with a visible step. At the nose, two supports on the same shell flank a small forward-projecting gimbal.\r\nOne flight camera looks horizontally forwards from the nose. From above, the shell can hide it completely. Any visible part is the top of the housing or its supports. Keep the upper deck and the tail free of lenses.\r\nLight grey satin shell and arms, dark grey motors, black blades. Soft light across the shoulder reveals its change in section; a faint contact shadow on a plain light background. No lettering or coloured guide marks."
+    },
+    "service_revised_prompt": "The centered X-shaped geometric layout in <Picture 1>, consisting of two intersecting diagonal blue lines and four red circular endpoint markers, is <Subject 1>. The target image shows an orthographic plan view from directly above of a complete everyday travel camera drone unfolded for flight on a plain light background, with its central body, four arms, and four motors positioned along the geometry of <Subject 1> while the black background of <Picture 1> is replaced. <Subject 1> is partially preserved; its exact centered position, equal left-right and front-back spacing, 45-degree diagonal arm angles, and four motor-center locations are retained as the structural placement guide, while the visible blue lines, red dots, and black background are removed and replaced by the physical drone components. The drone is oriented with its nose at the top and tail at the bottom, fully visible within the square frame. At the center, the main fuselage has a straight-sided octagonal silhouette with clipped corners and a light grey satin-finish shell divided by recessed panel seams that follow the outer edges. At the top nose section, two integrated light grey supports flank a small forward-projecting dark grey gimbal housing; any hint of the horizontal flight camera is limited strictly to the top edge of this forward housing or its supports, leaving the upper deck and tail completely free of lenses. Extending diagonally outward from the four clipped corner regions along the exact paths of <Subject 1> are four straight, tapered light grey satin arms, each meeting the central body at a distinct stepped socket joint. Positioned precisely over the four former endpoint locations of <Subject 1> are four cylindrical dark grey brushless motors spaced symmetrically so opposite motors lie 250 mm apart in scale. Mounted flat atop each motor hub is a stationary, guardless two-blade 5-inch propeller made of matte black material, with two equal opposing blades extending cleanly along the diagonal axis without overlapping adjacent arms. Soft overhead lighting casts gentle gradients across the angled shoulders of the central shell to highlight its stepped cross-section, while the entire drone casts a faint, even contact shadow onto the clean, unmarked light neutral surface beneath it, with no lettering or colored guide marks anywhere."
+  }
+]
