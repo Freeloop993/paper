@@ -1,0 +1,38 @@
+{
+  "reader": "知条件 AI 初读",
+  "target_hits_per_two": {
+    "S1": 2,
+    "S2": 2,
+    "S3": 2,
+    "S4": 1,
+    "S5": 2
+  },
+  "overall_pass_of_twelve": 10,
+  "camera_counts": {
+    "invisible": 6,
+    "U": 4,
+    "wrong": 2
+  },
+  "all_double": 12,
+  "guide": "250 mm 红点蓝线图；Qwen 原生图像编辑输入",
+  "hub_reading": "以桨毂顶端旋转中心为点，在原像素网格上近似定位；左前起顺时针；W/L 只作描述。",
+  "baseline": {
+    "body": [
+      "pod",
+      "pod"
+    ],
+    "roots": [
+      "BBBB",
+      "BBBB"
+    ],
+    "nose": [
+      "N",
+      "N"
+    ],
+    "cover": [
+      "C",
+      "C"
+    ]
+  },
+  "passes_frozen_gate": true
+}

@@ -1,0 +1,4 @@
+[
+  {"seed":2026111301,"old":"机头前伸，正俯视露出镜面 · 桨叶 2/2/2/2","new":"机头前伸，仍露出镜面 · 桨叶 1/1/1/1","old_front_projection":true,"new_front_projection":true,"old_top_only":false,"new_top_only":false,"old_dorsal_lens":false,"new_dorsal_lens":false,"new_optics_note":"支架中央出现朝向观察者的蓝紫色镜面，上方另有一块封闭外壳；每个毂只读到一片向外伸出的桨叶。"},
+  {"seed":2026111302,"old":"机尾外伸，镜面可见 · 桨叶 2/2/2/2","new":"移到机头，壳体下侧仍可见圆窗 · 桨叶 2/2/2/2","old_front_projection":false,"new_front_projection":true,"old_top_only":false,"new_top_only":false,"old_dorsal_lens":false,"new_dorsal_lens":false,"new_optics_note":"上盖清楚，但图中靠近机身的一面仍露出深色圆形开口及反光点。单张顶视不能测出真实光轴角度。"}
+]
