@@ -1,5 +1,7 @@
 # 论文研究状态
 
+11 月 14 日实测已补齐：[Qwen 十二张＋S4 修订两张的原图、实际请求、逐图读数](evidence/qwen-shape-s4-20261114/README.md)。S4 仅见顶部 0/2 → 0/2，E3 仍为 0/9。[四篇同校硕士论文全文、结构和页码](references/peer-theses.md)。
+
 ## 11 月 14 日 · 当前待签署与离线准备
 
 Qwen 的 [E2 六份修订请求](experiments/e2-registered/) 和 [十二份造型小测请求](experiments/qwen-shape-pilot/) 已离线核对，PR #70 已合并，第 2 节已填写；[第三轮八张通用项补读](evidence/form342-h3-dev/round-3-common-v22/)已归档，正式运行待作者签署第 3 节。K 未过，本次 5.2.1 计划保留六个条件。
