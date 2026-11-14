@@ -1,0 +1,83 @@
+[
+  {
+    "id": "E3R3-A1",
+    "prompt_id": "468f94ac-4dff-49d9-aa1d-89995f0a797c",
+    "seconds": 90.1,
+    "request_sha256": "7354db32d94a20c60892bb4eaf6269dc64318f484d1c33291a2ca01e2f1fed2f",
+    "png_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
+    "server_filename": "E3R3-A1_00001_.png",
+    "completed_at": "2026-11-15T01:13:48+0800"
+  },
+  {
+    "id": "E3R3-A2",
+    "prompt_id": "d5292478-7d6f-4f87-83a8-86b53d0e00bb",
+    "seconds": 80.1,
+    "request_sha256": "19bb67cdaeb1791e45fba291f4fc27703b05a591981451c477c6fbeec2c52ad9",
+    "png_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
+    "server_filename": "E3R3-A2_00001_.png",
+    "completed_at": "2026-11-15T01:15:08+0800"
+  },
+  {
+    "id": "E3R3-A3",
+    "prompt_id": "e261d6fb-90d6-42b0-97ca-e1374c5bdd0b",
+    "seconds": 80.1,
+    "request_sha256": "ba81881f560175792c708d29ea91f5eee4320ecb31e9ba899e13d9f6e3996c14",
+    "png_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
+    "server_filename": "E3R3-A3_00001_.png",
+    "completed_at": "2026-11-15T01:16:28+0800"
+  },
+  {
+    "id": "E3R3-B1",
+    "prompt_id": "cd93e10a-32f3-483b-bd9a-e3bb2db190ae",
+    "seconds": 90.1,
+    "request_sha256": "1d612120d77319c890dd6b58ca4933e79ca776ee8de7c06b21eb6aed043f4574",
+    "png_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
+    "server_filename": "E3R3-B1_00001_.png",
+    "completed_at": "2026-11-15T01:17:58+0800"
+  },
+  {
+    "id": "E3R3-B2",
+    "prompt_id": "097116ec-959a-4d0d-bf9d-b7850f943efd",
+    "seconds": 80.1,
+    "request_sha256": "5333d12e6c27f93a6a049490b2c57b3c890a157eb879e20a642389d35f6267ba",
+    "png_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+    "server_filename": "E3R3-B2_00001_.png",
+    "completed_at": "2026-11-15T01:19:18+0800"
+  },
+  {
+    "id": "E3R3-B3",
+    "prompt_id": "c0faa8c6-a603-4463-b15f-5d23fa8c339e",
+    "seconds": 80.0,
+    "request_sha256": "731898fc95ca0f6b3789b9760481e59201bde7fceb0932ef816bc1ac060fae5e",
+    "png_sha256": "d7101af1c95f6c68440d3e342b1c01c65e3d7ed03ca03555187f77bae4258d0c",
+    "server_filename": "E3R3-B3_00001_.png",
+    "completed_at": "2026-11-15T01:20:38+0800"
+  },
+  {
+    "id": "E3R3-C1",
+    "prompt_id": "bc78a2c0-35d7-4aef-9c1c-c6eaa09b1bd4",
+    "seconds": 85.1,
+    "request_sha256": "d31a8df4ba75d8f2bb37f8485382428ef5996fbab7fc9a3a400446e626cb544d",
+    "png_sha256": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b",
+    "server_filename": "E3R3-C1_00001_.png",
+    "completed_at": "2026-11-15T01:22:03+0800"
+  },
+  {
+    "id": "E3R3-C2",
+    "prompt_id": "e3b55317-9489-4f93-806c-7b585f8bfc27",
+    "seconds": 80.1,
+    "request_sha256": "6b3c99fe3892bf4c6566bb482a260141738a83392080db517804a8f54df6ee28",
+    "png_sha256": "c390f23ebb07c21658d37cd18004852b69d10e9c8f7eaf473c9c6f009347568b",
+    "server_filename": "E3R3-C2_00001_.png",
+    "completed_at": "2026-11-15T01:23:23+0800"
+  },
+  {
+    "id": "E3R3-C3",
+    "prompt_id": "156f7e9d-b0f9-4ab9-9699-36b50b01ddf8",
+    "seconds": 80.1,
+    "request_sha256": "772de7f3815a27245dcd2ab611960968fcb876e9b2976b947589f88840221188",
+    "png_sha256": "1dcae49a852f81527dbb4b2831c8d21c62c353585186e20d87fc23b4fef14de1",
+    "server_filename": "E3R3-C3_00001_.png",
+    "completed_at": "2026-11-15T01:24:43+0800"
+  }
+]

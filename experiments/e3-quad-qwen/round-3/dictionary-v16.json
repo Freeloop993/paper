@@ -1,0 +1,66 @@
+{
+  "version": "shape-dictionary-v1.6",
+  "scope": "仅用于 E3 第三轮初稿；5.2.1 造型响应批仍按 v1.2",
+  "negative_extra": "camera lens visible from above, upward-facing lens, camera on a neck or stalk, camera on a post, camera at the tail, dark module at the tail, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades",
+  "fixed_lines": {
+    "head": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.",
+    "layout": "Match the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. The two blades of each propeller are identical in length and width and point in exactly opposite directions from the hub, forming one straight blade 180 degrees across, never a V shape; each propeller rests at its own natural angle. No propeller guards.",
+    "orientation": "The nose points to the top edge of the image. The rear end of the fuselage is a closed, plain light grey shell: no dark part, opening, camera or module at the tail.",
+    "cmf": "Matte light grey shell and arms in one continuous colour, dark grey motors, black propellers.",
+    "cmf_when_exposed_carbon": "Matte light grey shell, dark grey motors, black propellers.",
+    "tail": "Show the complete product on a plain light background. Omit guide marks and lettering."
+  },
+  "line_order": [
+    "head",
+    "layout",
+    "orientation",
+    "body_plan",
+    "arm_root",
+    "camera",
+    "cover",
+    "surface",
+    "arm_finish",
+    "accent",
+    "cmf",
+    "tail"
+  ],
+  "params": {
+    "body_plan": {
+      "pod": "A rounded pod with a continuous curved outline.",
+      "box": "A box-shaped shell with straight sides and clipped corners.",
+      "faceted": "A compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide."
+    },
+    "arm_root": {
+      "seamless": "Each arm grows out of the shell through a smooth seamless blend, with no joint line at the root.",
+      "socket": "Each arm enters a distinct socket at the shell, with a visible transverse joint seam.",
+      "hinge": "Each arm is attached to the shell by a visible folding hinge with a pivot pin."
+    },
+    "camera": {
+      "inside": "The camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.",
+      "projecting": "The gimbal camera hangs underneath the front of the fuselage, as on modern foldable camera drones. Seen from directly above, only the top edge of a small dark grey camera housing peeks out just ahead of the nose; the lens faces straight forward toward the top edge of the image, so no lens glass is visible from above. The camera sits low and tight against the nose, with no neck, stalk or post."
+    },
+    "cover": {
+      "single": "A plain top cover with no seams crossing it.",
+      "split": "The top cover is divided by one curved transverse parting line into a nose cap and a main cover.",
+      "multi": "Three or more distinct top cover panels separated by seams."
+    },
+    "surface": {
+      "plain": "",
+      "sculpted": "The top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block."
+    },
+    "arm_finish": {
+      "matte_same": "Arms in the same matte light grey as the shell.",
+      "exposed_carbon": "Exposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell."
+    },
+    "accent": {
+      "none": "",
+      "motor_ring": "Each dark grey motor carries a thin orange accent ring."
+    }
+  },
+  "changes_from_v1.5": {
+    "layout": "撤回“所有桨成一直线”。恢复第一轮的自然摆放，只约束同一副桨两片叶等长、方向正相反（夹角 180°，不成 V 形）——作者 11/15 更正",
+    "orientation": "机尾句加强：封闭的浅灰壳，无深色件、开口、相机或模组——第二轮 C 三张机尾仍有深色件",
+    "camera.projecting": "按真实折叠航拍机：云台挂在机头下方，俯视只在机鼻前方露出相机舱上沿，镜头朝正前方；无颈、杆、支柱——作者：“C组相机都是完全错误的”",
+    "negative_extra": "去掉“bent or swept propeller blades”；加入 V 形桨、锐角、单叶、缺叶、叶片不等长，相机颈与支柱"
+  }
+}

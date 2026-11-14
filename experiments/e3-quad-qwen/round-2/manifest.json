@@ -1,0 +1,179 @@
+{
+  "dictionary": "shape-dictionary-v1.5",
+  "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+  "template_sha256": "3f565874d46be07a96f5673a2f3d88349efbe0e94062377003e1aa7da1a8b25c",
+  "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, upward-facing camera lens, lens visible from above, camera at the tail, dark module at the tail, bent or swept propeller blades",
+  "requests": [
+    {
+      "id": "E3R2-A1",
+      "direction": "A",
+      "slot": 1,
+      "seed": 2026112111,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "split",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThe top cover is divided by one curved transverse parting line into a nose cap and a main cover.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "1b4df7079b12169b22fd587ea5c3764d20430fae2d4a4d2f6d4d68dd311fe8a9",
+      "request_sha256": "34b6af2ce1f3568e748591888040c0fa9661254d3b6bb6ba3cf8996732c6f47d"
+    },
+    {
+      "id": "E3R2-A2",
+      "direction": "A",
+      "slot": 2,
+      "seed": 2026112112,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "split",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThe top cover is divided by one curved transverse parting line into a nose cap and a main cover.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "1b4df7079b12169b22fd587ea5c3764d20430fae2d4a4d2f6d4d68dd311fe8a9",
+      "request_sha256": "02ea3271307852cc0364dfa86ee50716326c6953d37e5caec931567eae58b049"
+    },
+    {
+      "id": "E3R2-A3",
+      "direction": "A",
+      "slot": 3,
+      "seed": 2026112113,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "split",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThe top cover is divided by one curved transverse parting line into a nose cap and a main cover.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "1b4df7079b12169b22fd587ea5c3764d20430fae2d4a4d2f6d4d68dd311fe8a9",
+      "request_sha256": "0c8dda3d858d0ba850e7e997b5c4bda6efaa6205c74a09252052cc0d68297c7d"
+    },
+    {
+      "id": "E3R2-B1",
+      "direction": "B",
+      "slot": 1,
+      "seed": 2026112114,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "596728bff1bc609cc3d9049a425d8ae881bfb88c8d83d883444fbfd872d06016",
+      "request_sha256": "5da42165cd624c3fa609e3366fb6d2a0ff1bd511826ea9b528015472416ed464"
+    },
+    {
+      "id": "E3R2-B2",
+      "direction": "B",
+      "slot": 2,
+      "seed": 2026112115,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "596728bff1bc609cc3d9049a425d8ae881bfb88c8d83d883444fbfd872d06016",
+      "request_sha256": "e9db2b437ae76ae82f51bf3a1202bcb597b469beebe5aac841b48b51f5544fa6"
+    },
+    {
+      "id": "E3R2-B3",
+      "direction": "B",
+      "slot": 3,
+      "seed": 2026112116,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "596728bff1bc609cc3d9049a425d8ae881bfb88c8d83d883444fbfd872d06016",
+      "request_sha256": "5964b442b7f9ca102febc911981c71d1979d31def2883d21254437546a05b360"
+    },
+    {
+      "id": "E3R2-C1",
+      "direction": "C",
+      "slot": 1,
+      "seed": 2026112117,
+      "params": {
+        "body_plan": "faceted",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "exposed_carbon",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nA compact camera gimbal sits at the front of the nose and extends slightly beyond it. From directly overhead only the grey top of the gimbal housing is visible; the lens points horizontally forward, toward the top edge of the image, and cannot be seen from above.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nExposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "cafdce31cfa64d0550cb44728420ec0ed8f89fcceaefcc2089167e7f5adf652e",
+      "request_sha256": "9d71d40e6418e84b9ce7f6c91fb4f40eeb7b917a23e5d7139746c9844fc5f286"
+    },
+    {
+      "id": "E3R2-C2",
+      "direction": "C",
+      "slot": 2,
+      "seed": 2026112118,
+      "params": {
+        "body_plan": "faceted",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "exposed_carbon",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nA compact camera gimbal sits at the front of the nose and extends slightly beyond it. From directly overhead only the grey top of the gimbal housing is visible; the lens points horizontally forward, toward the top edge of the image, and cannot be seen from above.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nExposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "cafdce31cfa64d0550cb44728420ec0ed8f89fcceaefcc2089167e7f5adf652e",
+      "request_sha256": "7b0d420d250bbbfc830ff7c920fd3eb22fae6607e72279ce8fcc035ef2ea1e47"
+    },
+    {
+      "id": "E3R2-C3",
+      "direction": "C",
+      "slot": 3,
+      "seed": 2026112119,
+      "params": {
+        "body_plan": "faceted",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "exposed_carbon",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nA compact camera gimbal sits at the front of the nose and extends slightly beyond it. From directly overhead only the grey top of the gimbal housing is visible; the lens points horizontally forward, toward the top edge of the image, and cannot be seen from above.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nExposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "cafdce31cfa64d0550cb44728420ec0ed8f89fcceaefcc2089167e7f5adf652e",
+      "request_sha256": "975184b4c1511e47bbb7b13e6c4f599ce161d48063fcbc440fd7c7ba227d9409"
+    }
+  ]
+}

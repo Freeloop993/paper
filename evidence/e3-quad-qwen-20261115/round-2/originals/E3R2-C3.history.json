@@ -1,0 +1,170 @@
+{
+  "prompt": [
+    8,
+    "df70ca68-10b8-4207-b472-ba121a06ac1e",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nA compact camera gimbal sits at the front of the nose and extends slightly beyond it. From directly overhead only the grey top of the gimbal housing is visible; the lens points horizontally forward, toward the top edge of the image, and cannot be seen from above.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nExposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+          "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, upward-facing camera lens, lens visible from above, camera at the tail, dark module at the tail, bent or swept propeller blades",
+          "resolution": 1024,
+          "images.image_1": [
+            "15",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026112119,
+          "steps": 40,
+          "cfg": 3.0,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1.0
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "E3R2-C3"
+        }
+      },
+      "15": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "qwen-shape-dots-250-15c5ad1c924b.png"
+        }
+      }
+    },
+    {
+      "create_time": 1794674356446
+    },
+    [
+      "12"
+    ]
+  ],
+  "outputs": {
+    "12": {
+      "images": [
+        {
+          "filename": "E3R2-C3_00001_.png",
+          "subfolder": "",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 1024,
+            "height": 1024
+          },
+          "id": "9876b4d6-6485-48bf-a9b5-21e8f086b80b"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "df70ca68-10b8-4207-b472-ba121a06ac1e",
+          "timestamp": 1794674356447
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "15"
+          ],
+          "prompt_id": "df70ca68-10b8-4207-b472-ba121a06ac1e",
+          "timestamp": 1794674356451
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "df70ca68-10b8-4207-b472-ba121a06ac1e",
+          "timestamp": 1794674432347
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "12": {
+      "node_id": "12",
+      "display_node": "12",
+      "parent_node": null,
+      "real_node_id": "12"
+    }
+  }
+}

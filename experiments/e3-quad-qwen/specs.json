@@ -1,0 +1,8 @@
+{
+  "note": "作者 2026-11-15 指定：用 E 盘配置器 A/B/C 三套规格各跑 3 张，固定红点蓝线图与双叶要求；B 与 A 档位相同照跑（作同一造型语言的两组变体）；C 臂材质选外露碳纹。档位取自 prototypes/e3-author-workbook 的默认规格（A、B 同为基准，C 为方正机壳、外露承座、前伸相机舱、多块顶盖）。",
+  "cards": {
+    "A": {"params": {"body_plan": "pod", "arm_root": "seamless", "camera": "inside", "cover": "single", "span": "250", "arm_finish": "matte_same"}, "seeds": [2026112101, 2026112102, 2026112103]},
+    "B": {"params": {"body_plan": "pod", "arm_root": "seamless", "camera": "inside", "cover": "single", "span": "250", "arm_finish": "matte_same"}, "seeds": [2026112104, 2026112105, 2026112106]},
+    "C": {"params": {"body_plan": "box", "arm_root": "socket", "camera": "projecting", "cover": "multi", "span": "250", "arm_finish": "exposed_carbon"}, "seeds": [2026112107, 2026112108, 2026112109]}
+  }
+}

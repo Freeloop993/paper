@@ -1,0 +1,57 @@
+{
+  "version": "shape-dictionary-v1.5",
+  "scope": "仅用于 E3 第二轮初稿；5.2.1 造型响应批仍按 v1.2",
+  "changes_from_v1.4": {
+    "layout": "加“两片桨叶成一直线、相隔 180°”——作者对 B1、B2、C2 的意见",
+    "orientation": "新增保持句：机头朝画面上沿，机尾为素壳、无深色模组或开口——A2 机尾黑块被误读为相机",
+    "body_plan.faceted": "新增档：带切面的紧凑壳，只比宽略长——C1、C3 太方、太臃肿、太长",
+    "camera.inside": "改写：相机嵌在机鼻内与壳齐平，俯视只在机鼻最前缘露出一条深色前窗——给出机头提示",
+    "camera.projecting": "改写：俯视只见云台灰色顶面，镜头水平朝前、从上方看不见——C1—C3 镜片朝上",
+    "cover.split": "新增档：一道弧形横向分型线把顶盖分为鼻罩与主盖——B2 的分型线作者认为开始有设计感",
+    "surface": "新增参数：plain／sculpted（清晰的特征线与侧面阶梯切面）——A1、A3、B3 太平、太素、像一块塑料",
+    "accent": "新增参数：none／motor_ring（电机橙色细环点缀）——A2“颜色太素”、C2 建议电机用颜色点缀；配色原定 4.4 深化，作者意见使其提前进入初稿"
+  },
+  "negative_extra": "upward-facing camera lens, lens visible from above, camera at the tail, dark module at the tail, bent or swept propeller blades",
+  "fixed_lines": {
+    "head": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.",
+    "layout": "Match the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.",
+    "orientation": "The nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.",
+    "cmf": "Matte light grey shell and arms in one continuous colour, dark grey motors, black propellers.",
+    "cmf_when_exposed_carbon": "Matte light grey shell, dark grey motors, black propellers.",
+    "tail": "Show the complete product on a plain light background. Omit guide marks and lettering."
+  },
+  "line_order": ["head", "layout", "orientation", "body_plan", "arm_root", "camera", "cover", "surface", "arm_finish", "accent", "cmf", "tail"],
+  "params": {
+    "body_plan": {
+      "pod": "A rounded pod with a continuous curved outline.",
+      "box": "A box-shaped shell with straight sides and clipped corners.",
+      "faceted": "A compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide."
+    },
+    "arm_root": {
+      "seamless": "Each arm grows out of the shell through a smooth seamless blend, with no joint line at the root.",
+      "socket": "Each arm enters a distinct socket at the shell, with a visible transverse joint seam.",
+      "hinge": "Each arm is attached to the shell by a visible folding hinge with a pivot pin."
+    },
+    "camera": {
+      "inside": "The camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.",
+      "projecting": "A compact camera gimbal sits at the front of the nose and extends slightly beyond it. From directly overhead only the grey top of the gimbal housing is visible; the lens points horizontally forward, toward the top edge of the image, and cannot be seen from above."
+    },
+    "cover": {
+      "single": "A plain top cover with no seams crossing it.",
+      "split": "The top cover is divided by one curved transverse parting line into a nose cap and a main cover.",
+      "multi": "Three or more distinct top cover panels separated by seams."
+    },
+    "surface": {
+      "plain": "",
+      "sculpted": "The top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block."
+    },
+    "arm_finish": {
+      "matte_same": "Arms in the same matte light grey as the shell.",
+      "exposed_carbon": "Exposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell."
+    },
+    "accent": {
+      "none": "",
+      "motor_ring": "Each dark grey motor carries a thin orange accent ring."
+    }
+  }
+}
