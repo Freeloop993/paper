@@ -1,0 +1,8 @@
+{
+  "name": "thesis-docx",
+  "private": true,
+  "description": "把 src/ 下的章节源文件按南航研究生学位论文撰写要求（2015 年 4 月修订）排成 Word",
+  "type": "module",
+  "scripts": { "build": "node build.mjs" },
+  "dependencies": { "docx": "9.5.1" }
+}
