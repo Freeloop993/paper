@@ -1,0 +1,68 @@
+{
+  "schema": "e3-author-review-v1",
+  "source_commit": "06b50c21970f0385e587ce5baba283c88e3ed74b",
+  "exported_at": "2026-11-14T17:45:54.294Z",
+  "role": "author",
+  "reviews": [
+    {
+      "id": "E3R3-A1",
+      "image_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
+      "keep": "无",
+      "change": "机头圆润的地方，会让我感觉相机是嵌入的，不符合正常无人机设计，一般来说是云台把？"
+    },
+    {
+      "id": "E3R3-A2",
+      "image_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
+      "keep": "无",
+      "change": "完全错误的垃圾设计，桨叶是单个，飞不起来的"
+    },
+    {
+      "id": "E3R3-A3",
+      "image_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
+      "keep": "无",
+      "change": "没有任何设计感"
+    },
+    {
+      "id": "E3R3-B1",
+      "image_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
+      "keep": "感觉还行，但是就是颜色太素，不过这个也是试验一部分，整体造型还可以",
+      "change": "想改机头的这个部分，让我感觉相机是嵌入式，固定的"
+    },
+    {
+      "id": "E3R3-B2",
+      "image_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+      "keep": "整体还不错",
+      "change": "机头的部分，相机也是很像嵌入式"
+    },
+    {
+      "id": "E3R3-B3",
+      "image_sha256": "d7101af1c95f6c68440d3e342b1c01c65e3d7ed03ca03555187f77bae4258d0c",
+      "keep": "还可以也是",
+      "change": "还是机头相机部分，很像嵌入式"
+    },
+    {
+      "id": "E3R3-C1",
+      "image_sha256": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b",
+      "keep": "都还行",
+      "change": "想改一下机臂，因为如果是试验的话，会不会循序渐进的修改，慢慢的才会加入这些cmf的碳钎维啥的"
+    },
+    {
+      "id": "E3R3-C2",
+      "image_sha256": "c390f23ebb07c21658d37cd18004852b69d10e9c8f7eaf473c9c6f009347568b",
+      "keep": "还行",
+      "change": "分型线有点复杂，可能不符合逻辑，也是我上一条说的CMF可能过早了碳钎维"
+    },
+    {
+      "id": "E3R3-C3",
+      "image_sha256": "1dcae49a852f81527dbb4b2831c8d21c62c353585186e20d87fc23b4fef14de1",
+      "keep": "还不错也是",
+      "change": "桨叶比例尺寸不太对，相机稍微有小问题"
+    }
+  ],
+  "decision": {
+    "parent": null,
+    "reason": "ABC三个为什么只有一个父图，这个三个ABC代表什么吗？我需要解释一下我才好决定",
+    "first_change": null,
+    "preserve": null
+  }
+}
