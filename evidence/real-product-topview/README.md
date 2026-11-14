@@ -9,3 +9,5 @@
 [图 6536172](https://www.pexels.com/photo/close-up-shot-of-a-gray-drone-camera-6536172/) 的 5593 × 3939 原件可读，四个轴心可见，机背可辨 DJI 标识。现有证据不足以辨认具体型号，先保留为候选，未计入四个已核型号。SHA-256 为 95fc9d2b0a4a9c1a7ca3e44d8b831a80dc3e5dc928f417cde8f8999881a61d3c。
 
 **评议表接续。** 已复核 [PR #57 的词对附表](https://github.com/Freeloop993/paper/blob/21223be/experiments/rating-kit/instrument/instrument.js)：每对可选 1–7 或“看不出”，4 表示居中。页面先展示实拍、再展示终稿；该版[打包器](https://github.com/Freeloop993/paper/blob/21223be/experiments/rating-kit/build_instrument.py)需要两者一起提供。已在 [PR #57 的更新](https://github.com/Freeloop993/paper/commit/62a00b1) 加入实拍包和锁定终稿包的独立导出；每包记录词表原件摘要。7 项软件控制通过，覆盖两类单阶段包、旧合包及错配拒绝。该 PR 待复核；当前尚未发放或新增评分。
+
+**11 月 14 日补查。** Marco Verch 的两张 DJI Mavic Air 下载版本均为 1024 × 683，已逐张观察。[白底照片](https://foto.wuestenigel.com/top-view-of-dji-mavic-air-drone-on-the-white-background/)下边缘截断一处电机与桨，[木桌照片](https://foto.wuestenigel.com/top-view-of-dji-mavic-air-drone-with-copy-space-on-the-blank-white-paper/)在上、右边缘裁断飞行器，均排除。两份来源字节的 SHA-256 分别为 `b9ab1b12399b824d61986505c8720b1a98dcaad820b98137e2ad1bb03de49c13`、`989baa801f5b50e367842d17aa2161bf0a63da1493977b69d7bbcc6d3011c54d`。Mavic Pro／Tello 合照的来源页给出作者与许可，原 JPEG 本次返回 HTTP 403。当前仍为四个已核型号。
