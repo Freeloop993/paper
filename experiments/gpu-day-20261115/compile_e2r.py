@@ -21,7 +21,13 @@ TASK = {
 def sha(raw):
     return hashlib.sha256(raw).hexdigest()
 def build():
-    template=json.loads((ROOT/'queue/01-REV1-edit-B2-r1.json').read_bytes())
+    name='01-REV1-edit-B2-r1.json'
+    template_path=next((ROOT/folder/name for folder in ('queue','done') if (ROOT/folder/name).is_file()),None)
+    if template_path is None:
+        raise FileNotFoundError(name)
+    raw_template=template_path.read_bytes()
+    assert sha(raw_template)=='e88625a2bb8b84fd8c355b1716a958f082ed68bf765fa5260f8c4a27eb4a071e'
+    template=json.loads(raw_template)
     rows=[]
     for p,t,seed,control in [('B2','A',2026112501,True),('B2','B',2026112502,False),('C1','A',2026112503,False),('C1','B',2026112504,True)]:
         for route in (['parent','layout'] if control else ['parent']):
@@ -35,7 +41,9 @@ def build():
             g['12']['inputs']['filename_prefix']=rid
             raw=json.dumps(req,ensure_ascii=False,indent=2).encode()
             dest=ROOT/'e2r'/('requests/'+rid+'.json');dest.parent.mkdir(exist_ok=True,parents=True);dest.write_bytes(raw)
-            source=ROOT/'inputs'/image if image!='E3R3-C1.png' else ROOT/image
+            source=ROOT/'inputs'/image
+            if image=='E3R3-C1.png' and not source.is_file():
+                source=ROOT.parents[1]/'evidence/e3-quad-qwen-20261115/round-3/originals'/image
             rows.append(dict(id=rid,parent=p,target=t,route=route,seed=seed,image=image,input_sha256=sha(source.read_bytes()),request_sha256=sha(raw),prompt=text))
     for p,t in [('B2','A'),('C1','B')]:
         a,b=[json.loads((ROOT/'e2r/requests'/ (row['id']+'.json')).read_bytes()) for row in rows if row['parent']==p and row['target']==t]

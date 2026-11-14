@@ -1,4 +1,8 @@
 #!/bin/bash
+# The reviewed entry point owns all new submissions in a deployed takeover.
+if [ -f /root/gpu-day-20261115/manifest-v2.json ]; then
+    exec bash /root/gpu-day-20261115/resume-reviewed.sh /root/gpu-day-20261115
+fi
 # GPU 日程守护：记录权重摘要 → 保持 ComfyUI 在线（退出即重启）→ 运行队列程序
 unset http_proxy https_proxy HTTP_PROXY HTTPS_PROXY all_proxy ALL_PROXY
 R=/root/gpu-day-20261115

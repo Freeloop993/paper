@@ -7,6 +7,8 @@ import copy, hashlib, json, shutil, sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent; ROOT = HERE.parents[1]
+if any((HERE / marker).exists() for marker in ("STOP", "running", "done", "takeover-v2")):
+    raise SystemExit("Do not rebuild historical requests in a live run. Use dispatch_v2.py freeze to inspect the reviewed manifest.")
 sys.path.insert(0, str(ROOT / "experiments/e3-quad-qwen"))
 from build_generic import compile_text  # noqa: E402
 
