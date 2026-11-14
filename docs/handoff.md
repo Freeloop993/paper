@@ -6,7 +6,7 @@ Qwen 的 [E2 六份修订请求](../experiments/e2-registered/) 和 [十二份�
 
 [E3 作者工作簿](../prototypes/e3-author-workbook/) 支持三张规格卡、九格候选的逐张取舍和父图修订。历史开发九图可用于演练，正式 E3 初稿仍是 0/9。
 
-[E4 两种流程工作台](../prototypes/e4-ds-session/) 已完成断网浏览器配对演练；[E5 实拍](../evidence/real-product-topview/)已核四个型号，目标八到十个，评议表可分阶段发包；[E6 植保六旋](../experiments/hexa-plant-protection/topview-prep/)已有三档点线与部件条件图，各档六个轴心均已核验。本轮 E3、E4 均无正式场次。
+[E4 两种流程工作台](../prototypes/e4-ds-session/) 已完成断网浏览器配对演练；[E5 实拍](../evidence/real-product-topview/)已核四个型号，目标八到十个，评议表可分阶段发包；[E6 植保六旋](../experiments/hexa-plant-protection/topview-prep/)已有三档点线与部件条件图，各档六个轴心均已核验。11 月 14 日作者已确认[植保六旋首案](../experiments/hexa-plant-protection/README.md)：方形半嵌药箱、可见加注口、两侧横向喷杆、折叠铰接机臂。E6 正式初稿待生成。本轮 E3、E4 均无正式场次。
 
 早期 P1、P2 与机鼻／臂根开发材料现可由[历史 PR 索引](historical-development-index.md)追溯。初版规格卡与当时的待办仅用于历史复核，当前执行看[路线图](roadmap-20261114.md)与[第三轮后的冻结依据](method-freeze-evidence-20261114.md)。
 
