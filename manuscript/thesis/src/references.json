@@ -1,0 +1,147 @@
+{
+  "A001": {
+    "text": "CHEN J, ZHOU Z, QI J, et al. Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion[J]. Journal of Advanced Mechanical Design, Systems, and Manufacturing, 2026, 20(1): JAMDSM0008. DOI: 10.1299/jamdsm.2026jamdsm0008.",
+    "status": "待核",
+    "note": "作者（Jiawei CHEN、Zhiyong ZHOU、Jianming QI、Hanfei WANG）与题名已对本地原PDF首页核（分支 reference-fulltexts-20261109: fulltexts/ID-A001.pdf）；卷期20(1)取自 manuscript/source-drafts/citation-keys.md 与 J-STAGE URL（/20/1/）。文章号 JAMDSM0008 由 DOI 后缀推定，PDF 文本层未见卷期/文章号页眉，须在 J-STAGE 页核对。另见 references/reading-map.md R01、references/catalogs/industrial-design.bib。"
+  },
+  "CN": {
+    "text": "ZHANG L, RAO A, AGRAWALA M. Adding conditional control to text-to-image diffusion models[C]//2023 IEEE/CVF International Conference on Computer Vision (ICCV). Piscataway: IEEE, 2023: 3813-3824. DOI: 10.1109/ICCV51070.2023.00355.",
+    "status": "待核",
+    "note": "作者、题名、DOI 取自 citation-keys.md。页码3813-3824为推算：manuscript/revisions/ch02-2.4-2.5.md 记“PDF6／印刷3818”，archive-references.csv 记本地文件12页；原件未入 fulltexts 分支。会议集名与出版地 Piscataway 按通用知识补。须核 IEEE Xplore 记录。"
+  },
+  "L07": {
+    "text": "CHOI J, LEE S W, HYUN K H. GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters[C]//Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2025: 1-21. DOI: 10.1145/3706598.3713502.",
+    "status": "ok",
+    "note": "作者、题名、会议（CHI '25，Yokohama）、ACM 出版与“21 pages”据本地原PDF的 ACM Reference Format（reference-fulltexts-20261109: fulltexts/SRC-a76395f78771.pdf），与 citation-keys.md 一致；页码按21页写作1-21。PDF 未载 ACM 文章号，学校如要求可补。"
+  },
+  "L04": {
+    "text": "周海海, 邓家乐, 张岚云, 等. 可供性与产品语义设计理论的交集与边界研究[J]. 工业工程设计, 2022, 4(4): 19-26. DOI: 10.19798/j.cnki.2096-6946.2022.04.003.",
+    "status": "ok",
+    "note": "全部字段取自 citation-keys.md（4位作者：周海海、邓家乐、张岚云、陈黎）；reading-map R07 记 PDF4、6—7 对应印刷22、24—25，与19-26页一致。仓库无原PDF。"
+  },
+  "L05": {
+    "text": "屈庆星, 郭伏, 胡名彩, 等. 产品外观解构与情感设计变量识别方法研究[J]. 人类工效学, 2017, 23(3): 67-73. DOI: 10.13837/j.issn.1006-8309.2017.03.0013.",
+    "status": "ok",
+    "note": "全部字段取自 citation-keys.md（4位作者：屈庆星、郭伏、胡名彩、刘畅）；reading-map R06 记 PDF1—2、6 对应印刷67、68、72，与67-73页一致。仓库无原PDF。"
+  },
+  "B009": {
+    "text": "PARMENTIER D, BROSENS L, CHRISTIAENS Y. Learning activities to design a parametric solutions space for products in Industry 4.0[C]//DS 131: Proceedings of the International Conference on Engineering and Product Design Education (E&PDE 2024). 〔出版地待核〕: The Design Society, 2024: 〔页码待核〕. DOI: 10.35199/EPDE.2024.82.",
+    "status": "待核",
+    "note": "作者、题名、会议集名、DOI 取自 citation-keys.md 与 industrial-design.bib（B009_2024）；出版者按 DS 系列补，出版地与页码仓库无。manuscript/revisions/ch01-1.5.md 注明 B009 页码转引、终稿前回核。仓库无原PDF。"
+  },
+  "B065": {
+    "text": "TINGSTRÖM J, MUNJULURY R C. Insights from knowledge-based engineering in industrial practice – a Saab's perspective[J]. Proceedings of the Design Society, 2026, 6: 〔页码待核〕. DOI: 10.1017/pds.2026.10691.",
+    "status": "待核",
+    "note": "作者、题名、卷6、DOI 取自 citation-keys.md 与 industrial-design.bib（B065_2026，DESIGN2026）；页码缺。仓库无原PDF。"
+  },
+  "A007": {
+    "text": "BAUDOUX G, GUO C, GOUCHER-LAMBERT K. Multimodal generative AI for conceptual design: enabling text-based and sketch-based human-AI conversations[J]. Proceedings of the Design Society, 2025, 5: 2501-2510. DOI: 10.1017/pds.2025.10264.",
+    "status": "ok",
+    "note": "全部字段取自 citation-keys.md；industrial-design.bib 记为 ICED25；source-drafts/02.md 引“PDF9／印刷2509”，与页码范围一致。未记期号（该刊按卷编页）。仓库无原PDF。"
+  },
+  "A008": {
+    "text": "DU Y, LIU X, CAI M, et al. A Product's Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation[J]. Sustainability, 2024, 16(20): 8837. DOI: 10.3390/su16208837.",
+    "status": "ok",
+    "note": "作者（Yuanjian Du 等4人）、刊名、年、卷、文章号8837已对本地原PDF首页核（reference-fulltexts-20261109: fulltexts/ID-A008.pdf）；期号20取自 citation-keys.md 与 DOI。"
+  },
+  "R08": {
+    "text": "MAIER S, SCHNEIDER M, FEUERRIEGEL S. Partnering with Generative AI: Experimental Evaluation of Human-Led and Model-Led Interaction in Human-AI Co-Creation[C]//Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2026: 1-28. DOI: 10.1145/3772318.3791185.",
+    "status": "ok",
+    "note": "作者、题名、会议（CHI '26，Barcelona）、DOI、“28 pages”据本地PDF元数据与 ACM Reference Format（reference-fulltexts-20261109: fulltexts/SRC-f50c290dfe34.pdf；priority-fulltexts.md 记其首页标 arXiv:2510.23324v3）。页码按28页写作1-28；ACM 文章号未载。"
+  },
+  "R14": {
+    "text": "CAVALLIN E, SPAGNOL S. When Designers Sweat: Behavioral Traces of GenAI Co-Creation[C]//Proceedings of the 2026 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2026: 1-17. DOI: 10.1145/3772318.3791776.",
+    "status": "ok",
+    "note": "作者、题名、会议（CHI '26，Barcelona）、DOI、“17 pages”据本地原PDF的 XMP 与 ACM Reference Format（reference-fulltexts-20261109: fulltexts/SRC-b4667d2f7bfd.pdf）；页码按17页写作1-17；ACM 文章号未载。"
+  },
+  "R10": {
+    "text": "〔作者待核〕. Enhancing Generative AI Image Refinement with Scribbles and Annotations: A Comparative Study of Multimodal Prompts[C]//Proceedings of the 31st International Conference on Intelligent User Interfaces. New York: ACM, 2026: 〔页码待核〕. DOI: 10.1145/3742413.3789080.",
+    "status": "待核",
+    "note": "题名、会议（IUI 2026）、DOI 取自 references/catalogs/reviewed-100.csv（HCI-C0031）与 archive-references.csv，其原件 SHA256 与 priority-fulltexts R10 相同；reading-map 记所读为 arXiv:2602.08830v1（22页）。仓库无作者名，原PDF未入 fulltexts 分支。docs/execution-playbook.md 称“Park等”；按通用知识或为 Park H、Eiband M、Luckow A、Sedlmair M 等，未核。若改引预印本：[J/OL]. arXiv:2602.08830, 2026。"
+  },
+  "R11": {
+    "text": "〔作者待核〕. AIdeation: Designing a Human-AI Collaborative Ideation System for Concept Designers[C]//Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2025: 〔页码待核〕. DOI: 10.1145/3706598.3714148.",
+    "status": "待核",
+    "note": "题名、会议、DOI 取自 reviewed-100.csv（HCI-C0004）与 archive-references.csv，原件 SHA256 与 priority-fulltexts R11 相同；reading-map 记所读为 arXiv:2502.14747v1（28页）。仓库无作者名，原PDF未入 fulltexts 分支。按通用知识作者或为 Wang W F、Lu C T、Ponsa i Campanyà N、Chen B Y、Chen M Y，未核。"
+  },
+  "R12": {
+    "text": "HSIAO S W, PENG P H. Using FCE and FAHP to Explore the Multirotor Drone Appearance Preference[C]//BOESS S, CHEUNG M, CAIN R, ed. Synergy - DRS International Conference 2020. London: Design Research Society, 2020: 〔页码待核〕. DOI: 10.21606/drs.2020.164.",
+    "status": "待核",
+    "note": "作者、全题、编者、会议名、DOI 据本地原PDF封面 Citation 栏（reference-fulltexts-20261109: fulltexts/UAV-U002.pdf）；reading-map 与 priority-fulltexts 的题名漏了 Preference。会议于2020年8月11—14日线上举行。出版地 London 参照 R14 文后参考文献对 DRS 会议集的著录；页码缺（本地18页含封面）。"
+  },
+  "N01": {
+    "text": "ComfyUI Wiki. Qwen-Image 2.1 Fun ControlNet Union[EB/OL]. (2026-09-24)[2026-11-14]. https://comfyui-wiki.com/en/news/2026-09-24-qwen-image-2-1-fun-controlnet-union.",
+    "status": "待核",
+    "note": "取自 docs/literature-update-2026-11.md N01：模型由 Alibaba PAI 发布，所核为 ComfyUI Wiki 的发布说明。题名按条目名拟，页面原题未核；日期由 URL 路径推定。官方模型卡与许可证仓库无记录，建议换引 Alibaba PAI 官方模型页。"
+  },
+  "N03": {
+    "text": "〔作者待核〕. 7Bench〔全题待核〕[J/OL]. arXiv:2508.12919, 2025.",
+    "status": "待核",
+    "note": "literature-update N03 仅记 arXiv 号与“7Bench：布局引导 T2I 基准”；年份按 arXiv 号推定。按通用知识全题或为“7Bench: a comprehensive benchmark for layout-guided text-to-image models”（Izzo E、Parolari L、Vezzaro D、Ballan L），未核，须查 arXiv 页及正式发表版本。"
+  },
+  "N04": {
+    "text": "LIAO〔名缩写待核〕, LOMAS〔名缩写待核〕, YU〔名缩写待核〕. 〔英文题名待核〕[J/OL]. arXiv:2507.02865, 2025.",
+    "status": "待核",
+    "note": "literature-update N04 只记作者姓 Liao、Lomas、Yu（TU Delft）与内容“以人类反馈做 LoRA 微调提升产品外观”，无题名；年份按 arXiv 号推定。"
+  },
+  "N05": {
+    "text": "〔作者待核〕. QwenStyle〔全题待核〕[J/OL]. arXiv:2601.06202, 2026.",
+    "status": "待核",
+    "note": "literature-update N05：TeleAI，基于 Qwen-Image-Edit-2509 训练 rank-32 LoRA 的保内容风格迁移；作者与全题未记，年份按 arXiv 号推定。"
+  },
+  "N06": {
+    "text": "Qwen Team. Qwen-Image-Edit-2509; Qwen-Image-Edit-2511〔模型页题名待核〕[EB/OL]. [2026-11-14]. 〔URL待补〕.",
+    "status": "待核",
+    "note": "literature-update N06 仅记“多方产品页”，无发布者、URL 与日期；发布者 Qwen Team 按通用知识补；版本号暗示2025年9月、11月发布（推定）。宜择官方模型卡（如 Hugging Face Qwen/Qwen-Image-Edit-2509，未核）分列或合并。"
+  },
+  "N07": {
+    "text": "XU〔名缩写待核〕, MARTELARO N, MCCOMB C. Ceci N'est Pas un Drone〔全题待核〕[J/OL]. arXiv:2511.03131, 2025.",
+    "status": "待核",
+    "note": "literature-update N07 记作者姓 Xu、Martelaro、McComb、题名首句与 arXiv 号，并注“DOI 前缀 ASME”（或已在 ASME 会议/期刊发表，DOI 未记）。Martelaro、McComb 的名缩写按通用知识补；全题与 Xu 的名须核。"
+  },
+  "N08": {
+    "text": "SHI〔名缩写待核〕, CHOO〔名缩写待核〕. 〔英文题名待核〕[J/OL]. arXiv:2602.22171, 2026.",
+    "status": "待核",
+    "note": "literature-update N08 记作者姓 Shi、Choo，CHI EA 2026，arXiv 2602.22171，中文概括“草图构思中的人—多模态模型交互分类”；英文题名与 DOI 未记。若引 CHI EA 正式版，改为 [C]//Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems 并补 DOI。"
+  },
+  "DJI-MINI4PRO": {
+    "text": "DJI. DJI Mini 4 Pro User Manual[EB/OL]. (2024)[2026-11-14]. https://dl.djicdn.com/downloads/DJI_Mini_4_Pro/20240627/DJI_Mini_4_Pro_User_Manual_en.pdf.",
+    "status": "待核",
+    "note": "URL 取自 experiments/form342-h3-pilot/parameters-3.4.2.md（同处附官方规格页 https://www.dji.com/support/product/mini-4-pro）；origin/claude/ch03-3.2-3.3 的 ch03-3.2-3.3-v2.md 第36行引“Aircraft”一节，未给 URL。手册版本号未记，年份2024按 URL 路径20240627推定；引具体图时宜补页码。"
+  },
+  "DJI-T16": {
+    "text": "DJI. AGRAS T16 User Manual v1.4[EB/OL]. (2020)[2026-11-14]. https://dl.djicdn.com/downloads/t16/20200520/T16_User_Manual_v1.4_EN.pdf.",
+    "status": "待核",
+    "note": "URL、版本 v1.4、部件总图位于 PDF13／印刷11 取自 manuscript/revisions/ch02-2.1-hexa.md 与 experiments/hexa-plant-protection/manual-pages.json（含原件 SHA256）。题名按文件名与产品系列拟，封面题名仓库未记；年份2020按 URL 路径20200520推定。"
+  },
+  "DJI-T20": {
+    "text": "DJI. AGRAS T20 User Manual v1.4[EB/OL]. (2020)[2026-11-14]. https://dl.djicdn.com/downloads/t20/20201201/Agras_T20_User_Manual_v1.4_EN.pdf.",
+    "status": "待核",
+    "note": "来源同 DJI-T16（ch02-2.1-hexa.md、manual-pages.json）。题名按文件名拟；年份2020按 URL 路径20201201推定。"
+  },
+  "DJI-T30": {
+    "text": "DJI. AGRAS T30 User Manual v1.4[EB/OL]. [2026-11-14]. https://dl.djicdn.com/downloads/t30/all_update/T30_User_Manual_v1.4_EN.pdf.",
+    "status": "待核",
+    "note": "来源同 DJI-T16（ch02-2.1-hexa.md、manual-pages.json）。题名按文件名拟；URL 路径为 all_update，发布年份仓库无记录，须查手册封面或修订记录。"
+  },
+  "OSGOOD": {
+    "text": "OSGOOD C E, SUCI G J, TANNENBAUM P H. The Measurement of Meaning[M]. Urbana: University of Illinois Press, 1957.",
+    "status": "待核",
+    "note": "仓库仅在 planning/route-review-20261112/论文研究路线审核.html 有“Osgood 等”指向伊利诺伊大学出版社书页（press.uillinois.edu/books/?id=p745393）的链接，并称已核出版原页的理论定义；著者名缩写、出版地、年份按通用知识补，须核版权页；引具体定义时补页码。"
+  },
+  "NAGAMACHI": {
+    "text": "NAGAMACHI M. Kansei Engineering: A new ergonomic consumer-oriented technology for product development[J]. International Journal of Industrial Ergonomics, 1995, 15(1): 3-11. DOI: 10.1016/0169-8141(94)00052-5.",
+    "status": "待核",
+    "note": "仓库仅有 DOI（同一 HTML 中 Nagamachi 链接）；题名、卷期、页码按通用知识补，与任务给定的1995, 15(1): 3-11一致，须对出版页核。"
+  },
+  "UAV-U001": {
+    "text": "QI B, ZHAO S, SUN X, et al. Design of plant protection unmanned aerial vehicles: quantitative research and virtual simulation[J]. Advanced Design Research, 2024, 2: 〔页码待核〕. DOI: 10.1016/j.ijadr.2024.03.001.",
+    "status": "待核",
+    "note": "作者与题名按 reference-fulltexts-20261109 分支 fulltexts/UAV-U001.pdf 首页；卷与页码取自分类目录，待核"
+  },
+  "ID-A005": {
+    "text": "WANG Z, YANG K, WANG Y, et al. Embrace the era of drones: a new practical design approach to emergency rescue drones[J]. Applied Sciences, 2025, 15(1): 135. DOI: 10.3390/app15010135.",
+    "status": "ok",
+    "note": "按 fulltexts/ID-A005.pdf 首页 Citation 行核对（Wang Z, Yang K, Wang Y, Zhu Z, Liang X; Appl. Sci. 2025, 15, 135）"
+  }
+}

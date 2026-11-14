@@ -1,0 +1,48 @@
+{
+  "title": "人智协同驱动的多旋翼无人机造型参数化可控生成方法研究",
+  "title_lines": [
+    "人智协同驱动的多旋翼无人机造型",
+    "参数化可控生成方法研究"
+  ],
+  "title_en_lines": [
+    "Research on a Human–AI Collaborative",
+    "Method for Parametric Controllable",
+    "Generation of Multirotor UAV Form"
+  ],
+  "degree_title": "硕士学位论文",
+  "author": "朱隆中",
+  "author_en": "Zhu Longzhong",
+  "category": "机械",
+  "field": "工业设计工程",
+  "major_en": "Mechanical Engineering",
+  "advisor": "周海海",
+  "advisor_title": "副教授",
+  "advisor_en": "Associate Prof. Zhou Haihai",
+  "college": "机电学院",
+  "college_en": "College of Mechanical and Electrical Engineering",
+  "degree_en": "Master of Engineering",
+  "date_cn": "二〇二七年三月",
+  "date_en": "March, 2027",
+  "clc": "TB472",
+  "subject_code": "085500",
+  "thesis_no": "1028705 27-SZ〔序号由学院编定〕",
+  "_source": "封面栏目与编码格式按同门邓家乐、何彦（2023，专业学位）原件；导师职称作者 11/15 确认；2024 年入学、专业硕士 2.5 年，按同门“入学后第三年三月”推为 2027 年 3 月",
+  "frontmatter": [
+    "abstract-cn.md",
+    "abstract-en.md",
+    "symbols.md"
+  ],
+  "chapters": [
+    "ch1.md",
+    "ch2.md",
+    "ch3.md",
+    "ch4.md",
+    "ch5.md",
+    "ch6.md"
+  ],
+  "backmatter": [
+    "acknowledgements.md",
+    "achievements.md",
+    "appendix.md"
+  ]
+}

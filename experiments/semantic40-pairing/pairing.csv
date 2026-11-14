@@ -1,0 +1,36 @@
+﻿编号,卡号,一·外观/功能/使用情境/混合/不可判,二·外观/功能/使用情境/混合/不可判,外观/功能/使用情境/混合/不可判·一致,一·紧凑—舒展,二·紧凑—舒展,紧凑—舒展·一致,一·简洁—繁复,二·简洁—繁复,简洁—繁复·一致,一·整体—拼凑,二·整体—拼凑,整体—拼凑·一致,二·文字依据
+B01,E007,混合,外观,False,支持右极,支持右极,True,无关,无关,True,支持右极,无关,False,只说了保护罩导致大了，其他不清楚了看不太出来
+B03,E022,功能,功能,True,无关,无关,True,无关,无关,True,无关,看不出,False,只说了桨叶被保护着，但是具体体现什么我没看出来
+B04,E013,混合,混合,True,无关,无关,True,支持左极,支持左极,True,无关,无关,True,只说了外观简洁大方，功能实用齐全，其他信息无
+B05,E005,使用情境,混合,False,看不出,支持左极,False,无关,无关,True,无关,看不出,False,只说了能装和紧，具体是什么导致没说
+B06,E020,功能,混合,False,无关,无关,True,无关,看不出,False,无关,看不出,False,叶片有保护，机身轻，但是缺了为什么轻，是体积小还是材料好？
+B07,E025,外观,外观,True,无关,支持左极,False,无关,支持左极,False,看不出,无关,False,直接整体的说这个四旋翼无人机不大
+B08,E032,不可判,外观,False,无关,无关,True,无关,看不出,False,无关,看不出,False,希望给机身做覆膜，造型和功能上的需求
+B09,E009,使用情境,混合,False,支持左极,支持左极,True,无关,无关,True,无关,无关,True,希望机身能够折叠，这样会紧凑并且便携
+B11,E029,外观,外观,True,无关,无关,True,无关,无关,True,无关,无关,True,本句话完全是在说颜色，不是无人机本身的结构和设计，是颜色的因素
+B14,E033,不可判,外观,False,无关,无关,True,无关,看不出,False,无关,无关,True,机身贴膜，主要是造型外观设计层面的CMF
+B15,E006,混合,外观,False,支持右极,支持右极,True,无关,支持右极,False,支持右极,无关,False,只说了保护罩会显得无人机大，我理解的就是显得无人机伸展了，外观复杂了
+B16,E014,外观,外观,True,无关,无关,True,支持左极,支持左极,True,无关,无关,True,无人机外观简洁，质感不错
+B17,E023,外观,外观,True,无关,无关,True,无关,看不出,False,支持左极,看不出,False,无人机桨叶的保护罩让他看起来不同
+B18,E017,混合,混合,True,无关,无关,True,无关,无关,True,无关,无关,True,自带的桨叶保护罩对新手很友好，说明的是功能，外观上的功能
+B19,E012,外观,外观,True,无关,无关,True,支持左极,支持左极,True,无关,无关,True,"外观设计简洁大方,质感很好"
+B20,E031,外观,外观,True,无关,无关,True,无关,看不出,False,无关,无关,True,I'll take plain gray
+B21,E015,外观,外观,True,无关,无关,True,支持左极,支持左极,True,无关,无关,True,这款无人机整体设计简洁大方，细节处理非常到位
+B22,E010,混合,混合,True,支持左极,支持左极,True,无关,无关,True,无关,无关,True,seize and that it was much louder.
+B24,E001,混合,混合,True,支持左极,支持左极,True,无关,支持左极,False,无关,无关,True,机身小巧便携
+B25,E018,混合,混合,True,无关,无关,True,无关,无关,True,无关,看不出,False,有外圈包裹的比较安全
+B26,E035,不可判,不可判,True,无关,无关,True,无关,无关,True,无关,无关,True,I've only done my Mini 4 Pro
+B27,E003+E004,使用情境,混合,False,看不出,支持左极,False,无关,无关,True,无关,看不出,False,it easily in a tank bag or small bag
+B28,E034,不可判,外观,False,无关,无关,True,无关,看不出,False,无关,无关,True,Hot pink or orange really ought to be the default color for consumer camera drones.
+B29,E024,外观,混合,False,无关,无关,True,无关,看不出,False,看不出,看不出,True,how thick those prop guards are
+B30,E019,混合,外观,False,无关,无关,True,无关,看不出,False,无关,无关,True,"大小正合适,有保护罩"
+B31,E002,外观,混合,False,支持右极,无关,False,无关,看不出,False,无关,无关,True,机身更大，更稳定，功能更强
+B32,E021,功能,功能,True,无关,无关,True,无关,无关,True,无关,看不出,False,全包桨保
+B33,E011,外观,外观,True,无关,无关,True,支持左极,支持左极,True,无关,无关,True,外观简约大气
+B34,E028,功能,混合,False,无关,无关,True,无关,看不出,False,无关,无关,True,颜色标记AB不明显
+B35,E036,外观,外观,True,无关,无关,True,无关,支持左极,False,无关,无关,True,颜色搭配机身材料显得很高级，非常有质感
+B36,E030,混合,混合,True,无关,无关,True,无关,看不出,False,无关,无关,True,I hated the orange though but it makes it so easy to see VFR.
+B37,E027,外观,外观,True,无关,无关,True,无关,看不出,False,无关,无关,True,云台处的橙色设计很灵性
+B38,E008,混合,混合,True,无关,支持左极,False,无关,无关,True,无关,支持左极,False,折叠设计便携性强
+B39,E026,不可判,不可判,True,无关,无关,True,无关,无关,True,无关,无关,True,"机头处微微受损,影响不大,买了云台保护罩"
+B40,E016,不可判,混合,False,无关,支持左极,False,支持左极,无关,False,支持左极,支持左极,True,如果可以集成进机身内部是最好的了
