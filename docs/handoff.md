@@ -1,5 +1,7 @@
 # 论文研究接手快照
 
+**执笔与排版请先核对用图范围。** E0/E1 点选样图及 E1 配对图只在研究档案中复查。第 5.2 节采用几何数值表并写明视角与造型缺陷；第 4 章配有作者取舍记录的设计方案。作者指出的机背镜头错误需随几何结果一起说明。[写作证据矩阵](../manuscript/evidence-matrix.md) · [点选反馈](../evidence/e1-open-20261112/point-return.md)
+
 ## 11 月 14 日 · 当前待签署与离线准备
 
 Qwen 的 [E2 六份修订请求](../experiments/e2-registered/) 和 [十二份造型小测请求](../experiments/qwen-shape-pilot/) 已离线核对，PR #70 已合并，第 2 节已填写；[第三轮八张通用项补读](../evidence/form342-h3-dev/round-3-common-v22/)已归档，正式运行待作者签署第 3 节。K 未过，本次 5.2.1 计划保留六个条件。
