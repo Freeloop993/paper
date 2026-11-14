@@ -1,4 +1,4 @@
-<!-- 英文摘要：内容与中文摘要一致。标题“ABSTRACT”四号 Times New Roman 加粗，“Key Words:” 加粗。 -->
+<!-- 英文摘要：内容与中文摘要一致。标题“ABSTRACT”四号 Times New Roman 加粗，“Keywords:” 加粗。 -->
 
 # ABSTRACT
 
@@ -8,4 +8,4 @@ First, evidence cards are compiled from user reviews of consumer aerial-photogra
 
 In the main case of a daily-carry aerial-photography quadcopter, the ratio of lateral to longitudinal motor span and the ratio of propeller diameter to diagonal wheelbase both changed monotonically with the input levels under a two-blade part condition image, while text carrying the same information did not. 〔Results on form-parameter response, the design process, independent ratings and collaboration cost to be added.〕 An agricultural spraying hexacopter case examines cross-configuration adaptation. 〔Results and conclusions to be added.〕
 
-Key Words: UAV form design, parametric design, controllable image generation, human–AI collaboration, design semantics, ControlNet
+Keywords: UAV form design, parametric design, controllable image generation, human–AI collaboration, design semantics, ControlNet

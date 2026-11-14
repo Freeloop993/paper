@@ -1,6 +1,6 @@
 # 论文 Word 工作稿
 
-**打开 [thesis-draft.docx](thesis-draft.docx)**：按南航研究生学位论文撰写要求排版的全文工作稿，含封面、承诺书、中英文摘要、目录、图表清单、注释表、第一章至第六章、参考文献、致谢、成果与附录。黄色底纹是待补或待核的内容。
+**打开 [thesis-draft.docx](thesis-draft.docx)**：按南航研究生学位论文撰写要求排版的全文工作稿，含封面、承诺书、中英文摘要、目录、图表清单、注释表、第一章至第六章、参考文献、致谢、成果与附录。黄色底纹是待补或待核的内容。版式已与同门四篇硕士论文逐项对照，见 [FORMAT.md](FORMAT.md) 第六节。
 
 用 Word 打开时会提示“更新域”，选“是”即生成目录与图表清单的页码。也可以右键目录，选“更新域”→“更新整个目录”。
 
@@ -14,6 +14,7 @@
 | `src/references.json` | 参考文献条目（GB/T 7714），`status` 为“待核”的条目在 Word 中标黄 |
 | `src/acknowledgements.md`、`src/achievements.md`、`src/appendix.md` | 致谢、在学期间成果、附录 |
 | `build.mjs` | 排版脚本 |
+| `figures/make_figures.py` | 生成图 1.1、图 3.1、图 3.3（`python3 figures/make_figures.py`，需要 Pillow） |
 | `FORMAT.md` | 排版依据与逐项设置 |
 | `build-report.md` | 每次构建自动生成：各章字数、待补标记数、引用与图表清单 |
 

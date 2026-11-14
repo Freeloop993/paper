@@ -124,6 +124,8 @@ function parseBlocks(md) {
 }
 
 // ---------- 元素构造 ----------
+// 图题、表题统一写成“图 1.1 标题”“表 1.1 标题”（同门四篇与 Word 题注的写法）
+const capText = (c) => c.replace(/^(图|表)\s*(\d+\.\d+)\s*/, '$1 $2 ');
 const body = (text, opts = {}) => new D.Paragraph({ style: 'Body', children: runs(text), ...opts });
 const noIndent = (children, opts = {}) => new D.Paragraph({ style: 'BodyNoIndent', children, ...opts });
 
@@ -136,8 +138,8 @@ function heading(level, text, { inToc = true } = {}) {
 function weight(s) { let w = 0; for (const ch of s) w += /[\u0000-ÿ]/.test(ch) ? 0.55 : 1; return w; }
 
 function table(block) {
-  const { caption, rows } = block;
-  const numbered = /^表\d/.test(caption);
+  const { rows } = block; const caption = capText(block.caption);
+  const numbered = /^表\s*\d/.test(caption);
   if (numbered) stats.tables.push(caption);
   const ncol = Math.max(...rows.map((r) => r.length));
   const maxw = Array.from({ length: ncol }, (_, c) => Math.max(2, ...rows.map((r) => weight(r[c] || ''))));
@@ -189,7 +191,8 @@ function imageSize(buf, ext) {
 }
 
 function figure(block, fileDir) {
-  stats.figures.push(block.caption);
+  const caption = capText(block.caption);
+  stats.figures.push(caption);
   const out = [];
   const p = block.src ? path.resolve(fileDir, block.src) : null;
   if (p && fs.existsSync(p)) {
@@ -207,7 +210,7 @@ function figure(block, fileDir) {
       children: [new D.TextRun({ text: `〔图待插${block.src ? '：' + block.src : ''}〕`, highlight: 'yellow' })],
     }));
   }
-  out.push(new D.Paragraph({ style: 'FigCaption', children: runs(block.caption) }));
+  out.push(new D.Paragraph({ style: 'FigCaption', children: runs(caption) }));
   return out;
 }
 
@@ -240,8 +243,8 @@ const headerP = (text) => new D.Header({ children: [new D.Paragraph({
   children: [new D.TextRun({ text, font: F(SONG), size: SZ.wu })],
 })] });
 const emptyHeader = () => new D.Header({ children: [new D.Paragraph({ children: [] })] });
-const footerP = () => new D.Footer({ children: [new D.Paragraph({
-  alignment: D.AlignmentType.RIGHT,
+const footerP = (align = D.AlignmentType.RIGHT) => new D.Footer({ children: [new D.Paragraph({
+  alignment: align,
   children: [new D.TextRun({ children: [D.PageNumber.CURRENT], font: F(SONG), size: SZ.wu })],
 })] });
 const emptyFooter = () => new D.Footer({ children: [new D.Paragraph({ children: [] })] });
@@ -255,8 +258,8 @@ function blank(n = 1, line = 400) { return Array.from({ length: n }, () => new D
 function coverPages() {
   const m = meta;
   const infoRow = (label, value) => new D.Paragraph({
-    indent: { left: cm(3.2) }, spacing: { line: 500, lineRule: EXACT },
-    children: [...runs(label, { font: F(SONG), size: SZ.san }), ...runs(value, { font: F(SONG), size: SZ.san })],
+    indent: { left: cm(3.2) }, spacing: { line: 680, lineRule: EXACT }, tabStops: [{ type: D.TabStopType.LEFT, position: cm(3.2) + cm(3.4) }],
+    children: [...runs(label, { font: F(SONG), size: SZ.san }), new D.TextRun({ children: [new D.Tab()] }), ...runs(value, { font: F(SONG), size: SZ.san })],
   });
   const big = { line: Math.round(SZ.yi * 10 * 1.2 * 1.2), lineRule: EXACT };
   return [
@@ -267,10 +270,10 @@ function coverPages() {
     ...blank(3),
     ...m.title_lines.map((l) => center(l, F(HEI), SZ.yi, { spacing: big })),
     ...blank(5),
-    infoRow('研究生姓名　', m.author),
-    infoRow(`${m.major_label}　`, m.major),
-    infoRow('研究方向　　', m.direction),
-    infoRow('指导教师　　', `${m.advisor}　${m.advisor_title}`),
+    infoRow('研究生姓名', m.author),
+    infoRow('专 业 类 别', m.category),
+    infoRow('专 业 领 域', m.field),
+    infoRow('指 导 教 师', `${m.advisor}　${m.advisor_title}`),
     ...blank(5),
     center('南京航空航天大学', F(KAI), SZ.er, { spacing: { line: 700, lineRule: EXACT } }),
     center(`研究生院　${m.college}`, F(KAI), SZ.xiaoer, { spacing: { line: 600, lineRule: EXACT } }),
@@ -370,7 +373,8 @@ const doc = new D.Document({
       { id: 'TableText', name: '表格文字', basedOn: 'Normal', run: { font: F(SONG), size: SZ.wu }, paragraph: { spacing: { line: 340, lineRule: EXACT } } },
       { id: 'Note', name: '图表注', basedOn: 'Normal', run: { font: F(KAI), size: SZ.wu }, paragraph: { spacing: { before: 60, after: 120, ...LINE }, alignment: D.AlignmentType.JUSTIFIED } },
       { id: 'RefItem', name: '参考文献条目', basedOn: 'Normal', run: { font: F(SONG), size: SZ.wu }, paragraph: { alignment: D.AlignmentType.JUSTIFIED, indent: { left: 525, hanging: 525 }, spacing: { ...LINE } } },
-      ...[1, 2, 3].map((n) => ({ id: `TOC${n}`, name: `toc ${n}`, basedOn: 'Normal', next: 'Normal', run: { font: F(n === 1 ? HEI : SONG), size: SZ.wu }, paragraph: { indent: { left: (n - 1) * 420 }, spacing: { ...LINE }, tabStops: [{ type: D.TabStopType.RIGHT, position: TEXT_W, leader: 'dot' }] } })),
+      ...[1, 2, 3].map((n) => ({ id: `TOC${n}`, name: `toc ${n}`, basedOn: 'Normal', next: 'Normal', run: { font: F(SONG), size: SZ.xiaosi }, paragraph: { indent: { left: (n - 1) * 240 }, spacing: { ...LINE }, tabStops: [{ type: D.TabStopType.RIGHT, position: TEXT_W, leader: 'dot' }] } })),
+      { id: 'TOC9', name: 'toc 9', basedOn: 'Normal', next: 'Normal', run: { font: F(SONG), size: SZ.wu }, paragraph: { indent: { left: 0 }, spacing: { ...LINE }, tabStops: [{ type: D.TabStopType.RIGHT, position: TEXT_W, leader: 'middleDot' }] } },
     ],
   },
   sections: [
@@ -381,12 +385,12 @@ const doc = new D.Document({
     },
     {
       properties: { type: D.SectionType.NEXT_PAGE, page: { size: PAGE, margin: MARGIN, pageNumbers: { start: 1, formatType: D.NumberFormat.LOWER_ROMAN } } },
-      headers: { default: headerP(HEADER_ODD), even: headerP(meta.title) }, footers: { default: footerP(), even: footerP() },
+      headers: { default: headerP(HEADER_ODD), even: headerP(meta.title) }, footers: { default: footerP(D.AlignmentType.RIGHT), even: footerP(D.AlignmentType.LEFT) },
       children: frontChildren,
     },
     {
       properties: { type: D.SectionType.NEXT_PAGE, page: { size: PAGE, margin: MARGIN, pageNumbers: { start: 1, formatType: D.NumberFormat.DECIMAL } } },
-      headers: { default: headerP(HEADER_ODD), even: headerP(meta.title) }, footers: { default: footerP(), even: footerP() },
+      headers: { default: headerP(HEADER_ODD), even: headerP(meta.title) }, footers: { default: footerP(D.AlignmentType.RIGHT), even: footerP(D.AlignmentType.LEFT) },
       children: [...chapterChildren, ...refList, ...backChildren],
     },
   ],
@@ -417,8 +421,8 @@ const replacePara = (marker, replacement) => {
   xml = xml.replace(re, replacement);
 };
 replacePara('%%TOC%%', fieldXml('TOC \\o "1-3" \\h \\z \\u', tocEntries));
-replacePara('%%LOF%%', fieldXml('TOC \\h \\z \\t "图题,1"', stats.figures.map((t) => ({ level: 1, text: plain(t) }))));
-replacePara('%%LOT%%', fieldXml('TOC \\h \\z \\t "表题,1"', stats.tables.map((t) => ({ level: 1, text: plain(t) }))));
+replacePara('%%LOF%%', fieldXml('TOC \\h \\z \\t "图题,9"', stats.figures.map((t) => ({ level: 9, text: plain(t) }))));
+replacePara('%%LOT%%', fieldXml('TOC \\h \\z \\t "表题,9"', stats.tables.map((t) => ({ level: 9, text: plain(t) }))));
 zip.file('word/document.xml', xml);
 // 只拷贝文件项重新打包：去掉 ZIP 目录项（经云端协同打开时 Word 可能拒收带目录项的文件）
 const clean = new JSZip();
