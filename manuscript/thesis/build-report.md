@@ -9,14 +9,14 @@
 | symbols.md | 123 | 1 |
 | ch1.md | 4227 | 0 |
 | ch2.md | 5867 | 0 |
-| ch3.md | 7645 | 2 |
+| ch3.md | 7740 | 1 |
 | ch4.md | 2715 | 15 |
 | ch5.md | 3373 | 14 |
 | ch6.md | 264 | 4 |
 | acknowledgements.md | 11 | 1 |
 | achievements.md | 52 | 1 |
 | appendix.md | 42 | 1 |
-| 合计 | 24986 | 41 |
+| 合计 | 25081 | 40 |
 
 引用文献 29 条；缺条目：无；待核：A001、CN、B009、R12、UAV-U001、DJI-T16、DJI-T20、DJI-T30、NAGAMACHI、B065、N03、N01、N06、N04、N05、N08、R10、R11、N07、OSGOOD、DJI-MINI4PRO。
 
