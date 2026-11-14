@@ -1,0 +1,5 @@
+{"note": "第三轮提示词开发第 1 次：C 全规格 3 张（相机、桨叶、机尾），A 全规格 1 张（只看桨叶）。开发图，不作候选。",
+ "cards": {
+  "C": {"params": {"body_plan": "faceted", "arm_root": "socket", "camera": "projecting", "cover": "multi", "surface": "sculpted", "span": "250", "arm_finish": "exposed_carbon", "accent": "motor_ring"}, "seeds": [2026112191, 2026112192, 2026112193]},
+  "A": {"params": {"body_plan": "pod", "arm_root": "seamless", "camera": "inside", "cover": "split", "surface": "sculpted", "span": "250", "arm_finish": "matte_same", "accent": "motor_ring"}, "seeds": [2026112194]}
+ }}

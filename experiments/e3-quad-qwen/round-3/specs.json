@@ -1,0 +1,56 @@
+{
+  "note": "E3 第三轮初稿：规格档位同第二轮，字典换 v1.6（桨叶两叶相对 180°、自然摆放；C 相机挂机头下方；机尾素壳加强）。作者 11/15：“认真点跑，好好优化你的提示词”。开发第 1 次 4 张见 dev-r3/。",
+  "cards": {
+    "A": {
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "split",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "seeds": [
+        2026112121,
+        2026112122,
+        2026112123
+      ]
+    },
+    "B": {
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "seeds": [
+        2026112124,
+        2026112125,
+        2026112126
+      ]
+    },
+    "C": {
+      "params": {
+        "body_plan": "faceted",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "exposed_carbon",
+        "accent": "motor_ring"
+      },
+      "seeds": [
+        2026112127,
+        2026112128,
+        2026112129
+      ]
+    }
+  }
+}
