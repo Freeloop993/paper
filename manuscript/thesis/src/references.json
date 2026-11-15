@@ -25,12 +25,12 @@
     "note": "全部字段取自 citation-keys.md（4位作者：屈庆星、郭伏、胡名彩、刘畅）；reading-map R06 记 PDF1—2、6 对应印刷67、68、72，与67-73页一致。仓库无原PDF。"
   },
   "B009": {
-    "text": "PARMENTIER D, BROSENS L, CHRISTIAENS Y. Learning activities to design a parametric solutions space for products in Industry 4.0[C]//DS 131: Proceedings of the International Conference on Engineering and Product Design Education (E&PDE 2024). 〔出版地待核〕: The Design Society, 2024: 〔页码待核〕. DOI: 10.35199/EPDE.2024.82.",
+    "text": "PARMENTIER D, BROSENS L, CHRISTIAENS Y. Learning activities to design a parametric solutions space for products in Industry 4.0[C]//Proceedings of the 26th International Conference on Engineering and Product Design Education. The Design Society, 2024: 485–490. DOI: 10.35199/EPDE.2024.82.",
     "status": "待核",
     "note": "作者、题名、会议集名、DOI 取自 citation-keys.md 与 industrial-design.bib（B009_2024）；出版者按 DS 系列补，出版地与页码仓库无。manuscript/revisions/ch01-1.5.md 注明 B009 页码转引、终稿前回核。仓库无原PDF。"
   },
   "B065": {
-    "text": "TINGSTRÖM J, MUNJULURY R C. Insights from knowledge-based engineering in industrial practice – a Saab's perspective[J]. Proceedings of the Design Society, 2026, 6: 〔页码待核〕. DOI: 10.1017/pds.2026.10691.",
+    "text": "TINGSTRÖM J, MUNJULURY R C. Insights from knowledge-based engineering in industrial practice – a Saab’s perspective[J]. Proceedings of the Design Society, 2026, 6: 3337–3346. DOI: 10.1017/pds.2026.10691.",
     "status": "待核",
     "note": "作者、题名、卷6、DOI 取自 citation-keys.md 与 industrial-design.bib（B065_2026，DESIGN2026）；页码缺。仓库无原PDF。"
   },
@@ -55,17 +55,17 @@
     "note": "作者、题名、会议（CHI '26，Barcelona）、DOI、“17 pages”据本地原PDF的 XMP 与 ACM Reference Format（reference-fulltexts-20261109: fulltexts/SRC-b4667d2f7bfd.pdf）；页码按17页写作1-17；ACM 文章号未载。"
   },
   "R10": {
-    "text": "〔作者待核〕. Enhancing Generative AI Image Refinement with Scribbles and Annotations: A Comparative Study of Multimodal Prompts[C]//Proceedings of the 31st International Conference on Intelligent User Interfaces. New York: ACM, 2026: 〔页码待核〕. DOI: 10.1145/3742413.3789080.",
+    "text": "PARK H, TRAN P T, LUCKOW A, et al. Enhancing generative AI image refinement with scribbles and annotations: a comparative study of multimodal prompts[C]//Proceedings of the 31st International Conference on Intelligent User Interfaces. New York: ACM, 2026: 1454–1475. DOI: 10.1145/3742413.3789080.",
     "status": "待核",
     "note": "题名、会议（IUI 2026）、DOI 取自 references/catalogs/reviewed-100.csv（HCI-C0031）与 archive-references.csv，其原件 SHA256 与 priority-fulltexts R10 相同；reading-map 记所读为 arXiv:2602.08830v1（22页）。仓库无作者名，原PDF未入 fulltexts 分支。docs/execution-playbook.md 称“Park等”；按通用知识或为 Park H、Eiband M、Luckow A、Sedlmair M 等，未核。若改引预印本：[J/OL]. arXiv:2602.08830, 2026。"
   },
   "R11": {
-    "text": "〔作者待核〕. AIdeation: Designing a Human-AI Collaborative Ideation System for Concept Designers[C]//Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2025: 〔页码待核〕. DOI: 10.1145/3706598.3714148.",
+    "text": "WANG W F, LU C T, PONSA I CAMPANYÀ N, et al. AIdeation: designing a human-AI collaborative ideation system for concept designers[C]//Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2025: 1–28. DOI: 10.1145/3706598.3714148.",
     "status": "待核",
     "note": "题名、会议、DOI 取自 reviewed-100.csv（HCI-C0004）与 archive-references.csv，原件 SHA256 与 priority-fulltexts R11 相同；reading-map 记所读为 arXiv:2502.14747v1（28页）。仓库无作者名，原PDF未入 fulltexts 分支。按通用知识作者或为 Wang W F、Lu C T、Ponsa i Campanyà N、Chen B Y、Chen M Y，未核。"
   },
   "R12": {
-    "text": "HSIAO S W, PENG P H. Using FCE and FAHP to Explore the Multirotor Drone Appearance Preference[C]//BOESS S, CHEUNG M, CAIN R, ed. Synergy - DRS International Conference 2020. London: Design Research Society, 2020: 〔页码待核〕. DOI: 10.21606/drs.2020.164.",
+    "text": "HSIAO S W, PENG P H. Using FCE and FAHP to explore the multirotor drone appearance preference[C]//BOESS S, CHEUNG M, CAIN R, eds. Synergy: DRS International Conference 2020. Design Research Society, 2020: 2267–2283. DOI: 10.21606/drs.2020.164.",
     "status": "待核",
     "note": "作者、全题、编者、会议名、DOI 据本地原PDF封面 Citation 栏（reference-fulltexts-20261109: fulltexts/UAV-U002.pdf）；reading-map 与 priority-fulltexts 的题名漏了 Preference。会议于2020年8月11—14日线上举行。出版地 London 参照 R14 文后参考文献对 DRS 会议集的著录；页码缺（本地18页含封面）。"
   },
@@ -75,32 +75,32 @@
     "note": "取自 docs/literature-update-2026-11.md N01：模型由 Alibaba PAI 发布，所核为 ComfyUI Wiki 的发布说明。题名按条目名拟，页面原题未核；日期由 URL 路径推定。官方模型卡与许可证仓库无记录，建议换引 Alibaba PAI 官方模型页。"
   },
   "N03": {
-    "text": "〔作者待核〕. 7Bench〔全题待核〕[J/OL]. arXiv:2508.12919, 2025.",
+    "text": "IZZO E, PAROLARI L, VEZZARO D, et al. 7Bench: a comprehensive benchmark for layout-guided text-to-image models[EB/OL]. arXiv:2508.12919, 2025. https://arxiv.org/abs/2508.12919.",
     "status": "待核",
     "note": "literature-update N03 仅记 arXiv 号与“7Bench：布局引导 T2I 基准”；年份按 arXiv 号推定。按通用知识全题或为“7Bench: a comprehensive benchmark for layout-guided text-to-image models”（Izzo E、Parolari L、Vezzaro D、Ballan L），未核，须查 arXiv 页及正式发表版本。"
   },
   "N04": {
-    "text": "LIAO〔名缩写待核〕, LOMAS〔名缩写待核〕, YU〔名缩写待核〕. 〔英文题名待核〕[J/OL]. arXiv:2507.02865, 2025.",
+    "text": "LIAO D, LOMAS J D, YU C. Enhancing the aesthetic appeal of AI-generated physical product designs through LoRA fine-tuning with human feedback[EB/OL]. arXiv:2507.02865, 2025. https://arxiv.org/abs/2507.02865.",
     "status": "待核",
     "note": "literature-update N04 只记作者姓 Liao、Lomas、Yu（TU Delft）与内容“以人类反馈做 LoRA 微调提升产品外观”，无题名；年份按 arXiv 号推定。"
   },
   "N05": {
-    "text": "〔作者待核〕. QwenStyle〔全题待核〕[J/OL]. arXiv:2601.06202, 2026.",
+    "text": "ZHANG S, HUANG H, ZHANG C, et al. QwenStyle: content-preserving style transfer with Qwen-Image-Edit[EB/OL]. arXiv:2601.06202, 2026. https://arxiv.org/abs/2601.06202.",
     "status": "待核",
     "note": "literature-update N05：TeleAI，基于 Qwen-Image-Edit-2509 训练 rank-32 LoRA 的保内容风格迁移；作者与全题未记，年份按 arXiv 号推定。"
   },
   "N06": {
-    "text": "Qwen Team. Qwen-Image-Edit-2509; Qwen-Image-Edit-2511〔模型页题名待核〕[EB/OL]. [2026-11-14]. 〔URL待补〕.",
+    "text": "Qwen Team. Qwen-Image-Edit-2509；Qwen-Image-Edit-2511[EB/OL]. [2026-11-15]. https://huggingface.co/Qwen/Qwen-Image-Edit-2509；https://huggingface.co/Qwen/Qwen-Image-Edit-2511.",
     "status": "待核",
     "note": "literature-update N06 仅记“多方产品页”，无发布者、URL 与日期；发布者 Qwen Team 按通用知识补；版本号暗示2025年9月、11月发布（推定）。宜择官方模型卡（如 Hugging Face Qwen/Qwen-Image-Edit-2509，未核）分列或合并。"
   },
   "N07": {
-    "text": "XU〔名缩写待核〕, MARTELARO N, MCCOMB C. Ceci N'est Pas un Drone〔全题待核〕[J/OL]. arXiv:2511.03131, 2025.",
+    "text": "XU Z, MARTELARO N, MCCOMB C. Ceci N’est Pas un Drone: investigating the impact of design representation on design decision making when using GenAI[EB/OL]. arXiv:2511.03131, 2025. https://arxiv.org/abs/2511.03131.",
     "status": "待核",
     "note": "literature-update N07 记作者姓 Xu、Martelaro、McComb、题名首句与 arXiv 号，并注“DOI 前缀 ASME”（或已在 ASME 会议/期刊发表，DOI 未记）。Martelaro、McComb 的名缩写按通用知识补；全题与 Xu 的名须核。"
   },
   "N08": {
-    "text": "SHI〔名缩写待核〕, CHOO〔名缩写待核〕. 〔英文题名待核〕[J/OL]. arXiv:2602.22171, 2026.",
+    "text": "SHI W, CHOO K T W. A taxonomy of human–MLLM interaction in early-stage sketch-based design ideation[EB/OL]. arXiv:2602.22171, 2026. https://arxiv.org/abs/2602.22171.",
     "status": "待核",
     "note": "literature-update N08 记作者姓 Shi、Choo，CHI EA 2026，arXiv 2602.22171，中文概括“草图构思中的人—多模态模型交互分类”；英文题名与 DOI 未记。若引 CHI EA 正式版，改为 [C]//Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems 并补 DOI。"
   },
@@ -135,7 +135,7 @@
     "note": "仓库仅有 DOI（同一 HTML 中 Nagamachi 链接）；题名、卷期、页码按通用知识补，与任务给定的1995, 15(1): 3-11一致，须对出版页核。"
   },
   "UAV-U001": {
-    "text": "QI B, ZHAO S, SUN X, et al. Design of plant protection unmanned aerial vehicles: quantitative research and virtual simulation[J]. Advanced Design Research, 2024, 2: 〔页码待核〕. DOI: 10.1016/j.ijadr.2024.03.001.",
+    "text": "QI B, ZHAO S, SUN X, et al. Design of plant protection unmanned aerial vehicles: quantitative research and virtual simulation[J]. Advanced Design Research, 2024, 2(1): 1–13. DOI: 10.1016/j.ijadr.2024.03.001.",
     "status": "待核",
     "note": "作者与题名按 reference-fulltexts-20261109 分支 fulltexts/UAV-U001.pdf 首页；卷与页码取自分类目录，待核"
   },
