@@ -1,0 +1,120 @@
+{
+  "requests": [
+    {
+      "order": 1,
+      "id": "E6B-R-dev-r1",
+      "seed": 2026112301,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "d3644bcc870f126b22927cdfefecf963aa63f9ab75d0536ab99d5503fbd96f16",
+      "request_sha256": "90fbcf6ba446f81be83950cb38eca489e3853b855e5f09bf703f1e180d52a801",
+      "note": "喷杆改法 R；与 HEXA3-draft-r1 同种子配对"
+    },
+    {
+      "order": 1,
+      "id": "E6B-R-dev-r2",
+      "seed": 2026112302,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "d3644bcc870f126b22927cdfefecf963aa63f9ab75d0536ab99d5503fbd96f16",
+      "request_sha256": "461cf970ccc38767841393b815211eca9c8fb5efc2aa2b34554f1d3c40f9a49b",
+      "note": "喷杆改法 R；与 HEXA3-draft-r2 同种子配对"
+    },
+    {
+      "order": 1,
+      "id": "E6B-R-dev-r3",
+      "seed": 2026112303,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "d3644bcc870f126b22927cdfefecf963aa63f9ab75d0536ab99d5503fbd96f16",
+      "request_sha256": "9d692c6f1e48ad7051bd691380411288696f96ef9c13da3b15ca25d9760f24c0",
+      "note": "喷杆改法 R；与 HEXA3-draft-r3 同种子配对"
+    },
+    {
+      "order": 2,
+      "id": "E6B-N-dev-r1",
+      "seed": 2026112301,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "e917dffd0b85e614d3cd58ee86880f6cae4516e74e2c4f3e442fa7f898f44bc9",
+      "request_sha256": "9cc6e08d23375e7e5c82b90662b64e6aed6e80586dc44765729d5a5d4ba67ee1",
+      "note": "喷杆改法 N；与 HEXA3-draft-r1 同种子配对"
+    },
+    {
+      "order": 2,
+      "id": "E6B-N-dev-r2",
+      "seed": 2026112302,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "e917dffd0b85e614d3cd58ee86880f6cae4516e74e2c4f3e442fa7f898f44bc9",
+      "request_sha256": "e783120565e1ebccf1cbcdad1f81e2d87e7f3a1a93c046cb4df266fb1ab1ced0",
+      "note": "喷杆改法 N；与 HEXA3-draft-r2 同种子配对"
+    },
+    {
+      "order": 2,
+      "id": "E6B-N-dev-r3",
+      "seed": 2026112303,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "e917dffd0b85e614d3cd58ee86880f6cae4516e74e2c4f3e442fa7f898f44bc9",
+      "request_sha256": "ebc42c29fbb730cd020870df8ce7dc6deb65e27c51cd9762997b0703e48bfd85",
+      "note": "喷杆改法 N；与 HEXA3-draft-r3 同种子配对"
+    },
+    {
+      "order": 3,
+      "id": "M-L-dev-r1",
+      "seed": 2026112401,
+      "input_images": [
+        "B2-L-lowkey.png"
+      ],
+      "prompt_sha256": "d0c55934575b902d9660fa3080825d879ccc1c92e8d1e44700bcfc88e5442fb9",
+      "request_sha256": "996deded3cf795f5608a4f7b4c1f48f91728a5b60cf16ae246ae7f4c64a61961",
+      "note": "碳纤维臂；底图为低调配色稿（相机在画面下端）"
+    },
+    {
+      "order": 3,
+      "id": "M-L-dev-r2",
+      "seed": 2026112402,
+      "input_images": [
+        "B2-L-lowkey.png"
+      ],
+      "prompt_sha256": "d0c55934575b902d9660fa3080825d879ccc1c92e8d1e44700bcfc88e5442fb9",
+      "request_sha256": "210068b602268ff53d535eaa94a00fa0bcf1af815e84e4a0d6f0cc6d29a15b9c",
+      "note": "碳纤维臂；底图为低调配色稿（相机在画面下端）"
+    },
+    {
+      "order": 3,
+      "id": "M-L-dev-r3",
+      "seed": 2026112403,
+      "input_images": [
+        "B2-L-lowkey.png"
+      ],
+      "prompt_sha256": "d0c55934575b902d9660fa3080825d879ccc1c92e8d1e44700bcfc88e5442fb9",
+      "request_sha256": "56c42bab2f833f91fd6a3a5369e0b1b693a9c28eb998487dc31cbb54914ef609",
+      "note": "碳纤维臂；底图为低调配色稿（相机在画面下端）"
+    }
+  ],
+  "inputs": [
+    {
+      "input": "B2-L-lowkey.png",
+      "sha256": "46936781f061ecb014a2d9442ae15e5c5c3be47b189ca708b1de20cf5de32ef4"
+    },
+    {
+      "input": "hexa-points-1.00.png",
+      "sha256": "d0768f8dac4f240316761309551a931b022390c89d06b956bda9f7b028829f5d"
+    }
+  ],
+  "boom_old": "A transverse spray boom runs across under the body and extends beyond both sides of the frame.",
+  "boom": {
+    "R": "A straight transverse spray boom with four small nozzles is mounted at the rear of the frame, behind the tank and between the two rear arms; it is clearly offset toward the tail from the two lateral arms, never overlapping them, and its ends stop short of the rear propellers.",
+    "N": "There is no spray boom. Instead, one small round spray nozzle is mounted directly below each of the six motors, its dark nozzle tip just visible beside the motor from above."
+  },
+  "m_text": "Edit this drone image. Change only the material of the four arms: make every arm, from where it joins the body to the motor, visible carbon fibre with a fine woven twill pattern in dark charcoal, matte finish. Keep everything else exactly the same: the strict orthographic top view, the light grey body shell with its outline and parting lines, the camera housing at the lower end of the image, the shape and width of the arms and their joints with the body, the motors, the two-blade propellers and their angles, and the plain light background.",
+  "m_negative": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades, changed body outline, moved camera, extra components, glossy plastic arms"
+}
