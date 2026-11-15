@@ -11,6 +11,7 @@ def need(ok,reason):
 def save_evidence():
  plan=json.loads((BASE/'manifest-v2.json').read_bytes())['requests']
  ledger=[json.loads(x) for x in (BASE/'takeover-v2/progress.jsonl').read_text().splitlines()]
+ legacy=[json.loads(x) for x in (BASE/'progress.jsonl').read_text().splitlines()]
  for name,order in [('shape24',4),('v16-shape24',8),('wlq12',5)]:
   target=OUT/('review15-'+name+'.zip')
   if target.exists():continue
@@ -20,8 +21,9 @@ def save_evidence():
   receipts=[]
   for row in rows:
    rid=row['id']; match=[r for r in ledger if r['id']==rid and r['state']=='completed']
-   need(len(match)==1,'missing receipt '+rid)
-   rec=match[0];d=BASE/'takeover-v2'/rid
+   prior=[r for r in legacy if r['id']==rid and r.get('ok') is True]
+   need(len(match)+len(prior)==1,'missing or duplicate receipt '+rid)
+   rec=(match or prior)[0];d=BASE/('takeover-v2' if match else 'out')/rid
    need(sha(d/(rid+'.png'))==rec['png_sha256'] and sha(d/'request.json')==row['sha256']==rec['request_sha256'],rid)
    receipts.append(rec)
    for fn in [rid+'.png','request.json','ack.json','history.json']:paths.append((d/fn,rid+'/'+fn))

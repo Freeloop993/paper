@@ -1,0 +1,448 @@
+{
+  "codes": {
+    "R": {
+      "S12-S1-r01": {
+        "shape": "F",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S5-r01": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S3-r01": {
+        "shape": "S",
+        "root": "H/H/H/H",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "?"
+      },
+      "S12-S5-r02": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S4-r03": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "E",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S0-r04": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S2-r02": {
+        "shape": "S",
+        "root": "?/?/?/?",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S2-r01": {
+        "shape": "S",
+        "root": "B/B/B/B",
+        "nose": "N",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S0-r03": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S0-r02": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S3-r04": {
+        "shape": "S",
+        "root": "H/H/H/H",
+        "nose": "N",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S4-r02": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S5-r03": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S0-r01": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S1-r03": {
+        "shape": "F",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S2-r04": {
+        "shape": "S",
+        "root": "?/?/B/B",
+        "nose": "N",
+        "cover": "?",
+        "blades": "3/3/3/3",
+        "lens": "不可见"
+      },
+      "S12-S5-r04": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S2-r03": {
+        "shape": "S",
+        "root": "B/B/B/B",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S3-r03": {
+        "shape": "S",
+        "root": "H/H/H/H",
+        "nose": "?",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S1-r04": {
+        "shape": "F",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S4-r01": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "E",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S4-r04": {
+        "shape": "S",
+        "root": "?/?/B/B",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S1-r02": {
+        "shape": "F",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S3-r02": {
+        "shape": "S",
+        "root": "H/H/H/H",
+        "nose": "E",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      }
+    },
+    "T": {
+      "S12-S0-r02": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S4-r04": {
+        "shape": "S",
+        "root": "?/?/?/?",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S4-r03": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "E",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S2-r03": {
+        "shape": "S",
+        "root": "B/B/B/B",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S2-r01": {
+        "shape": "S",
+        "root": "B/B/B/B",
+        "nose": "N",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S3-r03": {
+        "shape": "S",
+        "root": "H/H/H/H",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S5-r03": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S1-r02": {
+        "shape": "F",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S3-r04": {
+        "shape": "S",
+        "root": "H/H/H/H",
+        "nose": "N",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S4-r01": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "E",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S1-r03": {
+        "shape": "F",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S4-r02": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S3-r02": {
+        "shape": "S",
+        "root": "H/H/H/H",
+        "nose": "E",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S1-r01": {
+        "shape": "F",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      },
+      "S12-S1-r04": {
+        "shape": "F",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S5-r02": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S5-r04": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S2-r04": {
+        "shape": "S",
+        "root": "B/B/B/B",
+        "nose": "N",
+        "cover": "?",
+        "blades": "3/3/3/3",
+        "lens": "不可见"
+      },
+      "S12-S5-r01": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "M",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S0-r01": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S0-r03": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S2-r02": {
+        "shape": "S",
+        "root": "?/?/?/?",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S3-r01": {
+        "shape": "S",
+        "root": "H/H/H/H",
+        "nose": "N",
+        "cover": "?",
+        "blades": "2/2/2/2",
+        "lens": "不可见"
+      },
+      "S12-S0-r04": {
+        "shape": "S",
+        "root": "S/S/S/S",
+        "nose": "N",
+        "cover": "1",
+        "blades": "2/2/2/2",
+        "lens": "可见"
+      }
+    }
+  },
+  "target_and_baseline": {
+    "R": [
+      [
+        "S1",
+        4,
+        0
+      ],
+      [
+        "S2",
+        2,
+        0
+      ],
+      [
+        "S3",
+        4,
+        0
+      ],
+      [
+        "S4",
+        2,
+        0
+      ],
+      [
+        "S5",
+        4,
+        0
+      ]
+    ],
+    "T": [
+      [
+        "S1",
+        4,
+        0
+      ],
+      [
+        "S2",
+        3,
+        0
+      ],
+      [
+        "S3",
+        4,
+        0
+      ],
+      [
+        "S4",
+        2,
+        0
+      ],
+      [
+        "S5",
+        4,
+        0
+      ]
+    ]
+  }
+}

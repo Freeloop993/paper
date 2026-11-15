@@ -1,0 +1,437 @@
+{
+  "rows": [
+    {
+      "id": "LE-camera-dev-01",
+      "arm": "camera",
+      "phase": "dev",
+      "seed": 2026112801,
+      "request_sha256": "37960bfae7a7dae484cfa2653a8b405e120df2f1eb55009ece7b22b50e9b07af",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-dev-02",
+      "arm": "camera",
+      "phase": "dev",
+      "seed": 2026112802,
+      "request_sha256": "b35fb84cb5576a5ea97f08ea88a84a3e72545b0606e2ae31480bf2ad87bb264a",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-dev-03",
+      "arm": "camera",
+      "phase": "dev",
+      "seed": 2026112803,
+      "request_sha256": "a36517c358794bd7bdef461efb0dcb3c4a0c5ea7e4382c0daf70814a466c6f15",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-confirm-01",
+      "arm": "camera",
+      "phase": "confirm",
+      "seed": 2026112821,
+      "request_sha256": "1202cd404ffbc3b42fc3330d4848f9f6aaeba18a708e91a52136bd08cb575818",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-confirm-02",
+      "arm": "camera",
+      "phase": "confirm",
+      "seed": 2026112822,
+      "request_sha256": "4de3ab05d9efa86a4c5e445eeb323e1e12ff030d02add45370996aff56a1c885",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-confirm-03",
+      "arm": "camera",
+      "phase": "confirm",
+      "seed": 2026112823,
+      "request_sha256": "8b4146d2f9f219286745b1534e1689e23dbd5aaec00c75582313df0920299cc1",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-confirm-04",
+      "arm": "camera",
+      "phase": "confirm",
+      "seed": 2026112824,
+      "request_sha256": "497d73825fcb9464cf764486f3ea894e0b564d94ff881d7b71880919f5c89080",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-confirm-05",
+      "arm": "camera",
+      "phase": "confirm",
+      "seed": 2026112825,
+      "request_sha256": "699f0eb797292aa5f7511d357d6ffdbbd90edbb22d30057804e46494557a5e31",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-confirm-06",
+      "arm": "camera",
+      "phase": "confirm",
+      "seed": 2026112826,
+      "request_sha256": "8337beecb8f870417a7ce3186b4c6c5dafc3a401425d1f3d7fe1d3fc7789d6a7",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-confirm-07",
+      "arm": "camera",
+      "phase": "confirm",
+      "seed": 2026112827,
+      "request_sha256": "ab6ead51a84311ea0b3472ada710531b08b6d65639a07dcd13314e02682293f6",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-camera-confirm-08",
+      "arm": "camera",
+      "phase": "confirm",
+      "seed": 2026112828,
+      "request_sha256": "262916e4e8545934944af8a17c90e3b729ac9da96f13f2baa8084c4bb68c45b8",
+      "input": "B2-no-window.png"
+    },
+    {
+      "id": "LE-cover-dev-01",
+      "arm": "cover",
+      "phase": "dev",
+      "seed": 2026112901,
+      "request_sha256": "fc1e5d2920cfafbf1252000c4ae162048d04d9087a0bbbca253a6464da4cb0e1",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-cover-dev-02",
+      "arm": "cover",
+      "phase": "dev",
+      "seed": 2026112902,
+      "request_sha256": "ea0d4408a5d1cce327e622630390883d114ab909810c47b3326c8463673177f2",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-cover-dev-03",
+      "arm": "cover",
+      "phase": "dev",
+      "seed": 2026112903,
+      "request_sha256": "02211cdef246666efbe83b91f0aa7cce5b28c3a2a7717cecd083855dec81456c",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-cover-confirm-01",
+      "arm": "cover",
+      "phase": "confirm",
+      "seed": 2026112921,
+      "request_sha256": "5b055ce1108be7be2b209578477620c1736dd193e03b8dc60c3009acd620e288",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-cover-confirm-02",
+      "arm": "cover",
+      "phase": "confirm",
+      "seed": 2026112922,
+      "request_sha256": "9c413ec57d23cdfefad398ba4b636870977a695a13f23a61e8cbdb470a27a8a9",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-cover-confirm-03",
+      "arm": "cover",
+      "phase": "confirm",
+      "seed": 2026112923,
+      "request_sha256": "6c4200e935ba652511377b3dd9fd7f59de8f22cb15a8f2383d752e949858b0f6",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-cover-confirm-04",
+      "arm": "cover",
+      "phase": "confirm",
+      "seed": 2026112924,
+      "request_sha256": "445896318d90a22bf4dba4868b5d41e2a6fc70e3ebd345ecb094dfd24ed264bd",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-roots-dev-01",
+      "arm": "roots",
+      "phase": "dev",
+      "seed": 2026113001,
+      "request_sha256": "6ebc533dbb426ecc7896b87fff819fa13af2467e696b6cd0049cd36553f7e5bb",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-roots-dev-02",
+      "arm": "roots",
+      "phase": "dev",
+      "seed": 2026113002,
+      "request_sha256": "a1a774a863a49b63b0c3a8ea141f488a2f659c592e9ba2e077915337c2626d2f",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-roots-dev-03",
+      "arm": "roots",
+      "phase": "dev",
+      "seed": 2026113003,
+      "request_sha256": "45e239955f9b6894e235429e79f5417a8faa9ec050661238ee787ae194efb511",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-roots-confirm-01",
+      "arm": "roots",
+      "phase": "confirm",
+      "seed": 2026113021,
+      "request_sha256": "15bebb9b2576a5041b8e20d714b94ba0c67c40b687767328a824c20215f75f6f",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-roots-confirm-02",
+      "arm": "roots",
+      "phase": "confirm",
+      "seed": 2026113022,
+      "request_sha256": "6ee9bbeb083e90a76e82f99b6e10627ae0a9898d51383012e1b7a8723b7eb560",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-roots-confirm-03",
+      "arm": "roots",
+      "phase": "confirm",
+      "seed": 2026113023,
+      "request_sha256": "fd2fa0699ea639d9aa04b35783366a30df05dd698b7d16784aa65c3776c794ea",
+      "input": "B2-L-lowkey.png"
+    },
+    {
+      "id": "LE-roots-confirm-04",
+      "arm": "roots",
+      "phase": "confirm",
+      "seed": 2026113024,
+      "request_sha256": "32f6e62711ca7c46c0146aa45456bdafb42d2605bc3881db10a23c410f46a692",
+      "input": "B2-L-lowkey.png"
+    }
+  ],
+  "inputs": [
+    {
+      "arm": "camera",
+      "input": "B2-no-window.png",
+      "input_sha256": "9726c778774296c3f164f19ef497c636edc9a23d31ef0f29c83a1b99a0e7b175",
+      "mask_sha256": "1c82f11b7b9331f93ea4ecddd3fba681f3ebcf639b10bb79e900f74c51c99e0a",
+      "bounds": [
+        430,
+        645,
+        595,
+        726
+      ],
+      "vertices": [
+        [
+          [
+            449,
+            650
+          ],
+          [
+            570,
+            650
+          ],
+          [
+            589,
+            683
+          ],
+          [
+            578,
+            720
+          ],
+          [
+            450,
+            720
+          ],
+          [
+            435,
+            687
+          ]
+        ]
+      ],
+      "blur_radius": 2,
+      "outside_changed_pixels_control": 0
+    },
+    {
+      "arm": "cover",
+      "input": "B2-L-lowkey.png",
+      "input_sha256": "46936781f061ecb014a2d9442ae15e5c5c3be47b189ca708b1de20cf5de32ef4",
+      "mask_sha256": "8f243a38c6c8746db9de344e88d9336df6690b68aa375b99b58b51c76b491608",
+      "bounds": [
+        447,
+        298,
+        574,
+        624
+      ],
+      "vertices": [
+        [
+          [
+            461,
+            303
+          ],
+          [
+            559,
+            303
+          ],
+          [
+            568,
+            377
+          ],
+          [
+            568,
+            577
+          ],
+          [
+            552,
+            618
+          ],
+          [
+            474,
+            618
+          ],
+          [
+            452,
+            579
+          ],
+          [
+            452,
+            370
+          ]
+        ]
+      ],
+      "blur_radius": 2,
+      "outside_changed_pixels_control": 0
+    },
+    {
+      "arm": "roots",
+      "input": "B2-L-lowkey.png",
+      "input_sha256": "46936781f061ecb014a2d9442ae15e5c5c3be47b189ca708b1de20cf5de32ef4",
+      "mask_sha256": "34096ce36ff1b48a38a9208d7a114abf95b2f3871a4bd362d0bbd950acfe1eff",
+      "bounds": [
+        378,
+        340,
+        643,
+        654
+      ],
+      "vertices": [
+        [
+          [
+            445,
+            404
+          ],
+          [
+            416,
+            416
+          ],
+          [
+            390,
+            383
+          ],
+          [
+            383,
+            360
+          ],
+          [
+            388,
+            347
+          ],
+          [
+            423,
+            358
+          ],
+          [
+            443,
+            345
+          ]
+        ],
+        [
+          [
+            575,
+            404
+          ],
+          [
+            604,
+            416
+          ],
+          [
+            630,
+            383
+          ],
+          [
+            637,
+            360
+          ],
+          [
+            632,
+            347
+          ],
+          [
+            597,
+            358
+          ],
+          [
+            577,
+            345
+          ]
+        ],
+        [
+          [
+            575,
+            589
+          ],
+          [
+            604,
+            577
+          ],
+          [
+            630,
+            610
+          ],
+          [
+            637,
+            633
+          ],
+          [
+            632,
+            646
+          ],
+          [
+            597,
+            635
+          ],
+          [
+            577,
+            648
+          ]
+        ],
+        [
+          [
+            445,
+            589
+          ],
+          [
+            416,
+            577
+          ],
+          [
+            390,
+            610
+          ],
+          [
+            383,
+            633
+          ],
+          [
+            388,
+            646
+          ],
+          [
+            423,
+            635
+          ],
+          [
+            443,
+            648
+          ]
+        ]
+      ],
+      "blur_radius": 2,
+      "outside_changed_pixels_control": 0
+    }
+  ],
+  "pass_rule": "per arm: 2/3 development outputs meet all criteria. Confirmation runs only after a recorded visual decision; use every registered seed once.",
+  "selection": "first complete, target-correct and preserved confirm output in preregistered order, report all",
+  "orientation": "lower image edge is the design nose. The camera baseline is the window-removed B2 without an existing camera. Cover and roots use the low-key B2."
+}
