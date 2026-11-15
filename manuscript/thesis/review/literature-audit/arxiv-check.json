@@ -1,0 +1,73 @@
+{
+  "N03": {
+    "source": "https://arxiv.org/abs/2508.12919",
+    "title": [
+      "7Bench: a Comprehensive Benchmark for Layout-guided Text-to-image Models"
+    ],
+    "authors": [
+      "Izzo, Elena",
+      "Parolari, Luca",
+      "Vezzaro, Davide",
+      "Ballan, Lamberto"
+    ],
+    "date": [
+      "2025/08/18"
+    ]
+  },
+  "N04": {
+    "source": "https://arxiv.org/abs/2507.02865",
+    "title": [
+      "Enhancing the Aesthetic Appeal of AI-Generated Physical Product Designs through LoRA Fine-Tuning with Human Feedback"
+    ],
+    "authors": [
+      "Liao, Dinuo",
+      "Lomas, James Derek",
+      "Yu, Cehao"
+    ],
+    "date": [
+      "2025/02/23"
+    ]
+  },
+  "N05": {
+    "source": "https://arxiv.org/abs/2601.06202",
+    "title": [
+      "QwenStyle: Content-Preserving Style Transfer with Qwen-Image-Edit"
+    ],
+    "authors": [
+      "Zhang, Shiwen",
+      "Huang, Haibin",
+      "Zhang, Chi",
+      "Li, Xuelong"
+    ],
+    "date": [
+      "2026/01/08"
+    ]
+  },
+  "N07": {
+    "source": "https://arxiv.org/abs/2511.03131",
+    "title": [
+      "Ceci N'est Pas un Drone: Investigating the Impact of Design Representation on Design Decision Making When Using GenAI"
+    ],
+    "authors": [
+      "Xu, Zeda",
+      "Martelaro, Nikolas",
+      "McComb, Christopher"
+    ],
+    "date": [
+      "2025/11/05"
+    ]
+  },
+  "N08": {
+    "source": "https://arxiv.org/abs/2602.22171",
+    "title": [
+      "A Taxonomy of Human--MLLM Interaction in Early-Stage Sketch-Based Design Ideation"
+    ],
+    "authors": [
+      "Shi, Weiyan",
+      "Choo, Kenny Tsu Wei"
+    ],
+    "date": [
+      "2026/02/25"
+    ]
+  }
+}

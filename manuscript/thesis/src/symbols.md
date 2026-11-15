@@ -18,6 +18,6 @@
 |---|---|---|
 | AIGC | Artificial Intelligence Generated Content | 人工智能生成内容 |
 | CMF | Color, Material and Finish | 色彩、材料与表面处理 |
-| LoRA | Low-Rank Adaptation | 低秩适配 |
+
 | QFD | Quality Function Deployment | 质量功能展开 |
 | UAV | Unmanned Aerial Vehicle | 无人机 |
