@@ -207,7 +207,8 @@ function figure(block, fileDir) {
     const { w, h } = imageSize(buf, ext === 'jpg' ? 'jpg' : 'png');
     const maxW = 529; // 14 cm @96dpi
     const sw = Math.min(maxW, w); const sh = Math.round((h * sw) / w);
-    out.push(new D.Paragraph({ alignment: D.AlignmentType.CENTER, keepNext: true, children: [new D.ImageRun({ type: ext === 'jpg' ? 'jpg' : 'png', data: buf, transformation: { width: sw, height: sh } })] }));
+    // 图片段落必须用单倍（自动）行距：全文默认是固定 20 磅，图片行若继承固定行距，只会显示 20 磅高的一条，其余被裁掉
+    out.push(new D.Paragraph({ alignment: D.AlignmentType.CENTER, keepNext: true, spacing: { before: 120, after: 0, line: 240, lineRule: D.LineRuleType.AUTO }, children: [new D.ImageRun({ type: ext === 'jpg' ? 'jpg' : 'png', data: buf, transformation: { width: sw, height: sh } })] }));
   } else {
     stats.placeholders[currentFile] = (stats.placeholders[currentFile] || 0) + 1;
     if (COMPLETE) leftovers.push(`${currentFile}：图位无图 ${caption}`);
