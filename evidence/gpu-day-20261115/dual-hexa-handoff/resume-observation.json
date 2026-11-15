@@ -1,0 +1,16 @@
+{
+  "provenance": "Transcribed from the live queue-check.json read through the existing 277 Jupyter file view, after checking its handover log and original scheduler receipt.",
+  "captured_at": "2026-11-15T10:08:25.967983+08:00",
+  "corrected_completed": 39,
+  "historical_completed": 15,
+  "superseded_unsubmitted": 24,
+  "archive_bytes": 31716226,
+  "archive_sha256": "dd753a462f8c158c7b0a1a4083fbd07a52ea5325f1017a6fe50a895e2cd5d50f",
+  "first_non_hexa_resumed": {
+    "id": "S16-S3-r01",
+    "batch": 8,
+    "prompt_id": "adcdebf3-4ece-44d4-9201-7171ddf92c84",
+    "png_sha256": "de8b83e4d382e551c03a8d5bd98838a722edb9f149aef8b0e21aba55c11717e6",
+    "state": "completed"
+  }
+}

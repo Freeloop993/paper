@@ -1,0 +1,109 @@
+{
+  "method": "Pure red connected components in each frozen 1024px input; centroid of uniform red interiors; horizontal range divided by vertical range. These are guide measurements only.",
+  "guides": {
+    "hexa-points-0.70.png": {
+      "sha256": "c31f68c2ea22c5aa8e3ab8b483035fe7c500a37d4942dc5fb03a08942acc8293",
+      "axis_centres_px": [
+        [
+          286.7258064516129,
+          511.78494623655916
+        ],
+        [
+          398.9301075268817,
+          233.4247311827957
+        ],
+        [
+          398.9301075268817,
+          789.5752688172043
+        ],
+        [
+          624.0698924731183,
+          233.4247311827957
+        ],
+        [
+          624.0698924731183,
+          789.5752688172043
+        ],
+        [
+          736.2741935483871,
+          511.78494623655916
+        ]
+      ],
+      "horizontal_span_px": 449.54838709677415,
+      "vertical_span_px": 556.1505376344087,
+      "observed_ratio": 0.8083214106183053,
+      "registered_level": 0.7,
+      "normalized_WL": 0.7000268760183248
+    },
+    "hexa-points-1.00.png": {
+      "sha256": "d0768f8dac4f240316761309551a931b022390c89d06b956bda9f7b028829f5d",
+      "axis_centres_px": [
+        [
+          211.7258064516129,
+          511.78494623655916
+        ],
+        [
+          361.7258064516129,
+          251.78494623655914
+        ],
+        [
+          361.7258064516129,
+          771.2150537634409
+        ],
+        [
+          661.7258064516129,
+          251.78494623655914
+        ],
+        [
+          661.7258064516129,
+          771.2150537634409
+        ],
+        [
+          811.7258064516129,
+          511.78494623655916
+        ]
+      ],
+      "horizontal_span_px": 600.0,
+      "vertical_span_px": 519.4301075268818,
+      "observed_ratio": 1.1551120955555094,
+      "registered_level": 1.0,
+      "normalized_WL": 1.000356418969749
+    },
+    "hexa-points-1.30.png": {
+      "sha256": "096bee936611e874728b371dbe270c3aae4e5e18a1347abccd8aa66205511142",
+      "axis_centres_px": [
+        [
+          211.7258064516129,
+          511.78494623655916
+        ],
+        [
+          361.7258064516129,
+          311.78494623655916
+        ],
+        [
+          361.7258064516129,
+          711.2150537634409
+        ],
+        [
+          661.7258064516129,
+          311.78494623655916
+        ],
+        [
+          661.7258064516129,
+          711.2150537634409
+        ],
+        [
+          811.7258064516129,
+          511.78494623655916
+        ]
+      ],
+      "horizontal_span_px": 600.0,
+      "vertical_span_px": 399.4301075268817,
+      "observed_ratio": 1.5021401459068027,
+      "registered_level": 1.3,
+      "normalized_WL": 1.3008915263997542
+    }
+  },
+  "regular_hexagon_baseline": 1.1547005383792517,
+  "protocol": "experiments/hexa-plant-protection/topview-prep/README.md @ 38de520"
+}
