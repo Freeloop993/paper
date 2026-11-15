@@ -1,0 +1,131 @@
+{
+  "purpose": "15 matched historical/corrected pairs; implementation check only, no perceptual ratings",
+  "accounting": "The 15 historical observations do not enter corrected denominators.",
+  "changed_fields": [
+    "TextEncodeQwenImage21.negative_prompt",
+    "SaveImage.filename_prefix"
+  ],
+  "pairs": [
+    {
+      "old": "HEXA-draft-r1",
+      "corrected": "HEXA3-draft-r1",
+      "seed": 2026112301,
+      "old_png_sha256": "121a7acc59e695fbac5db9e8bc6f81e7a7f95245d75ba51b74b01368cd5b3981",
+      "corrected_png_sha256": "5fd252f58d93199cbb4a0471cf0bb169f9cc4aeac1ab975e04adeb4446af0b85",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "HEXA-draft-r2",
+      "corrected": "HEXA3-draft-r2",
+      "seed": 2026112302,
+      "old_png_sha256": "3f2bdeda138d53d0fb175e1671af3a7c740934bc5a406e424823e7c920f3ed25",
+      "corrected_png_sha256": "b814a2c7fcb4cd1a943a546869be07142c0df0073d369673bb9e05d413c77474",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "HEXA-draft-r3",
+      "corrected": "HEXA3-draft-r3",
+      "seed": 2026112303,
+      "old_png_sha256": "d1bf76efe443f2501fb4410b95af4affaf2433f0646faef5eabade4542cb729b",
+      "corrected_png_sha256": "d0f8b67efe1e191235c7d1e29cbdef1e0f6678d64e92310a390390ace2bcb441",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl0.70-r01",
+      "corrected": "HEXA3-wl0.70-r01",
+      "seed": 2026112323,
+      "old_png_sha256": "ef97a3a2a5c7a108334aedcdced3e187638ce4602246d9c454bb50c980e99c1a",
+      "corrected_png_sha256": "43c1e52ec62a5512ec11662ebef0c5196f13532e162049c04f9950bf7d00ff20",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl0.70-r02",
+      "corrected": "HEXA3-wl0.70-r02",
+      "seed": 2026112324,
+      "old_png_sha256": "4e3c7cce90bfcc42f6d72694f3438ca5bfc1a98ab89ecd1a18fd8e0c6e4b70c7",
+      "corrected_png_sha256": "221bd8311f7d47aea74b701b8befad23c52e1f620f8b94ccc8ce24a7819ce472",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl0.70-r03",
+      "corrected": "HEXA3-wl0.70-r03",
+      "seed": 2026112325,
+      "old_png_sha256": "9c3a5d0ed4f31b358fc45ce1bac51f41bfaa65f628c83a276456287ac4330cf4",
+      "corrected_png_sha256": "546804116918f35a8440b5e19f90ad188f3e6f709295fcfbfd58454c280e5120",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl0.70-r04",
+      "corrected": "HEXA3-wl0.70-r04",
+      "seed": 2026112326,
+      "old_png_sha256": "7d88ecb0a47218993bb51b32dec83de37d45a462027acb7eb6a39e871a23a856",
+      "corrected_png_sha256": "45402631dba11fe8d82876e9985934e71f5da3ab67750e1ea66c049f9902f9ed",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl1.00-r01",
+      "corrected": "HEXA3-wl1.00-r01",
+      "seed": 2026112323,
+      "old_png_sha256": "2494a62df83232664eff623121d07376fbb5841e1947a8d19a1983698595e325",
+      "corrected_png_sha256": "8ad514becbf072870dc5e48d591a238ed3027c4265b16660e6c54277cadec791",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl1.00-r02",
+      "corrected": "HEXA3-wl1.00-r02",
+      "seed": 2026112324,
+      "old_png_sha256": "a30182027bab5061ccc116160793240edb66a802aa3f253c742dde53ca5e9d6b",
+      "corrected_png_sha256": "5a85d7ab67c6b2022297c1a8b2322659ff16b02297c3c7ec6328ff1949bcad00",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl1.00-r03",
+      "corrected": "HEXA3-wl1.00-r03",
+      "seed": 2026112325,
+      "old_png_sha256": "23410a4ffb729e4aabdc8b665d91193fe0ca6777c9ea55fb4409c684eaf77931",
+      "corrected_png_sha256": "8126cfbfa5d2e28fd18438a38462c38bc292023d781df31004d58072254bb946",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl1.00-r04",
+      "corrected": "HEXA3-wl1.00-r04",
+      "seed": 2026112326,
+      "old_png_sha256": "fe7542c97da161538b3e1b3407ee17ceaa887b5ab3617febce519ebaab61d45d",
+      "corrected_png_sha256": "a35599eeb7871f9ef72016538bb93c8e32a2d336fd746afb2cd38e45d132d660",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl1.30-r01",
+      "corrected": "HEXA3-wl1.30-r01",
+      "seed": 2026112323,
+      "old_png_sha256": "59b1bb1f80cda6f0404634a71abc8d95eb78c4972d0247abd621099504609ba1",
+      "corrected_png_sha256": "61344d82cfe19a7919b07abec7fe19ec8cd036b668c156c04b51cd9d23232cf5",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl1.30-r02",
+      "corrected": "HEXA3-wl1.30-r02",
+      "seed": 2026112324,
+      "old_png_sha256": "cabe4886b335bba1193bf35e7546c4cc4dc9ba4dece8ee05082da9f3438c48e7",
+      "corrected_png_sha256": "e39cb7630170fc61d175f083ee98f53d93ed113c1280d4812da03d19eccf078f",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl1.30-r03",
+      "corrected": "HEXA3-wl1.30-r03",
+      "seed": 2026112325,
+      "old_png_sha256": "be3d1c6553f1579441b079bfac0422ffbdc0ad230f3f69fd417070a1420c4c84",
+      "corrected_png_sha256": "950baabf31d518e87fb5aeac849c811b2ecaa2ef73671055a5959b206becae82",
+      "decoded_rgb_identical": false
+    },
+    {
+      "old": "P2-HEXA-wl1.30-r04",
+      "corrected": "HEXA3-wl1.30-r04",
+      "seed": 2026112326,
+      "old_png_sha256": "1a9769ce176c0c2403835c6ad29d8a17071f6ebf16d22131f9451d218dc53467",
+      "corrected_png_sha256": "c4dd2892499046c96d475f27aa15db2a245ca8d5123e10b54b076c05bd98d548",
+      "decoded_rgb_identical": false
+    }
+  ],
+  "decoded_rgb_different": 15
+}
