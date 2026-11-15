@@ -4,6 +4,8 @@
 
 用 Word 打开时会提示“更新域”，选“是”即生成目录与图表清单的页码。也可以右键目录，选“更新域”→“更新整个目录”。
 
+**打开 [thesis-complete.docx](thesis-complete.docx)**：完成稿，只含已经写成的内容，没有黄色占位。版式、章节编号与工作稿相同；还缺数据的段落和随之变空的小节（如 5.3 节）整段略去，所以编号会有跳空，正文里提到“5.3 节”的地方也暂时没有对应内容。略去了哪些、为什么略去，见每次构建自动生成的 [build-report-complete.md](build-report-complete.md)。数据到齐、占位写成正文后，两份文件会自然合一。
+
 ## 文件
 
 | 文件 | 内容 |
@@ -17,6 +19,7 @@
 | `figures/make_figures.py` | 生成图 1.1、图 3.1、图 3.3（`python3 figures/make_figures.py`，需要 Pillow） |
 | `FORMAT.md` | 排版依据与逐项设置 |
 | `build-report.md` | 每次构建自动生成：各章字数、待补标记数、引用与图表清单 |
+| `build-report-complete.md` | 完成稿的构建报告：本稿略去的待补段落与小节、未标黄的待核文献 |
 
 ## 怎样更新
 
@@ -28,9 +31,10 @@
    ```sh
    npm install
    npm run build
+   npm run build:complete
    ```
 
-3. 把源文件、`thesis-draft.docx` 和 `build-report.md` 一起提交。
+3. 把源文件、`thesis-draft.docx`、`thesis-complete.docx` 和两份构建报告一起提交。
 
 源文件的写法：
 

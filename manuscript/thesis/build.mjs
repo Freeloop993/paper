@@ -2,6 +2,9 @@
 // 依据：《南京航空航天大学研究生学位论文撰写要求》（2015 年 4 月修订），见 FORMAT.md。
 // 用法：cd manuscript/thesis && npm install && npm run build
 // 输入：src/meta.json 列出的源文件；输出：thesis-draft.docx 与 build-report.md。
+// 完成稿：node build.mjs --complete → thesis-complete.docx 与 build-report-complete.md。
+//   只含已写成的内容：整段为〔…〕的待补段落删去，删空的小节连同标题略去，全空的后置部分（致谢等）略去；
+//   正文里若还残留任何〔…〕或无图的图位，构建失败并列出位置。
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -10,10 +13,13 @@ import JSZip from 'jszip';
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const SRC = path.join(HERE, 'src');
-const OUT = path.join(HERE, 'thesis-draft.docx');
-const REPORT = path.join(HERE, 'build-report.md');
+const COMPLETE = process.argv.includes('--complete');
+const OUT = path.join(HERE, COMPLETE ? 'thesis-complete.docx' : 'thesis-draft.docx');
+const REPORT = path.join(HERE, COMPLETE ? 'build-report-complete.md' : 'build-report.md');
+const leftovers = []; const omitted = [];
 
 const meta = JSON.parse(fs.readFileSync(path.join(SRC, 'meta.json'), 'utf8'));
+if (COMPLETE) meta.thesis_no = meta.thesis_no.replace(/〔[^〕]*〕/g, '').trim();
 const refsDb = fs.existsSync(path.join(SRC, 'references.json'))
   ? JSON.parse(fs.readFileSync(path.join(SRC, 'references.json'), 'utf8')) : {};
 
@@ -65,6 +71,7 @@ function runs(text, base = {}) {
       push(citeNumbers(keys), { superScript: true });
     } else if (tok.startsWith('〔')) {
       stats.placeholders[currentFile] = (stats.placeholders[currentFile] || 0) + 1;
+      if (COMPLETE) leftovers.push(`${currentFile}：${tok.slice(0, 40)}`);
       push(tok, { highlight: 'yellow' });
     } else push(tok.slice(1, -1), { font: F(SONG, TNR) });
     last = m.index + tok.length;
@@ -125,7 +132,7 @@ function parseBlocks(md) {
 
 // ---------- 元素构造 ----------
 // 图题、表题统一写成“图 1.1 标题”“表 1.1 标题”（同门四篇与 Word 题注的写法）
-const capText = (c) => c.replace(/^(图|表)\s*(\d+\.\d+)\s*/, '$1 $2 ');
+const capText = (c) => c.replace(/^(图|表)\s*([A-Z]\.\d+|\d+\.\d+)\s*/, '$1 $2 ');
 const body = (text, opts = {}) => new D.Paragraph({ style: 'Body', children: runs(text), ...opts });
 const noIndent = (children, opts = {}) => new D.Paragraph({ style: 'BodyNoIndent', children, ...opts });
 
@@ -139,7 +146,7 @@ function weight(s) { let w = 0; for (const ch of s) w += /[\u0000-ÿ]/.test(ch) 
 
 function table(block) {
   const { rows } = block; const caption = capText(block.caption);
-  const numbered = /^表\s*\d/.test(caption);
+  const numbered = /^表\s*([A-Z]\.|\d)/.test(caption);
   if (numbered) stats.tables.push(caption);
   const ncol = Math.max(...rows.map((r) => r.length));
   const maxw = Array.from({ length: ncol }, (_, c) => Math.max(2, ...rows.map((r) => weight(r[c] || ''))));
@@ -203,6 +210,7 @@ function figure(block, fileDir) {
     out.push(new D.Paragraph({ alignment: D.AlignmentType.CENTER, keepNext: true, children: [new D.ImageRun({ type: ext === 'jpg' ? 'jpg' : 'png', data: buf, transformation: { width: sw, height: sh } })] }));
   } else {
     stats.placeholders[currentFile] = (stats.placeholders[currentFile] || 0) + 1;
+    if (COMPLETE) leftovers.push(`${currentFile}：图位无图 ${caption}`);
     const box = { style: D.BorderStyle.DASHED, size: 6, color: '808080', space: 8 };
     out.push(new D.Paragraph({
       alignment: D.AlignmentType.CENTER, keepNext: true, spacing: { before: 240, after: 120, line: 400, lineRule: EXACT },
@@ -228,12 +236,29 @@ function renderBlocks(blocks, fileDir, { frontTitle = false } = {}) {
   return out;
 }
 
+// 完成稿：删去整段待补，再删去没有正文的标题（某标题到下一个同级或更高级标题之间没有任何正文块即为空）
+function completeFilter(blocks) {
+  const isPh = (s) => /^〔[^〕]*〕$/.test(s.trim());
+  const bs = blocks.filter((b) => {
+    const drop = (b.type === 'p' && isPh(b.text)) || (b.type === 'note' && isPh(b.text.replace(/^注[：:]\s*/, '')));
+    if (drop) omitted.push(`${currentFile}　段落：${b.text.replace(/^注[：:]\s*/, '').slice(1, -1)}`);
+    return !drop;
+  });
+  const content = (b) => b.type !== 'h' && b.type !== 'pagebreak';
+  return bs.filter((b, i) => {
+    if (b.type !== 'h') return true;
+    for (let j = i + 1; j < bs.length && !(bs[j].type === 'h' && bs[j].level <= b.level); j++) if (content(bs[j])) return true;
+    omitted.push(`${currentFile}　标题：${b.text}`);
+    return false;
+  });
+}
+
 function loadFile(name, opts) {
   currentFile = name;
   const p = path.join(SRC, name);
   const md = fs.readFileSync(p, 'utf8');
   stats.chars[name] = countChars(md.replace(/<!--[\s\S]*?-->/g, '').split('\n').filter((l) => !l.trim().startsWith('>')).join('\n'));
-  return { blocks: parseBlocks(md), dir: path.dirname(p), opts };
+  return { blocks: COMPLETE ? completeFilter(parseBlocks(md)) : parseBlocks(md), dir: path.dirname(p), opts };
 }
 
 // ---------- 页眉页脚 ----------
@@ -325,7 +350,7 @@ const refList = [heading(1, '参考文献')];
 cite.order.forEach((k, idx) => {
   const r = refsDb[k];
   const text = r ? r.text : `〔待补文献条目：${k}〕`;
-  const warn = !r || (r.status && r.status !== 'ok');
+  const warn = !COMPLETE && (!r || (r.status && r.status !== 'ok'));
   refList.push(new D.Paragraph({ style: 'RefItem', children: [new D.TextRun({ text: `[${idx + 1}] ` }), new D.TextRun({ text, ...(warn ? { highlight: 'yellow' } : {}) })] }));
 });
 
@@ -428,12 +453,19 @@ zip.file('word/document.xml', xml);
 const clean = new JSZip();
 for (const [name, f] of Object.entries(zip.files)) if (!f.dir) clean.file(name, await f.async('nodebuffer'), { createFolders: false });
 const outBuf = await clean.generateAsync({ type: 'nodebuffer', compression: 'DEFLATE' });
+if (COMPLETE && leftovers.length) { console.error('完成稿仍有待补内容：\n' + leftovers.join('\n')); process.exit(1); }
 fs.writeFileSync(OUT, outBuf);
 
 // ---------- 构建报告 ----------
 const all = [...meta.frontmatter, ...meta.chapters, ...meta.backmatter];
 const total = all.reduce((a, n) => a + (stats.chars[n] || 0), 0);
-const lines = [
+const lines = COMPLETE ? [
+  '# 完成稿构建报告（自动生成，勿手改）', '',
+  '`thesis-complete.docx` 只含已经写成的内容。下列待补段落与随之变空的标题在本稿中略去，仍保留在 `thesis-draft.docx` 中，数据到齐后写入。', '',
+  ...omitted.map((s) => `- ${s}`), '',
+  `参考文献 ${cite.order.length} 条，其中待核对原文的 ${cite.order.filter((k) => refsDb[k] && refsDb[k].status !== 'ok').length} 条在本稿中不再标黄：${cite.order.filter((k) => refsDb[k] && refsDb[k].status !== 'ok').join('、') || '无'}。`, '',
+  `图 ${stats.figures.length} 幅、表 ${stats.tables.length} 张。`, '',
+] : [
   '# 构建报告（自动生成，勿手改）', '',
   `源文件提交后运行 \`npm run build\` 重新生成。汉字计数不含编辑备注与表格外的英文。`, '',
   '| 源文件 | 汉字数 | 待补标记〔〕 |', '|---|---:|---:|',
