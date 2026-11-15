@@ -18,6 +18,7 @@
 | `build.mjs` | 排版脚本 |
 | `figures/make_figures.py` | 生成图 1.1、图 3.1、图 3.3（`python3 figures/make_figures.py`，需要 Pillow） |
 | `FORMAT.md` | 排版依据与逐项设置 |
+| `STYLE.md` | 正文写作规范：学术文风、统一术语、禁用说法与提交前检查 |
 | `build-report.md` | 每次构建自动生成：各章字数、待补标记数、引用与图表清单 |
 | `build-report-complete.md` | 完成稿的构建报告：本稿略去的待补段落与小节、未标黄的待核文献 |
 
