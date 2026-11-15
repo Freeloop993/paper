@@ -1,0 +1,55 @@
+{
+  "source_commit": "e2dd53b47660084376a7d0cb640eef79553f86fb",
+  "parent": "E3R3-B2.png",
+  "parent_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+  "requests": [
+    {
+      "id": "REV2v2-dev-B2-r1",
+      "phase": "dev",
+      "seed": 2026112141,
+      "path": "dev/REV2v2-dev-B2-r1.json",
+      "sha256": "0b951933308939829edaa5849facacb992c57c99034b566bfdc56536332832fb",
+      "source_request": "4b53b8d57beb1a25c82885c8ce79e83329c1ef56dc18248104478ce9d8f62b65"
+    },
+    {
+      "id": "REV2v2-dev-B2-r2",
+      "phase": "dev",
+      "seed": 2026112142,
+      "path": "dev/REV2v2-dev-B2-r2.json",
+      "sha256": "756d9f562707c99ba4acb7ea8ddff233ba65e684611b29e9fbb85ea335afa152",
+      "source_request": "48dafde0883d6be65e508958b48656639883f2b301d59ea4592e6e3a4b90fb39"
+    },
+    {
+      "id": "REV2v2-dev-B2-r3",
+      "phase": "dev",
+      "seed": 2026112143,
+      "path": "dev/REV2v2-dev-B2-r3.json",
+      "sha256": "c5c8bbfc69ea6e7a7c4eb8d842085e6e6595d7348b803eab3678a21e8716635f",
+      "source_request": "0c7560c7c7e359fb68645d16ebc640ea4752b9c366f360f93a55de83617f3c01"
+    },
+    {
+      "id": "REV2v2-formal-B2-r1",
+      "phase": "formal",
+      "seed": 2026112144,
+      "path": "formal/REV2v2-formal-B2-r1.json",
+      "sha256": "f432ecd475cb2711680ecf024328343d4fb84eaef914ae054eb4559e08734c63",
+      "source_request": "9b3d85410536b6dfeaecfd8c7523a81a9969c4a814711d5a7d5fa0c279e39b9a"
+    },
+    {
+      "id": "REV2v2-formal-B2-r2",
+      "phase": "formal",
+      "seed": 2026112145,
+      "path": "formal/REV2v2-formal-B2-r2.json",
+      "sha256": "0da798a9fa3cb7a1bf14f54870a789a95ad96d758b63c4f059b0605357fcfe78",
+      "source_request": "f69ee5ac1d1154245f1c82b6bde338feb10e5069e83144eba35e927c5d3da5ac"
+    },
+    {
+      "id": "REV2v2-formal-B2-r3",
+      "phase": "formal",
+      "seed": 2026112146,
+      "path": "formal/REV2v2-formal-B2-r3.json",
+      "sha256": "8f84d4b0991db7352d501c4fd7b5880b500b0064a74efc7acd1d9437e435fa81",
+      "source_request": "214c73145a7014822309ae1f1193aceb90d358a2fd69e25436deddc12ddd475d"
+    }
+  ]
+}

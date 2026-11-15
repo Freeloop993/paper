@@ -1,0 +1,101 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "qwen_image_2.1_bf16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_8b_bf16.safetensors",
+        "type": "qwen_image",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "TextEncodeQwenImage21",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "prompt": "Edit this drone image. Change only the nose: fit a compact forward-facing gimbal camera under the front edge of the fuselage, at the top of the image. The top of the housing projects slightly beyond the nose outline. Its lens faces horizontally forward and is occluded by the housing in this strict top view. Keep everything else exactly the same: the strict orthographic top view, the body outline, the top cover panels and parting lines, the seamless arms, the motors with their orange rings, the two-blade propellers and their angles, the colours and the plain light background.",
+        "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, camera lens visible from above, upward-facing lens, camera on a neck or stalk, camera on a post, camera at the tail, dark module at the tail, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades, lens glass on the top of the camera, camera window on top, dark circle on the camera top",
+        "resolution": 1024,
+        "images.image_1": [
+          "15",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026112145,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    "11": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "10",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "12": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "11",
+          0
+        ],
+        "filename_prefix": "REV2v2-formal-B2-r2"
+      }
+    },
+    "15": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "E3R3-B2.png"
+      }
+    }
+  }
+}
