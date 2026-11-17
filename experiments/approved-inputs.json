@@ -1,0 +1,63 @@
+{
+ "note": "出图可用的输入图白名单。父图必须写明作者的选择与出处；点线图写明画法来源。新增或更换前先改这里并在 #1 说明。E1 原图不再作父图（2026-11-15 作者要求修正 E2）。",
+ "parents": {
+  "E3R3-B2.png": {
+   "sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+   "role": "E3 修订父图",
+   "decision": "作者 2026-11-15“那就B2吧”（#3）；Codex parent-selection.json"
+  },
+  "E3R3-C1.png": {
+   "sha256": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b",
+   "role": "E2R 实验父图（非第四章父图）",
+   "decision": "Codex TAKEOVER.md，作者“E2的你修正后再继续跑”（#3）"
+  },
+  "B2-L-lowkey.png": {
+   "sha256": "46936781f061ecb014a2d9442ae15e5c5c3be47b189ca708b1de20cf5de32ef4",
+   "role": "4.4 深化：低调配色稿，材质档 M 的编辑底图（非实验父图）",
+   "decision": "作者 2026-11-15（#3）：以去窗 B2、下端相机深化；色材“应该都有”；碳纤维臂开发 3 张“可以，登记后跑”",
+   "nose_at": "lower edge",
+   "source": "experiments/e3-deepening/cmf-recolour/B2-L-lowkey.png"
+  },
+  "B2-no-window.png": {
+   "sha256": "9726c778774296c3f164f19ef497c636edc9a23d31ef0f29c83a1b99a0e7b175",
+   "role": "4.4 深化底图：去窗 B2（相机待装），机头在画面下端",
+   "decision": "作者 2026-11-15（#1 comment 6888323037，Codex 代记）：以去窗 B2 为 4.4 深化父图，下端安装相机",
+   "nose_at": "lower edge",
+   "source": "experiments/e3-deepening/end-comparison/B2-no-window.png"
+  }
+ },
+ "guides": {
+  "qwen-shape-dots-250-15c5ad1c924b.png": {
+   "sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+   "role": "四旋 250 mm 点线图（设计与造型批）"
+  },
+  "quad-dots-wl0.70.png": {
+   "sha256": "96c62555fe2a602b0954aef7821c1d026ef073c49ddee1b22f163e27dc88bc1e",
+   "role": "四旋 W/L 0.70 点线图（重绘）"
+  },
+  "quad-dots-wl1.00.png": {
+   "sha256": "99ff37153f5e8106e505795cd8aa7443b00e3f38c8624a02763c3bd01a79e1f1",
+   "role": "四旋 W/L 1.00 点线图（重绘）"
+  },
+  "quad-dots-wl1.30.png": {
+   "sha256": "2b81f7667a72c6774271afb5dd7e3c9aeb9dbf1c5872a6f7564f4505dd7841c0",
+   "role": "四旋 W/L 1.30 点线图（重绘）"
+  },
+  "hexa-points-0.70.png": {
+   "sha256": "c31f68c2ea22c5aa8e3ab8b483035fe7c500a37d4942dc5fb03a08942acc8293",
+   "role": "六旋 W/L 0.70 点线图"
+  },
+  "hexa-points-1.00.png": {
+   "sha256": "d0768f8dac4f240316761309551a931b022390c89d06b956bda9f7b028829f5d",
+   "role": "六旋基准点线图"
+  },
+  "hexa-points-1.30.png": {
+   "sha256": "096bee936611e874728b371dbe270c3aae4e5e18a1347abccd8aa66205511142",
+   "role": "六旋 W/L 1.30 点线图"
+  },
+  "wl-1.00-dd-0.50.png": {
+   "sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
+   "role": "四旋双叶部件图（几何批与 E1 对照）"
+  }
+ }
+}
