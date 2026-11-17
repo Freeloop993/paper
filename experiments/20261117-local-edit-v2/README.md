@@ -59,3 +59,11 @@
 - 把 `inputs/` 的 5 张底图与 `masks/` 的 6 张遮罩都放进 ComfyUI 的 input 目录。遮罩由 `LoadImageMask` 读取红色通道。
 - 出图前检查：`python3 -B experiments/preflight.py experiments/20261117-local-edit-v2/requests --inputs experiments/20261117-local-edit-v2/inputs --allow-shared-seeds E2V2` 已通过，共 73 份。
 - 请求、种子、遮罩与输入的摘要见 [manifest.json](manifest.json)。种子 2026117xxx 此前未用过。
+
+## 11 月 17 日补充 · 遮罩核验
+
+本批一并比对每份请求预定的遮罩文件、红通道及文件 SHA-256。使用已分开的 inputs 与 masks 目录时，在仓库根目录运行下列命令。73 份均通过离线检查。
+
+```bash
+python3 -B experiments/preflight.py experiments/20261117-local-edit-v2/requests --inputs experiments/20261117-local-edit-v2/inputs --masks experiments/20261117-local-edit-v2/masks --mask-manifest experiments/20261117-local-edit-v2/manifest.json --allow-shared-seeds E2V2
+```
