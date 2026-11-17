@@ -1,5 +1,7 @@
 # 无人机造型配置器
 
+[Claude 接手界面优化：阅读清单、已核实的依据和第一轮验收](claude-interface-brief.md)
+
 这是作者 E 盘恢复的五页签 React / TypeScript 配置器，作为后续优化的源码起点。
 
 [下载离线版 ZIP](configurator-offline.zip?raw=true)。完整解压后用浏览器打开包内的 `index.html`。在「机架」「动力」「机身」「起落架」「配件」中选择参数，可查看示意图、导出配置 JSON，并在「Prompt生成器」下载对应文本。「机身」页可调长、宽、高，外壳造型留给设计者决定。
