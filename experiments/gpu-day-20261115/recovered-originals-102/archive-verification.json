@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-17",
+  "archive": "recovery-day102-1117.zip",
+  "bytes": 88312462,
+  "sha256": "e7b123e3a9969b9996953b9f33eeecdf3b75b4a6113dd0098fafbd4723d78dab",
+  "verified_recovered": 102,
+  "verified_schedule": 247,
+  "verified_superseded": 15,
+  "by_batch": {
+    "legacy_E2": 6,
+    "COMBO": 24,
+    "S12_extension": 48,
+    "S16_extension": 24
+  },
+  "scope": "11月15日 GPU 排程和被替代六旋原图；下载回收，无新生成或新判读"
+}
