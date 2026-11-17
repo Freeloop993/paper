@@ -1,0 +1,315 @@
+{
+  "dpi": 576,
+  "renderer": "pdftoppm RGB default PPM; no rotation; integral crop [left,top,right,bottom); x right, y down, origin at top left of crop",
+  "reader": "Codex 单次知型号判读；独立复点 0 次",
+  "samples": {
+    "air": {
+      "brand": "DJI",
+      "model": "Mavic Air",
+      "manual_url": "https://dl.djicdn.com/downloads/Mavic%20Air/Mavic_Air_User_Manual_v1.2_en.pdf",
+      "version": "EN v1.2 2018.05",
+      "pdf_sha256": "439105c582ae1baaf20bec2c3758a20a2339880e63f1b75a6ef9c5e3c6442abe",
+      "pdf_page": 7,
+      "printed_page": "6",
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        2360,
+        2888,
+        2840,
+        3408
+      ],
+      "crop_rgb_sha256": "e69168f7b4647a7f3f9646ba13d0e847777e8d6ea09032990dc683d3b544d18d",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure": "首飞准备步骤 2 最右；四臂展开、直桨在位；上排可见前起落架端部，与印刷 12 / PDF 13 的 Front LED 位置核对。",
+      "landmark": "桨帽椭圆环内的小轴心，沿线中心估读。",
+      "points_crop_px": {
+        "FL": [
+          107,
+          142
+        ],
+        "FR": [
+          360,
+          142
+        ],
+        "RL": [
+          107,
+          361
+        ],
+        "RR": [
+          360,
+          361
+        ]
+      }
+    },
+    "air2": {
+      "brand": "DJI",
+      "model": "Mavic Air 2",
+      "manual_url": "https://dl.djicdn.com/downloads/Mavic_Air_2/20240528UM/Mavic_Air_2_User_Manual_v1.6_EN.pdf",
+      "version": "EN v1.6 2021.05",
+      "pdf_sha256": "413e455f2b870101393da4aaf6867b2373657cff6600107f9494b313c3f4128a",
+      "pdf_page": 17,
+      "printed_page": "16",
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        560,
+        2832,
+        1384,
+        3648
+      ],
+      "crop_rgb_sha256": "176735a10b65e09d3f696b3990c7e1f568b0c835c69febf2bea88cfc73f32ea0",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure": "Detection Range 左图；电池键、机背与四臂连续可见；上方是前向探测，下方为后向，虚线避开四轴。印刷 24 / PDF 25 的装桨放大框有尺度变化，弃用。",
+      "landmark": "桨夹两固定点之间的中央小圆。",
+      "points_crop_px": {
+        "FL": [
+          158,
+          247
+        ],
+        "FR": [
+          663,
+          245
+        ],
+        "RL": [
+          187,
+          614
+        ],
+        "RR": [
+          637,
+          614
+        ]
+      }
+    },
+    "m2": {
+      "brand": "DJI",
+      "model": "Mavic 2 Pro",
+      "manual_url": "https://dl.djicdn.com/downloads/Mavic_2/201911um/Mavic_2_Pro_Zoom_User_Manual_v2.0_en.pdf",
+      "version": "EN v2.0 2019.04",
+      "pdf_sha256": "f9d2f1ad72276ca31cdedb83d3ea690a0d7a344cca953277e92238d2313fc861",
+      "pdf_page": 9,
+      "printed_page": "9",
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        448,
+        2152,
+        1504,
+        3232
+      ],
+      "crop_rgb_sha256": "2bacf952380063cf1fbcecd17f00af52acf80ac72aad25c41200fc0c2f423834",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure": "Aircraft Diagram 倒数第二图，引线 13–16 指向电池、电源键及尾灯；正下方是腹面图。前向位于图上，共用 Pro/Zoom 机架示意。",
+      "landmark": "桨夹两固定点之间的中央小圆。",
+      "points_crop_px": {
+        "FL": [
+          198,
+          312
+        ],
+        "FR": [
+          865,
+          312
+        ],
+        "RL": [
+          242,
+          802
+        ],
+        "RR": [
+          821,
+          802
+        ]
+      }
+    },
+    "mini": {
+      "brand": "DJI",
+      "model": "Mavic Mini",
+      "manual_url": "https://dl.djicdn.com/downloads/Mavic_Mini/20240103/2/Mavic_Mini_User_Manual_v1.2_EN.pdf",
+      "version": "EN v1.2 2024.01",
+      "pdf_sha256": "7b9c31006a60659a7aff09b2c81afc31941a948a6b7cf23c4a07773e170d9299",
+      "pdf_page": 29,
+      "printed_page": "28",
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        1016,
+        1440,
+        1448,
+        1928
+      ],
+      "crop_rgb_sha256": "97eead57988f7ac37c035d463bf11ec6a233c1a524b3fdbe44810ac193e3d0a2",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure": "Mode 2 表第二行，灰色箭头标明机头。机背有 DJI 标志，四副桨均展开。印刷 12 / PDF 13 的指示灯图露出腹部传感器，弃用。",
+      "landmark": "成对桨根固定点的中间位置。",
+      "points_crop_px": {
+        "FL": [
+          87,
+          166
+        ],
+        "FR": [
+          353,
+          166
+        ],
+        "RL": [
+          92,
+          355
+        ],
+        "RR": [
+          348,
+          355
+        ]
+      }
+    },
+    "m3p": {
+      "brand": "DJI",
+      "model": "Mini 3 Pro",
+      "manual_url": "https://dl.djicdn.com/downloads/DJI_Mini_3_Pro/UM/DJI_Mini_3_Pro_User_Manual_EN.pdf",
+      "version": "EN v1.6 2023.04",
+      "pdf_sha256": "d0aaeb14c7fb19b34281616d3831b0dbbed770f79c801150e24767e5ddb5885a",
+      "pdf_page": 8,
+      "printed_page": "7",
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        2152,
+        2424,
+        2896,
+        3056
+      ],
+      "crop_rgb_sha256": "e206c4edf65456c9d3d8842d0fe93deab8dc3d17e08011900f474f34884181f5",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure": "Using for the First Time 步骤 3 末图；四臂和叶片展开，云台端朝上，尾部可见电池指示灯。",
+      "landmark": "成对桨根螺钉中心的中间位置。",
+      "points_crop_px": {
+        "FL": [
+          123,
+          183
+        ],
+        "FR": [
+          602,
+          183
+        ],
+        "RL": [
+          191,
+          499
+        ],
+        "RR": [
+          535,
+          499
+        ]
+      }
+    },
+    "m4p": {
+      "brand": "DJI",
+      "model": "Mini 4 Pro",
+      "manual_url": "https://dl.djicdn.com/downloads/DJI_Mini_4_Pro/20240627/DJI_Mini_4_Pro_User_Manual_en.pdf",
+      "version": "EN v1.4 2024.06",
+      "pdf_sha256": "f406ade56615262d4159821912dba06cb506460aa891eddf2cc8aa081ce61e93",
+      "pdf_page": 11,
+      "printed_page": "11",
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        1992,
+        1512,
+        2944,
+        2432
+      ],
+      "crop_rgb_sha256": "dbc5b8b89e1b27246b0ea97d3b1c2b4530dad1ac5f875d0592f16235bf304454",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure": "Using for the First Time 步骤 4 末图；四臂和叶片展开，云台端朝上，机背电量指示灯朝下。",
+      "landmark": "成对桨根螺钉中心的中间位置。",
+      "points_crop_px": {
+        "FL": [
+          142,
+          241
+        ],
+        "FR": [
+          797,
+          241
+        ],
+        "RL": [
+          229,
+          682
+        ],
+        "RR": [
+          708,
+          680
+        ]
+      }
+    },
+    "nano": {
+      "brand": "Autel Robotics",
+      "model": "EVO Nano+",
+      "manual_url": "https://www.autelrobotics.cn/wp-content/uploads/2023/06/%E7%AE%80%E4%B8%AD_EVO-Nano%E7%B3%BB%E5%88%97%E9%A3%9E%E8%A1%8C%E5%99%A8%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V3.0.9.pdf",
+      "version": "简中 V3.0.9 2025.01",
+      "pdf_sha256": "7466f7b29e90271e3de4f3f3012a0855f22004ac592bb58ec95e80662a53b413",
+      "pdf_page": 1,
+      "printed_page": "封面（无印刷页码）",
+      "page_size_px": [
+        4765,
+        6737
+      ],
+      "crop_ltrb_px": [
+        1304,
+        2944,
+        3424,
+        4784
+      ],
+      "crop_rgb_sha256": "4fa922f30f5f9027579fb5fe8d2f43049c2e194c829158fcb5f2442800e8ae25",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure": "封面中央的系列共用机背图；四臂、四桨及背壳标志可见。印刷 27 / PDF 38 标识前置云台，并注明两子型除云台相机外特征一致。图中较宽的头壳朝上。",
+      "landmark": "以桨毂圆形外缘及中心暗部估读；封面内嵌位图，放大后有明显像素阶梯。",
+      "points_crop_px": {
+        "FL": [
+          359,
+          506
+        ],
+        "FR": [
+          1768,
+          506
+        ],
+        "RL": [
+          402,
+          1463
+        ],
+        "RR": [
+          1726,
+          1463
+        ]
+      }
+    }
+  }
+}
