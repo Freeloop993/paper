@@ -1,0 +1,43 @@
+{
+  "reader_sha256": "d741a44d4521fbf72f5a95ad4581c0925a30f92ad26500c34c10be1638c51f57",
+  "layout": {
+    "primary": {
+      "0.70": {
+        "n": 4,
+        "median": 0.849342599385697
+      },
+      "1.00": {
+        "n": 4,
+        "median": 0.9746296306884522
+      },
+      "1.30": {
+        "n": 3,
+        "median": 1.1327361259644286
+      },
+      "complete_triplets": 3,
+      "strictly_increasing": 3
+    },
+    "extension": {
+      "0.70": {
+        "n": 8,
+        "median": 0.8927684356583594
+      },
+      "1.00": {
+        "n": 8,
+        "median": 0.9905828318115351
+      },
+      "1.30": {
+        "n": 8,
+        "median": 1.0126860983484665
+      },
+      "complete_triplets": 8,
+      "strictly_increasing": 6
+    }
+  },
+  "axes_read": 215,
+  "blades": {
+    "2": 205,
+    "1": 6,
+    "3": 5
+  }
+}

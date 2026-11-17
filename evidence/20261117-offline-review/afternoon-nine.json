@@ -1,0 +1,113 @@
+{
+  "scope": "知条件开发初读，R 必须位于机尾，M 存疑单列，不计入满足全部条件",
+  "records": [
+    {
+      "id": "E6B-R-dev-r1",
+      "sha256": "5d30f1f64c0b39a8fc6b22413ceff4ed8c89184f3b15c8ac9b429c2e890e1b5e",
+      "reader": "知条件AI初读",
+      "six_motors_visible": true,
+      "blades": "每轴可见两叶；此项不检验叶片角度",
+      "tank_top": "可见",
+      "filler_cap": "可见",
+      "hinge": "可见连接块或销状细节，不能由顶视证实可折叠",
+      "boom": "横杆及多个向下的小支件可辨，与横向中臂分开",
+      "placement": "位于画面上半部；实际请求规定上方为机头",
+      "target_pass": false
+    },
+    {
+      "id": "E6B-R-dev-r2",
+      "sha256": "1ac8300816970832e3473709c4cff4a7d6d11ff7b229462a565fdfd92544e802",
+      "reader": "知条件AI初读",
+      "six_motors_visible": true,
+      "blades": "每轴可见两叶；此项不检验叶片角度",
+      "tank_top": "可见",
+      "filler_cap": "可见",
+      "hinge": "可见连接块或销状细节，不能由顶视证实可折叠",
+      "boom": "横杆及多个向下的小支件可辨，与横向中臂分开",
+      "placement": "位于画面上半部；实际请求规定上方为机头",
+      "target_pass": false
+    },
+    {
+      "id": "E6B-R-dev-r3",
+      "sha256": "895f9ecc238cf04885904f425b990097e8b5dd7602bf180ba504b0e0f2f51458",
+      "reader": "知条件AI初读",
+      "six_motors_visible": true,
+      "blades": "每轴可见两叶；此项不检验叶片角度",
+      "tank_top": "可见",
+      "filler_cap": "可见",
+      "hinge": "可见连接块或销状细节，不能由顶视证实可折叠",
+      "boom": "横杆及多个向下的小支件可辨，与横向中臂分开",
+      "placement": "位于画面上半部；实际请求规定上方为机头",
+      "target_pass": false
+    },
+    {
+      "id": "E6B-N-dev-r1",
+      "sha256": "9c2e199f5b678a9da1ec2d356a178a8994fab0501c86ef99682404f999cd41ef",
+      "reader": "知条件AI初读",
+      "six_motors_visible": true,
+      "blades": "每轴可见两叶；此项不检验叶片角度",
+      "tank_top": "可见",
+      "filler_cap": "可见",
+      "hinge": "可见连接块或销状细节，不能由顶视证实可折叠",
+      "nozzle": "六个电机旁各有相似的短管端，未见独立横向喷杆",
+      "target_pass": true,
+      "limit": "只判断图面线索，不能从顶视验证喷头安装高度或功能"
+    },
+    {
+      "id": "E6B-N-dev-r2",
+      "sha256": "6347fca24aadcddba1f4e1d2ba903ee26b7e08d664dee135bbc36438d4b706d7",
+      "reader": "知条件AI初读",
+      "six_motors_visible": true,
+      "blades": "每轴可见两叶；此项不检验叶片角度",
+      "tank_top": "可见",
+      "filler_cap": "可见",
+      "hinge": "可见连接块或销状细节，不能由顶视证实可折叠",
+      "nozzle": "六个电机旁各有相似的短管端，未见独立横向喷杆",
+      "target_pass": true,
+      "limit": "只判断图面线索，不能从顶视验证喷头安装高度或功能"
+    },
+    {
+      "id": "E6B-N-dev-r3",
+      "sha256": "04ad3149d121fcc30b9435ab4ba992b5489a448362fe8412d932c36f07502aef",
+      "reader": "知条件AI初读",
+      "six_motors_visible": true,
+      "blades": "每轴可见两叶；此项不检验叶片角度",
+      "tank_top": "可见",
+      "filler_cap": "可见",
+      "hinge": "可见连接块或销状细节，不能由顶视证实可折叠",
+      "nozzle": "六个电机旁各有相似的短管端，未见独立横向喷杆",
+      "target_pass": true,
+      "limit": "只判断图面线索，不能从顶视验证喷头安装高度或功能"
+    },
+    {
+      "id": "M-L-dev-r1",
+      "sha256": "b8339e53d33e6ed5c6b94ef0f6ee400d3dba1623ed9cb2f109f5f87146fc489f",
+      "reader": "知条件AI初读",
+      "texture": "可见深色重复编纹",
+      "light_shell": true,
+      "camera": "画面下端",
+      "preservation": "不保持：对照父图，上侧两臂明显增厚，臂根也更宽",
+      "target_pass": false
+    },
+    {
+      "id": "M-L-dev-r2",
+      "sha256": "e62bdd89534b056dc0936efc6a1fef7f646e153433d84ddb721fdb82ac1c924b",
+      "reader": "知条件AI初读",
+      "texture": "可见深色重复编纹",
+      "light_shell": true,
+      "camera": "画面下端",
+      "preservation": "可见保持：整机轮廓、顶盖、各臂、桨和下端相机一致",
+      "target_pass": true
+    },
+    {
+      "id": "M-L-dev-r3",
+      "sha256": "5fb016f3d8a78ce15394e47d69d8290eedb38e50dc9dd7006fbaedfe8f4e2e4b",
+      "reader": "知条件AI初读",
+      "texture": "可见深色重复编纹",
+      "light_shell": true,
+      "camera": "画面下端",
+      "preservation": "存疑：机臂边缘比父图稍宽，不能仅凭色差断定完全保持",
+      "target_pass": null
+    }
+  ]
+}
