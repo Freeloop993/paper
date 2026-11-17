@@ -1,15 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { Camera, Palette, Type, User, Sparkles, Loader2 } from 'lucide-react';
+import { Camera, Palette, Type, User, Sparkles } from 'lucide-react';
 import type { UserProfile, UserProfileInfo } from '../../types/DroneParameters';
-import { DeepSeekPromptOptimizer } from '../../services/deepseekPromptOptimizer';
 
 const AccessoriesParameters: React.FC = () => {
   const { parameters, updateAccessoriesParams, selectedUserProfile, setSelectedUserProfile } = useDroneStore();
   const accessoriesParams = parameters.accessories;
-  const [isOptimizing, setIsOptimizing] = useState(false);
-  const [optimizationError, setOptimizationError] = useState<string | null>(null);
-
   // 用户画像配置
   const userProfiles: UserProfileInfo[] = [
     {
@@ -49,51 +45,6 @@ const AccessoriesParameters: React.FC = () => {
 
   const handleUserProfileSelect = (profile: UserProfile) => {
     setSelectedUserProfile(profile);
-    setOptimizationError(null);
-  };
-
-  const handleOptimizePrompt = async () => {
-    if (!selectedUserProfile) {
-      setOptimizationError('请先选择用户画像');
-      return;
-    }
-    
-    if (!accessoriesParams.custom_prompt_additions.trim()) {
-      setOptimizationError('请先输入一些提示词内容');
-      return;
-    }
-
-    setIsOptimizing(true);
-    setOptimizationError(null);
-
-    try {
-      // 获取当前完整的无人机参数
-      const currentParameters = {
-        frame: parameters.frame,
-        propulsion: parameters.propulsion,
-        fuselage: parameters.fuselage,
-        landing_gear: parameters.landing_gear,
-        accessories: parameters.accessories
-      };
-      
-      console.log('🚁 传递给RAG的完整参数:', currentParameters);
-      
-      const result = await DeepSeekPromptOptimizer.optimizePromptWithRAG(
-        accessoriesParams.custom_prompt_additions,
-        currentParameters,
-        selectedUserProfile
-      );
-      
-      if (result.success && result.optimizedPrompt) {
-        updateAccessoriesParams({ custom_prompt_additions: result.optimizedPrompt });
-      } else {
-        throw new Error(result.error || 'RAG优化失败');
-      }
-    } catch (error) {
-      setOptimizationError(error instanceof Error ? error.message : '优化失败');
-    } finally {
-      setIsOptimizing(false);
-    }
   };
 
   const predefinedColors = [
@@ -243,37 +194,10 @@ const AccessoriesParameters: React.FC = () => {
           className="input-field w-full h-24 resize-none"
         />
         
-        {/* AI优化按钮 */}
-        <div className="flex items-center space-x-2">
-          <button
-            onClick={handleOptimizePrompt}
-            disabled={isOptimizing || !selectedUserProfile || !accessoriesParams.custom_prompt_additions.trim()}
-            className="btn-primary flex items-center space-x-2 disabled:opacity-50 disabled:cursor-not-allowed"
-          >
-            {isOptimizing ? (
-              <Loader2 className="h-4 w-4 animate-spin" />
-            ) : (
-              <Sparkles className="h-4 w-4" />
-            )}
-            <span>{isOptimizing ? 'AI优化中...' : 'AI智能优化'}</span>
-          </button>
-          
-          {selectedUserProfile && (
-            <div className="flex items-center space-x-1 text-sm text-slate-600">
-              <span>基于</span>
-              <span className="font-medium text-primary-600">{selectedUserProfile}</span>
-              <span>画像优化</span>
-            </div>
-          )}
-        </div>
-        
-        {/* 错误提示 */}
-        {optimizationError && (
-          <div className="p-2 bg-red-50 border border-red-200 rounded text-sm text-red-600">
-            {optimizationError}
-          </div>
-        )}
-        
+        <button type="button" disabled title="模型服务未接入" className="btn-secondary flex items-center gap-2 disabled:opacity-50">
+          <Sparkles className="h-4 w-4" />AI智能优化
+        </button>
+
         <div className="mt-2 p-3 bg-indigo-50 rounded-lg">
           <p className="text-sm text-indigo-700">
             ✨ 提示：您可以添加特殊的视觉元素描述，如"赛车条纹"、"LED灯带"、"碳纤维纹理"等，这些将帮助AI生成更符合您期望的视觉效果

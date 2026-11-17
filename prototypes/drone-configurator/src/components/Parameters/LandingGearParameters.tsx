@@ -25,7 +25,6 @@ const LandingGearParameters: React.FC = () => {
 
   const getHeightRecommendation = () => {
     const frameWheelbase = parameters.frame.wheelbase_mm;
-    const propDiameter = parameters.propulsion.prop_diameter_inch * 25.4; // 转换为mm
     
     if (frameWheelbase < 200) {
       return '建议30-50mm，适合小型机架';

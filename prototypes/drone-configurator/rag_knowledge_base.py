@@ -166,40 +166,9 @@ class DroneCommentRAG:
             raise RuntimeError(f"加载数据时发生错误: {e}")
     
     def setup_embedding_model(self):
-        """
-        配置全局嵌入模型设置
-        """
-        print(f"{Fore.CYAN}🤖 正在配置嵌入模型: {self.embed_model_name}{Style.RESET_ALL}")
-        
-        try:
-            # 创建HuggingFace嵌入模型实例
-            embed_model = HuggingFaceEmbedding(
-                model_name=self.embed_model_name,
-                # 可以添加其他参数，如设备、批处理大小等
-                # device="cuda" if torch.cuda.is_available() else "cpu",
-                # max_length=512,
-            )
-            
-            # 设置全局嵌入模型
-            Settings.embed_model = embed_model
-            
-            print(f"{Fore.GREEN}✅ 嵌入模型配置完成{Style.RESET_ALL}")
-            
-        except Exception as e:
-            print(f"{Fore.RED}❌ 嵌入模型配置失败: {e}{Style.RESET_ALL}")
-            print(f"{Fore.YELLOW}💡 尝试使用备用模型: shibing624/text2vec-base-chinese{Style.RESET_ALL}")
-            
-            # 尝试备用模型
-            try:
-                embed_model = HuggingFaceEmbedding(
-                    model_name="shibing624/text2vec-base-chinese"
-                )
-                Settings.embed_model = embed_model
-                self.embed_model_name = "shibing624/text2vec-base-chinese"
-                print(f"{Fore.GREEN}✅ 备用嵌入模型配置完成{Style.RESET_ALL}")
-            except Exception as e2:
-                raise RuntimeError(f"所有嵌入模型都配置失败: {e2}")
-    
+        """模型待重新选定；保留离线评论整理功能。"""
+        raise RuntimeError("暂未配置向量模型，检索服务未启用。")
+
     def build_index(self) -> VectorStoreIndex:
         """
         构建向量存储索引

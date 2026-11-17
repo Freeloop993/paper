@@ -2,7 +2,7 @@ import axios from 'axios';
 import type { GenerateImageRequest, GenerateImageResponse, DroneParameters } from '../types/DroneParameters';
 
 // API基础配置
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const API_BASE_URL = '/local-ai/retired-backend';
 
 const apiClient = axios.create({
   baseURL: API_BASE_URL,
@@ -136,9 +136,9 @@ export class ParameterValidator {
 
 // DeepSeek AI提示词优化服务
 export class PromptOptimizationService {
-  private static readonly DEEPSEEK_API_KEY = 'HISTORICAL_KEY_REMOVED';
-  private static readonly DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions';
-  private static readonly RAG_API_BASE_URL = 'http://127.0.0.1:5000';
+  private static readonly DEEPSEEK_API_KEY = 'local-proxy';
+  private static readonly DEEPSEEK_API_URL = '/local-ai/legacy/v1/chat/completions';
+  private static readonly RAG_API_BASE_URL = '/local-ai/retired-rag';
 
   static async optimizePrompt(originalPrompt: string, userType: string, parameters?: DroneParameters): Promise<string> {
     try {

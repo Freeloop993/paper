@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useDroneStore } from '../../store/droneStore';
 import { ImageGenerationService } from '../../services/imageGenerationService';
-import { GeminiPromptOptimizer } from '../../services/geminiPromptOptimizer';
-import { TestTube, Play, Download, Copy, AlertCircle, CheckCircle, Sparkles, Eye } from 'lucide-react';
+import { TestTube, Play, Download, Copy, AlertCircle, CheckCircle, Sparkles } from 'lucide-react';
 
 const TestImageGeneration: React.FC = () => {
   const { parameters, selectedUserProfile, useGeminiOptimization } = useDroneStore();

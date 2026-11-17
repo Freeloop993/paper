@@ -4,8 +4,8 @@ import { GeminiPromptOptimizer, type PromptOptimizationResult } from './geminiPr
 
 // OpenAI API配置
 const openai = new OpenAI({
-  apiKey: 'HISTORICAL_KEY_REMOVED',
-  baseURL: 'https://image-provider.invalid/v1',
+  apiKey: 'local-proxy',
+  baseURL: location.origin + '/local-ai/image/v1',
   dangerouslyAllowBrowser: true // 允许在浏览器中使用
 });
 
@@ -22,6 +22,10 @@ export interface ImageGenerationResult {
 }
 
 // 图像生成参数接口
+export type ConfirmedTextRequest = {
+  model: 'dall-e-3'; prompt: string; size: '1024x1024'; quality: 'standard'; style: 'natural'; n: 1;
+};
+
 export interface GenerationOptions {
   model?: string;
   size?: '1024x1024' | '1792x1024' | '1024x1792';
@@ -31,9 +35,16 @@ export interface GenerationOptions {
 }
 
 // 用户画像类型
-type UserProfileKey = '新手玩家🎮' | '摄影爱好者📸' | '户外/亲子用户🏕️';
+type UserProfileKey = '新手玩家' | '摄影爱好者' | '户外/亲子用户';
 
 export class ImageGenerationService {
+  static async submitConfirmedText(body: ConfirmedTextRequest): Promise<string> {
+    const response = await openai.images.generate(body, { maxRetries: 0 });
+    const imageUrl = response.data?.[0]?.url;
+    if (!imageUrl) throw new Error('图像服务未返回可展示的结果地址。');
+    return imageUrl;
+  }
+
   // 根据参数生成最终版本prompt
   private static generateFinalPrompt(parameters: DroneParameters, userProfile?: string): string {
     const { frame, propulsion, fuselage, landing_gear, accessories } = parameters;
@@ -71,9 +82,9 @@ export class ImageGenerationService {
   // 根据用户画像生成增强描述
   private static getUserProfileEnhancements(userProfile: string): string {
     const enhancements: Record<UserProfileKey, string> = {
-      '新手玩家🎮': 'beginner-friendly design with bright LED status indicators, safety-focused with protective features, intuitive control interface, durable construction for learning, modern consumer-grade appearance',
-      '摄影爱好者📸': 'professional-grade build quality, precision engineering for stable footage, streamlined aerodynamic design, vibration-dampening construction, camera-optimized configuration',
-      '户外/亲子用户🏕️': 'family-friendly design with enhanced safety features, robust construction for outdoor environments, bright visibility colors, easy maintenance design, recreational-grade aesthetics'
+      '新手玩家': 'beginner-friendly design with bright LED status indicators, safety-focused with protective features, intuitive control interface, durable construction for learning, modern consumer-grade appearance',
+      '摄影爱好者': 'professional-grade build quality, precision engineering for stable footage, streamlined aerodynamic design, vibration-dampening construction, camera-optimized configuration',
+      '户外/亲子用户': 'family-friendly design with enhanced safety features, robust construction for outdoor environments, bright visibility colors, easy maintenance design, recreational-grade aesthetics'
     };
 
     return enhancements[userProfile as UserProfileKey] || 'high-quality consumer drone design';

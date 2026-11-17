@@ -1,5 +1,7 @@
 # paper
 
+**无人机造型配置器**　[作者 E 盘五页签源码与使用说明](prototypes/drone-configurator/README.md) · [下载离线版](prototypes/drone-configurator/configurator-offline.zip?raw=true) · [早期需求及研究讨论](docs/configurator-realignment.md)。
+
 **当前研究进度（11 月 17 日）**　[执行顺序与作者决定](https://github.com/Freeloop993/paper/blob/claude/direction-todo-20261117/planning/2026-11-17-direction-and-todo.md) · [真机量测、复核与作者预试](https://github.com/Freeloop993/paper/tree/claude/direction-todo-20261117/evidence/20261117-config-review)。下文为此前各阶段的记录，阅读 E2、E3 进度请先查上述入口。
 
 [研究数据入口 · 早期无人机评论与商品参数](DATA.md)
