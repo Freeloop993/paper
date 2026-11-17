@@ -1,0 +1,196 @@
+{
+  "corpus": {
+    "files_sha256": {
+      "ledger": "092615cbf424248743cc7f1b674ecfd30842b37012ec285b79f05b570d2b81e7",
+      "themes": "ea7eb82726b83693b99e87451aa323ca8b0052a0bb525cbba8cd95f03358513e",
+      "translation": "5c0903b83013b325fe0cd627a37404fa37fef70554791dae52ec2eed5accfa5d"
+    },
+    "unique_texts": 7443,
+    "product_title_includes_Q": 1318,
+    "product_title_only_Q": 1221,
+    "kept_A": 228,
+    "kept_A_including_Q": 228,
+    "theme_counts": {
+      "G01": 99,
+      "G02": 49,
+      "G03": 67,
+      "G10": 61
+    },
+    "small_and_carry": 30,
+    "small_or_carry": 136,
+    "translation_vintage": {
+      "PV01": "D01",
+      "PV02": "D01",
+      "PV03": "结构约束",
+      "PV04": "D03",
+      "PV05": "D02/D04"
+    }
+  },
+  "recovery": {
+    "png_hashes_matched_to_both_ledgers": 102,
+    "groups": {
+      "E2": 6,
+      "COMBO": 24,
+      "S12": 48,
+      "S16": 24
+    },
+    "archive_sha256": "e7b123e3a9969b9996953b9f33eeecdf3b75b4a6113dd0098fafbd4723d78dab",
+    "readers": {
+      "L": {
+        "unique_images": 96,
+        "combo_all_three": 20,
+        "combo_body_nose_cover": {
+          "body": 24,
+          "nose": 23,
+          "cover": 20
+        },
+        "S12_S4_end": {
+          "bottom": 5,
+          "top": 3
+        },
+        "S16_S4_end": {
+          "top": 4
+        }
+      },
+      "M": {
+        "unique_images": 96,
+        "combo_all_three": 20,
+        "combo_body_nose_cover": {
+          "body": 24,
+          "nose": 23,
+          "cover": 20
+        },
+        "S12_S4_end": {
+          "bottom": 5,
+          "top": 3
+        },
+        "S16_S4_end": {
+          "top": 4
+        }
+      }
+    }
+  },
+  "rated_products": {
+    "rated_table_sha256": "ba38e0e6b7d58a3f30f1794d1a742dcbde27986c06fe86e653a5af65241c6ab5",
+    "profile_count": 6,
+    "candidate_count": 34,
+    "exact_profile_links": 0,
+    "exact_candidate_links": 4,
+    "rows": [
+      {
+        "rated_product": "DJI Air 3",
+        "rating_n": 3,
+        "compact_to_spread_1_to_7": [
+          6,
+          6,
+          3
+        ],
+        "median": 6,
+        "exact_profile": null,
+        "exact_candidate": "C15C-011"
+      },
+      {
+        "rated_product": "DJI Mavic 3 Pro",
+        "rating_n": 3,
+        "compact_to_spread_1_to_7": [
+          4,
+          5,
+          4
+        ],
+        "median": 4,
+        "exact_profile": null,
+        "exact_candidate": null
+      },
+      {
+        "rated_product": "DJI Mavic Pro",
+        "rating_n": 3,
+        "compact_to_spread_1_to_7": [
+          6,
+          4,
+          4
+        ],
+        "median": 4,
+        "exact_profile": null,
+        "exact_candidate": null
+      },
+      {
+        "rated_product": "DJI Mini 3（Pro 与否不可辨）",
+        "rating_n": 3,
+        "compact_to_spread_1_to_7": [
+          5,
+          5,
+          4
+        ],
+        "median": 5,
+        "exact_profile": null,
+        "exact_candidate": null
+      },
+      {
+        "rated_product": "DJI Neo",
+        "rating_n": 3,
+        "compact_to_spread_1_to_7": [
+          2,
+          3,
+          2
+        ],
+        "median": 2,
+        "exact_profile": null,
+        "exact_candidate": "C15C-004"
+      },
+      {
+        "rated_product": "DJI Neo 2",
+        "rating_n": 3,
+        "compact_to_spread_1_to_7": [
+          2,
+          3,
+          2
+        ],
+        "median": 2,
+        "exact_profile": null,
+        "exact_candidate": "C15C-003"
+      },
+      {
+        "rated_product": "DJI Spark",
+        "rating_n": 3,
+        "compact_to_spread_1_to_7": [
+          4,
+          5,
+          4
+        ],
+        "median": 4,
+        "exact_profile": null,
+        "exact_candidate": null
+      },
+      {
+        "rated_product": "Parrot ANAFI",
+        "rating_n": 3,
+        "compact_to_spread_1_to_7": [
+          4,
+          5,
+          3
+        ],
+        "median": 4,
+        "exact_profile": null,
+        "exact_candidate": "C15C-032"
+      }
+    ]
+  },
+  "gpu": {
+    "manifest_sha256": "e5794ec02bb2a5700102413d8af5fc464356870af329b8a80bf61eeb479aea2c",
+    "request_files": 73,
+    "registered_by_stage": {
+      "1": 9,
+      "2": 8,
+      "3": 16,
+      "4": 40
+    },
+    "input_images": 5,
+    "mask_files": 6,
+    "masked_graphs": 45,
+    "preflight": [
+      "检查 73 份请求、73 个文件",
+      "通过"
+    ],
+    "scope": "离线检查；本次实际提交 0"
+  }
+}
