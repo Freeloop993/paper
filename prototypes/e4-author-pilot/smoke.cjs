@@ -1,57 +1,68 @@
-const fs=require("node:fs"), path=require("node:path"), assert=require("node:assert/strict");
-const {chromium}=require(process.env.PLAYWRIGHT_CORE || "playwright-core");
-const folder=process.argv[2], out=fs.mkdtempSync(path.join(require("node:os").tmpdir(),"e4-pilot-test-"));
-const server=require("node:http").createServer((req,res)=>{
-  const name=decodeURIComponent(req.url.split("?")[0]), target=path.join(folder,name.endsWith("/")?name+"index.html":name);
-  if(!fs.existsSync(target)){res.writeHead(404).end();return;}
-  res.setHeader("Content-Type",({".js":"text/javascript",".css":"text/css",".png":"image/png",".html":"text/html; charset=utf-8"})[path.extname(target)]||"application/octet-stream");
-  fs.createReadStream(target).pipe(res);
-});
-(async()=>{await new Promise(r=>server.listen(0,"127.0.0.1",r));
-  const b=await chromium.launch({channel:"msedge",headless:true});
-  try{
-    const p=await b.newPage();p.setDefaultTimeout(9000);
-    const err=[];p.on("pageerror",e=>err.push(e.message));
-    await p.goto("http://127.0.0.1:"+server.address().port+"/");
-    const gap=p.getByLabel("自定义顺时针相邻夹角（°）").first();
-    await gap.fill("45,135,45,45");await p.getByRole("alert").first().waitFor();
-    await gap.fill("90,-90,90,90");await p.getByRole("alert").first().waitFor();
-    await gap.fill("75-105-75-105");await p.getByLabel("最终生成文本").first().waitFor();
-    await gap.fill("");await p.getByText("标出每副双叶桨的两个等距叶尖",{exact:true}).uncheck();
-    await p.getByRole("button",{name:"确认并保存版本",exact:true}).first().click();
-    const dlPromise=p.waitForEvent("download");await p.getByRole("button",{name:"导出请求 JSON",exact:true}).first().click();
-    const dl=await dlPromise,specFile=path.join(out,"qa-export.local.json");await dl.saveAs(specFile);
-    const target=p.getByRole("link",{name:"两种方法作者预试"});const href=await target.getAttribute("href");
-    await p.goto(new URL(href,p.url()).href);
-    const fill=(id,value)=>p.locator("#"+id).fill(value),click=id=>p.locator('[data-act="'+id+'"]').click();
-    const submit=()=>p.locator("form button[type=submit]").click();
-    await fill("code","QA-synthetic");await fill("backend","simulated");await submit();
-    async function notes(){await fill("target","测试目标");await fill("keep","测试保持");await fill("basis","测试依据");}
-    async function fail(){await p.locator("#status").selectOption("failed");await p.locator("#count").selectOption("1");await p.locator("#operation").selectOption("text");await fill("notes","合成失败回执");await submit();}
-    async function success(number,op){
-      await p.locator("#status").selectOption("success");await p.locator("#count").selectOption("1");await p.locator("#operation").selectOption(op);await fill("rid","synthetic-"+number);
-      await p.locator("#picture").setInputFiles(path.join(folder,"c1-pilot/reference.png"));await submit();
-    }
-    async function lock(choice){await p.locator("#choice").selectOption(choice);await fill("reason","离线测试");await submit();
-      for(let i=0;i<4;i++)await fill("q"+i,"测试");await submit();}
-    for(let i=1;i<=9;i++){await fill("free","D 原句 "+i);await notes();
-      if(i===1){await click("pause");await p.reload();await click("resume");assert.equal(await p.locator("#free").inputValue(),"D 原句 1");}
-      await submit();await p.locator("#status").waitFor();
-      const pkg=await p.evaluate(()=>latest(active()).input);assert.equal(pkg.prompt,"D 原句 "+i);assert.deepEqual(pkg.references,[]);
-      if(i===1){await p.reload();await p.locator("#status").waitFor();await fail();}else await success(i,"text");
-      if(i<9)await click("revise");}
-    assert.equal(await p.locator('[data-act="revise"]').count(),0);await lock("2");await click("next");
-    await p.locator("#spec").setInputFiles(specFile);await notes();await submit();await p.locator("#status").waitFor();
-    const spec=JSON.parse(fs.readFileSync(specFile));const received=await p.evaluate(()=>latest(active()).input);
-    assert.equal(spec.request.promptSha256,received.promptSha256);assert.equal(received.references[0].sha256,spec.guide.sha256);
-    await success(10,"guide");await lock("1");
-    const file=p.waitForEvent("download");await click("export");const exported=JSON.parse(fs.readFileSync(await (await file).path()));
-    assert.equal(exported.sessions.length,2);assert.equal(exported.sessions[0].summary.totalCalls,9);
-    assert.equal(exported.sessions[0].decision.choice,"2");assert.equal(exported.sessions[1].summary.totalCalls,1);
-    const timed=await p.evaluate(()=>{const t=n=>new Date(n*60000).toISOString();
-      const sim={started:t(0),versions:[{sealed:t(3),receipt:{recorded:t(23),calls:1}}],pauses:[{start:t(24),end:t(26)}]};
-      return totals(sim,t(30));});
-    assert.equal(timed.wallMs,1800000);assert.equal(timed.externalWaitMs,1200000);assert.equal(timed.activeMs,480000);assert.equal(timed.technicalPauseMs,120000);
-    assert.deepEqual(err,[]);console.log("PASS native export, angle validation, D-only payload, S image hash, 9 slots, pause/reload, failed slot, return to v2, two-session export, clock accounting");
-  }finally{await b.close();server.close();fs.rmSync(out,{recursive:true,force:true});}
-})().catch(e=>{console.error(e);server.close();process.exitCode=1;});
+const assert=require("node:assert/strict");
+const path=require("node:path"),fs=require("node:fs/promises"),os=require("node:os");
+const {pathToFileURL}=require("node:url");
+const {chromium}=require(process.env.PLAYWRIGHT_CORE||"playwright-core");
+(async()=>{
+ const root=path.resolve(process.argv[2]||__dirname), url=pathToFileURL(path.join(root,"index.html")).href;
+ const temp=await fs.mkdtemp(path.join(os.tmpdir(),"c1-study-"));
+ const browser=await chromium.launch({channel:"msedge",headless:true}), errors=[];
+ try{
+  const context=await browser.newContext({viewport:{width:1280,height:860},acceptDownloads:true});
+  const p=await context.newPage();p.setDefaultTimeout(6500);
+  p.on("pageerror",e=>errors.push(e.message));
+  async function download(act){const wait=p.waitForEvent("download");await click(act);return fs.readFile(await (await wait).path(),"utf8");}
+  const click=id=>p.locator('[data-act="'+id+'"]').first().click(), submit=()=>p.locator('form[data-form] button[type="submit"]:visible').click();
+  const choose=async(id,v)=>p.locator("#"+id).selectOption(v);
+  const wait=phase=>p.waitForFunction(phase=>active()?.phase===phase,phase);
+  await p.goto(url);await p.locator('#preview-host svg').waitFor();
+  if(process.env.C1_QA_DIR){await fs.mkdir(process.env.C1_QA_DIR,{recursive:true});await p.screenshot({path:path.join(process.env.C1_QA_DIR,"desktop.png")});}
+  await p.getByRole("button",{name:"查看导出定位图"}).click();
+  await p.locator("#preview-host canvas").waitFor();
+  let spec=JSON.parse(await download("downloadSpec"));const raw=await download("downloadText");
+  assert.equal(raw,spec.request.prompt);assert.equal(spec.layout.hubs.length,4);
+  const baseline=await p.evaluate(async()=>{selector.setSelection({guide:"axes"});return selector.exportVersion();});
+  await fs.writeFile(path.join(temp,"spec.json"),JSON.stringify(baseline));
+  await p.evaluate(()=>selector.setSelection({angles:"custom",custom:"45,135,45,45"}));
+  assert.equal(await p.locator('[data-act="downloadSpec"]').isDisabled(),true);
+  await p.evaluate(()=>selector.setSelection({angles:"75-105-75-105",custom:null,span:320}));
+  await p.reload();await p.locator("#preview-host svg").waitFor();
+  spec=JSON.parse(await download("downloadSpec"));assert.equal(spec.layout.max_motor_distance_mm,320);
+  assert.deepEqual(spec.layout.adjacent_deg.map(Math.round),[75,105,75,105]);
+  await p.setViewportSize({width:390,height:844});assert(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
+  if(process.env.C1_QA_DIR)await p.screenshot({path:path.join(process.env.C1_QA_DIR,"mobile.png")});
+  await p.setViewportSize({width:1280,height:860});await click("study");await choose("order","0");await submit();await wait("draft");
+  assert.equal(await p.locator("#selection").count(),0);assert(await p.locator("#labNav").isDisabled());
+  async function openReceipt(){await wait("waiting");await p.locator("details.receipt > summary").click();}
+  async function receipt(success,n,op){
+   await openReceipt();await choose("status",success?"success":"failed");await choose("count","1");await choose("operation",op);
+   if(success){await p.locator("#rid").fill("synthetic-"+n);await p.locator("#picture").setInputFiles(path.join(root,"reference.png"));}
+   else await p.locator("#notes").fill("Synthetic QA failure");
+   await submit();await wait("decide");
+  }
+  async function lock(v){
+   await choose("choice",v);await p.locator('label[for="lockReason-0"],label:has(#lockReason-0)').first().click();await submit();await wait("survey");
+   for(let i=0;i<4;i++)await p.locator("label:has(#q"+i+"-2)").click();await submit();await wait("done");
+  }
+  for(let i=1;i<=9;i++){
+   await p.locator("#free").fill("设计者原话 "+i);
+   if(i===1){await click("pause");await p.locator('[data-act="resume"]').waitFor();await p.reload();await click("resume");assert.equal(await p.locator("#free").inputValue(),"设计者原话 1");}
+   await submit();await wait("waiting");let pkg=JSON.parse(await download("handoff"));assert.equal(pkg.prompt,"设计者原话 "+i);assert.deepEqual(pkg.references,[]);
+   await receipt(i>1,i,"text");if(i<9){await click("revise");await wait("revision");}
+  }
+  assert.equal(await p.locator('[data-act="revise"]').count(),0);await lock("2");await click("next");await wait("draft");await p.locator('#preview-host svg').waitFor();
+  const compare=await p.evaluate(async()=>{const v=await selector.exportVersion();return [v.guide.sha256,v.layout.max_motor_distance_mm,v.request.promptSha256];});
+  await submit();await wait("waiting");let guide=JSON.parse(await download("handoff"));assert.equal(guide.references.length,1);
+  assert.equal(compare[0],guide.references[0].sha256);assert.equal(compare[0],"15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338");assert.equal(compare[1],250);assert.equal(guide.promptSha256,compare[2]);await receipt(true,10,"guide");
+  await click("revise");await wait("revision");await p.locator("details.import summary").click();await p.locator("#spec").setInputFiles(path.join(temp,"spec.json"));
+  await submit();await wait("waiting");await receipt(true,11,"guide");await lock("1");
+  const log=JSON.parse(await download("export"));assert.deepEqual(log.sessions.map(s=>s.summary.totalCalls),[9,2]);
+  assert.equal(log.sessions[0].decision.choice,"2");assert.equal(log.sessions[1].versions[0].input.source,"inline-selector");
+  assert.equal(log.sessions[1].versions[1].input.source,"imported-configurator");
+  assert.equal(log.sessions[0].versions[0].input.target,null);assert(log.settings.exploredInterface);
+  const t=await p.evaluate(()=>{const ts=n=>new Date(n*60000).toISOString();return totals({started:ts(0),versions:[{sealed:ts(3),receipt:{recorded:ts(23),calls:1}}],pauses:[{start:ts(24),end:ts(26)}]},ts(30));});
+  assert.equal(t.activeMs,480000);assert.equal(t.externalWaitMs,1200000);assert.equal(t.technicalPauseMs,120000);
+  const clean=await browser.newContext();const pure=await clean.newPage();await pure.goto(url+"?mode=study");await pure.locator("#order").waitFor();
+  assert(await pure.locator("#labNav").isDisabled());assert.equal(await pure.locator("#selection").count(),0);
+  assert.deepEqual(errors,[]);console.log("PASS desktop/mobile file URL, guide/prompt exports, invalid angle, resume, S inline, S import, D text, 9 attempts, failure, rollback, pair export and clocks; synthetic receipts only.");
+ }finally{await browser.close();await fs.rm(temp,{recursive:true,force:true});}
+})().catch(e=>{console.error(e);process.exitCode=1});

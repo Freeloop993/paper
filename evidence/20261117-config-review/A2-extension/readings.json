@@ -1,0 +1,358 @@
+{
+  "date": "2026-11-17",
+  "reader": "Codex，单次知型号图像判读；算术复算不等于独立判读。",
+  "independent_repeat_count": 0,
+  "dpi": 576,
+  "renderer": "Poppler pdftoppm 26.07.0; RGB PPM",
+  "coordinate_system": "0-based crop pixels x-right y-down; original page unrotated; full-page crop [left,top,right,bottom); full-page point = crop point + (left,top)",
+  "tip_window_radius_px": 18,
+  "tip_gray_max": 96,
+  "samples": [
+    {
+      "id": "Neo2",
+      "model": "DJI Neo 2",
+      "group": "extension_quad",
+      "rotor_count": 4,
+      "manual_version": "v1.2 · 2025.12",
+      "filename": "Neo2.pdf",
+      "source_url": "https://dl.djicdn.com/downloads/DJI_Neo_2/UM/20251210/DJI_Neo_2_User_Manual_v1.2_en.pdf",
+      "pdf_sha256": "104c33d6ad3de3fe7af25c5ec7381afb26019c460b20e4bf65ce73180cd3247d",
+      "printed_page": 79,
+      "pdf_page": 79,
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        432,
+        392,
+        1368,
+        1256
+      ],
+      "crop_rgb_sha256": "db70eaf4c509128d05fa3692b26808450780475ae2a9d933dc20a50001e77eed",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure_state": "第79页左上电源/电量图；机臂为固定式，四副桨及护罩在位。上下两排桨毂均呈圆形，机背电池及电源键朝向读者。",
+      "orientation_evidence": "第17页部件2为云台相机，8为电池；第73页文字与圈注确认护罩前突端，与第79页上方两侧的护罩前突及中央云台位置一致。机头向页上。",
+      "reading_notes": "四个桨夹外圆部分被护罩筋遮挡；在可见圆弧上定圆心。点位以局部圆环灰度搜索微调，非以护圈圆心替代轴心。机身取中央总成：正前方云台两侧固定壳肩的前缘 → 后方包围视觉模块的固定尾壳；宽度取 y=595 处两条连续侧边，计入齐装电池侧面，不计护罩和连桥。此为可见外形口径，不是拆掉电池的裸壳。",
+      "hub_refinement": {
+        "method": "每个人工种子 ±4 px 内整数中心，r=20..25 步长0.25；角度0..358度每2度，以四舍六入五成双的最近整数采样，取环上 sum(255-L) 最大者；得分并列取(x,y,r)词典序最大。",
+        "seeds": [
+          [
+            218,
+            328
+          ],
+          [
+            709,
+            328
+          ],
+          [
+            218,
+            650
+          ],
+          [
+            709,
+            650
+          ]
+        ],
+        "r_px": [
+          22.5,
+          22,
+          22,
+          22.25
+        ]
+      },
+      "points": {
+        "FL": [
+          218,
+          328
+        ],
+        "FR": [
+          709,
+          328
+        ],
+        "RL": [
+          218,
+          650
+        ],
+        "RR": [
+          709,
+          651
+        ],
+        "body_left": [
+          368,
+          595
+        ],
+        "body_right": [
+          559,
+          595
+        ],
+        "body_nose": [
+          544,
+          127
+        ],
+        "body_tail": [
+          462,
+          825
+        ]
+      },
+      "propellers": {
+        "status": "missing",
+        "tips": null,
+        "reason": "第75页装桨详图确认三叶。第79页在位桨不具备两枚对置叶尖，不能用双叶 AB 弦长定义图面桨径；护圈直径不替代。"
+      }
+    },
+    {
+      "id": "T20",
+      "model": "DJI AGRAS T20",
+      "group": "extension_hex",
+      "rotor_count": 6,
+      "manual_version": "v1.4 · 2020.12",
+      "filename": "T20.pdf",
+      "source_url": "https://dl.djicdn.com/downloads/t20/20201201/Agras_T20_User_Manual_v1.4_EN.pdf",
+      "pdf_sha256": "8403633a4af4ab81ce0f837c57c1643e20b6d0b0b7cc66bfe06b0fb5800a3bb9",
+      "printed_page": 29,
+      "pdf_page": 31,
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        701,
+        3091,
+        2414,
+        4368
+      ],
+      "crop_rgb_sha256": "a536a775169c1c96cdc4ce2b7cd9815a0101231635e30b3fe56a896b1407fd7d",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure_state": "Aircraft LEDs 下图，六根臂及六副二叶桨已展开，中央箱盖与六组桨夹可见，逐轴有 M1–M6 编号。",
+      "orientation_evidence": "印刷29页正文指定 M1、M2、M6 为前方三臂，M1 在图上正中；印刷8页装配图交叉核对编号。",
+      "reading_notes": "每个桨夹的两个紧固点圆心取中点，半像素向较大整数取整。以编号配对。",
+      "hub_fasteners": {
+        "M1": [
+          [
+            829,
+            184
+          ],
+          [
+            882,
+            184
+          ]
+        ],
+        "M2": [
+          [
+            264,
+            385
+          ],
+          [
+            309,
+            356
+          ]
+        ],
+        "M3": [
+          [
+            266,
+            930
+          ],
+          [
+            307,
+            964
+          ]
+        ],
+        "M4": [
+          [
+            829,
+            1121
+          ],
+          [
+            882,
+            1120
+          ]
+        ],
+        "M5": [
+          [
+            1402,
+            962
+          ],
+          [
+            1447,
+            932
+          ]
+        ],
+        "M6": [
+          [
+            1404,
+            354
+          ],
+          [
+            1445,
+            388
+          ]
+        ]
+      },
+      "points": {
+        "M1": [
+          856,
+          184
+        ],
+        "M2": [
+          287,
+          371
+        ],
+        "M3": [
+          287,
+          947
+        ],
+        "M4": [
+          856,
+          1121
+        ],
+        "M5": [
+          1425,
+          947
+        ],
+        "M6": [
+          1425,
+          371
+        ],
+        "body_left": null,
+        "body_right": null,
+        "body_nose": null,
+        "body_tail": null
+      },
+      "missing_body_reason": "药箱、裸框架、臂座投影并列且相交，没有与消费机中央连续外壳同定义的四个支撑点。机身长宽、PV01、PV02缺测。",
+      "propellers": {
+        "status": "measured",
+        "window_centers": {
+          "M1": [
+            [
+              568,
+              187
+            ],
+            [
+              1142,
+              182
+            ]
+          ],
+          "M2": [
+            [
+              62,
+              543
+            ],
+            [
+              510,
+              201
+            ]
+          ],
+          "M3": [
+            [
+              66,
+              771
+            ],
+            [
+              505,
+              1128
+            ]
+          ],
+          "M4": [
+            [
+              569,
+              1117
+            ],
+            [
+              1141,
+              1122
+            ]
+          ],
+          "M5": [
+            [
+              1199,
+              1118
+            ],
+            [
+              1649,
+              778
+            ]
+          ],
+          "M6": [
+            [
+              1206,
+              193
+            ],
+            [
+              1646,
+              548
+            ]
+          ]
+        },
+        "tips": {
+          "M1": [
+            [
+              568,
+              195
+            ],
+            [
+              1143,
+              174
+            ]
+          ],
+          "M2": [
+            [
+              54,
+              539
+            ],
+            [
+              520,
+              202
+            ]
+          ],
+          "M3": [
+            [
+              58,
+              773
+            ],
+            [
+              514,
+              1124
+            ]
+          ],
+          "M4": [
+            [
+              567,
+              1111
+            ],
+            [
+              1143,
+              1130
+            ]
+          ],
+          "M5": [
+            [
+              1190,
+              1115
+            ],
+            [
+              1656,
+              778
+            ]
+          ],
+          "M6": [
+            [
+              1196,
+              194
+            ],
+            [
+              1649,
+              549
+            ]
+          ]
+        }
+      }
+    }
+  ]
+}

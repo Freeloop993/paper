@@ -65,48 +65,126 @@ function newSession(code,minutes) {
   addEvent(s,"session_started",started);
   return s;
 }
-function setup() {
-  $("title").textContent="准备工作台"; $("context").textContent="配对场次"; $("task").textContent="每人依分配表完成两个任务，每场可回选已返回的任一稿或均不提交。";
-  main.innerHTML=`<form data-form="start"><h2>场次设置</h2><p class="hint">主持人在开始前填写。两场沿用相同后端、时限和量尺。</p>
-  <div class="row">${input("code","演练编号",'required maxlength="60" autocomplete="off"')}${select("order","已分配的两场顺序",Object.fromEntries(orders.map((o,i)=>[i,o.map(c=>c[0]+" / "+c[1]).join("　→　")])),"0")}</div>
-  ${input("backend","外部后端及版本",'required placeholder="填写本次共同约定的后端标识"')}
-  <p>每场主动操作 15 分钟，最多封存 9 次。等待回图与技术暂停单列。</p>
-  ${input("scale","前四题量尺（如有）",'placeholder="各档用 | 分隔"')}
-
-  ${submit("开始第一场")}</form>`;
+const STUDY_ENTRY = new URLSearchParams(location.search).get("mode") === "study";
+let pageMode = STUDY_ENTRY ? "study" : "lab";
+let selector = null;
+const standardScale = ["1", "2", "3", "4", "5"];
+const anchors = [["完全未表达","充分表达"],["很低","很高"],["很轻","很重"],["完全不愿意","非常愿意"]];
+const orderNames = {"0":"A 自由文字 → B 参数点选","1":"B 自由文字 → A 参数点选","2":"A 参数点选 → B 自由文字","3":"B 参数点选 → A 自由文字"};
+function choiceSet(key, label, choices, current="", required=false) {
+  return '<fieldset class="picks"><legend>'+esc(label)+'</legend><div class="pickset">'+choices.map(([value,text],i)=>
+    '<label class="pick"><input type="radio" name="'+key+'" id="'+key+'-'+i+'" value="'+esc(value)+'"'+
+    (current===value?' checked':'')+(required?' required':'')+'><span>'+esc(text)+'</span></label>').join("")+'</div></fieldset>';
 }
-function edit(s) {
-  const previous=latest(s)?.input;
-  const prompt=s.condition==="D"
-    ? area("free","准备交给模型的自由提示词",previous?.prompt)
-    : input("spec","选择 E 盘配置器已确认并导出的四旋规格 JSON",'required type="file" accept=".json"');
-  return `<form data-form="freeze"><h2>第 ${s.versions.length+1} 次输入</h2>${prompt}
-    ${s.condition==="S"?'<p class="hint">在配置器中选部位、夹角和参照方式，确认版本后导出请求 JSON。请使用本场版本。</p>':''}
-    ${area("target","你希望这次改变什么？",previous?.target)}
-    ${area("keep","你希望保持什么？",previous?.keep)}
-    ${area("basis","你作出这个选择的依据是什么？",previous?.basis)}
-    <p class="hint">这三项供研究记录，交接时仅发送本次提示词与已选图像。</p>
-    ${submit("封存本次输入")}</form>${s.versions.length?action("cancelRevision","回到版本选择"):""}`;
+function selected(key){return main.querySelector('input[name="'+key+'"]:checked')?.value||"";}
+function pairOpen(){return Boolean(state && (state.sessions.length<2 || active()?.phase!=="done"));}
+function setWorkspace(preview, title){
+  $("common").hidden=preview;$("preview-host").hidden=!preview;$("promptCard").hidden=!preview;
+  $("viewTitle").textContent=preview?"布局与尺寸":"共同布局";
+  $("labNav").setAttribute("aria-current",pageMode==="lab"?"page":"false");
+  $("studyNav").setAttribute("aria-current",pageMode==="study"?"page":"false");
+  $("title").textContent=title;$("sessionFooter").hidden=pageMode==="lab"||!state;
+  $("labNav").disabled=STUDY_ENTRY||pairOpen();
+  if(!preview){$("preview-host").replaceChildren();$("livePrompt").textContent="";}
+}
+function stopSelector(){if(selector){selector.destroy?.();selector=null;}}
+function freeLab(){
+  stopSelector();setWorkspace(true,"航拍四旋翼试配");
+  $("context").textContent="设计工作台 / 参数试配";$("task").textContent="";
+  $("brief").hidden=true;$("clock").textContent="";$("actions").replaceChildren();message("");
+  main.innerHTML='<div id="selection"></div><div class="buttons"><button type="button" data-act="downloadSpec">导出设计规格</button><button type="button" class="secondary" data-act="downloadText">下载提示词</button></div>';
+  attachSelector("c1-independent-playground");
+}
+function setup(){
+  stopSelector();pageMode="study";setWorkspace(false,"配对预试");$("sessionFooter").hidden=true;
+  $("context").textContent="设计工作台 / 作者预试";$("clock").textContent="";$("task").textContent="两场分别调整相机衔接和臂根过渡。";$("brief").hidden=false;
+  const code="C1-"+crypto.randomUUID().slice(0,6);
+  main.innerHTML='<form data-form="start"><h2>两场设计任务</h2><div class="methods"><div class="methodrow"><strong>参数点选</strong><small>选择规格，查看布局与提示词</small></div><div class="methodrow"><strong>自由文字</strong><small>按自己的方式描述方案</small></div></div>'+
+    select("order","两场顺序",orderNames,"2")+
+    '<p class="hint">每场 15 分钟主动操作，最多 9 次。等待回图单独计时。</p>'+
+    '<details class="admin"><summary>主持人设置</summary>'+
+    input("code","匿名场次编号",'required maxlength="60" value="'+code+'"')+
+    input("backend","共同后端及版本",'value="离线流程演练" required')+
+    input("scale","自定义量尺（可选）",'placeholder="默认五级。不同档位用 | 分隔"')+
+    '</details>'+submit("开始第一场")+'</form>';
+}
+const noteChoices={
+ target:["按任务简报","机鼻与相机","机身与机臂","整机布局","另写"],
+ keep:["按任务简报","轴位和机臂","机鼻前缘","外观配色","另写"],
+ basis:["设计简报","布局参照","上一稿观察","我的设计判断","另写"]
+};
+function notePick(key,label,previous){
+  const options=noteChoices[key],current=previous?.noteSelections?.[key]||"";
+  return choiceSet(key,label,options.map(v=>[v,v]),current)+
+    '<div id="'+key+'-other"'+(current==="另写"?'':' hidden')+'>'+area(key+"Custom","补充"+label,previous?.noteSelections?.[key]==="另写"?previous[key]:"",false)+'</div>';
+}
+function designNotes(s){
+  const vals={},picks={};
+  for(const key of Object.keys(noteChoices)){
+    const value=selected(key);
+    picks[key]=value||null;
+    vals[key]=value==="另写"?val(key+"Custom"):value||null;
+    if(value==="另写"&&!vals[key])throw Error("请写下补充内容，或选择现成选项。");
+  }
+  return {...vals,noteSelections:picks,assignedBrief:cards[s.task]};
+}
+function edit(s){
+  const prev=latest(s)?.input,structured=s.condition==="S";
+  const params=structured?'<div id="selection"></div><details class="import"><summary>使用已有配置器文件</summary>'+
+    input("spec","已导出的规格 JSON",'type="file" accept=".json"')+'<p id="importNotice" class="hint">沿用文件中的规格与提示词，本场统一使用共同轴位图。</p></details>':
+    area("free","你会怎样向模型描述这个方案？",prev?.prompt||"");
+  return '<form data-form="freeze"><div class="panelhead"><h2>'+(structured?"参数点选":"自由提示词")+'</h2><small>第 '+(s.versions.length+1)+' 次设计</small></div>'+params+
+    '<details class="memo"><summary>本次设计记录（选填）</summary>'+
+    notePick("target","希望改变",prev)+notePick("keep","希望保留",prev)+notePick("basis","选择依据",prev)+'</details>'+
+    submit("确认本次设计，准备交接")+'</form>'+(s.versions.length?action("cancelRevision","返回版本选择"):"");
+}
+function mountStudyEditor(s){
+  if(!paused(s)&&["draft","revision"].includes(s.phase)&&s.condition==="S")attachSelector(draftKey(s)+"/parameters",latest(s)?.input?.selectionState);
+}
+function attachSelector(key, previous = {}) {
+  let initial = previous || {};
+  try { initial = JSON.parse(sessionStorage.getItem(key) || "null") || initial; } catch {}
+  const lab = pageMode === "lab";
+  if (lab) sessionStorage.setItem("c1-lab-interacted", "yes");
+  selector = C1Selection.mount({
+    panel: $("selection"), preview: $("preview-host"), prompt: $("livePrompt"),
+    initialSelection: initial, studyLayout: !lab,
+    onChange(snapshot) {
+      sessionStorage.setItem(key, JSON.stringify(snapshot.selection));
+      for (const b of main.querySelectorAll('[data-act="downloadText"],[data-act="downloadSpec"]')) b.disabled = !snapshot.validation.ok;
+    }
+  });
+}
+function selectorState() {return selector.getSnapshot().selection;}
+async function selectionRecord() {if(!selector)throw Error("请选择本次设计参数。");return selector.exportVersion();}
+function downloadText(content) {
+  const url=URL.createObjectURL(new Blob([content],{type:"text/plain;charset=utf-8"}));
+  const a=document.createElement("a");a.href=url;a.download="四旋翼-当前提示词.txt";a.click();
+  setTimeout(()=>URL.revokeObjectURL(url),1500);
 }
 async function digest(bytes) {
   const hash=await crypto.subtle.digest("SHA-256",bytes);
   return Array.from(new Uint8Array(hash),b=>b.toString(16).padStart(2,"0")).join("");
 }
 async function collect(s) {
-  const notes={target:val("target"),keep:val("keep"),basis:val("basis")};
-  if(Object.values(notes).some(v=>!v))throw Error("请填写目标、保持项和依据。");
+  const notes=designNotes(s);
   if(s.condition==="D"){
     const prompt=val("free");
     if(!prompt)throw Error("请填写本次自由提示词。");
     return {...notes,prompt,promptSha256:await digest(new TextEncoder().encode(prompt)),references:[]};
   }
   const file=$("spec").files[0];
-  if(!file)throw Error("请导入已确认的规格。");
-  const v=JSON.parse(await file.text()),req=v.request;
+  const v=file?JSON.parse(await file.text()):await selectionRecord();
+  const req=v.request;
   if(v.schema!=="uav-configurator-e/2"||v.draft?.inputs?.task!=="quad"||v.draft.inputs.view!=="top"||
     v.draft.inputs.method!=="structured"||req?.route!=="guide"||!v.id||!req.prompt?.trim()||
     !Array.isArray(req.references)||![1,2].includes(req.references.length))
     throw Error("本场 S 条件须导入正俯视四旋、部位规格 S、带布局图的已确认版本。");
+  const hubs=v.layout?.adjacent_deg;
+  if(state.settings.interfaceVersion==="select-20261117" && (v.draft.parameters?.frame?.frame_type!=="True X"||v.layout?.max_motor_distance_mm!==250||
+    !Array.isArray(hubs)||hubs.length!==4||hubs.some(a=>Math.abs(a-90)>1e-5)||
+    !v.draft.inputs.guideLines||v.draft.inputs.guideTips||v.draft.inputs.guideNose||v.draft.inputs.guideBladeLines))
+    throw Error("本场沿用 250 mm 等角 X 布局和仅轴位连线的参照。可在参数试配中自由改变这些设置。");
   if(await digest(new TextEncoder().encode(req.prompt))!==req.promptSha256)throw Error("提示词摘要不符。");
   const references=[];
   for(const [i,r] of req.references.entries()){
@@ -119,14 +197,24 @@ async function collect(s) {
       throw Error("研究场次的外观父图限用本场已登记返回图。");
     references.push({role,sha256:r.sha256,dataUrl:asset.dataUrl});
   }
-  return {...notes,prompt:req.prompt,promptSha256:req.promptSha256,references,configuratorId:v.id,
-    parameters:v.draft.parameters,inputs:v.draft.inputs,layout:v.layout};
+  const importedLayoutSha=file?references[0].sha256:null;
+  if(state.settings.interfaceVersion==="select-20261117"){
+    if(file && references[0].sha256!==reference.sha256){
+      const canonical=(await selectionRecord()).guide;
+      if(canonical.sha256!==reference.sha256||await digest(Uint8Array.from(atob(canonical.dataUrl.split(",")[1]),c=>c.charCodeAt(0)))!==reference.sha256)throw Error("共同参照校验失败。");
+      references[0]={role:"top-layout",sha256:canonical.sha256,dataUrl:canonical.dataUrl};
+    }
+    if(references[0].sha256!==reference.sha256)throw Error("当前场次的布局图与共同参照不一致。");
+  }
+  return {...notes,importedLayoutSha,prompt:req.prompt,promptSha256:req.promptSha256,references,configuratorId:v.id,
+    parameters:v.draft.parameters,inputs:v.draft.inputs,layout:v.layout,
+    source:file?"imported-configurator":"inline-selector",selectionState:file?null:selectorState()};
 }
 
 function receiptForm(s) {
   const v=latest(s);
-  return `<form data-form="receipt"><h2>登记外部运行</h2><p class="hint">${esc(state.settings.backend)} · 输入已封存。仅按外部运行实际发生的情况登记。</p>
-  ${detail("查看已封存输入",JSON.stringify(v.input,null,2))}
+  return `<h2>设计已封存</h2><p class="hint">将输入交给主持人，回图后继续。</p><div class="buttons">${action("handoff","下载本次输入")}</div><details class="admin receipt"><summary>主持人 · 登记运行与返回图</summary><form data-form="receipt"><p class="hint">${esc(state.settings.backend)} · 输入已封存。仅按外部运行实际发生的情况登记。</p>
+  ${detail("查看已封存输入",v.input.prompt)}
   ${select("status","运行结果",{"":"请选择",success:"成功",failed:"失败",unknown:"结果未知",unsent:"确认未调用"},"")}
   ${input("rid","实际回执编号或原件定位",'placeholder="无回执可留空；有原件请填可复核位置"')}
   ${select("count","本机会实际调用次数",{"":"请选择","0":"0 次","1":"1 次","unknown":"未知"},"")}
@@ -138,28 +226,30 @@ function receiptForm(s) {
   ${input("submitted","实际提交（本地时间）",'type="datetime-local" step="1"')}
   <div class="row">${input("runStart","模型开始（本地时间）",'type="datetime-local" step="1"')}${input("runEnd","模型结束（本地时间）",'type="datetime-local" step="1"')}</div></details>
   ${input("picture","外部返回的 PNG（成功时必选）",'type="file" accept="image/png"')}
-  ${submit("保存实际回执")}</form>`;
+  ${submit("保存实际回执")}</form></details>`;
 }
 function outcomes(s) {
-  return s.versions.map(v=>{
+  return '<div class="version-list">'+s.versions.map(v=>{
     const r=v.receipt;
     const label="第 "+v.number+" 稿";
     return `<div class="group"><b>${label}</b>　<span class="meta">${esc(({success:"成功",failed:"失败",unknown:"结果未知",unsent:"确认未调用"})[r?.status]??"待登记")}${r?.backendMatches===false?" · 实际后端标识与约定不同":""}</span>
     ${r?.image?`<div><img class="result" src="${esc(r.image.data)}" alt="${label}外部返回图"></div>`:""}</div>`;
-  }).join("");
+  }).join("")+'</div>';
 }
 function decision(s) {
   const opts={"":"请选择"};
   for(const v of s.versions) if(v.receipt?.status==="success") opts[v.number]="锁定第 "+v.number+" 稿";
   opts.none="均不提交";
   return `<h2>检查版本</h2>${outcomes(s)}${s.versions.length<MAX_ATTEMPTS && latest(s).receipt?.status!=="unknown"?action("revise","继续下一次尝试"):""}
-  <hr><form data-form="lock">${select("choice","最终选择",opts,"")}${area("reason","选择理由")}${submit("确认选择，进入五题")}</form>`;
+  <hr><form data-form="lock">${select("choice","最终选择",opts,"")}${choiceSet("lockReason","选择理由",[["符合本次目标","符合本次目标"],["整体更协调","整体更协调"],["其他部位保持较好","其他部位保持较好"],["仍有明显问题","仍有明显问题"],["另写","另写"]],"",true)}<div id="lockReason-other" hidden>${area("reason","补充理由","",false)}</div>${submit("确认选择，进入五题")}</form>`;
 }
 function survey() {
   const scale=state.settings.scale;
   return `<form data-form="survey"><h2>场后五题</h2><p class="hint">${scale.length?"前四题按本场预设量尺逐项作答。":"量尺未登记，请保留原始回答。"}第五题可留空。</p>${questions.map((q,i)=>{
     if(i===4)return area("q4",q,"",false);
-    return scale.length?select("q"+i,q,Object.fromEntries([["","请选择"],...scale.map((v,j)=>["v"+j,v])]),""):input("q"+i,q);
+    if(!scale.length)return input("q"+i,q);
+    const label=state.settings.defaultScale?q+"（1＝"+anchors[i][0]+"，5＝"+anchors[i][1]+"）":q;
+    return '<div class="surveyItem rate">'+choiceSet("q"+i,label,scale.map((v,j)=>["v"+j,v]),"",true)+'</div>';
   }).join("")}${submit("保存答卷，结束本场")}</form>`;
 }
 function totals(s, end=s.decision?.at??now()) {
@@ -177,15 +267,19 @@ function paused(s){return Boolean(s.pauses.length && !s.pauses.at(-1).end);}
 
 function render() {
   $("actions").innerHTML=""; message("");
-  if(!state) {setup(); return;}
+  stopSelector();
+  if(pageMode==="lab"){freeLab();return;}
+  if(!state){setup();return;}
   const s=active();
+  const structured=!paused(s)&&s.condition==="S"&&["draft","revision"].includes(s.phase);
+  setWorkspace(structured,({draft:"准备初稿",revision:"调整方案",waiting:"等待回图",decide:"审看与取舍",survey:"场后反馈",done:"本场已结束"})[s.phase]);$("brief").hidden=false;$("sessionFooter").hidden=false;
   $("context").textContent=`场次 ${state.sessions.length} / 2　·　任务 ${s.task}　·　条件 ${s.condition}`;
   $("title").textContent=({draft:"准备初稿",revision:"准备修订",waiting:"等待外部回执",decide:"查看与取舍",survey:"记录本场反馈",done:"本场已结束"})[s.phase];
   $("task").textContent="任务 "+s.task+"　"+cards[s.task];
   const t=totals(s);
   $("progress").textContent=`封存 ${s.versions.length}/${MAX_ATTEMPTS}　·　已确认调用 ${t.knownCalls} 次${t.unknownOrPending?"（另有待核）":""}`;
   $("actions").innerHTML=action("export","导出场次 JSON");
-  if(s.phase==="waiting") $("actions").insertAdjacentHTML("afterbegin",action("handoff","下载本次输入"));
+
   if(s.phase==="draft"||s.phase==="revision") main.innerHTML=edit(s);
   if(s.phase==="waiting") main.innerHTML=receiptForm(s);
   if(s.phase==="decide") main.innerHTML=decision(s);
@@ -200,9 +294,13 @@ function render() {
   const key=draftKey(s);
   const draft=JSON.parse(sessionStorage.getItem(key)??"{}");
   for(const el of main.querySelectorAll("textarea[id],input[id]:not([type=file]),select[id]")){
-    if(Object.hasOwn(draft,el.id))el.value=draft[el.id];
+    if(!Object.hasOwn(draft,el.id))continue;
+    if(el.type==="radio")el.checked=draft[el.id]===true;else el.value=draft[el.id];
   }
-  updateClock();
+  for(const other of ["target","keep","basis","lockReason"]){
+    const field=$(other+"-other");if(field)field.hidden=selected(other)!=="另写";
+  }
+  mountStudyEditor(s);updateClock();
 }
 function due(s){return !s.decision&&totals(s).activeMs>=s.limitMs;}
 function timeout(s){
@@ -213,7 +311,7 @@ function timeout(s){
   if(s.phase!=="waiting")s.phase="survey";
 }
 function updateClock(){
-  const s=active();if(!s)return;
+  const s=active();if(!s||pageMode!=="study")return;
   const end=s.decision?.at??now();
   const sec=Math.max(0,Math.floor((totals(s,end).activeMs)/1000));
   $("clock").textContent=`主动用时 ${Math.floor(sec/60)}:${String(sec%60).padStart(2,"0")} / ${state.settings.minutes} 分钟`;
@@ -265,6 +363,16 @@ async function record(s) {
 async function dispatch(kind){
   if(busy)return;busy=true;message("");
   try{
+    if(kind==="lab"||kind==="study"){
+      if(kind==="lab"&&(STUDY_ENTRY||pairOpen())){message("场次已开始，请先完成本场。");return;}
+      pageMode=kind;render();return;
+    }
+    if(kind==="downloadSpec"||kind==="downloadText"){
+      const v=await selectionRecord();
+      if(kind==="downloadSpec")download("四旋翼-试配-"+v.id+".json",v);
+      else downloadText(v.request.prompt);
+      message("已导出当前试配版本。");return;
+    }
     if(kind==="export"){
       const fresh=await read();
       const complete=fresh.sessions.length===2&&fresh.sessions[1].phase==="done";
@@ -277,7 +385,7 @@ async function dispatch(kind){
       download("E4-"+state.id+"-"+s.task+s.condition+"-"+v.number+".json",{pairId:state.id,backend:state.settings.backend,condition:s.condition,attempt:v.number,prompt:v.input.prompt,promptSha256:v.input.promptSha256,references:v.input.references,sealed:v.sealed});
       return;
     }
-    if(kind==="another"){setup();$("actions").innerHTML=action("back","返回已保存场次");return;}
+    if(kind==="another"){setup();$("sessionFooter").hidden=false;$("actions").innerHTML=action("back","返回已保存场次");return;}
     if(kind==="back"){render();return;}
     let next=structuredClone(state),s=next?.sessions.at(-1);
     if(s&&due(s)){timeout(s);if(kind!=="receipt") {await commit(next);render();return;}}
@@ -285,10 +393,10 @@ async function dispatch(kind){
     if(kind==="start"){
       if(s && !(next.sessions.length===2 && s.phase==="done"))return;
       const code=val("code"),backend=val("backend"),minutes=ACTIVE_MINUTES,order=orders[Number(val("order"))];
-      const scale=val("scale")?val("scale").split("|").map(x=>x.trim()):[];
+      const scale=val("scale")?val("scale").split("|").map(x=>x.trim()):standardScale.slice();
       if(!code||!backend||!order||!Number.isInteger(minutes)||minutes<1||minutes>1440)throw Error("请填写完整的场次设置。");
       if(scale.length&&(scale.length<2||scale.includes("")||new Set(scale).size!==scale.length))throw Error("每个量尺档位须有不同的非空标签，使用 | 分隔。");
-      next={schema:"e4-author-pilot/2",id:crypto.randomUUID(),mode:"author_pilot",timezone:Intl.DateTimeFormat().resolvedOptions().timeZone,settings:{code,backend,minutes,order,scale,displayedReference:reference,cards,maxAttempts:MAX_ATTEMPTS},sessions:[newSession(order[0],minutes)]};
+      next={schema:"e4-author-pilot/2",id:crypto.randomUUID(),mode:"author_pilot",timezone:Intl.DateTimeFormat().resolvedOptions().timeZone,settings:{code,backend,minutes,order,scale,displayedReference:reference,cards,maxAttempts:MAX_ATTEMPTS,interfaceVersion:"select-20261117",defaultScale:!val("scale"),exploredInterface:sessionStorage.getItem("c1-lab-interacted")==="yes"},sessions:[newSession(order[0],minutes)]};
     }else if(kind==="next"&&s.phase==="done"&&next.sessions.length===1){
       next.sessions.push(newSession(next.settings.order[1],next.settings.minutes));
     }else if(kind==="pause"&&!paused(s)&&!s.decision&&s.phase!=="waiting"){
@@ -312,11 +420,11 @@ async function dispatch(kind){
     }else if(kind==="cancelRevision"&&s.phase==="revision"){
       s.phase="decide";addEvent(s,"revision_input_discarded");
     }else if(kind==="lock"&&s.phase==="decide"){
-      const choice=val("choice"),reason=val("reason");
+      const choice=val("choice"),choiceReason=selected("lockReason"),reason=choiceReason==="另写"?val("reason"):choiceReason;
       if(!reason||!(choice==="none"||s.versions.some(v=>String(v.number)===choice&&v.receipt.status==="success")))throw Error("请选择可锁定的版本并填写理由。");
       const at=now();s.decision={choice,reason,at};addEvent(s,"decision_locked",at);s.phase="survey";
     }else if(kind==="survey"&&s.phase==="survey"&&s.decision&&!s.survey){
-      const answers=questions.map((question,i)=>{let answer=val("q"+i);if(i<4&&state.settings.scale.length)answer=state.settings.scale[Number(answer.slice(1))];return {question,answer:answer||null};});
+      const answers=questions.map((question,i)=>{let answer=i<4&&state.settings.scale.length?selected("q"+i):val("q"+i);if(i<4&&state.settings.scale.length)answer=answer?state.settings.scale[Number(answer.slice(1))]:null;return {question,answer:answer||null};});
       if(answers.slice(0,4).some(a=>!a.answer))throw Error("请完成前四题。");
       const at=now();s.survey={at,answers};addEvent(s,"survey_saved",at);s.phase="done";
     }else return;
@@ -326,10 +434,24 @@ async function dispatch(kind){
 function draftKey(s){return ["author-pilot",state.id,s.task,s.condition,s.phase,s.versions.length].join("/");}
 main.addEventListener("input",e=>{
   const s=active(),el=e.target;
-  if(!s||!el.id||el.type==="file"||!el.closest("form"))return;
+  if(el.type==="radio"){const other=$(el.name+"-other");if(other)other.hidden=el.value!=="另写";}
+  if(!s||pageMode!=="study"||!el.id||el.type==="file"||!el.closest("form"))return;
   const key=draftKey(s),draft=JSON.parse(sessionStorage.getItem(key)??"{}");
-  draft[el.id]=el.value;sessionStorage.setItem(key,JSON.stringify(draft));
+  if(el.closest("#selection"))return;
+  if(el.type==="radio"){
+    for(const option of el.form.querySelectorAll('input[type="radio"]'))if(option.name===el.name)draft[option.id]=option.checked;
+    const other=$(el.name+"-other");if(other)other.hidden=el.value!=="另写";
+  }else draft[el.id]=el.value;
+  sessionStorage.setItem(key,JSON.stringify(draft));
 });
-main.addEventListener("submit",e=>{e.preventDefault();dispatch(e.target.dataset.form);});
+main.addEventListener("submit",e=>{e.preventDefault();if(e.target.dataset.form)dispatch(e.target.dataset.form);});
+main.addEventListener("change",e=>{
+  if(e.target.id==="spec"){
+    const imported=Boolean(e.target.files.length);
+    const host=$("selection");if(host)host.hidden=imported;
+    $("preview-host").hidden=imported;$("promptCard").hidden=imported;
+    $("importNotice").textContent=imported?"将使用 "+e.target.files[0].name+"。清除文件即可回到点选方案。":"将使用当前点选方案。";
+  }
+});
 document.addEventListener("click",e=>{const b=e.target.closest("[data-act]");if(b)dispatch(b.dataset.act);});
-(async()=>{try{await startDB();state=await read();render();setInterval(updateClock,1000);}catch(e){main.textContent="无法打开本地记录。请用允许本地存储的 Edge 或 Chrome 打开本页。";message(e.message);}})();
+(async()=>{try{await startDB();state=await read();if(pairOpen())pageMode="study";render();setInterval(updateClock,1000);}catch(e){main.textContent="无法打开本地记录。请用允许本地存储的 Edge 或 Chrome 打开本页。";message(e.message);}})();

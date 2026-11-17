@@ -1,5 +1,12 @@
 # 真机、构型和设计者实验 · 11 月 17 日接续
 
+### 11 月 17 日补充 · 作者工作台与真机扩样
+
+- [参数试配与配对预试（离线包）](../../prototypes/e4-author-pilot/workbench-offline.zip) · [交互与复现](../../prototypes/e4-author-pilot/README.md)。自由试配直接点选；配对预试分别送出 S 组参数与布局图、D 组原句。浏览器模拟使用虚拟回执。作者双场预试和三位设计者的正式场次待开展。
+- [真机参数合表](A1-extension/a1-all-models.csv)收录 24 款，14 款四旋、10 款植保六旋，共 50 条状态记录。[逐机来源及缺项](A1-extension/verification-summary.md)。
+- [手册图面量测](A2-extension/README.md)累计 6 款，其中新增 Neo 2 和 AGRAS T20。[两款 10 个电机轴心的第二次读图](A2-extension/repeat.md)最大同轴点距离 1.414 px；其他四款尚无第二次读数。
+
+
 | 研究问题 | 本轮证据 | 下一步 |
 |---|---|---|
 | 参数是否对应实际机型的展开布局？ | [A2 厂商手册点位与逐机型量测](A2/README.md)。Air 3、Mavic 3 Pro、Neo 三款四旋，T30 六旋单列。 | 增加可量机型，做第二次独立标注。A8 用已知真值图检验读数误差；A3 对设计流程生成图采用相同轴心定义。 |

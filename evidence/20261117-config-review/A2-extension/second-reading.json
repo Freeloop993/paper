@@ -1,0 +1,120 @@
+{
+  "reader_model_id": "unknown",
+  "coordinate_system": {
+    "unit": "原始图像像素",
+    "origin": "左上角像素中心为 (0,0)",
+    "x_positive": "纸面向右",
+    "y_positive": "纸面向下",
+    "rounding": "每个轴心取距拟合中心最近的整数像素"
+  },
+  "uncertainty_note": "不确定性为按图面线宽、遮挡和定位方法作出的人工估计，单位为原图像素。",
+  "images": [
+    {
+      "input_file_name": "43c22696.png",
+      "width": 1713,
+      "height": 1277,
+      "motors": [
+        {
+          "id": "M1",
+          "paper_position": "上中",
+          "x": 855,
+          "y": 184,
+          "visibility": "桨夹横穿毂心，上下圆弧清晰。",
+          "uncertainty_px_approx": 1,
+          "method": "在原图灰度像素中拟合桨毂可见圆周，以桨夹两端固定点的中点复核。"
+        },
+        {
+          "id": "M2",
+          "paper_position": "左上",
+          "x": 286,
+          "y": 371,
+          "visibility": "桨夹斜穿毂心，两端固定点可辨，左上侧外壳轮廓与内圈错开。",
+          "uncertainty_px_approx": 2,
+          "method": "桨夹遮住毂心，分别按两端固定点的可见圆边估计中心，取两者中点。"
+        },
+        {
+          "id": "M3",
+          "paper_position": "左下",
+          "x": 286,
+          "y": 947,
+          "visibility": "毂心被斜桨夹遮挡，固定点可辨，外围有多层粗线。",
+          "uncertainty_px_approx": 2,
+          "method": "桨夹遮住毂心，分别按两端固定点的可见圆边估计中心，取两者中点。"
+        },
+        {
+          "id": "M4",
+          "paper_position": "下中",
+          "x": 855,
+          "y": 1120,
+          "visibility": "桨夹横穿毂心，上下圆弧清晰。",
+          "uncertainty_px_approx": 1,
+          "method": "在原图灰度像素中拟合桨毂可见圆周，以桨夹两端固定点的中点复核。"
+        },
+        {
+          "id": "M5",
+          "paper_position": "右下",
+          "x": 1424,
+          "y": 947,
+          "visibility": "毂心被斜桨夹遮挡，固定点可辨，外围有多层粗线。",
+          "uncertainty_px_approx": 2,
+          "method": "桨夹遮住毂心，分别按两端固定点的可见圆边估计中心，取两者中点。"
+        },
+        {
+          "id": "M6",
+          "paper_position": "右上",
+          "x": 1424,
+          "y": 371,
+          "visibility": "桨夹斜穿毂心，两端固定点可辨，外壳轮廓与内圈错开。",
+          "uncertainty_px_approx": 2,
+          "method": "桨夹遮住毂心，分别按两端固定点的可见圆边估计中心，取两者中点。"
+        }
+      ],
+      "bias_note": "斜桨夹处的粗线和偏置外壳容易把目测点拉向一侧。"
+    },
+    {
+      "input_file_name": "74a067d2.png",
+      "width": 936,
+      "height": 864,
+      "motors": [
+        {
+          "id": "upper_left",
+          "paper_position": "左上",
+          "x": 218,
+          "y": 328,
+          "visibility": "支撑筋遮住毂心，桨毂左右仍露出较长圆弧。",
+          "uncertainty_px_approx": 1,
+          "method": "沿桨毂轮廓采样，选取内外两侧均与其他线条分离的弧段，按灰度估计弧线中心并稳健拟合圆。"
+        },
+        {
+          "id": "upper_right",
+          "paper_position": "右上",
+          "x": 709,
+          "y": 328,
+          "visibility": "支撑筋遮住毂心，桨毂左右仍露出较长圆弧。",
+          "uncertainty_px_approx": 1,
+          "method": "沿桨毂轮廓采样，选取内外两侧均与其他线条分离的弧段，按灰度估计弧线中心并稳健拟合圆。"
+        },
+        {
+          "id": "lower_left",
+          "paper_position": "左下",
+          "x": 218,
+          "y": 650,
+          "visibility": "多处轮廓与桨毂重叠，可独立辨认的弧段较短。",
+          "uncertainty_px_approx": 2,
+          "method": "沿桨毂轮廓采样，选取内外两侧均与其他线条分离的弧段，按灰度估计弧线中心并稳健拟合圆。"
+        },
+        {
+          "id": "lower_right",
+          "paper_position": "右下",
+          "x": 709,
+          "y": 650,
+          "visibility": "多处轮廓与桨毂重叠，可独立辨认的弧段较短。",
+          "uncertainty_px_approx": 2,
+          "method": "沿桨毂轮廓采样，选取内外两侧均与其他线条分离的弧段，按灰度估计弧线中心并稳健拟合圆。"
+        }
+      ],
+      "bias_note": "下排两点最易偏。支撑筋交汇处和毂内小圆点都很醒目，直接点选会偏离桨毂圆心。"
+    }
+  ],
+  "completed_at": "2026-11-17T17:29:13+08:00"
+}
