@@ -1,0 +1,188 @@
+{
+  "records_after_merge": 8755,
+  "platform": {
+    "京东": 5122,
+    "淘宝/天猫": 3633
+  },
+  "review_year": {
+    "2021": 1,
+    "2022": 26,
+    "2023": 133,
+    "2024": 2130,
+    "2025": 6465
+  },
+  "distinct_product_listings": 391,
+  "unique_texts": 7443,
+  "scope_dictionary": {
+    "Q": "标题明确命名的消费航拍/Vlog/FPV机型；真假及配置仍未回访核验",
+    "M": "其他航拍营销条目/身份未核",
+    "T": "玩具/儿童飞行器标题线索",
+    "A": "配件或非无人机整机",
+    "I": "工业/农用条目",
+    "R": "租赁/服务混合条目",
+    "E": "科教/竞赛/DIY模型",
+    "O": "虚拟商品/图纸等非物理样本",
+    "U": "标题未明"
+  },
+  "unique_texts_by_scope": {
+    "T": 3502,
+    "A": 1773,
+    "Q": 1221,
+    "M": 628,
+    "A+Q": 72,
+    "R": 70,
+    "E": 46,
+    "U": 35,
+    "M+T": 24,
+    "A+T": 19,
+    "I": 7,
+    "Q+T": 6,
+    "A+M": 6,
+    "O": 6,
+    "A+Q+T": 5,
+    "A+M+Q+T": 3,
+    "M+Q": 3,
+    "A+M+T": 2,
+    "A+M+Q": 2,
+    "A+U": 2,
+    "M+Q+T": 2,
+    "A+E+M+Q+T": 1,
+    "R+T": 1,
+    "A+E+M+Q": 1,
+    "A+M+O+Q+T": 1,
+    "A+E": 1,
+    "M+Q+U": 1,
+    "A+T+U": 1,
+    "A+E+T": 1,
+    "A+E+M": 1
+  },
+  "unique_texts_with_scope_Q": 1318,
+  "decision_counts": {
+    "X 非造型/低信息背景": 6262,
+    "S 辅助语义候选": 797,
+    "A 主审消费机体候选": 228,
+    "U 对象/语义待核": 114,
+    "F 配件/携带系统边界": 42
+  },
+  "review_status": {
+    "本轮逐正文主审": 437,
+    "Mcode全量首筛；本轮未逐条主审": 5376,
+    "Mcode双遍；本轮未逐条主审": 1630
+  },
+  "A_by_scope": {
+    "Q": 227,
+    "A+Q": 1
+  },
+  "A_texts": 228,
+  "A_texts_per_theme": [
+    {
+      "group": "G01",
+      "label": "整机与小尺度体量",
+      "texts": 99,
+      "share_of_A": 0.434
+    },
+    {
+      "group": "G03",
+      "label": "通用携带体验",
+      "texts": 67,
+      "share_of_A": 0.294
+    },
+    {
+      "group": "G10",
+      "label": "外观审美总评",
+      "texts": 61,
+      "share_of_A": 0.268
+    },
+    {
+      "group": "G02",
+      "label": "轻重使用感知",
+      "texts": 49,
+      "share_of_A": 0.215
+    },
+    {
+      "group": "G05",
+      "label": "折叠构型与收纳",
+      "texts": 12,
+      "share_of_A": 0.053
+    },
+    {
+      "group": "G13",
+      "label": "简洁与时尚风格",
+      "texts": 12,
+      "share_of_A": 0.053
+    },
+    {
+      "group": "G12",
+      "label": "高级与质感观感",
+      "texts": 10,
+      "share_of_A": 0.044
+    },
+    {
+      "group": "G29",
+      "label": "材料自述与表面处理",
+      "texts": 4,
+      "share_of_A": 0.018
+    },
+    {
+      "group": "G04",
+      "label": "口袋与小包适配",
+      "texts": 4,
+      "share_of_A": 0.018
+    },
+    {
+      "group": "G34",
+      "label": "防护安心感知",
+      "texts": 3,
+      "share_of_A": 0.013
+    },
+    {
+      "group": "G14",
+      "label": "配色感知与颜色偏好",
+      "texts": 3,
+      "share_of_A": 0.013
+    },
+    {
+      "group": "G35",
+      "label": "可爱与趣味印象",
+      "texts": 3,
+      "share_of_A": 0.013
+    },
+    {
+      "group": "G06",
+      "label": "护罩构型与桨叶表达",
+      "texts": 2,
+      "share_of_A": 0.009
+    },
+    {
+      "group": "G27",
+      "label": "科技与科幻外形印象",
+      "texts": 2,
+      "share_of_A": 0.009
+    },
+    {
+      "group": "G26",
+      "label": "机身局部尺度感",
+      "texts": 1,
+      "share_of_A": 0.004
+    },
+    {
+      "group": "G15",
+      "label": "鲜艳与辨识表达",
+      "texts": 1,
+      "share_of_A": 0.004
+    },
+    {
+      "group": "G28",
+      "label": "局部线条与圆角",
+      "texts": 1,
+      "share_of_A": 0.004
+    },
+    {
+      "group": "G24",
+      "label": "异形审美比喻",
+      "texts": 1,
+      "share_of_A": 0.004
+    }
+  ],
+  "note": "A 档由主助手逐正文审读得出，不是全量人工编码；一条文本可属于多个主题；文本簇不等于人数。"
+}
