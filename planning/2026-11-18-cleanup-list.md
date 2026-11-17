@@ -20,15 +20,17 @@
 
 ## 一、先回答的问题（决定后面怎么做）
 
-- [ ] **【问 1】基准分支。** 是否以 `claude/direction-todo-20261117` 为基准，依次并入 `main`、`claude/e3-quad-qwen`、`claude/gpu-tasks-20261117`、`claude/extra-readings-20261117`、`codex/thesis-source-e2r-20261115` 的末提交 `5f92248`、`claude/word-pairs-v1`，再整体合入 `main`，此后只在 `main` 上工作？**我的建议：是。** 试算冲突只在 README、STATUS、handoff 三个入口文件，以及 preflight 两个文件（取 gpu-tasks 版本）。
-- [ ] **【问 2】归档方式。** 二选一：
+**11 月 18 日作者已答第 1—5 题**（[#3 登记](https://github.com/Freeloop993/paper/issues/3#issuecomment-6950220478)）：同意基准分支与合并顺序；归档移入 `archive/` 目录；大文件不移动；PR #75 是作者本人账号；新开协作工单 #76，#1 已逐字存档于 `archive/issues/issue-1-C01.md` 并关闭。
+
+- [x] **【问 1】基准分支。** 是否以 `claude/direction-todo-20261117` 为基准，依次并入 `main`、`claude/e3-quad-qwen`、`claude/gpu-tasks-20261117`、`claude/extra-readings-20261117`、`codex/thesis-source-e2r-20261115` 的末提交 `5f92248`、`claude/word-pairs-v1`，再整体合入 `main`，此后只在 `main` 上工作？**已定：同意。** 试算冲突只在 README、STATUS、handoff 三个入口文件，以及 preflight 两个文件（取 gpu-tasks 版本）。
+- [x] **【问 2】归档方式。** 二选一：
   - (a) 移入仓库内的 `archive/` 目录，工作树里仍留约 150 MB；
   - (b) 先打标签 `dev-archive-20261118`，再从 `main` 删除，需要时按标签查看。
 
-  **我的建议：b。** 已有的固定提交链接不受影响；仓库内少数相对链接要改，清单里已列出。
-- [ ] **【问 3】大文件。** 原图与压缩包约 450 MB，是否移到私有阅读库 `paper-reading-room`，公开库只留摘要与哈希？**我的建议：正式原图留在公开库，便于审稿复核；开发原图移走。**
-- [ ] **【问 4】PR #75。** 它来自外部账号 `lucienzhu` 的 fork，该账号不是本仓库的协作者，内容是配置器界面重做，并改写了 `PROGRESS.md` 全文。这是你本人或你的助手用的账号吗？**确认之前不要合并。**
-- [ ] **【问 5】协作工单。** #1 已有 100 多条评论。是否新开一个协作工单承接 11 月 18 日以后的交接，#1 保留但不再追加？**我的建议：新开。**
+  **已定：a，移入 `archive/` 目录。** 移动后要改的相对链接，见 evidence 清点第 2 节。
+- [x] **【问 3】大文件。** 原图与压缩包约 450 MB，是否移到私有阅读库 `paper-reading-room`，公开库只留摘要与哈希？**已定：不移动。**
+- [x] **【问 4】PR #75。** 它来自外部账号 `lucienzhu` 的 fork，该账号不是本仓库的协作者，内容是配置器界面重做，并改写了 `PROGRESS.md` 全文。这是你本人或你的助手用的账号吗？**已定：是作者本人账号。** 合并后在新基准上重放。
+- [x] **【问 5】协作工单。** #1 已有 100 多条评论。是否新开一个协作工单承接 11 月 18 日以后的交接，#1 保留但不再追加？**已定：新开 #76；#1 已存档并关闭。**
 
 ## 二、分支（35 个）
 
@@ -58,8 +60,8 @@
 - [ ] `claude/c01-1111`、`claude/c01-review-1110`、`claude/c01-review-1110b`、`claude/d2-addendum`、`claude/d2-tuning`、`claude/e3-spec-cards`、`claude/foundation-v1`、`claude/freeze-v1-sec2`、`claude/l1-layout`、`claude/method-freeze-v1`、`claude/p1-param-prompt`、`claude/roadmap-ch34`、`claude/semantic-to-e3`、`codex/e0-image26-blind-read`、`codex/e1-actuals`、`codex/e1-design-audit`、`codex/foundation-section8`、`codex/r0-e0-e1-freeze`、`codex/semantic-card-delivery`。
 
 **【问】：**
-- [ ] **`codex/semantic-tools`（PR #57）：** 词对评分页，1—7 分加“看不出”，先实拍后终稿。清单 E 组的 10 人评议是否沿用它？沿用就合并，不用就打标签后关闭。
-- [ ] **`codex/e2r-human-review-20261115`：** 一份 3 MB 的评阅稿 Word。若含 E2R 真人答卷原文或可识别信息，应去标识后放私有库（M5）；否则打标签存档。
+- [ ] **【#3 第 22 题】`codex/semantic-tools`（PR #57）：** 词对评分页，1—7 分加“看不出”，先实拍后终稿。清单 E 组的 10 人评议是否沿用它？沿用就合并，不用就打标签后关闭。
+- [ ] **【#3 第 23 题】`codex/e2r-human-review-20261115`：** 一份 3 MB 的评阅稿 Word。若含 E2R 真人答卷原文或可识别信息，应去标识后放私有库（M5）；否则打标签存档。
 
 ## 三、PR（9 个）
 
@@ -70,12 +72,13 @@
 - [ ] **#71**：关闭，已被 `ch3.md` 取代。
 - [ ] **#60**：关闭，R1—R3 从未执行。
 - [ ] **#54**：关闭，R1 冻结的实际提交为 0。
-- [ ] **#57**、**#75**：见上面的【问】。
+- [ ] **#57**：见上面的【问】。
+- [ ] **#75**：作者本人账号；整合完成后由 Codex 在新基准上重放并合并。
 
 ## 四、工单（35 个）
 
 **保留（6）：**
-- #1：协作，见问 5；
+- #1：已存档并关闭（11 月 18 日），协作改在 #76；
 - #3：作者决定；
 - #21：E2，改标题对应 F1、F2、F7；
 - #23：E4，正文改为 3 名外部设计者；
@@ -104,7 +107,7 @@
 | `manuscript/thesis/README.md` | `manuscript/outline.md` 由此指向 |
 | `references/README.md`（新建） | `reading-map.md`、`docs/literature-update-2026-11.md`、本次文献补充 |
 
-**归档（按问 2 的方式）：**
+**归档（移入 `archive/`，作者勾选后执行）：**
 - [ ] **旧计划 7 份**：`docs/execution-playbook.md`、`docs/foundation.md`（先把定案表抄入 DECISIONS）、`docs/research-plan.md`、`docs/requirements.md`、`docs/methods.md`、`docs/research-variables.md`、`docs/roadmap-20261114.md`。
 - [ ] **旧交接与复盘 4 份**：`docs/configurator-realignment.md`、`docs/claude-context-20261113.md`、`docs/image-retrospective-20261113.md`、`docs/historical-development-index.md`。
 - [ ] **旧协议 9 份**：`4.2.1-design-cards`、`e3-spec-cards-draft`、`semantic-to-E3-spec`、`freeze-sheet-P3`、`G2-axis-control-spec`、`G2b-structure-screen-spec`、`G2d-G3b-spec`、`G3b-amendment-orientation`，以及 `docs/tasks/` 下的 3 份派单。
@@ -140,7 +143,7 @@
 - 局部编辑：`20261115-local-edit`；
 - 评议工具：`g3-reference`、`g3-actual`、`rating-kit`、`x12-calibration`。
 
-**归档（34），约 149 MB：**
+**归档（34），约 149 MB，移入 `archive/`：**
 - [ ] **GPT Image 与闭源诊断**：`gpt-image-b02-visual`、`b02-view-calibration`、`b02-parent-reference`、`d2-closed-six`、`l1-closed-reference-diagnostic`。注意 `d2-closed-six` 不是 E0 闭源组，归档时不能改标为 E0。
 - [ ] **MiniMax 开发（11 月 13 日）**：`p1-param-prompt`（两处）、`p2-spec-cards`（两处）、`minimax-junction-pilot`（两处）、`form342-h3-pilot`、`quad-author-selection`、`section421-minimax-review`。
 - [ ] **D2 调参**：`d2-tuning`（两处）。
