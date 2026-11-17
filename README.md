@@ -1,5 +1,7 @@
 # paper
 
+**无人机造型配置器**　[作者 E 盘五页签源码与使用说明](prototypes/drone-configurator/README.md) · [下载离线版](prototypes/drone-configurator/configurator-offline.zip?raw=true) · [早期需求及研究讨论](docs/configurator-realignment.md)。
+
 11 月 14 日实测已补齐：[Qwen 十二张＋S4 修订两张的原图、实际请求、逐图读数](evidence/qwen-shape-s4-20261114/README.md)。S4 仅见顶部 0/2 → 0/2，E3 仍为 0/9。[四篇同校硕士论文全文、结构和页码](references/peer-theses.md)。
 
 **11 月 14 日 · H3 第三轮实收 8/8，独立 AI 盲读已封存。** S0 两轮合计 4 无外突／1 前伸／2 待判，轴距组壳长/轴距均值差 0.0286 小于组内 SD 0.0842，两项均未过。A/B 臂根统一记无缝；E3 可选外露碳纹臂，5.2.1 保持同色。正式 E2 为 0/6，E3 为 0/9。[冻结单第 2 节](docs/protocols/method-freeze-v1.md)已并入主线；[八图通用项补读](evidence/form342-h3-dev/round-3-common-v22/)另行归档，作者签署第 3 节后安排同机 E2 六张和 Qwen 小测十二张。[第三轮全量与读数](evidence/form342-h3-dev/round-3/README.md) · [方向卡](evidence/section421-h3-span/specs-after-review.md)。

@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { FileText, Copy, Download, Wand2, Star } from 'lucide-react';
+import { Copy, Download, Wand2, Star } from 'lucide-react';
 
 const PromptGenerator: React.FC = () => {
   const { parameters, selectedUserProfile } = useDroneStore();
@@ -14,16 +14,16 @@ const PromptGenerator: React.FC = () => {
     const baseDescription = [
       "A professional high-quality drone/quadcopter",
       `with ${frame.frame_type.toLowerCase()} frame configuration`,
-      `${frame.wheelbase_mm}mm wheelbase and ${frame.arm_thickness_mm}mm thick ${frame.material_visual.toLowerCase()} arms`,
-      `equipped with ${propulsion.prop_diameter_inch}-inch ${propulsion.prop_blade_count}-blade propellers`,
+      `${frame.wheelbase_mm}mm wheelbase and ${frame.arm_thickness_mm} thick ${frame.material_visual.toLowerCase()} arms`,
+      `equipped with ${propulsion.prop_diameter_inch}-inch ${parseInt(propulsion.prop_blade_count, 10)}-blade propellers`,
       propulsion.motor_tilt_degree > 0 ? `motors tilted at ${propulsion.motor_tilt_degree}° angle` : "vertically mounted brushless motors",
-      `${fuselage.fuselage_style.toLowerCase()} fuselage design (${fuselage.fuselage_dimensions_mm.length}×${fuselage.fuselage_dimensions_mm.width}×${fuselage.fuselage_dimensions_mm.height}mm)`
+      `fuselage dimensions (${fuselage.fuselage_dimensions_mm.length}×${fuselage.fuselage_dimensions_mm.width}×${fuselage.fuselage_dimensions_mm.height}mm)`
     ];
 
     // 起落架描述
     const landingGearDesc = landing_gear.landing_gear_style !== '无独立起落架'
       ? `equipped with ${landing_gear.landing_gear_style.toLowerCase()} landing gear system providing ${landing_gear.landing_gear_height_mm}mm ground clearance`
-      : "streamlined design with integrated landing system";
+      : "without a separate landing gear assembly";
 
     // 相机配置
     const cameraDesc = accessories.has_camera_gimbal
@@ -105,17 +105,16 @@ const PromptGenerator: React.FC = () => {
       // 机架描述
       `with ${frame.frame_type.toLowerCase()} frame configuration`,
       `${frame.wheelbase_mm}mm wheelbase`,
-      `${frame.arm_thickness_mm}mm thick carbon fiber arms`,
+      `${frame.arm_thickness_mm} thick carbon fiber arms`,
       `${frame.material_visual.toLowerCase()} frame material finish`,
       
       // 动力系统 - 更详细
       `equipped with ${propulsion.prop_diameter_inch}-inch propellers`,
-      `${propulsion.prop_blade_count}-blade propeller configuration`,
+      `${parseInt(propulsion.prop_blade_count, 10)}-blade propeller configuration`,
       propulsion.motor_tilt_degree > 0 ? `motors tilted at ${propulsion.motor_tilt_degree}° angle` : "motors mounted vertically",
       "brushless motors with propeller guards",
       
       // 机身
-      `${fuselage.fuselage_style.toLowerCase()} fuselage design`,
       `fuselage dimensions ${fuselage.fuselage_dimensions_mm.length}×${fuselage.fuselage_dimensions_mm.width}×${fuselage.fuselage_dimensions_mm.height}mm`,
       
       // 起落架 - 详细描述
@@ -167,7 +166,7 @@ const PromptGenerator: React.FC = () => {
     return {
       frame: `${frame.frame_type} | ${frame.wheelbase_mm}mm | ${frame.arm_thickness_mm} arms | ${frame.material_visual}`,
       propulsion: `${propulsion.prop_diameter_inch}" ${propulsion.prop_blade_count} | ${propulsion.motor_tilt_degree}° tilt`,
-      fuselage: `${fuselage.fuselage_style} | ${fuselage.fuselage_dimensions_mm.length}×${fuselage.fuselage_dimensions_mm.width}×${fuselage.fuselage_dimensions_mm.height}mm`,
+      fuselage: `${fuselage.fuselage_dimensions_mm.length}×${fuselage.fuselage_dimensions_mm.width}×${fuselage.fuselage_dimensions_mm.height}mm`,
       landing: `${landing_gear.landing_gear_style} | ${landing_gear.landing_gear_height_mm}mm`,
       color: parameters.accessories.drone_primary_color,
       camera: parameters.accessories.has_camera_gimbal ? "Yes" : "No"

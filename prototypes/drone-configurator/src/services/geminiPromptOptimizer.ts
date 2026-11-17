@@ -3,11 +3,7 @@ import type { DroneParameters } from '../types/DroneParameters';
 import { ragService } from './ragService';
 
 // 从环境变量获取API密钥
-const GEMINI_API_KEY = 'HISTORICAL_KEY_REMOVED';
-
-if (!GEMINI_API_KEY || GEMINI_API_KEY === 'HISTORICAL_KEY_REMOVED') {
-  console.log('✅ 使用用户提供的Gemini API密钥');
-}
+const GEMINI_API_KEY = 'local-proxy';
 
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
 
@@ -23,6 +19,12 @@ export interface PromptOptimizationResult {
 }
 
 export class GeminiPromptOptimizer {
+  static async refineConfirmedSpec(text:string):Promise<string> {
+    const model=genAI.getGenerativeModel({model:'gemini-2.5-flash-preview-05-20'}, {baseUrl:location.origin+'/local-ai/gemini'});
+    const result=await model.generateContent('请润色下列产品设计指令，只输出最终文本。保留所有已选部件、数字、视图和自由项。不要新增外壳轮廓、材料、配色或功能。\n'+text);
+    return result.response.text().trim();
+  }
+
   
   // 生成结构化的优化指令
   private static getOptimizationInstruction(): string {
@@ -95,7 +97,7 @@ export class GeminiPromptOptimizer {
       console.log('🤖 开始使用Gemini优化Prompt（纯Gemini，不调用RAG）...');
       
       // 1. 获取Gemini模型
-      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-preview-05-20' });
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-preview-05-20' }, { baseUrl: location.origin + '/local-ai/gemini' });
       
       // 2. 构建优化指令
       const instruction = this.getOptimizationInstruction();
@@ -204,7 +206,7 @@ export class GeminiPromptOptimizer {
       }
       
       // 2. 获取Gemini模型
-      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-preview-05-20' });
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-preview-05-20' }, { baseUrl: location.origin + '/local-ai/gemini' });
       
       // 3. 构建优化指令
       const instruction = this.getOptimizationInstruction();
@@ -310,7 +312,7 @@ export class GeminiPromptOptimizer {
   // 验证API密钥
   static async validateApiKey(): Promise<boolean> {
     try {
-      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-preview-05-20' });
+      const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash-preview-05-20' }, { baseUrl: location.origin + '/local-ai/gemini' });
       const result = await model.generateContent('Hello');
       await result.response;
       return true;

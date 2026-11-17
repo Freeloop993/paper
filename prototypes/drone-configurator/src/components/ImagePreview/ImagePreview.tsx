@@ -1,57 +1,22 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { ImageGenerationService } from '../../services/imageGenerationService';
-import { Image, Download, RefreshCw, AlertCircle } from 'lucide-react';
+import { Image, RefreshCw, AlertCircle } from 'lucide-react';
 
 const ImagePreview: React.FC = () => {
   const { currentImage, isGenerating, error } = useDroneStore();
-  const [isDownloading, setIsDownloading] = useState(false);
-  const [downloadError, setDownloadError] = useState<string | null>(null);
-
-  const downloadImage = async () => {
-    if (!currentImage) return;
-    
-    try {
-      setIsDownloading(true);
-      setDownloadError(null);
-      
-      await ImageGenerationService.downloadImage(
-        currentImage, 
-        `无人机设计-${new Date().toISOString().slice(0, 10)}-${Date.now()}.png`
-      );
-      
-    } catch (error: any) {
-      console.error('下载失败:', error);
-      setDownloadError(error.message || '下载失败，请稍后重试');
-    } finally {
-      setIsDownloading(false);
-    }
-  };
-
   return (
     <div className="card h-full flex flex-col">
       <div className="flex items-center justify-between mb-4 flex-shrink-0">
         <h3 className="text-lg font-semibold text-slate-900">图像预览</h3>
-        {currentImage && (
-          <button
-            onClick={downloadImage}
-            disabled={isDownloading}
-            className="btn-secondary flex items-center space-x-2"
-          >
-            <Download className={`h-4 w-4 ${isDownloading ? 'animate-pulse' : ''}`} />
-            <span>{isDownloading ? '下载中...' : '下载'}</span>
-          </button>
-        )}
       </div>
       
       {/* 错误提示 */}
-      {(error || downloadError) && (
+      {(error) && (
         <div className="mb-4 p-3 bg-red-50 border border-red-200 rounded-lg flex-shrink-0">
           <div className="flex items-start space-x-2">
             <AlertCircle className="h-4 w-4 text-red-600 mt-0.5" />
             <div className="text-sm text-red-700">
               {error && <p>生成错误: {error}</p>}
-              {downloadError && <p>下载错误: {downloadError}</p>}
             </div>
           </div>
         </div>
@@ -83,8 +48,8 @@ const ImagePreview: React.FC = () => {
         ) : (
           <div className="text-center text-slate-500">
             <Image className="h-12 w-12 mx-auto mb-2" />
-            <p>点击"生成图像"查看结果</p>
-            <p className="text-xs mt-1">AI将根据您的配置生成无人机图像</p>
+            <p>暂无生成图像</p>
+            <p className="text-xs mt-1">可在界面预览中查看当前参数。</p>
           </div>
         )}
       </div>

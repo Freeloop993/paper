@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { Play, ArrowRight, Settings, Zap, Image, CheckCircle, AlertCircle } from 'lucide-react';
+import { Play, ArrowRight, Settings, Zap, Image, CheckCircle } from 'lucide-react';
 
 const WorkflowDemo: React.FC = () => {
   const { parameters, isGenerating } = useDroneStore();

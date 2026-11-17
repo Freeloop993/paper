@@ -1,3 +1,5 @@
+import { createContext, useContext } from 'react';
+import { quadBladeCount, type Task } from '../design/design';
 import { create } from 'zustand';
 import type { DroneParameters, AppState, FrameParameters, PropulsionParameters, FuselageParameters, LandingGearParameters, AccessoriesParameters, UserProfile } from '../types/DroneParameters';
 import type { PromptOptimizationResult } from '../services/geminiPromptOptimizer';
@@ -18,7 +20,7 @@ const defaultPropulsionParams: PropulsionParameters = {
 };
 
 const defaultFuselageParams: FuselageParameters = {
-  fuselage_style: 'Minimalist Plate',
+  fuselage_style: '',
   fuselage_dimensions_mm: {
     length: 100,
     width: 80,
@@ -46,6 +48,8 @@ const defaultParameters: DroneParameters = {
 };
 
 interface DroneStore extends AppState {
+  task:Task;
+  restoreConfiguration: (parameters:DroneParameters, profile:UserProfile|null) => void;
   // 新增：Gemini优化相关状态
   useGeminiOptimization: boolean;
   isOptimizingPrompt: boolean;
@@ -81,9 +85,21 @@ interface DroneStore extends AppState {
   resetToDefaults: () => void;
 }
 
-export const useDroneStore = create<DroneStore>((set, get) => ({
+export function createTaskStore(task:Task) {
+  const initial=structuredClone(defaultParameters);
+  if (task==='hexa') {
+    initial.frame.frame_type='Radial Hex';
+    initial.frame.wheelbase_mm=1400;
+    initial.propulsion.prop_diameter_inch=20;
+  } else {
+    initial.accessories.drone_primary_color='#8a9095';
+    initial.propulsion.prop_blade_count=quadBladeCount;
+    initial.accessories.has_camera_gimbal=true;
+  }
+  return create<DroneStore>(set=>({
+    task, restoreConfiguration:(parameters,selectedUserProfile)=>set({parameters,selectedUserProfile,currentImage:null,error:null,lastOptimizationResult:null}),
   // 初始状态
-  parameters: defaultParameters,
+  parameters: initial,
   isGenerating: false,
   currentImage: null,
   error: null,
@@ -91,7 +107,7 @@ export const useDroneStore = create<DroneStore>((set, get) => ({
   selectedUserProfile: null,
   
   // 新增：Gemini优化初始状态
-  useGeminiOptimization: true, // 默认启用Gemini优化
+  useGeminiOptimization: false,
   isOptimizingPrompt: false,
   lastOptimizationResult: null,
 
@@ -158,7 +174,7 @@ export const useDroneStore = create<DroneStore>((set, get) => ({
 
   // 重置方法
   resetParameters: () => set({ 
-    parameters: defaultParameters,
+    parameters: initial,
     currentImage: null,
     error: null,
     progress: 0,
@@ -166,18 +182,25 @@ export const useDroneStore = create<DroneStore>((set, get) => ({
   }),
 
   resetToDefaults: () => set({
-    parameters: defaultParameters,
+    parameters: initial,
     isGenerating: false,
     currentImage: null,
     error: null,
     progress: 0,
     selectedUserProfile: null,
-    useGeminiOptimization: true,
+    useGeminiOptimization: false,
     isOptimizingPrompt: false,
     lastOptimizationResult: null,
     useRAGOptimization: false
   })
-}));
+  }));
+}
+export const taskStores={quad:createTaskStore('quad'),hexa:createTaskStore('hexa')};
+export const DroneStoreContext=createContext(taskStores.quad);
+export function useDroneStore() {
+  const useBoundStore=useContext(DroneStoreContext);
+  return useBoundStore();
+}
 
 // 自定义Hook，便于组件使用
 export const useDroneParameters = () => {

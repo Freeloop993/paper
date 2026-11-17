@@ -12,7 +12,7 @@ const InterfacePreview: React.FC = () => {
     return {
       frame: `${parameters.frame.frame_type} (${parameters.frame.wheelbase_mm}mm)`,
       propulsion: `${parameters.propulsion.prop_diameter_inch}" ${parameters.propulsion.prop_blade_count}`,
-      fuselage: parameters.fuselage.fuselage_style,
+      fuselage: `${parameters.fuselage.fuselage_dimensions_mm.length} × ${parameters.fuselage.fuselage_dimensions_mm.width} × ${parameters.fuselage.fuselage_dimensions_mm.height} mm`,
       landing: parameters.landing_gear.landing_gear_style,
       color: parameters.accessories.drone_primary_color,
       camera: parameters.accessories.has_camera_gimbal ? '有相机' : '无相机'
@@ -40,7 +40,7 @@ const InterfacePreview: React.FC = () => {
 
   // 模拟无人机视觉预览
   const DroneVisualization: React.FC = () => {
-    const { frame, propulsion, accessories, landing_gear, fuselage } = parameters;
+    const { frame, propulsion, accessories, fuselage } = parameters;
     
     // 根据轴距计算机臂长度
     const getArmLength = () => {
@@ -369,7 +369,6 @@ const InterfacePreview: React.FC = () => {
         
         <div className="absolute bottom-2 left-2 text-xs text-slate-600">
           <div>机身: {fuselage.fuselage_dimensions_mm.length}×{fuselage.fuselage_dimensions_mm.width}mm</div>
-          <div>{fuselage.fuselage_style}</div>
         </div>
         
         <div className="absolute bottom-2 right-2 text-xs text-slate-600 text-right">
@@ -459,7 +458,6 @@ const InterfacePreview: React.FC = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-slate-600 mb-1">机身参数:</div>
-                  <div>样式: {parameters.fuselage.fuselage_style}</div>
                   <div>尺寸: {parameters.fuselage.fuselage_dimensions_mm.length}×{parameters.fuselage.fuselage_dimensions_mm.width}×{parameters.fuselage.fuselage_dimensions_mm.height}mm</div>
                 </div>
                 <div>

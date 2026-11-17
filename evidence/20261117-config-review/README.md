@@ -1,8 +1,10 @@
 # 真机、构型和设计者实验 · 11 月 17 日接续
 
+本文记录当时的试配与演练。当前开发请打开[作者的五页签配置器](../../prototypes/drone-configurator/README.md)。
+
 ### 11 月 17 日补充 · 作者工作台与真机扩样
 
-- [参数试配与配对预试（离线包）](../../prototypes/e4-author-pilot/workbench-offline.zip) · [交互与复现](../../prototypes/e4-author-pilot/README.md)。自由试配直接点选；配对预试分别送出 S 组参数与布局图、D 组原句。浏览器模拟使用虚拟回执。作者双场预试和三位设计者的正式场次待开展。
+- [参数试配与配对预试（离线包）](https://github.com/Freeloop993/paper/blob/31b3730a183000fed01abb42a61b605a7a6fa6b6/prototypes/e4-author-pilot/workbench-offline.zip) · [交互与复现](https://github.com/Freeloop993/paper/blob/31b3730a183000fed01abb42a61b605a7a6fa6b6/prototypes/e4-author-pilot/README.md)。自由试配直接点选；配对预试分别送出 S 组参数与布局图、D 组原句。浏览器模拟使用虚拟回执。作者双场预试和三位设计者的正式场次待开展。
 - [真机参数合表](A1-extension/a1-all-models.csv)收录 24 款，14 款四旋、10 款植保六旋，共 50 条状态记录。[逐机来源及缺项](A1-extension/verification-summary.md)。
 - [手册图面量测](A2-extension/README.md)累计 6 款，其中新增 Neo 2 和 AGRAS T20。[两款 10 个电机轴心的第二次读图](A2-extension/repeat.md)最大同轴点距离 1.414 px；其他四款尚无第二次读数。
 
@@ -11,7 +13,7 @@
 |---|---|---|
 | 参数是否对应实际机型的展开布局？ | [A2 厂商手册点位与逐机型量测](A2/README.md)。Air 3、Mavic 3 Pro、Neo 三款四旋，T30 六旋单列。 | 增加可量机型，做第二次独立标注。A8 用已知真值图检验读数误差；A3 对设计流程生成图采用相同轴心定义。 |
 | 这些参数能否在实际出图流程中实现？ | [A4 研发位置表与条件图摘要](../20261117-a1-a4-c1/a4-design.md)。这一轮以 W/L 为单变量，最多 24 次调用包含中间图。 | A2、A3、A8 给出档位和误差依据后签发真实请求，先用开发种子选择做法。仅放行已开发通过的因素。独立确认使用新种子和冻结的校正函数、阈值、分母。 |
-| 设计者能否用系统更快得到符合委托的方案？ | [C1 工作台](../../prototypes/e4-author-pilot/README.md)已接入 E 盘配置器。一次真实的配置器导出通过图文摘要校验。双场浏览器测试使用模拟回执。 | 作者先做两场，试任务难度、目标判定、主动操作与等待的界线。随后三位外部设计者各做两场，逐人报告时间、尝试次数、达标和盲评质量。 |
+| 设计者能否用系统更快得到符合委托的方案？ | [当时的 C1 工作台](https://github.com/Freeloop993/paper/blob/31b3730a183000fed01abb42a61b605a7a6fa6b6/prototypes/e4-author-pilot/README.md)已接入 E 盘配置器。一次真实的配置器导出通过图文摘要校验。双场浏览器测试使用模拟回执。 | 作者先做两场，试任务难度、目标判定、主动操作与等待的界线。随后三位外部设计者各做两场，逐人报告时间、尝试次数、达标和盲评质量。 |
 
 ## 早期图片的用途
 

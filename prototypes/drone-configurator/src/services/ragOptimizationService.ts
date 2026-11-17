@@ -2,9 +2,9 @@ import axios from 'axios';
 import type { DroneParameters } from '../types/DroneParameters';
 
 // RAG API配置
-const RAG_API_BASE_URL = 'http://127.0.0.1:5000';
-const DEEPSEEK_API_KEY = 'HISTORICAL_KEY_REMOVED';
-const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions';
+const RAG_API_BASE_URL = '/local-ai/retired-rag';
+const DEEPSEEK_API_KEY = 'local-proxy';
+const DEEPSEEK_API_URL = '/local-ai/rag/v1/chat/completions';
 
 export interface RAGContext {
   relevant_comments: string[];
@@ -112,6 +112,7 @@ export class RAGOptimizationService {
     try {
       // 获取RAG上下文
       const ragContext = await this.getRAGContext(parameters, userType);
+      if (!ragContext.relevant_comments.length) throw new Error('没有检索到可用评论片段。');
       
       // 构建增强的系统提示词
       const enhancedSystemPrompt = this.buildEnhancedSystemPrompt(userType, ragContext);

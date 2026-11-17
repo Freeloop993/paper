@@ -1,6 +1,6 @@
 // 机架参数类型
 export interface FrameParameters {
-  frame_type: 'True X' | 'Wide X' | 'Stretch X' | 'H-Frame' | 'Deadcat' | '+ Configuration';
+  frame_type: 'True X' | 'Wide X' | 'Stretch X' | 'H-Frame' | 'Deadcat' | '+ Configuration' | 'Radial Hex';
   wheelbase_mm: number; // 100-500mm
   arm_thickness_mm: '3mm' | '4mm' | '5mm' | '6mm';
   arm_width_mm: '10mm' | '15mm' | '20mm';
@@ -16,7 +16,7 @@ export interface PropulsionParameters {
 
 // 机身参数类型
 export interface FuselageParameters {
-  fuselage_style: 'Exposed Stack' | 'Minimalist Plate' | 'Aerodynamic Pod' | 'Boxy Enclosure';
+  fuselage_style: '' | 'Exposed Stack' | 'Minimalist Plate' | 'Aerodynamic Pod' | 'Boxy Enclosure';
   fuselage_dimensions_mm: {
     length: number; // 50-300mm
     width: number;  // 30-200mm

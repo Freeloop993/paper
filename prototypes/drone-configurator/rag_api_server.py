@@ -63,20 +63,14 @@ def create_rag_system():
         return False
 
 def initialize_rag_system():
-    """初始化RAG系统"""
-    global rag_system
-    with initialization_lock:
-        if rag_system is None:
-            if not create_rag_system():
-                return False
-        
-        try:
-            rag_system.initialize_full_system()
-            logger.info("RAG系统初始化完成")
-            return True
-        except Exception as e:
-            logger.error(f"RAG系统初始化失败: {e}")
-            return False
+    """历史 HTTP 接口保留状态查询；当前没有模型后端。"""
+    return False
+
+
+@app.before_request
+def reject_unconfigured_models():
+    if request.path in ("/api/initialize", "/api/query", "/api/context"):
+        return jsonify({"success": False, "error": "模型服务未配置"}), 503
 
 @app.route('/api/status', methods=['GET'])
 def get_status():

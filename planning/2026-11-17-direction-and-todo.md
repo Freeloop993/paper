@@ -19,7 +19,7 @@
 
 **A1、A4、C1 已有交付（Codex 接续）。** 真实机型第一版表 13 款四旋、3 款六旋，配有厂商来源。A4 已核对六张条件图并编制两阶段位置草案；C1 已补预试任务卡与计时定义，作者预试工作台已接入 E 盘规格导出，浏览器模拟回执通过，作者两场仍待进行。[材料、状态与分工](../evidence/20261117-a1-a4-c1/README.md)
 
-**本轮点位与复核入口。** [厂商手册逐机型点位和比值](../evidence/20261117-config-review/A2/README.md) · [构型素材、审查与待做项](../evidence/20261117-config-review/README.md) · [作者预试工作台](../prototypes/e4-author-pilot/README.md)。
+**本轮点位与复核入口。** [厂商手册逐机型点位和比值](../evidence/20261117-config-review/A2/README.md) · [构型素材、审查与待做项](../evidence/20261117-config-review/README.md) · [作者五页签配置器源码](../prototypes/drone-configurator/README.md)。
 
 ### 作者最新决定与执行顺序
 

@@ -2,8 +2,8 @@ import type { DroneParameters } from '../types/DroneParameters';
 import { RAGService } from './ragService';
 
 // DeepSeek API配置
-const DEEPSEEK_API_KEY = 'HISTORICAL_KEY_REMOVED';
-const DEEPSEEK_API_URL = 'https://api.deepseek.com/v1/chat/completions';
+const DEEPSEEK_API_KEY = 'local-proxy';
+const DEEPSEEK_API_URL = '/local-ai/deepseek/v1/chat/completions';
 
 // RAG服务实例
 const ragService = RAGService.getInstance();

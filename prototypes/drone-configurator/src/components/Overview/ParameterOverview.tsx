@@ -9,7 +9,7 @@ const ParameterOverview: React.FC = () => {
     return {
       frame: `${parameters.frame.frame_type} (${parameters.frame.wheelbase_mm}mm)`,
       propulsion: `${parameters.propulsion.prop_diameter_inch}" ${parameters.propulsion.prop_blade_count}叶`,
-      fuselage: parameters.fuselage.fuselage_style,
+      fuselage: `${parameters.fuselage.fuselage_dimensions_mm.length} × ${parameters.fuselage.fuselage_dimensions_mm.width} × ${parameters.fuselage.fuselage_dimensions_mm.height} mm`,
       landing: parameters.landing_gear.landing_gear_style,
       accessories: parameters.accessories.has_camera_gimbal ? '带相机云台' : '无相机云台'
     };

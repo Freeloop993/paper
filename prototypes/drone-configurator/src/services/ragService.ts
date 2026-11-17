@@ -13,7 +13,7 @@ import axios from 'axios';
 import type { DroneParameters } from '../types/DroneParameters';
 
 // RAG API服务器配置
-const RAG_API_BASE_URL = 'http://127.0.0.1:5000/api';
+const RAG_API_BASE_URL = '/local-ai/retired-rag/api';
 
 export interface RAGQueryResult {
   success: boolean;
@@ -64,7 +64,6 @@ export interface RAGContextResult {
 
 export class RAGService {
   private static instance: RAGService;
-  private isInitialized = false;
   private isReady = false;
   private initializationPromise: Promise<void> | null = null;
 
@@ -122,7 +121,6 @@ export class RAGService {
         throw new Error(response.data.error || 'RAG系统初始化失败');
       }
       
-      this.isInitialized = true;
       this.isReady = true;
       
       console.log('✅ RAG系统初始化完成');
@@ -130,7 +128,6 @@ export class RAGService {
       
     } catch (error) {
       console.error('❌ RAG系统初始化失败:', error);
-      this.isInitialized = false;
       this.isReady = false;
       throw error;
     }
@@ -300,7 +297,6 @@ export class RAGService {
       const status = response.data.status;
       
       // 更新本地状态
-      this.isInitialized = status.isInitialized;
       this.isReady = status.isReady;
       
       return {
@@ -366,7 +362,6 @@ export class RAGService {
    * 清理资源
    */
   public cleanup(): void {
-    this.isInitialized = false;
     this.isReady = false;
     this.initializationPromise = null;
   }

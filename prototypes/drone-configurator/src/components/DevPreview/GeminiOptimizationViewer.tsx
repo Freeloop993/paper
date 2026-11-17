@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { Sparkles, Copy, Eye, EyeOff, FileText, Zap } from 'lucide-react';
+import { Sparkles, Copy, Eye, EyeOff, Zap } from 'lucide-react';
 
 const GeminiOptimizationViewer: React.FC = () => {
   const { lastOptimizationResult, useGeminiOptimization } = useDroneStore();
