@@ -1,5 +1,4 @@
 import React from 'react';
-import { Settings } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
 import { computeLayout, frameRules, unitHubs, type FrameType } from '../../design/design';
 import { armMaterialOptions, armRootOptions, references } from '../../design/fields';
@@ -19,9 +18,9 @@ const FrameIcon: React.FC<{ type: FrameType }> = ({ type }) => {
     ? [line(pts[0].x, pts[0].y, pts[3].x, pts[3].y, 0), line(pts[1].x, pts[1].y, pts[2].x, pts[2].y, 1), line(pts[0].x, 0, pts[1].x, 0, 2)]
     : pts.map((p, i) => line(0, 0, p.x, p.y, i));
   return (
-    <svg viewBox="0 0 48 48" className="h-12 w-12" aria-hidden="true">
+    <svg viewBox="0 0 48 48" className="h-10 w-10" aria-hidden="true">
       {links}
-      {pts.map((p, i) => <circle key={i} cx={24 + p.x * s} cy={24 - p.y * s} r="3.6" fill="#ef4444" />)}
+      {pts.map((p, i) => <circle key={i} cx={24 + p.x * s} cy={24 - p.y * s} r="3.6" fill="#ff6a1a" />)}
     </svg>
   );
 };
@@ -33,20 +32,20 @@ const FrameParameters: React.FC = () => {
   const layout = computeLayout(parameters);
   const measured = references.wl.measured;
   return (
-    <div className="space-y-6">
-      <TabHeading icon={<Settings className="h-5 w-5 text-primary-600" />} title="机架参数" en="Frame Parameters">四个电机放在哪里、机臂多宽。</TabHeading>
+    <div className="space-y-5">
+      <TabHeading title="机架参数" en="Frame Parameters">四个电机放在哪里、机臂多宽。</TabHeading>
 
-      <Field path="frame.frame_type" en="Frame Type" value={rule.zh} hint={rule.desc} reference={<><b className="font-medium text-slate-700">画法：</b>{rule.rule}</>}>
+      <Field path="frame.frame_type" en="Frame Type" value={rule.zh} hint={rule.desc} reference={<><b className="font-medium text-ink">画法：</b>{rule.rule}</>}>
         <div className="grid grid-cols-3 gap-2" role="radiogroup" aria-label="构型">
           {frameTypes.map(type => {
             const active = frame.frame_type === type;
             return (
               <button key={type} type="button" role="radio" aria-checked={active} data-frame={type} onClick={() => setField('frame.frame_type', type)}
-                className={`flex flex-col items-center rounded-lg border px-2 py-2 ${active
-                  ? 'border-primary-600 bg-primary-50 text-primary-700 ring-1 ring-primary-600' : 'border-slate-300 bg-white text-slate-600 hover:border-primary-500 hover:bg-slate-50'}`}>
+                className={`flex flex-col items-center rounded-xl border px-1 py-2 transition-colors ${active
+                  ? 'border-ink bg-ink text-white' : 'border-line bg-white text-ink hover:border-ink/40'}`}>
                 <FrameIcon type={type} />
-                <span className="mt-1 text-sm font-medium">{frameRules[type].zh}</span>
-                <span className="text-xs text-slate-500">{frameRules[type].en}</span>
+                <span className="mt-0.5 text-[13px] font-medium">{frameRules[type].zh}</span>
+                <span className={`text-[10px] ${active ? 'text-white/60' : 'text-ink-faint'}`}>{frameRules[type].en}</span>
               </button>
             );
           })}
@@ -54,11 +53,11 @@ const FrameParameters: React.FC = () => {
       </Field>
 
       {rule.wl.adjustable ? (
-        <Field path="frame.span_ratio_wl" en="W/L" value={layout.W_over_L.toFixed(2)}
+        <Field path="frame.span_ratio_wl" value={layout.W_over_L.toFixed(2)}
           hint="电机左右跨度 ÷ 前后跨度。数值越大，机架越宽扁。"
           reference={<>
-            <b className="font-medium text-slate-700">实验档：</b>0.70、1.00、1.30。<br />
-            <b className="font-medium text-slate-700">真实机型（手册图面量测）：</b>{measured.map(m => `${m.label} ${m.v.toFixed(2)}`).join('、')}。<br />
+            <b className="font-medium text-ink">实验档：</b>0.70、1.00、1.30。<br />
+            <b className="font-medium text-ink">真实机型（手册图面量测）：</b>{measured.map(m => `${m.label} ${m.v.toFixed(2)}`).join('、')}。<br />
             {references.wl.note}
           </>}>
           <Slider path="frame.span_ratio_wl" min={rule.wl.min} max={rule.wl.max} step={0.01} unit="" digits={2}
@@ -66,16 +65,16 @@ const FrameParameters: React.FC = () => {
               .concat(rule.wl.max >= 1.41 ? [{ v: 1.41, label: '1.41 真实机型中位' }] : [])} />
         </Field>
       ) : (
-        <p className="rounded-lg bg-slate-50 px-3 py-2 text-sm text-slate-600">
-          {rule.zh}的横纵跨度比固定为 <b className="font-semibold text-slate-900">{layout.W_over_L.toFixed(2)}</b>。想调宽窄，请选宽 X、伸展 X 或 H 型。
+        <p className="rounded-lg bg-canvas px-3 py-2 text-sm text-ink-soft">
+          {rule.zh}的横纵跨度比固定为 <b className="font-semibold text-ink">{layout.W_over_L.toFixed(2)}</b>。想调宽窄，请选宽 X、伸展 X 或 H 型。
         </p>
       )}
 
       <Field path="frame.wheelbase_mm" en="Wheelbase" value={`${frame.wheelbase_mm} mm`}
         hint="两条对角电机中心距的平均值。"
         reference={<>
-          <b className="font-medium text-slate-700">实验设定：</b>250 mm（论文规格卡）。<br />
-          <b className="font-medium text-slate-700">厂商公布的对角尺寸（端点未核）：</b>{references.diagonal.published.map(m => `${m.label} ${m.v}`).join('、')} mm。<br />
+          <b className="font-medium text-ink">实验设定：</b>250 mm（论文规格卡）。<br />
+          <b className="font-medium text-ink">厂商公布的对角尺寸（端点未核）：</b>{references.diagonal.published.map(m => `${m.label} ${m.v}`).join('、')} mm。<br />
           当前任意两电机的最大距离为 {layout.max_pair_mm.toFixed(1)} mm。
         </>}>
         <Slider path="frame.wheelbase_mm" min={100} max={500} step={1} unit="mm" presets={[{ v: 250, label: '250 实验设定' }]} />

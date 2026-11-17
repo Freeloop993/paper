@@ -37,6 +37,8 @@ export interface LastChange {
   before: Snapshot;
 }
 export interface Pinned extends Snapshot { label: string; at: string }
+/** 方案：并行探索的几个方向，各自保存一份完整状态。当前方案的状态以页面上的为准。 */
+export interface Variant { id: string; name: string; snapshot: Snapshot }
 
 interface DroneStore extends AppState {
   task: Task;
@@ -45,6 +47,15 @@ interface DroneStore extends AppState {
   lastChange: LastChange | null;
   history: Snapshot[];
   pinned: Pinned | null;
+  variants: Variant[];
+  activeVariant: string;
+  /** 一次改多项（画布上拖动时用），记为一次改动。 */
+  setMany: (entries: [string, unknown][], label: string) => void;
+  addVariant: () => void;
+  switchVariant: (id: string) => void;
+  removeVariant: (id: string) => void;
+  /** 把任意一份参数（另一个方案、参考机型）叠在画布上对比。 */
+  setGhost: (label: string, parameters: DroneParameters | null) => void;
   /** 导出备注与最近一次导出的提示，页头和提示词面板共用。 */
   exportNote: string;
   notice: string;
@@ -133,6 +144,22 @@ export function createTaskStore(task: Task) {
       const continuous = typeof value === 'number' || def.kind === 'custom';
       commit(path, def.label, def.format(s.parameters), def.format(parameters), { parameters, touched }, continuous);
     };
+    const setMany = (entries: [string, unknown][], label: string) => {
+      const s = get();
+      let parameters = s.parameters;
+      const touched = { ...s.touched };
+      const names: string[] = [];
+      for (const [path, value] of entries) {
+        const def = fieldByPath[path];
+        if (!def || JSON.stringify(getPath(parameters, path)) === JSON.stringify(value)) continue;
+        parameters = setPath(parameters, path, value);
+        touched[path] = true;
+        names.push(`${def.label} ${def.format(parameters)}`);
+      }
+      if (names.length) commit('drag:' + label, label, '', names.join('，'), { parameters, touched }, true);
+    };
+    /** 把页面上的状态存回当前方案。 */
+    const stash = (s: DroneStore): Variant[] => s.variants.map(v => (v.id === s.activeVariant ? { ...v, snapshot: snap(s) } : v));
     const updateGroup = (group: ParameterGroup, params: object) => {
       for (const [key, value] of Object.entries(params)) {
         if (key === 'fuselage_dimensions_mm')
@@ -152,6 +179,8 @@ export function createTaskStore(task: Task) {
       lastChange: null,
       history: [],
       pinned: null,
+      variants: [{ id: 'A', name: '方案 A', snapshot: structuredClone({ parameters: initial, touched: {}, intent: emptyIntent() }) }],
+      activeVariant: 'A',
       exportNote: '界面测试（非正式实验）',
       notice: '',
       setExportNote: exportNote => set({ exportNote }),
@@ -167,6 +196,28 @@ export function createTaskStore(task: Task) {
       useRAGOptimization: false,
 
       setField,
+      setMany,
+      addVariant: () => {
+        const s = get();
+        const used = new Set(s.variants.map(v => v.id));
+        const id = 'ABCDEFGH'.split('').find(c => !used.has(c));
+        if (!id) return;
+        set({ variants: [...stash(s), { id, name: '方案 ' + id, snapshot: snap(s) }], activeVariant: id, lastChange: null });
+      },
+      switchVariant: id => {
+        const s = get();
+        const target = s.variants.find(v => v.id === id);
+        if (!target || id === s.activeVariant) return;
+        set({ ...snap(target.snapshot), variants: stash(s), activeVariant: id, history: [], lastChange: null, pinned: s.pinned && s.pinned.label === target.name ? null : s.pinned });
+      },
+      removeVariant: id => {
+        const s = get();
+        if (s.variants.length < 2) return;
+        const rest = stash(s).filter(v => v.id !== id);
+        if (id !== s.activeVariant) { set({ variants: rest }); return; }
+        set({ ...snap(rest[0].snapshot), variants: rest, activeVariant: rest[0].id, history: [], lastChange: null });
+      },
+      setGhost: (label, parameters) => set({ pinned: parameters ? { parameters: structuredClone(parameters), touched: {}, intent: emptyIntent(), label, at: stamp() } : null }),
       clearField: path => {
         const s = get();
         const def = fieldByPath[path];

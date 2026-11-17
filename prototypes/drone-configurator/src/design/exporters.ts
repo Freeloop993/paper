@@ -9,7 +9,7 @@ import { auditPrompt, compilePrompt, sourceLabel } from './partPrompt.ts';
 import { sha256Bytes, sha256Text } from './sha256.ts';
 import evidence from '../data/evidenceCards.json' with { type: 'json' };
 
-export const APP_VERSION = '2.1.0';
+export const APP_VERSION = '3.0.0';
 export const SCHEMA = 'drone-configurator/config-v2';
 
 export interface ExportState {
@@ -19,6 +19,8 @@ export interface ExportState {
 }
 export interface ExportOptions {
   note: string;
+  /** 方案名，例如“方案 A”。 */
+  variant?: string;
   stamp: string;
   pinned?: (ExportState & { label: string; at: string }) | null;
   lastChange?: { path: string; label: string; from: string; to: string } | null;
@@ -51,6 +53,7 @@ export function buildExport(state: ExportState, options: ExportOptions) {
     app: { name: '无人机造型配置器（五页签）', version: APP_VERSION },
     exported_at: new Date().toISOString(),
     export_note: options.note,
+    variant: options.variant ?? null,
     files: names,
     model_service: { status: 'disabled', note: '模型生图与向量检索均停用。本文件只含设计输入，不含任何生成结果。' },
     task_fixed: taskFixed,

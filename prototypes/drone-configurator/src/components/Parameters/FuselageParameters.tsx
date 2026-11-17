@@ -1,5 +1,4 @@
 import React from 'react';
-import { Box } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
 import { computeLayout } from '../../design/design';
 import { fuselageStyleOptions, legacyFuselageStyles, references, topCoverOptions } from '../../design/fields';
@@ -13,8 +12,8 @@ const FuselageParameters: React.FC = () => {
   const layout = computeLayout(parameters);
   const legacy = legacyFuselageStyles.find(o => o.value === parameters.fuselage.fuselage_style);
   return (
-    <div className="space-y-6">
-      <TabHeading icon={<Box className="h-5 w-5 text-primary-600" />} title="机身参数" en="Fuselage Parameters">长宽高只限定大小；轮廓和分件可以不指定。</TabHeading>
+    <div className="space-y-5">
+      <TabHeading title="机身参数" en="Fuselage Parameters">长宽高只限定大小；轮廓和分件可以不指定。</TabHeading>
 
       <Field path="fuselage.fuselage_dimensions_mm.length" en="Length" value={`${size.length} mm`}>
         <Slider path="fuselage.fuselage_dimensions_mm.length" min={50} max={300} step={5} unit="mm" />
@@ -26,12 +25,12 @@ const FuselageParameters: React.FC = () => {
         <Slider path="fuselage.fuselage_dimensions_mm.height" min={20} max={150} step={5} unit="mm" />
       </Field>
 
-      <div className="rounded-lg bg-slate-50 px-4 py-3 text-sm text-slate-600">
+      <div className="rounded-lg bg-canvas px-4 py-3 text-sm text-ink-soft">
         <div className="flex flex-wrap gap-x-6 gap-y-1">
-          <span>机身宽 ÷ 轴距 <b className="font-semibold text-slate-900">{layout.body_width_over_D.toFixed(2)}</b></span>
-          <span>机身长 ÷ 宽 <b className="font-semibold text-slate-900">{layout.body_length_over_width.toFixed(2)}</b></span>
+          <span>机身宽 ÷ 轴距 <b className="font-semibold text-ink">{layout.body_width_over_D.toFixed(2)}</b></span>
+          <span>机身长 ÷ 宽 <b className="font-semibold text-ink">{layout.body_length_over_width.toFixed(2)}</b></span>
         </div>
-        <p className="mt-1 text-xs leading-relaxed text-slate-500">
+        <p className="mt-1 text-xs leading-relaxed text-ink-soft">
           想让展开俯视显得紧凑，可以试试调这两个比例；是否真的显得紧凑，要靠出图后的评议来判断。
           真实机型的机身宽 ÷ 轴距（手册图面量测）：{list(references.bodyWidthOverD.measured)}。
         </p>

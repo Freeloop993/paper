@@ -92,8 +92,8 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 [全部原图、对应输入和原目录入口](evidence/section421-minimax-review/README.md)。9 张既有图，新增生成 0；作者对第二排给出开发反馈。Claude 的全章判断和取证顺序待其在 #1 回复。
 
 
-## 2026-11-18｜五页签配置器界面重做（软件验收）
+## 2026-11-18｜配置器重做为“洞察 → 造型 → 交付”工作台（软件验收）
 
-Claude 在 `claude/configurator-ui-20261117` 分支上交了两轮。第一轮（11 月 17 日）统一了轴心几何、提示词和导出，但页面堆了过多状态与核对信息，比原版难用；第二轮（11 月 18 日）按作者要求从原页面重新出发，重做了全部界面，底下沿用已核对的几何、提示词和导出。页面顺序为：① 设计意图 → ② 五个部件页签 → ③ 确认与导出，预览随页面停留。[交接报告、截图、导出件与逐步核对](prototypes/drone-configurator/review/20261118-round2/README.md) · [界面设计说明](prototypes/drone-configurator/interface-design.md) · [论文与实际进度的对照](prototypes/drone-configurator/review/20261118-round2/thesis-alignment.md)。
+Claude 在 `claude/configurator-ui-20261117` 分支上先后交了三轮。前两轮（11 月 17 日的验收单版、18 日的简洁表单版）作者都不满意；第三轮按“只守研究方向、其余自行判断”的要求，重做为三段式工作台：洞察页给出语料主题分布与短引文墙并形成设计简报；造型页以可拖动的画布为中心，配五个部件页签、布局空间图、设计提示、参考机型和并行方案；交付页核对条件图、提示词和规格卡后导出。底下沿用已核对的几何、提示词和导出。[交接报告、截图、导出件与逐步核对](prototypes/drone-configurator/review/20261118-round3/README.md) · [界面设计说明](prototypes/drone-configurator/interface-design.md) · [论文与实际进度的对照](prototypes/drone-configurator/review/20261118-round3/thesis-alignment.md)。
 
-走查由脚本驱动无界面 Chrome 以真实点击和真实下载完成。模型服务未接入，新增生成 0，新增真人场次与评议 0；结果只说明界面、导出和文字相互对得上。待作者试用，待 Codex 复核，待作者确认轴距定义、缺省 W/L 和提示词文字。
+走查由脚本驱动无界面 Chrome 以真实点击、拖动和下载完成。模型服务未接入，新增生成 0，新增真人场次与评议 0。私有评论库本轮没有权限读取，短引文仍为公开的 36 条；待作者开通权限或提供文件后再筛选。待作者试用，待 Codex 复核。
