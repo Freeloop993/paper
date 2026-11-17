@@ -1,0 +1,11 @@
+reader_id,identity,model_version,prompt_record,exposure,method,images,role
+WLQ-main,历史AI,档案未记录完整模型版本,wlq-final.json 的 reader 字段；逐字提示未存证,知道条件,等比例拼图机械轴心标点并核对叠图,12,每图一次历史读数
+WLQ-extension,历史AI,档案未记录完整模型版本,extension-48-measurements.json 的 four.reader；逐字提示未存证,知道条件,280像素等比例图标点后折回原始像素,24,每图一次历史读数；与主批读者身份关系未知
+E2R-parent-aware,历史AI,未记录完整版本,readback.json 的 classification 和 order,知道条件,原尺寸局部放大取中心帽或螺帽中心,2,E3内的重复图；仅同图回查
+review-17,Codex AI,GPT-6；具体构建号未记录,本轮取点说明见README图面口径,知道图号与目标并已见历史摘要,逐图定位与局部放大复看；轴帽中心与固定壳体支撑点,65,29份新增轴表和65份壳体表；其中36份轴表沿用存档
+prior-a,历史AI A,归档未核定精确模型版本,旧解析图protocol及review-a/annotation.json,隔离会话且只见匿名图与统一说明,图像工具观察后报坐标；与解析真值比,6,两套旧盲读之一
+prior-b,历史AI B,归档未核定精确模型版本,旧解析图protocol及review-b/annotation.json,隔离会话且只见匿名图与统一说明,图像工具观察后报坐标；与解析真值比,6,同六张图
+guide-pixels,确定性像素算法,Python 3.11及Pillow 11.2.1,四象限纯红像素质心,输入图身份已知,像素坐标和除以像素数,4,参照图核验；进入人或AI读数的数量为0
+AI,拟邀独立AI,待登记,calibrate.py中的INSTRUCTIONS,待核验无既往曝光,按独立匿名包逐点回件,0,新四旋盲读待收
+H1,拟邀独立真人,人工读图软件版本待登记,calibrate.py中的INSTRUCTIONS,待自报核对,同一组20个案例及4张条件图,0,未收件
+H2,拟邀独立真人,人工读图软件版本待登记,calibrate.py中的INSTRUCTIONS,待自报核对,同一组20个案例及4张条件图,0,未收件

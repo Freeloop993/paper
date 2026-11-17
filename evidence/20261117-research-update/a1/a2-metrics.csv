@@ -1,0 +1,8 @@
+﻿id,厂商,型号,印刷页,PDF页,W_px,L_px,W_over_L,FL_RR_px,FR_RL_px,D_mean_px,图源
+air,DJI,Mavic Air,6,7,253,219,1.155251,334.619187,334.619187,334.619187,https://dl.djicdn.com/downloads/Mavic%20Air/Mavic_Air_User_Manual_v1.2_en.pdf#page=7
+air2,DJI,Mavic Air 2,16,17,505,369,1.368564,603.431852,602.276515,602.854183,https://dl.djicdn.com/downloads/Mavic_Air_2/20240528UM/Mavic_Air_2_User_Manual_v1.6_EN.pdf#page=17
+m2,DJI,Mavic 2 Pro,9,9,667,490,1.361224,792.608983,792.608983,792.608983,https://dl.djicdn.com/downloads/Mavic_2/201911um/Mavic_2_Pro_Zoom_User_Manual_v2.0_en.pdf#page=9
+mini,DJI,Mavic Mini,28,29,266,189,1.407407,322.245248,322.245248,322.245248,https://dl.djicdn.com/downloads/Mavic_Mini/20240103/2/Mavic_Mini_User_Manual_v1.2_EN.pdf#page=29
+m3p,DJI,Mini 3 Pro,7,8,479,316,1.515823,519.230199,518.437074,518.833637,https://dl.djicdn.com/downloads/DJI_Mini_3_Pro/UM/DJI_Mini_3_Pro_User_Manual_EN.pdf#page=8
+m4p,DJI,Mini 4 Pro,11,11,655,441,1.485261,716.293934,719.100132,717.697033,https://dl.djicdn.com/downloads/DJI_Mini_4_Pro/20240627/DJI_Mini_4_Pro_User_Manual_en.pdf#page=11
+nano,Autel Robotics,EVO Nano+,封面（无印刷页码）,1,1409,957,1.472309,1668.693501,1667.874396,1668.283948,https://www.autelrobotics.cn/wp-content/uploads/2023/06/%E7%AE%80%E4%B8%AD_EVO-Nano%E7%B3%BB%E5%88%97%E9%A3%9E%E8%A1%8C%E5%99%A8%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C_V3.0.9.pdf#page=1
