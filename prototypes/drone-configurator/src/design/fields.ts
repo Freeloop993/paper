@@ -91,7 +91,7 @@ export const wordPairs: { id: WordPairId; left: string; right: string; leftEn: s
 ];
 
 export type FieldStatus = 'fixed' | 'default' | 'chosen' | 'open';
-export const statusLabel: Record<FieldStatus, string> = { fixed: '任务固定', default: '默认值', chosen: '你的选择', open: '留白' };
+export const statusLabel: Record<FieldStatus, string> = { fixed: '任务固定', default: '默认值', chosen: '你的选择', open: '不指定' };
 /** top＝顶视可见且示意图已画；text＝示意图不画，只进文字；occluded＝顶视被遮挡，见侧视示意。 */
 export type Visibility = 'top' | 'text' | 'occluded';
 export const visibilityLabel: Record<Visibility, string> = { top: '顶视可见', text: '仅进文字', occluded: '顶视遮挡' };
@@ -106,12 +106,12 @@ export interface FieldDef {
   relevant?: (p: DroneParameters) => boolean;
 }
 
-const opt = (options: Option[], value: string) => options.find(o => o.value === value)?.zh ?? (value || '留白');
-const colourText = (hex: string) => (hex ? `${colourName(hex)?.zh ?? '自定义'} ${hex}` : '留白');
+const opt = (options: Option[], value: string) => options.find(o => o.value === value)?.zh ?? (value || '不指定');
+const colourText = (hex: string) => (hex ? `${colourName(hex)?.zh ?? '自定义'} ${hex}` : '不指定');
 
 export const fields: FieldDef[] = [
   { path: 'frame.frame_type', group: 'frame', label: '构型', kind: 'engineering', visibility: 'top', format: p => frameRules[p.frame.frame_type].zh },
-  { path: 'frame.wheelbase_mm', group: 'frame', label: '对角电机中心距 D', kind: 'engineering', visibility: 'top', format: p => p.frame.wheelbase_mm + ' mm' },
+  { path: 'frame.wheelbase_mm', group: 'frame', label: '轴距', kind: 'engineering', visibility: 'top', format: p => p.frame.wheelbase_mm + ' mm' },
   {
     path: 'frame.span_ratio_wl', group: 'frame', label: '横纵跨度比 W/L', kind: 'engineering', visibility: 'top',
     format: p => effectiveWl(p.frame).toFixed(2), relevant: p => frameRules[p.frame.frame_type].wl.adjustable,
@@ -195,9 +195,13 @@ export function diffParameters(a: DroneParameters, b: DroneParameters) {
 /** 数值来源参考。厂商公布、图面量测、实验档位分开列出；生成图上的读数须在回图后另量。 */
 export const references = {
   wl: {
-    experimental: [{ v: 0.7, label: '实验窄档' }, { v: 1.0, label: '实验中档' }, { v: 1.3, label: '实验宽档' }],
-    measured: [{ v: 1.346, label: 'Air 3' }, { v: 1.346, label: 'Mavic 3 Pro' }, { v: 1.444, label: 'Neo' }, { v: 1.52, label: 'Neo 2' }],
-    note: '0.70／1.00／1.30 是研究登记的探测档。图面量测只有 4 款四旋，不足以称为行业常见范围。',
+    experimental: [{ v: 0.7, label: '窄档' }, { v: 1.0, label: '中档' }, { v: 1.3, label: '宽档' }],
+    measured: [
+      { v: 1.155, label: 'Mavic Air' }, { v: 1.346, label: 'Air 3' }, { v: 1.346, label: 'Mavic 3 Pro' }, { v: 1.361, label: 'Mavic 2 Pro' },
+      { v: 1.369, label: 'Mavic Air 2' }, { v: 1.407, label: 'Mavic Mini' }, { v: 1.444, label: 'Neo' }, { v: 1.472, label: 'EVO Nano+' },
+      { v: 1.485, label: 'Mini 4 Pro' }, { v: 1.516, label: 'Mini 3 Pro' }, { v: 1.52, label: 'Neo 2' },
+    ],
+    note: '0.70／1.00／1.30 是研究登记的实验档。11 款消费航拍四旋的手册图面量测为 1.16–1.52（中位 1.41），是便利样本，不代表行业范围。',
   },
   dd: {
     experimental: [{ v: 0.4, label: '实验档' }, { v: 0.5, label: '实验档' }, { v: 0.6, label: '实验档' }],
@@ -218,8 +222,8 @@ export const references = {
     note: '厂商公布的对角尺寸端点未核；250 mm 是论文规格卡的实验设定。',
   },
   sources: {
-    manufacturer: 'evidence/20261117-config-review/A1-extension/a1-all-models.csv（24 款厂商规格）',
-    drawing: 'evidence/20261117-config-review/A2、A2-extension（6 款手册图面量测，其中四旋 4 款）',
+    manufacturer: 'evidence/20261117-research-update/a1/a1-all-models.csv（30 款厂商规格，其中四旋 20 款）',
+    drawing: 'evidence/20261117-config-review/A2、A2-extension 与 evidence/20261117-research-update/a1（手册图面量测，四旋累计 11 款）',
     experimental: 'manuscript/thesis/src/ch3.md 表3.6；evidence/20261117-a1-a4-c1/a4-design.md',
   },
 };

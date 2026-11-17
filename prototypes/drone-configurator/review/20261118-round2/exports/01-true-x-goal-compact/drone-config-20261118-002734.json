@@ -1,0 +1,660 @@
+{
+  "schema": "drone-configurator/config-v2",
+  "app": {
+    "name": "无人机造型配置器（五页签）",
+    "version": "2.1.0"
+  },
+  "exported_at": "2026-11-17T13:27:34.604Z",
+  "export_note": "界面测试（非正式实验）",
+  "files": {
+    "config": "drone-config-20261118-002734.json",
+    "prompt": "drone-prompt-20261118-002734.txt",
+    "guide": "drone-guide-20261118-002734.png"
+  },
+  "model_service": {
+    "status": "disabled",
+    "note": "模型生图与向量检索均停用。本文件只含设计输入，不含任何生成结果。"
+  },
+  "task_fixed": [
+    {
+      "label": "设计任务",
+      "value": "日常随行航拍四旋翼"
+    },
+    {
+      "label": "电机数量",
+      "value": "4 个，每个电机一副桨"
+    },
+    {
+      "label": "视图",
+      "value": "展开状态正交顶视，机头朝上"
+    },
+    {
+      "label": "相机朝向",
+      "value": "朝机头前方，水平；顶视可被遮挡"
+    }
+  ],
+  "intent": {
+    "origin": "证据卡 + 设计者",
+    "targets": [
+      {
+        "pair": "紧凑—舒展",
+        "pole": "紧凑",
+        "origin": "设计者提出"
+      }
+    ],
+    "designer_note": "",
+    "adopted_cards": [
+      {
+        "id": "E001",
+        "quote": "机身小巧便携",
+        "object": "正文中的无人机机身",
+        "state": "未明确",
+        "polarity": "正",
+        "limits": "小巧与携带自述；不推出机身长宽比或毫米尺寸",
+        "relation": "未登记反例"
+      }
+    ],
+    "log": [
+      {
+        "action": "adopt",
+        "card": "E001",
+        "at": "2026-11-17T13:27:32.206Z"
+      },
+      {
+        "action": "undo",
+        "card": "E001",
+        "at": "2026-11-17T13:27:32.668Z"
+      },
+      {
+        "action": "adopt",
+        "card": "E001",
+        "at": "2026-11-17T13:27:33.053Z"
+      },
+      {
+        "action": "target",
+        "pair": "compact",
+        "value": "left",
+        "at": "2026-11-17T13:27:33.816Z"
+      }
+    ],
+    "evidence_source": {
+      "path": "evidence/semantic-cards/cards.csv",
+      "sha256": "72e8b1f200ea67e25f5a980e1959997ccac89f83a1a5ade4a22ef7f4c31675a8",
+      "card_count": 36,
+      "source_count": 35,
+      "note": "离线公开证据卡。卡数、来源数与人次是不同单位；卡数不代表需求权重。证据卡不给出毫米数或比例。"
+    },
+    "rule": "证据卡只作为提出目标的依据；采纳或撤销都不会改动任何参数。"
+  },
+  "parameters": {
+    "frame": {
+      "frame_type": "True X",
+      "wheelbase_mm": 250,
+      "span_ratio_wl": 1,
+      "arm_thickness_mm": "4mm",
+      "arm_width_mm": "15mm",
+      "material_visual": "",
+      "arm_root": ""
+    },
+    "propulsion": {
+      "prop_diameter_inch": 5,
+      "prop_blade_count": "2叶",
+      "motor_tilt_degree": 0,
+      "prop_guard": "none"
+    },
+    "fuselage": {
+      "fuselage_style": "",
+      "top_cover": "",
+      "fuselage_dimensions_mm": {
+        "length": 100,
+        "width": 80,
+        "height": 30
+      }
+    },
+    "landing_gear": {
+      "landing_gear_style": "低矮滑撬/支腿",
+      "landing_gear_height_mm": 40
+    },
+    "accessories": {
+      "has_camera_gimbal": true,
+      "camera_mount": "",
+      "custom_prompt_additions": "",
+      "drone_primary_color": "",
+      "surface_finish": ""
+    }
+  },
+  "selection_status": [
+    {
+      "path": "frame.frame_type",
+      "group": "机架",
+      "label": "构型",
+      "value": "真 X 型",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "frame.wheelbase_mm",
+      "group": "机架",
+      "label": "轴距",
+      "value": "250 mm",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "frame.arm_width_mm",
+      "group": "机架",
+      "label": "机臂宽度",
+      "value": "15 mm",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "frame.arm_thickness_mm",
+      "group": "机架",
+      "label": "机臂厚度",
+      "value": "4 mm",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视遮挡"
+    },
+    {
+      "path": "frame.arm_root",
+      "group": "机架",
+      "label": "臂根过渡",
+      "value": "不指定",
+      "status": "open",
+      "status_zh": "不指定",
+      "top_view": "仅进文字"
+    },
+    {
+      "path": "frame.material_visual",
+      "group": "机架",
+      "label": "机臂材料外观",
+      "value": "不指定",
+      "status": "open",
+      "status_zh": "不指定",
+      "top_view": "仅进文字"
+    },
+    {
+      "path": "propulsion.prop_diameter_inch",
+      "group": "动力",
+      "label": "桨径",
+      "value": "5 英寸（127 mm）",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "propulsion.prop_blade_count",
+      "group": "动力",
+      "label": "每轴桨叶数",
+      "value": "2 叶",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "propulsion.motor_tilt_degree",
+      "group": "动力",
+      "label": "电机倾角",
+      "value": "0°",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "仅进文字"
+    },
+    {
+      "path": "propulsion.prop_guard",
+      "group": "动力",
+      "label": "桨叶护圈",
+      "value": "不加护圈",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.length",
+      "group": "机身",
+      "label": "机身长",
+      "value": "100 mm",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.width",
+      "group": "机身",
+      "label": "机身宽",
+      "value": "80 mm",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.height",
+      "group": "机身",
+      "label": "机身高",
+      "value": "30 mm",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视遮挡"
+    },
+    {
+      "path": "fuselage.fuselage_style",
+      "group": "机身",
+      "label": "机身轮廓",
+      "value": "不指定",
+      "status": "open",
+      "status_zh": "不指定",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "fuselage.top_cover",
+      "group": "机身",
+      "label": "顶盖分件",
+      "value": "不指定",
+      "status": "open",
+      "status_zh": "不指定",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "landing_gear.landing_gear_style",
+      "group": "起落架",
+      "label": "起落架样式",
+      "value": "低矮滑撬/支腿",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视遮挡"
+    },
+    {
+      "path": "landing_gear.landing_gear_height_mm",
+      "group": "起落架",
+      "label": "离地高度",
+      "value": "40 mm",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视遮挡"
+    },
+    {
+      "path": "accessories.has_camera_gimbal",
+      "group": "配件",
+      "label": "前视相机",
+      "value": "装相机",
+      "status": "default",
+      "status_zh": "默认值",
+      "top_view": "顶视遮挡"
+    },
+    {
+      "path": "accessories.camera_mount",
+      "group": "配件",
+      "label": "相机安装",
+      "value": "不指定",
+      "status": "open",
+      "status_zh": "不指定",
+      "top_view": "顶视遮挡"
+    },
+    {
+      "path": "accessories.drone_primary_color",
+      "group": "配件",
+      "label": "主色",
+      "value": "不指定",
+      "status": "open",
+      "status_zh": "不指定",
+      "top_view": "顶视可见"
+    },
+    {
+      "path": "accessories.surface_finish",
+      "group": "配件",
+      "label": "表面处理",
+      "value": "不指定",
+      "status": "open",
+      "status_zh": "不指定",
+      "top_view": "仅进文字"
+    },
+    {
+      "path": "accessories.custom_prompt_additions",
+      "group": "配件",
+      "label": "补充文字",
+      "value": "未填写",
+      "status": "open",
+      "status_zh": "不指定",
+      "top_view": "仅进文字"
+    }
+  ],
+  "open_decisions": [
+    {
+      "path": "frame.arm_root",
+      "label": "臂根过渡",
+      "note": "未指定：由设计者后续决定，未写入提示词。"
+    },
+    {
+      "path": "frame.material_visual",
+      "label": "机臂材料外观",
+      "note": "未指定：由设计者后续决定，未写入提示词。"
+    },
+    {
+      "path": "fuselage.fuselage_style",
+      "label": "机身轮廓",
+      "note": "未指定：由设计者后续决定，未写入提示词。"
+    },
+    {
+      "path": "fuselage.top_cover",
+      "label": "顶盖分件",
+      "note": "未指定：由设计者后续决定，未写入提示词。"
+    },
+    {
+      "path": "accessories.camera_mount",
+      "label": "相机安装",
+      "note": "未指定：由设计者后续决定，未写入提示词。"
+    },
+    {
+      "path": "accessories.drone_primary_color",
+      "label": "主色",
+      "note": "未指定：由设计者后续决定，未写入提示词。"
+    },
+    {
+      "path": "accessories.surface_finish",
+      "label": "表面处理",
+      "note": "未指定：由设计者后续决定，未写入提示词。"
+    }
+  ],
+  "layout": {
+    "frame_type": "True X",
+    "geometry_rule": "四个轴心位于正方形四角，相邻夹角均为 90°，W/L 恒为 1.00（几何定义）。",
+    "geometry_basis": "definition",
+    "hub_order": "从 R1 起顺时针",
+    "hubs": [
+      {
+        "id": "R1",
+        "role": "FL",
+        "role_zh": "左前",
+        "x_mm": -88.388,
+        "y_mm": 88.388,
+        "x_px": 299.87,
+        "y_px": 299.87,
+        "bearing_deg": 315
+      },
+      {
+        "id": "R2",
+        "role": "FR",
+        "role_zh": "右前",
+        "x_mm": 88.388,
+        "y_mm": 88.388,
+        "x_px": 724.13,
+        "y_px": 299.87,
+        "bearing_deg": 45
+      },
+      {
+        "id": "R3",
+        "role": "RR",
+        "role_zh": "右后",
+        "x_mm": 88.388,
+        "y_mm": -88.388,
+        "x_px": 724.13,
+        "y_px": 724.13,
+        "bearing_deg": 135
+      },
+      {
+        "id": "R4",
+        "role": "RL",
+        "role_zh": "左后",
+        "x_mm": -88.388,
+        "y_mm": -88.388,
+        "x_px": 299.87,
+        "y_px": 724.13,
+        "bearing_deg": 225
+      }
+    ],
+    "links_px": [
+      [
+        512,
+        512,
+        299.87,
+        299.87
+      ],
+      [
+        512,
+        512,
+        724.13,
+        299.87
+      ],
+      [
+        512,
+        512,
+        724.13,
+        724.13
+      ],
+      [
+        512,
+        512,
+        299.87,
+        724.13
+      ]
+    ],
+    "W_mm": 176.777,
+    "L_mm": 176.777,
+    "W_over_L": 1,
+    "opposite_motor_distances_mm": [
+      250,
+      250
+    ],
+    "D_mean_mm": 250,
+    "D_opposite_max_mm": 250,
+    "max_pair_distance_mm": 250,
+    "D_definition": "设计值 D = 对置（对角）电机中心距的均值；另列对置最大距与任意两轴最大距。",
+    "adjacent_deg": [
+      90,
+      90,
+      90,
+      90
+    ],
+    "r1_bearing_from_nose_deg": 315,
+    "prop_diameter_mm": 127,
+    "d_over_D_mean": 0.508,
+    "d_over_max_pair": 0.508,
+    "disk_gap_mm": 49.78,
+    "body_width_over_D_mean": 0.32,
+    "body_length_over_width": 1.25,
+    "guide": {
+      "size": 1024,
+      "px_per_mm": 2.4,
+      "nose": "up",
+      "origin": "top-left",
+      "mm_origin": "机架中心",
+      "mm_axes": "x 向右为正，y 向机头为正",
+      "type": "点线图（轴心与机架连接）"
+    },
+    "warnings": []
+  },
+  "value_sources": {
+    "wheelbase_mm": "默认值（250 mm 为论文规格卡的实验设定）",
+    "span_ratio_wl": "几何定义",
+    "frame_geometry": "几何定义",
+    "prop_diameter": "默认值",
+    "body_dimensions": "设计者输入或默认值；是包络尺寸，不是外形",
+    "reference_tables": {
+      "manufacturer": "evidence/20261117-research-update/a1/a1-all-models.csv（30 款厂商规格，其中四旋 20 款）",
+      "drawing": "evidence/20261117-config-review/A2、A2-extension 与 evidence/20261117-research-update/a1（手册图面量测，四旋累计 11 款）",
+      "experimental": "manuscript/thesis/src/ch3.md 表3.6；evidence/20261117-a1-a4-c1/a4-design.md"
+    },
+    "note": "毫米数均为设计值。厂商公布值、手册图面量测值只作对照，不会自动写入参数。"
+  },
+  "reference_image": {
+    "type": "点线图（轴心与机架连接）",
+    "role": "布局参考（首次按参数设计）",
+    "file": "drone-guide-20261118-002734.png",
+    "size": 1024,
+    "nose": "机头朝上",
+    "source": "2.1.0 computeLayout",
+    "layout_sha256": "28736102ab77444e126e2040352435bb564da5032a2babcd37399b94ea44d966",
+    "png_sha256": "deb3284ef6b58858bbd252becb60bc9d2aec51ee950a8bc087c5058ff8325d52",
+    "parent_image": null,
+    "parent_note": "未登记父图：模型服务停用，本轮没有可沿用的候选图。"
+  },
+  "prompt": {
+    "file": "drone-prompt-20261118-002734.txt",
+    "text": "Design a quadcopter for everyday carry-along aerial photography. Strict orthographic top view, nose toward the top edge of the image, arms fully unfolded.\nDesign intent: seen from directly above with the arms unfolded, the aircraft should read as visually compact.\nFour motors in a True X layout: the four motor centres sit at the corners of a square. Mean opposite-motor (diagonal) span 250 mm; motor-centre width-to-length span ratio W/L 1.00; adjacent arm angles clockwise from the front-left motor: 90°, 90°, 90°, 90°.\nMatch the motor centres and frame links in the attached layout image: red dots mark motor centres, blue lines mark frame links. Do not reproduce the dots or lines in the result.\nEach motor carries one stationary 2-blade propeller, 5-inch (127 mm) diameter. The two blades point in exactly opposite directions from the hub.\nNo propeller guards.\nEach arm is 15 mm wide and 4 mm thick; seen from above it reads as a 15 mm wide beam.\nFuselage design envelope 100 × 80 × 30 mm (length × width × height); this is a size limit, not a shape.\nA forward-facing camera sits at the nose and looks horizontally toward the top edge of the image; no lens glass faces the viewer, and nothing camera-like appears at the tail.\nLow landing skids with 40 mm ground clearance, tucked beneath the aircraft.\nShow the complete product on a plain light background as a photorealistic industrial design rendering. Omit guide marks, dimensions and lettering.",
+    "text_sha256": "44c37b5459516f20c308b8bd79b93eef829eb0502fc61390df184b8c805567c6",
+    "sentences": [
+      {
+        "n": 1,
+        "id": "task",
+        "source": "fixed",
+        "source_zh": "任务固定",
+        "about": "任务与视图",
+        "text": "Design a quadcopter for everyday carry-along aerial photography. Strict orthographic top view, nose toward the top edge of the image, arms fully unfolded.",
+        "fields": []
+      },
+      {
+        "n": 2,
+        "id": "intent",
+        "source": "adopted",
+        "source_zh": "采纳的意图",
+        "about": "设计者采纳的目标一极",
+        "text": "Design intent: seen from directly above with the arms unfolded, the aircraft should read as visually compact.",
+        "fields": [
+          "intent.targets"
+        ]
+      },
+      {
+        "n": 3,
+        "id": "layout",
+        "source": "default",
+        "source_zh": "默认值",
+        "about": "布局：构型、对角轴距 D、W/L、相邻夹角",
+        "text": "Four motors in a True X layout: the four motor centres sit at the corners of a square. Mean opposite-motor (diagonal) span 250 mm; motor-centre width-to-length span ratio W/L 1.00; adjacent arm angles clockwise from the front-left motor: 90°, 90°, 90°, 90°.",
+        "fields": [
+          "frame.frame_type",
+          "frame.wheelbase_mm",
+          "frame.span_ratio_wl"
+        ]
+      },
+      {
+        "n": 4,
+        "id": "guide",
+        "source": "fixed",
+        "source_zh": "任务固定",
+        "about": "随附点线图的读法",
+        "text": "Match the motor centres and frame links in the attached layout image: red dots mark motor centres, blue lines mark frame links. Do not reproduce the dots or lines in the result.",
+        "fields": []
+      },
+      {
+        "n": 5,
+        "id": "propulsion",
+        "source": "default",
+        "source_zh": "默认值",
+        "about": "桨径、每轴桨叶数、电机倾角",
+        "text": "Each motor carries one stationary 2-blade propeller, 5-inch (127 mm) diameter. The two blades point in exactly opposite directions from the hub.",
+        "fields": [
+          "propulsion.prop_diameter_inch",
+          "propulsion.prop_blade_count",
+          "propulsion.motor_tilt_degree"
+        ]
+      },
+      {
+        "n": 6,
+        "id": "prop_guard",
+        "source": "default",
+        "source_zh": "默认值",
+        "about": "桨叶护圈（只按明确选择）",
+        "text": "No propeller guards.",
+        "fields": [
+          "propulsion.prop_guard"
+        ]
+      },
+      {
+        "n": 7,
+        "id": "arm_size",
+        "source": "default",
+        "source_zh": "默认值",
+        "about": "机臂宽度与厚度",
+        "text": "Each arm is 15 mm wide and 4 mm thick; seen from above it reads as a 15 mm wide beam.",
+        "fields": [
+          "frame.arm_width_mm",
+          "frame.arm_thickness_mm"
+        ]
+      },
+      {
+        "n": 8,
+        "id": "body_size",
+        "source": "default",
+        "source_zh": "默认值",
+        "about": "机身包络尺寸（只限尺寸，不定外形）",
+        "text": "Fuselage design envelope 100 × 80 × 30 mm (length × width × height); this is a size limit, not a shape.",
+        "fields": [
+          "fuselage.fuselage_dimensions_mm.length",
+          "fuselage.fuselage_dimensions_mm.width",
+          "fuselage.fuselage_dimensions_mm.height"
+        ]
+      },
+      {
+        "n": 9,
+        "id": "camera",
+        "source": "default",
+        "source_zh": "默认值",
+        "about": "前视相机：有无是选择，朝向是任务固定",
+        "text": "A forward-facing camera sits at the nose and looks horizontally toward the top edge of the image; no lens glass faces the viewer, and nothing camera-like appears at the tail.",
+        "fields": [
+          "accessories.has_camera_gimbal"
+        ]
+      },
+      {
+        "n": 10,
+        "id": "landing",
+        "source": "default",
+        "source_zh": "默认值",
+        "about": "起落架（顶视被机身遮挡）",
+        "text": "Low landing skids with 40 mm ground clearance, tucked beneath the aircraft.",
+        "fields": [
+          "landing_gear.landing_gear_style",
+          "landing_gear.landing_gear_height_mm"
+        ]
+      },
+      {
+        "n": 11,
+        "id": "presentation",
+        "source": "fixed",
+        "source_zh": "任务固定",
+        "about": "呈现方式",
+        "text": "Show the complete product on a plain light background as a photorealistic industrial design rendering. Omit guide marks, dimensions and lettering.",
+        "fields": []
+      }
+    ],
+    "template_audit": [
+      {
+        "topic": "guard",
+        "label": "桨叶护圈",
+        "status": "absent",
+        "detail": "未出现在提示词中",
+        "sentences": []
+      },
+      {
+        "topic": "colour",
+        "label": "颜色",
+        "status": "absent",
+        "detail": "未出现在提示词中",
+        "sentences": []
+      },
+      {
+        "topic": "carbon",
+        "label": "碳纤维纹理",
+        "status": "absent",
+        "detail": "未出现在提示词中",
+        "sentences": []
+      }
+    ]
+  },
+  "measured_from_output": {
+    "status": "无",
+    "note": "生成图上的轴心、比例和造型档位须在回图后另行量测或判读；本文件没有这类读数。"
+  },
+  "comparison": null,
+  "last_change": {
+    "path": "intent.targets.compact",
+    "label": "设计目标（紧凑—舒展）",
+    "from": "不作要求",
+    "to": "紧凑"
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "页面": "prototypes/drone-configurator/dist/index.html",
+  "步骤": [
+    {
+      "step": "01-true-x-goal-compact",
+      "note": "采纳 E001，提出「紧凑」，真 X",
+      "files": [
+        "drone-config-20261118-002734.json",
+        "drone-guide-20261118-002734.png",
+        "drone-prompt-20261118-002734.txt"
+      ],
+      "wl": "1.00",
+      "hubs": 4,
+      "arms": 15,
+      "fresh": [
+        "intent"
+      ]
+    },
+    {
+      "step": "02-wide-x",
+      "note": "构型改为宽 X（与真 X 对比）",
+      "files": [
+        "drone-config-20261118-002736.json",
+        "drone-guide-20261118-002736.png",
+        "drone-prompt-20261118-002736.txt"
+      ],
+      "wl": "1.30",
+      "hubs": 4,
+      "arms": 15,
+      "fresh": [
+        "layout"
+      ]
+    },
+    {
+      "step": "03-deadcat",
+      "note": "构型改为 Deadcat",
+      "files": [
+        "drone-config-20261118-002737.json",
+        "drone-guide-20261118-002737.png",
+        "drone-prompt-20261118-002737.txt"
+      ],
+      "wl": "1.66",
+      "hubs": 4,
+      "arms": 15,
+      "fresh": [
+        "layout"
+      ]
+    },
+    {
+      "step": "04-arm-10",
+      "note": "机臂宽度 10 mm",
+      "files": [
+        "drone-config-20261118-002739.json",
+        "drone-guide-20261118-002739.png",
+        "drone-prompt-20261118-002739.txt"
+      ],
+      "wl": "1.66",
+      "hubs": 4,
+      "arms": 10,
+      "fresh": [
+        "arm_size"
+      ]
+    },
+    {
+      "step": "05-arm-20",
+      "note": "机臂宽度 20 mm",
+      "files": [
+        "drone-config-20261118-002740.json",
+        "drone-guide-20261118-002740.png",
+        "drone-prompt-20261118-002740.txt"
+      ],
+      "wl": "1.66",
+      "hubs": 4,
+      "arms": 20,
+      "fresh": [
+        "arm_size"
+      ]
+    },
+    {
+      "step": "06-styling-chosen",
+      "note": "指定流线舱、橙红、机鼻下挂相机",
+      "files": [
+        "drone-config-20261118-002743.json",
+        "drone-guide-20261118-002743.png",
+        "drone-prompt-20261118-002743.txt"
+      ],
+      "wl": "1.66",
+      "hubs": 4,
+      "arms": 20,
+      "fresh": [
+        "camera_mount"
+      ]
+    },
+    {
+      "step": "07-card-undone-goal-kept",
+      "note": "取消采纳 E001，保留「紧凑」",
+      "files": [
+        "drone-config-20261118-002745.json",
+        "drone-guide-20261118-002745.png",
+        "drone-prompt-20261118-002745.txt"
+      ],
+      "wl": "1.66",
+      "hubs": 4,
+      "arms": 20,
+      "fresh": []
+    },
+    {
+      "step": "08-no-match-own-intent",
+      "note": "无匹配依据，自写意图",
+      "files": [
+        "drone-config-20261118-002749.json",
+        "drone-guide-20261118-002749.png",
+        "drone-prompt-20261118-002749.txt"
+      ],
+      "wl": "1.00",
+      "hubs": 4,
+      "arms": 15,
+      "fresh": [
+        "intent_note"
+      ]
+    }
+  ],
+  "评论依据": {
+    "搜索小巧": {
+      "count": "共 1 条",
+      "cards": [
+        "E001"
+      ],
+      "text": "“机身小巧便携”\n\n采纳\n\nE001 · 说的是：正文中的无人机机身\n\n注意：小巧与携带自述；不推出机身长宽比或毫米尺寸"
+    },
+    "采纳后依据": [
+      "E001",
+      "yes"
+    ],
+    "取消后依据": [
+      "no"
+    ],
+    "采纳不改参数与提示词": true,
+    "取消不改参数与提示词": true
+  },
+  "无匹配": {
+    "count": "共 0 条",
+    "empty": "没有找到相关的评论\n\n没关系。关掉这里，直接在「设计意图」里选词或写一句自己的想法就行，会记为设计者自己的判断。\n\n回去自己写"
+  },
+  "窄屏": {
+    "layout": "narrow",
+    "viewport": [
+      390,
+      844
+    ],
+    "frame": "Deadcat 型",
+    "wl": "横纵比 1.66",
+    "hubs": 4,
+    "arms": 20,
+    "targets": [
+      "紧凑"
+    ]
+  },
+  "控制台报错数": 0,
+  "非本地请求": []
+}

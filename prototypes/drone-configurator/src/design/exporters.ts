@@ -9,7 +9,7 @@ import { auditPrompt, compilePrompt, sourceLabel } from './partPrompt.ts';
 import { sha256Bytes, sha256Text } from './sha256.ts';
 import evidence from '../data/evidenceCards.json' with { type: 'json' };
 
-export const APP_VERSION = '2.0.0-interface-round1';
+export const APP_VERSION = '2.1.0';
 export const SCHEMA = 'drone-configurator/config-v2';
 
 export interface ExportState {
@@ -68,7 +68,7 @@ export function buildExport(state: ExportState, options: ExportOptions) {
       const status = fieldStatus(f, parameters, touched);
       return { path: f.path, group: groupLabel[f.group], label: f.label, value: f.format(parameters), status, status_zh: statusLabel[status], top_view: visibilityLabel[f.visibility] };
     }),
-    open_decisions: openDecisions(parameters).map(f => ({ path: f.path, label: f.label, note: '留白：由设计者后续决定，未写入提示词。' })),
+    open_decisions: openDecisions(parameters).map(f => ({ path: f.path, label: f.label, note: '未指定：由设计者后续决定，未写入提示词。' })),
     layout: geometry,
     value_sources: {
       wheelbase_mm: touched['frame.wheelbase_mm'] ? '设计者输入' : '默认值（250 mm 为论文规格卡的实验设定）',

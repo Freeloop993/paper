@@ -1,28 +1,27 @@
 import React from 'react';
+import { Settings } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
-import { computeLayout, frameRules, unitHubs, wlBasis, type FrameType } from '../../design/design';
+import { computeLayout, frameRules, unitHubs, type FrameType } from '../../design/design';
 import { armMaterialOptions, armRootOptions, references } from '../../design/fields';
-import { Field, MarkLegend, OpenChoice, Segmented, SliderField, TabIntro, type Mark } from '../controls/controls';
+import { Choice, Field, Group, OpenChoice, Slider, TabHeading } from '../controls/controls';
 
 const frameTypes: FrameType[] = ['True X', 'Wide X', 'Stretch X', 'H-Frame', 'Deadcat', '+ Configuration'];
-const basisLabel = { definition: '几何定义', experimental: '实验档位', designer: '设计者输入' } as const;
 
-/** 构型小图：与主预览同一个形状函数，只画轴心和连接。 */
-const FrameIcon: React.FC<{ type: FrameType; active: boolean }> = ({ type, active }) => {
+/** 构型小图：与预览用同一个形状函数，只画轴心和连接。 */
+const FrameIcon: React.FC<{ type: FrameType }> = ({ type }) => {
   const pts = unitHubs(type, frameRules[type].wl.value);
   const r = Math.max(...pts.map(p => Math.max(Math.abs(p.x), Math.abs(p.y))));
-  const s = 15 / r;
-  const stroke = active ? '#ffffff' : '#475569';
+  const s = 17 / r;
   const line = (x1: number, y1: number, x2: number, y2: number, k: number) => (
-    <line key={k} x1={20 + x1 * s} y1={20 - y1 * s} x2={20 + x2 * s} y2={20 - y2 * s} stroke={stroke} strokeWidth="2" strokeLinecap="round" />
+    <line key={k} x1={24 + x1 * s} y1={24 - y1 * s} x2={24 + x2 * s} y2={24 - y2 * s} stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
   );
   const links = type === 'H-Frame'
     ? [line(pts[0].x, pts[0].y, pts[3].x, pts[3].y, 0), line(pts[1].x, pts[1].y, pts[2].x, pts[2].y, 1), line(pts[0].x, 0, pts[1].x, 0, 2)]
     : pts.map((p, i) => line(0, 0, p.x, p.y, i));
   return (
-    <svg viewBox="0 0 40 40" className="h-10 w-10 shrink-0" aria-hidden="true">
+    <svg viewBox="0 0 48 48" className="h-12 w-12" aria-hidden="true">
       {links}
-      {pts.map((p, i) => <circle key={i} cx={20 + p.x * s} cy={20 - p.y * s} r="3" fill={active ? '#fecaca' : '#ef4444'} />)}
+      {pts.map((p, i) => <circle key={i} cx={24 + p.x * s} cy={24 - p.y * s} r="3.6" fill="#ef4444" />)}
     </svg>
   );
 };
@@ -32,67 +31,74 @@ const FrameParameters: React.FC = () => {
   const frame = parameters.frame;
   const rule = frameRules[frame.frame_type];
   const layout = computeLayout(parameters);
-  const wlMarks: Mark[] = [
-    ...references.wl.experimental.map(m => ({ ...m, kind: 'experimental' as const })),
-    ...references.wl.measured.map(m => ({ ...m, kind: 'measured' as const })),
-  ];
-  const dMarks: Mark[] = [
-    ...references.diagonal.published.map(m => ({ ...m, kind: 'published' as const })),
-    { v: references.diagonal.study, label: '论文规格卡', kind: 'study' },
-  ];
+  const measured = references.wl.measured;
   return (
-    <div className="space-y-3">
-      <TabIntro title="机架">决定四个电机轴心的位置和机臂。这里的轴心同时用于示意图、相邻夹角、点线条件图和导出坐标。</TabIntro>
+    <div className="space-y-6">
+      <TabHeading icon={<Settings className="h-5 w-5 text-primary-600" />} title="机架参数" en="Frame Parameters">四个电机放在哪里、机臂多宽。</TabHeading>
 
-      <Field path="frame.frame_type" hint={<><b className="font-medium text-slate-700">{rule.zh}的画法（{basisLabel[rule.basis]}）：</b>{rule.rule}</>}>
-        <div className="grid grid-cols-3 gap-1.5" role="radiogroup" aria-label="构型">
+      <Field path="frame.frame_type" en="Frame Type" value={rule.zh} hint={rule.desc} reference={<><b className="font-medium text-slate-700">画法：</b>{rule.rule}</>}>
+        <div className="grid grid-cols-3 gap-2" role="radiogroup" aria-label="构型">
           {frameTypes.map(type => {
             const active = frame.frame_type === type;
             return (
-              <button key={type} type="button" role="radio" aria-checked={active} onClick={() => setField('frame.frame_type', type)}
-                className={`flex flex-col items-center rounded-md border px-1 py-1.5 text-center ${active
-                  ? 'border-primary-600 bg-primary-600 text-white' : 'border-slate-300 bg-white text-slate-700 hover:border-primary-500'}`}>
-                <FrameIcon type={type} active={active} />
-                <span>
-                  <span className="block text-sm font-medium leading-tight">{frameRules[type].zh}</span>
-                  <span className={`block text-[11px] ${active ? 'text-primary-50' : 'text-slate-500'}`}>W/L {frameRules[type].wl.value.toFixed(2)}</span>
-                </span>
+              <button key={type} type="button" role="radio" aria-checked={active} data-frame={type} onClick={() => setField('frame.frame_type', type)}
+                className={`flex flex-col items-center rounded-lg border px-2 py-2 ${active
+                  ? 'border-primary-600 bg-primary-50 text-primary-700 ring-1 ring-primary-600' : 'border-slate-300 bg-white text-slate-600 hover:border-primary-500 hover:bg-slate-50'}`}>
+                <FrameIcon type={type} />
+                <span className="mt-1 text-sm font-medium">{frameRules[type].zh}</span>
+                <span className="text-xs text-slate-500">{frameRules[type].en}</span>
               </button>
             );
           })}
         </div>
       </Field>
 
-      <Field path="frame.span_ratio_wl" hint={rule.wl.adjustable
-        ? <>W/L＝轴心横向跨度／纵向跨度。当前 {layout.W_over_L.toFixed(2)}，来源：{basisLabel[wlBasis(frame)]}。{references.wl.note}</>
-        : <>{rule.zh}的 W/L 由形状规则算出，为 {layout.W_over_L.toFixed(2)}，不能单独调。想调 W/L 请选宽 X、伸展 X 或 H 型。</>}>
-        <SliderField path="frame.span_ratio_wl" min={rule.wl.min} max={rule.wl.adjustable ? rule.wl.max : rule.wl.min + 0.01} step={0.01} unit="" digits={2}
-          marks={rule.wl.adjustable ? wlMarks : []} disabled={!rule.wl.adjustable} />
-        {rule.wl.adjustable && <MarkLegend marks={wlMarks} />}
+      {rule.wl.adjustable ? (
+        <Field path="frame.span_ratio_wl" en="W/L" value={layout.W_over_L.toFixed(2)}
+          hint="电机左右跨度 ÷ 前后跨度。数值越大，机架越宽扁。"
+          reference={<>
+            <b className="font-medium text-slate-700">实验档：</b>0.70、1.00、1.30。<br />
+            <b className="font-medium text-slate-700">真实机型（手册图面量测）：</b>{measured.map(m => `${m.label} ${m.v.toFixed(2)}`).join('、')}。<br />
+            {references.wl.note}
+          </>}>
+          <Slider path="frame.span_ratio_wl" min={rule.wl.min} max={rule.wl.max} step={0.01} unit="" digits={2}
+            presets={references.wl.experimental.filter(m => m.v >= rule.wl.min && m.v <= rule.wl.max).map(m => ({ v: m.v, label: `${m.v.toFixed(2)} 实验${m.label}` }))
+              .concat(rule.wl.max >= 1.41 ? [{ v: 1.41, label: '1.41 真实机型中位' }] : [])} />
+        </Field>
+      ) : (
+        <p className="rounded-lg bg-slate-50 px-3 py-2 text-sm text-slate-600">
+          {rule.zh}的横纵跨度比固定为 <b className="font-semibold text-slate-900">{layout.W_over_L.toFixed(2)}</b>。想调宽窄，请选宽 X、伸展 X 或 H 型。
+        </p>
+      )}
+
+      <Field path="frame.wheelbase_mm" en="Wheelbase" value={`${frame.wheelbase_mm} mm`}
+        hint="两条对角电机中心距的平均值。"
+        reference={<>
+          <b className="font-medium text-slate-700">实验设定：</b>250 mm（论文规格卡）。<br />
+          <b className="font-medium text-slate-700">厂商公布的对角尺寸（端点未核）：</b>{references.diagonal.published.map(m => `${m.label} ${m.v}`).join('、')} mm。<br />
+          当前任意两电机的最大距离为 {layout.max_pair_mm.toFixed(1)} mm。
+        </>}>
+        <Slider path="frame.wheelbase_mm" min={100} max={500} step={1} unit="mm" presets={[{ v: 250, label: '250 实验设定' }]} />
       </Field>
 
-      <Field path="frame.wheelbase_mm" hint={<>D＝两条对角电机中心距的均值（设计值）。当前任意两轴最大距 {layout.max_pair_mm.toFixed(1)} mm。{references.diagonal.note}</>}>
-        <SliderField path="frame.wheelbase_mm" min={100} max={500} step={1} unit="mm" marks={dMarks} />
-        <MarkLegend marks={dMarks} />
+      <Field path="frame.arm_width_mm" en="Arm Width" value={`${parseInt(frame.arm_width_mm, 10)} mm`}>
+        <Choice options={[{ value: '10mm', zh: '10 mm' }, { value: '15mm', zh: '15 mm' }, { value: '20mm', zh: '20 mm' }]}
+          value={frame.arm_width_mm} onChange={v => setField('frame.arm_width_mm', v)} label="机臂宽度" />
       </Field>
 
-      <Field path="frame.arm_width_mm" hint="示意图按真实比例画机臂宽度；提示词里有单独一句写机臂宽和厚。">
-        <Segmented options={[{ value: '10mm', zh: '10 mm' }, { value: '15mm', zh: '15 mm' }, { value: '20mm', zh: '20 mm' }]}
-          value={frame.arm_width_mm} onChange={v => setField('frame.arm_width_mm', v)} />
+      <Field path="frame.arm_thickness_mm" en="Arm Thickness" value={`${parseInt(frame.arm_thickness_mm, 10)} mm`} hint="厚度从正上方看不到，可在侧视里查看。">
+        <Choice options={[{ value: '3mm', zh: '3 mm' }, { value: '4mm', zh: '4 mm' }, { value: '5mm', zh: '5 mm' }, { value: '6mm', zh: '6 mm' }]}
+          value={frame.arm_thickness_mm} onChange={v => setField('frame.arm_thickness_mm', v)} label="机臂厚度" />
       </Field>
 
-      <Field path="frame.arm_thickness_mm" hint="厚度从正上方看不到，只在侧视示意和提示词里体现。">
-        <Segmented options={[{ value: '3mm', zh: '3 mm' }, { value: '4mm', zh: '4 mm' }, { value: '5mm', zh: '5 mm' }, { value: '6mm', zh: '6 mm' }]}
-          value={frame.arm_thickness_mm} onChange={v => setField('frame.arm_thickness_mm', v)} />
-      </Field>
-
-      <Field path="frame.arm_root" hint="机臂怎样接到机身，由设计者决定。留白时提示词不写这一项。">
-        <OpenChoice path="frame.arm_root" options={armRootOptions} columns={2} />
-      </Field>
-
-      <Field path="frame.material_visual" hint="材料外观由设计者决定。只有在这里选了碳纤维，提示词才会出现碳纹。">
-        <OpenChoice path="frame.material_visual" options={armMaterialOptions} columns={3} />
-      </Field>
+      <Group title="造型" note="可以不指定，留给后续设计">
+        <Field path="frame.arm_root" en="Arm Root">
+          <OpenChoice path="frame.arm_root" options={armRootOptions} />
+        </Field>
+        <Field path="frame.material_visual" en="Arm Material">
+          <OpenChoice path="frame.material_visual" options={armMaterialOptions} />
+        </Field>
+      </Group>
     </div>
   );
 };

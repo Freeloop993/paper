@@ -17,6 +17,8 @@ export interface FrameRule {
   wl: { value: number; min: number; max: number; adjustable: boolean };
   basis: Basis;
   rule: string;
+  /** 给设计者看的一句话说明。 */
+  desc: string;
   shape_en: string;
 }
 
@@ -24,36 +26,43 @@ export const frameRules: Record<FrameType, FrameRule> = {
   'True X': {
     zh: '真 X 型', en: 'True X', hubs: 4, wl: { value: 1, min: 1, max: 1, adjustable: false }, basis: 'definition',
     rule: '四个轴心位于正方形四角，相邻夹角均为 90°，W/L 恒为 1.00（几何定义）。',
+    desc: '四个电机在正方形的四个角上。',
     shape_en: 'the four motor centres sit at the corners of a square',
   },
   'Wide X': {
     zh: '宽 X 型', en: 'Wide X', hubs: 4, wl: { value: 1.3, min: 1.05, max: 1.6, adjustable: true }, basis: 'experimental',
     rule: '四个轴心位于横向较宽的矩形四角。缺省 W/L 取研究登记的宽档 1.30（实验探测档，不是行业标准）；改动后记为设计者输入。',
+    desc: '左右比前后更宽；手册图面量过的 11 款消费航拍机都属于这一类。',
     shape_en: 'the four motor centres sit at the corners of a rectangle that is wider than it is long',
   },
   'Stretch X': {
     zh: '伸展 X 型', en: 'Stretch X', hubs: 4, wl: { value: 0.7, min: 0.6, max: 0.95, adjustable: true }, basis: 'experimental',
     rule: '四个轴心位于纵向较长的矩形四角。缺省 W/L 取研究登记的窄档 0.70（实验探测档）；改动后记为设计者输入。',
+    desc: '前后比左右更长。',
     shape_en: 'the four motor centres sit at the corners of a rectangle that is longer than it is wide',
   },
   'H-Frame': {
     zh: 'H 型', en: 'H-frame', hubs: 4, wl: { value: 1, min: 0.6, max: 1.6, adjustable: true }, basis: 'designer',
     rule: '轴心位于矩形四角，机架为两条纵梁加一根横梁。连接拓扑取自早期构型图；W/L 没有厂商或图面依据，记为设计者输入。',
+    desc: '两条纵梁加一根横梁，电机在四角。',
     shape_en: 'the four motor centres sit at the corners of a rectangle, joined by two fore-aft rails and one cross beam',
   },
   Deadcat: {
     zh: 'Deadcat 型', en: 'Deadcat', hubs: 4, wl: { value: 1.656, min: 1.656, max: 1.656, adjustable: false }, basis: 'designer',
     rule: '前两臂方位 ±65°、后两臂方位 ±145°，后臂长为前臂的 0.82。沿用桌面版布局函数的示意规则，缺厂商或图面依据，记为设计者输入。',
+    desc: '前两臂向外张开、后两臂收拢且较短，让前方视野避开桨叶。',
     shape_en: 'the two front motors are swept wide apart and the two rear motors sit closer together on shorter arms',
   },
   '+ Configuration': {
     zh: '十字型', en: 'Plus (+)', hubs: 4, wl: { value: 1, min: 1, max: 1, adjustable: false }, basis: 'definition',
     rule: '四个轴心分别在机头、右、机尾、左方向，相邻夹角均为 90°（几何定义）。',
+    desc: '电机分别在前、后、左、右。',
     shape_en: 'one motor at the nose, one at the tail and one on each side',
   },
   'Radial Hex': {
     zh: '径向六旋', en: 'Radial hex', hubs: 6, wl: { value: 1.1547, min: 1.1547, max: 1.1547, adjustable: false }, basis: 'definition',
     rule: '六个轴心位于正六边形顶点（几何定义）。',
+    desc: '六个电机在正六边形的六个角上。',
     shape_en: 'six motor centres at the corners of a regular hexagon',
   },
 };

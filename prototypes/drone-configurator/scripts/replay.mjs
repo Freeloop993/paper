@@ -6,7 +6,7 @@ import { dirname, join, resolve } from 'node:path';
 import { buildExport, parseImported } from '../src/design/exporters.ts';
 
 const here = dirname(fileURLToPath(import.meta.url));
-const root = resolve(process.argv[2] ?? join(here, '../review/20261117-round1/exports'));
+const root = resolve(process.argv[2] ?? join(here, '../review/20261118-round2/exports'));
 const defaults = {
   frame: { frame_type: 'True X', wheelbase_mm: 250, span_ratio_wl: 1, arm_thickness_mm: '4mm', arm_width_mm: '15mm', material_visual: '', arm_root: '' },
   propulsion: { prop_diameter_inch: 5, prop_blade_count: '2叶', motor_tilt_degree: 0, prop_guard: 'none' },

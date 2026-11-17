@@ -1,149 +1,125 @@
-// 页签里共用的控件：状态标签、选项组、带数值微调的滑块、可留白的造型选择。
-import React from 'react';
-import { Eye, EyeOff, Type, X } from 'lucide-react';
+// 页签里共用的控件。原则：一行一个参数，名称在左、当前值在右；说明文字尽量短，细节收进“参考”里。
+import React, { useState } from 'react';
+import { Info, RotateCcw } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
-import { fieldByPath, fieldStatus, getPath, statusLabel, visibilityLabel, type FieldStatus, type Option, type Visibility } from '../../design/fields';
+import { fieldByPath, fieldStatus, getPath, type Option } from '../../design/fields';
 
-const statusStyle: Record<FieldStatus, string> = {
-  fixed: 'bg-slate-200 text-slate-700 border-slate-300',
-  default: 'bg-white text-slate-500 border-slate-300',
-  chosen: 'bg-primary-600 text-white border-primary-600',
-  open: 'bg-amber-50 text-amber-800 border-amber-400 border-dashed',
-};
-export const StatusChip: React.FC<{ status: FieldStatus; className?: string }> = ({ status, className = '' }) => (
-  <span className={`inline-flex items-center whitespace-nowrap rounded border px-1.5 py-0.5 text-[11px] font-medium leading-none ${statusStyle[status]} ${className}`}>
-    {statusLabel[status]}
-  </span>
-);
-
-const visIcon: Record<Visibility, React.ReactNode> = {
-  top: <Eye className="h-3 w-3" />, text: <Type className="h-3 w-3" />, occluded: <EyeOff className="h-3 w-3" />,
-};
-export const VisibilityTag: React.FC<{ visibility: Visibility }> = ({ visibility }) => (
-  <span className="inline-flex items-center gap-0.5 whitespace-nowrap text-[11px] text-slate-500" title={
-    visibility === 'top' ? '顶视图中看得见，示意图已画出' : visibility === 'text' ? '示意图不画，只写进提示词' : '顶视图中被遮挡，见侧视示意'
-  }>
-    {visIcon[visibility]}{visibilityLabel[visibility]}
-  </span>
-);
-
-/** 一行参数：名称、当前状态、顶视可见性、清除按钮，下面放控件。刚改动的一行会加亮。 */
-export const Field: React.FC<{ path: string; hint?: React.ReactNode; children: React.ReactNode }> = ({ path, hint, children }) => {
-  const { parameters, touched, lastChange, clearField } = useDroneStore();
+/** 一个参数：名称、英文名、当前值；改过的参数旁边出现“重置”。 */
+export const Field: React.FC<{
+  path: string; en?: string; value?: React.ReactNode; hint?: React.ReactNode; reference?: React.ReactNode; children: React.ReactNode;
+}> = ({ path, en, value, hint, reference, children }) => {
+  const { parameters, touched, clearField } = useDroneStore();
+  const [open, setOpen] = useState(false);
   const def = fieldByPath[path];
-  const status = fieldStatus(def, parameters, touched);
-  const fresh = lastChange?.path.split('#')[0] === path;
+  const changed = fieldStatus(def, parameters, touched) === 'chosen' && def.kind !== 'custom';
   return (
-    <div data-field={path} className={`rounded-lg border p-3 ${fresh ? 'border-primary-500 bg-primary-50/60' : 'border-slate-200 bg-white'}`}>
-      <div className="mb-2 flex flex-wrap items-center gap-x-2 gap-y-1">
-        <span className="text-sm font-medium text-slate-800">{def.label}</span>
-        <span className="text-sm tabular-nums text-slate-600">{def.format(parameters)}</span>
-        <span className="ml-auto flex items-center gap-2">
-          <VisibilityTag visibility={def.visibility} />
-          <StatusChip status={status} />
-          {status === 'chosen' && def.kind !== 'custom' && (
-            <button type="button" onClick={() => clearField(path)} title={def.kind === 'styling' ? '清除，改回留白' : '清除，改回默认值'}
-              className="inline-flex items-center gap-0.5 rounded px-1 py-0.5 text-[11px] text-slate-500 hover:bg-slate-100 hover:text-slate-800">
-              <X className="h-3 w-3" />清除
+    <div data-field={path} className="space-y-2">
+      <div className="flex flex-wrap items-baseline gap-x-2">
+        <span className="text-sm font-medium text-slate-700">{def.label}</span>
+        {en && <span className="text-sm text-slate-400">({en})</span>}
+        {reference && (
+          <button type="button" onClick={() => setOpen(v => !v)} aria-expanded={open} title="参考数值"
+            className="inline-flex translate-y-0.5 items-center text-slate-400 hover:text-primary-600"><Info className="h-4 w-4" /></button>
+        )}
+        <span className="ml-auto flex items-baseline gap-3">
+          {changed && (
+            <button type="button" onClick={() => clearField(path)} className="inline-flex items-center gap-1 text-xs text-slate-400 hover:text-primary-600">
+              <RotateCcw className="h-3 w-3" />重置
             </button>
           )}
+          {value !== undefined && <span className="text-sm font-semibold tabular-nums text-slate-900" data-value>{value}</span>}
         </span>
       </div>
       {children}
-      {hint && <p className="mt-2 text-xs leading-relaxed text-slate-500">{hint}</p>}
+      {hint && <p className="text-xs leading-relaxed text-slate-500">{hint}</p>}
+      {open && reference && <div className="rounded-lg bg-slate-50 px-3 py-2 text-xs leading-relaxed text-slate-600">{reference}</div>}
     </div>
   );
 };
 
-export function Segmented<T extends string>({ options, value, onChange, columns }: {
-  options: Option<T>[]; value: T; onChange: (v: T) => void; columns?: number;
+/** 一组并排的选项按钮。按可用宽度自动排列：桌面上一行排开，手机上自动折成两三列。 */
+export function Choice<T extends string>({ options, value, onChange, label }: {
+  options: Option<T>[]; value: T; onChange: (v: T) => void; label?: string;
 }) {
+  const min = options.some(o => o.hint) ? '9.5rem' : '5.25rem';
   return (
-    <div className="grid gap-1.5" style={{ gridTemplateColumns: `repeat(${columns ?? options.length}, minmax(0, 1fr))` }} role="radiogroup">
-      {options.map(o => (
-        <button key={o.value} type="button" role="radio" aria-checked={value === o.value} onClick={() => onChange(o.value)}
-          className={`rounded-md border px-2 py-1.5 text-left text-sm ${value === o.value
-            ? 'border-primary-600 bg-primary-600 text-white' : 'border-slate-300 bg-white text-slate-700 hover:border-primary-500'}`}>
-          <span className="block font-medium">{o.zh}</span>
-          {o.hint && <span className={`block text-[11px] leading-snug ${value === o.value ? 'text-primary-50' : 'text-slate-500'}`}>{o.hint}</span>}
-        </button>
-      ))}
+    <div className="grid gap-2" style={{ gridTemplateColumns: `repeat(auto-fit, minmax(${min}, 1fr))` }} role="radiogroup" aria-label={label}>
+      {options.map(o => {
+        const active = value === o.value;
+        return (
+          <button key={o.value} type="button" role="radio" aria-checked={active} data-option={o.value} onClick={() => onChange(o.value)}
+            className={`rounded-lg border px-3 py-2 text-sm ${o.hint ? 'text-left' : 'text-center'} ${active
+              ? 'border-primary-600 bg-primary-50 font-medium text-primary-700 ring-1 ring-primary-600'
+              : 'border-slate-300 bg-white text-slate-700 hover:border-primary-500 hover:bg-slate-50'}`}>
+            <span className="block whitespace-nowrap">{o.zh}</span>
+            {o.hint && <span className={`block text-xs font-normal ${active ? 'text-primary-600' : 'text-slate-500'}`}>{o.hint}</span>}
+          </button>
+        );
+      })}
     </div>
   );
 }
 
-/** 造型选择：第一项永远是“留白”，由设计者后续决定；选了具体项才会写进提示词。 */
-export function OpenChoice<T extends string>({ path, options, columns }: { path: string; options: Option<T>[]; columns?: number }) {
+/** 造型选择：第一项是“不指定”，把这一处留给设计者后续决定；选了具体项才会写进提示词。 */
+export function OpenChoice<T extends string>({ path, options }: { path: string; options: Option<T>[] }) {
   const { parameters, setField } = useDroneStore();
   const value = getPath(parameters, path) as T | '';
-  const all = [{ value: '' as T | '', zh: '留白', hint: '设计者后续决定' }, ...options] as Option<T | ''>[];
-  return <Segmented options={all} value={value} onChange={v => setField(path, v)} columns={columns ?? Math.min(all.length, 4)} />;
+  const all = [{ value: '' as T | '', zh: '不指定' }, ...options] as Option<T | ''>[];
+  return <Choice options={all} value={value} onChange={v => setField(path, v)} label={fieldByPath[path].label} />;
 }
 
-export interface Mark { v: number; label: string; kind: 'experimental' | 'measured' | 'published' | 'study' }
-const markStyle: Record<Mark['kind'], string> = {
-  experimental: 'bg-violet-500', measured: 'bg-emerald-500', published: 'bg-slate-500', study: 'bg-violet-500',
-};
-const markKindLabel: Record<Mark['kind'], string> = { experimental: '实验档位', measured: '手册图面量测', published: '厂商公布', study: '实验设定' };
-
-/** 滑块 + 数值微调。刻度下方可标出实验档位、厂商公布值和图面量测值，点一下刻度只是把滑块移过去。 */
-export const SliderField: React.FC<{
-  path: string; min: number; max: number; step: number; unit: string; marks?: Mark[]; disabled?: boolean; digits?: number;
-}> = ({ path, min, max, step, unit, marks = [], disabled, digits = 0 }) => {
+/** 滑块，下方是两端数值；右侧数字框用于微调；可带几个一点即到的常用值。 */
+export const Slider: React.FC<{
+  path: string; min: number; max: number; step: number; unit: string; digits?: number;
+  presets?: { v: number; label: string }[];
+}> = ({ path, min, max, step, unit, digits = 0, presets = [] }) => {
   const { parameters, setField } = useDroneStore();
   const value = getPath(parameters, path) as number;
-  const clamp = (v: number) => Number(Math.min(max, Math.max(min, v)).toFixed(digits + 2));
-  const set = (v: number) => { if (Number.isFinite(v)) setField(path, clamp(v)); };
-  const pct = (v: number) => ((v - min) / (max - min)) * 100;
-  const shown = marks.filter(m => m.v >= min && m.v <= max).sort((a, b) => a.v - b.v);
-  // 相邻刻度太近时只留刻度线，数值在下方图例里完整列出。
-  let lastLabel = -Infinity;
-  const labelled = shown.map(m => { const ok = pct(m.v) - lastLabel >= 11; if (ok) lastLabel = pct(m.v); return ok; });
+  const set = (v: number) => { if (Number.isFinite(v)) setField(path, Number(Math.min(max, Math.max(min, v)).toFixed(digits + 2))); };
   return (
-    <div className={disabled ? 'opacity-50' : ''}>
-      <div className="flex items-center gap-2">
-        <button type="button" disabled={disabled} onClick={() => set(value - step)} aria-label="减小"
-          className="h-8 w-8 shrink-0 rounded-md border border-slate-300 text-slate-700 hover:border-primary-500 disabled:cursor-not-allowed">−</button>
-        <input type="range" min={min} max={max} step={step} value={value} disabled={disabled} onChange={e => set(Number(e.target.value))}
-          aria-label={fieldByPath[path].label} className="slider h-2 w-full min-w-0 flex-1" />
-        <button type="button" disabled={disabled} onClick={() => set(value + step)} aria-label="增大"
-          className="h-8 w-8 shrink-0 rounded-md border border-slate-300 text-slate-700 hover:border-primary-500 disabled:cursor-not-allowed">+</button>
-        <label className="flex shrink-0 items-center gap-1 text-sm text-slate-600">
-          <input type="number" min={min} max={max} step={step} value={value} disabled={disabled} onChange={e => set(Number(e.target.value))}
-            className="w-[4.5rem] rounded-md border border-slate-300 px-2 py-1 text-right tabular-nums focus:border-primary-500 focus:outline-none" />
-          {unit}
-        </label>
+    <div>
+      <div className="flex items-center gap-3">
+        <input type="range" min={min} max={max} step={step} value={value} onChange={e => set(Number(e.target.value))}
+          aria-label={fieldByPath[path].label} className="slider h-2 min-w-0 flex-1" />
+        <input type="number" min={min} max={max} step={step} value={value} onChange={e => set(Number(e.target.value))} aria-label={fieldByPath[path].label + '（数值）'}
+          className="w-20 rounded-lg border border-slate-300 px-2 py-1 text-right text-sm tabular-nums focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/30" />
       </div>
-      {shown.length > 0 && (
-        <div className="relative mx-10 mt-1 h-7">
-          {shown.map((m, i) => (
-            <button key={m.label + i} type="button" disabled={disabled} onClick={() => set(m.v)} title={`${markKindLabel[m.kind]}：${m.label} ${m.v}`}
-              className="group absolute top-0 -translate-x-1/2 text-center" style={{ left: pct(m.v) + '%' }}>
-              <span className={`mx-auto block h-2 w-0.5 ${markStyle[m.kind]}`} />
-              {labelled[i] && <span className="block whitespace-nowrap text-[10px] leading-tight text-slate-500 group-hover:text-slate-900">{m.v}</span>}
-            </button>
-          ))}
+      <div className="mt-1 flex justify-between pr-[5.75rem] text-xs text-slate-400"><span>{min}{unit}</span><span>{max}{unit}</span></div>
+      {presets.length > 0 && (
+        <div className="mt-2 flex flex-wrap items-center gap-1.5">
+          {presets.map(p => {
+            const active = Math.abs(value - p.v) < step / 2;
+            return (
+              <button key={p.label} type="button" onClick={() => set(p.v)}
+                className={`rounded-full border px-2.5 py-0.5 text-xs ${active ? 'border-primary-600 bg-primary-50 text-primary-700' : 'border-slate-300 text-slate-600 hover:border-primary-500'}`}>
+                {p.label}
+              </button>
+            );
+          })}
         </div>
       )}
     </div>
   );
 };
 
-export const MarkLegend: React.FC<{ marks: Mark[] }> = ({ marks }) => (
-  <ul className="mt-0.5 space-y-0.5 text-[11px] leading-snug text-slate-500">
-    {(['experimental', 'study', 'published', 'measured'] as const).filter(k => marks.some(m => m.kind === k)).map(k => (
-      <li key={k}>
-        <span className={`mr-1 inline-block h-2 w-0.5 align-middle ${markStyle[k]}`} />
-        <b className="font-medium text-slate-600">{markKindLabel[k]}：</b>
-        {marks.filter(m => m.kind === k).map(m => `${m.label} ${m.v}`).join('、')}
-      </li>
-    ))}
-  </ul>
+export const TabHeading: React.FC<{ icon: React.ReactNode; title: string; en: string; children?: React.ReactNode }> = ({ icon, title, en, children }) => (
+  <div>
+    <div className="flex items-center gap-2">
+      {icon}
+      <h3 className="text-lg font-semibold text-slate-900">{title}</h3>
+      <span className="text-sm text-slate-400">{en}</span>
+    </div>
+    {children && <p className="mt-1 text-sm text-slate-500">{children}</p>}
+  </div>
 );
 
-export const TabIntro: React.FC<{ title: string; children: React.ReactNode }> = ({ title, children }) => (
-  <div>
-    <h3 className="text-base font-semibold text-slate-900">{title}</h3>
-    <p className="mt-0.5 text-xs leading-relaxed text-slate-500">{children}</p>
+/** 页签内的小分组：上半是尺寸与构型，下半是“造型（可不指定）”。 */
+export const Group: React.FC<{ title: string; note?: string; children: React.ReactNode }> = ({ title, note, children }) => (
+  <div className="space-y-5 border-t border-slate-200 pt-5">
+    <div className="flex flex-wrap items-baseline gap-x-2">
+      <h4 className="text-sm font-semibold text-slate-900">{title}</h4>
+      {note && <span className="text-xs text-slate-500">{note}</span>}
+    </div>
+    {children}
   </div>
 );
