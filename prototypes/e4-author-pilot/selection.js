@@ -434,7 +434,7 @@ var C1Selection = (() => {
       thickness: p.frame.arm_thickness_mm,
       color: p.accessories.drone_primary_color,
       finish: d.shellFinish ?? "matte",
-      guide: d.guideTips ? "tips" : "axes"
+      guide: seeded && d.guideTips ? "tips" : "axes"
     };
     if (studyLayout) Object.assign(defaults, studyValues);
     const v = { ...defaults, ...raw };

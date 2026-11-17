@@ -75,7 +75,7 @@ export function evaluate(selection:Selection,studyLayout=false) {
     preset:'base',frame:p.frame.frame_type,span:p.frame.wheelbase_mm,angles:'frame',custom:'',
     body:seeded?p.fuselage.fuselage_style:'open',camera:'open',root:'open',seams:'open',
     material:p.frame.material_visual,width:p.frame.arm_width_mm,thickness:p.frame.arm_thickness_mm,
-    color:p.accessories.drone_primary_color,finish:d.shellFinish ?? 'matte',guide:d.guideTips?'tips':'axes',
+    color:p.accessories.drone_primary_color,finish:d.shellFinish ?? 'matte',guide:seeded && d.guideTips?'tips':'axes',
   };
   if(studyLayout)Object.assign(defaults,studyValues);
   const v={...defaults,...raw};
