@@ -1,5 +1,7 @@
 # paper
 
+**当前研究进度（11 月 17 日）**　[执行顺序与作者决定](https://github.com/Freeloop993/paper/blob/claude/direction-todo-20261117/planning/2026-11-17-direction-and-todo.md) · [真机量测、复核与作者预试](https://github.com/Freeloop993/paper/tree/claude/direction-todo-20261117/evidence/20261117-config-review)。下文为此前各阶段的记录，阅读 E2、E3 进度请先查上述入口。
+
 [研究数据入口 · 早期无人机评论与商品参数](DATA.md)
 
 S4 第三轮两张已实收。机鼻相机舱前缘明确外伸 1/2、待判 1/2；两张均未见机背或朝观察者的清晰镜面，均有四副双叶桨。光轴在顶视下不可辨。[三轮并排与本轮原图](evidence/qwen-shape-s4-20261114/s4-nose-edge-2/) · [历史 H3 输入、全词和原图](evidence/h3-camera-layout-originals/)。
