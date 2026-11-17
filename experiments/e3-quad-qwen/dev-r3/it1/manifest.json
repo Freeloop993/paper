@@ -1,0 +1,84 @@
+{
+  "dictionary": "shape-dictionary-v1.6",
+  "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+  "template_sha256": "3f565874d46be07a96f5673a2f3d88349efbe0e94062377003e1aa7da1a8b25c",
+  "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, camera lens visible from above, upward-facing lens, camera on a neck or stalk, camera on a post, camera at the tail, dark module at the tail, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades",
+  "requests": [
+    {
+      "id": "E3D1-C1",
+      "direction": "C",
+      "slot": 1,
+      "seed": 2026112191,
+      "params": {
+        "body_plan": "faceted",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "exposed_carbon",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. The two blades of each propeller are identical in length and width and point in exactly opposite directions from the hub, forming one straight blade 180 degrees across, never a V shape; each propeller rests at its own natural angle. No propeller guards.\nThe nose points to the top edge of the image. The rear end of the fuselage is a closed, plain light grey shell: no dark part, opening, camera or module at the tail.\nA compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe gimbal camera hangs underneath the front of the fuselage, as on modern foldable camera drones. Seen from directly above, only the top edge of a small dark grey camera housing peeks out just ahead of the nose; the lens faces straight forward toward the top edge of the image, so no lens glass is visible from above. The camera sits low and tight against the nose, with no neck, stalk or post.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nExposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "0310ccc9fa3e3969b36be0f89038d69fa3dd9b46d8bedf188a9d015d020d2625",
+      "request_sha256": "e5b62ae0975808f75d5d044f58ffd36046200350a6f7d72f6ea7b289f3aa3c89"
+    },
+    {
+      "id": "E3D1-C2",
+      "direction": "C",
+      "slot": 2,
+      "seed": 2026112192,
+      "params": {
+        "body_plan": "faceted",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "exposed_carbon",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. The two blades of each propeller are identical in length and width and point in exactly opposite directions from the hub, forming one straight blade 180 degrees across, never a V shape; each propeller rests at its own natural angle. No propeller guards.\nThe nose points to the top edge of the image. The rear end of the fuselage is a closed, plain light grey shell: no dark part, opening, camera or module at the tail.\nA compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe gimbal camera hangs underneath the front of the fuselage, as on modern foldable camera drones. Seen from directly above, only the top edge of a small dark grey camera housing peeks out just ahead of the nose; the lens faces straight forward toward the top edge of the image, so no lens glass is visible from above. The camera sits low and tight against the nose, with no neck, stalk or post.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nExposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "0310ccc9fa3e3969b36be0f89038d69fa3dd9b46d8bedf188a9d015d020d2625",
+      "request_sha256": "1d853b2bd914a1daa2aa08d1f1c12e8b28887aff8eceaf4be613a37969677e5b"
+    },
+    {
+      "id": "E3D1-C3",
+      "direction": "C",
+      "slot": 3,
+      "seed": 2026112193,
+      "params": {
+        "body_plan": "faceted",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "exposed_carbon",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. The two blades of each propeller are identical in length and width and point in exactly opposite directions from the hub, forming one straight blade 180 degrees across, never a V shape; each propeller rests at its own natural angle. No propeller guards.\nThe nose points to the top edge of the image. The rear end of the fuselage is a closed, plain light grey shell: no dark part, opening, camera or module at the tail.\nA compact faceted shell: a rounded outline cut by chamfered facets with crisp edges, only slightly longer than it is wide.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe gimbal camera hangs underneath the front of the fuselage, as on modern foldable camera drones. Seen from directly above, only the top edge of a small dark grey camera housing peeks out just ahead of the nose; the lens faces straight forward toward the top edge of the image, so no lens glass is visible from above. The camera sits low and tight against the nose, with no neck, stalk or post.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nExposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "0310ccc9fa3e3969b36be0f89038d69fa3dd9b46d8bedf188a9d015d020d2625",
+      "request_sha256": "e4f9147965eed687d177f3db0f2d61c6ebc5be2e23112ca85437c8f6e1743e46"
+    },
+    {
+      "id": "E3D1-A1",
+      "direction": "A",
+      "slot": 1,
+      "seed": 2026112194,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "split",
+        "surface": "sculpted",
+        "span": "250",
+        "arm_finish": "matte_same",
+        "accent": "motor_ring"
+      },
+      "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. The two blades of each propeller are identical in length and width and point in exactly opposite directions from the hub, forming one straight blade 180 degrees across, never a V shape; each propeller rests at its own natural angle. No propeller guards.\nThe nose points to the top edge of the image. The rear end of the fuselage is a closed, plain light grey shell: no dark part, opening, camera or module at the tail.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThe top cover is divided by one curved transverse parting line into a nose cap and a main cover.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+      "prompt_sha256": "8a334e6209eb0d752e5e22188762373fb9b13a39bd0db091c8bbb3970b90837a",
+      "request_sha256": "80ec78f4f0e0bde40537fe83ad05622b9631c0c98df2f75f3bcaa904f737782b"
+    }
+  ]
+}

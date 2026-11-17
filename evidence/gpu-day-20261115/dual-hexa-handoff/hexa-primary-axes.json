@@ -1,0 +1,472 @@
+{
+  "scope": "12 primary observations only; 3 design drafts and 24 extensions excluded.",
+  "reader": "condition-aware first AI reading; not independent or blinded; location rounded to pixels.",
+  "measure": "q = (range(x)/range(y))/(2/sqrt(3)); visible rotor cap centres, not blade tips; housing projection offsets marked.",
+  "target_groups_median_descriptive": {
+    "0.7": 0.849,
+    "1.0": 0.978,
+    "1.3": 1.123
+  },
+  "strictly_ordered_paired_seeds": 3,
+  "paired_seed_count": 4,
+  "rounding": "integer native-image positions from enlarged crops / two native originals; decimals are arithmetic, not ground-truth precision.",
+  "notes": "No formal binary threshold, independent reading, or product acceptability has been inferred.",
+  "records": [
+    {
+      "id": "HEXA3-wl0.70-r01",
+      "target": 0.7,
+      "rep": 1,
+      "seed": 2026112323,
+      "png_sha256": "43c1e52ec62a5512ec11662ebef0c5196f13532e162049c04f9950bf7d00ff20",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          370,
+          159
+        ],
+        [
+          648,
+          158
+        ],
+        [
+          870,
+          501
+        ],
+        [
+          656,
+          840
+        ],
+        [
+          366,
+          838
+        ],
+        [
+          150,
+          504
+        ]
+      ],
+      "W_px": 720,
+      "L_px": 682,
+      "q": 0.9143,
+      "note": ""
+    },
+    {
+      "id": "HEXA3-wl0.70-r02",
+      "target": 0.7,
+      "rep": 2,
+      "seed": 2026112324,
+      "png_sha256": "221bd8311f7d47aea74b701b8befad23c52e1f620f8b94ccc8ce24a7819ce472",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          400,
+          187
+        ],
+        [
+          622,
+          186
+        ],
+        [
+          752,
+          493
+        ],
+        [
+          628,
+          798
+        ],
+        [
+          396,
+          798
+        ],
+        [
+          270,
+          492
+        ]
+      ],
+      "W_px": 482,
+      "L_px": 612,
+      "q": 0.6821,
+      "note": "At least one visible motor has a single blade; shaft still visible."
+    },
+    {
+      "id": "HEXA3-wl0.70-r03",
+      "target": 0.7,
+      "rep": 3,
+      "seed": 2026112325,
+      "png_sha256": "546804116918f35a8440b5e19f90ad188f3e6f709295fcfbfd58454c280e5120",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          353,
+          167
+        ],
+        [
+          670,
+          167
+        ],
+        [
+          807,
+          506
+        ],
+        [
+          656,
+          824
+        ],
+        [
+          372,
+          823
+        ],
+        [
+          212,
+          504
+        ]
+      ],
+      "W_px": 595,
+      "L_px": 657,
+      "q": 0.7843,
+      "note": ""
+    },
+    {
+      "id": "HEXA3-wl0.70-r04",
+      "target": 0.7,
+      "rep": 4,
+      "seed": 2026112326,
+      "png_sha256": "45402631dba11fe8d82876e9985934e71f5da3ab67750e1ea66c049f9902f9ed",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          365,
+          169
+        ],
+        [
+          653,
+          166
+        ],
+        [
+          893,
+          503
+        ],
+        [
+          655,
+          846
+        ],
+        [
+          364,
+          846
+        ],
+        [
+          125,
+          504
+        ]
+      ],
+      "W_px": 768,
+      "L_px": 680,
+      "q": 0.9781,
+      "note": "Motor housing projects noticeably away from the blade caps; view/depth caution."
+    },
+    {
+      "id": "HEXA3-wl1.00-r01",
+      "target": 1.0,
+      "rep": 1,
+      "seed": 2026112323,
+      "png_sha256": "8ad514becbf072870dc5e48d591a238ed3027c4265b16660e6c54277cadec791",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          342,
+          170
+        ],
+        [
+          680,
+          170
+        ],
+        [
+          863,
+          500
+        ],
+        [
+          694,
+          814
+        ],
+        [
+          330,
+          814
+        ],
+        [
+          156,
+          498
+        ]
+      ],
+      "W_px": 707,
+      "L_px": 644,
+      "q": 0.9507,
+      "note": ""
+    },
+    {
+      "id": "HEXA3-wl1.00-r02",
+      "target": 1.0,
+      "rep": 2,
+      "seed": 2026112324,
+      "png_sha256": "5a85d7ab67c6b2022297c1a8b2322659ff16b02297c3c7ec6328ff1949bcad00",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          336,
+          226
+        ],
+        [
+          684,
+          226
+        ],
+        [
+          852,
+          508
+        ],
+        [
+          684,
+          784
+        ],
+        [
+          337,
+          782
+        ],
+        [
+          172,
+          506
+        ]
+      ],
+      "W_px": 680,
+      "L_px": 558,
+      "q": 1.0554,
+      "note": ""
+    },
+    {
+      "id": "HEXA3-wl1.00-r03",
+      "target": 1.0,
+      "rep": 3,
+      "seed": 2026112325,
+      "png_sha256": "8126cfbfa5d2e28fd18438a38462c38bc292023d781df31004d58072254bb946",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          349,
+          199
+        ],
+        [
+          679,
+          190
+        ],
+        [
+          834,
+          499
+        ],
+        [
+          687,
+          788
+        ],
+        [
+          328,
+          787
+        ],
+        [
+          192,
+          500
+        ]
+      ],
+      "W_px": 642,
+      "L_px": 598,
+      "q": 0.9297,
+      "note": ""
+    },
+    {
+      "id": "HEXA3-wl1.00-r04",
+      "target": 1.0,
+      "rep": 4,
+      "seed": 2026112326,
+      "png_sha256": "a35599eeb7871f9ef72016538bb93c8e32a2d336fd746afb2cd38e45d132d660",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          343,
+          190
+        ],
+        [
+          680,
+          192
+        ],
+        [
+          889,
+          502
+        ],
+        [
+          706,
+          840
+        ],
+        [
+          311,
+          841
+        ],
+        [
+          134,
+          503
+        ]
+      ],
+      "W_px": 755,
+      "L_px": 651,
+      "q": 1.0044,
+      "note": ""
+    },
+    {
+      "id": "HEXA3-wl1.30-r01",
+      "target": 1.3,
+      "rep": 1,
+      "seed": 2026112323,
+      "png_sha256": "61344d82cfe19a7919b07abec7fe19ec8cd036b668c156c04b51cd9d23232cf5",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          316,
+          225
+        ],
+        [
+          704,
+          226
+        ],
+        [
+          871,
+          501
+        ],
+        [
+          709,
+          777
+        ],
+        [
+          312,
+          777
+        ],
+        [
+          150,
+          500
+        ]
+      ],
+      "W_px": 721,
+      "L_px": 552,
+      "q": 1.1312,
+      "note": ""
+    },
+    {
+      "id": "HEXA3-wl1.30-r02",
+      "target": 1.3,
+      "rep": 2,
+      "seed": 2026112324,
+      "png_sha256": "e39cb7630170fc61d175f083ee98f53d93ed113c1280d4812da03d19eccf078f",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          321,
+          231
+        ],
+        [
+          702,
+          232
+        ],
+        [
+          868,
+          506
+        ],
+        [
+          705,
+          753
+        ],
+        [
+          318,
+          753
+        ],
+        [
+          163,
+          504
+        ]
+      ],
+      "W_px": 705,
+      "L_px": 522,
+      "q": 1.1696,
+      "note": ""
+    },
+    {
+      "id": "HEXA3-wl1.30-r03",
+      "target": 1.3,
+      "rep": 3,
+      "seed": 2026112325,
+      "png_sha256": "950baabf31d518e87fb5aeac849c811b2ecaa2ef73671055a5959b206becae82",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          296,
+          234
+        ],
+        [
+          724,
+          234
+        ],
+        [
+          860,
+          501
+        ],
+        [
+          726,
+          776
+        ],
+        [
+          296,
+          776
+        ],
+        [
+          162,
+          504
+        ]
+      ],
+      "W_px": 698,
+      "L_px": 542,
+      "q": 1.1153,
+      "note": "The two lateral motors have three blades; their central caps remain visible."
+    },
+    {
+      "id": "HEXA3-wl1.30-r04",
+      "target": 1.3,
+      "rep": 4,
+      "seed": 2026112326,
+      "png_sha256": "c4dd2892499046c96d475f27aa15db2a245ca8d5123e10b54b076c05bd98d548",
+      "click_order": "front-left,front-right,middle-right,rear-right,rear-left,middle-left",
+      "points_px": [
+        [
+          277,
+          171
+        ],
+        [
+          750,
+          167
+        ],
+        [
+          892,
+          489
+        ],
+        [
+          732,
+          844
+        ],
+        [
+          275,
+          820
+        ],
+        [
+          122,
+          490
+        ]
+      ],
+      "W_px": 770,
+      "L_px": 677,
+      "q": 0.985,
+      "note": "Right-rear blade pivot displaced from cylindrical housing centre. Axis reading is a visible cap proxy only; do not certify physical/coaxial geometry."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "parent_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+  "r01_donor_sha256": "bf3957296587182345a7e413f9dbd2b13f1263d2e72659610040fb4e329b75bc",
+  "centre_x_px": 507,
+  "registration_tip_y_px": [
+    258,
+    679
+  ],
+  "method": "Adjacent B2 shell texture; one existing r01 camera layer, same scale; rigid 180 degree rotation for the lower end. Body occlusion follows the local silhouette.",
+  "files": {
+    "B2-no-window.png": {
+      "sha256": "9726c778774296c3f164f19ef497c636edc9a23d31ef0f29c83a1b99a0e7b175",
+      "rgb_delta": {
+        "pixels": 1305,
+        "xy_bounds_inclusive": [
+          462,
+          259,
+          551,
+          275
+        ]
+      }
+    },
+    "B2-upper.png": {
+      "sha256": "f29f6c284d9cac9c8fcf02496e12a97c5b2b76034d40dbd4ea591b371ddf5446",
+      "rgb_delta": {
+        "pixels": 3286,
+        "xy_bounds_inclusive": [
+          452,
+          220,
+          562,
+          273
+        ]
+      }
+    },
+    "B2-lower.png": {
+      "sha256": "dab93299b6fdfb316b1252e2dec738840d0110d2f6831c4547ce7fab58af40d3",
+      "rgb_delta": {
+        "pixels": 3114,
+        "xy_bounds_inclusive": [
+          452,
+          673,
+          562,
+          717
+        ]
+      }
+    }
+  }
+}

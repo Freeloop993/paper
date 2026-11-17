@@ -1,0 +1,46 @@
+{
+  "reader": "Codex 知条件 AI 初读",
+  "orientation": "沿用输入父图既定画面上方为机头；父图 C1 的外伸舱同样位于上方。",
+  "rules": [
+    "画面上方机鼻前缘可辨略外伸舱顶",
+    "顶视看不见镜片或镜窗",
+    "非目标部位包括机尾均保住"
+  ],
+  "results": [
+    {
+      "id": "REV2B-dev-B2-r1",
+      "png_sha256": "9f21d63626800435250af842aedfa147af84c776388906655bf81a988c8426fd",
+      "criteria": [
+        "no",
+        "no",
+        "no"
+      ],
+      "evidence": "上端由父图窄黑缝变成平滑盖面；下端新增带长黑窗的灰色模块，窗口中央可见镜片样暗圆。顶盖分件也比父图少。"
+    },
+    {
+      "id": "REV2B-dev-B2-r2",
+      "png_sha256": "4ede70b3180e4c6c7b439058082d2d2cfa4fbd9ed31163489be35e5104c62f76",
+      "criteria": [
+        "no",
+        "no",
+        "no"
+      ],
+      "evidence": "上端大致保留 B2 窄黑缝，没有外伸舱顶。下端多出带两侧圆轴的突出舱体，黑窗正面可辨。"
+    },
+    {
+      "id": "REV2B-dev-B2-r3",
+      "png_sha256": "c98f5ddd195387baf24970031e0206f08529713bc9aa3561d4e955211ebdc051",
+      "criteria": [
+        "no",
+        "no",
+        "no"
+      ],
+      "evidence": "上端变为平滑盖面；下端多出宽舱体、侧轴和黑色方窗。父图原有顶盖分型也变淡。"
+    }
+  ],
+  "development_completed": 3,
+  "development_passed": 0,
+  "formal_submitted": 0,
+  "decision": "回退到第三轮 B2。相机转 4.4 设计者手工深化，5.2.3 记录此任务、通路和样本下的局限。",
+  "attribution": "本批同时换参考图、提示词和种子，结果不能单独归因于添加参考图。实际新请求写了 nose/front 和 from directly above，但没有把画面上方显式绑定到机头。无法凭单一顶视图推断实物光轴。"
+}

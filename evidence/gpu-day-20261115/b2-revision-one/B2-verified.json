@@ -1,0 +1,77 @@
+{
+  "archive_sha256": "9549d0eb72e272777c5606ecb3dd1077c605ba3648c1f963f550d86396e7058b",
+  "records": [
+    {
+      "ok": true,
+      "id": "REV1-edit-B2-r1",
+      "prompt_id": "3b562b2a-9117-46f7-85d7-a3145d74d099",
+      "seconds": 108.1,
+      "request_sha256": "e88625a2bb8b84fd8c355b1716a958f082ed68bf765fa5260f8c4a27eb4a071e",
+      "png_sha256": "ef50c9f160e7f4157e8612cb089590559f00902235f03cbc12aed6349e7dc51a",
+      "completed_at": "2026-11-15T02:07:31+0800",
+      "queue_file": "01-REV1-edit-B2-r1.json",
+      "seed": 2026112131,
+      "input_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621"
+    },
+    {
+      "ok": true,
+      "id": "REV1-edit-B2-r2",
+      "prompt_id": "8074bd47-07af-4541-88c0-8ee54ade5582",
+      "seconds": 80.1,
+      "request_sha256": "76f808b46bbbcec8847ad27d0524ae4ad8c36d952a5d22cdb6ab474641c3cbd9",
+      "png_sha256": "9faa5651d2daa02cd0fc0735c7976d0f8985d54c8cee9064eaa4545f7b9d47b1",
+      "completed_at": "2026-11-15T02:08:51+0800",
+      "queue_file": "01-REV1-edit-B2-r2.json",
+      "seed": 2026112132,
+      "input_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621"
+    },
+    {
+      "ok": true,
+      "id": "REV1-edit-B2-r3",
+      "prompt_id": "02b65883-2b4c-4ae7-b0f9-7fa19798f9b8",
+      "seconds": 76.1,
+      "request_sha256": "4872884bbce6c04823ab0237d106dd1bf580eac4ead5715682662444e043ae1e",
+      "png_sha256": "e126c3be254ddfecc80e4c5ceca7dea91304b04eb51e04ab4de7f38d51eddf55",
+      "completed_at": "2026-11-15T02:10:07+0800",
+      "queue_file": "01-REV1-edit-B2-r3.json",
+      "seed": 2026112133,
+      "input_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621"
+    },
+    {
+      "ok": true,
+      "id": "REV1-regen-B-r1",
+      "prompt_id": "e7aae8a3-2a32-403d-a740-15b507bb31dc",
+      "seconds": 84.2,
+      "request_sha256": "5d0d07d88b819b93874521f2b6a804bd73e956c838e57ed06c105a48d221cc91",
+      "png_sha256": "1237bdf3b23dccea052af2081657959ae9bd32f68c12a669ee433c9c9adfdb43",
+      "completed_at": "2026-11-15T02:11:31+0800",
+      "queue_file": "02-REV1-regen-B-r1.json",
+      "seed": 2026112131,
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338"
+    },
+    {
+      "ok": true,
+      "id": "REV1-regen-B-r2",
+      "prompt_id": "54b39788-07b2-401a-8f01-da3400b9e626",
+      "seconds": 80.1,
+      "request_sha256": "06aac17a1046b59bddfe77ba0e9404f0c28fe08b244edeecd59dba886b0dd5d1",
+      "png_sha256": "b4c6e337c2d9ea5113671c8296df4d8cdd066c52eefd32c7576c31a3b157509d",
+      "completed_at": "2026-11-15T02:12:51+0800",
+      "queue_file": "02-REV1-regen-B-r2.json",
+      "seed": 2026112132,
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338"
+    },
+    {
+      "ok": true,
+      "id": "REV1-regen-B-r3",
+      "prompt_id": "20c127d2-9673-4cbe-bb95-0ef6b7a89f61",
+      "seconds": 76.3,
+      "request_sha256": "f06223a865f4a20f920e81224bdfbfb710a34c20667d271692ea3aa299d61591",
+      "png_sha256": "539d45e012cc1dcc5e66362541344798b8e4e4b59708586595a755b7ab808a7a",
+      "completed_at": "2026-11-15T02:14:08+0800",
+      "queue_file": "02-REV1-regen-B-r3.json",
+      "seed": 2026112133,
+      "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338"
+    }
+  ]
+}

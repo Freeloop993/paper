@@ -1,0 +1,54 @@
+{
+  "archive_sha256": "3d6afcd05c7a3d7f3a3a98d1f3a5aa8c08d2620aceb5c72fba39adc18bc17337",
+  "records": [
+    {
+      "id": "E2R-B2-A-parent",
+      "prompt_id": "c0bd9c26-4f42-47c7-997b-d8dc3738d641",
+      "seconds": 100.1,
+      "request_sha256": "1016c37f2a75a94ecee781183073379b91889d4833ce6c4c527c642622b4b29d",
+      "png_sha256": "5669d50dd49b3d85514e71469a2b118e331359e9df5cfbaea41ca3585c95a4ef",
+      "completed_at": "2026-11-15T02:49:09+0800"
+    },
+    {
+      "id": "E2R-B2-A-layout",
+      "prompt_id": "fc40c3a4-dc3d-4d68-b96a-74f37ec8b6d9",
+      "seconds": 84.1,
+      "request_sha256": "00f2b4fe0be3f07d463b0b5ae1d00f3e0a911daeb624a499d287cb6407b00fc0",
+      "png_sha256": "81d0add312512daf6094e3d6ca34095a39dc4d907cf34b62c24f92d6306bacb3",
+      "completed_at": "2026-11-15T02:50:33+0800"
+    },
+    {
+      "id": "E2R-B2-B-parent",
+      "prompt_id": "893f084a-985b-41c0-885a-c9105ea59531",
+      "seconds": 96.1,
+      "request_sha256": "54a255c61c79ca2ff51a7c510157051e0f7eb683885f5a53df1ed17516fc776a",
+      "png_sha256": "088f6e30ab04980a9532cf9dcc617d5484f50dae70d817abc418bcfaf1e6f6d0",
+      "completed_at": "2026-11-15T02:52:09+0800"
+    },
+    {
+      "id": "E2R-C1-A-parent",
+      "prompt_id": "460c93ed-ecfc-4eda-a2c7-456b47b06a48",
+      "seconds": 88.1,
+      "request_sha256": "c6f167cebcd492b857bccd5c6744b955664528377efbc29a910dc7795173383a",
+      "png_sha256": "897adc153935d47d8e6aeaf0ea41493db34dbb3ccbc88282ce2aca371a7cfee0",
+      "completed_at": "2026-11-15T02:53:37+0800"
+    },
+    {
+      "id": "E2R-C1-B-parent",
+      "prompt_id": "14f0b59e-9bb0-494a-84b9-977327fe653e",
+      "seconds": 120.1,
+      "request_sha256": "790324c4d2fea500dafd6ce27ee7a87e7e445007e740ef7ae00496f5c91785f7",
+      "png_sha256": "004dbf85588e0072cbb5cc47d377632605bc4d6a226ab1b9035e2e5ae930b577",
+      "completed_at": "2026-11-15T02:55:37+0800"
+    },
+    {
+      "id": "E2R-C1-B-layout",
+      "prompt_id": "68005a5d-86c3-4d86-a0ff-79cdf474415c",
+      "seconds": 84.1,
+      "request_sha256": "1521b22fa9ca29480031b43d93ba0ace26463ea7051f511317c9b642cbac9d47",
+      "png_sha256": "6eb9773a782296484412f1e7534af094ea488105a8184f50948367e1c2404600",
+      "completed_at": "2026-11-15T02:57:02+0800"
+    }
+  ],
+  "classification": "technical receipts; independent human and blinded readings pending"
+}

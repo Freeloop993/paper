@@ -1,0 +1,360 @@
+{
+  "method": "Two isolated AI reading sessions, no inherited conversation; images losslessly stripped of metadata, different order in each packet. Same neutral reference and top-edge-as-nose convention, no condition, prompts or initial conclusions. Not human readers and not independent model families. No measurement of optical axes, physical integration or performance.",
+  "mapping_sha256_before_reading": "1654618875ba42413b5351fa184b77a1edd2bf80314d851d93d2b42431193888",
+  "reader_response_sha256": {
+    "X": "e7a5692087f65c42ea383f058251aca1563f5e8f756da963019af42c7700731d",
+    "Y": "42ae3def663a341a86b11cffa19fc9aaa1f313c64138c2d26f6ac1c0122bbcd5"
+  },
+  "agreement_out_of_12_images_per_field": {
+    "nose_top_projects": 12,
+    "no_visible_optics": 12,
+    "non_target_retained": 12,
+    "protrusion": 12
+  },
+  "groups_do_not_pool": {
+    "revision1_from_layout": {
+      "X": {
+        "nose_top_projects": {
+          "yes": 2,
+          "uncertain": 1
+        },
+        "no_visible_optics": {
+          "uncertain": 3
+        },
+        "non_target_retained": {
+          "no": 3
+        },
+        "protrusion": {
+          "upper": 2,
+          "both": 1
+        }
+      },
+      "Y": {
+        "nose_top_projects": {
+          "yes": 2,
+          "uncertain": 1
+        },
+        "no_visible_optics": {
+          "uncertain": 3
+        },
+        "non_target_retained": {
+          "no": 3
+        },
+        "protrusion": {
+          "upper": 2,
+          "both": 1
+        }
+      }
+    },
+    "revision1_parent": {
+      "X": {
+        "nose_top_projects": {
+          "yes": 3
+        },
+        "no_visible_optics": {
+          "no": 3
+        },
+        "non_target_retained": {
+          "yes": 3
+        },
+        "protrusion": {
+          "upper": 3
+        }
+      },
+      "Y": {
+        "nose_top_projects": {
+          "yes": 3
+        },
+        "no_visible_optics": {
+          "no": 3
+        },
+        "non_target_retained": {
+          "yes": 3
+        },
+        "protrusion": {
+          "upper": 3
+        }
+      }
+    },
+    "revision2_dual_development": {
+      "X": {
+        "nose_top_projects": {
+          "no": 3
+        },
+        "no_visible_optics": {
+          "no": 3
+        },
+        "non_target_retained": {
+          "no": 3
+        },
+        "protrusion": {
+          "lower": 3
+        }
+      },
+      "Y": {
+        "nose_top_projects": {
+          "no": 3
+        },
+        "no_visible_optics": {
+          "no": 3
+        },
+        "non_target_retained": {
+          "no": 3
+        },
+        "protrusion": {
+          "lower": 3
+        }
+      }
+    },
+    "revision2_text_development": {
+      "X": {
+        "nose_top_projects": {
+          "yes": 3
+        },
+        "no_visible_optics": {
+          "no": 3
+        },
+        "non_target_retained": {
+          "yes": 2,
+          "no": 1
+        },
+        "protrusion": {
+          "upper": 3
+        }
+      },
+      "Y": {
+        "nose_top_projects": {
+          "yes": 3
+        },
+        "no_visible_optics": {
+          "no": 3
+        },
+        "non_target_retained": {
+          "yes": 2,
+          "no": 1
+        },
+        "protrusion": {
+          "upper": 3
+        }
+      }
+    }
+  },
+  "records": {
+    "REV2v2-dev-B2-r1": {
+      "X": {
+        "id": "X01",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "机鼻前缘外的浅灰舱顶下，方框中央可见带亮点的圆镜片，机身中段折线、四臂黑桨和圆收的尾缘与参考图相符。"
+      },
+      "Y": {
+        "id": "Y04",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘中央有窄于机身的外伸灰舱盖，两侧轴之间露出方框圆镜片，后方的顶盖分区、尾缘和四臂桨叶与参照相符。"
+      }
+    },
+    "REV2B-dev-B2-r1": {
+      "X": {
+        "id": "X02",
+        "nose_top_projects": "no",
+        "no_visible_optics": "no",
+        "non_target_retained": "no",
+        "protrusion": "lower",
+        "evidence": "上缘平滑，突出的是下缘中央带圆镜片的黑窗组件，旁边的两个黑孔和加长的尾盖也区别于参考图。"
+      },
+      "Y": {
+        "id": "Y03",
+        "nose_top_projects": "no",
+        "no_visible_optics": "no",
+        "non_target_retained": "no",
+        "protrusion": "lower",
+        "evidence": "上缘呈连续圆弧，下缘中央伸出的黑色窗内可见圆形镜片，尾盖两角也比参照多出深色开口。"
+      }
+    },
+    "REV1-regen-B-r2": {
+      "X": {
+        "id": "X03",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "uncertain",
+        "non_target_retained": "no",
+        "protrusion": "upper",
+        "evidence": "上缘外有独立灰舱，舱上窄槽内只见暗面，难以辨认是否为镜窗，机身中段收窄且尾盖改成近矩形。"
+      },
+      "Y": {
+        "id": "Y07",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "uncertain",
+        "non_target_retained": "no",
+        "protrusion": "upper",
+        "evidence": "上缘中央伸出带两侧短轴的小舱，舱面暗槽内看不清镜片，机身中段收腰且尾盖两角呈折角，与参照有别。"
+      }
+    },
+    "REV1-edit-B2-r1": {
+      "X": {
+        "id": "X04",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘中央伸出两侧带圆轴的灰舱，矩形窗内有带亮点的圆镜片，顶盖折线、四臂黑桨和尾缘均与参考图相符。"
+      },
+      "Y": {
+        "id": "Y11",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘中央有伸出前缘的灰色小舱，方形暗窗中可辨带亮点的圆形镜片，后方顶盖分区、圆尾和四臂桨叶与参照相符。"
+      }
+    },
+    "REV1-regen-B-r3": {
+      "X": {
+        "id": "X05",
+        "nose_top_projects": "uncertain",
+        "no_visible_optics": "uncertain",
+        "non_target_retained": "no",
+        "protrusion": "both",
+        "evidence": "上缘中央露出一小段深灰梯形边，难辨独立舱顶，下缘伸出的组件末端有扁椭圆暗口，镜窗细节难辨，顶盖分区和尾部轮廓均有变化。"
+      },
+      "Y": {
+        "id": "Y09",
+        "nose_top_projects": "uncertain",
+        "no_visible_optics": "uncertain",
+        "non_target_retained": "no",
+        "protrusion": "both",
+        "evidence": "上缘中央露出一小截深灰梯形边，难辨独立舱顶，下缘伸出的部件末端仅露窄黑口，机头盖板多了纵向分缝。"
+      }
+    },
+    "REV1-edit-B2-r3": {
+      "X": {
+        "id": "X06",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘中央凸出的灰舱两侧各有短轴，舱上矩形窗内可辨圆镜片，顶盖分区、四臂黑桨和尾缘均与参考图相符。"
+      },
+      "Y": {
+        "id": "Y12",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘中央的深灰小舱伸出机身，矩形窗内可见带亮点的深色圆环，顶盖折线、尾缘及带橙环的四个桨毂与参照相符。"
+      }
+    },
+    "REV2B-dev-B2-r2": {
+      "X": {
+        "id": "X07",
+        "nose_top_projects": "no",
+        "no_visible_optics": "no",
+        "non_target_retained": "no",
+        "protrusion": "lower",
+        "evidence": "上缘的细黑槽位于壳体轮廓以内，下缘加宽的尾盖外伸出带双侧轴的组件，其黑窗中央可辨小圆镜片。"
+      },
+      "Y": {
+        "id": "Y05",
+        "nose_top_projects": "no",
+        "no_visible_optics": "no",
+        "non_target_retained": "no",
+        "protrusion": "lower",
+        "evidence": "上缘中央的细黑缝位于灰壳轮廓内，下缘却伸出带黑窗和中心亮点的灰色部件，覆盖了参照中收窄的尾盖。"
+      }
+    },
+    "REV1-edit-B2-r2": {
+      "X": {
+        "id": "X08",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘前方的深灰舱顶高出两侧短轴，黑色矩形窗中央可见小亮环，顶盖折线、四臂黑桨和圆角尾盖与参考图相符。"
+      },
+      "Y": {
+        "id": "Y08",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘中央伸出的深灰舱体两侧有短轴，舱面的矩形暗窗内可辨圆形亮点，机身分区、圆尾和四臂桨叶与参照相符。"
+      }
+    },
+    "REV2v2-dev-B2-r2": {
+      "X": {
+        "id": "X09",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘中央的浅色舱顶越过机鼻前缘，其下凹口内清楚露出方窗和圆镜片，中后段盖板、尾缘和四臂黑桨与参考图相符。"
+      },
+      "Y": {
+        "id": "Y02",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "yes",
+        "protrusion": "upper",
+        "evidence": "上缘中央外伸的浅灰舱盖下露出方框和圆形镜片，机身中段的折线分区、圆尾、四臂黑桨和橙色桨毂环与参照相符。"
+      }
+    },
+    "REV2v2-dev-B2-r3": {
+      "X": {
+        "id": "X10",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "no",
+        "protrusion": "upper",
+        "evidence": "机鼻前伸的浅灰舱顶下露出带圆镜片的方窗，尾缘中央向内收、两侧形成凸角，与参考图连续平缓的尾缘有别。"
+      },
+      "Y": {
+        "id": "Y10",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "no",
+        "non_target_retained": "no",
+        "protrusion": "upper",
+        "evidence": "上缘外伸的浅灰舱盖下可见方窗和圆形镜片，下缘中央较参照向内收成浅凹，两侧尾角更突出。"
+      }
+    },
+    "REV1-regen-B-r1": {
+      "X": {
+        "id": "X11",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "uncertain",
+        "non_target_retained": "no",
+        "protrusion": "upper",
+        "evidence": "上缘外的灰舱顶部有一块带边框的深色长圆形暗面，难辨是否为镜窗，机身前宽中窄且尾盖多出一块细长分区。"
+      },
+      "Y": {
+        "id": "Y01",
+        "nose_top_projects": "yes",
+        "no_visible_optics": "uncertain",
+        "non_target_retained": "no",
+        "protrusion": "upper",
+        "evidence": "上缘中央的灰舱和两侧短轴伸出前缘，舱顶的深色圆角嵌片内看不清镜片，后半部顶盖比参照多了一块细长面板。"
+      }
+    },
+    "REV2B-dev-B2-r3": {
+      "X": {
+        "id": "X12",
+        "nose_top_projects": "no",
+        "no_visible_optics": "no",
+        "non_target_retained": "no",
+        "protrusion": "lower",
+        "evidence": "上方机鼻为连续圆边，下缘中央伸出两侧带轴的灰舱，黑窗中央可见圆环，尾盖两角也比参考图多出黑孔。"
+      },
+      "Y": {
+        "id": "Y06",
+        "nose_top_projects": "no",
+        "no_visible_optics": "no",
+        "non_target_retained": "no",
+        "protrusion": "lower",
+        "evidence": "上缘中央是连续的浅灰壳面，下缘宽盖板外伸出带横向黑窗的部件，窗内可辨圆环，尾缘轮廓也随之改变。"
+      }
+    }
+  }
+}

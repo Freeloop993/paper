@@ -1,0 +1,68 @@
+[
+  {
+    "id": "E2R-B2-A-parent",
+    "parent": "B2",
+    "target": "A",
+    "route": "parent",
+    "seed": 2026112501,
+    "image": "E3R3-B2.png",
+    "input_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+    "request_sha256": "1016c37f2a75a94ecee781183073379b91889d4833ce6c4c527c642622b4b29d",
+    "prompt": "A light-grey streamlined quadcopter with smooth arm shoulders, top-cover panel lines and orange motor rings. Use the reference for the four motor positions and arm directions. Orthographic top view, the nose at the top. Each of the four rotors has two equal opposite blades. Show the whole aircraft. The flight camera faces horizontally forward. From overhead its lens can be occluded; the lens glass must not face the viewer. Narrow and round only the leading edge of the fuselage nose. Preserve the arms, rear fuselage and the existing camera installation."
+  },
+  {
+    "id": "E2R-B2-A-layout",
+    "parent": "B2",
+    "target": "A",
+    "route": "layout",
+    "seed": 2026112501,
+    "image": "qwen-shape-dots-250-15c5ad1c924b.png",
+    "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+    "request_sha256": "00f2b4fe0be3f07d463b0b5ae1d00f3e0a911daeb624a499d287cb6407b00fc0",
+    "prompt": "A light-grey streamlined quadcopter with smooth arm shoulders, top-cover panel lines and orange motor rings. Use the reference for the four motor positions and arm directions. Orthographic top view, the nose at the top. Each of the four rotors has two equal opposite blades. Show the whole aircraft. The flight camera faces horizontally forward. From overhead its lens can be occluded; the lens glass must not face the viewer. Narrow and round only the leading edge of the fuselage nose. Preserve the arms, rear fuselage and the existing camera installation."
+  },
+  {
+    "id": "E2R-B2-B-parent",
+    "parent": "B2",
+    "target": "B",
+    "route": "parent",
+    "seed": 2026112502,
+    "image": "E3R3-B2.png",
+    "input_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+    "request_sha256": "54a255c61c79ca2ff51a7c510157051e0f7eb683885f5a53df1ed17516fc776a",
+    "prompt": "A light-grey streamlined quadcopter with smooth arm shoulders, top-cover panel lines and orange motor rings. Use the reference for the four motor positions and arm directions. Orthographic top view, the nose at the top. Each of the four rotors has two equal opposite blades. Show the whole aircraft. The flight camera faces horizontally forward. From overhead its lens can be occluded; the lens glass must not face the viewer. Broaden and smooth only the four transitions from the fuselage into the arm roots. Preserve the nose, rotor centres and propellers."
+  },
+  {
+    "id": "E2R-C1-A-parent",
+    "parent": "C1",
+    "target": "A",
+    "route": "parent",
+    "seed": 2026112503,
+    "image": "E3R3-C1.png",
+    "input_sha256": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b",
+    "request_sha256": "c6f167cebcd492b857bccd5c6744b955664528377efbc29a910dc7795173383a",
+    "prompt": "A light-grey faceted quadcopter with visible arm sockets, carbon-pattern arms, top-cover panels and orange motor rings. Use the reference for the four motor positions and arm directions. Orthographic top view, the nose at the top. Each of the four rotors has two equal opposite blades. Show the whole aircraft. The flight camera faces horizontally forward. From overhead its lens can be occluded; the lens glass must not face the viewer. Narrow and round only the leading edge of the fuselage nose. Preserve the arms, rear fuselage and the existing camera installation."
+  },
+  {
+    "id": "E2R-C1-B-parent",
+    "parent": "C1",
+    "target": "B",
+    "route": "parent",
+    "seed": 2026112504,
+    "image": "E3R3-C1.png",
+    "input_sha256": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b",
+    "request_sha256": "790324c4d2fea500dafd6ce27ee7a87e7e445007e740ef7ae00496f5c91785f7",
+    "prompt": "A light-grey faceted quadcopter with visible arm sockets, carbon-pattern arms, top-cover panels and orange motor rings. Use the reference for the four motor positions and arm directions. Orthographic top view, the nose at the top. Each of the four rotors has two equal opposite blades. Show the whole aircraft. The flight camera faces horizontally forward. From overhead its lens can be occluded; the lens glass must not face the viewer. Broaden and smooth only the four transitions from the fuselage into the arm roots. Preserve the nose, rotor centres and propellers."
+  },
+  {
+    "id": "E2R-C1-B-layout",
+    "parent": "C1",
+    "target": "B",
+    "route": "layout",
+    "seed": 2026112504,
+    "image": "qwen-shape-dots-250-15c5ad1c924b.png",
+    "input_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+    "request_sha256": "1521b22fa9ca29480031b43d93ba0ace26463ea7051f511317c9b642cbac9d47",
+    "prompt": "A light-grey faceted quadcopter with visible arm sockets, carbon-pattern arms, top-cover panels and orange motor rings. Use the reference for the four motor positions and arm directions. Orthographic top view, the nose at the top. Each of the four rotors has two equal opposite blades. Show the whole aircraft. The flight camera faces horizontally forward. From overhead its lens can be occluded; the lens glass must not face the viewer. Broaden and smooth only the four transitions from the fuselage into the arm roots. Preserve the nose, rotor centres and propellers."
+  }
+]

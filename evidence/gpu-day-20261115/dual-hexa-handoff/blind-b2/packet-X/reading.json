@@ -1,0 +1,14 @@
+[
+  {"id":"X01","nose_top_projects":"yes","no_visible_optics":"no","non_target_retained":"yes","protrusion":"upper","evidence":"机鼻前缘外的浅灰舱顶下，方框中央可见带亮点的圆镜片，机身中段折线、四臂黑桨和圆收的尾缘与参考图相符。"},
+  {"id":"X02","nose_top_projects":"no","no_visible_optics":"no","non_target_retained":"no","protrusion":"lower","evidence":"上缘平滑，突出的是下缘中央带圆镜片的黑窗组件，旁边的两个黑孔和加长的尾盖也区别于参考图。"},
+  {"id":"X03","nose_top_projects":"yes","no_visible_optics":"uncertain","non_target_retained":"no","protrusion":"upper","evidence":"上缘外有独立灰舱，舱上窄槽内只见暗面，难以辨认是否为镜窗，机身中段收窄且尾盖改成近矩形。"},
+  {"id":"X04","nose_top_projects":"yes","no_visible_optics":"no","non_target_retained":"yes","protrusion":"upper","evidence":"上缘中央伸出两侧带圆轴的灰舱，矩形窗内有带亮点的圆镜片，顶盖折线、四臂黑桨和尾缘均与参考图相符。"},
+  {"id":"X05","nose_top_projects":"uncertain","no_visible_optics":"uncertain","non_target_retained":"no","protrusion":"both","evidence":"上缘中央露出一小段深灰梯形边，难辨独立舱顶，下缘伸出的组件末端有扁椭圆暗口，镜窗细节难辨，顶盖分区和尾部轮廓均有变化。"},
+  {"id":"X06","nose_top_projects":"yes","no_visible_optics":"no","non_target_retained":"yes","protrusion":"upper","evidence":"上缘中央凸出的灰舱两侧各有短轴，舱上矩形窗内可辨圆镜片，顶盖分区、四臂黑桨和尾缘均与参考图相符。"},
+  {"id":"X07","nose_top_projects":"no","no_visible_optics":"no","non_target_retained":"no","protrusion":"lower","evidence":"上缘的细黑槽位于壳体轮廓以内，下缘加宽的尾盖外伸出带双侧轴的组件，其黑窗中央可辨小圆镜片。"},
+  {"id":"X08","nose_top_projects":"yes","no_visible_optics":"no","non_target_retained":"yes","protrusion":"upper","evidence":"上缘前方的深灰舱顶高出两侧短轴，黑色矩形窗中央可见小亮环，顶盖折线、四臂黑桨和圆角尾盖与参考图相符。"},
+  {"id":"X09","nose_top_projects":"yes","no_visible_optics":"no","non_target_retained":"yes","protrusion":"upper","evidence":"上缘中央的浅色舱顶越过机鼻前缘，其下凹口内清楚露出方窗和圆镜片，中后段盖板、尾缘和四臂黑桨与参考图相符。"},
+  {"id":"X10","nose_top_projects":"yes","no_visible_optics":"no","non_target_retained":"no","protrusion":"upper","evidence":"机鼻前伸的浅灰舱顶下露出带圆镜片的方窗，尾缘中央向内收、两侧形成凸角，与参考图连续平缓的尾缘有别。"},
+  {"id":"X11","nose_top_projects":"yes","no_visible_optics":"uncertain","non_target_retained":"no","protrusion":"upper","evidence":"上缘外的灰舱顶部有一块带边框的深色长圆形暗面，难辨是否为镜窗，机身前宽中窄且尾盖多出一块细长分区。"},
+  {"id":"X12","nose_top_projects":"no","no_visible_optics":"no","non_target_retained":"no","protrusion":"lower","evidence":"上方机鼻为连续圆边，下缘中央伸出两侧带轴的灰舱，黑窗中央可见圆环，尾盖两角也比参考图多出黑孔。"}
+]
