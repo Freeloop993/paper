@@ -7,7 +7,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "verify": "node scripts/verify.mjs",
+    "evidence": "node scripts/build-evidence.mjs",
+    "replay": "node scripts/replay.mjs",
+    "check-offline": "node scripts/check-offline.mjs",
+    "package-offline": "npm run build && rm -f configurator-offline.zip && cd dist && zip -q -r -X ../configurator-offline.zip index.html vite.svg assets"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

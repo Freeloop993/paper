@@ -1,20 +1,9 @@
 import React from 'react';
 
-const Footer: React.FC = () => {
-  return (
-    <footer className="bg-slate-800 text-slate-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-        <div className="flex items-center justify-between">
-          <p className="text-sm">
-            © 2024 无人机参数化AI生图工具. All rights reserved.
-          </p>
-          <p className="text-sm">
-            Powered by ComfyUI & ControlNet
-          </p>
-        </div>
-      </div>
-    </footer>
-  );
-};
+const Footer: React.FC = () => (
+  <footer className="px-3 py-3 text-[11px] leading-relaxed text-slate-500">
+    毫米数均为设计值。厂商公布值与手册图面量测值只作对照；生成图上的读数须回图后另量。证据卡取自仓库公开的 36 张短引文卡，不含原评论。
+  </footer>
+);
 
-export default Footer; 
+export default Footer;

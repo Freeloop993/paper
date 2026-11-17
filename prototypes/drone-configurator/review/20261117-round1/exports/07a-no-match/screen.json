@@ -1,0 +1,262 @@
+{
+  "step": "07a-no-match",
+  "captured_at": "2026-11-17T12:05:01.126Z",
+  "viewport": [
+    1440,
+    900
+  ],
+  "layout": "wide",
+  "hubs": [
+    {
+      "id": "R1",
+      "x_mm": -88.38834764831843,
+      "y_mm": 88.38834764831843,
+      "label": "R1 左前"
+    },
+    {
+      "id": "R2",
+      "x_mm": 88.38834764831843,
+      "y_mm": 88.38834764831843,
+      "label": "R2 右前"
+    },
+    {
+      "id": "R3",
+      "x_mm": 88.38834764831843,
+      "y_mm": -88.38834764831843,
+      "label": "R3 右后"
+    },
+    {
+      "id": "R4",
+      "x_mm": -88.38834764831843,
+      "y_mm": -88.38834764831843,
+      "label": "R4 左后"
+    }
+  ],
+  "arm_stroke_width_mm": [
+    15,
+    15,
+    15,
+    15
+  ],
+  "ghost_hubs": 0,
+  "readouts": {
+    "wl": "W/L 横纵跨度比 | 1.00 | 几何定义",
+    "d": "D 对角距均值 | 250.0 mm | 最大两轴距 250.0",
+    "angles": "相邻夹角 | 90° 90° 90° 90° | R1 起顺时针",
+    "dd": "d/D 桨径比 | 0.51 | 桨盘间隙 50 mm",
+    "w": "W 横向跨度 | 176.8 mm",
+    "l": "L 纵向跨度 | 176.8 mm",
+    "bw": "机身宽/D | 0.320 | 待检验的紧凑代理量"
+  },
+  "change_banner": "改动任一选项后，这里会说明图、文字和导出各自怎样变化。",
+  "sentences": [
+    {
+      "id": "task",
+      "changed": "no",
+      "text": [
+        "Design a quadcopter for everyday carry-along aerial photography. Strict orthographic top view, nose toward the top edge of the image, arms fully unfolded."
+      ]
+    },
+    {
+      "id": "layout",
+      "changed": "no",
+      "text": [
+        "Four motors in a True X layout: the four motor centres sit at the corners of a square. Mean opposite-motor (diagonal) span 250 mm; motor-centre width-to-length span ratio W/L 1.00; adjacent arm angles clockwise from the front-left motor: 90°, 90°, 90°, 90°."
+      ]
+    },
+    {
+      "id": "guide",
+      "changed": "no",
+      "text": [
+        "Match the motor centres and frame links in the attached layout image: red dots mark motor centres, blue lines mark frame links. Do not reproduce the dots or lines in the result."
+      ]
+    },
+    {
+      "id": "propulsion",
+      "changed": "no",
+      "text": [
+        "Each motor carries one stationary 2-blade propeller, 5-inch (127 mm) diameter. The two blades point in exactly opposite directions from the hub."
+      ]
+    },
+    {
+      "id": "prop_guard",
+      "changed": "no",
+      "text": [
+        "No propeller guards."
+      ]
+    },
+    {
+      "id": "arm_size",
+      "changed": "no",
+      "text": [
+        "Each arm is 15 mm wide and 4 mm thick; seen from above it reads as a 15 mm wide beam."
+      ]
+    },
+    {
+      "id": "body_size",
+      "changed": "no",
+      "text": [
+        "Fuselage design envelope 100 × 80 × 30 mm (length × width × height); this is a size limit, not a shape."
+      ]
+    },
+    {
+      "id": "camera",
+      "changed": "no",
+      "text": [
+        "A forward-facing camera sits at the nose and looks horizontally toward the top edge of the image; no lens glass faces the viewer, and nothing camera-like appears at the tail."
+      ]
+    },
+    {
+      "id": "landing",
+      "changed": "no",
+      "text": [
+        "Low landing skids with 40 mm ground clearance, tucked beneath the aircraft."
+      ]
+    },
+    {
+      "id": "presentation",
+      "changed": "no",
+      "text": [
+        "Show the complete product on a plain light background as a photorealistic industrial design rendering. Omit guide marks, dimensions and lettering."
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "topic": "guard",
+      "status": "absent",
+      "text": "桨叶护圈：未出现在提示词中"
+    },
+    {
+      "topic": "colour",
+      "status": "absent",
+      "text": "颜色：未出现在提示词中"
+    },
+    {
+      "topic": "carbon",
+      "status": "absent",
+      "text": "碳纤维纹理：未出现在提示词中"
+    }
+  ],
+  "open_note": "留白、未写入提示词的造型项（7）：臂根过渡、机臂材料外观、机身轮廓、顶盖分件、相机安装、主色、表面处理",
+  "intent_summary": "你的目标： 尚未提出（可以不提，直接调参数）",
+  "adopted_summary": "依据： 未采纳证据卡",
+  "evidence": {
+    "count": "匹配 0 张",
+    "empty": "没有匹配的证据卡\n\n现有 36 张卡里没有这方面的依据。你可以不依赖证据卡，自己写设计意图；导出时会记为“设计者自定（未采纳证据卡）”。\n\n自己写意图",
+    "cards": []
+  },
+  "selection": [
+    {
+      "path": "frame.frame_type",
+      "status": "default",
+      "text": "构型 | 真 X 型 | 顶视可见 | 默认值"
+    },
+    {
+      "path": "frame.wheelbase_mm",
+      "status": "default",
+      "text": "对角电机中心距 D | 250 mm | 顶视可见 | 默认值"
+    },
+    {
+      "path": "frame.arm_width_mm",
+      "status": "default",
+      "text": "机臂宽度 | 15 mm | 顶视可见 | 默认值"
+    },
+    {
+      "path": "frame.arm_thickness_mm",
+      "status": "default",
+      "text": "机臂厚度 | 4 mm | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "frame.arm_root",
+      "status": "open",
+      "text": "臂根过渡 | 留白 | 仅进文字 | 留白"
+    },
+    {
+      "path": "frame.material_visual",
+      "status": "open",
+      "text": "机臂材料外观 | 留白 | 仅进文字 | 留白"
+    },
+    {
+      "path": "propulsion.prop_diameter_inch",
+      "status": "default",
+      "text": "桨径 | 5 英寸（127 mm） | 顶视可见 | 默认值"
+    },
+    {
+      "path": "propulsion.prop_blade_count",
+      "status": "default",
+      "text": "每轴桨叶数 | 2 叶 | 顶视可见 | 默认值"
+    },
+    {
+      "path": "propulsion.motor_tilt_degree",
+      "status": "default",
+      "text": "电机倾角 | 0° | 仅进文字 | 默认值"
+    },
+    {
+      "path": "propulsion.prop_guard",
+      "status": "default",
+      "text": "桨叶护圈 | 不加护圈 | 顶视可见 | 默认值"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.length",
+      "status": "default",
+      "text": "机身长 | 100 mm | 顶视可见 | 默认值"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.width",
+      "status": "default",
+      "text": "机身宽 | 80 mm | 顶视可见 | 默认值"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.height",
+      "status": "default",
+      "text": "机身高 | 30 mm | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "fuselage.fuselage_style",
+      "status": "open",
+      "text": "机身轮廓 | 留白 | 顶视可见 | 留白"
+    },
+    {
+      "path": "fuselage.top_cover",
+      "status": "open",
+      "text": "顶盖分件 | 留白 | 顶视可见 | 留白"
+    },
+    {
+      "path": "landing_gear.landing_gear_style",
+      "status": "default",
+      "text": "起落架样式 | 低矮滑撬/支腿 | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "landing_gear.landing_gear_height_mm",
+      "status": "default",
+      "text": "离地高度 | 40 mm | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "accessories.has_camera_gimbal",
+      "status": "default",
+      "text": "前视相机 | 装相机 | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "accessories.camera_mount",
+      "status": "open",
+      "text": "相机安装 | 留白 | 顶视遮挡 | 留白"
+    },
+    {
+      "path": "accessories.drone_primary_color",
+      "status": "open",
+      "text": "主色 | 留白 | 顶视可见 | 留白"
+    },
+    {
+      "path": "accessories.surface_finish",
+      "status": "open",
+      "text": "表面处理 | 留白 | 仅进文字 | 留白"
+    },
+    {
+      "path": "accessories.custom_prompt_additions",
+      "status": "open",
+      "text": "补充文字 | 未填写 | 仅进文字 | 留白"
+    }
+  ],
+  "camera_layer": "open"
+}

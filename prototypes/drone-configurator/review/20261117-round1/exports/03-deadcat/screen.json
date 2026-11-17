@@ -1,0 +1,272 @@
+{
+  "step": "03-deadcat",
+  "captured_at": "2026-11-17T12:04:19.772Z",
+  "viewport": [
+    1440,
+    900
+  ],
+  "layout": "wide",
+  "hubs": [
+    {
+      "id": "R1",
+      "x_mm": -128.83922700917608,
+      "y_mm": 60.078718225149146,
+      "label": "R1 左前"
+    },
+    {
+      "id": "R2",
+      "x_mm": 128.83922700917608,
+      "y_mm": 60.078718225149146,
+      "label": "R2 右前"
+    },
+    {
+      "id": "R3",
+      "x_mm": 66.86172127468416,
+      "y_mm": -95.48843396578694,
+      "label": "R3 右后"
+    },
+    {
+      "id": "R4",
+      "x_mm": -66.86172127468409,
+      "y_mm": -95.48843396578698,
+      "label": "R4 左后"
+    }
+  ],
+  "arm_stroke_width_mm": [
+    15,
+    15,
+    15,
+    15
+  ],
+  "ghost_hubs": 4,
+  "readouts": {
+    "wl": "W/L 横纵跨度比 | 1.66 | 设计者输入",
+    "d": "D 对角距均值 | 250.0 mm | 最大两轴距 257.7",
+    "angles": "相邻夹角 | 130° 80° 70° 80° | R1 起顺时针",
+    "dd": "d/D 桨径比 | 0.51 | 桨盘间隙 7 mm",
+    "w": "W 横向跨度 | 257.7 mm",
+    "l": "L 纵向跨度 | 155.6 mm",
+    "bw": "机身宽/D | 0.320 | 待检验的紧凑代理量"
+  },
+  "change_banner": "刚才的改动\n构型：宽 X 型 → Deadcat 型\n撤销\n图：示意图已更新\n文字：\n第 3 句改写：Four motors in a Wide X layout: the four motor centres sit at the corners of a rectangle that is wider than it is long. Mean opposite-motor (diagonal) span 250 mm; motor-centre width-to-length span ratio W/L 1.30; adjacent arm angles clockwise from the front-left motor: 104.9°, 75.1°, 104.9°, 75.1°. → Four motors in a Deadcat layout: the two front motors are swept wide apart and the two rear motors sit closer together on shorter arms. Mean opposite-motor (diagonal) span 250 mm; motor-centre width-to-length span ratio W/L 1.66; adjacent arm angles clockwise from the front-left motor: 130°, 80°, 70°, 80°.\n导出字段：parameters.frame.frame_type",
+  "sentences": [
+    {
+      "id": "task",
+      "changed": "no",
+      "text": [
+        "Design a quadcopter for everyday carry-along aerial photography. Strict orthographic top view, nose toward the top edge of the image, arms fully unfolded."
+      ]
+    },
+    {
+      "id": "intent",
+      "changed": "no",
+      "text": [
+        "Design intent: seen from directly above with the arms unfolded, the aircraft should read as visually compact."
+      ]
+    },
+    {
+      "id": "layout",
+      "changed": "yes",
+      "text": [
+        "Four motors in a Wide X layout: the four motor centres sit at the corners of a rectangle that is wider than it is long. Mean opposite-motor (diagonal) span 250 mm; motor-centre width-to-length span ratio W/L 1.30; adjacent arm angles clockwise from the front-left motor: 104.9°, 75.1°, 104.9°, 75.1°.",
+        "Four motors in a Deadcat layout: the two front motors are swept wide apart and the two rear motors sit closer together on shorter arms. Mean opposite-motor (diagonal) span 250 mm; motor-centre width-to-length span ratio W/L 1.66; adjacent arm angles clockwise from the front-left motor: 130°, 80°, 70°, 80°."
+      ]
+    },
+    {
+      "id": "guide",
+      "changed": "no",
+      "text": [
+        "Match the motor centres and frame links in the attached layout image: red dots mark motor centres, blue lines mark frame links. Do not reproduce the dots or lines in the result."
+      ]
+    },
+    {
+      "id": "propulsion",
+      "changed": "no",
+      "text": [
+        "Each motor carries one stationary 2-blade propeller, 5-inch (127 mm) diameter. The two blades point in exactly opposite directions from the hub."
+      ]
+    },
+    {
+      "id": "prop_guard",
+      "changed": "no",
+      "text": [
+        "No propeller guards."
+      ]
+    },
+    {
+      "id": "arm_size",
+      "changed": "no",
+      "text": [
+        "Each arm is 15 mm wide and 4 mm thick; seen from above it reads as a 15 mm wide beam."
+      ]
+    },
+    {
+      "id": "body_size",
+      "changed": "no",
+      "text": [
+        "Fuselage design envelope 100 × 80 × 30 mm (length × width × height); this is a size limit, not a shape."
+      ]
+    },
+    {
+      "id": "camera",
+      "changed": "no",
+      "text": [
+        "A forward-facing camera sits at the nose and looks horizontally toward the top edge of the image; no lens glass faces the viewer, and nothing camera-like appears at the tail."
+      ]
+    },
+    {
+      "id": "landing",
+      "changed": "no",
+      "text": [
+        "Low landing skids with 40 mm ground clearance, tucked beneath the aircraft."
+      ]
+    },
+    {
+      "id": "presentation",
+      "changed": "no",
+      "text": [
+        "Show the complete product on a plain light background as a photorealistic industrial design rendering. Omit guide marks, dimensions and lettering."
+      ]
+    }
+  ],
+  "audit": [
+    {
+      "topic": "guard",
+      "status": "absent",
+      "text": "桨叶护圈：未出现在提示词中"
+    },
+    {
+      "topic": "colour",
+      "status": "absent",
+      "text": "颜色：未出现在提示词中"
+    },
+    {
+      "topic": "carbon",
+      "status": "absent",
+      "text": "碳纤维纹理：未出现在提示词中"
+    }
+  ],
+  "open_note": "留白、未写入提示词的造型项（7）：臂根过渡、机臂材料外观、机身轮廓、顶盖分件、相机安装、主色、表面处理",
+  "intent_summary": "你的目标： 紧凑 ×",
+  "adopted_summary": "依据： E001 ×",
+  "evidence": {
+    "count": "匹配 1 张",
+    "cards": [
+      "E001:yes"
+    ]
+  },
+  "selection": [
+    {
+      "path": "frame.frame_type",
+      "status": "chosen",
+      "text": "构型 | Deadcat 型 | 顶视可见 | 你的选择"
+    },
+    {
+      "path": "frame.wheelbase_mm",
+      "status": "default",
+      "text": "对角电机中心距 D | 250 mm | 顶视可见 | 默认值"
+    },
+    {
+      "path": "frame.arm_width_mm",
+      "status": "default",
+      "text": "机臂宽度 | 15 mm | 顶视可见 | 默认值"
+    },
+    {
+      "path": "frame.arm_thickness_mm",
+      "status": "default",
+      "text": "机臂厚度 | 4 mm | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "frame.arm_root",
+      "status": "open",
+      "text": "臂根过渡 | 留白 | 仅进文字 | 留白"
+    },
+    {
+      "path": "frame.material_visual",
+      "status": "open",
+      "text": "机臂材料外观 | 留白 | 仅进文字 | 留白"
+    },
+    {
+      "path": "propulsion.prop_diameter_inch",
+      "status": "default",
+      "text": "桨径 | 5 英寸（127 mm） | 顶视可见 | 默认值"
+    },
+    {
+      "path": "propulsion.prop_blade_count",
+      "status": "default",
+      "text": "每轴桨叶数 | 2 叶 | 顶视可见 | 默认值"
+    },
+    {
+      "path": "propulsion.motor_tilt_degree",
+      "status": "default",
+      "text": "电机倾角 | 0° | 仅进文字 | 默认值"
+    },
+    {
+      "path": "propulsion.prop_guard",
+      "status": "default",
+      "text": "桨叶护圈 | 不加护圈 | 顶视可见 | 默认值"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.length",
+      "status": "default",
+      "text": "机身长 | 100 mm | 顶视可见 | 默认值"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.width",
+      "status": "default",
+      "text": "机身宽 | 80 mm | 顶视可见 | 默认值"
+    },
+    {
+      "path": "fuselage.fuselage_dimensions_mm.height",
+      "status": "default",
+      "text": "机身高 | 30 mm | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "fuselage.fuselage_style",
+      "status": "open",
+      "text": "机身轮廓 | 留白 | 顶视可见 | 留白"
+    },
+    {
+      "path": "fuselage.top_cover",
+      "status": "open",
+      "text": "顶盖分件 | 留白 | 顶视可见 | 留白"
+    },
+    {
+      "path": "landing_gear.landing_gear_style",
+      "status": "default",
+      "text": "起落架样式 | 低矮滑撬/支腿 | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "landing_gear.landing_gear_height_mm",
+      "status": "default",
+      "text": "离地高度 | 40 mm | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "accessories.has_camera_gimbal",
+      "status": "default",
+      "text": "前视相机 | 装相机 | 顶视遮挡 | 默认值"
+    },
+    {
+      "path": "accessories.camera_mount",
+      "status": "open",
+      "text": "相机安装 | 留白 | 顶视遮挡 | 留白"
+    },
+    {
+      "path": "accessories.drone_primary_color",
+      "status": "open",
+      "text": "主色 | 留白 | 顶视可见 | 留白"
+    },
+    {
+      "path": "accessories.surface_finish",
+      "status": "open",
+      "text": "表面处理 | 留白 | 仅进文字 | 留白"
+    },
+    {
+      "path": "accessories.custom_prompt_additions",
+      "status": "open",
+      "text": "补充文字 | 未填写 | 仅进文字 | 留白"
+    }
+  ],
+  "compare": "与对照比较\n取消对照\n项目\t对照「真 X 型」\t当前\n构型\t真 X 型\tDeadcat 型\nW/L\t1.00\t1.66\nW × L（mm）\t176.8 × 176.8\t257.7 × 155.6\nD 均值／最大两轴距\t250.0／250.0\t250.0／257.7\n相邻夹角\t90·90·90·90\t130·80·70·80\nd/D\t0.51\t0.51\n机身宽/D\t0.320\t0.320\n\n示意图里橙色虚线是对照方案的轴心；提示词面板可切到“与对照相比”逐句看差别。",
+  "camera_layer": "open"
+}

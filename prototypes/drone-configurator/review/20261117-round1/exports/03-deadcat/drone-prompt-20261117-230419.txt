@@ -1,0 +1,11 @@
+Design a quadcopter for everyday carry-along aerial photography. Strict orthographic top view, nose toward the top edge of the image, arms fully unfolded.
+Design intent: seen from directly above with the arms unfolded, the aircraft should read as visually compact.
+Four motors in a Deadcat layout: the two front motors are swept wide apart and the two rear motors sit closer together on shorter arms. Mean opposite-motor (diagonal) span 250 mm; motor-centre width-to-length span ratio W/L 1.66; adjacent arm angles clockwise from the front-left motor: 130°, 80°, 70°, 80°.
+Match the motor centres and frame links in the attached layout image: red dots mark motor centres, blue lines mark frame links. Do not reproduce the dots or lines in the result.
+Each motor carries one stationary 2-blade propeller, 5-inch (127 mm) diameter. The two blades point in exactly opposite directions from the hub.
+No propeller guards.
+Each arm is 15 mm wide and 4 mm thick; seen from above it reads as a 15 mm wide beam.
+Fuselage design envelope 100 × 80 × 30 mm (length × width × height); this is a size limit, not a shape.
+A forward-facing camera sits at the nose and looks horizontally toward the top edge of the image; no lens glass faces the viewer, and nothing camera-like appears at the tail.
+Low landing skids with 40 mm ground clearance, tucked beneath the aircraft.
+Show the complete product on a plain light background as a photorealistic industrial design rendering. Omit guide marks, dimensions and lettering.

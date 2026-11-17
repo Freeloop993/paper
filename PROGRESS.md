@@ -90,3 +90,10 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 ## 2026-11-13｜交付 E 盘九图并请 Claude 复核实际论文目录
 
 [全部原图、对应输入和原目录入口](evidence/section421-minimax-review/README.md)。9 张既有图，新增生成 0；作者对第二排给出开发反馈。Claude 的全章判断和取证顺序待其在 #1 回复。
+
+
+## 2026-11-17｜五页签配置器第一轮界面优化（软件验收）
+
+Claude 在 `claude/configurator-ui-20261117` 分支改了作者的五页签配置器：同一组轴心驱动示意图、点线条件图、导出坐标和提示词；真 X 与宽 X 的 W/L 为 1.00 与 1.30；Deadcat 四个轴心；臂宽进入提示词且只改写一句；护圈、颜色、碳纹只在明确选择后出现；证据卡可查看、采纳、撤销，无匹配时自写意图。[交接报告、截图、导出件与逐步核对](prototypes/drone-configurator/review/20261117-round1/README.md) · [论文与实际进度的对照](prototypes/drone-configurator/review/20261117-round1/thesis-alignment.md)。
+
+全部操作由 Claude 经浏览器自动化完成。模型服务停用，新增生成 0，新增真人场次与评议 0；结果只说明界面、导出和文字相互对得上。待 Codex 复核，待作者确认轴距定义、缺省 W/L 和提示词文字。

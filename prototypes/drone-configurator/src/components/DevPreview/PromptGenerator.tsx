@@ -1,358 +1,154 @@
-import React, { useState, useCallback } from 'react';
+// 发给模型的文字：逐句列出并标明来源，刚改动的句子加亮；附模板自检和三件导出。
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { Copy, Download, Wand2, Star } from 'lucide-react';
+import { computeLayout } from '../../design/design';
+import { openDecisions } from '../../design/fields';
+import { auditPrompt, compilePrompt, diffSentences, sourceLabel, type SentenceSource } from '../../design/partPrompt';
+import { buildExport, canvasPngBytes, download, exportAll, fileNames, fileStamp, guideCanvas, parseImported } from '../../design/exporters';
+import { sha256Bytes } from '../../design/sha256';
+import { Check, Copy, Download, FileJson, FileText, Image as ImageIcon, ShieldCheck, TriangleAlert, Upload } from 'lucide-react';
 
-const PromptGenerator: React.FC = () => {
-  const { parameters, selectedUserProfile } = useDroneStore();
+const sourceStyle: Record<SentenceSource, string> = {
+  fixed: 'bg-slate-200 text-slate-700', default: 'bg-white text-slate-500 border border-slate-300', chosen: 'bg-primary-600 text-white',
+  adopted: 'bg-emerald-600 text-white', custom: 'bg-violet-600 text-white',
+};
+
+const PromptGenerator: React.FC<{ autoScroll?: boolean }> = ({ autoScroll }) => {
+  const { parameters, touched, intent, lastChange, pinned, importSnapshot, exportNote: note, setExportNote: setNote, notice: message, setNotice: setMessage } = useDroneStore();
+  const [against, setAgainst] = useState<'last' | 'pinned'>('last');
   const [copied, setCopied] = useState(false);
+  const fileInput = useRef<HTMLInputElement>(null);
+  const list = useRef<HTMLOListElement>(null);
+  // 宽屏下提示词在自己的滚动区里：每次改动后把改写的那一句滚到眼前。
+  useEffect(() => {
+    if (!autoScroll || !lastChange) return;
+    list.current?.querySelector('[data-changed="yes"], [data-changed="removed"]')?.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+  }, [autoScroll, lastChange]);
 
-  // 生成最终版本的完整prompt（新增）
-  const generateFinalPrompt = useCallback(() => {
-    const { frame, propulsion, fuselage, landing_gear, accessories } = parameters;
-    
-    // 基础无人机描述
-    const baseDescription = [
-      "A professional high-quality drone/quadcopter",
-      `with ${frame.frame_type.toLowerCase()} frame configuration`,
-      `${frame.wheelbase_mm}mm wheelbase and ${frame.arm_thickness_mm} thick ${frame.material_visual.toLowerCase()} arms`,
-      `equipped with ${propulsion.prop_diameter_inch}-inch ${parseInt(propulsion.prop_blade_count, 10)}-blade propellers`,
-      propulsion.motor_tilt_degree > 0 ? `motors tilted at ${propulsion.motor_tilt_degree}° angle` : "vertically mounted brushless motors",
-      `fuselage dimensions (${fuselage.fuselage_dimensions_mm.length}×${fuselage.fuselage_dimensions_mm.width}×${fuselage.fuselage_dimensions_mm.height}mm)`
-    ];
+  const layout = useMemo(() => computeLayout(parameters), [parameters]);
+  const prompt = useMemo(() => compilePrompt(parameters, touched, intent, layout), [parameters, touched, intent, layout]);
+  const audit = useMemo(() => auditPrompt(parameters, prompt.sentences), [parameters, prompt]);
+  const open = openDecisions(parameters);
+  const usePinned = against === 'pinned' && pinned;
+  const base = usePinned ? pinned : lastChange?.before ?? null;
+  const diff = useMemo(() => {
+    if (!base) return null;
+    const before = compilePrompt(base.parameters, base.touched, base.intent, computeLayout(base.parameters)).sentences;
+    return diffSentences(before, prompt.sentences);
+  }, [base, prompt]);
+  const changed = new Map(diff?.changed.map(c => [c.id, c.before]));
+  const added = new Set(diff?.added);
 
-    // 起落架描述
-    const landingGearDesc = landing_gear.landing_gear_style !== '无独立起落架'
-      ? `equipped with ${landing_gear.landing_gear_style.toLowerCase()} landing gear system providing ${landing_gear.landing_gear_height_mm}mm ground clearance`
-      : "without a separate landing gear assembly";
-
-    // 相机配置
-    const cameraDesc = accessories.has_camera_gimbal
-      ? "featuring a professional 3-axis camera gimbal stabilizer system"
-      : "designed for pure flight performance without camera equipment";
-
-    // 基于用户画像的增强描述
-    const userProfileEnhancements = selectedUserProfile ? getUserProfileEnhancements(selectedUserProfile) : [];
-
-    // 颜色和风格
-    const styleDescription = [
-      `primary color scheme in ${accessories.drone_primary_color}`,
-      "professional matte finish with clean modern aesthetics",
-      "high-precision mechanical components",
-      "aerodynamic propeller guards for safety"
-    ];
-
-    // 组合所有描述
-    const allParts = [
-      ...baseDescription,
-      landingGearDesc,
-      cameraDesc,
-      ...userProfileEnhancements,
-      ...styleDescription,
-      accessories.custom_prompt_additions || null, // 用户自定义提示词
-      // 最终质量描述
-      "ultra-high resolution professional product photography",
-      "studio lighting with perfect shadows and highlights",
-      "clean white background",
-      "photorealistic details and textures",
-      "commercial product showcase quality"
-    ].filter(Boolean);
-
-    return allParts.join(", ");
-  }, [parameters, selectedUserProfile]);
-
-  // 根据用户画像生成增强描述
-  const getUserProfileEnhancements = (profile: string): string[] => {
-    switch (profile) {
-      case '新手玩家':
-        return [
-          "beginner-friendly design with bright LED status indicators",
-          "safety-focused with protective features",
-          "intuitive control interface",
-          "durable construction for learning",
-          "modern consumer-grade appearance"
-        ];
-      case '摄影爱好者':
-        return [
-          "professional cinematography setup",
-          "ultra-stable gimbal system for smooth footage",
-          "premium black and grey color scheme",
-          "precision-engineered for aerial photography",
-          "high-end broadcast quality equipment",
-          "carbon fiber reinforcement for vibration dampening"
-        ];
-      case '户外/亲子用户':
-        return [
-          "rugged outdoor-ready construction",
-          "family-friendly safety features",
-          "bright vibrant colors for visibility",
-          "weather-resistant design elements",
-          "impact-resistant frame and propeller guards",
-          "easy maintenance and field-serviceable components"
-        ];
-      default:
-        return [];
+  const state = { parameters, touched, intent };
+  const options = { note, pinned, lastChange: lastChange && { path: lastChange.path, label: lastChange.label, from: lastChange.from, to: lastChange.to } };
+  const copy = async () => {
+    try { await navigator.clipboard.writeText(prompt.text); } catch {
+      const area = document.createElement('textarea'); area.value = prompt.text; document.body.appendChild(area); area.select(); document.execCommand('copy'); area.remove();
     }
+    setCopied(true); setTimeout(() => setCopied(false), 1800);
   };
-
-  // 生成详细的prompt文本
-  const generatePrompt = useCallback(() => {
-    const { frame, propulsion, fuselage, landing_gear, accessories } = parameters;
-    
-    const promptParts = [
-      // 基础描述
-      "A detailed professional drone/quadcopter",
-      
-      // 机架描述
-      `with ${frame.frame_type.toLowerCase()} frame configuration`,
-      `${frame.wheelbase_mm}mm wheelbase`,
-      `${frame.arm_thickness_mm} thick carbon fiber arms`,
-      `${frame.material_visual.toLowerCase()} frame material finish`,
-      
-      // 动力系统 - 更详细
-      `equipped with ${propulsion.prop_diameter_inch}-inch propellers`,
-      `${parseInt(propulsion.prop_blade_count, 10)}-blade propeller configuration`,
-      propulsion.motor_tilt_degree > 0 ? `motors tilted at ${propulsion.motor_tilt_degree}° angle` : "motors mounted vertically",
-      "brushless motors with propeller guards",
-      
-      // 机身
-      `fuselage dimensions ${fuselage.fuselage_dimensions_mm.length}×${fuselage.fuselage_dimensions_mm.width}×${fuselage.fuselage_dimensions_mm.height}mm`,
-      
-      // 起落架 - 详细描述
-      landing_gear.landing_gear_style !== '无独立起落架' 
-        ? `equipped with ${landing_gear.landing_gear_style.toLowerCase()} landing gear system, ${landing_gear.landing_gear_height_mm}mm ground clearance`
-        : "integrated landing system without separate landing gear",
-      
-      // 配件
-      accessories.has_camera_gimbal ? "equipped with 3-axis camera gimbal stabilizer" : "without camera gimbal",
-      
-      // 颜色和外观
-      `primary color scheme: ${accessories.drone_primary_color}`,
-      "matte finish with professional appearance",
-      
-      // 附加提示词
-      accessories.custom_prompt_additions || null,
-      
-      // 质量和风格描述
-      "high-resolution photography",
-      "studio lighting with soft shadows",
-      "clean white background",
-      "professional product photography style",
-      "detailed mechanical components visible",
-      "realistic materials and textures"
-    ].filter(Boolean);
-    
-    return promptParts.join(", ");
-  }, [parameters]);
-
-  // 生成简化版prompt
-  const generateSimplePrompt = useCallback(() => {
-    const { frame, propulsion, accessories } = parameters;
-    
-    return [
-      `${frame.frame_type} drone`,
-      `${frame.wheelbase_mm}mm wheelbase`,
-      `${propulsion.prop_diameter_inch}" props`,
-      `${accessories.drone_primary_color} color`,
-      accessories.has_camera_gimbal ? "with camera" : null,
-      accessories.custom_prompt_additions || null,
-      "high quality, detailed"
-    ].filter(Boolean).join(", ");
-  }, [parameters]);
-
-  // 生成技术规格
-  const generateTechnicalSpecs = useCallback(() => {
-    const { frame, propulsion, fuselage, landing_gear } = parameters;
-    
-    return {
-      frame: `${frame.frame_type} | ${frame.wheelbase_mm}mm | ${frame.arm_thickness_mm} arms | ${frame.material_visual}`,
-      propulsion: `${propulsion.prop_diameter_inch}" ${propulsion.prop_blade_count} | ${propulsion.motor_tilt_degree}° tilt`,
-      fuselage: `${fuselage.fuselage_dimensions_mm.length}×${fuselage.fuselage_dimensions_mm.width}×${fuselage.fuselage_dimensions_mm.height}mm`,
-      landing: `${landing_gear.landing_gear_style} | ${landing_gear.landing_gear_height_mm}mm`,
-      color: parameters.accessories.drone_primary_color,
-      camera: parameters.accessories.has_camera_gimbal ? "Yes" : "No"
-    };
-  }, [parameters]);
-
-  const detailedPrompt = generatePrompt();
-  const simplePrompt = generateSimplePrompt();
-  const finalPrompt = generateFinalPrompt();
-  const techSpecs = generateTechnicalSpecs();
-
-  // 复制到剪贴板
-  const copyToClipboard = async (text: string) => {
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    } catch (err) {
-      console.error('复制失败:', err);
-    }
+  const one = (kind: 'config' | 'prompt' | 'guide') => {
+    const stamp = fileStamp(), names = fileNames(stamp);
+    const png = canvasPngBytes(guideCanvas(layout));
+    const config = buildExport(state, { ...options, stamp, guideSha256: sha256Bytes(png) });
+    if (kind === 'guide') download(names.guide, png, 'image/png');
+    if (kind === 'prompt') download(names.prompt, config.prompt.text, 'text/plain;charset=utf-8');
+    if (kind === 'config') download(names.config, JSON.stringify(config, null, 2), 'application/json');
+    setMessage(`已导出 ${names[kind]}`);
   };
-
-  // 下载为文本文件
-  const downloadPrompt = (content: string, filename: string) => {
-    const blob = new Blob([content], { type: 'text/plain' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.download = filename;
-    link.href = url;
-    link.click();
-    URL.revokeObjectURL(url);
+  const all = () => { const c = exportAll(state, options); setMessage(`已导出同一时间戳的三个文件：${c.files.guide}、${c.files.prompt}、${c.files.config}`); };
+  const onImport = async (file: File | undefined) => {
+    if (!file) return;
+    try { importSnapshot(parseImported(JSON.parse(await file.text()), parameters)); setMessage(`已读入 ${file.name}`); }
+    catch (e) { setMessage('读入失败：' + (e instanceof Error ? e.message : String(e))); }
+    if (fileInput.current) fileInput.current.value = '';
   };
 
   return (
-    <div className="card h-full flex flex-col">
-      <div className="flex items-center justify-between mb-4 flex-shrink-0">
-        <div className="flex items-center space-x-2">
-          <Wand2 className="h-5 w-5 text-primary-600" />
-          <h3 className="text-lg font-semibold text-slate-900">Prompt生成器</h3>
-        </div>
+    <section className="card !p-3 sm:!p-4" aria-label="发给模型的文字" data-testid="prompt-panel">
+      <div className="mb-2 flex flex-wrap items-center gap-2">
+        <h2 className="text-base font-semibold text-slate-900">发给模型的文字</h2>
+        <span className="text-xs text-slate-500">共 {prompt.sentences.length} 句 · 按固定顺序编译</span>
+        <span className="ml-auto flex items-center gap-1 text-xs">
+          <span className="text-slate-500">加亮：</span>
+          <button type="button" onClick={() => setAgainst('last')} aria-pressed={against === 'last'}
+            className={`rounded px-1.5 py-0.5 ${against === 'last' ? 'bg-slate-800 text-white' : 'border border-slate-300 text-slate-600'}`}>刚才的改动</button>
+          <button type="button" onClick={() => setAgainst('pinned')} aria-pressed={against === 'pinned'} disabled={!pinned}
+            className={`rounded px-1.5 py-0.5 disabled:opacity-40 ${against === 'pinned' ? 'bg-slate-800 text-white' : 'border border-slate-300 text-slate-600'}`}>与对照相比</button>
+        </span>
       </div>
 
-      {/* 可滚动内容区域 */}
-      <div className="flex-1 overflow-y-auto space-y-4">
-        {/* 最终版本Prompt - 新增置顶 */}
-        <div className="border-2 border-primary-200 bg-primary-50 rounded-lg">
-          <div className="flex items-center justify-between mb-2 p-3 pb-0">
-            <div className="flex items-center space-x-2">
-              <Star className="h-4 w-4 text-primary-600" />
-              <h4 className="text-sm font-medium text-primary-700">最终版本 (完整整合)</h4>
-              {selectedUserProfile && (
-                <span className="px-2 py-1 bg-primary-100 text-xs text-primary-600 rounded">
-                  {selectedUserProfile}画像
-                </span>
-              )}
-            </div>
-            <div className="flex space-x-1">
-              <button
-                onClick={() => copyToClipboard(finalPrompt)}
-                className="p-1 text-primary-600 hover:text-primary-800"
-                title="复制最终版本"
-              >
-                <Copy className="h-4 w-4" />
-              </button>
-              <button
-                onClick={() => downloadPrompt(finalPrompt, `drone-prompt-final-${Date.now()}.txt`)}
-                className="p-1 text-primary-600 hover:text-primary-800"
-                title="下载最终版本"
-              >
-                <Download className="h-4 w-4" />
-              </button>
-            </div>
-          </div>
-          <div className="p-3 pt-0">
-            <div className="p-3 bg-white rounded border font-mono text-sm text-slate-700 max-h-32 overflow-y-auto">
-              {finalPrompt}
-            </div>
-            <div className="mt-2 text-xs text-primary-600">
-              ✨ 此版本整合了所有参数配置
-              {selectedUserProfile && ` + ${selectedUserProfile}画像优化`}
-              {parameters.accessories.custom_prompt_additions && ' + 自定义提示词'}
-              ，适合直接用于AI生图
-            </div>
-          </div>
-        </div>
+      <ol className="space-y-1" data-testid="sentences" ref={list}>
+        {prompt.sentences.map((s, i) => {
+          const was = changed.get(s.id);
+          const isNew = added.has(s.id);
+          return (
+            <li key={s.id} data-sentence={s.id} data-changed={was !== undefined || isNew ? 'yes' : 'no'}
+              className={`rounded-md border px-2 py-1.5 text-[13px] leading-snug ${was !== undefined ? 'border-yellow-400 bg-yellow-50' : isNew ? 'border-emerald-400 bg-emerald-50' : 'border-slate-200 bg-white'}`}>
+              <div className="mb-0.5 flex flex-wrap items-center gap-1.5 text-[11px]">
+                <span className="tabular-nums text-slate-400">{i + 1}</span>
+                <span className={`rounded px-1.5 py-0.5 font-medium leading-none ${sourceStyle[s.source]}`}>{sourceLabel[s.source]}</span>
+                <span className="text-slate-500">{s.zh}</span>
+                {was !== undefined && <span className="rounded bg-yellow-300 px-1 font-medium text-yellow-900">改写</span>}
+                {isNew && <span className="rounded bg-emerald-300 px-1 font-medium text-emerald-900">新增</span>}
+              </div>
+              {was !== undefined && <p className="font-mono text-slate-400 line-through">{was}</p>}
+              <p className="font-mono text-slate-800">{s.text}</p>
+            </li>
+          );
+        })}
+        {diff?.removed.map(r => (
+          <li key={r.id} data-sentence={r.id} data-changed="removed" className="rounded-md border border-rose-300 bg-rose-50 px-2 py-1.5 text-[13px] leading-snug">
+            <div className="mb-0.5 text-[11px]"><span className="rounded bg-rose-300 px-1 font-medium text-rose-900">已删去</span></div>
+            <p className="font-mono text-slate-400 line-through">{r.before}</p>
+          </li>
+        ))}
+      </ol>
 
-        {/* 详细Prompt */}
-        <div>
-          <div className="flex items-center justify-between mb-2">
-            <h4 className="text-sm font-medium text-slate-700">详细描述</h4>
-            <div className="flex space-x-1">
-              <button
-                onClick={() => copyToClipboard(detailedPrompt)}
-                className="p-1 text-slate-500 hover:text-slate-700"
-                title="复制"
-              >
-                <Copy className="h-4 w-4" />
-              </button>
-              <button
-                onClick={() => downloadPrompt(detailedPrompt, `drone-prompt-detailed-${Date.now()}.txt`)}
-                className="p-1 text-slate-500 hover:text-slate-700"
-                title="下载"
-              >
-                <Download className="h-4 w-4" />
-              </button>
-            </div>
-          </div>
-          <div className="p-3 bg-slate-50 rounded-lg text-sm font-mono text-slate-700 max-h-24 overflow-y-auto">
-            {detailedPrompt}
-          </div>
-        </div>
-
-        {/* 简化Prompt */}
-        <div>
-          <div className="flex items-center justify-between mb-2">
-            <h4 className="text-sm font-medium text-slate-700">简化描述</h4>
-            <div className="flex space-x-1">
-              <button
-                onClick={() => copyToClipboard(simplePrompt)}
-                className="p-1 text-slate-500 hover:text-slate-700"
-                title="复制"
-              >
-                <Copy className="h-4 w-4" />
-              </button>
-              <button
-                onClick={() => downloadPrompt(simplePrompt, `drone-prompt-simple-${Date.now()}.txt`)}
-                className="p-1 text-slate-500 hover:text-slate-700"
-                title="下载"
-              >
-                <Download className="h-4 w-4" />
-              </button>
-            </div>
-          </div>
-          <div className="p-3 bg-slate-50 rounded-lg text-sm font-mono text-slate-700">
-            {simplePrompt}
-          </div>
-        </div>
-
-        {/* 技术规格 */}
-        <div>
-          <h4 className="text-sm font-medium text-slate-700 mb-2">技术规格</h4>
-          <div className="p-3 bg-slate-50 rounded-lg text-xs space-y-1">
-            <div><span className="font-medium">机架:</span> {techSpecs.frame}</div>
-            <div><span className="font-medium">动力:</span> {techSpecs.propulsion}</div>
-            <div><span className="font-medium">机身:</span> {techSpecs.fuselage}</div>
-            <div><span className="font-medium">起落架:</span> {techSpecs.landing}</div>
-            <div><span className="font-medium">颜色:</span> {techSpecs.color}</div>
-            <div><span className="font-medium">相机:</span> {techSpecs.camera}</div>
-            {parameters.accessories.custom_prompt_additions && (
-              <div><span className="font-medium">附加:</span> {parameters.accessories.custom_prompt_additions}</div>
-            )}
-          </div>
-        </div>
-
-        {/* 起落架详细信息卡片 */}
-        <div className="p-3 bg-amber-50 rounded-lg border border-amber-200">
-          <h4 className="text-sm font-medium text-amber-800 mb-2 flex items-center">
-            🦵 起落架配置
-          </h4>
-          <div className="text-xs text-amber-700 space-y-1">
-            <div><span className="font-medium">类型:</span> {parameters.landing_gear.landing_gear_style}</div>
-            <div><span className="font-medium">高度:</span> {parameters.landing_gear.landing_gear_height_mm}mm</div>
-            <div className="text-xs text-amber-600 mt-2">
-              💡 起落架信息已集成到prompt中，AI生图时会根据此配置生成相应的起落架样式
-            </div>
-          </div>
-        </div>
-
-        {/* 使用说明 */}
-        <div className="p-3 bg-blue-50 rounded-lg">
-          <p className="text-sm text-blue-700">
-            💡 <strong>使用提示:</strong> 
-            <span className="font-medium text-blue-800">最终版本</span>整合了所有参数、用户画像和自定义提示词，推荐优先使用。
-            详细描述适合ComfyUI等AI生图工具，简化描述适合快速测试。点击复制按钮可直接粘贴到AI工具中使用。
-          </p>
-        </div>
-
-        {/* 复制成功提示 */}
-        {copied && (
-          <div className="p-2 bg-green-50 border border-green-200 rounded text-sm text-green-700 text-center">
-            ✅ 已复制到剪贴板
-          </div>
-        )}
+      <div className="mt-2 rounded-md border border-dashed border-amber-400 bg-amber-50 px-3 py-2 text-xs text-amber-900" data-testid="open-note">
+        <b className="font-medium">留白、未写入提示词的造型项（{open.length}）：</b>
+        {open.length ? open.map(f => f.label).join('、') : '没有，全部已由你选定。'}
       </div>
-    </div>
+
+      <div className="mt-2 rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-xs" data-testid="audit">
+        <div className="mb-1 flex items-center gap-1 font-medium text-slate-700"><ShieldCheck className="h-3.5 w-3.5" />模板自检：未选的东西有没有被加进文字</div>
+        <ul className="grid gap-1 sm:grid-cols-3">
+          {audit.map(a => (
+            <li key={a.topic} data-audit={a.topic} data-status={a.status} className="flex items-start gap-1 text-slate-600">
+              {a.status === 'unexpected' ? <TriangleAlert className="mt-0.5 h-3.5 w-3.5 shrink-0 text-rose-600" /> : <Check className="mt-0.5 h-3.5 w-3.5 shrink-0 text-emerald-600" />}
+              <span><b className="font-medium text-slate-800">{a.label}</b>：{a.detail}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className="mt-3 border-t border-slate-200 pt-3">
+        <div className="mb-2 flex flex-wrap items-center gap-2">
+          <h3 className="text-sm font-semibold text-slate-900">导出</h3>
+          <label className="flex min-w-0 flex-1 items-center gap-1.5 text-xs text-slate-600">
+            备注
+            <input value={note} onChange={e => setNote(e.target.value)} className="min-w-0 flex-1 rounded-md border border-slate-300 px-2 py-1 focus:border-primary-500 focus:outline-none" />
+          </label>
+        </div>
+        <div className="flex flex-wrap gap-1.5">
+          <button type="button" onClick={all} className="btn-primary inline-flex items-center gap-1.5 !px-3 !py-1.5 text-sm" data-testid="export-all">
+            <Download className="h-4 w-4" />一次导出三件
+          </button>
+          <button type="button" onClick={() => one('config')} className="btn-secondary inline-flex items-center gap-1.5 !px-2.5 !py-1.5 text-sm" data-testid="export-config"><FileJson className="h-4 w-4" />配置 JSON</button>
+          <button type="button" onClick={() => one('prompt')} className="btn-secondary inline-flex items-center gap-1.5 !px-2.5 !py-1.5 text-sm" data-testid="export-prompt"><FileText className="h-4 w-4" />提示词</button>
+          <button type="button" onClick={() => one('guide')} className="btn-secondary inline-flex items-center gap-1.5 !px-2.5 !py-1.5 text-sm" data-testid="export-guide"><ImageIcon className="h-4 w-4" />点线图 PNG</button>
+          <button type="button" onClick={copy} className="btn-secondary inline-flex items-center gap-1.5 !px-2.5 !py-1.5 text-sm"><Copy className="h-4 w-4" />{copied ? '已复制' : '复制全文'}</button>
+          <button type="button" onClick={() => fileInput.current?.click()} className="btn-secondary inline-flex items-center gap-1.5 !px-2.5 !py-1.5 text-sm"><Upload className="h-4 w-4" />读入配置</button>
+          <input ref={fileInput} type="file" accept="application/json,.json" className="hidden" onChange={e => onImport(e.target.files?.[0])} />
+        </div>
+        <p className="mt-2 text-xs leading-relaxed text-slate-500">
+          三件出自同一份状态：点线图（1024×1024，黑底红点蓝线，机头朝上）、提示词全文、配置 JSON（含轴心坐标、每项选择的状态、证据卡记录和提示词逐句来源）。
+          模型服务停用，本页不生成图像；生成图上的读数须回图后另量。
+        </p>
+        {message && <p className="mt-1 text-xs font-medium text-emerald-700" role="status" data-testid="export-message">{message}</p>}
+      </div>
+    </section>
   );
 };
 
-export default PromptGenerator; 
+export default PromptGenerator;

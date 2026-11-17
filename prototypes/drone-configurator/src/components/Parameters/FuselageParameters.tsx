@@ -1,105 +1,42 @@
 import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { Box } from 'lucide-react';
+import { computeLayout } from '../../design/design';
+import { fuselageStyleOptions, legacyFuselageStyles, references, topCoverOptions } from '../../design/fields';
+import { Field, OpenChoice, SliderField, TabIntro } from '../controls/controls';
+
+const list = (items: { v: number; label: string }[]) => items.map(m => `${m.label} ${m.v}`).join('、');
 
 const FuselageParameters: React.FC = () => {
-  const { parameters, updateFuselageParams } = useDroneStore();
-  const fuselageParams = parameters.fuselage;
-
-  const handleDimensionChange = (dimension: 'length' | 'width' | 'height', value: number) => {
-    updateFuselageParams({
-      fuselage_dimensions_mm: {
-        ...fuselageParams.fuselage_dimensions_mm,
-        [dimension]: value
-      }
-    });
-  };
-
+  const { parameters } = useDroneStore();
+  const layout = computeLayout(parameters);
+  const legacy = legacyFuselageStyles.find(o => o.value === parameters.fuselage.fuselage_style);
   return (
-    <div className="card space-y-6">
-      <div className="flex items-center space-x-2">
-        <Box className="h-5 w-5 text-primary-600" />
-        <h3 className="text-lg font-semibold text-slate-900">机身参数</h3>
-        <span className="text-sm text-slate-500">Fuselage Parameters</span>
-      </div>
+    <div className="space-y-3">
+      <TabIntro title="机身">长、宽、高只限定包络尺寸。轮廓和顶盖怎样分件由设计者决定，可以留白。</TabIntro>
 
-      {/* 机身长、宽、高为设计尺寸。 */}
-        <div className="space-y-4">
-          <h4 className="text-sm font-medium text-slate-700">机身尺寸 (Fuselage Dimensions)</h4>
-          
-          {/* 长度 */}
-          <div className="space-y-2">
-            <label className="block text-sm font-medium text-slate-700">
-              长度 <span className="text-slate-500">(Length): {fuselageParams.fuselage_dimensions_mm.length}mm</span>
-            </label>
-            <input
-              type="range"
-              min="50"
-              max="300"
-              step="5"
-              value={fuselageParams.fuselage_dimensions_mm.length}
-              onChange={(e) => handleDimensionChange('length', Number(e.target.value))}
-              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer slider"
-            />
-            <div className="flex justify-between text-xs text-slate-500">
-              <span>50mm</span>
-              <span>300mm</span>
-            </div>
-          </div>
+      <Field path="fuselage.fuselage_dimensions_mm.length" hint={<>机身长/宽 当前 <b className="font-medium text-slate-700">{layout.body_length_over_width.toFixed(2)}</b>。手册图面量测：{list(references.bodyLengthOverWidth.measured)}。{references.bodyLengthOverWidth.note}</>}>
+        <SliderField path="fuselage.fuselage_dimensions_mm.length" min={50} max={300} step={5} unit="mm" />
+      </Field>
 
-          {/* 宽度 */}
-          <div className="space-y-2">
-            <label className="block text-sm font-medium text-slate-700">
-              宽度 <span className="text-slate-500">(Width): {fuselageParams.fuselage_dimensions_mm.width}mm</span>
-            </label>
-            <input
-              type="range"
-              min="30"
-              max="200"
-              step="5"
-              value={fuselageParams.fuselage_dimensions_mm.width}
-              onChange={(e) => handleDimensionChange('width', Number(e.target.value))}
-              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer slider"
-            />
-            <div className="flex justify-between text-xs text-slate-500">
-              <span>30mm</span>
-              <span>200mm</span>
-            </div>
-          </div>
+      <Field path="fuselage.fuselage_dimensions_mm.width" hint={<>机身宽/D 当前 <b className="font-medium text-slate-700">{layout.body_width_over_D.toFixed(3)}</b>。手册图面量测：{list(references.bodyWidthOverD.measured)}。{references.bodyWidthOverD.note}</>}>
+        <SliderField path="fuselage.fuselage_dimensions_mm.width" min={30} max={200} step={5} unit="mm" />
+      </Field>
 
-          {/* 高度 */}
-          <div className="space-y-2">
-            <label className="block text-sm font-medium text-slate-700">
-              高度 <span className="text-slate-500">(Height): {fuselageParams.fuselage_dimensions_mm.height}mm</span>
-            </label>
-            <input
-              type="range"
-              min="20"
-              max="150"
-              step="5"
-              value={fuselageParams.fuselage_dimensions_mm.height}
-              onChange={(e) => handleDimensionChange('height', Number(e.target.value))}
-              className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer slider"
-            />
-            <div className="flex justify-between text-xs text-slate-500">
-              <span>20mm</span>
-              <span>150mm</span>
-            </div>
-          </div>
-        </div>
+      <Field path="fuselage.fuselage_dimensions_mm.height" hint="高度从正上方看不到，见侧视示意。">
+        <SliderField path="fuselage.fuselage_dimensions_mm.height" min={20} max={150} step={5} unit="mm" />
+      </Field>
 
-      {/* 机身信息预览 */}
-      <div className="mt-6 p-4 bg-slate-50 rounded-lg">
-        <h4 className="text-sm font-medium text-slate-700 mb-2">机身概览</h4>
-        <div className="space-y-2 text-sm">
-          <div>
-            <span className="text-slate-500">尺寸：</span>
-            <span className="font-medium">{fuselageParams.fuselage_dimensions_mm.length} × {fuselageParams.fuselage_dimensions_mm.width} × {fuselageParams.fuselage_dimensions_mm.height} mm</span>
-          </div>
-        </div>
-      </div>
+      <Field path="fuselage.fuselage_style" hint={legacy
+        ? `当前值「${legacy.zh}」来自旧配置，仍会写入提示词；可改选或清除。`
+        : '留白时示意图只画虚线包络，提示词只给尺寸。选了轮廓，示意图会换成对应的大致形状（仅示意）。'}>
+        <OpenChoice path="fuselage.fuselage_style" options={fuselageStyleOptions} columns={2} />
+      </Field>
+
+      <Field path="fuselage.top_cover" hint="顶盖分几块由设计者决定。留白时提示词不写这一项。">
+        <OpenChoice path="fuselage.top_cover" options={topCoverOptions} columns={4} />
+      </Field>
     </div>
   );
 };
 
-export default FuselageParameters; 
+export default FuselageParameters;
