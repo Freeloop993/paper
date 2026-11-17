@@ -1,13 +1,13 @@
 {
   "A001": {
     "text": "CHEN J, ZHOU Z, QI J, et al. Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion[J]. Journal of Advanced Mechanical Design, Systems, and Manufacturing, 2026, 20(1): JAMDSM0008. DOI: 10.1299/jamdsm.2026jamdsm0008.",
-    "status": "待核",
-    "note": "作者（Jiawei CHEN、Zhiyong ZHOU、Jianming QI、Hanfei WANG）与题名已对本地原PDF首页核（分支 reference-fulltexts-20261109: fulltexts/ID-A001.pdf）；卷期20(1)取自 manuscript/source-drafts/citation-keys.md 与 J-STAGE URL（/20/1/）。文章号 JAMDSM0008 由 DOI 后缀推定，PDF 文本层未见卷期/文章号页眉，须在 J-STAGE 页核对。另见 references/reading-map.md R01、references/catalogs/industrial-design.bib。"
+    "status": "ok",
+    "note": "本地原件首页核对作者、题名；J-STAGE 原刊页面核对 20(1) 和文章号。https://www.jstage.jst.go.jp/article/jamdsm/20/1/20_2026jamdsm0008/_article/-char/en"
   },
   "CN": {
     "text": "ZHANG L, RAO A, AGRAWALA M. Adding conditional control to text-to-image diffusion models[C]//2023 IEEE/CVF International Conference on Computer Vision (ICCV). Piscataway: IEEE, 2023: 3813-3824. DOI: 10.1109/ICCV51070.2023.00355.",
-    "status": "待核",
-    "note": "作者、题名、DOI 取自 citation-keys.md。页码3813-3824为推算：manuscript/revisions/ch02-2.4-2.5.md 记“PDF6／印刷3818”，archive-references.csv 记本地文件12页；原件未入 fulltexts 分支。会议集名与出版地 Piscataway 按通用知识补。须核 IEEE Xplore 记录。"
+    "status": "ok",
+    "note": "原出版者登记的 DOI 元数据核过作者姓氏、题名与页码（3813-3824）。此项核验用于著录。 https://doi.org/10.1109/ICCV51070.2023.00355"
   },
   "L07": {
     "text": "CHOI J, LEE S W, HYUN K H. GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters[C]//Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2025: 1-21. DOI: 10.1145/3706598.3713502.",
@@ -25,14 +25,14 @@
     "note": "全部字段取自 citation-keys.md（4位作者：屈庆星、郭伏、胡名彩、刘畅）；reading-map R06 记 PDF1—2、6 对应印刷67、68、72，与67-73页一致。仓库无原PDF。"
   },
   "B009": {
-    "text": "PARMENTIER D, BROSENS L, CHRISTIAENS Y. Learning activities to design a parametric solutions space for products in Industry 4.0[C]//DS 131: Proceedings of the International Conference on Engineering and Product Design Education (E&PDE 2024). 〔出版地待核〕: The Design Society, 2024: 〔页码待核〕. DOI: 10.35199/EPDE.2024.82.",
-    "status": "待核",
-    "note": "作者、题名、会议集名、DOI 取自 citation-keys.md 与 industrial-design.bib（B009_2024）；出版者按 DS 系列补，出版地与页码仓库无。manuscript/revisions/ch01-1.5.md 注明 B009 页码转引、终稿前回核。仓库无原PDF。"
+    "text": "PARMENTIER D, BROSENS L, CHRISTIAENS Y. Learning activities to design a parametric solutions space for products in Industry 4.0[C]//Proceedings of the 26th International Conference on Engineering and Product Design Education. The Design Society, 2024: 485–490. DOI: 10.35199/EPDE.2024.82.",
+    "status": "ok",
+    "note": "原出版者登记的 DOI 元数据核过作者姓氏、题名与页码（485-490）。此项核验用于著录。 https://doi.org/10.35199/EPDE.2024.82"
   },
   "B065": {
-    "text": "TINGSTRÖM J, MUNJULURY R C. Insights from knowledge-based engineering in industrial practice – a Saab's perspective[J]. Proceedings of the Design Society, 2026, 6: 〔页码待核〕. DOI: 10.1017/pds.2026.10691.",
-    "status": "待核",
-    "note": "作者、题名、卷6、DOI 取自 citation-keys.md 与 industrial-design.bib（B065_2026，DESIGN2026）；页码缺。仓库无原PDF。"
+    "text": "TINGSTRÖM J, MUNJULURY R C. Insights from knowledge-based engineering in industrial practice – a Saab’s perspective[J]. Proceedings of the Design Society, 2026, 6: 3337–3346. DOI: 10.1017/pds.2026.10691.",
+    "status": "ok",
+    "note": "原出版者登记的 DOI 元数据核过作者姓氏、题名与页码（3337-3346）。此项核验用于著录。 https://doi.org/10.1017/pds.2026.10691"
   },
   "A007": {
     "text": "BAUDOUX G, GUO C, GOUCHER-LAMBERT K. Multimodal generative AI for conceptual design: enabling text-based and sketch-based human-AI conversations[J]. Proceedings of the Design Society, 2025, 5: 2501-2510. DOI: 10.1017/pds.2025.10264.",
@@ -55,93 +55,201 @@
     "note": "作者、题名、会议（CHI '26，Barcelona）、DOI、“17 pages”据本地原PDF的 XMP 与 ACM Reference Format（reference-fulltexts-20261109: fulltexts/SRC-b4667d2f7bfd.pdf）；页码按17页写作1-17；ACM 文章号未载。"
   },
   "R10": {
-    "text": "〔作者待核〕. Enhancing Generative AI Image Refinement with Scribbles and Annotations: A Comparative Study of Multimodal Prompts[C]//Proceedings of the 31st International Conference on Intelligent User Interfaces. New York: ACM, 2026: 〔页码待核〕. DOI: 10.1145/3742413.3789080.",
-    "status": "待核",
-    "note": "题名、会议（IUI 2026）、DOI 取自 references/catalogs/reviewed-100.csv（HCI-C0031）与 archive-references.csv，其原件 SHA256 与 priority-fulltexts R10 相同；reading-map 记所读为 arXiv:2602.08830v1（22页）。仓库无作者名，原PDF未入 fulltexts 分支。docs/execution-playbook.md 称“Park等”；按通用知识或为 Park H、Eiband M、Luckow A、Sedlmair M 等，未核。若改引预印本：[J/OL]. arXiv:2602.08830, 2026。"
+    "text": "PARK H, TRAN P T, LUCKOW A, et al. Enhancing generative AI image refinement with scribbles and annotations: a comparative study of multimodal prompts[C]//Proceedings of the 31st International Conference on Intelligent User Interfaces. New York: ACM, 2026: 1454–1475. DOI: 10.1145/3742413.3789080.",
+    "status": "ok",
+    "note": "原出版者登记的 DOI 元数据核过作者姓氏、题名与页码（1454-1475）。此项核验用于著录。 https://doi.org/10.1145/3742413.3789080"
   },
   "R11": {
-    "text": "〔作者待核〕. AIdeation: Designing a Human-AI Collaborative Ideation System for Concept Designers[C]//Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2025: 〔页码待核〕. DOI: 10.1145/3706598.3714148.",
-    "status": "待核",
-    "note": "题名、会议、DOI 取自 reviewed-100.csv（HCI-C0004）与 archive-references.csv，原件 SHA256 与 priority-fulltexts R11 相同；reading-map 记所读为 arXiv:2502.14747v1（28页）。仓库无作者名，原PDF未入 fulltexts 分支。按通用知识作者或为 Wang W F、Lu C T、Ponsa i Campanyà N、Chen B Y、Chen M Y，未核。"
+    "text": "WANG W F, LU C T, PONSA I CAMPANYÀ N, et al. AIdeation: designing a human-AI collaborative ideation system for concept designers[C]//Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems. New York: ACM, 2025: 1–28. DOI: 10.1145/3706598.3714148.",
+    "status": "ok",
+    "note": "原出版者登记的 DOI 元数据核过作者姓氏、题名与页码（1-28）。此项核验用于著录。 https://doi.org/10.1145/3706598.3714148"
   },
   "R12": {
-    "text": "HSIAO S W, PENG P H. Using FCE and FAHP to Explore the Multirotor Drone Appearance Preference[C]//BOESS S, CHEUNG M, CAIN R, ed. Synergy - DRS International Conference 2020. London: Design Research Society, 2020: 〔页码待核〕. DOI: 10.21606/drs.2020.164.",
-    "status": "待核",
-    "note": "作者、全题、编者、会议名、DOI 据本地原PDF封面 Citation 栏（reference-fulltexts-20261109: fulltexts/UAV-U002.pdf）；reading-map 与 priority-fulltexts 的题名漏了 Preference。会议于2020年8月11—14日线上举行。出版地 London 参照 R14 文后参考文献对 DRS 会议集的著录；页码缺（本地18页含封面）。"
+    "text": "HSIAO S W, PENG P H. Using FCE and FAHP to explore the multirotor drone appearance preference[C]//BOESS S, CHEUNG M, CAIN R, eds. Synergy: DRS International Conference 2020. Design Research Society, 2020: 2267–2283. DOI: 10.21606/drs.2020.164.",
+    "status": "ok",
+    "note": "DRS 论文原件含书目封面，论文正文首尾印刷页为 2267、2283。"
   },
   "N01": {
-    "text": "ComfyUI Wiki. Qwen-Image 2.1 Fun ControlNet Union[EB/OL]. (2026-09-24)[2026-11-14]. https://comfyui-wiki.com/en/news/2026-09-24-qwen-image-2-1-fun-controlnet-union.",
-    "status": "待核",
-    "note": "取自 docs/literature-update-2026-11.md N01：模型由 Alibaba PAI 发布，所核为 ComfyUI Wiki 的发布说明。题名按条目名拟，页面原题未核；日期由 URL 路径推定。官方模型卡与许可证仓库无记录，建议换引 Alibaba PAI 官方模型页。"
+    "text": "Alibaba-PAI. Qwen-Image-2.1-Fun-Controlnet-Union: Model Card[EB/OL]. [2026-11-15]. https://huggingface.co/alibaba-pai/Qwen-Image-2.1-Fun-Controlnet-Union.",
+    "status": "ok",
+    "note": "已对发布者原始模型卡固定版本 8a4702014d4dabb5f896fcba917e2ee0a961465f。Supported control conditions 列出 Canny、Lineart、Scribble 等，仅用于说明可接纳的输入类型。"
   },
   "N03": {
-    "text": "〔作者待核〕. 7Bench〔全题待核〕[J/OL]. arXiv:2508.12919, 2025.",
-    "status": "待核",
-    "note": "literature-update N03 仅记 arXiv 号与“7Bench：布局引导 T2I 基准”；年份按 arXiv 号推定。按通用知识全题或为“7Bench: a comprehensive benchmark for layout-guided text-to-image models”（Izzo E、Parolari L、Vezzaro D、Ballan L），未核，须查 arXiv 页及正式发表版本。"
+    "text": "IZZO E, PAROLARI L, VEZZARO D, et al. 7Bench: a comprehensive benchmark for layout-guided text-to-image models[EB/OL]. arXiv:2508.12919, 2025. https://arxiv.org/abs/2508.12919.",
+    "status": "ok",
+    "note": "据作者提交的 arXiv 版本页面核对作者全名、题名和年份，本文引用预印本。https://arxiv.org/abs/2508.12919"
   },
   "N04": {
-    "text": "LIAO〔名缩写待核〕, LOMAS〔名缩写待核〕, YU〔名缩写待核〕. 〔英文题名待核〕[J/OL]. arXiv:2507.02865, 2025.",
-    "status": "待核",
-    "note": "literature-update N04 只记作者姓 Liao、Lomas、Yu（TU Delft）与内容“以人类反馈做 LoRA 微调提升产品外观”，无题名；年份按 arXiv 号推定。"
+    "text": "LIAO D, LOMAS J D, YU C. Enhancing the aesthetic appeal of AI-generated physical product designs through LoRA fine-tuning with human feedback[EB/OL]. arXiv:2507.02865, 2025. https://arxiv.org/abs/2507.02865.",
+    "status": "ok",
+    "note": "据作者提交的 arXiv 版本页面核对作者全名、题名和年份，本文引用预印本。https://arxiv.org/abs/2507.02865"
   },
   "N05": {
-    "text": "〔作者待核〕. QwenStyle〔全题待核〕[J/OL]. arXiv:2601.06202, 2026.",
-    "status": "待核",
-    "note": "literature-update N05：TeleAI，基于 Qwen-Image-Edit-2509 训练 rank-32 LoRA 的保内容风格迁移；作者与全题未记，年份按 arXiv 号推定。"
+    "text": "ZHANG S, HUANG H, ZHANG C, et al. QwenStyle: content-preserving style transfer with Qwen-Image-Edit[EB/OL]. arXiv:2601.06202, 2026. https://arxiv.org/abs/2601.06202.",
+    "status": "ok",
+    "note": "据作者提交的 arXiv 版本页面核对作者全名、题名和年份，本文引用预印本。https://arxiv.org/abs/2601.06202"
   },
   "N06": {
-    "text": "Qwen Team. Qwen-Image-Edit-2509; Qwen-Image-Edit-2511〔模型页题名待核〕[EB/OL]. [2026-11-14]. 〔URL待补〕.",
-    "status": "待核",
-    "note": "literature-update N06 仅记“多方产品页”，无发布者、URL 与日期；发布者 Qwen Team 按通用知识补；版本号暗示2025年9月、11月发布（推定）。宜择官方模型卡（如 Hugging Face Qwen/Qwen-Image-Edit-2509，未核）分列或合并。"
+    "text": "Qwen Team. Qwen-Image-Edit-2509；Qwen-Image-Edit-2511[EB/OL]. [2026-11-15]. https://huggingface.co/Qwen/Qwen-Image-Edit-2509；https://huggingface.co/Qwen/Qwen-Image-Edit-2511.",
+    "status": "ok",
+    "note": "两个版本均对照发布者 Qwen 的官方模型卡，本文仅据此说明参考图输入方式。"
   },
   "N07": {
-    "text": "XU〔名缩写待核〕, MARTELARO N, MCCOMB C. Ceci N'est Pas un Drone〔全题待核〕[J/OL]. arXiv:2511.03131, 2025.",
-    "status": "待核",
-    "note": "literature-update N07 记作者姓 Xu、Martelaro、McComb、题名首句与 arXiv 号，并注“DOI 前缀 ASME”（或已在 ASME 会议/期刊发表，DOI 未记）。Martelaro、McComb 的名缩写按通用知识补；全题与 Xu 的名须核。"
+    "text": "XU Z, MARTELARO N, MCCOMB C. Ceci N’est Pas un Drone: investigating the impact of design representation on design decision making when using GenAI[EB/OL]. arXiv:2511.03131, 2025. https://arxiv.org/abs/2511.03131.",
+    "status": "ok",
+    "note": "据作者提交的 arXiv 版本页面核对作者全名、题名和年份，本文引用预印本。https://arxiv.org/abs/2511.03131"
   },
   "N08": {
-    "text": "SHI〔名缩写待核〕, CHOO〔名缩写待核〕. 〔英文题名待核〕[J/OL]. arXiv:2602.22171, 2026.",
-    "status": "待核",
-    "note": "literature-update N08 记作者姓 Shi、Choo，CHI EA 2026，arXiv 2602.22171，中文概括“草图构思中的人—多模态模型交互分类”；英文题名与 DOI 未记。若引 CHI EA 正式版，改为 [C]//Extended Abstracts of the 2026 CHI Conference on Human Factors in Computing Systems 并补 DOI。"
+    "text": "SHI W, CHOO K T W. A taxonomy of human–MLLM interaction in early-stage sketch-based design ideation[EB/OL]. arXiv:2602.22171, 2026. https://arxiv.org/abs/2602.22171.",
+    "status": "ok",
+    "note": "据作者提交的 arXiv 版本页面核对作者全名、题名和年份，本文引用预印本。https://arxiv.org/abs/2602.22171"
   },
   "DJI-MINI4PRO": {
-    "text": "DJI. DJI Mini 4 Pro User Manual[EB/OL]. (2024)[2026-11-14]. https://dl.djicdn.com/downloads/DJI_Mini_4_Pro/20240627/DJI_Mini_4_Pro_User_Manual_en.pdf.",
-    "status": "待核",
-    "note": "URL 取自 experiments/form342-h3-pilot/parameters-3.4.2.md（同处附官方规格页 https://www.dji.com/support/product/mini-4-pro）；origin/claude/ch03-3.2-3.3 的 ch03-3.2-3.3-v2.md 第36行引“Aircraft”一节，未给 URL。手册版本号未记，年份2024按 URL 路径20240627推定；引具体图时宜补页码。"
+    "text": "DJI. DJI Mini 4 Pro User Manual v1.4[EB/OL]. (2024-06-27)[2026-11-14]. https://dl.djicdn.com/downloads/DJI_Mini_4_Pro/20240627/DJI_Mini_4_Pro_User_Manual_en.pdf.",
+    "status": "ok",
+    "note": "官方产品下载中心列明英文手册 v1.4 的发布日期及下载入口。https://www.dji.com/global/mobile/mini-4-pro/downloads"
   },
   "DJI-T16": {
     "text": "DJI. AGRAS T16 User Manual v1.4[EB/OL]. (2020)[2026-11-14]. https://dl.djicdn.com/downloads/t16/20200520/T16_User_Manual_v1.4_EN.pdf.",
-    "status": "待核",
-    "note": "URL、版本 v1.4、部件总图位于 PDF13／印刷11 取自 manuscript/revisions/ch02-2.1-hexa.md 与 experiments/hexa-plant-protection/manual-pages.json（含原件 SHA256）。题名按文件名与产品系列拟，封面题名仓库未记；年份2020按 URL 路径20200520推定。"
+    "status": "ok",
+    "note": "据 DJI 官方手册封面核对英文题名、版本 v1.4 和日期 2020.05。"
   },
   "DJI-T20": {
     "text": "DJI. AGRAS T20 User Manual v1.4[EB/OL]. (2020)[2026-11-14]. https://dl.djicdn.com/downloads/t20/20201201/Agras_T20_User_Manual_v1.4_EN.pdf.",
-    "status": "待核",
-    "note": "来源同 DJI-T16（ch02-2.1-hexa.md、manual-pages.json）。题名按文件名拟；年份2020按 URL 路径20201201推定。"
+    "status": "ok",
+    "note": "据 DJI 官方手册封面核对英文题名、版本 v1.4 和日期 2020.12。"
   },
   "DJI-T30": {
-    "text": "DJI. AGRAS T30 User Manual v1.4[EB/OL]. [2026-11-14]. https://dl.djicdn.com/downloads/t30/all_update/T30_User_Manual_v1.4_EN.pdf.",
-    "status": "待核",
-    "note": "来源同 DJI-T16（ch02-2.1-hexa.md、manual-pages.json）。题名按文件名拟；URL 路径为 all_update，发布年份仓库无记录，须查手册封面或修订记录。"
+    "text": "DJI. AGRAS T30 User Manual v1.4[EB/OL]. (2021)[2026-11-14]. https://dl.djicdn.com/downloads/t30/all_update/T30_User_Manual_v1.4_EN.pdf.",
+    "status": "ok",
+    "note": "据 DJI 官方手册封面核对英文题名、版本 v1.4 和日期 2021.07。"
   },
   "OSGOOD": {
     "text": "OSGOOD C E, SUCI G J, TANNENBAUM P H. The Measurement of Meaning[M]. Urbana: University of Illinois Press, 1957.",
-    "status": "待核",
-    "note": "仓库仅在 planning/route-review-20261112/论文研究路线审核.html 有“Osgood 等”指向伊利诺伊大学出版社书页（press.uillinois.edu/books/?id=p745393）的链接，并称已核出版原页的理论定义；著者名缩写、出版地、年份按通用知识补，须核版权页；引具体定义时补页码。"
+    "status": "ok",
+    "note": "出版社页面核对三位作者与语义差异法简介。1957 年初版著录由 1958 年同期书评核对，区别于出版社仍在出售的 1967 平装版。https://www.press.uillinois.edu/books/?id=p745393 ; https://doi.org/10.1177/001316445801800423"
   },
   "NAGAMACHI": {
     "text": "NAGAMACHI M. Kansei Engineering: A new ergonomic consumer-oriented technology for product development[J]. International Journal of Industrial Ergonomics, 1995, 15(1): 3-11. DOI: 10.1016/0169-8141(94)00052-5.",
-    "status": "待核",
-    "note": "仓库仅有 DOI（同一 HTML 中 Nagamachi 链接）；题名、卷期、页码按通用知识补，与任务给定的1995, 15(1): 3-11一致，须对出版页核。"
+    "status": "ok",
+    "note": "原出版者登记的 DOI 元数据核过作者姓氏、题名与页码（3-11）。此项核验用于著录。 https://doi.org/10.1016/0169-8141(94)00052-5"
   },
   "UAV-U001": {
-    "text": "QI B, ZHAO S, SUN X, et al. Design of plant protection unmanned aerial vehicles: quantitative research and virtual simulation[J]. Advanced Design Research, 2024, 2: 〔页码待核〕. DOI: 10.1016/j.ijadr.2024.03.001.",
-    "status": "待核",
-    "note": "作者与题名按 reference-fulltexts-20261109 分支 fulltexts/UAV-U001.pdf 首页；卷与页码取自分类目录，待核"
+    "text": "QI B, ZHAO S, SUN X, et al. Design of plant protection unmanned aerial vehicles: quantitative research and virtual simulation[J]. Advanced Design Research, 2024, 2(1): 1–13. DOI: 10.1016/j.ijadr.2024.03.001.",
+    "status": "ok",
+    "note": "本地原件核对题名与作者，出版页确认 2(1), 1–13。https://www.sciencedirect.com/science/article/pii/S2949782524000021"
   },
   "ID-A005": {
     "text": "WANG Z, YANG K, WANG Y, et al. Embrace the era of drones: a new practical design approach to emergency rescue drones[J]. Applied Sciences, 2025, 15(1): 135. DOI: 10.3390/app15010135.",
     "status": "ok",
     "note": "按 fulltexts/ID-A005.pdf 首页 Citation 行核对（Wang Z, Yang K, Wang Y, Zhu Z, Liang X; Appl. Sci. 2025, 15, 135）"
+  },
+  "LIGRAM": {
+    "text": "厉茜茜, 周海海. 基于权重化特征与形状文法的产品识别设计[J]. 机械设计与制造工程, 2019, 48(7): 9–14. DOI: 10.3969/j.issn.2095-509X.2019.07.002.",
+    "status": "ok",
+    "note": "原PDF第1、4–6页，部件权重、修改与识别",
+    "url": "https://doi.org/10.3969/j.issn.2095-509X.2019.07.002"
+  },
+  "ZHUGRAM": {
+    "text": "朱天燕, 周海海, 唐敦兵, 等. 基于形状文法和交互式遗传算法的产品形态创新设计[J]. 机械设计与制造工程, 2019, 48(4): 12–17. DOI: 10.3969/j.issn.2095-509X.2019.04.003.",
+    "status": "ok",
+    "note": "原PDF第1–2、6页，生成与修改规则、人工评价停止",
+    "url": "https://doi.org/10.3969/j.issn.2095-509X.2019.04.003"
+  },
+  "ZHOUIMAGE": {
+    "text": "周海海, 张哲睿, 陈黎, 等. 高技术产品造型意象机器评价方法研究——以航空发动机为例[J]. 机械制造与自动化, 2024, 53(3): 20–24. DOI: 10.19344/j.cnki.issn1671-5276.2024.03.004.",
+    "status": "ok",
+    "note": "原PDF第1–2、5页，专家注视部位与机器评价",
+    "url": "https://doi.org/10.19344/j.cnki.issn1671-5276.2024.03.004"
+  },
+  "DING": {
+    "text": "丁满, 程语, 黄晓光, 等. 感性工学设计方法研究现状与进展[J]. 机械设计, 2020, 37(1): 121–127. DOI: 10.13841/j.cnki.jxsj.2020.01.022.",
+    "status": "ok",
+    "note": "原PDF第1–3页，意象获取与模型建立的区别",
+    "url": "https://doi.org/10.13841/j.cnki.jxsj.2020.01.022"
+  },
+  "KANSEITEXT": {
+    "text": "WANG W M, LI Z, TIAN Z G, et al. Extracting and summarizing affective features and responses from online product descriptions and reviews: A Kansei text mining approach[J]. Engineering Applications of Artificial Intelligence, 2018, 73: 149–162. DOI: 10.1016/j.engappai.2018.05.005.",
+    "status": "ok",
+    "note": "原PDF第1–3页，区分产品特征和消费者感受",
+    "url": "https://doi.org/10.1016/j.engappai.2018.05.005"
+  },
+  "LUOCAR": {
+    "text": "罗仕鉴, 易珮琦, 刘悦, 等. 智能技术驱动的汽车造型设计流程再造方法研究[J]. 计算机集成制造系统, 2025, 31(9): 3113–3122. DOI: 10.13196/j.cims.2025.0330.",
+    "status": "ok",
+    "note": "原PDF第1–4页，需求、方案与反馈验证的分工",
+    "url": "https://doi.org/10.13196/j.cims.2025.0330"
+  },
+  "LUOTEAM": {
+    "text": "罗仕鉴, 于慧伶, 张景森, 等. 基于人智团队智能体协同进化的群智创新设计方法[J]. 计算机集成制造系统, 2025, 31(3): 711–720. DOI: 10.13196/j.cims.2025.0101.",
+    "status": "ok",
+    "note": "原PDF第1–3页，设计者在交互中调节方案",
+    "url": "https://doi.org/10.13196/j.cims.2025.0101"
+  },
+  "YUKNOW": {
+    "text": "余隋怀, 王鹏超, 王磊, 等. 基于知识工程的产品设计研究综述[J]. 机械工程学报, 2024, 60(13): 216–234. DOI: 10.3901/JME.2024.13.216.",
+    "status": "ok",
+    "note": "原PDF第1页，知识挖掘、表示、检索与重用",
+    "url": "https://doi.org/10.3901/JME.2024.13.216"
+  },
+  "CRILLY": {
+    "text": "CRILLY N, MOULTRIE J, CLARKSON P J. Seeing things: consumer response to the visual domain in product design[J]. Design Studies, 2004, 25(6): 547–577. DOI: 10.1016/j.destud.2004.03.001.",
+    "status": "ok",
+    "note": "作者版第1页，设计者意图与消费者视觉反应",
+    "url": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/67fcdcc9-fc11-48cf-a29c-f3950688c6ab/content"
+  },
+  "DORST": {
+    "text": "DORST K, CROSS N. Creativity in the design process: co-evolution of problem–solution[J]. Design Studies, 2001, 22(5): 425–437. DOI: 10.1016/S0142-694X(01)00009-6.",
+    "status": "ok",
+    "note": "作者版摘要与问题—解共同演化的案例分析",
+    "url": "https://oro.open.ac.uk/3278/1/Creativity_-_coevolution.pdf"
+  },
+  "AMERSHI": {
+    "text": "AMERSHI S, WELD D, VORVOREANU M, et al. Guidelines for Human-AI Interaction[C]//Proceedings of CHI 2019. New York: ACM, 2019: 1–13. DOI: 10.1145/3290605.3300233.",
+    "status": "ok",
+    "note": "作者版指南表，G7–G9 支持调用、忽略及纠错",
+    "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf"
+  },
+  "DOW": {
+    "text": "DOW S P, GLASSCO A, KASS J, et al. Parallel prototyping leads to better design results, more divergence, and increased self-efficacy[J]. ACM Transactions on Computer-Human Interaction, 2010, 17(4): Article 18. DOI: 10.1145/1879831.1879836.",
+    "status": "ok",
+    "note": "作者版摘要与结论，并行和串行原型比较，效果限于原任务",
+    "url": "https://hci.stanford.edu/publications/2010/parallel-prototyping/ParallelPrototyping2010-final.pdf"
+  },
+  "FIXATION": {
+    "text": "JANSSON D G, SMITH S M. Design fixation[J]. Design Studies, 1991, 12(1): 3–11. DOI: 10.1016/0142-694X(91)90003-F.",
+    "status": "ok",
+    "note": "出版方摘要，示例与设计固着实验；不能直接推论生成模型机制",
+    "url": "https://doi.org/10.1016/0142-694X(91)90003-F"
+  },
+  "COHEN": {
+    "text": "COHEN J. A coefficient of agreement for nominal scales[J]. Educational and Psychological Measurement, 1960, 20(1): 37–46. DOI: 10.1177/001316446002000104.",
+    "status": "ok",
+    "note": "名义分类的一致性系数，方法来源",
+    "url": "https://doi.org/10.1177/001316446002000104"
+  },
+  "KAPPA": {
+    "text": "FEINSTEIN A R, CICCHETTI D V. High agreement but low kappa: I. The problems of two paradoxes[J]. Journal of Clinical Epidemiology, 1990, 43(6): 543–549. DOI: 10.1016/0895-4356(90)90158-L.",
+    "status": "ok",
+    "note": "原文摘要，边际分布不平衡影响机会校正一致性",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/2348207/"
+  },
+  "EDIT23": {
+    "text": "BROOKS T, HOLYNSKI A, EFROS A A. InstructPix2Pix: Learning to follow image editing instructions[C]//Proceedings of CVPR. 2023: 18392–18402. DOI: 10.1109/CVPR52729.2023.01764.",
+    "status": "ok",
+    "note": "原文第4节，输入保持与编辑方向分别衡量",
+    "url": "https://openaccess.thecvf.com/content/CVPR2023/papers/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.pdf"
+  },
+  "MAGIC23": {
+    "text": "ZHANG K, MO L, CHEN W, et al. MagicBrush: A manually annotated dataset for instruction-guided image editing[C]//Advances in Neural Information Processing Systems. 2023, 36. DOI: 10.48550/arXiv.2306.10012.",
+    "status": "ok",
+    "note": "原文第1页，源图、指令、目标图与单轮、多轮编辑",
+    "url": "https://proceedings.neurips.cc/paper_files/paper/2023/file/64008fa30cba9b4d1ab1bd3bd3d57d61-Paper-Datasets_and_Benchmarks.pdf"
+  },
+  "GENEVAL": {
+    "text": "GHOSH D, HAJISHIRZI H, SCHMIDT L. GenEval: An object-focused framework for evaluating text-to-image alignment[C]//Advances in Neural Information Processing Systems. 2023, 36. DOI: 10.48550/arXiv.2310.11513.",
+    "status": "ok",
+    "note": "作者摘要，数量、位置、颜色与共现分别计分",
+    "url": "https://arxiv.org/abs/2310.11513"
   }
 }

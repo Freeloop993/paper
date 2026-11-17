@@ -1,0 +1,155 @@
+[
+  {
+    "group": "商品列表",
+    "file": "京东列表页数据采集（list开头网址）.xlsx",
+    "rows": 330,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "3c7b37d4fe39fe2f1faddeaa57d65c51d105b496bc050360c049f1960dfae3d0"
+  },
+  {
+    "group": "评论",
+    "file": "京东商品全部评论-最新排序.xlsx",
+    "rows": 5939,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "77ebc2a6efea517d9822b9d5bb5716b06ce692583eec8f89abde5eedf8811a8c",
+    "nonempty_primary_comment": 5939
+  },
+  {
+    "group": "商品列表",
+    "file": "哈博森无人机.xlsx",
+    "rows": 143,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "4f993d0d602f9274787d5e7baaab73b1c48fd119af215518a845b94993e02bfe"
+  },
+  {
+    "group": "商品列表",
+    "file": "四旋翼无人机.xlsx",
+    "rows": 240,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "d8ed8fc215a17dc077bfeab394a87d07707246c55a7313e3fdb17183db994bf2"
+  },
+  {
+    "group": "商品列表",
+    "file": "大疆无人机.xlsx",
+    "rows": 138,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "ce8bb5a81d19178e2ace2c824bc64b41aa6327f8bf0f844b570d318d9043adec"
+  },
+  {
+    "group": "商品列表",
+    "file": "智飞星无人机.xlsx",
+    "rows": 135,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "d1d0e572f61610ca43778f76e437265417de8dbfad583c1792d26b5b0a3eb3a7"
+  },
+  {
+    "group": "商品列表",
+    "file": "植保无人机.xlsx",
+    "rows": 144,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "216c6820095675df4c7d169715d0b0ab0542e7edf5f0c813428ef6c474ba8300"
+  },
+  {
+    "group": "商品列表",
+    "file": "派诺特无人机.xlsx",
+    "rows": 144,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "033d69285261a4d0bd7872efd481c080cc9356fdc1a12a72de8d2710b777ffb9"
+  },
+  {
+    "group": "商品列表",
+    "file": "淘宝网-商品列表页采集【网站反爬请查阅注意事项】.xlsx",
+    "rows": 460,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "17a40f7a9fa164d10926e001ffe1dcc602e1b9ddd1fa34ba791c6ac95f2897aa"
+  },
+  {
+    "group": "商品列表",
+    "file": "道通智能无人机.xlsx",
+    "rows": 48,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "4362bff3b9e7d6008e77b3f288a9052a733b2b7f1d7d807ac0617bb099751edd"
+  },
+  {
+    "group": "商品详情",
+    "file": "222.xlsx",
+    "rows": 99,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "f220b641cbc8e7026ecff1eda9b9f28e7ce793f67d4bbbd23943d9393891c242",
+    "nonempty_parameter_cell": 86
+  },
+  {
+    "group": "商品详情",
+    "file": "33.xlsx",
+    "rows": 297,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "f01a7d7e56236f0c8f63f3e1ff2563f44e7a32aa006b9ede68f758c0b2dd4d38",
+    "nonempty_parameter_cell": 256
+  },
+  {
+    "group": "商品详情",
+    "file": "淘宝商品详情采集【网站反爬请查阅注意事项】.xlsx",
+    "rows": 99,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "e2035c0e485859077cbae38ac6f2e3570218f4eb378dd53eea40a2d1ab0e8d2d",
+    "nonempty_parameter_cell": 81
+  },
+  {
+    "group": "评论",
+    "file": "14：14.xlsx",
+    "rows": 1286,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "913f6deb5c3b57a3e28d81170107358bd321361debd86f0d0f61252e46b61de8",
+    "nonempty_primary_comment": 1265
+  },
+  {
+    "group": "评论",
+    "file": "大疆无人机前99条.xlsx",
+    "rows": 686,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "61da0f866bfa61e88ebbba5fdd337cde76ca4ad38ca7bbd077eb2ea5916ace11",
+    "nonempty_primary_comment": 641
+  },
+  {
+    "group": "评论",
+    "file": "无人机-中间99条.xlsx",
+    "rows": 1353,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "273beb7b2cc345003f2941c075bd2ebb92a63fefb1720efdc81b064a277fe4a4",
+    "nonempty_primary_comment": 1333
+  },
+  {
+    "group": "评论",
+    "file": "无人机-前99条.xlsx",
+    "rows": 733,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "0914b56a05959556be1770de32d905a0b6923bc75e7c0edaf18d46c15881f0a6",
+    "nonempty_primary_comment": 670
+  },
+  {
+    "group": "评论",
+    "file": "无人机评论后99条.xlsx",
+    "rows": 1244,
+    "first_sheet": "Sheet1",
+    "sheets": 1,
+    "sha256": "ddef3ddfd62ca0c90d62119dc2a9bc9b396fd81ae43169875dd6f3e534ef0853",
+    "nonempty_primary_comment": 1212
+  }
+]

@@ -1,0 +1,34 @@
+{
+  "instrument": "paired-topview-v1.0",
+  "html_sha256": "c908b0ae4c98861daa8ba93059c16d478b5de2528f7e87ab863c372105fa1583",
+  "count_distinct_submissions": 3,
+  "design_background_yes": 2,
+  "design_background_no": 1,
+  "independently_answered_self_report": 3,
+  "previous_image_or_opinion_exposure_self_report": 0,
+  "same_realized_question_order": "3/3: p then q",
+  "results": {
+    "p": {
+      "L": 0,
+      "H": 3,
+      "similar": 0,
+      "uncertain": 0,
+      "missing": 0,
+      "used_zoom": 1
+    },
+    "q": {
+      "L": 3,
+      "M": 0,
+      "similar": 0,
+      "uncertain": 0,
+      "missing": 0,
+      "used_zoom": 0
+    }
+  },
+  "material_key": {
+    "L": "03741a65636d",
+    "H": "49277d2ad694",
+    "M": "87d07d1025ad"
+  },
+  "scope": "配对选择，各题分别计数。原 E5 逐张七点评分和小图辨向另计。"
+}

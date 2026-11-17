@@ -17,3 +17,7 @@
 ## 复算
 
 [export.py](export.py) 读取原方向证据卡 JSON、语境审读 JSONL、去重语料 JSONL，导出公开卡表、独立盲表及私用对照键。参数名为 `--cards --contexts --clusters --delivery --key`。私用键须与编码者材料分目录保管。
+
+## 11 月 17 日来源与回件更新
+
+[早期 18 表的分母、商品参数覆盖和两份可下载共词矩阵](early-crawl/README.md)。上文“目前第二位真人提交数为 0”为发放时的记录，现已回收一份 [40 条独立第二编码](../semantic40-second-coding-20261115/semantic40-text-v2.csv)，并已完成[配对统计](../../experiments/semantic40-pairing/summary.json)。

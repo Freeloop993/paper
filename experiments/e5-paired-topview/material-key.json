@@ -1,0 +1,63 @@
+{
+  "version": "paired-topview-v1.0",
+  "evidence_role": "第5.3节两组配对判断补充材料，区别于原E5逐图七点评议和小图辨向，单独报告。",
+  "source_tree": "e96d41946ea84237da506bb76c2f713a3f3b9275",
+  "materials": {
+    "L": {
+      "id": "03741a65636d",
+      "source": "B2-L-lowkey.png",
+      "source_sha256": "46936781f061ecb014a2d9442ae15e5c5c3be47b189ca708b1de20cf5de32ef4",
+      "embedded_sha256": "f10ffb1ca91526b7ee9031a96dc97cc3ad9a8dc16944855d692919e2ed8c1bd2",
+      "rgb_sha256": "03741a65636d3f7fb7c005769d96a362f6ec6fcb42cabaf8fd3a1c242c9beec5",
+      "width": 1024,
+      "height": 1024
+    },
+    "H": {
+      "id": "49277d2ad694",
+      "source": "B2-H-signal.png",
+      "source_sha256": "2321e9b3de4be750a8314691c806bc1ff64afa3a32d0bb7b942e432b18fae43c",
+      "embedded_sha256": "73b7e56b13e34c6f7541273924de73efaa4c61825cf0ec882f378048ba49cf39",
+      "rgb_sha256": "49277d2ad69451073406543f0afe6b57ef3287b9569baf8b5f4a04fbe3b897a0",
+      "width": 1024,
+      "height": 1024
+    },
+    "M": {
+      "id": "87d07d1025ad",
+      "source": "cover-comparison.png",
+      "source_sha256": "86ff00af27c20d03ad77f861801e37912da616cc5c3305c0c228f8b181dbd827",
+      "embedded_sha256": "674d97dd93ee553548dca39a1ed891b224638a59c9f484f697676c4b1906fb70",
+      "rgb_sha256": "87d07d1025ade62475261913591bfc6a44e7aa9b7ec8a67ef1e0ba531de402d2",
+      "width": 1024,
+      "height": 1024
+    }
+  },
+  "comparisons": {
+    "p": [
+      "L",
+      "H"
+    ],
+    "q": [
+      "L",
+      "M"
+    ]
+  },
+  "build_html_sha256": "c908b0ae4c98861daa8ba93059c16d478b5de2528f7e87ab863c372105fa1583",
+  "p_difference": {
+    "changed_pixels": 4051,
+    "bbox_exclusive": [
+      218,
+      660,
+      796,
+      764
+    ]
+  },
+  "q_difference": {
+    "changed_pixels": 583,
+    "bbox_exclusive": [
+      459,
+      333,
+      556,
+      535
+    ]
+  }
+}

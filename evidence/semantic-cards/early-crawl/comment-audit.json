@@ -1,0 +1,18 @@
+{
+  "10月9日审计摘要原件SHA256": "b802382b54466b65ec95daf2635cec8cef56d87fcc7a14d5cc87baf3de465c78",
+  "此次已逐表重数": [
+    "review_rows",
+    "rows_with_primary_comment",
+    "empty_comment_rows"
+  ],
+  "原审计各阶段记录": {
+    "review_rows": 11241,
+    "empty_comment_rows": 181,
+    "rows_with_primary_comment": 11060,
+    "records_after_rule_merge": 8755,
+    "system_default_records_after_merge": 718,
+    "nondefault_records_after_merge": 8037,
+    "unique_nondefault_texts": 7443,
+    "appearance_portability_protection_candidate_texts": 1666
+  }
+}

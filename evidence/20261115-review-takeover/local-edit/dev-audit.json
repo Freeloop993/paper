@@ -1,0 +1,78 @@
+{
+  "archive": "D:\\下载\\localedit-dev-camera-cover-roots.zip",
+  "sha256": "42cf119517827bd70889a30a8df10d6580d59df30967cde3341996348ed4753d",
+  "rows": [
+    {
+      "id": "LE-camera-dev-01",
+      "arm": "camera",
+      "seed": 2026112801,
+      "composite_sha256": "a58b8d860bd5116ee35de8059d9f68e481b400374e86dac4afe6288508c1b135",
+      "original_sha256": "44f0fde46745d0f42596e87ce50a160c666952447a9167a709140c321ff518cd",
+      "prompt_id": "7d7310ba-0500-434b-b934-00b5020bc532"
+    },
+    {
+      "id": "LE-camera-dev-02",
+      "arm": "camera",
+      "seed": 2026112802,
+      "composite_sha256": "708ae5209980743b3b3c3c1e6ce977c5c017129037e67d9daba76cb26fb3a6f9",
+      "original_sha256": "d5c1076f68063465ed4a8ec4946a9a1b21cadaf4217bbce6ae2d7b7e78c5fe67",
+      "prompt_id": "836e538b-3135-45c3-b426-7a297c73f0d6"
+    },
+    {
+      "id": "LE-camera-dev-03",
+      "arm": "camera",
+      "seed": 2026112803,
+      "composite_sha256": "7046c9080fda07d54b773857ea3d0158f9752bce0e7c8454287f7a7274d22053",
+      "original_sha256": "acf5be1fd66bec10bca7cd7dfbb91bc052e5e2e7906c40812a97e370bd05f32b",
+      "prompt_id": "5c9e7d9c-1d4b-4ccf-8b0f-3aaa68db6acf"
+    },
+    {
+      "id": "LE-cover-dev-01",
+      "arm": "cover",
+      "seed": 2026112901,
+      "composite_sha256": "2cb4d06a4d3b3d49517b5e1826b4bb026777d6b9fd9c99ffb1cbe694b895ea1d",
+      "original_sha256": "2285c4f47121fa66cb7c0cd044c7294f7eb872d300a69db82167f553e5089fc8",
+      "prompt_id": "28e75049-a5bd-4c1d-8774-982e05f6fcf1"
+    },
+    {
+      "id": "LE-cover-dev-02",
+      "arm": "cover",
+      "seed": 2026112902,
+      "composite_sha256": "510d757cf2284013d6c81f1ca94f4928786550f421365d1333ecdd746d6f1176",
+      "original_sha256": "db6164c90ab388a18eb7145cc852bda24171aab9cbb13cd82b040a4f0a8f506d",
+      "prompt_id": "b60fd9b4-72ce-4560-92be-8d0bedb5684d"
+    },
+    {
+      "id": "LE-cover-dev-03",
+      "arm": "cover",
+      "seed": 2026112903,
+      "composite_sha256": "935e1b8d0fceebfd153261805078dd568d3402a7afa4907cec08a615d3956232",
+      "original_sha256": "af4113c13b61edd6d64541917f9645864d75677836f90013aed43551b5d2b800",
+      "prompt_id": "75ad2f84-33c5-4261-a179-1076d851d76e"
+    },
+    {
+      "id": "LE-roots-dev-01",
+      "arm": "roots",
+      "seed": 2026113001,
+      "composite_sha256": "51f44488f84ef2fef9bf8b4ffa3b89e1540c1ff2760c9cc2eff36be1f8a2bd5c",
+      "original_sha256": "570ce4ebdc1f86a43de72bb784f94b177ba684b6e1a75cfa184edd464a0a6a8f",
+      "prompt_id": "18eafab6-8688-403c-a7f6-a002dad6be11"
+    },
+    {
+      "id": "LE-roots-dev-02",
+      "arm": "roots",
+      "seed": 2026113002,
+      "composite_sha256": "188d50c8d954c9db730ac4bde53368794029eb63b64f3d307c0c0b685ec9b587",
+      "original_sha256": "a998ea89433c3cbc8846c7353de50702dfc567f478ff450d8d5916b373f7913e",
+      "prompt_id": "68e972da-d6c1-4c24-bf8f-f48849b18ed6"
+    },
+    {
+      "id": "LE-roots-dev-03",
+      "arm": "roots",
+      "seed": 2026113003,
+      "composite_sha256": "6d4d5ba30e3d626f410a31f33abeb4f8f6cd5e9ccacab23ea4afc809aa0f90bd",
+      "original_sha256": "135ee32dd1a42a28303fe80664eb3f5f7ffe50b1fa9cc9183ca134c72185b06b",
+      "prompt_id": "80f3ff40-343d-4806-b0cc-fb6af4109c97"
+    }
+  ]
+}

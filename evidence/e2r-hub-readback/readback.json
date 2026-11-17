@@ -1,0 +1,288 @@
+{
+  "source_zip_sha256": "3d6afcd05c7a3d7f3a3a98d1f3a5aa8c08d2620aceb5c72fba39adc18bc17337",
+  "classification": "知条件 AI 单次逐轴读数；像素坐标取桨轴中心盖或中心螺帽；不作独立真人读数。",
+  "order": [
+    "左上",
+    "右上",
+    "左下",
+    "右下"
+  ],
+  "native_size": [
+    1024,
+    1024
+  ],
+  "coordinates": {
+    "E2R-B2-A-layout": [
+      [
+        250,
+        273
+      ],
+      [
+        769,
+        273
+      ],
+      [
+        259,
+        726
+      ],
+      [
+        760,
+        726
+      ]
+    ],
+    "E2R-B2-A-parent": [
+      [
+        245,
+        266
+      ],
+      [
+        768,
+        265
+      ],
+      [
+        245,
+        727
+      ],
+      [
+        768,
+        728
+      ]
+    ],
+    "E2R-B2-B-parent": [
+      [
+        245,
+        266
+      ],
+      [
+        768,
+        265
+      ],
+      [
+        245,
+        727
+      ],
+      [
+        768,
+        728
+      ]
+    ],
+    "E2R-C1-A-parent": [
+      [
+        257,
+        266
+      ],
+      [
+        765,
+        266
+      ],
+      [
+        251,
+        739
+      ],
+      [
+        766,
+        739
+      ]
+    ],
+    "E2R-C1-B-layout": [
+      [
+        266,
+        279
+      ],
+      [
+        757,
+        279
+      ],
+      [
+        266,
+        723
+      ],
+      [
+        757,
+        723
+      ]
+    ],
+    "E2R-C1-B-parent": [
+      [
+        257,
+        266
+      ],
+      [
+        765,
+        266
+      ],
+      [
+        251,
+        739
+      ],
+      [
+        766,
+        739
+      ]
+    ],
+    "E3R3-B2": [
+      [
+        245,
+        266
+      ],
+      [
+        768,
+        265
+      ],
+      [
+        245,
+        727
+      ],
+      [
+        768,
+        728
+      ]
+    ],
+    "E3R3-C1": [
+      [
+        257,
+        266
+      ],
+      [
+        765,
+        266
+      ],
+      [
+        251,
+        739
+      ],
+      [
+        766,
+        739
+      ]
+    ]
+  },
+  "results": [
+    {
+      "id": "E2R-C1-B-parent",
+      "route": "parent",
+      "seed": 2026112504,
+      "parent": "E3R3-C1",
+      "output_sha256": "004dbf85588e0072cbb5cc47d377632605bc4d6a226ab1b9035e2e5ae930b577",
+      "parent_sha256": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b",
+      "actual_request_sha256": "790324c4d2fea500dafd6ce27ee7a87e7e445007e740ef7ae00496f5c91785f7",
+      "displacements_px": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parent_diagonals_px": [
+        694.845,
+        698.516
+      ],
+      "max_relative_to_shorter": 0.0,
+      "sensitivity_upper": 0.00871
+    },
+    {
+      "id": "E2R-B2-A-parent",
+      "route": "parent",
+      "seed": 2026112501,
+      "parent": "E3R3-B2",
+      "output_sha256": "5669d50dd49b3d85514e71469a2b118e331359e9df5cfbaea41ca3585c95a4ef",
+      "parent_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+      "actual_request_sha256": "1016c37f2a75a94ecee781183073379b91889d4833ce6c4c527c642622b4b29d",
+      "displacements_px": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parent_diagonals_px": [
+        697.835,
+        697.835
+      ],
+      "max_relative_to_shorter": 0.0,
+      "sensitivity_upper": 0.00867
+    },
+    {
+      "id": "E2R-B2-A-layout",
+      "route": "layout",
+      "seed": 2026112501,
+      "parent": "E3R3-B2",
+      "output_sha256": "81d0add312512daf6094e3d6ca34095a39dc4d907cf34b62c24f92d6306bacb3",
+      "parent_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+      "actual_request_sha256": "00f2b4fe0be3f07d463b0b5ae1d00f3e0a911daeb624a499d287cb6407b00fc0",
+      "displacements_px": [
+        8.602,
+        8.062,
+        14.036,
+        8.246
+      ],
+      "parent_diagonals_px": [
+        697.835,
+        697.835
+      ],
+      "max_relative_to_shorter": 0.02011,
+      "sensitivity_upper": 0.02896
+    },
+    {
+      "id": "E2R-B2-B-parent",
+      "route": "parent",
+      "seed": 2026112502,
+      "parent": "E3R3-B2",
+      "output_sha256": "088f6e30ab04980a9532cf9dcc617d5484f50dae70d817abc418bcfaf1e6f6d0",
+      "parent_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+      "actual_request_sha256": "54a255c61c79ca2ff51a7c510157051e0f7eb683885f5a53df1ed17516fc776a",
+      "displacements_px": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parent_diagonals_px": [
+        697.835,
+        697.835
+      ],
+      "max_relative_to_shorter": 0.0,
+      "sensitivity_upper": 0.00867
+    },
+    {
+      "id": "E2R-C1-B-layout",
+      "route": "layout",
+      "seed": 2026112504,
+      "parent": "E3R3-C1",
+      "output_sha256": "6eb9773a782296484412f1e7534af094ea488105a8184f50948367e1c2404600",
+      "parent_sha256": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b",
+      "actual_request_sha256": "1521b22fa9ca29480031b43d93ba0ace26463ea7051f511317c9b642cbac9d47",
+      "displacements_px": [
+        15.811,
+        15.264,
+        21.932,
+        18.358
+      ],
+      "parent_diagonals_px": [
+        694.845,
+        698.516
+      ],
+      "max_relative_to_shorter": 0.03156,
+      "sensitivity_upper": 0.04055
+    },
+    {
+      "id": "E2R-C1-A-parent",
+      "route": "parent",
+      "seed": 2026112503,
+      "parent": "E3R3-C1",
+      "output_sha256": "897adc153935d47d8e6aeaf0ea41493db34dbb3ccbc88282ce2aca371a7cfee0",
+      "parent_sha256": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b",
+      "actual_request_sha256": "c6f167cebcd492b857bccd5c6744b955664528377efbc29a910dc7795173383a",
+      "displacements_px": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parent_diagonals_px": [
+        694.845,
+        698.516
+      ],
+      "max_relative_to_shorter": 0.0,
+      "sensitivity_upper": 0.00871
+    }
+  ]
+}

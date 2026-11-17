@@ -1,0 +1,796 @@
+{
+  "reader_file_sha256": {
+    "L": "688d58809371195a65626b80ca778f3529f37e123c1685e9e882fd364adc8830",
+    "M": "8017ba481f19991a723c83d6f5e3326989aa87edc8c120e1979db7b5eca0b20c"
+  },
+  "counts": {
+    "L": {
+      "COMBO": {
+        "nose": 23,
+        "body": 24,
+        "cover": 20,
+        "all3": 20,
+        "camera_bottom": 1,
+        "camera_uncertain": 12
+      }
+    },
+    "M": {
+      "COMBO": {
+        "nose": 23,
+        "body": 24,
+        "cover": 20,
+        "all3": 20,
+        "camera_bottom": 1,
+        "camera_uncertain": 12
+      }
+    }
+  },
+  "combo_cells": {
+    "COMBO-box-inside-multi": {
+      "L": {
+        "n": 3,
+        "hits": 2,
+        "nose": {
+          "flush": 3
+        },
+        "camera": {
+          "?": 3
+        },
+        "up_lens": {
+          "no": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 2
+        }
+      },
+      "M": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "flush": 3
+        },
+        "camera": {
+          "?": 3
+        },
+        "up_lens": {
+          "no": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      }
+    },
+    "COMBO-box-inside-single": {
+      "L": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "flush": 3
+        },
+        "camera": {
+          "?": 3
+        },
+        "up_lens": {
+          "no": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      },
+      "M": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "flush": 3
+        },
+        "camera": {
+          "?": 3
+        },
+        "up_lens": {
+          "no": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      }
+    },
+    "COMBO-box-projecting-multi": {
+      "L": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "projecting": 3
+        },
+        "camera": {
+          "top": 3
+        },
+        "up_lens": {
+          "no": 1,
+          "?": 2
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      },
+      "M": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "projecting": 3
+        },
+        "camera": {
+          "top": 3
+        },
+        "up_lens": {
+          "?": 2,
+          "yes": 1
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      }
+    },
+    "COMBO-box-projecting-single": {
+      "L": {
+        "n": 3,
+        "hits": 0,
+        "nose": {
+          "flush": 1,
+          "projecting": 2
+        },
+        "camera": {
+          "bottom": 1,
+          "top": 2
+        },
+        "up_lens": {
+          "no": 2,
+          "?": 1
+        },
+        "by_part": {
+          "nose": 2,
+          "body": 3,
+          "cover": 0
+        }
+      },
+      "M": {
+        "n": 3,
+        "hits": 0,
+        "nose": {
+          "flush": 1,
+          "projecting": 2
+        },
+        "camera": {
+          "bottom": 1,
+          "top": 2
+        },
+        "up_lens": {
+          "?": 3
+        },
+        "by_part": {
+          "nose": 2,
+          "body": 3,
+          "cover": 0
+        }
+      }
+    },
+    "COMBO-pod-inside-multi": {
+      "L": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "flush": 3
+        },
+        "camera": {
+          "?": 3
+        },
+        "up_lens": {
+          "no": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      },
+      "M": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "flush": 3
+        },
+        "camera": {
+          "?": 3
+        },
+        "up_lens": {
+          "no": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      }
+    },
+    "COMBO-pod-inside-single": {
+      "L": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "flush": 3
+        },
+        "camera": {
+          "?": 3
+        },
+        "up_lens": {
+          "no": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      },
+      "M": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "flush": 3
+        },
+        "camera": {
+          "?": 3
+        },
+        "up_lens": {
+          "no": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      }
+    },
+    "COMBO-pod-projecting-multi": {
+      "L": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "projecting": 3
+        },
+        "camera": {
+          "top": 3
+        },
+        "up_lens": {
+          "?": 2,
+          "no": 1
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      },
+      "M": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "projecting": 3
+        },
+        "camera": {
+          "top": 3
+        },
+        "up_lens": {
+          "?": 3
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      }
+    },
+    "COMBO-pod-projecting-single": {
+      "L": {
+        "n": 3,
+        "hits": 3,
+        "nose": {
+          "projecting": 3
+        },
+        "camera": {
+          "top": 3
+        },
+        "up_lens": {
+          "no": 1,
+          "yes": 1,
+          "?": 1
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 3
+        }
+      },
+      "M": {
+        "n": 3,
+        "hits": 2,
+        "nose": {
+          "projecting": 3
+        },
+        "camera": {
+          "top": 3
+        },
+        "up_lens": {
+          "?": 2,
+          "yes": 1
+        },
+        "by_part": {
+          "nose": 3,
+          "body": 3,
+          "cover": 2
+        }
+      }
+    }
+  },
+  "extension_cells": {
+    "S12-S0": {
+      "L": {
+        "n": 8,
+        "hits": null,
+        "nose": {
+          "flush": 7,
+          "?": 1
+        },
+        "camera": {
+          "bottom": 1,
+          "hidden": 5,
+          "?": 2
+        },
+        "up_lens": {
+          "?": 1,
+          "no": 7
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 4
+      },
+      "M": {
+        "n": 8,
+        "hits": null,
+        "nose": {
+          "flush": 7,
+          "?": 1
+        },
+        "camera": {
+          "bottom": 1,
+          "hidden": 5,
+          "?": 2
+        },
+        "up_lens": {
+          "yes": 1,
+          "no": 7
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 4
+      }
+    },
+    "S12-S1": {
+      "L": {
+        "n": 8,
+        "hits": 8,
+        "nose": {
+          "projecting": 1,
+          "flush": 6,
+          "?": 1
+        },
+        "camera": {
+          "top": 1,
+          "hidden": 4,
+          "bottom": 1,
+          "?": 2
+        },
+        "up_lens": {
+          "no": 7,
+          "yes": 1
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 0
+      },
+      "M": {
+        "n": 8,
+        "hits": 8,
+        "nose": {
+          "projecting": 1,
+          "flush": 6,
+          "?": 1
+        },
+        "camera": {
+          "top": 1,
+          "hidden": 4,
+          "bottom": 1,
+          "?": 2
+        },
+        "up_lens": {
+          "no": 7,
+          "yes": 1
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 0
+      }
+    },
+    "S12-S2": {
+      "L": {
+        "n": 8,
+        "hits": 7,
+        "nose": {
+          "flush": 7,
+          "?": 1
+        },
+        "camera": {
+          "hidden": 5,
+          "?": 2,
+          "bottom": 1
+        },
+        "up_lens": {
+          "no": 8
+        },
+        "baseline_socket": 7,
+        "baseline_multi": 6
+      },
+      "M": {
+        "n": 8,
+        "hits": 8,
+        "nose": {
+          "flush": 7,
+          "?": 1
+        },
+        "camera": {
+          "hidden": 5,
+          "?": 2,
+          "bottom": 1
+        },
+        "up_lens": {
+          "no": 7,
+          "?": 1
+        },
+        "baseline_socket": 8,
+        "baseline_multi": 7
+      }
+    },
+    "S12-S3": {
+      "L": {
+        "n": 8,
+        "hits": 8,
+        "nose": {
+          "flush": 7,
+          "projecting": 1
+        },
+        "camera": {
+          "hidden": 5,
+          "bottom": 1,
+          "?": 1,
+          "top": 1
+        },
+        "up_lens": {
+          "no": 7,
+          "yes": 1
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 5
+      },
+      "M": {
+        "n": 8,
+        "hits": 8,
+        "nose": {
+          "flush": 7,
+          "projecting": 1
+        },
+        "camera": {
+          "hidden": 5,
+          "bottom": 1,
+          "?": 1,
+          "top": 1
+        },
+        "up_lens": {
+          "no": 7,
+          "yes": 1
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 5
+      }
+    },
+    "S12-S4": {
+      "L": {
+        "n": 8,
+        "hits": 3,
+        "nose": {
+          "flush": 5,
+          "projecting": 3
+        },
+        "camera": {
+          "bottom": 5,
+          "top": 3
+        },
+        "up_lens": {
+          "yes": 8
+        },
+        "baseline_socket": 1,
+        "baseline_multi": 0
+      },
+      "M": {
+        "n": 8,
+        "hits": 3,
+        "nose": {
+          "flush": 5,
+          "projecting": 3
+        },
+        "camera": {
+          "bottom": 5,
+          "top": 3
+        },
+        "up_lens": {
+          "yes": 8
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 0
+      }
+    },
+    "S12-S5": {
+      "L": {
+        "n": 8,
+        "hits": 8,
+        "nose": {
+          "flush": 8
+        },
+        "camera": {
+          "?": 4,
+          "hidden": 3,
+          "bottom": 1
+        },
+        "up_lens": {
+          "no": 8
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 8
+      },
+      "M": {
+        "n": 8,
+        "hits": 8,
+        "nose": {
+          "flush": 8
+        },
+        "camera": {
+          "?": 3,
+          "hidden": 4,
+          "bottom": 1
+        },
+        "up_lens": {
+          "no": 7,
+          "?": 1
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 8
+      }
+    },
+    "S16-S0": {
+      "L": {
+        "n": 4,
+        "hits": null,
+        "nose": {
+          "flush": 3,
+          "projecting": 1
+        },
+        "camera": {
+          "?": 3,
+          "top": 1
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 0
+      },
+      "M": {
+        "n": 4,
+        "hits": null,
+        "nose": {
+          "flush": 3,
+          "projecting": 1
+        },
+        "camera": {
+          "?": 3,
+          "top": 1
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 0
+      }
+    },
+    "S16-S1": {
+      "L": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "flush": 4
+        },
+        "camera": {
+          "?": 4
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 0
+      },
+      "M": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "flush": 4
+        },
+        "camera": {
+          "?": 4
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 0
+      }
+    },
+    "S16-S2": {
+      "L": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "flush": 4
+        },
+        "camera": {
+          "?": 4
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 4,
+        "baseline_multi": 4
+      },
+      "M": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "flush": 4
+        },
+        "camera": {
+          "?": 4
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 4,
+        "baseline_multi": 4
+      }
+    },
+    "S16-S3": {
+      "L": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "flush": 3,
+          "projecting": 1
+        },
+        "camera": {
+          "?": 3,
+          "top": 1
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 1
+      },
+      "M": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "flush": 3,
+          "projecting": 1
+        },
+        "camera": {
+          "?": 3,
+          "top": 1
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 1
+      }
+    },
+    "S16-S4": {
+      "L": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "projecting": 4
+        },
+        "camera": {
+          "top": 4
+        },
+        "up_lens": {
+          "?": 3,
+          "no": 1
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 1
+      },
+      "M": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "projecting": 4
+        },
+        "camera": {
+          "top": 4
+        },
+        "up_lens": {
+          "?": 3,
+          "no": 1
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 1
+      }
+    },
+    "S16-S5": {
+      "L": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "flush": 4
+        },
+        "camera": {
+          "?": 4
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 4
+      },
+      "M": {
+        "n": 4,
+        "hits": 4,
+        "nose": {
+          "flush": 4
+        },
+        "camera": {
+          "?": 4
+        },
+        "up_lens": {
+          "no": 4
+        },
+        "baseline_socket": 0,
+        "baseline_multi": 4
+      }
+    }
+  },
+  "agreement": {
+    "body": 96,
+    "nose": 96,
+    "cover": 90,
+    "camera": 95,
+    "up_lens": 87,
+    "roots": 91,
+    "blades": 96
+  }
+}

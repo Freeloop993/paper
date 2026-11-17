@@ -1,0 +1,152 @@
+[
+  {
+    "order": 6,
+    "id": "HEXA-draft-r1",
+    "old_id": "HEXA-draft-r1",
+    "matches": 1,
+    "prompt_id": "d6941755-d96a-4b55-b08d-817ea25dd88f",
+    "png_sha256": "121a7acc59e695fbac5db9e8bc6f81e7a7f95245d75ba51b74b01368cd5b3981",
+    "request_sha256": "38e5798eb9fea205be017a64df7cc5dcee1c1b4262e4b57372dce98335bb1653",
+    "seed": 2026112301
+  },
+  {
+    "order": 6,
+    "id": "HEXA-draft-r2",
+    "old_id": "HEXA-draft-r2",
+    "matches": 1,
+    "prompt_id": "b6f50445-a985-4843-be6c-9c40ed99c17b",
+    "png_sha256": "3f2bdeda138d53d0fb175e1671af3a7c740934bc5a406e424823e7c920f3ed25",
+    "request_sha256": "c775c1d0e4982f0c3de1b862ec8f1d9bf6cb195456fa1b9df7faf6b51ec2db6d",
+    "seed": 2026112302
+  },
+  {
+    "order": 6,
+    "id": "HEXA-draft-r3",
+    "old_id": "HEXA-draft-r3",
+    "matches": 1,
+    "prompt_id": "287807ed-91dc-4ea5-912c-93216923c346",
+    "png_sha256": "d1bf76efe443f2501fb4410b95af4affaf2433f0646faef5eabade4542cb729b",
+    "request_sha256": "c65f68a9a890ceafa01bdc2c7c60a9f93290adf3a7af2848a22335dca6b2380b",
+    "seed": 2026112303
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl0.70-r01",
+    "old_id": "HEXA-wl0.70-r01",
+    "matches": 1,
+    "prompt_id": "04375027-4527-4317-b49e-4c7913a2e5bc",
+    "png_sha256": "ef97a3a2a5c7a108334aedcdced3e187638ce4602246d9c454bb50c980e99c1a",
+    "request_sha256": "3c416337ed6c458141f974eabd6ed40b113aafaf1def8961bd3c7659cc5bc7c6",
+    "seed": 2026112323
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl0.70-r02",
+    "old_id": "HEXA-wl0.70-r02",
+    "matches": 1,
+    "prompt_id": "9135710e-08cf-48ad-a049-4be7bf38197d",
+    "png_sha256": "4e3c7cce90bfcc42f6d72694f3438ca5bfc1a98ab89ecd1a18fd8e0c6e4b70c7",
+    "request_sha256": "a12986751c464328393214837737097a6a4e3d6432b10d6bdd7c4251f853caee",
+    "seed": 2026112324
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl0.70-r03",
+    "old_id": "HEXA-wl0.70-r03",
+    "matches": 1,
+    "prompt_id": "35e60ba7-50bc-4258-8fe1-d1b6fa636173",
+    "png_sha256": "9c3a5d0ed4f31b358fc45ce1bac51f41bfaa65f628c83a276456287ac4330cf4",
+    "request_sha256": "8e01b68678b99df813c8dbe7510e5fb89c179cf313701d3ac4246f68dd59bec7",
+    "seed": 2026112325
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl0.70-r04",
+    "old_id": "HEXA-wl0.70-r04",
+    "matches": 1,
+    "prompt_id": "0de35f2d-98a5-4b1c-bc00-d029af228a46",
+    "png_sha256": "7d88ecb0a47218993bb51b32dec83de37d45a462027acb7eb6a39e871a23a856",
+    "request_sha256": "17e07c4ba7ceed079fb0faa8fe86cd355b889dcdd1c5c0a7c23576723aabfb22",
+    "seed": 2026112326
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl1.00-r01",
+    "old_id": "HEXA-wl1.00-r01",
+    "matches": 1,
+    "prompt_id": "c9060363-6831-4e38-acd9-6ebe74b0dedf",
+    "png_sha256": "2494a62df83232664eff623121d07376fbb5841e1947a8d19a1983698595e325",
+    "request_sha256": "6af5c5b3e96925fe95cc449d371aee1982a3c09ce8d953e219c9cfdb77bdb1bc",
+    "seed": 2026112323
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl1.00-r02",
+    "old_id": "HEXA-wl1.00-r02",
+    "matches": 1,
+    "prompt_id": "463c0f3d-178d-410b-8272-b6529541468d",
+    "png_sha256": "a30182027bab5061ccc116160793240edb66a802aa3f253c742dde53ca5e9d6b",
+    "request_sha256": "37bc50988e3d0f78e8395e680c53f887a5d4a3e8787b0fbc70a32d6798b68680",
+    "seed": 2026112324
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl1.00-r03",
+    "old_id": "HEXA-wl1.00-r03",
+    "matches": 1,
+    "prompt_id": "9f16953e-7048-40c5-8e47-7de465dd8e8b",
+    "png_sha256": "23410a4ffb729e4aabdc8b665d91193fe0ca6777c9ea55fb4409c684eaf77931",
+    "request_sha256": "55883a835fa497f2a84f4166a3e73d957e16c51a1d8c63ffdcd0c30f31419a85",
+    "seed": 2026112325
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl1.00-r04",
+    "old_id": "HEXA-wl1.00-r04",
+    "matches": 1,
+    "prompt_id": "be4ba63d-7e71-4620-8f51-fd8694cce597",
+    "png_sha256": "fe7542c97da161538b3e1b3407ee17ceaa887b5ab3617febce519ebaab61d45d",
+    "request_sha256": "128053ab9135ae02d6d9e5b5aca956e89c6c9fd37f069833476bc14bbd95f9b3",
+    "seed": 2026112326
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl1.30-r01",
+    "old_id": "HEXA-wl1.30-r01",
+    "matches": 1,
+    "prompt_id": "2559944e-1b67-4ed8-9aad-626d01d42cb4",
+    "png_sha256": "59b1bb1f80cda6f0404634a71abc8d95eb78c4972d0247abd621099504609ba1",
+    "request_sha256": "1c061eb80e2e111f2fa3d34d8651ea1d4b2f298610a0a3e71b3d965785286aef",
+    "seed": 2026112323
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl1.30-r02",
+    "old_id": "HEXA-wl1.30-r02",
+    "matches": 1,
+    "prompt_id": "c1c40032-a546-4bbc-a66c-e44025e9318a",
+    "png_sha256": "cabe4886b335bba1193bf35e7546c4cc4dc9ba4dece8ee05082da9f3438c48e7",
+    "request_sha256": "a9b12a51b6729e5aa9cd87e4ab2f3fdf78d516f402cd30fb90ba72f1388b8f90",
+    "seed": 2026112324
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl1.30-r03",
+    "old_id": "HEXA-wl1.30-r03",
+    "matches": 1,
+    "prompt_id": "6033f67c-b2f7-4f4c-8ae2-87578ff423db",
+    "png_sha256": "be3d1c6553f1579441b079bfac0422ffbdc0ad230f3f69fd417070a1420c4c84",
+    "request_sha256": "59f0a730dd15e196ab3979de02b1be397022afeec341ab75b39e29bb53614f84",
+    "seed": 2026112325
+  },
+  {
+    "order": 7,
+    "id": "P2-HEXA-wl1.30-r04",
+    "old_id": "HEXA-wl1.30-r04",
+    "matches": 1,
+    "prompt_id": "11dc1e2f-d65b-41ac-899d-e66077eba402",
+    "png_sha256": "1a9769ce176c0c2403835c6ad29d8a17071f6ebf16d22131f9451d218dc53467",
+    "request_sha256": "985ce6154d6318dfe304baffc1041f315d8e1e3f375cf3a350990e2361e5adcc",
+    "seed": 2026112326
+  }
+]

@@ -1,0 +1,6242 @@
+[
+ {
+  "reader": "L",
+  "run": "COMBO-box-inside-multi-r1",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-multi",
+  "body": "box",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-inside-multi-r2",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-multi",
+  "body": "box",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-inside-multi-r3",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-multi",
+  "body": "box",
+  "nose": "flush",
+  "cover": "?",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 0
+  },
+  "all_targets_hit": false,
+  "note": "横线局限于中央窄面，上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-inside-single-r1",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-single",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-inside-single-r2",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-single",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-inside-single-r3",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-single",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-projecting-multi-r1",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-multi",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-projecting-multi-r2",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-multi",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-projecting-multi-r3",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-multi",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-projecting-single-r1",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-single",
+  "body": "box",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 0,
+   "cover": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-projecting-single-r2",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-single",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "?",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 0
+  },
+  "all_targets_hit": false,
+  "note": "中段横痕很淡，难辨接缝。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-box-projecting-single-r3",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-single",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "?",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 0
+  },
+  "all_targets_hit": false,
+  "note": "中央细线不易区分装饰与分件。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-inside-multi-r1",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-multi",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-inside-multi-r2",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-multi",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-inside-multi-r3",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-multi",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-inside-single-r1",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-single",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-inside-single-r2",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-single",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-inside-single-r3",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-single",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-projecting-multi-r1",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-multi",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-projecting-multi-r2",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-multi",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-projecting-multi-r3",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-multi",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-projecting-single-r1",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-single",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-projecting-single-r2",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-single",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "放大后上端舱窗内可辨椭圆镜面。"
+ },
+ {
+  "reader": "L",
+  "run": "COMBO-pod-projecting-single-r3",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-single",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S0-r05",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "下端舱被壳缘遮住大半，露出同心暗弧。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S0-r06",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S0-r07",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "?",
+  "roots_each": [
+   "socket",
+   "socket",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "原图两前臂根有横缝，两后臂连续，下缘仅露细黑边。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S0-r08",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S0-r09",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S0-r10",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S0-r11",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S0-r12",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "?",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "上缘只有极窄的暗边。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S1-r05",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S1-r06",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S1-r07",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S1-r08",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S1-r09",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S1-r10",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S1-r11",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "?",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "?",
+  "roots_each": [
+   "?",
+   "?",
+   "?",
+   "?"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "臂根有隆起，横缝不清；上缘只露窄块。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S1-r12",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘仅露出两个小暗块。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S2-r05",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S2-r06",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S2-r07",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S2-r08",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S2-r09",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S2-r10",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "?",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "两侧短缝在中央面板处中断，下缘有细小黑边。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S2-r11",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘露出中央暗块和两侧小凸件。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S2-r12",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "?",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 0
+  },
+  "all_targets_hit": false,
+  "note": "四个根座窗口均露出短圆轴；上缘仅见小黑弧。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S3-r05",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S3-r06",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S3-r07",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S3-r08",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S3-r09",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘细黑边。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S3-r10",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   3,
+   3,
+   3,
+   3
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S3-r11",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S3-r12",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S4-r05",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S4-r06",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S4-r07",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": "原图可见四臂与外扩根座之间的细横缝。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S4-r08",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S4-r09",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S4-r10",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S4-r11",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S4-r12",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S5-r05",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘露出窄黑片。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S5-r06",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S5-r07",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘露出细小黑边，舱形不清。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S5-r08",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘两处小暗块，难辨舱形。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S5-r09",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S5-r10",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S12-S5-r11",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘黑边较窄。"
+ },
+ {
+  "reader": "L",
+  "run": "S12-S5-r12",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘可见窄块与侧件。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S0-r05",
+  "group": "S16",
+  "cell": "S16-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "上缘仅见窄黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S0-r06",
+  "group": "S16",
+  "cell": "S16-S0",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "放大后可见上端黑色框件越出白色壳缘。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S0-r07",
+  "group": "S16",
+  "cell": "S16-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S0-r08",
+  "group": "S16",
+  "cell": "S16-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S1-r05",
+  "group": "S16",
+  "cell": "S16-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S1-r06",
+  "group": "S16",
+  "cell": "S16-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S1-r07",
+  "group": "S16",
+  "cell": "S16-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S1-r08",
+  "group": "S16",
+  "cell": "S16-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "四处各见一片深色叶。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S2-r05",
+  "group": "S16",
+  "cell": "S16-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S2-r06",
+  "group": "S16",
+  "cell": "S16-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S2-r07",
+  "group": "S16",
+  "cell": "S16-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘仅见窄黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S2-r08",
+  "group": "S16",
+  "cell": "S16-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S3-r05",
+  "group": "S16",
+  "cell": "S16-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘仅见窄黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S3-r06",
+  "group": "S16",
+  "cell": "S16-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S3-r07",
+  "group": "S16",
+  "cell": "S16-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S3-r08",
+  "group": "S16",
+  "cell": "S16-S3",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "上端有越出壳缘的窄框件。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S4-r05",
+  "group": "S16",
+  "cell": "S16-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": "上端凸件可见暗色椭圆，朝向不清。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S4-r06",
+  "group": "S16",
+  "cell": "S16-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": "舱窗仅露出窄亮面，朝向难辨。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S4-r07",
+  "group": "S16",
+  "cell": "S16-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S16-S4-r08",
+  "group": "S16",
+  "cell": "S16-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "L",
+  "run": "S16-S5-r05",
+  "group": "S16",
+  "cell": "S16-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S5-r06",
+  "group": "S16",
+  "cell": "S16-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S5-r07",
+  "group": "S16",
+  "cell": "S16-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽。"
+ },
+ {
+  "reader": "L",
+  "run": "S16-S5-r08",
+  "group": "S16",
+  "cell": "S16-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘黑槽，顶盖横缝延至两侧。"
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-inside-multi-r1",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-multi",
+  "body": "box",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-inside-multi-r2",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-multi",
+  "body": "box",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-inside-multi-r3",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-multi",
+  "body": "box",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-inside-single-r1",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-single",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-inside-single-r2",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-single",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-inside-single-r3",
+  "group": "COMBO",
+  "cell": "COMBO-box-inside-single",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-projecting-multi-r1",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-multi",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-projecting-multi-r2",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-multi",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-projecting-multi-r3",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-multi",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "舱体上缘能看到部分同心镜圈。"
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-projecting-single-r1",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-single",
+  "body": "box",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 0,
+   "cover": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-projecting-single-r2",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-single",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "?",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 0
+  },
+  "all_targets_hit": false,
+  "note": "中部横线很浅，难辨是否为分件线。"
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-box-projecting-single-r3",
+  "group": "COMBO",
+  "cell": "COMBO-box-projecting-single",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "?",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 0
+  },
+  "all_targets_hit": false,
+  "note": "上端舱体露出，暗窗内镜片不清。"
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-inside-multi-r1",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-multi",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘可见细黑条。"
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-inside-multi-r2",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-multi",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "四个桨毂均只见向外伸出的一片叶。"
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-inside-multi-r3",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-multi",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-inside-single-r1",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-single",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-inside-single-r2",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-single",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-inside-single-r3",
+  "group": "COMBO",
+  "cell": "COMBO-pod-inside-single",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "flush",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-projecting-multi-r1",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-multi",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上端舱体可见细长暗窗，镜片朝向不清。"
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-projecting-multi-r2",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-multi",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-projecting-multi-r3",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-multi",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "multi"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-projecting-single-r1",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-single",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-projecting-single-r2",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-single",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "COMBO-pod-projecting-single-r3",
+  "group": "COMBO",
+  "cell": "COMBO-pod-projecting-single",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "?",
+  "roots_each": [
+   "?",
+   "?",
+   "?",
+   "?"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "round",
+   "nose": "projecting",
+   "cover": "single"
+  },
+  "hits": {
+   "body": 1,
+   "nose": 1,
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "各根部有横缝，独立凸缘不清楚。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S0-r05",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "下缘露出舱体及部分圆形镜面。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S0-r06",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "顶面可见封闭轮廓。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S0-r07",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "?",
+  "roots_each": [
+   "?",
+   "?",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "前臂可见细横线，独立套座轮廓不清；下壳缘仅露黑线。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S0-r08",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S0-r09",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "?",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "上端顶面有浅U形线。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S0-r10",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S0-r11",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "原图可见顶盖前段的横线向两侧延伸至边缘。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S0-r12",
+  "group": "S12",
+  "cell": "S12-S0",
+  "body": "round",
+  "nose": "?",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "上缘中央仅有极浅凸起。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S1-r05",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘外有黑色块，未见朝上的镜片。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S1-r06",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "?",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "两条纵线与切面边缘重合，难以区分接缝与棱线。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S1-r07",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S1-r08",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S1-r09",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S1-r10",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S1-r11",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "?",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "上缘露出窄条，难辨是否为相机舱。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S1-r12",
+  "group": "S12",
+  "cell": "S12-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": "下端仅见窄部件及两侧小凸点。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S2-r05",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S2-r06",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S2-r07",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S2-r08",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S2-r09",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S2-r10",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "中央长盖连续，两侧另有分件线连到长盖。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S2-r11",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "?",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "下缘可见中央块和两侧小端部。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S2-r12",
+  "group": "S12",
+  "cell": "S12-S2",
+  "body": "round",
+  "nose": "?",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "根部有套筒横缝和侧开口，轴结构不清。上端有极小暗色凸起。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S3-r05",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S3-r06",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S3-r07",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S3-r08",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S3-r09",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S3-r10",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "?",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   3,
+   3,
+   3,
+   3
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": "顶面前段有U形边线，未见清晰贯穿线。"
+ },
+ {
+  "reader": "M",
+  "run": "S12-S3-r11",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S3-r12",
+  "group": "S12",
+  "cell": "S12-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S4-r05",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S4-r06",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S4-r07",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S4-r08",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S4-r09",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "bottom",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 0
+  },
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S4-r10",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S4-r11",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S4-r12",
+  "group": "S12",
+  "cell": "S12-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "yes",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S5-r05",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S5-r06",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S5-r07",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S5-r08",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S5-r09",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S5-r10",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "hidden",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S5-r11",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S12-S5-r12",
+  "group": "S12",
+  "cell": "S12-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "bottom",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "下端露出小块及两侧支点，镜面不清。"
+ },
+ {
+  "reader": "M",
+  "run": "S16-S0-r05",
+  "group": "S16",
+  "cell": "S16-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "上端仅见窄口。"
+ },
+ {
+  "reader": "M",
+  "run": "S16-S0-r06",
+  "group": "S16",
+  "cell": "S16-S0",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": "上缘外露低矮的黑框部件，未见镜面。"
+ },
+ {
+  "reader": "M",
+  "run": "S16-S0-r07",
+  "group": "S16",
+  "cell": "S16-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S0-r08",
+  "group": "S16",
+  "cell": "S16-S0",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {},
+  "hits": {},
+  "all_targets_hit": false,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S1-r05",
+  "group": "S16",
+  "cell": "S16-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S1-r06",
+  "group": "S16",
+  "cell": "S16-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S1-r07",
+  "group": "S16",
+  "cell": "S16-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S1-r08",
+  "group": "S16",
+  "cell": "S16-S1",
+  "body": "box",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "body": "box"
+  },
+  "hits": {
+   "body": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S2-r05",
+  "group": "S16",
+  "cell": "S16-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S2-r06",
+  "group": "S16",
+  "cell": "S16-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S2-r07",
+  "group": "S16",
+  "cell": "S16-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S2-r08",
+  "group": "S16",
+  "cell": "S16-S2",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "socket",
+  "roots_each": [
+   "socket",
+   "socket",
+   "socket",
+   "socket"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "roots": "socket"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S3-r05",
+  "group": "S16",
+  "cell": "S16-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S3-r06",
+  "group": "S16",
+  "cell": "S16-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S3-r07",
+  "group": "S16",
+  "cell": "S16-S3",
+  "body": "round",
+  "nose": "flush",
+  "cover": "single",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S3-r08",
+  "group": "S16",
+  "cell": "S16-S3",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "hinge",
+  "roots_each": [
+   "hinge",
+   "hinge",
+   "hinge",
+   "hinge"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "roots": "hinge"
+  },
+  "hits": {
+   "roots": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S4-r05",
+  "group": "S16",
+  "cell": "S16-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S4-r06",
+  "group": "S16",
+  "cell": "S16-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S4-r07",
+  "group": "S16",
+  "cell": "S16-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "multi",
+  "camera": "top",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S4-r08",
+  "group": "S16",
+  "cell": "S16-S4",
+  "body": "round",
+  "nose": "projecting",
+  "cover": "single",
+  "camera": "top",
+  "up_lens": "?",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "nose": "projecting"
+  },
+  "hits": {
+   "nose": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S5-r05",
+  "group": "S16",
+  "cell": "S16-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S5-r06",
+  "group": "S16",
+  "cell": "S16-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": "上端可见黑色窄口，舱体难辨。"
+ },
+ {
+  "reader": "M",
+  "run": "S16-S5-r07",
+  "group": "S16",
+  "cell": "S16-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ },
+ {
+  "reader": "M",
+  "run": "S16-S5-r08",
+  "group": "S16",
+  "cell": "S16-S5",
+  "body": "round",
+  "nose": "flush",
+  "cover": "multi",
+  "camera": "?",
+  "up_lens": "no",
+  "roots": "smooth",
+  "roots_each": [
+   "smooth",
+   "smooth",
+   "smooth",
+   "smooth"
+  ],
+  "blades": [
+   2,
+   2,
+   2,
+   2
+  ],
+  "expected": {
+   "cover": "multi"
+  },
+  "hits": {
+   "cover": 1
+  },
+  "all_targets_hit": true,
+  "note": ""
+ }
+]

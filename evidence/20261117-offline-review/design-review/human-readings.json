@@ -1,0 +1,318 @@
+{
+  "study": "structure12-v1",
+  "form_sha256": "f61340dfe8ae2806b277ce9280c24ad93591d276a00b9645e1bfc138a1f7fca2",
+  "responses": [
+    {
+      "reader": "H01",
+      "raw_sha256": "361283eeb50810e1b22ddbcabd42d28aa0f0dce047ca7eef7ee5390b3078a7a5",
+      "exposure": "yes",
+      "consented": true,
+      "answers": [
+        {
+          "run": "S12-S0-r01",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S0-r02",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S0-r03",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "single"
+        },
+        {
+          "run": "S12-S0-r04",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S2-r01",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S2-r02",
+          "tl": "hinge",
+          "tr": "hinge",
+          "br": "hinge",
+          "bl": "hinge",
+          "cover": "single"
+        },
+        {
+          "run": "S12-S2-r03",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S2-r04",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r01",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r02",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r03",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r04",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        }
+      ]
+    },
+    {
+      "reader": "H02",
+      "raw_sha256": "03b950b35198796fa3fe8cf69b99028bfb21c6da2fe5f2ae92979115eac3e6a7",
+      "exposure": "no",
+      "consented": true,
+      "answers": [
+        {
+          "run": "S12-S0-r01",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "single"
+        },
+        {
+          "run": "S12-S0-r02",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S0-r03",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "single"
+        },
+        {
+          "run": "S12-S0-r04",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S2-r01",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S2-r02",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "single"
+        },
+        {
+          "run": "S12-S2-r03",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S2-r04",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r01",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r02",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r03",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r04",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        }
+      ]
+    },
+    {
+      "reader": "H03",
+      "raw_sha256": "f2ed2b435018c1963fd83cc0e797c1e4c494e5379c56a11233f491f3ad300601",
+      "exposure": "no",
+      "consented": true,
+      "answers": [
+        {
+          "run": "S12-S0-r01",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "unclear"
+        },
+        {
+          "run": "S12-S0-r02",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "unclear",
+          "bl": "unclear",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S0-r03",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "single"
+        },
+        {
+          "run": "S12-S0-r04",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "single"
+        },
+        {
+          "run": "S12-S2-r01",
+          "tl": "hinge",
+          "tr": "hinge",
+          "br": "hinge",
+          "bl": "hinge",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S2-r02",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "single"
+        },
+        {
+          "run": "S12-S2-r03",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S2-r04",
+          "tl": "socket",
+          "tr": "socket",
+          "br": "socket",
+          "bl": "socket",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r01",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r02",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r03",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        },
+        {
+          "run": "S12-S5-r04",
+          "tl": "smooth",
+          "tr": "smooth",
+          "br": "smooth",
+          "bl": "smooth",
+          "cover": "multi"
+        }
+      ]
+    }
+  ]
+}
