@@ -1,0 +1,32 @@
+[
+  {
+    "path": "prototypes/drone-configurator/public/research-guides/wl-0.70-dd-0.50.png",
+    "git_ref": "e96d41946ea84237da506bb76c2f713a3f3b9275",
+    "sha256": "4bd9d29b41b8d71c453931046a749d835202c12112301b1d528ba750854dc92f"
+  },
+  {
+    "path": "prototypes/drone-configurator/public/research-guides/wl-1.00-dd-0.50.png",
+    "git_ref": "e96d41946ea84237da506bb76c2f713a3f3b9275",
+    "sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+  },
+  {
+    "path": "prototypes/drone-configurator/public/research-guides/wl-1.30-dd-0.50.png",
+    "git_ref": "e96d41946ea84237da506bb76c2f713a3f3b9275",
+    "sha256": "b2272f1fbe1351c2a6a01ed699461d13aa7c6ca884e26b1bca97c1d2f806f797"
+  },
+  {
+    "path": "experiments/gpu-day-20261115/inputs/quad-dots-wl0.70.png",
+    "git_ref": "e96d41946ea84237da506bb76c2f713a3f3b9275",
+    "sha256": "96c62555fe2a602b0954aef7821c1d026ef073c49ddee1b22f163e27dc88bc1e"
+  },
+  {
+    "path": "experiments/gpu-day-20261115/inputs/quad-dots-wl1.00.png",
+    "git_ref": "e96d41946ea84237da506bb76c2f713a3f3b9275",
+    "sha256": "99ff37153f5e8106e505795cd8aa7443b00e3f38c8624a02763c3bd01a79e1f1"
+  },
+  {
+    "path": "experiments/gpu-day-20261115/inputs/quad-dots-wl1.30.png",
+    "git_ref": "e96d41946ea84237da506bb76c2f713a3f3b9275",
+    "sha256": "2b81f7667a72c6774271afb5dd7e3c9aeb9dbf1c5872a6f7564f4505dd7841c0"
+  }
+]
