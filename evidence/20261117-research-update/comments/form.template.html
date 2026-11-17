@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>航拍机评论文字核查</title>
+<style>body{font:17px/1.65 "Microsoft YaHei",sans-serif;background:#f3f5f1;color:#162e27;margin:0}main{max-width:760px;margin:2rem auto;padding:1rem}article{background:white;padding:1.4rem;border:1px solid #cad6ce;border-radius:12px}blockquote{white-space:pre-wrap;overflow-wrap:anywhere;margin:1rem 0;padding:1rem;border-left:4px solid #307762;background:#eff6f2}button,select,input{font:inherit}button,select{padding:.35rem .7rem;margin:.15rem}label{display:inline-block;padding:.35rem .7rem;margin:.2rem;border:1px solid #bfcac2;border-radius:6px}input[type=text]{width:95%;padding:.4rem}small{display:block;color:#455a51}nav{margin-top:1rem}button:focus-visible,input:focus-visible{outline:3px solid #18775c}</style>
+<main><h1>航拍机评论文字核查</h1><p>请按评论者实际说的话作答。你可以中途导出草稿，下次在同一文件中载入。不需要姓名。所有题目都在本机完成。</p>
+<article><span id="progress"></span><blockquote id="quote"></blockquote><h2>这条评论涉及机体外形吗？</h2>
+<small>涉及轮廓、尺寸观感、折叠形态、部件外观、颜色或表面时选「涉及」。只讲操控、拍摄性能或物流时选「未涉及」。没有说清对象时可选「信息不足」。</small><div id="scope"></div>
+<h2>文字明确提到了哪些主题？</h2><small>可多选。单说「方便带出门」可以勾随身携带；只有提到大小或紧凑时才勾小巧或紧凑。正面、负面、愿望都可以记。没有对应主题可单选「以上均未提到」。</small><div id="tags"></div>
+<p><span>支持判断的原话（可选，摘几个字即可）</span><br><input id="note" type="text" maxlength="160" aria-label="文字依据"></p></article>
+<nav><button id="prev">上一条</button><select id="jump" aria-label="选择条目"></select><button id="next">下一条</button><button id="missing">第一条未完成</button></nav>
+<p><button id="draft">导出草稿</button><button id="finish">导出完整答卷</button><label>载入草稿 <input id="load" type="file" accept=".json"></label></p><p role="status" id="msg"></p></main>
+<script type="application/json" id="payload">__DATA__</script><script>
+const {items,topics}=JSON.parse(document.getElementById('payload').textContent), $=id=>document.getElementById(id);
+const no='以上均未提到', options=['涉及','未涉及','信息不足'], version='S2-20261117-a';
+let rows={},i=0; const id=()=>items[i].id; const answer=()=>rows[id()]??={scope:'',topics:[],note:''};
+const valid=r=>r&&options.includes(r.scope)&&Array.isArray(r.topics)&&r.topics.length>0&&r.topics.every(t=>[...topics,no].includes(t))&&(!r.topics.includes(no)||r.topics.length===1);
+const label=(title,type,on,fn)=>{let el=document.createElement('label'),input=document.createElement('input');input.type=type;input.checked=on;input.addEventListener('change',fn);el.append(input,' '+title);return el;};
+function draw(){let r=answer();$('quote').textContent=items[i].text;$('jump').value=i;$('note').value=r.note;
+ $('progress').textContent=id()+'　共 '+items.length+' 条，已完成 '+Object.values(rows).filter(valid).length+' 条';
+ $('scope').replaceChildren(...options.map(v=>label(v,'radio',r.scope===v,()=>{r.scope=v;draw()})));
+ $('tags').replaceChildren(...[...topics,no].map(v=>label(v,'checkbox',r.topics.includes(v),()=>{r.topics=r.topics.includes(v)?r.topics.filter(x=>x!==v):v===no?[no]:[...r.topics.filter(x=>x!==no),v];draw()})));
+ $('prev').disabled=i===0;$('next').disabled=i===items.length-1;}
+items.forEach((r,j)=>$('jump').add(new Option(r.id,j)));$('jump').onchange=()=>{i=+$('jump').value;draw()};
+$('prev').onclick=()=>{if(i)i--;draw()};$('next').onclick=()=>{if(i+1<items.length)i++;draw()};$('note').oninput=e=>answer().note=e.target.value;
+function missing(){return items.findIndex(r=>!valid(rows[r.id]))}
+$('missing').onclick=()=>{let j=missing();if(j>=0){i=j;draw()}else $('msg').textContent='全部已完成。'};
+function save(final){if(final&&missing()>=0){i=missing();draw();$('msg').textContent='此条仍有未答项，可先导出草稿。';return}
+ const out={version,complete:final,answers:rows};let u=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));let a=document.createElement('a');a.href=u;a.download='S2-'+(final?'完整答卷':'草稿')+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
+$('draft').onclick=()=>save(false);$('finish').onclick=()=>save(true);
+$('load').onchange=async e=>{try{const v=JSON.parse(await e.target.files[0].text());if(v.version!==version||!v.answers||!Object.entries(v.answers).every(([k,r])=>items.some(x=>x.id===k)&&r&&typeof r.scope==='string'&&Array.isArray(r.topics)&&typeof r.note==='string'))throw Error();rows=v.answers;i=Math.max(0,missing());draw();$('msg').textContent='已载入。'}catch{$('msg').textContent='载入失败，请使用本表导出的答卷。'}};draw();
+</script></html>

@@ -1,0 +1,31 @@
+﻿厂商,型号,电机轴数,原合并表行号,本批增量表行号,A1决定,A2状态,A2本批id
+Antigravity,A1,4,14 15,,沿用,本批未量,
+Autel Robotics,EVO Nano+,4,,14 15,新增,本轮新增点位,nano
+DJI,AGRAS T16,6,22 23 24,,沿用,本批未量,
+DJI,AGRAS T20,6,25 26 27,,沿用,既有点位,
+DJI,AGRAS T30,6,28 29 30,,沿用,既有点位,
+DJI,Air 3,4,16 17,,沿用,既有点位,
+DJI,Flip,4,10 11,,沿用,本批未量,
+DJI,Lito X1,4,8 9,,沿用,本批未量,
+DJI,Mavic 2 Pro,4,,6 7,新增,本轮新增点位,m2
+DJI,Mavic 3 Pro,4,18 19,,沿用,既有点位,
+DJI,Mavic Air,4,,2 3,新增,本轮新增点位,air
+DJI,Mavic Air 2,4,,4 5,新增,本轮新增点位,air2
+DJI,Mavic Mini,4,,8 9 10,新增,本轮新增点位,mini
+DJI,Mavic Pro,4,31,,沿用,本批未量,
+DJI,Mini 3 Pro,4,,11 12 13,新增,本轮新增点位,m3p
+DJI,Mini 4 Pro,4,50 51,,沿用,本轮新增点位,m4p
+DJI,Neo,4,20,,沿用,既有点位,
+DJI,Neo 2,4,34 35,,沿用,既有点位,
+DJI,Spark,4,21,,沿用,本批未量,
+Garuda Aerospace,GA-AD-V2,6,38 39,,沿用,本批未量,
+HOVERAir,X1 PROMAX,4,12 13,,沿用,本批未量,
+Hylio,AG-216,6,36 37,,沿用,本批未量,
+Joyance Tech,JT20L-606,6,44 45,,沿用,本批未量,
+Joyance Tech,JT30L-606,6,46 47,,沿用,本批未量,
+Nileworks,Nile-JZ,6,48 49,,沿用,本批未量,
+Parrot,ANAFI,4,32 33,,沿用,本批未量,
+Potensic,ATOM 2,4,5 6 7,,沿用,本批未量,
+Potensic,ATOM 3,4,2 3 4,,沿用,本批未量,
+TTA,M6E-G200,6,42 43,,沿用,本批未量,
+TTA,M6E-X2,6,40 41,,沿用,本批未量,

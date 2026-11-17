@@ -1,37 +1,13 @@
-# paper
+# 多旋翼无人机造型设计研究
 
-**无人机造型配置器**　[作者 E 盘五页签源码与使用说明](prototypes/drone-configurator/README.md) · [下载离线版](prototypes/drone-configurator/configurator-offline.zip?raw=true) · [早期需求及研究讨论](docs/configurator-realignment.md)。
+本仓库用于作者、Claude 和 Codex 共同完成工业设计硕士论文。主案例为日常随行航拍四旋翼，农业植保六旋翼用于可行性探测。当前导师阅读范围为第一至三章。
 
-**当前研究进度（11 月 17 日）**　[执行顺序与作者决定](https://github.com/Freeloop993/paper/blob/claude/direction-todo-20261117/planning/2026-11-17-direction-and-todo.md) · [真机量测、复核与作者预试](https://github.com/Freeloop993/paper/tree/claude/direction-todo-20261117/evidence/20261117-config-review)。下文为此前各阶段的记录，阅读 E2、E3 进度请先查上述入口。
+| 需要什么 | 从这里进入 |
+| --- | --- |
+| 改界面、试用原型 | [五页签配置器、源码与离线下载](prototypes/drone-configurator/README.md) · [给 Claude 的界面交接](prototypes/drone-configurator/claude-interface-brief.md) |
+| 找导师阅读稿 | [第一至三章 Word](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/manuscript/thesis/review/handoff-20261117/chapters-1-3.docx) · [修订目录](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/planning/outline-revised.docx) · [开题原件](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/planning/proposal-original.pdf) |
+| 了解研究计划、分工与作者决定 | [方向清单的“作者最新决定”](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/planning/2026-11-17-direction-and-todo.md) · [人智协同实验预试材料](evidence/20261117-research-update/method/paired-pilot.md) |
+| 找实验、已取得的数据与证据范围 | [实验状态及逐批原件入口](STATUS.md) · [本轮线下数据](evidence/20261117-research-update/README.md) |
+| 继续下一项任务 | [接手顺序](docs/handoff.md) · [协作工单 #1](https://github.com/Freeloop993/paper/issues/1) · [作者决策 #3](https://github.com/Freeloop993/paper/issues/3) |
 
-[研究数据入口 · 早期无人机评论与商品参数](DATA.md)
-
-S4 第三轮两张已实收。机鼻相机舱前缘明确外伸 1/2、待判 1/2；两张均未见机背或朝观察者的清晰镜面，均有四副双叶桨。光轴在顶视下不可辨。[三轮并排与本轮原图](evidence/qwen-shape-s4-20261114/s4-nose-edge-2/) · [历史 H3 输入、全词和原图](evidence/h3-camera-layout-originals/)。
-
-11 月 14 日实测已补齐：[Qwen 十二张＋S4 修订两张的原图、实际请求、逐图读数](evidence/qwen-shape-s4-20261114/README.md)。S4 仅见顶部 0/2 → 0/2，E3 仍为 0/9。[四篇同校硕士论文全文、结构和页码](references/peer-theses.md)。
-
-**11 月 14 日 · H3 第三轮实收 8/8，独立 AI 盲读已封存。** S0 两轮合计 4 无外突／1 前伸／2 待判，轴距组壳长/轴距均值差 0.0286 小于组内 SD 0.0842，两项均未过。A/B 臂根统一记无缝；E3 可选外露碳纹臂，5.2.1 保持同色。正式 E2 为 0/6，E3 为 0/9。[冻结单第 2 节](docs/protocols/method-freeze-v1.md)已并入主线；[八图通用项补读](evidence/form342-h3-dev/round-3-common-v22/)另行归档，作者签署第 3 节后安排同机 E2 六张和 Qwen 小测十二张。[第三轮全量与读数](evidence/form342-h3-dev/round-3/README.md) · [方向卡](evidence/section421-h3-span/specs-after-review.md)。
-
-**当前优先 · 4.2.1 规格复核。** H3 本轮实收四张，B 的 250／300 mm 轴距组与 A/B/C 组共用 B300。作者保留 B 曲面过渡，反馈新版 C 不如上一版。E0 开源 6/6、闭源正式位置尚缺 6，E1 开源 36/36，一份真人点选 12/12 可量；Qwen E2 正式 0/6，E3 正式 0/9。请先读[本轮原图、新旧 C 与按章节交接](evidence/section421-h3-span/claude-review.md)。以下较早的运行与待办记录按各自日期解读。
-
-**当前进度（11 月 13 日）。** E0 开源 6/6，闭源六个正式位置尚无归档；E1 开源 36/36，E0/E1 的 12 图点选已回收一份。Qwen E2 正式提交 0/6，已登记两张 E1 父图并离线核对六份请求。E3 正式候选 0/9。第 4 章当前为 4.2.1 规格核对，H3 A/B/C 属开发图。作者认可 B 的曲面过渡，未辨出 A/B 的紧凑与舒展。已用配置器实际布局函数做完[轴距单因素同尺度示意](evidence/quad-author-selection/wheelbase-only.svg)，仍待核定方向规格。
-
-**2026-11-12 六章执行入口**　[打开24项任务、逐节对照、思维导图及验收条件](docs/execution-playbook.md)。先看当班任务与前置，再回原工单领任务。各批当前数量见上方进度。
-
-
-**11/11 新正式样本口径。** [旧批退役与新图清单](evidence/formal-reset/README.md)及[变量表](docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
-# 多旋翼无人机造型论文协作仓库
-
-**当前：研究进行中；第1—3章和已核结果可以写，不能定稿整篇结论。** 本公开仓库是 Claude、Codex 和作者的跨设备交接入口。它保存共享进度、论文要求、可编辑文字与脱敏证据；原始研究档案仍按原权限保存。
-
-1. 开工先读 [接手快照](docs/handoff.md)（一页全局看板与待决事项，每次工作结束前更新）和 [当前状态与写作门槛](STATUS.md)，再看 [开放工单](https://github.com/Freeloop993/paper/issues?q=is%3Aissue+is%3Aopen)。**Issues 是双方唯一共享待办**，不是每端再建一套。
-2. **Claude｜全局规划与论文写作：**从 [C01 六章证据矩阵](https://github.com/Freeloop993/paper/issues/1) 接手，读[开题五项](docs/requirements.md)、[现行目录](manuscript/outline.md)和[文献阅读地图](references/reading-map.md)。[前三章既有草稿](manuscript/source-drafts/)供复用，不代表已定稿。
-3. **Codex｜图像实验、数据处理与分析：**从 [X01 两种流程输入验收](https://github.com/Freeloop993/paper/issues/2) 接手，按[方法与限制](docs/methods.md)交回请求、原件校验、分母、失败和可支持的结论。已有[第5章六旋结果段](manuscript/ch05-hexa-results.md)与[可复算数据](evidence/README.md)。
-4. **作者/必要时导师｜方向与范围决定：**见 [A01 六旋、LoRA与正式采集条件](https://github.com/Freeloop993/paper/issues/3)。Issue、日期和历史预算本身不授权开机、招募或训练。
-5. 领取、交付、复核按[协作规则](CONTRIBUTING.md)。发生实质变化就在本次工作结束前提交并回读；没有变化不空刷。[进度日志](PROGRESS.md)按日期保留历史。
-
-**作者找回的无人机配置器**：[可编辑源码和本地启动](prototypes/drone-configurator/README.md) · [研究纠偏和 Claude 首个修改任务](docs/configurator-realignment.md)。
-
-Google 总记录、Obsidian、飞书文献库和原始材料是既有来源，不要求更改其权限。不能访问原件时仅使用仓库已提供的内容，并标明局限。
-
-作者交办的[全局评估材料与执行要求](planning/claude-review.md)汇集开题原件、带修订的目录、Google Doc 快照、文献入口与最新 S1 复测。
+此前首页收录了各日快照、早期材料和当时的行动安排，可按提交日期追溯。[整理前的首页](https://github.com/Freeloop993/paper/blob/6b22143c39f7bc0969b616f43704cb4d24a20310/README.md)

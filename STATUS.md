@@ -1,75 +1,16 @@
-# 论文研究状态
+# 论文研究状态 · 11 月 17 日
 
-**当前研究进度（11 月 17 日）**　[执行顺序与作者决定](https://github.com/Freeloop993/paper/blob/claude/direction-todo-20261117/planning/2026-11-17-direction-and-todo.md) · [真机量测、复核与作者预试](https://github.com/Freeloop993/paper/tree/claude/direction-todo-20261117/evidence/20261117-config-review)。下文为此前各阶段的记录，阅读 E2、E3 进度请先查上述入口。
+面向复核的实验索引。每行单独说明材料、样本和可回答的问题。相同原图在回收、读数和评议阶段多次出现；跨行相加会重复计数。[导师阅读稿与正文范围](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/manuscript/thesis/review/handoff-20261117/README.md)
 
-S4 第三轮两张已实收。机鼻相机舱前缘明确外伸 1/2、待判 1/2；两张均未见机背或朝观察者的清晰镜面，均有四副双叶桨。光轴在顶视下不可辨。[三轮并排与本轮原图](evidence/qwen-shape-s4-20261114/s4-nose-edge-2/) · [历史 H3 输入、全词和原图](evidence/h3-camera-layout-originals/)。
+| 研究环节 | 已取得的材料 | 解释或待验证项 |
+| --- | --- | --- |
+| 评论与需求 | 7,443 个检索文本簇中，1,318 个所属商品标题含航拍机标签；其中 228 个保留造型表述。已有 40 条第二编码。新共词表使用 1,318 簇；另有 150 条分层抽样人工核查题面。 | 150 条待真人作答；图词频不能给出造型参数权重。[新图及核查方法](evidence/20261117-research-update/comments/README.md) · [第二编码原登记](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/experiments/semantic40-pairing/README.md) |
+| E0、E1 布局控制 | 四旋 E1 开源共 36 张；条件图的 W/L、d/D 按原容差各 12/12，纯文字各 0/6、4/6。 | 限双叶部件图及相应控制分支。E0 闭源六张按作者决定从正式比较剔除。[E1 原批](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/evidence/e1-open-20261112/README.md) · [范围决定](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/planning/2026-11-17-direction-and-todo.md) |
+| E3 设计实践 | 首轮 A/B/C 共 9 张，后有第二、三轮及作者取舍。第三轮 B2 获选，深化采用去上端深窗、下端为机头的方向。 | 区分原始候选、人工作图与色材调整；开发结果不能替代效率比较。[首轮](https://github.com/Freeloop993/paper/blob/e96d41946ea84237da506bb76c2f713a3f3b9275/evidence/e3-quad-qwen-20261115/README.md) · [第二轮](https://github.com/Freeloop993/paper/blob/e96d41946ea84237da506bb76c2f713a3f3b9275/evidence/e3-quad-qwen-20261115/round-2/README.md) · [第三轮](https://github.com/Freeloop993/paper/blob/e96d41946ea84237da506bb76c2f713a3f3b9275/evidence/e3-quad-qwen-20261115/round-3/README.md) · [深化稿](https://github.com/Freeloop993/paper/blob/e96d41946ea84237da506bb76c2f713a3f3b9275/experiments/e3-deepening/README.md) |
+| 局部编辑 | 旧 E2 六张作历史资料；E2R 六张有真人独立答卷和 AI 判读。B2 修订 12 张另有两次匿名 AI 判读。第一版三组局部编辑各三张，均未过开发门。 | 分报目标改变及非目标保持。第二版 73 份为离线请求，17 份开发、56 份有条件确认。本索引未取得其生成回执。[E2R 与部位量测](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/evidence/e2r-hub-readback/README.md) · [B2](https://github.com/Freeloop993/paper/blob/e96d41946ea84237da506bb76c2f713a3f3b9275/evidence/gpu-day-20261115/dual-hexa-handoff/blind-b2/README.md) · [第一版](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/evidence/20261115-review-takeover/local-edit/README.md) · [第二版登记](https://github.com/Freeloop993/paper/blob/ca4b5349dbfdda162357e0c676c085345bd46b60/experiments/20261117-local-edit-v2/README.md) |
+| 正式造型与字典 | v1.2 正式 24 张、v1.6 平行 24 张有原图与匿名读数；另有组合 24、S12 扩展 48、S16 扩展 24，共 96 张经两次 AI 盲读。 | 按字典、批次、种子和读数来源分开；同一图的复读不增加图数。表中的 96 张包含在末批 102 张回收件中。[正式与平行批](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/evidence/20261115-review-takeover/README.md) · [96 张读数](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/evidence/20261117-offline-review/README.md) · [102 张回收件](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/experiments/gpu-day-20261115/recovered-originals-102/README.md) |
+| 真人评议 | 配对评图 3 份、逐图读图 3 份；另有结构观察 12 图的完整答卷 3 份，其中 2 份自报事前未接触条件。 | 各题独立计数。醒目度是原配色题的目标；两项任务的答卷不能相加推断不同人数。顶盖判读仍有分歧。[逐图评价](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/evidence/e5-individual-reviewed/README.md) · [结构观察](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/evidence/20261117-offline-review/design-review/README.md) |
+| 农业植保六旋与材质开发 | 39 张更正后六旋输出，主比较 12 张与扩展 24 张有一次独立 AI 布局复测；两种喷洒部件改法及碳纹臂各 3 张另作开发，有知条件初读。 | 六旋仅作可行性探测。某喷头在俯视可辨不足以推断喷洒性能；碳纹开发未确认整组通过。[六旋与开发读数](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/evidence/20261117-offline-review/README.md) |
+| 工程比例、真实产品与协同对照 | A1 官方资料、A2 手册图面和 A3 生成图读数的分母各异。E4 已有任务卡与计时约定；3 位外部设计者各两场及 10 人独立评议均为招募目标。 | 优先复用坐标、校准读数，冻结实际设计流程的比例任务后再确认。作者双条件实做之后才进入三人正式场次。[本轮数据](evidence/20261117-research-update/README.md) · [作者预试](evidence/20261117-research-update/method/paired-pilot.md) |
 
-11 月 14 日实测已补齐：[Qwen 十二张＋S4 修订两张的原图、实际请求、逐图读数](evidence/qwen-shape-s4-20261114/README.md)。S4 仅见顶部 0/2 → 0/2，E3 仍为 0/9。[四篇同校硕士论文全文、结构和页码](references/peer-theses.md)。
-
-## 11 月 14 日 · 当前待签署与离线准备
-
-Qwen 的 [E2 六份修订请求](experiments/e2-registered/) 和 [十二份造型小测请求](experiments/qwen-shape-pilot/) 已离线核对，PR #70 已合并，第 2 节已填写；[第三轮八张通用项补读](evidence/form342-h3-dev/round-3-common-v22/)已归档，正式运行待作者签署第 3 节。K 未过，本次 5.2.1 计划保留六个条件。
-
-[E3 作者工作簿](prototypes/e3-author-workbook/) 支持三张规格卡、九格候选的逐张取舍和父图修订。历史开发九图可用于演练，正式 E3 初稿仍是 0/9。
-
-[历史 E4 两种流程工作台](https://github.com/Freeloop993/paper/tree/11ee83cdd62c1e644d552051c21154076279c275/prototypes/e4-ds-session) 已完成断网浏览器配对演练；[E5 实拍](evidence/real-product-topview/)已核四个型号，目标八到十个，评议表可分阶段发包；[E6 植保六旋](experiments/hexa-plant-protection/topview-prep/)已有三档点线与部件条件图，各档六个轴心均已核验。11 月 14 日作者已确认[植保六旋首案](experiments/hexa-plant-protection/README.md)：方形半嵌药箱、可见加注口、两侧横向喷杆、折叠铰接机臂。E6 正式初稿待生成。本轮 E3、E4 均无正式场次。
-
-**11 月 14 日 · H3 第三轮实收 8/8，独立 AI 盲读已封存。** S0 两轮合计 4 无外突／1 前伸／2 待判，轴距组壳长/轴距均值差 0.0286 小于组内 SD 0.0842，两项均未过。A/B 臂根统一记无缝；E3 可选外露碳纹臂，5.2.1 保持同色。正式 E2 为 0/6，E3 为 0/9。下一步由 Claude 写入冻结单第 2 节，作者签署第 3 节，再安排 Qwen。[第三轮全量与读数](evidence/form342-h3-dev/round-3/README.md) · [方向卡](evidence/section421-h3-span/specs-after-review.md)。
-
-**当前优先 · 4.2.1 规格复核。** H3 本轮实收四张，B 的 250／300 mm 轴距组与 A/B/C 组共用 B300。作者保留 B 曲面过渡，反馈新版 C 不如上一版。E0 开源 6/6、闭源正式位置尚缺 6，E1 开源 36/36，一份真人点选 12/12 可量；Qwen E2 正式 0/6，E3 正式 0/9。请先读[本轮原图、新旧 C 与按章节交接](evidence/section421-h3-span/claude-review.md)。以下较早的运行与待办记录按各自日期解读。
-
-**11 月 13 日 · 三方向初看均可，4.2.1 继续核对各自规格。** [正文取图决定、两张开发修订和 E 盘 A/B/C 方向](evidence/quad-author-selection/README.md)。几何验证可列数值表；第 4 章优先有真实取舍的方案。未新增正式样本。
-
-**11 月 13 日 · 3.4.2 造型参数开发。** E 盘配置器导出同图五份规格。H3 首发 5/5 张已回收，臂根单因素 2 张、三方向组合 3 张。[逐档依据、五份实发词与原图](experiments/form342-h3-pilot/README.md)。无固定种子，各格一次，供 Claude 复核。正式批次另记。
-
-**11 月 13 日 · 作者请求正式条件图裁定。** 每轴叶片数为可设参数，当前默认双叶、通常无护圈；顶视相机舱可被遮挡，早期结构试验可简化光影文字。两种实发参考图、15 张诊断对照、102 份不同 H3 原图和历史实验合包见[证据与待 Claude 决策事项](evidence/guide-choice-20261113/README.md)。本次新增生成 0，沿用原正式分母。
-
-**11 月 13 日 · Claude 已复核实际九图、开题与目录。** 六章和 85 个小节保留。3.4.4 和 5.2.1 有正式数据，4.1.3 有开发预试，4.2.1 规格卡待作者定稿。[裁定与缺口](https://github.com/Freeloop993/paper/issues/1#issuecomment-6851454162) · [九图](evidence/section421-minimax-review/README.md) · [E2 离线六份请求](experiments/e2-registered/README.md)。作者安排独立真人读数。当前 H3 先行预实验与正式 Qwen E2 分开计数。
-
-当前规则见[研究地基](docs/foundation.md)、[六章清单](docs/execution-playbook.md)和[接手快照](docs/handoff.md)。E0 已回收开源 6/6，闭源 0/6；E1 已回收条件图 24/24、纯文字 12/12。R0 的 2 张环境复现单列。独立真人正式场次 0。
-
-[技术排错记录（P03—P06、CMF 示范，均不进正式分母）](evidence/formal-reset/README.md)
-
-**判定：方法与部分真实结果已可写；完整研究与全篇结论尚未就绪。** 在有依据的章节先写，不等所有实验结束；不将写作目标日期当作验收。
-
-| 范围 | 已核事实 | 剩余门槛 |
-|---|---|---|
-| 需求与四旋简报 | 旧评论台账7,443个非默认文本簇，36张证据卡对应35来源；作者已定航拍四旋 | T04第二编码、T05词对、T06规格 |
-| 两种工作方式 | 已有[离线改稿台](experiments/operator-workbench/README.md) | E2服务证据与T16动作核验待完成 |
-| S1诊断 | 3 条输入路线 × 2 个种子，6/6 真实生成。两次 AI 读图均为 0/6 达到坐标门槛。第二次读数在匿名原图上独立封存，24 个轴心与首次平均相差 1.81 px，最大 6 px。[数据及复算](evidence/s1-axis-repeat/README.md) | 两次 AI 判读仍可能共享偏差，机头朝向有两图由未知变为朝上。非作者真人评图为 1 份，原定最低 3 / 目标 5。设计质量和真人协同效果尚待评价 |
-| 六旋第二案例 | 农业植保已定；已按[三款手册第13页](experiments/hexa-plant-protection/manual-pages.json)核药箱、喷洒件与机架。4张旧测绘图仅作历史资料 | E6植保单案、归一化W/L响应及独立读数待采 |
-| 参数实验 | [E0 开源 6 张](evidence/e0-open-20261112/gallery.md)、[E1 开源 36 张](evidence/e1-open-20261112/README.md)均已核验 | 闭源 E0 待采，真人点选 12 张待回收；E6 尚待执行 |
-| LoRA与人评 | 不训练LoRA，作者转述导师口头同意；E2检验父图参考 | 费用、实际招募、伦理及导师原记录由作者在 #3 跟进 |
-
-## 历史账与预读（以下日期的行动安排已归档）
-
-**GPT Image 概念图试读。** [六张四旋斜前上视原图及来源](experiments/gpt-image-b02-visual/README.md)已入库，同一简报、六次调用、六份不同图像；真人评议 0。Qwen B02 实机校准及 G2d 各 0/6。
-
-**11/10 晚间更新。** 四旋真人造型评议统一用斜前上视，轴位量测用正交俯视。作者已选[橙标朝上的顶视父图](evidence/b02-parent-reference/top-front-up.png)。[B02 六张校准图](experiments/b02-view-calibration/README.md)已备纯文字请求，原实例最近一次启动因资源不足退出，模型提交和原图均为 0。仓库可见性已按作者要求改为公开。主分支已合入第 1 章技术路线、六旋规格草案和新版评议流程。
-
-**X12 两版校准已由同一人填完。** 作者确认共 1 位真人、2 份答卷。修订版覆盖六图及一组成对比较，深化推荐为 4 张“否”、2 张“不可判”。独立评者首次使用 r2 及正式采集仍待进行。[两版逐图对照说明](evidence/x12-calibration/r2-return.md)。
-
-**11/10 19:10 进展。** 原实例 19:03 启动返回 226604，刷新后关机；19:09:52 同区同规格仍显示暂无资源。G2d 已获本批授权，实际提交 0/6。Claude 所派 [X12 离线工具](experiments/rating-kit/README.md)已用六张历史图走通评议、成对稳定性与答卷导出，四人块抽签通过软件测试。真人校准、正式分配、招募及 G2d 效果仍待后续证据。
-
-**批次 03 离线准备。** [G2d](experiments/g2d/README.md)已从旧 C1 中档量取固定臂段并核对四处桨叶与轴圈像素，编译三档×两种子的最后六个请求。作者已明确批准 G2d 最后六次，原实例、全项 ≤4 元、累计付费 ≤54 分钟。11/10 北京时间 17:03 原实例启动返回 226604（资源不足）；至 17:13 原区域同规格仍显示暂无资源，实例关机，实际提交 0。[G3b](experiments/g3b/README.md)已编译四个改稿候选并核对父图经 VAEEncode 到 KSampler 的接口。两批实际提交均为 0。#13 等 G3b 真实判读，#7 等 G2d 结果。
-
-**11/10 筛选与改稿实测。** [G2b 四种配置](evidence/g2b-actual/README.md)两位 AI 各判可用 0/4，G2c 实际提交 0。旧 C1 的中央为留白，臂段与双叶桨清晰。[G3 改稿](evidence/g3-actual/README.md)的独立 AI 读数为带父图保持 3/3、纯文字 0/3；AI 对两图的前摄过渡均选不可辨。已收 1 位非作者独立真人盲评，带父图 2 项保持、1 项不可判，纯文字 3 项改变；前摄过渡两图均选可辨。联合判据证据不足。两组共用容器已关机，合计入账 0.32 元。
-
-**G2 六张真实输出均已验收。** 两位独立 AI 在每张图的四个位置均只辨出圆线与十字，逐读者为 0/6 图具备四个可量测轴心。按出图前的可读性标准，本轮线稿方案失败，跨度比及单调性无法估计。平台已关机，已入账容器费 0.41 元。作者选择 Qwen＋参考图、可省略 LoRA 训练，并负责安排真人复测。见[六张原图、封存读数和实际账期](evidence/g2-six/README.md)。
-
-**本批执行核对：**[X02 误差分解和实际节点](evidence/s1-decomposition/README.md)证实 T 无 ControlNet，而 L/F 均用了同一控制器和 0.35 强度；两个种子的两次读数都表现为整体放大。单看纵横比为初测 5/6、复测 4/6。已备 [G2 六请求](experiments/g2-control/README.md)、[G3 两请求](experiments/g3-reference/README.md)、[四/六旋共同对照候选 12 请求](experiments/common-control/README.md)和[匿名人工轴心材料](experiments/hub-annotator/README.md)。新生成 0，真人轴心回执 0，付费阶段仍待 #3。
-
-**原始分母分账**：旧主18、旧追加批、S1、闭源示例、点选校准、软件QA、旧真人评图各自报告；人评的“值得深化”不等于几何合格。现行授权按批次登记，见冻结单。研究未完成。
-
-## 什么时候可以把结果写定
-
-- 第1—3章：任务边界、文献和方法可先写，历史段落按现行目录归位，文献关键句回核版本/页码。
-- 第4章：有实际四旋方案、设计者决策、初稿—修改—终稿和一案深化记录，才写为真实应用。
-- 第5章：同时留存双案例任务与原件、分母、必要的共同对照、独立测量/评议与反馈代价。逐个问题判可支持、负结果或未知。设计美感、参数准确、风格保持不相互抵消。
-- 第6章/摘要：开题五项有证据或有明确的范围变更处理；数据、表图、原件及失败核齐并冻结后再定论。只有案例证据就写案例，不外推设计师总体或所有拓扑。
-
-**当前顺序**　Claude复核本轮稿件，作者提供后端与费用边界；随后按E0→E1→E2逐项验收。数据冻结和定稿以实际完成情况为准。
-
-Claude 已提交[六章证据矩阵](manuscript/evidence-matrix.md)和[第 1 章修订稿](manuscript/revisions/ch01-1.3-1.4.md)。旧主 18、追加 39 和 S1 六图的受理数、采样缓存与原图去重已按[原始回执复算](evidence/denominators/README.md)。
-
-**原型与写作入口。** 作者找回的[配置器源码](prototypes/drone-configurator/README.md)与[纠偏交接](docs/configurator-realignment.md)已整理。可据此描述第 3 章意图转译和第 4.1 节历史实现。集成定位图、确认请求和双案例任务入口仍待修改、验收。
+历史试跑、费用和旧签署节点保留在[整理前的状态页](https://github.com/Freeloop993/paper/blob/6b22143c39f7bc0969b616f43704cb4d24a20310/STATUS.md)。工作流的模拟测试、图像回收和独立真人结果按各自凭据登记。
