@@ -55,11 +55,11 @@ function renderCards(){
     el.append(node('h3','方向 '+d));container.append(el);
     entry(el,'词对目标',c.target,v=>{c.target=v;changed()},{disabled:locked,hint:'设计者填写'});
     entry(el,'依据卡号 / 设计者判断',c.basis,v=>{c.basis=v;changed()},{disabled:locked,hint:'如有依据卡，填写原编号'});
-    const pre=node('pre',compiled(c.params));
+    const pre=node('pre',compiled(c.params,book.dictionary));
     for(const k of fields){
       const [name,opts]=labels[k];
       choices(el,name,d!=='C'&&k==='arm_finish'?{matte_same:opts.matte_same}:opts,c.params[k],v=>{
-        c.params[k]=v;pre.textContent=compiled(c.params);changed()
+        c.params[k]=v;pre.textContent=compiled(c.params,book.dictionary);changed()
       },locked || (k==='arm_finish'&&d!=='C'));
     }
     group(el,'查看本次编译文字').append(pre);
@@ -122,7 +122,7 @@ function renderChain(){
     function refresh(){
       values.replaceChildren();old.textContent='原档 · '+labels[key][1][head.params[key]];
       const options=Object.fromEntries(Object.entries(labels[key][1]).filter(([v])=>v!==head.params[key]));to=Object.keys(options)[0];
-      const update=()=>{preview.textContent=compiled({...head.params,[key]:to})};
+      const update=()=>{preview.textContent=compiled({...head.params,[key]:to},book.dictionary)};
       choices(values,'新档',options,to,v=>{to=v;update()});update();
     }
     choices(edit,'改动参数',Object.fromEntries(allowed.map(k=>[k,labels[k][0]])),key,v=>{key=v;refresh()});
@@ -135,7 +135,7 @@ function renderChain(){
     edit.append(btn('记录修订',()=>{
       check(draft.image,'请附实际修订图');const a=draft.image;
       appendEvent({...eventOf('revise',draft.reason,head),image:a.sha256,parameter:key,from:head.params[key],to,
-        compiledPrompt:compiled({...head.params,[key]:to}),preserved:draft.preserved,evidence:draft.evidence},
+        compiledPrompt:compiled({...head.params,[key]:to},book.dictionary),preserved:draft.preserved,evidence:draft.evidence},
         {...draft.assets,[a.sha256]:a});
     }));
   }
@@ -210,7 +210,7 @@ async function openBook(f){
   for(const d of directions){
     const s=next.specSnapshots?.[d],c=next.cards[d];
     check(s && s.target===c.target && s.basis===c.basis && fields.every(k=>s.params[k]===c.params[k]) &&
-      s.compiledPrompt===compiled(c.params) && JSON.stringify(s.layout)===JSON.stringify(plannedLayout(c.params)),'方向快照不匹配');
+      s.compiledPrompt===compiled(c.params,next.dictionary) && JSON.stringify(s.layout)===JSON.stringify(plannedLayout(c.params)),'方向快照不匹配');
     await verifyAsset(s.plannedGuide.sha256,s.plannedGuide);
   }
   for(const e of next.events.filter(e=>e.type==='revise')){

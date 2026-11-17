@@ -1,0 +1,63 @@
+{
+  "doc_patch": "git apply --check、应用、反向校验和逐行断言通过",
+  "snapshot": "1ff8011aa5a14da4d0eed137099bafe13a632226",
+  "preflight_base": "97b1a724c750032fd61c5ee83c19227bb75cf7dd",
+  "original_preflight_sha256": "7873cf33bb1113bee341ccdf445d4f039793b60537d576f20961906a84166fcd",
+  "cases": [
+    {
+      "test": "全部冻结请求",
+      "exit_code": 0,
+      "checked": "检查 73 份请求、73 个文件"
+    },
+    {
+      "test": "原检查器漏报遮罩不存在",
+      "exit_code": 0,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "实物缺失",
+      "exit_code": 1,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "实物摘要不符",
+      "exit_code": 1,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "其他已登记遮罩错配",
+      "exit_code": 1,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "未登记遮罩",
+      "exit_code": 1,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "通道错误",
+      "exit_code": 1,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "删去应有节点",
+      "exit_code": 1,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "遮罩未附登记",
+      "exit_code": 1,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "完整登记与文件恢复",
+      "exit_code": 0,
+      "checked": "检查 1 份请求、1 个文件"
+    },
+    {
+      "test": "无掩膜旧调用兼容",
+      "exit_code": 0,
+      "checked": "检查 1 份请求、1 个文件"
+    }
+  ]
+}

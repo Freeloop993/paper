@@ -12,9 +12,11 @@ const labels = {
   arm_finish:['臂材质',{matte_same:'同色哑光',exposed_carbon:'外露碳纹'}]
 };
 const fields = Object.keys(labels);
+const originalDictionary = 'shape-dictionary-v1.3';
+const materialOnlyDictionary = 'shape-dictionary-v1.3-cmf2';
 const finish = {
   matte_same:'Arms in the same matte light grey as the shell.',
-  exposed_carbon:'Exposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.'
+  exposed_carbon:'Exposed carbon-fibre arms with a visible weave.'
 };
 let dict;
 function check(ok,message){if(!ok) throw new Error(message)}
@@ -27,11 +29,15 @@ function assertParams(d,p){
   check(fields.every(k=>typeof p[k]==='string' && Object.hasOwn(labels[k][1],p[k])),'规格中有未知档位');
   check(d==='C'||p.arm_finish==='matte_same','只有方向 C 可选外露碳纹');
 }
-function compiled(p){
+function compiled(p,version){
+  check([originalDictionary,materialOnlyDictionary].includes(version),'未知造型词典版本');
+  const material=version===originalDictionary && p.arm_finish==='exposed_carbon'
+    ? 'Exposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.'
+    : finish[p.arm_finish];
   const f=dict.fixed_lines;
   const cmf=p.arm_finish==='exposed_carbon'?'Matte light grey shell, dark grey motors, black propellers.':f.cmf;
   return [f.head,f.layout.replace('250 mm',p.span+' mm'),...Object.keys(dict.params).map(k=>dict.params[k][p[k]]),
-    finish[p.arm_finish],cmf,f.tail].join('\n');
+    material,cmf,f.tail].join('\n');
 }
 function plannedLayout(p){
   return Form342.layoutFor({frame:{frame_type:'True X',wheelbase_mm:Number(p.span)},propulsion:{prop_diameter_inch:5,motor_tilt_degree:0}},
@@ -39,7 +45,7 @@ function plannedLayout(p){
 }
 function newEvidence(){return {source:unknown,actualPrompt:unknown,request:unknown,seed:unknown,receipt:unknown,reference:unknown}}
 function blank(){
-  return {schema, dictionary:'shape-dictionary-v1.3', cards:Object.fromEntries(directions.map(d=>[d,{target:'',basis:'',params:settings(d)}])),
+  return {schema, dictionary:materialOnlyDictionary, cards:Object.fromEntries(directions.map(d=>[d,{target:'',basis:'',params:settings(d)}])),
     candidates:Object.fromEntries(slots.map(id=>[id,{image:null,reason:'',kind:'作者导入',evidence:newEvidence()}])),assets:{},events:[]};
 }
 function ready(w){
@@ -76,7 +82,7 @@ function replay(w){
       const k=e.parameter;
       check(fields.includes(k) && e.from===head.params[k] && e.to!==e.from,'原档、新档与当前版本不符');
       const params={...head.params,[k]:e.to};assertParams(dir,params);
-      check(e.compiledPrompt===compiled(params),'修订编译词与规格不符');
+      check(e.compiledPrompt===compiled(params,w.dictionary),'修订编译词与规格不符');
       assertText(e.preserved,'请记录其余部位是否保住');assetRef(w,e.image);
       check(!Object.values(w.candidates).some(c=>c.image===e.image) && ![...versions.values()].some(v=>v.image===e.image),'修订图与已有原图字节相同');
       evidenceOk(w,e.evidence);revisionCount++;head={id:e.id,image:e.image,params};versions.set(head.id,head);
@@ -90,7 +96,7 @@ function replay(w){
   return {head,versions,terminal,dir,revisionCount};
 }
 function validate(w){
-  check(w?.schema===schema && w.dictionary==='shape-dictionary-v1.3','工作簿格式或字典版本不符');
+  check(w?.schema===schema && [originalDictionary,materialOnlyDictionary].includes(w.dictionary),'工作簿格式或字典版本不符');
   check(Array.isArray(w.events)&&w.assets&&typeof w.assets==='object'&&!Array.isArray(w.assets),'工作簿结构无效');
   check(Object.keys(w.cards).length===3&&Object.keys(w.candidates).length===9,'需要三张规格卡、九个图位');
   for(const d of directions){
@@ -126,7 +132,7 @@ async function snapshots(w){
     const card=w.cards[d],layout=plannedLayout(card.params),canvas=document.createElement('canvas');
     Form342.drawGuide(canvas,layout,true,false);
     const png=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));
-    list[d]={...card,layout,compiledPrompt:compiled(card.params),plannedGuide:await Form342.imageAsset(png)};
+    list[d]={...card,layout,compiledPrompt:compiled(card.params,w.dictionary),plannedGuide:await Form342.imageAsset(png)};
   }
   return list;
 }

@@ -1,0 +1,82 @@
+{
+  "seed_check": {
+    "images": 120,
+    "within_version_unique_seeds": {
+      "S12": 72,
+      "S16": 48
+    },
+    "pairs": 48,
+    "matched_unique_seeds": 48,
+    "pairs_by_cell": {
+      "S0": 8,
+      "S1": 8,
+      "S2": 8,
+      "S3": 8,
+      "S4": 8,
+      "S5": 8
+    },
+    "pairs_by_source_order": {
+      "4/8": 24,
+      "11/12": 24
+    },
+    "unmatched_12": 24,
+    "unmatched_16": 0
+  },
+  "human": [
+    {
+      "exposure": "no",
+      "target_socket": 4,
+      "base_socket": 0,
+      "target_multi": 4,
+      "base_multi": 2
+    },
+    {
+      "exposure": "no",
+      "target_socket": 3,
+      "base_socket": 0,
+      "target_multi": 4,
+      "base_multi": 1
+    },
+    {
+      "exposure": "yes",
+      "target_socket": 2,
+      "base_socket": 0,
+      "target_multi": 4,
+      "base_multi": 3
+    }
+  ],
+  "six_missing": [
+    [
+      "1d760b88",
+      "HEXA3-wl1.30-r04",
+      4
+    ]
+  ],
+  "dd_denominator_hits_010_005": {
+    "control": [
+      12,
+      12,
+      12
+    ],
+    "text": [
+      6,
+      4,
+      2
+    ]
+  },
+  "corpus": {
+    "merged": 8755,
+    "dated": 8755,
+    "year": {
+      "2021": 1,
+      "2022": 26,
+      "2023": 133,
+      "2024": 2130,
+      "2025": 6465
+    },
+    "unique": 7443,
+    "Q": 1318,
+    "retained": 228,
+    "excluded": 1090
+  }
+}

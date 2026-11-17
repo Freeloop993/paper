@@ -1,0 +1,25 @@
+--- a/src/App.tsx
++++ b/src/App.tsx
+@@ -27,7 +27,7 @@
+   },[]);
+   return <div className="nativeDesigner"><Header/><main>
+     <div className="taskHeader"><div><h1>{titles[task]}</h1><p>配置部件与布局，确认后导出设计规格。</p></div>
+-      <nav aria-label="研究任务">{(['quad','hexa'] as const).map(k=><button type="button" key={k} aria-pressed={task===k} onClick={()=>setTask(k)}>{k==='quad'?'航拍四旋':'植保六旋'}</button>)}</nav></div>
++      <nav aria-label="研究任务"><a href={import.meta.env.BASE_URL+"c1-pilot/index.html"} target="_blank" rel="noopener">两种方法作者预试</a>{(['quad','hexa'] as const).map(k=><button type="button" key={k} aria-pressed={task===k} onClick={()=>setTask(k)}>{k==='quad'?'航拍四旋':'植保六旋'}</button>)}</nav></div>
+     {error && <p role="alert">{error}</p>}{!data && !error && <p>正在读取已确认版本…</p>}
+     {data && (['quad','hexa'] as const).map(k=><div key={k} hidden={task!==k}>
+       <DroneStoreContext.Provider value={taskStores[k]}><DesignSession versions={data.versions.filter(v=>v.draft.inputs.task===k)} attempts={data.attempts} decisions={data.decisions.filter(v=>v.task===k)}/></DroneStoreContext.Provider>
+--- a/src/design/design.ts
++++ b/src/design/design.ts
+@@ -54,7 +54,10 @@
+     [-half,half,frame==='Deadcat'?145:180-half,frame==='Deadcat'?215:180+half];
+   let angles=preset;
+   if (inputs.gaps.trim()) {
+-    const parts=inputs.gaps.trim().split(/[\s,，、;；-]+/);
++    // Permit hyphens between unsigned angles without swallowing a minus sign.
++    const raw = inputs.gaps.trim();
++    const hyphenList = /^\d+(?:\.\d+)?(?:\s*-\s*\d+(?:\.\d+)?)+$/.test(raw);
++    const parts = raw.split(hyphenList ? /\s*-\s*/ : /[\s,，、;；]+/);
+     const gaps=parts.map(Number);
+     if (parts.length!==n || parts.some(s=>!/^\d+(?:\.\d+)?$/.test(s)) ||
+         gaps.some(v=>v<=0 || v>=180) || Math.abs(gaps.reduce((s,v)=>s+v,0)-360)>1e-5)
