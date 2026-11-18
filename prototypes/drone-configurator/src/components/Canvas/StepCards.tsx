@@ -78,6 +78,8 @@ function GoalEditor({ item }: { item: WorkflowNode }) {
   const goal = useGoalEditor();
   const cards = item.intent?.cards.length ?? 0;
   const saved = item.intent?.note ?? '';
+  const last = item.intent?.log[item.intent.log.length - 1];
+  const reconfirm = !saved && last?.action === 'note' && !!last.value?.includes('原设计意图需重新确认');
   return <>
     <textarea className="cv-goal-text nodrag nopan nowheel" value={goal.text} aria-label="设计目标" data-testid="goal-card-input"
       placeholder="这次想设计或改变什么？例如：展开时希望机身显得紧凑"
@@ -87,7 +89,7 @@ function GoalEditor({ item }: { item: WorkflowNode }) {
       }}/>
     <div className="cv-foot">
       {goal.unsaved && goal.inputText
-        ? <><span className="cv-unsaved">未保存</span><button type="button" className="cv-mini nodrag" data-testid="goal-card-save" onClick={() => goal.apply('custom')}>保存目标</button></>
+        ? <><span className="cv-unsaved">{reconfirm ? '用途或构型变了，请重新确认' : '未保存'}</span><button type="button" className="cv-mini nodrag" data-testid="goal-card-save" onClick={() => goal.apply('custom')}>{reconfirm ? '确认目标' : '保存目标'}</button></>
         : <span>{saved ? <><Check size={12}/>已确认</> : '写一句话，回车保存'}</span>}
       {cards > 0 && <span>依据 {cards}</span>}
     </div>
@@ -124,7 +126,7 @@ function DesignCard({ item, active }: { item: WorkflowNode; active: boolean }) {
       <TopStage active="frame" onSelect={() => {}} overlays={{ dims: false, fov: false, hidden: false }} interactive={false} source={parameters}/>
       <span className="cv-stage-note">点一下，切换到这个方向继续改</span>
     </div>}
-    <div className="cv-stats" data-testid={active ? 'ratios' : undefined}>{stats.map(([label, value]) =>
+    <div className="cv-stats">{stats.map(([label, value]) =>
       <span key={label}><small>{label}</small><b>{value.toFixed(2)}</b></span>)}</div>
   </>;
 }
@@ -209,7 +211,8 @@ export const StepCard = memo(function StepCard({ data, selected, isConnectable }
     {variant === 'picture' && <ImageCard item={item}/>}
     {variant === 'sticky' && <StickyCard item={item}/>}
     {variant === 'text' && <TextCard item={item}/>}
-    <Handle type="source" position={Position.Right} isConnectable={isConnectable}
+    <Handle type="source" position={Position.Right} isConnectable={isConnectable} onClick={() => kit.onSelect(item.id)}
+      title={kit.editable ? '点一下看接下来能做什么；拖到另一张卡片上建立关联' : undefined}
       className={`cv-port is-out${output || isConnectable ? '' : ' is-unused'}${kit.editable ? ' is-plus' : ''}`}>{kit.editable && <Plus size={11} aria-hidden="true"/>}</Handle>
   </article>;
 });

@@ -73,6 +73,13 @@ try {
   assert.equal(await page.getByTestId('brief-input').inputValue(), '折起来能放进小包');
   await page.locator('[data-pin-card=E009]').first().click();
   await card('evidence-E009').waitFor();
+  // 放上来的证据卡可以再从画布移开。
+  await card('evidence-E009').click();
+  await action('unpin').click();
+  await card('evidence-E009').waitFor({ state: 'detached' });
+  await goal.click();
+  await page.locator('[data-pin-card=E009]').first().click();
+  await card('evidence-E009').waitFor();
   await page.getByTestId('accept-evidence').click();
   assert.equal(await page.getByTestId('confirmed-intent').textContent(), '折起来能放进小包');
   await cards('goal').getByText('已确认').waitFor();
@@ -151,12 +158,26 @@ try {
   await page.getByLabel('便签内容').waitFor();
   assert.equal(await page.getByLabel('便签内容').inputValue(), '机鼻再收一点，和 B2 的下端相机对照');
   assert.equal(await page.locator('[data-workflow-node^="candidate-"]').count(), 3);
+  // 选中便签按 Delete 移除；在便签里打字时的退格不会删掉卡片。
+  await page.getByLabel('便签内容').press('Backspace');
+  assert.equal(await cards('sticky').count(), 1);
+  await page.getByRole('button', { name: '适应全图' }).click();
+  await cards('sticky').locator('.cv-head').click();
+  await page.keyboard.press('Delete');
+  await cards('sticky').waitFor({ state: 'detached' });
 
   // 8. 另开一个方向：两个造型并排在画布上，点哪个编辑哪个。
   await page.locator('[data-dock=direction]').click();
   await page.waitForFunction(() => document.querySelectorAll('[data-step-kind=design]').length === 2);
   assert.equal(await page.locator('[data-testid=top-view]').count(), 1);
   assert.equal(await page.locator('[data-testid=top-view-static]').count(), 1);
+  // 换到另一个构型族时，已确认的目标需要重新确认：文字留在卡片上，不会消失。
+  await page.locator('[data-frame="Radial Hex"]').click();
+  assert.equal(await goal.inputValue(), '折起来能放进小包');
+  await cards('goal').getByText('用途或构型变了，请重新确认').waitFor();
+  await page.getByTestId('goal-card-save').click();
+  await cards('goal').filter({ has: goal }).getByText('已确认').waitFor();
+  await cards('design').filter({ has: page.locator('[data-testid=top-view]') }).locator('.cv-head').click();
   await page.locator('[data-frame="Wide X"]').click();
   const frames = await page.locator('[data-step-kind=design] .cv-tag:not(.is-plain)').allTextContents();
   assert.deepEqual([...frames].sort(), ['宽 X 型', '真 X 型']);
@@ -198,7 +219,7 @@ try {
 
   assert.deepEqual(errors, []);
   console.log(JSON.stringify({ canvasOnly: true, goalOnCard: true, evidencePinned: 'E009', hubDrag: [before, dragged], softwareRounds: sent.length,
-    parentCandidate: true, referenceAsInput: true, stickyPersisted: true, directions: 2, researchNodes: 6, historyNodes: 6, mobileWidth: 390,
+    parentCandidate: true, referenceAsInput: true, stickyPersisted: true, deleteKey: true, evidenceUnpinned: true, goalKeptOnFrameChange: true, directions: 2, researchNodes: 6, historyNodes: 6, mobileWidth: 390,
     realModelCalls: 0, errors }));
 } finally {
   await browser.close();

@@ -42,7 +42,13 @@ export function CanvasUiProvider({ children, initialPart, initialGoal }: { child
   };
   const [goal, setGoal] = useState(() => ({ variant: activeVariant, base: intent.note, text: initialGoal || readDraft() }));
   // 切换方向、撤销或在别处保存目标后，卡片上的文字跟着回到该方向已保存的目标。
-  if (goal.variant !== activeVariant || goal.base !== intent.note) setGoal({ variant: activeVariant, base: intent.note, text: readDraft() });
+  // 换了用途或构型族时，已确认的目标要重新确认：文字留在卡片上作为未保存的草稿，不让它凭空消失。
+  if (goal.variant !== activeVariant || goal.base !== intent.note) {
+    const last = intent.log[intent.log.length - 1];
+    const needsReconfirm = goal.variant === activeVariant && !intent.note && !!goal.text.trim()
+      && last?.action === 'note' && !!last.value?.includes('原设计意图需重新确认');
+    setGoal({ variant: activeVariant, base: intent.note, text: needsReconfirm ? goal.text : readDraft() });
+  }
   useEffect(() => {
     try { sessionStorage.setItem(draftKey, JSON.stringify({ text: goal.text, base: goal.base })); }
     catch { /* 草稿仍可继续编辑。 */ }

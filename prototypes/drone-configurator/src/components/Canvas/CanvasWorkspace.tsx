@@ -232,6 +232,12 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
       if (node.pending && node.recordId) await graph.removeStep(node.recordId);
       else if (node.editable && node.recordId) await graph.removeNote(node.recordId);
       else if (node.removable) await graph.removeImage(node.id);
+      else if (node.kind === 'evidence') {
+        // 只移开设计者自己放上来的证据卡；随目标采纳的卡要在目标面板里撤销。
+        const pinnedLinks = graph.edges.filter(e => e.removable && e.source === node.id);
+        if (!pinnedLinks.length) return;
+        for (const link of pinnedLinks) await graph.removeReference(link.id);
+      }
       else return;
       setSelected(null);
     } catch (e) { fail(e, '无法移除。'); }
@@ -290,6 +296,8 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
       { id: 'remove', label: '移除', icon: Trash2, run: () => void removeNode(node) },
     ];
     if (node.editable) return [{ id: 'remove', label: '移除', icon: Trash2, run: () => void removeNode(node) }];
+    if (node.kind === 'evidence' && graph.edges.some(e => e.removable && e.source === node.id))
+      return [{ id: 'unpin', label: '从画布移开', icon: Trash2, title: '只移开这张卡在画布上的摆放，不影响已采纳的依据', run: () => void removeNode(node) }];
     return [];
   }
 
@@ -327,7 +335,8 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
     <div className={"cv-layout" + (panelOpen ? " has-panel" : "")}>
       <div className="cv-stage-area">
         <DesignBoard ref={boardRef} nodes={graph.nodes} edges={graph.edges} boardId={board} selectedId={selectedId} kit={kit} showLabels={historical || research} loading={graph.loading}
-          onSelect={select} onOpen={id => boardRef.current?.focus(id, true)} onConnect={historical ? undefined : (from, to) => void connect(from, to)}
+          onSelect={select} onOpen={id => boardRef.current?.focus(id, true)}
+          onRemove={historical ? undefined : id => { const node = graph.nodes.find(n => n.id === id); if (node) void removeNode(node); }} onConnect={historical ? undefined : (from, to) => void connect(from, to)}
           onAddAt={historical ? undefined : (position, screen) => setAdding({ position, ...screen })}
           onDropFiles={historical ? undefined : (files, position) => void addImages(files, position)}/>
         {!historical && <nav className="cv-dock" aria-label="添加到画布" data-testid="canvas-dock">

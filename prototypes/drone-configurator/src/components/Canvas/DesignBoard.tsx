@@ -36,6 +36,8 @@ interface BoardProps {
   onSelect: (id: string | null) => void;
   onConnect?: (source: string, target: string) => void;
   onOpen?: (id: string) => void;
+  /** 按 Delete 或 Backspace 移除选中的便签、参考图或待生成步骤。 */
+  onRemove?: (id: string) => void;
   onAddAt?: (position: XYPosition, screen: { x: number; y: number }) => void;
   onDropFiles?: (files: File[], position: XYPosition) => void;
 }
@@ -227,7 +229,7 @@ function ZoomNumber() {
 }
 
 const BoardCanvas = forwardRef<BoardHandle, BoardProps>(function BoardCanvas(
-  { nodes, edges, boardId, selectedId, kit, showLabels, loading, onSelect, onConnect, onOpen, onAddAt, onDropFiles }, handle) {
+  { nodes, edges, boardId, selectedId, kit, showLabels, loading, onSelect, onConnect, onOpen, onRemove, onAddAt, onDropFiles }, handle) {
   const container = useRef<HTMLDivElement>(null);
   const flow = useReactFlow<Card, Wire>();
   const [size, setSize] = useState<Size>({ width: 0, height: 0 });
@@ -381,6 +383,7 @@ const BoardCanvas = forwardRef<BoardHandle, BoardProps>(function BoardCanvas(
     if (key === 'enter' && id) { onSelect(id); onOpen?.(id); }
     else if (key === ' ' && id) onSelect(id);
     else if (key === 'escape') onSelect(null);
+    else if ((key === 'delete' || key === 'backspace') && selectedId && onRemove) onRemove(selectedId);
     else if (key === 'f') fitAll();
     else if (key === '+' || key === '=') void flow.zoomIn({ duration: motionTime() });
     else if (key === '-') void flow.zoomOut({ duration: motionTime() });

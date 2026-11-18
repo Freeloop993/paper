@@ -269,7 +269,7 @@
     {
       "path": "prototypes/drone-configurator/configurator-offline.zip",
       "format": "binary",
-      "sha256": "b6a4dcd71dd2882f9eac29b12b0d6a7dba3a257204a8e3ce0bfb9350e6c7fb05"
+      "sha256": "0130597128a1e1f434ceb3b6ed4b8846598678a67a34efccbd6458c9861f91c4"
     },
     {
       "path": "prototypes/drone-configurator/src/data/evidenceCards.json",
