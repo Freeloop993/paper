@@ -1,0 +1,48 @@
+﻿reference_no,title,work_group,method_card,decision_for_Insight
+1,Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion,W0001,chen,研究已逐页核验。航拍评论、专家QFD与加权提示词形成同一案例。
+2,Adding conditional control to text-to-image diffusion models,W0002,,条件图控制基础。该技术属于生成环节，未用于本次评论语义方法结论。
+3,GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters,W0003,para,研究已逐页核验。部件参数、交互和版本树可用于设计系统对照。
+4,可供性与产品语义设计理论的交集与边界研究,W0004,wei,框架已核验。行为语义与组件库的对应适合追踪对象和情境。
+5,Qwen-Image-2.1: Model card,W0005,,生图模型说明，用于后端身份记录。
+6,Qwen-Image-2.1-Fun-Controlnet-Union: Model Card,W0006,,结构条件模型说明，用于输入通路记录。
+7,Learning activities to design a parametric solutions space for products in Industry 4.0,W0007,,参数空间教学，适合参数化设计背景。
+8,产品外观解构与情感设计变量识别方法研究,W0008,qu,研究已逐页核验。词对、可见部件与独立感知观察相连。
+9,Using FCE and FAHP to explore the multirotor drone appearance preference,W0009,hsiao,研究已逐页核验。多旋翼可见部件与形态选择表。
+10,Design of plant protection unmanned aerial vehicles: quantitative research and virtual simulation,W0010,,植保产品量化与模拟，留给六旋应用资料核查。
+11,Embrace the era of drones: a new practical design approach to emergency rescue drones,W0011,,救援任务设计背景，跨任务语义须另有证据。
+12,AGRAS T16 User Manual v1.4,W0012,,厂商手册，用于构型和部件事实。
+13,AGRAS T20 User Manual v1.4,W0013,,厂商手册，用于构型和部件事实。
+14,AGRAS T30 User Manual v1.4,W0014,,厂商手册，用于构型和部件事实。
+15,Kansei Engineering: A new ergonomic consumer-oriented technology for product development,W0015,,感性工学基础，适合概念界定；本轮方法实证取后续原始研究对照。
+16,Seeing things: consumer response to the visual domain in product design,W0016,,外观感知背景，以独立评议验证用户理解。
+17,感性工学设计方法研究现状与进展,W0017,,感性工学综述，可定位研究谱系。
+18,Extracting and summarizing affective features and responses from online product descriptions and reviews: A Kansei text mining approach,W0018,wang,研究已逐页核验。词典、句法、消歧与人工标准直接相关。
+19,Insights from knowledge-based engineering in industrial practice – a Saab’s perspective,W0019,,工业知识工程实践，支持后续组织与维护知识库的讨论；本轮未据其量化效果。
+20,基于权重化特征与形状文法的产品识别设计,W0020,,形状文法与识别，服务于形态规则设计的邻近工作。
+21,基于形状文法和交互式遗传算法的产品形态创新设计,W0021,,形状文法与遗传算法，侧重交互式形态生成。
+22,7Bench: a comprehensive benchmark for layout-guided text-to-image models,W0022,,图面布局依从基准，服务于生成结果计分。
+23,Qwen-Image-Edit-2509 and Qwen-Image-Edit-2511: Model cards,W0023,,模型卡，属于实际生成后端登记。
+24,A Product's Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation,W0024,du,研究已逐页核验。词群与外观编码的映射，另作感知验证。
+25,Enhancing the aesthetic appeal of AI-generated physical product designs through LoRA fine-tuning with human feedback,W0025,,感知反馈调优，相关于模型训练路线，非当前证据检索的对照。
+26,QwenStyle: content-preserving style transfer with Qwen-Image-Edit,W0026,,风格编辑模型，属于生成与保持路线。
+27,InstructPix2Pix: Learning to follow image editing instructions,W0027,,指令编辑模型，属于目标响应与非目标保持路线。
+28,MagicBrush: A manually annotated dataset for instruction-guided image editing,W0028,,图像编辑数据集，属于编辑基准。
+29,GenEval: An object-focused framework for evaluating text-to-image alignment,W0029,,图文一致性基准，自动评分不能代替本项目感知实验。
+30,Partnering with Generative AI: Experimental Evaluation of Human-Led and Model-Led Interaction in Human-AI Co-Creation,W0030,,人主导和模型主导的交互研究，供E4对照设计单独核查。
+31,When Designers Sweat: Behavioral Traces of GenAI Co-Creation,W0031,,行为日志背景，供E4分段计时与负荷研究核查。
+32,A Taxonomy of Human–MLLM Interaction in Early-Stage Sketch-Based Design Ideation,W0032,,人机交互分类，供角色记录与界面分工核查。
+33,Multimodal generative AI for conceptual design: enabling text-based and sketch-based human-AI conversations,W0033,,文本与草图协作背景，供真实设计任务设置核查。
+34,Enhancing generative AI image refinement with scribbles and annotations: a comparative study of multimodal prompts,W0034,,标注与输入形式作用，属于反馈与有边界修订环节。
+35,AIdeation: designing a human-AI collaborative ideation system for concept designers,W0035,,创意发散、词和参考图检索的候选近邻。本轮核过作者摘要，未采其效果值。
+36,Ceci N’est Pas un Drone: Investigating the Impact of Design Representation on Design Decision Making When Using GenAI,W0036,,呈现方式对选择的影响，供设计者评议材料控制核查。
+37,智能技术驱动的汽车造型设计流程再造方法研究,W0037,,汽车造型流程重组，作为全流程背景；本轮未采其检索效果。
+38,基于人智团队智能体协同进化的群智创新设计方法,W0038,,团队及智能体协作，供角色分工设计时查阅。
+39,Guidelines for Human-AI Interaction,W0039,,人机协作规范，供修改、覆盖和错误反馈设计使用。
+40,GenAlign: Visual knowledge graphs as interactive substrates for property-aligned generative design,W0040,genalign,研究已逐页核验。选择性注入及其三组技术比较与 Insight 直接相关。
+41,A coefficient of agreement for nominal scales,W0041,,评分一致性方法。用于评议可靠性。
+42,High agreement but low kappa: I. The problems of two paradoxes,W0042,,Kappa 的解释局限。用于分布不均的评议数据。
+43,The Measurement of Meaning,W0043,,双极语义量表的理论基础。量表需要在选定语境和任务里验证。
+44,DJI Mini 4 Pro User Manual v1.4,W0044,,消费航拍机手册，用于参考对象与原图记录。
+45,基于知识工程的产品设计研究综述,W0045,know,综述已逐页核验。知识表示、检索、推送和重用的范围。
+46,Guidelines for Reporting Reliability and Agreement Studies (GRRAS) were proposed,W0046,,一致性研究报告规范，用于独立判读阶段。
+47,Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm,W0047,,配对可视化与统计呈现，用于按设计者报告比较。

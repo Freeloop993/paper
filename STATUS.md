@@ -1,4 +1,6 @@
-# 论文研究状态 · 11 月 17 日
+# 论文研究状态
+
+**11 月 18 日，导师反馈后的核查。** [研究问题与任务](planning/advisor-20261118/README.md) · [系统验收](planning/advisor-20261118/system.md) · [文献、语义、构型和历史案例实测](planning/advisor-20261118/evidence.md)。四、五章采用老师的标题。当前工作是系统与实验，新增研究结果以实际回执、设计记录及独立判读为凭。下表沿用 11 月 17 日实验索引及其批次分母。
 
 面向复核的实验索引。每行单独说明材料、样本和可回答的问题。相同原图在回收、读数和评议阶段多次出现；跨行相加会重复计数。[导师阅读稿与正文范围](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/manuscript/thesis/review/handoff-20261117/README.md)
 
