@@ -1,128 +1,105 @@
 import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import type { FrameParameters as FrameParametersType } from '../../types/DroneParameters';
+import { computeLayout, frameRules, unitHubs, type FrameType } from '../../design/design';
+import { armMaterialOptions, armRootOptions, references } from '../../design/fields';
+import { Choice, Field, Group, OpenChoice, Slider, TabHeading } from '../controls/controls';
+
+const frameTypes: FrameType[] = ['True X', 'Wide X', 'Stretch X', 'H-Frame', 'Deadcat', '+ Configuration'];
+
+/** 构型小图：与预览用同一个形状函数，只画轴心和连接。 */
+const FrameIcon: React.FC<{ type: FrameType }> = ({ type }) => {
+  const pts = unitHubs(type, frameRules[type].wl.value);
+  const r = Math.max(...pts.map(p => Math.max(Math.abs(p.x), Math.abs(p.y))));
+  const s = 17 / r;
+  const line = (x1: number, y1: number, x2: number, y2: number, k: number) => (
+    <line key={k} x1={24 + x1 * s} y1={24 - y1 * s} x2={24 + x2 * s} y2={24 - y2 * s} stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" />
+  );
+  const links = type === 'H-Frame'
+    ? [line(pts[0].x, pts[0].y, pts[3].x, pts[3].y, 0), line(pts[1].x, pts[1].y, pts[2].x, pts[2].y, 1), line(pts[0].x, 0, pts[1].x, 0, 2)]
+    : pts.map((p, i) => line(0, 0, p.x, p.y, i));
+  return (
+    <svg viewBox="0 0 48 48" className="h-10 w-10" aria-hidden="true">
+      {links}
+      {pts.map((p, i) => <circle key={i} cx={24 + p.x * s} cy={24 - p.y * s} r="3.6" fill="#ff6a1a" />)}
+    </svg>
+  );
+};
 
 const FrameParameters: React.FC = () => {
-  const { parameters, updateFrameParams } = useDroneStore();
-  const frameParams = parameters.frame;
-
-  const handleFrameTypeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updateFrameParams({ frame_type: e.target.value as FrameParametersType['frame_type'] });
-  };
-
-  const handleWheelbaseChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    updateFrameParams({ wheelbase_mm: Number(e.target.value) });
-  };
-
-  const handleArmThicknessChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updateFrameParams({ arm_thickness_mm: e.target.value as FrameParametersType['arm_thickness_mm'] });
-  };
-
-  const handleArmWidthChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updateFrameParams({ arm_width_mm: e.target.value as FrameParametersType['arm_width_mm'] });
-  };
-
-  const handleMaterialChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updateFrameParams({ material_visual: e.target.value as FrameParametersType['material_visual'] });
-  };
-
+  const { parameters, setField } = useDroneStore();
+  const frame = parameters.frame;
+  const rule = frameRules[frame.frame_type];
+  const layout = computeLayout(parameters);
+  const measured = references.wl.measured;
   return (
-    <div className="card space-y-6">
-      <div className="flex items-center space-x-2">
-        <h3 className="text-lg font-semibold text-slate-900">机架参数</h3>
-        <span className="text-sm text-slate-500">Frame Parameters</span>
-      </div>
+    <div className="space-y-5">
+      <TabHeading title="机架参数" en="Frame Parameters">四个电机放在哪里、机臂多宽。</TabHeading>
 
-      {/* 机架类型 */}
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-slate-700">
-          机架类型/风格 <span className="text-slate-500">(Frame Type)</span>
-        </label>
-        <select
-          value={frameParams.frame_type}
-          onChange={handleFrameTypeChange}
-          className="input-field w-full"
-        >
-          <option value="True X">真X型 (True X)</option>
-          <option value="Wide X">宽X型 (Wide X)</option>
-          <option value="Stretch X">伸展X型 (Stretch X)</option>
-          <option value="H-Frame">H型 (H-Frame)</option>
-          <option value="Deadcat">Deadcat型 (Deadcat)</option>
-          <option value="+ Configuration">十字型 (+ Configuration)</option>
-        </select>
-      </div>
-
-      {/* 轴距 */}
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-slate-700">
-          轴距/尺寸 <span className="text-slate-500">(Wheelbase): {frameParams.wheelbase_mm}mm</span>
-        </label>
-        <input
-          type="range"
-          min="100"
-          max="500"
-          step="1"
-          value={frameParams.wheelbase_mm}
-          onChange={handleWheelbaseChange}
-          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer slider"
-        />
-        <div className="flex justify-between text-xs text-slate-500">
-          <span>100mm</span>
-          <span>500mm</span>
+      <Field path="frame.frame_type" en="Frame Type" value={rule.zh} hint={rule.desc} reference={<><b className="font-medium text-ink">画法：</b>{rule.rule}</>}>
+        <div className="grid grid-cols-3 gap-2" role="radiogroup" aria-label="构型">
+          {frameTypes.map(type => {
+            const active = frame.frame_type === type;
+            return (
+              <button key={type} type="button" role="radio" aria-checked={active} data-frame={type} onClick={() => setField('frame.frame_type', type)}
+                className={`flex flex-col items-center rounded-xl border px-1 py-2 transition-colors ${active
+                  ? 'border-ink bg-ink text-white' : 'border-line bg-white text-ink hover:border-ink/40'}`}>
+                <FrameIcon type={type} />
+                <span className="mt-0.5 text-[13px] font-medium">{frameRules[type].zh}</span>
+                <span className={`text-[10px] ${active ? 'text-white/60' : 'text-ink-faint'}`}>{frameRules[type].en}</span>
+              </button>
+            );
+          })}
         </div>
-      </div>
+      </Field>
 
-      {/* 机臂厚度 */}
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-slate-700">
-          机臂厚度 <span className="text-slate-500">(Arm Thickness)</span>
-        </label>
-        <select
-          value={frameParams.arm_thickness_mm}
-          onChange={handleArmThicknessChange}
-          className="input-field w-full"
-        >
-          <option value="3mm">3mm</option>
-          <option value="4mm">4mm</option>
-          <option value="5mm">5mm</option>
-          <option value="6mm">6mm</option>
-        </select>
-      </div>
+      {rule.wl.adjustable ? (
+        <Field path="frame.span_ratio_wl" value={layout.W_over_L.toFixed(2)}
+          hint="电机左右跨度 ÷ 前后跨度。数值越大，机架越宽扁。"
+          reference={<>
+            <b className="font-medium text-ink">实验档：</b>0.70、1.00、1.30。<br />
+            <b className="font-medium text-ink">真实机型（手册图面量测）：</b>{measured.map(m => `${m.label} ${m.v.toFixed(2)}`).join('、')}。<br />
+            {references.wl.note}
+          </>}>
+          <Slider path="frame.span_ratio_wl" min={rule.wl.min} max={rule.wl.max} step={0.01} unit="" digits={2}
+            presets={references.wl.experimental.filter(m => m.v >= rule.wl.min && m.v <= rule.wl.max).map(m => ({ v: m.v, label: `${m.v.toFixed(2)} 实验${m.label}` }))
+              .concat(rule.wl.max >= 1.41 ? [{ v: 1.41, label: '1.41 真实机型中位' }] : [])} />
+        </Field>
+      ) : (
+        <p className="rounded-lg bg-canvas px-3 py-2 text-sm text-ink-soft">
+          {rule.zh}的横纵跨度比固定为 <b className="font-semibold text-ink">{layout.W_over_L.toFixed(2)}</b>。想调宽窄，请选宽 X、伸展 X 或 H 型。
+        </p>
+      )}
 
-      {/* 机臂宽度 */}
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-slate-700">
-          机臂宽度 <span className="text-slate-500">(Arm Width)</span>
-        </label>
-        <select
-          value={frameParams.arm_width_mm}
-          onChange={handleArmWidthChange}
-          className="input-field w-full"
-        >
-          <option value="10mm">10mm</option>
-          <option value="15mm">15mm</option>
-          <option value="20mm">20mm</option>
-        </select>
-      </div>
+      <Field path="frame.wheelbase_mm" en="Wheelbase" value={`${frame.wheelbase_mm} mm`}
+        hint="两条对角电机中心距的平均值。"
+        reference={<>
+          <b className="font-medium text-ink">实验设定：</b>250 mm（论文规格卡）。<br />
+          <b className="font-medium text-ink">厂商公布的对角尺寸（端点未核）：</b>{references.diagonal.published.map(m => `${m.label} ${m.v}`).join('、')} mm。<br />
+          当前任意两电机的最大距离为 {layout.max_pair_mm.toFixed(1)} mm。
+        </>}>
+        <Slider path="frame.wheelbase_mm" min={100} max={500} step={1} unit="mm" presets={[{ v: 250, label: '250 实验设定' }]} />
+      </Field>
 
-      {/* 材料 */}
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-slate-700">
-          材料 (视觉暗示) <span className="text-slate-500">(Material Visual)</span>
-        </label>
-        <select
-          value={frameParams.material_visual}
-          onChange={handleMaterialChange}
-          className="input-field w-full"
-        >
-          <option value="Carbon Fiber">碳纤维 (Carbon Fiber)</option>
-          <option value="Aluminum">铝合金 (Aluminum)</option>
-          <option value="ABS Plastic">ABS塑料 (ABS Plastic)</option>
-          <option value="PLA Plastic">PLA塑料 (PLA Plastic)</option>
-        </select>
-      </div>
+      <Field path="frame.arm_width_mm" en="Arm Width" value={`${parseInt(frame.arm_width_mm, 10)} mm`}>
+        <Choice options={[{ value: '10mm', zh: '10 mm' }, { value: '15mm', zh: '15 mm' }, { value: '20mm', zh: '20 mm' }]}
+          value={frame.arm_width_mm} onChange={v => setField('frame.arm_width_mm', v)} label="机臂宽度" />
+      </Field>
+
+      <Field path="frame.arm_thickness_mm" en="Arm Thickness" value={`${parseInt(frame.arm_thickness_mm, 10)} mm`} hint="厚度从正上方看不到，可在侧视里查看。">
+        <Choice options={[{ value: '3mm', zh: '3 mm' }, { value: '4mm', zh: '4 mm' }, { value: '5mm', zh: '5 mm' }, { value: '6mm', zh: '6 mm' }]}
+          value={frame.arm_thickness_mm} onChange={v => setField('frame.arm_thickness_mm', v)} label="机臂厚度" />
+      </Field>
+
+      <Group title="造型" note="可以不指定，留给后续设计">
+        <Field path="frame.arm_root" en="Arm Root">
+          <OpenChoice path="frame.arm_root" options={armRootOptions} />
+        </Field>
+        <Field path="frame.material_visual" en="Arm Material">
+          <OpenChoice path="frame.material_visual" options={armMaterialOptions} />
+        </Field>
+      </Group>
     </div>
   );
 };
 
-export default FrameParameters; 
+export default FrameParameters;

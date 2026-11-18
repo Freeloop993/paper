@@ -1,0 +1,319 @@
+{
+  "页面": "prototypes/drone-configurator/dist/index.html",
+  "步骤": [
+    {
+      "step": "01-true-x-goal-compact",
+      "note": "采纳 E001，提出「紧凑」，方案 A 为真 X",
+      "variant": "A",
+      "files": [
+        "drone-config-20261118-010543.json",
+        "drone-guide-20261118-010543.png",
+        "drone-prompt-20261118-010543.txt"
+      ],
+      "frame": "真 X 型",
+      "wl": "1.00",
+      "hubs": 4,
+      "arm_mm": 15,
+      "fresh": [
+        "intent"
+      ],
+      "warnings": [
+        "前桨进入相机视野约 16°",
+        "桨盘伸到机身上方 2 mm"
+      ]
+    },
+    {
+      "step": "02-wide-x",
+      "note": "方案 B：构型改为宽 X（叠上方案 A 对比）",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010548.json",
+        "drone-guide-20261118-010548.png",
+        "drone-prompt-20261118-010548.txt"
+      ],
+      "frame": "宽 X 型",
+      "wl": "1.30",
+      "hubs": 4,
+      "arm_mm": 15,
+      "fresh": [
+        "layout"
+      ],
+      "warnings": [
+        "前桨进入相机视野约 4°"
+      ]
+    },
+    {
+      "step": "03-deadcat",
+      "note": "方案 B：构型改为 Deadcat",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010552.json",
+        "drone-guide-20261118-010552.png",
+        "drone-prompt-20261118-010552.txt"
+      ],
+      "frame": "Deadcat 型",
+      "wl": "1.66",
+      "hubs": 4,
+      "arm_mm": 15,
+      "fresh": [
+        "layout"
+      ],
+      "warnings": [
+        "桨盘伸到机身上方 11 mm"
+      ]
+    },
+    {
+      "step": "04-arm-10",
+      "note": "方案 B：机臂宽度 10 mm",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010555.json",
+        "drone-guide-20261118-010555.png",
+        "drone-prompt-20261118-010555.txt"
+      ],
+      "frame": "Deadcat 型",
+      "wl": "1.66",
+      "hubs": 4,
+      "arm_mm": 10,
+      "fresh": [
+        "arm_size"
+      ],
+      "warnings": [
+        "桨盘伸到机身上方 11 mm"
+      ]
+    },
+    {
+      "step": "05-arm-20",
+      "note": "方案 B：机臂宽度 20 mm",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010558.json",
+        "drone-guide-20261118-010558.png",
+        "drone-prompt-20261118-010558.txt"
+      ],
+      "frame": "Deadcat 型",
+      "wl": "1.66",
+      "hubs": 4,
+      "arm_mm": 20,
+      "fresh": [
+        "arm_size"
+      ],
+      "warnings": [
+        "桨盘伸到机身上方 11 mm"
+      ]
+    },
+    {
+      "step": "06-dragged-on-canvas",
+      "note": "方案 B：在画布上拖动轴心与机身宽度",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010604.json",
+        "drone-guide-20261118-010604.png",
+        "drone-prompt-20261118-010604.txt"
+      ],
+      "frame": "宽 X 型",
+      "wl": "1.39",
+      "hubs": 4,
+      "arm_mm": 20,
+      "fresh": [
+        "body_size"
+      ],
+      "warnings": []
+    },
+    {
+      "step": "07-styling-chosen",
+      "note": "方案 B：指定流线舱、橙红、机鼻下挂相机",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010610.json",
+        "drone-guide-20261118-010610.png",
+        "drone-prompt-20261118-010610.txt"
+      ],
+      "frame": "宽 X 型",
+      "wl": "1.39",
+      "hubs": 4,
+      "arm_mm": 20,
+      "fresh": [
+        "camera_mount"
+      ],
+      "warnings": []
+    },
+    {
+      "step": "08-reference-mini-3-pro",
+      "note": "方案 B：套用 Mini 3 Pro 的横纵比、轴距与桨径",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010614.json",
+        "drone-guide-20261118-010614.png",
+        "drone-prompt-20261118-010614.txt"
+      ],
+      "frame": "宽 X 型",
+      "wl": "1.52",
+      "hubs": 4,
+      "arm_mm": 20,
+      "fresh": [
+        "layout",
+        "propulsion"
+      ],
+      "warnings": [
+        "前桨进入相机视野约 8°"
+      ]
+    },
+    {
+      "step": "09-card-undone-goal-kept",
+      "note": "取消采纳 E001，保留「紧凑」",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010617.json",
+        "drone-guide-20261118-010617.png",
+        "drone-prompt-20261118-010617.txt"
+      ],
+      "frame": "宽 X 型",
+      "wl": "1.52",
+      "hubs": 4,
+      "arm_mm": 20,
+      "fresh": [],
+      "warnings": [
+        "前桨进入相机视野约 8°"
+      ]
+    },
+    {
+      "step": "10-no-match-own-intent",
+      "note": "无匹配依据，自写意图",
+      "variant": "B",
+      "files": [
+        "drone-config-20261118-010622.json",
+        "drone-guide-20261118-010622.png",
+        "drone-prompt-20261118-010622.txt"
+      ],
+      "frame": "真 X 型",
+      "wl": "1.00",
+      "hubs": 4,
+      "arm_mm": 15,
+      "fresh": [
+        "intent_note"
+      ],
+      "warnings": [
+        "前桨进入相机视野约 16°",
+        "桨盘伸到机身上方 2 mm"
+      ]
+    }
+  ],
+  "评论依据": {
+    "搜索小巧": {
+      "count": "1 / 36 条短引文",
+      "cards": [
+        "E001"
+      ]
+    },
+    "采纳后依据": [
+      "E001"
+    ],
+    "取消后依据": []
+  },
+  "画布拖动": {
+    "拖轴心前": {
+      "wl": "1.30",
+      "R2": {
+        "id": "R2",
+        "x_mm": 99.07799863807502,
+        "y_mm": 76.21384510621155
+      }
+    },
+    "拖轴心后": {
+      "wl": "1.39",
+      "R2": {
+        "id": "R2",
+        "x_mm": 117.70459396414678,
+        "y_mm": 84.6795640029833
+      },
+      "last_change": "拖动电机 → 轴距 290 mm，横纵跨度比 W/L 1.39 撤销"
+    },
+    "拖机身宽度后": {
+      "机身宽比轴距": "0.19",
+      "之前": "0.28"
+    }
+  },
+  "套用真实机型": {
+    "frame": "宽 X 型",
+    "ratios": {
+      "wl": "1.52",
+      "dd": "0.62",
+      "bw": "0.22",
+      "blw": "1.82"
+    },
+    "hints": [
+      {
+        "id": "props",
+        "level": "note",
+        "title": "相邻桨盘重叠 17 mm"
+      },
+      {
+        "id": "camera",
+        "level": "warn",
+        "title": "前桨进入相机视野约 8°"
+      },
+      {
+        "id": "wl",
+        "level": "note",
+        "title": "横纵比 1.52"
+      },
+      {
+        "id": "dd",
+        "level": "note",
+        "title": "桨径 ÷ 轴距 0.62"
+      }
+    ]
+  },
+  "无匹配": {
+    "count": "0 / 36 条短引文",
+    "empty": "没有找到相关的评论\n\n没关系。在右边的简报里直接选想要的感觉，或用自己的话写一句，会记为设计者自己的判断。"
+  },
+  "首步设计提示": [
+    {
+      "id": "props",
+      "level": "ok",
+      "title": "桨盘互不重叠"
+    },
+    {
+      "id": "camera",
+      "level": "warn",
+      "title": "前桨进入相机视野约 16°"
+    },
+    {
+      "id": "body",
+      "level": "warn",
+      "title": "桨盘伸到机身上方 2 mm"
+    },
+    {
+      "id": "wl",
+      "level": "note",
+      "title": "横纵比 1.00"
+    },
+    {
+      "id": "dd",
+      "level": "note",
+      "title": "桨径 ÷ 轴距 0.51"
+    }
+  ],
+  "臂宽20的改动句": [
+    {
+      "id": "arm_size",
+      "fresh": "yes",
+      "text": "Each arm is 20 mm wide and 4 mm thick; seen from above it reads as a 20 mm wide beam."
+    }
+  ],
+  "窄屏": {
+    "layout": "narrow",
+    "viewport": [
+      390,
+      844
+    ],
+    "frame": "Deadcat 型",
+    "wl": "1.66",
+    "hubs": 4,
+    "arm_mm": 20
+  },
+  "控制台报错数": 0,
+  "非本地请求": []
+}

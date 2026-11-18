@@ -1,0 +1,172 @@
+{
+  "step": "08-reference-mini-3-pro",
+  "note": "方案 B：套用 Mini 3 Pro 的横纵比、轴距与桨径",
+  "captured_at": "2026-11-17T14:06:14.440Z",
+  "layout": "wide",
+  "viewport": [
+    1440,
+    900
+  ],
+  "frame": "宽 X 型",
+  "variant": "B",
+  "variants": [
+    "A",
+    "B"
+  ],
+  "hubs": [
+    {
+      "id": "R1",
+      "x_mm": -103.17400965712662,
+      "y_mm": 67.87763793232014
+    },
+    {
+      "id": "R2",
+      "x_mm": 103.17400965712662,
+      "y_mm": 67.87763793232014
+    },
+    {
+      "id": "R3",
+      "x_mm": 103.17400965712662,
+      "y_mm": -67.87763793232014
+    },
+    {
+      "id": "R4",
+      "x_mm": -103.17400965712662,
+      "y_mm": -67.87763793232014
+    }
+  ],
+  "arm_stroke_width_mm": 20,
+  "ghost": true,
+  "ratios": {
+    "wl": "1.52",
+    "dd": "0.62",
+    "bw": "0.22",
+    "blw": "1.82"
+  },
+  "hints": [
+    {
+      "id": "props",
+      "level": "note",
+      "title": "相邻桨盘重叠 17 mm"
+    },
+    {
+      "id": "camera",
+      "level": "warn",
+      "title": "前桨进入相机视野约 8°"
+    },
+    {
+      "id": "wl",
+      "level": "note",
+      "title": "横纵比 1.52"
+    },
+    {
+      "id": "dd",
+      "level": "note",
+      "title": "桨径 ÷ 轴距 0.62"
+    }
+  ],
+  "last_change": "套用 Mini 3 Pro 的比例 → 横纵跨度比 W/L 1.52，轴距 247 mm，桨径 6 英寸（152 mm） 撤销",
+  "sentences": [
+    {
+      "id": "task",
+      "fresh": "no",
+      "text": "Design a quadcopter for everyday carry-along aerial photography. Strict orthographic top view, nose toward the top edge of the image, arms fully unfolded."
+    },
+    {
+      "id": "intent",
+      "fresh": "no",
+      "text": "Design intent: seen from directly above with the arms unfolded, the aircraft should read as visually compact."
+    },
+    {
+      "id": "layout",
+      "fresh": "yes",
+      "text": "Four motors in a Wide X layout: the four motor centres sit at the corners of a rectangle that is wider than it is long. Mean opposite-motor (diagonal) span 247 mm; motor-centre width-to-length span ratio W/L 1.52; adjacent arm angles clockwise from the front-left motor: 113.3°, 66.7°, 113.3°, 66.7°."
+    },
+    {
+      "id": "guide",
+      "fresh": "no",
+      "text": "Match the motor centres and frame links in the attached layout image: red dots mark motor centres, blue lines mark frame links. Do not reproduce the dots or lines in the result."
+    },
+    {
+      "id": "propulsion",
+      "fresh": "yes",
+      "text": "Each motor carries one stationary 2-blade propeller, 6-inch (152 mm) diameter. The two blades point in exactly opposite directions from the hub."
+    },
+    {
+      "id": "prop_guard",
+      "fresh": "no",
+      "text": "No propeller guards."
+    },
+    {
+      "id": "arm_size",
+      "fresh": "no",
+      "text": "Each arm is 20 mm wide and 4 mm thick; seen from above it reads as a 20 mm wide beam."
+    },
+    {
+      "id": "body_size",
+      "fresh": "no",
+      "text": "Fuselage design envelope 100 × 55 × 30 mm (length × width × height); this is a size limit, not a shape."
+    },
+    {
+      "id": "body_style",
+      "fresh": "no",
+      "text": "A rounded pod with a continuous curved outline."
+    },
+    {
+      "id": "camera",
+      "fresh": "no",
+      "text": "A forward-facing camera sits at the nose and looks horizontally toward the top edge of the image; no lens glass faces the viewer, and nothing camera-like appears at the tail."
+    },
+    {
+      "id": "camera_mount",
+      "fresh": "no",
+      "text": "The gimbal camera hangs underneath the front of the fuselage; from directly above only the top edge of a small camera housing peeks out just ahead of the nose, low and tight against it, with no neck, stalk or post."
+    },
+    {
+      "id": "landing",
+      "fresh": "no",
+      "text": "Low landing skids with 40 mm ground clearance, tucked beneath the aircraft."
+    },
+    {
+      "id": "colour",
+      "fresh": "no",
+      "text": "Main shell colour: orange (#f97316)."
+    },
+    {
+      "id": "presentation",
+      "fresh": "no",
+      "text": "Show the complete product on a plain light background as a photorealistic industrial design rendering. Omit guide marks, dimensions and lettering."
+    }
+  ],
+  "intent_targets": [
+    "紧凑"
+  ],
+  "adopted": [
+    "E001"
+  ],
+  "intent_note": "",
+  "free_items": "臂根过渡、机臂材料外观、顶盖分件、表面处理（未指定，留给后续设计）",
+  "spec_variant": "方案 B",
+  "guide_hubs": [
+    {
+      "id": "R1",
+      "x_px": 261.3748753268179,
+      "y_px": 347.1150495571171
+    },
+    {
+      "id": "R2",
+      "x_px": 762.6251246731821,
+      "y_px": 347.1150495571171
+    },
+    {
+      "id": "R3",
+      "x_px": 762.6251246731821,
+      "y_px": 676.8849504428829
+    },
+    {
+      "id": "R4",
+      "x_px": 261.3748753268179,
+      "y_px": 676.8849504428829
+    }
+  ]
+}
