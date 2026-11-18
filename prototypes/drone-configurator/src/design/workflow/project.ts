@@ -14,7 +14,7 @@ const briefId = (task: Task, variant: string) => 'brief-' + task + '-' + variant
 
 export function nodeSnapshot(node: WorkflowNode): Snapshot {
   if (!node.parameters || !node.intent || !node.touched) throw new Error('这个节点没有可编辑的规格。');
-  return structuredClone({ parameters: node.parameters, intent: node.intent, touched: node.touched });
+  return structuredClone({ parameters: node.parameters, intent: node.intent, touched: node.touched, designChatAudit: node.designChatAudit });
 }
 
 export function buildProject(draft: ProjectDraft, attempts: FrozenAttempt[], records: BoardRecords,
@@ -60,7 +60,7 @@ export function buildProject(draft: ProjectDraft, attempts: FrozenAttempt[], rec
       ] });
     nodes.push({ id: spec, kind: 'spec', title: active ? '当前规格草稿' : v.name + ' · 草稿',
       variantId: v.id, source: '本机参数工作台', parentId: base, isDraft: true, canBranch: true,
-      parameters: s.parameters, intent: s.intent, touched: s.touched, subtitle: frameRules[s.parameters.frame.frame_type].zh,
+      parameters: s.parameters, intent: s.intent, touched: s.touched, designChatAudit: s.designChatAudit, subtitle: frameRules[s.parameters.frame.frame_type].zh,
       detail: v.name + '的可编辑规格。', facts: [{ label: '方案', value: v.name }] });
     edges.push(relation(brief, spec, '设计目标', 'reference'));
     if (base) edges.push(relation(base, spec, '继续编辑'));

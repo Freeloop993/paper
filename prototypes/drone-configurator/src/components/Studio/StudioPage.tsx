@@ -1,8 +1,8 @@
 // 造型：画布居中，左边是所选部件的参数，右边是布局空间、设计提示和参考机型，下面是方案条。
-import React, { useContext, useMemo, useRef, useState } from 'react';
+import React, { useMemo, useRef, useState } from 'react';
 import { Anchor, Box, Camera, ChevronDown, Eye, Ruler, Settings, Undo2, Video, Zap } from 'lucide-react';
-import { DroneStoreContext, useDroneStore } from '../../store/droneStore';
-import { computeLayout, frameRules, layoutKey, topologyOf } from '../../design/design';
+import { useDroneStore } from '../../store/droneStore';
+import { computeLayout, frameRules, topologyOf } from '../../design/design';
 import type { ParameterGroup } from '../../types/DroneParameters';
 import FrameParameters from '../Parameters/FrameParameters';
 import PropulsionParameters from '../Parameters/PropulsionParameters';
@@ -16,7 +16,8 @@ import Hints from './Hints';
 import References from './References';
 import { aircraftParameters } from '../../data/aircraft';
 import Variants from './Variants';
-import DesignChat, { type DesignChatContext, type WidthPreview } from './DesignChat';
+import { chatContext, chatScopeKey } from '../../design/designChatAudit';
+import DesignChat, { type WidthPreview } from './DesignChat';
 
 const tabs: { id: ParameterGroup; label: string; icon: React.ComponentType<{ className?: string }> }[] = [
   { id: 'frame', label: '机架', icon: Settings },
@@ -29,26 +30,14 @@ type View = 'top' | 'guide' | 'side';
 const views: { id: View; label: string }[] = [{ id: 'top', label: '顶视' }, { id: 'guide', label: '条件图' }, { id: 'side', label: '侧视' }];
 
 const StudioPage: React.FC<{ wide: boolean; initialTab?: ParameterGroup | null }> = ({ wide, initialTab }) => {
-  const store = useContext(DroneStoreContext);
-  const { parameters, intent, touched, activeVariant, pinned, setGhost, setField, lastChange, undo, history } = useDroneStore();
+  const draft = useDroneStore();
+  const { parameters, pinned, setGhost, lastChange, undo, history } = draft;
   const [tab, setTab] = useState<ParameterGroup>(initialTab ?? 'frame');
   const [view, setView] = useState<View>('top');
-  const [baseline, setBaseline] = useState({ parameters, intent, touched, activeVariant, tab, view, revision: 1 });
-  if (parameters !== baseline.parameters || intent !== baseline.intent || touched !== baseline.touched
-    || activeVariant !== baseline.activeVariant || tab !== baseline.tab || view !== baseline.view) {
-    setBaseline({ parameters, intent, touched, activeVariant, tab, view, revision: baseline.revision + 1 });
-  }
   const [preview, setPreview] = useState<WidthPreview | null>(null);
   const stageRef = useRef<HTMLElement>(null);
-  const mission = intent.taskId ?? 'consumer_camera';
-  const layoutId = layoutKey(parameters.frame.frame_type);
-  const approved = [...intent.log].reverse().find(item => item.brief && ['accept', 'custom'].includes(item.brief.action)
-    && item.brief.text === intent.note && item.brief.query.task === mission && item.brief.query.layout === layoutId)?.brief;
-  const context: DesignChatContext = {
-    task: mission, layout: layoutId, frame: parameters.frame.frame_type,
-    part: tab, view, widthMm: parameters.fuselage.fuselage_dimensions_mm.width, version: activeVariant + '-' + baseline.revision,
-    brief: intent.note.trim().slice(0, 600) || undefined, topic: approved?.query.topic, state: approved?.query.state,
-  };
+  const scopeKey = chatScopeKey(draft);
+  const context = chatContext(draft, scopeKey, tab, view);
   const visiblePreview = preview?.version === context.version ? preview : null;
   const shownView = visiblePreview ? 'top' : view;
   const [overlays, setOverlays] = useState({ dims: true, fov: true, hidden: true });
@@ -146,21 +135,14 @@ const StudioPage: React.FC<{ wide: boolean; initialTab?: ParameterGroup | null }
         <a href="#studio-parts" onClick={e => { e.preventDefault(); document.getElementById('studio-parts')?.scrollIntoView(); }} className="btn-line !text-xs">部件参数</a>
       </nav>}
       <aside id="studio-chat" className={`order-3 flex min-w-0 scroll-mt-16 flex-col gap-3 ${wide ? 'min-h-0' : ''}`}>
-        <DesignChat context={context} variant={activeVariant} preview={visiblePreview}
+        <DesignChat key={JSON.stringify([scopeKey, context.task, context.frame])} context={context} scopeKey={scopeKey} preview={visiblePreview}
           scopeLabel={[frameRules[context.frame].zh, tabs.find(t => t.id === tab)?.label, views.find(v => v.id === view)?.label].join(' · ')}
           onSelectBody={() => select('fuselage')}
           onPreview={next => {
             setPreview(next);
             if (next && !wide) stageRef.current?.scrollIntoView({ block: 'start' });
           }}
-          onApply={(version, suggestion) => {
-            const current = store.getState();
-            if (version !== context.version || current.parameters !== parameters || current.intent !== intent
-              || current.activeVariant !== activeVariant || suggestion.from !== context.widthMm || tab !== 'fuselage') return false;
-            setPreview(null);
-            setField('fuselage.fuselage_dimensions_mm.width', suggestion.to);
-            return true;
-          }} />
+          />
         <details className={`panel scroll-thin shrink-0 overflow-y-auto ${wide ? 'max-h-[42%]' : ''}`}>
           <summary className="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-sm font-medium">布局与参考<ChevronDown size={15} /></summary>
           <div className="space-y-3 px-2 pb-2">

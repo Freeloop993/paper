@@ -17,7 +17,7 @@ const Row: React.FC<{ label: string; children: React.ReactNode; muted?: boolean 
 );
 
 const ParameterOverview: React.FC = () => {
-  const { parameters, touched, intent, pinned, lastChange, importSnapshot, exportNote, setExportNote, notice, setNotice, variants, activeVariant } = useDroneStore();
+  const { parameters, touched, intent, designChatAudit, pinned, lastChange, importSnapshot, exportNote, setExportNote, notice, setNotice, variants, activeVariant } = useDroneStore();
   const variantName = variants.find(v => v.id === activeVariant)?.name ?? '';
   const fileInput = useRef<HTMLInputElement>(null);
   const layout = useMemo(() => computeLayout(parameters), [parameters]);
@@ -28,7 +28,7 @@ const ParameterOverview: React.FC = () => {
   const decided = styling.filter(p => getPath(parameters, p) !== '' && (p !== 'accessories.camera_mount' || accessories.has_camera_gimbal));
   const open = openDecisions(parameters);
 
-  const state = { parameters, touched, intent };
+  const state = { parameters, touched, intent, designChatAudit };
   const options = { note: exportNote, pinned, variant: variantName, lastChange: lastChange && { path: lastChange.path, label: lastChange.label, from: lastChange.from, to: lastChange.to } };
   const all = () => { const c = exportAll(state, options); setNotice(`已导出：${c.files.guide}、${c.files.prompt}、${c.files.config}${c.supplementary_view ? '、'+c.supplementary_view.file : ''}`); };
   const one = (kind: 'config' | 'prompt' | 'guide') => {

@@ -39,6 +39,8 @@ export function appendAttempts(graph: WorkflowGraph, attempts: FrozenAttempt[], 
       detail: a.goal, canBranch: true, canRestore: true, facts: [{ label: '保持项', value: a.keep || '未指定' },
         { label: '规格来源', value: a.snapshot ? '冻结时的完整草稿' : '按旧归档的配置、已选字段和意图还原' }] });
     if (ancestor) edges.push(relation(ancestor, specId, '沿用分支编辑'));
+    const inputState = a.h3 ? (a.h3.status === 'succeeded' ? 'H3 已回图' : '冻结时指定') :
+      a.receipt ? '回图工作流已核对' : a.dispatch?.ack ? '服务已接收' : '冻结时指定';
     const status = a.h3 ? generationStatus(a).title : a.receipt ? '已核对回图' : a.failure ? '运行失败或中止' : a.dispatch?.ack ? '服务已入队'
       : a.dispatch?.error ? '提交异常' : a.dispatch ? '已登记请求' : '待提交';
     nodes.push({ ...meta, id: runId, kind: 'run', title: a.goal, subtitle: status,
@@ -53,16 +55,14 @@ export function appendAttempts(graph: WorkflowGraph, attempts: FrozenAttempt[], 
       const id = guideId(a.id);
       nodes.push({ ...meta, id, kind: 'image', title: '本轮布局条件图', subtitle: '冻结输入', source: '冻结的结构化条件图',
         image: images.get(id), parentId: specId, facts: [{ label: 'SHA-256', value: a.config.reference_image.png_sha256 ?? '未登记' }] });
-      const label = a.h3 && a.h3.status !== 'succeeded' ? '冻结条件图' : '条件图';
-      edges.push(relation(specId, id, '生成布局图'), relation(id, runId, label, 'reference'));
+      edges.push(relation(specId, id, '生成布局图'), relation(id, runId, inputState + ' · 条件图', 'reference'));
     }
     if (a.parentImage) {
       const known = a.parentId && candidates.has(a.parentId);
       const id = known ? candidateNodeId(a.parentId!) : parentImageId(a.id);
       if (!known) nodes.push({ ...meta, id, kind: 'image', title: '本轮父图', subtitle: '归档输入', image: images.get(id),
         source: '随本轮冻结的父图原件', detail: a.parentId ? '原候选编号 · ' + a.parentId : '原候选编号未登记。' });
-      const label = a.h3 && a.h3.status !== 'succeeded' ? '冻结父图' : '父图输入';
-      edges.push(relation(id, runId, label, 'reference'));
+      edges.push(relation(id, runId, inputState + ' · 父图', 'reference'));
     }
     for (const c of a.candidates) {
       const id = candidateNodeId(c.id);

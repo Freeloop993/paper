@@ -41,7 +41,7 @@ function useImages(attempts: FrozenAttempt[], records: ReturnType<typeof emptyRe
 function asDraft(s: ProjectDraft, id: string, snapshot: Snapshot): ProjectDraft {
   return { ...s, ...snapshot, activeVariant: id,
     variants: s.variants.map(v => v.id === s.activeVariant ? { ...v, snapshot: {
-      parameters: s.parameters, intent: s.intent, touched: s.touched, workflowOrigin: s.workflowOrigin,
+      parameters: s.parameters, intent: s.intent, touched: s.touched, designChatAudit: s.designChatAudit, workflowOrigin: s.workflowOrigin,
     } } : v) };
 }
 function editableVariant(draft: ProjectDraft, node: WorkflowNode) {

@@ -1,16 +1,17 @@
-import { useContext, useId, useLayoutEffect, useRef, useState } from 'react';
+import { useId, useLayoutEffect, useRef, useState } from 'react';
 import {
   ArrowDownRight, ArrowRight, ArrowUpLeft, CheckCheck, ChevronRight, ExternalLink,
   FileText, GitBranch, Image as ImageIcon, Layers, Link2, LockKeyhole, Maximize2,
   MessageCircle, PanelRight, Pencil, Quote, SlidersHorizontal, StickyNote, Unlink, Workflow, X,
 } from 'lucide-react';
-import { computeLayout, layoutKey } from '../../design/design';
+import { computeLayout } from '../../design/design';
 import { fields, fieldStatus, isRelevant, statusLabel } from '../../design/fields';
 import type { WorkflowBoard, WorkflowEdge, WorkflowNode } from '../../design/workflowGraph';
 import WorkflowImage from '../../design/workflow/WorkflowImage';
-import { DroneStoreContext, useDroneStore } from '../../store/droneStore';
+import { useDroneStore } from '../../store/droneStore';
 import { GuideView } from '../Studio/Stage';
-import DesignChat, { type DesignChatContext, type WidthPreview } from '../Studio/DesignChat';
+import { chatContext, chatScopeKey } from '../../design/designChatAudit';
+import DesignChat, { type WidthPreview } from '../Studio/DesignChat';
 import './graph-inspector.css';
 
 interface GraphInspectorProps {
@@ -111,37 +112,17 @@ function WidthDiagram({ current, preview, length }: { current: number; preview: 
   </figure>;
 }
 
-function DraftChat({ node }: { node: WorkflowNode }) {
-  const store = useContext(DroneStoreContext);
-  const { parameters, intent, touched, activeVariant } = useDroneStore();
-  const [scope, setScope] = useState({ parameters, intent, touched, revision: 1 });
-  if (scope.parameters !== parameters || scope.intent !== intent || scope.touched !== touched) {
-    setScope({ parameters, intent, touched, revision: scope.revision + 1 });
-  }
+function DraftChat() {
+  const draft = useDroneStore();
   const [preview, setPreview] = useState<WidthPreview | null>(null);
-  const task = intent.taskId ?? 'consumer_camera';
-  const frame = parameters.frame.frame_type;
-  const layout = layoutKey(frame);
-  const approved = [...intent.log].reverse().find(item => item.brief && ['accept', 'custom'].includes(item.brief.action)
-    && item.brief.text === intent.note && item.brief.query.task === task && item.brief.query.layout === layout)?.brief;
-  const { width, length } = parameters.fuselage.fuselage_dimensions_mm;
-  const context: DesignChatContext = {
-    task, layout, frame, part: 'fuselage', view: 'top', widthMm: width, version: activeVariant + '-' + scope.revision,
-    brief: intent.note.trim().slice(0, 600) || undefined, topic: approved?.query.topic, state: approved?.query.state,
-  };
+  const scopeKey = chatScopeKey(draft);
+  const context = chatContext(draft, scopeKey, 'fuselage', 'top');
+  const { width, length } = draft.parameters.fuselage.fuselage_dimensions_mm;
   const visible = preview?.version === context.version ? preview : null;
   return <div className="gi-chat">
     {visible && <WidthDiagram current={width} preview={visible.width} length={length}/>}
-    <DesignChat context={context} variant={activeVariant} scopeLabel={'机身顶视 · 当前宽度 ' + width + ' mm'}
-      preview={visible} onPreview={setPreview}
-      onApply={(version, suggestion) => {
-        const current = store.getState();
-        if (version !== context.version || current.activeVariant !== node.variantId || current.parameters !== parameters
-          || current.intent !== intent || current.touched !== touched || suggestion.from !== width) return false;
-        current.setField('fuselage.fuselage_dimensions_mm.width', suggestion.to);
-        setPreview(null);
-        return true;
-      }}/>
+    <DesignChat key={JSON.stringify([scopeKey, context.task, context.frame])} context={context} scopeKey={scopeKey}
+      scopeLabel={'机身顶视 · 当前宽度 ' + width + ' mm'} preview={visible} onPreview={setPreview}/>
   </div>;
 }
 
@@ -230,7 +211,7 @@ export default function GraphInspector({ node, nodes, edges, boardId, onSelect, 
       </div>
     </>}
     {currentDraft && chatFor === currentDraft.id && <div id={id + '-chat'} className="gi-chat-wrap" hidden={!chatting}>
-      <DraftChat key={currentDraft.id} node={currentDraft}/>
+      <DraftChat key={currentDraft.id}/>
     </div>}
   </aside>;
 }

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { FileClock, FolderInput, Save } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
 import { compilePrompt } from '../../design/partPrompt';
-import { computeLayout, frameRules } from '../../design/design';
+import { computeLayout, frameRules, topologyOf, taskLabels } from '../../design/design';
 import { attachReceipt, exportRecord, freezeAttempt, listAttempts, markPresented, recordDecision, type DecisionKind, type FrozenAttempt } from '../../design/candidateRecords';
 import ModelDispatch from './ModelDispatch';
 import HistoryReplay from './HistoryReplay';
@@ -24,6 +24,18 @@ function AttemptView({attempt,onParent}:{attempt:FrozenAttempt;onParent:(id:stri
     <p className="break-all text-sm font-semibold">{attempt.variantName} · {frameRules[attempt.config.parameters.frame.frame_type].zh} · {attempt.config.layout.hubs.length} 个轴位</p>
     <p className="mt-1 text-sm">{attempt.goal}</p><p className="text-xs text-ink-soft">保持项 · {attempt.keep||'未指定'} / {attempt.condition==='free'?'自由提示':'结构化提示'} / {stamp(attempt.createdAt)}</p>
     <details className="mt-2 text-xs"><summary className="cursor-pointer font-medium">冻结输入与编号</summary><p className="mt-2 break-all font-mono">{attempt.id}</p><p className="mt-1 break-all">条件图 SHA-256 · {attempt.config.reference_image.png_sha256}</p><p className="mt-1">父图 · {attempt.parentId||'无'}</p><p className="mt-2 whitespace-pre-wrap break-words" lang="en">{attempt.confirmedText}</p></details>
+    {attempt.config.design_chat_audit?.length ? <details className="mt-3 text-xs" data-testid="frozen-design-chat">
+      <summary className="cursor-pointer font-medium">冻结时的设计对话 · {attempt.config.design_chat_audit.length} 条记录</summary>
+      <ol className="mt-2 space-y-2">{attempt.config.design_chat_audit.map((event,index)=><li className="rounded-lg border border-line bg-white p-2" key={event.turnId+index}>
+        <b>{{answer:'模型答复',error:'请求失败',decline:'设计者驳回',apply:'设计者应用',undo:'设计者撤销'}[event.action]}</b> · {stamp(event.at)}
+        {event.action==='answer' && <><p className="mt-1 break-words">{event.question}</p>
+          <p className="mt-1 whitespace-pre-wrap break-words">{event.answer.answer}</p>
+          <p className="mt-1 text-ink-soft">{event.answer.model} · {event.answer.effort} · 本轮回答引用 {event.answer.citedIds?.join('、') || '无已登记卡号'}</p></>}
+        {event.action==='decline' && <p>建议 {event.from} → {event.to} mm · {event.reason}</p>}
+        {event.action==='error' && <p className="break-words">{event.question} · {event.error}</p>}
+        {(event.action==='apply' || event.action==='undo') && <p>机身宽度 {event.from} → {event.to} mm</p>}
+      </li>)}</ol>
+    </details> : null}
     {!done&&<ModelDispatch key={attempt.id} attempt={attempt}/>}
     {!done&&<details className="mt-2 rounded-xl border border-line bg-white p-3"><summary className="cursor-pointer text-sm font-semibold">导入外部回执</summary><p className="mt-2 text-xs text-ink-soft">选取旧版 ComfyUI 本轮的实际请求、原始作业回执、运行历史及全部回图。文件名沿用后端导出。</p>
       <div className="mt-2 grid gap-2 sm:grid-cols-2">{receiptInputs.map(([k,title])=><label className="min-w-0 text-xs" key={k}>{title}<input className={input} type="file" accept=".json,application/json" data-receipt-file={k} onChange={e=>setFiles({...files,[k]:e.target.files?.[0]})}/></label>)}
@@ -48,7 +60,7 @@ function AttemptView({attempt,onParent}:{attempt:FrozenAttempt;onParent:(id:stri
 }
 
 export default function CandidateWorkspace({initialAttempt, initialParent,onParentConsumed}: {initialAttempt?:string; initialParent?:string;onParentConsumed?:()=>void} = {}){
-  const {workflowOrigin,parameters,touched,intent,activeVariant,variants}=useDroneStore();
+  const {task,workflowOrigin,parameters,touched,intent,designChatAudit,activeVariant,variants}=useDroneStore();
   const [attempts,setAttempts]=useState<FrozenAttempt[]>([]),[selected,setSelected]=useState(initialAttempt ?? '');
   const [condition,setCondition]=useState<'free'|'structured'>('structured'),[text,setText]=useState(''),[editText,setEditText]=useState<string|null>(null);
   const [goal,setGoal]=useState(''),[keep,setKeep]=useState(''),[parentId,setParentId]=useState('');
@@ -56,7 +68,12 @@ export default function CandidateWorkspace({initialAttempt, initialParent,onPare
   const form=useRef<HTMLFormElement>(null);
   const compiled=compilePrompt(parameters,touched,intent,computeLayout(parameters)).text;
   useEffect(()=>{let active=true;let serial=0;const load=async()=>{const current=++serial;try{const data=await listAttempts();if(active&&current===serial)setAttempts(data);}catch(e){if(active)setError(String(e));}};void load();window.addEventListener('candidate-record-change',load);return()=>{active=false;window.removeEventListener('candidate-record-change',load);};},[]);
-  const parentKey='multirotor-studio/revision-parent/'+activeVariant;
+  const variant = variants.find(v => v.id === activeVariant);
+  // The original A draft retains its storage key. Reused B/C display letters must not inherit a deleted draft's parent.
+  const parentKey = task === 'quad' && activeVariant === 'A' && !variant?.workflowKey
+    ? 'multirotor-studio/revision-parent/'+activeVariant
+    : 'multirotor-studio/revision-parent/'+task+'/'+(variant?.workflowKey ?? activeVariant);
+  const parentRound = attempts.find(a => a.candidates.some(c => c.id === parentId));
   const requestedParent = useRef(initialParent ? {variant:activeVariant, id:initialParent} : null);
   useEffect(()=>{setEditText(null);},[compiled,activeVariant]);
   useEffect(()=>{
@@ -79,7 +96,7 @@ export default function CandidateWorkspace({initialAttempt, initialParent,onPare
     if(busy)return;setBusy(true);setError('');
     try{const parent=attempts.flatMap(a=>a.candidates).find(c=>c.id===parentId);
       if(parentId&&!parent)throw new Error('找不到选定的父图，请重新指定。');
-      const id=await freezeAttempt({parameters,touched,intent},{condition,goal,keep,variantId:activeVariant,variantName:variants.find(v=>v.id===activeVariant)?.name??activeVariant,...(workflowOrigin?{workflowOrigin}:{})},text,parent,editText??undefined);
+      const id=await freezeAttempt({parameters,touched,intent,designChatAudit},{condition,goal,keep,variantId:activeVariant,variantScope:task+'/'+(variant?.workflowKey ?? activeVariant),variantName:variants.find(v=>v.id===activeVariant)?.name??activeVariant,...(workflowOrigin?{workflowOrigin}:{})},text,parent,editText??undefined);
       setSelected(id);setGoal('');setKeep('');chooseParent('');
     }catch(e){setError(e instanceof Error?e.message:String(e));}finally{setBusy(false);}
   }
@@ -92,7 +109,8 @@ export default function CandidateWorkspace({initialAttempt, initialParent,onPare
         <label className="mt-3 block text-xs">输入方式<select className={input} value={condition} onChange={e=>setCondition(e.target.value as typeof condition)}><option value="structured">结构化提示和条件图</option><option value="free">自由提示</option></select></label>
         {condition==='free'?<label className="mt-2 block text-xs">实际提示词<textarea className={input} data-free-prompt rows={4} required value={text} onChange={e=>setText(e.target.value)}/></label>:
         <details className="mt-3"><summary className="cursor-pointer text-xs font-medium">核对或修改编译文字</summary><textarea aria-label="确认的结构化提示词" rows={5} className={input} value={editText??compiled} onChange={e=>setEditText(e.target.value)}/></details>}
-        {parentId&&<p className="mt-2 break-all text-xs">父图 · {parentId} <button className="underline" type="button" onClick={()=>chooseParent('')}>移除</button></p>}
+        {topologyOf(parameters.frame.frame_type).layers_per_axis===2&&condition==='structured'&&<p className="mt-2 text-xs text-ink-soft">本轮布局输入为顶视图。规格附带的侧视示意用于设计核对。模型回图中的上下层需要另行判读。</p>}
+        {parentId&&<p className="mt-2 break-all text-xs">父图 · {parentId}<br/>{parentRound && <>来源为{parentRound.variantName}的{frameRules[parentRound.config.parameters.frame.frame_type].zh}（{taskLabels[parentRound.config.task_id]}）。本轮使用当前草稿的规格。 </>}<button className="underline" type="button" onClick={()=>chooseParent('')}>移除</button></p>}
         <button type="submit" data-freeze-attempt className="btn-dark mt-4" disabled={busy||!goal.trim()||(condition==='free'&&!text.trim())}>确认并冻结本轮输入</button>
         {error&&<p role="alert" className="mt-2 text-xs text-rose-700">{error}</p>}
       </form>

@@ -7,6 +7,7 @@ import type {
   AccessoriesParameters, UserProfile, DesignIntent, WordPairId, ParameterGroup,
 } from '../types/DroneParameters';
 import type { BriefDecision } from '../design/semantics/brief';
+import { canUndoChatWidth, chatContext, chatScopeKey, isWidthTarget, readDesignChatAudit, redactChatText, type DesignChatEvent, type DesignChatContext } from '../design/designChatAudit';
 import type { PromptOptimizationResult } from '../services/geminiPromptOptimizer';
 
 // 默认参数值。造型项（材料、臂根、机身轮廓、顶盖、相机安装、主色、表面处理）默认留白，由设计者决定。
@@ -27,6 +28,7 @@ export interface Snapshot {
   parameters: DroneParameters;
   touched: Record<string, boolean>;
   intent: DesignIntent;
+  designChatAudit?: DesignChatEvent[];
   workflowOrigin?: { id: string; task: Task };
 }
 export interface LastChange {
@@ -48,7 +50,12 @@ interface DroneStore extends AppState {
   touched: Record<string, boolean>;
   intent: DesignIntent;
   lastChange: LastChange | null;
-  history: Snapshot[];
+  history: (Snapshot & {undoChatTurnId?: string; restoreChatBranch?: boolean})[];
+  designChatAudit?: DesignChatEvent[];
+  recordChatEvent: (event: DesignChatEvent) => void;
+  applyChatWidth: (turnId: string, context: DesignChatContext) => boolean;
+  undoChatWidth: (turnId: string) => boolean;
+  declineChatWidth: (turnId: string, context: DesignChatContext, reason: string) => boolean;
   pinned: Pinned | null;
   variants: Variant[];
   activeVariant: string;
@@ -121,12 +128,12 @@ export function createTaskStore(task: Task) {
   }
   const initialIntent = () => ({...emptyIntent(), ...(task === 'hexa' ? {taskId:'agricultural_spraying' as const} : {})});
   const snap = (s: Snapshot): Snapshot => structuredClone({
-    parameters: s.parameters, touched: s.touched, intent: s.intent, workflowOrigin: s.workflowOrigin,
+    parameters: s.parameters, touched: s.touched, intent: s.intent, workflowOrigin: s.workflowOrigin, designChatAudit: s.designChatAudit,
   });
 
   const store = create<DroneStore>((set, get) => {
     /** 统一的提交入口：记历史、记“刚才的改动”，再写入新状态。 */
-    const commit = (path: string, label: string, from: string, to: string, next: Partial<Snapshot>, coalesce = false) => {
+    const commit = (path: string, label: string, from: string, to: string, next: Partial<Snapshot>, coalesce = false, undoChatTurnId?: string) => {
       const s = get();
       const now = Date.now();
       // 只合并连续输入（拖滑块、打字）；点选项每次都算一次独立改动。
@@ -134,7 +141,7 @@ export function createTaskStore(task: Task) {
       const before = same ? s.lastChange!.before : snap(s);
       set({
         ...next,
-        history: same ? s.history : [...s.history, before].slice(-40),
+        history: same ? s.history : [...s.history, {...before, undoChatTurnId}].slice(-40),
         lastChange: { path, label, from: same ? s.lastChange!.from : from, to, at: now, before },
       });
     };
@@ -211,6 +218,66 @@ export function createTaskStore(task: Task) {
 
       setField,
       setMany,
+      recordChatEvent: event => {
+        if (event.action !== 'answer' && event.action !== 'error') return;
+        const s = get();
+        const add = (events: DesignChatEvent[] = []) => events.some(e => e.turnId === event.turnId) ? events : [...events, event];
+        if (chatScopeKey(s) === event.scopeKey) {
+          set({designChatAudit:add(s.designChatAudit)});
+        } else {
+          // A slow answer belongs to its original variant, even after the designer switches drafts.
+          const target = s.variants.find(v => s.task + '/' + (v.workflowKey ?? v.id) === event.scopeKey);
+          if (target) set({variants:s.variants.map(v => v === target ?
+            {...v, snapshot:{...v.snapshot, designChatAudit:add(v.snapshot.designChatAudit)}} : v)});
+        }
+      },
+      declineChatWidth: (turnId, context, reason) => {
+        const s = get(), scopeKey = chatScopeKey(s);
+        const events = s.designChatAudit ?? [];
+        const turn = events.find(e => e.turnId === turnId && e.scopeKey === scopeKey && e.action === 'answer');
+        if (turn?.action !== 'answer' || !turn.answer.suggestion || turn.context.version !== context.version ||
+            chatContext(s,scopeKey,context.part,context.view).version !== context.version ||
+            events.some(e => e.turnId === turnId && (e.action === 'apply' || e.action === 'decline')) ||
+            !reason.trim() || reason.length > 500) return false;
+        const {from, to} = turn.answer.suggestion;
+        set({designChatAudit:[...events,{turnId, scopeKey, context:turn.context, conversation:turn.conversation, question:turn.question,
+          action:'decline', at:stamp(), field:'bodyWidthMm', from, to, reason:redactChatText(reason.trim())}]});
+        return true;
+      },
+      applyChatWidth: (turnId, context) => {
+        const s = get(), scopeKey = chatScopeKey(s);
+        const previous = s.designChatAudit ?? [];
+        const turn = previous.find(e => e.turnId === turnId && e.scopeKey === scopeKey && e.action === 'answer');
+        if (turn?.action !== 'answer' || turn.context.version !== context.version || context.part !== 'fuselage' ||
+            chatContext(s, scopeKey, context.part, context.view).version !== context.version ||
+            previous.some(e => e.turnId === turnId && (e.action === 'apply' || e.action === 'decline'))) return false;
+        const suggestion = turn.answer.suggestion;
+        if (!suggestion || suggestion.from !== s.parameters.fuselage.fuselage_dimensions_mm.width || !isWidthTarget(suggestion.to)) return false;
+        const { from, to } = suggestion;
+        const path = 'fuselage.fuselage_dimensions_mm.width';
+        const parameters = setPath(s.parameters,path,to), touched = {...s.touched,[path]:true};
+        const decision: DesignChatEvent = {action:'apply', turnId, at:stamp(), scopeKey, context:turn.context,
+          conversation:turn.conversation, question:turn.question, field:'bodyWidthMm', from, to, previouslyTouched:!!s.touched[path],
+          resultVersion:chatContext({...s,parameters,touched},scopeKey,context.part,context.view).version};
+        commit('chat:' + turnId, '采纳机身宽度试调', from + ' mm', to + ' mm', {
+          parameters, touched, designChatAudit:[...previous, decision],
+        }, false, turnId);
+        return true;
+      },
+      undoChatWidth: turnId => {
+        const s = get();
+        if (!canUndoChatWidth(s,turnId)) return false;
+        if (s.history.length) {s.undo();return true;}
+        // After reloading a matching draft, only undo the accepted field, including its original selection state.
+        const events = s.designChatAudit ?? [];
+        const applied = events.find(e => e.turnId === turnId && e.action === 'apply');
+        if (applied?.action !== 'apply') return false;
+        const path = 'fuselage.fuselage_dimensions_mm.width', touched = {...s.touched};
+        if (!applied.previouslyTouched) delete touched[path];
+        set({parameters:setPath(s.parameters,path,applied.from),touched,lastChange:null,
+          designChatAudit:[...events,{...applied,action:'undo',from:applied.to,to:applied.from,at:stamp()}]});
+        return true;
+      },
       addVariant: () => {
         const s = get();
         const used = new Set(s.variants.map(v => v.id));
@@ -218,7 +285,7 @@ export function createTaskStore(task: Task) {
         if (!id) return;
         // Letter slots can be reused after deletion. A new slot needs its own canvas references.
         const workflowKey = id + '-' + crypto.getRandomValues(new Uint32Array(4)).join('-');
-        set({ variants: [...stash(s), { id, name: '方案 ' + id, snapshot: snap(s), workflowKey }], activeVariant: id, lastChange: null });
+        set({ variants: [...stash(s), { id, name: '方案 ' + id, snapshot: snap(s), workflowKey }], activeVariant: id, history: [], lastChange: null });
       },
       switchVariant: id => {
         const s = get();
@@ -308,6 +375,10 @@ export function createTaskStore(task: Task) {
         const last = s.history[s.history.length - 1];
         if (!last) return;
         const restored = snap(last);
+        const events = s.designChatAudit ?? [];
+        const applied = last.undoChatTurnId && events.find(e => e.turnId === last.undoChatTurnId && e.action === 'apply');
+        if (!last.restoreChatBranch) restored.designChatAudit = applied && applied.action === 'apply' ? [...events, {...applied, action:'undo', at:stamp(),
+          from:s.parameters.fuselage.fuselage_dimensions_mm.width, to:restored.parameters.fuselage.fuselage_dimensions_mm.width}] : s.designChatAudit;
         if (JSON.stringify(restored.intent) !== JSON.stringify(s.intent)) {
             // Preserve the goal audit while restoring the snapshot's exact set of active part references.
             const references = new Map(restored.intent.log.filter(row => row.brief?.action === 'reference')
@@ -323,7 +394,7 @@ export function createTaskStore(task: Task) {
       unpin: () => set({ pinned: null }),
       importSnapshot: snapshot => {
         const s = get();
-        set({ ...snap(snapshot), history: [...s.history, snap(s)].slice(-40), lastChange: null });
+        set({ ...snap(snapshot), history: [...s.history, {...snap(s), restoreChatBranch:true}].slice(-40), lastChange: null });
       },
       restoreConfiguration: (parameters, selectedUserProfile) =>
         set({ parameters, selectedUserProfile, workflowOrigin: undefined, currentImage: null, error: null, lastOptimizationResult: null, lastChange: null }),
@@ -365,11 +436,12 @@ export function createTaskStore(task: Task) {
     try {
       const raw = window.localStorage.getItem(key);
       if (raw && !window.location.hash.includes('cfg=')) {
-        const saved = JSON.parse(raw) as Pick<DroneStore, 'parameters'|'intent'|'touched'|'variants'|'activeVariant'|'exportNote'|'workflowOrigin'>;
+        const saved = JSON.parse(raw) as Pick<DroneStore, 'parameters'|'intent'|'touched'|'variants'|'activeVariant'|'exportNote'|'workflowOrigin'|'designChatAudit'>;
         if (saved.parameters?.frame?.frame_type in frameRules && Array.isArray(saved.intent?.log) &&
             Array.isArray(saved.intent?.cards) && saved.variants?.some(v => v.id === saved.activeVariant)) {
           store.setState({parameters:saved.parameters, intent:saved.intent, touched:saved.touched,
-            variants:saved.variants, activeVariant:saved.activeVariant, exportNote:saved.exportNote, workflowOrigin:saved.workflowOrigin});
+            variants:saved.variants.map(v=>({...v,snapshot:{...v.snapshot,designChatAudit:readDesignChatAudit(v.snapshot.designChatAudit)}})),
+            activeVariant:saved.activeVariant, exportNote:saved.exportNote, workflowOrigin:saved.workflowOrigin, designChatAudit:readDesignChatAudit(saved.designChatAudit)});
         }
       }
     } catch { store.setState({notice:'本地草稿无法恢复，可从已导出的规格重新载入。'}); }

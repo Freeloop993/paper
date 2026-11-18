@@ -1,13 +1,14 @@
 import { sha256Bytes } from './sha256';
 import { buildExport, canvasPngBytes, download, fileStamp, guideCanvas, type ConfigExport, type ExportState } from './exporters';
 import { computeLayout, type Task } from './design';
+import { verifiedOutputNames, type ModelGraph as Graph } from './receiptOutputs';
 
 export type DecisionKind = 'accept' | 'reject' | 'restore' | 'manual' | 'stop';
 type Candidate = {id: string; name: string; hash: string; file: Blob; firstShown?: string};
 type Decision = {id: string; at: string; kind: DecisionKind; candidate?: string; reason: string; manualFile?: File};
 export interface FrozenAttempt {
   id: string; createdAt: string; config: ConfigExport; guide: Blob;
-  confirmedText: string; condition: 'structured' | 'free'; variantId: string; variantName: string;
+  confirmedText: string; condition: 'structured' | 'free'; variantId: string; variantName: string; variantScope?: string;
   goal: string; keep: string; parentId?: string; parentImage?: Blob;
   snapshot?: ExportState;
   workflowOrigin?: { id: string; task: Task };
@@ -64,7 +65,7 @@ export async function listAttempts(): Promise<FrozenAttempt[]> {
     tx.onabort=()=>{db.close();reject(tx.error);};
   });
 }
-export async function freezeAttempt(state: ExportState, details: Pick<FrozenAttempt,'condition'|'goal'|'keep'|'variantId'|'variantName'|'workflowOrigin'|'h3'>,
+export async function freezeAttempt(state: ExportState, details: Pick<FrozenAttempt,'condition'|'goal'|'keep'|'variantId'|'variantName'|'variantScope'|'workflowOrigin'|'h3'>,
   freeText: string, parent?: {id:string; file:Blob}, structuredText?:string, id: string = crypto.randomUUID()) {
   if (!details.goal.trim()) throw new Error('请写下本轮的设计目标。');
   const guideBytes=canvasPngBytes(guideCanvas(computeLayout(state.parameters)));
@@ -73,7 +74,7 @@ export async function freezeAttempt(state: ExportState, details: Pick<FrozenAtte
   if (!confirmedText.trim()) throw new Error('请填入本轮实际提示词。');
   const attempt:FrozenAttempt={...details,id,goal:details.goal.trim(),keep:details.keep.trim(),config,createdAt:now(),
     guide:new Blob([new Uint8Array(guideBytes)],{type:'image/png'}),confirmedText,parentId:parent?.id,parentImage:parent?.file,
-    snapshot:structuredClone({parameters:state.parameters,intent:state.intent,touched:state.touched}),candidates:[],decisions:[]};
+    snapshot:structuredClone(state),candidates:[],decisions:[]};
   await edit(id,old=>{if(old) throw new Error('轮次编号已存在。');return attempt;});
   return id;
 }
@@ -105,8 +106,6 @@ export async function recordDispatch(id:string,request:Blob,ack?:Blob,error?:str
   });
 }
 
-type Node = {class_type:string; inputs:Record<string,unknown>; is_changed?:unknown};
-type Graph = Record<string,Node>;
 function sorted(value:unknown):unknown {
   if(Array.isArray(value)) return value.map(sorted);
   if(value && typeof value==='object') return Object.fromEntries(Object.entries(value).sort(([a],[b])=>a.localeCompare(b)).map(([k,v])=>[k,sorted(v)]));
@@ -173,8 +172,7 @@ export async function attachReceipt(id:string,request:Blob,ack:Blob,history:Blob
   if(typeof runId!=='string'||!runId||Object.keys(receipt.node_errors??{}).length)throw new Error('服务确认单缺少有效作业号。');
   const rawHistory=JSON.parse(await history.text()), h=rawHistory[runId]??rawHistory;
   if(h.prompt?.[1]!==runId||h.status?.status_str!=='success'||!h.status?.completed||!sameGraph(h.prompt[2],graph))throw new Error('历史记录与实际请求不符，或作业尚未成功。');
-  type Output = {images?:{filename:string;type?:string}[]};
-  const names=Object.values(h.outputs as Record<string,Output>).flatMap(n=>(n.images??[]).filter(i=>i.type==='output').map(i=>i.filename));
+  const names=verifiedOutputNames(graph,promptNodes[0][0],h.outputs,h.prompt[4],attempt.dispatch?undefined:'studio-'+id);
   if(!names.length||names.length!==files.length||new Set(names).size!==names.length||new Set(files.map(f=>f.name)).size!==files.length)throw new Error('请附上服务记录中的全部原始回图，文件名需一一对应。');
   if(attempt.dispatch?.ack && JSON.parse(await attempt.dispatch.ack.text()).prompt_id!==runId)throw new Error('确认单作业号与本轮实发回执不同。');
   let fullHashEvidence=true;
@@ -199,6 +197,8 @@ export async function attachReceipt(id:string,request:Blob,ack:Blob,history:Blob
   await edit(id,a=>{
     requireAttempt(a);
     if(a.receipt||a.failure)throw new Error('此轮已归档最终回执。');
+    if(a.dispatch?.updatedAt!==attempt.dispatch?.updatedAt || Boolean(a.dispatch?.ack)!==Boolean(attempt.dispatch?.ack))
+      throw new Error('提交状态在核对期间发生变化，请按最新作业回执重新核对。');
     if(a.dispatch && a.dispatch.hash!==dispatchHash)throw new Error('请求原件与已封存的实发请求不一致。');
     return {...a,runId,candidates,receipt:{request,ack,history,at:now(),runId,
       inputVerification:fullHashEvidence?'请求、作业、回图工作流与可用输入图内容摘要已核对':'请求、作业、回图工作流已核对；输入图仅核对按内容命名的文件名'}};

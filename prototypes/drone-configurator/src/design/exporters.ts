@@ -9,13 +9,16 @@ import { auditPrompt, compilePrompt, sourceLabel } from './partPrompt.ts';
 import { sha256Bytes, sha256Text } from './sha256.ts';
 import evidence from '../data/evidenceCards.json' with { type: 'json' };
 
-export const APP_VERSION = '3.1.0';
+import { readDesignChatAudit, type DesignChatEvent } from './designChatAudit.ts';
+
+export const APP_VERSION = '3.3.0';
 export const SCHEMA = 'drone-configurator/config-v2';
 
 export interface ExportState {
   parameters: DroneParameters;
   touched: Record<string, boolean>;
   intent: DesignIntent;
+  designChatAudit?: DesignChatEvent[];
 }
 export interface ExportOptions {
   note: string;
@@ -74,6 +77,7 @@ export function buildExport(state: ExportState, options: ExportOptions) {
       sha256: sha256Text(sideDiagram(parameters, layout)), linked_top_layout_sha256: layoutDigest(layout),
       note: '同一份设计规格的层级示意，机头向左。层距未量测；这不是生成图的独立侧视证据。',
     } : null,
+    design_chat_audit: state.designChatAudit === undefined ? undefined : structuredClone(state.designChatAudit),
     task_id: intent.taskId ?? 'consumer_camera',
     topology: topologyOf(parameters.frame.frame_type),
     task_fixed: taskConditions(parameters, intent),
@@ -193,6 +197,7 @@ export function parseImported(raw: unknown, defaults: DroneParameters): ExportSt
   return {
     parameters,
     touched,
+    ...(data.design_chat_audit !== undefined ? { designChatAudit: readDesignChatAudit(data.design_chat_audit) } : {}),
     intent: {
       ...(data.task_id ? { taskId: data.task_id } : {}),
       targets, note: data.intent?.designer_note ?? '',

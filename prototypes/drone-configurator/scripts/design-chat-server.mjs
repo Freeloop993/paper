@@ -5,7 +5,7 @@ import path from 'node:path';
 import { pipeline } from 'node:stream/promises';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
-import { ChatError, createDesignChat } from './design-chat.mjs';
+import { ChatError, createDesignService } from './design-chat.mjs';
 import { createImageJobs } from './image-jobs.mjs';
 
 const dist = fileURLToPath(new URL('../dist/', import.meta.url));
@@ -63,7 +63,7 @@ async function serveAsset(req, res, pathname) {
   else await pipeline(createReadStream(asset), res);
 }
 
-export function createDesignServer(chat, imageJobs) {
+export function createDesignServer(chat, evidence, imageJobs) {
   return createServer({ requestTimeout: 20000, headersTimeout: 10000, maxHeaderSize: 8192 }, async (req, res) => {
     try {
       res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -76,9 +76,17 @@ export function createDesignServer(chat, imageJobs) {
         fail(403, 'foreign_origin', '请从本机工作台页面发起请求。');
       if (!req.url?.startsWith('/') || req.url.startsWith('//') || req.url.includes('\\')) missing();
       const pathname = new URL(req.url, `http://${host}`).pathname;
-      if (pathname === '/api/design/chat') {
+      if (pathname === '/api/design/chat' || pathname === '/api/design/evidence') {
         if (req.method !== 'POST') fail(405, 'method_not_allowed', '设计对话仅支持 POST。');
-        sendJson(res, 200, await chat(await readInput(req)));
+        const controller = new AbortController();
+        const cancel = () => { if (!res.writableEnded) controller.abort(); };
+        res.once('close', cancel);
+        try {
+          const input = await readInput(req);
+          if (res.destroyed) return;
+          const result = pathname === '/api/design/evidence' ? evidence(input) : await chat(input, { signal: controller.signal });
+          if (!res.destroyed) sendJson(res, 200, result);
+        } finally { res.off('close', cancel); }
       } else if (imageJobs && pathname==='/api/h3/jobs') {
         if (req.method!=='POST') fail(405,'method_not_allowed','图像生成仅支持 POST。');
         sendJson(res,202,await imageJobs.submit(await readInput(req,64*1024*1024)));
@@ -103,10 +111,10 @@ async function main() {
   const { values } = parseArgs({ options: { port: { type: 'string' } } });
   const port = Number(values.port ?? process.env.PORT ?? 4178);
   if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('端口必须为 1 至 65535 的整数。');
-  const chat = await createDesignChat({ apiKey: process.env.MINIMAX_API_KEY?.trim(), region: process.env.MINIMAX_REGION ?? 'cn' });
+  const { chat, evidence } = await createDesignService({ apiKey: process.env.MINIMAX_API_KEY?.trim(), region: process.env.MINIMAX_REGION ?? 'cn' });
   const imageJobs=createImageJobs({apiKey:process.env.MINIMAX_IMAGE_API_KEY?.trim() || process.env.MINIMAX_API_KEY?.trim(),
     region:process.env.MINIMAX_IMAGE_REGION ?? process.env.MINIMAX_REGION ?? 'cn',directory:process.env.WORKBENCH_IMAGE_JOBS_DIR});
-  const server = createDesignServer(chat,imageJobs);
+  const server = createDesignServer(chat, evidence, imageJobs);
   server.on('error', () => { console.error('本机设计对话服务启动失败，请核对端口。'); process.exitCode = 1; });
   server.listen(port, '127.0.0.1', () => console.log(`本机多旋翼设计工作台 http://127.0.0.1:${port}/`));
 }

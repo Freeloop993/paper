@@ -19,7 +19,9 @@ export default function GenerationWorkspace({entry}: {entry?: HandoffEntry}) {
   const [error, setError] = useState('');
   const startLock = useRef(false);
   const layout = computeLayout(parameters);
-  const name = variants.find(v => v.id === activeVariant)?.name ?? activeVariant;
+  const variant = variants.find(v => v.id === activeVariant);
+  const name = variant?.name ?? activeVariant;
+  const variantScope = task + '/' + (variant?.workflowKey ?? activeVariant);
 
   useEffect(() => {
     let active = true, sequence = 0;
@@ -56,7 +58,8 @@ export default function GenerationWorkspace({entry}: {entry?: HandoffEntry}) {
     return () => { active = false; };
   }, [entry?.generate, entry?.parentCandidateId, task]);
 
-  const rounds = records.filter(row => row.id === entry?.attemptId || row.variantId === activeVariant && row.h3);
+  const rounds = records.filter(row => row.id === entry?.attemptId || row.h3 && (row.variantScope === variantScope ||
+    (!row.variantScope && variantScope === 'quad/A' && row.variantId === 'A')));
   const round = rounds.find(row => row.id === selected) ?? rounds[0];
   const status = round && generationStatus(round);
   const pending = starting || !!round && isGenerationPending(round);

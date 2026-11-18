@@ -179,9 +179,11 @@ export interface GenerationOptions { id: string; task: Task; goal?: string; pare
 
 async function start({id, task, goal: requestedGoal, parentCandidateId}: GenerationOptions) {
   // Read the live draft at click time; a saved variant snapshot can be older.
-  const {parameters, touched, intent, variants, activeVariant, workflowOrigin} = taskStores[task].getState();
-  const state = structuredClone({parameters, touched, intent});
-  const name = variants.find(v => v.id === activeVariant)?.name ?? activeVariant;
+  const {parameters, touched, intent, designChatAudit, variants, activeVariant, workflowOrigin} = taskStores[task].getState();
+  const state = structuredClone({parameters, touched, intent, designChatAudit});
+  const variant = variants.find(v => v.id === activeVariant);
+  const name = variant?.name ?? activeVariant;
+  const variantScope = task + '/' + (variant?.workflowKey ?? activeVariant);
   const goal = requestedGoal?.trim() || intent.note.trim() || name + ' · ' + taskLabels[intent.taskId ?? 'consumer_camera'] + ' · ' + frameRules[parameters.frame.frame_type].zh;
   if (!await findAttempt(id)) {
     const parent = parentCandidateId
@@ -198,7 +200,7 @@ async function start({id, task, goal: requestedGoal, parentCandidateId}: Generat
       if (storageOnly) text += '\nRender the specified unfolded layout. The designer’s storage or carrying goal concerns a separate use state and does not alter unfolded proportions.';
       else text += '\nDesign goal for this version: ' + requestedGoal.trim();
     }
-    await freezeAttempt(state, {variantId: activeVariant, variantName: name, workflowOrigin, goal, keep: '', condition: 'structured',
+    await freezeAttempt(state, {variantId: activeVariant, variantName: name, variantScope, workflowOrigin, goal, keep: '', condition: 'structured',
       h3: {model: 'MiniMax-H3-Image', status: 'ready'}}, '', parent, text, id);
   }
   ensureRunning(id);
