@@ -8,6 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "studio:chat": "node scripts/design-chat-server.mjs",
     "verify": "node scripts/verify.mjs",
     "evidence": "node scripts/build-evidence.mjs",
     "replay": "node scripts/replay.mjs",

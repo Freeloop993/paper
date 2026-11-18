@@ -2,6 +2,18 @@
 
 [下载离线版 ZIP](configurator-offline.zip?raw=true)，完整解压后打开 `index.html`。简报、画布、资料检索、历史案例与本地记录可离线使用。工作台支持三旋、四旋、平面六旋、平面八旋、共轴六旋 Y6 和共轴八旋 X8，使用任务可分别选择日常航拍、农业植保或中性外观比较。
 
+## 在本机试用带证据的设计对话
+
+使用 Node.js 24 或更新版本，在本目录执行 `npm ci` 和 `npm run build`。在 PowerShell 中运行以下命令，新密钥可在隐藏输入提示中填写。区域 `global` 对应国际站账号，`cn` 对应中国站账号。
+
+```powershell
+$env:MINIMAX_REGION = 'global'
+$env:MINIMAX_API_KEY = [System.Net.NetworkCredential]::new('', (Read-Host 'MiniMax API Key' -AsSecureString)).Password
+try { node scripts/design-chat-server.mjs --port 4178 } finally { Remove-Item Env:MINIMAX_API_KEY }
+```
+
+打开 [本机造型页](http://127.0.0.1:4178/#step=studio&tab=fuselage)，在右侧「设计对话」询问折叠收纳的依据，或选中机身后要求调整宽度。工作台从现有脱敏短引检索相关卡，用 MiniMax-M3.1-Flash 的 `max` 推理生成答复。选「预览」查看宽度差异，选「应用到草稿」才写入当前规格。模型服务只监听本机回环地址。浏览器只访问同源代理，需要生成效果图时沿用交付页的图像模型入口。
+
 ## 从简报到一个可回看的设计决定
 
 1. 在“洞察”选择使用任务与构型，写下意图。系统按话题、部位和使用状态找公开短引。只说“小巧”时可澄清折叠或展开；缺少相应任务资料时可自定。确认、驳回及撤销保存在当前方案。

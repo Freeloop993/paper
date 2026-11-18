@@ -49,7 +49,8 @@ const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v
 
 export const TopStage: React.FC<{
   active: ParameterGroup; onSelect: (g: ParameterGroup) => void; overlays: { dims: boolean; fov: boolean; hidden: boolean }; interactive?: boolean;
-}> = ({ active, onSelect, overlays, interactive = true }) => {
+  previewWidth?: number;
+}> = ({ active, onSelect, overlays, interactive = true, previewWidth }) => {
   const { parameters, pinned, setMany, intent } = useDroneStore();
   const svg = useRef<SVGSVGElement>(null);
   const drag = useRef<Drag | null>(null);
@@ -225,6 +226,11 @@ export const TopStage: React.FC<{
       })}
 
       {/* 拖动手柄：选中机身或动力时出现 */}
+      {previewWidth !== undefined && (
+        <path data-layer="width-preview" data-width-mm={previewWidth} pointerEvents="none"
+          d={bodyPath(fuselage.fuselage_style, previewWidth, bl)} fill="#0d9488" fillOpacity="0.15"
+          stroke="#0f766e" strokeWidth={fs * 0.19} strokeDasharray={`${fs * 0.55} ${fs * 0.26}`} />
+      )}
       {interactive && lit('fuselage') && [handle(bw / 2, 0, { kind: 'bodyW' }, 'fuselage', 'ew-resize', 'body-width'), handle(0, bl / 2, { kind: 'bodyL' }, 'fuselage', 'ns-resize', 'body-length')]}
       {interactive && lit('propulsion') && (() => {
         const h = hubs[1], out = Math.hypot(h.x, h.y) || 1;
