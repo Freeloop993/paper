@@ -94,7 +94,7 @@
     {
       "path": "planning/workbench-handoff/literature/assets.json",
       "format": "text-lf",
-      "sha256": "c06b0fd9338553c283665ca2627a9e3360cb44ffcf10d4b5507221c382397351"
+      "sha256": "b961d237a62b2e7e42d92e7287b430d1528361d4809c003a3b112aeff9002313"
     },
     {
       "path": "planning/workbench-handoff/literature/figures/03-SketchConcept-图2.png",
@@ -204,12 +204,12 @@
     {
       "path": "planning/workbench-handoff/literature/README.md",
       "format": "text-lf",
-      "sha256": "30344c9340a716533f5432f838a53e629100e68685139aa9320d627f9418394d"
+      "sha256": "283c046aa4883e07a15f810ed38e5296711e5ff2da5217e82fec783dea6cf364"
     },
     {
       "path": "planning/workbench-handoff/literature/restore_assets.py",
       "format": "text-lf",
-      "sha256": "9bc00b69f0169bc6eb533923ccce5aba064b956f40cf7a61ba29a94bb80a01eb"
+      "sha256": "d9653b6210625468a5164eb7e11bd239d480231e57df4d2619c58757731fd2fd"
     },
     {
       "path": "planning/workbench-handoff/literature/全库文献导航.csv",

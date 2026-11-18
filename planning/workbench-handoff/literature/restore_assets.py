@@ -47,14 +47,16 @@ def fetch_original(item):
     with tempfile.TemporaryDirectory(dir=path.parent) as folder:
         candidate = Path(folder) / "source.pdf"
         errors = []
-        for url in [item["source_url"], *item.get("alternate_urls", [])]:
+        for url in item.get("download_urls", [item["source_url"]]):
             try:
+                accept = "application/vnd.github.raw+json" if url.startswith("https://api.github.com/repos/") else "*/*"
                 if shutil.which("curl"):
                     subprocess.run(["curl", "--fail", "--silent", "--show-error", "--location",
+                                    "--header", "Accept: " + accept,
                                     "--connect-timeout", "10", "--max-time", "120",
                                     "--output", str(candidate), url], check=True)
                 else:
-                    request = urllib.request.Request(url, headers={"User-Agent": "research-reading-library/1"})
+                    request = urllib.request.Request(url, headers={"User-Agent": "research-reading-library/1", "Accept": accept})
                     with urllib.request.urlopen(request, timeout=30) as reply, candidate.open("wb") as out:
                         shutil.copyfileobj(reply, out)
                 if not has_original(candidate, item):
