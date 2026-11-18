@@ -22,7 +22,7 @@
 
 **11 月 18 日作者已答第 1—5 题**（[#3 登记](https://github.com/Freeloop993/paper/issues/3#issuecomment-6950220478)）：同意基准分支与合并顺序；归档移入 `archive/` 目录；大文件不移动；PR #75 是作者本人账号；新开协作工单 #76，#1 已逐字存档于 `archive/issues/issue-1-C01.md` 并关闭。
 
-**11 月 18 日作者同意第 6—23 题的全部建议**（[#3 登记](https://github.com/Freeloop993/paper/issues/3#issuecomment-6966882676)）。第 21、23 题是事实问题，经核对分别为“是”与“不含”，见下文各条。第 15 题（ParamDrone 的来源）仍待作者告知。由此新增的执行项见 [#76](https://github.com/Freeloop993/paper/issues/76#issuecomment-6966913358)。
+**11 月 18 日作者同意第 6—23 题的全部建议**（[#3 登记](https://github.com/Freeloop993/paper/issues/3#issuecomment-6966882676)）。第 21、23 题是事实问题，经核对分别为“是”与“不含”，见下文各条。第 15 题：ParamDrone 的 PDF 由 Codex 撰写，不是文献，不引用。由此新增的执行项见 [#76](https://github.com/Freeloop993/paper/issues/76#issuecomment-6966913358)。
 
 - [x] **【问 1】基准分支。** 是否以 `claude/direction-todo-20261117` 为基准，依次并入 `main`、`claude/e3-quad-qwen`、`claude/gpu-tasks-20261117`、`claude/extra-readings-20261117`、`codex/thesis-source-e2r-20261115` 的末提交 `5f92248`、`claude/word-pairs-v1`，再整体合入 `main`，此后只在 `main` 上工作？**已定：同意。** 试算冲突只在 README、STATUS、handoff 三个入口文件，以及 preflight 两个文件（取 gpu-tasks 版本）。
 - [x] **【问 2】归档方式。** 二选一：
@@ -159,6 +159,9 @@
 
 **可以删（重复，约 35 MB）：**
 - [ ] E0、E1、R0 的原图各存了两份：一份 ZIP，一份解包目录。我按内容哈希核对过，36/36、6/6、2/2 完全一致。**已定（第 6 题）：留解包目录，删 ZIP，把 ZIP 的 SHA-256 写进 README。** 11/18 复核：三份 ZIP 的全部成员（E0 31 个、E1 181 个、R0 11 个，含 PNG、JSON、CSV）在解包目录中都有内容相同的文件；E1 的 README 已有 ZIP 哈希，E0、R0 要补写。合并后由 Codex 执行，哈希值见 #76。
+
+**文献目录：**
+- [ ] `references/catalogs/archive-references.csv` 第 283 行“ParamDrone参数驱动的四旋翼无人机智能设计系统”：作者 11/18 确认由 Codex 撰写。建议在目录中标注“Codex 生成的内部材料，非文献”，PDF 移入 `archive/`。
 
 **README 与新证据矛盾，需更新（14 处，交 Codex，即 M6；第 15 处 `evidence/README.md` 随旧六旋归档）：**
 - [ ] `evidence/20261115-review-takeover/README.md`、`e1-open-20261112/geometry-readout.json`、`semantic-cards/README.md`、`real-product-topview/README.md`、`formal-reset/README.md`、`20261117-config-review/A1-extension`、`gpu-day-20261115/analysis-247/说明.md`、`hexa-plant-protection/README.md`、`qwen-shape-pilot/README.md`、`d2-tuning/README.md`、`l1-layout/README.md`、`g3-reference/README.md`、`semantic40-pairing/README.md`、`common-control/README.md`。逐条说明见 [evidence 清点 0.2 节](reorg-20261118/inventory-evidence-experiments.md)。

@@ -7,7 +7,7 @@
 > 2. LayoutBench（T2-6）检验了分布外布局的控制效果，Quan（T8-1）给出四旋 d/D 的工程范围约 0.59—0.67：这两条直接支撑“编辑通路的偏差朝向真实产品比例”的解释与档位重定。
 > 3. Mugge 等（T6-2）把“紧凑”列为产品外观感知的五个维度之一，支撑把“紧凑”作为首要语义目标。
 >
-> 目录中的“ParamDrone 参数驱动的四旋翼无人机智能设计系统”（C21）无法在公开来源找到，题名与本文高度重合，见框架第八节 Q10。
+> 目录中的“ParamDrone 参数驱动的四旋翼无人机智能设计系统”（C21）**经作者 11/18 确认由 Codex 撰写，不是文献，已从建议引用中撤下**（#3 第 15 题）。
 
 
 论文：《人智协同驱动的多旋翼无人机造型参数化可控生成方法研究》
@@ -144,7 +144,7 @@
 7. **CAD-prompted generative models（目录 C4）**：已证明用 CAD 或模板图作视觉提示可提高可行性，并讨论了权重与新颖性的权衡。本文的条件图思路与之接近，差异在于条件图由规格编译、含部件图并对应工程比例。
 8. **EDWARDS et al. 2026（T7-7）**：若本文用多模态模型辅助判读，该做法及其等效性检验框架已有先例，不能作为方法贡献。
 9. **KRISH 2011、McCORMACK 2004、YUMER 2015、AttribIt 2013**：“语义属性→参数化造型”的映射早已存在。本文的新意不在映射本身，而在把映射接到扩散生成和量测闭环上。
-10. **目录中的“ParamDrone参数驱动的四旋翼无人机智能设计系统”**（`archive-references.csv`，5页，sha256 9e1afb92…）：题名与本文高度重合，但公开检索（中英文）均未找到出处，无法判断其内容。**定稿第2章的创新性表述前，须先读这份本地原件并确认来源。**
+10. **目录中的“ParamDrone参数驱动的四旋翼无人机智能设计系统”**（`archive-references.csv`，5页，sha256 9e1afb92…）：题名与本文高度重合，但公开检索（中英文）均未找到出处，无法判断其内容。**11/18 作者确认：此件由 Codex 撰写，不是文献，不引用、不比较。**
 
 ---
 
@@ -174,7 +174,7 @@
 | C18 | HSIAO S W, CHIU F Y, LU S H. Product-form design model based on genetic algorithms[J]. International Journal of Industrial Ergonomics, 2010, 40(3): 237-246. DOI: 10.1016/j.ergon.2010.01.009. | archive-references.csv（中文译名“基于遗传算法的产品形态设计模型”，需确认是同一篇） | 已核实：CR | 遗传算法产品造型的代表，与已引朱天燕（IGA）配套（第2章）。 | 可选 |
 | C19 | CHEN L, SONG Y, GUO J, et al. How generative AI supports human in conceptual design[J]. Design Science, 2025, 11: e9. DOI: 10.1017/dsj.2025.2. | archive-references.csv；licensed-files.csv | 已核实：CR；AX 2502.00283 | 生成式 AI 在概念设计中的作用实证（第1、5章）。 | 可选 |
 | C20 | KARALI H, INALHAN G, TSOURDOS A. AI-driven multidisciplinary conceptual design of unmanned aerial vehicles[C]//AIAA SciTech 2024 Forum. Reston: AIAA, 2024. DOI: 10.2514/6.2024-1708. | reviewed-100.csv（HCI-V013） | 已核实：CR（页码无） | 无人机工程概念设计的 AI 方法，第2章用来区分工程设计自动化与造型生成。 | 可选 |
-| C21 | ParamDrone参数驱动的四旋翼无人机智能设计系统（作者、来源未知） | archive-references.csv（本地 5 页） | **未核实**：公开检索未找到 | 题名与本文高度重合，见“可能削弱”第10条。须先读原件。 | 待定 |
+| ~~C21~~ | ~~ParamDrone参数驱动的四旋翼无人机智能设计系统~~ | archive-references.csv（本地 5 页） | **撤下**：作者 11/18 确认由 Codex 撰写 | 不是文献，不引用 | 不引用 |
 
 ---
 
@@ -231,6 +231,6 @@
 ## 计数
 
 - 主表新增 52 条：完全核实 50 条，部分核实 2 条（T1-2 内容表述、T1-3 DOI）。
-- 目录建议引用 21 条：完全核实 19 条，部分核实 1 条（C12 页码），未核实 1 条（C21 ParamDrone）。
+- 目录建议引用 20 条：完全核实 19 条，部分核实 1 条（C12 页码）。原列的 C21 ParamDrone 经作者确认由 Codex 撰写，已撤下。
 - 已核实备选 30 条。
 - 剔除 12 条。
