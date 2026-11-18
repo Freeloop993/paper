@@ -75,7 +75,7 @@ export default function ModelDispatch({attempt}: {attempt:FrozenAttempt}) {
   }
 
   return <details className="mt-3 rounded-xl border border-line bg-white px-4 py-3" data-testid="model-dispatch">
-    <summary className="cursor-pointer text-sm font-semibold text-ink">模型提交与外部运行文件</summary>
+    <summary className="cursor-pointer text-sm font-semibold text-ink">旧版 ComfyUI 提交与外部运行文件</summary>
     <p className="my-2 text-xs leading-relaxed text-ink-soft">使用支持 Qwen Image 2.1 的 ComfyUI。可以连接服务提交，也可以下载文件交给主持人运行。</p>
     <div className="grid gap-2 sm:grid-cols-[1fr_7rem]">
       <label className="text-xs text-ink-soft">服务地址<input value={sent?.server ?? address} disabled={!!sent || busy}

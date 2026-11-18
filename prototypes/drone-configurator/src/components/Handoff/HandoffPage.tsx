@@ -2,30 +2,29 @@
 import React, { useCallback, useMemo, useState } from 'react';
 import CandidateWorkspace from './CandidateWorkspace';
 import { useDroneStore } from '../../store/droneStore';
-import { computeLayout, frameRules, taskLabels, topologyOf } from '../../design/design';
+import { computeLayout, topologyOf } from '../../design/design';
 import { GuideView } from '../Studio/Stage';
 import PromptGenerator from '../DevPreview/PromptGenerator';
 import ParameterOverview from '../Overview/ParameterOverview';
+import GenerationWorkspace from './GenerationWorkspace';
+import './generation.css';
 
-export interface HandoffEntry { attemptId?: string; parentCandidateId?: string; candidates?: boolean }
+export interface HandoffEntry { attemptId?: string; parentCandidateId?: string; candidates?: boolean; generate?: string }
 
 const HandoffPage: React.FC<{ wide: boolean; entry?: HandoffEntry }> = ({ wide, entry }) => {
-  const { parameters, intent, variants, activeVariant } = useDroneStore();
+  const { parameters } = useDroneStore();
+  const [advanced,setAdvanced] = useState(false);
   const [panel, setPanel] = useState<'inputs'|'candidates'>(entry?.candidates ? 'candidates' : 'inputs');
   const [initialParent,setInitialParent]=useState(entry?.parentCandidateId);
   const consumeParent=useCallback(()=>setInitialParent(undefined),[]);
   const layout = useMemo(() => computeLayout(parameters), [parameters]);
-  const name = variants.find(v => v.id === activeVariant)?.name ?? '';
   return (
-    <div className={`mx-auto max-w-[1500px] p-3 sm:p-5 ${wide ? 'flex h-full min-h-0 flex-col' : ''}`} data-testid="handoff">
-      <div className="flex flex-wrap items-end gap-x-4 gap-y-1">
-        <div>
-          <div className="eyebrow">Handoff</div>
-          <h1 className="mt-1 text-2xl font-semibold tracking-tight text-ink">设计交付</h1>
-        </div>
-        <p className="pb-1 text-sm text-ink-soft">{name} · {frameRules[parameters.frame.frame_type].zh} · {taskLabels[intent.taskId ?? 'consumer_camera']} · {layout.hubs.length} 个轴位</p>
-      </div>
-
+    <div className="generation-page" data-testid="handoff">
+      <header className="generation-title"><h1>生成效果图</h1></header>
+      <GenerationWorkspace entry={entry}/>
+      <details className="generation-advanced" data-testid="handoff-advanced" onToggle={e=>setAdvanced(e.currentTarget.open)}>
+        <summary>研究详情与导出</summary>
+        {advanced && <>
       <div className="mt-4 flex w-fit gap-1 rounded-full border border-line bg-white p-1" aria-label="交付内容">{([['inputs','设计输入'],['candidates','候选与记录']] as const).map(([id,label])=><button key={id} data-handoff-tab={id} aria-pressed={panel===id} className={panel===id?'btn-dark':'btn-ghost'} onClick={()=>setPanel(id)}>{label}</button>)}</div>
       {panel==='inputs' ? <div className={`mt-4 gap-4 ${wide ? 'grid min-h-0 flex-1 grid-cols-[minmax(0,0.9fr)_minmax(0,1.25fr)_minmax(0,1fr)]' : 'space-y-4'}`}>
         <section className="panel flex min-h-0 flex-col p-5" aria-label="条件图" data-testid="guide-card">
@@ -44,7 +43,9 @@ const HandoffPage: React.FC<{ wide: boolean; entry?: HandoffEntry }> = ({ wide, 
 
         <PromptGenerator />
         <ParameterOverview />
-      </div> : <div className="scroll-thin mt-4 min-h-0 flex-1 overflow-y-auto"><CandidateWorkspace initialAttempt={entry?.attemptId} initialParent={initialParent} onParentConsumed={consumeParent}/></div>}
+      </div> : <div className="mt-4"><CandidateWorkspace initialAttempt={entry?.attemptId} initialParent={initialParent} onParentConsumed={consumeParent}/></div>}
+        </>}
+      </details>
     </div>
   );
 };

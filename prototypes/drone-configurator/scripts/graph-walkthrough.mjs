@@ -26,6 +26,7 @@ try {
   const width = page.locator('[data-field="fuselage.fuselage_dimensions_mm.width"] input[type="number"]');
   const fit = () => button('适应全图').click();
   async function saveVersion(title) {
+    await page.locator('.canvas-tools-menu summary').click();
     await button('保存草稿版本').click();
     await page.getByLabel('版本名称').fill(title);
     await button('保存版本').click();
@@ -36,6 +37,7 @@ try {
     await page.getByTestId('workflow-graph').waitFor();
   }
   await page.goto(origin);
+  await page.locator('[data-board="history"]').click();
   await page.locator('.react-flow__edge-path').first().waitFor({state: 'attached'});
   assert.equal(await page.locator('.react-flow__node').count(), 6);
   assert.equal(await page.locator('.react-flow__edge-path').count(), 6);
@@ -53,6 +55,7 @@ try {
   const imagePath = fileURLToPath(new URL('../src/data/history/B2-no-window.webp', import.meta.url));
   await page.getByLabel('导入参考图片').setInputFiles(imagePath);
   await inspector.getByRole('heading', {name: 'B2-no-window.webp', exact: true}).waitFor();
+  await page.locator('.canvas-tools-menu summary').click();
   await button('连接参考').click();
   await fit();
   await card('当前规格草稿').click();
@@ -77,7 +80,8 @@ try {
   assert.equal(Number(await width.inputValue()), initialWidth);
   await returnToBoard();
   assert.equal(await card('改宽机身').count(), 1);
-  await page.locator('.graph-status-bar').getByRole('button', {name: '生成与选案'}).click();
+  await page.locator('.graph-status-bar').getByRole('button', {name: '查看生成记录'}).click();
+  await page.locator('[data-testid="handoff-advanced"] > summary').click();
   await page.locator('[data-attempt-goal]').fill('软件检查 · 从原始宽度冻结');
   await page.locator('[data-freeze-attempt]').click();
   await page.locator('[data-attempt] option').first().waitFor({state: 'attached'});

@@ -178,7 +178,7 @@ export default function DesignChat({ context, variant, scopeLabel, preview, onPr
         <div><h2 className="panel-title">设计对话</h2><p className="mt-0.5 text-xs text-ink-soft">{scopeLabel}</p></div>
       </header>
       {context.brief && <details className="border-b border-line bg-canvas/70 px-4 py-2 text-xs text-ink-soft">
-        <summary className="cursor-pointer font-medium">已确认的设计简报</summary>
+        <summary className="cursor-pointer font-medium">已确认的设计目标</summary>
         <p className="mt-2 max-h-24 overflow-y-auto whitespace-pre-wrap break-words leading-relaxed">{context.brief}</p>
       </details>}
       <div ref={feed} role="log" aria-label="对话记录" aria-live="polite" className="scroll-thin max-h-[53vh] min-h-0 flex-1 space-y-4 overflow-y-auto px-4 py-4 min-[1180px]:max-h-none">

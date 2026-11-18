@@ -11,10 +11,20 @@ export interface FrozenAttempt {
   goal: string; keep: string; parentId?: string; parentImage?: Blob;
   snapshot?: ExportState;
   workflowOrigin?: { id: string; task: Task };
+  h3?: H3Archive;
   dispatch?: {request: Blob; hash: string; ack?: Blob; error?: string; server?: string; at: string; updatedAt: string};
   receipt?: {request: Blob; ack: Blob; history: Blob; at: string; inputVerification: string; runId:string};
   failure?: {history:Blob;runId:string;at:string;status:string};
   runId?: string; candidates: Candidate[]; decisions: Decision[];
+}
+export interface H3Archive {
+  model: 'MiniMax-H3-Image';
+  status: 'ready' | 'submitting' | 'running' | 'succeeded' | 'failed';
+  request?: Blob;
+  acknowledgement?: Blob;
+  result?: Blob;
+  issue?: string;
+  traceId?: string;
 }
 const DB = 'multirotor-studio-design-records-v1';
 const STORE = 'attempts';
@@ -54,10 +64,10 @@ export async function listAttempts(): Promise<FrozenAttempt[]> {
     tx.onabort=()=>{db.close();reject(tx.error);};
   });
 }
-export async function freezeAttempt(state: ExportState, details: Pick<FrozenAttempt,'condition'|'goal'|'keep'|'variantId'|'variantName'|'workflowOrigin'>,
-  freeText: string, parent?: {id:string; file:Blob}, structuredText?:string) {
+export async function freezeAttempt(state: ExportState, details: Pick<FrozenAttempt,'condition'|'goal'|'keep'|'variantId'|'variantName'|'workflowOrigin'|'h3'>,
+  freeText: string, parent?: {id:string; file:Blob}, structuredText?:string, id: string = crypto.randomUUID()) {
   if (!details.goal.trim()) throw new Error('请写下本轮的设计目标。');
-  const id = crypto.randomUUID(), guideBytes=canvasPngBytes(guideCanvas(computeLayout(state.parameters)));
+  const guideBytes=canvasPngBytes(guideCanvas(computeLayout(state.parameters)));
   const config=buildExport(state,{variant:details.variantName,note:details.goal,stamp:fileStamp()+'-'+id.slice(0,8),guideSha256:sha256Bytes(guideBytes)});
   const confirmedText=details.condition==='free'?freeText:structuredText??config.prompt.text;
   if (!confirmedText.trim()) throw new Error('请填入本轮实际提示词。');
@@ -67,11 +77,30 @@ export async function freezeAttempt(state: ExportState, details: Pick<FrozenAtte
   await edit(id,old=>{if(old) throw new Error('轮次编号已存在。');return attempt;});
   return id;
 }
+export async function findAttempt(id: string): Promise<FrozenAttempt | undefined> {
+  const db = await openDb();
+  return new Promise((resolve,reject) => {
+    const tx = db.transaction(STORE), query = tx.objectStore(STORE).get(id);
+    tx.oncomplete = () => { db.close(); resolve(query.result); };
+    tx.onabort = () => { db.close(); reject(tx.error); };
+  });
+}
+
+export async function updateH3Record(id: string, update: Partial<H3Archive>, candidates?: Candidate[]) {
+  await edit(id, a => {
+    requireAttempt(a);
+    if (!a.h3) throw new Error('所选轮次没有 H3 生成记录。');
+    if (a.h3.status === 'succeeded' || a.h3.status === 'failed') return a;
+    if (update.status === 'submitting' && a.h3.status !== 'ready') return a;
+    return {...a, h3:{...a.h3, ...update}, ...(candidates ? {candidates} : {}),
+      ...(update.result ? {runId: id} : {})};
+  });
+}
 export async function recordDispatch(id:string,request:Blob,ack?:Blob,error?:string,server?:string) {
   const hash=await hashBlob(request);
   await edit(id,a=>{
     requireAttempt(a);const prev=a.dispatch;
-    if(a.failure || a.receipt || (prev && (prev.hash!==hash || prev.ack || (!ack && !error)))) throw new Error('此轮已经登记提交，请按原作业取回结果。');
+    if(a.h3 || a.failure || a.receipt || (prev && (prev.hash!==hash || prev.ack || (!ack && !error)))) throw new Error('此轮已经登记提交，请按原作业取回结果。');
     return {...a,dispatch:{request,hash,ack,error,server:server??prev?.server,at:prev?.at??now(),updatedAt:now()}};
   });
 }
@@ -116,6 +145,7 @@ async function pngGraph(bytes:Uint8Array):Promise<Graph> {
 }
 export async function attachReceipt(id:string,request:Blob,ack:Blob,history:Blob,files:File[]) {
   const attempt=(await listAttempts()).find(a=>a.id===id);requireAttempt(attempt);
+  if (attempt.h3) throw new Error('H3 轮次只接收本轮的 H3 服务回执。');
   const dispatchHash=await hashBlob(request);
   const payload=JSON.parse(await request.text()), graph=payload.prompt as Graph;
   const nodes=Object.entries(graph);
@@ -191,10 +221,16 @@ export async function markPresented(id:string,candidateId:string){
     return {...a,candidates:a.candidates.map(c=>c.id===candidateId&&!c.firstShown?{...c,firstShown:now()}:c)};
   });
 }
-export async function recordDecision(id:string,kind:DecisionKind,reason:string,candidate?:string,manualFile?:File) {
+export function candidateRetained(a: FrozenAttempt, candidate: string) {
+  const last = [...a.decisions].reverse().find(d => d.candidate === candidate && ['accept','reject','restore'].includes(d.kind));
+  return last?.kind === 'accept' || last?.kind === 'restore';
+}
+
+export async function recordDecision(id:string,kind:DecisionKind,reason:string,candidate?:string,manualFile?:File,onlyIfUnretained=false) {
   if(!reason.trim())throw new Error('请记录这次取舍的理由。');
   await edit(id,a=>{requireAttempt(a);
     if(kind!=='stop' && !a.candidates.some(c=>c.id===candidate&&c.firstShown)) throw new Error('请先实际查看所选候选。');
+    if(onlyIfUnretained && kind==='accept' && candidate && candidateRetained(a,candidate))return a;
     if(kind==='restore' && !a.decisions.some(d=>d.candidate===candidate))throw new Error('请回选已有取舍记录的候选。');
     return {...a,decisions:[...a.decisions,{id:crypto.randomUUID(),at:now(),kind,candidate,reason:reason.trim(),manualFile}]};
   });
@@ -212,6 +248,7 @@ export async function exportRecord(a:FrozenAttempt){
   const candidates=await Promise.all(a.candidates.map(async c=>({...c,file:await asset(c.file)})));
   const decisions=await Promise.all(a.decisions.map(async d=>({...d,manualFile:d.manualFile?{name:d.manualFile.name,asset:await asset(d.manualFile)}:null})));
   const failure=a.failure?{...a.failure,history:await asset(a.failure.history)}:null;
-  const record={schema:'design-studio/attempt-v1',...a,guide,parentImage,dispatch,receipt,failure,candidates,decisions,originals};
+  const h3=a.h3?{...a.h3,request:await asset(a.h3.request),acknowledgement:await asset(a.h3.acknowledgement),result:await asset(a.h3.result)}:undefined;
+  const record={schema:'design-studio/attempt-v1',...a,h3,guide,parentImage,dispatch,receipt,failure,candidates,decisions,originals};
   download('studio-attempt-'+a.id+'.json',JSON.stringify(record),'application/json');
 }

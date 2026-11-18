@@ -51,7 +51,7 @@ export function compilePrompt(p: DroneParameters, touched: Record<string, boolea
       text: 'Design intent: ' + poles.join('; ') + '.',
     });
   const activeBrief = [...intent.log].reverse().find(entry => entry.action === 'brief' &&
-    entry.brief && entry.brief.action !== 'reject')?.brief;
+    entry.brief && ['accept', 'custom', 'revoke'].includes(entry.brief.action))?.brief;
   const storageOnly = activeBrief && activeBrief.action !== 'revoke' && activeBrief.text.trim() === intent.note.trim()
     && (activeBrief.query.state === 'folded' || activeBrief.query.state === 'carrying');
   if (intent.note.trim() && !storageOnly)

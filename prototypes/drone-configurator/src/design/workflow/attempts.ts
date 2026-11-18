@@ -1,6 +1,7 @@
 import type { FrozenAttempt, DecisionKind } from '../candidateRecords';
 import { frameRules, type Task } from '../design';
 import { parseImported } from '../exporters';
+import { generationStatus } from '../generation';
 import { relation, type WorkflowGraph } from './types';
 
 const choices: Record<DecisionKind, string> = {
@@ -38,31 +39,35 @@ export function appendAttempts(graph: WorkflowGraph, attempts: FrozenAttempt[], 
       detail: a.goal, canBranch: true, canRestore: true, facts: [{ label: '保持项', value: a.keep || '未指定' },
         { label: '规格来源', value: a.snapshot ? '冻结时的完整草稿' : '按旧归档的配置、已选字段和意图还原' }] });
     if (ancestor) edges.push(relation(ancestor, specId, '沿用分支编辑'));
-    const status = a.receipt ? '已核对回图' : a.failure ? '运行失败或中止' : a.dispatch?.ack ? '服务已入队'
+    const status = a.h3 ? generationStatus(a).title : a.receipt ? '已核对回图' : a.failure ? '运行失败或中止' : a.dispatch?.ack ? '服务已入队'
       : a.dispatch?.error ? '提交异常' : a.dispatch ? '已登记请求' : '待提交';
     nodes.push({ ...meta, id: runId, kind: 'run', title: a.goal, subtitle: status,
-      source: '本机设计轮次', parentId: specId, detail: a.confirmedText,
+      source: a.h3 ? 'MiniMax H3 Image · 本机轮次记录' : '本机设计轮次', parentId: specId, detail: a.confirmedText,
       facts: [{ label: '输入方式', value: a.condition === 'structured' ? '结构化提示与条件图' : '自由提示' },
         { label: '状态', value: status }, { label: '轮次编号', value: a.id },
-        ...(a.runId ? [{ label: '服务作业号', value: a.runId }] : [])] });
+        ...(a.h3?.issue ? [{ label: '服务记录', value: a.h3.issue }] : []),
+        ...(a.runId ? [{ label: a.h3 ? '本机任务号' : '服务作业号', value: a.runId }] : []),
+        ...(a.h3?.traceId ? [{ label: '服务追踪号', value: a.h3.traceId }] : [])] });
     edges.push(relation(specId, runId, '冻结输入'));
     if (a.condition === 'structured') {
       const id = guideId(a.id);
       nodes.push({ ...meta, id, kind: 'image', title: '本轮布局条件图', subtitle: '冻结输入', source: '冻结的结构化条件图',
         image: images.get(id), parentId: specId, facts: [{ label: 'SHA-256', value: a.config.reference_image.png_sha256 ?? '未登记' }] });
-      edges.push(relation(specId, id, '生成布局图'), relation(id, runId, '条件图', 'reference'));
+      const label = a.h3 && a.h3.status !== 'succeeded' ? '冻结条件图' : '条件图';
+      edges.push(relation(specId, id, '生成布局图'), relation(id, runId, label, 'reference'));
     }
     if (a.parentImage) {
       const known = a.parentId && candidates.has(a.parentId);
       const id = known ? candidateNodeId(a.parentId!) : parentImageId(a.id);
       if (!known) nodes.push({ ...meta, id, kind: 'image', title: '本轮父图', subtitle: '归档输入', image: images.get(id),
         source: '随本轮冻结的父图原件', detail: a.parentId ? '原候选编号 · ' + a.parentId : '原候选编号未登记。' });
-      edges.push(relation(id, runId, '父图输入', 'reference'));
+      const label = a.h3 && a.h3.status !== 'succeeded' ? '冻结父图' : '父图输入';
+      edges.push(relation(id, runId, label, 'reference'));
     }
     for (const c of a.candidates) {
       const id = candidateNodeId(c.id);
       nodes.push({ ...meta, id, parentId: runId, kind: 'image', title: c.name, subtitle: '回执候选', image: images.get(id),
-        candidateId: c.id, firstShown: c.firstShown, source: '服务回执与候选原件',
+        candidateId: c.id, firstShown: c.firstShown, source: a.h3?.status === 'succeeded' ? 'MiniMax H3 Image · 服务回图' : '服务回执与候选原件',
         detail: a.receipt?.inputVerification, facts: [{ label: '原图 SHA-256', value: c.hash }] });
       edges.push(relation(runId, id, '返回候选'));
     }

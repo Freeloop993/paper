@@ -50,6 +50,8 @@
 .gb-card-heading { height: 32px; flex: none; padding: 0 12px; display: flex; align-items: center; justify-content: space-between; }
 .gb-kind { display: inline-flex; align-items: center; gap: 5px; font-size: 11px; line-height: 1; font-weight: 580; color: #5a6b61; letter-spacing: .02em; }
 .gb-kind svg { color: #688071; }
+.gb-card[data-kind="evidence"] { background: #fffdf6; }
+.gb-card[data-kind="evidence"] .gb-kind, .gb-card[data-kind="evidence"] .gb-kind svg { color: #88652f; }
 .gb-card.is-selected .gb-kind, .gb-card.is-selected .gb-kind svg { color: #246d5c; }
 .gb-card-open {
   display: inline-grid; place-items: center; border: 0; border-radius: 5px; width: 23px; height: 23px;
@@ -90,6 +92,8 @@
 .gb-board .gb-wire.is-reference { stroke: #bd995e; stroke-dasharray: 4 4; }
 .gb-board .gb-wire.adjacent { stroke: #327b63; stroke-width: 2.7; }
 .gb-board .gb-wire.is-reference.adjacent { stroke: #a77933; }
+.gb-board .gb-wire.is-manual { stroke: #7086a1; stroke-dasharray: 2 5; }
+.gb-board .gb-wire.is-manual.adjacent { stroke: #576e8a; }
 .gb-board .gb-wire.distant { opacity: .47; }
 .gb-wire-label {
   position: absolute; padding: 2px 5px; border: 1px solid #d5e0d3; border-radius: 4px;
@@ -99,6 +103,7 @@
 .gb-wire-label.is-reference { border-color: #e5d8b9; color: #886a36; background: #f9f6eb; }
 .gb-wire-label.adjacent { border-color: #9ebaa6; color: #2e614a; }
 .gb-wire-label.is-reference.adjacent { color: #805a22; border-color: #cdb280; }
+.gb-wire-label.is-manual { color: #495f78; border-color: #c3d0de; background: #f1f5f9; }
 .gb-wire-label.distant { opacity: .73; }
 .gb-tools {
   position: absolute; z-index: 5; bottom: 16px; left: 16px;

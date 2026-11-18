@@ -13,14 +13,32 @@ export function vocabulary() {
   };
 }
 
+export function cardTopics() {
+  const byCard = new Map();
+  for (const [id, topic] of Object.entries(topics)) {
+    const ids = new Set(Object.values(topic.byState).flatMap(route => [...route.cards, ...(route.cautions ?? [])]));
+    for (const card of ids) {
+      if (!byCard.has(card)) byCard.set(card, []);
+      byCard.get(card).push({ id, label: topic.label });
+    }
+  }
+  return byCard;
+}
+
 // 建立一次，后续同步查询。不改调用者的简报、证据卡、参数或提示词。
 export async function createLookup(envelope) {
   if (!Array.isArray(envelope?.cards)) throw new Error("缺少 cards 数组。");
   const cards = envelope.cards.map(card => Object.fromEntries(fields.map(key => [key, card[key]])));
   cards.sort((a, b) => a.id.localeCompare(b.id));
   const canonical = JSON.stringify(cards.map(card => fields.map(key => card[key])));
-  const signature = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(canonical));
-  const digest = Array.from(new Uint8Array(signature), byte => byte.toString(16).padStart(2, "0")).join("");
+  let digest;
+  if (globalThis.crypto?.subtle) {
+    const signature = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(canonical));
+    digest = Array.from(new Uint8Array(signature), byte => byte.toString(16).padStart(2, "0")).join("");
+  } else {
+    // Some file:// browsers lack Web Crypto. The offline bundle includes the same SHA-256 used by exports.
+    digest = (await import("../sha256.ts")).sha256Text(canonical);
+  }
   if (digest !== contentDigest) throw new Error("该卡表的内容与已标注的 36 张公开卡不一致。");
   const byId = new Map(cards.map(card => [card.id, card]));
 

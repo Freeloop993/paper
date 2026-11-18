@@ -1,6 +1,6 @@
 # 多旋翼造型工作台
 
-[下载离线版 ZIP](configurator-offline.zip?raw=true)，完整解压后打开 `index.html`。简报、画布、资料检索、历史案例与本地记录可离线使用。工作台支持三旋、四旋、平面六旋、平面八旋、共轴六旋 Y6 和共轴八旋 X8，使用任务可分别选择日常航拍、农业植保或中性外观比较。
+[下载离线版 ZIP](configurator-offline.zip?raw=true)，完整解压后打开 `index.html`。设计目标、参数画布、知识检索与历史案例可离线使用。在线生成与设计对话使用下方本机服务。工作台支持三旋、四旋、平面六旋、平面八旋、共轴六旋 Y6 和共轴八旋 X8，使用任务可分别选择日常航拍、农业植保或中性外观比较。
 
 ## 打开方案关系画布
 
@@ -18,17 +18,19 @@ $env:MINIMAX_API_KEY = [System.Net.NetworkCredential]::new('', (Read-Host 'MiniM
 try { node scripts/design-chat-server.mjs --port 4178 } finally { Remove-Item Env:MINIMAX_API_KEY }
 ```
 
-打开 [本机造型页](http://127.0.0.1:4178/#step=studio&tab=fuselage)，在右侧「设计对话」询问折叠收纳的依据，或选中机身后要求调整宽度。工作台从现有脱敏短引检索相关卡，用 MiniMax-M3.1-Flash 的 `max` 推理生成答复。选「预览」查看宽度差异，选「应用到草稿」才写入当前规格。模型服务只监听本机回环地址。浏览器只访问同源代理，需要生成效果图时沿用交付页的图像模型入口。
+打开 [本机造型页](http://127.0.0.1:4178/#step=studio&tab=fuselage)，在右侧「设计对话」询问折叠收纳的依据，或选中机身后要求调整宽度。工作台从现有脱敏短引检索相关卡，用 MiniMax-M3.1-Flash 的 `max` 推理生成答复。选「预览」查看宽度差异，选「应用到草稿」才写入当前规格。模型服务只监听本机回环地址。浏览器通过同源代理调用模型。图像默认使用相同区域和密钥。若账户分别授权了图像和文本服务，可在启动进程前通过环境变量 MINIMAX_IMAGE_API_KEY、MINIMAX_IMAGE_REGION 指定图像凭据与区域。
 
-## 从简报到一个可回看的设计决定
+## 从设计目标到候选图
 
-1. 在“洞察”选择使用任务与构型，写下意图。系统按话题、部位和使用状态找公开短引。只说“小巧”时可澄清折叠或展开；缺少相应任务资料时可自定。确认、驳回及撤销保存在当前方案。
-2. 在“造型”调整机架、机身与其他部件，对比顶视、条件图和侧视。画布分别标出水平轴位与旋翼层数。共轴导出增加带绑定摘要的侧视示意。新构型的参考资料写明了适用视图。
-3. 在“交付 → 设计输入”核对并下载规格、提示词与条件图。在“候选与记录”写下本轮目标、保持项，选择结构化或自由提示，确认并冻结。冻结本身不会发送生成请求。
-4. 展开“模型提交与外部运行文件”。可以下载该轮请求 JSON 和输入 PNG 交给主持人。也可以填写自己的 ComfyUI 地址，设置种子后主动提交。服务须具备本项目使用的 Qwen Image 2.1 工作流及模型，且允许该浏览器来源访问。结构化方式发送已确认文字与条件图，自由方式发送作者原文；选父图修订时额外附上该图。点击“查询回图”取回同一作业的全部候选。[ComfyUI 服务接口](https://docs.comfy.org/development/comfyui-server/comms_routes)
-5. 外部运行可导入实发请求、作业号、服务历史和原 PNG。查看候选后记录采纳、驳回、回选或人工深化及理由。浏览器本地保存原件；“导出本轮记录”可备份该轮完整材料。历史四旋 B2 与农业六旋在单独的回放区域，使用原归档标识。
+1. 在「设计目标」写下想做的改变。可选择采纳一条用户原话，也可以按自己的判断确认目标。工作台按话题、观察状态和任务筛选适用依据。
+2. 在「调整参数」选择部件，直接修改规格。部件面板可从知识库调出对照问题，由设计师决定是否记入当前方案。画布能从设计目标或已保存规格追到实际采用的证据卡。
+3. 在画布或参数页点「生成候选图」。工作台保存当前规格，把布局条件图发给 MiniMax H3 Image，默认每轮生成一张 1024 × 1024 PNG。以候选图继续生成时，同时传入父图。可以离开结果页继续修改草稿。
+4. 在候选图下选择「保留此方案」或从这张图继续修订。原始输入、图像摘要、服务回执、选案与各版关系均可回查。「研究详情与导出」保留完整记录和旧版 ComfyUI 研究工具。[MiniMax 图像编辑接口](https://platform.minimax.io/docs/guides/image-generation)
+
+本机服务在用户数据目录 Freeloop/multirotor-workbench/image-jobs 中保存轮次与 PNG，供浏览器刷新后取回。设置 WORKBENCH_IMAGE_JOBS_DIR 可以指定该目录。
 
 [上一版界面与历史验收](review/20261118-round3/README.md) · [研究系统实施依据](https://github.com/Freeloop993/paper/blob/a98b3ecdce0330902d9f5dd99336ce41e7fc993e/planning/advisor-20261118/system.md)
+
 
 ## 源码入口
 
@@ -36,12 +38,13 @@ try { node scripts/design-chat-server.mjs --port 4178 } finally { Remove-Item En
 | --- | --- |
 | 工作台与工具切换 | [App.tsx](src/App.tsx)、[WorkbenchShell.tsx](src/components/Graph/WorkbenchShell.tsx) |
 | 方案关系画布、节点详情与数据来源 | [WorkflowWorkspace.tsx](src/components/Graph/WorkflowWorkspace.tsx)、[GraphBoard.tsx](src/components/Graph/GraphBoard.tsx)、[workflowGraph.ts](src/design/workflowGraph.ts) |
-| 设计简报、语义检索与研究资料 | [InsightPage.tsx](src/components/Insight/InsightPage.tsx)、[字段检索](src/design/semantics/lookup.mjs)、[公开卡语义标注](src/design/semantics/topics.mjs) |
+| 设计目标、语义检索与研究资料 | [InsightPage.tsx](src/components/Insight/InsightPage.tsx)、[字段检索](src/design/semantics/lookup.mjs)、[公开卡语义标注](src/design/semantics/topics.mjs) |
 | 造型页与五个部件页签 | [StudioPage.tsx](src/components/Studio/StudioPage.tsx)、[Parameters/](src/components/Parameters/)、[controls.tsx](src/components/controls/controls.tsx) |
 | 画布（顶视、条件图、侧视、拖动、比例读数） | [Stage.tsx](src/components/Studio/Stage.tsx) |
 | 布局空间图、设计提示、参考机型、方案条 | [SpaceMap.tsx](src/components/Studio/SpaceMap.tsx)、[Hints.tsx](src/components/Studio/Hints.tsx)、[References.tsx](src/components/Studio/References.tsx)、[Variants.tsx](src/components/Studio/Variants.tsx) |
 | 交付页、提示词面板、规格卡与导出 | [HandoffPage.tsx](src/components/Handoff/HandoffPage.tsx)、[PromptGenerator.tsx](src/components/DevPreview/PromptGenerator.tsx)、[ParameterOverview.tsx](src/components/Overview/ParameterOverview.tsx) |
-| 模型请求、候选原件、人工取舍与历史回放 | [ModelDispatch.tsx](src/components/Handoff/ModelDispatch.tsx)、[candidateRecords.ts](src/design/candidateRecords.ts)、[HistoryReplay.tsx](src/components/Handoff/HistoryReplay.tsx) |
+| 历史提交、候选原件、人工取舍与历史回放 | [ModelDispatch.tsx](src/components/Handoff/ModelDispatch.tsx)、[candidateRecords.ts](src/design/candidateRecords.ts)、[HistoryReplay.tsx](src/components/Handoff/HistoryReplay.tsx) |
+| H3 单击生成、同一轮次恢复与本机代理 | [generation.ts](src/design/generation.ts)、[image-jobs.mjs](scripts/image-jobs.mjs) |
 | 轴心几何、构型画法与依据、条件图 | [design.ts](src/design/design.ts) |
 | 设计提示的算法（桨盘重叠、相机视野、桨与机身） | [checks.ts](src/design/checks.ts) |
 | 每个选项的名称、短语和参考数值 | [fields.ts](src/design/fields.ts) |

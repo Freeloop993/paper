@@ -54,9 +54,11 @@ try {
  });
  await page.goto(url);
  await page.locator('[data-step=insight]').click();
+ await page.locator('.goal-context > summary').click();
  await page.locator('[data-testid=mission]').selectOption('agricultural_spraying');
  await page.locator('[data-testid=brief-frame]').selectOption('Radial Hex');
  await page.locator('[data-step=handoff]').click();
+ await page.locator('[data-testid=handoff-advanced] > summary').click();
  await page.locator('[data-handoff-tab=candidates]').click();
  for (const condition of ['structured','free']){
    await page.locator('[data-attempt-goal]').fill('软件验收 · 农业六旋外观');

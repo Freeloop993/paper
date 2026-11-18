@@ -4,11 +4,11 @@ import './workbench.css';
 
 export type Step = 'canvas'|'insight'|'studio'|'handoff';
 export type BoardId = 'history' | 'project';
-export const toolNames: Record<Step,string> = {canvas:'方案画布',insight:'设计简报',studio:'参数编辑',handoff:'生成与选案'};
+export const toolNames: Record<Step,string> = {canvas:'方案画布',insight:'设计目标',studio:'调整参数',handoff:'候选图'};
 const tools = [{id:'insight',Icon:BookOpen},{id:'studio',Icon:SlidersHorizontal},{id:'handoff',Icon:ScanLine}] as const;
 
-export function CanvasTopBar({step,board,onBoard,onStep}: {
-  step:Step; board:BoardId; onBoard:(board:BoardId)=>void; onStep:(step:Step)=>void;
+export function CanvasTopBar({step,board,onBoard,onStep,onGenerate}: {
+  step:Step; board:BoardId; onBoard:(board:BoardId)=>void; onStep:(step:Step)=>void; onGenerate:()=>void;
 }) {
   const {history,undo,resetToDefaults}=useDroneStore();
   return <header className="canvas-topbar">
@@ -22,6 +22,7 @@ export function CanvasTopBar({step,board,onBoard,onStep}: {
       </div> : <>
         {step==='studio' && <><button className="canvas-small-tool" data-testid="undo" onClick={undo} disabled={!history.length} title="撤销上一步"><Undo2 size={15}/><span>撤销</span></button><button className="canvas-small-tool canvas-reset" data-testid="reset" onClick={resetToDefaults}>重置参数</button></>}
         <button className="canvas-return" onClick={()=>onStep('canvas')} data-step="canvas"><ArrowLeft size={15}/>返回画布</button>
+        {step==='studio' && <button className="canvas-action primary" data-testid="studio-generate" onClick={onGenerate}><ScanLine size={15}/>生成候选图</button>}
       </>}
     </div>
   </header>;
@@ -32,7 +33,7 @@ export function CanvasRail({step,onStep}:{step:Step;onStep:(step:Step)=>void}) {
     <button className="canvas-rail-btn" data-step="canvas" aria-current={step==='canvas'?'page':undefined} onClick={()=>onStep('canvas')} title="方案画布"><Grid2X2 size={20}/><span>画布</span></button>
     <div className="canvas-rail-rule" />
     {tools.map(({id,Icon})=><button key={id} className="canvas-rail-btn" data-step={id} title={toolNames[id]} aria-label={toolNames[id]} aria-current={step===id?'page':undefined} onClick={()=>onStep(id)}>
-      <Icon size={19}/><span>{id==='insight'?'简报':id==='studio'?'参数':'生成'}</span>
+      <Icon size={19}/><span>{id==='insight'?'目标':id==='studio'?'参数':'候选图'}</span>
     </button>)}
   </nav>;
 }

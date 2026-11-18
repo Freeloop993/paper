@@ -9,6 +9,7 @@ import PropulsionParameters from '../Parameters/PropulsionParameters';
 import FuselageParameters from '../Parameters/FuselageParameters';
 import LandingGearParameters from '../Parameters/LandingGearParameters';
 import AccessoriesParameters from '../Parameters/AccessoriesParameters';
+import ParameterEvidence from '../Insight/ParameterEvidence';
 import { GuideView, RatioHud, SideView, TopStage } from './Stage';
 import SpaceMap from './SpaceMap';
 import Hints from './Hints';
@@ -67,6 +68,7 @@ const StudioPage: React.FC<{ wide: boolean; initialTab?: ParameterGroup | null }
         ))}
       </div>
       <div className={`scroll-thin p-4 ${wide ? 'min-h-0 flex-1 overflow-y-auto' : ''}`} role="tabpanel">
+        <ParameterEvidence part={tab}/>
         {tab === 'frame' && <FrameParameters />}
         {tab === 'propulsion' && <PropulsionParameters />}
         {tab === 'fuselage' && <FuselageParameters />}
@@ -121,7 +123,7 @@ const StudioPage: React.FC<{ wide: boolean; initialTab?: ParameterGroup | null }
 
       {shownView !== 'top' && wide && (
         <p className="absolute right-3 top-3 max-w-xs rounded-2xl border border-line bg-white/90 px-3 py-2 text-xs leading-relaxed text-ink-soft shadow-panel backdrop-blur">
-          {view === 'guide' ? '这就是随提示词一起导出的条件图：只有电机轴心和机架连接，不画机身外形。' : topologyOf(layout.frame_type).layers_per_axis === 2 ? '共轴侧视示意。上下两层来自同一方案，层间距仅用于辨认。' : '侧视显示机身高度、机臂厚度和起落架离地高度。'}
+          {view === 'guide' ? '生成时使用这张图定位电机轴心和机架连接。' : topologyOf(layout.frame_type).layers_per_axis === 2 ? '共轴侧视示意。上下两层来自同一方案，层间距仅用于辨认。' : '侧视显示机身高度、机臂厚度和起落架离地高度。'}
         </p>
       )}
       {shownView === 'top' && wide && !lastChange && !visiblePreview && (

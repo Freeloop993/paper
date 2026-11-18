@@ -20,6 +20,8 @@ try {
   assert.equal(await page.evaluate("document.querySelector('#drone-configurator-app').dataset.stepActive"),'canvas');
   assert.deepEqual(await page.evaluate("[...document.querySelectorAll('nav [data-step]')].map(x=>x.dataset.step)"),
     ['canvas','insight','studio','handoff']);
+  assert.equal(await page.evaluate("document.querySelector('[data-testid=workflow-workspace]').dataset.boardId"),'project');
+  await page.click('[data-board=history]');
   const canvas = await page.evaluate(`(async () => {
     const cards = [...document.querySelectorAll('[data-workflow-node]')];
     const images = cards.flatMap(card => [...card.querySelectorAll('img')]);
@@ -43,6 +45,7 @@ try {
   await page.type('[data-testid=brief-input]','折起来放进小包');
   assert.equal(await page.evaluate("document.querySelector('[data-testid=lookup-result]').dataset.status"),'retrieve');
   await page.click('[data-testid=accept-evidence]');
+  await page.click('.goal-context > summary');
   await set('mission','agricultural_spraying');
   await set('brief-frame','Radial Hex');
   await page.type('[data-testid=brief-input]','展开时希望机身显得紧凑');
@@ -53,6 +56,7 @@ try {
   assert.equal(await axes(),6);
   if(captures) await page.screenshot(join(captures,'agricultural-hex.png'));
   await page.click('[data-step=handoff]');
+  await page.click('[data-testid=handoff-advanced] > summary');
   const downloads = join(work,'downloads');
   mkdirSync(downloads);
   await page.setDownloadDir(downloads);

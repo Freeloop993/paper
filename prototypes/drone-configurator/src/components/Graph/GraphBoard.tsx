@@ -7,7 +7,7 @@ import {
 import type { Edge, EdgeProps, Node, NodeChange, NodeProps, Viewport, XYPosition } from '@xyflow/react';
 import {
   ArrowUpRight, CheckCheck, FileText, Hand, Image as ImageIcon, Map as MapIcon, Maximize,
-  Minus, MousePointer2, PencilLine, Plus, ScanLine, SlidersHorizontal, StickyNote,
+  Minus, MousePointer2, PencilLine, Plus, Quote, ScanLine, SlidersHorizontal, StickyNote,
 } from 'lucide-react';
 import WorkflowImage from '../../design/workflow/WorkflowImage';
 import type { WorkflowBoard, WorkflowEdge, WorkflowNode } from '../../design/workflow/types';
@@ -32,7 +32,7 @@ type Card = Node<{
   output: boolean;
   proximity: 'adjacent' | 'distant' | '';
 }, 'card'>;
-type Wire = Edge<{ kind: WorkflowEdge['kind']; emphasis: string }, 'wire'>;
+type Wire = Edge<{ kind: WorkflowEdge['kind']; emphasis: string; shared?: boolean }, 'wire'>;
 type Positions = Record<string, XYPosition>;
 type Size = { width: number; height: number };
 const CARD_WIDTH = 216;
@@ -41,7 +41,8 @@ const ROW_GAP = 30;
 const MIN_ZOOM = 0.12;
 const MAX_ZOOM = 2.1;
 const cards = {
-  brief: { name: '设计简报', icon: FileText }, spec: { name: '参数方案', icon: SlidersHorizontal },
+  brief: { name: '设计目标', icon: FileText }, spec: { name: '参数方案', icon: SlidersHorizontal },
+  evidence: { name: '证据卡', icon: Quote },
   run: { name: '生成记录', icon: ScanLine }, image: { name: '图像', icon: ImageIcon },
   decision: { name: '设计取舍', icon: CheckCheck }, edit: { name: '图像编辑', icon: PencilLine },
   note: { name: '笔记', icon: StickyNote },
@@ -138,7 +139,7 @@ const GraphCard = memo(function GraphCard({ data, selected, isConnectable }: Nod
     [item.image, item.kind, item.parameters]);
   const preview = Boolean(item.image || guide);
   const subtitle = guide ? [item.subtitle, '布局条件图'].filter(Boolean).join(' · ') : item.subtitle;
-  return <article className={`gb-card ${data.proximity}${selected ? ' is-selected' : ''}${preview ? ' has-image' : ' is-text'}`} data-workflow-node={item.id}>
+  return <article className={`gb-card ${data.proximity}${selected ? ' is-selected' : ''}${preview ? ' has-image' : ' is-text'}`} data-workflow-node={item.id} data-kind={item.kind}>
     <Handle type="target" position={Position.Left} isConnectable={isConnectable} className={`gb-port${input || isConnectable ? '' : ' is-unused'}`} />
     <div className="gb-card-heading"><span className="gb-kind"><Icon size={14} strokeWidth={1.75}/>{meta.name}</span>
       {selected && onOpen && <button type="button" className="gb-card-open nodrag nopan" aria-label={'查看' + item.title} title="查看节点（Enter）"
@@ -158,11 +159,11 @@ const GraphWire = memo(function GraphWire(props: EdgeProps<Wire>) {
   const { id, sourceX, sourceY, targetX, targetY, sourcePosition, targetPosition, data, label } = props;
   const [path, x, y] = getBezierPath({ sourceX, sourceY, targetX: targetX - 2, targetY, sourcePosition, targetPosition, curvature: 0.4 });
   const reference = data?.kind === 'reference' || data?.kind === 'manual';
-  const tone = (reference ? ' is-reference ' : ' ') + (data?.emphasis ?? '');
+  const tone = (reference ? ' is-reference ' : ' ') + (data?.kind === 'manual' ? 'is-manual ' : '') + (data?.emphasis ?? '');
   return <>
     <BaseEdge id={id} path={path} markerEnd={props.markerEnd} className={'gb-wire' + tone} interactionWidth={0} />
     {label && <EdgeLabelRenderer><span className={'gb-wire-label' + tone}
-      style={{ transform: `translate(-50%, -50%) translate(${x}px, ${y}px)` }}>{label}</span></EdgeLabelRenderer>}
+      style={{ transform: `translate(-50%, -50%) translate(${x}px, ${y + (data?.shared ? 19 : 0)}px)` }}>{label}</span></EdgeLabelRenderer>}
   </>;
 });
 const nodeTypes = { card: GraphCard };
@@ -214,13 +215,17 @@ function BoardCanvas({ nodes, edges, boardId, selectedId, onSelect, onConnect, o
       data: { item, input: inputs.has(item.id), output: outputs.has(item.id), onOpen,
         proximity: adjacent.has(item.id) ? 'adjacent' : selectedId && selectedId !== item.id ? 'distant' : '' } }));
   }, [nodes, edges, positions, selectedId, onOpen]);
-  const wires = useMemo<Wire[]>(() => edges.map(e => {
-    const active = selectedId === e.source || selectedId === e.target;
-    const reference = e.kind === 'reference' || e.kind === 'manual';
-    const color = reference ? (active ? '#9b6f27' : '#a58349') : (active ? '#25775e' : '#537e68');
-    return { ...e, type: 'wire', data: { kind: e.kind, emphasis: active ? 'adjacent' : selectedId ? 'distant' : '' }, selectable: false,
-      markerEnd: { type: MarkerType.ArrowClosed, color, width: 25, height: 22, markerUnits: 'userSpaceOnUse' } };
-  }), [edges, selectedId]);
+  const wires = useMemo<Wire[]>(() => {
+    const automatic = new Set(edges.filter(e => e.kind !== 'manual').map(e => JSON.stringify([e.source, e.target])));
+    return edges.map(e => {
+      const active = selectedId === e.source || selectedId === e.target;
+      const reference = e.kind === 'reference' || e.kind === 'manual';
+      const color = e.kind === 'manual' ? '#576e8a' : reference ? (active ? '#9b6f27' : '#a58349') : (active ? '#25775e' : '#537e68');
+      const shared = e.kind === 'manual' && automatic.has(JSON.stringify([e.source, e.target]));
+      return { ...e, type: 'wire', data: { kind: e.kind, emphasis: active ? 'adjacent' : selectedId ? 'distant' : '', shared }, selectable: false,
+        markerEnd: { type: MarkerType.ArrowClosed, color, width: 25, height: 22, markerUnits: 'userSpaceOnUse' } };
+    });
+  }, [edges, selectedId]);
   const changeNodes = useCallback((changes: NodeChange<Card>[]) => {
     const moved = changes.filter(change => change.type === 'position' && change.position);
     if (!moved.length) return;

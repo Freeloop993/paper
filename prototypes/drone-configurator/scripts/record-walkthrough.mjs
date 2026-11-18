@@ -16,7 +16,9 @@ try{
  let external=0;
  await ctx.route('**/*',route=>{const u=new URL(route.request().url());if(u.protocol.startsWith('http')&&u.origin!==new URL(origin).origin){external++;return route.abort();}return route.continue();});
  async function open(){
-  await page.goto(origin);await page.locator('[data-step="handoff"]').click();await page.locator('[data-handoff-tab="candidates"]').click();
+  await page.goto(origin);await page.locator('[data-step="handoff"]').click();
+  await page.locator('[data-testid=handoff-advanced] > summary').click();
+  await page.locator('[data-handoff-tab="candidates"]').click();
  }
  async function exportSelected(){
    const download=page.waitForEvent('download');await page.locator('[data-export-attempt]').click();
@@ -60,7 +62,9 @@ try{
  assert.equal(hash(d.outputs.buffer),kept.candidates[0].hash);
  assert.equal(Buffer.compare(d.outputs.buffer,Buffer.from(kept.originals[kept.candidates[0].hash].data.split(',')[1],'base64')),0);
  await sel.selectOption({index:1});await page.locator('[data-continue-candidate]').click();
- await page.locator('[data-step="studio"]').click();await page.locator('[data-step="handoff"]').click();await page.locator('[data-handoff-tab="candidates"]').click();
+ await page.locator('[data-step="studio"]').click();await page.locator('[data-step="handoff"]').click();
+ await page.locator('[data-testid=handoff-advanced] > summary').click();
+ await page.locator('[data-handoff-tab="candidates"]').click();
  await page.locator('[data-attempt-goal]').fill('软件检查 · 保留父图再修订');await page.locator('[data-freeze-attempt]').click();
  await page.waitForFunction(prior=>document.querySelector('[data-attempt]')?.value!==prior,kept.id);
  const child=await exportSelected();assert.equal(child.parentId,kept.candidates[0].id);assert.equal(child.parentImage.sha256,kept.candidates[0].hash);

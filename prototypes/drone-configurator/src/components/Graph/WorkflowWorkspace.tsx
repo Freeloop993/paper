@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { ArrowLeftRight, ArrowUpRight, BookOpen, Check, GitBranchPlus, ImagePlus, Link2, PanelRightClose, ScanLine, SlidersHorizontal, X } from 'lucide-react';
+import { ArrowLeftRight, ArrowUpRight, Check, ChevronDown, GitBranchPlus, ImagePlus, Link2, PanelRightClose, ScanLine, SlidersHorizontal, Target, X } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
 import { useWorkflowGraph, type WorkflowNode } from '../../design/workflowGraph';
 import WorkflowImage from '../../design/workflow/WorkflowImage';
@@ -50,6 +50,7 @@ export default function WorkflowWorkspace({board,active,onStep,onHandoff,onBoard
   const [busy,setBusy]=useState(false);
   const dialog=useRef<HTMLDialogElement>(null);
   const upload=useRef<HTMLInputElement>(null);
+  const toolsMenu=useRef<HTMLDetailsElement>(null);
   const selected=graph.nodes.find(node=>node.id===selectedId);
   const draft=graph.nodes.find(node=>node.isDraft && node.variantId===activeVariant);
   const historical=board==='history';
@@ -122,19 +123,36 @@ export default function WorkflowWorkspace({board,active,onStep,onHandoff,onBoard
     catch(e) {setError(e instanceof Error?e.message:'无法复制这张参考图。');}
     finally {setBusy(false);}
   }
-  const openHandoff=(node?:WorkflowNode)=>onHandoff({attemptId:node?.attemptId,candidates:true});
+  function generate() {
+    onHandoff({generate:crypto.randomUUID()});
+  }
+  function openHandoff(node?:WorkflowNode) {
+    if(node?.isDraft) generate();
+    else onHandoff({attemptId:node?.attemptId,candidates:true});
+  }
   if(!active) return null;
   return <section className="graph-workspace" aria-label="方案关系画布" data-testid="workflow-workspace" data-board-id={board}>
     <header className="graph-page-head">
       <div className="graph-heading"><div className="graph-headline"><h1>{historical?'B2 · 四旋翼外观深化':'方案关系画布'}</h1><LocalStatus board={board}/></div>
-        <p>{historical?'从原始候选追踪相机安装位置的两条人工深化分支。':`当前草稿 · ${draft?.title || '方案 '+activeVariant}`}</p>
+        {historical ? <p>从原始候选追踪相机安装位置的两条人工深化分支。</p> :
+          <button className="canvas-goal-link" onClick={()=>onStep('insight')}><Target size={13}/>
+            <span>{draft?.intent?.note || '设定设计目标'}</span><ArrowUpRight size={12}/>
+          </button>}
       </div>
       <div className="graph-actions">
         {pictures.length>=2 && <button className="canvas-action" onClick={startCompare} data-testid="compare-images"><ArrowLeftRight size={15}/>图片对照</button>}
         {historical ? <button className="canvas-action primary" onClick={()=>onBoard('project')}>进入我的项目<ArrowUpRight size={15}/></button> : <>
-          <button className="canvas-action" onClick={()=>upload.current?.click()}><ImagePlus size={15}/>添加参考图</button>
-          <button className={`canvas-action ${linkMode?'active':''}`} aria-pressed={linkMode} onClick={()=>{setLinkMode(!linkMode);setLinkFrom(linkMode?null:selectedId);setError('');}}><Link2 size={15}/>连接参考</button>
-          <button className="canvas-action primary" onClick={()=>draft && branch(draft.id)} disabled={!draft}><GitBranchPlus size={15}/>保存草稿版本</button>
+          <details ref={toolsMenu} className="canvas-tools-menu" onBlur={event=>{if(!event.currentTarget.contains(event.relatedTarget))event.currentTarget.open=false;}}
+            onKeyDown={event=>{if(event.key==='Escape' && toolsMenu.current){toolsMenu.current.open=false;toolsMenu.current.querySelector('summary')?.focus();}}}>
+            <summary className="canvas-action">画布工具<ChevronDown size={13}/></summary>
+            <div className="canvas-tools-list" onClick={()=>{if(toolsMenu.current)toolsMenu.current.open=false;}}>
+              <button onClick={()=>upload.current?.click()}><ImagePlus size={15}/>添加参考图</button>
+              <button aria-pressed={linkMode} onClick={()=>{setLinkMode(!linkMode);setLinkFrom(linkMode?null:selectedId);setError('');}}><Link2 size={15}/>连接参考</button>
+              <button onClick={()=>draft && branch(draft.id)} disabled={!draft}><GitBranchPlus size={15}/>保存草稿版本</button>
+            </div>
+          </details>
+          <button className="canvas-action" onClick={()=>onStep('studio')}><SlidersHorizontal size={15}/>调整参数</button>
+          <button className="canvas-action primary" data-testid="canvas-generate" onClick={generate} disabled={!draft}><ScanLine size={15}/>生成候选图</button>
         </>}
       </div>
     </header>
@@ -162,7 +180,7 @@ export default function WorkflowWorkspace({board,active,onStep,onHandoff,onBoard
     </div>
     <footer className="graph-status-bar">
       <span>{graph.nodes.length} 个节点<i/> {graph.edges.length} 条关系</span>
-      {!historical && <div><button onClick={()=>onStep('insight')}><BookOpen size={12}/>简报</button><button onClick={()=>onStep('studio')}><SlidersHorizontal size={12}/>编辑草稿</button><button onClick={()=>openHandoff()}><ScanLine size={12}/>生成与选案</button></div>}
+      {!historical && <div><button onClick={()=>openHandoff()}><ScanLine size={12}/>查看生成记录</button></div>}
     </footer>
     {compare && <CompareImages pictures={pictures} initial={compare} onClose={()=>setCompare(null)}/>}
     {modalNode && <dialog className="canvas-dialog branch-dialog" ref={dialog} onCancel={event=>{if(busy)event.preventDefault();else setModalNode(null);}} aria-labelledby="branch-title">

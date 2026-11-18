@@ -8,4 +8,6 @@ export interface LookupResult {
   groups: {source: string; cards: Card[]}[]; hypotheses: {id: string; description: string}[];
 }
 export function vocabulary(): { topics: {id: string; label: string; states: {state: string; component: string}[]}[] };
+export type TopicTag = { id: string; label: string };
+export function cardTopics(): Map<string, TopicTag[]>;
 export function createLookup(envelope: unknown): Promise<(query: SemanticQuery) => LookupResult>;

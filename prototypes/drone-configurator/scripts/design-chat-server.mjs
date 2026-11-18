@@ -6,6 +6,7 @@ import { pipeline } from 'node:stream/promises';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { ChatError, createDesignChat } from './design-chat.mjs';
+import { createImageJobs } from './image-jobs.mjs';
 
 const dist = fileURLToPath(new URL('../dist/', import.meta.url));
 const limit = 64 * 1024;
@@ -22,16 +23,16 @@ function sendJson(res, status, data) {
   res.end(JSON.stringify(data));
 }
 
-async function readInput(req) {
+async function readInput(req, maxBytes=limit) {
   if (req.headers['content-type']?.split(';')[0].trim().toLowerCase() !== 'application/json')
     fail(415, 'json_required', '本机设计对话仅接收 JSON。');
   const tooLarge = () => fail(413, 'input_too_large', '本次输入过长，请缩短问题或减少历史消息。');
-  if (Number(req.headers['content-length']) > limit) tooLarge();
+  if (Number(req.headers['content-length']) > maxBytes) tooLarge();
   const chunks = [];
   let size = 0;
   for await (const chunk of req.iterator({ destroyOnReturn: false })) {
     size += chunk.length;
-    if (size > limit) { req.resume(); tooLarge(); }
+    if (size > maxBytes) { req.resume(); tooLarge(); }
     chunks.push(chunk);
   }
   try { return JSON.parse(Buffer.concat(chunks).toString('utf8')); }
@@ -62,7 +63,7 @@ async function serveAsset(req, res, pathname) {
   else await pipeline(createReadStream(asset), res);
 }
 
-export function createDesignServer(chat) {
+export function createDesignServer(chat, imageJobs) {
   return createServer({ requestTimeout: 20000, headersTimeout: 10000, maxHeaderSize: 8192 }, async (req, res) => {
     try {
       res.setHeader('X-Content-Type-Options', 'nosniff');
@@ -78,6 +79,12 @@ export function createDesignServer(chat) {
       if (pathname === '/api/design/chat') {
         if (req.method !== 'POST') fail(405, 'method_not_allowed', '设计对话仅支持 POST。');
         sendJson(res, 200, await chat(await readInput(req)));
+      } else if (imageJobs && pathname==='/api/h3/jobs') {
+        if (req.method!=='POST') fail(405,'method_not_allowed','图像生成仅支持 POST。');
+        sendJson(res,202,await imageJobs.submit(await readInput(req,64*1024*1024)));
+      } else if (imageJobs && pathname.startsWith('/api/h3/jobs/')) {
+        if (req.method!=='GET') fail(405,'method_not_allowed','生成状态仅支持 GET。');
+        sendJson(res,200,await imageJobs.get(pathname.slice('/api/h3/jobs/'.length)));
       } else {
         await serveAsset(req, res, pathname);
       }
@@ -97,7 +104,9 @@ async function main() {
   const port = Number(values.port ?? process.env.PORT ?? 4178);
   if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('端口必须为 1 至 65535 的整数。');
   const chat = await createDesignChat({ apiKey: process.env.MINIMAX_API_KEY?.trim(), region: process.env.MINIMAX_REGION ?? 'cn' });
-  const server = createDesignServer(chat);
+  const imageJobs=createImageJobs({apiKey:process.env.MINIMAX_IMAGE_API_KEY?.trim() || process.env.MINIMAX_API_KEY?.trim(),
+    region:process.env.MINIMAX_IMAGE_REGION ?? process.env.MINIMAX_REGION ?? 'cn',directory:process.env.WORKBENCH_IMAGE_JOBS_DIR});
+  const server = createDesignServer(chat,imageJobs);
   server.on('error', () => { console.error('本机设计对话服务启动失败，请核对端口。'); process.exitCode = 1; });
   server.listen(port, '127.0.0.1', () => console.log(`本机多旋翼设计工作台 http://127.0.0.1:${port}/`));
 }

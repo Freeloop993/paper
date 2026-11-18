@@ -2,7 +2,7 @@ import { useContext, useId, useLayoutEffect, useRef, useState } from 'react';
 import {
   ArrowDownRight, ArrowRight, ArrowUpLeft, CheckCheck, ChevronRight, ExternalLink,
   FileText, GitBranch, Image as ImageIcon, Layers, Link2, LockKeyhole, Maximize2,
-  MessageCircle, PanelRight, Pencil, SlidersHorizontal, StickyNote, Unlink, Workflow, X,
+  MessageCircle, PanelRight, Pencil, Quote, SlidersHorizontal, StickyNote, Unlink, Workflow, X,
 } from 'lucide-react';
 import { computeLayout, layoutKey } from '../../design/design';
 import { fields, fieldStatus, isRelevant, statusLabel } from '../../design/fields';
@@ -30,7 +30,8 @@ interface GraphInspectorProps {
 }
 
 const kinds = {
-  brief: { title: '设计简报', icon: FileText },
+  brief: { title: '设计目标', icon: FileText },
+  evidence: { title: '证据卡', icon: Quote },
   spec: { title: '参数规格', icon: SlidersHorizontal },
   run: { title: '生成轮次', icon: Workflow },
   image: { title: '图像', icon: ImageIcon },
@@ -157,7 +158,7 @@ function Source({ node }: { node: WorkflowNode }) {
     {created && <p className="gi-muted">{created}</p>}
     {node.sourceUrl && <a className="gi-source-link" href={node.sourceUrl} target="_blank" rel="noreferrer">查看来源<ExternalLink size={12}/></a>}
     {facts.length > 0 && <details className="gi-facts">
-      <summary>查看记录字段<span>{facts.length}</span></summary>
+      <summary>{node.kind === 'evidence' ? '查看原卡' : '查看记录字段'}<span>{facts.length} 项</span></summary>
       <dl>{facts.map(({ label, value }, i) => <div key={label + i}><dt>{label}</dt><dd>{value}</dd></div>)}</dl>
     </details>}
   </section>;
@@ -208,22 +209,24 @@ export default function GraphInspector({ node, nodes, edges, boardId, onSelect, 
         <Picture node={node}/>
         {node.detail && node.detail !== node.subtitle && <p className="gi-description">{node.detail}</p>}
         <Parameters node={node}/>
+        {node.kind === 'evidence' && <Source node={node}/>}
         {!project && node.image && onCopyReference && <div className="gi-actions">
           <button type="button" onClick={() => onCopyReference(node)}><Link2 size={14}/>引用到我的项目</button>
         </div>}
         {project && <div className="gi-actions">
-          {node.kind === 'brief' && node.variantId === activeVariant && onEditBrief && <button type="button" className="gi-primary" onClick={onEditBrief}><Pencil size={14}/>编辑简报</button>}
+          {node.kind === 'brief' && node.variantId === activeVariant && onEditBrief && <button type="button" className="gi-primary" onClick={onEditBrief}><Pencil size={14}/>编辑设计目标</button>}
           {canChat && <button type="button" className="gi-primary" onClick={onEdit}><SlidersHorizontal size={14}/>编辑参数</button>}
           {node.canRestore && <button type="button" className="gi-primary" onClick={() => onRestore(node.id)}><Pencil size={14}/>从此版本继续编辑</button>}
           {node.canBranch && <button type="button" onClick={() => onBranch(node.id)}><GitBranch size={14}/>存为分支</button>}
           {canContinue && <button type="button" className="gi-primary" onClick={() => onContinueCandidate(node)}><GitBranch size={14}/>以此图修订</button>}
-          {(canChat || node.attemptId) && <button type="button" onClick={() => onHandoff(node)}><ArrowRight size={14}/>{node.attemptId ? '查看轮次记录' : '新建生成轮次'}</button>}
+          {canChat && <button type="button" onClick={() => onHandoff(node)}><ArrowRight size={14}/>生成候选图</button>}
+          {node.attemptId && <button type="button" onClick={() => onHandoff(node)}><ArrowRight size={14}/>查看轮次记录</button>}
         </div>}
         <Relations node={node} edges={edges} nodes={nodes} onSelect={next => {
           followingRelation.current = true;
           onSelect(next);
         }} onRemoveReference={project ? onRemoveReference : undefined}/>
-        <Source node={node}/>
+        {node.kind !== 'evidence' && <Source node={node}/>}
       </div>
     </>}
     {currentDraft && chatFor === currentDraft.id && <div id={id + '-chat'} className="gi-chat-wrap" hidden={!chatting}>

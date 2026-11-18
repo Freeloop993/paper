@@ -77,6 +77,7 @@
 .gi-relation:hover, .gi-unlink:hover { background: #f2f6f3; }
 .gi-type-icon { display: grid; place-items: center; flex: none; width: 27px; height: 27px; border: 1px solid #dce5de; border-radius: 7px; background: #f1f5f2; color: #52685d; }
 .gi-type-image { background: #eef6f1; color: #32725e; }
+.gi-type-evidence { color: #80602d; background: #fbf6e7; border-color: #eadfc6; }
 .gi-type-edit, .gi-type-decision { color: #876631; background: #f8f4e9; border-color: #ece4d2; }
 .gi-type-brief, .gi-type-note { color: #786084; background: #f4f0f5; border-color: #e9e0ec; }
 .gi-relation-text { flex: 1; min-width: 0; overflow-wrap: anywhere; }

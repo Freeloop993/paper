@@ -8,6 +8,7 @@ import { useDroneStore } from './store/droneStore';
 import { frameRules } from './design/design';
 import { parseImported } from './design/exporters';
 import type { ParameterGroup } from './types/DroneParameters';
+import { recoverDesignGenerations } from './design/generation';
 
 function useWide() {
   const query = '(min-width: 1180px)';
@@ -56,8 +57,8 @@ const App: React.FC = () => {
   const [board, setBoard] = useState<BoardId>(() => {
     if (hash.board) return hash.board;
     if (hash.step && hash.step!=='canvas') return 'project';
-    try { return localStorage.getItem('workflow/last-board')==='project' ? 'project' : 'history'; }
-    catch { return 'history'; }
+    try { return localStorage.getItem('workflow/last-board')==='history' ? 'history' : 'project'; }
+    catch { return 'project'; }
   });
   const [handoff, setHandoff] = useState<HandoffEntry>();
   const [focusNode,setFocusNode]=useState(hash.node);
@@ -78,6 +79,7 @@ const App: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => { window.scrollTo(0, 0); }, [step]);
+  useEffect(() => { void recoverDesignGenerations().catch(console.error); }, []);
   useEffect(() => {
     const sync = () => {
       const next=readHash();
@@ -106,7 +108,8 @@ const App: React.FC = () => {
 
   return (
     <div className="canvas-app-shell" id="drone-configurator-app" data-layout={wide ? 'wide' : 'narrow'} data-step-active={step}>
-      <CanvasTopBar step={step} board={board} onBoard={next=>navigate('canvas',next)} onStep={next=>navigate(next)}/>
+      <CanvasTopBar step={step} board={board} onBoard={next=>navigate('canvas',next)} onStep={next=>navigate(next)}
+        onGenerate={()=>navigate('handoff','project',{generate:crypto.randomUUID()})}/>
       <div className="canvas-app-body">
       <CanvasRail step={step} onStep={next=>navigate(next)} />
       <main className="canvas-app-main">

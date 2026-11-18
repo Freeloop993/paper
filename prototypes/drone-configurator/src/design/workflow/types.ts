@@ -3,7 +3,7 @@ import type { Snapshot } from '../../store/droneStore';
 export type WorkflowBoard = 'history' | 'project';
 export interface WorkflowNode extends Partial<Snapshot> {
   id: string;
-  kind: 'brief' | 'spec' | 'run' | 'image' | 'decision' | 'edit' | 'note';
+  kind: 'brief' | 'spec' | 'run' | 'image' | 'decision' | 'edit' | 'note' | 'evidence';
   title: string;
   subtitle?: string;
   detail?: string;

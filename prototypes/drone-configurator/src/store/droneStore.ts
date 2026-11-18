@@ -284,6 +284,12 @@ export function createTaskStore(task: Task) {
       },
       recordBrief: entry => {
         const { intent } = get();
+        if (entry.action === 'reference') {
+          intentChange('intent.reference', '记录部件比较问题', '', entry.text, {
+            ...intent, log: [...intent.log, {action:'brief', at:entry.at, brief:entry}],
+          });
+          return;
+        }
         const apply = entry.action === 'accept' || entry.action === 'custom';
         const note = apply ? entry.text : entry.action === 'revoke' ? '' : intent.note;
         const cards = entry.action === 'accept' ? entry.evidence.filter(e => e.role === 'example').map(e => e.id)
@@ -303,8 +309,13 @@ export function createTaskStore(task: Task) {
         if (!last) return;
         const restored = snap(last);
         if (JSON.stringify(restored.intent) !== JSON.stringify(s.intent)) {
-          restored.intent.log = [...s.intent.log, {action:'undo', at:stamp(),
-            value:'恢复简报 · '+(restored.intent.note || '未指定意图')+' · 依据 '+(restored.intent.cards.join('、') || '无')}];
+            // Preserve the goal audit while restoring the snapshot's exact set of active part references.
+            const references = new Map(restored.intent.log.filter(row => row.brief?.action === 'reference')
+              .map(row => [JSON.stringify(row.brief), row]));
+            const log = s.intent.log.filter(row =>
+              row.brief?.action !== 'reference' || references.delete(JSON.stringify(row.brief)));
+            restored.intent.log = [...log, ...references.values(), {action:'undo', at:stamp(),
+              value:'恢复设计目标 · '+(restored.intent.note || '未指定意图')+' · 依据 '+(restored.intent.cards.join('、') || '无')}];
         }
         set({ ...restored, history: s.history.slice(0, -1), lastChange: null });
       },

@@ -1,53 +1,38 @@
 import { useEffect, useRef, useState } from 'react';
-import { Camera, FileClock, FolderInput, Save } from 'lucide-react';
+import { FileClock, FolderInput, Save } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
 import { compilePrompt } from '../../design/partPrompt';
 import { computeLayout, frameRules } from '../../design/design';
 import { attachReceipt, exportRecord, freezeAttempt, listAttempts, markPresented, recordDecision, type DecisionKind, type FrozenAttempt } from '../../design/candidateRecords';
 import ModelDispatch from './ModelDispatch';
 import HistoryReplay from './HistoryReplay';
+import CandidatePreview from './CandidatePreview';
 
 const input='mt-1 w-full rounded-lg border border-line bg-white px-3 py-2 text-sm text-ink';
 const stamp=(value:string)=>new Date(value).toLocaleString('zh-CN',{hour12:false});
 const labels:Record<DecisionKind,string>={accept:'采纳',reject:'驳回',restore:'回选',manual:'人工深化',stop:'结束本轮'};
 const receiptInputs=[['request','实发请求 JSON'],['ack','入队回执 JSON'],['history','运行历史 JSON']] as const;
 
-function CandidatePreview({candidate,onVisible,onError}:{candidate:FrozenAttempt['candidates'][number];onVisible:()=>Promise<void>;onError:(msg:string)=>void}){
-  const [visible,setVisible]=useState(false),[url,setUrl]=useState('');
-  const [loaded,setLoaded]=useState(false),img=useRef<HTMLImageElement>(null);
-  const [original]=useState(()=>candidate.file); // The parent keys this component by immutable candidate ID.
-  const callback=useRef(onVisible),err=useRef(onError);callback.current=onVisible;err.current=onError;
-  useEffect(()=>{if(!visible)return;const u=URL.createObjectURL(original);setUrl(u);return()=>URL.revokeObjectURL(u);},[visible,original]);
-  useEffect(()=>{
-    if(!visible||!loaded||candidate.firstShown||!img.current)return;
-    let seen=false,inside=false;
-    const check=()=>{if(!seen&&inside&&document.visibilityState==='visible'){seen=true;callback.current().catch(e=>{err.current(String(e));seen=false;});}};
-    const observer=new IntersectionObserver(([entry])=>{inside=entry.isIntersecting;check();});
-    observer.observe(img.current);document.addEventListener('visibilitychange',check);
-    return()=>{observer.disconnect();document.removeEventListener('visibilitychange',check);};
-  },[visible,loaded,candidate.firstShown]);
-  return <div>{visible&&url?<img ref={img} src={url} alt={'已收到的候选 '+candidate.name} className="mt-2 max-h-72 w-full rounded-lg object-contain" onLoad={()=>setLoaded(true)} onError={()=>err.current('图片无法显示。')}/>:<button className="btn-ghost" data-show-candidate={candidate.id} onClick={()=>setVisible(true)}><Camera size={14}/>查看候选</button>}</div>;
-}
-
 function AttemptView({attempt,onParent}:{attempt:FrozenAttempt;onParent:(id:string)=>void}){
   const [files,setFiles]=useState<Partial<Record<'request'|'ack'|'history',File>>>({}),[outputs,setOutputs]=useState<File[]>([]);
   const [picked,setPicked]=useState(''),[kind,setKind]=useState<DecisionKind>('accept'),[reason,setReason]=useState('');
   const [manual,setManual]=useState<File>(),[message,setMessage]=useState(''),[busy,setBusy]=useState(false);
   async function act(fn:()=>Promise<void>,success:string){if(busy)return;setBusy(true);try{await fn();setMessage(success);}catch(e){setMessage(e instanceof Error?e.message:String(e));}finally{setBusy(false);}}
-  const done=!!(attempt.receipt||attempt.failure);
+  const done=!!(attempt.h3||attempt.receipt||attempt.failure);
   const choice=attempt.candidates.find(c=>c.id===picked);
   return <div className="mt-3 rounded-xl border border-line bg-paper p-3 sm:p-4" data-testid="attempt-detail">
     <p className="break-all text-sm font-semibold">{attempt.variantName} · {frameRules[attempt.config.parameters.frame.frame_type].zh} · {attempt.config.layout.hubs.length} 个轴位</p>
     <p className="mt-1 text-sm">{attempt.goal}</p><p className="text-xs text-ink-soft">保持项 · {attempt.keep||'未指定'} / {attempt.condition==='free'?'自由提示':'结构化提示'} / {stamp(attempt.createdAt)}</p>
     <details className="mt-2 text-xs"><summary className="cursor-pointer font-medium">冻结输入与编号</summary><p className="mt-2 break-all font-mono">{attempt.id}</p><p className="mt-1 break-all">条件图 SHA-256 · {attempt.config.reference_image.png_sha256}</p><p className="mt-1">父图 · {attempt.parentId||'无'}</p><p className="mt-2 whitespace-pre-wrap break-words" lang="en">{attempt.confirmedText}</p></details>
     {!done&&<ModelDispatch key={attempt.id} attempt={attempt}/>}
-    {!done&&<details className="mt-2 rounded-xl border border-line bg-white p-3"><summary className="cursor-pointer text-sm font-semibold">导入外部回执</summary><p className="mt-2 text-xs text-ink-soft">选取本轮的实际请求、原始作业回执、运行历史及全部回图。文件名沿用后端导出。</p>
+    {!done&&<details className="mt-2 rounded-xl border border-line bg-white p-3"><summary className="cursor-pointer text-sm font-semibold">导入外部回执</summary><p className="mt-2 text-xs text-ink-soft">选取旧版 ComfyUI 本轮的实际请求、原始作业回执、运行历史及全部回图。文件名沿用后端导出。</p>
       <div className="mt-2 grid gap-2 sm:grid-cols-2">{receiptInputs.map(([k,title])=><label className="min-w-0 text-xs" key={k}>{title}<input className={input} type="file" accept=".json,application/json" data-receipt-file={k} onChange={e=>setFiles({...files,[k]:e.target.files?.[0]})}/></label>)}
         <label className="min-w-0 text-xs">全部候选 PNG<input className={input} type="file" accept=".png,image/png" multiple data-receipt-file="outputs" onChange={e=>setOutputs(Array.from(e.target.files??[]))}/></label></div>
       <button data-attach-receipt className="btn-dark mt-3" disabled={busy||!files.request||!files.ack||!files.history||!outputs.length}
         onClick={()=>void act(()=>attachReceipt(attempt.id,files.request!,files.ack!,files.history!,outputs),'已核对全部候选。')}><FolderInput size={14}/>核对并归档</button></details>}
     {attempt.failure&&<p className="mt-3 text-sm text-rose-700">后端已确认失败或中止 · {attempt.failure.status}，原始回执已归档。</p>}
-    {attempt.receipt&&<div className="mt-3"><p className="text-sm font-semibold">候选 · {attempt.candidates.length}</p><p className="mt-1 text-xs text-ink-soft">{attempt.dispatch?'已登记实发':'外部原件导入'} · {attempt.receipt?.inputVerification}</p>
+    {attempt.h3&&<p className="mt-3 text-sm">MiniMax H3 Image · {attempt.h3.traceId ? '供应商追踪号 '+attempt.h3.traceId : '本机轮次 '+attempt.id}{attempt.h3.issue && ' · '+attempt.h3.issue}</p>}
+    {(attempt.receipt||attempt.h3?.status==='succeeded')&&<div className="mt-3"><p className="text-sm font-semibold">候选 · {attempt.candidates.length}</p><p className="mt-1 text-xs text-ink-soft">{attempt.h3?'已核对供应商记录、布局图、所附父图和候选原图摘要。':(attempt.dispatch?'已登记实发':'外部原件导入')+' · '+attempt.receipt?.inputVerification}</p>
       <div className="mt-2 grid gap-2 sm:grid-cols-2">{attempt.candidates.map(c=><div key={c.id} className="rounded-lg border border-line bg-white p-3"><div className="break-all text-xs font-medium">{c.name}</div><CandidatePreview candidate={c} onError={setMessage} onVisible={()=>markPresented(attempt.id,c.id)}/><p className="mt-1 text-xs text-ink-soft">{c.firstShown?'首次展示 '+stamp(c.firstShown):'首次展示待登记'}</p></div>)}</div>
     </div>}
     <div className="mt-3 grid gap-2 sm:grid-cols-2"><label className="text-xs">取舍<select className={input} value={kind} data-decision-kind onChange={e=>setKind(e.target.value as DecisionKind)}>{Object.entries(labels).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></label>
