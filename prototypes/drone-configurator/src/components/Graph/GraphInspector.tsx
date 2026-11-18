@@ -1,17 +1,14 @@
-import { useId, useLayoutEffect, useRef, useState } from 'react';
+import { useLayoutEffect, useRef, useState } from 'react';
 import {
   ArrowDownRight, ArrowRight, ArrowUpLeft, CheckCheck, ChevronRight, ExternalLink,
   FileText, GitBranch, Image as ImageIcon, Layers, Link2, LockKeyhole, Maximize2,
-  MessageCircle, PanelRight, Pencil, Quote, SlidersHorizontal, StickyNote, Unlink, Workflow, X,
+  PanelRight, Pencil, Quote, SlidersHorizontal, Sparkles, StickyNote, Trash2, Unlink, Workflow, X,
 } from 'lucide-react';
 import { computeLayout } from '../../design/design';
 import { fields, fieldStatus, isRelevant, statusLabel } from '../../design/fields';
 import type { WorkflowBoard, WorkflowEdge, WorkflowNode } from '../../design/workflowGraph';
 import WorkflowImage from '../../design/workflow/WorkflowImage';
-import { useDroneStore } from '../../store/droneStore';
 import { GuideView } from '../Studio/Stage';
-import { chatContext, chatScopeKey } from '../../design/designChatAudit';
-import DesignChat, { type WidthPreview } from '../Studio/DesignChat';
 import './graph-inspector.css';
 
 interface GraphInspectorProps {
@@ -22,10 +19,9 @@ interface GraphInspectorProps {
   onSelect: (nodeId: string) => void;
   onBranch: (sourceId: string) => void;
   onRestore: (nodeId: string) => void;
-  onEdit: () => void;
-  onEditBrief?: () => void;
   onHandoff: (node?: WorkflowNode) => void;
-  onContinueCandidate?: (node: WorkflowNode) => void;
+  onGenerateFrom?: (node: WorkflowNode) => void;
+  onRemove?: (node: WorkflowNode) => void;
   onRemoveReference?: (edgeId: string) => void;
   onCopyReference?: (node: WorkflowNode) => void;
 }
@@ -41,7 +37,7 @@ const kinds = {
   note: { title: '笔记', icon: StickyNote },
 } as const;
 
-function Picture({ node }: { node: WorkflowNode }) {
+export function Picture({ node }: { node: WorkflowNode }) {
   const dialog = useRef<HTMLDialogElement>(null);
   const [open, setOpen] = useState(false);
   if (!node.image && !node.parameters) return null;
@@ -69,7 +65,7 @@ function Picture({ node }: { node: WorkflowNode }) {
   </>;
 }
 
-function Relations({ node, nodes, edges, onSelect, onRemoveReference }: Pick<GraphInspectorProps, 'nodes'|'edges'|'onSelect'|'onRemoveReference'> & { node: WorkflowNode }) {
+export function Relations({ node, nodes, edges, onSelect, onRemoveReference }: Pick<GraphInspectorProps, 'nodes'|'edges'|'onSelect'|'onRemoveReference'> & { node: WorkflowNode }) {
   const linked = new Map(nodes.map(item => [item.id, item]));
   const connections = edges.filter(edge => (edge.source === node.id && linked.has(edge.target)) || (edge.target === node.id && linked.has(edge.source)));
   return <section className="gi-section" aria-label="节点关系">
@@ -99,34 +95,7 @@ function Relations({ node, nodes, edges, onSelect, onRemoveReference }: Pick<Gra
   </section>;
 }
 
-function WidthDiagram({ current, preview, length }: { current: number; preview: number; length: number }) {
-  const w = Math.max(current, preview);
-  const pad = Math.max(w, length) * .1;
-  return <figure className="gi-width-preview" data-testid="graph-width-preview">
-    <svg viewBox={[-w/2-pad, -length/2-pad, w+2*pad, length+2*pad].join(' ')}
-      role="img" aria-label={'机身顶视包络宽度由 ' + current + ' 毫米试调至 ' + preview + ' 毫米'}>
-      <rect x={-current/2} y={-length/2} width={current} height={length} fill="#e0e7e5" stroke="#7b8e87" vectorEffect="non-scaling-stroke"/>
-      <rect x={-preview/2} y={-length/2} width={preview} height={length} fill="#107c6822" stroke="#087663" strokeWidth="2" strokeDasharray="4 3" vectorEffect="non-scaling-stroke"/>
-    </svg>
-    <figcaption><strong>机身顶视包络</strong><span>实线 {current} mm · 虚线 {preview} mm</span></figcaption>
-  </figure>;
-}
-
-function DraftChat() {
-  const draft = useDroneStore();
-  const [preview, setPreview] = useState<WidthPreview | null>(null);
-  const scopeKey = chatScopeKey(draft);
-  const context = chatContext(draft, scopeKey, 'fuselage', 'top');
-  const { width, length } = draft.parameters.fuselage.fuselage_dimensions_mm;
-  const visible = preview?.version === context.version ? preview : null;
-  return <div className="gi-chat">
-    {visible && <WidthDiagram current={width} preview={visible.width} length={length}/>}
-    <DesignChat key={JSON.stringify([scopeKey, context.task, context.frame])} context={context} scopeKey={scopeKey}
-      scopeLabel={'机身顶视 · 当前宽度 ' + width + ' mm'} preview={visible} onPreview={setPreview}/>
-  </div>;
-}
-
-function Source({ node }: { node: WorkflowNode }) {
+export function Source({ node }: { node: WorkflowNode }) {
   const facts = node.facts ?? [];
   if (!node.source && !node.sourceUrl && !facts.length && !node.createdAt) return null;
   const stamp = node.createdAt && new Date(node.createdAt);
@@ -158,11 +127,8 @@ function Parameters({ node }: { node: WorkflowNode }) {
   </details>;
 }
 
-export default function GraphInspector({ node, nodes, edges, boardId, onSelect, onBranch, onRestore, onEdit, onEditBrief, onHandoff, onContinueCandidate, onRemoveReference, onCopyReference }: GraphInspectorProps) {
-  const { activeVariant } = useDroneStore();
-  const [chatFor, setChatFor] = useState<string | null>(null);
-  const [showChat, setShowChat] = useState(false);
-  const id = useId();
+/** 画布上没有专用面板的卡片（证据、保存的版本、参考图、取舍、历史档案）的通用详情。 */
+export default function GraphInspector({ node, nodes, edges, boardId, onSelect, onBranch, onRestore, onHandoff, onGenerateFrom, onRemove, onRemoveReference, onCopyReference }: GraphInspectorProps) {
   const title = useRef<HTMLHeadingElement>(null);
   const followingRelation = useRef(false);
   useLayoutEffect(() => {
@@ -170,38 +136,28 @@ export default function GraphInspector({ node, nodes, edges, boardId, onSelect, 
     followingRelation.current = false;
   }, [node?.id]);
   const project = boardId === 'project';
-  const currentDraft = project ? nodes.find(item => item.isDraft && item.variantId === activeVariant) : undefined;
-  const canChat = !!node && node.id === currentDraft?.id;
-  const chatting = canChat && showChat && chatFor === node?.id;
   const KindIcon = node ? kinds[node.kind].icon : PanelRight;
-  const canContinue = project && node?.kind === 'image' && node.candidateId && node.attemptId && onContinueCandidate;
   return <aside className="graph-inspector" aria-label="所选节点" data-testid="graph-inspector">
-    {!node ? <div className="gi-empty"><Layers size={25}/><p>选择一个节点查看详情</p></div> : <>
+    {!node ? <div className="gi-empty"><Layers size={25}/><p>选择一张卡片查看详情</p></div> : <>
       <header className="gi-node-heading">
         <div className="gi-kind"><KindIcon size={13}/>{kinds[node.kind].title}{!project && <small><LockKeyhole size={10}/>只读档案</small>}</div>
         <h2 ref={title} tabIndex={-1}>{node.title}</h2>
         {node.subtitle && node.subtitle !== node.title && <p>{node.subtitle}</p>}
       </header>
-      {canChat && <div className="gi-tabs" aria-label="节点视图">
-        <button type="button" data-testid="graph-detail-tab" aria-controls={id + '-details'} aria-pressed={!chatting} onClick={() => setShowChat(false)}><Layers size={14}/>详情</button>
-        <button type="button" data-testid="graph-chat-tab" aria-controls={id + '-chat'} aria-pressed={chatting} onClick={() => { setChatFor(node.id); setShowChat(true); }}><MessageCircle size={14}/>设计对话</button>
-      </div>}
-      <div key={node.id} id={id + '-details'} className="gi-scroll" hidden={chatting}>
+      <div key={node.id} className="gi-scroll">
         <Picture node={node}/>
-        {node.detail && node.detail !== node.subtitle && <p className="gi-description">{node.detail}</p>}
+        {node.detail && node.detail !== node.subtitle && !node.editable && <p className="gi-description">{node.detail}</p>}
         <Parameters node={node}/>
         {node.kind === 'evidence' && <Source node={node}/>}
         {!project && node.image && onCopyReference && <div className="gi-actions">
           <button type="button" onClick={() => onCopyReference(node)}><Link2 size={14}/>引用到我的项目</button>
         </div>}
         {project && <div className="gi-actions">
-          {node.kind === 'brief' && node.variantId === activeVariant && onEditBrief && <button type="button" className="gi-primary" onClick={onEditBrief}><Pencil size={14}/>编辑设计目标</button>}
-          {canChat && <button type="button" className="gi-primary" onClick={onEdit}><SlidersHorizontal size={14}/>编辑参数</button>}
           {node.canRestore && <button type="button" className="gi-primary" onClick={() => onRestore(node.id)}><Pencil size={14}/>从此版本继续编辑</button>}
           {node.canBranch && <button type="button" onClick={() => onBranch(node.id)}><GitBranch size={14}/>存为分支</button>}
-          {canContinue && <button type="button" className="gi-primary" onClick={() => onContinueCandidate(node)}><GitBranch size={14}/>以此图修订</button>}
-          {canChat && <button type="button" onClick={() => onHandoff(node)}><ArrowRight size={14}/>生成候选图</button>}
+          {node.image && node.removable && onGenerateFrom && <button type="button" className="gi-primary" onClick={() => onGenerateFrom(node)}><Sparkles size={14}/>以此图生成</button>}
           {node.attemptId && <button type="button" onClick={() => onHandoff(node)}><ArrowRight size={14}/>查看轮次记录</button>}
+          {(node.removable || node.editable) && onRemove && <button type="button" onClick={() => onRemove(node)}><Trash2 size={14}/>从画布移除</button>}
         </div>}
         <Relations node={node} edges={edges} nodes={nodes} onSelect={next => {
           followingRelation.current = true;
@@ -210,8 +166,5 @@ export default function GraphInspector({ node, nodes, edges, boardId, onSelect, 
         {node.kind !== 'evidence' && <Source node={node}/>}
       </div>
     </>}
-    {currentDraft && chatFor === currentDraft.id && <div id={id + '-chat'} className="gi-chat-wrap" hidden={!chatting}>
-      <DraftChat key={currentDraft.id}/>
-    </div>}
   </aside>;
 }

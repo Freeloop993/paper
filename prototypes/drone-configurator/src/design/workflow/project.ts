@@ -10,6 +10,7 @@ import type { BoardRecords } from './workspaceRecords';
 
 export interface ProjectDraft extends Snapshot { task: Task; variants: Variant[]; activeVariant: string }
 export const draftId = (task: Task, variant: string) => 'draft-' + task + '-' + variant;
+export const runNodeId = (id: string) => 'run-' + id;
 const briefId = (task: Task, variant: string) => 'brief-' + task + '-' + variant;
 
 export function nodeSnapshot(node: WorkflowNode): Snapshot {
@@ -30,7 +31,7 @@ export function buildProject(draft: ProjectDraft, attempts: FrozenAttempt[], rec
   }
   for (const img of records.images) {
     const history = img.historyNodeId ? historyGraph.nodes.find(n => n.id === img.historyNodeId) : undefined;
-    nodes.push({ id: img.id, kind: 'image', title: img.title, createdAt: img.createdAt,
+    nodes.push({ id: img.id, kind: 'image', removable: true, title: img.title, createdAt: img.createdAt,
       source: history?.source ?? '设计者上传的参考图', sourceUrl: history?.sourceUrl,
       subtitle: history ? '历史案例参考图' : '上传参考图', image: history?.image ?? images.get(img.id),
       facts: history ? [{ label: '历史节点', value: history.id }, { label: '来源图', value: history.title }]
@@ -65,6 +66,23 @@ export function buildProject(draft: ProjectDraft, attempts: FrozenAttempt[], rec
     edges.push(relation(brief, spec, '设计目标', 'reference'));
     if (base) edges.push(relation(base, spec, '继续编辑'));
   }
+  // 便签和待生成步骤由设计者直接放在画布上。
+  for (const note of records.notes)
+    nodes.push({ id: note.id, kind: 'note', editable: true, recordId: note.id, title: '便签', detail: note.text,
+      source: '设计者写在画布上的便签', createdAt: note.createdAt });
+  const frozen = new Set(attempts.map(a => a.id));
+  const present = new Set(nodes.map(n => n.id));
+  for (const step of records.steps) {
+    if (frozen.has(step.id)) continue; // 已提交，由同一编号的生成轮次接替。
+    const variant = draft.variants.find(v => (v.workflowKey ?? v.id) === step.variantKey);
+    if (!variant) continue;
+    const id = runNodeId(step.id), spec = draftId(draft.task, step.variantKey);
+    nodes.push({ id, kind: 'run', pending: true, progress: 'pending', recordId: step.id, variantId: variant.id,
+      variantScope: draft.task + '/' + step.variantKey, title: '生成效果图', subtitle: '待生成', detail: step.goal,
+      parentId: spec, source: '画布上尚未提交的生成步骤', createdAt: step.createdAt });
+    edges.push(relation(spec, id, '布局与文字'));
+    if (step.parentNodeId && present.has(step.parentNodeId)) edges.push(relation(step.parentNodeId, id, '参考图', 'reference'));
+  }
   // A later adoption can connect the same pair as an earlier manual reference. Preserve both records.
   const structuralGraph = { nodes, edges: [...edges] };
   appendEvidence(graph, records.references, attempts);
@@ -79,4 +97,24 @@ export function buildProject(draft: ProjectDraft, attempts: FrozenAttempt[], rec
     else if (strictReferences) throw new Error('此操作与已有手动引用冲突，请先撤回相关连线。' + problem);
   }
   return graph;
+}
+
+/**
+ * 设计者视图：收起冻结规格和条件图这类研究留档，把每一轮生成直接接在它所属的造型草稿后面。
+ * 留档节点和它们的连线仍在完整图里，打开「研究记录」即可查看。
+ */
+export function designerView(graph: WorkflowGraph, task: Task): WorkflowGraph {
+  const hidden = new Set(graph.nodes.filter(n => n.research).map(n => n.id));
+  if (!hidden.size) return graph;
+  const ids = new Set(graph.nodes.map(n => n.id));
+  const edges = graph.edges.filter(e => !hidden.has(e.source) && !hidden.has(e.target));
+  for (const run of graph.nodes) {
+    if (run.kind !== 'run' || run.pending || !run.variantScope?.startsWith(task + '/')) continue;
+    const spec = draftId(task, run.variantScope.slice(task.length + 1));
+    if (ids.has(spec)) edges.push(relation(spec, run.id, '生成'));
+  }
+  const linked = new Set(edges.flatMap(e => [e.source, e.target]));
+  // 只为留档节点服务的证据卡和对照问题随之收起。
+  const nodes = graph.nodes.filter(n => !hidden.has(n.id) && (linked.has(n.id) || n.editable || (n.kind !== 'evidence' && !n.id.startsWith('part-reference-'))));
+  return { nodes, edges };
 }

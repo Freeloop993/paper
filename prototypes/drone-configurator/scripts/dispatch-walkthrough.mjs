@@ -53,13 +53,17 @@ try {
    throw new Error('Unexpected network path '+u.pathname);
  });
  await page.goto(url);
- await page.locator('[data-step=insight]').click();
+  // 旧入口落在同一块画布上：insight 选中目标卡片，studio 选中造型卡片，handoff 打开研究详情与导出。
+  const go = async step => {
+    if (step === 'handoff') { await page.locator('[data-step=handoff]').click(); await page.locator('[data-handoff-tab=candidates]').click(); return; }
+    await page.evaluate(next => { location.hash = 'step=' + next + '&board=project&v=' + Date.now(); }, step);
+    await page.locator('[data-testid=step-panel][data-panel-mode=' + (step === 'insight' ? 'goal' : 'design') + ']').waitFor();
+  };
+ await go('insight');
  await page.locator('.goal-context > summary').click();
  await page.locator('[data-testid=mission]').selectOption('agricultural_spraying');
  await page.locator('[data-testid=brief-frame]').selectOption('Radial Hex');
- await page.locator('[data-step=handoff]').click();
- await page.locator('[data-testid=handoff-advanced] > summary').click();
- await page.locator('[data-handoff-tab=candidates]').click();
+ await go('handoff');
  for (const condition of ['structured','free']){
    await page.locator('[data-attempt-goal]').fill('软件验收 · 农业六旋外观');
    await page.getByLabel('输入方式').selectOption(condition);

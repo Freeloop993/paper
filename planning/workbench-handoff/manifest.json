@@ -204,7 +204,7 @@
     {
       "path": "planning/workbench-handoff/literature/README.md",
       "format": "text-lf",
-      "sha256": "283c046aa4883e07a15f810ed38e5296711e5ff2da5217e82fec783dea6cf364"
+      "sha256": "1eff053bc6f4afc8e2809869ffb69ba35e76fefd0a6a1d9e5e5553e05a165923"
     },
     {
       "path": "planning/workbench-handoff/literature/restore_assets.py",
@@ -232,9 +232,14 @@
       "sha256": "ad9c3c9567117a49c320a3a1deeaccbaf0bf94a5ce95883d4f17064bbf836177"
     },
     {
+      "path": "planning/workbench-handoff/literature/画布式工作流拆解.md",
+      "format": "text-lf",
+      "sha256": "25730f19e061d97ff5d60d71df1c51c039781e5d29ac038160a17d9ceaffc934"
+    },
+    {
       "path": "planning/workbench-handoff/README.md",
       "format": "text-lf",
-      "sha256": "493c0e44ff683cc3d48d3cd53455f22a199f1e35a90dcd06972f89685fbaa867"
+      "sha256": "084057aefb5a47d39c9afdb0608556fa88792a5eb0337f73d1b22096937fa82c"
     },
     {
       "path": "planning/workbench-handoff/v3.2-review.md",
@@ -249,22 +254,22 @@
     {
       "path": "prototypes/drone-configurator/package.json",
       "format": "text-lf",
-      "sha256": "786ea30549e6c172bb92769558b35baff6b1875bc950dbf4b2b80d1aaa0be8d6"
+      "sha256": "4526b9fe2d52d77e93adc97a1d1ea7013f80356f3277c6e3c8512c63e968ce4b"
     },
     {
       "path": "prototypes/drone-configurator/package-lock.json",
       "format": "text-lf",
-      "sha256": "4d918d02c67956e9f2cedfc2727fa8b5a14e1fa53c51e55994111185461f0560"
+      "sha256": "50c02f08e7ce3b1f026bd3f11c7c0b51ae84515a9ea4fd6d25355dbb0860c8ba"
     },
     {
       "path": "prototypes/drone-configurator/README.md",
       "format": "text-lf",
-      "sha256": "fd77063122b528e7f58ab2cc581f1f0fa8b566e4a7dac25e60426bbad0fdb655"
+      "sha256": "e13bfbd17bf0e8a9088f17dda6241957e9a6374400a592e4d81a417e1c0774cb"
     },
     {
       "path": "prototypes/drone-configurator/configurator-offline.zip",
       "format": "binary",
-      "sha256": "6a74920c166b9293f9b289029de48db32fc96d562a5e5fac8b9c659f93e5187e"
+      "sha256": "b6a4dcd71dd2882f9eac29b12b0d6a7dba3a257204a8e3ce0bfb9350e6c7fb05"
     },
     {
       "path": "prototypes/drone-configurator/src/data/evidenceCards.json",

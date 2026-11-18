@@ -1,6 +1,6 @@
 // 画布：方案的实时顶视图。可以直接拖动电机轴心、机身边缘和桨盘边缘；点哪个部件，左侧就切到它的参数。
 // 轴心取自 computeLayout()，与导出的条件图、坐标和提示词布局句是同一组数。
-import React, { useEffect, useMemo, useRef, useState } from 'react';
+import React, { useEffect, useId, useMemo, useRef, useState } from 'react';
 import { useDroneStore } from '../../store/droneStore';
 import { computeLayout, frameRules, usesConsumerReferences, sideRotorAxes, type Layout } from '../../design/design';
 import { cameraView } from '../../design/checks';
@@ -50,8 +50,13 @@ const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v
 export const TopStage: React.FC<{
   active: ParameterGroup; onSelect: (g: ParameterGroup) => void; overlays: { dims: boolean; fov: boolean; hidden: boolean }; interactive?: boolean;
   previewWidth?: number;
-}> = ({ active, onSelect, overlays, interactive = true, previewWidth }) => {
-  const { parameters, pinned, setMany, intent } = useDroneStore();
+  /** 画布上并排的其他方向：按给定规格静态显示，不读取当前草稿。 */
+  source?: DroneParameters;
+}> = ({ active, onSelect, overlays, interactive = true, previewWidth, source }) => {
+  const store = useDroneStore();
+  const { setMany, intent } = store;
+  const parameters = source ?? store.parameters, pinned = source ? null : store.pinned;
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, '');
   const svg = useRef<SVGSVGElement>(null);
   const drag = useRef<Drag | null>(null);
   /** 拖动期间锁住画布比例，否则图一缩放，指针对应的毫米数跟着变，数值会越拖越大。 */
@@ -126,15 +131,15 @@ export const TopStage: React.FC<{
   })();
 
   return (
-    <svg ref={svg} viewBox={`${-half} ${-half} ${half * 2} ${half * 2}`} className="h-full w-full touch-none select-none" role="img" data-testid="top-view"
+    <svg ref={svg} viewBox={`${-half} ${-half} ${half * 2} ${half * 2}`} className="h-full w-full touch-none select-none" role="img" data-testid={source ? 'top-view-static' : 'top-view'}
       aria-label={`顶视图：${rule.zh}，横纵比 ${layout.W_over_L.toFixed(2)}`} onPointerMove={move} onPointerUp={end} onPointerCancel={end}>
       <defs>
-        <pattern id="stage-hatch" width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+        <pattern id={`stage-hatch-${uid}`} width="5" height="5" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
           <rect width="5" height="5" fill="#ffffff" /><line x1="0" y1="0" x2="0" y2="5" stroke="#cbd3df" strokeWidth="1.1" />
         </pattern>
-        <radialGradient id="stage-disc"><stop offset="0.55" stopColor={BLUE} stopOpacity="0.03" /><stop offset="1" stopColor={BLUE} stopOpacity="0.11" /></radialGradient>
-        <linearGradient id="stage-fov" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stopColor={VIOLET} stopOpacity="0.2" /><stop offset="1" stopColor={VIOLET} stopOpacity="0" /></linearGradient>
-        <filter id="stage-shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy={fs * 0.2} stdDeviation={fs * 0.35} floodColor={INK} floodOpacity="0.16" /></filter>
+        <radialGradient id={`stage-disc-${uid}`}><stop offset="0.55" stopColor={BLUE} stopOpacity="0.03" /><stop offset="1" stopColor={BLUE} stopOpacity="0.11" /></radialGradient>
+        <linearGradient id={`stage-fov-${uid}`} x1="0" y1="1" x2="0" y2="0"><stop offset="0" stopColor={VIOLET} stopOpacity="0.2" /><stop offset="1" stopColor={VIOLET} stopOpacity="0" /></linearGradient>
+        <filter id={`stage-shadow-${uid}`} x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy={fs * 0.2} stdDeviation={fs * 0.35} floodColor={INK} floodOpacity="0.16" /></filter>
       </defs>
 
       {/* 机头方向 */}
@@ -153,7 +158,7 @@ export const TopStage: React.FC<{
       )}
 
       {/* 相机视野（俯视近似） */}
-      {overlays.fov && accessories.has_camera_gimbal && <path d={wedge} fill="url(#stage-fov)" data-layer="fov" pointerEvents="none" />}
+      {overlays.fov && accessories.has_camera_gimbal && <path d={wedge} fill={`url(#stage-fov-${uid})`} data-layer="fov" pointerEvents="none" />}
 
       {/* 起落架：在机身下方，虚线标位置 */}
       {overlays.hidden && gear.landing_gear_style !== '无独立起落架' && (
@@ -177,7 +182,7 @@ export const TopStage: React.FC<{
           const bladeW = Math.max(2.4, propR * 0.11);
           return (
             <g key={h.id}>
-              <circle cx={h.x} cy={h.y} r={propR} fill="url(#stage-disc)" stroke={lit('propulsion') ? BLUE : '#a9bbdc'} strokeWidth={fs * 0.07} />
+              <circle cx={h.x} cy={h.y} r={propR} fill={`url(#stage-disc-${uid})`} stroke={lit('propulsion') ? BLUE : '#a9bbdc'} strokeWidth={fs * 0.07} />
               {propulsion.prop_guard === 'ring' && <circle cx={h.x} cy={h.y} r={propR + 4} fill="none" stroke={INK} strokeOpacity="0.7" strokeWidth={3.2} />}
               {Array.from({ length: blades }, (_, k) => (
                 <path key={k} d={`M0,0 Q${propR * 0.45},${-bladeW} ${propR},0 Q${propR * 0.45},${bladeW} 0,0 Z`} fill={INK} fillOpacity="0.86"
@@ -189,8 +194,8 @@ export const TopStage: React.FC<{
       </g>
 
       {/* 机身包络 */}
-      <g data-layer="body" filter="url(#stage-shadow)" {...pick('fuselage')}>
-        <path d={bodyPath(fuselage.fuselage_style, bw, bl)} fill={colour || 'url(#stage-hatch)'}
+      <g data-layer="body" filter={`url(#stage-shadow-${uid})`} {...pick('fuselage')}>
+        <path d={bodyPath(fuselage.fuselage_style, bw, bl)} fill={colour || `url(#stage-hatch-${uid})`}
           stroke={lit('fuselage') ? BLUE : INK} strokeWidth={fs * 0.13} strokeDasharray={styleOpen ? `${fs * 0.5} ${fs * 0.32}` : undefined} />
       </g>
       <g pointerEvents="none" stroke={INK} strokeOpacity="0.7" fill="none" strokeWidth={fs * 0.08}>

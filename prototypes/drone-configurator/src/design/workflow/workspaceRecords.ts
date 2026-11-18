@@ -13,12 +13,18 @@ export interface Branch {
 }
 type ImageMaterial = { file: File; historyNodeId?: never } | { file?: never; historyNodeId: string };
 export type Attachment = { id: string; title: string; createdAt: string } & ImageMaterial;
+/** 设计者直接放到画布上的便签。 */
+export interface StickyNote { id: string; text: string; createdAt: string }
+/** 已放到画布、尚未提交的生成步骤。提交后由同一编号的冻结轮次接替。 */
+export interface PendingStep { id: string; variantKey: string; parentNodeId?: string; goal: string; createdAt: string }
 export interface BoardRecords {
   branches: Branch[];
   images: Attachment[];
   references: WorkflowEdge[];
+  notes: StickyNote[];
+  steps: PendingStep[];
 }
-export const emptyRecords = (): BoardRecords => ({ branches: [], images: [], references: [] });
+export const emptyRecords = (): BoardRecords => ({ branches: [], images: [], references: [], notes: [], steps: [] });
 
 const table = 'boards';
 async function database() {
@@ -40,7 +46,8 @@ async function access(task: Task, update?: (records: BoardRecords) => void) {
     let records: BoardRecords;
     let cause: unknown;
     request.onsuccess = () => {
-      records = request.result ?? emptyRecords();
+      // 早先保存的画布没有便签和待生成步骤。
+      records = { ...emptyRecords(), ...(request.result as Partial<BoardRecords> | undefined) };
       if (!update) return;
       try {
         update(records);

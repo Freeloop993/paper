@@ -3,7 +3,7 @@ import { DroneStoreContext, type Snapshot } from '../store/droneStore';
 import { listAttempts, type FrozenAttempt } from './candidateRecords';
 import { attemptImages } from './workflow/attempts';
 import { historyGraph } from './workflow/history';
-import { buildProject, nodeSnapshot, type ProjectDraft } from './workflow/project';
+import { buildProject, designerView, nodeSnapshot, type ProjectDraft } from './workflow/project';
 import { referenceProblem, type WorkflowBoard, type WorkflowNode } from './workflow/types';
 import { emptyRecords, newWorkflowId, readRecords, updateRecords, workflowChannel } from './workflow/workspaceRecords';
 
@@ -49,7 +49,7 @@ function editableVariant(draft: ProjectDraft, node: WorkflowNode) {
 }
 function message(error: unknown) { return error instanceof Error ? error.message : String(error); }
 
-export function useWorkflowGraph(board: WorkflowBoard) {
+export function useWorkflowGraph(board: WorkflowBoard, research = false) {
   const bound = useContext(DroneStoreContext);
   const draft = bound(), task = draft.task;
   const [attempts, setAttempts] = useState<FrozenAttempt[]>([]);
@@ -57,8 +57,9 @@ export function useWorkflowGraph(board: WorkflowBoard) {
   const [loading, setLoading] = useState(board === 'project');
   const [error, setError] = useState<string | null>(null);
   const images = useImages(attempts, records);
-  const graph = useMemo(() => board === 'history' ? historyGraph : buildProject(draft, attempts, records, images),
+  const full = useMemo(() => board === 'history' ? historyGraph : buildProject(draft, attempts, records, images),
     [board, draft, attempts, records, images]);
+  const graph = useMemo(() => board === 'history' || research ? full : designerView(full, task), [board, research, full, task]);
 
   useEffect(() => {
     setError(null);
@@ -191,5 +192,70 @@ export function useWorkflowGraph(board: WorkflowBoard) {
     }));
   }
 
-  return { ...graph, loading, error, saveBranch, restoreSnapshot, addImage, copyHistoryImage, addReference, removeReference };
+  /** 把一张公开证据卡放到画布上，并连到指定节点（通常是设计目标）。 */
+  async function pinEvidence(cardId: string, targetId: string) {
+    projectOnly();
+    const source = 'evidence-' + cardId, id = newWorkflowId('link');
+    setRecords(await updateRecords(task, latest => {
+      if (latest.references.some(e => e.source === source && e.target === targetId)) return;
+      latest.references.push({ id, source, target: targetId, label: '参考依据', kind: 'manual', removable: true });
+    }));
+    return source;
+  }
+  async function removeImage(id: string) {
+    projectOnly();
+    setRecords(await updateRecords(task, latest => {
+      latest.images = latest.images.filter(img => img.id !== id);
+      latest.references = latest.references.filter(e => e.source !== id && e.target !== id);
+      for (const step of latest.steps) if (step.parentNodeId === id) delete step.parentNodeId;
+    }));
+  }
+
+  async function addNote(text = '') {
+    projectOnly();
+    const id = newWorkflowId('note');
+    setRecords(await updateRecords(task, latest => { latest.notes.push({ id, text, createdAt: new Date().toISOString() }); }));
+    return id;
+  }
+  async function updateNote(id: string, text: string) {
+    projectOnly();
+    setRecords(await updateRecords(task, latest => {
+      const note = latest.notes.find(n => n.id === id);
+      if (note) note.text = text.slice(0, 2000);
+    }));
+  }
+  async function removeNote(id: string) {
+    projectOnly();
+    setRecords(await updateRecords(task, latest => {
+      latest.notes = latest.notes.filter(n => n.id !== id);
+      latest.references = latest.references.filter(e => e.source !== id && e.target !== id);
+    }));
+  }
+
+  /** 在画布上放一个待生成步骤。提交前可以改这一轮的目标和参考图。 */
+  async function addStep(variantKey: string, parentNodeId?: string) {
+    projectOnly();
+    const id = crypto.randomUUID();
+    setRecords(await updateRecords(task, latest => {
+      latest.steps.push({ id, variantKey, parentNodeId, goal: '', createdAt: new Date().toISOString() });
+    }));
+    return id;
+  }
+  async function updateStep(id: string, change: { goal?: string; parentNodeId?: string | null }) {
+    projectOnly();
+    setRecords(await updateRecords(task, latest => {
+      const step = latest.steps.find(item => item.id === id);
+      if (!step) return;
+      if (change.goal !== undefined) step.goal = change.goal.slice(0, 1600);
+      if (change.parentNodeId === null) delete step.parentNodeId;
+      else if (change.parentNodeId) step.parentNodeId = change.parentNodeId;
+    }));
+  }
+  async function removeStep(id: string) {
+    projectOnly();
+    setRecords(await updateRecords(task, latest => { latest.steps = latest.steps.filter(item => item.id !== id); }));
+  }
+
+  return { ...graph, full, attempts, records, loading, error, saveBranch, restoreSnapshot, addImage, copyHistoryImage, addReference, removeReference,
+    pinEvidence, removeImage, addNote, updateNote, removeNote, addStep, updateStep, removeStep };
 }

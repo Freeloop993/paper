@@ -175,9 +175,30 @@ export async function retryCollection(id: string) {
   await updateH3Record(id,{issue:undefined});
   ensureRunning(id);
 }
-export interface GenerationOptions { id: string; task: Task; goal?: string; parentCandidateId?: string }
+export interface GenerationOptions {
+  id: string; task: Task; goal?: string; parentCandidateId?: string;
+  /** 画布上的参考图：编号是它在画布上的节点，原件须为 PNG。 */
+  reference?: { id: string; file: Blob };
+}
 
-async function start({id, task, goal: requestedGoal, parentCandidateId}: GenerationOptions) {
+/** 把设计者放到画布上的参考图转成服务可以接收的 PNG：短边不小于 128，长边不超过 2048，长宽比不超过 4。 */
+export async function referencePng(source: Blob): Promise<Blob> {
+  let picture: ImageBitmap;
+  try { picture = await createImageBitmap(source); }
+  catch { throw new Error('浏览器无法读取这张参考图。'); }
+  try {
+    const { width, height } = picture;
+    if (Math.max(width, height) / Math.min(width, height) > 4) throw new Error('参考图过于狭长，长宽比需在 4 以内。');
+    const scale = Math.max(Math.min(1, 2048 / Math.max(width, height)), 128 / Math.min(width, height));
+    if (scale === 1 && source.type === 'image/png') return source;
+    const canvas = document.createElement('canvas');
+    canvas.width = Math.round(width * scale); canvas.height = Math.round(height * scale);
+    canvas.getContext('2d')!.drawImage(picture, 0, 0, canvas.width, canvas.height);
+    return await new Promise<Blob>((resolve, reject) => canvas.toBlob(file => file ? resolve(file) : reject(new Error('参考图转换失败。')), 'image/png'));
+  } finally { picture.close(); }
+}
+
+async function start({id, task, goal: requestedGoal, parentCandidateId, reference}: GenerationOptions) {
   // Read the live draft at click time; a saved variant snapshot can be older.
   const {parameters, touched, intent, designChatAudit, variants, activeVariant, workflowOrigin} = taskStores[task].getState();
   const state = structuredClone({parameters, touched, intent, designChatAudit});
@@ -186,13 +207,15 @@ async function start({id, task, goal: requestedGoal, parentCandidateId}: Generat
   const variantScope = task + '/' + (variant?.workflowKey ?? activeVariant);
   const goal = requestedGoal?.trim() || intent.note.trim() || name + ' · ' + taskLabels[intent.taskId ?? 'consumer_camera'] + ' · ' + frameRules[parameters.frame.frame_type].zh;
   if (!await findAttempt(id)) {
-    const parent = parentCandidateId
+    const candidate = parentCandidateId
       ? (await findAttempt(parentCandidateId.split('/')[0]))?.candidates.find(c => c.id === parentCandidateId)
       : undefined;
-    if (parentCandidateId && !parent) throw new Error('找不到所选候选的原图，请重新选择。');
+    if (parentCandidateId && !candidate) throw new Error('找不到所选候选的原图，请重新选择。');
+    const parent = candidate ?? reference;
     const prompt = compilePrompt(state.parameters, state.touched, state.intent, computeLayout(state.parameters));
     let text = 'Image 1 is a motor-axis layout guide only. Replace dots and lines with a complete industrial product and omit all visible guide marks.\n' + prompt.text;
-    if (parent) text += '\nImage 2 is the appearance parent to revise. Preserve its visual identity while applying the current layout and design changes.';
+    if (candidate) text += '\nImage 2 is the appearance parent to revise. Preserve its visual identity while applying the current layout and design changes.';
+    else if (reference) text += '\nImage 2 is an appearance reference chosen by the designer. Borrow its form language and surface treatment where they fit, while the motor-axis layout follows Image 1.';
     if (requestedGoal?.trim()) {
       const context = suggestFields(requestedGoal).state;
       const storageOnly = ['folded','carrying'].includes(context) ||

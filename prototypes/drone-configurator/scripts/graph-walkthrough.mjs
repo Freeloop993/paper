@@ -21,20 +21,29 @@ try {
     return route.continue();
   });
   const card = title => page.locator('.react-flow__node').filter({has: page.getByRole('heading', {name: title, exact: true})});
+  const design = page.locator('[data-step-kind=design]');
   const button = name => page.getByRole('button', {name, exact: true});
   const inspector = page.getByTestId('graph-inspector');
   const width = page.locator('[data-field="fuselage.fuselage_dimensions_mm.width"] input[type="number"]');
   const fit = () => button('适应全图').click();
+  // 选中造型卡片，点它上方的「存为版本」。
   async function saveVersion(title) {
-    await page.locator('.canvas-tools-menu summary').click();
-    await button('保存草稿版本').click();
+    await fit();
+    await design.locator('.cv-head').click();
+    await page.locator('[data-step-action=version]').click();
     await page.getByLabel('版本名称').fill(title);
     await button('保存版本').click();
-    await inspector.getByRole('heading', {name: title, exact: true}).waitFor();
+    await card(title).waitFor({state: 'attached'});
   }
-  async function returnToBoard() {
-    await button('返回画布').click();
-    await page.getByTestId('workflow-graph').waitFor();
+  // 从一张卡片右侧的加号拖一条线到另一张卡片。
+  async function connect(from, to) {
+    await fit();
+    const a = await from.locator('.react-flow__handle.source').boundingBox(), b = await to.locator('.react-flow__handle.target').boundingBox();
+    await page.mouse.move(a.x + a.width / 2, a.y + a.height / 2);
+    await page.mouse.down();
+    await page.mouse.move(b.x + b.width / 2 - 20, b.y + b.height / 2, {steps: 6});
+    await page.mouse.move(b.x + b.width / 2, b.y + b.height / 2, {steps: 3});
+    await page.mouse.up();
   }
   await page.goto(origin);
   await page.locator('[data-board="history"]').click();
@@ -47,7 +56,7 @@ try {
   await page.getByRole('dialog').locator('img').first().evaluate(image => image.decode());
   await button('关闭图片对照').click();
   await card('B2 原始候选').click();
-  await button('引用到我的项目').click();
+  await inspector.getByRole('button', {name: '引用到我的项目', exact: true}).click();
   await page.locator('[data-board-id="project"]').waitFor();
   await inspector.getByRole('heading', {name: 'B2 原始候选', exact: true}).waitFor();
   assert.equal(await page.getByTestId('workflow-workspace').getAttribute('data-board-id'), 'project');
@@ -55,20 +64,17 @@ try {
   const imagePath = fileURLToPath(new URL('../src/data/history/B2-no-window.webp', import.meta.url));
   await page.getByLabel('导入参考图片').setInputFiles(imagePath);
   await inspector.getByRole('heading', {name: 'B2-no-window.webp', exact: true}).waitFor();
-  await page.locator('.canvas-tools-menu summary').click();
-  await button('连接参考').click();
-  await fit();
-  await card('当前规格草稿').click();
+  await connect(card('B2-no-window.webp'), design);
   await page.getByRole('status').filter({hasText: '已添加参考关系'}).waitFor();
+  await page.locator('.gb-wire-label', {hasText: '手动引用'}).waitFor({state: 'attached'});
   assert.equal(await page.locator('.gb-wire-label', {hasText: '手动引用'}).count(), 1);
   await saveVersion('原始宽度');
-  await page.locator('nav [data-step="studio"]').click();
+  await design.locator('.cv-head').click();
   await page.locator('[data-tab="fuselage"]').click();
   const initialWidth = Number(await width.inputValue());
   const changedWidth = initialWidth < 195 ? initialWidth + 10 : initialWidth - 10;
   await width.fill(String(changedWidth));
   await width.blur();
-  await returnToBoard();
   await saveVersion('改宽机身');
   await page.reload();
   await card('改宽机身').waitFor({state: 'attached'});
@@ -76,17 +82,22 @@ try {
   await card('原始宽度').click();
   await inspector.getByText('改宽机身', {exact: true}).waitFor();
   await button('从此版本继续编辑').click();
+  await page.locator('[data-testid=step-panel][data-panel-mode=design]').waitFor();
   await page.locator('[data-tab="fuselage"]').click();
   assert.equal(Number(await width.inputValue()), initialWidth);
-  await returnToBoard();
   assert.equal(await card('改宽机身').count(), 1);
-  await page.locator('.graph-status-bar').getByRole('button', {name: '查看生成记录'}).click();
-  await page.locator('[data-testid="handoff-advanced"] > summary').click();
+  // 研究详情里冻结一轮；回到画布，这一轮接在造型后面。展开留档后能看到它沿用的版本。
+  await page.getByTestId('open-research').click();
+  await page.locator('[data-handoff-tab=candidates]').click();
   await page.locator('[data-attempt-goal]').fill('软件检查 · 从原始宽度冻结');
   await page.locator('[data-freeze-attempt]').click();
   await page.locator('[data-attempt] option').first().waitFor({state: 'attached'});
-  await returnToBoard();
+  await page.locator('[data-step=canvas]').click();
   await card('软件检查 · 从原始宽度冻结').waitFor({state: 'attached'});
+  assert.equal(await page.locator('.cv-card.is-research').count(), 0);
+  await page.getByTestId('research-layer').click();
+  await page.locator('.cv-card.is-research').first().waitFor({state: 'attached'});
+  await page.locator('.gb-wire-label', {hasText: '沿用分支编辑'}).waitFor({state: 'attached'});
   assert.equal(await page.locator('.gb-wire-label', {hasText: '沿用分支编辑'}).count(), 1);
   assert.equal(await page.locator('.gb-wire-label', {hasText: '手动引用'}).count(), 1);
   assert.deepEqual(errors, []);

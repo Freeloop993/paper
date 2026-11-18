@@ -5,6 +5,7 @@
 | Claude 要回答的问题 | 仓库里的依据 |
 | --- | --- |
 | 导师给定的章节、方法边界和实际完成情况是什么？ | [研究上下文、试验次序、流程图与运行证据](context/README.md) · [前一版代码审查与实测](v3.2-review.md) · [研究问题与验证协议](../advisor-20261118/README.md) |
+| 为什么每一步都放在画布上、右侧面板随所选步骤变化？ | [画布式工作流拆解](literature/画布式工作流拆解.md) · [第四轮界面设计说明](../../prototypes/drone-configurator/interface-design.md) |
 | 部件对话、画布分支、改动预览和候选比较为什么这样做？ | [工作台设计依据与文献](literature/README.md) · [逐篇核读页码与适用边界](literature/论文与原页证据.csv) |
 | 哪些论文可直接用于正文，另一台如何读到同一版本？ | [全文、原始来源及文件校验](literature/README.md) · [全库导航](literature/全库文献导航.csv) · [补充 BibTeX](literature/补充参考文献.bib) · [GenAlign 按底稿补录](literature/GenAlign-按底稿补录.bib) |
 | 怎样试用源码，再对照另一个界面版本？ | [应用入口和启动方式](../../prototypes/drone-configurator/README.md) · [可直接解压的离线工作台](../../prototypes/drone-configurator/configurator-offline.zip?raw=true) |
@@ -25,7 +26,7 @@ npm run build
 npm run studio:chat -- --port 4178
 ```
 
-源码使用 Node.js 24，校验工具使用 Python 3.10 或更高版本。本版从 `studio:chat` 启动，打开[我的项目](http://127.0.0.1:4178/#step=canvas&board=project)即可试用。纯离线查看时，完整解压工作台 ZIP，打开 `index.html`。语义原句、可编辑规格和历史案例随应用提供。本机 HTTP 服务可以执行「只查依据」。在线模型的区域与密钥由使用者在自己的服务进程中设置，见应用说明。
+源码使用 Node.js 24，校验工具使用 Python 3.10 或更高版本。本版从 `studio:chat` 启动，打开[我的项目](http://127.0.0.1:4178/#step=canvas&board=project)即可试用。目标、造型、生成和取舍都在这一块画布上完成。纯离线查看时，完整解压工作台 ZIP，打开 `index.html`。语义原句、可编辑规格和历史案例随应用提供。本机 HTTP 服务可以执行「只查依据」。在线模型的区域与密钥由使用者在自己的服务进程中设置，见应用说明。
 
 如要复核实验材料，另需 Pillow。在仓库根目录按[研究材料复核命令](context/README.md#在另一台电脑复核研究材料)检查前端语义卡和作者预试记录。这两个检查均可无密钥运行。
 

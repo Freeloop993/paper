@@ -90,3 +90,8 @@
   .canvas-compare-grid{gap:6px;padding:9px}.canvas-compare-item label{display:grid}.canvas-compare-item select{font-size:11px}.canvas-comparison-image{height:155px}
   .graph-link-prompt{white-space:nowrap;font-size:11px}
 }
+.canvas-small-tool[aria-pressed=true]{background:#e3eee7;border-color:#b9d2c3;color:#1b5849}
+.canvas-topbar .canvas-local-status{margin-left:2px}
+.generation-title p{margin-top:6px;font-size:13px;line-height:1.7;color:#5f7069;max-width:70ch}
+@media(max-width:900px){.canvas-topbar .canvas-local-status,.canvas-small-tool span{display:none}.canvas-small-tool{padding:6px 8px}}
+@media(max-width:560px){.canvas-brand strong{display:none}.canvas-topbar{gap:8px}.canvas-top-controls{gap:4px}}
