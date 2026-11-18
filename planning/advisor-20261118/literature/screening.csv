@@ -1,0 +1,760 @@
+﻿group,title,doi,source_rows,card,screen,cue,source_pdf_link,n_source_records
+W0001,Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion,10.1299/jamdsm.2026jamdsm0008,本地修订稿#1 ; reviewed-100#2 ; industrial-design-100#2 ; archive-references#26 ; licensed-files#2 ; obsidian-cards#2,chen,methods-read,affectiv,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A001.pdf,6
+W0002,Adding conditional control to text-to-image diffusion models,10.1109/iccv51070.2023.00355,本地修订稿#2 ; archive-references#240,,title-outside-or-insufficient,,,2
+W0003,GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters,10.1145/3706598.3713502,本地修订稿#3,para,methods-read,GenPara,,1
+W0004,可供性与产品语义设计理论的交集与边界研究,10.19798/j.cnki.2096-6946.2022.04.003,本地修订稿#4 ; archive-references#343,wei,methods-read,语义,,2
+W0005,Qwen-Image-2.1: Model card,,本地修订稿#5,,title-outside-or-insufficient,,,1
+W0006,Qwen-Image-2.1-Fun-Controlnet-Union: Model Card,,本地修订稿#6,,title-outside-or-insufficient,,,1
+W0007,Learning activities to design a parametric solutions space for products in Industry 4.0,10.35199/epde.2024.82,本地修订稿#7 ; reviewed-100#34 ; industrial-design-100#34 ; archive-references#63 ; obsidian-cards#41,,title-outside-or-insufficient,,,5
+W0008,产品外观解构与情感设计变量识别方法研究,10.13837/j.issn.1006-8309.2017.03.0013,本地修订稿#8 ; archive-references#320,qu,methods-read,产品外观解构,,2
+W0009,Using FCE and FAHP to explore the multirotor drone appearance preference,10.21606/drs.2020.164,本地修订稿#9 ; reviewed-100#100 ; archive-references#304 ; licensed-files#23 ; feishu-100#91 ; obsidian-cards#128,hsiao,methods-read,外观偏好,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/UAV-U002.pdf,6
+W0010,Design of plant protection unmanned aerial vehicles: quantitative research and virtual simulation,10.1016/j.ijadr.2024.03.001,本地修订稿#10 ; reviewed-100#99 ; archive-references#418 ; licensed-files#22 ; feishu-100#32 ; obsidian-cards#127,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/UAV-U001.pdf,6
+W0011,Embrace the era of drones: a new practical design approach to emergency rescue drones,10.3390/app15010135,本地修订稿#11 ; reviewed-100#6 ; industrial-design-100#6 ; archive-references#34 ; licensed-files#3 ; obsidian-cards#6,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A005.pdf,6
+W0012,AGRAS T16 User Manual v1.4,,本地修订稿#12,,title-outside-or-insufficient,,,1
+W0013,AGRAS T20 User Manual v1.4,,本地修订稿#13,,title-outside-or-insufficient,,,1
+W0014,AGRAS T30 User Manual v1.4,,本地修订稿#14,,title-outside-or-insufficient,,,1
+W0015,Kansei Engineering: A new ergonomic consumer-oriented technology for product development,10.1016/0169-8141(94)00052-5,本地修订稿#15,,title-candidate,Kansei,,1
+W0016,Seeing things: consumer response to the visual domain in product design,10.1016/j.destud.2004.03.001,本地修订稿#16,,title-outside-or-insufficient,,,1
+W0017,感性工学设计方法研究现状与进展,10.13841/j.cnki.jxsj.2020.01.022,本地修订稿#17,,title-candidate,感性,,1
+W0018,Extracting and summarizing affective features and responses from online product descriptions and reviews: A Kansei text mining approach,10.1016/j.engappai.2018.05.005,本地修订稿#18 ; archive-references#334 ; feishu-100#99,wang,methods-read,affectiv,,3
+W0019,Insights from knowledge-based engineering in industrial practice – a Saab’s perspective,10.1017/pds.2026.10691,本地修订稿#19 ; reviewed-100#70 ; industrial-design-100#97 ; archive-references#57 ; obsidian-cards#97,,title-candidate,knowledge-based,,5
+W0020,基于权重化特征与形状文法的产品识别设计,10.3969/j.issn.2095-509x.2019.07.002,本地修订稿#20,,title-outside-or-insufficient,,,1
+W0021,基于形状文法和交互式遗传算法的产品形态创新设计,10.3969/j.issn.2095-509x.2019.04.003,本地修订稿#21,,title-outside-or-insufficient,,,1
+W0022,7Bench: a comprehensive benchmark for layout-guided text-to-image models,,本地修订稿#22,,title-outside-or-insufficient,,,1
+W0023,Qwen-Image-Edit-2509 and Qwen-Image-Edit-2511: Model cards,,本地修订稿#23,,title-outside-or-insufficient,,,1
+W0024,A Product's Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation,10.3390/su16208837,本地修订稿#24 ; reviewed-100#11 ; industrial-design-100#11 ; archive-references#6 ; archive-references#375 ; licensed-files#5 ; licensed-files#84 ; feishu-100#14 ; obsidian-cards#9,du,methods-read,Kansei,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A008.pdf,9
+W0025,Enhancing the aesthetic appeal of AI-generated physical product designs through LoRA fine-tuning with human feedback,,本地修订稿#25,,title-outside-or-insufficient,,,1
+W0026,QwenStyle: content-preserving style transfer with Qwen-Image-Edit,,本地修订稿#26,,title-outside-or-insufficient,,,1
+W0027,InstructPix2Pix: Learning to follow image editing instructions,10.1109/cvpr52729.2023.01764,本地修订稿#27,,title-outside-or-insufficient,,,1
+W0028,MagicBrush: A manually annotated dataset for instruction-guided image editing,10.48550/arxiv.2306.10012,本地修订稿#28,,title-outside-or-insufficient,,,1
+W0029,GenEval: An object-focused framework for evaluating text-to-image alignment,10.48550/arxiv.2310.11513,本地修订稿#29,,title-outside-or-insufficient,,,1
+W0030,Partnering with Generative AI: Experimental Evaluation of Human-Led and Model-Led Interaction in Human-AI Co-Creation,10.1145/3772318.3791185,本地修订稿#30 ; archive-references#173 ; licensed-files#46,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f50c290dfe34.pdf,3
+W0031,When Designers Sweat: Behavioral Traces of GenAI Co-Creation,10.1145/3772318.3791776,本地修订稿#31 ; archive-references#209 ; licensed-files#56,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b4667d2f7bfd.pdf,3
+W0032,A Taxonomy of Human–MLLM Interaction in Early-Stage Sketch-Based Design Ideation,,本地修订稿#32,,title-outside-or-insufficient,,,1
+W0033,Multimodal generative AI for conceptual design: enabling text-based and sketch-based human-AI conversations,10.1017/pds.2025.10264,本地修订稿#33 ; reviewed-100#8 ; industrial-design-100#8 ; archive-references#69 ; obsidian-cards#8,,title-outside-or-insufficient,,,5
+W0034,Enhancing generative AI image refinement with scribbles and annotations: a comparative study of multimodal prompts,10.1145/3742413.3789080,本地修订稿#34 ; reviewed-100#73 ; archive-references#144 ; obsidian-cards#104,,title-candidate,语义,,4
+W0035,AIdeation: designing a human-AI collaborative ideation system for concept designers,10.1145/3706598.3714148,本地修订稿#35 ; reviewed-100#71 ; archive-references#106 ; obsidian-cards#102,,title-outside-or-insufficient,,,4
+W0036,Ceci N’est Pas un Drone: Investigating the Impact of Design Representation on Design Decision Making When Using GenAI,,本地修订稿#36,,title-outside-or-insufficient,,,1
+W0037,智能技术驱动的汽车造型设计流程再造方法研究,10.13196/j.cims.2025.0330,本地修订稿#37,,title-outside-or-insufficient,,,1
+W0038,基于人智团队智能体协同进化的群智创新设计方法,10.13196/j.cims.2025.0101,本地修订稿#38,,title-outside-or-insufficient,,,1
+W0039,Guidelines for Human-AI Interaction,10.1145/3290605.3300233,本地修订稿#39,,title-outside-or-insufficient,,,1
+W0040,GenAlign: Visual knowledge graphs as interactive substrates for property-aligned generative design,10.1016/j.aei.2026.105165,本地修订稿#40,genalign,methods-read,GenAlign,,1
+W0041,A coefficient of agreement for nominal scales,10.1177/001316446002000104,本地修订稿#41,,title-outside-or-insufficient,,,1
+W0042,High agreement but low kappa: I. The problems of two paradoxes,10.1016/0895-4356(90)90158-l,本地修订稿#42,,title-outside-or-insufficient,,,1
+W0043,The Measurement of Meaning,,本地修订稿#43,,title-outside-or-insufficient,,,1
+W0044,DJI Mini 4 Pro User Manual v1.4,,本地修订稿#44,,title-outside-or-insufficient,,,1
+W0045,基于知识工程的产品设计研究综述,10.3901/jme.2024.13.216,本地修订稿#45 ; archive-references#387,know,methods-read,知识工程,,2
+W0046,Guidelines for Reporting Reliability and Agreement Studies (GRRAS) were proposed,10.1016/j.jclinepi.2010.03.002,本地修订稿#46,,title-outside-or-insufficient,,,1
+W0047,Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm,10.1371/journal.pbio.1002128,本地修订稿#47,,title-outside-or-insufficient,,,1
+W0048,Exploring generative design in context of mass personalization,10.1017/pds.2025.10180,reviewed-100#3 ; industrial-design-100#3 ; archive-references#41 ; obsidian-cards#3,,title-outside-or-insufficient,,,4
+W0049,Generating preinventive structures: AI-driven creativity in product repurposing,10.1017/pds.2025.10207,reviewed-100#4 ; industrial-design-100#4 ; archive-references#47 ; obsidian-cards#4,,title-outside-or-insufficient,,,4
+W0050,EVOLVING A MODEL OF GEN-AI ENHANCED DESIGN VISUALISATION WORKFLOW,10.35199/epde.2025.112,reviewed-100#5 ; industrial-design-100#5 ; archive-references#38 ; obsidian-cards#5,,title-outside-or-insufficient,,,4
+W0051,Research on innovative design of Nuo mask based on Memetics-AHP-Thematic analysis-shape grammar,10.1371/journal.pone.0326630,reviewed-100#7 ; industrial-design-100#7 ; archive-references#73 ; licensed-files#4 ; obsidian-cards#7,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A006.pdf,5
+W0052,USE OF ARTIFICIAL INTELLIGENCE IN THE PRODUCT DESIGN PROCESS. IMPACT ON THE DETAILS DESIGN STAGE,10.35199/epde.2024.20,reviewed-100#9 ; industrial-design-100#9 ; archive-references#100 ; obsidian-cards#33,,title-outside-or-insufficient,,,4
+W0053,"USE AND APPLICATION OF GENERATIVE AI IN MULTIDISCIPLINARY PROJECTS: LUNAR HABITACLES, AUTOMOTIVE CONCEPTS AND FUTURE SOUVENIRS",10.35199/epde.2024.104,reviewed-100#10 ; industrial-design-100#10 ; archive-references#99 ; obsidian-cards#34,,title-outside-or-insufficient,,,4
+W0054,Research on Evaluation Methods of Complex Product Design Based on Hybrid Kansei Engineering Modeling,10.3390/sym17020306,reviewed-100#12 ; industrial-design-100#12 ; archive-references#72 ; licensed-files#6 ; obsidian-cards#10,,title-candidate,Kansei,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A009.pdf,5
+W0055,Grasshopper Algorithmic Modelling: Parametric Design for Product Platform Customisation,10.3390/app15116243,reviewed-100#13 ; industrial-design-100#13 ; archive-references#49 ; licensed-files#7 ; obsidian-cards#11,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A010.pdf,5
+W0056,IS HIGH SKETCHING PROFICIENCY STILL AN ADVANTAGE? EXPLORING THE ROLE OF FREEHAND DRAWING IN VEHICLE DESIGN WITHIN THE 2D GENERATIVE AI LANDSCAPE,10.35199/epde.2025.124,reviewed-100#14 ; industrial-design-100#14 ; archive-references#61 ; obsidian-cards#12,,title-outside-or-insufficient,,,4
+W0057,COMPARING UNDERSTANDABILITY OF HAND SKETCHES VERSUS AI-GENERATED RENDERS FOR PRODUCT DESIGN,10.35199/epde.2024.34,reviewed-100#15 ; industrial-design-100#15 ; archive-references#22 ; obsidian-cards#35,,title-outside-or-insufficient,,,4
+W0058,A COMPARISON OF ARTIFICIAL INTELLIGENCE IMAGE GENERATION TOOLS IN PRODUCT DESIGN,10.35199/epde.2024.3,reviewed-100#16 ; industrial-design-100#16 ; archive-references#3 ; obsidian-cards#36,,title-outside-or-insufficient,,,4
+W0059,The Design of Automotive Interior for Chinese Young Consumers Based on Kansei Engineering and Eye-Tracking Technology,10.3390/app131910674,reviewed-100#17 ; industrial-design-100#17 ; archive-references#91 ; licensed-files#8 ; obsidian-cards#13,,title-candidate,Kansei,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A012.pdf,5
+W0060,Study on Imagery Modeling of Electric Recliner Chair: Based on Combined GRA and Kansei Engineering,10.3390/app132413345,reviewed-100#18 ; industrial-design-100#18 ; archive-references#84 ; licensed-files#9 ; obsidian-cards#14,,title-candidate,Kansei,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A013.pdf,5
+W0061,Affective response difference to the viewing of different styles of solid wood furniture based on Kansei engineering,10.15376/biores.19.1.805-822,reviewed-100#19 ; industrial-design-100#19 ; archive-references#9 ; obsidian-cards#15,,title-candidate,Affectiv,,4
+W0062,Augmented design automation: leveraging parametric designs using large language models,10.1017/pds.2025.10081,reviewed-100#20 ; industrial-design-100#20 ; archive-references#18 ; obsidian-cards#16,,title-outside-or-insufficient,,,4
+W0063,"Can AI estimate product impressions? Comparison of consumers’, designers’, and AI model’s ratings of car wheels",10.1017/pds.2025.10098,reviewed-100#21 ; industrial-design-100#21 ; archive-references#21 ; obsidian-cards#17,,title-outside-or-insufficient,,,4
+W0064,Sketch2Prototype: rapid conceptual design exploration and prototyping with generative AI,10.1017/pds.2024.201,reviewed-100#22 ; industrial-design-100#22 ; archive-references#79 ; obsidian-cards#18,,title-outside-or-insufficient,,,4
+W0065,ShipGen: A Diffusion Model for Parametric Ship Hull Generation with Multiple Objectives and Constraints,10.3390/jmse11122215,reviewed-100#23 ; industrial-design-100#23 ; archive-references#78 ; licensed-files#10 ; obsidian-cards#19,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A018.pdf,5
+W0066,The Exploration of Integrating the Midjourney Artificial Intelligence Generated Content Tool into Design Systems to Direct Designers towards Future-Oriented Innovation,10.3390/systems11120566,reviewed-100#24 ; industrial-design-100#24 ; archive-references#92 ; licensed-files#11 ; obsidian-cards#20,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A019.pdf,5
+W0067,Discover the use of multimodal language models for idea detailing in human-AI collaborative design,10.1017/pds.2026.10619,reviewed-100#25 ; industrial-design-100#25 ; archive-references#31 ; obsidian-cards#21,,title-outside-or-insufficient,,,4
+W0068,A BIOMIMETIC GENERATIVE DESIGN FRAMEWORK: SIMULATING SILKWORM SILK TAPESTRY IN HOUDINI FOR PRODUCT AND EDUCATIONAL APPLICATIONS,10.35199/epde.2025.98,reviewed-100#26 ; industrial-design-100#26 ; archive-references#2 ; obsidian-cards#37,,title-outside-or-insufficient,,,4
+W0069,VISUALISING SPECULATIVE MATERIALS: USING TEXT-TO-IMAGE PROMPTING TO ELABORATE LIVINGNESS AS A DESIGNED MATERIAL QUALITY,10.35199/epde.2024.52,reviewed-100#27 ; industrial-design-100#27 ; archive-references#101 ; obsidian-cards#22,,title-outside-or-insufficient,,,4
+W0070,From text to design: a framework to leverage LLM agents for automated CAD generation,10.1017/pds.2025.10203,reviewed-100#28 ; industrial-design-100#28 ; archive-references#46 ; obsidian-cards#23,,title-outside-or-insufficient,,,4
+W0071,Research on the Innovative Design of Traditional Motifs of Twisted Porcelain Based on Shape Grammar,10.2991/978-94-6463-815-8_2,reviewed-100#29 ; industrial-design-100#29 ; archive-references#74 ; licensed-files#12 ; obsidian-cards#38,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B006.pdf,5
+W0072,An Elderly-Oriented Form Design of Low-Speed New Energy Vehicles Based on Rough Set Theory and Support Vector Regression,10.3390/wevj15090389,reviewed-100#30 ; industrial-design-100#30 ; archive-references#13 ; licensed-files#13 ; obsidian-cards#39,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B007.pdf,5
+W0073,AI at the Fuzzy Front End - creative iteration in design,10.1017/pds.2025.10056,reviewed-100#31 ; industrial-design-100#31 ; archive-references#11 ; obsidian-cards#24,,title-outside-or-insufficient,,,4
+W0074,SYNERGISTIC DESIGN: THE FUSION OF GENERATIVE AI AND CONVENTIONAL IDEATION APPROACHES,10.35199/epde.2025.74,reviewed-100#32 ; industrial-design-100#32 ; archive-references#86 ; obsidian-cards#40,,title-outside-or-insufficient,,,4
+W0075,Decision making support for designers at the early design stage regarding narrowing down the range values of design variables,10.1017/pds.2024.79,reviewed-100#33 ; industrial-design-100#33 ; archive-references#27 ; obsidian-cards#25,,title-outside-or-insufficient,,,4
+W0076,Inspiration or indication? Evaluating the qualities of design inspiration boards created using text to image generative AI,10.1017/pds.2024.223,reviewed-100#35 ; industrial-design-100#35 ; archive-references#58 ; obsidian-cards#26,,title-outside-or-insufficient,,,4
+W0077,A Study of Sustainable Product Design Evaluation Based on the Analytic Hierarchy Process and Deep Residual Networks,10.3390/su151914538,reviewed-100#36 ; industrial-design-100#36 ; archive-references#7 ; licensed-files#14 ; obsidian-cards#27,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A026.pdf,5
+W0078,Generating vehicle designs using probabilistic programs and reinforcement learning,10.1017/pds.2026.10585,reviewed-100#37 ; industrial-design-100#37 ; archive-references#48 ; obsidian-cards#28,,title-outside-or-insufficient,,,4
+W0079,"Rethinking design methods in the age of AI – consequences for practice, education, and research",10.1017/pds.2026.10419,reviewed-100#38 ; industrial-design-100#38 ; archive-references#76 ; obsidian-cards#29,,title-outside-or-insufficient,,,4
+W0080,TRANSLATING AUDITORY STIMULI INTO FORM: A METHODOLOGICAL APPROACH TO TEACHING FORM GENERATION,10.35199/epde.2025.81,reviewed-100#39 ; industrial-design-100#39 ; archive-references#96 ; obsidian-cards#42,,title-outside-or-insufficient,,,4
+W0081,"Integrating Reliability, Uncertainty, and Subjectivity in Design Knowledge Flow: A CMZ-BENR Augmented Framework for Kansei Engineering",10.3390/sym17050758,reviewed-100#40 ; industrial-design-100#40 ; archive-references#60 ; licensed-files#15 ; obsidian-cards#43,,title-candidate,Kansei,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B011.pdf,5
+W0082,HOW CAN AI SUPPORT THE CREATION OF NOVEL IDEAS IN PRODUCT DESIGN,10.35199/epde.2024.23,reviewed-100#41 ; industrial-design-100#41 ; archive-references#51 ; obsidian-cards#44,,title-outside-or-insufficient,,,4
+W0083,Kansei for the Digital Era,10.5057/ijae.ijae-d-23-00003,reviewed-100#42 ; industrial-design-100#42 ; archive-references#62 ; obsidian-cards#30,,title-candidate,Kansei,,4
+W0084,INTEGRATING ECODESIGN AND AI IN YACHT DESIGN EDUCATION: A WORKSHOP CASE STUDY,10.35199/epde.2025.84,reviewed-100#43 ; industrial-design-100#44 ; archive-references#59 ; obsidian-cards#46,,title-outside-or-insufficient,,,4
+W0085,ACADEMICALLY INFORMED AI VS. HUMAN?DESIGNED MILK PACKAGING: A COMPARATIVE EVALUATION,10.35199/epde.2025.102,reviewed-100#44 ; industrial-design-100#45 ; archive-references#8 ; obsidian-cards#47,,title-outside-or-insufficient,,,4
+W0086,MODELLING INTERIOR YACHT DESIGN CONCEPTS CROSSING MULTIPLE AI TOOLS: TEACHING IN AN UNCERTAIN AND FLEXIBLE FRAMEWORK,10.35199/epde.2024.31,reviewed-100#45 ; industrial-design-100#46 ; archive-references#66 ; obsidian-cards#48,,title-outside-or-insufficient,,,4
+W0087,Exploring metacognitive processes in design ideation with text-to-image AI tools,10.1017/pds.2024.94,reviewed-100#46 ; industrial-design-100#47 ; archive-references#42 ; obsidian-cards#31,,title-outside-or-insufficient,,,4
+W0088,"Human-AI co-creation: why, what, and how?",10.1017/pds.2026.10608,reviewed-100#47 ; industrial-design-100#48 ; archive-references#53 ; obsidian-cards#49,,title-outside-or-insufficient,,,4
+W0089,A data-driven approach to studying dominant designs through patent images,,reviewed-100#48 ; industrial-design-100#49 ; archive-references#4,,title-outside-or-insufficient,,,3
+W0090,"Emotional design through CMF: a comparative study across visceral, behavioural, and reflective levels",,reviewed-100#49 ; industrial-design-100#51 ; archive-references#35,,title-outside-or-insufficient,,,3
+W0091,Understanding designers’ experiences with generative AI through user interaction pattern analysis,,reviewed-100#50 ; industrial-design-100#52 ; archive-references#97,,title-outside-or-insufficient,,,3
+W0092,INFLUENCE OF IMAGE STIMULI ON DESIGN CREATIVITY: EXPLORATION OF GENERATIVE AI IN GROUP IDEATION,10.35199/epde.2025.4,reviewed-100#51 ; industrial-design-100#54 ; archive-references#55 ; obsidian-cards#55,,title-outside-or-insufficient,,,4
+W0093,Exploring dynamic movement representations in context using generative AI: effects of media types on the evaluation of service robot morphology,,reviewed-100#52 ; industrial-design-100#55 ; archive-references#40,,title-outside-or-insufficient,,,3
+W0094,The aesthetics of robot design: towards a classification of morphologies,10.1017/pds.2024.244,reviewed-100#53 ; industrial-design-100#57 ; archive-references#88 ; obsidian-cards#32,,title-outside-or-insufficient,,,4
+W0095,"The connection between impressions, user experience and design specifications in technology-driven products",,reviewed-100#54 ; industrial-design-100#60 ; archive-references#90,,title-outside-or-insufficient,,,3
+W0096,Attributes in context: a qualitative study of user understanding and misinterpretations in product design,,reviewed-100#55 ; industrial-design-100#61 ; archive-references#17,,title-outside-or-insufficient,,,3
+W0097,"Leveraging generative AI tools for design method support: insights, challenges, and best practices",10.1017/pds.2025.10237,reviewed-100#56 ; industrial-design-100#62 ; archive-references#64 ; obsidian-cards#62,,title-outside-or-insufficient,,,4
+W0098,Analysing designer-GenAI interactions: characterizing designers’ behaviours during inspiration and ideation,,reviewed-100#57 ; industrial-design-100#63 ; archive-references#14,,title-outside-or-insufficient,,,3
+W0099,Unlocking the Potential of Artificial Intelligence in Fashion Design and E-Commerce Applications: The Case of Midjourney,10.3390/jtaer19010035,reviewed-100#58 ; industrial-design-100#64 ; archive-references#98 ; licensed-files#16 ; obsidian-cards#64,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B032.pdf,5
+W0100,AI as creative partner: exploring perceived roles in human-AI co-creation,10.1017/pds.2026.10459,reviewed-100#59 ; industrial-design-100#70 ; archive-references#10 ; obsidian-cards#70,,title-outside-or-insufficient,,,4
+W0101,Structured prompting for design for multi-X: evaluating LLM support in early prosthetic device design,,reviewed-100#60 ; industrial-design-100#71 ; archive-references#81,,title-outside-or-insufficient,,,3
+W0102,"Multi-agent generative AI for concept evaluation: consistency, knowledge integration and human alignment",,reviewed-100#61 ; industrial-design-100#72 ; archive-references#68,,title-outside-or-insufficient,,,3
+W0103,Scenario to specification: promises and pitfalls of AI in developing user-centered engineering specifications with interdisciplinary teams,10.1017/pds.2025.10298,reviewed-100#62 ; industrial-design-100#73 ; archive-references#77 ; obsidian-cards#73,,title-outside-or-insufficient,,,4
+W0104,Evaluation of virtual prototypes: literature and empirical findings,,reviewed-100#63 ; industrial-design-100#75 ; archive-references#37,,title-outside-or-insufficient,,,3
+W0105,Bridging the gap in engineering creativity evaluations: exploring novice eye-gaze behavior across design modalities,,reviewed-100#64 ; industrial-design-100#76 ; archive-references#20,,title-outside-or-insufficient,,,3
+W0106,Exploring the use of LLMs to evaluate design creativity,,reviewed-100#65 ; industrial-design-100#77 ; archive-references#44,,title-outside-or-insufficient,,,3
+W0107,Measure it to manage it – quantitative review of product family complexity metrics,,reviewed-100#66 ; industrial-design-100#79 ; archive-references#65,,title-outside-or-insufficient,,,3
+W0108,From minimum viable product via size levels to modular product family – case study on air filtration units,,reviewed-100#67 ; industrial-design-100#81 ; archive-references#45,,title-outside-or-insufficient,,,3
+W0109,Assessing the effects of product family design strategies on resource consumption and costs: an extended axiomatic design approach,10.1017/pds.2026.10364,reviewed-100#68 ; industrial-design-100#83 ; archive-references#16 ; obsidian-cards#83,,title-outside-or-insufficient,,,4
+W0110,Systematic Review of Kansei Engineering Method Developments in the Design Field,10.25077/josi.v23.n1.p92-108.2024,reviewed-100#69 ; industrial-design-100#94 ; archive-references#87 ; obsidian-cards#94,,title-candidate,Kansei,,4
+W0111,DesignWeaver: Dimensional Scaffolding for Text-to-Image Product Design,10.1145/3706598.3714211,reviewed-100#72 ; archive-references#137 ; licensed-files#17 ; obsidian-cards#103 ; 11/18补充#C2,weaver,methods-read,DesignWeaver,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-C0026.pdf,5
+W0112,The effect of targeting both quantitative and qualitative objectives in generative design tools on the design outcomes,10.1007/s00163-024-00440-y,reviewed-100#74 ; archive-references#191 ; obsidian-cards#105,,title-outside-or-insufficient,,,3
+W0113,DCG-GAN: design concept generation with generative adversarial networks,10.1017/dsj.2024.13,reviewed-100#75 ; archive-references#130 ; licensed-files#18 ; obsidian-cards#106,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-C0543.pdf,4
+W0114,FlexGen: Flexible Multi-View Generation from Text and Image Inputs,10.1109/iccv51701.2025.01739,reviewed-100#76 ; archive-references#148 ; obsidian-cards#107,,title-outside-or-insufficient,,,3
+W0115,WAVE: Warp-Based View Guidance for Consistent Novel View Synthesis Using a Single Image,10.1109/iccv51701.2025.01107,reviewed-100#77 ; archive-references#207 ; obsidian-cards#108,,title-outside-or-insufficient,,,3
+W0116,JeDi: Joint-Image Diffusion Models for Finetuning-Free Personalized Text-to-Image Generation,10.1109/cvpr52733.2024.00648,reviewed-100#78 ; archive-references#165 ; obsidian-cards#109,,title-outside-or-insufficient,,,3
+W0117,Personalized Residuals for Concept-Driven Text-to-Image Generation,10.1109/cvpr52733.2024.00782,reviewed-100#79 ; archive-references#174 ; obsidian-cards#110,,title-outside-or-insufficient,,,3
+W0118,FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual 3D Transition and Simulation,10.1145/3706598.3713686,reviewed-100#80 ; archive-references#150 ; obsidian-cards#111,,title-outside-or-insufficient,,,3
+W0119,Controlling Text-to-Image Diffusion by Orthogonal Finetuning,10.52202/075280-3472,reviewed-100#81 ; archive-references#120 ; obsidian-cards#112,,title-outside-or-insufficient,,,3
+W0120,DMV3D: Denoising Multi-view Diffusion Using 3D Large Reconstruction Model,10.48550/arxiv.2311.09217,reviewed-100#82 ; archive-references#139 ; obsidian-cards#113,,title-outside-or-insufficient,,,3
+W0121,AI-Driven Multidisciplinary Conceptual Design of Unmanned Aerial Vehicles,10.2514/6.2024-1708,reviewed-100#83 ; archive-references#105 ; obsidian-cards#114 ; 11/18补充#C20,,title-outside-or-insufficient,,,4
+W0122,ToMigo: Interpretable Design Concept Graphs for Aligning Generative AI with Creative Intent,10.1145/3800645.3813064,reviewed-100#84 ; archive-references#196 ; obsidian-cards#115,,title-outside-or-insufficient,,,3
+W0123,IdeaBlocks: Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI,10.1145/3800645.3813005,reviewed-100#85 ; archive-references#160 ; licensed-files#19 ; obsidian-cards#116,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X0165.pdf,4
+W0124,UniversalBooth: Model-Agnostic Personalized Text-To-Image Generation,10.1109/iccv51701.2025.01702,reviewed-100#86 ; archive-references#203 ; obsidian-cards#117,,title-outside-or-insufficient,,,3
+W0125,Training-Free Consistent Text-to-Image Generation,10.1145/3658157,reviewed-100#87 ; archive-references#197 ; obsidian-cards#118,,title-outside-or-insufficient,,,3
+W0126,CreepyCoCreator? Investigating AI Representation Modes for 3D Object Co-Creation in Virtual Reality,10.1145/3706598.3713720,reviewed-100#88 ; archive-references#124 ; licensed-files#20 ; obsidian-cards#119,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X0504.pdf,4
+W0127,ShoeGenAI: A Creativity Support Tool Bridging Design Intention and Feasibility in Shoe Design,10.1145/3746059.3747691,reviewed-100#89 ; archive-references#181 ; obsidian-cards#126,,title-outside-or-insufficient,,,3
+W0128,ViewDiff: 3D-Consistent Image Generation with Text-to-Image Models,10.1109/cvpr52733.2024.00482,reviewed-100#90 ; archive-references#206 ; obsidian-cards#120,,title-outside-or-insufficient,,,3
+W0129,Dense Text-to-Image Generation with Attention Modulation,10.1109/iccv51070.2023.00708,reviewed-100#91 ; archive-references#132 ; obsidian-cards#121,,title-outside-or-insufficient,,,3
+W0130,Customizing Text-to-Image Models with a Single Image Pair,10.1145/3680528.3687642,reviewed-100#92 ; archive-references#128 ; obsidian-cards#122,,title-outside-or-insufficient,,,3
+W0131,Criticmate: Stagewise Human–AI Co-Critique in Single-Screen UI Evaluation,10.1145/3772318.3790929,reviewed-100#93 ; archive-references#125 ; licensed-files#21 ; obsidian-cards#123,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X1459.pdf,4
+W0132,CoExploreDS: Framing and Advancing Collaborative Design Space Exploration Between Human and AI,10.1145/3706598.3713869,reviewed-100#94 ; archive-references#116 ; obsidian-cards#124,,title-outside-or-insufficient,,,3
+W0133,Grounded Text-to-Image Synthesis with Attention Refocusing,10.1109/cvpr52733.2024.00758,reviewed-100#95 ; archive-references#153 ; obsidian-cards#125,,title-outside-or-insufficient,,,3
+W0134,Challenges hindering the application of GenAI methods in engineering design and the product development process,10.1017/pds.2026.10576,reviewed-100#96 ; additions#2 ; obsidian-cards#130,,title-outside-or-insufficient,,,3
+W0135,From geometry to function: towards context-aware generative AI for engineering design,10.1017/pds.2026.10577,reviewed-100#97 ; additions#3 ; obsidian-cards#131,,title-outside-or-insufficient,,,3
+W0136,A Method for Product Form Design Based on User Perceptual Imagination and Product Modeling Constraints,10.54941/ahfe1002993,reviewed-100#98 ; additions#4 ; obsidian-cards#132,,title-candidate,感性,,3
+W0137,面向平飞姿态的四旋翼无人机机身造型设计,10.13841/j.cnki.jxsj.2025.02.023,reviewed-100#101 ; archive-references#461 ; archive-references#462 ; feishu-100#30 ; obsidian-cards#129 ; 11/18补充#C12,,title-outside-or-insufficient,,,6
+W0138,"EXPLORING THE IMPACT OF GENERATIVE AI ON CONCEPT GENERATION, IDEATION, AND DESIGN METHODOLOGY: IN PRODUCT DESIGN EDUCATION",10.35199/epde.2024.7,industrial-design-100#43 ; archive-references#43 ; obsidian-cards#45,,title-outside-or-insufficient,,,3
+W0139,Research on the Sanxingdui cultural and creative product design based on an AIGC design framework,,industrial-design-100#50 ; archive-references#75 ; obsidian-cards#51,,title-outside-or-insufficient,,,3
+W0140,THE ROLE OF “GOOD” BEHAVIOURS IN BEHAVIOURAL DESIGN,10.35199/epde.2025.35,industrial-design-100#53 ; archive-references#94 ; obsidian-cards#54,,title-outside-or-insufficient,,,3
+W0141,Sustainability through Biomimicry: A Comprehensive Review of Bionic Design Applications,10.3390/biomimetics9090507,industrial-design-100#56 ; archive-references#85 ; licensed-files#24 ; obsidian-cards#57,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/CORE-B025.pdf,4
+W0142,Strategies for applying shape grammar to wooden furniture design: Taking traditional Chinese Ming-style recessed-leg table as an example,10.15376/biores.19.1.1707-1727,industrial-design-100#58 ; archive-references#80 ; obsidian-cards#58,,title-outside-or-insufficient,,,3
+W0143,Application of symbolic language and pattern innovation of Chaoshan peach cake mold in paper packaging design,10.15376/biores.20.1.482-499,industrial-design-100#59 ; archive-references#15 ; obsidian-cards#59,,title-outside-or-insufficient,,,3
+W0144,DREAMWORLDS: A CASE STUDY PRESENTING THE POTENTIAL OF TEXT-TO-IMAGE AI IN PRODUCT DESIGN EDUCATION,10.35199/epde.2024.30,industrial-design-100#65 ; archive-references#32 ; obsidian-cards#65,,title-outside-or-insufficient,,,3
+W0145,Product Styling Cognition Based on Kansei Engineering Theory and Implicit Measurement,10.3390/app13179577,industrial-design-100#66 ; archive-references#71 ; licensed-files#25 ; obsidian-cards#66,,title-candidate,Kansei,https://github.com/Freeloop993/paper/tree/reference-fulltexts-20261109/fulltexts/CORE-B034.pdf.parts,4
+W0146,CONCEPT TO PRODUCTION WITH A GEN AI DESIGN ASSISTANT: AIDA,10.35199/epde.2024.40,industrial-design-100#67 ; archive-references#23 ; obsidian-cards#67,,title-outside-or-insufficient,,,3
+W0147,Study on Function and Appearance Design of Smart Street Lamps Based on Kansei Engineering: A Literature Review,10.17576/jkukm-2023-35(5)-22,industrial-design-100#68 ; archive-references#83 ; obsidian-cards#68,,title-candidate,Kansei,,3
+W0148,Bridging LCA and design: an LLM-driven pipeline for generating sustainable design alternatives from LCA hotspot analysis,,industrial-design-100#69 ; archive-references#19 ; obsidian-cards#69,,title-outside-or-insufficient,,,3
+W0149,The influence of aesthetic taste on product choice: does mode of evaluation impact decision making?,,industrial-design-100#74 ; archive-references#93 ; obsidian-cards#74,,title-outside-or-insufficient,,,3
+W0150,Creating design catalog from patent documents with large language model for design concept generation,,industrial-design-100#78 ; archive-references#24 ; obsidian-cards#78,,title-outside-or-insufficient,,,3
+W0151,How are professional practices adopting generative AI? The case of an engineering design and product development team,,industrial-design-100#80 ; archive-references#50 ; obsidian-cards#80,,title-outside-or-insufficient,,,3
+W0152,Engineering design through dialogue: a method for analysing speech-based human-AI conversation,,industrial-design-100#82 ; archive-references#36 ; obsidian-cards#82,,title-outside-or-insufficient,,,3
+W0153,Towards Fostering Human Ownership in GenAI-Assisted Design,,industrial-design-100#84 ; archive-references#95 ; obsidian-cards#84,,title-outside-or-insufficient,,,3
+W0154,Innovation of meaning: design-driven study based on the interpretive theory of new meaning,,industrial-design-100#85 ; archive-references#56 ; obsidian-cards#85,,title-outside-or-insufficient,,,3
+W0155,D³IKIT: data-driven design innovation kit,,industrial-design-100#86 ; archive-references#25 ; obsidian-cards#86,,title-outside-or-insufficient,,,3
+W0156,Design Knowledge Interaction Model: A Proposal from a Cognitive Perspective,10.35199/norddesign2024.64,industrial-design-100#87 ; archive-references#29 ; obsidian-cards#87,,title-outside-or-insufficient,,,3
+W0157,Explaining a Jewelry Design Process: Using a generative Design Method Called Shape Grammars and Producing the Product with 3D Printing,10.4236/adr.2024.121001,industrial-design-100#88 ; archive-references#39 ; licensed-files#26 ; obsidian-cards#88,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/CORE-B056.pdf,4
+W0158,How would engineers use LLMs for assembly search if they could? – An empirical study for fostering generative AI-driven design reuse in the future,,industrial-design-100#89 ; archive-references#52 ; obsidian-cards#89,,title-outside-or-insufficient,,,3
+W0159,More AI means less design? Empirical insights from design education,,industrial-design-100#90 ; archive-references#67 ; obsidian-cards#90,,title-outside-or-insufficient,,,3
+W0160,Design and evaluation of an AI-based application to enhance creativity in design thinking workshops,,industrial-design-100#91 ; archive-references#28 ; obsidian-cards#91,,title-outside-or-insufficient,,,3
+W0161,Paradigmatic design thinking: how generative AI changes the role of human designers,,industrial-design-100#92 ; archive-references#70 ; obsidian-cards#92,,title-outside-or-insufficient,,,3
+W0162,The balance between a usable and emotional product design – a comparison of different methods for prioritising relevant influencing factors,,industrial-design-100#93 ; archive-references#89 ; obsidian-cards#93,,title-outside-or-insufficient,,,3
+W0163,A Framework for Defining Innovation in the New Development of Modular Product Families,10.35199/norddesign2024.27,industrial-design-100#95 ; archive-references#5 ; obsidian-cards#95,,title-outside-or-insufficient,,,3
+W0164,Structuring the design space while exploring it: a cognitive perspective on design space exploration,,industrial-design-100#96 ; archive-references#82 ; obsidian-cards#96,,title-outside-or-insufficient,,,3
+W0165,Developing a Process Model for Future-Robust Advancement of Product Portfolios,10.35199/norddesign2024.49,industrial-design-100#98 ; archive-references#30 ; obsidian-cards#98,,title-outside-or-insufficient,,,3
+W0166,"AI-powered inventive design: idea funnelling, concept creation, and hybrid problem-solving teams",,industrial-design-100#99 ; archive-references#12 ; obsidian-cards#99,,title-outside-or-insufficient,,,3
+W0167,DS-Viz: a method for visualising design spaces,,industrial-design-100#100 ; archive-references#33 ; obsidian-cards#100,,title-outside-or-insufficient,,,3
+W0168,"Human-AI Co-Design and Co-Creation: A Review of Emerging Approaches, Challenges, and Future Directions",10.1609/aaaiss.v6i1.36061,industrial-design-100#101 ; archive-references#54 ; obsidian-cards#101,,title-outside-or-insufficient,,,3
+W0169,3D Sketching + 2D Generative AI for Car Exterior Design,,archive-references#102 ; licensed-files#28,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-487aa8cdeffc.pdf,2
+W0170,A foundation model enhanced approach for generative design in combinational creativity,,archive-references#103 ; licensed-files#29,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-1ab755b0335c.pdf,2
+W0171,A Hybrid Prototype Method Combining Physical Models and Generative AI,,archive-references#104,,title-outside-or-insufficient,,,1
+W0172,AIDED  Augmenting Interior Design with Human Experience Data for Designer–AI Co-Design,,archive-references#107 ; licensed-files#30,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-8c134e602f06.pdf,2
+W0173,Auto-Regressively Generating Multi-View Consistent Images,,archive-references#108,,title-outside-or-insufficient,,,1
+W0174,Beyond Automation  How Designers Perceive AI as a Creative Partner in the Divergent Thinking Stages of UI UX Design,,archive-references#109,,title-outside-or-insufficient,,,1
+W0175,Beyond Input–Output  Rethinking Creativity through Design-by-Analogy in Human–AI Collaboration,,archive-references#110 ; licensed-files#31,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-87feb0e67c63.pdf,2
+W0176,Beyond Productivity  Rethinking the Impact of Creativity Support Tools,,archive-references#111 ; licensed-files#32,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b6ef9a324d77.pdf,2
+W0177,BoxDiff  Text-to-Image Synthesis with Training-Free Box-Constrained Diffusion,,archive-references#112,,title-outside-or-insufficient,,,1
+W0178,CAD-prompted generative models: a pathway to feasible and novel engineering designs,10.1115/detc2024-146325,archive-references#113 ; 11/18补充#C4,,title-outside-or-insufficient,,,2
+W0179,ChatGPT as an inventor  eliciting the strengths and weaknesses of current large language models against humans in engineering design,,archive-references#114 ; licensed-files#33,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fafcb50a6ed7.pdf,2
+W0180,Clay to Play With,,archive-references#115 ; licensed-files#34,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-24ad1da38465.pdf,2
+W0181,Compass Control  Multi Object Orientation Control for Text-to-Image Generation,,archive-references#117,,title-outside-or-insufficient,,,1
+W0182,Compositional Structures as Substrates for Human-AI Co-creation Environment  A Design Approach and A Case Study,,archive-references#118 ; licensed-files#35,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f22b9071fcef.pdf,2
+W0183,"""Control is a trajectory, not a point"": conceptualizing control in human-AI co-creativity",10.1145/3772318.3790861,archive-references#119 ; licensed-files#36 ; 11/18补充#C17,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a093248ab05f.pdf,3
+W0184,ControlNet++: improving conditional controls with efficient consistency feedback,10.1007/978-3-031-72667-5_8,archive-references#121 ; 11/18补充#C15,,title-outside-or-insufficient,,,2
+W0185,ControlNet-XS  Rethinking the Control of Text-to-Image Diffusion Models as Feedback-Control Systems,,archive-references#122,,title-outside-or-insufficient,,,1
+W0186,Creativity from Surprise  Bridging Fashion Designers Inspiration Work and AI Creative Support Tools,,archive-references#123 ; licensed-files#37,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-9ac858e2a8f1.pdf,2
+W0187,Ctrl-X  Controlling Structure and Appearance for Text-To-Image Generation Without Guidance,,archive-references#126,,title-outside-or-insufficient,,,1
+W0188,Customizing Text-to-Image Diffusion with Object Viewpoint Control,,archive-references#127,,title-outside-or-insufficient,,,1
+W0189,DC-ControlNet  Decoupling Inter- and Intra-Element Conditions in Image Generation with Diffusion Models,,archive-references#129,,title-outside-or-insufficient,,,1
+W0190,Decoupling of Usefulness and Novelty Evaluating the Impact of Generative AI on Design Outputs and Novice Designers Creative Thinking,,archive-references#131 ; licensed-files#38,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-bb26f8b7b5d0.pdf,2
+W0191,Design ideation through large language model-driven design operation,,archive-references#133 ; licensed-files#39,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ae84f1f31ea9.pdf,2
+W0192,DesignDiffusion High-Quality Text-to-Design Image Generation with Diffusion Models,,archive-references#134,,title-outside-or-insufficient,,,1
+W0193,DesignerlyLoop,,archive-references#135,,title-outside-or-insufficient,,,1
+W0194,Designing Interactions with Generative AI for Art and Creativity  A Systematic Review and Taxonomy,,archive-references#136 ; licensed-files#40,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-16c284f7b4ce.pdf,2
+W0195,Diffusion Self-Guidance for Controllable Image Generation,,archive-references#138,,title-outside-or-insufficient,,,1
+W0196,DreamRenderer  Taming Multi-Instance Attribute Control in Large-Scale Text-to-Image Models,,archive-references#140,,title-outside-or-insufficient,,,1
+W0197,EchoLadder  Progressive AI-Assisted Design of Immersive VR Scenes,,archive-references#141,,title-outside-or-insufficient,,,1
+W0198,Empowering design innovation using AI-generated content,,archive-references#142,,title-outside-or-insufficient,,,1
+W0199,Enhancing designer creativity through human–AI co-ideation  a co-creation framework for design ideation with custom GPT,,archive-references#143 ; licensed-files#41,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-26764650767e.pdf,2
+W0200,Exploring Collaboration Patterns and Strategies in Human-AI Co-creation through the Lens of Agency  A Scoping Review of the Top-tier HCI Literature,,archive-references#145 ; licensed-files#42,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-552d56978439.pdf,2
+W0201,Exploring Visual Prompts  Refining Images with Scribbles and Annotations in Generative AI Image Tools,,archive-references#146,,title-outside-or-insufficient,,,1
+W0202,Fashioning Creative Expertise with Generative AI,,archive-references#147,,title-outside-or-insufficient,,,1
+W0203,FreeControl  Training-Free Spatial Control of Any Text-to-Image Diffusion Model with Any Condition,,archive-references#149,,title-outside-or-insufficient,,,1
+W0204,GenColor  Generative Color-Concept Association in Visual Design,,archive-references#151,,title-outside-or-insufficient,,,1
+W0205,GPSdesign Integrating Generative AI with Problem-Solution Co-Evolution Network,,archive-references#152,,title-outside-or-insufficient,,,1
+W0206,HiCo  Hierarchical Controllable Diffusion Model for Layout-to-image Generation,,archive-references#154,,title-outside-or-insufficient,,,1
+W0207,Homogenization Effects of Large Language Models on Human Creative Ideation,,archive-references#155,,title-outside-or-insufficient,,,1
+W0208,How generative AI supports human in conceptual design,10.1017/dsj.2025.2,archive-references#156 ; licensed-files#43 ; 11/18补充#C19,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b559015194e1.pdf,3
+W0209,Human-Centered AI Communication in Co-Creativity,,archive-references#157,,title-outside-or-insufficient,,,1
+W0210,Human-in-the-Loop Local Corrections of 3D Scene Layouts via Infilling,,archive-references#158,,title-outside-or-insufficient,,,1
+W0211,"Hybrid Layout Control for Diffusion Transformer  Fewer Annotations, Superior Aesthetics",,archive-references#159,,title-outside-or-insufficient,,,1
+W0212,ImaginationVellum Generative-AI Ideation Canvas with Spatial Prompts Generative Strokes and Ideation History,,archive-references#161 ; licensed-files#44,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d5c42df14c8a.pdf,2
+W0213,Improving User Interface Generation Models from Designer Feedback,,archive-references#162 ; licensed-files#45,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b161ba78dc14.pdf,2
+W0214,InstanceDiffusion  Instance-level Control for Image Generation,,archive-references#163,,title-outside-or-insufficient,,,1
+W0215,Intent Tagging  Exploring Micro-Prompting Interactions for Supporting Granular Human-GenAI Co-Creation Workflows,,archive-references#164,,title-outside-or-insufficient,,,1
+W0216,Learning to Generate Semantic Layouts for Higher Text-Image Correspondence in Text-to-Image Synthesis,,archive-references#166,,title-candidate,Semantic,,1
+W0217,LEDITS++  Limitless Image Editing Using Text-to-Image Models,,archive-references#167,,title-outside-or-insufficient,,,1
+W0218,Luminate Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation,,archive-references#168,,title-outside-or-insufficient,,,1
+W0219,MUSE  Multi-Subject Unified Synthesis via Explicit Layout Semantic Expansion,,archive-references#169,,title-candidate,Semantic,,1
+W0220,MVDream  Multi-view Diffusion for 3D Generation,,archive-references#170,,title-outside-or-insufficient,,,1
+W0221,OneActor  Consistent Subject Generation via Cluster-Conditioned Guidance,,archive-references#171,,title-outside-or-insufficient,,,1
+W0222,PALP  Prompt Aligned Personalization of Text-to-Image Models,,archive-references#172,,title-outside-or-insufficient,,,1
+W0223,POET  Supporting Prompting Creativity and Personalization with Automated Expansion of Text-to-Image Generation,,archive-references#175,,title-outside-or-insufficient,,,1
+W0224,Preference-Guided Prompt Optimization for Text-to-Image Generation,,archive-references#176 ; licensed-files#47,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-dc3978d3b620.pdf,2
+W0225,Prompting AI Art,,archive-references#177 ; licensed-files#48,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-49a46ff2c248.pdf,2
+W0226,Prompting for products: investigating design space exploration strategies for text-to-image generative models,10.1017/dsj.2024.51,archive-references#178 ; licensed-files#49 ; 11/18补充#C5,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-93ea8425d53f.pdf,3
+W0227,Reward-Directed Diffusion for Generative Design,,archive-references#179,,title-outside-or-insufficient,,,1
+W0228,Rich Human Feedback for Text-to-Image Generation,,archive-references#180,,title-outside-or-insufficient,,,1
+W0229,Sketchar  Supporting Character Design and Illustration Prototyping Using Generative AI,,archive-references#182,,title-outside-or-insufficient,,,1
+W0230,SpatialPrompt  XR-Based Spatial Intent Expression as Executable Constraints for AI Generative 3D Design,,archive-references#183 ; licensed-files#50,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a8871e6b62f7.pdf,2
+W0231,StoryDiffusion  Consistent Self-Attention for Long-Range Image and Video Generation,,archive-references#184,,title-outside-or-insufficient,,,1
+W0232,SyncDreamer  Generating Multiview-consistent Images from a Single-view Image,,archive-references#185,,title-outside-or-insufficient,,,1
+W0233,Synthetic users  insights from designers’ interactions with persona-based chatbots,,archive-references#186 ; licensed-files#51,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b65896376f4e.pdf,2
+W0234,T2I-Adapter: learning adapters to dig out more controllable ability for text-to-image diffusion models,10.1609/aaai.v38i5.28226,archive-references#187 ; 11/18补充#C13,,title-outside-or-insufficient,,,2
+W0235,Text-Driven Image Editing via Learnable Regions,,archive-references#188,,title-outside-or-insufficient,,,1
+W0236,TF-TI2I  Training-Free Text-And-Image-To-Image Generation via Multi-Modal Implicit-Context Learning in Text-To-Image Models,,archive-references#189,,title-outside-or-insufficient,,,1
+W0237,The Chosen One  Consistent Characters in Text-to-Image Diffusion Models,,archive-references#190,,title-outside-or-insufficient,,,1
+W0238,The effects of generative AI model type and visual stimuli type on design creativity,,archive-references#192 ; licensed-files#52,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-2e5cc01b3671.pdf,2
+W0239,The effects of generative AI on design fixation and divergent thinking,10.1145/3613904.3642919,archive-references#193 ; 11/18补充#C6,,title-outside-or-insufficient,,,2
+W0240,The impact of sketch-guided vs. prompt-guided 3D generative AIs on the design exploration process,10.1145/3613904.3642218,archive-references#194 ; licensed-files#53 ; 11/18补充#C7,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-eb23dba1818c.pdf,3
+W0241,The Role of Human Agency in Human-AI Co-Creativity,,archive-references#195 ; licensed-files#54,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d105dea24e33.pdf,2
+W0242,Training-Free Constrained Generation With Stable Diffusion Models,,archive-references#198,,title-outside-or-insufficient,,,1
+W0243,Two-Player Alternate Uses Test,,archive-references#199,,title-outside-or-insufficient,,,1
+W0244,Understanding Design Collaboration Between Designers and AI,,archive-references#200,,title-outside-or-insufficient,,,1
+W0245,Uni-ControlNet: all-in-one control to text-to-image diffusion models,10.52202/075280-0491,archive-references#201 ; 11/18补充#C14,,title-outside-or-insufficient,,,2
+W0246,UniControl  A Unified Diffusion Model for Controllable Visual Generation In the Wild,,archive-references#202,,title-outside-or-insufficient,,,1
+W0247,User Experience Design Professionals’ Perceptions of Generative Artificial Intelligence,,archive-references#204,,title-outside-or-insufficient,,,1
+W0248,VideoDiff  Human-AI Video Co-Creation with Alternatives,,archive-references#205 ; licensed-files#55,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-4a4784b738fe.pdf,2
+W0249,What is generative in generative artificial intelligence  A design-based perspective,,archive-references#208,,title-outside-or-insufficient,,,1
+W0250,"“An Adapt-or-Die Type of Situation”  Perception, Adoption, and Use of Text-to-Image-Generation AI by Game Industry Professionals",,archive-references#210,,title-outside-or-insufficient,,,1
+W0251,1-s2.0-S0142694X24000164-main,,archive-references#211 ; licensed-files#57,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7d02cf1a00eb.pdf,2
+W0252,1-s2.0-S0142694X24000425-main,,archive-references#212,,title-outside-or-insufficient,,,1
+W0253,1-s2.0-S0142694X25000158-main,,archive-references#213 ; licensed-files#58,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7dbd6ab4f919.pdf,2
+W0254,1-s2.0-S0169814124000854-main,,archive-references#214,,title-outside-or-insufficient,,,1
+W0255,1-s2.0-S0959475224000562-main,,archive-references#215,,title-outside-or-insufficient,,,1
+W0256,1-s2.0-S1071581924001046-main,,archive-references#216,,title-outside-or-insufficient,,,1
+W0257,1AI与设计过去20年,,archive-references#217,,title-outside-or-insufficient,,,1
+W0258,2111.05974v4,,archive-references#218,,title-outside-or-insufficient,,,1
+W0259,2403.01609v2,,archive-references#219,,title-outside-or-insufficient,,,1
+W0260,2503.16477v1,,archive-references#220,,title-outside-or-insufficient,,,1
+W0261,2858036.2858159,,archive-references#221,,title-outside-or-insufficient,,,1
+W0262,3290605.3300233,,archive-references#222,,title-outside-or-insufficient,,,1
+W0263,3607822.3618018,,archive-references#223,,title-outside-or-insufficient,,,1
+W0264,3613904.3642481,,archive-references#224,,title-outside-or-insufficient,,,1
+W0265,3672758.3672915,,archive-references#225,,title-outside-or-insufficient,,,1
+W0266,3677045.3685445,,archive-references#226,,title-outside-or-insufficient,,,1
+W0267,3706598.3713397,,archive-references#227 ; licensed-files#59,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-62bb482b9264.pdf,2
+W0268,3706598.3713502,,archive-references#228 ; licensed-files#60,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a76395f78771.pdf,2
+W0269,3706598.3713934,,archive-references#229 ; licensed-files#61,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-77cd7c0c8bb7.pdf,2
+W0270,3706598.3713935,,archive-references#230 ; licensed-files#62,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d2e6e2f0f152.pdf,2
+W0271,3DALL-E 在3D设计工作流程中集成文本到图像AI,,archive-references#231,,title-outside-or-insufficient,,,1
+W0272,978-3-031-48038-6 43,,archive-references#232,,title-outside-or-insufficient,,,1
+W0273,A DESIGN AND AI COURSE IN CONVERSATION WITH MACHINES,,archive-references#233,,title-outside-or-insufficient,,,1
+W0274,A novel approach to design creativity assessment a comparative evaluation,,archive-references#234,,title-outside-or-insufficient,,,1
+W0275,A structural framework for generative engineering and design assistance systems development,,archive-references#235,,title-outside-or-insufficient,,,1
+W0276,A Study on Factors Influencing Designers  Behavioral Intention in Using AI-Generated Content for Assisted Design  Perceived Anxiety  Perceived Risk  a,,archive-references#236 ; licensed-files#63,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3ccbb054e4c8.pdf,2
+W0277,A Systematic Literature Review of User Trust in AI-Enabled Systems  An HCI Perspective,,archive-references#237 ; licensed-files#64,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ebac71f8aa0c.pdf,2
+W0278,A team of three the role of generative AI in the development of design automation systems for complex pro,,archive-references#238,,title-outside-or-insufficient,,,1
+W0279,"ACADEMIC-INDUSTRY SYNERGY, HYBRID AND CO-CREATION METHODOLOGY",,archive-references#239,,title-outside-or-insufficient,,,1
+W0280,Aerodynamic Design Optimization of a Morphing Leading Edge and Trailing Edge Airfoil–Application on the UAS-S45,,archive-references#241 ; licensed-files#65,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ea5d00de36d4.pdf,2
+W0281,AI Agent的研究现状,,archive-references#242,,title-outside-or-insufficient,,,1
+W0282,AI as an element to overcome creative fixation in design teams,,archive-references#243,,title-outside-or-insufficient,,,1
+W0283,AI+UX+revision+08062023,,archive-references#244,,title-outside-or-insufficient,,,1
+W0284,AIGC 赋能的产品配色设计方法,,archive-references#245,,title-outside-or-insufficient,,,1
+W0285,AIGC在工业设计上的应用与思考 冯玉泉,,archive-references#246,,title-outside-or-insufficient,,,1
+W0286,AIGC工具在工业装备造型设计领域的优缺点对比研究,,archive-references#247,,title-outside-or-insufficient,,,1
+W0287,AIGC应用于传统皮影IP形象的设计探索 宋长磊,,archive-references#248,,title-outside-or-insufficient,,,1
+W0288,Application of wearable technology for the ergonomic risk assessment of healthcare professionals  A systematic literature review,,archive-references#249 ; licensed-files#66,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-2c74c027a662.pdf,2
+W0289,Are generative design tools creative A characterisation of tools throughout the design process,,archive-references#250,,title-outside-or-insufficient,,,1
+W0290,Artificial creativity in design a theory-based framework for implementation,,archive-references#251,,title-outside-or-insufficient,,,1
+W0291,"Autonomous Multi-Rotor UAVs A Holistic Approach to Design, Optimization, and Fabrication",,archive-references#252,,title-outside-or-insufficient,,,1
+W0292,AutoSpark: supporting automobile appearance design ideation with Kansei engineering and generative AI,10.1145/3654777.3676337,archive-references#253 ; feishu-100#42 ; 11/18补充#C3,spark,methods-read,感性,,3
+W0293,BINDING AI AND XR IN DESIGN EDUCATION CHALLENGES AND OPPORTUNITIES WITH EMERGING TECHNOLOGIES,,archive-references#254,,title-outside-or-insufficient,,,1
+W0294,CGAN 驱动的车辆外观智能生成设计,,archive-references#255,,title-outside-or-insufficient,,,1
+W0295,CO-DESIGN AND ARTIFICIAL INTELLIGENCE A METHOD TO EMPOWER END-USERS IN VISUAL COMMUNICATION,,archive-references#256,,title-outside-or-insufficient,,,1
+W0296,"Comparison of evolutionary, reinforcement and active learning for simulation-based design space explorati",,archive-references#257,,title-outside-or-insufficient,,,1
+W0297,CreativeConnect 使用生成式AI支持图形设计构思的参考重组,,archive-references#258 ; archive-references#259 ; licensed-files#67 ; feishu-100#40 ; feishu-100#64 ; feishu-100#68,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3447ec92ac1c.pdf,6
+W0298,DesignPrompt 使用多模态交互通过生成式AI进行设计探索,,archive-references#260,,title-outside-or-insufficient,,,1
+W0299,"Do Methods Work On the Correlation of Method Application, Effort, and Product Quality",,archive-references#261,,title-outside-or-insufficient,,,1
+W0300,Effect of team diversity on teams’ design space a computational approach,,archive-references#262,,title-outside-or-insufficient,,,1
+W0301,Engineering Village detailed 9-29-2024 9543556,,archive-references#263,,title-outside-or-insufficient,,,1
+W0302,Enhancing computer-aided design with deep learning frameworks a literature review,,archive-references#264,,title-outside-or-insufficient,,,1
+W0303,Enhancing Creativity in Sustainable Product Design The Impact of Generative AI Tools at the Conceptual Stage,,archive-references#265,,title-outside-or-insufficient,,,1
+W0304,ENHANCING INDUSTRIAL DESIGN EDUCATION THE IMPACT OF GENERATIVE AI TOOLS ON MASTERING CREATIVITY TECHNIQUE,,archive-references#266,,title-outside-or-insufficient,,,1
+W0305,Evaluating the Role of Generative AI in Product Development and Design - A Systematic Review,,archive-references#267,,title-outside-or-insufficient,,,1
+W0306,Evaluation and Design Method for Product Form Aesthetics Based on Deep Learning,,archive-references#268 ; licensed-files#68,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e20085e065c0.pdf,2
+W0307,EXPLORING CHATGPT’S IMPACT ON STUDENT-TEAM IDEATION OUTCOMES FOR NEW PRODUCT DEVELOPMENT A PILOT STUDY,,archive-references#269,,title-outside-or-insufficient,,,1
+W0308,FashionQ 一种AI驱动的创意支持工具，可促进时装设计中的构思,,archive-references#270,,title-outside-or-insufficient,,,1
+W0309,flight system optimized layout2,,archive-references#271,,title-outside-or-insufficient,,,1
+W0310,Food for thought exploring the future of food through AI-supported design fictions,,archive-references#272,,title-outside-or-insufficient,,,1
+W0311,Gantiration 使用基于风格的生成对抗网络平衡用户界面设计中的目标和偶然灵感,,archive-references#273,,title-outside-or-insufficient,,,1
+W0312,Human-AI collaboration by design,,archive-references#274,,title-outside-or-insufficient,,,1
+W0313,Humanoid A Deep Learning-Based Approach to Automated Black-box Android App Testing,,archive-references#275,,title-outside-or-insufficient,,,1
+W0314,IntegratingGenerativeArtificialIntelligenceandHumanDesignTheImpactofAutomationLevelonHumanCreativeExperienceandEfficiency,,archive-references#276,,title-outside-or-insufficient,,,1
+W0315,Kano模型在中国设计学研究中的应用 张劭坤,,archive-references#277,,title-outside-or-insufficient,,,1
+W0316,Kansei Engineering：一种用于产品开发的新型人体工程学、以消费者为导向的技术,,archive-references#278,,title-candidate,Kansei,,1
+W0317,Knowledge representation in product design a literature review,,archive-references#279,,title-outside-or-insufficient,,,1
+W0318,Luminate  corrupt,,archive-references#280,,title-outside-or-insufficient,,,1
+W0319,Machine Learning Algorithms for Improved Product Design User Experience,,archive-references#281 ; licensed-files#69,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-621641162b7c.pdf,2
+W0320,Opportunities and challenges of AI in design a practical study from the manufacturing industry,,archive-references#282,,title-outside-or-insufficient,,,1
+W0321,ParamDrone参数驱动的四旋翼无人机智能设计系统,,archive-references#283,,exclude-internal,,,1
+W0322,Photo-Based Research Analysing Attributes of Unintended Interaction Towards Mainstream Product,,archive-references#284,,title-outside-or-insufficient,,,1
+W0323,Promptify 通过大型语言模型的交互式提示探索生成文本到图像,,archive-references#285,,title-outside-or-insufficient,,,1
+W0324,PromptPaint：通过与paintmedium类似的交互来引导文本到图像的生成,,archive-references#286,,title-outside-or-insufficient,,,1
+W0325,Prototreamer 结合物理模型和生成式AI以支持概念设计的混合原型工具,,archive-references#287,,title-outside-or-insufficient,,,1
+W0326,RePrompt：自动提示编辑，以细化ai生成艺术的精确表达式,,archive-references#288,,title-outside-or-insufficient,,,1
+W0327,Research on the Mechanism of the Multimodal Sustained Usage of Sport Drones from the Perspective of the L,,archive-references#289 ; licensed-files#70,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e0b5f98cacd8.pdf,2
+W0328,Rethinking the Evaluation for Conversational Recommendation in the Era of La,,archive-references#290,,title-outside-or-insufficient,,,1
+W0329,s41586-024-07697-2,,archive-references#291,,title-outside-or-insufficient,,,1
+W0330,Scenario-based planning of design method validation studies and the associated effort,,archive-references#292,,title-outside-or-insufficient,,,1
+W0331,SimUser：通过模拟不同用户与移动应用的交互来生成可用性反馈,,archive-references#293 ; feishu-100#34,,title-outside-or-insufficient,,,2
+W0332,Spellburst 基于节点的接口，用于使用自然语言提示进行探索性创意编码,,archive-references#294,,title-outside-or-insufficient,,,1
+W0333,Spinneret 通过非明显的概念关联来帮助创意构思,,archive-references#295,,title-outside-or-insufficient,,,1
+W0334,Stimulating design ideation with artificial intelligence present and (short-term) future,,archive-references#296,,title-outside-or-insufficient,,,1
+W0335,Supporting modular product family representations by methodically utilising meta-models,,archive-references#297,,title-outside-or-insufficient,,,1
+W0336,Text Stimuli Created by Generative AI in Ideation An Exploratory Study,,archive-references#298,,title-outside-or-insufficient,,,1
+W0337,The use of occurrences of ideas for constructing and characterizing the design space,,archive-references#299,,title-outside-or-insufficient,,,1
+W0338,Towards Model-Based Modular Product Families in the Context of Systems Engineering,,archive-references#300,,title-outside-or-insufficient,,,1
+W0339,tyleWe：借助高效的联邦人工智能实现生成式时尚设计中的风格融合,,archive-references#301,,title-outside-or-insufficient,,,1
+W0340,Understanding ChatGPT’s impact on student-team ideation outcomes for new product development,,archive-references#302,,title-outside-or-insufficient,,,1
+W0341,Unveiling the Complexity of Designers’ Intention to Use Generative AI in Corporate Product Design A Groun,,archive-references#303 ; licensed-files#71,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fc8f8b59f9ee.pdf,2
+W0342,UX AND 综述,,archive-references#305,,title-outside-or-insufficient,,,1
+W0343,WRONG McDesign slides,,archive-references#306,,title-outside-or-insufficient,,,1
+W0344,“非遗+AI”模式下的湖南土特产包装创新设计 纪向宏,,archive-references#307,,title-outside-or-insufficient,,,1
+W0345,《唐文化赋能的典型场景生成式人工智能设计研究》,,archive-references#308,,title-outside-or-insufficient,,,1
+W0346,一种基于形状语法和 Kansei 工程的 AI 驱动的产品身份表单设计方法：Midjourney 和 Grey-AHP-QFD 的集成,,archive-references#309 ; licensed-files#72,,title-candidate,Kansei,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-71d3e2a0b829.pdf,2
+W0347,一种基于条件变分自编码器的翼型创成式设计方法,,archive-references#310,,title-outside-or-insufficient,,,1
+W0348,一种用于产品外观设计的定量审美测量方法,,archive-references#311 ; licensed-files#73,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-22599b22e5b6.pdf,2
+W0349,一种由用户感知的偏好评估数据驱动的灵感库的构建方法，用于生物启发设计,,archive-references#312,,title-outside-or-insufficient,,,1
+W0350,一种融合感性工程和鲸鱼优化算法的新型产品形状设计方法,,archive-references#313 ; feishu-100#15,,title-candidate,感性,,2
+W0351,A product form design method integrating Kansei engineering and diffusion model,10.1016/j.aei.2023.102058,archive-references#314 ; archive-references#315 ; feishu-100#25 ; 11/18补充#C10,yang,methods-read,感性,,4
+W0352,中国工业设计理论研究40年的回顾与展望,,archive-references#316,,title-outside-or-insufficient,,,1
+W0353,中日感性工学研究现状及启示 李勇,,archive-references#317,,title-candidate,感性,,1
+W0354,丹麦高中生与机器人聊天,,archive-references#318 ; licensed-files#74,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ff91d9f69f7a.pdf,2
+W0355,了解灵感：深入了解设计师如何使用支持 AI 的平台发现灵感刺激,,archive-references#319 ; licensed-files#75,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-50ab184e2eab.pdf,2
+W0356,产品色彩感性工学设计研究现状 丁满,,archive-references#321,,title-candidate,感性,,1
+W0357,人–机器人协同作业中的人因问题研究综述 张岚云,,archive-references#322,,title-outside-or-insufficient,,,1
+W0358,人因工程下不同养老模式的适老化设计研究 石园,,archive-references#323,,title-outside-or-insufficient,,,1
+W0359,人因工程学在飞机驾驶舱空间布局设计中的应用 罗晓利,,archive-references#324,,title-outside-or-insufficient,,,1
+W0360,人因工程研究进展及发展建议 陈善广,,archive-references#325,,title-outside-or-insufficient,,,1
+W0361,人工智能创造力支持工具中的艺术用户表达,,archive-references#326,,title-outside-or-insufficient,,,1
+W0362,人工智能方法在产品设计中的应用概况和趋势,,archive-references#327,,title-outside-or-insufficient,,,1
+W0363,人工智能驱动的华佗五禽戏数字交互设计与公共传播 张悦,,archive-references#328,,title-outside-or-insufficient,,,1
+W0364,人机协同视域下汽车造型智能设计研究 章彰,,archive-references#329,,title-candidate,造型智能,,1
+W0365,人类作为 AI 导师：增强的人机协同强化学习，实现安全高效的自动驾驶,,archive-references#330 ; licensed-files#76,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ffd3acca808f.pdf,2
+W0366,人类咨询与人工智能咨询：大学生的观点,,archive-references#331 ; licensed-files#77,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7b444fd2573a.pdf,2
+W0367,什么约翰尼不能提示：非ai专家如何尝试（和失败）设计LLM提示,,archive-references#332 ; licensed-files#78,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-adc5133a79d3.pdf,2
+W0368,从可解释的 AI 到交互式 AI：关于人机交互当前趋势的文献综述,,archive-references#333,,title-outside-or-insufficient,,,1
+W0369,从工业设计角度谈多旋翼无人机的设计 刘帅,,archive-references#335,,title-outside-or-insufficient,,,1
+W0370,优化人机协作：动机和准确性信息对 AI 支持决策的影响,,archive-references#336 ; licensed-files#79,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3e5ee9f01817.pdf,2
+W0371,使用AI进行设计构思-使用生成式机器学习模型进行素描，思考和交谈,,archive-references#337 ; licensed-files#80,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3c78f70e2d19.pdf,2
+W0372,使用ChatGPT增强提示工程的提示模式目录,,archive-references#338,,title-outside-or-insufficient,,,1
+W0373,六旋翼无人机造型设计 梁健,,archive-references#339,,title-outside-or-insufficient,,,1
+W0374,决策科学中人类人工智能系统的设计：回顾和前进的方向,,archive-references#340,,title-outside-or-insufficient,,,1
+W0375,前人工智能和后人工智能设计 在工业设计过程中平衡人类创造力和人工智能工具,,archive-references#341 ; licensed-files#81 ; feishu-100#50,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b7749f606fa3.pdf,3
+W0376,协作扩散 用生成式AI促进设计上的共同创造,,archive-references#342,,title-outside-or-insufficient,,,1
+W0377,可供性和产品语义驱动的产品设计方法研究 邓家乐,,archive-references#344,,title-candidate,语义,,1
+W0378,可持续设计研究趋势的可视化分析 孙波,,archive-references#345,,title-outside-or-insufficient,,,1
+W0379,可解释性在形成对自动驾驶汽车的认知、信任和接受度方面的关键作用,,archive-references#346,,title-outside-or-insufficient,,,1
+W0380,国内外人因工程学研究的比较分析 郭伏,,archive-references#347,,title-outside-or-insufficient,,,1
+W0381,国外生成式产品设计研究综述 刘永红,,archive-references#348,,title-outside-or-insufficient,,,1
+W0382,国际人因工程主流学术群体及其代表人物 刘则渊,,archive-references#349,,title-outside-or-insufficient,,,1
+W0383,在社交机器人设计中整合审美和情感偏好：一种采用 Kansei Engineering 和深度卷积生成对抗网络的情感设计方法,,archive-references#350,,title-candidate,情感,,1
+W0384,基于AIGC协同工业设计流...气道廓清辅具设计研究与实践 尹虎,,archive-references#351,,title-outside-or-insufficient,,,1
+W0385,基于AIGC的汽车内饰形态设计研究 曾绍庭,,archive-references#352,,title-outside-or-insufficient,,,1
+W0386,基于chatgpt等的聊天机器人回顾,,archive-references#353,,title-outside-or-insufficient,,,1
+W0387,基于eHMI的车外人机交互信任影响因素研究 徐娟芳,,archive-references#354,,title-outside-or-insufficient,,,1
+W0388,基于ERP与遗传算法的产品造型设计方法研究 梁晨,,archive-references#355,,title-outside-or-insufficient,,,1
+W0389,基于LoRA模型的非遗数字化传承：以楚漆器为例 侯云鹏,,archive-references#356,,title-outside-or-insufficient,,,1
+W0390,基于Stable Diff...助汽车零部件设计流程的研究 闻一然,,archive-references#357,,title-outside-or-insufficient,,,1
+W0391,基于StyleGAN的草图生成产品设计效果图方法研究 邓正根,,archive-references#358,,title-outside-or-insufficient,,,1
+W0392,基于中国生肖文化基因的IP形象智能生成设计方法研究 林茂丛,,archive-references#359,,title-outside-or-insufficient,,,1
+W0393,基于交互式遗传算法的破拆机器人造型设计 尹昊苏,,archive-references#360,,title-outside-or-insufficient,,,1
+W0394,基于人因工程学的座椅设计与评价 沈维蕾,,archive-references#361,,title-outside-or-insufficient,,,1
+W0395,基于人智团队智能体协同进化的群智创新设计方法 罗仕鉴,,archive-references#362,,title-outside-or-insufficient,,,1
+W0396,基于人机协同的《山海经》数字化体验设计 曾真,,archive-references#363,,title-outside-or-insufficient,,,1
+W0397,基于参数化形状语法的产品识别设计方法研究 厉茜茜,,archive-references#364,,title-outside-or-insufficient,,,1
+W0398,基于在线评论和FAHP的产品外观感性评价模型的构建——以家用便携式空调为例,,archive-references#365 ; licensed-files#82 ; feishu-100#23,ac,methods-read,感性,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-9fc500a05d41.pdf,3
+W0399,基于大型语言模型开发用于社交情感诱导的对话式虚拟人,,archive-references#366 ; licensed-files#83,,title-candidate,情感,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-c633c28db0c2.pdf,2
+W0400,基于形态表征的乘用车曲面造型特征差异化设计研究 蔡振原,,archive-references#367,,title-outside-or-insufficient,,,1
+W0401,基于形状文法和交互式遗传算法的产品形态创新设计 朱天燕,,archive-references#368,,title-outside-or-insufficient,,,1
+W0402,基于形状文法和交互式遗传算法的产品形态推演设计研究 朱天燕,,archive-references#369,,title-outside-or-insufficient,,,1
+W0403,基于情感和功能约束的产品外观多模态生成设计研究,,archive-references#370 ; feishu-100#45,,title-candidate,情感,,2
+W0404,基于感性工学的人机界面多意象评价 袁树植,,archive-references#371,,title-candidate,感性,,1
+W0405,基于拓扑理论的森林无人机仿生设计研究 周瑄,,archive-references#372,,title-outside-or-insufficient,,,1
+W0406,基于文化基因与形状文法的明代珐华纹样创新设计研究 温凯超,,archive-references#373,,title-outside-or-insufficient,,,1
+W0407,基于权重化特征与形状文法的产品识别设计 厉茜茜,,archive-references#374,,title-outside-or-insufficient,,,1
+W0408,基于深度学习和感性工学的产品创新概念生成,,archive-references#376,,title-candidate,感性,,1
+W0409,基于深度学习和感性工程的产品创新概念生成,,archive-references#377 ; feishu-100#26,,title-candidate,感性,,2
+W0410,基于深度学习和感性工程的产品创新设计,,archive-references#378 ; licensed-files#85,,title-candidate,感性,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-911b586eed2d.pdf,2
+W0411,基于深度学习的图像生成模型全面综述,,archive-references#379,,title-outside-or-insufficient,,,1
+W0412,基于混合结构编码与动态特征融合的印花图案风格迁移模型 朱威,,archive-references#380,,title-outside-or-insufficient,,,1
+W0413,基于生成型人工智能的汽车前脸设计方法,,archive-references#381,,title-outside-or-insufficient,,,1
+W0414,基于生成式人工智能的离子色谱仪设计方法 刘玉磊,,archive-references#382,,title-outside-or-insufficient,,,1
+W0415,基于生成式数字化构建四川石雕植物图案的AI设计创作分析,,archive-references#383,,title-outside-or-insufficient,,,1
+W0416,基于生物原型的小型战术无人机造型仿生设计,,archive-references#384 ; feishu-100#89,,title-outside-or-insufficient,,,2
+W0417,基于用户行为分析的多旋翼巡检无人机使用方式设计研究 王睿洋,,archive-references#385,,title-outside-or-insufficient,,,1
+W0418,基于知识图谱的智能产品服务系统交互设计研究 从靖晨,,archive-references#386,,title-candidate,知识图谱,,1
+W0419,基于科学知识图谱的触觉设计研究热点和趋势分析 刘骁彤,,archive-references#388,,title-candidate,知识图谱,,1
+W0420,基于稳态扩散模型和LoRA...练的IP形象再设计方法研究 方嘉琪,,archive-references#389,,title-outside-or-insufficient,,,1
+W0421,基于肌肉疲劳模型的健身穿戴产品设计研究 何彦,,archive-references#390,,title-outside-or-insufficient,,,1
+W0422,基于脑电信号的虚拟现实界面布局深度感知认知负荷研究 王连彬,,archive-references#391,,title-outside-or-insufficient,,,1
+W0423,基于软系统方法论的宠物航空托运服务设计研究 陈羽,,archive-references#392,,title-outside-or-insufficient,,,1
+W0424,基于遗传算法的产品形态设计模型,,archive-references#393 ; feishu-100#24,,title-outside-or-insufficient,,,2
+W0425,基于遗传算法的飞机气动优化设计,,archive-references#394,,title-outside-or-insufficient,,,1
+W0426,基于非驾驶任务的智能座舱出错因子提取与分析 窦维兴,,archive-references#395,,title-outside-or-insufficient,,,1
+W0427,如何确立学术问题——文献综述撰写的目的与方法 周大鸣,,archive-references#396,,title-outside-or-insufficient,,,1
+W0428,工业机器人中的人机交互：用于基于 AI 的可解释机器人程序优化的用户界面的设计和实证评估,,archive-references#397 ; licensed-files#86,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e77923fe476e.pdf,2
+W0429,意象驱动的产品造型智能设计方法,10.13841/j.cnki.jxsj.2024.08.017,archive-references#398 ; 11/18补充#C8,su,methods-read,意象,,2
+W0430,感性工学,,archive-references#399,,title-candidate,感性,,1
+W0431,感性工学综述,,archive-references#400 ; licensed-files#87,,title-candidate,感性,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fb6bce477839.pdf,2
+W0432,感性工学设计方法研究现状与进展 丁满,,archive-references#401,,title-candidate,感性,,1
+W0433,探索挑战和机遇，支持设计师学习与基于人工智能的制造设计工具共同创造,,archive-references#402 ; licensed-files#88,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f1c1520fa01e.pdf,2
+W0434,探索文本到图像AI在概念生成中的作用,,archive-references#403,,title-outside-or-insufficient,,,1
+W0435,提示工程文本到图像生成模型的设计指南,,archive-references#404,,title-outside-or-insufficient,,,1
+W0436,数字化人机界面设计的人因工程问题分析 王志方,,archive-references#405,,title-outside-or-insufficient,,,1
+W0437,文化遗产保护中虚拟现实技术研究进展 刘鑫达,,archive-references#406,,title-outside-or-insufficient,,,1
+W0438,新型水上混合水陆两栖飞机调查：水上无人机 （AquaUAV）,,archive-references#407,,title-outside-or-insufficient,,,1
+W0439,新能源汽车外观设计的感性工程：一种互联网大数据挖掘方法,,archive-references#408 ; feishu-100#21,ev,methods-read,感性,,2
+W0440,无人机造型设计层次灰关联评价方法研究 高俊杰,,archive-references#409,,title-outside-or-insufficient,,,1
+W0441,智能产品交互设计研究现状与进展 罗仕鉴,,archive-references#410,,title-outside-or-insufficient,,,1
+W0442,智能决策在心理方面影响,,archive-references#411,,title-outside-or-insufficient,,,1
+W0443,智能技术驱动的汽车造型设计流程再造方法研究 罗仕鉴,,archive-references#412,,title-outside-or-insufficient,,,1
+W0444,智能设计工具与KE-AHP...究：以家庭种植产品设计为例 李振鹏,,archive-references#413,,title-outside-or-insufficient,,,1
+W0445,服务设计转移到用户体验设计 综述,,archive-references#414 ; licensed-files#89,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e3af4e957e59.pdf,2
+W0446,机械产品的生成式生态设计 设计工作流程,,archive-references#415 ; licensed-files#90,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e4da9eb965df.pdf,2
+W0447,机械产品设计方案多指标综合评价方法 王海伟,,archive-references#416,,title-outside-or-insufficient,,,1
+W0448,框架，对齐，矛盾，抽象和指导：设计情绪板的工作原理,,archive-references#417,,title-outside-or-insufficient,,,1
+W0449,水上无人机 （AquaUAV） 的 Bioinspiration 回顾,,archive-references#419 ; licensed-files#91,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-51137f9f21db.pdf,2
+W0450,浙大罗仕鉴,,archive-references#420,,title-outside-or-insufficient,,,1
+W0451,浙大罗仕鉴2,,archive-references#421,,title-outside-or-insufficient,,,1
+W0452,现代制造系统中的人因工程 刘春荣,,archive-references#422,,title-outside-or-insufficient,,,1
+W0453,理解用户画像生成中的人机协作工作流,,archive-references#423 ; licensed-files#92,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b3df15a654cb.pdf,2
+W0454,生成式人工智能技术下的复杂农机装备设计 张宁,,archive-references#424 ; archive-references#425,,title-outside-or-insufficient,,,2
+W0455,生成式设计在家具设计中的应用,,archive-references#426 ; licensed-files#93,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-dc37501d88d4.pdf,2
+W0456,用于无人机飞行控制的受鸟类启发的变形综述,,archive-references#427,,title-outside-or-insufficient,,,1
+W0457,用于美学产品设计的 3D 形状生成方法,,archive-references#428,,title-outside-or-insufficient,,,1
+W0458,用于造型应用程序的曲线拟合遗传算法,,archive-references#429,,title-outside-or-insufficient,,,1
+W0459,用人工智能设计：与图像生成器共同构思的探索,,archive-references#430,,title-outside-or-insufficient,,,1
+W0460,眼动实验综述,,archive-references#431,,title-outside-or-insufficient,,,1
+W0461,研究方向评估与文献综述,,archive-references#432,,title-outside-or-insufficient,,,1
+W0462,研究方向评估与文献综述,,archive-references#433,,title-outside-or-insufficient,,,1
+W0463,研究方向评估与文献综述,,archive-references#434,,title-outside-or-insufficient,,,1
+W0464,研究方向评估与文献综述,,archive-references#435,,title-outside-or-insufficient,,,1
+W0465,综述,,archive-references#436 ; licensed-files#94,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a713268784ad.pdf,2
+W0466,罗仕鉴3,,archive-references#437 ; licensed-files#95,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-29f48a911501.pdf,2
+W0467,罗仕鉴4,,archive-references#438,,title-outside-or-insufficient,,,1
+W0468,罗仕鉴5,,archive-references#439 ; licensed-files#96,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-6324b9debff5.pdf,2
+W0469,考虑个体感性差异的感性需求解释的模糊映射方法,,archive-references#440,,title-candidate,感性,,1
+W0470,聊天机器人综述,,archive-references#441 ; licensed-files#97,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b1ebe501caff.pdf,2
+W0471,自适应虚拟代理：实时人机交互的设计和评估,,archive-references#442 ; licensed-files#98,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-251646bf63a7.pdf,2
+W0472,航天人因工程研究进展 陈善广,,archive-references#443,,title-outside-or-insufficient,,,1
+W0473,航空装配作业疲劳监测机理研究及其装备设计应用 张岚云,,archive-references#444,,title-outside-or-insufficient,,,1
+W0474,视觉感知数据驱动的产品造型智能生成设计方法 王愫,,archive-references#445,,title-candidate,造型智能,,1
+W0475,设计思维与人工智能：探索协同效应的系统文献综述,,archive-references#446 ; licensed-files#99,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3d410cd94955.pdf,2
+W0476,设计思维研究综述 李彦,,archive-references#447,,title-outside-or-insufficient,,,1
+W0477,设计智能研究综述：进展、问题和挑战（英文） Yong-chuan TANG,,archive-references#448,,title-outside-or-insufficient,,,1
+W0478,设计理论与方法研究的回顾与展望 孙之琳,,archive-references#449,,title-outside-or-insufficient,,,1
+W0479,贝塞尔曲线,,archive-references#450,,title-outside-or-insufficient,,,1
+W0480,负责任的 AI 工具评估实践的范围界定研究：有效性评估的步骤,,archive-references#451 ; licensed-files#100 ; feishu-100#61,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-bbb114f13132.pdf,3
+W0481,超越建议 从后向前人工智能支持飞行员的决策过程,,archive-references#452,,title-outside-or-insufficient,,,1
+W0482,车辆设计中感性工程的系统评价,,archive-references#453 ; licensed-files#101,,title-candidate,感性,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-05a42425280c.pdf,2
+W0483,迈向具有生成AI的设计 (研究) 框架,,archive-references#454 ; licensed-files#102,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-cdeb395d7b93.pdf,2
+W0484,通过人工智能生成的内容提高产品设计效率：家庭办公桌案例研究0,,archive-references#455,,title-outside-or-insufficient,,,1
+W0485,通过基于文本的分解解释CLIP的图像表示,,archive-references#456,,title-outside-or-insufficient,,,1
+W0486,通过感性工程和虚拟现实进行产品形态设计研究,,archive-references#457,,title-candidate,感性,,1
+W0487,通过生成式AI使设计民主化,,archive-references#458 ; licensed-files#103,,title-outside-or-insufficient,,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-293afb5ad75c.pdf,2
+W0488,集团思维通过协作思维导图工具支持想法生成,,archive-references#459,,title-outside-or-insufficient,,,1
+W0489,面向工程产品的仿生式设计：拍打翼形探索的案例研究,,archive-references#460,,title-outside-or-insufficient,,,1
+W0490,面向用户感性意象的纵列双旋翼无人机造型研究与设计 李晓娜,,archive-references#463,,title-candidate,感性,,1
+W0491,飞机驾驶舱数字界面动效设计及其临境感研究 蔡林峰,,archive-references#464,,title-outside-or-insufficient,,,1
+W0492,飞机驾驶舱设计中的人因工程问题 崔卫民,,archive-references#465,,title-outside-or-insufficient,,,1
+W0493,飞行任务智能信息推送系统技术路线,,archive-references#466,,title-outside-or-insufficient,,,1
+W0494,飞行器生成式气动设计研究进展与展望 林杰,,archive-references#467,,title-outside-or-insufficient,,,1
+W0495,高技术产品造型意象机器评价...法研究——以航空发动机为例 周海海,,archive-references#468,,title-candidate,意象,,1
+W0496,MaterialVellum.pdf,10.1145/3830398.3830504,licensed-files#27 ; november-candidates#1,mat,methods-read,MaterialVellum,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/MaterialVellum.pdf,2
+W0497,Kansei engineering review and challenges as an ergonomic consumer-oriented technology for product development,10.1016/j.ergon.2026.104033,additions#5 ; obsidian-cards#133,,title-candidate,Kansei,,2
+W0498,"Design and Development of a Modular, Low-Cost 3D Printed Multirotor UAV Airframe",10.3233/atde260095,additions#6 ; obsidian-cards#134,,title-outside-or-insufficient,,,2
+W0499,Research Study Concerning the Structural Design of a Drone Using 3D Print Technology,10.1002/masy.70405,additions#7 ; obsidian-cards#135,,title-outside-or-insufficient,,,2
+W0500,Drone design for Circularity,10.1088/1757-899x/1342/1/012012,additions#8 ; obsidian-cards#136,,title-outside-or-insufficient,,,2
+W0501,智能设计工具与KE - AHP方法协同设计实践研究：以家庭种植产品设计为例,,feishu-100#2,,title-outside-or-insufficient,,,1
+W0502,国外生成式产品设计研究综述,,feishu-100#3,,title-outside-or-insufficient,,,1
+W0503,基于StyleGAN的草图生成产品设计效果图方法研究,,feishu-100#4,,title-outside-or-insufficient,,,1
+W0504,基于CGAN的车辆外形智能生成设计,,feishu-100#5,,title-outside-or-insufficient,,,1
+W0505,卡诺模型在中国设计学研究中的应用,,feishu-100#6,,title-outside-or-insufficient,,,1
+W0506,基于文化基因与形状文法的明代珐华纹样创新设计研究,,feishu-100#7,,title-outside-or-insufficient,,,1
+W0507,车辆设计中感性工程的系统综述,,feishu-100#8,,title-candidate,感性,,1
+W0508,产品色彩感性工学设计研究现状,,feishu-100#9,,title-candidate,感性,,1
+W0509,产品设计中感性工学的系统文献综述——1995年至2020年的比较研究,,feishu-100#10,,title-candidate,感性,,1
+W0510,中日感性工学研究现状及启示,,feishu-100#11,,title-candidate,感性,,1
+W0511,用于改善产品设计用户体验的机器学习算法,,feishu-100#12,,title-outside-or-insufficient,,,1
+W0512,在社交机器人设计中整合美学和情感偏好：一种结合感性工学和深度卷积生成对抗网络的情感设计方法,,feishu-100#13,,title-candidate,情感,,1
+W0513,一种基于生成型人工智能的汽车前脸设计方法,,feishu-100#16,,title-outside-or-insufficient,,,1
+W0514,基于生成式人工智能的离子色谱仪设计方法,,feishu-100#17,,title-outside-or-insufficient,,,1
+W0515,一种由AIGC赋能的产品配色设计方法,,feishu-100#18,,title-outside-or-insufficient,,,1
+W0516,基于深度学习的产品形态美学评估与设计方法,,feishu-100#19,,title-outside-or-insufficient,,,1
+W0517,基于深度学习和感性工学的产品创新设计,,feishu-100#20,,title-candidate,感性,,1
+W0518,基于感性工程和虚拟现实的产品形态设计研究,,feishu-100#22,,title-candidate,感性,,1
+W0519,基于深度学习的图像生成模型综合综述,,feishu-100#27,,title-outside-or-insufficient,,,1
+W0520,将审美和情感偏好融入社交机器人设计：基于感性工学和深度卷积生成对抗网络的情感设计方法,,feishu-100#28,,title-candidate,情感,,1
+W0521,基于拓扑理论的森林无人机仿生设计研究,,feishu-100#29,,title-outside-or-insufficient,,,1
+W0522,一种基于用户感知偏好评估数据驱动的生物启发设计灵感库构建方法,,feishu-100#31,,title-outside-or-insufficient,,,1
+W0523,感性工学：一种新的以消费者为导向的产品开发人体工程学技术,,feishu-100#33,,title-candidate,感性,,1
+W0524,大语言模型时代下对话式推荐评估的重新思考,,feishu-100#35,,title-outside-or-insufficient,,,1
+W0525,Humanoid：一种基于深度学习的自动化黑盒安卓应用测试方法,,feishu-100#36,,title-outside-or-insufficient,,,1
+W0526,视觉感知数据驱动的产品造型智能生成设计方法,10.3724/sp.j.1089.2024-00459,feishu-100#37 ; feishu-100#58 ; 11/18补充#C9,,title-candidate,造型智能,,3
+W0527,基于AIGC技术下圈椅数字化修复应用研究,,feishu-100#38,,title-outside-or-insufficient,,,1
+W0528,ProtoDreamer：一种结合物理模型和生成式人工智能支持概念设计的混合原型工具,,feishu-100#39,,title-outside-or-insufficient,,,1
+W0529,DesignPrompt：利用多模态交互与生成式人工智能进行设计探索,,feishu-100#41,,title-outside-or-insufficient,,,1
+W0530,工程产品的仿生式生成设计：扑翼形状探索案例研究,,feishu-100#43,,title-outside-or-insufficient,,,1
+W0531,基于条件变分自编码器的翼型创成式设计方法,,feishu-100#44,,title-outside-or-insufficient,,,1
+W0532,机械产品的生成式生态设计：一种设计工作流程,,feishu-100#46,,title-outside-or-insufficient,,,1
+W0533,通过人工智能生成内容提高产品设计效率：家用办公桌案例研究,,feishu-100#47,,title-outside-or-insufficient,,,1
+W0534,基于四川石雕植物图案生成式数字构建的人工智能设计创作分析,,feishu-100#48,,title-outside-or-insufficient,,,1
+W0535,AIGC工具在工业装备造型设计领域的优缺点比较研究,,feishu-100#49,,title-outside-or-insufficient,,,1
+W0536,超越建议 从后向前人工智能支持飞行员的决策过程.pdf,,feishu-100#51,,title-outside-or-insufficient,,,1
+W0537,设计领域中的生成式AI工具：创意构思过程中的机遇与挑战,,feishu-100#52,,title-outside-or-insufficient,,,1
+W0538,通过生成式人工智能实现设计民主化,,feishu-100#53,,title-outside-or-insufficient,,,1
+W0539,迈向生成式人工智能的设计（研究）框架,,feishu-100#54,,title-outside-or-insufficient,,,1
+W0540,tyleWe：借助高效的联邦人工智能实现生成式时尚设计中的风格融合.pdf,,feishu-100#55,,title-outside-or-insufficient,,,1
+W0541,文化遗产保护中虚拟现实技术研究进展,,feishu-100#56,,title-outside-or-insufficient,,,1
+W0542,基于混合结构编码与动态特征融合的印花图案风格迁移模型,,feishu-100#57,,title-outside-or-insufficient,,,1
+W0543,基于Stable Diffusion的AI辅助汽车零部件设计流程的研究,,feishu-100#59,,title-outside-or-insufficient,,,1
+W0544,“非遗＋AI”模式下的湖南土特产包装创新设计,,feishu-100#60,,title-outside-or-insufficient,,,1
+W0545,AI Agent的研究现状.pdf,,feishu-100#62,,title-outside-or-insufficient,,,1
+W0546,3DALL-E：将文本到图像的人工智能集成到3D设计工作流程中,,feishu-100#63,,title-outside-or-insufficient,,,1
+W0547,自主多旋翼无人机：设计、优化与制造的整体方法,,feishu-100#65 ; feishu-100#86,,title-outside-or-insufficient,,,2
+W0548,通过基于文本的分解来解释CLIP的图像表示,,feishu-100#66,,title-outside-or-insufficient,,,1
+W0549,考虑个体感性差异的感性需求解释模糊映射方法,,feishu-100#67,,title-candidate,感性,,1
+W0550,探索文本到图像人工智能在概念生成中的作用,,feishu-100#69,,title-outside-or-insufficient,,,1
+W0551,Spinneret：通过非明显概念关联辅助创意构思,,feishu-100#70,,title-outside-or-insufficient,,,1
+W0552,Spellburst：一个基于节点、通过自然语言提示进行探索性创意编码的界面,,feishu-100#71,,title-outside-or-insufficient,,,1
+W0553,为什么普通人不会设计提示：非人工智能专家如何尝试（并失败）设计大语言模型提示,,feishu-100#72,,title-outside-or-insufficient,,,1
+W0554,增强ChatGPT提示工程的提示模式目录,,feishu-100#73,,title-outside-or-insufficient,,,1
+W0555,协作式扩散：利用生成式人工智能推动设计师的共创,,feishu-100#74,,title-outside-or-insufficient,,,1
+W0556,与人工智能进行设计构思——与生成式机器学习模型一起草图绘制、思考和交流,,feishu-100#75,,title-outside-or-insufficient,,,1
+W0557,GroupMind：通过协作式思维导图工具支持创意生成,,feishu-100#76,,title-outside-or-insufficient,,,1
+W0558,GANSpiration：使用基于风格的生成对抗网络平衡用户界面设计中的目标性和偶然性灵感,,feishu-100#77,,title-outside-or-insufficient,,,1
+W0559,框架、协调、悖论、抽象和引导：设计情绪板如何发挥作用,,feishu-100#78,,title-outside-or-insufficient,,,1
+W0560,3DALL-E：将文本到图像人工智能集成到3D设计工作流程中,,feishu-100#79,,title-outside-or-insufficient,,,1
+W0561,文本到图像生成模型提示工程设计指南,,feishu-100#80,,title-outside-or-insufficient,,,1
+W0562,PromptPaint：通过类似绘画媒介的交互引导文本到图像生成,,feishu-100#81,,title-outside-or-insufficient,,,1
+W0563,FashionQ：用于促进时装设计构思的人工智能驱动创意支持工具,,feishu-100#82,,title-outside-or-insufficient,,,1
+W0564,人工智能驱动的创造力支持工具中的艺术用户表达,,feishu-100#83,,title-outside-or-insufficient,,,1
+W0565,与人工智能一起设计：对与图像生成器共同构思的探索,,feishu-100#84,,title-outside-or-insufficient,,,1
+W0566,Promptify：通过与大语言模型进行交互式提示探索实现文本到图像的生成,,feishu-100#85,,title-outside-or-insufficient,,,1
+W0567,从工业设计角度谈多旋翼无人机的设计,,feishu-100#87,,title-outside-or-insufficient,,,1
+W0568,基于形态表征的乘用车曲面造型特征差异化设计研究_蔡振原.pdf,,feishu-100#88,,title-outside-or-insufficient,,,1
+W0569,变形前缘和后缘翼型的气动设计优化——在UAS - S45上的应用,,feishu-100#90,,title-outside-or-insufficient,,,1
+W0570,具有单调曲率的3D A级贝塞尔曲线,,feishu-100#92,,title-outside-or-insufficient,,,1
+W0571,基于交互式遗传算法的破拆机器人造型设计_尹昊苏.pdf,,feishu-100#93,,title-outside-or-insufficient,,,1
+W0572,水上无人机（AquaUAV）的生物启发研究综述,,feishu-100#94,,title-outside-or-insufficient,,,1
+W0573,新型混合水陆两栖飞机——水上无人机（AquaUAV）研究综述,,feishu-100#95,,title-outside-or-insufficient,,,1
+W0574,请你提供具体的正文内容，以便我为你提取文章标题。,,feishu-100#96,,title-outside-or-insufficient,,,1
+W0575,用于造型应用的曲线拟合遗传算法,,feishu-100#97,,title-outside-or-insufficient,,,1
+W0576,新手如何绘制手工制品草图并制作原型,,feishu-100#98,,title-outside-or-insufficient,,,1
+W0577,3643834.3660729.pdf,,feishu-100#100,,title-outside-or-insufficient,,,1
+W0578,,,feishu-100#101,,title-outside-or-insufficient,,,1
+W0579,ID-B018｜专利图可辅助发现部件位置，但不是造型语言,10.1017/pds.2026.10582,obsidian-cards#50,,title-outside-or-insufficient,,,1
+W0580,ID-B020｜CMF三层映射是分析框架，不是用户证据,10.1017/pds.2026.10624,obsidian-cards#52,,title-outside-or-insufficient,,,1
+W0581,ID-B021｜可借阶段化生成思路，不能把两个极端个案当规律,10.1017/pds.2026.10468,obsidian-cards#53,,title-outside-or-insufficient,,,1
+W0582,ID-B024｜静态图可能够用，但原研究不足以定论,10.1017/pds.2025.10179,obsidian-cards#56,,title-outside-or-insufficient,,,1
+W0583,ID-B028｜可借开放式印象采集，未建成设计规格,10.1017/pds.2024.239,obsidian-cards#60,,title-outside-or-insufficient,,,1
+W0584,ID-B029｜线索对齐可作提醒，原文分类不能直接照搬,10.1017/pds.2026.10454,obsidian-cards#61,,title-outside-or-insufficient,,,1
+W0585,ID-B031｜交互日志值得保留，二分行为只是探索性解释,10.1017/pds.2025.10070,obsidian-cards#63,,title-outside-or-insufficient,,,1
+W0586,ID-B039｜可借“探索—整理—承诺—人工确认”，不照搬效果数值,10.1017/pds.2026.10604,obsidian-cards#71,,title-outside-or-insufficient,,,1
+W0587,ID-B040｜AI评委可以参考，不能独立裁决,10.1017/pds.2026.10603,obsidian-cards#72,,title-outside-or-insufficient,,,1
+W0588,ID-B043｜虚拟原型评价应按目的选指标，不必全做,10.1017/pds.2025.10174,obsidian-cards#75,,title-outside-or-insufficient,,,1
+W0589,ID-B044｜只提醒“不要只给文字”，不增加眼动实验,10.1017/pds.2025.10092,obsidian-cards#76,,title-outside-or-insufficient,,,1
+W0590,ID-B045｜AI可辅助整理理由，不能担任毕业论文裁判,10.1017/pds.2025.10191,obsidian-cards#77,,title-outside-or-insufficient,,,1
+W0591,ID-B047｜系统复杂度指标不等于视觉造型复杂度,10.1017/pds.2026.10363,obsidian-cards#79,,title-outside-or-insufficient,,,1
+W0592,ID-B049｜尺寸级差必须服从真实部件与工程约束,10.1017/pds.2026.10413,obsidian-cards#81,,title-outside-or-insufficient,,,1
+W0593,方法草稿三篇定位复核,,obsidian-cards#137,,title-outside-or-insufficient,,,1
+W0594,条件忠实度与设计评价：别混成一个通过,,obsidian-cards#138,,title-outside-or-insufficient,,,1
+W0595,协同研究记录什么,,obsidian-cards#139,,title-outside-or-insufficient,,,1
+W0596,最近邻能借方法，不能替我们证明效果,,obsidian-cards#140,,title-outside-or-insufficient,,,1
+W0597,前三章整合的原文定位复核,,obsidian-cards#141,,title-outside-or-insufficient,,,1
+W0598,原文输入与评价方法复核,,obsidian-cards#142,,title-outside-or-insufficient,,,1
+W0599,飞书文献补充第一批：先核对证据，不凑篇数,,obsidian-cards#143,,title-outside-or-insufficient,,,1
+W0600,HCI-C0004 全文复核结论,,obsidian-cards#144,,title-outside-or-insufficient,,,1
+W0601,HCI-C0026 全文复核结论,,obsidian-cards#145,,title-outside-or-insufficient,,,1
+W0602,HCI-C0031 全文复核结论,,obsidian-cards#146,,title-outside-or-insufficient,,,1
+W0603,HCI-C0525 全文复核,,obsidian-cards#147,,title-outside-or-insufficient,,,1
+W0604,HCI-C0543 全文复核,,obsidian-cards#148,,title-outside-or-insufficient,,,1
+W0605,HCI-N008 全文复核,,obsidian-cards#149,,title-outside-or-insufficient,,,1
+W0606,HCI-N009 全文复核,,obsidian-cards#150,,title-outside-or-insufficient,,,1
+W0607,HCI-N011 全文复核,,obsidian-cards#151,,title-outside-or-insufficient,,,1
+W0608,HCI-N012 全文复核,,obsidian-cards#152,,title-outside-or-insufficient,,,1
+W0609,HCI-N023 全文复核,,obsidian-cards#153,,title-outside-or-insufficient,,,1
+W0610,HCI-V006 全文复核,,obsidian-cards#154,,title-outside-or-insufficient,,,1
+W0611,HCI-V010 全文复核,,obsidian-cards#155,,title-outside-or-insufficient,,,1
+W0612,HCI-V013 全文复核结论,,obsidian-cards#156,,title-outside-or-insufficient,,,1
+W0613,HCI-X0163 全文复核,,obsidian-cards#157,,title-outside-or-insufficient,,,1
+W0614,HCI-X0165 全文复核,,obsidian-cards#158,,title-outside-or-insufficient,,,1
+W0615,HCI-X0337 全文复核,,obsidian-cards#159,,title-outside-or-insufficient,,,1
+W0616,HCI-X0430 全文复核,,obsidian-cards#160,,title-outside-or-insufficient,,,1
+W0617,HCI-X0504 全文复核,,obsidian-cards#161,,title-outside-or-insufficient,,,1
+W0618,HCI-X0806 全文复核,,obsidian-cards#162,,title-outside-or-insufficient,,,1
+W0619,HCI-X1037 全文复核,,obsidian-cards#163,,title-outside-or-insufficient,,,1
+W0620,HCI-X1246 全文复核,,obsidian-cards#164,,title-outside-or-insufficient,,,1
+W0621,HCI-X1321 全文复核,,obsidian-cards#165,,title-outside-or-insufficient,,,1
+W0622,HCI-X1459 全文复核,,obsidian-cards#166,,title-outside-or-insufficient,,,1
+W0623,HCI-X2010 全文复核,,obsidian-cards#167,,title-outside-or-insufficient,,,1
+W0624,HCI-X2069 全文复核,,obsidian-cards#168,,title-outside-or-insufficient,,,1
+W0625,A001 全文复核结论,,obsidian-cards#169,,title-outside-or-insufficient,,,1
+W0626,A002 全文复核结论,,obsidian-cards#170,,title-outside-or-insufficient,,,1
+W0627,A003 全文复核结论,,obsidian-cards#171,,title-outside-or-insufficient,,,1
+W0628,A004 全文复核结论,,obsidian-cards#172,,title-outside-or-insufficient,,,1
+W0629,A005 全文复核结论,,obsidian-cards#173,,title-outside-or-insufficient,,,1
+W0630,A006 全文复核结论,,obsidian-cards#174,,title-outside-or-insufficient,,,1
+W0631,A007 全文复核结论,,obsidian-cards#175,,title-outside-or-insufficient,,,1
+W0632,A008 全文复核结论,,obsidian-cards#176,,title-outside-or-insufficient,,,1
+W0633,A009 全文复核结论,,obsidian-cards#177,,title-outside-or-insufficient,,,1
+W0634,A010 全文复核结论,,obsidian-cards#178,,title-outside-or-insufficient,,,1
+W0635,A011 全文复核结论,,obsidian-cards#179,,title-outside-or-insufficient,,,1
+W0636,A012 全文复核结论,,obsidian-cards#180,,title-outside-or-insufficient,,,1
+W0637,A013 全文复核结论,,obsidian-cards#181,,title-outside-or-insufficient,,,1
+W0638,A014 全文复核结论,,obsidian-cards#182,,title-outside-or-insufficient,,,1
+W0639,A015 全文复核结论,,obsidian-cards#183,,title-outside-or-insufficient,,,1
+W0640,A016 全文复核结论,,obsidian-cards#184,,title-outside-or-insufficient,,,1
+W0641,A017 全文复核结论,,obsidian-cards#185,,title-outside-or-insufficient,,,1
+W0642,A018 全文复核结论,,obsidian-cards#186,,title-outside-or-insufficient,,,1
+W0643,A019 全文复核结论,,obsidian-cards#187,,title-outside-or-insufficient,,,1
+W0644,A020 全文复核结论,,obsidian-cards#188,,title-outside-or-insufficient,,,1
+W0645,A021 全文复核结论,,obsidian-cards#189,,title-outside-or-insufficient,,,1
+W0646,A022 全文复核结论,,obsidian-cards#190,,title-outside-or-insufficient,,,1
+W0647,A023 全文复核结论,,obsidian-cards#191,,title-outside-or-insufficient,,,1
+W0648,A024 全文复核结论,,obsidian-cards#192,,title-outside-or-insufficient,,,1
+W0649,A025 全文复核结论,,obsidian-cards#193,,title-outside-or-insufficient,,,1
+W0650,A026 全文复核结论,,obsidian-cards#194,,title-outside-or-insufficient,,,1
+W0651,A027 全文复核结论,,obsidian-cards#195,,title-outside-or-insufficient,,,1
+W0652,A028 全文复核结论,,obsidian-cards#196,,title-outside-or-insufficient,,,1
+W0653,A029 全文复核结论,,obsidian-cards#197,,title-outside-or-insufficient,,,1
+W0654,A030 全文复核结论,,obsidian-cards#198,,title-outside-or-insufficient,,,1
+W0655,A031 全文复核结论,,obsidian-cards#199,,title-outside-or-insufficient,,,1
+W0656,ID-B001 全文复核,,obsidian-cards#200,,title-outside-or-insufficient,,,1
+W0657,ID-B002 全文复核,,obsidian-cards#201,,title-outside-or-insufficient,,,1
+W0658,ID-B003 全文复核,,obsidian-cards#202,,title-outside-or-insufficient,,,1
+W0659,ID-B004 全文复核,,obsidian-cards#203,,title-outside-or-insufficient,,,1
+W0660,ID-B005 全文复核,,obsidian-cards#204,,title-outside-or-insufficient,,,1
+W0661,ID-B006 全文复核,,obsidian-cards#205,,title-outside-or-insufficient,,,1
+W0662,ID-B007 全文复核,,obsidian-cards#206,,title-outside-or-insufficient,,,1
+W0663,ID-B008 全文复核,,obsidian-cards#207,,title-outside-or-insufficient,,,1
+W0664,ID-B009 全文复核,,obsidian-cards#208,,title-outside-or-insufficient,,,1
+W0665,ID-B010 全文复核,,obsidian-cards#209,,title-outside-or-insufficient,,,1
+W0666,ID-B011 全文复核,,obsidian-cards#210,,title-outside-or-insufficient,,,1
+W0667,ID-B012 全文复核,,obsidian-cards#211,,title-outside-or-insufficient,,,1
+W0668,ID-B014 全文复核,,obsidian-cards#212,,title-outside-or-insufficient,,,1
+W0669,ID-B015 全文复核,,obsidian-cards#213,,title-outside-or-insufficient,,,1
+W0670,ID-B016 全文复核,,obsidian-cards#214,,title-outside-or-insufficient,,,1
+W0671,ID-B017 全文复核,,obsidian-cards#215,,title-outside-or-insufficient,,,1
+W0672,ID-B018 全文复核,,obsidian-cards#216,,title-outside-or-insufficient,,,1
+W0673,ID-B020 全文复核,,obsidian-cards#217,,title-outside-or-insufficient,,,1
+W0674,ID-B021 全文复核,,obsidian-cards#218,,title-outside-or-insufficient,,,1
+W0675,ID-B023 全文复核,,obsidian-cards#219,,title-outside-or-insufficient,,,1
+W0676,ID-B024 全文复核,,obsidian-cards#220,,title-outside-or-insufficient,,,1
+W0677,ID-B028 全文复核,,obsidian-cards#221,,title-outside-or-insufficient,,,1
+W0678,ID-B029 全文复核,,obsidian-cards#222,,title-outside-or-insufficient,,,1
+W0679,ID-B030 全文复核,,obsidian-cards#223,,title-outside-or-insufficient,,,1
+W0680,ID-B031 全文复核,,obsidian-cards#224,,title-outside-or-insufficient,,,1
+W0681,ID-B032 全文复核,,obsidian-cards#225,,title-outside-or-insufficient,,,1
+W0682,ID-B038 全文复核,,obsidian-cards#226,,title-outside-or-insufficient,,,1
+W0683,ID-B039 全文复核,,obsidian-cards#227,,title-outside-or-insufficient,,,1
+W0684,ID-B040 全文复核,,obsidian-cards#228,,title-outside-or-insufficient,,,1
+W0685,ID-B041 全文复核,,obsidian-cards#229,,title-outside-or-insufficient,,,1
+W0686,ID-B043 全文复核,,obsidian-cards#230,,title-outside-or-insufficient,,,1
+W0687,ID-B044 全文复核,,obsidian-cards#231,,title-outside-or-insufficient,,,1
+W0688,ID-B045 全文复核,,obsidian-cards#232,,title-outside-or-insufficient,,,1
+W0689,ID-B047 全文复核,,obsidian-cards#233,,title-outside-or-insufficient,,,1
+W0690,ID-B049 全文复核,,obsidian-cards#234,,title-outside-or-insufficient,,,1
+W0691,ID-B051 全文复核,,obsidian-cards#235,,title-outside-or-insufficient,,,1
+W0692,ID-B062 全文复核,,obsidian-cards#236,,title-outside-or-insufficient,,,1
+W0693,ID-B065 全文复核,,obsidian-cards#237,,title-outside-or-insufficient,,,1
+W0694,NEW-N001 全文复核结论,,obsidian-cards#238,,title-outside-or-insufficient,,,1
+W0695,NEW-N002 全文复核结论,,obsidian-cards#239,,title-outside-or-insufficient,,,1
+W0696,NEW-N003 全文复核结论,,obsidian-cards#240,,title-outside-or-insufficient,,,1
+W0697,UAV-U001 全文复核结论,,obsidian-cards#241,,title-outside-or-insufficient,,,1
+W0698,UAV-U002 全文复核结论,,obsidian-cards#242,,title-outside-or-insufficient,,,1
+W0699,UAV-U003 全文复核结论,,obsidian-cards#243,,title-outside-or-insufficient,,,1
+W0700,A Generative AI-Driven Industrial Design Framework for Human–GenAI Co-Creation,10.3390/sym18020352,november-candidates#2,,title-outside-or-insufficient,,,1
+W0701,GenFODrawing: Supporting Creative Found Object Drawing With Generative AI,10.1109/tvcg.2025.3626754,november-candidates#3,,title-outside-or-insufficient,,,1
+W0702,D²Design: Dual-conditioned diffusion AI for accelerating product form generation,10.1016/j.cad.2026.104063,november-candidates#4,,title-outside-or-insufficient,,,1
+W0703,AutoGen-Insight: translating consumer reviews into probabilistic visual design parameters for generative electric vehicle concept generation,10.36922/ijamd026190015,11/18补充#T1-1,auto,methods-read,consumer review,,1
+W0704,Stakeholder-informed Kansei modeling for generative product design in online retail,10.1016/j.displa.2026.103503,11/18补充#T1-2,,title-candidate,Kansei,,1
+W0705,基于人工智能生成内容的产品造型设计与评价方法,10.11996/jg.j.2095-302x.2024061277,11/18补充#T1-3,,title-outside-or-insufficient,,,1
+W0706,Generative design: reframing the role of the designer in early-stage design process,10.1115/1.4056799,11/18补充#T1-4,,title-outside-or-insufficient,,,1
+W0707,Qwen-Image technical report,,11/18补充#T2-1,,title-outside-or-insufficient,,,1
+W0708,GLIGEN: open-set grounded text-to-image generation,10.1109/cvpr52729.2023.02156,11/18补充#T2-2,,title-outside-or-insufficient,,,1
+W0709,IP-Adapter: text compatible image prompt adapter for text-to-image diffusion models,,11/18补充#T2-3,,title-outside-or-insufficient,,,1
+W0710,T2I-CompBench++: an enhanced and comprehensive benchmark for compositional text-to-image generation,10.1109/tpami.2025.3531907,11/18补充#T2-4,,title-outside-or-insufficient,,,1
+W0711,Make it count: text-to-image generation with an accurate number of objects,10.1109/cvpr52734.2025.01236,11/18补充#T2-5,,title-outside-or-insufficient,,,1
+W0712,Diagnostic benchmark and iterative inpainting for layout-guided image generation,10.1109/cvprw63382.2024.00537,11/18补充#T2-6,,title-outside-or-insufficient,,,1
+W0713,Beyond statistical similarity: rethinking metrics for deep generative models in engineering design,10.1016/j.cad.2023.103609,11/18补充#T2-7,,title-outside-or-insufficient,,,1
+W0714,PnP inversion: boosting diffusion-based editing with 3 lines of code,,11/18补充#T3-1,,title-outside-or-insufficient,,,1
+W0715,Imagen Editor and EditBench: advancing and evaluating text-guided image inpainting,10.1109/cvpr52729.2023.01761,11/18补充#T3-2,,title-outside-or-insufficient,,,1
+W0716,Prompt-to-prompt image editing with cross-attention control,,11/18补充#T3-3,,title-outside-or-insufficient,,,1
+W0717,ImagenHub: standardizing the evaluation of conditional image generation models,,11/18补充#T3-4,,title-outside-or-insufficient,,,1
+W0718,FLUX.1 Kontext: flow matching for in-context image generation and editing in latent space,,11/18补充#T3-5,,title-outside-or-insufficient,,,1
+W0719,Diffusion model-based image editing: a survey,10.1109/tpami.2025.3541625,11/18补充#T3-6,,title-outside-or-insufficient,,,1
+W0720,Parametric-ControlNet: multimodal control in foundation models for precise engineering design synthesis,10.1115/1.4068661,11/18补充#T4-1,,title-outside-or-insufficient,,,1
+W0721,"Speaking the Buick language: capturing, understanding, and exploring brand identity with shape grammars",10.1016/s0142-694x(03)00023-1,11/18补充#T4-2,,title-outside-or-insufficient,,,1
+W0722,Introduction to shape and shape grammars,10.1068/b070343,11/18补充#T4-3,,title-outside-or-insufficient,,,1
+W0723,Quantifying aesthetic form preference in a utility function,10.1115/1.3116260,11/18补充#T4-4,,title-outside-or-insufficient,,,1
+W0724,Interactive evolutionary computation: fusion of the capabilities of EC optimization and human evaluation,10.1109/5.949485,11/18补充#T4-5,,title-outside-or-insufficient,,,1
+W0725,A practical generative design method,10.1016/j.cad.2010.09.009,11/18补充#T4-6,,title-outside-or-insufficient,,,1
+W0726,Semantic shape editing using deformation handles,10.1145/2766908,11/18补充#T4-7,,title-candidate,Semantic,,1
+W0727,AttribIt: content creation with semantic attributes,10.1145/2501988.2502008,11/18补充#T4-8,,title-candidate,semantic,,1
+W0728,"Brief2Design: a multi-phased, compositional approach to prompt-based graphic design",,11/18补充#T5-1,brief,methods-read,Brief2Design,,1
+W0729,A taxonomy of prompt modifiers for text-to-image generation,10.1080/0144929x.2023.2286532,11/18补充#T5-2,,title-outside-or-insufficient,,,1
+W0730,PromptCharm: text-to-image generation through multi-modal prompting and refinement,10.1145/3613904.3642803,11/18补充#T5-3,,title-outside-or-insufficient,,,1
+W0731,Is it AI or is it me? Understanding users' prompt journey with text-to-image generative AI tools,10.1145/3613904.3642861,11/18补充#T5-4,,title-outside-or-insufficient,,,1
+W0732,Designing with words: exploring the integration of text-to-image models in industrial design,10.1080/14626268.2024.2411223,11/18补充#T5-5,,title-outside-or-insufficient,,,1
+W0733,How consumers perceive product appearance: the identification of three product appearance attributes,,11/18补充#T6-1,,title-outside-or-insufficient,,,1
+W0734,"""What you see, is what you get?"" Guidelines for influencing consumers' perceptions of consumer durables through product appearance",10.1111/jpim.12403,11/18补充#T6-2,,title-candidate,perceptions of consumer durables,,1
+W0735,A semantic differential study of designers' and users' product form perception,10.1016/s0169-8141(99)00026-8,11/18补充#T6-3,,title-candidate,semantic,,1
+W0736,Identifying customer needs from user-generated content,10.1287/mksc.2018.1123,11/18补充#T6-4,,title-candidate,customer needs,,1
+W0737,Eliciting attribute-level user needs from online reviews with deep language models and information extraction,10.1115/1.4048819,11/18补充#T6-5,,title-outside-or-insufficient,,,1
+W0738,Large language model-based online review classification for subfeature-level customer opinion analysis,10.1115/1.4069684,11/18补充#T6-6,,title-outside-or-insufficient,,,1
+W0739,Vital dimensions in volume perception: can the eye fool the stomach?,10.1177/002224379903600302,11/18补充#T6-7,,title-outside-or-insufficient,,,1
+W0740,Computing inter-rater reliability and its variance in the presence of high agreement,10.1348/000711006x126600,11/18补充#T7-1,,title-outside-or-insufficient,,,1
+W0741,"Bias, prevalence and kappa",10.1016/0895-4356(93)90018-v,11/18补充#T7-2,,title-outside-or-insufficient,,,1
+W0742,The use of confidence or fiducial limits illustrated in the case of the binomial,10.1093/biomet/26.4.404,11/18补充#T7-3,,title-outside-or-insufficient,,,1
+W0743,Interval estimation for a binomial proportion,10.1214/ss/1009213286,11/18补充#T7-4,,title-outside-or-insufficient,,,1
+W0744,Reliability and inter-rater reliability in qualitative research: norms and guidelines for CSCW and HCI practice,10.1145/3359174,11/18补充#T7-5,,title-outside-or-insufficient,,,1
+W0745,Local standards for sample size at CHI,10.1145/2858036.2858498,11/18补充#T7-6,,title-outside-or-insufficient,,,1
+W0746,AI judges in design: toward expert-equivalent design evaluations with vision-language models and in-context learning,10.1115/1.4071835,11/18补充#T7-7,,title-outside-or-insufficient,,,1
+W0747,MLLM-as-a-judge: assessing multimodal LLM-as-a-judge with vision-language benchmark,,11/18补充#T7-8,,title-outside-or-insufficient,,,1
+W0748,VIEScore: towards explainable metrics for conditional image synthesis evaluation,10.18653/v1/2024.acl-long.663,11/18补充#T7-9,,title-outside-or-insufficient,,,1
+W0749,Introduction to multicopter design and control,10.1007/978-981-10-3382-7,11/18补充#T8-1,,title-outside-or-insufficient,,,1
+W0750,Influence of propeller configuration on propulsion system efficiency of multi-rotor unmanned aerial vehicles,10.1109/icuas.2016.7502520,11/18补充#T8-2,,title-outside-or-insufficient,,,1
+W0751,Generative adversarial networks and data clustering for likable drone design,10.3390/s22176433,11/18补充#T8-3,,title-outside-or-insufficient,,,1
+W0752,Current status and trends of plant protection UAV and its spraying technology in China,10.33440/j.ijpaa.20180101.0002,11/18补充#T8-4,,title-outside-or-insufficient,,,1
+W0753,The application of unmanned aircraft systems to plant protection in China,10.1007/s11119-017-9516-7,11/18补充#T8-5,,title-outside-or-insufficient,,,1
+W0754,Exploring proxemics for human-drone interaction,10.1145/3125739.3125773,11/18补充#T8-6,,title-outside-or-insufficient,,,1
+W0755,Fashioning creative expertise with generative AI: graphical interfaces for design space exploration better support ideation than text prompts,10.1145/3613904.3642908,11/18补充#C1,,title-outside-or-insufficient,,,1
+W0756,Research on multimodal generative design of product appearance based on emotional and functional constraints,10.1016/j.aei.2024.103106,11/18补充#C11,,title-outside-or-insufficient,,,1
+W0757,Design guidelines for prompt engineering text-to-image generative models,10.1145/3491102.3501825,11/18补充#C16,,title-outside-or-insufficient,,,1
+W0758,Product-form design model based on genetic algorithms,10.1016/j.ergon.2010.01.009,11/18补充#C18,,title-outside-or-insufficient,,,1
+W0759,Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,10.48550/arxiv.2005.11401,外加方法基准#1,rag,methods-read,Retrieval-Augment,,1

@@ -1,0 +1,57 @@
+{
+  "date": "2026-11-18",
+  "mode": "software_probe",
+  "browser": "157.0.8103.79",
+  "model_calls": 0,
+  "participant_sessions": 0,
+  "pr": "d6dfb21",
+  "pr75NormalExport": {
+    "schema": "drone-configurator/config-v2",
+    "axes": 4,
+    "modelStatus": "disabled",
+    "parent": null,
+    "candidateInputs": 0,
+    "candidateArea": "候选图\nCANDIDATES\n\n模型服务还没有接入。导出后由出图一方生成，每个方案一次出 3 张初稿；回图上的轴心与比例需要另行量测。\n\n初稿 1\n初稿 2\n初稿 3",
+    "hexLabelInDefaultStudio": false
+  },
+  "legacyC1": {
+    "acceptedPR75": false,
+    "rejection": "本场 S 条件须导入正俯视四旋、部位规格 S、带布局图的已确认版本。",
+    "nativeStructuredReachedWaiting": true,
+    "returnedImageInput": {
+      "type": "file",
+      "multiple": false
+    },
+    "syntheticPair": [
+      {
+        "condition": "S",
+        "attempts": 2,
+        "statuses": [
+          "success",
+          "failed"
+        ],
+        "selected": "1",
+        "activePresent": true,
+        "waitPresent": true,
+        "successServiceTimeMissing": true
+      },
+      {
+        "condition": "D",
+        "attempts": 1,
+        "statuses": [
+          "success"
+        ],
+        "selected": "1",
+        "activePresent": true,
+        "waitPresent": true,
+        "successServiceTimeMissing": true
+      }
+    ]
+  },
+  "pairExportQA": {
+    "integrity": [],
+    "missingCount": 10,
+    "tamperedPromptRejected": true
+  },
+  "pageErrors": []
+}

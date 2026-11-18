@@ -1,5 +1,7 @@
 # 论文研究状态 · 11 月 17 日
 
+**11 月 18 日工作台双机交接。** [Claude 从这里接手当前源码、研究依据与试验进度](planning/workbench-handoff/README.md)。默认分支 main 同步提供这一版工作台，下文保留既有研究记录。
+
 面向复核的实验索引。每行单独说明材料、样本和可回答的问题。相同原图在回收、读数和评议阶段多次出现；跨行相加会重复计数。[导师阅读稿与正文范围](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/manuscript/thesis/review/handoff-20261117/README.md)
 
 | 研究环节 | 已取得的材料 | 解释或待验证项 |
