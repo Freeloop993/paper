@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import TopBar, { steps, type Step } from './components/Shell/TopBar';
+import { CanvasRail, CanvasTopBar, toolNames, type Step, type BoardId } from './components/Graph/WorkbenchShell';
+import WorkflowWorkspace from './components/Graph/WorkflowWorkspace';
 import InsightPage from './components/Insight/InsightPage';
 import StudioPage from './components/Studio/StudioPage';
-import HandoffPage from './components/Handoff/HandoffPage';
+import HandoffPage, { type HandoffEntry } from './components/Handoff/HandoffPage';
 import { useDroneStore } from './store/droneStore';
 import { frameRules } from './design/design';
 import { parseImported } from './design/exporters';
@@ -43,13 +44,23 @@ function readHash() {
   const step = params.get('step');
   return {
     config: decode(params.get('cfg')), pinned: decode(params.get('pin')), tab: params.get('tab') as ParameterGroup | null,
-    step: steps.some(s => s.id === step) ? (step as Step) : null, query: params.get('q') ?? '', sets,
+    board: params.get('board') === 'project' ? 'project' as const : params.get('board') === 'history' ? 'history' as const : undefined,
+    node:params.get('node') || undefined,
+    step: step && Object.prototype.hasOwnProperty.call(toolNames,step) ? (step as Step) : null, query: params.get('q') ?? '', sets,
   };
 }
 
 const App: React.FC = () => {
   const [hash] = useState(readHash);
-  const [step, setStep] = useState<Step>(hash.step ?? 'insight');
+  const [step, setStep] = useState<Step>(hash.step ?? 'canvas');
+  const [board, setBoard] = useState<BoardId>(() => {
+    if (hash.board) return hash.board;
+    if (hash.step && hash.step!=='canvas') return 'project';
+    try { return localStorage.getItem('workflow/last-board')==='project' ? 'project' : 'history'; }
+    catch { return 'history'; }
+  });
+  const [handoff, setHandoff] = useState<HandoffEntry>();
+  const [focusNode,setFocusNode]=useState(hash.node);
   const wide = useWide();
   const { parameters, importSnapshot, pin, setField, activeVariant } = useDroneStore();
 
@@ -67,16 +78,49 @@ const App: React.FC = () => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => { window.scrollTo(0, 0); }, [step]);
+  useEffect(() => {
+    const sync = () => {
+      const next=readHash();
+      setStep(next.step ?? 'canvas');
+      if(next.board) setBoard(next.board);
+      setFocusNode(next.node);
+      setHandoff(undefined);
+    };
+    window.addEventListener('hashchange',sync);
+    window.addEventListener('popstate',sync);
+    return () => {
+      window.removeEventListener('hashchange',sync);
+      window.removeEventListener('popstate',sync);
+    };
+  },[]);
+  function navigate(next:Step, nextBoard:BoardId=next==='canvas'?board:'project', entry?:HandoffEntry,nodeId?:string) {
+    setStep(next); setBoard(nextBoard); setHandoff(entry);setFocusNode(nodeId);
+    try { localStorage.setItem('workflow/last-board',nextBoard); } catch { /* Navigation works without persistence. */ }
+    const url=new URL(window.location.href);
+    const destination=new URLSearchParams({step:next,board:nextBoard});
+    if(nodeId) destination.set('node',nodeId);
+    if(next==='studio' && hash.tab) destination.set('tab',hash.tab);
+    url.hash=destination.toString();
+    if(url.href!==window.location.href) window.history.pushState(null,'',url);
+  }
 
-  const fill = wide && step !== 'insight';
   return (
-    <div className={`bg-canvas ${fill ? 'flex h-screen flex-col overflow-hidden' : 'min-h-screen'}`} id="drone-configurator-app" data-layout={wide ? 'wide' : 'narrow'} data-step-active={step}>
-      <TopBar step={step} onStep={setStep} />
-      <main className={fill ? 'min-h-0 flex-1' : ''}>
-        {step === 'insight' && <InsightPage key={activeVariant} wide={wide} onNext={() => setStep('studio')} initialQuery={hash.query} />}
-        {step === 'studio' && <StudioPage wide={wide} initialTab={hash.tab} />}
-        {step === 'handoff' && <HandoffPage wide={wide} />}
+    <div className="canvas-app-shell" id="drone-configurator-app" data-layout={wide ? 'wide' : 'narrow'} data-step-active={step}>
+      <CanvasTopBar step={step} board={board} onBoard={next=>navigate('canvas',next)} onStep={next=>navigate(next)}/>
+      <div className="canvas-app-body">
+      <CanvasRail step={step} onStep={next=>navigate(next)} />
+      <main className="canvas-app-main">
+        <div className="canvas-main-layer" inert={step==='canvas'?undefined:true} aria-hidden={step!=='canvas'} style={{visibility:step==='canvas'?'visible':'hidden'}}>
+          <WorkflowWorkspace key={board+'-'+(focusNode ?? '')} board={board} initialSelected={focusNode} active={step==='canvas'} onBoard={(next,id)=>navigate('canvas',next,undefined,id)}
+            onStep={next=>navigate(next)} onHandoff={entry=>navigate('handoff','project',entry)} />
+        </div>
+        {step!=='canvas' && <section className={`canvas-tool-layer ${wide && step!=='insight'?'canvas-tool-fill':''}`} aria-label={toolNames[step]}>
+          {step === 'insight' && <InsightPage key={activeVariant} wide={wide} onNext={() => navigate('studio')} initialQuery={hash.query} />}
+          {step === 'studio' && <StudioPage wide={wide} initialTab={hash.tab} />}
+          {step === 'handoff' && <HandoffPage wide={wide} entry={handoff} />}
+        </section>}
       </main>
+      </div>
     </div>
   );
 };

@@ -62,9 +62,9 @@ function AttemptView({attempt,onParent}:{attempt:FrozenAttempt;onParent:(id:stri
   </div>;
 }
 
-export default function CandidateWorkspace(){
-  const {parameters,touched,intent,activeVariant,variants}=useDroneStore();
-  const [attempts,setAttempts]=useState<FrozenAttempt[]>([]),[selected,setSelected]=useState('');
+export default function CandidateWorkspace({initialAttempt, initialParent,onParentConsumed}: {initialAttempt?:string; initialParent?:string;onParentConsumed?:()=>void} = {}){
+  const {workflowOrigin,parameters,touched,intent,activeVariant,variants}=useDroneStore();
+  const [attempts,setAttempts]=useState<FrozenAttempt[]>([]),[selected,setSelected]=useState(initialAttempt ?? '');
   const [condition,setCondition]=useState<'free'|'structured'>('structured'),[text,setText]=useState(''),[editText,setEditText]=useState<string|null>(null);
   const [goal,setGoal]=useState(''),[keep,setKeep]=useState(''),[parentId,setParentId]=useState('');
   const [error,setError]=useState(''),[busy,setBusy]=useState(false);
@@ -72,8 +72,19 @@ export default function CandidateWorkspace(){
   const compiled=compilePrompt(parameters,touched,intent,computeLayout(parameters)).text;
   useEffect(()=>{let active=true;let serial=0;const load=async()=>{const current=++serial;try{const data=await listAttempts();if(active&&current===serial)setAttempts(data);}catch(e){if(active)setError(String(e));}};void load();window.addEventListener('candidate-record-change',load);return()=>{active=false;window.removeEventListener('candidate-record-change',load);};},[]);
   const parentKey='multirotor-studio/revision-parent/'+activeVariant;
+  const requestedParent = useRef(initialParent ? {variant:activeVariant, id:initialParent} : null);
   useEffect(()=>{setEditText(null);},[compiled,activeVariant]);
-  useEffect(()=>{try{setParentId(localStorage.getItem(parentKey)??'');}catch{setParentId('');}},[parentKey]);
+  useEffect(()=>{
+    const requested = requestedParent.current;
+    if(requested?.variant === activeVariant) {
+      setParentId(requested.id);
+      try { localStorage.setItem(parentKey,requested.id);requestedParent.current=null; }
+      catch { setError('当前浏览器存储不可用，父图仅在本页有效。'); }
+      onParentConsumed?.();
+      return;
+    }
+    try{setParentId(localStorage.getItem(parentKey)??'');}catch{setParentId('');}
+  },[activeVariant,parentKey,onParentConsumed]);
   function chooseParent(id:string){
     setParentId(id);
     try{if(id)localStorage.setItem(parentKey,id);else localStorage.removeItem(parentKey);}catch{setError('当前浏览器存储不可用，父图只保存在本页。');}
@@ -83,7 +94,7 @@ export default function CandidateWorkspace(){
     if(busy)return;setBusy(true);setError('');
     try{const parent=attempts.flatMap(a=>a.candidates).find(c=>c.id===parentId);
       if(parentId&&!parent)throw new Error('找不到选定的父图，请重新指定。');
-      const id=await freezeAttempt({parameters,touched,intent},{condition,goal,keep,variantId:activeVariant,variantName:variants.find(v=>v.id===activeVariant)?.name??activeVariant},text,parent,editText??undefined);
+      const id=await freezeAttempt({parameters,touched,intent},{condition,goal,keep,variantId:activeVariant,variantName:variants.find(v=>v.id===activeVariant)?.name??activeVariant,...(workflowOrigin?{workflowOrigin}:{})},text,parent,editText??undefined);
       setSelected(id);setGoal('');setKeep('');chooseParent('');
     }catch(e){setError(e instanceof Error?e.message:String(e));}finally{setBusy(false);}
   }

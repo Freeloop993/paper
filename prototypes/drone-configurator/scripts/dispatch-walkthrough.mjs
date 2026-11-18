@@ -53,6 +53,7 @@ try {
    throw new Error('Unexpected network path '+u.pathname);
  });
  await page.goto(url);
+ await page.locator('[data-step=insight]').click();
  await page.locator('[data-testid=mission]').selectOption('agricultural_spraying');
  await page.locator('[data-testid=brief-frame]').selectOption('Radial Hex');
  await page.locator('[data-step=handoff]').click();

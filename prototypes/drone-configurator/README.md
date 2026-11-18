@@ -2,6 +2,12 @@
 
 [下载离线版 ZIP](configurator-offline.zip?raw=true)，完整解压后打开 `index.html`。简报、画布、资料检索、历史案例与本地记录可离线使用。工作台支持三旋、四旋、平面六旋、平面八旋、共轴六旋 Y6 和共轴八旋 X8，使用任务可分别选择日常航拍、农业植保或中性外观比较。
 
+## 打开方案关系画布
+
+启动下方本机服务后，打开 [B2 四旋翼案例](http://127.0.0.1:4178/?view=canvas#step=canvas&board=history)，沿图像连线查看去窗底图、相机上端和下端两种安装方案，以及作者的取舍。点「图片对照」可并排查看原图。
+
+在「我的项目」可添加参考图、连接节点、保存规格版本，并从旧版继续编辑。生成轮次、回图和取舍按本机记录进入画布。手动连线记录设计上的参考关系，轮次详情里可以核对实际提交给模型的输入。[打开我的项目](http://127.0.0.1:4178/?view=canvas#step=canvas&board=project)
+
 ## 在本机试用带证据的设计对话
 
 使用 Node.js 24 或更新版本，在本目录执行 `npm ci` 和 `npm run build`。在 PowerShell 中运行以下命令，新密钥可在隐藏输入提示中填写。区域 `global` 对应国际站账号，`cn` 对应中国站账号。
@@ -28,7 +34,8 @@ try { node scripts/design-chat-server.mjs --port 4178 } finally { Remove-Item En
 
 | 要修改的内容 | 文件 |
 | --- | --- |
-| 整体框架与三个环节的切换 | [App.tsx](src/App.tsx)、[TopBar.tsx](src/components/Shell/TopBar.tsx) |
+| 工作台与工具切换 | [App.tsx](src/App.tsx)、[WorkbenchShell.tsx](src/components/Graph/WorkbenchShell.tsx) |
+| 方案关系画布、节点详情与数据来源 | [WorkflowWorkspace.tsx](src/components/Graph/WorkflowWorkspace.tsx)、[GraphBoard.tsx](src/components/Graph/GraphBoard.tsx)、[workflowGraph.ts](src/design/workflowGraph.ts) |
 | 设计简报、语义检索与研究资料 | [InsightPage.tsx](src/components/Insight/InsightPage.tsx)、[字段检索](src/design/semantics/lookup.mjs)、[公开卡语义标注](src/design/semantics/topics.mjs) |
 | 造型页与五个部件页签 | [StudioPage.tsx](src/components/Studio/StudioPage.tsx)、[Parameters/](src/components/Parameters/)、[controls.tsx](src/components/controls/controls.tsx) |
 | 画布（顶视、条件图、侧视、拖动、比例读数） | [Stage.tsx](src/components/Studio/Stage.tsx) |

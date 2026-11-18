@@ -27,6 +27,7 @@ export interface Snapshot {
   parameters: DroneParameters;
   touched: Record<string, boolean>;
   intent: DesignIntent;
+  workflowOrigin?: { id: string; task: Task };
 }
 export interface LastChange {
   path: string;
@@ -39,10 +40,11 @@ export interface LastChange {
 }
 export interface Pinned extends Snapshot { label: string; at: string }
 /** 方案：并行探索的几个方向，各自保存一份完整状态。当前方案的状态以页面上的为准。 */
-export interface Variant { id: string; name: string; snapshot: Snapshot }
+export interface Variant { id: string; name: string; snapshot: Snapshot; workflowKey?: string }
 
 interface DroneStore extends AppState {
   task: Task;
+  workflowOrigin?: Snapshot['workflowOrigin'];
   touched: Record<string, boolean>;
   intent: DesignIntent;
   lastChange: LastChange | null;
@@ -118,7 +120,9 @@ export function createTaskStore(task: Task) {
     initial.accessories.has_camera_gimbal = true;
   }
   const initialIntent = () => ({...emptyIntent(), ...(task === 'hexa' ? {taskId:'agricultural_spraying' as const} : {})});
-  const snap = (s: Snapshot): Snapshot => structuredClone({ parameters: s.parameters, touched: s.touched, intent: s.intent });
+  const snap = (s: Snapshot): Snapshot => structuredClone({
+    parameters: s.parameters, touched: s.touched, intent: s.intent, workflowOrigin: s.workflowOrigin,
+  });
 
   const store = create<DroneStore>((set, get) => {
     /** 统一的提交入口：记历史、记“刚才的改动”，再写入新状态。 */
@@ -212,7 +216,9 @@ export function createTaskStore(task: Task) {
         const used = new Set(s.variants.map(v => v.id));
         const id = 'ABCDEFGH'.split('').find(c => !used.has(c));
         if (!id) return;
-        set({ variants: [...stash(s), { id, name: '方案 ' + id, snapshot: snap(s) }], activeVariant: id, lastChange: null });
+        // Letter slots can be reused after deletion. A new slot needs its own canvas references.
+        const workflowKey = id + '-' + crypto.getRandomValues(new Uint32Array(4)).join('-');
+        set({ variants: [...stash(s), { id, name: '方案 ' + id, snapshot: snap(s), workflowKey }], activeVariant: id, lastChange: null });
       },
       switchVariant: id => {
         const s = get();
@@ -309,7 +315,7 @@ export function createTaskStore(task: Task) {
         set({ ...snap(snapshot), history: [...s.history, snap(s)].slice(-40), lastChange: null });
       },
       restoreConfiguration: (parameters, selectedUserProfile) =>
-        set({ parameters, selectedUserProfile, currentImage: null, error: null, lastOptimizationResult: null, lastChange: null }),
+        set({ parameters, selectedUserProfile, workflowOrigin: undefined, currentImage: null, error: null, lastOptimizationResult: null, lastChange: null }),
 
       updateFrameParams: params => updateGroup('frame', params),
       updatePropulsionParams: params => updateGroup('propulsion', params),
@@ -334,7 +340,7 @@ export function createTaskStore(task: Task) {
       resetToDefaults: () => {
         const s = get();
         set({
-          parameters: structuredClone(initial), touched: {}, intent: {...emptyIntent(),taskId:s.intent.taskId}, pinned: null,
+          parameters: structuredClone(initial), touched: {}, intent: {...emptyIntent(),taskId:s.intent.taskId}, pinned: null, workflowOrigin: undefined,
           history: [...s.history, snap(s)].slice(-40), lastChange: null,
           isGenerating: false, currentImage: null, error: null, progress: 0, selectedUserProfile: null,
           useGeminiOptimization: false, isOptimizingPrompt: false, lastOptimizationResult: null, useRAGOptimization: false,
@@ -348,11 +354,11 @@ export function createTaskStore(task: Task) {
     try {
       const raw = window.localStorage.getItem(key);
       if (raw && !window.location.hash.includes('cfg=')) {
-        const saved = JSON.parse(raw) as Pick<DroneStore, 'parameters'|'intent'|'touched'|'variants'|'activeVariant'|'exportNote'>;
+        const saved = JSON.parse(raw) as Pick<DroneStore, 'parameters'|'intent'|'touched'|'variants'|'activeVariant'|'exportNote'|'workflowOrigin'>;
         if (saved.parameters?.frame?.frame_type in frameRules && Array.isArray(saved.intent?.log) &&
             Array.isArray(saved.intent?.cards) && saved.variants?.some(v => v.id === saved.activeVariant)) {
           store.setState({parameters:saved.parameters, intent:saved.intent, touched:saved.touched,
-            variants:saved.variants, activeVariant:saved.activeVariant, exportNote:saved.exportNote});
+            variants:saved.variants, activeVariant:saved.activeVariant, exportNote:saved.exportNote, workflowOrigin:saved.workflowOrigin});
         }
       }
     } catch { store.setState({notice:'本地草稿无法恢复，可从已导出的规格重新载入。'}); }

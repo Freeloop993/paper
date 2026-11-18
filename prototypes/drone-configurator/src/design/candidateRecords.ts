@@ -1,6 +1,6 @@
 import { sha256Bytes } from './sha256';
 import { buildExport, canvasPngBytes, download, fileStamp, guideCanvas, type ConfigExport, type ExportState } from './exporters';
-import { computeLayout } from './design';
+import { computeLayout, type Task } from './design';
 
 export type DecisionKind = 'accept' | 'reject' | 'restore' | 'manual' | 'stop';
 type Candidate = {id: string; name: string; hash: string; file: Blob; firstShown?: string};
@@ -9,6 +9,8 @@ export interface FrozenAttempt {
   id: string; createdAt: string; config: ConfigExport; guide: Blob;
   confirmedText: string; condition: 'structured' | 'free'; variantId: string; variantName: string;
   goal: string; keep: string; parentId?: string; parentImage?: Blob;
+  snapshot?: ExportState;
+  workflowOrigin?: { id: string; task: Task };
   dispatch?: {request: Blob; hash: string; ack?: Blob; error?: string; server?: string; at: string; updatedAt: string};
   receipt?: {request: Blob; ack: Blob; history: Blob; at: string; inputVerification: string; runId:string};
   failure?: {history:Blob;runId:string;at:string;status:string};
@@ -52,7 +54,7 @@ export async function listAttempts(): Promise<FrozenAttempt[]> {
     tx.onabort=()=>{db.close();reject(tx.error);};
   });
 }
-export async function freezeAttempt(state: ExportState, details: Pick<FrozenAttempt,'condition'|'goal'|'keep'|'variantId'|'variantName'>,
+export async function freezeAttempt(state: ExportState, details: Pick<FrozenAttempt,'condition'|'goal'|'keep'|'variantId'|'variantName'|'workflowOrigin'>,
   freeText: string, parent?: {id:string; file:Blob}, structuredText?:string) {
   if (!details.goal.trim()) throw new Error('请写下本轮的设计目标。');
   const id = crypto.randomUUID(), guideBytes=canvasPngBytes(guideCanvas(computeLayout(state.parameters)));
@@ -60,7 +62,8 @@ export async function freezeAttempt(state: ExportState, details: Pick<FrozenAtte
   const confirmedText=details.condition==='free'?freeText:structuredText??config.prompt.text;
   if (!confirmedText.trim()) throw new Error('请填入本轮实际提示词。');
   const attempt:FrozenAttempt={...details,id,goal:details.goal.trim(),keep:details.keep.trim(),config,createdAt:now(),
-    guide:new Blob([new Uint8Array(guideBytes)],{type:'image/png'}),confirmedText,parentId:parent?.id,parentImage:parent?.file,candidates:[],decisions:[]};
+    guide:new Blob([new Uint8Array(guideBytes)],{type:'image/png'}),confirmedText,parentId:parent?.id,parentImage:parent?.file,
+    snapshot:structuredClone({parameters:state.parameters,intent:state.intent,touched:state.touched}),candidates:[],decisions:[]};
   await edit(id,old=>{if(old) throw new Error('轮次编号已存在。');return attempt;});
   return id;
 }

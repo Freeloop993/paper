@@ -1,5 +1,5 @@
 // 交付：核对将要发给模型的三样东西——条件图、提示词、规格卡——然后导出。
-import React, { useMemo, useState } from 'react';
+import React, { useCallback, useMemo, useState } from 'react';
 import CandidateWorkspace from './CandidateWorkspace';
 import { useDroneStore } from '../../store/droneStore';
 import { computeLayout, frameRules, taskLabels, topologyOf } from '../../design/design';
@@ -7,9 +7,13 @@ import { GuideView } from '../Studio/Stage';
 import PromptGenerator from '../DevPreview/PromptGenerator';
 import ParameterOverview from '../Overview/ParameterOverview';
 
-const HandoffPage: React.FC<{ wide: boolean }> = ({ wide }) => {
+export interface HandoffEntry { attemptId?: string; parentCandidateId?: string; candidates?: boolean }
+
+const HandoffPage: React.FC<{ wide: boolean; entry?: HandoffEntry }> = ({ wide, entry }) => {
   const { parameters, intent, variants, activeVariant } = useDroneStore();
-  const [panel, setPanel] = useState<'inputs'|'candidates'>('inputs');
+  const [panel, setPanel] = useState<'inputs'|'candidates'>(entry?.candidates ? 'candidates' : 'inputs');
+  const [initialParent,setInitialParent]=useState(entry?.parentCandidateId);
+  const consumeParent=useCallback(()=>setInitialParent(undefined),[]);
   const layout = useMemo(() => computeLayout(parameters), [parameters]);
   const name = variants.find(v => v.id === activeVariant)?.name ?? '';
   return (
@@ -40,7 +44,7 @@ const HandoffPage: React.FC<{ wide: boolean }> = ({ wide }) => {
 
         <PromptGenerator />
         <ParameterOverview />
-      </div> : <div className="scroll-thin mt-4 min-h-0 flex-1 overflow-y-auto"><CandidateWorkspace/></div>}
+      </div> : <div className="scroll-thin mt-4 min-h-0 flex-1 overflow-y-auto"><CandidateWorkspace initialAttempt={entry?.attemptId} initialParent={initialParent} onParentConsumed={consumeParent}/></div>}
     </div>
   );
 };

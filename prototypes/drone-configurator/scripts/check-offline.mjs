@@ -17,7 +17,25 @@ try {
     ['-m','zipfile','-e',join(root,'configurator-offline.zip'),join(work,'package')]);
   browser = await launch({port:9341});
   const page = await browser.open(pathToFileURL(join(work,'package','index.html')).href);
-  assert.deepEqual(await page.evaluate("[...document.querySelectorAll('[data-step]')].map(x=>x.dataset.step)"),['insight','studio','handoff']);
+  assert.equal(await page.evaluate("document.querySelector('#drone-configurator-app').dataset.stepActive"),'canvas');
+  assert.deepEqual(await page.evaluate("[...document.querySelectorAll('nav [data-step]')].map(x=>x.dataset.step)"),
+    ['canvas','insight','studio','handoff']);
+  const canvas = await page.evaluate(`(async () => {
+    const cards = [...document.querySelectorAll('[data-workflow-node]')];
+    const images = cards.flatMap(card => [...card.querySelectorAll('img')]);
+    await Promise.all(images.map(image => image.decode()));
+    return {
+      cards: cards.map(card => card.dataset.workflowNode),
+      edges: [...document.querySelectorAll('path.gb-wire')].filter(path => path.getTotalLength() > 0).map(path => path.id),
+      images: images.filter(image => image.naturalWidth > 0).length,
+    };
+  })()`);
+  for(const id of ['b2-original','b2-clean','b2-upper','b2-lower','b2-choice']) assert.ok(canvas.cards.includes(id), id);
+  for(const [from,to] of [['b2-original','b2-clean'],['b2-clean','b2-upper'],['b2-clean','b2-lower'],['b2-lower','b2-choice']])
+    assert.ok(canvas.edges.includes(JSON.stringify([from,to])), from + ' → ' + to);
+  assert.ok(canvas.images >= 4);
+  if(captures) await page.screenshot(join(captures,'canvas.png'));
+  await page.click('[data-step=insight]');
   const set = async (testId,value) => {
     await page.evaluate(`(() => {const s=document.querySelector('[data-testid="${testId}"]');s.value=${JSON.stringify(value)};s.dispatchEvent(new Event('change',{bubbles:true}));})()`);
   };
@@ -64,7 +82,8 @@ try {
   }
   assert.equal(page.errors().length,0);
   assert.equal(page.requests().filter(x=>/^https?:/.test(x)).length,0);
-  console.log(JSON.stringify({offline:true,geometry:config.topology,task:config.task_id,files:names,
+  console.log(JSON.stringify({offline:true,canvas:{nodes:canvas.cards.length,edges:canvas.edges.length,images:canvas.images},
+    geometry:config.topology,task:config.task_id,files:names,
     semanticQueries:2,historyCases:2,modelCalls:0,humanSessions:0,captures},null,2));
 } finally {
   if(browser) await browser.quit();

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useId, useRef, useState } from 'react';
 import { MessageCircle, Send } from 'lucide-react';
 import { suggestFields } from '../../design/semantics/brief';
 import type { FrameType, LayoutKey } from '../../design/design';
@@ -98,11 +98,12 @@ export default function DesignChat({ context, variant, scopeLabel, preview, onPr
   preview: WidthPreview | null;
   onPreview: (next: WidthPreview | null) => void;
   onApply: (version: string, suggestion: WidthSuggestion) => boolean;
-  onSelectBody: () => void;
+  onSelectBody?: () => void;
 }) {
   const [turns, setTurns] = useState<Turn[]>([]);
   const [text, setText] = useState('');
   const [busy, setBusy] = useState(false);
+  const messageId = useId();
   const input = useRef<HTMLTextAreaElement>(null);
   const feed = useRef<HTMLDivElement>(null);
   const controller = useRef<AbortController | null>(null);
@@ -165,7 +166,7 @@ export default function DesignChat({ context, variant, scopeLabel, preview, onPr
   };
 
   const compose = (message: string, body = false) => {
-    if (body) onSelectBody();
+    if (body) onSelectBody?.();
     setText(message);
     input.current?.focus();
   };
@@ -231,8 +232,8 @@ export default function DesignChat({ context, variant, scopeLabel, preview, onPr
         })}
       </div>
       <form className="space-y-2 border-t border-line p-3" onSubmit={event => { event.preventDefault(); void send(text); }}>
-        <label className="sr-only" htmlFor="design-chat-message">给设计助手的消息</label>
-        <textarea id="design-chat-message" data-testid="chat-input" ref={input} rows={2} maxLength={1600} value={text}
+        <label className="sr-only" htmlFor={messageId}>给设计助手的消息</label>
+        <textarea id={messageId} data-testid="chat-input" ref={input} rows={2} maxLength={1600} value={text}
           onChange={event => setText(event.target.value)} placeholder="描述你想比较的造型…" className="input-field block w-full resize-none" />
         <div className="flex items-center justify-between gap-2">
           <span className="text-[11px] text-ink-soft">{offline ? localServiceHint : '建议由你确认后应用'}</span>
