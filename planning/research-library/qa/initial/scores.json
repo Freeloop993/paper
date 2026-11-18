@@ -1,0 +1,30 @@
+{
+  "snapshot": {
+    "questions_sha256_lf": "0e7cdf986e1116ff9c4f3f93c9f50f20d22d343f941ec2a283bead2172d3496d",
+    "retriever_sha256_lf": "aeb7b8f60f3f061095f21400e17f1fa23f345f17124d15a11966a1f2f2979c4b",
+    "encoder_sha256_lf": "973c0aad1d73a9af635ee7127d6a0ae48bec53569fbec90b49e95834aa199b30",
+    "database_inputs_digest": "51b25b2e01244291c059b8a8dc6aaaf2ffc8c1cc6545678b4232cb33d70c91c1",
+    "encoder_revision": "8399f11f8da998fe932df2684586c92024219d05",
+    "vector_count": 1009,
+    "per_question_limit": 3,
+    "human_judgments": 0
+  },
+  "scores": {
+    "lexical": {
+      "answerable": 12,
+      "hit_at_1": 11,
+      "hit_at_3": 12,
+      "supported_packets": 12,
+      "unanswerable": 8,
+      "abstentions": 2
+    },
+    "hybrid": {
+      "answerable": 12,
+      "hit_at_1": 11,
+      "hit_at_3": 11,
+      "supported_packets": 11,
+      "unanswerable": 8,
+      "abstentions": 2
+    }
+  }
+}

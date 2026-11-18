@@ -1,0 +1,70 @@
+{
+  "snapshot": {
+    "questions_sha256_lf": "0e7cdf986e1116ff9c4f3f93c9f50f20d22d343f941ec2a283bead2172d3496d",
+    "retriever_sha256_lf": "f7827cc67ab1d96f30939f0b14aceda1be785d2db3c792d9e68aaf1bd3ebe4a0",
+    "encoder_sha256_lf": "5ba013ccc207512d396d72d70eb31bd6482136792dd9a229fe9f3125eb996513",
+    "generation_gate_sha256_lf": "2a798efd034491ad015196137ea615c7ccf507ec0a9cddbe41c3e533c5fef767",
+    "database_inputs_digest": "5a9ac017bb3f9dea755e11fe3840ad69aea621242f451fa999ec51de40110c86",
+    "encoder_revision": "8399f11f8da998fe932df2684586c92024219d05",
+    "vector_count": 1009,
+    "per_question_limit": 3,
+    "human_judgments": 0
+  },
+  "scores": {
+    "lexical": {
+      "answerable": 12,
+      "hit_at_1": 11,
+      "hit_at_3": 12,
+      "supported_packets": 0,
+      "unanswerable": 8,
+      "abstentions": 2,
+      "action_on_answerable": {
+        "review_candidates": 12
+      },
+      "action_on_unanswerable": {
+        "review_candidates": 6,
+        "abstain": 2
+      },
+      "automatic_retrieve_packets": 0,
+      "default_nonretrieve_draft_gates_checked": 20
+    },
+    "hybrid": {
+      "answerable": 12,
+      "hit_at_1": 11,
+      "hit_at_3": 11,
+      "supported_packets": 0,
+      "unanswerable": 8,
+      "abstentions": 0,
+      "action_on_answerable": {
+        "review_candidates": 12
+      },
+      "action_on_unanswerable": {
+        "review_candidates": 8
+      },
+      "automatic_retrieve_packets": 0,
+      "default_nonretrieve_draft_gates_checked": 20
+    }
+  },
+  "selection_controls": [
+    {
+      "qid": "Q04",
+      "card": "D-A1-015",
+      "condition": "accepted_scope",
+      "result": "retrieve"
+    },
+    {
+      "qid": "Q04",
+      "card": "D-A1-003",
+      "condition": "outside_candidates",
+      "result": "rejected"
+    },
+    {
+      "qid": "N04",
+      "card": "D-A1-015",
+      "condition": "returned_card_wrong_measure",
+      "result": "retrieve"
+    }
+  ],
+  "selection_control_rater": "software fixture",
+  "generative_model_calls_in_this_run": 0
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "input_sha256": {
+    "merged": "d430f71b0af77b7f9c81e35cd78c08d7ea8a1b04be0ce7f1cc5f40ec97354b45",
+    "final_ledger": "092615cbf424248743cc7f1b674ecfd30842b37012ec285b79f05b570d2b81e7",
+    "evidence_pool": "8620e02e97258de40009b753bdefbc4b66a78d8db17b8bcf7ae5637de3a8169b",
+    "private_card_map": "eb21ed6fe7d461f3dc281a7dd49b6d2c4ec0610a618265327c313bc6a2c8aab6",
+    "public_cards": "d88df5f822d012da7127914aae3a5ee63800e92cc81ae5f026f806d38de4e9e8",
+    "historical_chunks": "e2e8d2b8deecdd283e6d5b6f7c832e1d3cc7d96d8ae9d575250487602f7eea18"
+  },
+  "units": {
+    "cluster": 7443,
+    "legacy": 5614,
+    "merged": 8755,
+    "pool": 393
+  },
+  "ledger_decisions": {
+    "A": 228,
+    "F": 42,
+    "S": 797,
+    "U": 114,
+    "X": 6262
+  },
+  "consumer_title_clusters": 1318,
+  "consumer_retained_clusters": 228,
+  "merged_rows_linked_to_clusters": 8037,
+  "pool_by_dataset": {
+    "legacy": 269,
+    "supplement": 124
+  },
+  "pool_exact_ledger_links": 269,
+  "verified_public_cards": 36,
+  "unique_public_sources": 35,
+  "cards_by_pool_dataset": {
+    "legacy": 15,
+    "supplement": 21
+  },
+  "historical": {
+    "distinct_comment_ids": 3603,
+    "direct_id_overlap_with_text_ids": 0,
+    "direct_id_overlap_with_original_ids": 0,
+    "matches_are_textual_candidates": true,
+    "match_counts": {
+      "nfkc_compact": {
+        "matched_source_groups": 3486,
+        "matched_clusters": 3480,
+        "retained_clusters": 109
+      },
+      "trim": {
+        "matched_source_groups": 109,
+        "matched_clusters": 109,
+        "retained_clusters": 1
+      }
+    }
+  }
+}
