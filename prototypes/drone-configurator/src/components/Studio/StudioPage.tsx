@@ -2,7 +2,7 @@
 import React, { useMemo, useState } from 'react';
 import { Anchor, Box, Camera, Eye, Ruler, Settings, Undo2, Video, Zap } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
-import { computeLayout, frameRules } from '../../design/design';
+import { computeLayout, frameRules, topologyOf } from '../../design/design';
 import type { ParameterGroup } from '../../types/DroneParameters';
 import FrameParameters from '../Parameters/FrameParameters';
 import PropulsionParameters from '../Parameters/PropulsionParameters';
@@ -97,7 +97,7 @@ const StudioPage: React.FC<{ wide: boolean; initialTab?: ParameterGroup | null }
 
       {view !== 'top' && wide && (
         <p className="absolute right-3 top-3 max-w-xs rounded-2xl border border-line bg-white/90 px-3 py-2 text-xs leading-relaxed text-ink-soft shadow-panel backdrop-blur">
-          {view === 'guide' ? '这就是随提示词一起导出的条件图：只有电机轴心和机架连接，不画机身外形。' : '俯视看不到的都在这里：相机朝正前方，机身高度、机臂厚度和起落架离地高度。'}
+          {view === 'guide' ? '这就是随提示词一起导出的条件图：只有电机轴心和机架连接，不画机身外形。' : topologyOf(layout.frame_type).layers_per_axis === 2 ? '共轴侧视示意。上下两层来自同一方案，层间距仅用于辨认。' : '侧视显示机身高度、机臂厚度和起落架离地高度。'}
         </p>
       )}
       {view === 'top' && wide && !lastChange && (

@@ -1,6 +1,6 @@
 // 设计提示：把几条无人机设计常识算成当前方案的具体提醒。都是俯视下的二维近似，只作提示，不作结论。
 import type { DroneParameters, ParameterGroup } from '../types/DroneParameters.ts';
-import type { Layout } from './design.ts';
+import { usesConsumerReferences, topologyOf, type Layout } from './design.ts';
 import { realRanges } from '../data/aircraft.ts';
 
 /** 示意用的相机水平视角。24 mm 等效镜头约为这个量级（DJI Mini 4 Pro 标称 82.1°）。 */
@@ -40,18 +40,18 @@ export function bodyClearance(p: DroneParameters, layout: Layout) {
 
 const within = (v: number, range: { min: number; max: number }) => v >= range.min - 0.005 && v <= range.max + 0.005;
 
-export function designHints(p: DroneParameters, layout: Layout): Hint[] {
+export function designHints(p: DroneParameters, layout: Layout, task?: string): Hint[] {
   const hints: Hint[] = [];
   const gap = layout.disk_gap_mm;
   hints.push(gap >= 0
-    ? { id: 'props', level: 'ok', group: 'propulsion', title: '桨盘互不重叠', text: `相邻桨盘之间留有 ${gap.toFixed(0)} mm。` }
-    : { id: 'props', level: 'note', group: 'propulsion', title: `相邻桨盘重叠 ${(-gap).toFixed(0)} mm`, text: '俯视下前后桨盘叠在一起。Mavic 这类折叠机靠前后桨错开高度做到这一点；四副桨同高就会相碰。' });
+    ? { id: 'props', level: 'ok', group: 'propulsion', title: '相邻轴位桨盘留有间隙', text: `不同轴位的桨盘投影间距为 ${gap.toFixed(0)} mm。` }
+    : { id: 'props', level: 'note', group: 'propulsion', title: `相邻桨盘重叠 ${(-gap).toFixed(0)} mm`, text: '不同轴位的桨盘在俯视图中相交。实际层高与间隙需另行确认。' });
 
   if (p.accessories.has_camera_gimbal) {
     const cam = cameraView(p, layout);
     const worst = Math.max(0, ...cam.intrusions.map(i => i.deg));
     hints.push(worst > 0.5
-      ? { id: 'camera', level: 'warn', group: 'frame', title: `前桨进入相机视野约 ${worst.toFixed(0)}°`, text: `按 ${CAMERA_FOV_DEG}° 水平视角的俯视近似。把前臂张得更开（加大横纵比，或用 Deadcat），或让机鼻更靠前，都能避开。` }
+      ? { id: 'camera', level: 'warn', group: 'frame', title: `前桨进入相机视野约 ${worst.toFixed(0)}°`, text: `按 ${CAMERA_FOV_DEG}° 水平视角的俯视近似。可在画布上检查前缘和桨盘投影。` }
       : { id: 'camera', level: 'ok', group: 'frame', title: '前桨在相机视野之外', text: `按 ${CAMERA_FOV_DEG}° 水平视角的俯视近似。` });
   }
 
@@ -59,7 +59,12 @@ export function designHints(p: DroneParameters, layout: Layout): Hint[] {
   if (clear < 0)
     hints.push({ id: 'body', level: 'warn', group: 'fuselage', title: `桨盘伸到机身上方 ${(-clear).toFixed(0)} mm`, text: '俯视下桨盘与机身包络重叠。可以缩小机身、减小桨径或加大轴距。' });
 
-  const wl = layout.W_over_L, dd = layout.d_over_D_mean;
+  if (!usesConsumerReferences(p.frame.frame_type, task)) {
+    const topology = topologyOf(p.frame.frame_type);
+    hints.push({ id: 'axis-scope', level: 'note', group: 'frame', title: `${topology.axis_count} 处顶视轴位`, text: topology.layer_visibility });
+    return hints;
+  }
+  const wl = layout.W_over_L, dd = layout.d_over_reference_span;
   hints.push({
     id: 'wl', level: 'note', group: 'frame', title: `横纵比 ${wl.toFixed(2)}`,
     text: within(wl, realRanges.wl)

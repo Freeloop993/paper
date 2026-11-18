@@ -8,7 +8,9 @@ import { join } from 'node:path';
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 export async function launch({ port = 9340 } = {}) {
-  const chromePath = process.env.CHROME ?? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+  const chromePath = process.env.CHROME ?? (process.platform === 'win32'
+    ? join(process.env.PROGRAMFILES || 'C:/Program Files', 'Google/Chrome/Application/chrome.exe')
+    : process.platform === 'darwin' ? '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome' : 'google-chrome');
   const profile = mkdtempSync(join(tmpdir(), 'configurator-chrome-'));
   const chrome = spawn(chromePath, ['--headless=new', '--disable-gpu', '--hide-scrollbars', `--remote-debugging-port=${port}`, `--user-data-dir=${profile}`, 'about:blank'], { stdio: 'ignore' });
   let version;
@@ -96,6 +98,6 @@ export async function launch({ port = 9340 } = {}) {
     return { evaluate, click, drag, type, scrollTo, screenshot, setDownloadDir, requests, errors, close, sleep };
   }
 
-  const quit = async () => { ws.close(); chrome.kill(); await sleep(300); rmSync(profile, { recursive: true, force: true }); };
+  const quit = async () => { ws.close(); chrome.kill(); await sleep(300); rmSync(profile, { recursive: true, force: true, maxRetries: 5, retryDelay: 300 }); };
   return { open, quit, sleep };
 }

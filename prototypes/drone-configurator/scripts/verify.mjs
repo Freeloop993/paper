@@ -6,7 +6,7 @@ import { dirname, resolve } from 'node:path';
 import { computeLayout, layoutExport, frameRules } from '../src/design/design.ts';
 import { compilePrompt, diffSentences, auditPrompt } from '../src/design/partPrompt.ts';
 import { openDecisions } from '../src/design/fields.ts';
-import { buildExport } from '../src/design/exporters.ts';
+import { buildExport, parseImported } from '../src/design/exporters.ts';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const results = [];
@@ -109,6 +109,40 @@ check('采纳的卡号与目标进入配置', withCard.intent.adopted_cards[0].i
 check('目标成为提示词中单独一句，撤销后该句消失', withCard.prompt.sentences.some(s => s.id === 'intent') && !without.prompt.sentences.some(s => s.id === 'intent'));
 const own = buildExport({ parameters: base(), touched: {}, intent: { targets: {}, note: '机臂到机身的过渡连续', cards: [], log: [] } }, { note: 'verify', stamp: 'verify' });
 check('无证据卡时可自写意图，记为设计者自定', own.intent.origin === '设计者自定（未采纳证据卡）' && own.prompt.text.includes('机臂到机身的过渡连续'));
+
+// Exercise independent task/layout fields through export and reimport, including the coaxial side supplement.
+const layoutCases = [
+  ['True X', 4, 1, 'quadcopter'], ['Radial Tri', 3, 1, 'tricopter'],
+  ['Radial Hex', 6, 1, 'flat hexacopter'], ['Radial Octo', 8, 1, 'flat octocopter'],
+  ['Coax Y6', 3, 2, 'coaxial Y6 hexacopter'], ['Coax X8', 4, 2, 'coaxial X8 octocopter'],
+];
+const missions = { consumer_camera: 'everyday carry-along aerial photography',
+  agricultural_spraying: 'civil agricultural crop care', neutral_design: 'a civilian industrial design comparison' };
+for (const [frame, axes, layers, aircraftName] of layoutCases) {
+  for (const [taskId, purpose] of Object.entries(missions)) {
+    const state = { parameters: withFrame(frame), touched: {}, intent: { ...noIntent, taskId } };
+    const bundle = buildExport(state, { note: '', stamp: 'test' });
+    const reopened = parseImported(bundle, base());
+    const checkPrefix = `Design a ${aircraftName} for ${purpose}.`;
+    const validScale = axes === 3
+      ? bundle.layout.D_mean_mm === null && bundle.layout.d_over_D_mean === null
+        && near(bundle.layout.reference_span_mm, bundle.layout.max_pair_distance_mm, .001)
+      : near(bundle.layout.D_mean_mm, state.parameters.frame.wheelbase_mm, .001);
+    const side = bundle.supplementary_view;
+    check(`${taskId} / ${frame} 实发文字、轴位、层数、尺度与重导入一致`,
+      bundle.task_id === taskId && reopened.intent.taskId === taskId && reopened.parameters.frame.frame_type === frame
+      && bundle.layout.hubs.length === axes && bundle.topology.rotor_count === axes * layers
+      && bundle.topology.layers_per_axis === layers && bundle.prompt.text.startsWith(checkPrefix) && validScale
+      && (layers === 1 ? side === null : side?.linked_top_layout_sha256 === bundle.reference_image.layout_sha256
+        && side.sha256.length === 64 && bundle.prompt.text.includes('lower layer may be occluded'))
+      && buildExport(reopened, { note: '', stamp: 'test' }).prompt.text_sha256 === bundle.prompt.text_sha256);
+  }
+}
+const storageText = '折起来能放进背包';
+const storageIntent = { ...noIntent, note: storageText, log: [{ action: 'brief',
+  brief: { action: 'accept', text: storageText, query: { state: 'folded' } } }] };
+const storage = buildExport({parameters: base(), intent: storageIntent, touched: {}}, {note: '', stamp: 'test'});
+check('折叠意图保留在简报，展开顶视输入不混入收纳原话', storage.intent.designer_note === storageText && !storage.prompt.text.includes(storageText));
 
 const failed = results.filter(r => !r.ok);
 console.log(`\n共 ${results.length} 项，通过 ${results.length - failed.length}，失败 ${failed.length}`);

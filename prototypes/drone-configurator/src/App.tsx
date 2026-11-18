@@ -51,7 +51,7 @@ const App: React.FC = () => {
   const [hash] = useState(readHash);
   const [step, setStep] = useState<Step>(hash.step ?? 'insight');
   const wide = useWide();
-  const { parameters, importSnapshot, pin, setField } = useDroneStore();
+  const { parameters, importSnapshot, pin, setField, activeVariant } = useDroneStore();
 
   useEffect(() => {
     try {
@@ -73,7 +73,7 @@ const App: React.FC = () => {
     <div className={`bg-canvas ${fill ? 'flex h-screen flex-col overflow-hidden' : 'min-h-screen'}`} id="drone-configurator-app" data-layout={wide ? 'wide' : 'narrow'} data-step-active={step}>
       <TopBar step={step} onStep={setStep} />
       <main className={fill ? 'min-h-0 flex-1' : ''}>
-        {step === 'insight' && <InsightPage wide={wide} onNext={() => setStep('studio')} initialQuery={hash.query} />}
+        {step === 'insight' && <InsightPage key={activeVariant} wide={wide} onNext={() => setStep('studio')} initialQuery={hash.query} />}
         {step === 'studio' && <StudioPage wide={wide} initialTab={hash.tab} />}
         {step === 'handoff' && <HandoffPage wide={wide} />}
       </main>

@@ -4,8 +4,30 @@ import { Layers, Wand2 } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
 import { aircraft, aircraftNote, aircraftParameters, ddOf, type Aircraft } from '../../data/aircraft';
 
+import { layoutKey, usesConsumerReferences } from '../../design/design';
+
+const layoutSources = {
+  tri: { title: 'TriMorph · 展开三旋', note: '同一原型展开与收拢的照片，可对照三个轴位。当前资料不足以确定三旋机型的比例区间。', href: 'https://www.imavs.org/pdf/imav.2026.8#page=5' },
+  flat_hex: { title: 'DJI S900 · 平面六旋', note: '手册第 10 页标明机头及六个轴位，可用于顶视计数。', href: 'https://dl.djicdn.com/downloads/s900/en/S900_User_Manual_en_v1.4.pdf#page=10' },
+  flat_octo: { title: 'DJI S1000+ · 平面八旋', note: '手册第 10 页标有八个轴位及展开方向，供独立读图对照。', href: 'https://dl.djicdn.com/downloads/s1000_plus/en/S1000%EF%BC%8B_User_Manual_en_v1.4.pdf#page=10' },
+  coax_hex: { title: 'Brouwer 等 · 共轴 Y6', note: '图 1b 中的侧斜视能辨别同一轴位的上下桨。', href: 'https://www.vliz.be/imisdocs/publications/77/271477.pdf#page=3' },
+  coax_octo: { title: 'DJI T40 · 共轴 X8', note: '手册第 8 页呈现展开与折叠状态，供上下层及轴位判读。', href: 'https://dl.djicdn.com/downloads/t40_t20p/20221021multi/T40_T20P_User_Manual_v1.0_EN.pdf#page=8' },
+};
+const agriculturalHex = { title: 'DJI T20 · 植保六旋', note: '手册第 13 页呈现展开与折叠外观。可核植保机的使用情境与轴位，立体图不用于顶视尺度标定。', href: 'https://dl.djicdn.com/downloads/t20/20201201/Agras_T20_User_Manual_v1.4_EN.pdf#page=13' };
+
 const References: React.FC = () => {
-  const { parameters, pinned, setGhost, setField, setMany } = useDroneStore();
+  const { parameters, intent, pinned, setGhost, setField, setMany } = useDroneStore();
+  const key = layoutKey(parameters.frame.frame_type);
+  if (!usesConsumerReferences(parameters.frame.frame_type, intent.taskId)) {
+    const source = key === 'quad' ? null : key === 'flat_hex' && intent.taskId === 'agricultural_spraying' ? agriculturalHex : layoutSources[key];
+    return <section className="panel p-4" aria-label="构型资料">
+      <h3 className="panel-title">构型资料</h3>
+      {source ? <>
+        <a className="mt-3 block text-sm font-medium text-primary-600 hover:underline" href={source.href} target="_blank" rel="noreferrer">{source.title} ↗</a>
+        <p className="mt-2 text-xs leading-relaxed text-ink-soft">{source.note}</p>
+      </> : <p className="mt-2 text-xs text-ink-soft">当前任务尚无已核对的同类机型比例。</p>}
+    </section>;
+  }
   const apply = (a: Aircraft) => {
     const p = aircraftParameters(a, parameters);
     setField('frame.frame_type', 'Wide X');

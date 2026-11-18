@@ -1,10 +1,10 @@
 import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { computeLayout, frameRules, unitHubs, type FrameType } from '../../design/design';
+import { computeLayout, frameRules, unitHubs, topologyOf, usesConsumerReferences, type FrameType } from '../../design/design';
 import { armMaterialOptions, armRootOptions, references } from '../../design/fields';
 import { Choice, Field, Group, OpenChoice, Slider, TabHeading } from '../controls/controls';
 
-const frameTypes: FrameType[] = ['True X', 'Wide X', 'Stretch X', 'H-Frame', 'Deadcat', '+ Configuration'];
+const frameTypes = Object.keys(frameRules) as FrameType[];
 
 /** 构型小图：与预览用同一个形状函数，只画轴心和连接。 */
 const FrameIcon: React.FC<{ type: FrameType }> = ({ type }) => {
@@ -26,14 +26,16 @@ const FrameIcon: React.FC<{ type: FrameType }> = ({ type }) => {
 };
 
 const FrameParameters: React.FC = () => {
-  const { parameters, setField } = useDroneStore();
+  const { parameters, setField, intent } = useDroneStore();
   const frame = parameters.frame;
   const rule = frameRules[frame.frame_type];
   const layout = computeLayout(parameters);
+  const topology = topologyOf(frame.frame_type);
+  const consumer = usesConsumerReferences(frame.frame_type, intent.taskId);
   const measured = references.wl.measured;
   return (
     <div className="space-y-5">
-      <TabHeading title="机架参数" en="Frame Parameters">四个电机放在哪里、机臂多宽。</TabHeading>
+      <TabHeading title="机架参数" en="Frame Parameters">{topology.axis_count} 处轴位 · 每轴 {topology.layers_per_axis} 层 · 共 {topology.rotor_count} 副旋翼</TabHeading>
 
       <Field path="frame.frame_type" en="Frame Type" value={rule.zh} hint={rule.desc} reference={<><b className="font-medium text-ink">画法：</b>{rule.rule}</>}>
         <div className="grid grid-cols-3 gap-2" role="radiogroup" aria-label="构型">
@@ -55,29 +57,29 @@ const FrameParameters: React.FC = () => {
       {rule.wl.adjustable ? (
         <Field path="frame.span_ratio_wl" value={layout.W_over_L.toFixed(2)}
           hint="电机左右跨度 ÷ 前后跨度。数值越大，机架越宽扁。"
-          reference={<>
+          reference={consumer && <>
             <b className="font-medium text-ink">实验档：</b>0.70、1.00、1.30。<br />
             <b className="font-medium text-ink">真实机型（手册图面量测）：</b>{measured.map(m => `${m.label} ${m.v.toFixed(2)}`).join('、')}。<br />
             {references.wl.note}
           </>}>
           <Slider path="frame.span_ratio_wl" min={rule.wl.min} max={rule.wl.max} step={0.01} unit="" digits={2}
-            presets={references.wl.experimental.filter(m => m.v >= rule.wl.min && m.v <= rule.wl.max).map(m => ({ v: m.v, label: `${m.v.toFixed(2)} 实验${m.label}` }))
+            presets={!consumer ? [] : references.wl.experimental.filter(m => m.v >= rule.wl.min && m.v <= rule.wl.max).map(m => ({ v: m.v, label: `${m.v.toFixed(2)} 实验${m.label}` }))
               .concat(rule.wl.max >= 1.41 ? [{ v: 1.41, label: '1.41 真实机型中位' }] : [])} />
         </Field>
       ) : (
         <p className="rounded-lg bg-canvas px-3 py-2 text-sm text-ink-soft">
-          {rule.zh}的横纵跨度比固定为 <b className="font-semibold text-ink">{layout.W_over_L.toFixed(2)}</b>。想调宽窄，请选宽 X、伸展 X 或 H 型。
+          {rule.zh}的横纵跨度比固定为 <b className="font-semibold text-ink">{layout.W_over_L.toFixed(2)}</b>。{topology.layers_per_axis === 2 && topology.layer_visibility}
         </p>
       )}
 
       <Field path="frame.wheelbase_mm" en="Wheelbase" value={`${frame.wheelbase_mm} mm`}
-        hint="两条对角电机中心距的平均值。"
-        reference={<>
+        hint={layout.D_mean_mm === null ? '此构型无对置轴，以最远两轴之间的距离确定图面尺度。' : '此构型所有对置轴心距离的平均值。'}
+        reference={consumer && <>
           <b className="font-medium text-ink">实验设定：</b>250 mm（论文规格卡）。<br />
           <b className="font-medium text-ink">厂商公布的对角尺寸（端点未核）：</b>{references.diagonal.published.map(m => `${m.label} ${m.v}`).join('、')} mm。<br />
           当前任意两电机的最大距离为 {layout.max_pair_mm.toFixed(1)} mm。
         </>}>
-        <Slider path="frame.wheelbase_mm" min={100} max={500} step={1} unit="mm" presets={[{ v: 250, label: '250 实验设定' }]} />
+        <Slider path="frame.wheelbase_mm" min={100} max={Math.max(consumer ? 500 : 2000,frame.wheelbase_mm)} step={1} unit="mm" presets={consumer ? [{ v: 250, label: '250 实验设定' }] : []} />
       </Field>
 
       <Field path="frame.arm_width_mm" en="Arm Width" value={`${parseInt(frame.arm_width_mm, 10)} mm`}>

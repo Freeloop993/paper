@@ -26,7 +26,7 @@ const TopBar: React.FC<{ step: Step; onStep: (s: Step) => void }> = ({ step, onS
       <div className="flex h-[3.25rem] items-center gap-3 px-3 sm:px-4">
         <Mark />
         <div className="hidden min-w-0 sm:block">
-          <div className="truncate text-[15px] font-semibold leading-tight text-ink">无人机造型配置器</div>
+          <div className="truncate text-[15px] font-semibold leading-tight text-ink">多旋翼造型工作台</div>
           <div className="eyebrow leading-tight">Parametric form studio · v{APP_VERSION}</div>
         </div>
 
@@ -43,7 +43,7 @@ const TopBar: React.FC<{ step: Step; onStep: (s: Step) => void }> = ({ step, onS
         <div className="flex items-center gap-1">
           <button type="button" onClick={undo} disabled={!history.length} data-testid="undo" title="撤销上一步" className="btn-ghost !px-2 disabled:opacity-30"><Undo2 className="h-4 w-4" /><span className="hidden md:inline">撤销</span></button>
           <button type="button" onClick={resetToDefaults} data-testid="reset" title="把当前方案恢复为默认" className="btn-ghost !px-2"><RefreshCw className="h-4 w-4" /><span className="hidden md:inline">重置</span></button>
-          <span className="ml-1 hidden rounded-full border border-line px-2.5 py-1 text-[11px] text-ink-soft lg:inline" title="模型生图与评论检索都没有接入；这里用来定规格、看预览和导出">模型未接入</span>
+          <span className="ml-1 hidden rounded-full border border-line px-2.5 py-1 text-[11px] text-ink-soft lg:inline" title="语义依据来自本地公开卡表；候选由外部模型返回">外部出图</span>
         </div>
       </div>
     </header>

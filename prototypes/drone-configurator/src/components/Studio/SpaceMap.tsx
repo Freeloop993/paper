@@ -2,7 +2,7 @@
 // 设计的不只是一个方案，而是看清它在可选范围里的位置。橙点可以直接拖。
 import React, { useRef, useState } from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { frameRules, type Layout } from '../../design/design';
+import { frameRules, topologyOf, usesConsumerReferences, type Layout } from '../../design/design';
 import { aircraft, ddOf, type Aircraft } from '../../data/aircraft';
 
 const X0 = 0.55, X1 = 1.75, Y0 = 0.3, Y1 = 0.75, W = 300, H = 214, L = 42, B = 28, T = 8, R = 8;
@@ -12,12 +12,12 @@ const py = (v: number) => T + (1 - (v - Y0) / (Y1 - Y0)) * (H - T - B);
 const touch = (k: number) => Math.min(k, 1) / Math.hypot(1, k);
 
 const SpaceMap: React.FC<{ layout: Layout; onGhost: (a: Aircraft) => void }> = ({ layout, onGhost }) => {
-  const { parameters, setMany } = useDroneStore();
+  const { parameters, setMany, intent } = useDroneStore();
   const svg = useRef<SVGSVGElement>(null);
   const [hover, setHover] = useState<string | null>(null);
   const [dragging, setDragging] = useState(false);
   const rule = frameRules[parameters.frame.frame_type];
-  const cur = { x: layout.W_over_L, y: layout.d_over_D_mean };
+  const cur = { x: layout.W_over_L, y: layout.d_over_reference_span };
   const curve = Array.from({ length: 49 }, (_, i) => X0 + ((X1 - X0) * i) / 48);
   const region = `M${px(X0)},${py(Y1)} ` + curve.map(k => `L${px(k)},${py(Math.min(Y1, touch(k)))}`).join(' ') + ` L${px(X1)},${py(Y1)} Z`;
 
@@ -33,6 +33,20 @@ const SpaceMap: React.FC<{ layout: Layout; onGhost: (a: Aircraft) => void }> = (
     }
     setMany(entries, '在布局空间里拖动');
   };
+
+  const topology = topologyOf(layout.frame_type);
+  if (!usesConsumerReferences(layout.frame_type, intent.taskId) || ['Deadcat', '+ Configuration'].includes(layout.frame_type)) {
+    return <section className="panel p-4" aria-label="布局空间" data-testid="space-map">
+      <h3 className="panel-title">{rule.zh}布局</h3>
+      <dl className="mt-3 grid grid-cols-2 gap-3 text-sm">
+        <div><dt className="text-ink-soft">水平轴位</dt><dd className="num text-xl">{topology.axis_count}</dd></div>
+        <div><dt className="text-ink-soft">每处旋翼层数</dt><dd className="num text-xl">{topology.layers_per_axis}</dd></div>
+        <div><dt className="text-ink-soft">横纵跨度比</dt><dd className="num">{layout.W_over_L.toFixed(2)}</dd></div>
+        <div><dt className="text-ink-soft">{layout.D_mean_mm === null ? '最远两轴间距' : '对置平均轴距'}</dt><dd className="num">{layout.reference_span_mm.toFixed(0)} mm</dd></div>
+      </dl>
+      <p className="mt-3 text-xs text-ink-soft">{topology.layer_visibility}</p>
+    </section>;
+  }
 
   return (
     <section className="panel p-4" aria-label="布局空间" data-testid="space-map">

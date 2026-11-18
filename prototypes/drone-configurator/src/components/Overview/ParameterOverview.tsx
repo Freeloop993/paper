@@ -2,7 +2,7 @@
 import React, { useMemo, useRef } from 'react';
 import { Download, FileJson, FileText, Image as ImageIcon, Upload } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
-import { computeLayout, frameRules } from '../../design/design';
+import { computeLayout, frameRules, taskLabels, topologyOf } from '../../design/design';
 import { fieldByPath, getPath, openDecisions, wordPairs } from '../../design/fields';
 import { buildExport, canvasPngBytes, download, exportAll, fileNames, fileStamp, guideCanvas, parseImported } from '../../design/exporters';
 import { sha256Bytes } from '../../design/sha256';
@@ -22,6 +22,7 @@ const ParameterOverview: React.FC = () => {
   const fileInput = useRef<HTMLInputElement>(null);
   const layout = useMemo(() => computeLayout(parameters), [parameters]);
   const { frame, propulsion, fuselage, landing_gear: gear, accessories } = parameters;
+  const topology = topologyOf(frame.frame_type);
   const size = fuselage.fuselage_dimensions_mm;
   const targets = wordPairs.filter(w => intent.targets[w.id]).map(w => (intent.targets[w.id] === 'left' ? w.left : w.right));
   const decided = styling.filter(p => getPath(parameters, p) !== '' && (p !== 'accessories.camera_mount' || accessories.has_camera_gimbal));
@@ -29,7 +30,7 @@ const ParameterOverview: React.FC = () => {
 
   const state = { parameters, touched, intent };
   const options = { note: exportNote, pinned, variant: variantName, lastChange: lastChange && { path: lastChange.path, label: lastChange.label, from: lastChange.from, to: lastChange.to } };
-  const all = () => { const c = exportAll(state, options); setNotice(`已导出：${c.files.guide}、${c.files.prompt}、${c.files.config}`); };
+  const all = () => { const c = exportAll(state, options); setNotice(`已导出：${c.files.guide}、${c.files.prompt}、${c.files.config}${c.supplementary_view ? '、'+c.supplementary_view.file : ''}`); };
   const one = (kind: 'config' | 'prompt' | 'guide') => {
     const stamp = fileStamp(), names = fileNames(stamp);
     const png = canvasPngBytes(guideCanvas(layout));
@@ -56,7 +57,7 @@ const ParameterOverview: React.FC = () => {
       </div>
 
       <dl className="scroll-thin mt-3 min-h-0 flex-1 overflow-y-auto">
-        <Row label="使用任务" muted>日常随行航拍四旋翼 · 展开正交顶视，机头朝上</Row>
+        <Row label="使用任务" muted>{taskLabels[intent.taskId ?? 'consumer_camera']} · {frameRules[frame.frame_type].zh} · 展开正交顶视，机头朝上</Row>
         <Row label="设计意图">
           <span data-testid="spec-intent" data-targets={targets.join('|')} data-cards={intent.cards.join('|')} data-note={intent.note.trim()} />
           {targets.length || intent.note.trim()
@@ -64,7 +65,7 @@ const ParameterOverview: React.FC = () => {
             : <span className="text-ink-soft">未提出</span>}
           <span className="ml-2 text-ink-soft">依据：{intent.cards.length ? intent.cards.join('、') : targets.length || intent.note.trim() ? '设计者判断' : '—'}</span>
         </Row>
-        <Row label="构型">{frameRules[frame.frame_type].zh} · 轴距 {frame.wheelbase_mm} mm · 横纵比 {layout.W_over_L.toFixed(2)}</Row>
+        <Row label="构型">{frameRules[frame.frame_type].zh} · {topology.axis_count} 轴位 × {topology.layers_per_axis} 层 · {layout.D_mean_mm === null ? '最远轴心距' : '对置平均轴距'} {layout.reference_span_mm.toFixed(0)} mm · 横纵比 {layout.W_over_L.toFixed(2)}</Row>
         <Row label="机臂">宽 {parseInt(frame.arm_width_mm, 10)} mm · 厚 {parseInt(frame.arm_thickness_mm, 10)} mm</Row>
         <Row label="桨">
           {propulsion.prop_diameter_inch} 英寸 · 每副 {parseInt(propulsion.prop_blade_count, 10)} 叶 · {propulsion.prop_guard === 'ring' ? '环形护圈' : '无护圈'}
@@ -89,7 +90,7 @@ const ParameterOverview: React.FC = () => {
         <input value={exportNote} onChange={e => setExportNote(e.target.value)} aria-label="导出备注" className="input-field min-w-0 flex-1 !rounded-full !py-1 text-xs" />
       </label>
       <div className="mt-3 flex flex-wrap gap-2">
-        <button type="button" onClick={all} className="btn-dark" data-testid="export-all"><Download className="h-4 w-4" />导出三件</button>
+        <button type="button" onClick={all} className="btn-dark" data-testid="export-all"><Download className="h-4 w-4" />导出全部</button>
         <button type="button" onClick={() => one('guide')} className={small} data-testid="export-guide"><ImageIcon className="h-4 w-4" />条件图</button>
         <button type="button" onClick={() => one('prompt')} className={small} data-testid="export-prompt"><FileText className="h-4 w-4" />提示词</button>
         <button type="button" onClick={() => one('config')} className={small} data-testid="export-config"><FileJson className="h-4 w-4" />规格 JSON</button>

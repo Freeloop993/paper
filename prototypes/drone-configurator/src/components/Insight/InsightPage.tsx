@@ -1,159 +1,134 @@
-// 洞察：先看用户在说什么，再决定这次想要什么感觉。左边是评论依据，右边是正在成形的设计简报。
-import React, { useMemo, useState } from 'react';
-import { ArrowRight, Bookmark, BookmarkCheck, Search, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { ArrowRight, Check, CornerDownRight, Layers, SlidersHorizontal } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
+import { computeLayout, frameRules, topologyOf, layoutKey, taskLabels as missionLabels } from '../../design/design';
 import { wordPairs } from '../../design/fields';
-import { corpus, themes } from '../../data/corpus';
+import { createLookup, vocabulary, type LookupResult } from '../../design/semantics/lookup.mjs';
+import { suggestFields, stateLabels, type BriefDecision } from '../../design/semantics/brief';
 import evidence from '../../data/evidenceCards.json';
+import { TopStage } from '../Studio/Stage';
+import ResearchLibrary from './ResearchLibrary';
 
-type Card = (typeof evidence.cards)[number];
-const text = (c: Card) => [c.id, c.quote, c.object, c.category, c.limits, c.relation].join(' ');
-const pairName = Object.fromEntries(wordPairs.map(w => [w.id, `${w.left}—${w.right}`]));
 
-const InsightPage: React.FC<{ wide: boolean; onNext: () => void; initialQuery?: string }> = ({ wide, onNext, initialQuery = '' }) => {
-  const { intent, adoptCard, undoCard, setTarget, setNote } = useDroneStore();
-  const [query, setQuery] = useState(initialQuery);
-  const [theme, setTheme] = useState<string | null>(null);
-  const results = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    const t = themes.find(x => x.id === theme);
-    return evidence.cards.filter(c => (!t || t.match.test(text(c))) && (!q || text(c).toLowerCase().includes(q)));
-  }, [query, theme]);
-  const counted = themes.filter(t => t.count > 0);
-  const max = Math.max(...counted.map(t => t.count));
-  const pinned = evidence.cards.filter(c => intent.cards.includes(c.id));
-  const chosen = wordPairs.filter(w => intent.targets[w.id]);
+const topics = vocabulary().topics;
+const actions = { accept: '采用依据', custom: '自定意图', reject: '驳回依据', revoke: '撤销意图' };
+let loaded: ReturnType<typeof createLookup> | undefined;
+const getLookup = () => loaded ??= createLookup(evidence).catch(err => { loaded = undefined; throw err; });
+const control = 'input-field mt-1.5 block w-full';
+const samples = ['展开时希望机身显得紧凑', '折起来能放进小包', '加了保护罩后显得挺大'];
 
-  const brief = (
-    <aside className={`panel flex flex-col p-5 ${wide ? 'sticky top-3 max-h-[calc(100vh-5.5rem)]' : ''}`} aria-label="设计简报" data-testid="intent">
-      <div className="eyebrow">Design brief</div>
-      <h2 className="mt-1 text-xl font-semibold text-ink">设计简报</h2>
-      <p className="mt-3 rounded-xl bg-canvas px-3 py-2 text-[13px] text-ink-soft"><span className="mr-2 font-medium text-ink">任务</span>日常随行航拍四旋翼 · 展开状态、正上方看</p>
-
-      <h3 className="mt-5 text-[13px] font-semibold text-ink">想给人什么感觉</h3>
-      <p className="text-xs text-ink-soft">每组选一端，或留在中间。</p>
-      <div className="mt-2 space-y-2.5">
-        {wordPairs.map(w => {
-          const v = intent.targets[w.id] ?? null;
-          const stop = (pole: 'left' | 'right' | null) => (
-            <button type="button" role="radio" aria-checked={v === pole} aria-label={pole === 'left' ? w.left : pole === 'right' ? w.right : '不作要求'} data-target={`${w.id}:${pole ?? 'none'}`}
-              onClick={() => setTarget(w.id, pole)} className="group relative z-10 flex h-6 w-6 items-center justify-center">
-              <span className={`rounded-full transition-all ${v === pole ? (pole ? 'h-4 w-4 bg-primary-600 ring-4 ring-primary-100' : 'h-3 w-3 border-2 border-ink-faint bg-white') : 'h-2 w-2 bg-ink/20 group-hover:bg-ink/50'}`} />
-            </button>
-          );
-          return (
-            <div key={w.id} className="grid grid-cols-[3rem_minmax(0,1fr)_3rem] items-center gap-2" role="radiogroup" aria-label={`${w.left}—${w.right}`}>
-              <button type="button" onClick={() => setTarget(w.id, v === 'left' ? null : 'left')} className={`text-right text-[13px] ${v === 'left' ? 'font-semibold text-primary-700' : 'text-ink-soft hover:text-ink'}`}>{w.left}</button>
-              <div className="relative flex items-center justify-between">
-                <span className="absolute inset-x-3 top-1/2 h-px -translate-y-1/2 bg-line" />
-                {stop('left')}{stop(null)}{stop('right')}
-              </div>
-              <button type="button" onClick={() => setTarget(w.id, v === 'right' ? null : 'right')} className={`text-left text-[13px] ${v === 'right' ? 'font-semibold text-primary-700' : 'text-ink-soft hover:text-ink'}`}>{w.right}</button>
-            </div>
-          );
-        })}
-      </div>
-      {chosen.length > 0 && <p className="mt-2 text-xs leading-relaxed text-ink-soft">{chosen.map(w => w.hint).slice(0, 1)}</p>}
-
-      <h3 className="mt-5 text-[13px] font-semibold text-ink">依据</h3>
-      <div className={`scroll-thin mt-1 space-y-1.5 ${wide ? 'min-h-0 overflow-y-auto' : ''}`}>
-        {pinned.length === 0 && <p className="text-xs text-ink-soft">还没有采纳评论。可以不采纳，直接凭自己的判断；也可以从左边挑几条支持你的想法。</p>}
-        {pinned.map(c => (
-          <div key={c.id} data-adopted={c.id} className="flex items-start gap-2 rounded-xl border border-emerald-200 bg-emerald-50/70 px-3 py-2">
-            <p className="min-w-0 flex-1 text-[13px] leading-snug text-ink">“{c.quote}”<span className="num ml-1 text-[11px] text-ink-faint">{c.id}</span></p>
-            <button type="button" onClick={() => undoCard(c.id)} aria-label={`取消采纳 ${c.id}`} className="text-ink-faint hover:text-ink"><X className="h-3.5 w-3.5" /></button>
-          </div>
-        ))}
-      </div>
-
-      <h3 className="mt-5 text-[13px] font-semibold text-ink">用自己的话补一句</h3>
-      <textarea value={intent.note} onChange={e => setNote(e.target.value)} rows={2} data-testid="intent-note" aria-label="补充意图"
-        placeholder="例如：机臂到机身的过渡要连续。" className="input-field mt-1 w-full resize-none" />
-
-      <button type="button" onClick={onNext} data-testid="to-studio" className="btn-dark mt-5 w-full py-2.5">进入造型<ArrowRight className="h-4 w-4" /></button>
-    </aside>
-  );
-
-  return (
-    <div className={`mx-auto max-w-[1400px] p-3 sm:p-5 ${wide ? 'grid grid-cols-[minmax(0,1fr)_360px] gap-5' : 'space-y-4'}`} data-testid="insight">
-      <div className="min-w-0">
-        <div className="eyebrow">Voice of users</div>
-        <h1 className="mt-1 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">用户谈到外形时，说得最多的是小巧。</h1>
-        <p className="mt-2 max-w-3xl text-sm leading-relaxed text-ink-soft">
-          从 <b className="num font-semibold text-ink">{corpus.searched.toLocaleString()}</b> 条评论里，属于消费航拍机的有 <b className="num font-semibold text-ink">{corpus.consumer.toLocaleString()}</b> 条；
-          其中谈到机体外形的 <b className="num font-semibold text-ink">{corpus.styling}</b> 条。评论里大多在说飞行和拍摄，谈外形的很少。
-        </p>
-
-        <div className="panel mt-4 p-4" data-testid="themes">
-          <div className="flex items-baseline gap-2">
-            <h2 className="panel-title">{corpus.styling} 条外形评论的主题</h2>
-            <span className="text-[11px] text-ink-faint">点一条，只看相关的评论</span>
-            {theme && <button type="button" onClick={() => setTheme(null)} className="ml-auto text-xs text-primary-600 hover:underline">看全部</button>}
-          </div>
-          <div className="mt-3 grid gap-x-6 gap-y-1.5 sm:grid-cols-2">
-            {counted.map(t => (
-              <button key={t.id} type="button" onClick={() => setTheme(theme === t.id ? null : t.id)} aria-pressed={theme === t.id} data-theme={t.id}
-                className={`group grid grid-cols-[3rem_minmax(0,1fr)_4.6rem] items-center gap-2 rounded-lg px-1.5 py-1 text-left ${theme === t.id ? 'bg-ink/5' : 'hover:bg-ink/[0.03]'}`}>
-                <span className={`text-[13px] ${theme === t.id ? 'font-semibold text-ink' : 'text-ink'}`}>{t.label}</span>
-                <span className="h-2 overflow-hidden rounded-full bg-line"><span className={`block h-full rounded-full ${theme === t.id ? 'bg-primary-600' : 'bg-ink/70 group-hover:bg-ink'}`} style={{ width: `${(t.count / max) * 100}%` }} /></span>
-                <span className="num whitespace-nowrap text-right text-xs text-ink-soft">{t.count} · {Math.round((t.count / corpus.styling) * 100)}%</span>
-              </button>
-            ))}
-          </div>
-          <p className="mt-3 text-[11px] leading-relaxed text-ink-faint">{corpus.caveat}这些计数说明大家在谈什么，给不出具体尺寸。</p>
-        </div>
-
-        <div className="mt-5 flex flex-wrap items-center gap-2">
-          <label className="flex min-w-[14rem] flex-1 items-center gap-2 rounded-full border border-line bg-white px-3 focus-within:border-primary-500 focus-within:ring-2 focus-within:ring-primary-500/25">
-            <Search className="h-4 w-4 shrink-0 text-ink-faint" />
-            <input value={query} onChange={e => setQuery(e.target.value)} placeholder="搜原话，例如：小巧、pocket、橙色" data-testid="evidence-search" aria-label="搜索评论依据"
-              className="min-w-0 flex-1 bg-transparent py-2 text-sm focus:outline-none" />
-            {query && <button type="button" onClick={() => setQuery('')} aria-label="清空"><X className="h-4 w-4 text-ink-faint" /></button>}
-          </label>
-          {themes.filter(t => t.count === 0).map(t => (
-            <button key={t.id} type="button" onClick={() => setTheme(theme === t.id ? null : t.id)} aria-pressed={theme === t.id} data-theme={t.id}
-              className={`chip ${theme === t.id ? '!border-ink !bg-ink !text-white' : 'hover:border-ink/40'}`}>{t.label}</button>
-          ))}
-          <span className="text-xs text-ink-soft" data-testid="evidence-count">{results.length} / {evidence.card_count} 条短引文</span>
-        </div>
-        <p className="mt-2 text-[11px] text-ink-faint">目前公开可用的短引文只有 {evidence.card_count} 条，是按既定方向挑选的示例，不是全部 {corpus.styling} 条。</p>
-
-        {results.length === 0 ? (
-          <div className="mt-4 rounded-xl2 border border-dashed border-ink/20 px-6 py-10 text-center" data-testid="evidence-empty">
-            <p className="text-base font-medium text-ink">没有找到相关的评论</p>
-            <p className="mx-auto mt-1 max-w-md text-sm text-ink-soft">没关系。在右边的简报里直接选想要的感觉，或用自己的话写一句，会记为设计者自己的判断。</p>
-          </div>
-        ) : (
-          <ul className="mt-4 columns-1 gap-3 sm:columns-2 xl:columns-3" data-testid="evidence-list">
-            {results.map(c => {
-              const on = intent.cards.includes(c.id);
-              const pair = themes.find(t => t.pair && t.match.test(text(c)))?.pair;
-              return (
-                <li key={c.id} data-card={c.id} data-adopted={on ? 'yes' : 'no'}
-                  className={`mb-3 break-inside-avoid rounded-xl2 border p-4 transition-colors ${on ? 'border-emerald-400 bg-emerald-50/70' : 'border-line bg-white hover:border-ink/25'}`}>
-                  <div className="flex items-start gap-2">
-                    <p className="min-w-0 flex-1 text-[15px] leading-relaxed text-ink">“{c.quote}”</p>
-                    <button type="button" onClick={() => (on ? undoCard(c.id) : adoptCard(c.id))} data-action={on ? 'undo' : 'adopt'} aria-pressed={on} title={on ? '取消采纳' : '采纳为依据（不改任何参数）'}
-                      className={`shrink-0 rounded-full p-1.5 ${on ? 'bg-emerald-600 text-white' : 'text-ink-faint hover:bg-ink/5 hover:text-ink'}`}>
-                      {on ? <BookmarkCheck className="h-4 w-4" /> : <Bookmark className="h-4 w-4" />}
-                    </button>
-                  </div>
-                  <p className="mt-2 text-xs leading-relaxed text-ink-soft">{c.object}</p>
-                  <p className="mt-1 text-xs leading-relaxed text-ink-faint">注意：{c.limits}</p>
-                  <div className="mt-2 flex flex-wrap items-center gap-1.5">
-                    <span className="num text-[10px] text-ink-faint">{c.id}</span>
-                    {pair && <span className="rounded-full bg-primary-50 px-2 py-0.5 text-[10px] text-primary-700">可支持：{pairName[pair]}</span>}
-                    {c.relation.startsWith('反例') && <span className="rounded-full bg-signal-50 px-2 py-0.5 text-[10px] text-signal-600">反例或取舍</span>}
-                  </div>
-                </li>
-              );
-            })}
-          </ul>
-        )}
-      </div>
-      {brief}
+export default function InsightPage({ onNext, initialQuery = '' }: { wide: boolean; onNext: () => void; initialQuery?: string }) {
+  const { parameters, intent, setField, setTarget, setMission, recordBrief, activeVariant } = useDroneStore();
+  const mission = intent.taskId ?? 'consumer_camera';
+  const history = intent.log.flatMap(item => item.brief ? [item.brief] : []);
+  const previous = [...history].reverse().find(row => ['accept','custom'].includes(row.action) && row.text === intent.note);
+  const draftKey = 'multirotor-brief-draft/' + activeVariant;
+  const [draft] = useState(() => {
+    try {
+      const data = JSON.parse(sessionStorage.getItem(draftKey) || 'null');
+      if (!initialQuery && data?.base === intent.note && data.mission === mission &&
+          data.frame === parameters.frame.frame_type && typeof data.text === 'string') return data as {
+        text: string; topic:string; state:string;
+      };
+    } catch { /* The workbench also runs without browser draft storage. */ }
+    return null;
+  });
+  const [text, setText] = useState(initialQuery || draft?.text || intent.note);
+  const inferred = suggestFields(text);
+  const [topic, setTopic] = useState(draft?.topic ?? previous?.query.topic ?? inferred.topic);
+  const [state, setState] = useState(draft?.state ?? previous?.query.state ?? inferred.state);
+  useEffect(() => {
+    try {sessionStorage.setItem(draftKey, JSON.stringify({text, topic, state, base:intent.note, mission, frame:parameters.frame.frame_type}));}
+    catch { /* Current editing remains available. */ }
+  }, [draftKey, text, topic, state, intent.note, mission, parameters.frame.frame_type]);
+  const [reason, setReason] = useState('');
+  const [feedback, setFeedback] = useState('');
+  const [lookup, setLookup] = useState<Awaited<ReturnType<typeof createLookup>>>();
+  const [error, setError] = useState('');
+  useEffect(() => { let alive = true; getLookup().then(fn => { if(alive) setLookup(() => fn); }).catch(() => { if(alive) setError('公开卡表未能校验。可继续使用自定意图。'); }); return () => {alive = false;}; }, []);
+  const frame = parameters.frame.frame_type;
+  const layout = computeLayout(parameters);
+  const topology = topologyOf(frame);
+  const query = {task: mission, layout: layoutKey(frame), topic: topic || 'unmapped', state};
+  const result = lookup?.(query);
+  const changeText = (value: string) => {
+    setText(value); setFeedback(''); setReason('');
+    const parsed = suggestFields(value); setTopic(parsed.topic); setState(parsed.state);
+  };
+  const apply = (action: BriefDecision['action']) => {
+    if(action === 'revoke' && previous) {
+      recordBrief({...previous, action, at:new Date().toISOString(), reason:reason.trim()});
+      setFeedback('已撤销当前意图，保留原记录。'); return;
+    }
+    const material: LookupResult = result ?? {version:'unavailable',corpus:'',query,status:'abstain',component:undefined,
+      reason:'未载入卡表',choices:[],choiceField:null,groups:[],hypotheses:[]};
+    const entry = { action, reason:reason.trim(), text:action === 'revoke' ? intent.note : text.trim(), at:new Date().toISOString(),
+      query, status:material.status, sourceVersion:material.version, corpus:material.corpus,
+      evidence:material.groups.flatMap(g=>g.cards.map(c=>({id:c.id,source:g.source,role:c.role}))),
+      hypotheses:material.hypotheses.map(h=>h.id) };
+    recordBrief(entry);
+    setFeedback(action === 'reject' ? '已记录驳回理由。' : action === 'revoke' ? '已撤销当前意图，保留原记录。' : '已写入本方案简报。');
+  };
+  const inputText = text.trim();
+  return <div className="mx-auto max-w-[1370px] px-4 py-6 sm:px-7 lg:py-9">
+    <div className="mb-6 flex items-end justify-between gap-5">
+      <div><div className="eyebrow">Design brief</div><h1 className="mt-1 text-3xl font-semibold tracking-tight text-ink">任务简报</h1>
+      <p className="mt-2 text-sm text-ink-soft">确定设计用途与构型，写下这次想改变的外观。</p></div>
+      <button className="btn-dark shrink-0" onClick={onNext}>进入造型 <ArrowRight size={15}/></button>
     </div>
-  );
-};
-
-export default InsightPage;
+    <div className="grid items-start gap-4 lg:grid-cols-[minmax(0,1.5fr)_minmax(0,1fr)]">
+      <section className="panel p-5 sm:p-7" data-testid="intent">
+        <div className="grid gap-4 sm:grid-cols-2">
+          <label className="text-sm font-medium">使用任务<select className={control} value={mission} data-testid="mission" onChange={e=>{setMission(e.target.value as typeof mission);setFeedback('');}}>
+            {Object.entries(missionLabels).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></label>
+          <label className="text-sm font-medium">方案构型<select className={control} value={frame} data-testid="brief-frame" onChange={e=>{setField('frame.frame_type', e.target.value);setFeedback('');}}>
+            {Object.entries(frameRules).map(([k,v])=><option key={k} value={k}>{v.zh}</option>)}</select></label>
+        </div>
+        {intent.log.some(i=>i.action==='note' && i.value?.includes('原设计意图需重新确认')) && !intent.note && <p className="mt-3 text-xs text-ink-soft">任务或构型已变更，请在本方案内重新确认意图。</p>}
+        <label className="mt-6 block text-sm font-medium">设计意图<textarea rows={3} value={text} data-testid="brief-input" onChange={e=>changeText(e.target.value)} className={control + ' resize-y leading-7'} placeholder="例如，希望展开时机身显得紧凑，同时保住臂根连接。"/></label>
+        <div className="mt-2 flex flex-wrap gap-2">{samples.map(s=><button key={s} className="chip hover:border-primary-500" onClick={()=>changeText(s)}>{s}</button>)}</div>
+        {inputText && <div className="mt-5 border-t border-line pt-5">
+          <div className="grid gap-3 sm:grid-cols-2">
+            <label className="text-xs text-ink-soft">意图涉及的话题<select className={control} value={topic} data-testid="brief-topic" onChange={e=>{setTopic(e.target.value);setFeedback('');}}>
+              <option value="">自定话题</option>{topics.map(t=><option key={t.id} value={t.id}>{t.label}</option>)}</select></label>
+            <label className="text-xs text-ink-soft">观察或使用状态<select className={control} value={state} data-testid="brief-state" onChange={e=>{setState(e.target.value);setFeedback('');}}>
+              {Object.entries(stateLabels).map(([k,v])=><option key={k} value={k}>{v}</option>)}</select></label>
+          </div>
+          <div className="mt-4 rounded-xl border border-primary-100 bg-primary-50/70 p-4" data-testid="lookup-result" data-status={result?.status ?? 'loading'}>
+            <div className="flex items-center gap-2 text-sm font-semibold"><CornerDownRight size={15}/>{result?.status === 'retrieve' ? '相关用户表达' : result?.status === 'clarify' ? '先确认语境' : result ? '此条件下缺少直接依据' : '读取公开依据'}</div>
+            <p className="mt-2 text-sm leading-6 text-ink-soft">{error || result?.reason}</p>
+            {!!result?.choices.length && <div className="mt-2 flex flex-wrap gap-2">{result.choices.map(c=><button key={c} className="chip" onClick={()=>{if(result.choiceField === 'topic')setTopic(c);else setState(c);setFeedback('');}}>{stateLabels[c] || topics.find(t=>t.id===c)?.label || c}</button>)}</div>}
+            {(state === 'folded' || state === 'carrying') && <p className="mt-2 text-xs leading-5 text-ink-soft">此项保留在简报。当前条件图展示展开外观，收纳适配需另作表达。</p>}
+            {result?.hypotheses.map(h=><p key={h.id} className="mt-2 text-sm"><strong>待验假设 · </strong>{h.description}</p>)}
+            {!!result?.groups.length && <details className="mt-3 text-sm"><summary className="cursor-pointer font-medium">查看 {result.groups.length} 个来源与适用限制</summary>
+              {result.groups.map(g=><div className="mt-3 border-l-2 border-primary-200 pl-3" key={g.source}>{g.cards.map(c=><div key={c.id} className="mb-2" data-card={c.id}><span className="num mr-2 text-[11px] text-ink-soft">{c.id}{c.role==='caution' ? ' · 限制' : ''}</span>{c.quote}<p className="mt-1 text-xs text-ink-soft">{c.limits}</p></div>)}</div>)}
+            </details>}
+          </div>
+          <label className="mt-4 block text-xs text-ink-soft">判断理由<input value={reason} onChange={e=>setReason(e.target.value)} className={control} placeholder="记下取舍或改写原因" data-testid="brief-reason"/></label>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {result?.status==='retrieve' && <button className="btn-primary" onClick={()=>apply('accept')} data-testid="accept-evidence">采用依据并确认意图</button>}
+            <button className={result?.status==='retrieve'?'btn-line':'btn-primary'} onClick={()=>apply('custom')} data-testid="confirm-intent">按自定意图确认</button>
+            {!!result?.groups.length && <button className="btn-ghost" disabled={!reason.trim()} onClick={()=>apply('reject')} data-testid="reject-evidence">记录驳回</button>}
+          </div>
+        </div>}
+        {feedback && <p className="mt-3 flex items-center gap-1 text-sm text-emerald-700" role="status"><Check size={14}/>{feedback}</p>}
+        <details className="mt-5 border-t border-line pt-4"><summary className="cursor-pointer text-sm font-medium">外观语义词对</summary>
+          <div className="mt-3 grid gap-3 sm:grid-cols-2">{wordPairs.map(w=><label key={w.id} className="text-xs text-ink-soft">{w.left} / {w.right}<select className={control} value={intent.targets[w.id] ?? ''} onChange={e=>setTarget(w.id,(e.target.value || null) as 'left'|'right'|null)}><option value="">不作要求</option><option value="left">{w.left}</option><option value="right">{w.right}</option></select></label>)}</div>
+        </details>
+      </section>
+      <aside className="panel overflow-hidden" aria-label="当前方案">
+        <div className="flex items-center justify-between border-b border-line px-5 py-3"><span className="flex items-center gap-2 text-sm font-semibold"><Layers size={16}/>方案 {activeVariant}</span><span className="num text-xs">{frameRules[frame].zh}</span></div>
+        <div className="dot-grid h-[210px] bg-canvas sm:h-[255px]"><TopStage active="frame" onSelect={()=>{}} overlays={{dims:false,fov:false,hidden:false}} interactive={false}/></div>
+        <div className="space-y-3 p-5">
+          <div className="flex flex-wrap gap-2"><span className="chip">{missionLabels[mission]}</span><span className="chip">{layout.hubs.length} 轴位 · {topology.layers_per_axis} 层 · {topology.rotor_count} 旋翼</span></div>
+          <div className="text-sm font-semibold">已确认意图</div>
+          <p className="whitespace-pre-wrap break-words text-sm leading-6 text-ink-soft" data-testid="confirmed-intent">{intent.note || '尚未确认，可以先探索布局。'}</p>
+          {intent.note && <button className="btn-ghost !px-0 text-xs" onClick={()=>apply('revoke')}>撤销当前意图</button>}
+          {!!history.length && <details className="border-t border-line pt-3"><summary className="cursor-pointer text-sm">简报记录 · {history.length}</summary><ol className="mt-2 max-h-64 space-y-2 overflow-y-auto">{[...history].reverse().map((h,i)=><li key={i} className="rounded-lg bg-canvas p-3 text-xs"><strong>{actions[h.action]}</strong> · {h.text}<p className="mt-1 text-ink-soft">{h.reason || h.evidence.map(c=>c.id).join('、') || stateLabels[h.query.state]}</p></li>)}</ol></details>}
+          <button onClick={onNext} className="btn-line"><SlidersHorizontal size={14}/>调整形态参数</button>
+        </div>
+      </aside>
+    </div>
+    <ResearchLibrary/>
+  </div>;
+}

@@ -1,6 +1,6 @@
 // 机架参数类型
 export interface FrameParameters {
-  frame_type: 'True X' | 'Wide X' | 'Stretch X' | 'H-Frame' | 'Deadcat' | '+ Configuration' | 'Radial Hex';
+  frame_type: 'True X' | 'Wide X' | 'Stretch X' | 'H-Frame' | 'Deadcat' | '+ Configuration' | 'Radial Hex' | 'Radial Tri' | 'Radial Octo' | 'Coax Y6' | 'Coax X8';
   /** 设计值：两条对角电机中心距的均值 D（mm）。另导出任意两轴最大距。 */
   wheelbase_mm: number; // 100-500mm
   /** 轴心横向跨度 / 纵向跨度。真 X 固定 1.00；宽 X、伸展 X、H 型可调；Deadcat、十字由规则算出。 */
@@ -79,13 +79,16 @@ export type ParameterGroup = keyof DroneParameters;
 /** 设计意图：由设计者提出。证据卡只作依据，不改参数。 */
 export type WordPairId = 'compact' | 'simple' | 'integrated' | 'visible';
 export interface IntentLogEntry {
-  action: 'adopt' | 'undo' | 'target' | 'note';
+  action: 'adopt' | 'undo' | 'target' | 'note' | 'brief';
+  brief?: import('../design/semantics/brief').BriefDecision;
   card?: string;
   pair?: WordPairId;
   value?: string;
   at: string;
 }
+export type TaskId = 'consumer_camera' | 'agricultural_spraying' | 'neutral_design';
 export interface DesignIntent {
+  taskId?: TaskId;
   /** 每组词对想靠近哪一极；未出现表示不作要求。 */
   targets: Partial<Record<WordPairId, 'left' | 'right'>>;
   /** 设计者自己写的意图。没有合适证据卡时只填这一项即可。 */

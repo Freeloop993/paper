@@ -2,7 +2,7 @@
 // 轴心取自 computeLayout()，与导出的条件图、坐标和提示词布局句是同一组数。
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { computeLayout, frameRules, type Layout } from '../../design/design';
+import { computeLayout, frameRules, usesConsumerReferences, sideRotorAxes, type Layout } from '../../design/design';
 import { cameraView } from '../../design/checks';
 import { realRanges } from '../../data/aircraft';
 import type { DroneParameters, ParameterGroup } from '../../types/DroneParameters';
@@ -30,7 +30,7 @@ function useTween(target: number[], immediate: boolean, ms = 260) {
     // 目标数组以 key 表示，内容不变时不重启过渡。
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [key, immediate, ms]);
-  return value;
+  return value.length === target.length ? value : target;
 }
 
 function bodyPath(style: DroneParameters['fuselage']['fuselage_style'], w: number, l: number) {
@@ -50,7 +50,7 @@ const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v
 export const TopStage: React.FC<{
   active: ParameterGroup; onSelect: (g: ParameterGroup) => void; overlays: { dims: boolean; fov: boolean; hidden: boolean }; interactive?: boolean;
 }> = ({ active, onSelect, overlays, interactive = true }) => {
-  const { parameters, pinned, setMany } = useDroneStore();
+  const { parameters, pinned, setMany, intent } = useDroneStore();
   const svg = useRef<SVGSVGElement>(null);
   const drag = useRef<Drag | null>(null);
   /** 拖动期间锁住画布比例，否则图一缩放，指针对应的毫米数跟着变，数值会越拖越大。 */
@@ -105,13 +105,13 @@ export const TopStage: React.FC<{
         if (rule.wl.adjustable) entries.push(['frame.span_ratio_wl', Number(snap(clamp(ax / ay, rule.wl.min, rule.wl.max), [0.7, 1, 1.3], 0.02).toFixed(2))]);
         setMany(entries, '拖动电机');
       } else {
-        setMany([['frame.wheelbase_mm', Math.round(clamp((d.startD * Math.hypot(p.x, p.y)) / d.startR, 100, 500))]], '拖动电机');
+        setMany([['frame.wheelbase_mm', Math.round(clamp((d.startD * Math.hypot(p.x, p.y)) / d.startR, 100, Math.max(usesConsumerReferences(frame.frame_type, intent.taskId) ? 500 : 2000, d.startD)))]], '拖动电机');
       }
     } else if (d.kind === 'bodyW') setMany([['fuselage.fuselage_dimensions_mm.width', clamp(Math.round((2 * Math.abs(p.x)) / 5) * 5, 30, 200)]], '拖动机身');
     else if (d.kind === 'bodyL') setMany([['fuselage.fuselage_dimensions_mm.length', clamp(Math.round((2 * Math.abs(p.y)) / 5) * 5, 50, 300)]], '拖动机身');
     else {
       const h = layout.hubs[d.index];
-      setMany([['propulsion.prop_diameter_inch', Number(clamp((2 * Math.hypot(p.x - h.x_mm, p.y - h.y_mm)) / 25.4, 3, 10).toFixed(1))]], '拖动桨盘');
+      setMany([['propulsion.prop_diameter_inch', Number(clamp((2 * Math.hypot(p.x - h.x_mm, p.y - h.y_mm)) / 25.4, 3, Math.max(usesConsumerReferences(frame.frame_type, intent.taskId) ? 10 : 30, parameters.propulsion.prop_diameter_inch)).toFixed(1))]], '拖动桨盘');
     }
   };
   const end = (e: React.PointerEvent) => { if (drag.current) { svg.current?.releasePointerCapture(e.pointerId); drag.current = null; frozenHalf.current = null; setDragging(false); } };
@@ -266,7 +266,7 @@ export const SideView: React.FC<{ parameters: DroneParameters; layout: Layout; c
   const hasGear = gear.landing_gear_style !== '无独立起落架';
   const clear = hasGear ? gear.landing_gear_height_mm : 5;
   const armT = parseInt(frame.arm_thickness_mm, 10);
-  const reach = Math.max(bl / 2, layout.L_mm / 2 + layout.prop_diameter_mm / 2);
+  const reach = Math.max(bl / 2, Math.max(...layout.hubs.map(h => Math.abs(h.y_mm))) + layout.prop_diameter_mm / 2);
   const left = -reach - 90, width = reach * 2 + 130;
   const top = -(clear + bh + 70), height = clear + bh + 110;
   const fs = width / 34;
@@ -286,9 +286,12 @@ export const SideView: React.FC<{ parameters: DroneParameters; layout: Layout; c
       <line x1={left} y1={0} x2={left + width} y2={0} stroke="#c3cad6" strokeWidth={fs * 0.1} />
       <text x={left + width - fs * 0.5} y={fs * 1.1} fontSize={fs * 0.7} fill="#98a1ae" textAnchor="end" className="font-mono">地面 GROUND</text>
       {/* 桨平面 */}
-      {[-1, 1].map(s => <line key={s} x1={s * layout.L_mm / 2 - layout.prop_diameter_mm / 2} y1={bodyTop - 6} x2={s * layout.L_mm / 2 + layout.prop_diameter_mm / 2} y2={bodyTop - 6} stroke={INK} strokeOpacity="0.8" strokeWidth={fs * 0.16} strokeLinecap="round" />)}
-      {[-1, 1].map(s => <line key={'m' + s} x1={s * layout.L_mm / 2} y1={bodyTop - 6} x2={s * layout.L_mm / 2} y2={bodyTop + 2 + armT / 2} stroke="#8793a7" strokeWidth={fs * 0.28} />)}
-      <rect x={-layout.L_mm / 2 - 3} y={bodyTop + 2} width={layout.L_mm + 6} height={armT} rx={armT / 2} fill="#8793a7" />
+      {sideRotorAxes(layout, armT).map(a => <g key={a.hub + '/' + a.layer} data-side-hub={a.hub} data-side-layer={a.layer}>
+        <line x1={a.x - layout.prop_diameter_mm / 2} y1={bodyTop + a.y} x2={a.x + layout.prop_diameter_mm / 2} y2={bodyTop + a.y}
+          stroke={a.layer === 1 ? INK : BLUE} strokeOpacity="0.8" strokeWidth={fs * 0.16} strokeLinecap="round" />
+        <line x1={a.x} x2={a.x} y1={bodyTop + a.y} y2={bodyTop + 2 + armT / 2} stroke="#8793a7" strokeWidth={fs * 0.28}/>
+      </g>)}
+      <rect x={-Math.max(...layout.hubs.map(h => h.y_mm)) - 3} y={bodyTop + 2} width={layout.L_mm + 6} height={armT} rx={armT / 2} fill="#8793a7" />
       {/* 相机视线 */}
       {accessories.has_camera_gimbal && <path d={`M${nose - 3},${camY + camH / 2} L${nose - 84},${camY + camH / 2 - 24} L${nose - 84},${camY + camH / 2 + 24} Z`} fill="url(#side-fov)" />}
       {/* 机身 */}
@@ -315,10 +318,12 @@ export const SideView: React.FC<{ parameters: DroneParameters; layout: Layout; c
 
 /** 画布下方的四个比例：数值旁的细条标出真实机型所在的范围。 */
 export const RatioHud: React.FC<{ layout: Layout; compact?: boolean }> = ({ layout, compact }) => {
+  const { intent } = useDroneStore();
+  const consumer = usesConsumerReferences(layout.frame_type, intent.taskId);
   const items = [
-    { id: 'wl', label: '横纵比', sub: 'W/L', value: layout.W_over_L, lo: 0.6, hi: 1.7, real: realRanges.wl },
-    { id: 'dd', label: '桨径 ÷ 轴距', sub: 'd/D', value: layout.d_over_D_mean, lo: 0.3, hi: 0.75, real: realRanges.dd },
-    { id: 'bw', label: '机身宽 ÷ 轴距', sub: '', value: layout.body_width_over_D, lo: 0.1, hi: 0.6, real: realRanges.bodyWidth },
+    { id: 'wl', label: '横纵比', sub: 'W/L', value: layout.W_over_L, lo: 0.6, hi: 1.7, real: consumer ? realRanges.wl : null },
+    { id: 'dd', label: '桨径 ÷ 轴距', sub: 'd/D', value: layout.d_over_reference_span, lo: 0.3, hi: 0.75, real: consumer ? realRanges.dd : null },
+    { id: 'bw', label: '机身宽 ÷ 轴距', sub: '', value: layout.body_width_over_D, lo: 0.1, hi: 0.6, real: consumer ? realRanges.bodyWidth : null },
     { id: 'blw', label: '机身长 ÷ 宽', sub: '', value: layout.body_length_over_width, lo: 0.5, hi: 3, real: null },
   ];
   const pct = (v: number, lo: number, hi: number) => clamp(((v - lo) / (hi - lo)) * 100, 0, 100);

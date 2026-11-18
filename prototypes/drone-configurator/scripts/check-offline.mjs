@@ -1,48 +1,72 @@
-// 离线包复核：解压 configurator-offline.zip，用无界面 Chrome 以 file:// 打开，
-// 检查三个环节能否打开、控制台报错和是否有非本地请求，并用真实点击切到“宽 X 型”、到交付页导出三件（真实下载）。
-// 运行：npm run check-offline（需要本机装有 Google Chrome 和 unzip，Node 22 以上）。
+// Open a fresh, extracted package in Chrome; verify real DOM controls and downloaded originals.
+import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { execFileSync } from 'node:child_process';
-import { mkdtempSync, readdirSync, rmSync } from 'node:fs';
+import { copyFileSync, mkdirSync, mkdtempSync, readFileSync, readdirSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { launch } from './cdp.mjs';
 
-const here = dirname(fileURLToPath(import.meta.url));
-const work = mkdtempSync(join(tmpdir(), 'configurator-offline-'));
-execFileSync('unzip', ['-q', resolve(here, '../configurator-offline.zip'), '-d', join(work, 'package')]);
-const b = await launch({ port: 9341 });
-let ok = false;
+const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
+const work = mkdtempSync(join(tmpdir(),'multirotor-package-'));
+const captures = process.argv.includes('--capture') ? mkdtempSync(join(tmpdir(),'multirotor-walkthrough-')) : null;
+let browser;
 try {
-  const p = await b.open(pathToFileURL(join(work, 'package', 'index.html')).href, { width: 1440, height: 900 });
-  const steps = await p.evaluate(`[...document.querySelectorAll('[data-step]')].map(e => e.dataset.step)`);
-  const insight = await p.evaluate(`({ title: document.title, cards: document.querySelectorAll('[data-card]').length, themes: document.querySelectorAll('[data-theme]').length })`);
-  await p.click('[data-step=studio]');
-  const read = () => p.evaluate(`({
-    tabs: [...document.querySelectorAll('[role=tab][data-tab]')].map(t => t.dataset.tab),
-    hubs: document.querySelectorAll('[data-testid=top-view] [data-layer=hub]').length,
-    wl: document.querySelector('[data-testid=ratios] [data-stat=wl] [data-value]').innerText,
-    hints: document.querySelectorAll('[data-hint]').length,
-    aircraft: document.querySelectorAll('[data-ref]').length,
-  })`);
-  const first = await read();
-  await p.click('[data-frame="Wide X"]');
-  const after = await read();
-  await p.click('[data-step=handoff]');
-  const downloads = join(work, 'downloads');
-  await p.setDownloadDir(downloads);
-  await p.click('[data-testid=export-all]');
-  await p.sleep(1500);
-  const fresh = await p.evaluate(`[...document.querySelectorAll('[data-sentence][data-fresh=yes]')].map(e => e.dataset.sentence)`);
-  const files = readdirSync(downloads).filter(f => f.startsWith('drone-')).sort();
-  const remote = p.requests().filter(u => !/^(file|data|blob):|^about:blank$/.test(u));
-  const errors = p.errors().length;
-  console.log(JSON.stringify({ 打开方式: 'file://（解压后的离线包）', 流程: steps, 洞察页: insight, 造型页首屏: first, 点宽X后: after, 改动句: fresh, 实际下载: files, 非本地请求: remote, 控制台报错数: errors }, null, 2));
-  ok = steps.join() === 'insight,studio,handoff' && insight.cards === 36 && first.hubs === 4 && first.tabs.join() === 'frame,propulsion,fuselage,landing_gear,accessories'
-    && first.wl === '1.00' && after.wl === '1.30' && fresh.join() === 'layout' && files.length === 3 && remote.length === 0 && errors === 0;
-  console.log(ok ? '离线包复核通过' : '离线包复核未通过');
+  execFileSync(process.env.PYTHON || (process.platform === 'win32' ? 'python' : 'python3'),
+    ['-m','zipfile','-e',join(root,'configurator-offline.zip'),join(work,'package')]);
+  browser = await launch({port:9341});
+  const page = await browser.open(pathToFileURL(join(work,'package','index.html')).href);
+  assert.deepEqual(await page.evaluate("[...document.querySelectorAll('[data-step]')].map(x=>x.dataset.step)"),['insight','studio','handoff']);
+  const set = async (testId,value) => {
+    await page.evaluate(`(() => {const s=document.querySelector('[data-testid="${testId}"]');s.value=${JSON.stringify(value)};s.dispatchEvent(new Event('change',{bubbles:true}));})()`);
+  };
+  if(captures) await page.screenshot(join(captures,'brief.png'));
+  await page.type('[data-testid=brief-input]','折起来放进小包');
+  assert.equal(await page.evaluate("document.querySelector('[data-testid=lookup-result]').dataset.status"),'retrieve');
+  await page.click('[data-testid=accept-evidence]');
+  await set('mission','agricultural_spraying');
+  await set('brief-frame','Radial Hex');
+  await page.type('[data-testid=brief-input]','展开时希望机身显得紧凑');
+  assert.equal(await page.evaluate("document.querySelector('[data-testid=lookup-result]').dataset.status"),'abstain');
+  await page.click('[data-testid=confirm-intent]');
+  await page.click('[data-step=studio]');
+  const axes = () => page.evaluate("document.querySelectorAll('[data-testid=top-view] [data-layer=hub]').length");
+  assert.equal(await axes(),6);
+  if(captures) await page.screenshot(join(captures,'agricultural-hex.png'));
+  await page.click('[data-step=handoff]');
+  const downloads = join(work,'downloads');
+  mkdirSync(downloads);
+  await page.setDownloadDir(downloads);
+  await page.click('[data-testid=export-all]');
+  let names = [];
+  for(let i=0;i<40;i++){
+    names=readdirSync(downloads).filter(n=>n.startsWith('drone-')&&!n.endsWith('.crdownload'));
+    if(names.length===3)break;
+    await page.sleep(100);
+  }
+  assert.equal(names.length,3);
+  const config=JSON.parse(readFileSync(join(downloads,names.find(n=>n.endsWith('.json')))));
+  const prompt=readFileSync(join(downloads,config.files.prompt),'utf8');
+  const png=readFileSync(join(downloads,config.files.guide));
+  assert.equal(config.task_id,'agricultural_spraying');
+  assert.equal(config.layout.hubs.length,6);
+  assert.equal(createHash('sha256').update(png).digest('hex'),config.reference_image.png_sha256);
+  assert.equal(prompt,config.prompt.text);
+  assert.match(prompt,/hexacopter/i);
+  assert.match(prompt,/agricultur/i);
+  assert.doesNotMatch(prompt,/quadcopter|everyday carry-along aerial photography/i);
+  if(captures) for(const name of names) copyFileSync(join(downloads,name),join(captures,name));
+  await page.click('[data-handoff-tab=candidates]');
+  for(const id of ['quad','hex']){
+    await page.click('[data-history-case='+id+']');
+    assert.ok(await page.evaluate("document.querySelector('[data-testid=history-replay] img').naturalWidth > 0"));
+  }
+  assert.equal(page.errors().length,0);
+  assert.equal(page.requests().filter(x=>/^https?:/.test(x)).length,0);
+  console.log(JSON.stringify({offline:true,geometry:config.topology,task:config.task_id,files:names,
+    semanticQueries:2,historyCases:2,modelCalls:0,humanSessions:0,captures},null,2));
 } finally {
-  await b.quit();
-  rmSync(work, { recursive: true, force: true });
+  if(browser) await browser.quit();
+  rmSync(work,{recursive:true,force:true,maxRetries:4,retryDelay:250});
 }
-process.exit(ok ? 0 : 1);

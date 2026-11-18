@@ -1,13 +1,13 @@
 import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import { computeLayout } from '../../design/design';
+import { computeLayout, usesConsumerReferences } from '../../design/design';
 import { fuselageStyleOptions, legacyFuselageStyles, references, topCoverOptions } from '../../design/fields';
 import { Field, Group, OpenChoice, Slider, TabHeading } from '../controls/controls';
 
 const list = (items: { v: number; label: string }[]) => items.map(m => `${m.label} ${m.v}`).join('、');
 
 const FuselageParameters: React.FC = () => {
-  const { parameters } = useDroneStore();
+  const { parameters, intent } = useDroneStore();
   const size = parameters.fuselage.fuselage_dimensions_mm;
   const layout = computeLayout(parameters);
   const legacy = legacyFuselageStyles.find(o => o.value === parameters.fuselage.fuselage_style);
@@ -32,7 +32,7 @@ const FuselageParameters: React.FC = () => {
         </div>
         <p className="mt-1 text-xs leading-relaxed text-ink-soft">
           想让展开俯视显得紧凑，可以试试调这两个比例；是否真的显得紧凑，要靠出图后的评议来判断。
-          真实机型的机身宽 ÷ 轴距（手册图面量测）：{list(references.bodyWidthOverD.measured)}。
+          {usesConsumerReferences(parameters.frame.frame_type, intent.taskId) && <>同类机型的机身宽 ÷ 轴距（手册图面量测）：{list(references.bodyWidthOverD.measured)}。</>}
         </p>
       </div>
 

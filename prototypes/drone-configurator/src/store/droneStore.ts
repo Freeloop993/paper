@@ -1,11 +1,12 @@
 import { createContext, useContext } from 'react';
-import { frameRules, quadBladeCount, type Task } from '../design/design';
+import { frameRules, layoutKey, taskLabels, quadBladeCount, type Task } from '../design/design';
 import { fieldByPath, getPath, setPath, wordPairs } from '../design/fields';
 import { create } from 'zustand';
 import type {
   DroneParameters, AppState, FrameParameters, PropulsionParameters, FuselageParameters, LandingGearParameters,
   AccessoriesParameters, UserProfile, DesignIntent, WordPairId, ParameterGroup,
 } from '../types/DroneParameters';
+import type { BriefDecision } from '../design/semantics/brief';
 import type { PromptOptimizationResult } from '../services/geminiPromptOptimizer';
 
 // 默认参数值。造型项（材料、臂根、机身轮廓、顶盖、相机安装、主色、表面处理）默认留白，由设计者决定。
@@ -68,6 +69,8 @@ interface DroneStore extends AppState {
   undoCard: (id: string) => void;
   setTarget: (pair: WordPairId, pole: 'left' | 'right' | null) => void;
   setNote: (note: string) => void;
+  recordBrief: (entry: BriefDecision) => void;
+  setMission: (mission: NonNullable<DesignIntent['taskId']>) => void;
   undo: () => void;
   pin: (label: string) => void;
   unpin: () => void;
@@ -114,9 +117,10 @@ export function createTaskStore(task: Task) {
     initial.propulsion.prop_blade_count = quadBladeCount;
     initial.accessories.has_camera_gimbal = true;
   }
+  const initialIntent = () => ({...emptyIntent(), ...(task === 'hexa' ? {taskId:'agricultural_spraying' as const} : {})});
   const snap = (s: Snapshot): Snapshot => structuredClone({ parameters: s.parameters, touched: s.touched, intent: s.intent });
 
-  return create<DroneStore>((set, get) => {
+  const store = create<DroneStore>((set, get) => {
     /** 统一的提交入口：记历史、记“刚才的改动”，再写入新状态。 */
     const commit = (path: string, label: string, from: string, to: string, next: Partial<Snapshot>, coalesce = false) => {
       const s = get();
@@ -130,6 +134,10 @@ export function createTaskStore(task: Task) {
         lastChange: { path, label, from: same ? s.lastChange!.from : from, to, at: now, before },
       });
     };
+    const scopedIntent = (intent: DesignIntent, context: string): DesignIntent => ({
+      ...intent, cards: [], note: '', targets: {},
+      log: [...intent.log, {action:'note', at:new Date().toISOString(), value:context + '，原设计意图需重新确认。'}],
+    });
     const setField = (path: string, value: unknown) => {
       const s = get();
       const def = fieldByPath[path];
@@ -142,7 +150,9 @@ export function createTaskStore(task: Task) {
         delete touched['frame.span_ratio_wl'];
       }
       const continuous = typeof value === 'number' || def.kind === 'custom';
-      commit(path, def.label, def.format(s.parameters), def.format(parameters), { parameters, touched }, continuous);
+      const intent = path === 'frame.frame_type' && layoutKey(s.parameters.frame.frame_type) !== layoutKey(parameters.frame.frame_type)
+        ? scopedIntent(s.intent, '切换构型到' + frameRules[parameters.frame.frame_type].zh) : s.intent;
+      commit(path, def.label, def.format(s.parameters), def.format(parameters), { parameters, touched, intent }, continuous);
     };
     const setMany = (entries: [string, unknown][], label: string) => {
       const s = get();
@@ -175,11 +185,11 @@ export function createTaskStore(task: Task) {
       task,
       parameters: initial,
       touched: {},
-      intent: emptyIntent(),
+      intent: initialIntent(),
       lastChange: null,
       history: [],
       pinned: null,
-      variants: [{ id: 'A', name: '方案 A', snapshot: structuredClone({ parameters: initial, touched: {}, intent: emptyIntent() }) }],
+      variants: [{ id: 'A', name: '方案 A', snapshot: structuredClone({ parameters: initial, touched: {}, intent: initialIntent() }) }],
       activeVariant: 'A',
       exportNote: '界面测试（非正式实验）',
       notice: '',
@@ -229,7 +239,9 @@ export function createTaskStore(task: Task) {
           parameters = setPath(parameters, 'frame.span_ratio_wl', frameRules[parameters.frame.frame_type].wl.value);
           delete touched['frame.span_ratio_wl'];
         }
-        commit(path + '#clear', '清除「' + def.label + '」', def.format(s.parameters), def.format(parameters), { parameters, touched });
+        const intent = path === 'frame.frame_type' && layoutKey(parameters.frame.frame_type) !== layoutKey(s.parameters.frame.frame_type)
+          ? scopedIntent(s.intent, '恢复默认构型') : s.intent;
+        commit(path + '#clear', '清除「' + def.label + '」', def.format(s.parameters), def.format(parameters), { parameters, touched, intent });
       },
       adoptCard: id => {
         const { intent } = get();
@@ -256,6 +268,24 @@ export function createTaskStore(task: Task) {
           ...intent, targets, log: [...intent.log, { action: 'target', pair, value: pole ?? 'none', at: stamp() }],
         });
       },
+      setMission: mission => {
+        const { intent } = get();
+        const old = intent.taskId ?? 'consumer_camera';
+        if (mission !== old) {
+          intentChange('intent.taskId','更换使用任务',taskLabels[old],taskLabels[mission],
+            {...scopedIntent(intent, '切换任务到' + taskLabels[mission]), taskId:mission});
+        }
+      },
+      recordBrief: entry => {
+        const { intent } = get();
+        const apply = entry.action === 'accept' || entry.action === 'custom';
+        const note = apply ? entry.text : entry.action === 'revoke' ? '' : intent.note;
+        const cards = entry.action === 'accept' ? entry.evidence.filter(e => e.role === 'example').map(e => e.id)
+          : apply || entry.action === 'revoke' ? [] : intent.cards;
+        intentChange('intent.brief', '设计者确认依据', intent.note, note, {
+          ...intent, note, cards, log: [...intent.log, {action:'brief', at:entry.at, brief:entry}],
+        });
+      },
       setNote: note => {
         const { intent } = get();
         if (intent.note === note) return;
@@ -265,7 +295,12 @@ export function createTaskStore(task: Task) {
         const s = get();
         const last = s.history[s.history.length - 1];
         if (!last) return;
-        set({ ...snap(last), history: s.history.slice(0, -1), lastChange: null });
+        const restored = snap(last);
+        if (JSON.stringify(restored.intent) !== JSON.stringify(s.intent)) {
+          restored.intent.log = [...s.intent.log, {action:'undo', at:stamp(),
+            value:'恢复简报 · '+(restored.intent.note || '未指定意图')+' · 依据 '+(restored.intent.cards.join('、') || '无')}];
+        }
+        set({ ...restored, history: s.history.slice(0, -1), lastChange: null });
       },
       pin: label => set({ pinned: { ...snap(get()), label, at: stamp() } }),
       unpin: () => set({ pinned: null }),
@@ -294,12 +329,12 @@ export function createTaskStore(task: Task) {
 
       resetParameters: () => {
         const s = get();
-        set({ parameters: structuredClone(initial), touched: {}, history: [...s.history, snap(s)].slice(-40), lastChange: null, currentImage: null, error: null, progress: 0 });
+        set({ parameters: structuredClone(initial), intent:layoutKey(initial.frame.frame_type) !== layoutKey(s.parameters.frame.frame_type) ? scopedIntent(s.intent,'重置构型') : s.intent, touched: {}, history: [...s.history, snap(s)].slice(-40), lastChange: null, currentImage: null, error: null, progress: 0 });
       },
       resetToDefaults: () => {
         const s = get();
         set({
-          parameters: structuredClone(initial), touched: {}, intent: emptyIntent(), pinned: null,
+          parameters: structuredClone(initial), touched: {}, intent: {...emptyIntent(),taskId:s.intent.taskId}, pinned: null,
           history: [...s.history, snap(s)].slice(-40), lastChange: null,
           isGenerating: false, currentImage: null, error: null, progress: 0, selectedUserProfile: null,
           useGeminiOptimization: false, isOptimizingPrompt: false, lastOptimizationResult: null, useRAGOptimization: false,
@@ -307,6 +342,32 @@ export function createTaskStore(task: Task) {
       },
     };
   });
+  // 只保存在本地的设计草稿。模型回执和候选原图单独保存。
+  if (typeof window !== 'undefined') {
+    const key = 'multirotor-studio/draft-v1/' + task;
+    try {
+      const raw = window.localStorage.getItem(key);
+      if (raw && !window.location.hash.includes('cfg=')) {
+        const saved = JSON.parse(raw) as Pick<DroneStore, 'parameters'|'intent'|'touched'|'variants'|'activeVariant'|'exportNote'>;
+        if (saved.parameters?.frame?.frame_type in frameRules && Array.isArray(saved.intent?.log) &&
+            Array.isArray(saved.intent?.cards) && saved.variants?.some(v => v.id === saved.activeVariant)) {
+          store.setState({parameters:saved.parameters, intent:saved.intent, touched:saved.touched,
+            variants:saved.variants, activeVariant:saved.activeVariant, exportNote:saved.exportNote});
+        }
+      }
+    } catch { store.setState({notice:'本地草稿无法恢复，可从已导出的规格重新载入。'}); }
+    let saveFailed = false;
+    store.subscribe(s => {
+      try {
+        const data = { ...snap(s), variants:s.variants, activeVariant:s.activeVariant, exportNote:s.exportNote };
+        window.localStorage.setItem(key, JSON.stringify(data));
+        saveFailed = false;
+      } catch {
+        if (!saveFailed) { saveFailed = true; store.setState({notice:'浏览器未保存当前草稿，请导出规格。'}); }
+      }
+    });
+  }
+  return store;
 }
 export const taskStores = { quad: createTaskStore('quad'), hexa: createTaskStore('hexa') };
 export const DroneStoreContext = createContext(taskStores.quad);

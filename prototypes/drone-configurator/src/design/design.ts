@@ -9,10 +9,19 @@ export type FrameType = FrameParameters['frame_type'];
 /** 依据类别：定义＝几何定义；experimental＝研究登记的实验档；designer＝缺厂商或图面依据，记为设计者输入。 */
 export type Basis = 'definition' | 'experimental' | 'designer';
 
+export type LayoutKey = 'quad' | 'tri' | 'flat_hex' | 'flat_octo' | 'coax_hex' | 'coax_octo';
+export const taskLabels = {
+  consumer_camera: '日常随行航拍',
+  agricultural_spraying: '农业植保',
+  neutral_design: '民用中性造型',
+} as const;
+
 export interface FrameRule {
   zh: string;
   en: string;
-  hubs: 4 | 6;
+  hubs: 3 | 4 | 6 | 8;
+  layers?: 2;
+  topology?: Exclude<LayoutKey, 'quad'>;
   /** W/L 的缺省值与可调范围；adjustable=false 时由形状规则算出。 */
   wl: { value: number; min: number; max: number; adjustable: boolean };
   basis: Basis;
@@ -59,13 +68,54 @@ export const frameRules: Record<FrameType, FrameRule> = {
     desc: '电机分别在前、后、左、右。',
     shape_en: 'one motor at the nose, one at the tail and one on each side',
   },
+  'Radial Tri': {
+    zh: '平面三旋', en: 'Radial tri', topology: 'tri', hubs: 3,
+    wl: { value: 2 / Math.sqrt(3), min: 2 / Math.sqrt(3), max: 2 / Math.sqrt(3), adjustable: false },
+    basis: 'definition', rule: '三处单层轴位按 120° 均布；一臂朝后。尺度取最远两轴间距。',
+    desc: '三个轴位，每处一副旋翼。', shape_en: 'three distinct horizontal axes in a triangular Y arrangement',
+  },
+  'Radial Octo': {
+    zh: '平面八旋', en: 'Radial octo', topology: 'flat_octo', hubs: 8,
+    wl: { value: 1, min: 1, max: 1, adjustable: false },
+    basis: 'definition', rule: '八处单层轴位位于正八边形顶点。',
+    desc: '八个独立轴位，每处一副旋翼。', shape_en: 'eight distinct horizontal axes at the corners of a regular octagon',
+  },
+  'Coax Y6': {
+    zh: '共轴六旋 Y6', en: 'Coaxial Y6', topology: 'coax_hex', hubs: 3, layers: 2,
+    wl: { value: 2 / Math.sqrt(3), min: 2 / Math.sqrt(3), max: 2 / Math.sqrt(3), adjustable: false },
+    basis: 'definition', rule: '三处水平轴位，每处上下两层旋翼；一臂朝后。尺度取最远两轴间距。',
+    desc: '三轴六旋，顶视下两层桨可能重合。', shape_en: 'three distinct horizontal axes in a triangular Y arrangement',
+  },
+  'Coax X8': {
+    zh: '共轴八旋 X8', en: 'Coaxial X8', topology: 'coax_octo', hubs: 4, layers: 2,
+    wl: { value: 1, min: 1, max: 1, adjustable: false },
+    basis: 'definition', rule: '四处水平轴位分布在正方形四角，每处上下两层旋翼。',
+    desc: '四轴八旋，顶视下两层桨可能重合。', shape_en: 'four distinct horizontal axes at the corners of a square',
+  },
   'Radial Hex': {
-    zh: '径向六旋', en: 'Radial hex', hubs: 6, wl: { value: 1.1547, min: 1.1547, max: 1.1547, adjustable: false }, basis: 'definition',
+    zh: '平面六旋', en: 'Radial hex', topology: 'flat_hex', hubs: 6, wl: { value: 1.1547, min: 1.1547, max: 1.1547, adjustable: false }, basis: 'definition',
     rule: '六个轴心位于正六边形顶点（几何定义）。',
     desc: '六个电机在正六边形的六个角上。',
     shape_en: 'six motor centres at the corners of a regular hexagon',
   },
 };
+
+export function layoutKey(frame: FrameType): LayoutKey {
+  return frameRules[frame].topology ?? 'quad';
+}
+
+export function usesConsumerReferences(frame: FrameType, task = 'consumer_camera') {
+  return layoutKey(frame) === 'quad' && task === 'consumer_camera';
+}
+
+/** 设计目标与顶视可见项分开。层数属于规格，在生成图中须另行判读。 */
+export function topologyOf(frame: FrameType) {
+  const rule = frameRules[frame];
+  const layers = rule.layers ?? 1;
+  return { layout_key: layoutKey(frame), axis_count: rule.hubs, layers_per_axis: layers,
+    rotor_count: rule.hubs * layers, target_view: 'orthographic_top' as const,
+    layer_visibility: layers === 2 ? '下层可能被遮挡，需同一方案的侧视或斜视判读。' : '顶视按水平轴位判读。' };
+}
 
 export const GUIDE_SIZE = 1024;
 /** 条件图把对角轴距均值 D 归一到 600 px，与已登记的研究条件图（nominal_D_px = 600）同尺度。 */
@@ -98,15 +148,16 @@ export interface Layout {
   W_over_L: number;
   /** 对置（对角）电机中心距，逐条列出。 */
   opposite_mm: number[];
-  D_mean_mm: number;
-  D_opposite_max_mm: number;
+  D_mean_mm: number | null;
+  reference_span_mm: number;
+  D_opposite_max_mm: number | null;
   /** 任意两轴之间的最大距离。 */
   max_pair_mm: number;
   min_pair_mm: number;
   adjacent_deg: number[];
   r1_bearing_deg: number;
   prop_diameter_mm: number;
-  d_over_D_mean: number;
+  d_over_reference_span: number;
   d_over_max_pair: number;
   /** 相邻桨盘之间的最小间隙；负值表示重叠。 */
   disk_gap_mm: number;
@@ -126,8 +177,13 @@ export function unitHubs(frame: FrameType, wl: number): UnitHub[] {
   const quad = (pts: { x: number; y: number }[]): UnitHub[] => pts.map((p, i) => ({
     ...p, role: ['FL', 'FR', 'RR', 'RL'][i], role_zh: ['左前', '右前', '右后', '左后'][i],
   }));
-  if (frame === 'Radial Hex')
-    return [-30, 30, 90, 150, 210, 270].map((b, i) => ({ ...polar(b, 1), role: 'M' + (i + 1), role_zh: '第 ' + (i + 1) + ' 轴' }));
+  const rule = frameRules[frame];
+  if (rule.topology) {
+    const start = rule.hubs === 3 ? -60 : -180 / rule.hubs;
+    return Array.from({ length: rule.hubs }, (_, i) => ({
+      ...polar(start + i * 360 / rule.hubs, 1), role: 'M' + (i + 1), role_zh: '第 ' + (i + 1) + ' 轴',
+    }));
+  }
   if (frame === '+ Configuration')
     return [0, 90, 180, 270].map((b, i) => ({
       ...polar(b, 1), role: ['F', 'R', 'B', 'L'][i], role_zh: ['机头', '右', '机尾', '左'][i],
@@ -158,12 +214,14 @@ export function computeLayout(parameters: DroneParameters): Layout {
   const { frame, propulsion, fuselage } = parameters;
   const rule = frameRules[frame.frame_type];
   const D = frame.wheelbase_mm;
-  if (!Number.isFinite(D) || D <= 0) throw new Error('对角电机中心距须为正数。');
+  if (!Number.isFinite(D) || D <= 0) throw new Error('布局尺度须为正数。');
   const unit = unitHubs(frame.frame_type, effectiveWl(frame));
   const n = unit.length;
-  const half = n / 2;
+  const half = n % 2 === 0 ? n / 2 : 0;
   const unitOpposite = Array.from({ length: half }, (_, i) => dist(unit[i], unit[i + half]));
-  const scale = D / (unitOpposite.reduce((s, v) => s + v, 0) / half);
+  const unitScale = half ? unitOpposite.reduce((sum, v) => sum + v, 0) / half
+    : Math.max(...unit.flatMap((a, i) => unit.slice(i + 1).map(b => dist(a, b))));
+  const scale = D / unitScale;
   const pxPerMm = GUIDE_D_PX / D;
   const c = GUIDE_SIZE / 2;
   const toPx = (x: number, y: number): [number, number] => [c + x * pxPerMm, c - y * pxPerMm];
@@ -189,7 +247,8 @@ export function computeLayout(parameters: DroneParameters): Layout {
   const W = Math.max(...xs) - Math.min(...xs), L = Math.max(...ys) - Math.min(...ys);
   const opposite = Array.from({ length: half }, (_, i) => dist(pts[i], pts[i + half]));
   const pairs = pts.flatMap((a, i) => pts.slice(i + 1).map(b => dist(a, b)));
-  const Dmean = opposite.reduce((s, v) => s + v, 0) / half;
+  const Dmean = half ? opposite.reduce((s, v) => s + v, 0) / half : null;
+  const referenceSpan = Dmean ?? Math.max(...pairs);
   const d = propulsion.prop_diameter_inch * 25.4;
   const minPair = Math.min(...pairs), maxPair = Math.max(...pairs);
   const bearings = hubs.map(h => h.bearing_deg);
@@ -201,17 +260,27 @@ export function computeLayout(parameters: DroneParameters): Layout {
     warnings.push('机身宽度超过轴心横向跨度，机身会盖住电机位置。');
   return {
     frame_type: frame.frame_type, basis: wlBasis(frame), rule: rule.rule, hubs, links_mm, links_px,
-    W_mm: W, L_mm: L, W_over_L: W / L, opposite_mm: opposite, D_mean_mm: Dmean,
-    D_opposite_max_mm: Math.max(...opposite), max_pair_mm: maxPair, min_pair_mm: minPair,
+    W_mm: W, L_mm: L, W_over_L: W / L, opposite_mm: opposite, D_mean_mm: Dmean, reference_span_mm: referenceSpan,
+    D_opposite_max_mm: half ? Math.max(...opposite) : null, max_pair_mm: maxPair, min_pair_mm: minPair,
     adjacent_deg: bearings.map((b, i) => (bearings[(i + 1) % n] - b + 360) % 360),
-    r1_bearing_deg: bearings[0], prop_diameter_mm: d, d_over_D_mean: d / Dmean, d_over_max_pair: d / maxPair,
-    disk_gap_mm: minPair - d, body_width_over_D: size.width / Dmean, body_length_over_width: size.length / size.width,
+    r1_bearing_deg: bearings[0], prop_diameter_mm: d, d_over_reference_span: d / referenceSpan, d_over_max_pair: d / maxPair,
+    disk_gap_mm: minPair - d, body_width_over_D: size.width / referenceSpan, body_length_over_width: size.length / size.width,
     guide: {
       size: GUIDE_SIZE, px_per_mm: pxPerMm, nose: 'up', origin: 'top-left',
       mm_origin: '机架中心', mm_axes: 'x 向右为正，y 向机头为正',
     },
     warnings,
   };
+}
+
+/** 侧视沿机身纵向投影；上下桨的图示距离只用于辨认层数。 */
+export function sideRotorAxes(layout: Layout, armThickness: number) {
+  const nLayers = topologyOf(layout.frame_type).layers_per_axis;
+  return layout.hubs.flatMap(hub =>
+    Array.from({ length: nLayers }, (_, layer) => ({
+      hub: hub.id, layer: layer + 1, x: -hub.y_mm,
+      y: layer === 0 ? -6 : armThickness + 8,
+    })));
 }
 
 /** 点线条件图：黑底、蓝色机架连接线、红色轴心点；图内不放文字、刻度或箭头。 */
@@ -239,6 +308,10 @@ const round = (v: number, digits: number) => Number(v.toFixed(digits));
 export function layoutExport(layout: Layout) {
   return {
     frame_type: layout.frame_type,
+    ...(layoutKey(layout.frame_type) === 'quad' ? {} : {
+      topology: topologyOf(layout.frame_type), reference_span_mm: round(layout.reference_span_mm, 3),
+      d_over_reference_span: round(layout.d_over_reference_span, 4), body_width_over_reference_span: round(layout.body_width_over_D, 4),
+    }),
     geometry_rule: layout.rule,
     geometry_basis: layout.basis,
     hub_order: '从 R1 起顺时针',
@@ -251,17 +324,17 @@ export function layoutExport(layout: Layout) {
     links_px: layout.links_px.map(l => l.map(v => round(v, 2))),
     W_mm: round(layout.W_mm, 3), L_mm: round(layout.L_mm, 3), W_over_L: round(layout.W_over_L, 4),
     opposite_motor_distances_mm: layout.opposite_mm.map(v => round(v, 3)),
-    D_mean_mm: round(layout.D_mean_mm, 3),
-    D_opposite_max_mm: round(layout.D_opposite_max_mm, 3),
+    D_mean_mm: layout.D_mean_mm === null ? null : round(layout.D_mean_mm, 3),
+    D_opposite_max_mm: layout.D_opposite_max_mm === null ? null : round(layout.D_opposite_max_mm, 3),
     max_pair_distance_mm: round(layout.max_pair_mm, 3),
-    D_definition: '设计值 D = 对置（对角）电机中心距的均值；另列对置最大距与任意两轴最大距。',
+    D_definition: layout.D_mean_mm === null ? '三轴位无对置轴。设计尺度取最远两轴心间距。' : '设计值 D = 对置（对角）电机中心距的均值；另列对置最大距与任意两轴最大距。',
     adjacent_deg: layout.adjacent_deg.map(v => round(v, 2)),
     r1_bearing_from_nose_deg: round(layout.r1_bearing_deg, 2),
     prop_diameter_mm: round(layout.prop_diameter_mm, 2),
-    d_over_D_mean: round(layout.d_over_D_mean, 4),
+    d_over_D_mean: layout.D_mean_mm === null ? null : round(layout.d_over_reference_span, 4),
     d_over_max_pair: round(layout.d_over_max_pair, 4),
     disk_gap_mm: round(layout.disk_gap_mm, 2),
-    body_width_over_D_mean: round(layout.body_width_over_D, 4),
+    body_width_over_D_mean: layout.D_mean_mm === null ? null : round(layout.body_width_over_D, 4),
     body_length_over_width: round(layout.body_length_over_width, 4),
     guide: { ...layout.guide, px_per_mm: round(layout.guide.px_per_mm, 6), type: '点线图（轴心与机架连接）' },
     warnings: layout.warnings,

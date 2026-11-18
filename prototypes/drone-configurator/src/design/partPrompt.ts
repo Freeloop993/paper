@@ -2,7 +2,7 @@
 // 顺序：任务与视图 → 设计意图 → 布局与参考图 → 部件参数 → 已选造型项 → 色材 → 补充文字 → 呈现。
 // 留白的造型项不生成任何句子；护圈、颜色、碳纹只有在设计者明确选择后才会出现。
 import type { DesignIntent, DroneParameters, ParameterGroup } from '../types/DroneParameters.ts';
-import { effectiveWl, frameRules, type Layout } from './design.ts';
+import { effectiveWl, frameRules, topologyOf, type Layout } from './design.ts';
 import {
   armMaterialOptions, armRootOptions, cameraMountOptions, colourName, finishOptions, fuselageStyleOptions,
   legacyFuselageStyles, topCoverOptions, wordPairs,
@@ -33,9 +33,15 @@ export function compilePrompt(p: DroneParameters, touched: Record<string, boolea
   const src = (...paths: string[]): SentenceSource => (paths.some(path => touched[path]) ? 'chosen' : 'default');
   const add = (s: PromptSentence) => { if (s.text.trim()) out.push(s); };
 
+  const topology = topologyOf(frame.frame_type);
+  const aircraftName = { quad: 'quadcopter', tri: 'tricopter', flat_hex: 'flat hexacopter',
+    flat_octo: 'flat octocopter', coax_hex: 'coaxial Y6 hexacopter', coax_octo: 'coaxial X8 octocopter' }[topology.layout_key];
+  const purpose = { consumer_camera: 'everyday carry-along aerial photography',
+    agricultural_spraying: 'civil agricultural crop care', neutral_design: 'a civilian industrial design comparison' }[intent.taskId ?? 'consumer_camera'];
+
   add({
     id: 'task', group: 'task', source: 'fixed', zh: '任务与视图', fields: [],
-    text: 'Design a quadcopter for everyday carry-along aerial photography. Strict orthographic top view, nose toward the top edge of the image, arms fully unfolded.',
+    text: `Design a ${aircraftName} for ${purpose}. Strict orthographic top view, nose toward the top edge of the image, arms fully unfolded.`,
   });
 
   const poles = wordPairs.filter(w => intent.targets[w.id]).map(w => (intent.targets[w.id] === 'left' ? w.leftEn : w.rightEn));
@@ -44,7 +50,11 @@ export function compilePrompt(p: DroneParameters, touched: Record<string, boolea
       id: 'intent', group: 'intent', source: 'adopted', zh: '设计者采纳的目标一极', fields: ['intent.targets'],
       text: 'Design intent: ' + poles.join('; ') + '.',
     });
-  if (intent.note.trim())
+  const activeBrief = [...intent.log].reverse().find(entry => entry.action === 'brief' &&
+    entry.brief && entry.brief.action !== 'reject')?.brief;
+  const storageOnly = activeBrief && activeBrief.action !== 'revoke' && activeBrief.text.trim() === intent.note.trim()
+    && (activeBrief.query.state === 'folded' || activeBrief.query.state === 'carrying');
+  if (intent.note.trim() && !storageOnly)
     add({
       id: 'intent_note', group: 'intent', source: 'custom', zh: '设计者自己写的意图（原话）', fields: ['intent.note'],
       text: "Designer's note: " + intent.note.trim(),
@@ -52,11 +62,15 @@ export function compilePrompt(p: DroneParameters, touched: Record<string, boolea
 
   const rule = frameRules[frame.frame_type];
   const first = layout.hubs[0].role === 'F' ? 'nose' : layout.hubs[0].role === 'M1' ? 'first' : 'front-left';
+  const numberWord: Record<number,string> = { 3: 'Three', 4: 'Four', 6: 'Six', 8: 'Eight' };
+  const spanDescription = layout.D_mean_mm === null ? 'Maximum horizontal axis-to-axis span' : 'Mean opposite-motor (diagonal) span';
+  const layering = topology.layers_per_axis === 2
+    ? ` Each of the ${topology.axis_count} horizontal axes has two rotors stacked vertically; the lower layer may be occluded in this view.` : '';
   add({
     id: 'layout', group: 'frame', source: src('frame.frame_type', 'frame.wheelbase_mm', 'frame.span_ratio_wl'),
     zh: '布局：构型、对角轴距 D、W/L、相邻夹角', fields: ['frame.frame_type', 'frame.wheelbase_mm', 'frame.span_ratio_wl'],
-    text: `${layout.hubs.length === 6 ? 'Six' : 'Four'} motors in a ${rule.en} layout: ${rule.shape_en}. ` +
-      `Mean opposite-motor (diagonal) span ${fmt(frame.wheelbase_mm, 1)} mm; motor-centre width-to-length span ratio W/L ${effectiveWl(frame).toFixed(2)}; ` +
+    text: `${numberWord[topology.rotor_count]} motors in a ${rule.en} layout: ${rule.shape_en}.${layering} ` +
+      `${spanDescription} ${fmt(frame.wheelbase_mm, 1)} mm; motor-centre width-to-length span ratio W/L ${effectiveWl(frame).toFixed(2)}; ` +
       `adjacent arm angles clockwise from the ${first} motor: ${layout.adjacent_deg.map(a => fmt(a, 1) + '°').join(', ')}.`,
   });
   add({

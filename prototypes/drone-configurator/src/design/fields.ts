@@ -1,7 +1,7 @@
 // 参数登记表：每个可选项的中文名、所在页签、显示值、能否在顶视图中看到，以及当前属于哪种状态。
 // 页签、当前选择清单、对照表和导出都读这一张表。
-import type { DroneParameters, ParameterGroup, WordPairId } from '../types/DroneParameters.ts';
-import { effectiveWl, frameRules } from './design.ts';
+import type { DesignIntent, DroneParameters, ParameterGroup, WordPairId } from '../types/DroneParameters.ts';
+import { effectiveWl, frameRules, taskLabels, topologyOf } from './design.ts';
 
 export interface Option<T extends string = string> { value: T; zh: string; en?: string; hint?: string }
 
@@ -159,6 +159,19 @@ export const taskFixed = [
   { label: '视图', value: '展开状态正交顶视，机头朝上' },
   { label: '相机朝向', value: '朝机头前方，水平；顶视可被遮挡' },
 ];
+
+export function taskConditions(p: DroneParameters, intent: DesignIntent) {
+  const task = intent.taskId ?? 'consumer_camera';
+  const type = p.frame.frame_type;
+  const topology = topologyOf(type);
+  const quad = topology.layout_key === 'quad';
+  return [
+    { label: '设计任务', value: taskLabels[task] + (quad ? '四旋翼' : ' · ' + frameRules[type].zh) },
+    { label: '电机数量', value: quad ? taskFixed[1].value : `${topology.rotor_count} 个，${topology.axis_count} 处轴位，每处 ${topology.layers_per_axis} 层` },
+    taskFixed[2],
+    ...(p.accessories.has_camera_gimbal ? [taskFixed[3]] : []),
+  ];
+}
 
 export function getPath(p: DroneParameters, path: string): unknown {
   return path.split('.').reduce<unknown>((o, k) => (o as Record<string, unknown>)[k], p);
