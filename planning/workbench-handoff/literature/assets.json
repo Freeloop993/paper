@@ -194,6 +194,10 @@
       "doi": "10.1016/j.aei.2026.105165",
       "version": "作者站公开期刊排版版；2026已公开，卷77标2027",
       "source_url": "https://cosjiimos.github.io/GenAlign/GenAlign_AEI2026.pdf",
+      "download_urls": [
+        "https://api.github.com/repos/CosJiimos/GenAlign/git/blobs/b1a70c67a33478e2c72270c9ea82e944c5d1b0d8",
+        "https://cosjiimos.github.io/GenAlign/GenAlign_AEI2026.pdf"
+      ],
       "publisher_url": "https://doi.org/10.1016/j.aei.2026.105165",
       "review_pages": "5–6",
       "file": "private-cache/fulltexts/B00.pdf",

@@ -23,7 +23,7 @@ python restore_assets.py --figures
 python restore_assets.py --verify-only --figures
 ```
 
-[资产清单](assets.json)记录每个PDF的版本、原始字节数、SHA-256、公开地址及许可依据，并保留每幅图的原始文件和像素摘要。`private-cache/` 已列入本目录 Git 忽略规则。
+[资产清单](assets.json)记录每个PDF的版本、原始字节数、SHA-256、公开地址及许可依据，并保留每幅图的原始文件和像素摘要。`private-cache/` 已列入本目录 Git 忽略规则。GenAlign 优先从作者 GitHub 仓库中的固定版本读取，作者网页提供第二个下载入口，两者的 PDF 可用同一摘要复核。
 
 2026年11月18日已在单独目录以仓库拟同步的文件起步，实际从5个公开入口下载其余的PDF，再重建4张图。19份PDF全部通过原字节摘要核验，10张图全部通过原图文件或原始RGB像素核验。Treellis 与 Req2CAD 的作者项目页可访问，仍作为项目线索登记。
 
