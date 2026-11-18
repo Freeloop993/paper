@@ -1,0 +1,35 @@
+{
+  "full_string_strip_only": {
+    "old_chunk_rows": 5614,
+    "old_distinct_nonempty_comment_id": 3603,
+    "ledger_texts": 7443,
+    "ledger_A": 228,
+    "direct_id_overlap_with_text_id": 0,
+    "direct_id_overlap_with_original_record_ids": 0,
+    "old_ids_with_at_least_one_unique_full_text_match": 109,
+    "old_ids_matching_multiple_different_ledger_texts": 0,
+    "ledger_texts_with_exact_source_part_candidate": 109,
+    "A_with_exact_source_part_candidate": 1,
+    "A_without_exact_source_part_candidate": 227,
+    "chunk_rows_matching_ambiguous_ledger_text": 0
+  },
+  "full_string_NFKC_remove_whitespace": {
+    "old_chunk_rows": 5614,
+    "old_distinct_nonempty_comment_id": 3603,
+    "ledger_texts": 7443,
+    "ledger_A": 228,
+    "direct_id_overlap_with_text_id": 0,
+    "direct_id_overlap_with_original_record_ids": 0,
+    "old_ids_with_at_least_one_unique_full_text_match": 3486,
+    "old_ids_matching_multiple_different_ledger_texts": 0,
+    "ledger_texts_with_exact_source_part_candidate": 3480,
+    "A_with_exact_source_part_candidate": 109,
+    "A_without_exact_source_part_candidate": 119,
+    "chunk_rows_matching_ambiguous_ledger_text": 0
+  },
+  "scope": "Text-match candidates only. No SKU or state linkage was established.",
+  "sha256": {
+    "old_chunks": "e2e8d2b8deecdd283e6d5b6f7c832e1d3cc7d96d8ae9d575250487602f7eea18",
+    "final_ledger": "092615cbf424248743cc7f1b674ecfd30842b37012ec285b79f05b570d2b81e7"
+  }
+}

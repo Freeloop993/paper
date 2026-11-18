@@ -1,5 +1,7 @@
 # 论文研究状态 · 11 月 17 日
 
+**11 月 18 日工作台交接。** [当前研究进度与已核运行记录](planning/workbench-handoff/context/README.md) · [源代码、文献和第二台电脑验收](planning/workbench-handoff/README.md)。下表为前一阶段的研究基线。
+
 面向复核的实验索引。每行单独说明材料、样本和可回答的问题。相同原图在回收、读数和评议阶段多次出现；跨行相加会重复计数。[导师阅读稿与正文范围](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/manuscript/thesis/review/handoff-20261117/README.md)
 
 | 研究环节 | 已取得的材料 | 解释或待验证项 |

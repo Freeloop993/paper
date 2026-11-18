@@ -1,0 +1,160 @@
+{
+  "commit": "d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2",
+  "public_source_csv_sha256": "72e8b1f200ea67e25f5a980e1959997ccac89f83a1a5ade4a22ef7f4c31675a8",
+  "public": {
+    "cards": 36,
+    "unique_sources": 35,
+    "probes": [
+      {
+        "task": "日常航拍",
+        "state": "未明确",
+        "query": "机身小巧便携",
+        "pr75_literal_ids": [
+          "E001"
+        ],
+        "rule_route": "clarify_state",
+        "rule_ids": [
+          "E001"
+        ],
+        "distinct_sources": 1,
+        "automatic_parameter_writes": []
+      },
+      {
+        "task": "日常航拍",
+        "state": "折叠",
+        "query": "折叠后能放进背包",
+        "pr75_literal_ids": [],
+        "rule_route": "folded_storage",
+        "rule_ids": [
+          "E009"
+        ],
+        "distinct_sources": 1,
+        "automatic_parameter_writes": []
+      },
+      {
+        "task": "日常航拍",
+        "state": "携带",
+        "query": "口袋装得下吗",
+        "pr75_literal_ids": [],
+        "rule_route": "pocket_fit",
+        "rule_ids": [
+          "E003",
+          "E004"
+        ],
+        "distinct_sources": 1,
+        "automatic_parameter_writes": []
+      },
+      {
+        "task": "日常航拍",
+        "state": "加装配件",
+        "query": "安装护罩后显大",
+        "pr75_literal_ids": [],
+        "rule_route": "accessory_outline",
+        "rule_ids": [
+          "E006",
+          "E007"
+        ],
+        "distinct_sources": 2,
+        "automatic_parameter_writes": []
+      },
+      {
+        "task": "日常航拍",
+        "state": "展开顶视",
+        "query": "展开顶视视觉紧凑",
+        "pr75_literal_ids": [],
+        "rule_route": "unfolded_compact",
+        "rule_ids": [],
+        "distinct_sources": 0,
+        "automatic_parameter_writes": []
+      },
+      {
+        "task": "农业植保",
+        "state": "展开顶视",
+        "query": "机身小巧便携",
+        "pr75_literal_ids": [
+          "E001"
+        ],
+        "rule_route": "unsupported_scope",
+        "rule_ids": [],
+        "distinct_sources": 0,
+        "automatic_parameter_writes": []
+      },
+      {
+        "task": "日常航拍",
+        "state": "未明确",
+        "query": "陌生需求词",
+        "pr75_literal_ids": [],
+        "rule_route": "no_match",
+        "rule_ids": [],
+        "distinct_sources": 0,
+        "automatic_parameter_writes": []
+      }
+    ]
+  },
+  "private": {
+    "source_workbooks": 6,
+    "nonempty_rows": 11241,
+    "raw_cell_occurrences": {
+      "E008": 1,
+      "E001": 1
+    },
+    "private_pool_to_public_cards_matched": 36,
+    "merged": 8755,
+    "unique_texts": 7443,
+    "in_consumer_scope": 1318,
+    "retained": 228,
+    "retained_in_Q": 228,
+    "public_cards_by_dataset": {
+      "legacy": 15,
+      "supplement": 21
+    },
+    "guard_or_protection_union": 4,
+    "theme_counts_multilabel": {
+      "整机与小尺度体量": 99,
+      "通用携带体验": 67,
+      "外观审美总评": 61,
+      "轻重使用感知": 49,
+      "折叠构型与收纳": 12,
+      "简洁与时尚风格": 12,
+      "高级与质感观感": 10,
+      "材料自述与表面处理": 4,
+      "口袋与小包适配": 4,
+      "防护安心感知": 3,
+      "配色感知与颜色偏好": 3,
+      "可爱与趣味印象": 3,
+      "护罩构型与桨叶表达": 2,
+      "科技与科幻外形印象": 2,
+      "机身局部尺度感": 1,
+      "鲜艳与辨识表达": 1,
+      "局部线条与圆角": 1,
+      "异形审美比喻": 1
+    }
+  },
+  "runtimes": {
+    "node": "v24.13.0",
+    "verify": {
+      "code": 0,
+      "summary": "共 33 项，通过 33，失败 0"
+    },
+    "worktree_replay": {
+      "code": 1,
+      "summary": "重放 10 份配置，0 份与当前源码的输出逐项相同，10 份不符"
+    },
+    "git_blob_replay": {
+      "code": 0,
+      "summary": "重放 10 份配置，10 份与当前源码的输出逐项相同，0 份不符"
+    },
+    "rag": {
+      "fixture": "public 36 short cards adapted to historical JSON schema",
+      "loaded_documents": 36,
+      "unique_comments": 35,
+      "embedding_init": "暂未配置向量模型，检索服务未启用。",
+      "api_statuses": {
+        "/api/status": 200,
+        "/api/initialize": 503,
+        "/api/context": 503,
+        "/api/query": 503
+      }
+    }
+  }
+}

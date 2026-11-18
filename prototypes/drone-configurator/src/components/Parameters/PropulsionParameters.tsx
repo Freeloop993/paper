@@ -1,111 +1,43 @@
 import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
-import type { PropulsionParameters as PropulsionParametersType } from '../../types/DroneParameters';
-import { Zap } from 'lucide-react';
+import { computeLayout, usesConsumerReferences } from '../../design/design';
+import { references } from '../../design/fields';
+import { Choice, Field, Slider, TabHeading } from '../controls/controls';
+import type { PropulsionParameters as P } from '../../types/DroneParameters';
 
 const PropulsionParameters: React.FC = () => {
-  const { parameters, updatePropulsionParams } = useDroneStore();
-  const propulsionParams = parameters.propulsion;
-
-  const handlePropDiameterChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    updatePropulsionParams({ prop_diameter_inch: Number(e.target.value) });
-  };
-
-  const handleBladeCountChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    updatePropulsionParams({ prop_blade_count: e.target.value as PropulsionParametersType['prop_blade_count'] });
-  };
-
-  const handleMotorTiltChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    updatePropulsionParams({ motor_tilt_degree: Number(e.target.value) });
-  };
-
+  const { parameters, setField, intent } = useDroneStore();
+  const p = parameters.propulsion;
+  const consumer = usesConsumerReferences(parameters.frame.frame_type, intent.taskId);
+  const layout = computeLayout(parameters);
   return (
-    <div className="card space-y-6">
-      <div className="flex items-center space-x-2">
-        <Zap className="h-5 w-5 text-primary-600" />
-        <h3 className="text-lg font-semibold text-slate-900">动力系统参数</h3>
-        <span className="text-sm text-slate-500">Propulsion Parameters</span>
-      </div>
+    <div className="space-y-5">
+      <TabHeading title="动力系统参数" en="Propulsion Parameters">桨有多大、每副几片叶、要不要护圈。</TabHeading>
 
-      {/* 螺旋桨直径 */}
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-slate-700">
-          螺旋桨直径 <span className="text-slate-500">(Prop Diameter): {propulsionParams.prop_diameter_inch}" </span>
-        </label>
-        <input
-          type="range"
-          min="3"
-          max="10"
-          step="0.1"
-          value={propulsionParams.prop_diameter_inch}
-          onChange={handlePropDiameterChange}
-          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer slider"
-        />
-        <div className="flex justify-between text-xs text-slate-500">
-          <span>3"</span>
-          <span>10"</span>
-        </div>
-      </div>
+      <Field path="propulsion.prop_diameter_inch" en="Prop Diameter" value={`${p.prop_diameter_inch} 英寸 · ${layout.prop_diameter_mm.toFixed(0)} mm`}
+        hint={<>桨径 ÷ 轴距 = <b className="font-semibold text-ink">{layout.d_over_reference_span.toFixed(2)}</b>，相邻桨盘间隙 {layout.disk_gap_mm.toFixed(0)} mm。</>}
+        reference={consumer && <>
+          <b className="font-medium text-ink">实验档（桨径 ÷ 轴距）：</b>0.40、0.50、0.60。<br />
+          <b className="font-medium text-ink">真实机型（手册图面量测）：</b>{references.dd.measured.map(m => `${m.label} ${m.v}`).join('、')}。
+        </>}>
+        <Slider path="propulsion.prop_diameter_inch" min={3} max={Math.max(consumer ? 10 : 30, p.prop_diameter_inch)} step={0.1} unit="″" digits={1} />
+      </Field>
 
-      {/* 螺旋桨叶片数量 */}
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-slate-700">
-          螺旋桨叶片数量 <span className="text-slate-500">(Prop Blade Count)</span>
-        </label>
-        <select
-          value={propulsionParams.prop_blade_count}
-          onChange={handleBladeCountChange}
-          className="input-field w-full"
-        >
-          <option value="2叶">2叶</option>
-          <option value="3叶">3叶</option>
-          <option value="4叶">4叶</option>
-          <option value="5叶">5叶</option>
-          <option value="6叶">6叶</option>
-        </select>
-      </div>
+      <Field path="propulsion.prop_blade_count" en="Blade Count" value={`${parseInt(p.prop_blade_count, 10)} 叶`} hint="每副旋翼的叶片数量。">
+        <Choice<P['prop_blade_count']> options={(['2叶', '3叶', '4叶', '5叶', '6叶'] as const).map(v => ({ value: v, zh: `${parseInt(v, 10)} 叶` }))}
+          value={p.prop_blade_count} onChange={v => setField('propulsion.prop_blade_count', v)} label="每轴桨叶数" />
+      </Field>
 
-      {/* 电机安装倾角 */}
-      <div className="space-y-2">
-        <label className="block text-sm font-medium text-slate-700">
-          电机安装倾角 <span className="text-slate-500">(Motor Tilt): {propulsionParams.motor_tilt_degree}°</span>
-        </label>
-        <input
-          type="range"
-          min="0"
-          max="20"
-          step="1"
-          value={propulsionParams.motor_tilt_degree}
-          onChange={handleMotorTiltChange}
-          className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer slider"
-        />
-        <div className="flex justify-between text-xs text-slate-500">
-          <span>0°</span>
-          <span>20°</span>
-        </div>
-        <div className="mt-2 p-3 bg-blue-50 rounded-lg">
-          <p className="text-sm text-blue-700">
-            💡 提示：倾角用于FPV竞速无人机，增加前进推力
-          </p>
-        </div>
-      </div>
+      <Field path="propulsion.prop_guard" en="Prop Guard" value={p.prop_guard === 'ring' ? '环形护圈' : '不加'}>
+        <Choice<P['prop_guard']> options={[{ value: 'none', zh: '不加护圈' }, { value: 'ring', zh: '环形护圈', hint: '每副桨外加一圈' }]}
+          value={p.prop_guard} onChange={v => setField('propulsion.prop_guard', v)} label="桨叶护圈" />
+      </Field>
 
-      {/* 动力系统预览信息 */}
-      <div className="mt-6 p-4 bg-slate-50 rounded-lg">
-        <h4 className="text-sm font-medium text-slate-700 mb-2">动力系统概览</h4>
-        <div className="grid grid-cols-2 gap-4 text-sm">
-          <div>
-            <span className="text-slate-500">螺旋桨：</span>
-            <span className="font-medium">{propulsionParams.prop_diameter_inch}" {propulsionParams.prop_blade_count}</span>
-          </div>
-          <div>
-            <span className="text-slate-500">电机倾角：</span>
-            <span className="font-medium">{propulsionParams.motor_tilt_degree}°</span>
-          </div>
-        </div>
-      </div>
+      <Field path="propulsion.motor_tilt_degree" en="Motor Tilt" value={`${p.motor_tilt_degree}°`} hint="机架平面上对电机前倾角的设定。">
+        <Slider path="propulsion.motor_tilt_degree" min={0} max={20} step={1} unit="°" />
+      </Field>
     </div>
   );
 };
 
-export default PropulsionParameters; 
+export default PropulsionParameters;

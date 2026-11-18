@@ -1,0 +1,2 @@
+# Preserve byte-exact prompt fixtures across Windows and Unix checkouts.
+review/**/exports/**/drone-prompt-*.txt text eol=lf

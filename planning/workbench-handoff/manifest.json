@@ -1,0 +1,305 @@
+{
+  "schema": 1,
+  "files": [
+    {
+      "path": "planning/workbench-handoff/.gitattributes",
+      "format": "text-lf",
+      "sha256": "4a26a2c5eb6e4f7a578306aad4e4fbeabb09edac66e9c24b567f0b3b669f3380"
+    },
+    {
+      "path": "planning/workbench-handoff/context/h3/H3-02.png",
+      "format": "binary",
+      "sha256": "8733eecf4e82f473d3599926dd3722b7632225c0f3b51bf105ce9aedc260a4da"
+    },
+    {
+      "path": "planning/workbench-handoff/context/h3/H3-03.png",
+      "format": "binary",
+      "sha256": "44af73563e6d19f2f4d908fe092e5c1548e8ed2d80115f2309641c6608b1234b"
+    },
+    {
+      "path": "planning/workbench-handoff/context/h3/H3-04.png",
+      "format": "binary",
+      "sha256": "5cea9d17f9d9643f93e4962138e113bb32b26f0329dd25c05d58a646b2bddcde"
+    },
+    {
+      "path": "planning/workbench-handoff/context/h3/jobs.csv",
+      "format": "text-lf",
+      "sha256": "8ebdea183ddf6133b749c56c7d06155ce06d9812a6247d02eade9cc0c792c5f6"
+    },
+    {
+      "path": "planning/workbench-handoff/context/h3/layout-input.png",
+      "format": "binary",
+      "sha256": "39522647f0daac8854598cf38d61198103ab4b27043fd4dcfd87c51d36cc9e3b"
+    },
+    {
+      "path": "planning/workbench-handoff/context/README.md",
+      "format": "text-lf",
+      "sha256": "3c21798632287ce2381eadbeef4055502592b6ddeef9c2e516f3c36f67124f22"
+    },
+    {
+      "path": "planning/workbench-handoff/context/visuals/b2-history-canvas.png",
+      "format": "binary",
+      "sha256": "f16b5b7b6c33d51faa5726dda1294bc872c5f8d45122c42be17787f1bb554cdb"
+    },
+    {
+      "path": "planning/workbench-handoff/context/visuals/chat-width-preview.png",
+      "format": "binary",
+      "sha256": "e8b19c7daf2d72aeab1858093a82e2d36c1f9affeaa44e091a453e9c2ef81282"
+    },
+    {
+      "path": "planning/workbench-handoff/context/visuals/design-chat-concept.png",
+      "format": "binary",
+      "sha256": "428b6aa3b74ebd35d2925f9b81d45cc1b1a2cf4bc20a8ead336a807dabafbfb2"
+    },
+    {
+      "path": "planning/workbench-handoff/context/visuals/evidence-desktop.png",
+      "format": "binary",
+      "sha256": "1043ebdc0f06c4e6977a0591691b9d5506d6249d38564a7f5ed9dacc9749ca81"
+    },
+    {
+      "path": "planning/workbench-handoff/context/visuals/evidence-mobile.png",
+      "format": "binary",
+      "sha256": "337f80779e29fe5e48ead717e30ec26eb2d2d17a444ab4e51655206a466068a8"
+    },
+    {
+      "path": "planning/workbench-handoff/context/visuals/h3-workspace.png",
+      "format": "binary",
+      "sha256": "f7a44628d3a1c0def3cacc7bd093540171d71dddcea98753757e146f40190539"
+    },
+    {
+      "path": "planning/workbench-handoff/context/visuals/seven-step-flow.png",
+      "format": "binary",
+      "sha256": "c47fe7e5d274b55bfcb9d45c574086194cdc36fea536dfb52b30db2ae38dce4f"
+    },
+    {
+      "path": "planning/workbench-handoff/context/visuals/workflow-design-review.pdf",
+      "format": "binary",
+      "sha256": "3a88be99b1a58cc8491f3a7c0e33fb6fd24f1af6d1f731bc1160b8c1634d1407"
+    },
+    {
+      "path": "planning/workbench-handoff/context/界面资料.md",
+      "format": "text-lf",
+      "sha256": "755affa4a371a275cc3f5e678dc55aeb57a9fe9357ad4e317c73ad958124efe1"
+    },
+    {
+      "path": "planning/workbench-handoff/context/运行证据.md",
+      "format": "text-lf",
+      "sha256": "22a9a1f663562d66e2f07791c6b7c4420b21d039f9ac66b2a63c71db09685d32"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/.gitignore",
+      "format": "text-lf",
+      "sha256": "0aa51c4cbc5875b52e6a1dbc8fa513eb2c4074f107538146c62fef316b00d651"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/assets.json",
+      "format": "text-lf",
+      "sha256": "c06b0fd9338553c283665ca2627a9e3360cb44ffcf10d4b5507221c382397351"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/figures/03-SketchConcept-图2.png",
+      "format": "binary",
+      "sha256": "63d5faa922f25d73ffd073e65fb00e90e8fd08693c6305270d4c9f29785b21e0"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/figures/05-Workflow-Net-图2-聊天式.png",
+      "format": "binary",
+      "sha256": "1d2784e1e4998f596261ae99067f2f327a3e20b8cbf8ea262cef78553066b2e8"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/figures/05-Workflow-Net-图3-手动接节点.png",
+      "format": "binary",
+      "sha256": "cedbef5f246a358a8e57b48339a999510032e678817821d4ca3118c6ad819499"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/figures/05-Workflow-Net-图4-自动连边的设计画布.png",
+      "format": "binary",
+      "sha256": "30091d87a6cfe9ab739577577083d57ceed6f872d0dec26c0edf08429ccaa216"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/figures/06-InstructMesh-图4.png",
+      "format": "binary",
+      "sha256": "7e3430c23588a15b3c80b9d83c93a5eb72399922414ccf78ac46c34cebd068f6"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/figures/07-DesignFromX-图3.png",
+      "format": "binary",
+      "sha256": "e3e81b53876d537827209b55ed4668e9b49ce181577ac879dc2f72637fd6bd36"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/A01.pdf",
+      "format": "binary",
+      "sha256": "7e8de577110d518f31697bffb8dcdb756fc0a55ed9c5250de331bd1736c68286"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/A02.pdf",
+      "format": "binary",
+      "sha256": "2f2c61da430ccfde9da1f275d0fad5bc148ce372301e32461e85c619502c44cb"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/A03.pdf",
+      "format": "binary",
+      "sha256": "ec8c72cdcb4571b97e08fee1de541ae7303801ad75a38b9b90153c28dec32b48"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/A04.pdf",
+      "format": "binary",
+      "sha256": "fbd7d960cc1f2a9adbb3507ef9bfe70cd16f433a43a36344b8bbd6348eacbac9"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/A05.pdf",
+      "format": "binary",
+      "sha256": "c36d63860037b1b4f97d53e29075988f3bb1d60fdc3cde6185be40d3220dce0f"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/A08.pdf",
+      "format": "binary",
+      "sha256": "31829e7f487afc757dc51f1352c83af16b9990c8db3f8f7767e1efaee3cc1e85"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/A11.pdf",
+      "format": "binary",
+      "sha256": "c8beb5df29d95ecbe0b336755a2055dda7df5405e1130b3d7d3022904ed896c2"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/B03.pdf",
+      "format": "binary",
+      "sha256": "c70ff921b20b1019ff42b00bb58766f663ea1f0dbd6ffc27acbe8aab73624afd"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/B04.pdf",
+      "format": "binary",
+      "sha256": "2fff2cab7db677b7ed1672128aa28682a95c7e7567e93337fb2bd632bc2f5a93"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/B05.pdf",
+      "format": "binary",
+      "sha256": "83bbf67b141374deb6d3931f593bfc1493325d179f1472f0b427fd9aa603796c"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/B06.pdf",
+      "format": "binary",
+      "sha256": "9b1dbb9cc614f386eaf6ad252633ba0a4493e417fbf4ecbadd58e93b34c2b67d"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/B07.pdf",
+      "format": "binary",
+      "sha256": "1421a4bf16e8dc59baf3de8c3902daa9ec967d81eb604c26a3d55b387514b099"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/B08.pdf",
+      "format": "binary",
+      "sha256": "3fa529ce59aa24768d8c2e38d2e861c28d3cff808c5227786028f79ba7b29676"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/fulltexts/B09.pdf",
+      "format": "binary",
+      "sha256": "79672e45eebf33714009b16ca5b3eb7817019c9a1bba6dea4418aa82dde58650"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/GenAlign-按底稿补录.bib",
+      "format": "text-lf",
+      "sha256": "5a3ef527eb99f30878ad1c5197951051d085f3c18405150d106cc13b0f42ea15"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/README.md",
+      "format": "text-lf",
+      "sha256": "30344c9340a716533f5432f838a53e629100e68685139aa9320d627f9418394d"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/restore_assets.py",
+      "format": "text-lf",
+      "sha256": "9bc00b69f0169bc6eb533923ccce5aba064b956f40cf7a61ba29a94bb80a01eb"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/全库文献导航.csv",
+      "format": "text-lf",
+      "sha256": "2ea151a77aabb22f6d9182e571c0b53247f6b8ccaa2c49d475397e599ee4bddd"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/文献复核与引用建议.md",
+      "format": "text-lf",
+      "sha256": "992b1ed96bb1b7442bdbeb556985eb26ac246aef0e08d78342cbcd0240c9c350"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/补充参考文献.bib",
+      "format": "text-lf",
+      "sha256": "7da7bc4b5a2e73b9b8e5caeec71023561e6c40fe316880a1bf642e4abe1044b8"
+    },
+    {
+      "path": "planning/workbench-handoff/literature/论文与原页证据.csv",
+      "format": "text-lf",
+      "sha256": "ad9c3c9567117a49c320a3a1deeaccbaf0bf94a5ce95883d4f17064bbf836177"
+    },
+    {
+      "path": "planning/workbench-handoff/README.md",
+      "format": "text-lf",
+      "sha256": "493c0e44ff683cc3d48d3cd53455f22a199f1e35a90dcd06972f89685fbaa867"
+    },
+    {
+      "path": "planning/workbench-handoff/v3.2-review.md",
+      "format": "text-lf",
+      "sha256": "876b2de76fa7650556326c5877d03b8285aef3bc1b0818e0c513c2f0b57868b9"
+    },
+    {
+      "path": "planning/workbench-handoff/verify_checkout.py",
+      "format": "text-lf",
+      "sha256": "349a1cd2292284016b550d572324b0c53999a3b78a60ae214aa910ccba288829"
+    },
+    {
+      "path": "prototypes/drone-configurator/package.json",
+      "format": "text-lf",
+      "sha256": "786ea30549e6c172bb92769558b35baff6b1875bc950dbf4b2b80d1aaa0be8d6"
+    },
+    {
+      "path": "prototypes/drone-configurator/package-lock.json",
+      "format": "text-lf",
+      "sha256": "4d918d02c67956e9f2cedfc2727fa8b5a14e1fa53c51e55994111185461f0560"
+    },
+    {
+      "path": "prototypes/drone-configurator/README.md",
+      "format": "text-lf",
+      "sha256": "fd77063122b528e7f58ab2cc581f1f0fa8b566e4a7dac25e60426bbad0fdb655"
+    },
+    {
+      "path": "prototypes/drone-configurator/configurator-offline.zip",
+      "format": "binary",
+      "sha256": "6a74920c166b9293f9b289029de48db32fc96d562a5e5fac8b9c659f93e5187e"
+    },
+    {
+      "path": "prototypes/drone-configurator/src/data/evidenceCards.json",
+      "format": "text-lf",
+      "sha256": "ad42898a1bee7a7d03e644c23a2bbfad2258c53b5d09845885478dd2a293fe3e"
+    },
+    {
+      "path": "prototypes/drone-configurator/claude-interface-brief.md",
+      "format": "text-lf",
+      "sha256": "e076362888f1d81c4fb6f2969d40aa72df728d8746c3892477d886fffa5ced0b"
+    },
+    {
+      "path": "planning/advisor-20261118/README.md",
+      "format": "text-lf",
+      "sha256": "1b087f3725087302b2cddbdb5b4098499a72bb71c71c63eaa0a322d0aa2b6fea"
+    },
+    {
+      "path": "planning/advisor-20261118/system.md",
+      "format": "text-lf",
+      "sha256": "35b7e1428b6c02e817dec2c52834e64458d3d5fa78d9af6e79bf59e81667e7cf"
+    },
+    {
+      "path": "planning/advisor-20261118/cross-layout-protocol.md",
+      "format": "text-lf",
+      "sha256": "9358b1b5b1e582398be726514605e863a0c81b682c8c43ab67f512a994c3af0b"
+    },
+    {
+      "path": "planning/advisor-20261118/pilot-bridge/README.md",
+      "format": "text-lf",
+      "sha256": "0b502d765ae3f1d3e6844982da7f374889a5c7db2bae2fd3d38e2020ecf134ca"
+    },
+    {
+      "path": "planning/advisor-20261118/semantic/lookup/README.md",
+      "format": "text-lf",
+      "sha256": "4c4fca9ac231dc2bc6eedb262b4ba06af8f23939935ef3ee8cd4df7366ef8fc7"
+    }
+  ]
+}
