@@ -1,0 +1,1243 @@
+﻿source,row,title,doi,sha256,pdf,method_card,group
+本地修订稿,1,Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion,10.1299/jamdsm.2026jamdsm0008,,,chen,W0001
+本地修订稿,2,Adding conditional control to text-to-image diffusion models,10.1109/iccv51070.2023.00355,,,,W0002
+本地修订稿,3,GenPara: Enhancing the 3D Design Editing Process by Inferring Users' Regions of Interest with Text-Conditional Shape Parameters,10.1145/3706598.3713502,,,para,W0003
+本地修订稿,4,可供性与产品语义设计理论的交集与边界研究,10.19798/j.cnki.2096-6946.2022.04.003,,,wei,W0004
+本地修订稿,5,Qwen-Image-2.1: Model card,,,,,W0005
+本地修订稿,6,Qwen-Image-2.1-Fun-Controlnet-Union: Model Card,,,,,W0006
+本地修订稿,7,Learning activities to design a parametric solutions space for products in Industry 4.0,10.35199/epde.2024.82,,,,W0007
+本地修订稿,8,产品外观解构与情感设计变量识别方法研究,10.13837/j.issn.1006-8309.2017.03.0013,,,qu,W0008
+本地修订稿,9,Using FCE and FAHP to explore the multirotor drone appearance preference,10.21606/drs.2020.164,,,hsiao,W0009
+本地修订稿,10,Design of plant protection unmanned aerial vehicles: quantitative research and virtual simulation,10.1016/j.ijadr.2024.03.001,,,,W0010
+本地修订稿,11,Embrace the era of drones: a new practical design approach to emergency rescue drones,10.3390/app15010135,,,,W0011
+本地修订稿,12,AGRAS T16 User Manual v1.4,,,,,W0012
+本地修订稿,13,AGRAS T20 User Manual v1.4,,,,,W0013
+本地修订稿,14,AGRAS T30 User Manual v1.4,,,,,W0014
+本地修订稿,15,Kansei Engineering: A new ergonomic consumer-oriented technology for product development,10.1016/0169-8141(94)00052-5,,,,W0015
+本地修订稿,16,Seeing things: consumer response to the visual domain in product design,10.1016/j.destud.2004.03.001,,,,W0016
+本地修订稿,17,感性工学设计方法研究现状与进展,10.13841/j.cnki.jxsj.2020.01.022,,,,W0017
+本地修订稿,18,Extracting and summarizing affective features and responses from online product descriptions and reviews: A Kansei text mining approach,10.1016/j.engappai.2018.05.005,,,wang,W0018
+本地修订稿,19,Insights from knowledge-based engineering in industrial practice – a Saab’s perspective,10.1017/pds.2026.10691,,,,W0019
+本地修订稿,20,基于权重化特征与形状文法的产品识别设计,10.3969/j.issn.2095-509x.2019.07.002,,,,W0020
+本地修订稿,21,基于形状文法和交互式遗传算法的产品形态创新设计,10.3969/j.issn.2095-509x.2019.04.003,,,,W0021
+本地修订稿,22,7Bench: a comprehensive benchmark for layout-guided text-to-image models,,,,,W0022
+本地修订稿,23,Qwen-Image-Edit-2509 and Qwen-Image-Edit-2511: Model cards,,,,,W0023
+本地修订稿,24,A Product's Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation,10.3390/su16208837,,,du,W0024
+本地修订稿,25,Enhancing the aesthetic appeal of AI-generated physical product designs through LoRA fine-tuning with human feedback,,,,,W0025
+本地修订稿,26,QwenStyle: content-preserving style transfer with Qwen-Image-Edit,,,,,W0026
+本地修订稿,27,InstructPix2Pix: Learning to follow image editing instructions,10.1109/cvpr52729.2023.01764,,,,W0027
+本地修订稿,28,MagicBrush: A manually annotated dataset for instruction-guided image editing,10.48550/arxiv.2306.10012,,,,W0028
+本地修订稿,29,GenEval: An object-focused framework for evaluating text-to-image alignment,10.48550/arxiv.2310.11513,,,,W0029
+本地修订稿,30,Partnering with Generative AI: Experimental Evaluation of Human-Led and Model-Led Interaction in Human-AI Co-Creation,10.1145/3772318.3791185,,,,W0030
+本地修订稿,31,When Designers Sweat: Behavioral Traces of GenAI Co-Creation,10.1145/3772318.3791776,,,,W0031
+本地修订稿,32,A Taxonomy of Human–MLLM Interaction in Early-Stage Sketch-Based Design Ideation,,,,,W0032
+本地修订稿,33,Multimodal generative AI for conceptual design: enabling text-based and sketch-based human-AI conversations,10.1017/pds.2025.10264,,,,W0033
+本地修订稿,34,Enhancing generative AI image refinement with scribbles and annotations: a comparative study of multimodal prompts,10.1145/3742413.3789080,,,,W0034
+本地修订稿,35,AIdeation: designing a human-AI collaborative ideation system for concept designers,10.1145/3706598.3714148,,,,W0035
+本地修订稿,36,Ceci N’est Pas un Drone: Investigating the Impact of Design Representation on Design Decision Making When Using GenAI,,,,,W0036
+本地修订稿,37,智能技术驱动的汽车造型设计流程再造方法研究,10.13196/j.cims.2025.0330,,,,W0037
+本地修订稿,38,基于人智团队智能体协同进化的群智创新设计方法,10.13196/j.cims.2025.0101,,,,W0038
+本地修订稿,39,Guidelines for Human-AI Interaction,10.1145/3290605.3300233,,,,W0039
+本地修订稿,40,GenAlign: Visual knowledge graphs as interactive substrates for property-aligned generative design,10.1016/j.aei.2026.105165,,,genalign,W0040
+本地修订稿,41,A coefficient of agreement for nominal scales,10.1177/001316446002000104,,,,W0041
+本地修订稿,42,High agreement but low kappa: I. The problems of two paradoxes,10.1016/0895-4356(90)90158-l,,,,W0042
+本地修订稿,43,The Measurement of Meaning,,,,,W0043
+本地修订稿,44,DJI Mini 4 Pro User Manual v1.4,,,,,W0044
+本地修订稿,45,基于知识工程的产品设计研究综述,10.3901/jme.2024.13.216,,,know,W0045
+本地修订稿,46,Guidelines for Reporting Reliability and Agreement Studies (GRRAS) were proposed,10.1016/j.jclinepi.2010.03.002,,,,W0046
+本地修订稿,47,Beyond Bar and Line Graphs: Time for a New Data Presentation Paradigm,10.1371/journal.pbio.1002128,,,,W0047
+reviewed-100,2,Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion,10.1299/jamdsm.2026jamdsm0008,31829e7f487afc757dc51f1352c83af16b9990c8db3f8f7767e1efaee3cc1e85,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A001.pdf,chen,W0001
+reviewed-100,3,Exploring generative design in context of mass personalization,10.1017/pds.2025.10180,6d22759ee9500b30a7105b6e9b0bd5bc7eead3e0d165245f1b76e32111dbcadc,,,W0048
+reviewed-100,4,Generating preinventive structures: AI-driven creativity in product repurposing,10.1017/pds.2025.10207,5412fb44292791affe7c848a2e3e6a3edbbaebdcb6774924ea2450e335db29d8,,,W0049
+reviewed-100,5,EVOLVING A MODEL OF GEN-AI ENHANCED DESIGN VISUALISATION WORKFLOW,10.35199/epde.2025.112,3c5915c3900b43635c6c032af7595d6a441da974444689317b6bd4011358ebf9,,,W0050
+reviewed-100,6,Embrace the Era of Drones: A New Practical Design Approach to Emergency Rescue Drones,10.3390/app15010135,e80e25ea0609e76bced310d34a93c831b1783da41138c3dd9ecb8ad7bcda7021,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A005.pdf,,W0011
+reviewed-100,7,Research on innovative design of Nuo mask based on Memetics-AHP-Thematic analysis-shape grammar,10.1371/journal.pone.0326630,da9e0e9b4641312d30287ed43aae97d745b80c93501617c5382aa1cb7a3421c1,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A006.pdf,,W0051
+reviewed-100,8,Multimodal generative AI for conceptual design: enabling text-based and sketch-based human-AI conversations,10.1017/pds.2025.10264,55831f69ad499a1b895284d5a1dbdb4de15bc957324818c82a2d0f73560704ce,,,W0033
+reviewed-100,9,USE OF ARTIFICIAL INTELLIGENCE IN THE PRODUCT DESIGN PROCESS. IMPACT ON THE DETAILS DESIGN STAGE,10.35199/epde.2024.20,ccde1939de863834fefba6a38266af71bce006eab25e5f0bbc1df5d26f65c188,,,W0052
+reviewed-100,10,"USE AND APPLICATION OF GENERATIVE AI IN MULTIDISCIPLINARY PROJECTS: LUNAR HABITACLES, AUTOMOTIVE CONCEPTS AND FUTURE SOUVENIRS",10.35199/epde.2024.104,74f736e30b558b9403d5220b103d2471168d6b4724240e5d15260cc1688681f5,,,W0053
+reviewed-100,11,A Product’s Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation,10.3390/su16208837,e1a3990487326088a061a1f9499125b36034959ab06b819bd4f0d4958acf3e57,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A008.pdf,du,W0024
+reviewed-100,12,Research on Evaluation Methods of Complex Product Design Based on Hybrid Kansei Engineering Modeling,10.3390/sym17020306,a08d7184d9fc34a3be8aa5a903e5aa75bed895744ae14fb54c8318db241c7000,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A009.pdf,,W0054
+reviewed-100,13,Grasshopper Algorithmic Modelling: Parametric Design for Product Platform Customisation,10.3390/app15116243,3d7a42b66621d1937374a90d49032328e7c11079a8ab63b96356330083976fbb,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A010.pdf,,W0055
+reviewed-100,14,IS HIGH SKETCHING PROFICIENCY STILL AN ADVANTAGE? EXPLORING THE ROLE OF FREEHAND DRAWING IN VEHICLE DESIGN WITHIN THE 2D GENERATIVE AI LANDSCAPE,10.35199/epde.2025.124,d20e8baf66eabe33bffaba99c7a77dae4e6d11d3001f57b8723d05c663ec625c,,,W0056
+reviewed-100,15,COMPARING UNDERSTANDABILITY OF HAND SKETCHES VERSUS AI-GENERATED RENDERS FOR PRODUCT DESIGN,10.35199/epde.2024.34,b7179bc6fccdb5bef121d195b4d8f23c43dc81f8dc8acdfa59be077c2a53b2b1,,,W0057
+reviewed-100,16,A COMPARISON OF ARTIFICIAL INTELLIGENCE IMAGE GENERATION TOOLS IN PRODUCT DESIGN,10.35199/epde.2024.3,b270b186a36691e22a634b4528b7f28a0c250f4a14e7633b7c6d4dee8fe3dafb,,,W0058
+reviewed-100,17,The Design of Automotive Interior for Chinese Young Consumers Based on Kansei Engineering and Eye-Tracking Technology,10.3390/app131910674,80d793118bfba4a22fa07d9daadb117df8dfa70e9dcad61ad4413e976ce787b9,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A012.pdf,,W0059
+reviewed-100,18,Study on Imagery Modeling of Electric Recliner Chair: Based on Combined GRA and Kansei Engineering,10.3390/app132413345,e02c495bcbd1631664f5006a1327dd04731d8671a426b2ca4d17ffb851da4b9c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A013.pdf,,W0060
+reviewed-100,19,Affective response difference to the viewing of different styles of solid wood furniture based on Kansei engineering,10.15376/biores.19.1.805-822,d7dce5eb93dff77dfe9566adc7e11e4c6e6a6dd965256bd3db8f5ebd01b262f8,,,W0061
+reviewed-100,20,Augmented design automation: leveraging parametric designs using large language models,10.1017/pds.2025.10081,a650ba19fb61a3c17519a6e1faeab56ff858f2c326e6a679455fe3f564091e7a,,,W0062
+reviewed-100,21,"Can AI estimate product impressions? Comparison of consumers’, designers’, and AI model’s ratings of car wheels",10.1017/pds.2025.10098,1bf7cfb57f5a9c97c5f5e90b38965544399437427595d42b93739ca3db226b41,,,W0063
+reviewed-100,22,Sketch2Prototype: rapid conceptual design exploration and prototyping with generative AI,10.1017/pds.2024.201,d8ab3c700a0bdf04d049cf57db09d5f6ad33a163b2b6177cdf572e2e3a75367b,,,W0064
+reviewed-100,23,ShipGen: A Diffusion Model for Parametric Ship Hull Generation with Multiple Objectives and Constraints,10.3390/jmse11122215,0d9787c23c03a5ba0feea20a319a8402b833c78361ae702088f8982a34d9bb6d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A018.pdf,,W0065
+reviewed-100,24,The Exploration of Integrating the Midjourney Artificial Intelligence Generated Content Tool into Design Systems to Direct Designers towards Future-Oriented Innovation,10.3390/systems11120566,80e29e66b2141cb7320cfe38a88cc014b5f526e3f4d405f27baaa9d045881f66,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A019.pdf,,W0066
+reviewed-100,25,Discover the use of multimodal language models for idea detailing in human-AI collaborative design,10.1017/pds.2026.10619,6799b8170969c1d31b022f917e0e49ef51606dab1887a86f37444c5fcef5b942,,,W0067
+reviewed-100,26,A BIOMIMETIC GENERATIVE DESIGN FRAMEWORK: SIMULATING SILKWORM SILK TAPESTRY IN HOUDINI FOR PRODUCT AND EDUCATIONAL APPLICATIONS,10.35199/epde.2025.98,6fa26dee372573fb022c6dca927b2076ed21fb2e5ae0be36f5c45ed69c5cd98d,,,W0068
+reviewed-100,27,VISUALISING SPECULATIVE MATERIALS: USING TEXT-TO-IMAGE PROMPTING TO ELABORATE LIVINGNESS AS A DESIGNED MATERIAL QUALITY,10.35199/epde.2024.52,d3e0eb34f2cba5f7e6a8ce5b1222b2d33e187d6e50f9f35e7a487be089e58a39,,,W0069
+reviewed-100,28,From text to design: a framework to leverage LLM agents for automated CAD generation,10.1017/pds.2025.10203,d522e3b1efdba75cfd8739198c2e9f18cc945cf73e41d9b1a9c689c6b559b2f4,,,W0070
+reviewed-100,29,Research on the Innovative Design of Traditional Motifs of Twisted Porcelain Based on Shape Grammar,10.2991/978-94-6463-815-8_2,fbc327f7b5d650409f0ff93821ca347857951886b27e94f3987380eee71d1f20,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B006.pdf,,W0071
+reviewed-100,30,An Elderly-Oriented Form Design of Low-Speed New Energy Vehicles Based on Rough Set Theory and Support Vector Regression,10.3390/wevj15090389,fd044bfb9bbe121bd40be2eff67f4935f2eb6c8207c2ec80c69c311751915bde,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B007.pdf,,W0072
+reviewed-100,31,AI at the Fuzzy Front End - creative iteration in design,10.1017/pds.2025.10056,25710e07a9e94b9827b290ed81087cd4650c323adce950bd504a36c616e80e05,,,W0073
+reviewed-100,32,SYNERGISTIC DESIGN: THE FUSION OF GENERATIVE AI AND CONVENTIONAL IDEATION APPROACHES,10.35199/epde.2025.74,faeb113457948dcf2fc1b54c6d4837f4056b0f20ccf965dd4810478b2e8fcbb6,,,W0074
+reviewed-100,33,Decision making support for designers at the early design stage regarding narrowing down the range values of design variables,10.1017/pds.2024.79,acd7e606c5721083345c380e452f38544e4e2b95e54880824ac1115ad13ae060,,,W0075
+reviewed-100,34,LEARNING ACTIVITIES TO DESIGN A PARAMETRIC SOLUTIONS SPACE FOR PRODUCTS IN INDUSTRY 4.0,10.35199/epde.2024.82,e5a8e00feda37126362c6e8e970fc78f6c469845f9766279a96935296e23e1b1,,,W0007
+reviewed-100,35,Inspiration or indication? Evaluating the qualities of design inspiration boards created using text to image generative AI,10.1017/pds.2024.223,7916bec792ad659eda13a86b39bbda0ecf578beed00bf8eb1614c72b168fc8ba,,,W0076
+reviewed-100,36,A Study of Sustainable Product Design Evaluation Based on the Analytic Hierarchy Process and Deep Residual Networks,10.3390/su151914538,e7b636dc9ecbfe3c6f1650cf827ae299a212106fd9f83d61661284cb91333b22,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A026.pdf,,W0077
+reviewed-100,37,Generating vehicle designs using probabilistic programs and reinforcement learning,10.1017/pds.2026.10585,faf468418c6114fc79890be5fcb574abda3d4cadd2e7269a727b5fec4492d4f5,,,W0078
+reviewed-100,38,"Rethinking design methods in the age of AI – consequences for practice, education, and research",10.1017/pds.2026.10419,844029f2a57bbce58a3c10c98e88123d53156c6e90a6d389bea66703bcc190d3,,,W0079
+reviewed-100,39,TRANSLATING AUDITORY STIMULI INTO FORM: A METHODOLOGICAL APPROACH TO TEACHING FORM GENERATION,10.35199/epde.2025.81,91628f4b1cf7010738074dedfe8a2bec843a677521da20cb72c36336c07a9bb0,,,W0080
+reviewed-100,40,"Integrating Reliability, Uncertainty, and Subjectivity in Design Knowledge Flow: A CMZ-BENR Augmented Framework for Kansei Engineering",10.3390/sym17050758,d094892ad8bb73ba5922c53943181c3f665538d3bbaf4a392e9214621555c249,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B011.pdf,,W0081
+reviewed-100,41,HOW CAN AI SUPPORT THE CREATION OF NOVEL IDEAS IN PRODUCT DESIGN,10.35199/epde.2024.23,404bb5b95c3f7d9b280f8879150a97e9c9e95b16fd226e47c08b9f2cb8f81435,,,W0082
+reviewed-100,42,Kansei for the Digital Era,10.5057/ijae.ijae-d-23-00003,9ee8ce0bb3688ba6a8c2410ec0304bbc4a8b3758e0117c671c1d30361c63a835,,,W0083
+reviewed-100,43,INTEGRATING ECODESIGN AND AI IN YACHT DESIGN EDUCATION: A WORKSHOP CASE STUDY,10.35199/epde.2025.84,bff89391ee975c1dc3c563a003f6f77132936a2bf9a5c54750fc48c20ebf06e4,,,W0084
+reviewed-100,44,ACADEMICALLY INFORMED AI VS. HUMAN?DESIGNED MILK PACKAGING: A COMPARATIVE EVALUATION,10.35199/epde.2025.102,defdfa9ee619cde83f3855d2438d715cbeaebe5a62eb9459a314dd1bcab2c1be,,,W0085
+reviewed-100,45,MODELLING INTERIOR YACHT DESIGN CONCEPTS CROSSING MULTIPLE AI TOOLS: TEACHING IN AN UNCERTAIN AND FLEXIBLE FRAMEWORK,10.35199/epde.2024.31,0560354dba8a921536f58c4b7393faff222265b14d6e69988ea05d0afb4f2c67,,,W0086
+reviewed-100,46,Exploring metacognitive processes in design ideation with text-to-image AI tools,10.1017/pds.2024.94,76b4ebcb9c696d27a202dc09a3559b263a4bc9d67dce7c6dee2461993dd19aa1,,,W0087
+reviewed-100,47,"Human-AI co-creation: why, what, and how?",10.1017/pds.2026.10608,f7db64ced1201c49afe8a7541dd1eedd82ad83d3b7704314e5884706c7e24f25,,,W0088
+reviewed-100,48,A data-driven approach to studying dominant designs through patent images,,bedbb2fb3b008c8a9a270e60fa747e62adf67f445646244e4ab094dbf1729eed,,,W0089
+reviewed-100,49,"Emotional design through CMF: a comparative study across visceral, behavioural, and reflective levels",,b3276071cf30586df634454c23bc3512876c54c8743fcf804d40bec19fc90668,,,W0090
+reviewed-100,50,Understanding designers’ experiences with generative AI through user interaction pattern analysis,,d75d325ec67b7e8674588f3168cb3174ba31788733c035a7f25f90b3ebed1d18,,,W0091
+reviewed-100,51,INFLUENCE OF IMAGE STIMULI ON DESIGN CREATIVITY: EXPLORATION OF GENERATIVE AI IN GROUP IDEATION,10.35199/epde.2025.4,60cd6f3ae26f8de5e4cc98e0f3f4e1144c0b9f23ccfb9952800f78432a4055bf,,,W0092
+reviewed-100,52,Exploring dynamic movement representations in context using generative AI: effects of media types on the evaluation of service robot morphology,,e5af6eceadbd26f5f4d8984e4ee189c8d2a66f3b8f7c8f298b194603f3db8e0f,,,W0093
+reviewed-100,53,The aesthetics of robot design: towards a classification of morphologies,10.1017/pds.2024.244,c51d9eeda017f4bbae436ca36af097b4f1153c9f8c7d85ac92408d7ba9bd6a73,,,W0094
+reviewed-100,54,"The connection between impressions, user experience and design specifications in technology-driven products",,96bf7cccc95d0380fc03f8d85b2f570fa6313f773da2b0726cb5dbc51e8ab6e8,,,W0095
+reviewed-100,55,Attributes in context: a qualitative study of user understanding and misinterpretations in product design,,caab24f87b753d21e6a18192da301dab7c64e069b3b1805c72122c164f68fd2e,,,W0096
+reviewed-100,56,"Leveraging generative AI tools for design method support: insights, challenges, and best practices",10.1017/pds.2025.10237,e45f86e6d4e361d321dc76c0c317f9a09bfdd552859679532b1ed3c8dae5a12a,,,W0097
+reviewed-100,57,Analysing designer-GenAI interactions: characterizing designers’ behaviours during inspiration and ideation,,d7b63cd049123a6c384b4487117b7cccb8e10f42ea4c84df7ab25ec7953893bc,,,W0098
+reviewed-100,58,Unlocking the Potential of Artificial Intelligence in Fashion Design and E-Commerce Applications: The Case of Midjourney,10.3390/jtaer19010035,d8071eac29b355b11744f46708a0baa1c7dc43b25ef5938bdf6b302945f6d857,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B032.pdf,,W0099
+reviewed-100,59,AI as creative partner: exploring perceived roles in human-AI co-creation,10.1017/pds.2026.10459,0f6f0afebab6362f006fafdccc83bcc2651a0a2c8860355c2477599e3ac60e87,,,W0100
+reviewed-100,60,Structured prompting for design for multi-X: evaluating LLM support in early prosthetic device design,,fdf390136c91c862adf784e42ef088cadf6d2708994de02158d6a2be430569dc,,,W0101
+reviewed-100,61,"Multi-agent generative AI for concept evaluation: consistency, knowledge integration and human alignment",,b79231d129311637ca8f936c2dcfef3e219383cd8e2dee357db379d6a6d5ed7e,,,W0102
+reviewed-100,62,Scenario to specification: promises and pitfalls of AI in developing user-centered engineering specifications with interdisciplinary teams,10.1017/pds.2025.10298,75461f30b610d86ae3a023d48103017f905b1b35548bfec20174774220be1753,,,W0103
+reviewed-100,63,Evaluation of virtual prototypes: literature and empirical findings,,90ad1fc557f1719ae0883384a45e17d80520b2bc7975ba32ae6b508cc21eddfb,,,W0104
+reviewed-100,64,Bridging the gap in engineering creativity evaluations: exploring novice eye-gaze behavior across design modalities,,32000852bd4129b60c46f6f0c97d7f67e8b4bbd0cdc5786ff0fa5f569791b60c,,,W0105
+reviewed-100,65,Exploring the use of LLMs to evaluate design creativity,,8bb0352fa970094c323e2347be9ebd76a3711049d71264b019a8f7b351e64fa3,,,W0106
+reviewed-100,66,Measure it to manage it – quantitative review of product family complexity metrics,,4b29db0b0ce828f8bba3395419cc31947394636fae46a1ea098c5096fd873ca2,,,W0107
+reviewed-100,67,From minimum viable product via size levels to modular product family – case study on air filtration units,,70e10bb335ed5bda7a5bf41e875cfe8772a92d137f5e1a28dfc2279fa3549f1b,,,W0108
+reviewed-100,68,Assessing the effects of product family design strategies on resource consumption and costs: an extended axiomatic design approach,10.1017/pds.2026.10364,47c46d59d028a017cc67d42edb708c7a3c22ba9ec7c8adc3d8eaba2e369b181a,,,W0109
+reviewed-100,69,Systematic Review of Kansei Engineering Method Developments in the Design Field,10.25077/josi.v23.n1.p92-108.2024,5603a96fdbb086e4df6f118f6c07ab75c159e9fe3b90dc5972061257c8c94eb6,,,W0110
+reviewed-100,70,Insights from knowledge-based engineering in industrial practice – a Saab’s perspective,10.1017/pds.2026.10691,7e04228b538d690f297238c3365958922fecef90a896881f6f81017eb4a43701,,,W0019
+reviewed-100,71,AIdeation: Designing a Human-AI Collaborative Ideation System for Concept Designers,10.1145/3706598.3714148,22fad4c30465ce3577f6b1f9a41bf5c2eac23b2218b0e6bfd4513a347bfaa8ca,,,W0035
+reviewed-100,72,DesignWeaver: Dimensional Scaffolding for Text-to-Image Product Design,10.1145/3706598.3714211,b43dbdefb0740f0b367ca53444177c998c2d0ceed77f967a38b42c220fe121f6,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-C0026.pdf,weaver,W0111
+reviewed-100,73,Enhancing Generative AI Image Refinement with Scribbles and Annotations: A Comparative Study of Multimodal Prompts,10.1145/3742413.3789080,7d90926f2d42b6b58d340012e628b40e559e93ed1fcc7d1854f3a039bd266bbf,,,W0034
+reviewed-100,74,The effect of targeting both quantitative and qualitative objectives in generative design tools on the design outcomes,10.1007/s00163-024-00440-y,211842b255e602e8ed13fe1d00bfe6dc561061ed2804eee5047fceaac75844f4,,,W0112
+reviewed-100,75,DCG-GAN: design concept generation with generative adversarial networks,10.1017/dsj.2024.13,863e44c044e38c0f2f64ccf39280356bfb5902bbd8aa757c3afb3b915bc07920,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-C0543.pdf,,W0113
+reviewed-100,76,FlexGen: Flexible Multi-View Generation from Text and Image Inputs,10.1109/iccv51701.2025.01739,609759676a723ad8064f4f82327f4c86d0a5195fce36894eebf1474de311be59,,,W0114
+reviewed-100,77,WAVE: Warp-Based View Guidance for Consistent Novel View Synthesis Using a Single Image,10.1109/iccv51701.2025.01107,5760fa3592c406a6384798dfb056dc271f7ea36c56002248e1e89696760d9f61,,,W0115
+reviewed-100,78,JeDi: Joint-Image Diffusion Models for Finetuning-Free Personalized Text-to-Image Generation,10.1109/cvpr52733.2024.00648,99f28ae681a8beabea540a6b40e25f124ba7f3f51356302f278880e46c5f934b,,,W0116
+reviewed-100,79,Personalized Residuals for Concept-Driven Text-to-Image Generation,10.1109/cvpr52733.2024.00782,0cd2a1eeaced5a3e2337d2c6e6f90161733ccb975e1556b87fb52d6ac856775c,,,W0117
+reviewed-100,80,FusionProtor: A Mixed-Prototype Tool for Component-level Physical-to-Virtual 3D Transition and Simulation,10.1145/3706598.3713686,2737fb53f7e248f821229589a42ef2c6855721fdd62ce93f54cd7dce9fe1ba04,,,W0118
+reviewed-100,81,Controlling Text-to-Image Diffusion by Orthogonal Finetuning,10.52202/075280-3472,b1ee5f19a387e0216bfb030287c8c857bf57a9b6b3226c5f5a99f263d16c0910,,,W0119
+reviewed-100,82,DMV3D: Denoising Multi-view Diffusion Using 3D Large Reconstruction Model,10.48550/arxiv.2311.09217,721aafb54acbe7ad99549334d63644530677f7f07ce5d6173fb0d9d6b08ec05c,,,W0120
+reviewed-100,83,AI-Driven Multidisciplinary Conceptual Design of Unmanned Aerial Vehicles,10.2514/6.2024-1708,6982837907229504955f109d5b71834d663705df141e862d7509da253d227d67,,,W0121
+reviewed-100,84,ToMigo: Interpretable Design Concept Graphs for Aligning Generative AI with Creative Intent,10.1145/3800645.3813064,e7e274b2357af50ae77e8860317b922f6464f54bc7fe59cc97f484cf91d25d61,,,W0122
+reviewed-100,85,IdeaBlocks: Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI,10.1145/3800645.3813005,c5455508be91b4b6e3f9178afa45ca3efbd4aa7626039fc97b40e980c340ff6d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X0165.pdf,,W0123
+reviewed-100,86,UniversalBooth: Model-Agnostic Personalized Text-To-Image Generation,10.1109/iccv51701.2025.01702,0661142d62a8a9e1c2ad9211296453770439dc68fa70a942e93fbb9a264e4bc5,,,W0124
+reviewed-100,87,Training-Free Consistent Text-to-Image Generation,10.1145/3658157,190053ad2fc041f0464d22547a8904bbb6e6f7b87b7a141d923ec941809ab7b1,,,W0125
+reviewed-100,88,CreepyCoCreator? Investigating AI Representation Modes for 3D Object Co-Creation in Virtual Reality,10.1145/3706598.3713720,2859ba9d81adef79f57eced940cce1030776fb33dd8770dc416ea7aeea048e01,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X0504.pdf,,W0126
+reviewed-100,89,ShoeGenAI: A Creativity Support Tool Bridging Design Intention and Feasibility in Shoe Design,10.1145/3746059.3747691,83c013c5985c6245279199ced7226868979ea8890db6b27db6984b3a3be6d145,,,W0127
+reviewed-100,90,ViewDiff: 3D-Consistent Image Generation with Text-to-Image Models,10.1109/cvpr52733.2024.00482,5ccd5cb34deda66a2815fcd08e6a6cd20257363e013f7bed9a3d1d42ede682be,,,W0128
+reviewed-100,91,Dense Text-to-Image Generation with Attention Modulation,10.1109/iccv51070.2023.00708,a8da6cd208a51f0811a4bbe5537bd001b2084bceecee035e7ee34b509ff4ff39,,,W0129
+reviewed-100,92,Customizing Text-to-Image Models with a Single Image Pair,10.1145/3680528.3687642,c1adee12cbfb17c1728548e0f9f836d48f6fc56a8bb4644dd127474b51747c08,,,W0130
+reviewed-100,93,Criticmate: Stagewise Human–AI Co-Critique in Single-Screen UI Evaluation,10.1145/3772318.3790929,bed77a90a4cc84e532463318337685ff502f0821f99fd170d0b4c595da37a6b4,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X1459.pdf,,W0131
+reviewed-100,94,CoExploreDS: Framing and Advancing Collaborative Design Space Exploration Between Human and AI,10.1145/3706598.3713869,e7ace357766661d69695fe6f82cf321fdb391b6bf1d19f9ac9efcd97ac4d34af,,,W0132
+reviewed-100,95,Grounded Text-to-Image Synthesis with Attention Refocusing,10.1109/cvpr52733.2024.00758,2f6842193032bd96894a96c62860250f40a0919bede36d2c06b65f8e3a1a2540,,,W0133
+reviewed-100,96,Challenges hindering the application of GenAI methods in engineering design and the product development process,10.1017/pds.2026.10576,a094913b0bad5078ac6222133493a56cb06dc372d86d68334cb7e532ad0c0301,,,W0134
+reviewed-100,97,From geometry to function: towards context-aware generative AI for engineering design,10.1017/pds.2026.10577,e826b4a76b3ee4e8420a0fb3b70795616ba8c437b8f8b4624b7ffcf1f4fc7367,,,W0135
+reviewed-100,98,A Method for Product Form Design Based on User Perceptual Imagination and Product Modeling Constraints,10.54941/ahfe1002993,6394068238f79f1cb624981520910c3ee3e5d825a62d8bca8da3c4662d090fd6,,,W0136
+reviewed-100,99,Design of plant protection unmanned aerial vehicles: Quantitative research and virtual simulation,10.1016/j.ijadr.2024.03.001,34d16e2fb00bbf1e28bb231206b1a35877b8f64c85b157e149f75acce112c179,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/UAV-U001.pdf,,W0010
+reviewed-100,100,Using FCE and FAHP to Explore the Multirotor Drone Appearance Preference,10.21606/drs.2020.164,ccc769a6e1aa2a11ad868dae00a2c94325b2cf3bcedd66030ac3373574ebdd8c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/UAV-U002.pdf,hsiao,W0009
+reviewed-100,101,面向平飞姿态的四旋翼无人机机身造型设计,10.13841/j.cnki.jxsj.2025.02.023,8d5846c4bf0d20b7dc93ca6e701e334bc22cb2b33b6bd0c3d50033920dcaeb6d,,,W0137
+industrial-design-100,2,Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion,10.1299/jamdsm.2026jamdsm0008,31829e7f487afc757dc51f1352c83af16b9990c8db3f8f7767e1efaee3cc1e85,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A001.pdf,chen,W0001
+industrial-design-100,3,Exploring generative design in context of mass personalization,,6d22759ee9500b30a7105b6e9b0bd5bc7eead3e0d165245f1b76e32111dbcadc,,,W0048
+industrial-design-100,4,Generating preinventive structures: AI-driven creativity in product repurposing,,5412fb44292791affe7c848a2e3e6a3edbbaebdcb6774924ea2450e335db29d8,,,W0049
+industrial-design-100,5,EVOLVING A MODEL OF GEN-AI ENHANCED DESIGN VISUALISATION WORKFLOW,10.35199/epde.2025.112,3c5915c3900b43635c6c032af7595d6a441da974444689317b6bd4011358ebf9,,,W0050
+industrial-design-100,6,Embrace the Era of Drones: A New Practical Design Approach to Emergency Rescue Drones,10.3390/app15010135,e80e25ea0609e76bced310d34a93c831b1783da41138c3dd9ecb8ad7bcda7021,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A005.pdf,,W0011
+industrial-design-100,7,Research on innovative design of Nuo mask based on Memetics-AHP-Thematic analysis-shape grammar,10.1371/journal.pone.0326630,da9e0e9b4641312d30287ed43aae97d745b80c93501617c5382aa1cb7a3421c1,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A006.pdf,,W0051
+industrial-design-100,8,Multimodal generative AI for conceptual design: enabling text-based and sketch-based human-AI conversations,,55831f69ad499a1b895284d5a1dbdb4de15bc957324818c82a2d0f73560704ce,,,W0033
+industrial-design-100,9,USE OF ARTIFICIAL INTELLIGENCE IN THE PRODUCT DESIGN PROCESS. IMPACT ON THE DETAILS DESIGN STAGE,10.35199/epde.2024.20,ccde1939de863834fefba6a38266af71bce006eab25e5f0bbc1df5d26f65c188,,,W0052
+industrial-design-100,10,"USE AND APPLICATION OF GENERATIVE AI IN MULTIDISCIPLINARY PROJECTS: LUNAR HABITACLES, AUTOMOTIVE CONCEPTS AND FUTURE SOUVENIRS",10.35199/epde.2024.104,74f736e30b558b9403d5220b103d2471168d6b4724240e5d15260cc1688681f5,,,W0053
+industrial-design-100,11,A Product’s Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation,10.3390/su16208837,e1a3990487326088a061a1f9499125b36034959ab06b819bd4f0d4958acf3e57,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A008.pdf,du,W0024
+industrial-design-100,12,Research on Evaluation Methods of Complex Product Design Based on Hybrid Kansei Engineering Modeling,10.3390/sym17020306,a08d7184d9fc34a3be8aa5a903e5aa75bed895744ae14fb54c8318db241c7000,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A009.pdf,,W0054
+industrial-design-100,13,Grasshopper Algorithmic Modelling: Parametric Design for Product Platform Customisation,10.3390/app15116243,3d7a42b66621d1937374a90d49032328e7c11079a8ab63b96356330083976fbb,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A010.pdf,,W0055
+industrial-design-100,14,IS HIGH SKETCHING PROFICIENCY STILL AN ADVANTAGE? EXPLORING THE ROLE OF FREEHAND DRAWING IN VEHICLE DESIGN WITHIN THE 2D GENERATIVE AI LANDSCAPE,10.35199/epde.2025.124,d20e8baf66eabe33bffaba99c7a77dae4e6d11d3001f57b8723d05c663ec625c,,,W0056
+industrial-design-100,15,COMPARING UNDERSTANDABILITY OF HAND SKETCHES VERSUS AI-GENERATED RENDERS FOR PRODUCT DESIGN,10.35199/epde.2024.34,b7179bc6fccdb5bef121d195b4d8f23c43dc81f8dc8acdfa59be077c2a53b2b1,,,W0057
+industrial-design-100,16,A COMPARISON OF ARTIFICIAL INTELLIGENCE IMAGE GENERATION TOOLS IN PRODUCT DESIGN,10.35199/epde.2024.3,b270b186a36691e22a634b4528b7f28a0c250f4a14e7633b7c6d4dee8fe3dafb,,,W0058
+industrial-design-100,17,The Design of Automotive Interior for Chinese Young Consumers Based on Kansei Engineering and Eye-Tracking Technology,10.3390/app131910674,80d793118bfba4a22fa07d9daadb117df8dfa70e9dcad61ad4413e976ce787b9,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A012.pdf,,W0059
+industrial-design-100,18,Study on Imagery Modeling of Electric Recliner Chair: Based on Combined GRA and Kansei Engineering,10.3390/app132413345,e02c495bcbd1631664f5006a1327dd04731d8671a426b2ca4d17ffb851da4b9c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A013.pdf,,W0060
+industrial-design-100,19,Affective response difference to the viewing of different styles of solid wood furniture based on Kansei engineering,10.15376/biores.19.1.805-822,d7dce5eb93dff77dfe9566adc7e11e4c6e6a6dd965256bd3db8f5ebd01b262f8,,,W0061
+industrial-design-100,20,Augmented design automation: leveraging parametric designs using large language models,,a650ba19fb61a3c17519a6e1faeab56ff858f2c326e6a679455fe3f564091e7a,,,W0062
+industrial-design-100,21,"Can AI estimate product impressions? Comparison of consumers’, designers’, and AI model’s ratings of car wheels",,1bf7cfb57f5a9c97c5f5e90b38965544399437427595d42b93739ca3db226b41,,,W0063
+industrial-design-100,22,Sketch2Prototype: rapid conceptual design exploration and prototyping with generative AI,,d8ab3c700a0bdf04d049cf57db09d5f6ad33a163b2b6177cdf572e2e3a75367b,,,W0064
+industrial-design-100,23,ShipGen: A Diffusion Model for Parametric Ship Hull Generation with Multiple Objectives and Constraints,10.3390/jmse11122215,0d9787c23c03a5ba0feea20a319a8402b833c78361ae702088f8982a34d9bb6d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A018.pdf,,W0065
+industrial-design-100,24,The Exploration of Integrating the Midjourney Artificial Intelligence Generated Content Tool into Design Systems to Direct Designers towards Future-Oriented Innovation,10.3390/systems11120566,80e29e66b2141cb7320cfe38a88cc014b5f526e3f4d405f27baaa9d045881f66,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A019.pdf,,W0066
+industrial-design-100,25,Discover the use of multimodal language models for idea detailing in human-AI collaborative design,,6799b8170969c1d31b022f917e0e49ef51606dab1887a86f37444c5fcef5b942,,,W0067
+industrial-design-100,26,A BIOMIMETIC GENERATIVE DESIGN FRAMEWORK: SIMULATING SILKWORM SILK TAPESTRY IN HOUDINI FOR PRODUCT AND EDUCATIONAL APPLICATIONS,10.35199/epde.2025.98,6fa26dee372573fb022c6dca927b2076ed21fb2e5ae0be36f5c45ed69c5cd98d,,,W0068
+industrial-design-100,27,VISUALISING SPECULATIVE MATERIALS: USING TEXT-TO-IMAGE PROMPTING TO ELABORATE LIVINGNESS AS A DESIGNED MATERIAL QUALITY,10.35199/epde.2024.52,d3e0eb34f2cba5f7e6a8ce5b1222b2d33e187d6e50f9f35e7a487be089e58a39,,,W0069
+industrial-design-100,28,From text to design: a framework to leverage LLM agents for automated CAD generation,,d522e3b1efdba75cfd8739198c2e9f18cc945cf73e41d9b1a9c689c6b559b2f4,,,W0070
+industrial-design-100,29,Research on the Innovative Design of Traditional Motifs of Twisted Porcelain Based on Shape Grammar,10.2991/978-94-6463-815-8_2,fbc327f7b5d650409f0ff93821ca347857951886b27e94f3987380eee71d1f20,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B006.pdf,,W0071
+industrial-design-100,30,An Elderly-Oriented Form Design of Low-Speed New Energy Vehicles Based on Rough Set Theory and Support Vector Regression,10.3390/wevj15090389,fd044bfb9bbe121bd40be2eff67f4935f2eb6c8207c2ec80c69c311751915bde,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B007.pdf,,W0072
+industrial-design-100,31,AI at the Fuzzy Front End - creative iteration in design,,25710e07a9e94b9827b290ed81087cd4650c323adce950bd504a36c616e80e05,,,W0073
+industrial-design-100,32,SYNERGISTIC DESIGN: THE FUSION OF GENERATIVE AI AND CONVENTIONAL IDEATION APPROACHES,10.35199/epde.2025.74,faeb113457948dcf2fc1b54c6d4837f4056b0f20ccf965dd4810478b2e8fcbb6,,,W0074
+industrial-design-100,33,Decision making support for designers at the early design stage regarding narrowing down the range values of design variables,,acd7e606c5721083345c380e452f38544e4e2b95e54880824ac1115ad13ae060,,,W0075
+industrial-design-100,34,LEARNING ACTIVITIES TO DESIGN A PARAMETRIC SOLUTIONS SPACE FOR PRODUCTS IN INDUSTRY 4.0,10.35199/epde.2024.82,e5a8e00feda37126362c6e8e970fc78f6c469845f9766279a96935296e23e1b1,,,W0007
+industrial-design-100,35,Inspiration or indication? Evaluating the qualities of design inspiration boards created using text to image generative AI,,7916bec792ad659eda13a86b39bbda0ecf578beed00bf8eb1614c72b168fc8ba,,,W0076
+industrial-design-100,36,A Study of Sustainable Product Design Evaluation Based on the Analytic Hierarchy Process and Deep Residual Networks,10.3390/su151914538,e7b636dc9ecbfe3c6f1650cf827ae299a212106fd9f83d61661284cb91333b22,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A026.pdf,,W0077
+industrial-design-100,37,Generating vehicle designs using probabilistic programs and reinforcement learning,,faf468418c6114fc79890be5fcb574abda3d4cadd2e7269a727b5fec4492d4f5,,,W0078
+industrial-design-100,38,"Rethinking design methods in the age of AI – consequences for practice, education, and research",,844029f2a57bbce58a3c10c98e88123d53156c6e90a6d389bea66703bcc190d3,,,W0079
+industrial-design-100,39,TRANSLATING AUDITORY STIMULI INTO FORM: A METHODOLOGICAL APPROACH TO TEACHING FORM GENERATION,10.35199/epde.2025.81,91628f4b1cf7010738074dedfe8a2bec843a677521da20cb72c36336c07a9bb0,,,W0080
+industrial-design-100,40,"Integrating Reliability, Uncertainty, and Subjectivity in Design Knowledge Flow: A CMZ-BENR Augmented Framework for Kansei Engineering",10.3390/sym17050758,d094892ad8bb73ba5922c53943181c3f665538d3bbaf4a392e9214621555c249,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B011.pdf,,W0081
+industrial-design-100,41,HOW CAN AI SUPPORT THE CREATION OF NOVEL IDEAS IN PRODUCT DESIGN,10.35199/epde.2024.23,404bb5b95c3f7d9b280f8879150a97e9c9e95b16fd226e47c08b9f2cb8f81435,,,W0082
+industrial-design-100,42,Kansei for the Digital Era,10.5057/ijae.ijae-d-23-00003,9ee8ce0bb3688ba6a8c2410ec0304bbc4a8b3758e0117c671c1d30361c63a835,,,W0083
+industrial-design-100,43,"EXPLORING THE IMPACT OF GENERATIVE AI ON CONCEPT GENERATION, IDEATION, AND DESIGN METHODOLOGY: IN PRODUCT DESIGN EDUCATION",10.35199/epde.2024.7,dbd35405d39a1bb71faf4611b7baf3efb863bca4258137efe29ee38d7956378c,,,W0138
+industrial-design-100,44,INTEGRATING ECODESIGN AND AI IN YACHT DESIGN EDUCATION: A WORKSHOP CASE STUDY,10.35199/epde.2025.84,bff89391ee975c1dc3c563a003f6f77132936a2bf9a5c54750fc48c20ebf06e4,,,W0084
+industrial-design-100,45,ACADEMICALLY INFORMED AI VS. HUMAN?DESIGNED MILK PACKAGING: A COMPARATIVE EVALUATION,10.35199/epde.2025.102,defdfa9ee619cde83f3855d2438d715cbeaebe5a62eb9459a314dd1bcab2c1be,,,W0085
+industrial-design-100,46,MODELLING INTERIOR YACHT DESIGN CONCEPTS CROSSING MULTIPLE AI TOOLS: TEACHING IN AN UNCERTAIN AND FLEXIBLE FRAMEWORK,10.35199/epde.2024.31,0560354dba8a921536f58c4b7393faff222265b14d6e69988ea05d0afb4f2c67,,,W0086
+industrial-design-100,47,Exploring metacognitive processes in design ideation with text-to-image AI tools,,76b4ebcb9c696d27a202dc09a3559b263a4bc9d67dce7c6dee2461993dd19aa1,,,W0087
+industrial-design-100,48,"Human-AI co-creation: why, what, and how?",,f7db64ced1201c49afe8a7541dd1eedd82ad83d3b7704314e5884706c7e24f25,,,W0088
+industrial-design-100,49,A data-driven approach to studying dominant designs through patent images,,bedbb2fb3b008c8a9a270e60fa747e62adf67f445646244e4ab094dbf1729eed,,,W0089
+industrial-design-100,50,Research on the Sanxingdui cultural and creative product design based on an AIGC design framework,,d2623f943ed7bdd5b251b8364f5320e62aba13af7f188b139f4ac6ae36dec960,,,W0139
+industrial-design-100,51,"Emotional design through CMF: a comparative study across visceral, behavioural, and reflective levels",,b3276071cf30586df634454c23bc3512876c54c8743fcf804d40bec19fc90668,,,W0090
+industrial-design-100,52,Understanding designers’ experiences with generative AI through user interaction pattern analysis,,d75d325ec67b7e8674588f3168cb3174ba31788733c035a7f25f90b3ebed1d18,,,W0091
+industrial-design-100,53,THE ROLE OF “GOOD” BEHAVIOURS IN BEHAVIOURAL DESIGN,10.35199/epde.2025.35,d4226a47f6fdb40316f761dfce13709bd76a94805595fbe5d3be26fc11a4d329,,,W0140
+industrial-design-100,54,INFLUENCE OF IMAGE STIMULI ON DESIGN CREATIVITY: EXPLORATION OF GENERATIVE AI IN GROUP IDEATION,10.35199/epde.2025.4,60cd6f3ae26f8de5e4cc98e0f3f4e1144c0b9f23ccfb9952800f78432a4055bf,,,W0092
+industrial-design-100,55,Exploring dynamic movement representations in context using generative AI: effects of media types on the evaluation of service robot morphology,,e5af6eceadbd26f5f4d8984e4ee189c8d2a66f3b8f7c8f298b194603f3db8e0f,,,W0093
+industrial-design-100,56,Sustainability through Biomimicry: A Comprehensive Review of Bionic Design Applications,10.3390/biomimetics9090507,45fb470e0c299a54fb4c4b86eaae091cbff0d5c050f102d46bb24deaf7c18184,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/CORE-B025.pdf,,W0141
+industrial-design-100,57,The aesthetics of robot design: towards a classification of morphologies,,c51d9eeda017f4bbae436ca36af097b4f1153c9f8c7d85ac92408d7ba9bd6a73,,,W0094
+industrial-design-100,58,Strategies for applying shape grammar to wooden furniture design: Taking traditional Chinese Ming-style recessed-leg table as an example,10.15376/biores.19.1.1707-1727,813fb84aea2ada9fb1f6be99f30a9271db64df31b3d2f09fa59be1bc0f0a3eae,,,W0142
+industrial-design-100,59,Application of symbolic language and pattern innovation of Chaoshan peach cake mold in paper packaging design,10.15376/biores.20.1.482-499,1f6eb704e6b5a5e05e1d0268dc8f1c32e590ff44d0c0a446f7dc7e6fd4407477,,,W0143
+industrial-design-100,60,"The connection between impressions, user experience and design specifications in technology-driven products",,96bf7cccc95d0380fc03f8d85b2f570fa6313f773da2b0726cb5dbc51e8ab6e8,,,W0095
+industrial-design-100,61,Attributes in context: a qualitative study of user understanding and misinterpretations in product design,,caab24f87b753d21e6a18192da301dab7c64e069b3b1805c72122c164f68fd2e,,,W0096
+industrial-design-100,62,"Leveraging generative AI tools for design method support: insights, challenges, and best practices",,e45f86e6d4e361d321dc76c0c317f9a09bfdd552859679532b1ed3c8dae5a12a,,,W0097
+industrial-design-100,63,Analysing designer-GenAI interactions: characterizing designers’ behaviours during inspiration and ideation,,d7b63cd049123a6c384b4487117b7cccb8e10f42ea4c84df7ab25ec7953893bc,,,W0098
+industrial-design-100,64,Unlocking the Potential of Artificial Intelligence in Fashion Design and E-Commerce Applications: The Case of Midjourney,10.3390/jtaer19010035,d8071eac29b355b11744f46708a0baa1c7dc43b25ef5938bdf6b302945f6d857,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B032.pdf,,W0099
+industrial-design-100,65,DREAMWORLDS: A CASE STUDY PRESENTING THE POTENTIAL OF TEXT-TO-IMAGE AI IN PRODUCT DESIGN EDUCATION,10.35199/epde.2024.30,867b11354b5631b639d72e3f6840d316ec4eea91c4ef18e06a57062a81cb726b,,,W0144
+industrial-design-100,66,Product Styling Cognition Based on Kansei Engineering Theory and Implicit Measurement,10.3390/app13179577,99f740bd8b893762db726b60f5a3410637b4ab8b71c0ae7f3a3719703b838ed8,https://github.com/Freeloop993/paper/tree/reference-fulltexts-20261109/fulltexts/CORE-B034.pdf.parts,,W0145
+industrial-design-100,67,CONCEPT TO PRODUCTION WITH A GEN AI DESIGN ASSISTANT: AIDA,10.35199/epde.2024.40,db1d6e8841f0b78ebeb64f8c98399fb714d1282a87b912f26a34059436658f99,,,W0146
+industrial-design-100,68,Study on Function and Appearance Design of Smart Street Lamps Based on Kansei Engineering: A Literature Review,10.17576/jkukm-2023-35(5)-22,a457d45613ad9693887031e7d89b35e1e1897597d0b88db226c9567da50039a4,,,W0147
+industrial-design-100,69,Bridging LCA and design: an LLM-driven pipeline for generating sustainable design alternatives from LCA hotspot analysis,,d85ceb1bb2faf21e7912f8dd1ea976e642587852f3796ba8958fd8c8cb023f6d,,,W0148
+industrial-design-100,70,AI as creative partner: exploring perceived roles in human-AI co-creation,,0f6f0afebab6362f006fafdccc83bcc2651a0a2c8860355c2477599e3ac60e87,,,W0100
+industrial-design-100,71,Structured prompting for design for multi-X: evaluating LLM support in early prosthetic device design,,fdf390136c91c862adf784e42ef088cadf6d2708994de02158d6a2be430569dc,,,W0101
+industrial-design-100,72,"Multi-agent generative AI for concept evaluation: consistency, knowledge integration and human alignment",,b79231d129311637ca8f936c2dcfef3e219383cd8e2dee357db379d6a6d5ed7e,,,W0102
+industrial-design-100,73,Scenario to specification: promises and pitfalls of AI in developing user-centered engineering specifications with interdisciplinary teams,,75461f30b610d86ae3a023d48103017f905b1b35548bfec20174774220be1753,,,W0103
+industrial-design-100,74,The influence of aesthetic taste on product choice: does mode of evaluation impact decision making?,,957b70ab1da097045ce06a882a393a964941573772183e37937728697ba7e3ff,,,W0149
+industrial-design-100,75,Evaluation of virtual prototypes: literature and empirical findings,,90ad1fc557f1719ae0883384a45e17d80520b2bc7975ba32ae6b508cc21eddfb,,,W0104
+industrial-design-100,76,Bridging the gap in engineering creativity evaluations: exploring novice eye-gaze behavior across design modalities,,32000852bd4129b60c46f6f0c97d7f67e8b4bbd0cdc5786ff0fa5f569791b60c,,,W0105
+industrial-design-100,77,Exploring the use of LLMs to evaluate design creativity,,8bb0352fa970094c323e2347be9ebd76a3711049d71264b019a8f7b351e64fa3,,,W0106
+industrial-design-100,78,Creating design catalog from patent documents with large language model for design concept generation,,900662a9df5804debdb641cf1402704c8daf948b3fd8e9e24e34cd88b0a73a6a,,,W0150
+industrial-design-100,79,Measure it to manage it – quantitative review of product family complexity metrics,,4b29db0b0ce828f8bba3395419cc31947394636fae46a1ea098c5096fd873ca2,,,W0107
+industrial-design-100,80,How are professional practices adopting generative AI? The case of an engineering design and product development team,,d181720184e694a0db7a73b34ae24c045f616b081df441bda4b0b08c23defeeb,,,W0151
+industrial-design-100,81,From minimum viable product via size levels to modular product family – case study on air filtration units,,70e10bb335ed5bda7a5bf41e875cfe8772a92d137f5e1a28dfc2279fa3549f1b,,,W0108
+industrial-design-100,82,Engineering design through dialogue: a method for analysing speech-based human-AI conversation,,08dc151333ac9b8071396f5f304c270db042359a9c3a884b54397fc36f5cf3b9,,,W0152
+industrial-design-100,83,Assessing the effects of product family design strategies on resource consumption and costs: an extended axiomatic design approach,,47c46d59d028a017cc67d42edb708c7a3c22ba9ec7c8adc3d8eaba2e369b181a,,,W0109
+industrial-design-100,84,Towards Fostering Human Ownership in GenAI-Assisted Design,,5f4e72b0a88a91c27433f0b42d9f9389593f022b12a8ef45084738618222ee07,,,W0153
+industrial-design-100,85,Innovation of meaning: design-driven study based on the interpretive theory of new meaning,,eb27b28a09dab7c3b3a9053d2768d8d91da02168a6a8ae839182b363c3d81a9b,,,W0154
+industrial-design-100,86,D³IKIT: data-driven design innovation kit,,164e8b2f4ae6d37f6d3daf9abea929b890b93c45498f5ca56bfe051940dc44ce,,,W0155
+industrial-design-100,87,Design Knowledge Interaction Model: A Proposal from a Cognitive Perspective,10.35199/norddesign2024.64,338372cfd36e402603237c636666ccd2887c38dd09941db01a58af1a4d57f4db,,,W0156
+industrial-design-100,88,Explaining a Jewelry Design Process: Using a generative Design Method Called Shape Grammars and Producing the Product with 3D Printing,10.4236/adr.2024.121001,7c95c4a1fa89e291088f2503094946a89713dd6daef6824fa607935e2847d95e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/CORE-B056.pdf,,W0157
+industrial-design-100,89,How would engineers use LLMs for assembly search if they could? – An empirical study for fostering generative AI-driven design reuse in the future,,aae855153c5ea69f394bb969d9e151c061221c01169dd4b19ddd6f698ee013ef,,,W0158
+industrial-design-100,90,More AI means less design? Empirical insights from design education,,330b0ba317cc3375d4ed13826bbe414978337bd37b7cb9fd2addf7b8962207ec,,,W0159
+industrial-design-100,91,Design and evaluation of an AI-based application to enhance creativity in design thinking workshops,,add266dafb3ce53be4f70b350a6606c464a04dbfc95ebdcc39c2037df116b560,,,W0160
+industrial-design-100,92,Paradigmatic design thinking: how generative AI changes the role of human designers,,3b255b57eed9c6811d1e1a7263ce7f020e1bd1fe83c6d0d790a39e5d602d3a43,,,W0161
+industrial-design-100,93,The balance between a usable and emotional product design – a comparison of different methods for prioritising relevant influencing factors,,024371c1748491adbf7f641df15715e24bae3a162a12155992fdf7fa6a8fb02a,,,W0162
+industrial-design-100,94,Systematic Review of Kansei Engineering Method Developments in the Design Field,10.25077/josi.v23.n1.p92-108.2024,5603a96fdbb086e4df6f118f6c07ab75c159e9fe3b90dc5972061257c8c94eb6,,,W0110
+industrial-design-100,95,A Framework for Defining Innovation in the New Development of Modular Product Families,10.35199/norddesign2024.27,0facac8953e768f54bd1b3f835f22ff3b4954aa50f2a98c688ce3047659bcb97,,,W0163
+industrial-design-100,96,Structuring the design space while exploring it: a cognitive perspective on design space exploration,,f5ec38ae1ae66ad3b9e388887ff48adae83eb5612cf702ef5f0115d4b617ab4c,,,W0164
+industrial-design-100,97,Insights from knowledge-based engineering in industrial practice – a Saab’s perspective,,7e04228b538d690f297238c3365958922fecef90a896881f6f81017eb4a43701,,,W0019
+industrial-design-100,98,Developing a Process Model for Future-Robust Advancement of Product Portfolios,10.35199/norddesign2024.49,bb9039e15a79524075d7188b60cdf1adfa2082eb193342e49d28a0ec53669d28,,,W0165
+industrial-design-100,99,"AI-powered inventive design: idea funnelling, concept creation, and hybrid problem-solving teams",,5773bbc97542a468565556285fb3b2c5c7382265651a5a0f89e542a8c208c2a5,,,W0166
+industrial-design-100,100,DS-Viz: a method for visualising design spaces,,c5cd3086b6b2dcfc41eadc2aa72cabd2b2d43ed6244553d143d752cda6adf956,,,W0167
+industrial-design-100,101,"Human-AI Co-Design and Co-Creation: A Review of Emerging Approaches, Challenges, and Future Directions",10.1609/aaaiss.v6i1.36061,2cc88e06b31816c35c49168c9379475b6c5a7e8b07a033c2dbb7f35401410cb9,,,W0168
+archive-references,2,A BIOMIMETIC GENERATIVE DESIGN FRAMEWORK SIMULATING SILKWORM SILK TAPESTRY IN HOUDINI FOR PRODUCT AND EDU,10.35199/epde.2025.98,6fa26dee372573fb022c6dca927b2076ed21fb2e5ae0be36f5c45ed69c5cd98d,,,W0068
+archive-references,3,A COMPARISON OF ARTIFICIAL INTELLIGENCE IMAGE GENERATION TOOLS IN PRODUCT DESIGN,10.35199/epde.2024.3,b270b186a36691e22a634b4528b7f28a0c250f4a14e7633b7c6d4dee8fe3dafb,,,W0058
+archive-references,4,A data-driven approach to studying dominant designs through patent images,,bedbb2fb3b008c8a9a270e60fa747e62adf67f445646244e4ab094dbf1729eed,,,W0089
+archive-references,5,A Framework for Defining Innovation in the New Development of Modular Product Families,10.35199/norddesign2024.27,0facac8953e768f54bd1b3f835f22ff3b4954aa50f2a98c688ce3047659bcb97,,,W0163
+archive-references,6,A Product’s Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation,10.3390/su16208837,e1a3990487326088a061a1f9499125b36034959ab06b819bd4f0d4958acf3e57,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A008.pdf,du,W0024
+archive-references,7,A Study of Sustainable Product Design Evaluation Based on the Analytic Hierarchy Process and Deep Residua,10.3390/su151914538,e7b636dc9ecbfe3c6f1650cf827ae299a212106fd9f83d61661284cb91333b22,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A026.pdf,,W0077
+archive-references,8,ACADEMICALLY INFORMED AI VS. HUMAN DESIGNED MILK PACKAGING A COMPARATIVE EVALUATION,10.35199/epde.2025.102,defdfa9ee619cde83f3855d2438d715cbeaebe5a62eb9459a314dd1bcab2c1be,,,W0085
+archive-references,9,Affective response difference to the viewing of different styles of solid wood furniture based on Kansei,10.15376/biores.19.1.805-822,d7dce5eb93dff77dfe9566adc7e11e4c6e6a6dd965256bd3db8f5ebd01b262f8,,,W0061
+archive-references,10,AI as creative partner exploring perceived roles in human-AI co-creation,10.1017/pds.2026.10459,0f6f0afebab6362f006fafdccc83bcc2651a0a2c8860355c2477599e3ac60e87,,,W0100
+archive-references,11,AI at the Fuzzy Front End - creative iteration in design,10.1017/pds.2025.10056,25710e07a9e94b9827b290ed81087cd4650c323adce950bd504a36c616e80e05,,,W0073
+archive-references,12,"AI-powered inventive design idea funnelling, concept creation, and hybrid problem-solving teams",,5773bbc97542a468565556285fb3b2c5c7382265651a5a0f89e542a8c208c2a5,,,W0166
+archive-references,13,An Elderly-Oriented Form Design of Low-Speed New Energy Vehicles Based on Rough Set Theory and Support Ve,10.3390/wevj15090389,fd044bfb9bbe121bd40be2eff67f4935f2eb6c8207c2ec80c69c311751915bde,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B007.pdf,,W0072
+archive-references,14,Analysing designer-GenAI interactions characterizing designers’ behaviours during inspiration and ideatio,,d7b63cd049123a6c384b4487117b7cccb8e10f42ea4c84df7ab25ec7953893bc,,,W0098
+archive-references,15,Application of symbolic language and pattern innovation of Chaoshan peach cake mold in paper packaging de,10.15376/biores.20.1.482-499,1f6eb704e6b5a5e05e1d0268dc8f1c32e590ff44d0c0a446f7dc7e6fd4407477,,,W0143
+archive-references,16,Assessing the effects of product family design strategies on resource consumption and costs an extended a,10.1017/pds.2026.10364,47c46d59d028a017cc67d42edb708c7a3c22ba9ec7c8adc3d8eaba2e369b181a,,,W0109
+archive-references,17,Attributes in context a qualitative study of user understanding and misinterpretations in product design,,caab24f87b753d21e6a18192da301dab7c64e069b3b1805c72122c164f68fd2e,,,W0096
+archive-references,18,Augmented design automation leveraging parametric designs using large language models,10.1017/pds.2025.10081,a650ba19fb61a3c17519a6e1faeab56ff858f2c326e6a679455fe3f564091e7a,,,W0062
+archive-references,19,Bridging LCA and design an LLM-driven pipeline for generating sustainable design alternatives from LCA ho,,d85ceb1bb2faf21e7912f8dd1ea976e642587852f3796ba8958fd8c8cb023f6d,,,W0148
+archive-references,20,Bridging the gap in engineering creativity evaluations exploring novice eye-gaze behavior across design m,,32000852bd4129b60c46f6f0c97d7f67e8b4bbd0cdc5786ff0fa5f569791b60c,,,W0105
+archive-references,21,"Can AI estimate product impressions Comparison of consumers’, designers’, and AI model’s ratings of car w",10.1017/pds.2025.10098,1bf7cfb57f5a9c97c5f5e90b38965544399437427595d42b93739ca3db226b41,,,W0063
+archive-references,22,COMPARING UNDERSTANDABILITY OF HAND SKETCHES VERSUS AI-GENERATED RENDERS FOR PRODUCT DESIGN,10.35199/epde.2024.34,b7179bc6fccdb5bef121d195b4d8f23c43dc81f8dc8acdfa59be077c2a53b2b1,,,W0057
+archive-references,23,CONCEPT TO PRODUCTION WITH A GEN AI DESIGN ASSISTANT AIDA,10.35199/epde.2024.40,db1d6e8841f0b78ebeb64f8c98399fb714d1282a87b912f26a34059436658f99,,,W0146
+archive-references,24,Creating design catalog from patent documents with large language model for design concept generation,,900662a9df5804debdb641cf1402704c8daf948b3fd8e9e24e34cd88b0a73a6a,,,W0150
+archive-references,25,D3IKIT data-driven design innovation kit,,164e8b2f4ae6d37f6d3daf9abea929b890b93c45498f5ca56bfe051940dc44ce,,,W0155
+archive-references,26,Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable,10.1299/jamdsm.2026jamdsm0008,31829e7f487afc757dc51f1352c83af16b9990c8db3f8f7767e1efaee3cc1e85,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A001.pdf,chen,W0001
+archive-references,27,Decision making support for designers at the early design stage regarding narrowing down the range values,10.1017/pds.2024.79,acd7e606c5721083345c380e452f38544e4e2b95e54880824ac1115ad13ae060,,,W0075
+archive-references,28,Design and evaluation of an AI-based application to enhance creativity in design thinking workshops,,add266dafb3ce53be4f70b350a6606c464a04dbfc95ebdcc39c2037df116b560,,,W0160
+archive-references,29,Design Knowledge Interaction Model A Proposal from a Cognitive Perspective,10.35199/norddesign2024.64,338372cfd36e402603237c636666ccd2887c38dd09941db01a58af1a4d57f4db,,,W0156
+archive-references,30,Developing a Process Model for Future-Robust Advancement of Product Portfolios,10.35199/norddesign2024.49,bb9039e15a79524075d7188b60cdf1adfa2082eb193342e49d28a0ec53669d28,,,W0165
+archive-references,31,Discover the use of multimodal language models for idea detailing in human-AI collaborative design,10.1017/pds.2026.10619,6799b8170969c1d31b022f917e0e49ef51606dab1887a86f37444c5fcef5b942,,,W0067
+archive-references,32,DREAMWORLDS A CASE STUDY PRESENTING THE POTENTIAL OF TEXT-TO-IMAGE AI IN PRODUCT DESIGN EDUCATION,10.35199/epde.2024.30,867b11354b5631b639d72e3f6840d316ec4eea91c4ef18e06a57062a81cb726b,,,W0144
+archive-references,33,DS-Viz a method for visualising design spaces,,c5cd3086b6b2dcfc41eadc2aa72cabd2b2d43ed6244553d143d752cda6adf956,,,W0167
+archive-references,34,Embrace the Era of Drones A New Practical Design Approach to Emergency Rescue Drones,10.3390/app15010135,e80e25ea0609e76bced310d34a93c831b1783da41138c3dd9ecb8ad7bcda7021,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A005.pdf,,W0011
+archive-references,35,"Emotional design through CMF a comparative study across visceral, behavioural, and reflective levels",,b3276071cf30586df634454c23bc3512876c54c8743fcf804d40bec19fc90668,,,W0090
+archive-references,36,Engineering design through dialogue a method for analysing speech-based human-AI conversation,,08dc151333ac9b8071396f5f304c270db042359a9c3a884b54397fc36f5cf3b9,,,W0152
+archive-references,37,Evaluation of virtual prototypes literature and empirical findings,,90ad1fc557f1719ae0883384a45e17d80520b2bc7975ba32ae6b508cc21eddfb,,,W0104
+archive-references,38,EVOLVING A MODEL OF GEN-AI ENHANCED DESIGN VISUALISATION WORKFLOW,10.35199/epde.2025.112,3c5915c3900b43635c6c032af7595d6a441da974444689317b6bd4011358ebf9,,,W0050
+archive-references,39,Explaining a Jewelry Design Process Using a generative Design Method Called Shape Grammars and Producing,10.4236/adr.2024.121001,7c95c4a1fa89e291088f2503094946a89713dd6daef6824fa607935e2847d95e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/CORE-B056.pdf,,W0157
+archive-references,40,Exploring dynamic movement representations in context using generative AI effects of media types on the e,,e5af6eceadbd26f5f4d8984e4ee189c8d2a66f3b8f7c8f298b194603f3db8e0f,,,W0093
+archive-references,41,Exploring generative design in context of mass personalization,10.1017/pds.2025.10180,6d22759ee9500b30a7105b6e9b0bd5bc7eead3e0d165245f1b76e32111dbcadc,,,W0048
+archive-references,42,Exploring metacognitive processes in design ideation with text-to-image AI tools,10.1017/pds.2024.94,76b4ebcb9c696d27a202dc09a3559b263a4bc9d67dce7c6dee2461993dd19aa1,,,W0087
+archive-references,43,"EXPLORING THE IMPACT OF GENERATIVE AI ON CONCEPT GENERATION, IDEATION, AND DESIGN METHODOLOGY IN PRODUCT",10.35199/epde.2024.7,dbd35405d39a1bb71faf4611b7baf3efb863bca4258137efe29ee38d7956378c,,,W0138
+archive-references,44,Exploring the use of LLMs to evaluate design creativity,,8bb0352fa970094c323e2347be9ebd76a3711049d71264b019a8f7b351e64fa3,,,W0106
+archive-references,45,From minimum viable product via size levels to modular product family – case study on air filtration unit,,70e10bb335ed5bda7a5bf41e875cfe8772a92d137f5e1a28dfc2279fa3549f1b,,,W0108
+archive-references,46,From text to design a framework to leverage LLM agents for automated CAD generation,10.1017/pds.2025.10203,d522e3b1efdba75cfd8739198c2e9f18cc945cf73e41d9b1a9c689c6b559b2f4,,,W0070
+archive-references,47,Generating preinventive structures AI-driven creativity in product repurposing,10.1017/pds.2025.10207,5412fb44292791affe7c848a2e3e6a3edbbaebdcb6774924ea2450e335db29d8,,,W0049
+archive-references,48,Generating vehicle designs using probabilistic programs and reinforcement learning,10.1017/pds.2026.10585,faf468418c6114fc79890be5fcb574abda3d4cadd2e7269a727b5fec4492d4f5,,,W0078
+archive-references,49,Grasshopper Algorithmic Modelling Parametric Design for Product Platform Customisation,10.3390/app15116243,3d7a42b66621d1937374a90d49032328e7c11079a8ab63b96356330083976fbb,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A010.pdf,,W0055
+archive-references,50,How are professional practices adopting generative AI The case of an engineering design and product devel,,d181720184e694a0db7a73b34ae24c045f616b081df441bda4b0b08c23defeeb,,,W0151
+archive-references,51,HOW CAN AI SUPPORT THE CREATION OF NOVEL IDEAS IN PRODUCT DESIGN,10.35199/epde.2024.23,404bb5b95c3f7d9b280f8879150a97e9c9e95b16fd226e47c08b9f2cb8f81435,,,W0082
+archive-references,52,How would engineers use LLMs for assembly search if they could – An empirical study for fostering generat,,aae855153c5ea69f394bb969d9e151c061221c01169dd4b19ddd6f698ee013ef,,,W0158
+archive-references,53,"Human-AI co-creation why, what, and how",10.1017/pds.2026.10608,f7db64ced1201c49afe8a7541dd1eedd82ad83d3b7704314e5884706c7e24f25,,,W0088
+archive-references,54,"Human-AI Co-Design and Co-Creation A Review of Emerging Approaches, Challenges, and Future Directions",10.1609/aaaiss.v6i1.36061,2cc88e06b31816c35c49168c9379475b6c5a7e8b07a033c2dbb7f35401410cb9,,,W0168
+archive-references,55,INFLUENCE OF IMAGE STIMULI ON DESIGN CREATIVITY EXPLORATION OF GENERATIVE AI IN GROUP IDEATION,10.35199/epde.2025.4,60cd6f3ae26f8de5e4cc98e0f3f4e1144c0b9f23ccfb9952800f78432a4055bf,,,W0092
+archive-references,56,Innovation of meaning design-driven study based on the interpretive theory of new meaning,,eb27b28a09dab7c3b3a9053d2768d8d91da02168a6a8ae839182b363c3d81a9b,,,W0154
+archive-references,57,Insights from knowledge-based engineering in industrial practice – a Saab’s perspective,10.1017/pds.2026.10691,7e04228b538d690f297238c3365958922fecef90a896881f6f81017eb4a43701,,,W0019
+archive-references,58,Inspiration or indication Evaluating the qualities of design inspiration boards created using text to ima,10.1017/pds.2024.223,7916bec792ad659eda13a86b39bbda0ecf578beed00bf8eb1614c72b168fc8ba,,,W0076
+archive-references,59,INTEGRATING ECODESIGN AND AI IN YACHT DESIGN EDUCATION A WORKSHOP CASE STUDY,10.35199/epde.2025.84,bff89391ee975c1dc3c563a003f6f77132936a2bf9a5c54750fc48c20ebf06e4,,,W0084
+archive-references,60,"Integrating Reliability, Uncertainty, and Subjectivity in Design Knowledge Flow A CMZ-BENR Augmented Fram",10.3390/sym17050758,d094892ad8bb73ba5922c53943181c3f665538d3bbaf4a392e9214621555c249,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B011.pdf,,W0081
+archive-references,61,IS HIGH SKETCHING PROFICIENCY STILL AN ADVANTAGE EXPLORING THE ROLE OF FREEHAND DRAWING IN VEHICLE DESIGN,10.35199/epde.2025.124,d20e8baf66eabe33bffaba99c7a77dae4e6d11d3001f57b8723d05c663ec625c,,,W0056
+archive-references,62,Kansei for the Digital Era,10.5057/ijae.ijae-d-23-00003,9ee8ce0bb3688ba6a8c2410ec0304bbc4a8b3758e0117c671c1d30361c63a835,,,W0083
+archive-references,63,LEARNING ACTIVITIES TO DESIGN A PARAMETRIC SOLUTIONS SPACE FOR PRODUCTS IN INDUSTRY 4.0,10.35199/epde.2024.82,e5a8e00feda37126362c6e8e970fc78f6c469845f9766279a96935296e23e1b1,,,W0007
+archive-references,64,"Leveraging generative AI tools for design method support insights, challenges, and best practices",10.1017/pds.2025.10237,e45f86e6d4e361d321dc76c0c317f9a09bfdd552859679532b1ed3c8dae5a12a,,,W0097
+archive-references,65,Measure it to manage it – quantitative review of product family complexity metrics,,4b29db0b0ce828f8bba3395419cc31947394636fae46a1ea098c5096fd873ca2,,,W0107
+archive-references,66,MODELLING INTERIOR YACHT DESIGN CONCEPTS CROSSING MULTIPLE AI TOOLS TEACHING IN AN UNCERTAIN AND FLEXIBLE,10.35199/epde.2024.31,0560354dba8a921536f58c4b7393faff222265b14d6e69988ea05d0afb4f2c67,,,W0086
+archive-references,67,More AI means less design Empirical insights from design education,,330b0ba317cc3375d4ed13826bbe414978337bd37b7cb9fd2addf7b8962207ec,,,W0159
+archive-references,68,"Multi-agent generative AI for concept evaluation consistency, knowledge integration and human alignment",,b79231d129311637ca8f936c2dcfef3e219383cd8e2dee357db379d6a6d5ed7e,,,W0102
+archive-references,69,Multimodal generative AI for conceptual design enabling text-based and sketch-based human-AI conversation,10.1017/pds.2025.10264,55831f69ad499a1b895284d5a1dbdb4de15bc957324818c82a2d0f73560704ce,,,W0033
+archive-references,70,Paradigmatic design thinking how generative AI changes the role of human designers,,3b255b57eed9c6811d1e1a7263ce7f020e1bd1fe83c6d0d790a39e5d602d3a43,,,W0161
+archive-references,71,Product Styling Cognition Based on Kansei Engineering Theory and Implicit Measurement,10.3390/app13179577,99f740bd8b893762db726b60f5a3410637b4ab8b71c0ae7f3a3719703b838ed8,https://github.com/Freeloop993/paper/tree/reference-fulltexts-20261109/fulltexts/CORE-B034.pdf.parts,,W0145
+archive-references,72,Research on Evaluation Methods of Complex Product Design Based on Hybrid Kansei Engineering Modeling,10.3390/sym17020306,a08d7184d9fc34a3be8aa5a903e5aa75bed895744ae14fb54c8318db241c7000,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A009.pdf,,W0054
+archive-references,73,Research on innovative design of Nuo mask based on Memetics-AHP-Thematic analysis-shape grammar,10.1371/journal.pone.0326630,da9e0e9b4641312d30287ed43aae97d745b80c93501617c5382aa1cb7a3421c1,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A006.pdf,,W0051
+archive-references,74,Research on the Innovative Design of Traditional Motifs of Twisted Porcelain Based on Shape Grammar,10.2991/978-94-6463-815-8_2,fbc327f7b5d650409f0ff93821ca347857951886b27e94f3987380eee71d1f20,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B006.pdf,,W0071
+archive-references,75,Research on the Sanxingdui cultural and creative product design based on an AIGC design framework,,d2623f943ed7bdd5b251b8364f5320e62aba13af7f188b139f4ac6ae36dec960,,,W0139
+archive-references,76,"Rethinking design methods in the age of AI – consequences for practice, education, and research",10.1017/pds.2026.10419,844029f2a57bbce58a3c10c98e88123d53156c6e90a6d389bea66703bcc190d3,,,W0079
+archive-references,77,Scenario to specification promises and pitfalls of AI in developing user-centered engineering specificati,10.1017/pds.2025.10298,75461f30b610d86ae3a023d48103017f905b1b35548bfec20174774220be1753,,,W0103
+archive-references,78,ShipGen A Diffusion Model for Parametric Ship Hull Generation with Multiple Objectives and Constraints,10.3390/jmse11122215,0d9787c23c03a5ba0feea20a319a8402b833c78361ae702088f8982a34d9bb6d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A018.pdf,,W0065
+archive-references,79,Sketch2Prototype rapid conceptual design exploration and prototyping with generative AI,10.1017/pds.2024.201,d8ab3c700a0bdf04d049cf57db09d5f6ad33a163b2b6177cdf572e2e3a75367b,,,W0064
+archive-references,80,Strategies for applying shape grammar to wooden furniture design Taking traditional Chinese Ming-style re,10.15376/biores.19.1.1707-1727,813fb84aea2ada9fb1f6be99f30a9271db64df31b3d2f09fa59be1bc0f0a3eae,,,W0142
+archive-references,81,Structured prompting for design for multi-X evaluating LLM support in early prosthetic device design,,fdf390136c91c862adf784e42ef088cadf6d2708994de02158d6a2be430569dc,,,W0101
+archive-references,82,Structuring the design space while exploring it a cognitive perspective on design space exploration,,f5ec38ae1ae66ad3b9e388887ff48adae83eb5612cf702ef5f0115d4b617ab4c,,,W0164
+archive-references,83,Study on Function and Appearance Design of Smart Street Lamps Based on Kansei Engineering A Literature Re,10.17576/jkukm-2023-35(5)-22,a457d45613ad9693887031e7d89b35e1e1897597d0b88db226c9567da50039a4,,,W0147
+archive-references,84,Study on Imagery Modeling of Electric Recliner Chair Based on Combined GRA and Kansei Engineering,10.3390/app132413345,e02c495bcbd1631664f5006a1327dd04731d8671a426b2ca4d17ffb851da4b9c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A013.pdf,,W0060
+archive-references,85,Sustainability through Biomimicry A Comprehensive Review of Bionic Design Applications,10.3390/biomimetics9090507,45fb470e0c299a54fb4c4b86eaae091cbff0d5c050f102d46bb24deaf7c18184,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/CORE-B025.pdf,,W0141
+archive-references,86,SYNERGISTIC DESIGN THE FUSION OF GENERATIVE AI AND CONVENTIONAL IDEATION APPROACHES,10.35199/epde.2025.74,faeb113457948dcf2fc1b54c6d4837f4056b0f20ccf965dd4810478b2e8fcbb6,,,W0074
+archive-references,87,Systematic Review of Kansei Engineering Method Developments in the Design Field,10.25077/josi.v23.n1.p92-108.2024,5603a96fdbb086e4df6f118f6c07ab75c159e9fe3b90dc5972061257c8c94eb6,,,W0110
+archive-references,88,The aesthetics of robot design towards a classification of morphologies,10.1017/pds.2024.244,c51d9eeda017f4bbae436ca36af097b4f1153c9f8c7d85ac92408d7ba9bd6a73,,,W0094
+archive-references,89,The balance between a usable and emotional product design – a comparison of different methods for priorit,,024371c1748491adbf7f641df15715e24bae3a162a12155992fdf7fa6a8fb02a,,,W0162
+archive-references,90,"The connection between impressions, user experience and design specifications in technology-driven produc",,96bf7cccc95d0380fc03f8d85b2f570fa6313f773da2b0726cb5dbc51e8ab6e8,,,W0095
+archive-references,91,The Design of Automotive Interior for Chinese Young Consumers Based on Kansei Engineering and Eye-Trackin,10.3390/app131910674,80d793118bfba4a22fa07d9daadb117df8dfa70e9dcad61ad4413e976ce787b9,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A012.pdf,,W0059
+archive-references,92,The Exploration of Integrating the Midjourney Artificial Intelligence Generated Content Tool into Design,10.3390/systems11120566,80e29e66b2141cb7320cfe38a88cc014b5f526e3f4d405f27baaa9d045881f66,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A019.pdf,,W0066
+archive-references,93,The influence of aesthetic taste on product choice does mode of evaluation impact decision making,,957b70ab1da097045ce06a882a393a964941573772183e37937728697ba7e3ff,,,W0149
+archive-references,94,THE ROLE OF “GOOD” BEHAVIOURS IN BEHAVIOURAL DESIGN,10.35199/epde.2025.35,d4226a47f6fdb40316f761dfce13709bd76a94805595fbe5d3be26fc11a4d329,,,W0140
+archive-references,95,Towards Fostering Human Ownership in GenAI-Assisted Design,,5f4e72b0a88a91c27433f0b42d9f9389593f022b12a8ef45084738618222ee07,,,W0153
+archive-references,96,TRANSLATING AUDITORY STIMULI INTO FORM A METHODOLOGICAL APPROACH TO TEACHING FORM GENERATION,10.35199/epde.2025.81,91628f4b1cf7010738074dedfe8a2bec843a677521da20cb72c36336c07a9bb0,,,W0080
+archive-references,97,Understanding designers’ experiences with generative AI through user interaction pattern analysis,,d75d325ec67b7e8674588f3168cb3174ba31788733c035a7f25f90b3ebed1d18,,,W0091
+archive-references,98,Unlocking the Potential of Artificial Intelligence in Fashion Design and E-Commerce Applications The Case,10.3390/jtaer19010035,d8071eac29b355b11744f46708a0baa1c7dc43b25ef5938bdf6b302945f6d857,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B032.pdf,,W0099
+archive-references,99,"USE AND APPLICATION OF GENERATIVE AI IN MULTIDISCIPLINARY PROJECTS LUNAR HABITACLES, AUTOMOTIVE CONCEPTS",10.35199/epde.2024.104,74f736e30b558b9403d5220b103d2471168d6b4724240e5d15260cc1688681f5,,,W0053
+archive-references,100,USE OF ARTIFICIAL INTELLIGENCE IN THE PRODUCT DESIGN PROCESS. IMPACT ON THE DETAILS DESIGN STAGE,10.35199/epde.2024.20,ccde1939de863834fefba6a38266af71bce006eab25e5f0bbc1df5d26f65c188,,,W0052
+archive-references,101,VISUALISING SPECULATIVE MATERIALS USING TEXT-TO-IMAGE PROMPTING TO ELABORATE LIVINGNESS AS A DESIGNED MAT,10.35199/epde.2024.52,d3e0eb34f2cba5f7e6a8ce5b1222b2d33e187d6e50f9f35e7a487be089e58a39,,,W0069
+archive-references,102,3D Sketching + 2D Generative AI for Car Exterior Design,,487aa8cdeffc2802c146780ec35a850aebc6b750ac5c7c6c301ef5642c93306b,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-487aa8cdeffc.pdf,,W0169
+archive-references,103,A foundation model enhanced approach for generative design in combinational creativity,,1ab755b0335c27d77d4e24bae0937a267e2ab9926b8852b8ea84e837fc764bf8,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-1ab755b0335c.pdf,,W0170
+archive-references,104,A Hybrid Prototype Method Combining Physical Models and Generative AI,,f67fc719f2a9b428a99ad226c611e2b0a16799f15d06925196f72b08ad3e5e6e,,,W0171
+archive-references,105,AI-Driven Multidisciplinary Conceptual Design of UAVs,10.2514/6.2024-1708,6982837907229504955f109d5b71834d663705df141e862d7509da253d227d67,,,W0121
+archive-references,106,AIdeation  Designing a Human-AI Collaborative Ideation System for Concept Designers,10.1145/3706598.3714148,22fad4c30465ce3577f6b1f9a41bf5c2eac23b2218b0e6bfd4513a347bfaa8ca,,,W0035
+archive-references,107,AIDED  Augmenting Interior Design with Human Experience Data for Designer–AI Co-Design,,8c134e602f062e9e0996b882156d8a97050656d53e9eafeb4137fec3d17f07ec,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-8c134e602f06.pdf,,W0172
+archive-references,108,Auto-Regressively Generating Multi-View Consistent Images,,632435bfb6efd62e905a8e58ed192d9d2cff677478e4a89b429481a49616877e,,,W0173
+archive-references,109,Beyond Automation  How Designers Perceive AI as a Creative Partner in the Divergent Thinking Stages of UI UX Design,,dd6e309a92fab915dbfe5c4a084fa3be7791e1dde08cd1f0558b78fbe78ae9a8,,,W0174
+archive-references,110,Beyond Input–Output  Rethinking Creativity through Design-by-Analogy in Human–AI Collaboration,,87feb0e67c63c4a8be09ee4e44c031d0f19410525ed20df814c26698ed2f2eda,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-87feb0e67c63.pdf,,W0175
+archive-references,111,Beyond Productivity  Rethinking the Impact of Creativity Support Tools,,b6ef9a324d77907b5480174a0cd78fa6d2dade7c71b58c2791a6028b01cd112f,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b6ef9a324d77.pdf,,W0176
+archive-references,112,BoxDiff  Text-to-Image Synthesis with Training-Free Box-Constrained Diffusion,,8a4d56051920dab32814c4c1e19ada8332d3527c3dc4d42888e78db7de6dce80,,,W0177
+archive-references,113,CAD-Prompted Generative Models  A Pathway to Feasible and Novel Engineering Designs,,f5f09e0b4e969f6a61bd5e7d87b30951b9c776efa63cdbcad4b490d51393974c,,,W0178
+archive-references,114,ChatGPT as an inventor  eliciting the strengths and weaknesses of current large language models against humans in engineering design,,fafcb50a6ed70aa028e9806acd6c43db690c8c100389ee8e1a1aedbd2e4996f6,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fafcb50a6ed7.pdf,,W0179
+archive-references,115,Clay to Play With,,24ad1da38465d0a6076291bde601cb321371f9c6f3938657a0018f19266bf40f,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-24ad1da38465.pdf,,W0180
+archive-references,116,CoExploreDS  Framing and Advancing Collaborative Design Space Exploration Between Human and AI,10.1145/3706598.3713869,e7ace357766661d69695fe6f82cf321fdb391b6bf1d19f9ac9efcd97ac4d34af,,,W0132
+archive-references,117,Compass Control  Multi Object Orientation Control for Text-to-Image Generation,,d45a394eeda399d84c94fd4fdf47d69c3f63e1edf1f94b33e07c080d13222c93,,,W0181
+archive-references,118,Compositional Structures as Substrates for Human-AI Co-creation Environment  A Design Approach and A Case Study,,f22b9071fcef284be58bef9e44d618f1fd091b0474b49db7f215590e4a1f7833,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f22b9071fcef.pdf,,W0182
+archive-references,119,Control Is a Trajectory Not a Point  Conceptualizing Control in Human-AI Co-Creativity,,a093248ab05f64a299600959bd1b8a269d7c2bc165c04bc64466716f0f4a653a,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a093248ab05f.pdf,,W0183
+archive-references,120,Controlling Text-to-Image Diffusion by Orthogonal Finetuning,10.52202/075280-3472,b1ee5f19a387e0216bfb030287c8c857bf57a9b6b3226c5f5a99f263d16c0910,,,W0119
+archive-references,121,ControlNet++  Improving Conditional Controls with Efficient Consistency Feedback,,1dfeb7d56daef1adca361f895810dd407ba3c26bc78b70de1f0e210ec8ad1894,,,W0184
+archive-references,122,ControlNet-XS  Rethinking the Control of Text-to-Image Diffusion Models as Feedback-Control Systems,,ea961e0cc54e8e0032f24f8da61a1e32a058770eba66ccecd8def4693b1db7f4,,,W0185
+archive-references,123,Creativity from Surprise  Bridging Fashion Designers Inspiration Work and AI Creative Support Tools,,9ac858e2a8f14f0debfde3510347b097cffa7e4a1dd1ab05a860383d224e7eb3,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-9ac858e2a8f1.pdf,,W0186
+archive-references,124,CreepyCoCreator  Investigating AI Representation Modes for 3D Object Co-Creation in Virtual Reality,10.1145/3706598.3713720,2859ba9d81adef79f57eced940cce1030776fb33dd8770dc416ea7aeea048e01,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X0504.pdf,,W0126
+archive-references,125,Criticmate  Stagewise Human-AI Co-Critique in Single-Screen UI Evaluation,10.1145/3772318.3790929,bed77a90a4cc84e532463318337685ff502f0821f99fd170d0b4c595da37a6b4,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X1459.pdf,,W0131
+archive-references,126,Ctrl-X  Controlling Structure and Appearance for Text-To-Image Generation Without Guidance,,bac502f6321a70ce65559f20642af961223724651196540236b793ec5afeb48d,,,W0187
+archive-references,127,Customizing Text-to-Image Diffusion with Object Viewpoint Control,,54a0c0238bd76d01f8fe38d9443b764c7a891d198e9a4101bcbb9d41a82ded05,,,W0188
+archive-references,128,Customizing Text-to-Image Models with a Single Image Pair,10.1145/3680528.3687642,c1adee12cbfb17c1728548e0f9f836d48f6fc56a8bb4644dd127474b51747c08,,,W0130
+archive-references,129,DC-ControlNet  Decoupling Inter- and Intra-Element Conditions in Image Generation with Diffusion Models,,9ddcec757892260adba7e7e3826cab89ffaa58b4499d317910946265bd9f171c,,,W0189
+archive-references,130,DCG-GAN  design concept generation with generative adversarial networks,10.1017/dsj.2024.13,863e44c044e38c0f2f64ccf39280356bfb5902bbd8aa757c3afb3b915bc07920,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-C0543.pdf,,W0113
+archive-references,131,Decoupling of Usefulness and Novelty Evaluating the Impact of Generative AI on Design Outputs and Novice Designers Creative Thinking,,bb26f8b7b5d037d5ef3e66a8406adb78f9a39a9eacbbc4932029e8101c1d21b0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-bb26f8b7b5d0.pdf,,W0190
+archive-references,132,Dense Text-to-Image Generation with Attention Modulation,10.1109/iccv51070.2023.00708,a8da6cd208a51f0811a4bbe5537bd001b2084bceecee035e7ee34b509ff4ff39,,,W0129
+archive-references,133,Design ideation through large language model-driven design operation,,ae84f1f31ea99369612619d51cf4f43e542de0c9212094e5530a823e6a462d04,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ae84f1f31ea9.pdf,,W0191
+archive-references,134,DesignDiffusion High-Quality Text-to-Design Image Generation with Diffusion Models,,9bea0ee9699e38ad5a32957abbb5823c388a44d7bded31085953066c205c5af4,,,W0192
+archive-references,135,DesignerlyLoop,,aebd703e3e7732abb6a65d02cb3cb837b7145ec1c69500c96a71881ebf5c184e,,,W0193
+archive-references,136,Designing Interactions with Generative AI for Art and Creativity  A Systematic Review and Taxonomy,,16c284f7b4ce8c7e090bb64a3c32b93cc582ea56e0940f923417543840f7a76e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-16c284f7b4ce.pdf,,W0194
+archive-references,137,DesignWeaver  Dimensional Scaffolding for Text-to-Image Product Design,10.1145/3706598.3714211,b43dbdefb0740f0b367ca53444177c998c2d0ceed77f967a38b42c220fe121f6,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-C0026.pdf,weaver,W0111
+archive-references,138,Diffusion Self-Guidance for Controllable Image Generation,,aa02f95e27c578cfb7c07f21ea38fe2b055435df16a18129b105b01f502db0b1,,,W0195
+archive-references,139,DMV3D  Denoising Multi-view Diffusion Using 3D Large Reconstruction Model,10.48550/arxiv.2311.09217,721aafb54acbe7ad99549334d63644530677f7f07ce5d6173fb0d9d6b08ec05c,,,W0120
+archive-references,140,DreamRenderer  Taming Multi-Instance Attribute Control in Large-Scale Text-to-Image Models,,c4e40c158d6564f6b5c230e05c56942aa742bc62da3f7ca11f1e6f39bf5247fb,,,W0196
+archive-references,141,EchoLadder  Progressive AI-Assisted Design of Immersive VR Scenes,,beeb86445a7ebcc0fd9c71b4579ecf37533e7efd782060fc9f7f077586124345,,,W0197
+archive-references,142,Empowering design innovation using AI-generated content,,43ad5ac983f15d1bc4bbb17c685897ed65046cba574878993d2b6c436f2a05fa,,,W0198
+archive-references,143,Enhancing designer creativity through human–AI co-ideation  a co-creation framework for design ideation with custom GPT,,26764650767e5eb773f61d9c5a09b538da0bdd9ebaa1bcf4690370871b42b318,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-26764650767e.pdf,,W0199
+archive-references,144,Enhancing Generative AI Image Refinement with Scribbles and Annotations  A Comparative Study of Multimodal Prompts,10.1145/3742413.3789080,7d90926f2d42b6b58d340012e628b40e559e93ed1fcc7d1854f3a039bd266bbf,,,W0034
+archive-references,145,Exploring Collaboration Patterns and Strategies in Human-AI Co-creation through the Lens of Agency  A Scoping Review of the Top-tier HCI Literature,,552d56978439bf9188066bb848af0d8f2a257770a71188e3f62adee6b409dbb4,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-552d56978439.pdf,,W0200
+archive-references,146,Exploring Visual Prompts  Refining Images with Scribbles and Annotations in Generative AI Image Tools,,d3e60dfd9a49d6e2964dd8f3bedc133b3ee9578e3fb4cc2386ad0194b9c1e297,,,W0201
+archive-references,147,Fashioning Creative Expertise with Generative AI,,7015817162733ccb0944f5ce73a18e91ab41eca5c77fde9a9943373fcbb701e2,,,W0202
+archive-references,148,FlexGen  Flexible Multi-View Generation from Text and Image Inputs,10.1109/iccv51701.2025.01739,609759676a723ad8064f4f82327f4c86d0a5195fce36894eebf1474de311be59,,,W0114
+archive-references,149,FreeControl  Training-Free Spatial Control of Any Text-to-Image Diffusion Model with Any Condition,,cc7e54098fa4cfb32e6accba7a0745d9d2cfeab6b67efafb60f118d1d3e385d0,,,W0203
+archive-references,150,FusionProtor A Mixed-Prototype Tool for Component-level Physical-to-Virtual 3D Transition and Simulation,10.1145/3706598.3713686,2737fb53f7e248f821229589a42ef2c6855721fdd62ce93f54cd7dce9fe1ba04,,,W0118
+archive-references,151,GenColor  Generative Color-Concept Association in Visual Design,,ef2c7871a335b7dd68f28051ed22bc6fdf292f5ab57b6fcf4e3079f29f2f91c1,,,W0204
+archive-references,152,GPSdesign Integrating Generative AI with Problem-Solution Co-Evolution Network,,9d33db1bda13f08b9160a6ba8df829796dda8a89a5540742d0ad84acd994722d,,,W0205
+archive-references,153,Grounded Text-to-Image Synthesis with Attention Refocusing,10.1109/cvpr52733.2024.00758,2f6842193032bd96894a96c62860250f40a0919bede36d2c06b65f8e3a1a2540,,,W0133
+archive-references,154,HiCo  Hierarchical Controllable Diffusion Model for Layout-to-image Generation,,c65121026d7b6ccb3c645dbaef76a1dad18edd465263750585f577941d737df1,,,W0206
+archive-references,155,Homogenization Effects of Large Language Models on Human Creative Ideation,,864e4f7cb5721edb5af18357540dc26e8cbc2657a2c8f23e22a938c04ebc8079,,,W0207
+archive-references,156,How generative AI supports human in conceptual design,,b559015194e181a000d7e3d99096e62c1f0bb2a2d4ae18f4edc6c21674361bff,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b559015194e1.pdf,,W0208
+archive-references,157,Human-Centered AI Communication in Co-Creativity,,42298727c641a27cb77a54bcda21e34270436ebe0e754fdb9c450fdfdc5c8adc,,,W0209
+archive-references,158,Human-in-the-Loop Local Corrections of 3D Scene Layouts via Infilling,,0af58471c95db11a369ded4fc28f0bad791ba68bf0e77a910c72d02afa3ed42e,,,W0210
+archive-references,159,"Hybrid Layout Control for Diffusion Transformer  Fewer Annotations, Superior Aesthetics",,bfabb85f4ea2014a5bdee602c36f507c81d1300c4ad2a9650885328c1021f8b1,,,W0211
+archive-references,160,IdeaBlocks Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI,10.1145/3800645.3813005,c5455508be91b4b6e3f9178afa45ca3efbd4aa7626039fc97b40e980c340ff6d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X0165.pdf,,W0123
+archive-references,161,ImaginationVellum Generative-AI Ideation Canvas with Spatial Prompts Generative Strokes and Ideation History,,d5c42df14c8a0aa9a3009c65c0db340731a4de0aff84c21f2505d036778588ed,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d5c42df14c8a.pdf,,W0212
+archive-references,162,Improving User Interface Generation Models from Designer Feedback,,b161ba78dc14b6d141f79e976f8ddca05b91857c8352abd5616d68c622abdc51,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b161ba78dc14.pdf,,W0213
+archive-references,163,InstanceDiffusion  Instance-level Control for Image Generation,,816f6058b9c8e1ed9b41c6b5fd16ebfd06e3f689ea4776ff824541fae7e189c0,,,W0214
+archive-references,164,Intent Tagging  Exploring Micro-Prompting Interactions for Supporting Granular Human-GenAI Co-Creation Workflows,,4c3609878f7db14d4ab1d3d002140c7c0ae4480bd51dd3e227a28c7d8175ad08,,,W0215
+archive-references,165,JeDi  Joint-Image Diffusion Models for Finetuning-Free Personalized Text-to-Image Generation,10.1109/cvpr52733.2024.00648,99f28ae681a8beabea540a6b40e25f124ba7f3f51356302f278880e46c5f934b,,,W0116
+archive-references,166,Learning to Generate Semantic Layouts for Higher Text-Image Correspondence in Text-to-Image Synthesis,,de6d42200ea2c72eaa6167cacaec83c5adb4056d9f1ea598f6541730900a0b7f,,,W0216
+archive-references,167,LEDITS++  Limitless Image Editing Using Text-to-Image Models,,d484d048d494d62c9c42bc0a57143a9ef1e57c3654f7505c662e641455e9471b,,,W0217
+archive-references,168,Luminate Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation,,e2a1609ac17adcd843e5fc9c1b57513c3c658320b32120f6e64a156bb4b8054b,,,W0218
+archive-references,169,MUSE  Multi-Subject Unified Synthesis via Explicit Layout Semantic Expansion,,8dfda798a977434e01b93e6014b21b656d595eaa04ba9a693e00c33de8a43a2e,,,W0219
+archive-references,170,MVDream  Multi-view Diffusion for 3D Generation,,635d2099f0f9732b46ec8b5af5ef304e94c8d2e354a3d8b08792cacfd0e05367,,,W0220
+archive-references,171,OneActor  Consistent Subject Generation via Cluster-Conditioned Guidance,,6d68eba4358c809a88fd75da57e51162c7ebc819bf1cda014ffe2067a851476d,,,W0221
+archive-references,172,PALP  Prompt Aligned Personalization of Text-to-Image Models,,82fa6901514bf606c351b7f492ccd19925bf73c59a50a542caf30f78521d6c93,,,W0222
+archive-references,173,Partnering with Generative AI Experimental Evaluation of Human-Led and Model-Led Interaction in Human-AI Co-Creation,,f50c290dfe34cd5c676e66c87984a0e10c64fe5c40bd9766a20a7bbf0e3acfd5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f50c290dfe34.pdf,,W0030
+archive-references,174,Personalized Residuals for Concept-Driven Text-to-Image Generation,10.1109/cvpr52733.2024.00782,0cd2a1eeaced5a3e2337d2c6e6f90161733ccb975e1556b87fb52d6ac856775c,,,W0117
+archive-references,175,POET  Supporting Prompting Creativity and Personalization with Automated Expansion of Text-to-Image Generation,,1b28d8314712924bd57a943cc938217f12f3aed52ea81041a9e02a38174adc09,,,W0223
+archive-references,176,Preference-Guided Prompt Optimization for Text-to-Image Generation,,dc3978d3b620df7b94a0a13b11f99020457c5cc3aefab85691f8ef0f34993cc2,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-dc3978d3b620.pdf,,W0224
+archive-references,177,Prompting AI Art,,49a46ff2c2487c462b8551617e2d43f348f036d7c6e0e8778c7d381cce56ed67,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-49a46ff2c248.pdf,,W0225
+archive-references,178,Prompting for products  investigating design space exploration strategies for text-to-image generative models,,93ea8425d53f4c202bacb07d3b09013bf07e43ce8d7ba70c5d9e18b7a9215854,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-93ea8425d53f.pdf,,W0226
+archive-references,179,Reward-Directed Diffusion for Generative Design,,3865f6c9319c301736a8f8e2019fac0d6925344cb984d91a0afc00c5696042a1,,,W0227
+archive-references,180,Rich Human Feedback for Text-to-Image Generation,,ea61432f757b86fcf2f0b9724c1169ca9bc8a7d6e35016f39d52150f59c099ab,,,W0228
+archive-references,181,ShoeGenAI  A Creativity Support Tool Bridging Design Intention and Feasibility in Shoe Design,10.1145/3746059.3747691,83c013c5985c6245279199ced7226868979ea8890db6b27db6984b3a3be6d145,,,W0127
+archive-references,182,Sketchar  Supporting Character Design and Illustration Prototyping Using Generative AI,,b5f5efc3569fc08998dd58096e41c8b2fda9673881c9822ee29159156231731d,,,W0229
+archive-references,183,SpatialPrompt  XR-Based Spatial Intent Expression as Executable Constraints for AI Generative 3D Design,,a8871e6b62f7292f69ed920ac297f4d8712e4082d844fdba1afae1729a908a3c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a8871e6b62f7.pdf,,W0230
+archive-references,184,StoryDiffusion  Consistent Self-Attention for Long-Range Image and Video Generation,,08e33f41766b94d5a73bf049ba8666cf45c618921f2de4df34b1fba854bb27ef,,,W0231
+archive-references,185,SyncDreamer  Generating Multiview-consistent Images from a Single-view Image,,3688f1485b0e9d7e30cf8fa99f341b04423e59d157b7922fd45baeeda77ae16d,,,W0232
+archive-references,186,Synthetic users  insights from designers’ interactions with persona-based chatbots,,b65896376f4e97dd76474bae79ade4e55ad53cf1ddf362776aaf090a38a59609,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b65896376f4e.pdf,,W0233
+archive-references,187,T2I-Adapter  Learning Adapters to Dig Out More Controllable Ability for Text-to-Image Diffusion Models,,72db6a87a27edfe04c122441b571d7e539007cd3a15a8badf7d88e623034f213,,,W0234
+archive-references,188,Text-Driven Image Editing via Learnable Regions,,7e7e14fd58b0212a09f5a911351c5bc9038316251dab747b94a647b2638f4300,,,W0235
+archive-references,189,TF-TI2I  Training-Free Text-And-Image-To-Image Generation via Multi-Modal Implicit-Context Learning in Text-To-Image Models,,f258c5f19db883dcab5a35c69ace58851d7501576c03284f84a145b73ec39c7e,,,W0236
+archive-references,190,The Chosen One  Consistent Characters in Text-to-Image Diffusion Models,,1bfe00a76678da8007978d61dade0f6314775e0506c1924bece4e6d441f36a51,,,W0237
+archive-references,191,The effect of targeting both quantitative and qualitative objectives in generative design tools on the design outcomes,10.1007/s00163-024-00440-y,211842b255e602e8ed13fe1d00bfe6dc561061ed2804eee5047fceaac75844f4,,,W0112
+archive-references,192,The effects of generative AI model type and visual stimuli type on design creativity,,2e5cc01b3671d66dbba09626b32048538ac27f33d4cf5963415ae14249f13110,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-2e5cc01b3671.pdf,,W0238
+archive-references,193,The Effects of Generative AI on Design Fixation and Divergent Thinking,,de51c7ac44bd9431e2ed9a62acfdcf694dd80735e8b164e0c13ec68a0bb547cf,,,W0239
+archive-references,194,The Impact of Sketch-guided vs Prompt-guided 3D Generative AIs on the Design Exploration Process,,eb23dba1818ce00e92c046c8c354930be7c67ec83e64bd5027f33d19ac8ff02a,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-eb23dba1818c.pdf,,W0240
+archive-references,195,The Role of Human Agency in Human-AI Co-Creativity,,d105dea24e3394e3c2a9ba52be6abf8bfdee2ec582d8cff90c24afc1bfca6aeb,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d105dea24e33.pdf,,W0241
+archive-references,196,ToMigo Interpretable Design Concept Graphs for Aligning Generative AI with Creative Intent,10.1145/3800645.3813064,e7e274b2357af50ae77e8860317b922f6464f54bc7fe59cc97f484cf91d25d61,,,W0122
+archive-references,197,Training-Free Consistent Text-to-Image Generation,10.1145/3658157,190053ad2fc041f0464d22547a8904bbb6e6f7b87b7a141d923ec941809ab7b1,,,W0125
+archive-references,198,Training-Free Constrained Generation With Stable Diffusion Models,,742dae7b849fba334bc5311cd6a0688fe1b751bac27da7944153c4ac7bec89b5,,,W0242
+archive-references,199,Two-Player Alternate Uses Test,,84bd2b744b07bb3863cd3496a12f2b85066ca4b6e26c1d30dc16ea048ab819ef,,,W0243
+archive-references,200,Understanding Design Collaboration Between Designers and AI,,24a8b10e0723366cbecc3a04abeab530420f4cd8d910db7ff9ec925aab83c575,,,W0244
+archive-references,201,Uni-ControlNet  All-in-One Control to Text-to-Image Diffusion Models,,842d0a2fbd8718a2251a2a9302c936de401e8a469f4138ac37d5a65949d38fcb,,,W0245
+archive-references,202,UniControl  A Unified Diffusion Model for Controllable Visual Generation In the Wild,,95590dd18cc21d3ffbda9adc608806a149366b004f86877ebfbec06be5838f51,,,W0246
+archive-references,203,UniversalBooth  Model-Agnostic Personalized Text-To-Image Generation,10.1109/iccv51701.2025.01702,0661142d62a8a9e1c2ad9211296453770439dc68fa70a942e93fbb9a264e4bc5,,,W0124
+archive-references,204,User Experience Design Professionals’ Perceptions of Generative Artificial Intelligence,,bce94e118c2ba934280a00d0ea37ac136199787838dccbabdc93c9fad090d82a,,,W0247
+archive-references,205,VideoDiff  Human-AI Video Co-Creation with Alternatives,,4a4784b738fea1037e14528f18d951eea2ee385472623cd41b41bd716744d98f,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-4a4784b738fe.pdf,,W0248
+archive-references,206,ViewDiff  3D-Consistent Image Generation with Text-to-Image Models,10.1109/cvpr52733.2024.00482,5ccd5cb34deda66a2815fcd08e6a6cd20257363e013f7bed9a3d1d42ede682be,,,W0128
+archive-references,207,WAVE  Warp-Based View Guidance for Consistent Novel View Synthesis Using a Single Image,10.1109/iccv51701.2025.01107,5760fa3592c406a6384798dfb056dc271f7ea36c56002248e1e89696760d9f61,,,W0115
+archive-references,208,What is generative in generative artificial intelligence  A design-based perspective,,d5e4c53bd35581a26177b5ea1c74a1deee6178a047cb517ea4bf549f7e7c32bb,,,W0249
+archive-references,209,When Designers Sweat  Behavioral Traces of GenAI Co-Creation,,b4667d2f7bfdea993915d5e1d995e31e9b612257b5576373689e1dabad853434,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b4667d2f7bfd.pdf,,W0031
+archive-references,210,"“An Adapt-or-Die Type of Situation”  Perception, Adoption, and Use of Text-to-Image-Generation AI by Game Industry Professionals",,3f14811346dcffe06eaeacbc3c5bf8e7f8a29423c5d6fbeb3d3ab32c0d2a7d31,,,W0250
+archive-references,211,1-s2.0-S0142694X24000164-main,,7d02cf1a00eb9e0248688ac09be0786547be6e0dcc3bfd945b3e6348a15777fb,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7d02cf1a00eb.pdf,,W0251
+archive-references,212,1-s2.0-S0142694X24000425-main,,56527b59497355b0e964df580acc9b12884cb40739c21f9146e536ce76962cd2,,,W0252
+archive-references,213,1-s2.0-S0142694X25000158-main,,7dbd6ab4f91930d42bcedcd5f3d03ace079620f4001537fb57a69bb9252677d0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7dbd6ab4f919.pdf,,W0253
+archive-references,214,1-s2.0-S0169814124000854-main,,a062751bd9b95fe97b6bb3cf50f024d2bc92081ea2bec1febb3d4b50258928b4,,,W0254
+archive-references,215,1-s2.0-S0959475224000562-main,,c1bf5df7ca9a28e5729bdf763e19f18e6fb23b95ce0934254293826cd62d115f,,,W0255
+archive-references,216,1-s2.0-S1071581924001046-main,,a6f42be3b5813da302e17e41b919682f1c2e135c684a921a3d06408521a89e21,,,W0256
+archive-references,217,1AI与设计过去20年,,0429d81a2689a013e8ea1a2d2e70ad3a9a304ceb1d482cadbc86e5f1306c06d6,,,W0257
+archive-references,218,2111.05974v4,,1a2980d8923c35ef30df2de83c869b692b5ad531d1f1eca9579da6c6d0323ff2,,,W0258
+archive-references,219,2403.01609v2,,40f361d72b59b3f5ab10a01168290c8b9836cdc4e28dda6067de6e489442cebd,,,W0259
+archive-references,220,2503.16477v1,,9ad6f0d74dba1ce1e65b9d0185f1d5258472f61e08c76ef30ae8d2bf3422f7e1,,,W0260
+archive-references,221,2858036.2858159,,8ea356b1a8c1f5ac03a1c22dd2c7b9cab431c013cf295e3cf076b1f43e8b6c4c,,,W0261
+archive-references,222,3290605.3300233,,935c9202afb5352359aaa801788baf4fccb679418df200511262564236fde21c,,,W0262
+archive-references,223,3607822.3618018,,898a7a9c4e06032f8ae5885e27ce76f2d5792c49c76923034907fd3b9041c121,,,W0263
+archive-references,224,3613904.3642481,,082df4a0ae99d187e7de216d5e05d1e9ab927941df5175fca7248f9fb6a8e45c,,,W0264
+archive-references,225,3672758.3672915,,d69c421f537fdfabfdfb2a94daebf4039957efb9c2c6369087ae820d914d348c,,,W0265
+archive-references,226,3677045.3685445,,59b74ec6a0e5445f20271d36904a576650adc43f62c324b629f4cb1e2ae78da5,,,W0266
+archive-references,227,3706598.3713397,,62bb482b92642fc46672a9a20dc920e16fe3aa363d25e544f62ea63dbe22788e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-62bb482b9264.pdf,,W0267
+archive-references,228,3706598.3713502,,a76395f787712c1f76321e386ab66dcf97c4a9c03964e00ed424d036a2da552c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a76395f78771.pdf,,W0268
+archive-references,229,3706598.3713934,,77cd7c0c8bb796852b81fde54e869894eabed1374a8445118ff1c436b6a8af51,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-77cd7c0c8bb7.pdf,,W0269
+archive-references,230,3706598.3713935,,d2e6e2f0f1528a49aabca50ef9e93cebb79449c1fa876667c491168c6966c133,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d2e6e2f0f152.pdf,,W0270
+archive-references,231,3DALL-E 在3D设计工作流程中集成文本到图像AI,,408da5fc4f72e612c00a39e6190812fcd76ccd71ec00541dcca161bd6e5cf54e,,,W0271
+archive-references,232,978-3-031-48038-6 43,,73b6c54004ae142f8960b456f8b5d18638385a790efaa71d5be538dd972ff8dd,,,W0272
+archive-references,233,A DESIGN AND AI COURSE IN CONVERSATION WITH MACHINES,,bbc74dd1a4bb55dfdaefd8ecc6847f8b638173abcf826f96ab8392b85e9693fe,,,W0273
+archive-references,234,A novel approach to design creativity assessment a comparative evaluation,,a213233481af3eedd073666cc3fe2a17ad7429553cda33d2b3b363ec7abca3fc,,,W0274
+archive-references,235,A structural framework for generative engineering and design assistance systems development,,96a333caae2980602112f810468b3f8a1085c03b05248d92db65b3dd7fcfc12f,,,W0275
+archive-references,236,A Study on Factors Influencing Designers  Behavioral Intention in Using AI-Generated Content for Assisted Design  Perceived Anxiety  Perceived Risk  a,,3ccbb054e4c89f53a56b7ce9edbc8c7819d5eafd81887208255fce9e6394d496,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3ccbb054e4c8.pdf,,W0276
+archive-references,237,A Systematic Literature Review of User Trust in AI-Enabled Systems  An HCI Perspective,,ebac71f8aa0cf663b39c9a4f084b1d3dfa89dfacec8ff0f9ff648a5117d1a003,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ebac71f8aa0c.pdf,,W0277
+archive-references,238,A team of three the role of generative AI in the development of design automation systems for complex pro,,1bef8c670e562f8ee77e795c9ab569eb7d63e55cc41427c229f37d5c09b0ff71,,,W0278
+archive-references,239,"ACADEMIC-INDUSTRY SYNERGY, HYBRID AND CO-CREATION METHODOLOGY",,61452533cbe0deecd332a319d81472d1ed29934f2cb35c6d36b3ee4a7995b6b1,,,W0279
+archive-references,240,Adding Conditional Control to Text-to-Image Diffusion Models,,ac10541f0f4f8f9f8f2108916f48b69ddcd944e4d8d675cb0604bbfba66f92b2,,,W0002
+archive-references,241,Aerodynamic Design Optimization of a Morphing Leading Edge and Trailing Edge Airfoil–Application on the UAS-S45,,ea5d00de36d42b5956f7217edd2192ad99b47b767d66a0e492e3054e84ff1852,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ea5d00de36d4.pdf,,W0280
+archive-references,242,AI Agent的研究现状,,f3fb80781228b11acf8e9e579e01e399be538677ff645411ced5f779f5980d08,,,W0281
+archive-references,243,AI as an element to overcome creative fixation in design teams,,1cc85407bd3910df9ab4ff99e18a0a58e7d07a69701fa58f46713be3af0dfb61,,,W0282
+archive-references,244,AI+UX+revision+08062023,,34451540998115f489b752f0a0cf25941474c644fe1e2760928d8777f09f56a9,,,W0283
+archive-references,245,AIGC 赋能的产品配色设计方法,,27de7a1c30b1aff0886053966a63486eaa4f8a09d951d59a24d927167b178204,,,W0284
+archive-references,246,AIGC在工业设计上的应用与思考 冯玉泉,,1c649a44d5e18e658df3c8672336e44268941e8bf896ee841acb1791288fbb3f,,,W0285
+archive-references,247,AIGC工具在工业装备造型设计领域的优缺点对比研究,,4ce0c703c6dfed1e7c4f2131833d083a149fdc82a0412c29f581590debe900f8,,,W0286
+archive-references,248,AIGC应用于传统皮影IP形象的设计探索 宋长磊,,8a65e4424d2323d9214acda2bec6e062e45b9083af1cf0d5003b0cdce4fd4976,,,W0287
+archive-references,249,Application of wearable technology for the ergonomic risk assessment of healthcare professionals  A systematic literature review,,2c74c027a6625f68dd3c388036f7946601103b495e4a73edd6cceef342d5c593,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-2c74c027a662.pdf,,W0288
+archive-references,250,Are generative design tools creative A characterisation of tools throughout the design process,,395090619d7e45e13655bcbe9e36ab209f62230ad88563745977a1984375e88a,,,W0289
+archive-references,251,Artificial creativity in design a theory-based framework for implementation,,503ad227c934434722322d4a27b88b34a3fb7f36d0ca7caa6de5b9c9ba11c8c4,,,W0290
+archive-references,252,"Autonomous Multi-Rotor UAVs A Holistic Approach to Design, Optimization, and Fabrication",,50569f2a118b455181974544fe41b6db07c9485bb408fbf6fd0d95c1b29b6b63,,,W0291
+archive-references,253,AutoSpark 用感性工学和生成式AI支持汽车外观设计构思,,77351617438d527f03c60bd370d9c9da0818d798bb90615ad76ed63e0e89c55d,,spark,W0292
+archive-references,254,BINDING AI AND XR IN DESIGN EDUCATION CHALLENGES AND OPPORTUNITIES WITH EMERGING TECHNOLOGIES,,b427cd348eeb5cb451eede97b840365a0dbecaa2247a22e34eb50d6578a30ca3,,,W0293
+archive-references,255,CGAN 驱动的车辆外观智能生成设计,,9845a5e65daa7108f4ef25c7ece2440e9564699ea539a368c93e7b666149b08c,,,W0294
+archive-references,256,CO-DESIGN AND ARTIFICIAL INTELLIGENCE A METHOD TO EMPOWER END-USERS IN VISUAL COMMUNICATION,,2aa5e13bb503e13ac462f1b5bdec67b57c9ef97aa9680154b5565570251ecf2d,,,W0295
+archive-references,257,"Comparison of evolutionary, reinforcement and active learning for simulation-based design space explorati",,8aa85e1079738eee78487c84116b1805f986894adc84d59aca051c16d742a31c,,,W0296
+archive-references,258,CreativeConnect 使用生成式AI支持图形设计构思的参考重组,,3c2519eebf553f720f394845fe89dda00930968213400124b0b05f1a98b904ca,,,W0297
+archive-references,259,CreativeConnect 使用生成式AI支持图形设计构思的参考重组,,3447ec92ac1c3bcb9b7d06fe9758fa525cda8c985076681ee689d967b471d037,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3447ec92ac1c.pdf,,W0297
+archive-references,260,DesignPrompt 使用多模态交互通过生成式AI进行设计探索,,34c9ed411ebaec39539e7ab459c4daa8e0cb98131edbc4a0cd562943e56f1d3f,,,W0298
+archive-references,261,"Do Methods Work On the Correlation of Method Application, Effort, and Product Quality",,1845af5dd175d9627f2428161bf0775991abf3c30a6629a7812ac490da19db08,,,W0299
+archive-references,262,Effect of team diversity on teams’ design space a computational approach,,9d7bc38f8c5cf40581a70b72e86da6a22a62d9800965ca0e4c0b32e0fb6fb140,,,W0300
+archive-references,263,Engineering Village detailed 9-29-2024 9543556,,b8133999d760cbfca5822d8cf439a66f4f5d1509c1508e139873231e7699b8e1,,,W0301
+archive-references,264,Enhancing computer-aided design with deep learning frameworks a literature review,,9a6a04f82620e5494524923a8b4de4313a67222a8e7a691792ef9b055e05ac96,,,W0302
+archive-references,265,Enhancing Creativity in Sustainable Product Design The Impact of Generative AI Tools at the Conceptual Stage,,d3a981f9ea713acf36f2ae3ae7ca3f50649497f30fc9262879a2587462e3bf88,,,W0303
+archive-references,266,ENHANCING INDUSTRIAL DESIGN EDUCATION THE IMPACT OF GENERATIVE AI TOOLS ON MASTERING CREATIVITY TECHNIQUE,,e041c1bc3cb38bdec5ad1b68a105426532779b1bbc487b3d0251b7c4983fa81f,,,W0304
+archive-references,267,Evaluating the Role of Generative AI in Product Development and Design - A Systematic Review,,d2af3882ce286f29ef10a96dbbef2d8c31844a6704e3809a270e237540d2e9ba,,,W0305
+archive-references,268,Evaluation and Design Method for Product Form Aesthetics Based on Deep Learning,,e20085e065c04446c39d5fdad89d2b9df6226cea8dde0ed3961b910be12cba14,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e20085e065c0.pdf,,W0306
+archive-references,269,EXPLORING CHATGPT’S IMPACT ON STUDENT-TEAM IDEATION OUTCOMES FOR NEW PRODUCT DEVELOPMENT A PILOT STUDY,,6a9b996a182f5bde0b4dc49403874fac73971e43c681fea15ddff65adc0fadfd,,,W0307
+archive-references,270,FashionQ 一种AI驱动的创意支持工具，可促进时装设计中的构思,,743ae1b34d0cb105e9af81b8f3146f7e2b4b539fef8f15c436c6538ea6d7f1f5,,,W0308
+archive-references,271,flight system optimized layout2,,ec9f36d3d92b2dabe7be721dd72ea88ca83e1b703acc801c7c4ec53ae1c6fd64,,,W0309
+archive-references,272,Food for thought exploring the future of food through AI-supported design fictions,,8a6ae9ebcc49b77b7d05989447a7c778da0a79e2a28c2bfca505a68a7178cdff,,,W0310
+archive-references,273,Gantiration 使用基于风格的生成对抗网络平衡用户界面设计中的目标和偶然灵感,,ebe236dec6f307852c2be92082a5578a3c7284a872fd1bd68b3d2c1ad2f572c1,,,W0311
+archive-references,274,Human-AI collaboration by design,,54b06e9aae3832818e1e00705096dc0e41a4b0813f5d490209d723948c179e46,,,W0312
+archive-references,275,Humanoid A Deep Learning-Based Approach to Automated Black-box Android App Testing,,1321f8d0655b8697f8f32e4bd00be9bf88949e14f17036c1347911c57faac0dc,,,W0313
+archive-references,276,IntegratingGenerativeArtificialIntelligenceandHumanDesignTheImpactofAutomationLevelonHumanCreativeExperienceandEfficiency,,69b1aea71e1ff445071dc8501f2c5b0c0c379ffeda64a819fed7defbbf393f33,,,W0314
+archive-references,277,Kano模型在中国设计学研究中的应用 张劭坤,,22a38f35cb53cf7979f17a31a22887588f07390119c7a8c439607004f01bfe01,,,W0315
+archive-references,278,Kansei Engineering：一种用于产品开发的新型人体工程学、以消费者为导向的技术,,a255bfb3e5d57fecb585f9a631c0d8a6635b4c465604e0e07bf0d9dffa5eb789,,,W0316
+archive-references,279,Knowledge representation in product design a literature review,,d97b2387df2d349b98519aa36cf3076c290bf4b152a941c02a82ffaad53ab8e7,,,W0317
+archive-references,280,Luminate  corrupt,,f059df50e3e013e57f0e2128789a9b0260b38ad5df15feade62fcfc218fa6040,,,W0318
+archive-references,281,Machine Learning Algorithms for Improved Product Design User Experience,,621641162b7cc19a08d1fd067ebfd40e3c2276c8ac52ca9dc3a2f61d068a5abd,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-621641162b7c.pdf,,W0319
+archive-references,282,Opportunities and challenges of AI in design a practical study from the manufacturing industry,,89aa20a9e5e98ea4914fbd6b8333ed77c2652bb622392774593cb15e9a63c3f5,,,W0320
+archive-references,283,ParamDrone参数驱动的四旋翼无人机智能设计系统,,9e1afb92e0945609a7cdf8aafc7190c252f7d75a1b01a12e4647b314dea7fb5b,,,W0321
+archive-references,284,Photo-Based Research Analysing Attributes of Unintended Interaction Towards Mainstream Product,,fd0553ca1b4c3062709b804b8114b8910cd6cf0346c3fca057b94b74b145a94d,,,W0322
+archive-references,285,Promptify 通过大型语言模型的交互式提示探索生成文本到图像,,1f39c9c626fbfa534d93bb90c5cb2b86cbd664f0ec50c03e33defeb4757915bd,,,W0323
+archive-references,286,PromptPaint：通过与paintmedium类似的交互来引导文本到图像的生成,,cd6eeaecd21f1ddb6c70a87ae32286dfe537c5810bb3e11d59c30c7e87dbea61,,,W0324
+archive-references,287,Prototreamer 结合物理模型和生成式AI以支持概念设计的混合原型工具,,0b82c5c3f22661f5e2af367fb5c87ffa6f7a60ce34a5cd87e7ed6050c0906a25,,,W0325
+archive-references,288,RePrompt：自动提示编辑，以细化ai生成艺术的精确表达式,,058b3ca74cd8a1601934de0d54f6cf0603fad71d8b75505acb855c87a4298c6d,,,W0326
+archive-references,289,Research on the Mechanism of the Multimodal Sustained Usage of Sport Drones from the Perspective of the L,,e0b5f98cacd800d2086f2fc99626021b5200fe162b792cf99fe07d0e6dc0b11d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e0b5f98cacd8.pdf,,W0327
+archive-references,290,Rethinking the Evaluation for Conversational Recommendation in the Era of La,,04f7655a015f6621f1d0a1b765f50030284b848f505ba30bbcd98b5edb85f2ca,,,W0328
+archive-references,291,s41586-024-07697-2,,faba3c4f93edd103745f0916727fdab706f60161e7058b7424ae74751101f2aa,,,W0329
+archive-references,292,Scenario-based planning of design method validation studies and the associated effort,,0a7e689fdea0f514437c16b19e19805755b50a3bbd28f9f5a71e678d929308af,,,W0330
+archive-references,293,SimUser：通过模拟不同用户与移动应用的交互来生成可用性反馈,,6155a39cf4b7328aa23361dc945aa71da9cfcb4014840ccb2706f6105cf13ead,,,W0331
+archive-references,294,Spellburst 基于节点的接口，用于使用自然语言提示进行探索性创意编码,,01b3f314b5e443d4370b14957b88a60007626dd71e71b534d271e80889cf8fe6,,,W0332
+archive-references,295,Spinneret 通过非明显的概念关联来帮助创意构思,,0ad59e97202587462f147895d3e6dc58a7901d61df767f0b16598a053d2e4c0a,,,W0333
+archive-references,296,Stimulating design ideation with artificial intelligence present and (short-term) future,,6e2ff859386666e84af65571076211ff12476f364c1d4e94e7efb5d6a8109e27,,,W0334
+archive-references,297,Supporting modular product family representations by methodically utilising meta-models,,5b2576dfcecbca65b4918df82c4ac7edcb7ff51a519faa7f7cec8de3a8c4ea23,,,W0335
+archive-references,298,Text Stimuli Created by Generative AI in Ideation An Exploratory Study,,e382345155d8e5c373646061f534d27f20ccb0c5076596f783a7d8820882a180,,,W0336
+archive-references,299,The use of occurrences of ideas for constructing and characterizing the design space,,5f0a112ffe4a7ab4587bb628c35079a0f5b76920acea17ff9f98d3141f6f610d,,,W0337
+archive-references,300,Towards Model-Based Modular Product Families in the Context of Systems Engineering,,fe9da3daad6636cf3d2a30de6312bdadc538d746d107e1dbdbf0b39dbae45f5d,,,W0338
+archive-references,301,tyleWe：借助高效的联邦人工智能实现生成式时尚设计中的风格融合,,ace7ef71073595f4b39ee67482042ba7227a373d023235e7f70a2a3f911c8317,,,W0339
+archive-references,302,Understanding ChatGPT’s impact on student-team ideation outcomes for new product development,,3d2cf1fb1988e3b55c6dee331a202529490f5aa04d94b6e0f2099ba6a4ea6462,,,W0340
+archive-references,303,Unveiling the Complexity of Designers’ Intention to Use Generative AI in Corporate Product Design A Groun,,fc8f8b59f9eebc6041bf056804ad83fe31d1825b7418b31f3f48a33fe6c65a6c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fc8f8b59f9ee.pdf,,W0341
+archive-references,304,Using FCE and FAHP to Explore the Multirotor Drone Appearance,10.21606/drs.2020.164,ccc769a6e1aa2a11ad868dae00a2c94325b2cf3bcedd66030ac3373574ebdd8c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/UAV-U002.pdf,hsiao,W0009
+archive-references,305,UX AND 综述,,028b16d9c34bbf93b82d09dbb4933cfab6cd11b3070e52bd65e73f3357e74b82,,,W0342
+archive-references,306,WRONG McDesign slides,,c443b145db65ea74f983c40a53ade86db6febaa48970976753802fdd4734547b,,,W0343
+archive-references,307,“非遗+AI”模式下的湖南土特产包装创新设计 纪向宏,,b1111dcb2197e65eedd38af6f05d20d48ff718523e0b1777ec7c5bf2ea7977f2,,,W0344
+archive-references,308,《唐文化赋能的典型场景生成式人工智能设计研究》,,986ea82fcf7c349eed0c43c7ad25eb7eb660a9327d23a4eae3a248880199bf5c,,,W0345
+archive-references,309,一种基于形状语法和 Kansei 工程的 AI 驱动的产品身份表单设计方法：Midjourney 和 Grey-AHP-QFD 的集成,,71d3e2a0b829afeb1ffa698eda95caa1aaf4c9b202ba4ebce81d1b6f549f3e82,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-71d3e2a0b829.pdf,,W0346
+archive-references,310,一种基于条件变分自编码器的翼型创成式设计方法,,43bea94164704931718278860efb0a6547963e3803e91bbcf285d6e8ed5dbab9,,,W0347
+archive-references,311,一种用于产品外观设计的定量审美测量方法,,22599b22e5b6bca65b9f46d5c65aee0abe5f91495f42297210d165ec6e4e071d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-22599b22e5b6.pdf,,W0348
+archive-references,312,一种由用户感知的偏好评估数据驱动的灵感库的构建方法，用于生物启发设计,,3be20aae8c3e6f5c869717f7770646c18cd09ae1d1e14f540a393ace1faecbe3,,,W0349
+archive-references,313,一种融合感性工程和鲸鱼优化算法的新型产品形状设计方法,,45516963b50eec9b846f0830e1d045a10d42faed79be605d258c11ca49b5bf58,,,W0350
+archive-references,314,一种集成感性工程和扩散模型的产品形态设计方法,,c53940c793fdbb6ca5d4514f15b867cf13e33a8d0062ddc85507d8d845626d6b,,yang,W0351
+archive-references,315,一种集成感性工程和扩散模型的产品形态设计方法,,8d4102a0c888fe6a2c4702126c2dc00decbd6c4d799187b9837a9c78afba8186,,yang,W0351
+archive-references,316,中国工业设计理论研究40年的回顾与展望,,27a9e2287ccd18d98a24f96ecfc15da3dc5d64247f92cf391e48302dcfaa05ce,,,W0352
+archive-references,317,中日感性工学研究现状及启示 李勇,,496507c164bdd76eacf99405c5688969bc5c6c65bac496e9c6acc28d95737d9b,,,W0353
+archive-references,318,丹麦高中生与机器人聊天,,ff91d9f69f7a7fa3bab645f6ec751198b29aa2aa38ed568add6c0c8093f7acb0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ff91d9f69f7a.pdf,,W0354
+archive-references,319,了解灵感：深入了解设计师如何使用支持 AI 的平台发现灵感刺激,,50ab184e2eab7be2ee4d821b05ff2a0a36bd1bd7c492dcbdcc5e149da11e15d6,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-50ab184e2eab.pdf,,W0355
+archive-references,320,产品外观解构与情感设计变量识别方法研究 屈庆星,,0d74b977c0231ec34d69e984f55ea3615ed74f740ef81b04e20963edbbbd60c1,,qu,W0008
+archive-references,321,产品色彩感性工学设计研究现状 丁满,,888d454292a0be2c5292abbc5ea96248c637c2b65950c5115716686758dd2f58,,,W0356
+archive-references,322,人–机器人协同作业中的人因问题研究综述 张岚云,,f4050eb5b06e27bd8fc9d6df6889cf3679b85780cc0c38167b42fef08982006a,,,W0357
+archive-references,323,人因工程下不同养老模式的适老化设计研究 石园,,11b1af779bc50181cce188ca96a4dc39161247d84b24a65d090be531a7d33d97,,,W0358
+archive-references,324,人因工程学在飞机驾驶舱空间布局设计中的应用 罗晓利,,078937832039fae4b816afd7a742ecb1afb1614acab95cae62ce9dec3207692e,,,W0359
+archive-references,325,人因工程研究进展及发展建议 陈善广,,543c5f03178445fc6472b876565e624e71387c8c4e62972971797678e960c857,,,W0360
+archive-references,326,人工智能创造力支持工具中的艺术用户表达,,bc7ac6d067e09c9d3e62ccf0fdf1dbb220aea63c373b33b7a70568d114dbdf75,,,W0361
+archive-references,327,人工智能方法在产品设计中的应用概况和趋势,,918116ed9038a1fc42b7c84519e1e642b0bfd04a8c8cec306c0efcd08e75bd7e,,,W0362
+archive-references,328,人工智能驱动的华佗五禽戏数字交互设计与公共传播 张悦,,091e71bfca6130d46d08914ca24d7840136f98020d1c967de235c7bcbdd1d829,,,W0363
+archive-references,329,人机协同视域下汽车造型智能设计研究 章彰,,0c97a4ac452952da10c61e2a6d9395213008ef2495c55beafb4d0312f3e708ce,,,W0364
+archive-references,330,人类作为 AI 导师：增强的人机协同强化学习，实现安全高效的自动驾驶,,ffd3acca808fd2987e4cfd051f00ca411c2298b0f2abc98eb61302989db31076,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ffd3acca808f.pdf,,W0365
+archive-references,331,人类咨询与人工智能咨询：大学生的观点,,7b444fd2573ae9a60f60ae3579c762be00c45065cd31bdfe11d084ce9a46ebd0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7b444fd2573a.pdf,,W0366
+archive-references,332,什么约翰尼不能提示：非ai专家如何尝试（和失败）设计LLM提示,,adc5133a79d37283b05c9779992726985151b341312a71380759da42f7eee515,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-adc5133a79d3.pdf,,W0367
+archive-references,333,从可解释的 AI 到交互式 AI：关于人机交互当前趋势的文献综述,,01c89f34eac7f24ee67646ec381fa64eb7d6735c69e3b08ccec8441dcbb101f2,,,W0368
+archive-references,334,从在线产品描述和评论中提取和总结情感特征和反应：一种感性文本挖掘方法,,84d7b2846a09ccc4a1a2f9525642d953fa09d592203cfdbdafde34b348a9fc3b,,wang,W0018
+archive-references,335,从工业设计角度谈多旋翼无人机的设计 刘帅,,c5ff65d663d55aa9c33addfce82727bdadce94d41e656390de7a8051335f2f53,,,W0369
+archive-references,336,优化人机协作：动机和准确性信息对 AI 支持决策的影响,,3e5ee9f01817e1d9e0e670305c5b2844f5985d4203cefc53eb242adcd1085fd5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3e5ee9f01817.pdf,,W0370
+archive-references,337,使用AI进行设计构思-使用生成式机器学习模型进行素描，思考和交谈,,3c78f70e2d19ed150f632e9769e3819214543201ef3911c4a5a8c4d61dbdce68,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3c78f70e2d19.pdf,,W0371
+archive-references,338,使用ChatGPT增强提示工程的提示模式目录,,15b11c93075e943d9dd7154252784a723490086cddec65ec38361fcea597f33d,,,W0372
+archive-references,339,六旋翼无人机造型设计 梁健,,1e3b88277683d073e1892dfda6a6f7f4e8beeb786263c1247a1f7412d914a27f,,,W0373
+archive-references,340,决策科学中人类人工智能系统的设计：回顾和前进的方向,,b49cc67d20a066b934dd57b97d0dd481cb95fd0c1c687b7be8d4c7019706cdb0,,,W0374
+archive-references,341,前人工智能和后人工智能设计 在工业设计过程中平衡人类创造力和人工智能工具,,b7749f606fa3eae5649416a0230a4741923ac7f577eb665e0edd6b13f0f09fb3,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b7749f606fa3.pdf,,W0375
+archive-references,342,协作扩散 用生成式AI促进设计上的共同创造,,36fccdbb85c5451c0da4104848354cfa4ce501de5558b1953ae8954e536b83f2,,,W0376
+archive-references,343,可供性与产品语义设计理论的交集与边界研究 周海海,,5aba6c308af4eb3647e1c30c5b14c08a52b9e9cbc44357ae3bb19a9120d3c1f9,,wei,W0004
+archive-references,344,可供性和产品语义驱动的产品设计方法研究 邓家乐,,9ff187baedde4a2ac9906800f71a8ebb05579f958a40e2dadef42c472ed8b7eb,,,W0377
+archive-references,345,可持续设计研究趋势的可视化分析 孙波,,ac81767612e20c0b0df22447cd01264b866fbba14bac0808d9d84d48598b1ea8,,,W0378
+archive-references,346,可解释性在形成对自动驾驶汽车的认知、信任和接受度方面的关键作用,,974c662007805903abf2c76a60097c48bf4eb600e63d37187806b3cf80fe7fec,,,W0379
+archive-references,347,国内外人因工程学研究的比较分析 郭伏,,e32133db678a07cfe263b893461bc137d8bef8bd4461bc0cdfc7497fc8c07e89,,,W0380
+archive-references,348,国外生成式产品设计研究综述 刘永红,,0412bac6442a966a49dc64f3b28b8c595110f24e45f926ffe1c1dfcfbc7e72a2,,,W0381
+archive-references,349,国际人因工程主流学术群体及其代表人物 刘则渊,,afd2c3ab862e3863a84baa907f9c417b3f59909394543b4c2e1792eb4d8d0f0c,,,W0382
+archive-references,350,在社交机器人设计中整合审美和情感偏好：一种采用 Kansei Engineering 和深度卷积生成对抗网络的情感设计方法,,5bd77082a7d02823debfb1e9a5b4b0bbe6f6758688f016cb7e5bb42fad42ce29,,,W0383
+archive-references,351,基于AIGC协同工业设计流...气道廓清辅具设计研究与实践 尹虎,,03895d5c37cf585e262c28669231b05f6f78276910f0cb138d883360b800222a,,,W0384
+archive-references,352,基于AIGC的汽车内饰形态设计研究 曾绍庭,,d0e83ba4dd098d8fc80b25c3d3f6bc204b776311b9abe0031d53fba62de5344b,,,W0385
+archive-references,353,基于chatgpt等的聊天机器人回顾,,c9c46b0ccfedbdc7cc3e56542b6932c808798f439e4a2e48511e2b79e6fe563d,,,W0386
+archive-references,354,基于eHMI的车外人机交互信任影响因素研究 徐娟芳,,425f93c5fd28111814b21454a734dfb4ac64c0d3431ed950dd4bceebec5efbab,,,W0387
+archive-references,355,基于ERP与遗传算法的产品造型设计方法研究 梁晨,,2a84027a34c57708679342fc189b68ad90e2d8d417275ee3ab744290f38b0b71,,,W0388
+archive-references,356,基于LoRA模型的非遗数字化传承：以楚漆器为例 侯云鹏,,b2d9a20713fb408721bb01a371851660024f017c1a0e39751a44d3b8c0c68ede,,,W0389
+archive-references,357,基于Stable Diff...助汽车零部件设计流程的研究 闻一然,,b5fb7ee6c1fd1a86da864eeb8bad70348aa4914ec9c70bb0b173ff6dafa012ff,,,W0390
+archive-references,358,基于StyleGAN的草图生成产品设计效果图方法研究 邓正根,,503c7a8cd1563937ba81792a7ad9464e1d1065e98c58546905223070ef835c53,,,W0391
+archive-references,359,基于中国生肖文化基因的IP形象智能生成设计方法研究 林茂丛,,d65182c35a46cc365f0552e82e75860890cf665b151c535b69f7f127400d0d11,,,W0392
+archive-references,360,基于交互式遗传算法的破拆机器人造型设计 尹昊苏,,035e1c4f110b9ffde962114fe89c8c5bf06d7da632b2e770ef1d6bd3987dc199,,,W0393
+archive-references,361,基于人因工程学的座椅设计与评价 沈维蕾,,789ab2c6e7056f8006a495a953153257487705afdd6e9f5406a79cd3b47a7d1a,,,W0394
+archive-references,362,基于人智团队智能体协同进化的群智创新设计方法 罗仕鉴,,d6a456d10ffbc454dab44205612f9b71ea2976830d5d564d4a686f795d1afb97,,,W0395
+archive-references,363,基于人机协同的《山海经》数字化体验设计 曾真,,c1a333eecde79c8a73f847b7daf494fe51e91bed1b835d16ea794730b4e1efec,,,W0396
+archive-references,364,基于参数化形状语法的产品识别设计方法研究 厉茜茜,,005ef5e99489312eb34635ec3804977b77134f54154869ddb3d0c473a288126a,,,W0397
+archive-references,365,基于在线评论和FAHP的产品外观感性评价模型的构建——以家用便携式空调为例,,9fc500a05d41296874740697f5b3b4baa209a89794cf7cc4adec8d9a9c80527b,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-9fc500a05d41.pdf,ac,W0398
+archive-references,366,基于大型语言模型开发用于社交情感诱导的对话式虚拟人,,c633c28db0c2c6c9d199e1fb92920a636245ec1676a83464dfd7df265068f7e1,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-c633c28db0c2.pdf,,W0399
+archive-references,367,基于形态表征的乘用车曲面造型特征差异化设计研究 蔡振原,,a19df24404aa4f93187719790529e54645d14156e2d289bffbf33a55d2845268,,,W0400
+archive-references,368,基于形状文法和交互式遗传算法的产品形态创新设计 朱天燕,,a6294ef05b72692321443fd079e740d7480157ce04fa7006f3cd368a58bbf2dc,,,W0401
+archive-references,369,基于形状文法和交互式遗传算法的产品形态推演设计研究 朱天燕,,0a5d4f5396e01a549f691e6f41d372854c24fba7a7d959f400b4d9cb96f53b9b,,,W0402
+archive-references,370,基于情感和功能约束的产品外观多模态生成设计研究,,74a18aa8104f7d65f1655c603d7fa52d21504178e3636a3c70cdbdcf3702eac0,,,W0403
+archive-references,371,基于感性工学的人机界面多意象评价 袁树植,,37e17fce0f391bdc12e0a3003cdd19d8fc61b19242e243e09e062d2f0cdb0691,,,W0404
+archive-references,372,基于拓扑理论的森林无人机仿生设计研究 周瑄,,8424d3a0a3c52f0503ce18d333cc5e695d3d791d5957362a7e3bf65307be9bc2,,,W0405
+archive-references,373,基于文化基因与形状文法的明代珐华纹样创新设计研究 温凯超,,50b9cd7d1590f9737466510b277b18e6f8300d1e78ffd57df5c8ab5214b726c4,,,W0406
+archive-references,374,基于权重化特征与形状文法的产品识别设计 厉茜茜,,b3b704d4ba5633f92d6d9b344ed550a6b3eb71765487ceef06d0aa687172e75e,,,W0407
+archive-references,375,基于条件控制 AI 图像生成的产品感性外观设计方法,,8bbcfdab71c658701d57cd42e59f13be4d981b156912ebf54b059361ae00cae0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-8bbcfdab71c6.pdf,du,W0024
+archive-references,376,基于深度学习和感性工学的产品创新概念生成,,e425f5b6693ae1d14b4da6c4c92f5e385a764a86c4023a157782a88d265ac6be,,,W0408
+archive-references,377,基于深度学习和感性工程的产品创新概念生成,,39e600f72c557a471d63e0a19e7121ad88f65bd1317f96d19e99404457cba532,,,W0409
+archive-references,378,基于深度学习和感性工程的产品创新设计,,911b586eed2d3fa231259f94bb3b4ef500c9f7e2f61c8813bad57f9531e07f35,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-911b586eed2d.pdf,,W0410
+archive-references,379,基于深度学习的图像生成模型全面综述,,9d98902c08029213b767ce09bb5208a1bc00088984043077d522f13f6688c3a0,,,W0411
+archive-references,380,基于混合结构编码与动态特征融合的印花图案风格迁移模型 朱威,,4555bed7d623350518e9d5d1022ca860b577558c8776b55fa1131c317bd85b1c,,,W0412
+archive-references,381,基于生成型人工智能的汽车前脸设计方法,,7a3309feb8c706304867402d49c8594c91f2f74e06f8316c1904d4cb2f972be5,,,W0413
+archive-references,382,基于生成式人工智能的离子色谱仪设计方法 刘玉磊,,6b2ce763f5efa707abad2b2ab65248735a5206d687f3c78ae8d814e2ece07667,,,W0414
+archive-references,383,基于生成式数字化构建四川石雕植物图案的AI设计创作分析,,99b0f07340c0b68081e27a849a82f98ff18ad9923985a406808a9f97cfc506af,,,W0415
+archive-references,384,基于生物原型的小型战术无人机造型仿生设计,,9bcb23bb12a8fd604680071f141d31315c635e0a8f23e3b9cabc31d3cb1324f9,,,W0416
+archive-references,385,基于用户行为分析的多旋翼巡检无人机使用方式设计研究 王睿洋,,cf1890ebe01d2678962f3cc3fc982af8478fb8f9f43ccbefd01c9dddb90cfe0e,,,W0417
+archive-references,386,基于知识图谱的智能产品服务系统交互设计研究 从靖晨,,32d4ccb08ecdf6ef49ac710df7c7c5f9daf67b02a4200d19a0cec8f4d08da728,,,W0418
+archive-references,387,基于知识工程的产品设计研究综述 余隋怀,,57f50ec6603c5a65e2e90f4ab62e5fee467e76a7998c9df2700a2ad25c1fbd67,,know,W0045
+archive-references,388,基于科学知识图谱的触觉设计研究热点和趋势分析 刘骁彤,,803847b01e38ef714ba0887dfa8a23133f16541ff5f799ee85dee4daa771df6a,,,W0419
+archive-references,389,基于稳态扩散模型和LoRA...练的IP形象再设计方法研究 方嘉琪,,622b3214817677b41db411b8b99c9ea5ef677eda558032a5fb1914a83b8044dc,,,W0420
+archive-references,390,基于肌肉疲劳模型的健身穿戴产品设计研究 何彦,,ba66c3ea2b0c436f1914f8e537c3a4f103a9d8363e1031346ec460f7be3e5e7d,,,W0421
+archive-references,391,基于脑电信号的虚拟现实界面布局深度感知认知负荷研究 王连彬,,32d78b9f71441f2f57e24c2f5b7258d703da1a335d6c706b3120426052c9a844,,,W0422
+archive-references,392,基于软系统方法论的宠物航空托运服务设计研究 陈羽,,8db5825771feadb5e9998c705c534efc956b006b06a513f13b459e9c51e9c765,,,W0423
+archive-references,393,基于遗传算法的产品形态设计模型,,6a2ac4b2d98e48719dc692d952e519c997862752ed865de2c6fdde4674425157,,,W0424
+archive-references,394,基于遗传算法的飞机气动优化设计,,2aebfb0e4c12a3d6a8c0f0ddd9f09a574ccf0cfa6c227b192f44f3b184ef0506,,,W0425
+archive-references,395,基于非驾驶任务的智能座舱出错因子提取与分析 窦维兴,,568c46067ef1b4200d51f260d925c591fc862f86e3887edaf781255ee2e331f4,,,W0426
+archive-references,396,如何确立学术问题——文献综述撰写的目的与方法 周大鸣,,80b625084be755659bf124d2b82545fc63e9b7023ca4a6750788ef639438a0c0,,,W0427
+archive-references,397,工业机器人中的人机交互：用于基于 AI 的可解释机器人程序优化的用户界面的设计和实证评估,,e77923fe476edefb2a15a36904875b8474715a1cd45937c84d851cebde34adbc,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e77923fe476e.pdf,,W0428
+archive-references,398,意象驱动的产品造型智能设计方法 苏建宁,,acf41e7035e5e7e698b0ec48d99c7fe340ed620e97d5e2ac1b3c35b1ef23d9a5,,su,W0429
+archive-references,399,感性工学,,2bcce7ce3cf2c3dacf27d19060cc630ffb1cc5eccbbed048483b0b9e80f383f2,,,W0430
+archive-references,400,感性工学综述,,fb6bce4778390d3fc2a41064c8a55a32291ed489dcb3c22753a6877dcae9274e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fb6bce477839.pdf,,W0431
+archive-references,401,感性工学设计方法研究现状与进展 丁满,,f94b51e2cdd586ef44c1604ba526b4a9fcbdc52737a3ae730c5d75207bfc4f00,,,W0432
+archive-references,402,探索挑战和机遇，支持设计师学习与基于人工智能的制造设计工具共同创造,,f1c1520fa01e10097e60c69a6821df045226035af457a0f0c5fe9af18b473403,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f1c1520fa01e.pdf,,W0433
+archive-references,403,探索文本到图像AI在概念生成中的作用,,2e2034bd5f31f4f937c2c9b3899600085d129a389c43a7104c14c56300bb2d28,,,W0434
+archive-references,404,提示工程文本到图像生成模型的设计指南,,7272a9308eba08d959e5ab16a14ddcaeae96c12dd9bdc2764abeedb4d20e8902,,,W0435
+archive-references,405,数字化人机界面设计的人因工程问题分析 王志方,,3305cbbc7db17b75a42f5916732b32003558fa45076fcdb3a0a9dfab001841d7,,,W0436
+archive-references,406,文化遗产保护中虚拟现实技术研究进展 刘鑫达,,5936bf18f3965bc14cb727cea5d0ace06163d68601b0334fdc879dcd8a778d24,,,W0437
+archive-references,407,新型水上混合水陆两栖飞机调查：水上无人机 （AquaUAV）,,dd38f67ce7c1cddd1d3389a7d4bb6a8492f6fae31951ba7614cdbf45e2defcca,,,W0438
+archive-references,408,新能源汽车外观设计的感性工程：一种互联网大数据挖掘方法,,4a15415560fe2d54d91939b8634801f94c325a6a5b146e4d88a77c09ff93477a,,ev,W0439
+archive-references,409,无人机造型设计层次灰关联评价方法研究 高俊杰,,234104f47f10358d30d37957f4508e4c6efa6075f74649e27139adbd6db463ca,,,W0440
+archive-references,410,智能产品交互设计研究现状与进展 罗仕鉴,,0c354358ea1e83e49c7a2ffc7e1a40fa852f07d908ffbe2bd571d8e5fbf57719,,,W0441
+archive-references,411,智能决策在心理方面影响,,4ef6ee067546b950425f465a9c2cfbe381f61d1dd7757a0d2147b6e03f37e893,,,W0442
+archive-references,412,智能技术驱动的汽车造型设计流程再造方法研究 罗仕鉴,,056b56654908586c127db75d2b38d76c2312cb1dc71534825e30fb9eafc65148,,,W0443
+archive-references,413,智能设计工具与KE-AHP...究：以家庭种植产品设计为例 李振鹏,,722e66edebf29e68ed1ca17866822743c76b7da90e7500b51f53ec48474ab4c7,,,W0444
+archive-references,414,服务设计转移到用户体验设计 综述,,e3af4e957e59998f28418fcfe883b0ced841c9f3b632681e6ff16cdcc451b71c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e3af4e957e59.pdf,,W0445
+archive-references,415,机械产品的生成式生态设计 设计工作流程,,e4da9eb965df012bcb1a8ab56dea20e80bb1cc53018c822afe8a41ce75a460c1,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e4da9eb965df.pdf,,W0446
+archive-references,416,机械产品设计方案多指标综合评价方法 王海伟,,8d8a5ce22348cf206f98075f830f2ddd1c4b1193db5d540708f9b1a49cdf69c0,,,W0447
+archive-references,417,框架，对齐，矛盾，抽象和指导：设计情绪板的工作原理,,0c359906ee5b28b43bdaa80a530c5cbb9e2fc3def4842b5c051165216287e739,,,W0448
+archive-references,418,植保无人机设计：定量研究与虚拟仿真,10.1016/j.ijadr.2024.03.001,34d16e2fb00bbf1e28bb231206b1a35877b8f64c85b157e149f75acce112c179,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/UAV-U001.pdf,,W0010
+archive-references,419,水上无人机 （AquaUAV） 的 Bioinspiration 回顾,,51137f9f21db768e7e99ee9fb73cf4567d62ddab84805daa2ac8df04a4069d09,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-51137f9f21db.pdf,,W0449
+archive-references,420,浙大罗仕鉴,,0405a1eb174988fc2ba52ffac8d804d5f4ba33c342290f2486bb02bf35dc16e9,,,W0450
+archive-references,421,浙大罗仕鉴2,,bcd89ee2b31044ef4ec65fe22ed2de0fe6b16100572b487de5c7684e595d4958,,,W0451
+archive-references,422,现代制造系统中的人因工程 刘春荣,,bed17dca33535096755952a11acbb6ca0d7bad41f4830409fc2d23aa710cab9e,,,W0452
+archive-references,423,理解用户画像生成中的人机协作工作流,,b3df15a654cb032e644f833c09fa6e837760241e333f4a56e24b23e9ba50a5c2,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b3df15a654cb.pdf,,W0453
+archive-references,424,生成式人工智能技术下的复杂农机装备设计 张宁,,ef99eb635fdab96dec7650bb008c062d97d82939b1779be6748858a7c0b0947d,,,W0454
+archive-references,425,生成式人工智能技术下的复杂农机装备设计 张宁,,df2a0ff6dcc94cfa967d9bad1472c62ea08de85533bd40470876c6c6f7b1b05a,,,W0454
+archive-references,426,生成式设计在家具设计中的应用,,dc37501d88d45b6847b8dde5b96a196a94c87f65d8096d4589155fa017627295,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-dc37501d88d4.pdf,,W0455
+archive-references,427,用于无人机飞行控制的受鸟类启发的变形综述,,01234b431ed5473bc4783505e310cc4ac1819f5227c1d6018c57a3c5b346062f,,,W0456
+archive-references,428,用于美学产品设计的 3D 形状生成方法,,ca2442c5df4504a476707bdda71c67a987a11b60a78c69da58ec00811bb586c9,,,W0457
+archive-references,429,用于造型应用程序的曲线拟合遗传算法,,186a53b31e55982c9ab2f95f0cfd4efeaac134cbf9dc0e8a6cffd2f2d563393e,,,W0458
+archive-references,430,用人工智能设计：与图像生成器共同构思的探索,,9f6d20bf57330c483845537fa704f226cc816462c0af2ee49703467f73647baa,,,W0459
+archive-references,431,眼动实验综述,,1c3a980126d42880d14621e449a5e37c2bb88aa36c6bfa5cc6d67d2b1e32c4c0,,,W0460
+archive-references,432,研究方向评估与文献综述,,8604f6280bd14b6cecab084e932df7e7ebb8b113060d1f04d68a3280c20fddfb,,,W0461
+archive-references,433,研究方向评估与文献综述,,141211437bf200b3cc34186a9e240ff526541aaf0cbee84ae10a4e2335038e3c,,,W0462
+archive-references,434,研究方向评估与文献综述,,fbcacf1bd4cc1c3986bcb5e958ea3a0afe814dde721afde831e2adee5d7dc727,,,W0463
+archive-references,435,研究方向评估与文献综述,,e8e5edf419287a8d1c6a2fd2dc6659733bdaac0efa92d624ebaac32a25b7ddff,,,W0464
+archive-references,436,综述,,a713268784ada0708903ac87a15853732fe3721f1ea9c993937ecde99a280856,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a713268784ad.pdf,,W0465
+archive-references,437,罗仕鉴3,,29f48a911501710816f90eff48471440cea302626fc873f17790e89dddf904f5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-29f48a911501.pdf,,W0466
+archive-references,438,罗仕鉴4,,351206d841115b4a7552f1a513f11e8f2d247a57f84708f8a3f77a30901402fe,,,W0467
+archive-references,439,罗仕鉴5,,6324b9debff5fb4a51f9cded342ca849d7f05dc87e06896d479480b53e90b5c5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-6324b9debff5.pdf,,W0468
+archive-references,440,考虑个体感性差异的感性需求解释的模糊映射方法,,bf0f69fcff37d1b22d079c3e13333034095d0b45235d2a5a74bd7680ca952b5a,,,W0469
+archive-references,441,聊天机器人综述,,b1ebe501caff873992a96d4a01a56c9185b20a476ecce669f700dd1accfb70fd,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b1ebe501caff.pdf,,W0470
+archive-references,442,自适应虚拟代理：实时人机交互的设计和评估,,251646bf63a7510aa952b5f20107c228fcb76c5222e6715f0decaf44054a82df,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-251646bf63a7.pdf,,W0471
+archive-references,443,航天人因工程研究进展 陈善广,,986afb53fbb6b3394c83ae935e3c9ff9d37210444f14a449f30c849892ec8044,,,W0472
+archive-references,444,航空装配作业疲劳监测机理研究及其装备设计应用 张岚云,,e24438052c1458b28eb92b2772d3a4fa3d36229c43f02f2099c851fb63c09e38,,,W0473
+archive-references,445,视觉感知数据驱动的产品造型智能生成设计方法 王愫,,1d997de8a381aedc1d9f90bf3a9e82f8463cf5b0d2989a725eb28949f2e53129,,,W0474
+archive-references,446,设计思维与人工智能：探索协同效应的系统文献综述,,3d410cd949556eb9d719f8b2f31812b2d181706418e51870e30c967ea2bd8a8b,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3d410cd94955.pdf,,W0475
+archive-references,447,设计思维研究综述 李彦,,a101e4fce40a2892c2186e5c8f2623e5103d847b44b5f1f504565a11a4a821fc,,,W0476
+archive-references,448,设计智能研究综述：进展、问题和挑战（英文） Yong-chuan TANG,,2569249720135c87354b41d21f43b05533ecc19a12d42924845df3d647dcd228,,,W0477
+archive-references,449,设计理论与方法研究的回顾与展望 孙之琳,,c62e1850b628be14bfe395f1385058d2facdf49d3d58d72fd9a785552a714770,,,W0478
+archive-references,450,贝塞尔曲线,,ab5455b0bdce7bd7644b437c041ca0e7a96730eef11fef7abb0f8c06912ed9cd,,,W0479
+archive-references,451,负责任的 AI 工具评估实践的范围界定研究：有效性评估的步骤,,bbb114f13132075094fccf6c11702f4b6c39f70da6d32bee1b4b1a2474bb6466,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-bbb114f13132.pdf,,W0480
+archive-references,452,超越建议 从后向前人工智能支持飞行员的决策过程,,465ff79d0e521e460dd9999738dae4cc7dfa73d65bf189cbabd4581b558f588b,,,W0481
+archive-references,453,车辆设计中感性工程的系统评价,,05a42425280cf8c62ed8ed340d8b3a03cb85ef920c87a95f8b7e98b9d5bf9bfe,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-05a42425280c.pdf,,W0482
+archive-references,454,迈向具有生成AI的设计 (研究) 框架,,cdeb395d7b93840b76957350ab131cc32d849ee5c238139be6d27be2f13669a5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-cdeb395d7b93.pdf,,W0483
+archive-references,455,通过人工智能生成的内容提高产品设计效率：家庭办公桌案例研究0,,5df985fb9a68f0b820a54d27a7d30d0a0db362846f9d71429063885006c887fe,,,W0484
+archive-references,456,通过基于文本的分解解释CLIP的图像表示,,01b720f7c79656048aefec1e777ec77af8dffbee941b1a8cb11ec26e38e384fd,,,W0485
+archive-references,457,通过感性工程和虚拟现实进行产品形态设计研究,,1f52a11a5dfb33a2666aa7f1e7c725e5c1b653cb2b5c03435ca987a54d3a4cd5,,,W0486
+archive-references,458,通过生成式AI使设计民主化,,293afb5ad75c1c55053041bbcd32c4189275065db5d904928217a65321d79a85,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-293afb5ad75c.pdf,,W0487
+archive-references,459,集团思维通过协作思维导图工具支持想法生成,,0d26c7517390a8e113fd38b0d5add49c8a4428984834f9f7c6cd5930e2581fc2,,,W0488
+archive-references,460,面向工程产品的仿生式设计：拍打翼形探索的案例研究,,08bb00ce302bdcf4b2c88951e3f28a21933e630d158cc6c2dfb3d7d11b01b878,,,W0489
+archive-references,461,面向平飞姿态的四旋翼无人机机身造型设计 李洒,,84699a7f63762c5ce1800fcdb6b60933cb7756c030ffafc75cd225ab9e25a8c7,,,W0137
+archive-references,462,面向平飞姿态的四旋翼无人机机身造型设计 李洒,10.13841/j.cnki.jxsj.2025.02.023,8d5846c4bf0d20b7dc93ca6e701e334bc22cb2b33b6bd0c3d50033920dcaeb6d,,,W0137
+archive-references,463,面向用户感性意象的纵列双旋翼无人机造型研究与设计 李晓娜,,0e876da8d8784cca25abb2419ad7a6343243bd63abecb3a899c7f5fc0ba445b5,,,W0490
+archive-references,464,飞机驾驶舱数字界面动效设计及其临境感研究 蔡林峰,,c37b469dc6b4d2ceddedf6582ebc3d0abbaa6733452dd5173a86c4685d0d6188,,,W0491
+archive-references,465,飞机驾驶舱设计中的人因工程问题 崔卫民,,31fe01480c28969409115786213e245561fbec4f6f19cc180e45b85706ca0c55,,,W0492
+archive-references,466,飞行任务智能信息推送系统技术路线,,8dd3d8d1ed9ec2a7d89cdc4824952529dc0b937cb8bea4f97efe7b7bb0038916,,,W0493
+archive-references,467,飞行器生成式气动设计研究进展与展望 林杰,,11daefbd87faff6edc77eb4095d22ad350c7e541ac1c22ecb48bb295946c8e84,,,W0494
+archive-references,468,高技术产品造型意象机器评价...法研究——以航空发动机为例 周海海,,679e5d3a69722b9ac3fbf890b8aea271795317fcca31922c1043c41c3cf9cf06,,,W0495
+licensed-files,2,A001__2026__Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable.pdf,,31829e7f487afc757dc51f1352c83af16b9990c8db3f8f7767e1efaee3cc1e85,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A001.pdf,chen,W0001
+licensed-files,3,A005__2024__Embrace the Era of Drones A New Practical Design Approach to Emergency Rescue Drones.pdf,,e80e25ea0609e76bced310d34a93c831b1783da41138c3dd9ecb8ad7bcda7021,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A005.pdf,,W0011
+licensed-files,4,A006__2025__Research on innovative design of Nuo mask based on Memetics-AHP-Thematic analysis-shape grammar.pdf,,da9e0e9b4641312d30287ed43aae97d745b80c93501617c5382aa1cb7a3421c1,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A006.pdf,,W0051
+licensed-files,5,A008__2024__A Product’s Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation.pdf,,e1a3990487326088a061a1f9499125b36034959ab06b819bd4f0d4958acf3e57,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A008.pdf,du,W0024
+licensed-files,6,A009__2025__Research on Evaluation Methods of Complex Product Design Based on Hybrid Kansei Engineering Modeling.pdf,,a08d7184d9fc34a3be8aa5a903e5aa75bed895744ae14fb54c8318db241c7000,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A009.pdf,,W0054
+licensed-files,7,A010__2025__Grasshopper Algorithmic Modelling Parametric Design for Product Platform Customisation.pdf,,3d7a42b66621d1937374a90d49032328e7c11079a8ab63b96356330083976fbb,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A010.pdf,,W0055
+licensed-files,8,A012__2023__The Design of Automotive Interior for Chinese Young Consumers Based on Kansei Engineering and Eye-Trackin.pdf,,80d793118bfba4a22fa07d9daadb117df8dfa70e9dcad61ad4413e976ce787b9,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A012.pdf,,W0059
+licensed-files,9,A013__2023__Study on Imagery Modeling of Electric Recliner Chair Based on Combined GRA and Kansei Engineering.pdf,,e02c495bcbd1631664f5006a1327dd04731d8671a426b2ca4d17ffb851da4b9c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A013.pdf,,W0060
+licensed-files,10,A018__2023__ShipGen A Diffusion Model for Parametric Ship Hull Generation with Multiple Objectives and Constraints.pdf,,0d9787c23c03a5ba0feea20a319a8402b833c78361ae702088f8982a34d9bb6d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A018.pdf,,W0065
+licensed-files,11,A019__2023__The Exploration of Integrating the Midjourney Artificial Intelligence Generated Content Tool into Design.pdf,,80e29e66b2141cb7320cfe38a88cc014b5f526e3f4d405f27baaa9d045881f66,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A019.pdf,,W0066
+licensed-files,12,B006__2025__Research on the Innovative Design of Traditional Motifs of Twisted Porcelain Based on Shape Grammar.pdf,,fbc327f7b5d650409f0ff93821ca347857951886b27e94f3987380eee71d1f20,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B006.pdf,,W0071
+licensed-files,13,B007__2024__An Elderly-Oriented Form Design of Low-Speed New Energy Vehicles Based on Rough Set Theory and Support Ve.pdf,,fd044bfb9bbe121bd40be2eff67f4935f2eb6c8207c2ec80c69c311751915bde,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B007.pdf,,W0072
+licensed-files,14,A026__2023__A Study of Sustainable Product Design Evaluation Based on the Analytic Hierarchy Process and Deep Residua.pdf,,e7b636dc9ecbfe3c6f1650cf827ae299a212106fd9f83d61661284cb91333b22,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-A026.pdf,,W0077
+licensed-files,15,"B011__2025__Integrating Reliability, Uncertainty, and Subjectivity in Design Knowledge Flow A CMZ-BENR Augmented Fram.pdf",,d094892ad8bb73ba5922c53943181c3f665538d3bbaf4a392e9214621555c249,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B011.pdf,,W0081
+licensed-files,16,B032__2024__Unlocking the Potential of Artificial Intelligence in Fashion Design and E-Commerce Applications The Case.pdf,,d8071eac29b355b11744f46708a0baa1c7dc43b25ef5938bdf6b302945f6d857,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/ID-B032.pdf,,W0099
+licensed-files,17,C0026__DesignWeaver_ Dimensional Scaffolding for Text-to-Image Product Design.pdf,,b43dbdefb0740f0b367ca53444177c998c2d0ceed77f967a38b42c220fe121f6,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-C0026.pdf,weaver,W0111
+licensed-files,18,C0543__DCG-GAN_ design concept generation with generative adversarial networks.pdf,,863e44c044e38c0f2f64ccf39280356bfb5902bbd8aa757c3afb3b915bc07920,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-C0543.pdf,,W0113
+licensed-files,19,X0165__IdeaBlocks Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI.pdf,,c5455508be91b4b6e3f9178afa45ca3efbd4aa7626039fc97b40e980c340ff6d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X0165.pdf,,W0123
+licensed-files,20,X0504__CreepyCoCreator_ Investigating AI Representation Modes for 3D Object Co-Creation in Virtual Reality.pdf,,2859ba9d81adef79f57eced940cce1030776fb33dd8770dc416ea7aeea048e01,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X0504.pdf,,W0126
+licensed-files,21,X1459__Criticmate_ Stagewise Human-AI Co-Critique in Single-Screen UI Evaluation.pdf,,bed77a90a4cc84e532463318337685ff502f0821f99fd170d0b4c595da37a6b4,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/HCI-X1459.pdf,,W0131
+licensed-files,22,植保无人机设计：定量研究与虚拟仿真.pdf,,34d16e2fb00bbf1e28bb231206b1a35877b8f64c85b157e149f75acce112c179,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/UAV-U001.pdf,,W0010
+licensed-files,23,Using FCE and FAHP to Explore the Multirotor Drone Appearance.pdf,,ccc769a6e1aa2a11ad868dae00a2c94325b2cf3bcedd66030ac3373574ebdd8c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/UAV-U002.pdf,hsiao,W0009
+licensed-files,24,B025__2024__Sustainability through Biomimicry A Comprehensive Review of Bionic Design Applications.pdf,,45fb470e0c299a54fb4c4b86eaae091cbff0d5c050f102d46bb24deaf7c18184,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/CORE-B025.pdf,,W0141
+licensed-files,25,B034__2023__Product Styling Cognition Based on Kansei Engineering Theory and Implicit Measurement.pdf,,99f740bd8b893762db726b60f5a3410637b4ab8b71c0ae7f3a3719703b838ed8,https://github.com/Freeloop993/paper/tree/reference-fulltexts-20261109/fulltexts/CORE-B034.pdf.parts,,W0145
+licensed-files,26,B056__2023__Explaining a Jewelry Design Process Using a generative Design Method Called Shape Grammars and Producing.pdf,,7c95c4a1fa89e291088f2503094946a89713dd6daef6824fa607935e2847d95e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/CORE-B056.pdf,,W0157
+licensed-files,27,MaterialVellum.pdf,,13603d35b1df4a0d6de0547014d1f6f39e13e888009a9a82d07ab891e5105363,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/MaterialVellum.pdf,mat,W0496
+licensed-files,28,X0282__3D Sketching + 2D Generative AI for Car Exterior Design.pdf,,487aa8cdeffc2802c146780ec35a850aebc6b750ac5c7c6c301ef5642c93306b,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-487aa8cdeffc.pdf,,W0169
+licensed-files,29,C0484__A foundation model enhanced approach for generative design in combinational creativity.pdf,,1ab755b0335c27d77d4e24bae0937a267e2ab9926b8852b8ea84e837fc764bf8,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-1ab755b0335c.pdf,,W0170
+licensed-files,30,X0775__AIDED_ Augmenting Interior Design with Human Experience Data for Designer–AI Co-Design.pdf,,8c134e602f062e9e0996b882156d8a97050656d53e9eafeb4137fec3d17f07ec,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-8c134e602f06.pdf,,W0172
+licensed-files,31,X0777__Beyond Input–Output_ Rethinking Creativity through Design-by-Analogy in Human–AI Collaboration.pdf,,87feb0e67c63c4a8be09ee4e44c031d0f19410525ed20df814c26698ed2f2eda,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-87feb0e67c63.pdf,,W0175
+licensed-files,32,C0070__Beyond Productivity_ Rethinking the Impact of Creativity Support Tools.pdf,,b6ef9a324d77907b5480174a0cd78fa6d2dade7c71b58c2791a6028b01cd112f,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b6ef9a324d77.pdf,,W0176
+licensed-files,33,C0434__ChatGPT as an inventor_ eliciting the strengths and weaknesses of current large language models against humans in engineering design.pdf,,fafcb50a6ed70aa028e9806acd6c43db690c8c100389ee8e1a1aedbd2e4996f6,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fafcb50a6ed7.pdf,,W0179
+licensed-files,34,C0007__Clay to Play With.pdf,,24ad1da38465d0a6076291bde601cb321371f9c6f3938657a0018f19266bf40f,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-24ad1da38465.pdf,,W0180
+licensed-files,35,C0019__Compositional Structures as Substrates for Human-AI Co-creation Environment_ A Design Approach and A Case Study.pdf,,f22b9071fcef284be58bef9e44d618f1fd091b0474b49db7f215590e4a1f7833,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f22b9071fcef.pdf,,W0182
+licensed-files,36,X0060__Control Is a Trajectory Not a Point_ Conceptualizing Control in Human-AI Co-Creativity.pdf,,a093248ab05f64a299600959bd1b8a269d7c2bc165c04bc64466716f0f4a653a,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a093248ab05f.pdf,,W0183
+licensed-files,37,X0025__Creativity from Surprise_ Bridging Fashion Designers Inspiration Work and AI Creative Support Tools.pdf,,9ac858e2a8f14f0debfde3510347b097cffa7e4a1dd1ab05a860383d224e7eb3,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-9ac858e2a8f1.pdf,,W0186
+licensed-files,38,X0062__Decoupling of Usefulness and Novelty Evaluating the Impact of Generative AI on Design Outputs and Novice Designers Creative Thinking.pdf,,bb26f8b7b5d037d5ef3e66a8406adb78f9a39a9eacbbc4932029e8101c1d21b0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-bb26f8b7b5d0.pdf,,W0190
+licensed-files,39,R0001__Design ideation through large language model-driven design operation.pdf,,ae84f1f31ea99369612619d51cf4f43e542de0c9212094e5530a823e6a462d04,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ae84f1f31ea9.pdf,,W0191
+licensed-files,40,C0024__Designing Interactions with Generative AI for Art and Creativity_ A Systematic Review and Taxonomy.pdf,,16c284f7b4ce8c7e090bb64a3c32b93cc582ea56e0940f923417543840f7a76e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-16c284f7b4ce.pdf,,W0194
+licensed-files,41,C0016__Enhancing designer creativity through human–AI co-ideation_ a co-creation framework for design ideation with custom GPT.pdf,,26764650767e5eb773f61d9c5a09b538da0bdd9ebaa1bcf4690370871b42b318,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-26764650767e.pdf,,W0199
+licensed-files,42,C0003__Exploring Collaboration Patterns and Strategies in Human-AI Co-creation through the Lens of Agency_ A Scoping Review of the Top-tier HCI Literature.pdf,,552d56978439bf9188066bb848af0d8f2a257770a71188e3f62adee6b409dbb4,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-552d56978439.pdf,,W0200
+licensed-files,43,C0010__How generative AI supports human in conceptual design.pdf,,b559015194e181a000d7e3d99096e62c1f0bb2a2d4ae18f4edc6c21674361bff,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b559015194e1.pdf,,W0208
+licensed-files,44,X1606__ImaginationVellum Generative-AI Ideation Canvas with Spatial Prompts Generative Strokes and Ideation History.pdf,,d5c42df14c8a0aa9a3009c65c0db340731a4de0aff84c21f2505d036778588ed,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d5c42df14c8a.pdf,,W0212
+licensed-files,45,X0787__Improving User Interface Generation Models from Designer Feedback.pdf,,b161ba78dc14b6d141f79e976f8ddca05b91857c8352abd5616d68c622abdc51,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b161ba78dc14.pdf,,W0213
+licensed-files,46,X0004__Partnering with Generative AI Experimental Evaluation of Human-Led and Model-Led Interaction in Human-AI Co-Creation.pdf,,f50c290dfe34cd5c676e66c87984a0e10c64fe5c40bd9766a20a7bbf0e3acfd5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f50c290dfe34.pdf,,W0030
+licensed-files,47,X0088__Preference-Guided Prompt Optimization for Text-to-Image Generation.pdf,,dc3978d3b620df7b94a0a13b11f99020457c5cc3aefab85691f8ef0f34993cc2,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-dc3978d3b620.pdf,,W0224
+licensed-files,48,C0294__Prompting_AI_Art.pdf,,49a46ff2c2487c462b8551617e2d43f348f036d7c6e0e8778c7d381cce56ed67,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-49a46ff2c248.pdf,,W0225
+licensed-files,49,C0085__Prompting for products_ investigating design space exploration strategies for text-to-image generative models.pdf,,93ea8425d53f4c202bacb07d3b09013bf07e43ce8d7ba70c5d9e18b7a9215854,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-93ea8425d53f.pdf,,W0226
+licensed-files,50,X1412__SpatialPrompt_ XR-Based Spatial Intent Expression as Executable Constraints for AI Generative 3D Design.pdf,,a8871e6b62f7292f69ed920ac297f4d8712e4082d844fdba1afae1729a908a3c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a8871e6b62f7.pdf,,W0230
+licensed-files,51,C0259__Synthetic users_ insights from designers’ interactions with persona-based chatbots.pdf,,b65896376f4e97dd76474bae79ade4e55ad53cf1ddf362776aaf090a38a59609,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b65896376f4e.pdf,,W0233
+licensed-files,52,C0175__The effects of generative AI model type and visual stimuli type on design creativity.pdf,,2e5cc01b3671d66dbba09626b32048538ac27f33d4cf5963415ae14249f13110,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-2e5cc01b3671.pdf,,W0238
+licensed-files,53,C0039__The Impact of Sketch-guided vs Prompt-guided 3D Generative AIs on the Design Exploration Process.pdf,,eb23dba1818ce00e92c046c8c354930be7c67ec83e64bd5027f33d19ac8ff02a,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-eb23dba1818c.pdf,,W0240
+licensed-files,54,X0054__The Role of Human Agency in Human-AI Co-Creativity.pdf,,d105dea24e3394e3c2a9ba52be6abf8bfdee2ec582d8cff90c24afc1bfca6aeb,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d105dea24e33.pdf,,W0241
+licensed-files,55,X0036__VideoDiff_ Human-AI Video Co-Creation with Alternatives.pdf,,4a4784b738fea1037e14528f18d951eea2ee385472623cd41b41bd716744d98f,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-4a4784b738fe.pdf,,W0248
+licensed-files,56,X0061__When Designers Sweat_ Behavioral Traces of GenAI Co-Creation.pdf,,b4667d2f7bfdea993915d5e1d995e31e9b612257b5576373689e1dabad853434,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b4667d2f7bfd.pdf,,W0031
+licensed-files,57,1-s2.0-S0142694X24000164-main.pdf,,7d02cf1a00eb9e0248688ac09be0786547be6e0dcc3bfd945b3e6348a15777fb,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7d02cf1a00eb.pdf,,W0251
+licensed-files,58,1-s2.0-S0142694X25000158-main.pdf,,7dbd6ab4f91930d42bcedcd5f3d03ace079620f4001537fb57a69bb9252677d0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7dbd6ab4f919.pdf,,W0253
+licensed-files,59,3706598.3713397.pdf,,62bb482b92642fc46672a9a20dc920e16fe3aa363d25e544f62ea63dbe22788e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-62bb482b9264.pdf,,W0267
+licensed-files,60,3706598.3713502.pdf,,a76395f787712c1f76321e386ab66dcf97c4a9c03964e00ed424d036a2da552c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a76395f78771.pdf,,W0268
+licensed-files,61,3706598.3713934.pdf,,77cd7c0c8bb796852b81fde54e869894eabed1374a8445118ff1c436b6a8af51,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-77cd7c0c8bb7.pdf,,W0269
+licensed-files,62,3706598.3713935.pdf,,d2e6e2f0f1528a49aabca50ef9e93cebb79449c1fa876667c491168c6966c133,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-d2e6e2f0f152.pdf,,W0270
+licensed-files,63,A Study on Factors Influencing Designers  Behavioral Intention in Using AI-Generated Content for Assisted Design  Perceived Anxiety  Perceived Risk  a.pdf,,3ccbb054e4c89f53a56b7ce9edbc8c7819d5eafd81887208255fce9e6394d496,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3ccbb054e4c8.pdf,,W0276
+licensed-files,64,A Systematic Literature Review of User Trust in AI-Enabled Systems  An HCI Perspective.pdf,,ebac71f8aa0cf663b39c9a4f084b1d3dfa89dfacec8ff0f9ff648a5117d1a003,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ebac71f8aa0c.pdf,,W0277
+licensed-files,65,Aerodynamic Design Optimization of a Morphing Leading Edge and Trailing Edge Airfoil–Application on the UAS-S45.pdf,,ea5d00de36d42b5956f7217edd2192ad99b47b767d66a0e492e3054e84ff1852,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ea5d00de36d4.pdf,,W0280
+licensed-files,66,Application of wearable technology for the ergonomic risk assessment of healthcare professionals_ A systematic literature review.pdf,,2c74c027a6625f68dd3c388036f7946601103b495e4a73edd6cceef342d5c593,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-2c74c027a662.pdf,,W0288
+licensed-files,67,CreativeConnect 使用生成式AI支持图形设计构思的参考重组.pdf,,3447ec92ac1c3bcb9b7d06fe9758fa525cda8c985076681ee689d967b471d037,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3447ec92ac1c.pdf,,W0297
+licensed-files,68,Evaluation_and_Design_Method_for_Product_Form_Aesthetics_Based_on_Deep_Learning.pdf,,e20085e065c04446c39d5fdad89d2b9df6226cea8dde0ed3961b910be12cba14,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e20085e065c0.pdf,,W0306
+licensed-files,69,Machine_Learning_Algorithms_for_Improved_Product_Design_User_Experience.pdf,,621641162b7cc19a08d1fd067ebfd40e3c2276c8ac52ca9dc3a2f61d068a5abd,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-621641162b7c.pdf,,W0319
+licensed-files,70,MC0119__2025__Research on the Mechanism of the Multimodal Sustained Usage of Sport Drones from the Perspective of the L.pdf,,e0b5f98cacd800d2086f2fc99626021b5200fe162b792cf99fe07d0e6dc0b11d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e0b5f98cacd8.pdf,,W0327
+licensed-files,71,MC0080__2025__Unveiling the Complexity of Designers’ Intention to Use Generative AI in Corporate Product Design A Groun.pdf,,fc8f8b59f9eebc6041bf056804ad83fe31d1825b7418b31f3f48a33fe6c65a6c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fc8f8b59f9ee.pdf,,W0341
+licensed-files,72,一种基于形状语法和 Kansei 工程的 AI 驱动的产品身份表单设计方法：Midjourney 和 Grey-AHP-QFD 的集成.pdf,,71d3e2a0b829afeb1ffa698eda95caa1aaf4c9b202ba4ebce81d1b6f549f3e82,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-71d3e2a0b829.pdf,,W0346
+licensed-files,73,一种用于产品外观设计的定量审美测量方法.pdf,,22599b22e5b6bca65b9f46d5c65aee0abe5f91495f42297210d165ec6e4e071d,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-22599b22e5b6.pdf,,W0348
+licensed-files,74,丹麦高中生与机器人聊天.pdf,,ff91d9f69f7a7fa3bab645f6ec751198b29aa2aa38ed568add6c0c8093f7acb0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ff91d9f69f7a.pdf,,W0354
+licensed-files,75,了解灵感：深入了解设计师如何使用支持 AI 的平台发现灵感刺激.pdf,,50ab184e2eab7be2ee4d821b05ff2a0a36bd1bd7c492dcbdcc5e149da11e15d6,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-50ab184e2eab.pdf,,W0355
+licensed-files,76,人类作为 AI 导师：增强的人机协同强化学习，实现安全高效的自动驾驶.pdf,,ffd3acca808fd2987e4cfd051f00ca411c2298b0f2abc98eb61302989db31076,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-ffd3acca808f.pdf,,W0365
+licensed-files,77,人类咨询与人工智能咨询：大学生的观点.pdf,,7b444fd2573ae9a60f60ae3579c762be00c45065cd31bdfe11d084ce9a46ebd0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-7b444fd2573a.pdf,,W0366
+licensed-files,78,什么约翰尼不能提示：非ai专家如何尝试（和失败）设计LLM提示.pdf,,adc5133a79d37283b05c9779992726985151b341312a71380759da42f7eee515,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-adc5133a79d3.pdf,,W0367
+licensed-files,79,优化人机协作：动机和准确性信息对 AI 支持决策的影响.pdf,,3e5ee9f01817e1d9e0e670305c5b2844f5985d4203cefc53eb242adcd1085fd5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3e5ee9f01817.pdf,,W0370
+licensed-files,80,使用AI进行设计构思-使用生成式机器学习模型进行素描，思考和交谈.pdf,,3c78f70e2d19ed150f632e9769e3819214543201ef3911c4a5a8c4d61dbdce68,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3c78f70e2d19.pdf,,W0371
+licensed-files,81,前人工智能和后人工智能设计 在工业设计过程中平衡人类创造力和人工智能工具.pdf,,b7749f606fa3eae5649416a0230a4741923ac7f577eb665e0edd6b13f0f09fb3,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b7749f606fa3.pdf,,W0375
+licensed-files,82,基于在线评论和FAHP的产品外观感性评价模型的构建——以家用便携式空调为例.pdf,,9fc500a05d41296874740697f5b3b4baa209a89794cf7cc4adec8d9a9c80527b,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-9fc500a05d41.pdf,ac,W0398
+licensed-files,83,基于大型语言模型开发用于社交情感诱导的对话式虚拟人.pdf,,c633c28db0c2c6c9d199e1fb92920a636245ec1676a83464dfd7df265068f7e1,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-c633c28db0c2.pdf,,W0399
+licensed-files,84,基于条件控制 AI 图像生成的产品感性外观设计方法.pdf,,8bbcfdab71c658701d57cd42e59f13be4d981b156912ebf54b059361ae00cae0,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-8bbcfdab71c6.pdf,du,W0024
+licensed-files,85,基于深度学习和感性工程的产品创新设计.pdf,,911b586eed2d3fa231259f94bb3b4ef500c9f7e2f61c8813bad57f9531e07f35,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-911b586eed2d.pdf,,W0410
+licensed-files,86,工业机器人中的人机交互：用于基于 AI 的可解释机器人程序优化的用户界面的设计和实证评估.pdf,,e77923fe476edefb2a15a36904875b8474715a1cd45937c84d851cebde34adbc,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e77923fe476e.pdf,,W0428
+licensed-files,87,感性工学综述.pdf,,fb6bce4778390d3fc2a41064c8a55a32291ed489dcb3c22753a6877dcae9274e,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-fb6bce477839.pdf,,W0431
+licensed-files,88,探索挑战和机遇，支持设计师学习与基于人工智能的制造设计工具共同创造.pdf,,f1c1520fa01e10097e60c69a6821df045226035af457a0f0c5fe9af18b473403,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-f1c1520fa01e.pdf,,W0433
+licensed-files,89,服务设计转移到用户体验设计 综述.pdf,,e3af4e957e59998f28418fcfe883b0ced841c9f3b632681e6ff16cdcc451b71c,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e3af4e957e59.pdf,,W0445
+licensed-files,90,机械产品的生成式生态设计 设计工作流程.pdf,,e4da9eb965df012bcb1a8ab56dea20e80bb1cc53018c822afe8a41ce75a460c1,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-e4da9eb965df.pdf,,W0446
+licensed-files,91,水上无人机 （AquaUAV） 的 Bioinspiration 回顾.pdf,,51137f9f21db768e7e99ee9fb73cf4567d62ddab84805daa2ac8df04a4069d09,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-51137f9f21db.pdf,,W0449
+licensed-files,92,理解用户画像生成中的人机协作工作流.pdf,,b3df15a654cb032e644f833c09fa6e837760241e333f4a56e24b23e9ba50a5c2,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b3df15a654cb.pdf,,W0453
+licensed-files,93,生成式设计在家具设计中的应用.pdf,,dc37501d88d45b6847b8dde5b96a196a94c87f65d8096d4589155fa017627295,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-dc37501d88d4.pdf,,W0455
+licensed-files,94,综述.pdf,,a713268784ada0708903ac87a15853732fe3721f1ea9c993937ecde99a280856,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-a713268784ad.pdf,,W0465
+licensed-files,95,罗仕鉴3.pdf,,29f48a911501710816f90eff48471440cea302626fc873f17790e89dddf904f5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-29f48a911501.pdf,,W0466
+licensed-files,96,罗仕鉴5.pdf,,6324b9debff5fb4a51f9cded342ca849d7f05dc87e06896d479480b53e90b5c5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-6324b9debff5.pdf,,W0468
+licensed-files,97,聊天机器人综述.pdf,,b1ebe501caff873992a96d4a01a56c9185b20a476ecce669f700dd1accfb70fd,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-b1ebe501caff.pdf,,W0470
+licensed-files,98,自适应虚拟代理：实时人机交互的设计和评估.pdf,,251646bf63a7510aa952b5f20107c228fcb76c5222e6715f0decaf44054a82df,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-251646bf63a7.pdf,,W0471
+licensed-files,99,设计思维与人工智能：探索协同效应的系统文献综述.pdf,,3d410cd949556eb9d719f8b2f31812b2d181706418e51870e30c967ea2bd8a8b,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-3d410cd94955.pdf,,W0475
+licensed-files,100,负责任的 AI 工具评估实践的范围界定研究：有效性评估的步骤.pdf,,bbb114f13132075094fccf6c11702f4b6c39f70da6d32bee1b4b1a2474bb6466,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-bbb114f13132.pdf,,W0480
+licensed-files,101,车辆设计中感性工程的系统评价.pdf,,05a42425280cf8c62ed8ed340d8b3a03cb85ef920c87a95f8b7e98b9d5bf9bfe,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-05a42425280c.pdf,,W0482
+licensed-files,102,迈向具有生成AI的设计 (研究) 框架.pdf,,cdeb395d7b93840b76957350ab131cc32d849ee5c238139be6d27be2f13669a5,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-cdeb395d7b93.pdf,,W0483
+licensed-files,103,通过生成式AI使设计民主化.pdf,,293afb5ad75c1c55053041bbcd32c4189275065db5d904928217a65321d79a85,https://github.com/Freeloop993/paper/blob/reference-fulltexts-20261109/fulltexts/SRC-293afb5ad75c.pdf,,W0487
+additions,2,Challenges hindering the application of GenAI methods in engineering design and the product development process: a meta-analysis,10.1017/pds.2026.10576,a094913b0bad5078ac6222133493a56cb06dc372d86d68334cb7e532ad0c0301,,,W0134
+additions,3,From geometry to function: towards context-aware generative AI for engineering design,10.1017/pds.2026.10577,e826b4a76b3ee4e8420a0fb3b70795616ba8c437b8f8b4624b7ffcf1f4fc7367,,,W0135
+additions,4,A Method for Product Form Design Based on User Perceptual Imagination and Product Modeling Constraints,10.54941/ahfe1002993,6394068238f79f1cb624981520910c3ee3e5d825a62d8bca8da3c4662d090fd6,,,W0136
+additions,5,Kansei engineering review and challenges as an ergonomic consumer-oriented technology for product development,10.1016/j.ergon.2026.104033,,,,W0497
+additions,6,"Design and Development of a Modular, Low-Cost 3D Printed Multirotor UAV Airframe",10.3233/atde260095,,,,W0498
+additions,7,Research Study Concerning the Structural Design of a Drone Using 3D Print Technology,10.1002/masy.70405,,,,W0499
+additions,8,Drone design for Circularity,10.1088/1757-899x/1342/1/012012,,,,W0500
+feishu-100,2,智能设计工具与KE - AHP方法协同设计实践研究：以家庭种植产品设计为例,,,,,W0501
+feishu-100,3,国外生成式产品设计研究综述,,,,,W0502
+feishu-100,4,基于StyleGAN的草图生成产品设计效果图方法研究,,,,,W0503
+feishu-100,5,基于CGAN的车辆外形智能生成设计,,,,,W0504
+feishu-100,6,卡诺模型在中国设计学研究中的应用,,,,,W0505
+feishu-100,7,基于文化基因与形状文法的明代珐华纹样创新设计研究,,,,,W0506
+feishu-100,8,车辆设计中感性工程的系统综述,,,,,W0507
+feishu-100,9,产品色彩感性工学设计研究现状,,,,,W0508
+feishu-100,10,产品设计中感性工学的系统文献综述——1995年至2020年的比较研究,,,,,W0509
+feishu-100,11,中日感性工学研究现状及启示,,,,,W0510
+feishu-100,12,用于改善产品设计用户体验的机器学习算法,,,,,W0511
+feishu-100,13,在社交机器人设计中整合美学和情感偏好：一种结合感性工学和深度卷积生成对抗网络的情感设计方法,,,,,W0512
+feishu-100,14,基于条件控制的AI图像生成的产品感性外观设计方法,,,,du,W0024
+feishu-100,15,一种融合感性工程和鲸鱼优化算法的新型产品形状设计方法,,,,,W0350
+feishu-100,16,一种基于生成型人工智能的汽车前脸设计方法,,,,,W0513
+feishu-100,17,基于生成式人工智能的离子色谱仪设计方法,,,,,W0514
+feishu-100,18,一种由AIGC赋能的产品配色设计方法,,,,,W0515
+feishu-100,19,基于深度学习的产品形态美学评估与设计方法,,,,,W0516
+feishu-100,20,基于深度学习和感性工学的产品创新设计,,,,,W0517
+feishu-100,21,基于互联网大数据挖掘的新能源汽车外观设计感性工学方法,,,,ev,W0439
+feishu-100,22,基于感性工程和虚拟现实的产品形态设计研究,,,,,W0518
+feishu-100,23,基于在线评论和模糊层次分析法的产品外观感性评价模型构建——以家用便携式空调为例,,,,ac,W0398
+feishu-100,24,基于遗传算法的产品形态设计模型,,,,,W0424
+feishu-100,25,一种集成感性工程和扩散模型的产品形态设计方法,,,,yang,W0351
+feishu-100,26,基于深度学习和感性工程的产品创新概念生成,,,,,W0409
+feishu-100,27,基于深度学习的图像生成模型综合综述,,,,,W0519
+feishu-100,28,将审美和情感偏好融入社交机器人设计：基于感性工学和深度卷积生成对抗网络的情感设计方法,,,,,W0520
+feishu-100,29,基于拓扑理论的森林无人机仿生设计研究,,,,,W0521
+feishu-100,30,面向平飞姿态的四旋翼无人机机身造型设计,,,,,W0137
+feishu-100,31,一种基于用户感知偏好评估数据驱动的生物启发设计灵感库构建方法,,,,,W0522
+feishu-100,32,植保无人机设计：定量研究与虚拟仿真,,,,,W0010
+feishu-100,33,感性工学：一种新的以消费者为导向的产品开发人体工程学技术,,,,,W0523
+feishu-100,34,SimUser：通过模拟不同用户与移动应用的交互来生成可用性反馈,,,,,W0331
+feishu-100,35,大语言模型时代下对话式推荐评估的重新思考,,,,,W0524
+feishu-100,36,Humanoid：一种基于深度学习的自动化黑盒安卓应用测试方法,,,,,W0525
+feishu-100,37,视觉感知数据驱动的产品造型智能生成设计方法,,,,,W0526
+feishu-100,38,基于AIGC技术下圈椅数字化修复应用研究,,,,,W0527
+feishu-100,39,ProtoDreamer：一种结合物理模型和生成式人工智能支持概念设计的混合原型工具,,,,,W0528
+feishu-100,40,CreativeConnect 使用生成式AI支持图形设计构思的参考重组.pdf,,,,,W0297
+feishu-100,41,DesignPrompt：利用多模态交互与生成式人工智能进行设计探索,,,,,W0529
+feishu-100,42,AutoSpark：利用感性工学和生成式人工智能支持汽车外观设计构思,,,,spark,W0292
+feishu-100,43,工程产品的仿生式生成设计：扑翼形状探索案例研究,,,,,W0530
+feishu-100,44,基于条件变分自编码器的翼型创成式设计方法,,,,,W0531
+feishu-100,45,基于情感和功能约束的产品外观多模态生成设计研究,,,,,W0403
+feishu-100,46,机械产品的生成式生态设计：一种设计工作流程,,,,,W0532
+feishu-100,47,通过人工智能生成内容提高产品设计效率：家用办公桌案例研究,,,,,W0533
+feishu-100,48,基于四川石雕植物图案生成式数字构建的人工智能设计创作分析,,,,,W0534
+feishu-100,49,AIGC工具在工业装备造型设计领域的优缺点比较研究,,,,,W0535
+feishu-100,50,前人工智能和后人工智能设计：在工业设计过程中平衡人类创造力和人工智能工具,,,,,W0375
+feishu-100,51,超越建议 从后向前人工智能支持飞行员的决策过程.pdf,,,,,W0536
+feishu-100,52,设计领域中的生成式AI工具：创意构思过程中的机遇与挑战,,,,,W0537
+feishu-100,53,通过生成式人工智能实现设计民主化,,,,,W0538
+feishu-100,54,迈向生成式人工智能的设计（研究）框架,,,,,W0539
+feishu-100,55,tyleWe：借助高效的联邦人工智能实现生成式时尚设计中的风格融合.pdf,,,,,W0540
+feishu-100,56,文化遗产保护中虚拟现实技术研究进展,,,,,W0541
+feishu-100,57,基于混合结构编码与动态特征融合的印花图案风格迁移模型,,,,,W0542
+feishu-100,58,视觉感知数据驱动的产品造型智能生成设计方法,,,,,W0526
+feishu-100,59,基于Stable Diffusion的AI辅助汽车零部件设计流程的研究,,,,,W0543
+feishu-100,60,“非遗＋AI”模式下的湖南土特产包装创新设计,,,,,W0544
+feishu-100,61,负责任的 AI 工具评估实践的范围界定研究：有效性评估的步骤.pdf,,,,,W0480
+feishu-100,62,AI Agent的研究现状.pdf,,,,,W0545
+feishu-100,63,3DALL-E：将文本到图像的人工智能集成到3D设计工作流程中,,,,,W0546
+feishu-100,64,CreativeConnect 使用生成式AI支持图形设计构思的参考重组.pdf,,,,,W0297
+feishu-100,65,自主多旋翼无人机：设计、优化与制造的整体方法,,,,,W0547
+feishu-100,66,通过基于文本的分解来解释CLIP的图像表示,,,,,W0548
+feishu-100,67,考虑个体感性差异的感性需求解释模糊映射方法,,,,,W0549
+feishu-100,68,CreativeConnect 使用生成式AI支持图形设计构思的参考重组.pdf,,,,,W0297
+feishu-100,69,探索文本到图像人工智能在概念生成中的作用,,,,,W0550
+feishu-100,70,Spinneret：通过非明显概念关联辅助创意构思,,,,,W0551
+feishu-100,71,Spellburst：一个基于节点、通过自然语言提示进行探索性创意编码的界面,,,,,W0552
+feishu-100,72,为什么普通人不会设计提示：非人工智能专家如何尝试（并失败）设计大语言模型提示,,,,,W0553
+feishu-100,73,增强ChatGPT提示工程的提示模式目录,,,,,W0554
+feishu-100,74,协作式扩散：利用生成式人工智能推动设计师的共创,,,,,W0555
+feishu-100,75,与人工智能进行设计构思——与生成式机器学习模型一起草图绘制、思考和交流,,,,,W0556
+feishu-100,76,GroupMind：通过协作式思维导图工具支持创意生成,,,,,W0557
+feishu-100,77,GANSpiration：使用基于风格的生成对抗网络平衡用户界面设计中的目标性和偶然性灵感,,,,,W0558
+feishu-100,78,框架、协调、悖论、抽象和引导：设计情绪板如何发挥作用,,,,,W0559
+feishu-100,79,3DALL-E：将文本到图像人工智能集成到3D设计工作流程中,,,,,W0560
+feishu-100,80,文本到图像生成模型提示工程设计指南,,,,,W0561
+feishu-100,81,PromptPaint：通过类似绘画媒介的交互引导文本到图像生成,,,,,W0562
+feishu-100,82,FashionQ：用于促进时装设计构思的人工智能驱动创意支持工具,,,,,W0563
+feishu-100,83,人工智能驱动的创造力支持工具中的艺术用户表达,,,,,W0564
+feishu-100,84,与人工智能一起设计：对与图像生成器共同构思的探索,,,,,W0565
+feishu-100,85,Promptify：通过与大语言模型进行交互式提示探索实现文本到图像的生成,,,,,W0566
+feishu-100,86,自主多旋翼无人机：设计、优化与制造的整体方法,,,,,W0547
+feishu-100,87,从工业设计角度谈多旋翼无人机的设计,,,,,W0567
+feishu-100,88,基于形态表征的乘用车曲面造型特征差异化设计研究_蔡振原.pdf,,,,,W0568
+feishu-100,89,基于生物原型的小型战术无人机造型仿生设计,,,,,W0416
+feishu-100,90,变形前缘和后缘翼型的气动设计优化——在UAS - S45上的应用,,,,,W0569
+feishu-100,91,使用模糊综合评价和模糊层次分析法探索多旋翼无人机外观偏好,,,,hsiao,W0009
+feishu-100,92,具有单调曲率的3D A级贝塞尔曲线,,,,,W0570
+feishu-100,93,基于交互式遗传算法的破拆机器人造型设计_尹昊苏.pdf,,,,,W0571
+feishu-100,94,水上无人机（AquaUAV）的生物启发研究综述,,,,,W0572
+feishu-100,95,新型混合水陆两栖飞机——水上无人机（AquaUAV）研究综述,,,,,W0573
+feishu-100,96,请你提供具体的正文内容，以便我为你提取文章标题。,,,,,W0574
+feishu-100,97,用于造型应用的曲线拟合遗传算法,,,,,W0575
+feishu-100,98,新手如何绘制手工制品草图并制作原型,,,,,W0576
+feishu-100,99,从在线产品描述和评论中提取和总结情感特征及反应：一种感性文本挖掘方法,,,,wang,W0018
+feishu-100,100,3643834.3660729.pdf,,,,,W0577
+feishu-100,101,,,,,,W0578
+obsidian-cards,2,A001｜Data–driven product form design integrating affective and functional requirements via TGRA–QFD and Stable Diffusion,10.1299/jamdsm.2026jamdsm0008,,,chen,W0001
+obsidian-cards,3,A002｜Exploring generative design in context of mass personalization,10.1017/pds.2025.10180,,,,W0048
+obsidian-cards,4,A003｜Generating preinventive structures: AI-driven creativity in product repurposing,10.1017/pds.2025.10207,,,,W0049
+obsidian-cards,5,A004｜Evolving a Model of Gen-AI Enhanced Design Visualisation Workflow,10.35199/epde.2025.112,,,,W0050
+obsidian-cards,6,A005｜Embrace the Era of Drones: A New Practical Design Approach to Emergency Rescue Drones,10.3390/app15010135,,,,W0011
+obsidian-cards,7,A006｜五种方法串联，不等于参数化或人智协同,10.1371/journal.pone.0326630,,,,W0051
+obsidian-cards,8,A007｜Multimodal generative AI for conceptual design,10.1017/pds.2025.10264,,,,W0033
+obsidian-cards,9,A008｜A Product’s Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation,10.3390/su16208837,,,du,W0024
+obsidian-cards,10,A009｜复杂产品HKE评价方法,10.3390/sym17020306,,,,W0054
+obsidian-cards,11,A010｜Grasshopper Algorithmic Modelling: Parametric Design for Product Platform Customisation,10.3390/app15116243,,,,W0055
+obsidian-cards,12,A011｜高草图熟练度在2D生成AI交通工具设计中仍有优势吗？,10.35199/epde.2025.124,,,,W0056
+obsidian-cards,13,A012｜流程可借，PCA、回归和眼动不必照搬,10.3390/app131910674,,,,W0059
+obsidian-cards,14,A013｜方向相关，但关键计算不自洽,10.3390/app132413345,,,,W0060
+obsidian-cards,15,A014｜可借形态拆解，不借回归结论,10.15376/biores.19.1.805-822,,,,W0061
+obsidian-cards,16,A015｜Augmented design automation,10.1017/pds.2025.10081,,,,W0062
+obsidian-cards,17,A016｜AI更像设计师？只在单品类、弱相关范围内成立,10.1017/pds.2025.10098,,,,W0063
+obsidian-cards,18,A017｜Sketch2Prototype,10.1017/pds.2024.201,,,,W0064
+obsidian-cards,19,A018｜ShipGen,10.3390/jmse11122215,,,,W0065
+obsidian-cards,20,A019｜Midjourney 与 AMP-Cards,10.3390/systems11120566,,,,W0066
+obsidian-cards,21,A020｜LLM建议—设计者确认—图像生成,10.1017/pds.2026.10619,,,,W0067
+obsidian-cards,22,A021｜AI能画故事场景，不等于能控产品造型,10.35199/epde.2024.52,,,,W0069
+obsidian-cards,23,A022｜文本到CAD：自动化不等于造型可控,10.1017/pds.2025.10203,,,,W0070
+obsidian-cards,24,A023｜AI参与设计前期工作坊,10.1017/pds.2025.10056,,,,W0073
+obsidian-cards,25,A024｜参数先定范围，再按依赖逐步收窄,10.1017/pds.2024.79,,,,W0075
+obsidian-cards,26,A025｜生成数量多，不等于造型方向多,10.1017/pds.2024.223,,,,W0076
+obsidian-cards,27,A026｜是造型评价，但证据不足以指导本课题,10.3390/su151914538,,,,W0077
+obsidian-cards,28,A027｜有UAV，但不是无人机造型研究,10.1017/pds.2026.10585,,,,W0078
+obsidian-cards,29,A028｜用来界定人—AI责任，不用来证明效果,10.1017/pds.2026.10419,,,,W0079
+obsidian-cards,30,A029｜感性工学的理论主干，可以正式引用,10.5057/ijae.ijae-d-23-00003,,,,W0083
+obsidian-cards,31,A030｜AI构思时设计师仍在判断，但比例数据不可靠,10.1017/pds.2024.94,,,,W0087
+obsidian-cards,32,A031｜可用于组织造型方向，不可当作审美规律,10.1017/pds.2024.244,,,,W0094
+obsidian-cards,33,ID-B001｜提示词越长，不保证越接近原方案,10.35199/epde.2024.20,,,,W0052
+obsidian-cards,34,ID-B002｜AI放在发散阶段，人工负责策展收敛,10.35199/epde.2024.104,,,,W0053
+obsidian-cards,35,ID-B003｜可借表达对照形式，不能写成“AI与手绘等效”,10.35199/epde.2024.34,,,,W0057
+obsidian-cards,36,ID-B004｜能说明评价要受控，不能拿来给AI工具排名,10.35199/epde.2024.3,,,,W0058
+obsidian-cards,37,ID-B005｜自然观察可转成节点链，但不等于参数可控,10.35199/epde.2025.98,,,,W0068
+obsidian-cards,38,ID-B006｜二维纹饰文法不能直接当三维产品文法,10.2991/978-94-6463-815-8_2,,,,W0071
+obsidian-cards,39,ID-B007｜流程可看，SVR高精度不可引,10.3390/wevj15090389,,,,W0072
+obsidian-cards,40,ID-B008｜短工作坊有启发，不等于长期设计效果,10.35199/epde.2025.74,,,,W0074
+obsidian-cards,41,ID-B009｜本课题要设计“解空间”，不是只做一架无人机,10.35199/epde.2024.82,,,,W0007
+obsidian-cards,42,ID-B010｜抽象感受需要经过“词—草图—形体”转译,10.35199/epde.2025.81,,,,W0080
+obsidian-cards,43,ID-B011｜可借“缩减方案”，不必搬复杂算法,10.3390/sym17050758,,,,W0081
+obsidian-cards,44,ID-B012｜提醒先有人类初始意图，不证明AI提高新颖性,10.35199/epde.2024.23,,,,W0082
+obsidian-cards,45,"B013｜EXPLORING THE IMPACT OF GENERATIVE AI ON CONCEPT GENERATION, IDEATION, AND DESIGN METHODOLOGY: IN PRODUCT DESIGN EDUCATION",10.35199/epde.2024.7,,,,W0138
+obsidian-cards,46,ID-B014｜不同阶段用不同AI，但仍需结构化引导,10.35199/epde.2025.84,,,,W0084
+obsidian-cards,47,ID-B015｜“不显著”不等于“AI等同人类”,10.35199/epde.2025.102,,,,W0085
+obsidian-cards,48,ID-B016｜可借迭代回路，不采用课程效果,10.35199/epde.2024.31,,,,W0086
+obsidian-cards,49,ID-B017｜用五要素检查人智协同流程是否闭环,10.1017/pds.2026.10608,,,,W0088
+obsidian-cards,50,ID-B018｜专利图可辅助发现部件位置，但不是造型语言,10.1017/pds.2026.10582,,,,W0579
+obsidian-cards,51,B019｜Research on the Sanxingdui cultural and creative product design based on an AIGC design framework,,,,,W0139
+obsidian-cards,52,ID-B020｜CMF三层映射是分析框架，不是用户证据,10.1017/pds.2026.10624,,,,W0580
+obsidian-cards,53,ID-B021｜可借阶段化生成思路，不能把两个极端个案当规律,10.1017/pds.2026.10468,,,,W0581
+obsidian-cards,54,B022｜THE ROLE OF “GOOD” BEHAVIOURS IN BEHAVIOURAL DESIGN,10.35199/epde.2025.35,,,,W0140
+obsidian-cards,55,ID-B023｜只能说明一次性AI图片刺激不稳定,10.35199/epde.2025.4,,,,W0092
+obsidian-cards,56,ID-B024｜静态图可能够用，但原研究不足以定论,10.1017/pds.2025.10179,,,,W0582
+obsidian-cards,57,B025｜Sustainability through Biomimicry: A Comprehensive Review of Bionic Design Applications,10.3390/biomimetics9090507,,,,W0141
+obsidian-cards,58,B026｜Strategies for applying shape grammar to wooden furniture design: Taking traditional Chinese Ming-style recessed-leg table as an example,10.15376/biores.19.1.1707-1727,,,,W0142
+obsidian-cards,59,B027｜Application of symbolic language and pattern innovation of Chaoshan peach cake mold in paper packaging design,10.15376/biores.20.1.482-499,,,,W0143
+obsidian-cards,60,ID-B028｜可借开放式印象采集，未建成设计规格,10.1017/pds.2024.239,,,,W0583
+obsidian-cards,61,ID-B029｜线索对齐可作提醒，原文分类不能直接照搬,10.1017/pds.2026.10454,,,,W0584
+obsidian-cards,62,ID-B030｜AI适合哪一步，要靠任务匹配而不是工具排名,10.1017/pds.2025.10237,,,,W0097
+obsidian-cards,63,ID-B031｜交互日志值得保留，二分行为只是探索性解释,10.1017/pds.2025.10070,,,,W0585
+obsidian-cards,64,ID-B032｜大量出图仍解决不了多视与局部控制,10.3390/jtaer19010035,,,,W0099
+obsidian-cards,65,B033｜DREAMWORLDS: A CASE STUDY PRESENTING THE POTENTIAL OF TEXT-TO-IMAGE AI IN PRODUCT DESIGN EDUCATION,10.35199/epde.2024.30,,,,W0144
+obsidian-cards,66,B034｜Product Styling Cognition Based on Kansei Engineering Theory and Implicit Measurement,10.3390/app13179577,,,,W0145
+obsidian-cards,67,B035｜CONCEPT TO PRODUCTION WITH A GEN AI DESIGN ASSISTANT: AIDA,10.35199/epde.2024.40,,,,W0146
+obsidian-cards,68,B036｜Study on Function and Appearance Design of Smart Street Lamps Based on Kansei Engineering: A Literature Review,10.17576/jkukm-2023-35(5)-22,,,,W0147
+obsidian-cards,69,B037｜Bridging LCA and design: an LLM-driven pipeline for generating sustainable design alternatives from LCA hotspot analysis,,,,,W0148
+obsidian-cards,70,ID-B038｜人类保留发起、监督与最终决定,10.1017/pds.2026.10459,,,,W0100
+obsidian-cards,71,ID-B039｜可借“探索—整理—承诺—人工确认”，不照搬效果数值,10.1017/pds.2026.10604,,,,W0586
+obsidian-cards,72,ID-B040｜AI评委可以参考，不能独立裁决,10.1017/pds.2026.10603,,,,W0587
+obsidian-cards,73,ID-B041｜AI建议多不等于协作好，也不等于更高效,10.1017/pds.2025.10298,,,,W0103
+obsidian-cards,74,B042｜The influence of aesthetic taste on product choice: does mode of evaluation impact decision making?,,,,,W0149
+obsidian-cards,75,ID-B043｜虚拟原型评价应按目的选指标，不必全做,10.1017/pds.2025.10174,,,,W0588
+obsidian-cards,76,ID-B044｜只提醒“不要只给文字”，不增加眼动实验,10.1017/pds.2025.10092,,,,W0589
+obsidian-cards,77,ID-B045｜AI可辅助整理理由，不能担任毕业论文裁判,10.1017/pds.2025.10191,,,,W0590
+obsidian-cards,78,B046｜Creating design catalog from patent documents with large language model for design concept generation,,,,,W0150
+obsidian-cards,79,ID-B047｜系统复杂度指标不等于视觉造型复杂度,10.1017/pds.2026.10363,,,,W0591
+obsidian-cards,80,B048｜How are professional practices adopting generative AI? The case of an engineering design and product development team,,,,,W0151
+obsidian-cards,81,ID-B049｜尺寸级差必须服从真实部件与工程约束,10.1017/pds.2026.10413,,,,W0592
+obsidian-cards,82,B050｜Engineering design through dialogue: a method for analysing speech-based human-AI conversation,,,,,W0152
+obsidian-cards,83,ID-B051｜资源同质性不是视觉家族一致性,10.1017/pds.2026.10364,,,,W0109
+obsidian-cards,84,B052｜Towards Fostering Human Ownership in GenAI-Assisted Design,,,,,W0153
+obsidian-cards,85,B053｜Innovation of meaning: design-driven study based on the interpretive theory of new meaning,,,,,W0154
+obsidian-cards,86,B054｜D³IKIT: data-driven design innovation kit,,,,,W0155
+obsidian-cards,87,B055｜Design Knowledge Interaction Model: A Proposal from a Cognitive Perspective,10.35199/norddesign2024.64,,,,W0156
+obsidian-cards,88,B056｜Explaining a Jewelry Design Process: Using a generative Design Method Called Shape Grammars and Producing the Product with 3D Printing,10.4236/adr.2024.121001,,,,W0157
+obsidian-cards,89,B057｜How would engineers use LLMs for assembly search if they could? – An empirical study for fostering generative AI-driven design reuse in the future,,,,,W0158
+obsidian-cards,90,B058｜More AI means less design? Empirical insights from design education,,,,,W0159
+obsidian-cards,91,B059｜Design and evaluation of an AI-based application to enhance creativity in design thinking workshops,,,,,W0160
+obsidian-cards,92,B060｜Paradigmatic design thinking: how generative AI changes the role of human designers,,,,,W0161
+obsidian-cards,93,B061｜The balance between a usable and emotional product design – a comparison of different methods for prioritising relevant influencing factors,,,,,W0162
+obsidian-cards,94,ID-B062｜可看感性工学版图，不用百分比替本课题选方法,10.25077/josi.v23.n1.p92-108.2024,,,,W0110
+obsidian-cards,95,B063｜A Framework for Defining Innovation in the New Development of Modular Product Families,10.35199/norddesign2024.27,,,,W0163
+obsidian-cards,96,B064｜Structuring the design space while exploring it: a cognitive perspective on design space exploration,,,,,W0164
+obsidian-cards,97,ID-B065｜把连续形态变量与离散拓扑变量分开,10.1017/pds.2026.10691,,,,W0019
+obsidian-cards,98,B066｜Developing a Process Model for Future-Robust Advancement of Product Portfolios,10.35199/norddesign2024.49,,,,W0165
+obsidian-cards,99,"B067｜AI-powered inventive design: idea funnelling, concept creation, and hybrid problem-solving teams",,,,,W0166
+obsidian-cards,100,B068｜DS-Viz: a method for visualising design spaces,,,,,W0167
+obsidian-cards,101,"B069｜Human-AI Co-Design and Co-Creation: A Review of Emerging Approaches, Challenges, and Future Directions",10.1609/aaaiss.v6i1.36061,,,,W0168
+obsidian-cards,102,HCI-C0004｜AI适合前期发散，最终造型仍由设计师收敛,10.1145/3706598.3714148,,,,W0035
+obsidian-cards,103,HCI-C0026｜把模糊想法拆成可选的设计维度,10.1145/3706598.3714211,,,weaver,W0111
+obsidian-cards,104,HCI-C0031｜空间修改用图，语义修改用文字,10.1145/3742413.3789080,,,,W0034
+obsidian-cards,105,HCI-C0525｜工具管可计算目标，设计师保留审美取舍,10.1007/s00163-024-00440-y,,,,W0112
+obsidian-cards,106,HCI-C0543｜图像更不相似，不等于工业设计更可用,10.1017/dsj.2024.13,,,,W0113
+obsidian-cards,107,HCI-N008｜图文双条件多视生成的边界,10.1109/iccv51701.2025.01739,,,,W0114
+obsidian-cards,108,HCI-N009｜单图补多视角仍怕大角度,10.1109/iccv51701.2025.01107,,,,W0115
+obsidian-cards,109,HCI-N011｜二维主体相似不等于三维造型一致,10.1109/cvpr52733.2024.00648,,,,W0116
+obsidian-cards,110,HCI-N012｜少参数定制仍有控制权衡,10.1109/cvpr52733.2024.00782,,,,W0117
+obsidian-cards,111,HCI-N023｜把实体原型拆成可核验的虚拟部件,10.1145/3706598.3713686,,,,W0118
+obsidian-cards,112,HCI-V006｜图像受控不等于造型参数化,10.52202/075280-3472,,,,W0119
+obsidian-cards,113,HCI-V010｜直接3D生成仍不是可制造CAD,10.48550/arxiv.2311.09217,,,,W0120
+obsidian-cards,114,HCI-V013｜题目有UAV，但不是多旋翼造型研究,10.2514/6.2024-1708,,,,W0121
+obsidian-cards,115,HCI-X0163｜把AI理解的设计意图变成可编辑对象,10.1145/3800645.3813064,,,,W0122
+obsidian-cards,116,HCI-X0165｜把发散意图拆成属性、方向和范围,10.1145/3800645.3813005,,,,W0123
+obsidian-cards,117,HCI-X0337｜底模迁移不是产品族迁移,10.1109/iccv51701.2025.01702,,,,W0124
+obsidian-cards,118,HCI-X0430｜角色跨图一致不等于产品多视一致,10.1145/3658157,,,,W0125
+obsidian-cards,119,HCI-X0504｜看起来像AI共创，不等于AI真的生成,10.1145/3706598.3713720,,,,W0126
+obsidian-cards,120,HCI-X1037｜多视图可供拟合，但不是参数化CAD,10.1109/cvpr52733.2024.00482,,,,W0128
+obsidian-cards,121,HCI-X1246｜二维遮罩控制不了精细产品结构,10.1109/iccv51070.2023.00708,,,,W0129
+obsidian-cards,122,HCI-X1321｜风格LoRA也会改坏内容,10.1145/3680528.3687642,,,,W0130
+obsidian-cards,123,HCI-X1459｜先纠正AI看错了什么，再讨论怎么改,10.1145/3772318.3790929,,,,W0131
+obsidian-cards,124,HCI-X2010｜让AI推动问题空间与方案空间往返,10.1145/3706598.3713869,,,,W0132
+obsidian-cards,125,HCI-X2069｜LLM规划正确，生成器也可能不执行,10.1109/cvpr52733.2024.00758,,,,W0133
+obsidian-cards,126,HCI-X0806｜可借“生成—组合—局部编辑”，不能引用已验证可制造,10.1145/3746059.3747691,,,,W0127
+obsidian-cards,127,UAV-U001｜AI图像先变成部件库，再进入无人机方案,10.1016/j.ijadr.2024.03.001,,,,W0010
+obsidian-cards,128,UAV-U002｜保留形态表，放弃有问题的权重,10.21606/drs.2020.164,,,hsiao,W0009
+obsidian-cards,129,UAV-U003｜只作气动边界，数值结论不采用,10.13841/j.cnki.jxsj.2025.02.023,,,,W0137
+obsidian-cards,130,NEW-N001｜为什么AI结果必须由设计师复核,10.1017/pds.2026.10576,,,,W0134
+obsidian-cards,131,NEW-N002｜几何像，不等于工程上可用,10.1017/pds.2026.10577,,,,W0135
+obsidian-cards,132,NEW-N003｜“感性＋约束”可启发，但还没被验证,10.54941/ahfe1002993,,,,W0136
+obsidian-cards,133,N004｜Kansei engineering review and challenges as an ergonomic consumer-oriented technology for product development,10.1016/j.ergon.2026.104033,,,,W0497
+obsidian-cards,134,"N005｜Design and Development of a Modular, Low-Cost 3D Printed Multirotor UAV Airframe",10.3233/atde260095,,,,W0498
+obsidian-cards,135,N006｜Research Study Concerning the Structural Design of a Drone Using 3D Print Technology,10.1002/masy.70405,,,,W0499
+obsidian-cards,136,N007｜Drone design for Circularity,10.1088/1757-899x/1342/1/012012,,,,W0500
+obsidian-cards,137,方法草稿三篇定位复核,,,,,W0593
+obsidian-cards,138,条件忠实度与设计评价：别混成一个通过,,,,,W0594
+obsidian-cards,139,协同研究记录什么,,,,,W0595
+obsidian-cards,140,最近邻能借方法，不能替我们证明效果,,,,,W0596
+obsidian-cards,141,前三章整合的原文定位复核,,,,,W0597
+obsidian-cards,142,原文输入与评价方法复核,,,,,W0598
+obsidian-cards,143,飞书文献补充第一批：先核对证据，不凑篇数,,,,,W0599
+obsidian-cards,144,HCI-C0004 全文复核结论,,,,,W0600
+obsidian-cards,145,HCI-C0026 全文复核结论,,,,,W0601
+obsidian-cards,146,HCI-C0031 全文复核结论,,,,,W0602
+obsidian-cards,147,HCI-C0525 全文复核,,,,,W0603
+obsidian-cards,148,HCI-C0543 全文复核,,,,,W0604
+obsidian-cards,149,HCI-N008 全文复核,,,,,W0605
+obsidian-cards,150,HCI-N009 全文复核,,,,,W0606
+obsidian-cards,151,HCI-N011 全文复核,,,,,W0607
+obsidian-cards,152,HCI-N012 全文复核,,,,,W0608
+obsidian-cards,153,HCI-N023 全文复核,,,,,W0609
+obsidian-cards,154,HCI-V006 全文复核,,,,,W0610
+obsidian-cards,155,HCI-V010 全文复核,,,,,W0611
+obsidian-cards,156,HCI-V013 全文复核结论,,,,,W0612
+obsidian-cards,157,HCI-X0163 全文复核,,,,,W0613
+obsidian-cards,158,HCI-X0165 全文复核,,,,,W0614
+obsidian-cards,159,HCI-X0337 全文复核,,,,,W0615
+obsidian-cards,160,HCI-X0430 全文复核,,,,,W0616
+obsidian-cards,161,HCI-X0504 全文复核,,,,,W0617
+obsidian-cards,162,HCI-X0806 全文复核,,,,,W0618
+obsidian-cards,163,HCI-X1037 全文复核,,,,,W0619
+obsidian-cards,164,HCI-X1246 全文复核,,,,,W0620
+obsidian-cards,165,HCI-X1321 全文复核,,,,,W0621
+obsidian-cards,166,HCI-X1459 全文复核,,,,,W0622
+obsidian-cards,167,HCI-X2010 全文复核,,,,,W0623
+obsidian-cards,168,HCI-X2069 全文复核,,,,,W0624
+obsidian-cards,169,A001 全文复核结论,,,,,W0625
+obsidian-cards,170,A002 全文复核结论,,,,,W0626
+obsidian-cards,171,A003 全文复核结论,,,,,W0627
+obsidian-cards,172,A004 全文复核结论,,,,,W0628
+obsidian-cards,173,A005 全文复核结论,,,,,W0629
+obsidian-cards,174,A006 全文复核结论,,,,,W0630
+obsidian-cards,175,A007 全文复核结论,,,,,W0631
+obsidian-cards,176,A008 全文复核结论,,,,,W0632
+obsidian-cards,177,A009 全文复核结论,,,,,W0633
+obsidian-cards,178,A010 全文复核结论,,,,,W0634
+obsidian-cards,179,A011 全文复核结论,,,,,W0635
+obsidian-cards,180,A012 全文复核结论,,,,,W0636
+obsidian-cards,181,A013 全文复核结论,,,,,W0637
+obsidian-cards,182,A014 全文复核结论,,,,,W0638
+obsidian-cards,183,A015 全文复核结论,,,,,W0639
+obsidian-cards,184,A016 全文复核结论,,,,,W0640
+obsidian-cards,185,A017 全文复核结论,,,,,W0641
+obsidian-cards,186,A018 全文复核结论,,,,,W0642
+obsidian-cards,187,A019 全文复核结论,,,,,W0643
+obsidian-cards,188,A020 全文复核结论,,,,,W0644
+obsidian-cards,189,A021 全文复核结论,,,,,W0645
+obsidian-cards,190,A022 全文复核结论,,,,,W0646
+obsidian-cards,191,A023 全文复核结论,,,,,W0647
+obsidian-cards,192,A024 全文复核结论,,,,,W0648
+obsidian-cards,193,A025 全文复核结论,,,,,W0649
+obsidian-cards,194,A026 全文复核结论,,,,,W0650
+obsidian-cards,195,A027 全文复核结论,,,,,W0651
+obsidian-cards,196,A028 全文复核结论,,,,,W0652
+obsidian-cards,197,A029 全文复核结论,,,,,W0653
+obsidian-cards,198,A030 全文复核结论,,,,,W0654
+obsidian-cards,199,A031 全文复核结论,,,,,W0655
+obsidian-cards,200,ID-B001 全文复核,,,,,W0656
+obsidian-cards,201,ID-B002 全文复核,,,,,W0657
+obsidian-cards,202,ID-B003 全文复核,,,,,W0658
+obsidian-cards,203,ID-B004 全文复核,,,,,W0659
+obsidian-cards,204,ID-B005 全文复核,,,,,W0660
+obsidian-cards,205,ID-B006 全文复核,,,,,W0661
+obsidian-cards,206,ID-B007 全文复核,,,,,W0662
+obsidian-cards,207,ID-B008 全文复核,,,,,W0663
+obsidian-cards,208,ID-B009 全文复核,,,,,W0664
+obsidian-cards,209,ID-B010 全文复核,,,,,W0665
+obsidian-cards,210,ID-B011 全文复核,,,,,W0666
+obsidian-cards,211,ID-B012 全文复核,,,,,W0667
+obsidian-cards,212,ID-B014 全文复核,,,,,W0668
+obsidian-cards,213,ID-B015 全文复核,,,,,W0669
+obsidian-cards,214,ID-B016 全文复核,,,,,W0670
+obsidian-cards,215,ID-B017 全文复核,,,,,W0671
+obsidian-cards,216,ID-B018 全文复核,,,,,W0672
+obsidian-cards,217,ID-B020 全文复核,,,,,W0673
+obsidian-cards,218,ID-B021 全文复核,,,,,W0674
+obsidian-cards,219,ID-B023 全文复核,,,,,W0675
+obsidian-cards,220,ID-B024 全文复核,,,,,W0676
+obsidian-cards,221,ID-B028 全文复核,,,,,W0677
+obsidian-cards,222,ID-B029 全文复核,,,,,W0678
+obsidian-cards,223,ID-B030 全文复核,,,,,W0679
+obsidian-cards,224,ID-B031 全文复核,,,,,W0680
+obsidian-cards,225,ID-B032 全文复核,,,,,W0681
+obsidian-cards,226,ID-B038 全文复核,,,,,W0682
+obsidian-cards,227,ID-B039 全文复核,,,,,W0683
+obsidian-cards,228,ID-B040 全文复核,,,,,W0684
+obsidian-cards,229,ID-B041 全文复核,,,,,W0685
+obsidian-cards,230,ID-B043 全文复核,,,,,W0686
+obsidian-cards,231,ID-B044 全文复核,,,,,W0687
+obsidian-cards,232,ID-B045 全文复核,,,,,W0688
+obsidian-cards,233,ID-B047 全文复核,,,,,W0689
+obsidian-cards,234,ID-B049 全文复核,,,,,W0690
+obsidian-cards,235,ID-B051 全文复核,,,,,W0691
+obsidian-cards,236,ID-B062 全文复核,,,,,W0692
+obsidian-cards,237,ID-B065 全文复核,,,,,W0693
+obsidian-cards,238,NEW-N001 全文复核结论,,,,,W0694
+obsidian-cards,239,NEW-N002 全文复核结论,,,,,W0695
+obsidian-cards,240,NEW-N003 全文复核结论,,,,,W0696
+obsidian-cards,241,UAV-U001 全文复核结论,,,,,W0697
+obsidian-cards,242,UAV-U002 全文复核结论,,,,,W0698
+obsidian-cards,243,UAV-U003 全文复核结论,,,,,W0699
+november-candidates,1,MaterialVellum: Steering Generative AI by Leveraging Expressive Material Affordances to Form Design Constraints,10.1145/3830398.3830504,,,mat,W0496
+november-candidates,2,A Generative AI-Driven Industrial Design Framework for Human–GenAI Co-Creation,10.3390/sym18020352,,,,W0700
+november-candidates,3,GenFODrawing: Supporting Creative Found Object Drawing With Generative AI,10.1109/tvcg.2025.3626754,,,,W0701
+november-candidates,4,D²Design: Dual-conditioned diffusion AI for accelerating product form generation,10.1016/j.cad.2026.104063,,,,W0702
+11/18补充,T1-1,AutoGen-Insight: translating consumer reviews into probabilistic visual design parameters for generative electric vehicle concept generation,10.36922/ijamd026190015,,,auto,W0703
+11/18补充,T1-2,Stakeholder-informed Kansei modeling for generative product design in online retail,10.1016/j.displa.2026.103503,,,,W0704
+11/18补充,T1-3,基于人工智能生成内容的产品造型设计与评价方法,10.11996/jg.j.2095-302x.2024061277,,,,W0705
+11/18补充,T1-4,Generative design: reframing the role of the designer in early-stage design process,10.1115/1.4056799,,,,W0706
+11/18补充,T2-1,Qwen-Image technical report,,,,,W0707
+11/18补充,T2-2,GLIGEN: open-set grounded text-to-image generation,10.1109/cvpr52729.2023.02156,,,,W0708
+11/18补充,T2-3,IP-Adapter: text compatible image prompt adapter for text-to-image diffusion models,,,,,W0709
+11/18补充,T2-4,T2I-CompBench++: an enhanced and comprehensive benchmark for compositional text-to-image generation,10.1109/tpami.2025.3531907,,,,W0710
+11/18补充,T2-5,Make it count: text-to-image generation with an accurate number of objects,10.1109/cvpr52734.2025.01236,,,,W0711
+11/18补充,T2-6,Diagnostic benchmark and iterative inpainting for layout-guided image generation,10.1109/cvprw63382.2024.00537,,,,W0712
+11/18补充,T2-7,Beyond statistical similarity: rethinking metrics for deep generative models in engineering design,10.1016/j.cad.2023.103609,,,,W0713
+11/18补充,T3-1,PnP inversion: boosting diffusion-based editing with 3 lines of code,,,,,W0714
+11/18补充,T3-2,Imagen Editor and EditBench: advancing and evaluating text-guided image inpainting,10.1109/cvpr52729.2023.01761,,,,W0715
+11/18补充,T3-3,Prompt-to-prompt image editing with cross-attention control,,,,,W0716
+11/18补充,T3-4,ImagenHub: standardizing the evaluation of conditional image generation models,,,,,W0717
+11/18补充,T3-5,FLUX.1 Kontext: flow matching for in-context image generation and editing in latent space,,,,,W0718
+11/18补充,T3-6,Diffusion model-based image editing: a survey,10.1109/tpami.2025.3541625,,,,W0719
+11/18补充,T4-1,Parametric-ControlNet: multimodal control in foundation models for precise engineering design synthesis,10.1115/1.4068661,,,,W0720
+11/18补充,T4-2,"Speaking the Buick language: capturing, understanding, and exploring brand identity with shape grammars",10.1016/s0142-694x(03)00023-1,,,,W0721
+11/18补充,T4-3,Introduction to shape and shape grammars,10.1068/b070343,,,,W0722
+11/18补充,T4-4,Quantifying aesthetic form preference in a utility function,10.1115/1.3116260,,,,W0723
+11/18补充,T4-5,Interactive evolutionary computation: fusion of the capabilities of EC optimization and human evaluation,10.1109/5.949485,,,,W0724
+11/18补充,T4-6,A practical generative design method,10.1016/j.cad.2010.09.009,,,,W0725
+11/18补充,T4-7,Semantic shape editing using deformation handles,10.1145/2766908,,,,W0726
+11/18补充,T4-8,AttribIt: content creation with semantic attributes,10.1145/2501988.2502008,,,,W0727
+11/18补充,T5-1,"Brief2Design: a multi-phased, compositional approach to prompt-based graphic design",,,,brief,W0728
+11/18补充,T5-2,A taxonomy of prompt modifiers for text-to-image generation,10.1080/0144929x.2023.2286532,,,,W0729
+11/18补充,T5-3,PromptCharm: text-to-image generation through multi-modal prompting and refinement,10.1145/3613904.3642803,,,,W0730
+11/18补充,T5-4,Is it AI or is it me? Understanding users' prompt journey with text-to-image generative AI tools,10.1145/3613904.3642861,,,,W0731
+11/18补充,T5-5,Designing with words: exploring the integration of text-to-image models in industrial design,10.1080/14626268.2024.2411223,,,,W0732
+11/18补充,T6-1,How consumers perceive product appearance: the identification of three product appearance attributes,,,,,W0733
+11/18补充,T6-2,"""What you see, is what you get?"" Guidelines for influencing consumers' perceptions of consumer durables through product appearance",10.1111/jpim.12403,,,,W0734
+11/18补充,T6-3,A semantic differential study of designers' and users' product form perception,10.1016/s0169-8141(99)00026-8,,,,W0735
+11/18补充,T6-4,Identifying customer needs from user-generated content,10.1287/mksc.2018.1123,,,,W0736
+11/18补充,T6-5,Eliciting attribute-level user needs from online reviews with deep language models and information extraction,10.1115/1.4048819,,,,W0737
+11/18补充,T6-6,Large language model-based online review classification for subfeature-level customer opinion analysis,10.1115/1.4069684,,,,W0738
+11/18补充,T6-7,Vital dimensions in volume perception: can the eye fool the stomach?,10.1177/002224379903600302,,,,W0739
+11/18补充,T7-1,Computing inter-rater reliability and its variance in the presence of high agreement,10.1348/000711006x126600,,,,W0740
+11/18补充,T7-2,"Bias, prevalence and kappa",10.1016/0895-4356(93)90018-v,,,,W0741
+11/18补充,T7-3,The use of confidence or fiducial limits illustrated in the case of the binomial,10.1093/biomet/26.4.404,,,,W0742
+11/18补充,T7-4,Interval estimation for a binomial proportion,10.1214/ss/1009213286,,,,W0743
+11/18补充,T7-5,Reliability and inter-rater reliability in qualitative research: norms and guidelines for CSCW and HCI practice,10.1145/3359174,,,,W0744
+11/18补充,T7-6,Local standards for sample size at CHI,10.1145/2858036.2858498,,,,W0745
+11/18补充,T7-7,AI judges in design: toward expert-equivalent design evaluations with vision-language models and in-context learning,10.1115/1.4071835,,,,W0746
+11/18补充,T7-8,MLLM-as-a-judge: assessing multimodal LLM-as-a-judge with vision-language benchmark,,,,,W0747
+11/18补充,T7-9,VIEScore: towards explainable metrics for conditional image synthesis evaluation,10.18653/v1/2024.acl-long.663,,,,W0748
+11/18补充,T8-1,Introduction to multicopter design and control,10.1007/978-981-10-3382-7,,,,W0749
+11/18补充,T8-2,Influence of propeller configuration on propulsion system efficiency of multi-rotor unmanned aerial vehicles,10.1109/icuas.2016.7502520,,,,W0750
+11/18补充,T8-3,Generative adversarial networks and data clustering for likable drone design,10.3390/s22176433,,,,W0751
+11/18补充,T8-4,Current status and trends of plant protection UAV and its spraying technology in China,10.33440/j.ijpaa.20180101.0002,,,,W0752
+11/18补充,T8-5,The application of unmanned aircraft systems to plant protection in China,10.1007/s11119-017-9516-7,,,,W0753
+11/18补充,T8-6,Exploring proxemics for human-drone interaction,10.1145/3125739.3125773,,,,W0754
+11/18补充,C1,Fashioning creative expertise with generative AI: graphical interfaces for design space exploration better support ideation than text prompts,10.1145/3613904.3642908,,,,W0755
+11/18补充,C2,DesignWeaver: dimensional scaffolding for text-to-image product design,10.1145/3706598.3714211,,,weaver,W0111
+11/18补充,C3,AutoSpark: supporting automobile appearance design ideation with Kansei engineering and generative AI,10.1145/3654777.3676337,,,spark,W0292
+11/18补充,C4,CAD-prompted generative models: a pathway to feasible and novel engineering designs,10.1115/detc2024-146325,,,,W0178
+11/18补充,C5,Prompting for products: investigating design space exploration strategies for text-to-image generative models,10.1017/dsj.2024.51,,,,W0226
+11/18补充,C6,The effects of generative AI on design fixation and divergent thinking,10.1145/3613904.3642919,,,,W0239
+11/18补充,C7,The impact of sketch-guided vs. prompt-guided 3D generative AIs on the design exploration process,10.1145/3613904.3642218,,,,W0240
+11/18补充,C8,意象驱动的产品造型智能设计方法,10.13841/j.cnki.jxsj.2024.08.017,,,su,W0429
+11/18补充,C9,视觉感知数据驱动的产品造型智能生成设计方法,10.3724/sp.j.1089.2024-00459,,,,W0526
+11/18补充,C10,A product form design method integrating Kansei engineering and diffusion model,10.1016/j.aei.2023.102058,,,yang,W0351
+11/18补充,C11,Research on multimodal generative design of product appearance based on emotional and functional constraints,10.1016/j.aei.2024.103106,,,,W0756
+11/18补充,C12,面向平飞姿态的四旋翼无人机机身造型设计,10.13841/j.cnki.jxsj.2025.02.023,,,,W0137
+11/18补充,C13,T2I-Adapter: learning adapters to dig out more controllable ability for text-to-image diffusion models,10.1609/aaai.v38i5.28226,,,,W0234
+11/18补充,C14,Uni-ControlNet: all-in-one control to text-to-image diffusion models,10.52202/075280-0491,,,,W0245
+11/18补充,C15,ControlNet++: improving conditional controls with efficient consistency feedback,10.1007/978-3-031-72667-5_8,,,,W0184
+11/18补充,C16,Design guidelines for prompt engineering text-to-image generative models,10.1145/3491102.3501825,,,,W0757
+11/18补充,C17,"""Control is a trajectory, not a point"": conceptualizing control in human-AI co-creativity",10.1145/3772318.3790861,,,,W0183
+11/18补充,C18,Product-form design model based on genetic algorithms,10.1016/j.ergon.2010.01.009,,,,W0758
+11/18补充,C19,How generative AI supports human in conceptual design,10.1017/dsj.2025.2,,,,W0208
+11/18补充,C20,AI-driven multidisciplinary conceptual design of unmanned aerial vehicles,10.2514/6.2024-1708,,,,W0121
+外加方法基准,1,Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks,10.48550/arxiv.2005.11401,,,rag,W0759

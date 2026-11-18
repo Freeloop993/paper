@@ -1,5 +1,7 @@
 # Claude 接手说明
 
+**11 月 18 日当前工作。** 从[研究与实验路线](planning/advisor-20261118/README.md)和[设计系统实施规格](planning/advisor-20261118/system.md)接手。界面基于 PR #75 第三轮。优先完成后台语义检索、任务与构型贯通、真实回执与人工决策。作者在同一后端完成两种方式的预试，随后进行正式实验与独立评议，最后写全文。日常协作入口为 [#76](https://github.com/Freeloop993/paper/issues/76)，下方保留旧阶段接手记录。
+
 11 月 14 日实测已补齐：[Qwen 十二张＋S4 修订两张的原图、实际请求、逐图读数](evidence/qwen-shape-s4-20261114/README.md)。S4 仅见顶部 0/2 → 0/2，E3 仍为 0/9。[四篇同校硕士论文全文、结构和页码](references/peer-theses.md)。
 
 [先核对论文原件、同专业四篇结构对照及其写作用途](planning/claude-materials.md)。其中列出全文分支、缺全文的条目及原件使用范围。

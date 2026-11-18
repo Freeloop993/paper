@@ -1,0 +1,64 @@
+# 从一条“机身小巧便携”到可检验的外观任务
+
+更新于 2026 年 11 月 18 日。面向设计系统维护者与实验主持人。
+
+**建议把 Insight 改为任务简报。** 设计者先说明对象、观察状态和期望外观。后台从已审材料中取出少量例证、反例和适用限制，供设计者采纳、改写或拒绝。采用“展开顶视看起来更紧凑”是一次可撤销的设计决定。数据目前不能为这个决定自动填入一个壳宽或比例值。本轮已用真实数据和公开软件做离线回放。[核验脚本](verify_semantics.py) · [实测结果](audit.json)
+
+## 1. 数据范围与来源
+
+| 实际核对对象 | 本轮结果 | 用于什么 |
+|---|---|---|
+| 京东及淘宝／天猫原始工作簿 | 6 份、11,241 条非空记录行。E001 与 E008 的公开短引均只在一个原始评论单元格出现；同时核对了匿名记录与来源池 | 区分原表行、去重文本簇、评论来源和评议者 |
+| 合并、去重与最终分类台账 | 8,755 条合并记录，7,443 个非默认文本簇，1,318 个含消费航拍机标题标签。保留造型表述 228 簇，全部含该标签。该筛选经过模型筛查与助手审读，尚欠计划内的人工抽检 | 说明语料来源和筛选，不代表航拍用户总体 |
+| 多标签主题 | 在上述 228 簇内，整机小尺度 99 簇、通用携带 67 簇、折叠收纳 12 簇、口袋与小包 4 簇；一簇可归入多项 | 做检索入口，频数不提供设计权重 |
+| 短引证据卡 | 私有语义证据池到公开卡 36/36 的全文摘要、短引原文和匿名来源键已逐张核对，共 35 个来源。15 张源于早期库，21 张源于补充来源 | 作为可追溯例子，不能将 36 卡当作 228 簇的随机子样或把相同来源计为两人 |
+| 第二编码 | 仓库配对表记录 35 条来源和 5 条干扰。35 条来源的“紧凑—舒展”一致 29 条，κ=0.596；可见部位只在 1 条上明确记作“机身轮廓与比例” | 判断能否从文字稳定读出方向，不证明任何比例与知觉的函数关系 |
+
+复算直接读取本地原表和结案台账；公开仓库提供脚本、短引和汇总。原用户名、完整文本、具体商品或个人链接、私有部分跨表对照键、参与者答卷不进入前端资源或研究 PR。本次检查未见可将完整原评论公开再分发或传输到外部模型的明确授权。内置检索的可用材料限定在项目已有的脱敏短引及公开统计。录入新材料时记录来源范围、用途和查阅权限。[筛选口径](https://github.com/Freeloop993/paper/blob/9afe6903b0368cd86ced367c3675bb4a7adc98e2/evidence/semantic-cards/early-crawl/claude-review-20261117/README.md) · [公开卡表](https://github.com/Freeloop993/paper/blob/9afe6903b0368cd86ced367c3675bb4a7adc98e2/evidence/semantic-cards/cards.csv) · [第二编码配对](https://github.com/Freeloop993/paper/blob/9afe6903b0368cd86ced367c3675bb4a7adc98e2/experiments/semantic40-pairing/summary.json) · [前端短引导入约定](https://github.com/lucienzhu/paper/blob/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/README.md)
+
+## 2. 一条评论怎样走到设计和实验
+
+1. **原话和对象。** E001 的短引为“机身小巧便携”，来源键为 S-78bfa0b2d401。原卡把对象标为机身，把状态标为“未明确”。系统可推荐进一步选择“折叠收纳”“展开顶视视觉紧凑”，或保留未明确。
+2. **可复核限制。** E009 明确描述 Mini 4 Pro 折叠后放进日用背包；E008 的折叠评价和标题指向的机型存在语境冲突，不能作该型号可以折叠的事实依据。E003 的小包适配、E004 的口袋不适配来自同一正文，应一起展开。E006、E007 说的是安装配件以后整套外廓变大。几种体验不能共用一项视觉参数。[原卡及限制](https://github.com/Freeloop993/paper/blob/9afe6903b0368cd86ced367c3675bb4a7adc98e2/evidence/semantic-cards/cards.csv)
+3. **从用户表达到设计者选择。** 若设计者选“展开、顶视、紧凑”，已冻结的前端能把该目标单独编译成一句提示词；采纳短引本身不改几何。提议记录证据卡号、研究者提出的候选映射、设计者选定的状态、采纳或拒绝理由及编译版本。农业植保场景可登记项目需求或设计者自定目标，供实验留痕。[现行词对与提示](https://github.com/lucienzhu/paper/blob/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/src/design/fields.ts#L66-L73) · [编译入口](https://github.com/lucienzhu/paper/blob/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/src/design/partPrompt.ts#L38-L53)
+4. **从选定目标到可检验假设。** “同一展开顶视概念图上，仅改变壳体相对宽度，会不会改变紧凑感”已有 CW-1.0 离线受控预试材料。三档刺激的掩膜固定截面宽／D 分别为 0.208、0.264、0.320。已有手册样本换取宽截面后，Air 3 为 0.208→0.183，Mavic 3 Pro 为 0.211→0.168，两者先后次序改变；Neo 为 0.234→0.232，Neo 2 固定截面缺测。先规定读宽行、外壳边界和缺测条件；刺激档位来自实验操纵，其方向和真实感知效果待测。该次复核的本机材料为 thesis-revision/compactness/researcher/width-bridge/manuals.csv 和 stimuli.csv。[Air 3 原手册第12页](https://dl.djicdn.com/downloads/DJI_Air_3/UM/20230925/1/DJI_Air_3_User_Manual_v1.2_EN.pdf#page=12)
+5. **判读现状。** E5 既有 3 份逐图回件中，B2 的两种配色按“紧凑—舒展”分别为 5→5、5→5、4→4，量表右端为舒展。原试验操纵配色、目标为醒目度；其结果不能回答壳宽变化的效应。CW-1.0 同图改宽预试的本地收件文件为 0，汇总可用场次也为 0。可直接接续既有刺激，先在正式发放前确定目标极、随机呈现、不可判选项和准确的测量定义，再由独立评者评分。[E5 逐人结果](https://github.com/Freeloop993/paper/blob/9afe6903b0368cd86ced367c3675bb4a7adc98e2/evidence/e5-individual-reviewed/README.md)
+
+**词典需分开记版本。** 正式 v1.2 的固定任务句已经包含 compact，E3 首轮另采用 v1.4 的部件描述；当前 PR #75 的任务句去掉这个词，设计者选择目标后才写入。若验证语义检索或结构化输入的作用，比较两组要固定相同的基础任务和相同后端，并将实际输入归档。旧 E3 不能回标为使用了新版 Insight。[v1.2 字典](https://github.com/Freeloop993/paper/blob/e96d41946ea84237da506bb76c2f713a3f3b9275/experiments/qwen-shape-pilot/dictionary.json) · [E3 首轮登记](https://github.com/Freeloop993/paper/blob/e96d41946ea84237da506bb76c2f713a3f3b9275/experiments/e3-quad-qwen/README.md)
+
+## 3. 软件实测与离线检索示例
+
+**现状。** 当前 Insight 在卡的六个文本字段上做子串匹配，同时支持主题正则过滤。展开／折叠状态没有作为单独搜索字段；“小巧”“便携”“折叠”三个主题可指向同一个语义词对。主题柱图中的 228 与右侧可查的 36 卡来自不同选取过程。代码用 count=0 将“护圈”标成纯卡库入口；真实 228 簇的既有编码含“护罩构型与桨叶表达”2 簇和“防护安心感知”3 簇，两组并集4簇。建议把“卡库入口，没有同名统计指标”存为 null，用独立字段指明对应分类和样本单位。[主题数据](https://github.com/lucienzhu/paper/blob/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/src/data/corpus.ts) · [实际筛选器](https://github.com/lucienzhu/paper/blob/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/src/components/Insight/InsightPage.tsx#L9-L24)
+
+**七个开发样例。** 比较 PR #75 的实际子串匹配逻辑与一个带任务、状态和来源约束的离线规则。两边都只读相同 36 卡。开发者先手写了状态和意图，并在看过卡表后设计规则，以下属于功能验收；没有独立标注集、检索准确率或真人收益结论。规则刻意保留选空和澄清分支。
+
+| 输入的任务或意图 | 原子串检索 | 带任务／状态的规则输出 |
+|---|---|---|
+| 航拍；状态未明确；机身小巧便携 | E001 | E001，询问设计者所指状态 |
+| 折叠后能放进背包 | 空 | E009，标为折叠携带场景 |
+| 携带；口袋装得下吗 | 空 | E003、E004，同一来源的两种限制 |
+| 安装护罩后显大 | 空 | E006、E007，标为加装配件外廓 |
+| 展开顶视视觉紧凑 | 空 | 无“明确展开”的直接引文；登记为设计者目标，可选宽度假设 |
+| 农业植保；机身小巧便携 | E001 | 无同任务语料，允许填写植保任务简报 |
+| 陌生需求词 | 空 | 无命中，允许自定 |
+
+**旧 RAG 的可用基础。** 在禁用外部 socket 的 Python 进程中，用公开短引按旧输入 schema 组成测试件，实际 loader 创建 36 个 Document、35 个来源。嵌入初始化明确返回“暂未配置向量模型，检索服务未启用”。真实 Flask 路由在进程内测试返回 status=200，initialize、context、query 均为 503；没有发起模型调用。仅验证了输入装载、状态及禁用行为。当前这套接口没有可用于比较的召回、生成质量或延迟结果。[历史知识库](https://github.com/lucienzhu/paper/blob/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/rag_knowledge_base.py#L168-L170) · [历史路由](https://github.com/lucienzhu/paper/blob/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/rag_api_server.py#L65-L74)
+
+Node v24.13.0 直接执行前端已有 verify 得到 33/33。Git blob 原始提示词文本重放 10/10；本机 checkout 自动把 TXT 转为 CRLF，直接重放 0/10，逐项报告中仅 TXT 提示词全文不一致。保留原始字节作导出回放，跨平台展示可另行规范换行。[回放脚本](https://github.com/lucienzhu/paper/blob/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/scripts/replay.mjs)
+
+## 4. 系统设计与实验验收
+
+| 环节 | 实现建议 | 验收条件 |
+|---|---|---|
+| 后台数据处理 | 固定语料范围、数据版本、样本单位、对象、状态、出处、极性、限制、来源键和适用任务。把统计总体与展示卡分表。双语同义词只帮助找证据 | 一张卡能追到一个受控来源和审读记录；同源正反例能一起检索；未知状态与未统计频数有独立表示 |
+| 系统检索 | 对 36 卡优先采用字段过滤与可解释规则做可重现基线。新资料规模增大后，可以在任务过滤后增加语义召回或重排。仅在需要依材料合成文字时试用 RAG | 用未参加规则开发的查询与标注测三个条件：纯关键词、结构化检索、可选语义检索／有出处生成。报告前 k 个结果的证据相关性、跨任务误荐、应拒答时的行为、反例覆盖、人工采纳／更正和耗时；分别检查检索与生成引用忠实度 |
+| 设计者前台 | 默认呈现对象和状态、自由意图、候选解释及其限制。依据可展开；记录采纳、改写、拒绝，保留“没有合适依据”。展开顶视和折叠收纳分别呈现 | 仅点选或收藏证据卡时几何与提示词目标保持原样；确认目标后新增的语义句、后续选择的参数及依据可分辨；撤销目标后该句撤销 |
+| 几何与评议 | 由同状态手册和实验规格定义可测的变化。每条代理量标记为候选、已操纵、已生成、已经独立判读或结果未知。E4 保持两种方式的后端与任务可比 | 生成图单独量几何和非目标漂移，盲评者独立回答是否读出设计意图。实验结果允许无差异、反向、不可判。E4 最小系统可先使用已验证的规则检索；RAG 的增益另测，以免两项改变混杂 |
+
+### 复核方式
+
+需要 Node 24、Git、Python。公开七例只使用标准库及 Git 读取提交号；可传入项目源码目录和一个输出文件。--private-source 可选，指向本机“论文前期数据调研”，需要 openpyxl。--runtimes 使用该版本已有的 LlamaIndex、Flask 等依赖及提交内原始导出件，不安装模型。audit.json 来自含两项可选检查的实跑。
+
+```text
+python -B verify_semantics.py <PR75的prototypes/drone-configurator目录> --out public-check.json
+```

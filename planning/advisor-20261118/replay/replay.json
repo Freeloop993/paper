@@ -1,0 +1,62 @@
+{
+  "source_commit": "e96d41946ea84237da506bb76c2f713a3f3b9275",
+  "reader_commit": "9afe6903b0368cd86ced367c3675bb4a7adc98e2",
+  "quad": {
+    "record": "E3R3-B2",
+    "image_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+    "request_sha256": "5333d12e6c27f93a6a049490b2c57b3c890a157eb879e20a642389d35f6267ba",
+    "guide": "qwen-shape-dots-250-15c5ad1c924b.png",
+    "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+    "guide_red_components": 4,
+    "prompt_sha256": "936e1baa9ae3fc390c3a3604cedf98e5a2eceb4de20cc4a44443175e60a2bf43",
+    "registered_seed": 2026112125,
+    "size": [
+      1024,
+      1024
+    ],
+    "completed": true,
+    "sampler_uncached": true,
+    "history_and_png_graph_match": true,
+    "candidate_ids_reviewed": 9,
+    "first_ballot_parent": null,
+    "later_author_selected": "E3R3-B2",
+    "manual_composition_changed_pixels": {
+      "B2-no-window.png": 1305,
+      "B2-upper.png": 3286,
+      "B2-lower.png": 3114
+    },
+    "follow_up_actual_inputs": {
+      "E3R3-B2.png": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+      "E3R3-C1.png": "cfd2d8cfb4692048b070e01296e30b1aa8ec9c5cc3a269105e5f35fcbf08512b"
+    }
+  },
+  "hex": {
+    "record": "HEXA3-wl1.00-r01",
+    "image_sha256": "8ad514becbf072870dc5e48d591a238ed3027c4265b16660e6c54277cadec791",
+    "request_sha256": "2fff30e9b2dba6aedf0ae8b801d2a8fd38091e6509e16c306469c9c5e01d3df3",
+    "guide": "hexa-points-1.00.png",
+    "guide_sha256": "d0768f8dac4f240316761309551a931b022390c89d06b956bda9f7b028829f5d",
+    "guide_red_components": 6,
+    "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+    "registered_seed": 2026112323,
+    "size": [
+      1024,
+      1024
+    ],
+    "completed": true,
+    "sampler_uncached": true,
+    "history_and_png_graph_match": true,
+    "replaces": "P2-HEXA-wl1.00-r01",
+    "previous_run_is_separate": true,
+    "corrected_fields": [
+      "12/filename_prefix",
+      "4/negative_prompt"
+    ],
+    "independent_ai_q": 0.946213,
+    "independent_label": "a8852162",
+    "human_selection": null,
+    "paired_user_session": null
+  },
+  "new_generation": 0,
+  "new_human_sessions": 0
+}
