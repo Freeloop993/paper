@@ -1,0 +1,145 @@
+"""把研究全景写成白板元素。输出 board.json（全部元素）和 out/ 下逐个元素文件，供写入白板。
+只描述布局与文字；数字取自 STATUS.md、planning/2026-11-18-framework.md 和 planning/advisor-20261118/README.md（截至 2026-11-18）。"""
+import json, pathlib, sys
+
+W = 1748
+els, order = {}, []
+def add(data):
+    eid = 'e%d' % (len(els) + 1)
+    els[eid] = data
+    order.append(eid)
+    return eid
+def box(x, y, w, h, text, color='white', align='center', kind='rounded'):
+    d = {'type': 'shape', 'kind': kind, 'x': x, 'y': y, 'w': w, 'h': h, 'color': color, 'size': 'body', 'text': text}
+    if align != 'center': d['textAlign'] = align
+    return add(d)
+def section(y, h, title, x=0, w=W):
+    return add({'type': 'container', 'x': x, 'y': y, 'w': w, 'h': h, 'text': title})
+def text(x, y, s, size='body', wrap=None):
+    d = {'type': 'text', 'x': x, 'y': y, 'text': s, 'size': size}
+    if wrap: d['wrap'] = wrap
+    return add(d)
+arrows = []
+def arrow(a, b, label=None, **more):
+    d = {'type': 'arrow', 'from': a, 'to': b}
+    if 'bends' not in more: d.update(fromSide='right', toSide='left')
+    if label: d['label'] = label
+    d.update(more)
+    arrows.append(d)
+
+# ---- 各分区先写（分区在最底层）----
+Y1, H1 = 240, 198                # ① ②
+Y3 = Y1 + H1 + 72; H3 = 418      # ③ 论证链
+Y4 = Y3 + H3 + 72; H4 = 400      # ④ 表
+Y5 = Y4 + H4 + 72; H5 = 178      # ⑤ 实际在做
+Y6 = Y5 + H5 + 72; H6 = 318      # ⑥ 章节
+Y7 = Y6 + H6 + 72; H7 = 218      # ⑦ 能说什么
+Y8 = Y7 + H7 + 72; H8 = 256      # ⑧ 缺口
+Y9 = Y8 + H8 + 72; H9 = 144      # ⑨ 顺序
+section(Y1, H1, '① 我们在解决什么：三处断开', 0, 860)
+section(Y1, H1, '② 要证明的一句话', 888, 860)
+section(Y3, H3, '③ 一条论证链：每个研究问题检验其中一环（颜色是证据现状）')
+section(Y4, H4, '④ 四个研究问题：怎么判、现在到哪、缺什么', 0, 1448)
+section(Y5, H5, '⑤ 我们实际在做什么')
+section(Y6, H6, '⑥ 六章各管链上的哪一段')
+section(Y7, H7, '⑦ 能说什么，不能说什么')
+section(Y8, H8, '⑧ 缺口，按影响排序')
+section(Y9, H9, '⑨ 下一步的顺序（导师：先做系统、预试和评议，再写正文）')
+
+# ---- 标题与图例 ----
+text(0, 0, '多旋翼造型研究全景', 'title')
+text(0, 84, '把说不清的外观意图，变成可检查、可修改、可追溯的造型方案', 'large')
+text(0, 142, '《人智协同驱动的多旋翼无人机造型参数化可控生成方法研究》 · 主案例：日常随行航拍四旋翼 · 证据截至 2026-11-18', 'body', 1200)
+box(1272, 14, 150, 44, '已有证据', 'green', kind='pill')
+box(1432, 14, 150, 44, '部分 / 待证', 'yellow', kind='pill')
+box(1592, 14, 150, 44, '缺口', 'pink', kind='pill')
+
+# ---- ① 问题 ----
+for i, s in enumerate(['**说不清**\n“紧凑”是折叠后小，还是展开时显得小？', '**控不住**\n文字提示管不住比例和部位', '**追不回**\n谁决定了什么？别人看得出意图吗？']):
+    box(24 + i * 276, Y1 + 24, 252, 150, s)
+# ---- ② 主张 ----
+box(912, Y1 + 24, 812, 150, '设计者把用户语义和工程比例写成一份可编辑的**规格**；生成结果在这些参数上**量得到、读得出**；修订有边界，**取舍在设计者**；不知情的人能**读出意图**；与自由提示相比，有可量化的**收益或代价**。', align='left')
+
+# ---- ③ 论证链 ----
+r1, r2 = Y3 + 24, Y3 + 24 + 120 + 130
+xs = [24 + i * 364 for i in range(5)]
+c1 = box(xs[0], r1, 220, 120, '**用户评论**\n7,443 → 1,318 → 228 个文本簇', 'green')
+c2 = box(xs[1], r1, 220, 120, '**确认的意图**\n采用 · 驳回 · 自定', 'yellow')
+c3 = box(xs[2], r1, 220, 120, '**规格**\n语义词对 + 工程比例 + 造型档位', 'yellow')
+c4 = box(xs[3], r1, 220, 120, '**条件图 + 文字**\n配置器编译，不训练模型', 'green')
+c5 = box(xs[4], r1, 220, 120, '**候选图**\n每张可追到输入与种子', 'green')
+c6 = box(xs[0], r2, 220, 120, '**量测与判读**\n部件图 12/12\n设计通路窄档 0/12', 'pink')
+c7 = box(xs[1], r2, 220, 120, '**取舍 · 修订 · 接手**\n只有作者的 B2 记录', 'yellow')
+c8 = box(xs[2], r2, 220, 120, '**终稿**\n目前只有一张顶视图', 'pink')
+c9 = box(xs[3], r2, 220, 120, '**读出意图**\n醒目 3/3，紧凑未读出\n只有 3 人', 'pink')
+box(xs[4], r2, 220, 120, '**RQ4 换构型**\n这条链还成立多少？\n六旋 39 张，任务也变了', 'yellow')
+arrow(c1, c2, 'RQ1'); arrow(c2, c3); arrow(c3, c4, '编译'); arrow(c4, c5, '生成')
+arrow(c5, c6, 'RQ2', bends=['v', 125])
+arrow(c6, c7, 'RQ3'); arrow(c7, c8); arrow(c8, c9, 'RQ1′')
+
+# ---- ④ 表 ----
+rows = [
+    ('问题', '怎么判', '现在到哪', '缺什么'),
+    ('RQ1 “紧凑”指什么，怎样确认', '检索命中 · 错引 · 该拒答', '228 个造型表述簇；36 张卡；κ 0.17–0.60', '语义还没接到参数上'),
+    ('RQ2a 布局比例控得住吗', '目标值对实测值，逐张量', '部件图 12/12；设计通路窄档 0/12', '设计通路的独立盲测为 0'),
+    ('RQ2b 造型档位出得来吗', '匿名判读部件是否出现', '96 张两次 AI 盲读；真人只读 12 张', '真人判读少，且有分歧'),
+    ('RQ2c 改得对、保得住吗', '目标达成与其余保持分开判', '没有一例目标修改被确认', '第二版 73 份请求未运行'),
+    ('RQ1′ 意图读得出吗', '不知情的人逐图评分', '醒目 3/3；紧凑 5、5、4；共 3 人', '还差 7 人和比例对照图'),
+    ('RQ3 协同的收益与代价', '同一人两种方式配对', '作者预试 0 场；外部设计者 0/3', '全部真人场次'),
+    ('RQ4 换构型还成立吗', '同一中性任务比构型', '农业六旋 39 张，36 张 AI 复测', '任务与构型同时变了'),
+]
+widths = [330, 300, 440, 330]
+add({'type': 'table', 'x': 24, 'y': Y4 + 24,
+     'cols': {'c%d' % (i + 1): {'at': i + 1, 'w': w} for i, w in enumerate(widths)},
+     'rows': {'r%d' % (j + 1): {'at': j + 1, **{'c%d' % (i + 1): cell for i, cell in enumerate(row)}} for j, row in enumerate(rows)}})
+
+# ---- ⑤ 实际在做 ----
+for i, s in enumerate([
+    '**资料**\n评论 7,443 个文本簇 · 36 张证据卡\n真实机型 30 款 · 文献导航 790 条',
+    '**系统**\n一块画布的工作台：目标 → 依据 → 造型 → 生成 → 候选 → 取舍，每一步留记录',
+    '**实验**\n已有：布局 36 张 · 设计三轮 27 张 · 造型 96 张 · 六旋 39 张\n缺：设计者场次 0，评议只有 3 人']):
+    box(24 + i * 572, Y5 + 24, 556, 130, s, align='left')
+
+# ---- ⑥ 章节 ----
+chapters = [
+    ('**第1章 绪论**\n问题 · 目标 · 四个研究问题 · 技术路线', 'yellow'),
+    ('**第2章 相关研究与理论基础**\n- 2.2 语义与意图 → RQ1\n- 2.3–2.4 参数化与可控生成 → RQ2\n- 2.5 人智协同 → RQ3\n- 2.6 与最近工作的比较', 'yellow'),
+    ('**第3章 造型意图转译与人智协同可控生成方法**\n- 3.2 需求资料 → RQ1\n- 3.3 意图 → 规格\n- 3.4 参数与条件图 → RQ2\n- 3.5 协同生成与反馈 → RQ3\n- 3.6 评价维度', 'yellow'),
+    ('**第4章 四旋翼无人机的人智协同设计**\n- 任务与原型\n- 多方向候选与筛选\n- 取舍与迭代（B2）\n- 深化与设计表达\n- 外部设计者两种方式 → RQ3', 'yellow'),
+    ('**第5章 关键设计指标验证与跨构型无人机设计应用**\n- 比例命中 → RQ2a\n- 部件造型 → RQ2b\n- 局部修改与保持 → RQ2c\n- 意图感知 → RQ1′\n- 跨构型 → RQ4', 'pink'),
+    ('**第6章 结论与展望**\n逐问回答：支持到哪、在哪失效、哪些没验证', 'white'),
+]
+for i, (s, colour) in enumerate(chapters):
+    box(24 + i * 287, Y6 + 24, 263, 270, s, colour, align='left')
+
+# ---- ⑦ 能说什么 ----
+box(24, Y7 + 24, 838, 170, '**不能说“首次”**\n- 评论 → 参数 → 生成：AutoGen-Insight 已做\n- 参数化可控生成：Parametric-ControlNet 已做\n- 生成式 AI 用于无人机造型：Chen 等已做\n- 结构化优于自由提示：已有 12–52 人的对照（CHI 2024、2025 等）', 'pink', align='left')
+box(886, Y7 + 24, 838, 170, '**可以说（都还待证）**\n- 免训练、由配置器编译的双重参数规格\n- 两条生成通路各自的比例响应\n- 部件级评价 + 可追溯的设计证据\n- 合起来：能指出一次偏差出在链上的哪一段，以及换构型后的边界', 'yellow', align='left')
+
+# ---- ⑧ 缺口 ----
+gaps = [
+    '**1 真人数据几乎为零**\n预试 0 场 · 设计者 0/3 · 评议 3/10',
+    '**2 设计实际用的通路没控住比例**\n窄档 0/12，独立盲测为 0',
+    '**3 “紧凑”没有接到参数上**\n终稿的紧凑感也没被读出',
+    '**4 局部修改没有一例被确认**\n第二版 73 份请求还没运行',
+    '**5 设计成果只有一张顶视图**\n缺三视图、尺寸、折叠、色材',
+    '**6 跨构型里任务和构型混在一起**\n需要同一中性任务的对照',
+    '**7 目录没有对齐**\n第4、5章已改题，小节仍是旧的',
+    '**8 系统刚改成一块画布**\n试验前要冻结版本和输入方式',
+]
+for i, s in enumerate(gaps):
+    box(24 + (i % 4) * 431, Y8 + 24 + (i // 4) * 116, 407, 92, s, 'pink', align='left')
+
+# ---- ⑨ 顺序 ----
+steps = ['冻结系统版本', '**作者预试**\n两种方式各一场', '**独立复测比例**\n真人取点与校准', '**外部设计者 3 人**\n评议 10 人', '**中性任务跨构型**\nB2 设计表达', '写第4、5章']
+ids = [box(24 + i * 284, Y9 + 24, 220, 96, s) for i, s in enumerate(steps)]
+for a, b in zip(ids, ids[1:]): arrow(a, b)
+
+for d in arrows: add(d)
+out = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else 'out')
+out.mkdir(parents=True, exist_ok=True)
+for eid, d in els.items(): (out / (eid + '.json')).write_text(json.dumps(d, ensure_ascii=False), encoding='utf-8')
+meta = {'v': 1, 'title': '多旋翼造型研究全景', 'order': order}
+(out / 'meta.json').write_text(json.dumps(meta, ensure_ascii=False), encoding='utf-8')
+pathlib.Path('board.json').write_text(json.dumps({'meta': meta, 'elements': els}, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
+print(len(els), 'elements; board', W, 'x', Y9 + H9)
