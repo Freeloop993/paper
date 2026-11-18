@@ -23,6 +23,12 @@
 - B2 有独立于界面的作者选案记录。记录明确列有 `parent_id=E3R3-B2`、所选原图 SHA-256 以及初版作者评语文件摘要。它证明作者对真实候选作过选择，无法代替新版作者双场计时与决策记录。农业六旋单图已有实际请求与回图，尚缺等价的逐候选作者取舍链。[B2 选案原件](https://github.com/Freeloop993/paper/blob/e96d41946ea84237da506bb76c2f713a3f3b9275/evidence/e3-quad-qwen-20261115/round-3/author-review/parent-selection.json) · [农业六旋归档](https://github.com/Freeloop993/paper/tree/e96d41946ea84237da506bb76c2f713a3f3b9275/evidence/gpu-day-20261115/dual-hexa-handoff)
 - 检查了本机研究工作区和论文资料目录中按历史系统实际导出文件名生成的配对回件，同时对照研究基线与 E4 工单。本轮未找到作者已完成的双场真回件。未枚举个人浏览器内其他配置、手工改名的私有文件或未交回记录。[现行研究框架](https://github.com/Freeloop993/paper/blob/9afe6903b0368cd86ced367c3675bb4a7adc98e2/planning/2026-11-18-framework.md) · [E4 工单](https://github.com/Freeloop993/paper/issues/23)
 
+### 两种方式看到的参照与模型实际收到的参照
+
+在 1024 × 1024 的原图上复核，旧 C1 展示图的 SHA-256 以 `15c5ad1c` 开头，新版两份符合四轴、W/L＝1、D＝250 配置的导出图均以 `deb3284e` 开头。将 PNG 解码为 RGB 后逐像素比较，旧图与新版图有 1,637 个像素位置不同。两者都有四个红色轴位，水平方向的轴位中心间距约为 420 与 424 像素。该差异只说明参照版本有别，尚未测试它对模型或人的影响。[旧版共同参照](https://github.com/Freeloop993/paper/blob/31b3730a183000fed01abb42a61b605a7a6fa6b6/prototypes/e4-author-pilot/reference.png) · [新版原始导出](https://github.com/lucienzhu/paper/tree/d6dfb211343bb8ee0b7a2b4f75f976ce7b1d16b2/prototypes/drone-configurator/review/20261118-round3/exports)
+
+开场时给两种方式的设计者展示同一版本的 PNG，并记录其完整摘要。主持人另记每次实际送入模型的图片。按当前结构化方式，模型可收确认后的文字和条件图；自由提示方式只发设计者原文。若要检验两组都给模型同一张图的情况，应在开场前登记这一输入政策，并在两场保持一致。比较时写明实际测到的政策。
+
 ## 维护者在新版先做的一次联调
 
 1. 从当前正常配置器入口出发，使用一份冻结 S 任务和一份 D 任务。S 导出已确认文字与布局图；D 实发作者原文。两份任务使用相同后端版本、画幅、机会与总候选上限。两组都可看到简报的共同参照，模型实际收到的材料逐组登记。两组的差异是整套交互和输入方式，解释对照结果时不能单独归因给布局图、界面或知识检索。

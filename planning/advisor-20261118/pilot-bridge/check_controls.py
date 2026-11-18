@@ -3,6 +3,7 @@ import argparse
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import json
+import sqlite3
 import subprocess
 import sys
 import time
@@ -97,8 +98,15 @@ def check(pr75, w):
     ret=["receive","--id","s","--status","success","--ack",ack,"--history",hist]
     run(db,*ret,"--output",files[0],reject="all original")
     run(db,*ret,"--output",files[0],"--output",files[1])
+    received=json.loads(run(db,"report"))
+    assert received["shown_candidates"]==0 and received["presentation_status_unknown"]==["s/1","s/2"]
+    assert [e["label"] for e in received["events"] if e["kind"]=="phase"][-1]=="handoff"
+    run(db,"present","--candidate","s/2","--status","shown","--now","--reason","software display event")
+    partial=json.loads(run(db,"report"))
+    assert partial["shown_candidates"]==1 and partial["presentation_status_unknown"]==["s/1"]
     run(db,"decide","keep","--candidate","s/9","--reason","fixture",reject="actual candidate")
     run(db,"decide","keep","--candidate","s/2","--reason","second control")
+    run(db,"present","--candidate","s/1","--status","shown","--now","--reason","software display event")
     run(db,"decide","rollback","--candidate","s/1","--reason","first control")
     run(db,"close","--reason","end software control")
     s=json.loads(run(db,"report"));assert s["returned_images"]==2 and s["request_matched_successes"]==1
@@ -122,6 +130,11 @@ def check(pr75, w):
         payload["timestamp"]=0
     write(hist2,bad_clock)
     run(other,*args,"--ack",ack2,"--history",hist2,"--output",outputs[0])
+    run(other,"present","--candidate","r/1","--status","shown","--reason","time unavailable in fixture")
+    dview=json.loads(run(other,"report"))
+    assert dview["presentation_time_unknown"]==["r/1"]
+    receipt_at=[e["at"] for e in dview["events"] if e["kind"]=="receipt" and e["status"]=="success"][0]
+    run(other,"present","--candidate","r/1","--status","shown","--at",receipt_at,"--reason","fixture display log","--evidence",brief)
     run(other,"decide","keep","--candidate","r/1","--reason","control finished")
     run(other,"close","--reason","control")
     rep=json.loads(run(other,"report"));assert rep["unknown_attempts"]==[] and rep["returned_images"]==1
@@ -142,6 +155,93 @@ def check(pr75, w):
     over_report=json.loads(run(over,"report"))
     assert over_report["returned_images"]==10 and over_report["outputs_differ_from_plan"]==["over"]
     run(over,*seal_args("over2",1,req2),reject="exceed nine")
+    run(over,"present","--candidate","over/1","--status","not-shown","--reason","withheld by test host")
+    assert json.loads(run(over,"report"))["presentation"]["over/1"]["status"]=="not-shown"
+
+    grouped=w/"grouped.db"
+    run(grouped,"start",*common,"--order","2","--task","B","--condition","D")
+    def failed(k):
+        run(grouped,"receive","--id",k,"--status","failed","--failure-log",msg,"--note","software fixture")
+    run(grouped,*seal_args("call1",1,req2),"--opportunity","op1","--planned-calls","2","--step-reason","two predefined steps")
+    failed("call1")
+    run(grouped,*seal_args("call2",1,req2),"--opportunity","op1",reject="step reason")
+    run(grouped,*seal_args("call2",1,req2),"--opportunity","op1","--step-reason","preplanned step two")
+    run(grouped,"dispatch","--id","call2","--evidence",msg)
+    failed("call2")
+    run(grouped,*seal_args("call3",1,req2),"--opportunity","op1","--step-reason","off-plan",reject="exhausted")
+    run(grouped,"log-extra-call","--id","orphan","--opportunity","op1","--reason","incomplete backend log","--evidence",msg)
+    run(grouped,*seal_args("new2",1,req2),reject="extra output count")
+    run(grouped,"review-extra-count","--id","orphan","--returned-count",0,"--evidence",msg)
+    for number in range(2,10):
+        token=f"new{number}"
+        run(grouped,*seal_args(token,1,req2),"--retry","call2")
+        failed(token)
+    run(grouped,*seal_args("tenth",1,req2),reject="nine opportunities")
+    counts=json.loads(run(grouped,"report"))
+    assert (counts["recorded_opportunities"],counts["sealed_calls"],counts["dispatch_evidenced_calls"],
+            counts["returned_images"],counts["supplemental_calls_pending"])==(9,10,1,0,["orphan"])
+    assert not counts["supplemental_image_counts_unknown"]
+    run(grouped,"log-extra-call","--id","overflow","--opportunity","turn10",
+        "--reason","off-protocol externally observed call","--evidence",msg,"--output",files[0],"--returned-count",1)
+    deviation=json.loads(run(grouped,"report"))
+    assert deviation["recorded_opportunities"]==10 and deviation["unplanned_opportunities"]==["turn10"]
+    assert deviation["images_counted_toward_limit"]==1 and deviation["shown_candidates"]==0
+
+    multi=w/"multi.db"
+    run(multi,"start",*common,"--order","2","--task","B","--condition","D")
+    for step in (1,2):
+        key=f"step{step}"
+        group_args=["--opportunity","pipeline","--step-reason","two frozen stages"]
+        if step==1:
+            group_args+=["--planned-calls",2]
+        run(multi,*seal_args(key,1,req2),*group_args)
+        ack_step,hist_step,out_step=fake_backend(w,key,g2,1)
+        run(multi,"receive","--id",key,"--status","success","--ack",ack_step,"--history",hist_step,"--output",out_step[0])
+    run(multi,"present","--candidate","step1/1","--status","not-shown","--reason","intermediate result")
+    run(multi,"present","--candidate","step2/1","--status","shown","--now","--reason","final display")
+    run(multi,"decide","keep","--candidate","step2/1","--reason","software decision")
+    run(multi,"close","--reason","finished")
+    two_steps=json.loads(run(multi,"report"))
+    assert (two_steps["recorded_opportunities"],two_steps["dispatch_evidenced_calls"],
+            two_steps["returned_images"],two_steps["shown_candidates"])==(1,2,2,1)
+
+    legacy=w/"legacy.db"
+    with sqlite3.connect(db) as source, sqlite3.connect(legacy) as old:
+        source.backup(old)
+        old.execute("DELETE FROM event WHERE kind='presentation'")
+        for rowid,raw in old.execute("SELECT id,data FROM event WHERE kind='sealed'").fetchall():
+            data=json.loads(raw)
+            for key in ("opportunity","planned_calls","step_reason"):
+                del data[key]
+            old.execute("UPDATE event SET data=? WHERE id=?",(json.dumps(data),rowid))
+        sess=json.loads(old.execute("SELECT data FROM session").fetchone()[0])
+        sess["schema"]="design-study/c2-capture-v1"
+        del sess["opportunity_limit"]
+        old.execute("UPDATE session SET data=?",(json.dumps(sess),))
+    source.close()
+    old.close()
+    historical=json.loads(run(legacy,"report"))
+    assert historical["recorded_opportunities"]==1 and historical["opportunity_assignment"]=="original_call_ids_only"
+    assert historical["shown_candidates"]==0 and len(historical["presentation_status_unknown"])==2
+    old_pair=json.loads(run(legacy,"pair",other,reject="pair differs"))
+    assert not old_pair["checks"]["presentation_for_timing"] and not old_pair["checks"]["prospective_opportunities"]
+    from blind_candidates import prepare
+    from zipfile import ZipFile
+    from io import BytesIO
+    from hashlib import sha256
+    packet = w/"blinded"
+    unique, occurrences = prepare([db, other], packet)
+    assert (unique, occurrences) == (2, 3)
+    key = json.loads((packet/"researcher-only.json").read_bytes())
+    with ZipFile(packet/"reader.zip") as archive:
+        assert sorted(archive.namelist()) == ["C001.png", "C002.png"]
+        for code, record in key["images"].items():
+            data = archive.read(code+".png")
+            assert sha256(data).hexdigest() == record["reader_sha256"]
+            with Image.open(BytesIO(data)) as image:
+                assert not image.info and image.size == (8,8)
+    assert sorted(s["condition"] for s in key["sessions"]) == ["D","S"]
+    assert sum(len(s["failed_calls"]) for s in key["sessions"]) == 1
     print(json.dumps({"mode":"software_control","pr75_c2_eligible_exports":len(cfgs),
           "structured_candidates":s["returned_images"],"free_candidates":rep["returned_images"],
           "tested":["mismatched image set","duplicate attempt","missing original output","invalid candidate",
@@ -149,7 +249,16 @@ def check(pr75, w):
                     "paired conditions and different briefs","duplicate condition rejected",
                     "clock absent/discrepant: outputs retained, pair pending",
                     "post-close source reconciliation leaves timing fixed",
-                    "1 reserved/10 returned: retained 10; next planned submission withheld"],
+                    "1 reserved/10 returned: retained 10; next planned submission withheld",
+                    "receipt separately from display and active time", "one displayed and one still unknown",
+                    "known display with missing time and later independent display record", "explicitly not shown",
+                    "two prospectively declared calls per opportunity, with failure and success paths", "reject unplanned continuation",
+                    "nine opportunities including failed submissions; tenth refused", "sparse extra call retained",
+                    "reconcile unknown extra image count without promoting unverifiable call",
+                    "v1 report retains unknown visibility and unverified opportunity grouping",
+                    "v1/v2 pair flags missing timing and grouping evidence",
+                    "externally reported tenth opportunity and partial output retained separately",
+                    "three candidate occurrences of two images: pixel-only reader archive and separate research key"],
           "live_calls":0,"author_pilot_sessions":0},ensure_ascii=False,indent=2))
 
 
@@ -158,5 +267,5 @@ if __name__=="__main__":
     ENV=dict(os.environ,PYTHONUTF8="1",PYTHONDONTWRITEBYTECODE="1")
     p=argparse.ArgumentParser();p.add_argument("pr75",type=Path)
     a=p.parse_args()
-    with TemporaryDirectory(dir=SCRIPT.parent) as d:
+    with TemporaryDirectory() as d:
         check(a.pr75.resolve(),Path(d))

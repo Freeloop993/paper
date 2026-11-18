@@ -17,7 +17,20 @@
     "duplicate condition rejected",
     "clock absent/discrepant: outputs retained, pair pending",
     "post-close source reconciliation leaves timing fixed",
-    "1 reserved/10 returned: retained 10; next planned submission withheld"
+    "1 reserved/10 returned: retained 10; next planned submission withheld",
+    "receipt separately from display and active time",
+    "one displayed and one still unknown",
+    "known display with missing time and later independent display record",
+    "explicitly not shown",
+    "two prospectively declared calls per opportunity, with failure and success paths",
+    "reject unplanned continuation",
+    "nine opportunities including failed submissions; tenth refused",
+    "sparse extra call retained",
+    "reconcile unknown extra image count without promoting unverifiable call",
+    "v1 report retains unknown visibility and unverified opportunity grouping",
+    "v1/v2 pair flags missing timing and grouping evidence",
+    "externally reported tenth opportunity and partial output retained separately",
+    "three candidate occurrences of two images: pixel-only reader archive and separate research key"
   ],
   "live_calls": 0,
   "author_pilot_sessions": 0
