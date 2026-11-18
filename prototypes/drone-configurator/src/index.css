@@ -3,46 +3,36 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-slate-50 text-slate-900 font-sans antialiased;
-  }
+  html, body, #root { height: 100%; }
+  body { @apply bg-canvas font-sans text-ink antialiased; }
+  button { -webkit-tap-highlight-color: transparent; }
+  :focus-visible { outline: 2px solid #1f62f0; outline-offset: 2px; border-radius: 6px; }
 }
 
 @layer components {
-  .btn-primary {
-    @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
-  }
-  
-  .btn-secondary {
-    @apply bg-slate-200 hover:bg-slate-300 text-slate-700 font-medium py-2 px-4 rounded-lg transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-slate-500 focus:ring-offset-2;
-  }
-  
-  .input-field {
-    @apply border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200;
-  }
-  
-  .card {
-    @apply bg-white rounded-xl shadow-sm border border-slate-200 p-6;
-  }
+  /* 浮在画布上的面板 */
+  .panel { @apply rounded-xl2 border border-line bg-white shadow-panel; }
+  .panel-title { @apply text-[13px] font-semibold tracking-wide text-ink; }
+  .eyebrow { @apply font-mono text-[10px] uppercase tracking-[0.14em] text-ink-faint; }
 
-  /* 滑块样式 */
-  .slider {
-    @apply bg-slate-200 rounded-lg appearance-none cursor-pointer;
-  }
-  
-  .slider::-webkit-slider-thumb {
-    @apply appearance-none w-5 h-5 bg-primary-600 rounded-full cursor-pointer shadow-lg;
-  }
-  
-  .slider::-moz-range-thumb {
-    @apply w-5 h-5 bg-primary-600 rounded-full cursor-pointer border-0 shadow-lg;
-  }
-  
-  .slider::-webkit-slider-track {
-    @apply bg-slate-300 rounded-lg h-2;
-  }
-  
-  .slider:focus {
-    @apply outline-none ring-2 ring-primary-500 ring-opacity-50;
-  }
+  .btn { @apply inline-flex items-center justify-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors; }
+  .btn-dark { @apply btn bg-ink text-white hover:bg-ink/90; }
+  .btn-primary { @apply btn bg-primary-600 text-white hover:bg-primary-700; }
+  .btn-ghost { @apply btn text-ink-soft hover:bg-ink/5 hover:text-ink; }
+  .btn-line { @apply btn border border-line bg-white text-ink hover:border-ink/30; }
+  .btn-secondary { @apply btn border border-line bg-white text-ink hover:border-ink/30; }
+  .chip { @apply inline-flex items-center gap-1 rounded-full border border-line bg-white px-2.5 py-1 text-xs text-ink-soft; }
+  .input-field { @apply rounded-xl border border-line bg-white px-3 py-2 text-sm text-ink placeholder:text-ink-faint focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/25; }
+  .card { @apply panel p-5; }
+  .num { @apply font-mono tabular-nums; }
+
+  /* 滑块 */
+  .slider { @apply h-1.5 cursor-pointer appearance-none rounded-full bg-line; }
+  .slider::-webkit-slider-thumb { @apply h-4 w-4 cursor-grab appearance-none rounded-full border-2 border-white bg-ink shadow; }
+  .slider::-moz-range-thumb { @apply h-4 w-4 cursor-grab rounded-full border-2 border-white bg-ink shadow; }
+  .slider:active::-webkit-slider-thumb { @apply cursor-grabbing bg-primary-600; }
+
+  /* 画布：点阵底 */
+  .dot-grid { background-image: radial-gradient(circle, rgba(11,18,32,.10) 1px, transparent 1.2px); background-size: 18px 18px; }
+  .scroll-thin { scrollbar-width: thin; scrollbar-color: #cfd5de transparent; }
 }
