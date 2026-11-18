@@ -1,0 +1,20 @@
+{"id":"Q01","route":"method","wording":"explicit","question":"哪篇论文提出 GenAlign 的可视化知识图谱和选择性属性注入？","accept":["B00","M-genalign"],"basis":"题名及属性图谱设计"}
+{"id":"Q02","route":"method","wording":"paraphrase","question":"想比较设计师在画节点连线和直接输入指令两种界面里的工作方式，应参照哪项研究？","accept":["B05"],"basis":"相同研究中比较节点式与提示式设计工作流"}
+{"id":"Q03","route":"method","wording":"paraphrase","question":"我想评价模型答复里的每句话是否有引文支持，以及漏掉了多少必要引文。哪篇方法论文可借用？","accept":["KB-L03"],"basis":"引文质量与覆盖，两点须同源"}
+{"id":"Q04","route":"form","wording":"explicit","question":"DJI Air 3 展开不含桨的外形尺寸是多少？","accept":["D-A1-015"],"basis":"同一型号、展开、不含桨的尺寸"}
+{"id":"Q05","route":"form","wording":"paraphrase","question":"有哪份原厂资料的展开图能让我在 S900 上逐个标出六处电机中心？","accept":["CFG-H1"],"basis":"型号与可定位中心两个条件"}
+{"id":"Q06","route":"form","wording":"paraphrase","question":"我想看到三条机臂、每条上下各装一副桨的真实机型照片，哪份资料可查？","accept":["CFG-Y2","CFG-Y3"],"basis":"实机斜视或明示原型的三臂六旋；不取纯示意图"}
+{"id":"Q07","route":"case","wording":"explicit","question":"哪次 H3 的四旋生成因为 HTTP 400 没有回图？","accept":["H3-01"],"basis":"具体 HTTP 400 的回执"}
+{"id":"Q08","route":"case","wording":"paraphrase","question":"作者第三轮先选中的那张图，后来去掉开窗再作为底图继续深化，哪条记录能追到？","accept":["D-R-B2"],"basis":"选案及去窗父图流转"}
+{"id":"Q09","route":"case","wording":"paraphrase","question":"哪一条实际修订能核对它用的是上一张返回图作为底稿？","accept":["D-R-H3","H3-04"],"basis":"上一张服务回图的父子关系"}
+{"id":"Q10","route":"protocol","wording":"explicit","question":"同一中性委托下怎么比较四旋与平面六旋，哪些生成条件要固定？","accept":["D-P-TASK"],"basis":"同委托同视角预算的对照"}
+{"id":"Q11","route":"protocol","wording":"paraphrase","question":"读者没有看清桨中心的图要不要纳入结果？我需要知道两种分母怎样登记。","accept":["D-P-BLIND"],"basis":"全部实收和可判两个分母"}
+{"id":"Q12","route":"protocol","wording":"paraphrase","question":"模型在排队、设计师在操作、几张图同屏出现，这些时间应怎样分别记？","accept":["D-P-CLOCK"],"basis":"区分可见时间与不同计时状态"}
+{"id":"N01","route":"method","wording":"out_of_scope","question":"哪篇已核读文献提供本研究工作台让设计师平均快 37% 的直接实验证据？","accept":[],"basis":"外部论文没有对本项目做此效应估计"}
+{"id":"N02","route":"method","wording":"unrelated","question":"资料库里有披萨面团低温发酵的实验论文吗？","accept":[],"basis":"食品工艺题目与此研究资料无关"}
+{"id":"N03","route":"form","wording":"out_of_scope","question":"已有平面十旋型号的官方顶视图吗？我要定位十个不同的轴心。","accept":[],"basis":"当前来源登记缺平面十旋实机可审原图"}
+{"id":"N04","route":"form","wording":"out_of_scope","question":"请给出 DJI Air 3 的机身外壳壁厚，单位毫米。","accept":[],"basis":"整机外形测量不能回答材料壁厚"}
+{"id":"N05","route":"case","wording":"out_of_scope","question":"请给我 H3-04 这一轮独立真人满意度评分的原始个体分数。","accept":[],"basis":"H3 作业没有对应独立真人评议分数"}
+{"id":"N06","route":"protocol","wording":"out_of_scope","question":"本研究正式独立参与者目前实测的平均任务时长是多少秒？","accept":[],"basis":"协议可说明计时办法，未有正式均值"}
+{"id":"N07","route":"protocol","wording":"unrelated","question":"请列出登记英国驾照路考的预约流程。","accept":[],"basis":"交通行政手续与研究协议无关"}
+{"id":"N08","route":"case","wording":"unrelated","question":"项目里有没有室内钢琴独奏的完整现场录音？","accept":[],"basis":"案例档案内无此交付物"}
