@@ -1,6 +1,6 @@
 {
  "version": "S5-pilot-1.1",
- "pack": "c5c99e119d4d",
+ "pack": "4114e1a13175",
  "frozen_on": "2026-11-19",
  "reading_rule_confirmed_by": "作者，2026-11-19，在与 Claude 的会话中确认（当时版本 1.0）；1.1 版只更换材料，读法文字未改",
  "superseded": {
@@ -10,10 +10,10 @@
  },
  "sha256": {
   "protocol.md": "3ff5c6259d95fec7d92b0ae4389f114249b0d8518f747209f07ccf8b400f6255",
-  "participant/无人机外观评议.html": "dded472302cb2918236d2d89d691d9d7b95d569818326bea3d619093e3b6fdb3",
-  "researcher-key.json": "59f20b109fc34ae66dac1495cd1728363ef2dad29d9719aa1a17d3cf8bb9c603",
+  "participant/无人机外观评议.html": "15c6578b6bc83497d523680dff1d6f8fcf044d5c0ef720fb1704e572c2db503d",
+  "researcher-key.json": "520a1620a2e472808b11f4907d516ca3c6cf55feca2a4407463724f8ecc35d9d",
   "summarize.py": "82397cb5b831a8040d1e8b693a3a8f500cbbfe0f14c73c261ca19bdbe3e9885e",
-  "h3/derive.json": "fa148fc9ba68d1a76051ca7cbad7c54d53a9b52642af33da4fcc64f2a6968337"
+  "h3/derive.json": "43324e9a1f3c3f20d45d7f4dda904e58f8e703d212ae4252045791583fb6ae5a"
  },
  "rule": "同一方向的选择在 4 个设计里至少 3 个设计上不少于该题有效答卷的 70%，且全部低档对高档判断中不少于 70%，记为读得出；两个因素都不预设方向。"
 }

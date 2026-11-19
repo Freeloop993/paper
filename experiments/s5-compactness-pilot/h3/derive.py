@@ -12,16 +12,26 @@ HERE = pathlib.Path(__file__).resolve().parent
 BASE_MM, LEVELS_MM, PROP_SCALE = 260, {'S': 220, 'B': 260, 'L': 300}, {'Pm': 0.8, 'Pp': 1.2}
 
 def hubs_of(rgb):
-    lum = rgb.astype(float) @ np.array([0.299, 0.587, 0.114])
-    lab, n = ndimage.label(lum < 70); sizes = ndimage.sum(np.ones_like(lab), lab, range(1, n + 1))
-    out = []
-    for k in np.argsort(sizes)[::-1][:4] + 1:
-        ys, xs = np.nonzero(lab == k); pts = np.stack([xs, ys], 1).astype(float); c = pts.mean(0)
-        w, v = np.linalg.eigh(np.cov((pts - c).T)); major, minor = v[:, -1], v[:, 0]
-        a, b = (pts - c) @ major, (pts - c) @ minor
-        near = np.abs(a - (a.max() + a.min()) / 2) < 12          # 两个桨尖的中点附近，就是电机
-        out.append((c + major * (a.max() + a.min()) / 2 + minor * b[near].mean(), (a.max() - a.min()) / 2))
-    return out
+    """四个电机中心和各自的桨半径。电机上的高光有时把一副桨断成两块，所以依次试几组阈值和闭运算，取第一组读成对称四块的。"""
+    lum = rgb.astype(float) @ np.array([0.299, 0.587, 0.114]); tried = []
+    for thr, close in ((70, 0), (70, 5), (70, 9), (60, 9), (80, 5)):
+        dark = lum < thr
+        if close: dark = ndimage.binary_closing(dark, structure=np.ones((close, close)))
+        lab, n = ndimage.label(dark)
+        if n < 4: continue
+        sizes = ndimage.sum(np.ones_like(lab), lab, range(1, n + 1)); out = []
+        for k in np.argsort(sizes)[::-1][:4] + 1:
+            ys, xs = np.nonzero(lab == k); pts = np.stack([xs, ys], 1).astype(float); c = pts.mean(0)
+            w, v = np.linalg.eigh(np.cov((pts - c).T)); major, minor = v[:, -1], v[:, 0]
+            a, b = (pts - c) @ major, (pts - c) @ minor
+            near = np.abs(a - (a.max() + a.min()) / 2) < 12          # 两个桨尖的中点附近，就是电机
+            out.append((c + major * (a.max() + a.min()) / 2 + minor * b[near].mean(), (a.max() - a.min()) / 2))
+        halves = [h for _, h in out]; hubs = np.array([h for h, _ in out]); c = hubs.mean(0)
+        far = [int(np.argmax(np.linalg.norm(hubs - hubs[i], axis=1))) for i in range(4)]
+        opp = max(np.linalg.norm(hubs[i] + hubs[far[i]] - 2 * c) for i in range(4))
+        tried.append((thr, close, [round(float(h), 1) for h in halves], round(float(opp), 1)))
+        if max(halves) / min(halves) < 1.1 and opp < 30: return out
+    raise AssertionError(('四副桨没有读成对称的四块', tried))
 def sample(rgb, xin, yin):
     return np.stack([ndimage.map_coordinates(rgb[..., ch].astype(float), [yin, xin], order=3, mode='nearest') for ch in range(3)], -1).clip(0, 255).astype(np.uint8)
 

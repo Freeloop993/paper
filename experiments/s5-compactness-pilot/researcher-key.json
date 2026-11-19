@@ -1,7 +1,7 @@
 {
  "version": "S5-pilot-1.1",
- "pack": "c5c99e119d4d",
- "html_sha256": "dded472302cb2918236d2d89d691d9d7b95d569818326bea3d619093e3b6fdb3",
+ "pack": "4114e1a13175",
+ "html_sha256": "15c6578b6bc83497d523680dff1d6f8fcf044d5c0ef720fb1704e572c2db503d",
  "terms": [
   {
    "id": "span",
@@ -101,65 +101,65 @@
    "rgb_sha256": "203b1d17bb4946a66ebf15dcf6ec151d9fa975d40477399e0e0d4613b9d64e9a",
    "embedded_sha256": "43dddac6b7b4b1710916a1fa781ef2ca302505cbca57ab38ea672d457db45791"
   },
-  "d905cc1769": {
+  "e834691fb6": {
    "family": "F2",
    "variant": "S",
    "arm_mm": 220,
    "prop_scale": 1.0,
-   "d_over_D": 0.512,
-   "diagonal_px": 565.5,
+   "d_over_D": 0.545,
+   "diagonal_px": 566.3,
    "base": "h3/actual/F2-D260/original.png",
    "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "d905cc1769adff1359a75f98ef94dad8dffd50f2589181c1692a84816a7aaa3c",
-   "embedded_sha256": "b1cf07b9ddd9a1915cfcfd89b02e400eb3de648defe5ec0529583404ec712741"
+   "rgb_sha256": "e834691fb6afb32e051f4198d3b6fecf15cd689f78a3a24b289d34329de3b144",
+   "embedded_sha256": "23561b0ae37ccfcc9951ba2e584151730c6b65ae76a60e71151e8d8ab4d391d6"
   },
-  "ef0b20cc9a": {
+  "1c9817f0be": {
    "family": "F2",
    "variant": "B",
    "arm_mm": 260,
    "prop_scale": 1.0,
-   "d_over_D": 0.433,
-   "diagonal_px": 668.4,
+   "d_over_D": 0.461,
+   "diagonal_px": 669.2,
    "base": "h3/actual/F2-D260/original.png",
    "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "ef0b20cc9abba3ed500d23f606c8f806bedd7fcfd2601c961ec44a1ebed4da41",
-   "embedded_sha256": "23e94ad85f47106f037a408daa27642880d801a011101721e9511eab1c7f7298"
+   "rgb_sha256": "1c9817f0be26225cf00fc1c4f34565b1d6d7a8c89ae90307a49a43f40131c1eb",
+   "embedded_sha256": "4f8c3de6c0d497c2c87642bc5f8ad437be605f49092c0c3c5da197bdb8452ad4"
   },
-  "573977d065": {
+  "441d126473": {
    "family": "F2",
    "variant": "L",
    "arm_mm": 300,
    "prop_scale": 1.0,
-   "d_over_D": 0.375,
-   "diagonal_px": 771.2,
+   "d_over_D": 0.399,
+   "diagonal_px": 772.2,
    "base": "h3/actual/F2-D260/original.png",
    "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "573977d06596ec14bf4967f72f0e6d1c6d25919c044b91f93caefbe23c9d6f58",
-   "embedded_sha256": "b9f508776a36cce65167b524654fb7abd18b703ac6c5f80edfb79e38cee8ec0b"
+   "rgb_sha256": "441d1264737684ab131c6d0622c836c670d770ca7040ffa5fd8be95eace6cf83",
+   "embedded_sha256": "492deed034cf7a7565d996a61729e7feeb62e99a5acdd8cdb314b8dd437b33bb"
   },
-  "ecfb82dde1": {
+  "9ecc540f8c": {
    "family": "F2",
    "variant": "Pm",
    "arm_mm": 260,
    "prop_scale": 0.8,
-   "d_over_D": 0.364,
-   "diagonal_px": 668.4,
+   "d_over_D": 0.387,
+   "diagonal_px": 669.2,
    "base": "h3/actual/F2-D260/original.png",
    "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "ecfb82dde15a667f88a44666ed682e0e353b9c3f788bdb051dedb0dc17f688fd",
-   "embedded_sha256": "5399e7990259abfd5b45aae62c0c67124a4c413510a654f8aa2e988b665ef3b2"
+   "rgb_sha256": "9ecc540f8ce114c59988eff24b311f494f3096d3d195114ae0fa0c8a9cf96dcd",
+   "embedded_sha256": "4e4c584e8f5602790a3a0aa4dfca493b2e4e3fcd7a68a35d077b29abb75cb502"
   },
-  "e1c605b40c": {
+  "439abef7d8": {
    "family": "F2",
    "variant": "Pp",
    "arm_mm": 260,
    "prop_scale": 1.2,
-   "d_over_D": 0.502,
-   "diagonal_px": 668.4,
+   "d_over_D": 0.535,
+   "diagonal_px": 669.2,
    "base": "h3/actual/F2-D260/original.png",
    "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "e1c605b40c9fe73598172959cf6b8cd72cfe86f34c527b3f670f209169b8287d",
-   "embedded_sha256": "8f8929f46789cec22f7c62b355966e131b24361fbcf08b17949d90859e323285"
+   "rgb_sha256": "439abef7d833502937463cc198725731266db02544a1090113efd416357f6420",
+   "embedded_sha256": "2d165dedd6ef340aa2779a4036541ca70307e0b783817008bdbce6c346054a55"
   },
   "7c3fc41730": {
    "family": "F3",
@@ -306,8 +306,8 @@
    "kind": "low-high",
    "factor": "轴距",
    "family": "F2",
-   "lower": "d905cc1769",
-   "higher": "573977d065"
+   "lower": "e834691fb6",
+   "higher": "441d126473"
   },
   "p03": {
    "kind": "low-high",
@@ -327,15 +327,15 @@
    "kind": "low-mid",
    "factor": "轴距",
    "family": "F2",
-   "lower": "d905cc1769",
-   "higher": "ef0b20cc9a"
+   "lower": "e834691fb6",
+   "higher": "1c9817f0be"
   },
   "p06": {
    "kind": "mid-high",
    "factor": "轴距",
    "family": "F2",
-   "lower": "ef0b20cc9a",
-   "higher": "573977d065"
+   "lower": "1c9817f0be",
+   "higher": "441d126473"
   },
   "p07": {
    "kind": "low-mid",
@@ -370,8 +370,8 @@
    "kind": "low-high",
    "factor": "桨径",
    "family": "F2",
-   "lower": "ecfb82dde1",
-   "higher": "e1c605b40c"
+   "lower": "9ecc540f8c",
+   "higher": "439abef7d8"
   },
   "p12": {
    "kind": "low-high",
@@ -391,15 +391,15 @@
    "kind": "low-mid",
    "factor": "桨径",
    "family": "F2",
-   "lower": "ecfb82dde1",
-   "higher": "ef0b20cc9a"
+   "lower": "9ecc540f8c",
+   "higher": "1c9817f0be"
   },
   "p15": {
    "kind": "mid-high",
    "factor": "桨径",
    "family": "F2",
-   "lower": "ef0b20cc9a",
-   "higher": "e1c605b40c"
+   "lower": "1c9817f0be",
+   "higher": "439abef7d8"
   },
   "p16": {
    "kind": "low-mid",
