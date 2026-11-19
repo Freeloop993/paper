@@ -36,35 +36,62 @@ def hubs_of(rgb):
 def sample(rgb, xin, yin):
     return np.stack([ndimage.map_coordinates(rgb[..., ch].astype(float), [yin, xin], order=3, mode='nearest') for ch in range(3)], -1).clip(0, 255).astype(np.uint8)
 
+def layers(rgb):
+    """把图分成机身和四个可移动的组件（臂、电机、桨）。机身 = 前景做开运算后含中心的那一块，细的臂被开运算去掉。"""
+    lum = rgb.astype(float) @ np.array([0.299, 0.587, 0.114])
+    bgc = np.median(np.concatenate([rgb[:12].reshape(-1, 3), rgb[-12:].reshape(-1, 3)]), 0)
+    fg = lum < min(248, bgc @ np.array([0.299, 0.587, 0.114]) - 5)                 # 不做开运算，免得把细的桨尖丢掉
+    lab0, n0 = ndimage.label(fg); big = np.flatnonzero(ndimage.sum(np.ones_like(lab0), lab0, range(1, n0 + 1)) >= 40) + 1
+    fg = np.isin(lab0, big)                                                         # 只去掉零星噪点
+    hp = hubs_of(rgb); hubs = np.array([h for h, _ in hp]); c = hubs.mean(0)
+    yy, xx = np.mgrid[0:rgb.shape[0], 0:rgb.shape[1]]
+    r = 30; disk = np.hypot(*np.mgrid[-r:r + 1, -r:r + 1]) <= r
+    core = ndimage.binary_opening(fg, structure=disk); lab, _ = ndimage.label(core)
+    body = ndimage.binary_dilation(lab == lab[int(c[1]), int(c[0])], iterations=3)
+    for hub, half in hp: body &= np.hypot(xx - hub[0], yy - hub[1]) > half * 0.55          # 电机和桨不算机身
+    rest, _ = ndimage.label(fg & ~body); parts = []
+    for hub, half in hp:
+        k = rest[int(round(hub[1])), int(round(hub[0]))]
+        m = (rest == k) if k else np.zeros_like(fg)
+        near = np.unique(rest[(np.hypot(xx - hub[0], yy - hub[1]) < half + 25) & (rest > 0)])      # 桨尖有时与桨身断开成单独一小块，一并归入
+        for kk in near:
+            cy, cx = ndimage.center_of_mass(rest == kk)
+            if np.hypot(cx - hub[0], cy - hub[1]) < half + 25: m |= rest == kk
+        touch = m & ndimage.binary_dilation(body, iterations=5)
+        root = np.array([xx[touch].mean(), yy[touch].mean()]) if touch.any() else c + 0.45 * (hub - c)
+        parts.append({'hub': hub, 'half': half, 'mask': m, 'root': root})
+    return bgc, body, parts, c
+
 def derive(rgb, arm_mm=BASE_MM, prop=1.0):
-    H, W = rgb.shape[:2]; hp = hubs_of(rgb); hubs = np.array([h for h, _ in hp]); c = hubs.mean(0)
-    yy, xx = np.mgrid[0:H, 0:W].astype(float); xin, yin = xx.copy(), yy.copy(); new_hubs = []
-    for (hub, half) in hp:
-        R = np.linalg.norm(hub - c); u = (hub - c) / R; n = np.array([-u[1], u[0]])
-        quad = ((xx - c[0]) * np.sign(u[0]) >= 0) & ((yy - c[1]) * np.sign(u[1]) >= 0)
-        d = R * (arm_mm / BASE_MM - 1)                           # 电机沿臂方向移动的像素数
-        s0, s1 = 0.47 * R, R - 58
-        s = (xx - c[0]) * u[0] + (yy - c[1]) * u[1]; t = (xx - c[0]) * n[0] + (yy - c[1]) * n[1]
-        sin = np.where(s < s0, s, np.where(s <= s1 + d, s0 + (s - s0) * (s1 - s0) / (s1 + d - s0), s - d))
-        xq, yq = c[0] + sin * u[0] + t * n[0], c[1] + sin * u[1] + t * n[1]
-        hub2 = hub + d * u; new_hubs.append(hub2)
-        if prop != 1.0:                                          # 在已平移后的位置上，绕电机中心缩放桨叶
-            dx, dy = xx - hub2[0], yy - hub2[1]; rho = np.hypot(dx, dy) + 1e-9
-            cosu = (dx * u[0] + dy * u[1]) / rho; w = (1 - cosu ** 2) ** 2          # 垂直于臂的方向权重为 1，沿臂方向为 0
-            k = 1 + (prop - 1) * w; rm = 30.0
-            rin = np.where(rho <= rm, rho, rm + (rho - rm) / k)
-            near = rho < half * max(prop, 1) + 40
-            px, py = hub2[0] + dx / rho * rin, hub2[1] + dy / rho * rin
-            s2 = (px - c[0]) * u[0] + (py - c[1]) * u[1]; t2 = (px - c[0]) * n[0] + (py - c[1]) * n[1]
-            sin2 = np.where(s2 < s0, s2, np.where(s2 <= s1 + d, s0 + (s2 - s0) * (s1 - s0) / (s1 + d - s0), s2 - d))
-            xq = np.where(near, c[0] + sin2 * u[0] + t2 * n[0], xq); yq = np.where(near, c[1] + sin2 * u[1] + t2 * n[1], yq)
-        xin, yin = np.where(quad, xq, xin), np.where(quad, yq, yin)
-    outside = (xin < 0) | (xin > W - 1) | (yin < 0) | (yin > H - 1)        # 取样点落到画外时保留原位置的背景
-    xin, yin = np.where(outside, xx, xin), np.where(outside, yy, yin)
-    out = sample(rgb, xin, yin); nh = np.array(new_hubs)
-    diag = np.mean(sorted(np.linalg.norm(nh[:, None] - nh[None], axis=2)[np.triu_indices(4, 1)])[-2:])
-    half = np.mean([h for _, h in hp]); rm = 30.0
-    return out, {'diagonal_px': round(float(diag), 1), 'prop_px': round(float(2 * (rm + (half - rm) * prop)), 1), 'd_over_D': round(float(2 * (rm + (half - rm) * prop) / diag), 3)}
+    """机身一层不动；每个组件沿臂根到电机的方向按比例位移（臂根不动，电机和桨整体移动），桨叶可再绕电机径向缩放。"""
+    H, W = rgb.shape[:2]; bgc, body, parts, c = layers(rgb)
+    yy, xx = np.mgrid[0:H, 0:W].astype(float); out = rgb.astype(float); new_hubs = []
+    gone = np.zeros((H, W)); 
+    for q in parts: gone = np.maximum(gone, ndimage.gaussian_filter(ndimage.binary_dilation(q['mask'], iterations=3).astype(float), 1.0))
+    out = out * (1 - gone[..., None]) + bgc * gone[..., None]                   # 先把四个组件从原位置抹掉
+    keep = ndimage.gaussian_filter(body.astype(float), 0.8)[..., None]
+    out = out * (1 - keep) + rgb * keep                                         # 机身照原样盖回，再把组件画在上面
+    overlap = 0
+    for q in parts:
+        hub, half, root = q['hub'], q['half'], q['root']; R = np.linalg.norm(hub - c); u = (hub - c) / R
+        d = R * (arm_mm / BASE_MM - 1) * u; hub2 = hub + d; new_hubs.append(hub2)
+        ax = hub2 - root; L = np.linalg.norm(ax); rm = 34.0
+        tau = np.clip(((xx - root[0]) * ax[0] + (yy - root[1]) * ax[1]) / (L * max(L - rm, 1.0)), 0, 1)     # 到电机边缘就算整段位移
+        sx, sy = xx - tau * d[0], yy - tau * d[1]
+        if prop != 1.0:
+            dx, dy = sx - hub[0], sy - hub[1]; rho = np.hypot(dx, dy) + 1e-9
+            cosu = (dx * u[0] + dy * u[1]) / rho; k = 1 + (prop - 1) * (1 - cosu ** 2) ** 2
+            rin = np.where(rho <= 30, rho, 30 + (rho - 30) / k)
+            sx, sy = hub[0] + dx / rho * rin, hub[1] + dy / rho * rin           # 对整个组件都按这个映射取样；浅色的桨尖也在组件里
+        alpha = ndimage.map_coordinates(ndimage.gaussian_filter(q['mask'].astype(float), 0.8), [sy, sx], order=1, mode='constant', cval=0)
+        moved = np.stack([ndimage.map_coordinates(rgb[..., ch].astype(float), [sy, sx], order=3, mode='nearest') for ch in range(3)], -1)
+        far = np.hypot(xx - root[0], yy - root[1]) > 45                         # 臂根附近本来就和机身相接，不算重叠
+        overlap += int(((alpha > 0.5) & ndimage.binary_erosion(body, iterations=4) & far).sum())
+        alpha = np.clip(alpha * 1.6, 0, 1)[..., None]
+        out = out * (1 - alpha) + moved * alpha
+    nh = np.array(new_hubs); diag = np.mean(sorted(np.linalg.norm(nh[:, None] - nh[None], axis=2)[np.triu_indices(4, 1)])[-2:])
+    half = np.mean([q['half'] for q in parts])
+    return out.clip(0, 255).astype(np.uint8), {'diagonal_px': round(float(diag), 1), 'prop_px': round(float(2 * (30 + (half - 30) * prop)), 1), 'd_over_D': round(float(2 * (30 + (half - 30) * prop) / diag), 3), 'overlap_px': overlap}
 
 if __name__ == '__main__':
     (HERE / 'stimuli').mkdir(exist_ok=True); log = {}

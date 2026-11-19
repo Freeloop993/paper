@@ -1,7 +1,7 @@
 {
- "version": "S5-pilot-1.1",
- "pack": "4114e1a13175",
- "html_sha256": "15c6578b6bc83497d523680dff1d6f8fcf044d5c0ef720fb1704e572c2db503d",
+ "version": "S5-pilot-1.2",
+ "pack": "712241b3654c",
+ "html_sha256": "b08f4f66d372f242ef0de85aff26950269a1786f80acad3169c630876c223e18",
  "terms": [
   {
    "id": "span",
@@ -22,11 +22,11 @@
  "note": "单图评分统一换算为 1=左极（紧凑、简洁、整体），7=右极。成对题 lower、higher 指该因素取值较低、较高的一张：轴距较短与较长，桨较小与较大。",
  "factors": {
   "轴距": {
-   "unit": "对角轴距 mm",
+   "unit": "电机到中心的距离，相对原图的倍数",
    "levels": {
-    "S": 220,
-    "B": 260,
-    "L": 300
+    "S": 0.87,
+    "B": 1.0,
+    "L": 1.13
    },
    "higher": "轴距较长的一张"
   },
@@ -41,394 +41,394 @@
   }
  },
  "images": {
-  "e6c344ab20": {
-   "family": "F1",
+  "875a0ac83d": {
+   "family": "Q1",
    "variant": "S",
-   "arm_mm": 220,
+   "arm_scale": 0.87,
    "prop_scale": 1.0,
-   "d_over_D": 0.527,
-   "diagonal_px": 518.7,
-   "base": "h3/actual/F1-D260/original.png",
-   "base_sha256": "5873114e78e1a0bb3f82db3adfa3f0d7dbf9690d7be6db8251e5bd5b03478c41",
-   "rgb_sha256": "e6c344ab20ed551dbd45770c9e517083cd1ea0da79bbf1d276b4f2d5be45f294",
-   "embedded_sha256": "8267cb8fd4c6b9ec123b6c0a4cfd5d728a457bbbf71ab54c0867e076af5e6469"
+   "d_over_D": 0.58,
+   "diagonal_px": 683.2,
+   "base": "qwen/bases/E3R3-A1.png",
+   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
+   "rgb_sha256": "875a0ac83d9a1e4c533e2e0353d2473a7e5b8d9b1a46288a6fc9fe50a19dc098",
+   "embedded_sha256": "1eb9a70a8e6816f6997e8554ba9da2173d2c28c6a3957887dc92144e260c6da0"
   },
-  "9fb3cf43e7": {
-   "family": "F1",
+  "b72e864859": {
+   "family": "Q1",
    "variant": "B",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
+   "prop_scale": 1.0,
+   "d_over_D": 0.504,
+   "diagonal_px": 785.3,
+   "base": "qwen/bases/E3R3-A1.png",
+   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
+   "rgb_sha256": "b72e864859788f496edd937c9dd9b23973db5303c2616737bd473041e2d53874",
+   "embedded_sha256": "539ce4ce25a6acc7c6fe6a25a3f4166ef2b3059c59d7b4a4dfd404562c60cdd1"
+  },
+  "822e59b582": {
+   "family": "Q1",
+   "variant": "L",
+   "arm_scale": 1.13,
    "prop_scale": 1.0,
    "d_over_D": 0.446,
-   "diagonal_px": 613.0,
-   "base": "h3/actual/F1-D260/original.png",
-   "base_sha256": "5873114e78e1a0bb3f82db3adfa3f0d7dbf9690d7be6db8251e5bd5b03478c41",
-   "rgb_sha256": "9fb3cf43e72a52a534e8d1c61f7471b0f4202b2e352444fdf11ee235316f9ef5",
-   "embedded_sha256": "9353f91204a011a9f4cdae864b2e6e3024293550d7bc816015f4338a11198897"
+   "diagonal_px": 887.4,
+   "base": "qwen/bases/E3R3-A1.png",
+   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
+   "rgb_sha256": "822e59b58244e4faf60cadb3df6394b170314009fc6180756eb0ea5dccdc7173",
+   "embedded_sha256": "71d86bb5d08fca2c8697cfd9a4718697523b9d26e45be0169dd7ea7006a8897f"
   },
-  "92fd46c9b4": {
-   "family": "F1",
-   "variant": "L",
-   "arm_mm": 300,
-   "prop_scale": 1.0,
-   "d_over_D": 0.387,
-   "diagonal_px": 707.4,
-   "base": "h3/actual/F1-D260/original.png",
-   "base_sha256": "5873114e78e1a0bb3f82db3adfa3f0d7dbf9690d7be6db8251e5bd5b03478c41",
-   "rgb_sha256": "92fd46c9b4428727f6ff9534639f5b64bbeabbe1c880858039895e0ea3448f86",
-   "embedded_sha256": "1af20f922ac14f178dfd4b1a6a82ccc9ae3815f95da638d78a4ec37b344b7444"
-  },
-  "f4d7fad7af": {
-   "family": "F1",
+  "557b726a48": {
+   "family": "Q1",
    "variant": "Pm",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 0.8,
-   "d_over_D": 0.377,
-   "diagonal_px": 613.0,
-   "base": "h3/actual/F1-D260/original.png",
-   "base_sha256": "5873114e78e1a0bb3f82db3adfa3f0d7dbf9690d7be6db8251e5bd5b03478c41",
-   "rgb_sha256": "f4d7fad7afe70306b55f6a60b8c73d967bcbc5a1f1f59dbe1ccb8c628dce6d19",
-   "embedded_sha256": "f5e52e18e06dc039c97387f8569aae71028305facfe7d9221e41c4db6d8b1c5f"
+   "d_over_D": 0.419,
+   "diagonal_px": 785.3,
+   "base": "qwen/bases/E3R3-A1.png",
+   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
+   "rgb_sha256": "557b726a4827114898187a0f78a619daf5b1a6771b1a0c2dd77d9dfd367f0ac7",
+   "embedded_sha256": "76186a7cb3856fac7a9968f673b36870711d1759b600f87351b25df71dd0f438"
   },
-  "203b1d17bb": {
-   "family": "F1",
+  "6c056e719d": {
+   "family": "Q1",
    "variant": "Pp",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 1.2,
-   "d_over_D": 0.516,
-   "diagonal_px": 613.0,
-   "base": "h3/actual/F1-D260/original.png",
-   "base_sha256": "5873114e78e1a0bb3f82db3adfa3f0d7dbf9690d7be6db8251e5bd5b03478c41",
-   "rgb_sha256": "203b1d17bb4946a66ebf15dcf6ec151d9fa975d40477399e0e0d4613b9d64e9a",
-   "embedded_sha256": "43dddac6b7b4b1710916a1fa781ef2ca302505cbca57ab38ea672d457db45791"
+   "d_over_D": 0.59,
+   "diagonal_px": 785.3,
+   "base": "qwen/bases/E3R3-A1.png",
+   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
+   "rgb_sha256": "6c056e719da885d53e7be1d98d588a6638cf75b1fd52c2340af222d49927c1f4",
+   "embedded_sha256": "f3483a80ccc37f2de82ebddf59865ae29060a7bf2c987bb847e9b9ec56b5daad"
   },
-  "e834691fb6": {
-   "family": "F2",
+  "b0e53e0c42": {
+   "family": "Q2",
    "variant": "S",
-   "arm_mm": 220,
+   "arm_scale": 0.87,
    "prop_scale": 1.0,
-   "d_over_D": 0.545,
-   "diagonal_px": 566.3,
-   "base": "h3/actual/F2-D260/original.png",
-   "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "e834691fb6afb32e051f4198d3b6fecf15cd689f78a3a24b289d34329de3b144",
-   "embedded_sha256": "23561b0ae37ccfcc9951ba2e584151730c6b65ae76a60e71151e8d8ab4d391d6"
+   "d_over_D": 0.348,
+   "diagonal_px": 685.1,
+   "base": "qwen/bases/E3R3-A2.png",
+   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
+   "rgb_sha256": "b0e53e0c42550ad6b7d5e0a089e968e4cf4fc7b8336a49d9384ed7d14216b063",
+   "embedded_sha256": "579666104ddf1d684ab47f0e4bca275fa709ceba4da6a383c0a5e4b1e46b5739"
   },
-  "1c9817f0be": {
-   "family": "F2",
+  "8a48d98038": {
+   "family": "Q2",
    "variant": "B",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 1.0,
-   "d_over_D": 0.461,
-   "diagonal_px": 669.2,
-   "base": "h3/actual/F2-D260/original.png",
-   "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "1c9817f0be26225cf00fc1c4f34565b1d6d7a8c89ae90307a49a43f40131c1eb",
-   "embedded_sha256": "4f8c3de6c0d497c2c87642bc5f8ad437be605f49092c0c3c5da197bdb8452ad4"
+   "d_over_D": 0.303,
+   "diagonal_px": 787.5,
+   "base": "qwen/bases/E3R3-A2.png",
+   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
+   "rgb_sha256": "8a48d98038a6dbf03d7783bca1ba995bd3e94d8f7e786ff3806a662d87f463c6",
+   "embedded_sha256": "1bfede9a157c8d137c0c829a3ff06e46fc5e2a220e9a9c32981095188511bf4b"
   },
-  "441d126473": {
-   "family": "F2",
+  "473f7ac6ed": {
+   "family": "Q2",
    "variant": "L",
-   "arm_mm": 300,
+   "arm_scale": 1.13,
    "prop_scale": 1.0,
-   "d_over_D": 0.399,
-   "diagonal_px": 772.2,
-   "base": "h3/actual/F2-D260/original.png",
-   "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "441d1264737684ab131c6d0622c836c670d770ca7040ffa5fd8be95eace6cf83",
-   "embedded_sha256": "492deed034cf7a7565d996a61729e7feeb62e99a5acdd8cdb314b8dd437b33bb"
+   "d_over_D": 0.268,
+   "diagonal_px": 889.9,
+   "base": "qwen/bases/E3R3-A2.png",
+   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
+   "rgb_sha256": "473f7ac6ed1095951ef78178285820e1a3aefc2a68cff47349d6c7ea65b84d08",
+   "embedded_sha256": "6d32c967e47562be983f66028055b89d7479eac631f09386ad8edbf9da693891"
   },
-  "9ecc540f8c": {
-   "family": "F2",
+  "deac6ae21a": {
+   "family": "Q2",
    "variant": "Pm",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 0.8,
-   "d_over_D": 0.387,
-   "diagonal_px": 669.2,
-   "base": "h3/actual/F2-D260/original.png",
-   "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "9ecc540f8ce114c59988eff24b311f494f3096d3d195114ae0fa0c8a9cf96dcd",
-   "embedded_sha256": "4e4c584e8f5602790a3a0aa4dfca493b2e4e3fcd7a68a35d077b29abb75cb502"
+   "d_over_D": 0.258,
+   "diagonal_px": 787.5,
+   "base": "qwen/bases/E3R3-A2.png",
+   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
+   "rgb_sha256": "deac6ae21aa4375472cef6b7ffa177090c06fd672040f7af5766bf1783aa2f1b",
+   "embedded_sha256": "b5719b4962f0c671a2c4ba9e22ac126afe52e7ed640880c5897d9e13ce05b789"
   },
-  "439abef7d8": {
-   "family": "F2",
+  "723f335cb9": {
+   "family": "Q2",
    "variant": "Pp",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 1.2,
-   "d_over_D": 0.535,
-   "diagonal_px": 669.2,
-   "base": "h3/actual/F2-D260/original.png",
-   "base_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f",
-   "rgb_sha256": "439abef7d833502937463cc198725731266db02544a1090113efd416357f6420",
-   "embedded_sha256": "2d165dedd6ef340aa2779a4036541ca70307e0b783817008bdbce6c346054a55"
+   "d_over_D": 0.348,
+   "diagonal_px": 787.5,
+   "base": "qwen/bases/E3R3-A2.png",
+   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
+   "rgb_sha256": "723f335cb9f3f0ab9659c605ba350e961a4f2dfbff0a67a686f148feee58f2e3",
+   "embedded_sha256": "6c4861cce00ea75a3331140f1c07ce64046cce7bfd84a33d4ab8fa562e775ed6"
   },
-  "7c3fc41730": {
-   "family": "F3",
+  "86183aa246": {
+   "family": "Q3",
    "variant": "S",
-   "arm_mm": 220,
+   "arm_scale": 0.87,
    "prop_scale": 1.0,
-   "d_over_D": 0.513,
-   "diagonal_px": 528.5,
-   "base": "h3/actual/F3-D260/original.png",
-   "base_sha256": "7107697fd75bd7e731f2ad4560c7c210e7009f29fbff77959ca22487b251cd80",
-   "rgb_sha256": "7c3fc41730f9a62ea460e13069f3cf7a6d7e4ecdeda5f2a31e024e9e5e49397d",
-   "embedded_sha256": "aa7b624d7a5001c7af23bc5c9a8d5c746c34ec0c9b57b22167681ea2bfddb1ba"
+   "d_over_D": 0.526,
+   "diagonal_px": 632.2,
+   "base": "qwen/bases/E3R3-A3.png",
+   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
+   "rgb_sha256": "86183aa246a3fdbc7f468fc8be2a63dd36ca2565038cf5aca8bcdd61980ff627",
+   "embedded_sha256": "fbc464014530f74f4e71a7db0427e31788dbfc8fa39e2edb68795de9f4a2ccb6"
   },
-  "028d2843ce": {
-   "family": "F3",
+  "792d2f128c": {
+   "family": "Q3",
    "variant": "B",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 1.0,
-   "d_over_D": 0.434,
-   "diagonal_px": 624.5,
-   "base": "h3/actual/F3-D260/original.png",
-   "base_sha256": "7107697fd75bd7e731f2ad4560c7c210e7009f29fbff77959ca22487b251cd80",
-   "rgb_sha256": "028d2843ce7feb9caa6db839b831242260133ba77b268d02bd035f3f8bd4de13",
-   "embedded_sha256": "39e3e77e574c47218c914cb2751ad276f02d215a36d34eedf4b2129035f4acb8"
+   "d_over_D": 0.457,
+   "diagonal_px": 726.7,
+   "base": "qwen/bases/E3R3-A3.png",
+   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
+   "rgb_sha256": "792d2f128cbbb7c4a8cd79326bc32353b7d18f36dbe7621dab0963466c6ffe19",
+   "embedded_sha256": "19642445d7139479c43d6a8b8298efbfc804e4e9aaa3c11b7c4531a159f49ee8"
   },
-  "ac210a198a": {
-   "family": "F3",
+  "6cfbfeb2dd": {
+   "family": "Q3",
    "variant": "L",
-   "arm_mm": 300,
+   "arm_scale": 1.13,
    "prop_scale": 1.0,
-   "d_over_D": 0.376,
-   "diagonal_px": 720.6,
-   "base": "h3/actual/F3-D260/original.png",
-   "base_sha256": "7107697fd75bd7e731f2ad4560c7c210e7009f29fbff77959ca22487b251cd80",
-   "rgb_sha256": "ac210a198aadc2464812d26005ca0ac29ac55b20a996d93bd7b7a67fb772163a",
-   "embedded_sha256": "80e9695bd2d1c6fdf6e4f275a242e7d220f31ff999f831a1ef7f8681fe1184b4"
+   "d_over_D": 0.405,
+   "diagonal_px": 821.2,
+   "base": "qwen/bases/E3R3-A3.png",
+   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
+   "rgb_sha256": "6cfbfeb2dd1080820000efec95ed0af334a77a39e2a707b78deb10f6648fee75",
+   "embedded_sha256": "d297b5a5aa6374210f221181656229aeaf68e3d3f1a8df4fb926e4546554ce73"
   },
-  "b873f84e36": {
-   "family": "F3",
+  "e4c6cf6d52": {
+   "family": "Q3",
    "variant": "Pm",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 0.8,
-   "d_over_D": 0.366,
-   "diagonal_px": 624.5,
-   "base": "h3/actual/F3-D260/original.png",
-   "base_sha256": "7107697fd75bd7e731f2ad4560c7c210e7009f29fbff77959ca22487b251cd80",
-   "rgb_sha256": "b873f84e364c9596e1112da8dd426e5d97af7d558d9ad66f09dad99aa5464be2",
-   "embedded_sha256": "0160760b1dac01bff075750014e423a1df0d5337cd6462e471064669bec4fa86"
+   "d_over_D": 0.382,
+   "diagonal_px": 726.7,
+   "base": "qwen/bases/E3R3-A3.png",
+   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
+   "rgb_sha256": "e4c6cf6d526c47bd598074fd3e80cddb1bb68c363bb19be686af7ed5adbfd4c4",
+   "embedded_sha256": "a618141f3d81dbc569fea60f54ab0fab1edd33e551cd5c01e1a481d82f156396"
   },
-  "30477a0b41": {
-   "family": "F3",
+  "c517a4c63b": {
+   "family": "Q3",
    "variant": "Pp",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 1.2,
-   "d_over_D": 0.501,
-   "diagonal_px": 624.5,
-   "base": "h3/actual/F3-D260/original.png",
-   "base_sha256": "7107697fd75bd7e731f2ad4560c7c210e7009f29fbff77959ca22487b251cd80",
-   "rgb_sha256": "30477a0b4168e74d63d3cfa862c212ad04f01f5f6d9340fefb9798bb0c57bd7e",
-   "embedded_sha256": "28774158f011431e3ccec5b52d1d0cd97ef40dd49808d8d24c8fad027516065c"
+   "d_over_D": 0.532,
+   "diagonal_px": 726.7,
+   "base": "qwen/bases/E3R3-A3.png",
+   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
+   "rgb_sha256": "c517a4c63b4682494cfdeb55dbea02e2b43986950c9cb904e72b23d2d8f4513f",
+   "embedded_sha256": "6d62506312d5806178aa3652434eb68a422e05edf8981273889f43f119d4b540"
   },
-  "3e515b9ed0": {
-   "family": "F4",
+  "47d6d31c6f": {
+   "family": "Q4",
    "variant": "S",
-   "arm_mm": 220,
+   "arm_scale": 0.87,
    "prop_scale": 1.0,
-   "d_over_D": 0.605,
-   "diagonal_px": 514.1,
-   "base": "h3/actual/F4-D260/original.png",
-   "base_sha256": "39ac949fe8844d0d10e5d43b01e739059f0c163f047583d37af741f5b6159cfd",
-   "rgb_sha256": "3e515b9ed0954ce8ecfefb50a4c055415d12c07109f03754dfb226d65cad851f",
-   "embedded_sha256": "86366d847d4fbbc718d284cda82e71ed45aef986e667562a38c82139bb0a021b"
+   "d_over_D": 0.578,
+   "diagonal_px": 627.5,
+   "base": "qwen/bases/E3R3-B1.png",
+   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
+   "rgb_sha256": "47d6d31c6f874d7a721fce8dee419b0c60b65424d1398a283b0f403dd450e9b1",
+   "embedded_sha256": "56c1d192c1e852ab6316e8fbbde42aa09a079d91d4d426fc2f4f381ad0dadb15"
   },
-  "116ca6e11f": {
-   "family": "F4",
+  "65c7396769": {
+   "family": "Q4",
    "variant": "B",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 1.0,
-   "d_over_D": 0.512,
-   "diagonal_px": 607.6,
-   "base": "h3/actual/F4-D260/original.png",
-   "base_sha256": "39ac949fe8844d0d10e5d43b01e739059f0c163f047583d37af741f5b6159cfd",
-   "rgb_sha256": "116ca6e11f1f89e64855fb9bee9b1ef97e2fbcc8e31facdc971b133656ed443d",
-   "embedded_sha256": "fa973716813d145ab3ae29ffa1b61b06551ebe108e21eee178ada4f662640782"
+   "d_over_D": 0.503,
+   "diagonal_px": 721.3,
+   "base": "qwen/bases/E3R3-B1.png",
+   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
+   "rgb_sha256": "65c7396769e483a3e2d9db5dfb7a508a74bc072ee5a3724c2508f06ed0202299",
+   "embedded_sha256": "8b2e737b74fc689d1df6aeaacfc459b33a397f332addc3ccc7a3ce4863754f8f"
   },
-  "f0fd5f00e8": {
-   "family": "F4",
+  "6ab8af1b1b": {
+   "family": "Q4",
    "variant": "L",
-   "arm_mm": 300,
+   "arm_scale": 1.13,
    "prop_scale": 1.0,
-   "d_over_D": 0.444,
-   "diagonal_px": 701.0,
-   "base": "h3/actual/F4-D260/original.png",
-   "base_sha256": "39ac949fe8844d0d10e5d43b01e739059f0c163f047583d37af741f5b6159cfd",
-   "rgb_sha256": "f0fd5f00e8e19a2cc98c17d3f23a4f966e84d2f94a3c548c123e0503895fc270",
-   "embedded_sha256": "0347308a8235753592e4b4b86e78980d163cbd48314396d619ca639644299c8f"
+   "d_over_D": 0.445,
+   "diagonal_px": 815.0,
+   "base": "qwen/bases/E3R3-B1.png",
+   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
+   "rgb_sha256": "6ab8af1b1b7c54d4f1a6db67243bec2ccc5027674f8c55e579edd00f185d9fc5",
+   "embedded_sha256": "8bd2fe2ae76b34de7952fc3425cee4e125442887ae0ea7c2115b5e3f260dc1ba"
   },
-  "28ec36db90": {
-   "family": "F4",
+  "5922c3290f": {
+   "family": "Q4",
    "variant": "Pm",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 0.8,
-   "d_over_D": 0.43,
-   "diagonal_px": 607.6,
-   "base": "h3/actual/F4-D260/original.png",
-   "base_sha256": "39ac949fe8844d0d10e5d43b01e739059f0c163f047583d37af741f5b6159cfd",
-   "rgb_sha256": "28ec36db90159292278de9b13444f5c11e6eec08d632b0efdbd40052f9ab2909",
-   "embedded_sha256": "d7921046139ed8154f1885f1ea937a9f648a2e48080c01b27bb63b4a8dee2445"
+   "d_over_D": 0.419,
+   "diagonal_px": 721.3,
+   "base": "qwen/bases/E3R3-B1.png",
+   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
+   "rgb_sha256": "5922c3290fdb6f6b89089ae47cb8f6a1242b07185b985b1d044246baee6bf575",
+   "embedded_sha256": "8c94e7a1d28fa14f58413d64fabbb02b6c5463e98b6eb8f963a835bed2696d91"
   },
-  "9f0c6337d6": {
-   "family": "F4",
+  "928045d2ec": {
+   "family": "Q4",
    "variant": "Pp",
-   "arm_mm": 260,
+   "arm_scale": 1.0,
    "prop_scale": 1.2,
-   "d_over_D": 0.595,
-   "diagonal_px": 607.6,
-   "base": "h3/actual/F4-D260/original.png",
-   "base_sha256": "39ac949fe8844d0d10e5d43b01e739059f0c163f047583d37af741f5b6159cfd",
-   "rgb_sha256": "9f0c6337d6f4435eeb9624e5158cd11baa6fa8dc24b0b3aa28453aeb04a1c9f5",
-   "embedded_sha256": "40d5503c822d11db7bb9910a974897e6154a5bc5166b7c6bc8e9965e5b061d34"
+   "d_over_D": 0.587,
+   "diagonal_px": 721.3,
+   "base": "qwen/bases/E3R3-B1.png",
+   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
+   "rgb_sha256": "928045d2ecb1d33ae6f71dcc7c3c099a9c65367090a20753e32ab0c5b9716784",
+   "embedded_sha256": "50c85e2ecb718b21159c50c2be06e5fae02f0dd66179e2c4cd8a669110a0e627"
   }
  },
  "singles": [
-  "e6c344ab20",
-  "9fb3cf43e7",
-  "92fd46c9b4",
-  "f4d7fad7af",
-  "203b1d17bb",
-  "7c3fc41730",
-  "028d2843ce",
-  "ac210a198a",
-  "b873f84e36",
-  "30477a0b41"
+  "875a0ac83d",
+  "b72e864859",
+  "822e59b582",
+  "557b726a48",
+  "6c056e719d",
+  "86183aa246",
+  "792d2f128c",
+  "6cfbfeb2dd",
+  "e4c6cf6d52",
+  "c517a4c63b"
  ],
  "pairs": {
   "p01": {
    "kind": "low-high",
    "factor": "轴距",
-   "family": "F1",
-   "lower": "e6c344ab20",
-   "higher": "92fd46c9b4"
+   "family": "Q1",
+   "lower": "875a0ac83d",
+   "higher": "822e59b582"
   },
   "p02": {
    "kind": "low-high",
    "factor": "轴距",
-   "family": "F2",
-   "lower": "e834691fb6",
-   "higher": "441d126473"
+   "family": "Q2",
+   "lower": "b0e53e0c42",
+   "higher": "473f7ac6ed"
   },
   "p03": {
    "kind": "low-high",
    "factor": "轴距",
-   "family": "F3",
-   "lower": "7c3fc41730",
-   "higher": "ac210a198a"
+   "family": "Q3",
+   "lower": "86183aa246",
+   "higher": "6cfbfeb2dd"
   },
   "p04": {
    "kind": "low-high",
    "factor": "轴距",
-   "family": "F4",
-   "lower": "3e515b9ed0",
-   "higher": "f0fd5f00e8"
+   "family": "Q4",
+   "lower": "47d6d31c6f",
+   "higher": "6ab8af1b1b"
   },
   "p05": {
    "kind": "low-mid",
    "factor": "轴距",
-   "family": "F2",
-   "lower": "e834691fb6",
-   "higher": "1c9817f0be"
+   "family": "Q2",
+   "lower": "b0e53e0c42",
+   "higher": "8a48d98038"
   },
   "p06": {
    "kind": "mid-high",
    "factor": "轴距",
-   "family": "F2",
-   "lower": "1c9817f0be",
-   "higher": "441d126473"
+   "family": "Q2",
+   "lower": "8a48d98038",
+   "higher": "473f7ac6ed"
   },
   "p07": {
    "kind": "low-mid",
    "factor": "轴距",
-   "family": "F4",
-   "lower": "3e515b9ed0",
-   "higher": "116ca6e11f"
+   "family": "Q4",
+   "lower": "47d6d31c6f",
+   "higher": "65c7396769"
   },
   "p08": {
    "kind": "mid-high",
    "factor": "轴距",
-   "family": "F4",
-   "lower": "116ca6e11f",
-   "higher": "f0fd5f00e8"
+   "family": "Q4",
+   "lower": "65c7396769",
+   "higher": "6ab8af1b1b"
   },
   "p09": {
    "kind": "repeat",
    "factor": "轴距",
-   "family": "F1",
-   "lower": "e6c344ab20",
-   "higher": "92fd46c9b4",
+   "family": "Q1",
+   "lower": "875a0ac83d",
+   "higher": "822e59b582",
    "repeat_of": "p01"
   },
   "p10": {
    "kind": "low-high",
    "factor": "桨径",
-   "family": "F1",
-   "lower": "f4d7fad7af",
-   "higher": "203b1d17bb"
+   "family": "Q1",
+   "lower": "557b726a48",
+   "higher": "6c056e719d"
   },
   "p11": {
    "kind": "low-high",
    "factor": "桨径",
-   "family": "F2",
-   "lower": "9ecc540f8c",
-   "higher": "439abef7d8"
+   "family": "Q2",
+   "lower": "deac6ae21a",
+   "higher": "723f335cb9"
   },
   "p12": {
    "kind": "low-high",
    "factor": "桨径",
-   "family": "F3",
-   "lower": "b873f84e36",
-   "higher": "30477a0b41"
+   "family": "Q3",
+   "lower": "e4c6cf6d52",
+   "higher": "c517a4c63b"
   },
   "p13": {
    "kind": "low-high",
    "factor": "桨径",
-   "family": "F4",
-   "lower": "28ec36db90",
-   "higher": "9f0c6337d6"
+   "family": "Q4",
+   "lower": "5922c3290f",
+   "higher": "928045d2ec"
   },
   "p14": {
    "kind": "low-mid",
    "factor": "桨径",
-   "family": "F2",
-   "lower": "9ecc540f8c",
-   "higher": "1c9817f0be"
+   "family": "Q2",
+   "lower": "deac6ae21a",
+   "higher": "8a48d98038"
   },
   "p15": {
    "kind": "mid-high",
    "factor": "桨径",
-   "family": "F2",
-   "lower": "1c9817f0be",
-   "higher": "439abef7d8"
+   "family": "Q2",
+   "lower": "8a48d98038",
+   "higher": "723f335cb9"
   },
   "p16": {
    "kind": "low-mid",
    "factor": "桨径",
-   "family": "F4",
-   "lower": "28ec36db90",
-   "higher": "116ca6e11f"
+   "family": "Q4",
+   "lower": "5922c3290f",
+   "higher": "65c7396769"
   },
   "p17": {
    "kind": "mid-high",
    "factor": "桨径",
-   "family": "F4",
-   "lower": "116ca6e11f",
-   "higher": "9f0c6337d6"
+   "family": "Q4",
+   "lower": "65c7396769",
+   "higher": "928045d2ec"
   },
   "p18": {
    "kind": "repeat",
    "factor": "桨径",
-   "family": "F1",
-   "lower": "f4d7fad7af",
-   "higher": "203b1d17bb",
+   "family": "Q1",
+   "lower": "557b726a48",
+   "higher": "6c056e719d",
    "repeat_of": "p10"
   },
   "p19": {
    "kind": "identical",
    "factor": null,
-   "family": "F3",
-   "lower": "028d2843ce",
-   "higher": "028d2843ce"
+   "family": "Q3",
+   "lower": "792d2f128c",
+   "higher": "792d2f128c"
   }
  }
 }
