@@ -6,7 +6,7 @@ import base64, hashlib, io, json, pathlib
 from PIL import Image
 
 HERE = pathlib.Path(__file__).resolve().parent
-VERSION = 'S5-pilot-4.0'
+VERSION = 'S5-pilot-5.0'
 TERMS = [   # 词对与两端的说明取自 docs/protocols/word-pairs-v1-draft.md（顶视初稿用的三组）
     {'id': 'span', 'left': {'word': '紧凑', 'hint': '机身、臂与旋翼收拢在一起，部件之间留白少'}, 'right': {'word': '舒展', 'hint': '臂向外伸开，部件之间留白多'}},
     {'id': 'plain', 'left': {'word': '简洁', 'hint': '可见的分件线、开孔、色块少'}, 'right': {'word': '繁复', 'hint': '分件线、开孔、色块多'}},
@@ -18,9 +18,9 @@ for rid, meta in samples.items():
     rgb = Image.open(HERE / 'real' / 'stimuli' / (rid + '.png')).convert('RGB'); cid = hashlib.sha256(rgb.tobytes()).hexdigest()[:10]
     buf = io.BytesIO(); rgb.resize((720, 720), Image.LANCZOS).save(buf, 'JPEG', quality=90, optimize=True)
     images[cid] = 'data:image/jpeg;base64,' + base64.b64encode(buf.getvalue()).decode(); singles.append(cid)
-    key[cid] = {'kind': 'product', 'name': '%s %s %s' % (rid, meta['brand'], meta['model']), 'type': meta['type'], **{k: meta[k] for k in ('sha256', 'bbox_w_over_h', 'fill_of_bbox', 'mean_gray')},
+    key[cid] = {'kind': 'product', 'name': '%s %s %s' % (rid, meta['brand'], meta['model']), 'type': meta['type'], 'config': meta['config'], **{k: meta[k] for k in ('sha256', 'bbox_w_over_h', 'fill_of_bbox', 'mean_gray')},
                 'rgb_sha256': hashlib.sha256(rgb.tobytes()).hexdigest(), 'embedded_sha256': hashlib.sha256(buf.getvalue()).hexdigest()}
-intro = ('<p>接下来每次看一架四旋翼无人机的顶视图，共 %d 张，都是真实的产品。请按第一印象，在三组词之间各选一个位置。</p>'
+intro = ('<p>接下来每次看一架多旋翼无人机的顶视图，共 %d 张，都是真实的产品，有四个旋翼的，也有六个、八个旋翼的。请按第一印象，在三组词之间各选一个位置。</p>'
          '<p>每张图里无人机都画得差不多大，并且去掉了颜色，请看它各部分之间的比例和形状，不要管整机大小。没有对错。看不出来就选“看不出”。</p>') % len(singles)
 pack_id = hashlib.sha256(json.dumps([VERSION, sorted(images), singles, TERMS], ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
 pack = {'schema': 's5-compactness-pilot-v1', 'version': VERSION, 'pack': pack_id, 'terms': TERMS, 'singles': singles, 'pairs': [], 'intro1': intro, 'images': images}

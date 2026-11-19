@@ -26,6 +26,15 @@ SAMPLES = [
     ('iFlight', 'Nazgul5', '穿越机', 'iFlight_Nazgul5_FPV__01', 180), ('GEPRC', 'CineLog35', '涵道穿越机', 'GEPRC_CineLog35__00', 180), ('Sony', 'Airpeak S1', '专业影视', 'Sony_Airpeak_S1__05', 0),
     ('Freefly', 'Astro', '专业影视', 'Freefly_Astro__00', 0),
 ]
+# 四旋翼以外的多旋翼：品牌, 机型, 类型, 文件, 转角, 构型。三旋翼、双旋翼和多数共轴机型检索不到合格的顶视图（太小、斜视或只有自制机架），没有收。
+MULTI = [
+    ('DJI', 'Matrice 600 Pro', '行业机', 'r3_DJI_Matrice_600_Pro_hexacopter__00', 0, '六旋翼'), ('DJI', 'S900', '专业影视', 'r3_DJI_S900_hexacopter__00', 0, '六旋翼'),
+    ('Yuneec', 'H520', '行业机', 'r3_Yuneec_H520_hexacopter__01', 0, '六旋翼'), ('Yuneec', 'Tornado H920', '专业影视', 'r3_Yuneec_Tornado_H920_hexacopter__08', 0, '六旋翼'),
+    ('DJI', 'Agras T30', '农业植保', 'r3_DJI_Agras_T30__00', 0, '六旋翼'), ('Hylio', 'AG-216', '农业植保', 'r3_Hylio_AG-216__00', 0, '六旋翼'),
+    ('Inspired Flight', 'IF1200', '行业机', 'r3_Inspired_Flight_IF1200_hexacopter__00', 0, '六旋翼'), ('Aurelia', 'X6', '行业机', 'r3_Aurelia_X6_hexacopter__05', 0, '六旋翼'),
+    ('DJI', 'Agras MG-1', '农业植保', 'r3_DJI_Agras_MG-1_octocopter__02', 0, '八旋翼'), ('Freefly', 'Alta 8', '专业影视', 'r3_Freefly_Alta_8_octocopter__00', 0, '八旋翼'),
+    ('Skyfront', 'Perimeter 8', '行业机', 'r3_Skyfront_Perimeter_8__01', 0, '八旋翼'), ('DJI', 'Agras T50', '农业植保', 'r4_DJI_Agras_T50__06', 0, '共轴四轴八桨'),
+]
 def cut(rgb):
     """从四边向内找与边缘颜色相近的区域当背景，其余是机体。返回前景掩膜。"""
     a = rgb.astype(int); edge = np.concatenate([a[:6].reshape(-1, 3), a[-6:].reshape(-1, 3), a[:, :6].reshape(-1, 3), a[:, -6:].reshape(-1, 3)]); bg = np.median(edge, 0)
@@ -40,7 +49,7 @@ if __name__ == '__main__':
     dl = {l['file'].rsplit('.', 1)[0]: l for l in json.load(open(HERE / 'web' / 'downloads.json')) if 'file' in l}
     old = json.loads((HERE / 'samples.json').read_text()).get('samples', {}) if (HERE / 'samples.json').exists() else {}
     out, rejected, n = {}, [], 0
-    for brand, model, kind, ref, rot in SAMPLES:
+    for brand, model, kind, ref, rot, config in [(*t, '四旋翼') for t in SAMPLES] + MULTI:
         if ref.startswith('render:'):
             h = ref[7:]; rgba = Image.open(HERE / 'renders' / (h + '.png')).convert('RGBA'); white = Image.new('RGBA', rgba.size, 'white'); white.alpha_composite(rgba)
             rgb = np.asarray(white.convert('RGB')); fg = np.asarray(rgba.getchannel('A')) > 40
@@ -57,7 +66,7 @@ if __name__ == '__main__':
         img = Image.new('L', (SIDE, SIDE), 255); img.paste(crop, ((SIDE - crop.width) // 2, (SIDE - crop.height) // 2))
         n += 1; rid = 'P%02d' % n; img.convert('RGB').save(HERE / 'stimuli' / (rid + '.png'))
         solid = fg[y0:y1 + 1, x0:x1 + 1]; w, h = (bh, bw) if rot in (90, 270) else (bw, bh)
-        out[rid] = {'brand': brand, 'model': model, 'type': kind, 'rotated_deg': rot, 'object_px_in_source': [int(bw), int(bh)], 'upscale': round(float(k), 2),
+        out[rid] = {'brand': brand, 'model': model, 'type': kind, 'config': config, 'rotated_deg': rot, 'object_px_in_source': [int(bw), int(bh)], 'upscale': round(float(k), 2),
                     'bbox_w_over_h': round(float(w / h), 3), 'fill_of_bbox': round(float(solid.mean()), 3), 'mean_gray': round(float(gray[y0:y1 + 1, x0:x1 + 1][solid].mean()), 1), **src}
     (HERE / 'samples.json').write_text(json.dumps({'collected': '2026-11-19', 'method': '用 Bing 图片检索各机型的顶视图（检索词和全部候选见 web/search-results*.json），逐张目视筛选真顶视、整机完整、背景干净、来源可查的图；排除 AI 生成的假图、第三方 3D 模型站和带水印的图库图',
         'processing': '抠成白底、去色、机头朝上、整机外接框长边占画面 80%', 'samples': out}, ensure_ascii=False, indent=1) + '\n')
