@@ -1,0 +1,162 @@
+{
+ "F1-S": {
+  "factor": "轴距",
+  "level_mm": 220,
+  "prop_scale": 1.0,
+  "diagonal_px": 518.7,
+  "prop_px": 273.6,
+  "d_over_D": 0.527
+ },
+ "F1-B": {
+  "factor": "轴距",
+  "level_mm": 260,
+  "prop_scale": 1.0,
+  "diagonal_px": 613.0,
+  "prop_px": 273.6,
+  "d_over_D": 0.446
+ },
+ "F1-L": {
+  "factor": "轴距",
+  "level_mm": 300,
+  "prop_scale": 1.0,
+  "diagonal_px": 707.4,
+  "prop_px": 273.6,
+  "d_over_D": 0.387
+ },
+ "F1-Pm": {
+  "factor": "桨径",
+  "level_mm": 260,
+  "prop_scale": 0.8,
+  "diagonal_px": 613.0,
+  "prop_px": 230.9,
+  "d_over_D": 0.377
+ },
+ "F1-Pp": {
+  "factor": "桨径",
+  "level_mm": 260,
+  "prop_scale": 1.2,
+  "diagonal_px": 613.0,
+  "prop_px": 316.3,
+  "d_over_D": 0.516
+ },
+ "F2-S": {
+  "factor": "轴距",
+  "level_mm": 220,
+  "prop_scale": 1.0,
+  "diagonal_px": 566.3,
+  "prop_px": 308.4,
+  "d_over_D": 0.545
+ },
+ "F2-B": {
+  "factor": "轴距",
+  "level_mm": 260,
+  "prop_scale": 1.0,
+  "diagonal_px": 669.2,
+  "prop_px": 308.4,
+  "d_over_D": 0.461
+ },
+ "F2-L": {
+  "factor": "轴距",
+  "level_mm": 300,
+  "prop_scale": 1.0,
+  "diagonal_px": 772.2,
+  "prop_px": 308.4,
+  "d_over_D": 0.399
+ },
+ "F2-Pm": {
+  "factor": "桨径",
+  "level_mm": 260,
+  "prop_scale": 0.8,
+  "diagonal_px": 669.2,
+  "prop_px": 258.7,
+  "d_over_D": 0.387
+ },
+ "F2-Pp": {
+  "factor": "桨径",
+  "level_mm": 260,
+  "prop_scale": 1.2,
+  "diagonal_px": 669.2,
+  "prop_px": 358.1,
+  "d_over_D": 0.535
+ },
+ "F3-S": {
+  "factor": "轴距",
+  "level_mm": 220,
+  "prop_scale": 1.0,
+  "diagonal_px": 528.5,
+  "prop_px": 271.0,
+  "d_over_D": 0.513
+ },
+ "F3-B": {
+  "factor": "轴距",
+  "level_mm": 260,
+  "prop_scale": 1.0,
+  "diagonal_px": 624.5,
+  "prop_px": 271.0,
+  "d_over_D": 0.434
+ },
+ "F3-L": {
+  "factor": "轴距",
+  "level_mm": 300,
+  "prop_scale": 1.0,
+  "diagonal_px": 720.6,
+  "prop_px": 271.0,
+  "d_over_D": 0.376
+ },
+ "F3-Pm": {
+  "factor": "桨径",
+  "level_mm": 260,
+  "prop_scale": 0.8,
+  "diagonal_px": 624.5,
+  "prop_px": 228.8,
+  "d_over_D": 0.366
+ },
+ "F3-Pp": {
+  "factor": "桨径",
+  "level_mm": 260,
+  "prop_scale": 1.2,
+  "diagonal_px": 624.5,
+  "prop_px": 313.1,
+  "d_over_D": 0.501
+ },
+ "F4-S": {
+  "factor": "轴距",
+  "level_mm": 220,
+  "prop_scale": 1.0,
+  "diagonal_px": 514.1,
+  "prop_px": 311.3,
+  "d_over_D": 0.605
+ },
+ "F4-B": {
+  "factor": "轴距",
+  "level_mm": 260,
+  "prop_scale": 1.0,
+  "diagonal_px": 607.6,
+  "prop_px": 311.3,
+  "d_over_D": 0.512
+ },
+ "F4-L": {
+  "factor": "轴距",
+  "level_mm": 300,
+  "prop_scale": 1.0,
+  "diagonal_px": 701.0,
+  "prop_px": 311.3,
+  "d_over_D": 0.444
+ },
+ "F4-Pm": {
+  "factor": "桨径",
+  "level_mm": 260,
+  "prop_scale": 0.8,
+  "diagonal_px": 607.6,
+  "prop_px": 261.0,
+  "d_over_D": 0.43
+ },
+ "F4-Pp": {
+  "factor": "桨径",
+  "level_mm": 260,
+  "prop_scale": 1.2,
+  "diagonal_px": 607.6,
+  "prop_px": 361.5,
+  "d_over_D": 0.595
+ }
+}

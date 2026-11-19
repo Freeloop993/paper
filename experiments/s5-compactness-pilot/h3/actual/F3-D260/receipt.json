@@ -1,0 +1,26 @@
+{
+ "sent": "2026-11-19T19:37:05+1100",
+ "http": 200,
+ "elapsed_s": 12.03,
+ "created": 1795077436,
+ "output_format": "png",
+ "usage": {
+  "generated_images": 1,
+  "total_tokens": 9935,
+  "input_tokens": 5839,
+  "output_tokens": 4096,
+  "input_tokens_details": {
+   "text_tokens": 3789,
+   "image_tokens": 2050
+  },
+  "output_tokens_details": {
+   "image_tokens": 4096
+  }
+ },
+ "request_id": "074de8319e39d983144c0e18647bb0a1",
+ "item": {
+  "size": "1024x1024",
+  "revised_prompt": "The X-shaped geometric layout in <Picture 1>, consisting of two intersecting diagonal blue lines with four red circular endpoint markers, is <Subject 1>. The target image shows a realistic product rendering of an everyday aerial photography quadcopter seen in a strict orthographic top-down view on a plain white background, replacing the black background and graphic guide marks of <Picture 1> while matching the spatial geometry of <Subject 1>. <Subject 1> supplies the exact center-to-center motor span, equal horizontal and vertical spacing, and four diagonal arm directions transferred to the quadcopter's motors and arms. The quadcopter features a true X-frame configuration with its nose pointing toward the top edge and all four arms fully unfolded along the diagonals of <Subject 1>. At the four red marker positions of <Subject 1>, each motor mount is visibly joined to its respective arm and carries a single stationary two-blade 5-inch propeller with charcoal blades and no propeller guards. Extending from the center is a rounded central pod with a continuous curved outline, proportioned at a 90 mm length by 50 mm width relative to the 260 mm opposite-motor span defined by <Subject 1>. The shell has a satin neutral mid-gray finish, a single clean top cover seam, a forward-facing camera housing recessed within the nose outline whose optical face remains hidden from directly overhead, and an uninterrupted smooth tail end. Each arm measures 15 mm wide at midspan, tapering gradually out of the central shell for at least two arm widths before reaching its uniform running width without any joint seam. Soft overhead studio lighting illuminates the complete product against the plain light background, casting subtle contact shadows beneath the body, arms, and rotor hubs, with all guide marks and lettering omitted."
+ },
+ "output_sha256": "7107697fd75bd7e731f2ad4560c7c210e7009f29fbff77959ca22487b251cd80"
+}

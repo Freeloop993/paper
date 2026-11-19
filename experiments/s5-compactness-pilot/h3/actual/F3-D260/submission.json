@@ -1,0 +1,45 @@
+{
+ "slot": "F3-D260",
+ "layout": "D260",
+ "target": {
+  "diagonal_mm": 260,
+  "w_over_l": 1.0,
+  "width_mm": 183.8,
+  "length_mm": 183.8,
+  "d_over_D": 0.488,
+  "shell_width_over_D": 0.192,
+  "hubs_px": [
+   [
+    293.6,
+    293.6
+   ],
+   [
+    730.4,
+    293.6
+   ],
+   [
+    730.4,
+    730.4
+   ],
+   [
+    293.6,
+    730.4
+   ]
+  ]
+ },
+ "endpoint": "https://api.minimax.io/v1/images/edits",
+ "fields": {
+  "model": "MiniMax-H3-Image",
+  "size": "1024x1024",
+  "n": 1,
+  "output_format": "png",
+  "response_format": "b64_json",
+  "prompt": "Design a quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 260 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. Main shell plan envelope 90 mm long by 50 mm wide.\nEach arm is 15 mm wide at midspan.\nEach arm tapers gradually out of the shell for at least two arm widths before reaching its running width, with no joint seam.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nOne forward camera only; the tail ends in uninterrupted shell. Join each arm visibly to its motor mount. Satin neutral mid-gray shell and arms, charcoal rotors, soft overhead studio light on white. Preserve the layout scale and framing.\nShow the complete product on a plain light background. Omit guide marks and lettering."
+ },
+ "images": [
+  {
+   "role": "layout",
+   "sha256": "06eaa7d3163c14c206b2677065a09548429b57dc1d3dcfb8ad35f1ec5d5bcac5"
+  }
+ ]
+}

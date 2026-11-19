@@ -1,0 +1,50 @@
+{
+ "slot": "F1-D300",
+ "layout": "D300",
+ "target": {
+  "diagonal_mm": 300,
+  "w_over_l": 1.0,
+  "width_mm": 212.1,
+  "length_mm": 212.1,
+  "d_over_D": 0.423,
+  "shell_width_over_D": 0.167,
+  "hubs_px": [
+   [
+    260.0,
+    260.0
+   ],
+   [
+    764.0,
+    260.0
+   ],
+   [
+    764.0,
+    764.0
+   ],
+   [
+    260.0,
+    764.0
+   ]
+  ]
+ },
+ "endpoint": "https://api.minimax.io/v1/images/edits",
+ "fields": {
+  "model": "MiniMax-H3-Image",
+  "size": "1024x1024",
+  "n": 1,
+  "output_format": "png",
+  "response_format": "b64_json",
+  "prompt": "Design a quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 300 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA rounded pod with a continuous curved outline. Main shell plan envelope 90 mm long by 50 mm wide.\nEach arm is 15 mm wide at midspan.\nEach arm tapers gradually out of the shell for at least two arm widths before reaching its running width, with no joint seam.\nThe camera housing lies within the nose outline. The camera faces horizontally forward; its optical face is hidden from directly overhead.\nOne top cover seam.\nOne forward camera only; the tail ends in uninterrupted shell. Join each arm visibly to its motor mount. Satin neutral mid-gray shell and arms, charcoal rotors, soft overhead studio light on white. Preserve the layout scale and framing.\nShow the complete product on a plain light background. Omit guide marks and lettering.\nThe second reference image shows this same product. Keep its shell shape and size, camera housing, arm thickness, propellers, colours and lighting unchanged; only move the four motors and arms to the positions given by the layout."
+ },
+ "images": [
+  {
+   "role": "layout",
+   "sha256": "779c77b043a0c8c7e3d6c9f38be1d5e45d9701016ad97f235640bc49c710e6b0"
+  },
+  {
+   "role": "parent",
+   "sha256": "5873114e78e1a0bb3f82db3adfa3f0d7dbf9690d7be6db8251e5bd5b03478c41",
+   "source": "actual/F1-D260/original.png"
+  }
+ ]
+}

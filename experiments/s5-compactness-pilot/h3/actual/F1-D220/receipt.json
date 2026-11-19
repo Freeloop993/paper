@@ -1,0 +1,26 @@
+{
+ "sent": "2026-11-19T19:33:42+1100",
+ "http": 200,
+ "elapsed_s": 16.75,
+ "created": 1795077237,
+ "output_format": "png",
+ "usage": {
+  "generated_images": 1,
+  "total_tokens": 12466,
+  "input_tokens": 8370,
+  "output_tokens": 4096,
+  "input_tokens_details": {
+   "text_tokens": 4270,
+   "image_tokens": 4100
+  },
+  "output_tokens_details": {
+   "image_tokens": 4096
+  }
+ },
+ "request_id": "074de768f616f585dc1d5b46cecba387",
+ "item": {
+  "size": "1024x1024",
+  "revised_prompt": "The X-shaped geometric layout of four red endpoint dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The quadcopter drone with a rounded central shell, forward camera housing, four arms, and four two-blade propellers in <Picture 2> is <Subject 2>. The plain white studio background with soft overhead lighting in <Picture 2> is <Subject 3>. The target image shows <Subject 2> on <Subject 3> with its four arms and motors repositioned to match the exact span and angles of <Subject 1>, while omitting the guide marks from <Picture 1>. <Subject 1> supplies the exact spatial placement, arm directions, and equal horizontal and vertical spacing transferred to the arms and motors of <Subject 2>. <Subject 2> is partially preserved; its central pod shape, size, forward camera housing, top cover seam, uninterrupted tail, satin neutral mid-gray finish, charcoal two-blade stationary propellers without guards, and seamless arm-to-motor mounts remain unchanged, while the positions and angles of its four arms and motors shift to align with <Subject 1>. <Subject 3> is fully preserved. The four arms of <Subject 2> extend outward at a true X configuration toward the four corner coordinates defined by <Subject 1>, creating equal horizontal and vertical spacing between the opposite motor centers and stationary 5-inch two-blade rotors, with soft contact shadows cast onto <Subject 3> beneath the repositioned arms and blades."
+ },
+ "output_sha256": "3ede0e48f666134e40653b294f950b1d44d702f56b185827aa842a8d96933305"
+}

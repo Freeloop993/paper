@@ -1,0 +1,26 @@
+{
+ "sent": "2026-11-19T19:33:59+1100",
+ "http": 200,
+ "elapsed_s": 25.55,
+ "created": 1795077263,
+ "output_format": "png",
+ "usage": {
+  "generated_images": 1,
+  "total_tokens": 12555,
+  "input_tokens": 8459,
+  "output_tokens": 4096,
+  "input_tokens_details": {
+   "text_tokens": 4359,
+   "image_tokens": 4100
+  },
+  "output_tokens_details": {
+   "image_tokens": 4096
+  }
+ },
+ "request_id": "074de7795e1b8b2b5a1cd716287e2e6b",
+ "item": {
+  "size": "1024x1024",
+  "revised_prompt": "The X-shaped layout of four red dots connected by two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The gray quadcopter with a rounded central pod, forward camera housing, four tapered arms, and four stationary two-blade black propellers in <Picture 2> is <Subject 2>. The plain white background and soft overhead studio lighting in <Picture 2> are <Subject 3>. The target image shows <Subject 2> on <Subject 3> with its four arms and motors repositioned to match the exact geometry of <Subject 1>, while omitting the guide marks from <Picture 1>. <Subject 1> supplies the exact spatial positions, equal horizontal and vertical spacing, and diagonal arm directions transferred to the arms and motors of <Subject 2>. <Subject 2> is partially preserved; its central shell shape, size, single top cover seam, forward-facing camera housing within the nose outline, uninterrupted tail, satin neutral mid-gray finish, charcoal rotors, and arm thickness remain unchanged, while the placement and angle of its four arms and motors change. <Subject 3> is fully preserved. The four unfolded arms and motor mounts of <Subject 2> extend outward at a wider, more open diagonal angle so that their centers align precisely with the four corner positions of <Subject 1>, forming a true X configuration with equal horizontal and vertical spacing between opposite motors. Each seamless arm tapers gradually out of the central body for at least two arm widths before reaching its uniform midspan width and joins visibly into its respective circular motor mount without any joint seam or propeller guards, casting soft contact shadows onto <Subject 3>."
+ },
+ "output_sha256": "1e64d9d8704233b67672c255e8ea3370cb2530d62270d80f7f504281485f96d6"
+}

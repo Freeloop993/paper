@@ -1,0 +1,26 @@
+{
+ "sent": "2026-11-19T19:34:39+1100",
+ "http": 200,
+ "elapsed_s": 13.82,
+ "created": 1795077293,
+ "output_format": "png",
+ "usage": {
+  "generated_images": 1,
+  "total_tokens": 12597,
+  "input_tokens": 8501,
+  "output_tokens": 4096,
+  "input_tokens_details": {
+   "text_tokens": 4401,
+   "image_tokens": 4100
+  },
+  "output_tokens_details": {
+   "image_tokens": 4096
+  }
+ },
+ "request_id": "074de7a0cc21896c9a81b2c9149e5b66",
+ "item": {
+  "size": "1024x1024",
+  "revised_prompt": "The spatial layout of the four red endpoint dots and intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The quadcopter with a rounded gray central shell, forward camera housing, four tapered arms, and four two-blade black propellers in <Picture 2> is <Subject 2>. The plain white background and soft overhead studio lighting in <Picture 2> are <Subject 3>. The target image shows <Subject 2> on <Subject 3> with its four arms and motors repositioned to match the wide X-configuration geometry of <Subject 1>, while omitting the guide marks from <Picture 1>. <Subject 1> supplies the exact motor center positions and arm angles transferred to <Subject 2>. <Subject 2> is partially preserved; its central shell shape, forward camera housing, arm thickness, satin mid-gray finish, charcoal two-blade propellers, and scale remain unchanged, while the four arms and motors shift outward laterally into a wider X arrangement. <Subject 3> is fully preserved. In the updated configuration of <Subject 2>, the four unfolded arms extend from the central pod along the shallow, wide-angle diagonals defined by <Subject 1>, placing the four motor mounts further apart side to side than front to back in a 3:2 horizontal-to-vertical span ratio. Each seamless arm tapers gradually out of the continuous curved shell over at least two arm widths before reaching its uniform midspan width and joining its circular motor mount without exposed fasteners or propeller guards. Each stationary two-blade charcoal propeller sits centered on its relocated motor hub, casting soft, diffused contact shadows onto <Subject 3> consistent with the existing overhead illumination."
+ },
+ "output_sha256": "3da0cac82b28df4095bae4786a3c63609bb8301ff719681e28809d1138d520bf"
+}

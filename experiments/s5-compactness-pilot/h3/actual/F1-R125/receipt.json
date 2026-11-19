@@ -1,0 +1,26 @@
+{
+ "sent": "2026-11-19T19:34:25+1100",
+ "http": 200,
+ "elapsed_s": 14.56,
+ "created": 1795077279,
+ "output_format": "png",
+ "usage": {
+  "generated_images": 1,
+  "total_tokens": 12573,
+  "input_tokens": 8477,
+  "output_tokens": 4096,
+  "input_tokens_details": {
+   "text_tokens": 4377,
+   "image_tokens": 4100
+  },
+  "output_tokens_details": {
+   "image_tokens": 4096
+  }
+ },
+ "request_id": "074de79118e1096e0fe692688f31c1e7",
+ "item": {
+  "size": "1024x1024",
+  "revised_prompt": "The X-shaped spatial layout of the four red endpoint dots and intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The quadcopter with a rounded mid-gray central pod, forward camera housing, four unfolded arms, and stationary two-blade charcoal propellers in <Picture 2> is <Subject 2>. The plain white background and soft overhead studio lighting setup in <Picture 2> is <Subject 3>. The target image shows <Subject 2> on <Subject 3> with its four arms and motors repositioned to match the wider lateral and narrower longitudinal geometry of <Subject 1>, omitting the guide marks from <Picture 1>. <Subject 1> supplies the exact motor-center positions and arm directions transferred to <Subject 2>. <Subject 2> is partially preserved; its central shell shape, size, forward-facing nose camera housing, single top cover seam, uninterrupted tail, satin neutral mid-gray finish, charcoal two-blade propellers, and scale remain unchanged, while its four arms and motors shift outward laterally and inward longitudinally. <Subject 3> is fully preserved. The four arms of <Subject 2> extend along the diagonals defined by <Subject 1>, forming a wide X configuration where opposite motors are spaced further apart side-to-side than front-to-back. Each seamless arm tapers gradually out of the central pod over at least two arm widths before reaching its uniform midspan width, joining visibly to each cylindrical motor mount without any joint seams or propeller guards. Each motor carries one stationary two-blade propeller oriented cleanly within the updated footprint, casting soft contact shadows onto <Subject 3> consistent with the existing overhead illumination."
+ },
+ "output_sha256": "a7b49f470d1d2e613f3712d1cdfdc6e7011c317efb2c2abd9da7fbb13cd8c4f4"
+}

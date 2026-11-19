@@ -1,0 +1,26 @@
+{
+ "sent": "2026-11-19T19:37:17+1100",
+ "http": 200,
+ "elapsed_s": 11.96,
+ "created": 1795077449,
+ "output_format": "png",
+ "usage": {
+  "generated_images": 1,
+  "total_tokens": 10046,
+  "input_tokens": 5950,
+  "output_tokens": 4096,
+  "input_tokens_details": {
+   "text_tokens": 3900,
+   "image_tokens": 2050
+  },
+  "output_tokens_details": {
+   "image_tokens": 4096
+  }
+ },
+ "request_id": "074de83d8b3767f2ec2352b2c0b140ea",
+ "item": {
+  "size": "1024x1024",
+  "revised_prompt": "The spatial layout of the four red endpoint dots and intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-view product render of an everyday aerial photography quadcopter on a plain white background, replacing the black background, red dots, and blue lines of <Picture 1> while aligning its motor centers and arm directions with <Subject 1>. <Subject 1> supplies the exact geometric positions, equal horizontal and vertical spacing, and true X-arm angles transferred to the quadcopter's four motor mounts and unfolded arms. The quadcopter is oriented with its nose toward the top edge and its arms fully unfolded along the diagonals of <Subject 1>, corresponding to a 260 mm opposite-motor span within the preserved framing scale. At the center lies a rounded pod with a continuous curved outline, measuring 90 mm long by 50 mm wide in plan envelope, finished in satin neutral mid-gray. A single clean top cover seam runs along the central shell, which terminates at the tail in an uninterrupted smooth curve without rear appendages. Integrated within the forward nose outline is a single forward-facing camera housing whose optical lens faces horizontally forward and remains hidden from directly overhead. Extending seamlessly outward from the pod corners along the diagonals of <Subject 1> are four tapered arms that gradually narrow out of the central shell over at least two arm widths before reaching a constant 15 mm running width at midspan, completely free of joint seams. Each arm joins visibly to a compact cylindrical motor mount positioned precisely at the four corner nodes of <Subject 1>. Mounted atop each motor is a stationary, unguarded two-blade 5-inch propeller in matte charcoal, with blades aligned consistently across all four motors. Soft overhead studio lighting illuminates the complete product against the plain light background, casting subtle, even contact shadows beneath the shell, arms, and rotor blades without any guide marks or lettering."
+ },
+ "output_sha256": "39ac949fe8844d0d10e5d43b01e739059f0c163f047583d37af741f5b6159cfd"
+}
