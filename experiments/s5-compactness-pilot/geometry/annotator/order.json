@@ -1,0 +1,228 @@
+{
+ "pack": "e4dcbb96a567",
+ "rater_pack": "b9bcbdc4f9cc",
+ "first": 14,
+ "order": [
+  {
+   "id": "0297b62fef",
+   "name": "P23 GoPro Karma",
+   "rotors": 4
+  },
+  {
+   "id": "0c4158011a",
+   "name": "P16 Skydio Skydio 2",
+   "rotors": 4
+  },
+  {
+   "id": "112bbb81ac",
+   "name": "P30 GEPRC CineLog35",
+   "rotors": 4
+  },
+  {
+   "id": "188608ec5b",
+   "name": "P31 Sony Airpeak S1",
+   "rotors": 4
+  },
+  {
+   "id": "2cd0c11533",
+   "name": "P21 Yuneec Typhoon Q500 4K",
+   "rotors": 4
+  },
+  {
+   "id": "3153bf3716",
+   "name": "P17 Skydio X10",
+   "rotors": 4
+  },
+  {
+   "id": "6248b4421d",
+   "name": "P07 DJI Flip",
+   "rotors": 4
+  },
+  {
+   "id": "79b9c1b7f2",
+   "name": "P28 PowerVision PowerEgg X",
+   "rotors": 4
+  },
+  {
+   "id": "a7e97d82ea",
+   "name": "P11 DJI FPV",
+   "rotors": 4
+  },
+  {
+   "id": "c9ece393c5",
+   "name": "P27 ZeroTech Dobby",
+   "rotors": 4
+  },
+  {
+   "id": "19056a2687",
+   "name": "P34 DJI S900",
+   "rotors": 6
+  },
+  {
+   "id": "288ba59da4",
+   "name": "P37 DJI Agras T30",
+   "rotors": 6
+  },
+  {
+   "id": "79c652095a",
+   "name": "P43 Skyfront Perimeter 8",
+   "rotors": 8
+  },
+  {
+   "id": "d98fb06ea7",
+   "name": "P44 DJI Agras T50",
+   "rotors": 4
+  },
+  {
+   "id": "130005f1c5",
+   "name": "P26 Ryze Tello",
+   "rotors": 4
+  },
+  {
+   "id": "1a39ab9aab",
+   "name": "P20 Yuneec Mantis Q",
+   "rotors": 4
+  },
+  {
+   "id": "2bff865a72",
+   "name": "P01 DJI Mavic 4 Pro",
+   "rotors": 4
+  },
+  {
+   "id": "4d25bedaa5",
+   "name": "P18 Hubsan Zino Mini Pro",
+   "rotors": 4
+  },
+  {
+   "id": "57197d835b",
+   "name": "P15 Parrot Bebop 2",
+   "rotors": 4
+  },
+  {
+   "id": "64d66bba11",
+   "name": "P05 DJI Spark",
+   "rotors": 4
+  },
+  {
+   "id": "6864cf24be",
+   "name": "P06 DJI Neo",
+   "rotors": 4
+  },
+  {
+   "id": "71dc18664b",
+   "name": "P04 DJI Mavic Pro",
+   "rotors": 4
+  },
+  {
+   "id": "74ae531213",
+   "name": "P35 Yuneec H520",
+   "rotors": 6
+  },
+  {
+   "id": "7e09185c3e",
+   "name": "P42 Freefly Alta 8",
+   "rotors": 8
+  },
+  {
+   "id": "81fa921d48",
+   "name": "P12 Autel EVO II Pro",
+   "rotors": 4
+  },
+  {
+   "id": "82fb0d8c8e",
+   "name": "P39 Inspired Flight IF1200",
+   "rotors": 6
+  },
+  {
+   "id": "875fd8a689",
+   "name": "P33 DJI Matrice 600 Pro",
+   "rotors": 6
+  },
+  {
+   "id": "8916d5b416",
+   "name": "P13 Parrot ANAFI",
+   "rotors": 4
+  },
+  {
+   "id": "923dc87605",
+   "name": "P02 DJI Air 3S",
+   "rotors": 4
+  },
+  {
+   "id": "94a2d5c64f",
+   "name": "P22 3DR Solo",
+   "rotors": 4
+  },
+  {
+   "id": "96907f6b61",
+   "name": "P14 Parrot ANAFI Ai",
+   "rotors": 4
+  },
+  {
+   "id": "982f67f9fd",
+   "name": "P08 DJI Matrice 30",
+   "rotors": 4
+  },
+  {
+   "id": "9af51b95e0",
+   "name": "P38 Hylio AG-216",
+   "rotors": 6
+  },
+  {
+   "id": "9d9ce2c1dc",
+   "name": "P09 DJI Inspire 3",
+   "rotors": 4
+  },
+  {
+   "id": "a4f66de9cc",
+   "name": "P24 Insta360 Antigravity A1",
+   "rotors": 4
+  },
+  {
+   "id": "a58a0e9b8b",
+   "name": "P32 Freefly Astro",
+   "rotors": 4
+  },
+  {
+   "id": "aa9d2b1b10",
+   "name": "P03 DJI Mini 5 Pro",
+   "rotors": 4
+  },
+  {
+   "id": "b5b7612e83",
+   "name": "P40 Aurelia X6",
+   "rotors": 6
+  },
+  {
+   "id": "b636e6dea6",
+   "name": "P36 Yuneec Tornado H920",
+   "rotors": 6
+  },
+  {
+   "id": "bff3862776",
+   "name": "P10 DJI Avata 2",
+   "rotors": 4
+  },
+  {
+   "id": "c00db93e5b",
+   "name": "P41 DJI Agras MG-1",
+   "rotors": 8
+  },
+  {
+   "id": "cc3879e7e6",
+   "name": "P29 iFlight Nazgul5",
+   "rotors": 4
+  },
+  {
+   "id": "e4cae29003",
+   "name": "P25 HOVERAir X1 Pro Max",
+   "rotors": 4
+  },
+  {
+   "id": "f7eb71359f",
+   "name": "P19 FIMI X8 Mini",
+   "rotors": 4
+  }
+ ],
+ "html_sha256": "2e216ca6b2b1dab31d9035b6a4d012fa487c9a0c89740f8be51f02afedabc625"
+}
