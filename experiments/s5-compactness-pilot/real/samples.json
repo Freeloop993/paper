@@ -1,0 +1,128 @@
+{
+ "collected": "2026-11-19",
+ "source": "DJI 官方商城（store.dji.com，澳大利亚站）产品页的 3D 展示模型，经内置浏览器读取页面数据得到地址；模型内部名称用于核对机型",
+ "render": "model-viewer 3.5.0；正上方俯视，视场 8 度（接近正投影），商城同款环境光；机头朝上",
+ "samples": {
+  "R01": {
+   "model": "DJI Mini 2 系列（WM161）",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/ecd6727edc061ef6eefa27af3278102d.glb",
+   "glb_sha256": "a54f38099641c78af4fec08aa2c31efea331b2db869d4ab403c305cb284aa087",
+   "glb_bytes": 7707032,
+   "page": "https://store.dji.com/product/dji-mini-3-pro",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 1.257,
+   "fill_of_bbox": 0.281,
+   "mean_gray": 175.6
+  },
+  "R02": {
+   "model": "DJI Mini 3",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/385aa9579ba03d6cc2c1f6a395140b13.glb",
+   "glb_sha256": "fc239f2d776d491f7c944f2a2ecaef83422ab87eb01ac82c3a4edb79036630d9",
+   "glb_bytes": 9209040,
+   "page": "https://store.dji.com/product/dji-mini-3",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 1.052,
+   "fill_of_bbox": 0.231,
+   "mean_gray": 176.9
+  },
+  "R03": {
+   "model": "DJI Mini 4 Pro",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/eb2acccc1b1a4a5c3407e0a06555f0b9.glb",
+   "glb_sha256": "0a837c4bab7fee0bb0bf66c2b801ab632cfff43e8b3ba9aa1808f1a0452bd475",
+   "glb_bytes": 3147096,
+   "page": "https://store.dji.com/product/dji-mini-4-pro",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 1.253,
+   "fill_of_bbox": 0.242,
+   "mean_gray": 159.7
+  },
+  "R04": {
+   "model": "DJI Air 2S",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/66371f2fbf595bfe531d2c38ab1b50d6.glb",
+   "glb_sha256": "1e992eec12aaf058039a29fa528e262b6c4ed7ccd36d9f25e4eaf77cfdafbb3d",
+   "glb_bytes": 11052256,
+   "page": "https://store.dji.com/product/dji-air-2s",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 0.935,
+   "fill_of_bbox": 0.233,
+   "mean_gray": 120.4
+  },
+  "R05": {
+   "model": "DJI Air 3",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/c039de9cb62986112676d8ec11fcad0d.glb",
+   "glb_sha256": "156239e7321962ec6c000775eb843c6e2da00993a14b3f79b89c12cff2f3fc7a",
+   "glb_bytes": 2200216,
+   "page": "https://store.dji.com/product/dji-air-3",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 1.054,
+   "fill_of_bbox": 0.204,
+   "mean_gray": 158.0
+  },
+  "R06": {
+   "model": "DJI Air 3S",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/4d82789a6f5701790bacda5e7e37910c.glb",
+   "glb_sha256": "ccd54637c37adf811d5577553d0967ddcd6de05e69e9f1c1ee52f9430b23a648",
+   "glb_bytes": 11469020,
+   "page": "https://store.dji.com/product/dji-air-3s",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 1.238,
+   "fill_of_bbox": 0.196,
+   "mean_gray": 115.8
+  },
+  "R07": {
+   "model": "DJI Mavic 3 Pro",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/ebadae4e6f89889722ac0c1f0ac2ce4a.glb",
+   "glb_sha256": "50e36a66a4f37dbb8ade22df7c5f2fa8ff9044fc62b4de8d98d69b642303a246",
+   "glb_bytes": 10546192,
+   "page": "https://store.dji.com/product/dji-mavic-3-pro",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 1.002,
+   "fill_of_bbox": 0.201,
+   "mean_gray": 115.7
+  },
+  "R08": {
+   "model": "DJI Mavic 3 Classic",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/d6245c35ede52733cac0ad22a95edbe7.glb",
+   "glb_sha256": "32c326e6189a898e77a4b35e7ab27fd7766b01038bda9bdbc6bbaf793e615baa",
+   "glb_bytes": 11467044,
+   "page": "https://store.dji.com/product/dji-mavic-3-classic",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 0.989,
+   "fill_of_bbox": 0.198,
+   "mean_gray": 93.1
+  },
+  "R09": {
+   "model": "DJI Avata 2",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/9bf3095545781b0c16178c1eec89c637.glb",
+   "glb_sha256": "84b72d71799a0544f87a7ae680f1d4f4e6c43ae7ca5a2087f6a058504fff8fe5",
+   "glb_bytes": 4852204,
+   "page": "https://store.dji.com/product/dji-avata-2",
+   "yaw_deg": 180,
+   "bbox_w_over_h": 1.148,
+   "fill_of_bbox": 0.537,
+   "mean_gray": 94.6
+  },
+  "R10": {
+   "model": "DJI FPV",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/e4e0a592c53ea71bfc3cd948397e31a1.glb",
+   "glb_sha256": "aa0644be55de6a4740fe88268de3b134ab294c0cb8a18cc53d6fb6a5e0708151",
+   "glb_bytes": 10561988,
+   "page": "https://store.dji.com/product/dji-fpv",
+   "yaw_deg": 0,
+   "bbox_w_over_h": 1.688,
+   "fill_of_bbox": 0.397,
+   "mean_gray": 81.9
+  },
+  "R11": {
+   "model": "DJI Inspire 3",
+   "glb": "https://se-cdn.djiits.com/uploads/3d/8a0121488c580d1ec30ed08ca241eee4.glb",
+   "glb_sha256": "634dce550fb6d46192161173aafe4ffd4364c351386cdb8602ccce9062e44ded",
+   "glb_bytes": 15243248,
+   "page": "https://store.dji.com/product/dji-inspire-3",
+   "yaw_deg": 180,
+   "bbox_w_over_h": 1.21,
+   "fill_of_bbox": 0.194,
+   "mean_gray": 92.8
+  }
+ }
+}

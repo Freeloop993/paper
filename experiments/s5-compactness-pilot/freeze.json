@@ -1,8 +1,8 @@
 {
- "version": "S5-pilot-1.2",
- "pack": "712241b3654c",
+ "version": "S5-pilot-3.0",
+ "pack": "7830214685d8",
  "frozen_on": "2026-11-19",
- "reading_rule_confirmed_by": "作者，2026-11-19，在与 Claude 的会话中确认（当时版本 1.0）；1.1、1.2 版只更换材料，读法文字未改",
+ "decided_by": "作者 2026-11-19 把这项数据收集交给 Claude 安排，并要求样本用真实产品",
  "superseded": [
   {
    "version": "S5-pilot-1.0",
@@ -13,14 +13,24 @@
    "version": "S5-pilot-1.1",
    "pack": "4114e1a13175",
    "reason": "作者决定全文统一用 Qwen，H3 图不再使用；未发出，答卷 0 份"
+  },
+  {
+   "version": "S5-pilot-1.2",
+   "pack": "712241b3654c",
+   "reason": "作者反馈单图看不出差别；第一部分改为 12 个不同的设计。未发出，答卷 0 份"
+  },
+  {
+   "version": "S5-pilot-2.0",
+   "pack": "984fd67d571e",
+   "reason": "作者指出感知评议应当用真实产品样本，不用模型生成的图。未发出，答卷 0 份"
   }
  ],
  "sha256": {
-  "protocol.md": "17c188e3faf5678d3f796c774765dcc3ba7ad2b8d183724df40dd70671404250",
-  "participant/无人机外观评议.html": "b08f4f66d372f242ef0de85aff26950269a1786f80acad3169c630876c223e18",
-  "researcher-key.json": "f062a7459fd1e724c30da3e76716998daac4a1379f8e108a1dbcc9621f674f83",
-  "summarize.py": "82397cb5b831a8040d1e8b693a3a8f500cbbfe0f14c73c261ca19bdbe3e9885e",
-  "qwen/derive.json": "fbdd1295cce29c8acd5dc38c6676a10810a9ad9b4283415d67623e633925b2a5"
+  "protocol.md": "06ce0e6071099dcb7c70be279e5cb29dac28be21a66287703fcadda48ebf97a9",
+  "participant/无人机外观评议.html": "0a7916f2f15eba6fc093b8898ec1be3cc0483f9cc3395d9980fe7f732df67163",
+  "researcher-key.json": "66882bbdc4c517a7babf9859b8261662950a265e03091c5c599ae3fbfbd94c1f",
+  "summarize.py": "e616279edb856c9f5da0d75671e40373008f9e3791179003bd520417cb69afba",
+  "real/samples.json": "3fa573609d99aeb65207ea712497970e523695a2a5b9117e3c34bcbcb72fac6e"
  },
- "rule": "同一方向的选择在 4 个设计里至少 3 个设计上不少于该题有效答卷的 70%，且全部低档对高档判断中不少于 70%，记为读得出；两个因素都不预设方向。"
+ "rule": "只作描述：逐款逐人读数与中位数；两对近似外形的评分差；与各项比例的等级相关。不设通过门槛。"
 }

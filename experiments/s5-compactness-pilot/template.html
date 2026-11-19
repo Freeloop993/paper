@@ -8,7 +8,7 @@
 :root{--ink:#1f2328;--mute:#5d6570;--line:#d7dbe0;--bg:#f6f7f8;--card:#fff;--accent:#1f5fbf}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
-main{max-width:920px;margin:0 auto;padding:16px 16px 48px}
+main{max-width:1040px;margin:0 auto;padding:16px 16px 48px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin-top:16px}
 h1{font-size:22px;margin:8px 0 0}h2{font-size:18px;margin:0 0 8px}
 p{margin:8px 0}.mute{color:var(--mute);font-size:14px}
@@ -22,6 +22,10 @@ label.q{display:block;margin:14px 0 6px;font-weight:600}
 .opts{display:flex;flex-wrap:wrap;gap:8px}
 input[type=text],textarea{font:inherit;width:100%;border:1px solid var(--line);border-radius:8px;padding:8px 10px}
 .stim{display:block;width:100%;max-width:520px;margin:0 auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+.rate{display:grid;grid-template-columns:minmax(260px,460px) minmax(0,1fr);gap:24px;align-items:start}
+.rate .pic{position:sticky;top:12px}
+.rate .scale:first-child{margin-top:0;padding-top:0;border-top:0}
+@media (max-width:760px){.rate{grid-template-columns:1fr;gap:10px}.rate .pic{top:0;background:var(--card);padding:6px 0;z-index:2}.rate .pic .stim{max-width:none;width:auto;height:38vh;max-height:340px}}
 .scale{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
 .poles{display:flex;justify-content:space-between;gap:12px;font-weight:600}
 .poles small{display:block;font-weight:400;color:var(--mute);max-width:18em}.poles div:last-child{text-align:right}.poles div:last-child small{margin-left:auto}
@@ -62,7 +66,7 @@ function fresh(){
 let S; try { S = JSON.parse(localStorage.getItem(KEY) || 'null'); } catch (e) { S = null; }
 if (!S || S.pack !== PACK.pack) S = fresh();
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
-const TOTAL = 3 + S.singles.length + 1 + S.pairs.length + 2;   // 同意、背景、说明一；单图；说明二；成对；结尾、结果
+const NP = S.pairs.length, TOTAL = 3 + S.singles.length + (NP ? 1 + NP : 0) + 2;   // 同意、背景、说明一；单图；（说明二；成对）；结尾、结果
 const app = document.getElementById('app'); let shownAt = Date.now();
 document.getElementById('foot').textContent = '版本 ' + PACK.version + ' · 编号 ' + S.response_id;
 function nav(ok, back = true){ return '<div class="nav">' + (back ? '<button id="back">上一步</button>' : '<span></span>') + '<button id="next" class="primary"' + (ok ? '' : ' disabled') + '>下一步</button></div>'; }
@@ -77,10 +81,10 @@ function render(){
   const n1 = S.singles.length, s = S.step;
   if (s === 0) return consent();
   if (s === 1) return background();
-  if (s === 2) return intro('第一部分：单张图的印象', '<p>接下来每次看一张四旋翼无人机的顶视图，共 ' + n1 + ' 张。请按第一印象，在三组词之间各选一个位置。</p><p>没有对错。看不出来就选“看不出”。</p>');
+  if (s === 2) return intro(NP ? '第一部分：单张图的印象' : '看图评分', PACK.intro1 || ('<p>接下来每次看一张四旋翼无人机的顶视图，共 ' + n1 + ' 张。请按第一印象，在三组词之间各选一个位置。</p><p>没有对错。看不出来就选“看不出”。</p>'));
   if (s < 3 + n1) return single(S.singles[s - 3], s - 2, n1);
-  if (s === 3 + n1) return intro('第二部分：两张图的比较', '<p>接下来每次并排看两张图，共 ' + S.pairs.length + ' 组。请选出看起来<b>更紧凑</b>的一张。</p><p>这里的“紧凑”指：机身、臂与旋翼收拢在一起，部件之间留白少。</p><p>觉得差不多，或者判断不了，也可以直接选。</p>');
-  if (s < 4 + n1 + S.pairs.length) return pair(S.pairs[s - 4 - n1], s - 3 - n1, S.pairs.length);
+  if (NP && s === 3 + n1) return intro('第二部分：两张图的比较', '<p>接下来每次并排看两张图，共 ' + S.pairs.length + ' 组。每组是同一个设计的两个版本，只有一处不同。请选出看起来<b>更紧凑</b>的一张。</p><p>这里的“紧凑”指：机身、臂与旋翼收拢在一起，部件之间留白少。</p><p>觉得差不多，或者判断不了，也可以直接选。</p>');
+  if (NP && s < 4 + n1 + NP) return pair(S.pairs[s - 4 - n1], s - 3 - n1, NP);
   if (s === TOTAL - 2) return closing();
   return result();
 }
@@ -98,10 +102,10 @@ function background(){
 function intro(title, html){ app.innerHTML = '<h2>' + title + '</h2>' + html + nav(true); wire(() => true); }
 function single(item, i, n){
   const ok = () => PACK.terms.every((t) => item.ratings[t.id] !== undefined);
-  app.innerHTML = '<p class="mute">第一部分 · 第 ' + i + ' / ' + n + ' 张</p><img class="stim" alt="无人机顶视图" src="' + PACK.images[item.image] + '">' + PACK.terms.map((t) => {
+  app.innerHTML = '<p class="mute">第 ' + i + ' / ' + n + ' 张</p><div class="rate"><div class="pic"><img class="stim" alt="无人机顶视图" src="' + PACK.images[item.image] + '"></div><div class="scales">' + PACK.terms.map((t) => {
     const L = item.flip[t.id] ? t.right : t.left, R = item.flip[t.id] ? t.left : t.right, v = item.ratings[t.id];
     return '<div class="scale" data-t="' + t.id + '"><div class="poles"><div>' + esc(L.word) + '<small>' + esc(L.hint) + '</small></div><div>' + esc(R.word) + '<small>' + esc(R.hint) + '</small></div></div><div class="dots">' + [1, 2, 3, 4, 5, 6, 7].map((k) => '<button type="button" data-v="' + k + '" class="' + (v === k ? 'on' : '') + '">' + k + '</button>').join('') + '</div><button type="button" data-v="na" class="' + (v === 'na' ? 'on' : '') + '">看不出</button></div>';
-  }).join('') + nav(ok());
+  }).join('') + '</div></div>' + nav(ok());
   app.querySelectorAll('.scale').forEach((g) => g.querySelectorAll('button').forEach((b) => b.onclick = () => { item.ratings[g.dataset.t] = b.dataset.v === 'na' ? 'na' : +b.dataset.v; save(); g.querySelectorAll('button').forEach((x) => x.classList.toggle('on', x === b)); refresh(ok); }));
   wire(ok, item);
 }
