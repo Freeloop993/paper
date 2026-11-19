@@ -32,16 +32,17 @@ for (const who of [0, 1, 2]) {
     if (i === 0) ok('单图未评不能继续', await page.isDisabled('#next'));
     for (const t of key.terms) {
       let v = 4;   // 换算后的值：1 = 左极
-      if (t.id === 'span' && m.d_over_D != null) v = Math.max(1, Math.min(7, Math.round(9 - 10 * m.d_over_D) + (who === 1 ? 1 : 0)));   // 合成规则：桨相对越大越紧凑
+      if (t.id === 'span') v = Math.max(1, Math.min(7, Math.round(7 - 10 * (m.fill_of_bbox ?? 0.3)) + (who === 1 ? 1 : 0)));   // 合成规则：占外接框越满越紧凑
       const raw = item.flip[t.id] ? 8 - v : v;
       await page.click(`.scale[data-t="${t.id}"] button[data-v="${who === 2 && t.id === 'whole' && i % 4 === 0 ? 'na' : raw}"]`);
     }
     if (i === 3) { await page.reload(); ok('刷新后停在原页并保留已答', await page.locator('.scale button.on').count() === 3); }
+    if (i === 1 && who === 0) { await page.evaluate(() => scrollTo(0, 0)); await page.screenshot({ path: path.join(out, 'desktop-single.png') }); const vis = await page.evaluate(() => { const r = document.querySelector('.stim').getBoundingClientRect(), q = [...document.querySelectorAll('.scale')].pop().getBoundingClientRect(); return r.top >= 0 && r.bottom <= innerHeight && q.bottom <= innerHeight; }); ok('桌面宽度下图和三组量表同屏', vis); }
+    if (i === 1 && who === 2) { await page.evaluate(() => scrollTo(0, 99999)); await page.screenshot({ path: path.join(out, 'mobile-single.png') }); const vis = await page.evaluate(() => { const r = document.querySelector('.stim').getBoundingClientRect(); return r.top >= 0 && r.bottom <= innerHeight; }); ok('手机宽度下滚到底图仍在屏内', vis); }
     await next();
   }
-  await next(); s = await state();
-  if (who === 2) await page.screenshot({ path: path.join(out, 'mobile-pair.png') });
-  if (who === 0) await page.screenshot({ path: path.join(out, 'desktop-pair.png') });
+  if (s.pairs.length) await next();
+  s = await state();
   for (let i = 0; i < s.pairs.length; i++) {
     const item = s.pairs[i], k = key.pairs[item.pair];
     if (i === 0) ok('成对题未选不能继续', await page.isDisabled('#next'));

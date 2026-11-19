@@ -1,7 +1,7 @@
 {
- "version": "S5-pilot-2.0",
- "pack": "984fd67d571e",
- "html_sha256": "4891d0a4cabe3dcb6ef8e17c7fffbcdf701897de8f997f4b5b88bc966335f9de",
+ "version": "S5-pilot-3.0",
+ "pack": "7830214685d8",
+ "html_sha256": "0a7916f2f15eba6fc093b8898ec1be3cc0483f9cc3395d9980fe7f732df67163",
  "terms": [
   {
    "id": "span",
@@ -19,492 +19,137 @@
    "right": "拼凑"
   }
  ],
- "note": "单图评分统一换算为 1=左极（紧凑、简洁、整体），7=右极。成对题 lower、higher 指该因素取值较低、较高的一张：轴距较短与较长，桨较小与较大。",
- "factors": {
-  "轴距": {
-   "higher": "轴距较长的一张",
-   "levels": "电机到中心的距离为原图的 0.87 倍对 1.13 倍"
-  },
-  "桨径": {
-   "higher": "桨较大的一张",
-   "levels": "桨叶 0.8 倍对 1.2 倍"
-  }
- },
+ "note": "单图评分统一换算为 1=左极（紧凑、简洁、整体），7=右极。",
+ "factors": {},
  "measures": {
-  "w_over_l": "电机横向跨度比纵向跨度",
-  "d_over_D": "桨径比对角轴距",
-  "body_width_over_D": "机身宽比对角轴距",
-  "body_length_over_D": "机身长比对角轴距",
   "bbox_w_over_h": "整机外接框宽高比",
-  "fill_of_bbox": "整机占外接框面积的比例"
+  "fill_of_bbox": "整机占外接框面积的比例",
+  "mean_gray": "机体平均灰度（越大越浅）"
  },
  "images": {
-  "feae032e16": {
-   "kind": "design",
-   "name": "E3R1-A1",
-   "base": "qwen/bases/E3R1-A1.png",
-   "base_sha256": "29dc8794cac65c07c2559cb9c40094b4de6ca7357ff2d134a049af7c51b0a16d",
-   "bbox_w_over_h": 0.983,
-   "fill_of_bbox": 0.269,
-   "w_over_l": 1.099,
-   "d_over_D": 0.51,
-   "body_width_over_D": 0.336,
-   "body_length_over_D": 0.59,
-   "rgb_sha256": "feae032e1621da0bb1c106a2666931e5c4e3b961d4a767661f28586991f0bd71",
-   "embedded_sha256": "50d01f1823e173aa7f9cc72f3ed3a25730dc974307aba5fb8a21258bb3c4e32a"
-  },
-  "3563642905": {
-   "kind": "design",
-   "name": "E3R1-A3",
-   "base": "qwen/bases/E3R1-A3.png",
-   "base_sha256": "6f910138d8fc762f7383d5a5bc129d75cb817d46881309bdff0d015c10fb3065",
-   "bbox_w_over_h": 1.165,
-   "fill_of_bbox": 0.232,
-   "w_over_l": 1.038,
-   "d_over_D": 0.519,
-   "body_width_over_D": 0.281,
-   "body_length_over_D": 0.549,
-   "rgb_sha256": "35636429058195642acc8a16d2220d95a230e7e6ee8c6ec019f7b6dcc4657d84",
-   "embedded_sha256": "e2294ba871eb589f84c44862f6f2ae8d60bf01804853207c3fb4ba81459c385f"
-  },
-  "3b552372c7": {
-   "kind": "design",
-   "name": "E3R1-B1",
-   "base": "qwen/bases/E3R1-B1.png",
-   "base_sha256": "dc494057e1ca756c75ef425af759b67afd9fea590c39386f814ff78251562629",
-   "bbox_w_over_h": 0.961,
-   "fill_of_bbox": 0.245,
-   "w_over_l": 1.109,
-   "d_over_D": 0.451,
-   "body_width_over_D": 0.334,
-   "body_length_over_D": 0.618,
-   "rgb_sha256": "3b552372c7d935140d78bef073f87dffef04b6b1ac6a816b97d5c22e972cda48",
-   "embedded_sha256": "f9befa45df248f79903b754ed837f5b1deac0d1ba0b7663d5eb1bdb0b11f1d45"
-  },
-  "cb7fcb427d": {
-   "kind": "design",
-   "name": "E3R1-B3",
-   "base": "qwen/bases/E3R1-B3.png",
-   "base_sha256": "70118660884c118c8a31db43eb9f8620951eaa27f6abb259034fffb84ace51ec",
-   "bbox_w_over_h": 1.05,
-   "fill_of_bbox": 0.238,
-   "w_over_l": 1.054,
-   "d_over_D": 0.481,
-   "body_width_over_D": 0.32,
-   "body_length_over_D": 0.574,
-   "rgb_sha256": "cb7fcb427d88b8a29f23b33406ac4c8bef2b92d9b492f60fd0c4adf240b87cc8",
-   "embedded_sha256": "a5588e4431394844d1d1326e427e2af7adc5cecfc884ce63221359273fc6b59c"
-  },
-  "2d3d4ad343": {
-   "kind": "design",
-   "name": "E3R1-C2",
-   "base": "qwen/bases/E3R1-C2.png",
-   "base_sha256": "3fc2a24ab103d922691f045a54aa152bb0a55647271bad3e766c8f5f5ecae512",
-   "bbox_w_over_h": 1.077,
-   "fill_of_bbox": 0.257,
-   "w_over_l": 0.928,
-   "d_over_D": 0.48,
-   "body_width_over_D": 0.352,
-   "body_length_over_D": 0.736,
-   "rgb_sha256": "2d3d4ad34303692ec64673e7d30486c65d165b2e0820356671485ebeb18e1817",
-   "embedded_sha256": "55156a50acd714f7a3a11aea75bfdc1d45347d2e6fa54bb85a3e2d925701ed3c"
-  },
-  "ce2b3b0b1a": {
-   "kind": "design",
-   "name": "E3R2-A2",
-   "base": "qwen/bases/E3R2-A2.png",
-   "base_sha256": "10e87defdbbcc1efa2a924f258bec9cb83954b0ba30d8008626be0c9463d78d0",
-   "bbox_w_over_h": 1.41,
-   "fill_of_bbox": 0.295,
-   "w_over_l": 1.269,
-   "d_over_D": 0.426,
-   "body_width_over_D": 0.323,
-   "body_length_over_D": 0.722,
-   "rgb_sha256": "ce2b3b0b1a263df44342d4656a9fb31964dacb1246650eaf0eee4ef6f5a5060f",
-   "embedded_sha256": "7c7d8f7d578eb359dec648fb9f1e4d1e70a19c012ac10e5613a05a9921c637f3"
-  },
-  "79ca6a51b1": {
-   "kind": "design",
-   "name": "E3R2-B3",
-   "base": "qwen/bases/E3R2-B3.png",
-   "base_sha256": "e325de6a35bcba900e8683087d55f274864f1bc5c936ea03fceae4ff55aa46db",
-   "bbox_w_over_h": 1.654,
-   "fill_of_bbox": 0.287,
-   "w_over_l": 1.487,
-   "d_over_D": 0.341,
-   "body_width_over_D": 0.281,
-   "body_length_over_D": 0.623,
-   "rgb_sha256": "79ca6a51b1aad20a33ebefb387218bab12bcc5f81296414e90aee3a385ea6dd5",
-   "embedded_sha256": "4d28d0021c3d289f1ef7a5be1ec3e6da04215cb51713adb5aa47cdd774fba3e7"
-  },
-  "069ac66d04": {
-   "kind": "design",
-   "name": "E3R2-C2",
-   "base": "qwen/bases/E3R2-C2.png",
-   "base_sha256": "811bb46c2b2f78e936d3ef5d08d8a256320a333edba00e73a9930db45a754d9c",
-   "bbox_w_over_h": 1.294,
-   "fill_of_bbox": 0.264,
-   "w_over_l": 1.033,
-   "d_over_D": 0.58,
-   "body_width_over_D": 0.348,
-   "body_length_over_D": 0.789,
-   "rgb_sha256": "069ac66d047a5f28edec287c06dd9dfa901423627f72cd6949ff2044c54a55c8",
-   "embedded_sha256": "ebb807ba00bc79e7767f072f2182e5c79606f82fda1105a1dec768727b0e0b44"
-  },
-  "9e4152c1e7": {
-   "kind": "design",
-   "name": "E3R3-A1",
-   "base": "qwen/bases/E3R3-A1.png",
-   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
-   "bbox_w_over_h": 1.07,
-   "fill_of_bbox": 0.257,
-   "w_over_l": 1.188,
-   "d_over_D": 0.504,
-   "body_width_over_D": 0.326,
-   "body_length_over_D": 0.676,
-   "rgb_sha256": "9e4152c1e70bd6ea079e88b2ca3d6dbd87c073d2c590d95402e8f36c4c14034f",
-   "embedded_sha256": "040167295411024b36104273e818b6a7e94de78f23dfed84ea52c544ce7c1ac4"
-  },
-  "deddb66e42": {
-   "kind": "design",
-   "name": "E3R3-A3",
-   "base": "qwen/bases/E3R3-A3.png",
-   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
-   "bbox_w_over_h": 1.267,
+  "37795e29ee": {
+   "kind": "product",
+   "name": "R01 DJI Mini 2 系列（WM161）",
+   "glb_sha256": "a54f38099641c78af4fec08aa2c31efea331b2db869d4ab403c305cb284aa087",
+   "bbox_w_over_h": 1.257,
    "fill_of_bbox": 0.281,
-   "w_over_l": 1.289,
-   "d_over_D": 0.457,
-   "body_width_over_D": 0.3,
-   "body_length_over_D": 0.735,
-   "rgb_sha256": "deddb66e42ede4aff25f3175b1c8ec4b9733d78e1f3b1fdff2cf0ca9ec203612",
-   "embedded_sha256": "914bf32a024bb8b212a24122161f2a6f7c1117f27f425df036fbae03108eea21"
+   "mean_gray": 175.6,
+   "rgb_sha256": "37795e29ee8c81ee15e2e845e23516e1c648dde167f97491b94abee738f56c33",
+   "embedded_sha256": "8438f9ad1a65da3c7dd79eee21f205de67715e6a19c60fe511e616e8c6773026"
   },
-  "18bd351cf1": {
-   "kind": "design",
-   "name": "E3R3-B1",
-   "base": "qwen/bases/E3R3-B1.png",
-   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
-   "bbox_w_over_h": 1.251,
-   "fill_of_bbox": 0.297,
-   "w_over_l": 1.165,
-   "d_over_D": 0.503,
-   "body_width_over_D": 0.365,
-   "body_length_over_D": 0.799,
-   "rgb_sha256": "18bd351cf1eae3759a7605e486bedc762306492ccf5dab8dfb3b5c94e9604984",
-   "embedded_sha256": "7e7c8a0f842bc54e9aaa1e2699160f54b46a523fb4d2aaf6db8c390846ede285"
+  "afaf58bd18": {
+   "kind": "product",
+   "name": "R02 DJI Mini 3",
+   "glb_sha256": "fc239f2d776d491f7c944f2a2ecaef83422ab87eb01ac82c3a4edb79036630d9",
+   "bbox_w_over_h": 1.052,
+   "fill_of_bbox": 0.231,
+   "mean_gray": 176.9,
+   "rgb_sha256": "afaf58bd1829b5a1800bbc910b4e18c90da4e39b1e0641e45c435a2d9fd7893c",
+   "embedded_sha256": "64e92f73cf4adb358ba50e65a0d2c40873552cdc25400d07ffbaf26491244299"
   },
-  "3bbd6c27cb": {
-   "kind": "design",
-   "name": "E3R3-C3",
-   "base": "qwen/bases/E3R3-C3.png",
-   "base_sha256": "1dcae49a852f81527dbb4b2831c8d21c62c353585186e20d87fc23b4fef14de1",
-   "bbox_w_over_h": 1.415,
-   "fill_of_bbox": 0.309,
-   "w_over_l": 1.141,
-   "d_over_D": 0.538,
-   "body_width_over_D": 0.364,
-   "body_length_over_D": 0.69,
-   "rgb_sha256": "3bbd6c27cb594e7fb20c3fe6fe06e7e2821cd2e1039720f903f8532da8c5ca5f",
-   "embedded_sha256": "394c706e529aaac0c4a888f13eb3b5b907ec4be8a30be587839ef258e522219c"
+  "13add62c8a": {
+   "kind": "product",
+   "name": "R03 DJI Mini 4 Pro",
+   "glb_sha256": "0a837c4bab7fee0bb0bf66c2b801ab632cfff43e8b3ba9aa1808f1a0452bd475",
+   "bbox_w_over_h": 1.253,
+   "fill_of_bbox": 0.242,
+   "mean_gray": 159.7,
+   "rgb_sha256": "13add62c8a3a4602de510e46e5313a0bb41598f4f5872ac4db2f0323d007d200",
+   "embedded_sha256": "aea6771f063d93c34bac99e3a46b060a4ee282a4f0622f591b516aae584f4675"
   },
-  "13d95a8f0e": {
-   "kind": "variant",
-   "family": "Q1",
-   "variant": "S",
-   "arm_scale": 0.87,
-   "prop_scale": 1.0,
-   "d_over_D": 0.58,
-   "base": "qwen/bases/E3R3-A1.png",
-   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
-   "rgb_sha256": "13d95a8f0ec00893c90cac58c54a7e8e6b1d0d1bd89850cfa71e74a1acdbcedc",
-   "embedded_sha256": "5ab006670d22d4972f53111f77181265d59a72954b1ae57e77d68dc3fbae8675"
+  "06527f4083": {
+   "kind": "product",
+   "name": "R04 DJI Air 2S",
+   "glb_sha256": "1e992eec12aaf058039a29fa528e262b6c4ed7ccd36d9f25e4eaf77cfdafbb3d",
+   "bbox_w_over_h": 0.935,
+   "fill_of_bbox": 0.233,
+   "mean_gray": 120.4,
+   "rgb_sha256": "06527f40832b48b1e52fda625583f92ebe1d4d10e5c5e3b9ff0476bc0f8c9d8c",
+   "embedded_sha256": "475e1f67c36a14152a3ab5b37350cca8a4c8f031f629beb00baf47685d1e3602"
   },
-  "ddc8db8d70": {
-   "kind": "variant",
-   "family": "Q1",
-   "variant": "L",
-   "arm_scale": 1.13,
-   "prop_scale": 1.0,
-   "d_over_D": 0.446,
-   "base": "qwen/bases/E3R3-A1.png",
-   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
-   "rgb_sha256": "ddc8db8d708cb495f098eb68a54c12bbbedc0f6ba9b5218a774f180367ca3326",
-   "embedded_sha256": "8933bbf7e657a4fb6df67a85c185b0f948bec337e3303fc4b1033da04fdbf124"
+  "3c23ee5aa5": {
+   "kind": "product",
+   "name": "R05 DJI Air 3",
+   "glb_sha256": "156239e7321962ec6c000775eb843c6e2da00993a14b3f79b89c12cff2f3fc7a",
+   "bbox_w_over_h": 1.054,
+   "fill_of_bbox": 0.204,
+   "mean_gray": 158.0,
+   "rgb_sha256": "3c23ee5aa5936e9c25462dea03e955f308f909f31fb08688104ee15c14e64837",
+   "embedded_sha256": "a9aa07d62e98323c3d579e8f3cd4fb8f461735f447a8dbab2e3fa02bf9d24d94"
   },
-  "d26cfa7953": {
-   "kind": "variant",
-   "family": "Q1",
-   "variant": "Pm",
-   "arm_scale": 1.0,
-   "prop_scale": 0.8,
-   "d_over_D": 0.419,
-   "base": "qwen/bases/E3R3-A1.png",
-   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
-   "rgb_sha256": "d26cfa7953228d164b2c33f0d293b2c6dc8fefc5940a03cc5e097b13baca8163",
-   "embedded_sha256": "4011983b287e3c9150f8f81e1bab23d7906addc7ea105f242045c5aaac34a5d3"
+  "24fc39e730": {
+   "kind": "product",
+   "name": "R06 DJI Air 3S",
+   "glb_sha256": "ccd54637c37adf811d5577553d0967ddcd6de05e69e9f1c1ee52f9430b23a648",
+   "bbox_w_over_h": 1.238,
+   "fill_of_bbox": 0.196,
+   "mean_gray": 115.8,
+   "rgb_sha256": "24fc39e7305ea070b139b22b7a051828429b13ab3466ae131254ff90077311e8",
+   "embedded_sha256": "6f2abb1823573e105e8a1c218c9a590894c1449d40f4a952c6849540a5fbc3ef"
   },
-  "063a698e1d": {
-   "kind": "variant",
-   "family": "Q1",
-   "variant": "Pp",
-   "arm_scale": 1.0,
-   "prop_scale": 1.2,
-   "d_over_D": 0.59,
-   "base": "qwen/bases/E3R3-A1.png",
-   "base_sha256": "65834f24469a8697f9e55d462a0aa36186254ab43af1d446b3ca1168ab29b9cc",
-   "rgb_sha256": "063a698e1ddbce21a1d97126a16361a3a60d8ad715ea06308306ef2862f3c34d",
-   "embedded_sha256": "65507ab3d4b3d7a97b04f8f218add1f4b2081ee9cad34805b40b3f28b8801016"
+  "310675be14": {
+   "kind": "product",
+   "name": "R07 DJI Mavic 3 Pro",
+   "glb_sha256": "50e36a66a4f37dbb8ade22df7c5f2fa8ff9044fc62b4de8d98d69b642303a246",
+   "bbox_w_over_h": 1.002,
+   "fill_of_bbox": 0.201,
+   "mean_gray": 115.7,
+   "rgb_sha256": "310675be147b95bda29508c6ff8198ead7d79ec29ea99704a9a9ffd223224153",
+   "embedded_sha256": "f1c7e6a74fe0991b906630bc838c3ffb7c59b85600880ba4fc9c5abf77f9ff8c"
   },
-  "5a6e9613df": {
-   "kind": "variant",
-   "family": "Q2",
-   "variant": "S",
-   "arm_scale": 0.87,
-   "prop_scale": 1.0,
-   "d_over_D": 0.348,
-   "base": "qwen/bases/E3R3-A2.png",
-   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
-   "rgb_sha256": "5a6e9613df89429dba8ad3020d03fd11bf088ab8bdef9f1c77d0c49e0c464d95",
-   "embedded_sha256": "f02dcab9cbd5cb29557e978c87900125af636592c674bce6a5fff2f172ca3cb8"
+  "589da12e76": {
+   "kind": "product",
+   "name": "R08 DJI Mavic 3 Classic",
+   "glb_sha256": "32c326e6189a898e77a4b35e7ab27fd7766b01038bda9bdbc6bbaf793e615baa",
+   "bbox_w_over_h": 0.989,
+   "fill_of_bbox": 0.198,
+   "mean_gray": 93.1,
+   "rgb_sha256": "589da12e764d5c6df0a77ecb95dbd3571959282e765a66d6fee3bf95f51dcf61",
+   "embedded_sha256": "3852333ded0982e09d0fb82fec135e921f9d42dd9d656b119ee89a4193978170"
   },
-  "1454149bf5": {
-   "kind": "variant",
-   "family": "Q2",
-   "variant": "L",
-   "arm_scale": 1.13,
-   "prop_scale": 1.0,
-   "d_over_D": 0.268,
-   "base": "qwen/bases/E3R3-A2.png",
-   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
-   "rgb_sha256": "1454149bf5be7c091918a59456f83c590e09d645a64d6d8f312b8bcd6d53a8ce",
-   "embedded_sha256": "aa6e848b574576c33fecc1bc3141573b86b1a8f6c5e26bf4a361cf713ff34429"
+  "5db7f38f91": {
+   "kind": "product",
+   "name": "R09 DJI Avata 2",
+   "glb_sha256": "84b72d71799a0544f87a7ae680f1d4f4e6c43ae7ca5a2087f6a058504fff8fe5",
+   "bbox_w_over_h": 1.148,
+   "fill_of_bbox": 0.537,
+   "mean_gray": 94.6,
+   "rgb_sha256": "5db7f38f91a2fd91d1ad64f2670cbeac3a924871e7a6dea93015cfc746623683",
+   "embedded_sha256": "dcc6fccbba0aed4786b286fdfa7af068085fa76fefdfaed69feb0262f070d7c8"
   },
-  "eb05254a07": {
-   "kind": "variant",
-   "family": "Q2",
-   "variant": "Pm",
-   "arm_scale": 1.0,
-   "prop_scale": 0.8,
-   "d_over_D": 0.258,
-   "base": "qwen/bases/E3R3-A2.png",
-   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
-   "rgb_sha256": "eb05254a07a4dbc49605f3ccc441a1a5e58950d110c81dc8cdfc4029883ee8bb",
-   "embedded_sha256": "d38cd095fa6a2f1c608cdcbb27b5c411b2ddf1bb003ace935eadfd6124db79fc"
+  "ef06903af7": {
+   "kind": "product",
+   "name": "R10 DJI FPV",
+   "glb_sha256": "aa0644be55de6a4740fe88268de3b134ab294c0cb8a18cc53d6fb6a5e0708151",
+   "bbox_w_over_h": 1.688,
+   "fill_of_bbox": 0.397,
+   "mean_gray": 81.9,
+   "rgb_sha256": "ef06903af71d8b785e2d200b172aa4266e2075a55192a913ebf806234fd49e27",
+   "embedded_sha256": "46a3fe8c805c041d41f919ffbd758dd852947a114572a754e9f4efdbdad54356"
   },
-  "454e0cfd39": {
-   "kind": "variant",
-   "family": "Q2",
-   "variant": "Pp",
-   "arm_scale": 1.0,
-   "prop_scale": 1.2,
-   "d_over_D": 0.348,
-   "base": "qwen/bases/E3R3-A2.png",
-   "base_sha256": "a7c2bf9f5961e928a35f37b827963cef4ee9e1496f30c630ea885d06d5a167e1",
-   "rgb_sha256": "454e0cfd39ce416fa1a760c9fd4714d36c6f12756ed44aa763a137eff4282835",
-   "embedded_sha256": "70a007b0433cae05359ae26275d87908a5080fd813ce9e21c484bc7762fb894e"
-  },
-  "216c9139bc": {
-   "kind": "variant",
-   "family": "Q3",
-   "variant": "S",
-   "arm_scale": 0.87,
-   "prop_scale": 1.0,
-   "d_over_D": 0.526,
-   "base": "qwen/bases/E3R3-A3.png",
-   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
-   "rgb_sha256": "216c9139bc5f72e33a2784593de3e9d0f7aeb4f1e4e902720173b1f5f5d85d98",
-   "embedded_sha256": "524a8771dc17220c258b8cac6f0d51a8af13bc5458bc96108ed54b1acae3015b"
-  },
-  "e6ba3669bb": {
-   "kind": "variant",
-   "family": "Q3",
-   "variant": "B",
-   "arm_scale": 1.0,
-   "prop_scale": 1.0,
-   "d_over_D": 0.457,
-   "base": "qwen/bases/E3R3-A3.png",
-   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
-   "rgb_sha256": "e6ba3669bbe5030ce7a4c79f9b07d66e46112e5fe0a92f79a88e1d4996e4fcd3",
-   "embedded_sha256": "7c63c2475d2de209436095cecc04abbe80e831cb5d9d9374a80308926425c918"
-  },
-  "5ebdce48ed": {
-   "kind": "variant",
-   "family": "Q3",
-   "variant": "L",
-   "arm_scale": 1.13,
-   "prop_scale": 1.0,
-   "d_over_D": 0.405,
-   "base": "qwen/bases/E3R3-A3.png",
-   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
-   "rgb_sha256": "5ebdce48ed12bb7fcef5369f4510e217c80813ee389ea87b75ae0909bc9c36f7",
-   "embedded_sha256": "6bda6276d05a9253391bc4d16ae117591fc60f9cea7bb6528df6c05d68930333"
-  },
-  "0a33aa28bf": {
-   "kind": "variant",
-   "family": "Q3",
-   "variant": "Pm",
-   "arm_scale": 1.0,
-   "prop_scale": 0.8,
-   "d_over_D": 0.382,
-   "base": "qwen/bases/E3R3-A3.png",
-   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
-   "rgb_sha256": "0a33aa28bfce57a0f2ccd57842ebeef587371d1d519a3119418152de22420315",
-   "embedded_sha256": "bef58805870c3c1b4f7fa4c50c8654da99deb774d9cd669f86cbb308e9cbfc92"
-  },
-  "8f4e88c834": {
-   "kind": "variant",
-   "family": "Q3",
-   "variant": "Pp",
-   "arm_scale": 1.0,
-   "prop_scale": 1.2,
-   "d_over_D": 0.532,
-   "base": "qwen/bases/E3R3-A3.png",
-   "base_sha256": "671f6343981d959e8ffaab18c3666c28bf07fb70b40cbdadb676e040792bf65e",
-   "rgb_sha256": "8f4e88c83416e834bbdf457741655f76fe80d45024c0472b140f7ac4c05d393b",
-   "embedded_sha256": "3bcddacfe1f1db483dbe9f852285aba881e95cd840ccb6e1ac914a105a07f12e"
-  },
-  "60c6dd91b1": {
-   "kind": "variant",
-   "family": "Q4",
-   "variant": "S",
-   "arm_scale": 0.87,
-   "prop_scale": 1.0,
-   "d_over_D": 0.578,
-   "base": "qwen/bases/E3R3-B1.png",
-   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
-   "rgb_sha256": "60c6dd91b1c1b0b006f676352aacb1f52813f77e853a59b6b8b4d29a8baf42a0",
-   "embedded_sha256": "0c48022f4c9c9c6df4212c68a9971e8ab6ea4660c7a94ec6821012af517b0937"
-  },
-  "8c4408779d": {
-   "kind": "variant",
-   "family": "Q4",
-   "variant": "L",
-   "arm_scale": 1.13,
-   "prop_scale": 1.0,
-   "d_over_D": 0.445,
-   "base": "qwen/bases/E3R3-B1.png",
-   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
-   "rgb_sha256": "8c4408779d966a5529d95695283a1d85e47c2fa6a8180b49a7334c473e675c88",
-   "embedded_sha256": "d0d73db582c8292bb0e12c562d48380f4aefe5a370bb6a38fdc3fdc75e145660"
-  },
-  "f71003f703": {
-   "kind": "variant",
-   "family": "Q4",
-   "variant": "Pm",
-   "arm_scale": 1.0,
-   "prop_scale": 0.8,
-   "d_over_D": 0.419,
-   "base": "qwen/bases/E3R3-B1.png",
-   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
-   "rgb_sha256": "f71003f703cce0eabc4ed758ff43c965412e21eb00f7fafc0057f3af61aca918",
-   "embedded_sha256": "56dbc837dcbbbaa9a5afdc8d683caee8aba14ae8bf3fe1f69bb163f72c0aa4cd"
-  },
-  "4c3e9b96bb": {
-   "kind": "variant",
-   "family": "Q4",
-   "variant": "Pp",
-   "arm_scale": 1.0,
-   "prop_scale": 1.2,
-   "d_over_D": 0.587,
-   "base": "qwen/bases/E3R3-B1.png",
-   "base_sha256": "4ceec12c8ac6508216a7b2e5d156dedd050138a19dc376f6e1399197b122abb2",
-   "rgb_sha256": "4c3e9b96bb783c324f3cc834cc3485750b1f1f5c99f02ca0504f61aec3b15b7a",
-   "embedded_sha256": "dca0f729eb16597b8922aae687d217d09295b60ec349fbf06009802a4e08618a"
+  "bcb21c4686": {
+   "kind": "product",
+   "name": "R11 DJI Inspire 3",
+   "glb_sha256": "634dce550fb6d46192161173aafe4ffd4364c351386cdb8602ccce9062e44ded",
+   "bbox_w_over_h": 1.21,
+   "fill_of_bbox": 0.194,
+   "mean_gray": 92.8,
+   "rgb_sha256": "bcb21c4686a0b036a11c0de905c21fb758698b68467ac1ca07ce7343c6274b82",
+   "embedded_sha256": "2680e5f33dac86eaac07dcf3a098003acc82da81c6d191ce2d30c002ac6d6f26"
   }
  },
  "singles": [
-  "feae032e16",
-  "3563642905",
-  "3b552372c7",
-  "cb7fcb427d",
-  "2d3d4ad343",
-  "ce2b3b0b1a",
-  "79ca6a51b1",
-  "069ac66d04",
-  "9e4152c1e7",
-  "deddb66e42",
-  "18bd351cf1",
-  "3bbd6c27cb"
+  "37795e29ee",
+  "afaf58bd18",
+  "13add62c8a",
+  "06527f4083",
+  "3c23ee5aa5",
+  "24fc39e730",
+  "310675be14",
+  "589da12e76",
+  "5db7f38f91",
+  "ef06903af7",
+  "bcb21c4686"
  ],
- "pairs": {
-  "p01": {
-   "kind": "low-high",
-   "factor": "轴距",
-   "family": "Q1",
-   "lower": "13d95a8f0e",
-   "higher": "ddc8db8d70"
-  },
-  "p02": {
-   "kind": "low-high",
-   "factor": "轴距",
-   "family": "Q2",
-   "lower": "5a6e9613df",
-   "higher": "1454149bf5"
-  },
-  "p03": {
-   "kind": "low-high",
-   "factor": "轴距",
-   "family": "Q3",
-   "lower": "216c9139bc",
-   "higher": "5ebdce48ed"
-  },
-  "p04": {
-   "kind": "low-high",
-   "factor": "轴距",
-   "family": "Q4",
-   "lower": "60c6dd91b1",
-   "higher": "8c4408779d"
-  },
-  "p05": {
-   "kind": "repeat",
-   "factor": "轴距",
-   "family": "Q1",
-   "lower": "13d95a8f0e",
-   "higher": "ddc8db8d70",
-   "repeat_of": "p01"
-  },
-  "p06": {
-   "kind": "low-high",
-   "factor": "桨径",
-   "family": "Q1",
-   "lower": "d26cfa7953",
-   "higher": "063a698e1d"
-  },
-  "p07": {
-   "kind": "low-high",
-   "factor": "桨径",
-   "family": "Q2",
-   "lower": "eb05254a07",
-   "higher": "454e0cfd39"
-  },
-  "p08": {
-   "kind": "low-high",
-   "factor": "桨径",
-   "family": "Q3",
-   "lower": "0a33aa28bf",
-   "higher": "8f4e88c834"
-  },
-  "p09": {
-   "kind": "low-high",
-   "factor": "桨径",
-   "family": "Q4",
-   "lower": "f71003f703",
-   "higher": "4c3e9b96bb"
-  },
-  "p10": {
-   "kind": "repeat",
-   "factor": "桨径",
-   "family": "Q1",
-   "lower": "d26cfa7953",
-   "higher": "063a698e1d",
-   "repeat_of": "p06"
-  },
-  "p11": {
-   "kind": "identical",
-   "factor": null,
-   "family": "Q3",
-   "lower": "e6ba3669bb",
-   "higher": "e6ba3669bb"
-  }
- }
+ "pairs": {}
 }

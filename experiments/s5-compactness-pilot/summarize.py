@@ -31,7 +31,7 @@ def main(paths):
     for k, name in [('design', '设计背景'), ('years', '年限'), ('drone', '无人机熟悉程度'), ('relation', '与研究者'), ('exposure', '此前接触')]:
         c = collections.Counter(r['background'].get(k) for r in rs); out.append('| %s | %s |' % (name, '；'.join('%s %d' % kv for kv in c.most_common())))
     out.append('| 独自完成 | %s |' % '；'.join('%s %d' % kv for kv in collections.Counter(r['closing'].get('alone') for r in rs).most_common()))
-    mins = [sum(x['ms'] for x in r['singles'] + r['pairs']) / 60000 for r in rs]
+    mins = [sum(x['ms'] for x in r['singles'] + r.get('pairs', [])) / 60000 for r in rs]
     out.append('| 作答用时（分钟，各页相加） | 中位数 %.1f，范围 %.1f–%.1f |' % (statistics.median(mins), min(mins), max(mins)))
 
     pk, img = KEY['pairs'], KEY['images']
@@ -40,9 +40,9 @@ def main(paths):
         if x['choice'] in ('same', 'na'): return x['choice']
         chosen = x['left'] if x['choice'] == 'left' else x['right']
         return 'higher' if chosen == pk[pid]['higher'] else 'lower'
-    out += ['', '## 核对题', '']
+    if pk: out += ['', '## 核对题', '']
     c = collections.Counter(verdict(r, pid) for r in rs for pid, v in pk.items() if v['kind'] == 'identical')
-    out.append('两张完全相同的图：选“差不多” %d 人，选了某一边 %d 人，无法判断 %d 人。' % (c['same'], c['higher'] + c['lower'], c['na']))
+    if pk: out.append('两张完全相同的图：选“差不多” %d 人，选了某一边 %d 人，无法判断 %d 人。' % (c['same'], c['higher'] + c['lower'], c['na']))
     FACT = KEY['factors']
     for f in FACT:
         rep = [(pid, v['repeat_of']) for pid, v in pk.items() if v['kind'] == 'repeat' and v['factor'] == f]
@@ -79,7 +79,7 @@ def main(paths):
         ra, rb = ranks(a), ranks(b); ma, mb = sum(ra) / len(ra), sum(rb) / len(rb)
         num = sum((x - ma) * (y - mb) for x, y in zip(ra, rb)); den = (sum((x - ma) ** 2 for x in ra) * sum((y - mb) ** 2 for y in rb)) ** 0.5
         return num / den if den else float('nan')
-    out += ['', '## 第一部分：各个设计的单图评分', '', '1 = 左极（紧凑、简洁、整体），7 = 右极（舒展、繁复、拼凑）。“看不出”不计入中位数。按“紧凑—舒展”的中位数从紧凑到舒展排列。', '']
+    out += ['', '## 各款的单图评分', '', '1 = 左极（紧凑、简洁、整体），7 = 右极（舒展、繁复、拼凑）。“看不出”不计入中位数。按“紧凑—舒展”的中位数从紧凑到舒展排列。', '']
     table = {}
     for c in KEY['singles']:
         row = {}
