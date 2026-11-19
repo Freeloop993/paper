@@ -1,3 +1,5 @@
+# 可按 web/downloads.json 和 samples.json 里的地址重新取得，体积大，不入库
 models/
 renders/
-stimuli/
+web/originals/
+web/review-*.jpg
