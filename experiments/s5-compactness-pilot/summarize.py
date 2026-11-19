@@ -6,7 +6,10 @@ responses/2026-11-19/README.md：
 1. 4.0 版的回件也收：它的 32 张图与 5.0 版的前 32 张逐字节相同。
 2. 文件结尾少一个右花括号的，补上再读，并在汇总里注明。
 3. 看的图不一样的回件分成组，各组分开汇总，不合并。
-4. 补充：评议者之间的一致程度（冻结的读法里没有这一项）。"""
+4. 补充：评议者之间的一致程度（冻结的读法里没有这一项）。
+
+2026-11-20 再改一次，在后 7 名评议者的答卷到来之前定下：标点时发现 6 张图有瑕疵（geometry/README.md 第七节），
+作者决定 44 张全部保留。汇总时把这 6 张单列，等级相关另给一组剔除它们之后的数。"""
 import base64, collections, itertools, json, pathlib, statistics, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -14,6 +17,9 @@ KEY = json.loads((HERE / 'researcher-key.json').read_text(encoding='utf-8'))
 # 与现行包共用同一批图的旧包。4.0 版 32 张图的 PNG 和嵌入页面的 JPEG 摘要与 5.0 版逐一相同（2026-11-19 核对）。
 COMPATIBLE = {'9e157f56cc97': 'S5-pilot-4.0'}
 IMG, TERMS = KEY['images'], KEY['terms']
+# 有瑕疵的评议用图：保留在评议里，汇总时单列（作者 2026-11-20 定）
+FLAGGED = {'P07': '机头朝下', 'P17': '可能是底面视图', 'P18': '机身近白，在白底上很淡', 'P25': '镜像', 'P41': '原图上下被裁，桨不完整', 'P43': '机身横置'}
+flag = lambda c: FLAGGED.get(IMG[c]['name'].split()[0])
 
 def load(path):
     t = pathlib.Path(path).read_text(encoding='utf-8-sig').strip()
@@ -94,6 +100,15 @@ def block_report(images, rs, n_block, n_blocks):
     for m, label in KEY['measures'].items():
         pts = [(IMG[c].get(m), med(vals(c, 'span'))) for c in images]; pts = [(a, b) for a, b in pts if a is not None and b is not None]
         if len(pts) >= 5: out.append('- %s：%+.2f（%d 款）' % (label, spearman([a for a, _ in pts], [b for _, b in pts]), len(pts)))
+    bad = [c for c in images if flag(c)]
+    if bad:
+        out += ['', '## 有瑕疵的图', '', '标点时发现的，评议期间不换图，这里单列。', '', '| 款 | 问题 | 紧凑—舒展 | 中位数 |', '| --- | --- | --- | ---: |']
+        for c in bad:
+            v = vals(c, 'span'); out.append('| %s | %s | %s | %s |' % (IMG[c]['name'], flag(c), ' '.join('—' if x is None else str(x) for x in table[c]['span']), ('%.1f' % med(v)).rstrip('0').rstrip('.') if v else '—'))
+        out += ['', '剔除这 %d 款后（%d 款）的等级相关：' % (len(bad), len(images) - len(bad)), '']
+        for m, label in KEY['measures'].items():
+            pts = [(IMG[c].get(m), med(vals(c, 'span'))) for c in images if c not in bad]; pts = [(a, b) for a, b in pts if a is not None and b is not None]
+            if len(pts) >= 5: out.append('- %s：%+.2f（%d 款）' % (label, spearman([a for a, _ in pts], [b for _, b in pts]), len(pts)))
     out += ['', '这三项是程序在图上直接量的，不是规格里的参数。规格用的比例（电机中心的宽长比、机身长宽比、机身宽与对角电机距之比、桨径与轴距之比）要在图上标电机中心和机身外廓才有，这批图还没有标。']
     return out
 

@@ -40,6 +40,14 @@ def main(paths):
                 u = [c for c in images if va[c] is not None and vb[c] is not None]
                 r = S.spearman([va[c] for c in u], [vb[c] for c in u])
                 if abs(r) >= 0.4: out.append('- %s 与 %s：%+.2f（%d 款）' % (keys[i][1], keys[j][1], r, len(u)))
+        # 去掉有瑕疵的图（summarize.FLAGGED）
+        bad = [c for c in images if S.flag(c)]
+        if bad and len(images) - len(bad) >= 8:
+            out += ['', '去掉有瑕疵的 %d 款（%s）后（%d 款），按中位数：' % (len(bad), '、'.join(pid[c] for c in bad), len(images) - len(bad))]
+            for key, label in MEASURES + extra:
+                val = {c: (float(M[pid[c]][key]) if key in M[pid[c]] and M[pid[c]][key] != '' else S.IMG[c].get(key)) for c in images}
+                use = [c for c in images if c not in bad and val[c] is not None and med[c] is not None]
+                out.append('- %s：%+.2f（%d 款）' % (label, S.spearman([val[c] for c in use], [med[c] for c in use]), len(use)))
         # 去掉护圈和涵道机型
         guard = [c for c in images if S.IMG[c].get('type') in ('全包护圈', '涵道穿越机')]
         if guard and len(images) - len(guard) >= 8:
