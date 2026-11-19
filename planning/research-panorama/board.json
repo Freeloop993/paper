@@ -1,0 +1,1217 @@
+{
+ "meta": {
+  "v": 1,
+  "title": "多旋翼造型研究全景",
+  "order": [
+   "e1",
+   "e2",
+   "e3",
+   "e4",
+   "e5",
+   "e6",
+   "e7",
+   "e8",
+   "e9",
+   "e69",
+   "e70",
+   "e71",
+   "e72",
+   "e10",
+   "e11",
+   "e12",
+   "e13",
+   "e14",
+   "e15",
+   "e16",
+   "e17",
+   "e18",
+   "e19",
+   "e20",
+   "e21",
+   "e22",
+   "e23",
+   "e24",
+   "e25",
+   "e26",
+   "e27",
+   "e28",
+   "e29",
+   "e30",
+   "e31",
+   "e32",
+   "e33",
+   "e34",
+   "e35",
+   "e36",
+   "e37",
+   "e38",
+   "e39",
+   "e40",
+   "e41",
+   "e42",
+   "e43",
+   "e44",
+   "e45",
+   "e46",
+   "e47",
+   "e48",
+   "e49",
+   "e50",
+   "e51",
+   "e52",
+   "e53",
+   "e54",
+   "e55",
+   "e56",
+   "e57",
+   "e58",
+   "e59",
+   "e60",
+   "e61",
+   "e62",
+   "e63",
+   "e64",
+   "e65",
+   "e66",
+   "e67",
+   "e68",
+   "e73",
+   "e74",
+   "e75",
+   "e76",
+   "e77",
+   "e78",
+   "e79",
+   "e80",
+   "e81",
+   "e82",
+   "e83",
+   "e84",
+   "e85",
+   "e86",
+   "e87",
+   "e88",
+   "e89",
+   "e90",
+   "e91",
+   "e92",
+   "e93",
+   "e94",
+   "e95",
+   "e96"
+  ]
+ },
+ "elements": {
+  "e1": {
+   "type": "container",
+   "x": 0,
+   "y": 240,
+   "w": 860,
+   "h": 198,
+   "text": "① 我们在解决什么：三处断开"
+  },
+  "e2": {
+   "type": "container",
+   "x": 888,
+   "y": 240,
+   "w": 860,
+   "h": 198,
+   "text": "② 要证明的一句话"
+  },
+  "e3": {
+   "type": "container",
+   "x": 0,
+   "y": 510,
+   "w": 1748,
+   "h": 418,
+   "text": "③ 一条论证链：每个研究问题检验其中一环（颜色是证据现状）"
+  },
+  "e4": {
+   "type": "container",
+   "x": 0,
+   "y": 1000,
+   "w": 1448,
+   "h": 400,
+   "text": "④ 四个研究问题：怎么判、现在到哪、缺什么"
+  },
+  "e5": {
+   "type": "container",
+   "x": 0,
+   "y": 1472,
+   "w": 1748,
+   "h": 178,
+   "text": "⑤ 我们实际在做什么"
+  },
+  "e6": {
+   "type": "container",
+   "x": 0,
+   "y": 1722,
+   "w": 1748,
+   "h": 318,
+   "text": "⑥ 六章各管链上的哪一段"
+  },
+  "e7": {
+   "type": "container",
+   "x": 0,
+   "y": 2112,
+   "w": 1748,
+   "h": 218,
+   "text": "⑦ 能说什么，不能说什么"
+  },
+  "e8": {
+   "type": "container",
+   "x": 0,
+   "y": 2402,
+   "w": 1748,
+   "h": 256,
+   "text": "⑧ 缺口，按影响排序"
+  },
+  "e9": {
+   "type": "container",
+   "x": 0,
+   "y": 2730,
+   "w": 1748,
+   "h": 144,
+   "text": "⑨ 下一步的顺序（导师：先做系统、预试和评议，再写正文）"
+  },
+  "e10": {
+   "type": "text",
+   "x": 0,
+   "y": 0,
+   "text": "多旋翼造型研究全景",
+   "size": "title"
+  },
+  "e11": {
+   "type": "text",
+   "x": 0,
+   "y": 84,
+   "text": "把说不清的外观意图，变成可检查、可修改、可追溯的造型方案",
+   "size": "large"
+  },
+  "e12": {
+   "type": "text",
+   "x": 0,
+   "y": 142,
+   "text": "《人智协同驱动的多旋翼无人机造型参数化可控生成方法研究》 · 主案例：日常随行航拍四旋翼 · 证据截至 2026-11-18 · 文献截至 2026-11-19",
+   "size": "body",
+   "wrap": 1200
+  },
+  "e13": {
+   "type": "shape",
+   "kind": "pill",
+   "x": 1272,
+   "y": 14,
+   "w": 150,
+   "h": 44,
+   "color": "green",
+   "size": "body",
+   "text": "已有证据"
+  },
+  "e14": {
+   "type": "shape",
+   "kind": "pill",
+   "x": 1432,
+   "y": 14,
+   "w": 150,
+   "h": 44,
+   "color": "yellow",
+   "size": "body",
+   "text": "部分 / 待证"
+  },
+  "e15": {
+   "type": "shape",
+   "kind": "pill",
+   "x": 1592,
+   "y": 14,
+   "w": 150,
+   "h": 44,
+   "color": "pink",
+   "size": "body",
+   "text": "缺口"
+  },
+  "e16": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 264,
+   "w": 252,
+   "h": 150,
+   "color": "white",
+   "size": "body",
+   "text": "**说不清**\n“紧凑”是折叠后小，还是展开时显得小？"
+  },
+  "e17": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 300,
+   "y": 264,
+   "w": 252,
+   "h": 150,
+   "color": "white",
+   "size": "body",
+   "text": "**控不住**\n文字提示管不住比例和部位"
+  },
+  "e18": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 576,
+   "y": 264,
+   "w": 252,
+   "h": 150,
+   "color": "white",
+   "size": "body",
+   "text": "**追不回**\n谁决定了什么？别人看得出意图吗？"
+  },
+  "e19": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 912,
+   "y": 264,
+   "w": 812,
+   "h": 150,
+   "color": "white",
+   "size": "body",
+   "text": "设计者把用户语义和工程比例写成一份可编辑的**规格**；生成结果在这些参数上**量得到、读得出**；修订有边界，**取舍在设计者**；不知情的人能**读出意图**；与自由提示相比，有可量化的**收益或代价**。",
+   "textAlign": "left"
+  },
+  "e20": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 534,
+   "w": 220,
+   "h": 120,
+   "color": "green",
+   "size": "body",
+   "text": "**用户评论**\n7,443 → 1,318 → 228 个文本簇"
+  },
+  "e21": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 388,
+   "y": 534,
+   "w": 220,
+   "h": 120,
+   "color": "yellow",
+   "size": "body",
+   "text": "**确认的意图**\n采用 · 驳回 · 自定"
+  },
+  "e22": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 752,
+   "y": 534,
+   "w": 220,
+   "h": 120,
+   "color": "yellow",
+   "size": "body",
+   "text": "**规格**\n语义词对 + 工程比例 + 造型档位"
+  },
+  "e23": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1116,
+   "y": 534,
+   "w": 220,
+   "h": 120,
+   "color": "green",
+   "size": "body",
+   "text": "**条件图 + 文字**\n配置器编译，不训练模型"
+  },
+  "e24": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1480,
+   "y": 534,
+   "w": 220,
+   "h": 120,
+   "color": "green",
+   "size": "body",
+   "text": "**候选图**\n每张可追到输入与种子"
+  },
+  "e25": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 784,
+   "w": 220,
+   "h": 120,
+   "color": "pink",
+   "size": "body",
+   "text": "**量测与判读**\n部件图 12/12\n设计通路窄档 0/12"
+  },
+  "e26": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 388,
+   "y": 784,
+   "w": 220,
+   "h": 120,
+   "color": "yellow",
+   "size": "body",
+   "text": "**取舍 · 修订 · 接手**\n只有作者的 B2 记录"
+  },
+  "e27": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 752,
+   "y": 784,
+   "w": 220,
+   "h": 120,
+   "color": "pink",
+   "size": "body",
+   "text": "**终稿**\n目前只有一张顶视图"
+  },
+  "e28": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1116,
+   "y": 784,
+   "w": 220,
+   "h": 120,
+   "color": "pink",
+   "size": "body",
+   "text": "**读出意图**\n醒目 3/3，紧凑未读出\n只有 3 人"
+  },
+  "e29": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1480,
+   "y": 784,
+   "w": 220,
+   "h": 120,
+   "color": "yellow",
+   "size": "body",
+   "text": "**RQ4 换构型**\n这条链还成立多少？\n六旋 39 张，任务也变了"
+  },
+  "e30": {
+   "type": "table",
+   "x": 24,
+   "y": 1024,
+   "cols": {
+    "c1": {
+     "at": 1,
+     "w": 330
+    },
+    "c2": {
+     "at": 2,
+     "w": 300
+    },
+    "c3": {
+     "at": 3,
+     "w": 440
+    },
+    "c4": {
+     "at": 4,
+     "w": 330
+    }
+   },
+   "rows": {
+    "r1": {
+     "at": 1,
+     "c1": "问题",
+     "c2": "怎么判",
+     "c3": "现在到哪",
+     "c4": "缺什么"
+    },
+    "r2": {
+     "at": 2,
+     "c1": "RQ1 “紧凑”指什么，怎样确认",
+     "c2": "检索命中 · 错引 · 该拒答",
+     "c3": "228 个造型表述簇；36 张卡；κ 0.17–0.60",
+     "c4": "语义还没接到参数上"
+    },
+    "r3": {
+     "at": 3,
+     "c1": "RQ2a 布局比例控得住吗",
+     "c2": "目标值对实测值，逐张量",
+     "c3": "部件图 12/12；设计通路窄档 0/12",
+     "c4": "设计通路的独立盲测为 0"
+    },
+    "r4": {
+     "at": 4,
+     "c1": "RQ2b 造型档位出得来吗",
+     "c2": "匿名判读部件是否出现",
+     "c3": "96 张两次 AI 盲读；真人只读 12 张",
+     "c4": "真人判读少，且有分歧"
+    },
+    "r5": {
+     "at": 5,
+     "c1": "RQ2c 改得对、保得住吗",
+     "c2": "目标达成与其余保持分开判",
+     "c3": "没有一例目标修改被确认",
+     "c4": "第二版 73 份请求未运行"
+    },
+    "r6": {
+     "at": 6,
+     "c1": "RQ1′ 意图读得出吗",
+     "c2": "不知情的人逐图评分",
+     "c3": "醒目 3/3；紧凑 5、5、4；共 3 人",
+     "c4": "还差 7 人和比例对照图"
+    },
+    "r7": {
+     "at": 7,
+     "c1": "RQ3 协同的收益与代价",
+     "c2": "同一人两种方式配对",
+     "c3": "作者预试 0 场；外部设计者 0/3",
+     "c4": "全部真人场次"
+    },
+    "r8": {
+     "at": 8,
+     "c1": "RQ4 换构型还成立吗",
+     "c2": "同一中性任务比构型",
+     "c3": "农业六旋 39 张，36 张 AI 复测",
+     "c4": "任务与构型同时变了"
+    }
+   }
+  },
+  "e31": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 1496,
+   "w": 556,
+   "h": 130,
+   "color": "white",
+   "size": "body",
+   "text": "**资料**\n评论 7,443 个文本簇 · 36 张证据卡\n真实机型 30 款 · 文献库 131 项（核心 37）",
+   "textAlign": "left"
+  },
+  "e32": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 596,
+   "y": 1496,
+   "w": 556,
+   "h": 130,
+   "color": "white",
+   "size": "body",
+   "text": "**系统**\n一块画布的工作台：目标 → 依据 → 造型 → 生成 → 候选 → 取舍，每一步留记录",
+   "textAlign": "left"
+  },
+  "e33": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1168,
+   "y": 1496,
+   "w": 556,
+   "h": 130,
+   "color": "white",
+   "size": "body",
+   "text": "**实验**\n已有：布局 36 张 · 设计三轮 27 张 · 造型 96 张 · 六旋 39 张\n缺：设计者场次 0，评议只有 3 人",
+   "textAlign": "left"
+  },
+  "e34": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 1746,
+   "w": 263,
+   "h": 270,
+   "color": "yellow",
+   "size": "body",
+   "text": "**第1章 绪论**\n问题 · 目标 · 四个研究问题 · 技术路线",
+   "textAlign": "left"
+  },
+  "e35": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 311,
+   "y": 1746,
+   "w": 263,
+   "h": 270,
+   "color": "yellow",
+   "size": "body",
+   "text": "**第2章 相关研究与理论基础**\n- 2.2 语义与意图 → RQ1\n- 2.3–2.4 参数化与可控生成 → RQ2\n- 2.5 人智协同 → RQ3\n- 2.6 与最近工作的比较",
+   "textAlign": "left"
+  },
+  "e36": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 598,
+   "y": 1746,
+   "w": 263,
+   "h": 270,
+   "color": "yellow",
+   "size": "body",
+   "text": "**第3章 造型意图转译与人智协同可控生成方法**\n- 3.2 需求资料 → RQ1\n- 3.3 意图 → 规格\n- 3.4 参数与条件图 → RQ2\n- 3.5 协同生成与反馈 → RQ3\n- 3.6 评价维度",
+   "textAlign": "left"
+  },
+  "e37": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 885,
+   "y": 1746,
+   "w": 263,
+   "h": 270,
+   "color": "yellow",
+   "size": "body",
+   "text": "**第4章 四旋翼无人机的人智协同设计**\n- 任务与原型\n- 多方向候选与筛选\n- 取舍与迭代（B2）\n- 深化与设计表达\n- 外部设计者两种方式 → RQ3",
+   "textAlign": "left"
+  },
+  "e38": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1172,
+   "y": 1746,
+   "w": 263,
+   "h": 270,
+   "color": "pink",
+   "size": "body",
+   "text": "**第5章 关键设计指标验证与跨构型无人机设计应用**\n- 比例命中 → RQ2a\n- 部件造型 → RQ2b\n- 局部修改与保持 → RQ2c\n- 意图感知 → RQ1′\n- 跨构型 → RQ4",
+   "textAlign": "left"
+  },
+  "e39": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1459,
+   "y": 1746,
+   "w": 263,
+   "h": 270,
+   "color": "white",
+   "size": "body",
+   "text": "**第6章 结论与展望**\n逐问回答：支持到哪、在哪失效、哪些没验证",
+   "textAlign": "left"
+  },
+  "e40": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 2136,
+   "w": 838,
+   "h": 170,
+   "color": "pink",
+   "size": "body",
+   "text": "**不能说“首次”**\n- 评论 → 参数 → 生成：AutoGen-Insight 已做\n- 参数化可控生成：Parametric-ControlNet 已做\n- 生成式 AI 用于无人机造型：Chen 等已做\n- 结构化优于自由提示：已有 12–52 人的对照（CHI 2024、2025 等）",
+   "textAlign": "left"
+  },
+  "e41": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 886,
+   "y": 2136,
+   "w": 838,
+   "h": 170,
+   "color": "yellow",
+   "size": "body",
+   "text": "**可以说（都还待证）**\n- 免训练、由配置器编译的双重参数规格\n- 两条生成通路各自的比例响应\n- 部件级评价 + 可追溯的设计证据\n- 合起来：能指出一次偏差出在链上的哪一段，以及换构型后的边界",
+   "textAlign": "left"
+  },
+  "e42": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 2426,
+   "w": 407,
+   "h": 92,
+   "color": "pink",
+   "size": "body",
+   "text": "**1 真人数据几乎为零**\n预试 0 场 · 设计者 0/3 · 评议 3/10",
+   "textAlign": "left"
+  },
+  "e43": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 455,
+   "y": 2426,
+   "w": 407,
+   "h": 92,
+   "color": "pink",
+   "size": "body",
+   "text": "**2 设计实际用的通路没控住比例**\n窄档 0/12，独立盲测为 0",
+   "textAlign": "left"
+  },
+  "e44": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 886,
+   "y": 2426,
+   "w": 407,
+   "h": 92,
+   "color": "pink",
+   "size": "body",
+   "text": "**3 “紧凑”没有接到参数上**\n文献都有“词 → 造型要素”映射，本文没有",
+   "textAlign": "left"
+  },
+  "e45": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1317,
+   "y": 2426,
+   "w": 407,
+   "h": 92,
+   "color": "pink",
+   "size": "body",
+   "text": "**4 局部修改没有一例被确认**\n第二版 73 份请求还没运行",
+   "textAlign": "left"
+  },
+  "e46": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 2542,
+   "w": 407,
+   "h": 92,
+   "color": "pink",
+   "size": "body",
+   "text": "**5 设计成果只有一张顶视图**\n缺三视图、尺寸、折叠、色材",
+   "textAlign": "left"
+  },
+  "e47": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 455,
+   "y": 2542,
+   "w": 407,
+   "h": 92,
+   "color": "pink",
+   "size": "body",
+   "text": "**6 跨构型里任务和构型混在一起**\n需要同一中性任务的对照",
+   "textAlign": "left"
+  },
+  "e48": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 886,
+   "y": 2542,
+   "w": 407,
+   "h": 92,
+   "color": "pink",
+   "size": "body",
+   "text": "**7 目录没有对齐**\n第4、5章已改题，小节仍是旧的",
+   "textAlign": "left"
+  },
+  "e49": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1317,
+   "y": 2542,
+   "w": 407,
+   "h": 92,
+   "color": "pink",
+   "size": "body",
+   "text": "**8 系统刚改成一块画布**\n试验前要冻结版本和输入方式",
+   "textAlign": "left"
+  },
+  "e50": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 24,
+   "y": 2754,
+   "w": 220,
+   "h": 96,
+   "color": "white",
+   "size": "body",
+   "text": "**补原件并核页**\n冻结系统版本"
+  },
+  "e51": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 308,
+   "y": 2754,
+   "w": 220,
+   "h": 96,
+   "color": "white",
+   "size": "body",
+   "text": "**作者预试**\n两种方式各一场"
+  },
+  "e52": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 592,
+   "y": 2754,
+   "w": 220,
+   "h": 96,
+   "color": "white",
+   "size": "body",
+   "text": "**独立复测比例**\n真人取点与校准"
+  },
+  "e53": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 876,
+   "y": 2754,
+   "w": 220,
+   "h": 96,
+   "color": "white",
+   "size": "body",
+   "text": "**外部设计者 3 人**\n评议 10 人"
+  },
+  "e54": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1160,
+   "y": 2754,
+   "w": 220,
+   "h": 96,
+   "color": "white",
+   "size": "body",
+   "text": "**中性任务跨构型**\nB2 设计表达"
+  },
+  "e55": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1444,
+   "y": 2754,
+   "w": 220,
+   "h": 96,
+   "color": "white",
+   "size": "body",
+   "text": "写第4、5章"
+  },
+  "e56": {
+   "type": "arrow",
+   "from": "e20",
+   "to": "e21",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "RQ1"
+  },
+  "e57": {
+   "type": "arrow",
+   "from": "e21",
+   "to": "e22",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  "e58": {
+   "type": "arrow",
+   "from": "e22",
+   "to": "e23",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "编译"
+  },
+  "e59": {
+   "type": "arrow",
+   "from": "e23",
+   "to": "e24",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "生成"
+  },
+  "e60": {
+   "type": "arrow",
+   "from": "e24",
+   "to": "e25",
+   "label": "RQ2",
+   "bends": [
+    "v",
+    125
+   ]
+  },
+  "e61": {
+   "type": "arrow",
+   "from": "e25",
+   "to": "e26",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "RQ3"
+  },
+  "e62": {
+   "type": "arrow",
+   "from": "e26",
+   "to": "e27",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  "e63": {
+   "type": "arrow",
+   "from": "e27",
+   "to": "e28",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "RQ1′"
+  },
+  "e64": {
+   "type": "arrow",
+   "from": "e50",
+   "to": "e51",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  "e65": {
+   "type": "arrow",
+   "from": "e51",
+   "to": "e52",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  "e66": {
+   "type": "arrow",
+   "from": "e52",
+   "to": "e53",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  "e67": {
+   "type": "arrow",
+   "from": "e53",
+   "to": "e54",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  "e68": {
+   "type": "arrow",
+   "from": "e54",
+   "to": "e55",
+   "fromSide": "right",
+   "toSide": "left"
+  },
+  "e69": {
+   "type": "container",
+   "x": 1820,
+   "y": 240,
+   "w": 900,
+   "h": 688,
+   "text": "⑩ 文献地图：三个圈子很少互引，本文在交点"
+  },
+  "e70": {
+   "type": "container",
+   "x": 1820,
+   "y": 1000,
+   "w": 900,
+   "h": 448,
+   "text": "⑪ 每一环先看哪些文献（编号见 literature/catalog.csv）"
+  },
+  "e71": {
+   "type": "container",
+   "x": 1820,
+   "y": 1520,
+   "w": 900,
+   "h": 486,
+   "text": "⑫ 读完文献后，研究要改的五处"
+  },
+  "e72": {
+   "type": "container",
+   "x": 1820,
+   "y": 2078,
+   "w": 900,
+   "h": 284,
+   "text": "⑬ 等作者决定"
+  },
+  "e73": {
+   "type": "text",
+   "x": 1820,
+   "y": 84,
+   "text": "文献依据：读完上传的 226 份之后",
+   "size": "large"
+  },
+  "e74": {
+   "type": "text",
+   "x": 1820,
+   "y": 142,
+   "text": "保留 131 项（核心 37）· 核过原页 19 项 · 目录与关系图在仓库 literature/",
+   "size": "body",
+   "wrap": 880
+  },
+  "e75": {
+   "type": "shape",
+   "kind": "pill",
+   "x": 1112,
+   "y": 14,
+   "w": 150,
+   "h": 44,
+   "color": "blue",
+   "size": "body",
+   "text": "文献"
+  },
+  "e76": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1844,
+   "y": 264,
+   "w": 354,
+   "h": 150,
+   "color": "blue",
+   "size": "body",
+   "text": "**感性工学 → 生成式造型**\nK、G 簇 33 项 · 工程设计期刊\n评论 → 感性词 → 映射 → 训练出图",
+   "textAlign": "left"
+  },
+  "e77": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2342,
+   "y": 264,
+   "w": 354,
+   "h": 150,
+   "color": "blue",
+   "size": "body",
+   "text": "**生成式设计工具与设计者研究**\nT、H 簇 58 项 · CHI、UIST、DIS\n提示 · 画布探索 · 协同比较",
+   "textAlign": "left"
+  },
+  "e78": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2100,
+   "y": 524,
+   "w": 340,
+   "h": 150,
+   "color": "white",
+   "size": "body",
+   "text": "**本文**\n用户语义 + 参数控制几何\n+ 可追溯取舍 + 多旋翼\n四件事同时做的，库里没有"
+  },
+  "e79": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2093,
+   "y": 764,
+   "w": 354,
+   "h": 136,
+   "color": "blue",
+   "size": "body",
+   "text": "**无人机造型**\nU 簇 11 项 · 中文期刊与学位论文\n几乎是孤岛：只有 3 条互引\n没有跨构型比较",
+   "textAlign": "left"
+  },
+  "e80": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1844,
+   "y": 764,
+   "w": 225,
+   "h": 136,
+   "color": "white",
+   "size": "body",
+   "text": "**两圈之间的桥**\nAutoSpark L056\nControlNet L053",
+   "textAlign": "left"
+  },
+  "e81": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2471,
+   "y": 764,
+   "w": 225,
+   "h": 136,
+   "color": "white",
+   "size": "body",
+   "text": "**导师课题组**\n形状文法 +\n交互式遗传算法\nL043–L046",
+   "textAlign": "left"
+  },
+  "e82": {
+   "type": "table",
+   "x": 1844,
+   "y": 1024,
+   "cols": {
+    "c1": {
+     "at": 1,
+     "w": 200
+    },
+    "c2": {
+     "at": 2,
+     "w": 370
+    },
+    "c3": {
+     "at": 3,
+     "w": 282
+    }
+   },
+   "rows": {
+    "r1": {
+     "at": 1,
+     "c1": "环节",
+     "c2": "文献里怎么做",
+     "c3": "先看"
+    },
+    "r2": {
+     "at": 2,
+     "c1": "评论 → 意图 RQ1",
+     "c2": "取感性词，再定量评分",
+     "c3": "L012 L013 L018 A08"
+    },
+    "r3": {
+     "at": 3,
+     "c1": "意图 → 规格",
+     "c2": "拆成造型要素，建“词 → 要素”映射",
+     "c3": "L005 L030 L043–L046"
+    },
+    "r4": {
+     "at": 4,
+     "c1": "规格 → 生成 RQ2",
+     "c2": "多数训练模型；少数用条件控制并量几何",
+     "c3": "L053 L030 A07 A10"
+    },
+    "r5": {
+     "at": 5,
+     "c1": "修订 RQ2c",
+     "c2": "改动与保持分开评",
+     "c3": "A06 B06 L057"
+    },
+    "r6": {
+     "at": 6,
+     "c1": "工作台",
+     "c2": "步骤在画布上，侧栏随选中变化",
+     "c3": "B05 A03 A01 L056"
+    },
+    "r7": {
+     "at": 7,
+     "c1": "协同比较 RQ3",
+     "c2": "同一后端比界面，16–79 人",
+     "c3": "L072 L057 L065"
+    },
+    "r8": {
+     "at": 8,
+     "c1": "读出意图 RQ1′",
+     "c2": "统一刺激图，独立评分",
+     "c3": "L005 A11 L100"
+    },
+    "r9": {
+     "at": 9,
+     "c1": "跨构型 RQ4",
+     "c2": "没有先例",
+     "c3": "L001–L011"
+    }
+   }
+  },
+  "e83": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1844,
+   "y": 1544,
+   "w": 414,
+   "h": 130,
+   "color": "white",
+   "size": "body",
+   "text": "**1 定位换说法**\n评论加条件控制已有人做（L030）\n本文不同在免训练、量几何、记录取舍",
+   "textAlign": "left"
+  },
+  "e84": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2282,
+   "y": 1544,
+   "w": 414,
+   "h": 130,
+   "color": "white",
+   "size": "body",
+   "text": "**2 补“词 → 造型要素”这一步**\n让 RQ1′ 的比例对照图同时检验\n“紧凑 ↔ 比例”，待作者定",
+   "textAlign": "left"
+  },
+  "e85": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1844,
+   "y": 1698,
+   "w": 414,
+   "h": 130,
+   "color": "white",
+   "size": "body",
+   "text": "**3 接上导师课题组的线**\n形状文法加交互式遗传算法是早一代的“人在回路”",
+   "textAlign": "left"
+  },
+  "e86": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2282,
+   "y": 1698,
+   "w": 414,
+   "h": 130,
+   "color": "white",
+   "size": "body",
+   "text": "**4 RQ3 只写形成性发现**\n同类对照 16–79 人，本文 3 人；量表沿用通行的",
+   "textAlign": "left"
+  },
+  "e87": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1844,
+   "y": 1852,
+   "w": 414,
+   "h": 130,
+   "color": "white",
+   "size": "body",
+   "text": "**5 RQ4 的判据先登记**\n无人机造型文献没有跨构型比较可依",
+   "textAlign": "left"
+  },
+  "e88": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2282,
+   "y": 1852,
+   "w": 414,
+   "h": 130,
+   "color": "pink",
+   "size": "body",
+   "text": "**先补原件**\n2.6 节要用的 7 篇没有原件；两篇核心只有 1 页\n47 条参考文献里 26 条没有原件",
+   "textAlign": "left"
+  },
+  "e89": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1844,
+   "y": 2102,
+   "w": 414,
+   "h": 106,
+   "color": "white",
+   "size": "body",
+   "text": "**公开仓库里的版权 PDF**\n117 份里 91 份没有开放许可声明\n设为私有，还是移到私有库",
+   "textAlign": "left"
+  },
+  "e90": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2282,
+   "y": 2102,
+   "w": 414,
+   "h": 106,
+   "color": "white",
+   "size": "body",
+   "text": "**RQ1′ 的评议是否兼做映射**\n让同一批评议者对比例档位图评“紧凑”",
+   "textAlign": "left"
+  },
+  "e91": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 1844,
+   "y": 2232,
+   "w": 414,
+   "h": 106,
+   "color": "white",
+   "size": "body",
+   "text": "**执行 11 月 18 日的整理清单**\n13 个未合并的 PR、38 个分支\n去留已定，尚未执行",
+   "textAlign": "left"
+  },
+  "e92": {
+   "type": "shape",
+   "kind": "rounded",
+   "x": 2282,
+   "y": 2232,
+   "w": 414,
+   "h": 106,
+   "color": "white",
+   "size": "body",
+   "text": "**重排日程**\n主数据的截止日原定 11 月 22 日",
+   "textAlign": "left"
+  },
+  "e93": {
+   "type": "arrow",
+   "from": "e76",
+   "to": "e77",
+   "fromSide": "right",
+   "toSide": "left",
+   "label": "12 条互引",
+   "head": "both",
+   "dash": true
+  },
+  "e94": {
+   "type": "arrow",
+   "from": "e76",
+   "to": "e78",
+   "fromSide": "bottom",
+   "toSide": "left"
+  },
+  "e95": {
+   "type": "arrow",
+   "from": "e77",
+   "to": "e78",
+   "fromSide": "bottom",
+   "toSide": "right"
+  },
+  "e96": {
+   "type": "arrow",
+   "from": "e79",
+   "to": "e78",
+   "fromSide": "top",
+   "toSide": "bottom"
+  }
+ }
+}
