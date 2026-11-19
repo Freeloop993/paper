@@ -99,6 +99,13 @@ def main(paths):
         for t in KEY['terms']:
             vals, na = table[c][t['id']]; cells += [' '.join(map(str, vals)), ('%.1f' % med(vals)) if vals else '—']
         out.append('| %s | %s | %d |' % (img[c]['name'], ' | '.join(cells), sum(table[c][t['id']][1] for t in KEY['terms'])))
+    for field, label in [('config', '构型'), ('type', '类型')]:
+        groups = collections.defaultdict(list)
+        for c in KEY['singles']:
+            if img[c].get(field) and med(table[c]['span'][0]) is not None: groups[img[c][field]].append(med(table[c]['span'][0]))
+        if len(groups) > 1:
+            out += ['', '按%s汇总“紧凑—舒展”（各款中位数的中位数和范围）：' % label, '', '| %s | 款数 | 中位数 | 范围 |' % label, '| --- | ---: | ---: | --- |']
+            for g, v in sorted(groups.items(), key=lambda kv: statistics.median(kv[1])): out.append('| %s | %d | %.1f | %.1f–%.1f |' % (g, len(v), statistics.median(v), min(v), max(v)))
     out += ['', '评分与程序量得的比例之间的等级相关（斯皮尔曼，按设计的中位数算；正值表示这个比例越大，越被评为舒展）。设计只有 %d 个，只作描述：' % len(order), '']
     for m, label in KEY['measures'].items():
         pts = [(img[c].get(m), med(table[c]['span'][0])) for c in KEY['singles']]; pts = [(a, b) for a, b in pts if a is not None and b is not None]

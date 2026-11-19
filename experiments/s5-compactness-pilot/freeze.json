@@ -1,8 +1,8 @@
 {
- "version": "S5-pilot-4.0",
- "pack": "9e157f56cc97",
+ "version": "S5-pilot-5.0",
+ "pack": "b9bcbdc4f9cc",
  "frozen_on": "2026-11-19",
- "decided_by": "作者 2026-11-19 把这项数据收集交给 Claude 安排，要求样本用真实产品、品类多样、靠检索图片取得",
+ "decided_by": "作者 2026-11-19 把这项数据收集交给 Claude 安排，要求样本用真实产品、品类多样、靠检索图片取得，并覆盖四旋翼以外的多旋翼",
  "superseded": [
   {
    "version": "S5-pilot-1.0",
@@ -28,14 +28,19 @@
    "version": "S5-pilot-3.0",
    "pack": "7830214685d8",
    "reason": "样本全是 DJI 一个类型；作者要求多品牌、多类型，靠检索图片。未发出，答卷 0 份"
+  },
+  {
+   "version": "S5-pilot-4.0",
+   "pack": "9e157f56cc97",
+   "reason": "样本只有四旋翼；作者指出研究对象是多旋翼。未发出，答卷 0 份"
   }
  ],
  "sha256": {
-  "protocol.md": "0e2786bbb8b2997a67ba462c8e3f5406fe20f44b0f5e09f8aba70262424e665a",
-  "participant/无人机外观评议.html": "d51d1c3d8ea8e3e6e862ec79e20d016e5a2990a20512d784cb369b351da209d1",
-  "researcher-key.json": "a29935254a99844458e84f621209eb8ae8145d5144fb5ec89aadc0daa610aaed",
-  "summarize.py": "e616279edb856c9f5da0d75671e40373008f9e3791179003bd520417cb69afba",
-  "real/samples.json": "a76d5669b9a5438bdffaee977f06bc182ba57c526130704e619fb8453b88c19f"
+  "protocol.md": "af24b8ebb9aac8609b5bf98fd065a7850568f15d6fc06ce47d32ed81672b5ccb",
+  "participant/无人机外观评议.html": "38e4afa108c562a2a10e9fe421509b17d6ad3aa2268bfbc6e3c9acbbc4e72246",
+  "researcher-key.json": "b6f2c63bb6a744f944b24f411b1e0680961c64140c57453bd33f865af5e19d35",
+  "summarize.py": "561a1df1c06553dd2a00975c64cecd33eeea802471cffac0be045eac15356d65",
+  "real/samples.json": "9671761a5b21f14d57c7535b920955c82c5ee4f446c1cdc2de3d9df3216aecfd"
  },
- "rule": "只作描述：逐款逐人读数与中位数、按类型汇总、与各项比例的等级相关。不设通过门槛。"
+ "rule": "只作描述：逐款逐人读数与中位数、按构型和类型汇总、与各项比例的等级相关。不设通过门槛；构型之间的差别为探索性描述。"
 }

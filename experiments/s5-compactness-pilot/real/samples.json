@@ -7,6 +7,7 @@
    "brand": "DJI",
    "model": "Mavic 4 Pro",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     562,
@@ -32,6 +33,7 @@
    "brand": "DJI",
    "model": "Air 3S",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1895,
@@ -57,6 +59,7 @@
    "brand": "DJI",
    "model": "Mini 5 Pro",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     919,
@@ -82,6 +85,7 @@
    "brand": "DJI",
    "model": "Mavic Pro",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     540,
@@ -107,6 +111,7 @@
    "brand": "DJI",
    "model": "Spark",
    "type": "小型固定臂",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     402,
@@ -132,6 +137,7 @@
    "brand": "DJI",
    "model": "Neo",
    "type": "全包护圈",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1776,
@@ -157,6 +163,7 @@
    "brand": "DJI",
    "model": "Flip",
    "type": "全包护圈",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1794,
@@ -182,6 +189,7 @@
    "brand": "DJI",
    "model": "Matrice 30",
    "type": "行业机",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     545,
@@ -207,6 +215,7 @@
    "brand": "DJI",
    "model": "Inspire 3",
    "type": "专业影视",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     847,
@@ -232,6 +241,7 @@
    "brand": "DJI",
    "model": "Avata 2",
    "type": "涵道穿越机",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     870,
@@ -250,6 +260,7 @@
    "brand": "DJI",
    "model": "FPV",
    "type": "穿越机",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     876,
@@ -268,6 +279,7 @@
    "brand": "Autel",
    "model": "EVO II Pro",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1370,
@@ -293,6 +305,7 @@
    "brand": "Parrot",
    "model": "ANAFI",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 180,
    "object_px_in_source": [
     1341,
@@ -318,6 +331,7 @@
    "brand": "Parrot",
    "model": "ANAFI Ai",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 180,
    "object_px_in_source": [
     1154,
@@ -343,6 +357,7 @@
    "brand": "Parrot",
    "model": "Bebop 2",
    "type": "经典固定臂",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     998,
@@ -368,6 +383,7 @@
    "brand": "Skydio",
    "model": "Skydio 2",
    "type": "小型固定臂",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1963,
@@ -393,6 +409,7 @@
    "brand": "Skydio",
    "model": "X10",
    "type": "行业机",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1700,
@@ -418,6 +435,7 @@
    "brand": "Hubsan",
    "model": "Zino Mini Pro",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1199,
@@ -443,6 +461,7 @@
    "brand": "FIMI",
    "model": "X8 Mini",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     559,
@@ -468,6 +487,7 @@
    "brand": "Yuneec",
    "model": "Mantis Q",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     652,
@@ -493,6 +513,7 @@
    "brand": "Yuneec",
    "model": "Typhoon Q500 4K",
    "type": "经典固定臂",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     993,
@@ -518,6 +539,7 @@
    "brand": "3DR",
    "model": "Solo",
    "type": "经典固定臂",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     910,
@@ -543,6 +565,7 @@
    "brand": "GoPro",
    "model": "Karma",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 180,
    "object_px_in_source": [
     1014,
@@ -568,6 +591,7 @@
    "brand": "Insta360",
    "model": "Antigravity A1",
    "type": "折叠航拍",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     900,
@@ -593,6 +617,7 @@
    "brand": "HOVERAir",
    "model": "X1 Pro Max",
    "type": "全包护圈",
+   "config": "四旋翼",
    "rotated_deg": 180,
    "object_px_in_source": [
     900,
@@ -618,6 +643,7 @@
    "brand": "Ryze",
    "model": "Tello",
    "type": "小型固定臂",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     895,
@@ -643,6 +669,7 @@
    "brand": "ZeroTech",
    "model": "Dobby",
    "type": "小型折叠",
+   "config": "四旋翼",
    "rotated_deg": 90,
    "object_px_in_source": [
     554,
@@ -668,6 +695,7 @@
    "brand": "PowerVision",
    "model": "PowerEgg X",
    "type": "异形",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     896,
@@ -693,6 +721,7 @@
    "brand": "iFlight",
    "model": "Nazgul5",
    "type": "穿越机",
+   "config": "四旋翼",
    "rotated_deg": 180,
    "object_px_in_source": [
     894,
@@ -718,6 +747,7 @@
    "brand": "GEPRC",
    "model": "CineLog35",
    "type": "涵道穿越机",
+   "config": "四旋翼",
    "rotated_deg": 180,
    "object_px_in_source": [
     1210,
@@ -743,6 +773,7 @@
    "brand": "Sony",
    "model": "Airpeak S1",
    "type": "专业影视",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1378,
@@ -768,6 +799,7 @@
    "brand": "Freefly",
    "model": "Astro",
    "type": "专业影视",
+   "config": "四旋翼",
    "rotated_deg": 0,
    "object_px_in_source": [
     1002,
@@ -787,6 +819,318 @@
    "original_px": [
     1200,
     1200
+   ]
+  },
+  "P33": {
+   "brand": "DJI",
+   "model": "Matrice 600 Pro",
+   "type": "行业机",
+   "config": "六旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    433,
+    457
+   ],
+   "upscale": 1.79,
+   "bbox_w_over_h": 0.947,
+   "fill_of_bbox": 0.197,
+   "mean_gray": 100.4,
+   "source_type": "图片检索",
+   "image_url": "https://images.crutchfieldonline.com/ImageHandler/trim/750/457/products/2017/18/964/g964M600PRO-o_other12.jpg",
+   "page_url": "https://www.crutchfield.com/p_964M600PRO/DJI-Matrice-600-Pro-Hexacopter.html",
+   "page_title": "DJI Matrice 600 Pro Hexacopter Aerial drone with remote controller, si",
+   "domain": "www.crutchfield.com",
+   "sha256": "c093665017c046395be15ac52ac3456c7b11c4fe55732fc1fdc44b487d6d697c",
+   "fetched": "original",
+   "original_px": [
+    750,
+    457
+   ]
+  },
+  "P34": {
+   "brand": "DJI",
+   "model": "S900",
+   "type": "专业影视",
+   "config": "六旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    524,
+    456
+   ],
+   "upscale": 1.56,
+   "bbox_w_over_h": 1.149,
+   "fill_of_bbox": 0.125,
+   "mean_gray": 72.0,
+   "source_type": "图片检索",
+   "image_url": "https://i.pinimg.com/originals/6e/be/9c/6ebe9c2b695703ceff7418f3a5f698a4.jpg",
+   "page_url": "https://uk.pinterest.com/pin/view-looking-at-the-top-of-the-dji-s900--365776800977942805/",
+   "page_title": "View looking at the top of the DJI S900. | Octocopter frame plans ...",
+   "domain": "uk.pinterest.com",
+   "sha256": "668c8bd385357e5f16cd6b2834f8bdd4749695abd42fa49c8939f3252d7bb621",
+   "fetched": "original",
+   "original_px": [
+    540,
+    547
+   ]
+  },
+  "P35": {
+   "brand": "Yuneec",
+   "model": "H520",
+   "type": "行业机",
+   "config": "六旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    533,
+    562
+   ],
+   "upscale": 1.46,
+   "bbox_w_over_h": 0.948,
+   "fill_of_bbox": 0.235,
+   "mean_gray": 96.5,
+   "source_type": "图片检索",
+   "image_url": "https://img.constructionequipment.com/files/base/ebm/constructionequipment/image/2022/06/1654810862899-h520rtktop_view.png?auto=format,compress&w=1050&h=590&fit=clip",
+   "page_url": "https://www.constructionequipment.com/technology/construction-technology-software/product/10755684/yuneec-h520-commercial-hexacopter-with-rtk",
+   "page_title": "Yuneec H520 Commercial Hexacopter With RTK | Construction Equipment",
+   "domain": "www.constructionequipment.com",
+   "sha256": "f57098cab465dcb5064224e27bb0c9e3c7ef77a9369baebf665550b7cf37d7ed",
+   "fetched": "original",
+   "original_px": [
+    569,
+    590
+   ]
+  },
+  "P36": {
+   "brand": "Yuneec",
+   "model": "Tornado H920",
+   "type": "专业影视",
+   "config": "六旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    385,
+    407
+   ],
+   "upscale": 2.01,
+   "bbox_w_over_h": 0.946,
+   "fill_of_bbox": 0.202,
+   "mean_gray": 91.1,
+   "source_type": "图片检索",
+   "image_url": "https://wacmag.com/sites/default/files/styles/node_embed_mobile_x1_720_/public/2020-10/Yuneec-Tornado-H920-Hexacopter.jpg?itok=JZUE4-K-",
+   "page_url": "https://wacmag.com/yuneec-tornado-h920-hexacopter",
+   "page_title": "Yuneec Tornado H920 Hexacopter | WAC Magazine",
+   "domain": "wacmag.com",
+   "sha256": "278f58bb39c056a257da6dbc7aa5dcfc233ab4b6e404f84394d1a11b04158540",
+   "fetched": "original",
+   "original_px": [
+    650,
+    468
+   ]
+  },
+  "P37": {
+   "brand": "DJI",
+   "model": "Agras T30",
+   "type": "农业植保",
+   "config": "六旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    608,
+    457
+   ],
+   "upscale": 1.35,
+   "bbox_w_over_h": 1.33,
+   "fill_of_bbox": 0.206,
+   "mean_gray": 122.0,
+   "source_type": "图片检索",
+   "image_url": "https://images.crutchfieldonline.com/ImageHandler/trim/750/457/products/2021/52/964/g964CPAG439-o_other7.jpg",
+   "page_url": "https://www.crutchfield.com/p_964T30RTF/DJI-AGRAS-T30-Ready-to-Fly-Kit.html",
+   "page_title": "DJI AGRAS T30 Ready to Fly Kit Aerial hexacopter with agricultural ...",
+   "domain": "www.crutchfield.com",
+   "sha256": "9258b81339dc40d3d261d9f92cd6c4ffcf90775cb28deab0d862d3111cf0562c",
+   "fetched": "original",
+   "original_px": [
+    750,
+    457
+   ]
+  },
+  "P38": {
+   "brand": "Hylio",
+   "model": "AG-216",
+   "type": "农业植保",
+   "config": "六旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    776,
+    817
+   ],
+   "upscale": 1.0,
+   "bbox_w_over_h": 0.95,
+   "fill_of_bbox": 0.207,
+   "mean_gray": 125.9,
+   "source_type": "图片检索",
+   "image_url": "https://shop.frontierprecision.com/wp-content/uploads/2025/03/Hylio-AG-216-1-980x980.jpg",
+   "page_url": "https://shop.frontierprecision.com/product-category/shop-solutions/unmanned/brands/hylio/",
+   "page_title": "Hylio - Frontier Precision Shop",
+   "domain": "shop.frontierprecision.com",
+   "sha256": "f8dc135786b56ef5af0aebec6a8e928ada8b13c6f0636a2ab5df2962c80a0354",
+   "fetched": "original",
+   "original_px": [
+    980,
+    980
+   ]
+  },
+  "P39": {
+   "brand": "Inspired Flight",
+   "model": "IF1200",
+   "type": "行业机",
+   "config": "六旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    879,
+    952
+   ],
+   "upscale": 0.86,
+   "bbox_w_over_h": 0.923,
+   "fill_of_bbox": 0.473,
+   "mean_gray": 150.9,
+   "source_type": "图片检索",
+   "image_url": "https://advexure.com/cdn/shop/files/IF_1200A_000_Top_1024x.jpg?v=1721320266",
+   "page_url": "https://advexure.com/products/inspired-flight-if1200a-airframe-package",
+   "page_title": "Inspired Flight IF1200 - Heavy-Lift Hexacopter – Advexure",
+   "domain": "advexure.com",
+   "sha256": "c47a79e7b1b67f03729978043ea3d8a689ca07b6cc3757b0e5e2ca231c4014b5",
+   "fetched": "original",
+   "original_px": [
+    1024,
+    1024
+   ]
+  },
+  "P40": {
+   "brand": "Aurelia",
+   "model": "X6",
+   "type": "行业机",
+   "config": "六旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    755,
+    790
+   ],
+   "upscale": 1.04,
+   "bbox_w_over_h": 0.956,
+   "fill_of_bbox": 0.15,
+   "mean_gray": 91.9,
+   "source_type": "图片检索",
+   "image_url": "https://uavsystemsinternational.com/cdn/shop/products/AureliaX6PROTopView-1290-860_1200x1200.jpg?v=1671638469",
+   "page_url": "https://uavsystemsinternational.com/products/aurelia-x6-pro-v1",
+   "page_title": "AureliaX6PROTopView-1290-860_1200x1200.jpg?v=1671638469",
+   "domain": "uavsystemsinternational.com",
+   "sha256": "5d4da5f0269738d5fa5ed90ab30c4587b8ea5a2653cbb7d310637c2400c54da4",
+   "fetched": "original",
+   "original_px": [
+    1200,
+    800
+   ]
+  },
+  "P41": {
+   "brand": "DJI",
+   "model": "Agras MG-1",
+   "type": "农业植保",
+   "config": "八旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    659,
+    600
+   ],
+   "upscale": 1.24,
+   "bbox_w_over_h": 1.098,
+   "fill_of_bbox": 0.18,
+   "mean_gray": 113.2,
+   "source_type": "图片检索",
+   "image_url": "https://www.tienda24hs.com/WebRoot/StoreES/Shops/62148069/5ECE/466D/8EDA/B0CD/97E3/0A0C/6D0E/57AE/20106-dji-agras-mg-1p-agricultura-precision-tienda24hs-4.jpg",
+   "page_url": "https://www.tienda24hs.com/Dji-Agras-MG-1P-Octocopter-for-precision-agriculture",
+   "page_title": "Dji Agras MG-1P Octocopter for precision agriculture. Up to 3 km",
+   "domain": "www.tienda24hs.com",
+   "sha256": "97d06676fe9e3c57c3f63b35b5472a0c98cb20e0f7433f8cd0b7f4fd43fcc872",
+   "fetched": "original",
+   "original_px": [
+    800,
+    600
+   ]
+  },
+  "P42": {
+   "brand": "Freefly",
+   "model": "Alta 8",
+   "type": "专业影视",
+   "config": "八旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    484,
+    487
+   ],
+   "upscale": 1.68,
+   "bbox_w_over_h": 0.994,
+   "fill_of_bbox": 0.186,
+   "mean_gray": 90.5,
+   "source_type": "图片检索",
+   "image_url": "https://pndstore.com/wp-content/uploads/2020/07/Freefly-Systems-ALTA-8-UAS-top.jpg",
+   "page_url": "https://pndstore.com/product/freefly-systems-alta-8-uas/",
+   "page_title": "Freefly Systems ALTA 8 UAS - PND Store - Drones & Drone Accessories",
+   "domain": "pndstore.com",
+   "sha256": "11e3a3432113662831fdbeac601faefa472352bab21eac5cb5aba3af5b1d36f4",
+   "fetched": "original",
+   "original_px": [
+    500,
+    500
+   ]
+  },
+  "P43": {
+   "brand": "Skyfront",
+   "model": "Perimeter 8",
+   "type": "行业机",
+   "config": "八旋翼",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1560,
+    1376
+   ],
+   "upscale": 0.53,
+   "bbox_w_over_h": 1.134,
+   "fill_of_bbox": 0.377,
+   "mean_gray": 166.7,
+   "source_type": "图片检索",
+   "image_url": "https://a.storyblok.com/f/237078/6491x4868/dee6c67625/skyfront_perimeter8_hybrid_drone_8176.jpg/m/2000x0/smart",
+   "page_url": "https://skyfront.com/perimeter-8",
+   "page_title": "Perimeter 8 Hybrid Drone | Long Endurance Drones",
+   "domain": "skyfront.com",
+   "sha256": "026b7d95e14e3eac1f044865fa869b5012d63c885b03196cbe4a05fd0fc74e37",
+   "fetched": "original",
+   "original_px": [
+    2000,
+    1500
+   ]
+  },
+  "P44": {
+   "brand": "DJI",
+   "model": "Agras T50",
+   "type": "农业植保",
+   "config": "共轴四轴八桨",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1180,
+    1071
+   ],
+   "upscale": 0.69,
+   "bbox_w_over_h": 1.102,
+   "fill_of_bbox": 0.172,
+   "mean_gray": 112.0,
+   "source_type": "图片检索",
+   "image_url": "https://aagri-tech.com.au/wp-content/uploads/2025/07/T100-Dual-Spray-100L-Static-4-2048x1152.png",
+   "page_url": "https://aagri-tech.com.au/product/agrast50/",
+   "page_title": "DJI AGRAS T50 - Australia Agritech",
+   "domain": "aagri-tech.com.au",
+   "sha256": "0f2ecb0269f594908a7f8813b960ee490795feb8f1139af16695d0f8d7b971ef",
+   "fetched": "original",
+   "original_px": [
+    2048,
+    1152
    ]
   }
  }
