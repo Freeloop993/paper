@@ -30,7 +30,7 @@ python3 summarize.py 回件/*
 - 软件走查通过：`node qa/walkthrough.mjs` 用三个合成评议者把页面从头做到尾（一个用手机宽度），共 27 项检查，覆盖必答拦截、刷新后接着答、重复题左右对调、下载与复制结果一致、页面无脚本错误；汇总脚本读回了预设的方向。
 - 没有真人答卷。合成答卷不是研究数据，没有留在仓库里。
 - 手机上只在浏览器的手机宽度下检查过排版。聊天软件里直接点开附件能不能正常作答没有测过，所以建议用电脑。
-- 发放之前，作者要先确认[方案](protocol.md)第四节的读法，确认后不再改。
+- [方案](protocol.md)第四节的读法已由作者在 2026-11-19 确认并冻结，摘要记在 [freeze.json](freeze.json)。可以发放。
 
 ## 文件
 
@@ -39,6 +39,7 @@ python3 summarize.py 回件/*
 | `participant/无人机外观评议.html` | 发给评议者 |
 | `protocol.md` | 材料、流程、读法、限度 |
 | `researcher-key.json` | 匿名图号对应的比例档位和原图。研究者自留，不发 |
+| `freeze.json` | 冻结时方案、页面和核对键的 SHA-256 |
 | `summarize.py` | 汇总回件 |
 | `build.py`、`template.html` | 从 E1 原图重新制包 |
 | `qa/walkthrough.mjs` | 软件走查 |

@@ -1,0 +1,13 @@
+{
+ "version": "S5-pilot-1.0",
+ "pack": "fc76e183627f",
+ "frozen_on": "2026-11-19",
+ "confirmed_by": "作者，在与 Claude 的会话中确认方案第四节的读法",
+ "sha256": {
+  "protocol.md": "e0a3b722be9a9c1738897390e95b234650ec37170dba17b44aee265ffbf01981",
+  "participant/无人机外观评议.html": "87a08f3002aa5658b25161ba8b5dae69fdbc7d66346a0f5f87a344c6886a97c8",
+  "researcher-key.json": "4638a5f9d750729b1386b8b47b05c14b0b66cc766270e7fac5b8b3f874363fdd",
+  "summarize.py": "20e48ba2502cd2ff5ed81334eadca68535fcc3624581a2dee9dc366bf40ab8c9"
+ },
+ "rule": "同一方向的选择在 4 个种子里至少 3 个种子上不少于该题有效答卷的 70%，且全部低档对高档判断中不少于 70%，记为读得出；两个因素都不预设方向。"
+}

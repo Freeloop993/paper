@@ -107,3 +107,7 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 
 作者问招募到人之后拿什么让对方做。已交付[评议包](experiments/s5-compactness-pilot/README.md)：一个离线网页文件，用 E1 条件图组的 24 张图（W/L、d/D 各三档、每档四个种子），12 张单图按三组词评分，19 组成对比较问哪一架更紧凑，结果以文件或文字发回，`summarize.py` 汇总。[方案](experiments/s5-compactness-pilot/protocol.md)写明读法和限度，读法待作者确认后冻结。软件走查 27 项通过，用的是三份合成答卷；真人答卷 0 份。外部设计者场次和判读者取点仍不能开始，原因见[研究进度](planning/research-panorama/progress-20261119.md)第六节。
 
+## 2026-11-19｜紧凑感评议包的读法冻结
+
+作者确认[方案](experiments/s5-compactness-pilot/protocol.md)第四节的读法，版本 S5-pilot-1.0 自此冻结，方案、页面和核对键的 SHA-256 记在 [freeze.json](experiments/s5-compactness-pilot/freeze.json)。真人答卷仍为 0 份。2.6 节比较表按已有方法卡补入 Brief2Design 和 DesignWeaver 两行。
+
