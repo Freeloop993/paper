@@ -77,9 +77,9 @@ function render(){
   const n1 = S.singles.length, s = S.step;
   if (s === 0) return consent();
   if (s === 1) return background();
-  if (s === 2) return intro('第一部分：单张图的印象', '<p>接下来每次看一张四旋翼无人机的顶视图，共 ' + n1 + ' 张。请按第一印象，在三组词之间各选一个位置。</p><p>没有对错。看不出来就选“看不出”。</p>');
+  if (s === 2) return intro('第一部分：单张图的印象', '<p>接下来每次看一张四旋翼无人机的顶视图，共 ' + n1 + ' 张，是 ' + n1 + ' 个不同的设计。请按第一印象，在三组词之间各选一个位置。</p><p>每张图里无人机都画得差不多大，请看它各部分之间的比例，不要管整机大小。没有对错。看不出来就选“看不出”。</p>');
   if (s < 3 + n1) return single(S.singles[s - 3], s - 2, n1);
-  if (s === 3 + n1) return intro('第二部分：两张图的比较', '<p>接下来每次并排看两张图，共 ' + S.pairs.length + ' 组。请选出看起来<b>更紧凑</b>的一张。</p><p>这里的“紧凑”指：机身、臂与旋翼收拢在一起，部件之间留白少。</p><p>觉得差不多，或者判断不了，也可以直接选。</p>');
+  if (s === 3 + n1) return intro('第二部分：两张图的比较', '<p>接下来每次并排看两张图，共 ' + S.pairs.length + ' 组。每组是同一个设计的两个版本，只有一处不同。请选出看起来<b>更紧凑</b>的一张。</p><p>这里的“紧凑”指：机身、臂与旋翼收拢在一起，部件之间留白少。</p><p>觉得差不多，或者判断不了，也可以直接选。</p>');
   if (s < 4 + n1 + S.pairs.length) return pair(S.pairs[s - 4 - n1], s - 3 - n1, S.pairs.length);
   if (s === TOTAL - 2) return closing();
   return result();

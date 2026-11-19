@@ -1,8 +1,8 @@
 {
- "version": "S5-pilot-1.2",
- "pack": "712241b3654c",
+ "version": "S5-pilot-2.0",
+ "pack": "984fd67d571e",
  "frozen_on": "2026-11-19",
- "reading_rule_confirmed_by": "作者，2026-11-19，在与 Claude 的会话中确认（当时版本 1.0）；1.1、1.2 版只更换材料，读法文字未改",
+ "decided_by": "作者 2026-11-19 把这项数据收集全部交给 Claude 安排；第二部分的判据沿用作者同日确认的文字",
  "superseded": [
   {
    "version": "S5-pilot-1.0",
@@ -13,14 +13,21 @@
    "version": "S5-pilot-1.1",
    "pack": "4114e1a13175",
    "reason": "作者决定全文统一用 Qwen，H3 图不再使用；未发出，答卷 0 份"
+  },
+  {
+   "version": "S5-pilot-1.2",
+   "pack": "712241b3654c",
+   "reason": "作者反馈单图看不出差别；第一部分改为 12 个不同的设计。未发出，答卷 0 份"
   }
  ],
  "sha256": {
-  "protocol.md": "17c188e3faf5678d3f796c774765dcc3ba7ad2b8d183724df40dd70671404250",
-  "participant/无人机外观评议.html": "b08f4f66d372f242ef0de85aff26950269a1786f80acad3169c630876c223e18",
-  "researcher-key.json": "f062a7459fd1e724c30da3e76716998daac4a1379f8e108a1dbcc9621f674f83",
-  "summarize.py": "82397cb5b831a8040d1e8b693a3a8f500cbbfe0f14c73c261ca19bdbe3e9885e",
-  "qwen/derive.json": "fbdd1295cce29c8acd5dc38c6676a10810a9ad9b4283415d67623e633925b2a5"
+  "protocol.md": "9f8bd5fc4b9a96856fe70bc8478db38e509524aa30eb33c55f4fcc924691a621",
+  "participant/无人机外观评议.html": "4891d0a4cabe3dcb6ef8e17c7fffbcdf701897de8f997f4b5b88bc966335f9de",
+  "researcher-key.json": "de517c83bbd7ec6e947915863f23be1080416bcbf268a4723952f51402d860a4",
+  "summarize.py": "0e6265e74443d5e8b46c3723159d038e4adc5a3e4c0d4b1d98c8f3ed5cda0fac",
+  "qwen/derive.json": "fbdd1295cce29c8acd5dc38c6676a10810a9ad9b4283415d67623e633925b2a5",
+  "qwen/designs.json": "2a0f4b24d124559562d0099944dba0509e88227ac97980ad4b89f324c043e3f3"
  },
- "rule": "同一方向的选择在 4 个设计里至少 3 个设计上不少于该题有效答卷的 70%，且全部低档对高档判断中不少于 70%，记为读得出；两个因素都不预设方向。"
+ "rule_part2": "同一方向的选择在 4 个设计里至少 3 个设计上不少于该题有效答卷的 70%，且全部判断中不少于 70%，记为读得出；两个因素都不预设方向。",
+ "rule_part1": "只作描述：逐人读数、中位数、与各项比例的等级相关。"
 }

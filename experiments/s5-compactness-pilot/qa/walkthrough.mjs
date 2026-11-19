@@ -32,7 +32,7 @@ for (const who of [0, 1, 2]) {
     if (i === 0) ok('单图未评不能继续', await page.isDisabled('#next'));
     for (const t of key.terms) {
       let v = 4;   // 换算后的值：1 = 左极
-      if (t.id === 'span' && ['S', 'B', 'L'].includes(m.variant)) v = { S: 2, B: 4, L: 6 }[m.variant] + (who === 1 ? 1 : 0);
+      if (t.id === 'span' && m.d_over_D != null) v = Math.max(1, Math.min(7, Math.round(9 - 10 * m.d_over_D) + (who === 1 ? 1 : 0)));   // 合成规则：桨相对越大越紧凑
       const raw = item.flip[t.id] ? 8 - v : v;
       await page.click(`.scale[data-t="${t.id}"] button[data-v="${who === 2 && t.id === 'whole' && i % 4 === 0 ? 'na' : raw}"]`);
     }

@@ -53,7 +53,7 @@ def main(paths):
         out += ['', '## %s 与紧凑感' % f, '', '成对比较：同一个设计的两张图只差%s，问哪一张更紧凑。' % f, '',
                 '| 比较 | 设计 | 选%s | 选另一张 | 差不多 | 无法判断 |' % hi, '| --- | --- | ---: | ---: | ---: | ---: |']
         tot = collections.Counter()
-        for kind, label in [('low-high', '低档对高档'), ('low-mid', '低档对中档'), ('mid-high', '中档对高档')]:
+        for kind, label in [('low-high', '低档对高档')]:
             for pid, v in pk.items():
                 if v['kind'] != kind or v['factor'] != f: continue
                 c = collections.Counter(verdict(r, pid) for r in rs)
@@ -66,17 +66,43 @@ def main(paths):
         out.append('逐人（4 个设计里选“%s”的次数减选另一张的次数）：%s。' % (hi, '、'.join('%+d' % x for x in per)))
         why = [x['reason'].strip() for r in rs for x in r['pairs'] if pk[x['pair']]['factor'] == f and x.get('reason', '').strip()]
         if why: out += ['', '评议者写下的依据：' + '；'.join(sorted(set(why))) + '。']
-        out += ['', '单图评分（1 = 左极，7 = 右极；“看不出”不计入中位数）：', '', '| 词对 | 档位 | 逐人逐图读数 | 中位数 | 看不出 |', '| --- | --- | --- | ---: | ---: |']
+    # 第一部分：每个设计的评分，以及评分与量得的比例之间的等级相关
+    def ranks(v):
+        o = sorted(range(len(v)), key=lambda i: v[i]); r = [0.0] * len(v); i = 0
+        while i < len(o):
+            k = i
+            while k + 1 < len(o) and v[o[k + 1]] == v[o[i]]: k += 1
+            for m in range(i, k + 1): r[o[m]] = (i + k) / 2 + 1
+            i = k + 1
+        return r
+    def spearman(a, b):
+        ra, rb = ranks(a), ranks(b); ma, mb = sum(ra) / len(ra), sum(rb) / len(rb)
+        num = sum((x - ma) * (y - mb) for x, y in zip(ra, rb)); den = (sum((x - ma) ** 2 for x in ra) * sum((y - mb) ** 2 for y in rb)) ** 0.5
+        return num / den if den else float('nan')
+    out += ['', '## 第一部分：各个设计的单图评分', '', '1 = 左极（紧凑、简洁、整体），7 = 右极（舒展、繁复、拼凑）。“看不出”不计入中位数。按“紧凑—舒展”的中位数从紧凑到舒展排列。', '']
+    table = {}
+    for c in KEY['singles']:
+        row = {}
         for t in KEY['terms']:
-            for variant, lv in FACT[f]['levels'].items():
-                vals, na = [], 0
-                for r in rs:
-                    for x in r['singles']:
-                        if img[x['image']]['variant'] != variant: continue
-                        k = x['ratings'][t['id']]
-                        if k == 'na': na += 1
-                        else: vals.append(8 - k if x['flip'][t['id']] else k)
-                out.append('| %s—%s | %s | %s | %s | %d |' % (t['left'], t['right'], lv, ' '.join(map(str, vals)), ('%.1f' % statistics.median(vals)) if vals else '—', na))
+            vals, na = [], 0
+            for r in rs:
+                x = next(x for x in r['singles'] if x['image'] == c); k = x['ratings'][t['id']]
+                if k == 'na': na += 1
+                else: vals.append(8 - k if x['flip'][t['id']] else k)
+            row[t['id']] = (vals, na)
+        table[c] = row
+    med = lambda v: statistics.median(v) if v else None
+    order = sorted(KEY['singles'], key=lambda c: (med(table[c]['span'][0]) is None, med(table[c]['span'][0]) or 0))
+    out += ['| 设计 | ' + ' | '.join('%s—%s 逐人读数 | 中位数' % (t['left'], t['right']) for t in KEY['terms']) + ' | 看不出 |', '| --- |' + ' --- | ---: |' * len(KEY['terms']) + ' ---: |']
+    for c in order:
+        cells = []
+        for t in KEY['terms']:
+            vals, na = table[c][t['id']]; cells += [' '.join(map(str, vals)), ('%.1f' % med(vals)) if vals else '—']
+        out.append('| %s | %s | %d |' % (img[c]['name'], ' | '.join(cells), sum(table[c][t['id']][1] for t in KEY['terms'])))
+    out += ['', '评分与程序量得的比例之间的等级相关（斯皮尔曼，按设计的中位数算；正值表示这个比例越大，越被评为舒展）。设计只有 %d 个，只作描述：' % len(order), '']
+    for m, label in KEY['measures'].items():
+        pts = [(img[c].get(m), med(table[c]['span'][0])) for c in KEY['singles']]; pts = [(a, b) for a, b in pts if a is not None and b is not None]
+        if len(pts) >= 5: out.append('- %s：%+.2f（%d 个设计）' % (label, spearman([a for a, _ in pts], [b for _, b in pts]), len(pts)))
     print('\n'.join(out))
 
 if __name__ == '__main__':
