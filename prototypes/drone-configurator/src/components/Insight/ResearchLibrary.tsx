@@ -4,9 +4,11 @@ import evidence from '../../data/evidenceCards.json';
 import { corpus, themes } from '../../data/corpus';
 import { useEvidenceLibrary } from '../../design/semantics/evidenceLibrary';
 import { type TopicTag } from '../../design/semantics/lookup.mjs';
+import { PinButton } from './EvidenceGroups';
+import type { EvidencePins } from './InsightPage';
 import './knowledge.css';
 
-export default function ResearchLibrary({ onTopic }: { onTopic: (topic: TopicTag) => void }) {
+export default function ResearchLibrary({ onTopic, pins }: { onTopic: (topic: TopicTag) => void; pins?: EvidencePins }) {
   const [query, setQuery] = useState('');
   const [limit, setLimit] = useState(5);
   const { library, error } = useEvidenceLibrary();
@@ -30,6 +32,7 @@ export default function ResearchLibrary({ onTopic }: { onTopic: (topic: TopicTag
             <blockquote><b>{card.id}</b> {card.quote}</blockquote>
             {!matched && <p>此句补充同一来源的语境。</p>}
             <details><summary>对象与适用限制</summary><p>{card.object} · {card.state}</p><p>{card.limits}</p></details>
+            <PinButton id={card.id} pins={pins}/>
           </section>)}
         </article>)}
       </div>

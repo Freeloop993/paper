@@ -4,6 +4,8 @@ import { stateLabels, suggestFields } from '../../design/semantics/brief';
 import { canUndoChatWidth, isChatAnswer, isChatEvidence, redactChatText, safeChatAnswer, safeChatEvidence,
   type ChatEvidence, type DesignChatContext } from '../../design/designChatAudit';
 import { useDroneStore } from '../../store/droneStore';
+import { PinButton } from '../Insight/EvidenceGroups';
+import type { EvidencePins } from '../Insight/InsightPage';
 
 export interface WidthPreview { turnId: string; version: string; width: number }
 const localServiceHint = '请在本机设计服务中打开工作台，再发送消息。';
@@ -11,7 +13,7 @@ const retrievalLabels: Record<string,string> = {retrieve:'找到参考', clarify
 const roleLabels: Record<string,string> = {example:'参考原句', context:'澄清线索', caution:'限制或异例'};
 const noEvents = [] as const;
 
-function SourceList({ evidence, expanded = false, citedIds }: { evidence: ChatEvidence; expanded?: boolean; citedIds?: string[] }) {
+function SourceList({ evidence, expanded = false, citedIds, pins }: { evidence: ChatEvidence; expanded?: boolean; citedIds?: string[]; pins?: EvidencePins }) {
   const { retrieval, sources } = evidence;
   const sourceCount = retrieval.sourceCount ?? (sources.every(s => s.source) ? new Set(sources.map(s => s.source)).size : undefined);
   return <details open={expanded} className="rounded-xl border border-line px-3 py-2 text-xs text-ink-soft">
@@ -27,13 +29,16 @@ function SourceList({ evidence, expanded = false, citedIds }: { evidence: ChatEv
       {citedIds !== undefined && <b className="ml-2">{citedIds.includes(source.id) ? '答复已引用' : '仅检索到'}</b>}
       <blockquote className="my-1 break-words text-ink">{source.quote}</blockquote>
       <p className="break-words">适用限制：{source.limits}</p>
+      <PinButton id={source.id} pins={pins}/>
     </div>)}
   </details>;
 }
 
-export default function DesignChat({ context, scopeKey, scopeLabel, preview, onPreview, onSelectBody }: {
+export default function DesignChat({ context, scopeKey, scopeLabel, preview, onPreview, onSelectBody, pins }: {
   context: DesignChatContext; scopeKey: string; scopeLabel: string; preview: WidthPreview | null;
   onPreview: (next: WidthPreview | null) => void; onSelectBody?: () => void;
+  /** 检索到的原句可以放到画布上，连到当前目标。 */
+  pins?: EvidencePins;
 }) {
   const draft = useDroneStore();
   const {designChatAudit, recordChatEvent, applyChatWidth, declineChatWidth, undoChatWidth} = draft;
@@ -129,7 +134,7 @@ export default function DesignChat({ context, scopeKey, scopeLabel, preview, onP
           {answer && <>
             <div className="text-[11px] text-ink-faint">{answer.model} · {answer.effort}</div>
             <p className="whitespace-pre-wrap break-words">{answer.answer}</p>
-            <SourceList evidence={answer} citedIds={answer.citedIds}/>
+            <SourceList evidence={answer} citedIds={answer.citedIds} pins={pins}/>
             {suggestion && <div className="space-y-2 rounded-xl border border-teal-200 bg-teal-50/70 p-3" data-testid="width-suggestion">
               <span className="block text-xs font-medium text-teal-800">机身宽度试调</span>
               <p className="num text-base font-semibold">{suggestion.from} → {suggestion.to} mm</p>
@@ -160,7 +165,7 @@ export default function DesignChat({ context, scopeKey, scopeLabel, preview, onP
             </div>}
           </>}
           {turn.action === 'error' && <>
-            {turn.localEvidence && <><p className="text-xs text-ink-soft">本地检索已完成，模型暂未回复</p><SourceList evidence={turn.localEvidence} expanded/></>}
+            {turn.localEvidence && <><p className="text-xs text-ink-soft">本地检索已完成，模型暂未回复</p><SourceList evidence={turn.localEvidence} expanded pins={pins}/></>}
             <p role="alert" className="text-xs text-red-700">{turn.error}<button type="button" disabled={!!pending} className="ml-1 underline" onClick={() => void send(turn.question)}>重试</button></p>
           </>}
         </article>;
@@ -169,7 +174,7 @@ export default function DesignChat({ context, scopeKey, scopeLabel, preview, onP
       {lookup?.version === context.version && <div data-testid="chat-local-result" className="space-y-2">
         <p className="text-xs text-ink-soft">本地依据 · 未调用模型</p><p className="text-sm">{lookup.question}</p>
         {lookup.error && <p role="alert" className="text-xs text-red-700">{lookup.error}</p>}
-        {lookup.evidence && <SourceList evidence={lookup.evidence} expanded/>}
+        {lookup.evidence && <SourceList evidence={lookup.evidence} expanded pins={pins}/>}
       </div>}
     </div>
     <form className="space-y-2 border-t border-line p-3" onSubmit={e => {e.preventDefault();void send(text);}}>

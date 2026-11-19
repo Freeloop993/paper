@@ -21,6 +21,22 @@ export interface WorkflowNode extends Partial<Snapshot> {
   canRestore?: boolean;
   canBranch?: boolean;
   facts?: { label: string; value: string }[];
+  /** 放在画布上、还没有提交给模型的生成步骤。 */
+  pending?: boolean;
+  /** 待生成步骤或便签在本机画布记录中的编号。 */
+  recordId?: string;
+  /** 设计者可在卡片上直接改写的便签。 */
+  editable?: boolean;
+  /** 冻结规格、条件图这类研究留档，默认收起。 */
+  research?: boolean;
+  /** 生成轮次所属的方案草稿，如 quad/A。 */
+  variantScope?: string;
+  /** 生成轮次的进度。 */
+  progress?: 'pending' | 'running' | 'done' | 'issue';
+  /** 设计者是否已保留这张候选。 */
+  retained?: boolean;
+  /** 设计者上传或引用的参考图，可以移除。 */
+  removable?: boolean;
 }
 export interface WorkflowEdge {
   id: string;

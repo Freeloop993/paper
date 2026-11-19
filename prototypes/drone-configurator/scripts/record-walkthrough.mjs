@@ -15,24 +15,23 @@ try{
  const ctx=await browser.newContext({acceptDownloads:true,viewport:{width:1280,height:900}}),page=await ctx.newPage();
  let external=0;
  await ctx.route('**/*',route=>{const u=new URL(route.request().url());if(u.protocol.startsWith('http')&&u.origin!==new URL(origin).origin){external++;return route.abort();}return route.continue();});
- async function openCandidates(){
-  const advanced=page.getByTestId('handoff-advanced');
-  if(!await advanced.evaluate(el=>el.open))await advanced.locator('summary').click();
-  await page.locator('[data-handoff-tab="candidates"]').click();
- }
+  // 旧入口落在同一块画布上：insight 选中目标卡片，studio 选中造型卡片，handoff 打开研究详情与导出。
+  const go = async step => {
+    if (step === 'handoff') { await page.locator('[data-step=handoff]').click(); await page.locator('[data-handoff-tab=candidates]').click(); return; }
+    await page.evaluate(next => { location.hash = 'step=' + next + '&board=project&v=' + Date.now(); }, step);
+    await page.locator('[data-testid=step-panel][data-panel-mode=' + (step === 'insight' ? 'goal' : 'design') + ']').waitFor();
+  };
  async function open(){
-  await page.goto(origin);await page.locator('[data-step="handoff"]').click();
-  await openCandidates();
+  await page.goto(origin);await go('handoff');
  }
  async function exportSelected(){
    const download=page.waitForEvent('download');await page.locator('[data-export-attempt]').click();
    return JSON.parse(await readFile(await (await download).path(),'utf8'));
  }
  await open();
- await page.locator('[data-step="studio"]').click();
+ await go('studio');
  await page.getByTestId('variant-add').click();
- await page.locator('[data-step="handoff"]').click();
- await openCandidates();
+ await go('handoff');
  for(const key of ['quad','hex']){
    await page.locator('[data-history-case="'+key+'"]').click();const region=page.locator('[data-testid="history-replay"]');
    assert.ok(await region.locator('img').first().evaluate(async im=>{await im.decode();return im.naturalWidth>0;}));
@@ -78,8 +77,7 @@ try{
  assert.equal(hash(d.outputs.buffer),kept.candidates[0].hash);
  assert.equal(Buffer.compare(d.outputs.buffer,Buffer.from(kept.originals[kept.candidates[0].hash].data.split(',')[1],'base64')),0);
  await sel.selectOption({index:1});await page.locator('[data-continue-candidate]').click();
- await page.locator('[data-step="studio"]').click();await page.locator('[data-step="handoff"]').click();
- await openCandidates();
+ await go('studio');await go('handoff');
  await page.locator('[data-attempt-goal]').fill('软件检查 · 保留父图再修订');await page.locator('[data-freeze-attempt]').click();
  await page.waitForFunction(prior=>document.querySelector('[data-attempt]')?.value!==prior,kept.id);
  const child=await exportSelected();assert.equal(child.parentId,kept.candidates[0].id);assert.equal(child.parentImage.sha256,kept.candidates[0].hash);
@@ -92,13 +90,13 @@ try{
  // Reuse the visible letter B in a different mission; it is a new design, with a new parent choice.
  await page.locator('[data-attempt]').selectOption(kept.id);
  await sel.selectOption({index:1});await page.locator('[data-continue-candidate]').click();
- await page.locator('[data-step="studio"]').click();await page.getByRole('button',{name:'删除方案 B'}).click();
- await page.locator('[data-step="insight"]').click();
+ await go('studio');await page.getByRole('button',{name:'删除这个方向'}).click();
+ await go('insight');
  await page.locator('.goal-context > summary').click();
  await page.getByTestId('mission').selectOption('agricultural_spraying');
  await page.getByTestId('brief-frame').selectOption('Radial Hex');
- await page.locator('[data-step="studio"]').click();await page.getByTestId('variant-add').click();
- await page.locator('[data-step="handoff"]').click();await openCandidates();
+ await go('studio');await page.getByTestId('variant-add').click();
+ await go('handoff');
  await page.locator('[data-attempt-goal]').fill('软件检查 · 全新的农业六旋方案');
  await page.locator('[data-freeze-attempt]').click();
  await page.waitForFunction(goal=>document.querySelector('[data-attempt] option:checked')?.textContent.includes(goal),'全新的农业六旋');

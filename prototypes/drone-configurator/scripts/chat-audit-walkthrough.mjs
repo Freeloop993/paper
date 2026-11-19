@@ -29,6 +29,10 @@ try {
   });
   const boot = new URL(origin);boot.hash='step=studio&board=project&tab=fuselage';
   await page.goto(boot.href);
+  // 造型参数和设计对话是右侧面板的两个页签。
+  const chatTab = () => page.getByTestId('graph-chat-tab').click();
+  const stepTab = () => page.locator('[data-panel-tab=step]').click();
+  await chatTab();
   const chat = page.getByTestId('design-chat').filter({visible:true});
   const width = page.locator('[data-field="fuselage.fuselage_dimensions_mm.width"] input[type=number]');
   const send = async question => {await chat.getByTestId('chat-input').fill(question);await chat.getByTestId('chat-send').click();};
@@ -39,7 +43,7 @@ try {
   assert.equal(packets.length,0);
   assert.equal((await draft())?.designChatAudit?.length ?? 0,0);
 
-  await width.fill('85');await width.blur();
+  await stepTab();await width.fill('85');await width.blur();await chatTab();
   await send('第一轮，给机身试调宽度。');
   const first = chat.locator('article').filter({hasText:'第一轮'});
   await first.getByTestId('chat-preview').click();
@@ -47,17 +51,21 @@ try {
   assert.equal(await page.locator('[data-layer=width-preview]').getAttribute('data-width-mm'),'95');
   await first.getByTestId('chat-apply').click();
   assert.equal(await width.inputValue(),'95');
-  await page.getByTestId('last-change').getByRole('button',{name:'撤销'}).click();
+  await page.getByTestId('top-undo').click();
   assert.equal(await width.inputValue(),'85');
   await first.getByText('已撤销此次采纳').waitFor();
   assert.deepEqual((await draft()).designChatAudit.map(e=>e.action),['answer','apply','undo']);
 
   const pending = new Promise(resolve=>{delayed=resolve;});
   await send('第二轮，比较另一种机身宽度。');await pending;
-  await page.getByTestId('variant-add').click();
+  await page.locator('[data-dock=direction]').click();
+  await page.waitForFunction(() => document.querySelectorAll('[data-step-kind=design]').length === 2);
+  await chatTab();
   assert.equal(await chat.locator('article').count(),0);
   release();delayed=null;
-  await page.locator('[data-variant=A] button').first().click();
+  await page.getByRole('button',{name:'适应全图'}).click();
+  await page.locator('[data-step-kind=design]').filter({has:page.locator('[data-testid=top-view-static]')}).locator('.cv-head').click();
+  await chatTab();
   const second = chat.locator('article').filter({hasText:'第二轮'});
   await second.getByTestId('chat-decline').click();
   await second.getByLabel('驳回理由').fill('保留作者已选机身比例');
@@ -73,11 +81,13 @@ try {
   await page.locator('[data-view=top]').click();
   assert.equal(await third.getByTestId('chat-apply').count(),0);
   await page.reload();
+  await chatTab();
   await chat.getByText('已驳回 · 保留作者已选机身比例').waitFor();
   assert.equal(await chat.locator('article').count(),3);
-  await page.getByRole('button',{name:'返回画布',exact:true}).click();
-  await page.locator('.react-flow__node').filter({has:page.getByRole('heading',{name:'当前规格草稿',exact:true})}).click();
-  await page.getByTestId('graph-chat-tab').click();
+  // 换去看目标再回到造型，对话仍是同一份。
+  await page.locator('[data-step-kind=goal] .cv-head').first().click();
+  await page.locator('[data-step-kind=design]').filter({has:page.locator('[data-testid=top-view]')}).locator('.cv-head').click();
+  await chatTab();
   assert.equal(await chat.locator('article').count(),3);
   await chat.getByText('已撤销此次采纳').waitFor();
 
@@ -92,6 +102,7 @@ try {
   await page.goto(boot.href);
   await page.reload();
   assert.equal(await width.inputValue(),'100');
+  await chatTab();
   await fifth.getByTestId('chat-undo').click();
   assert.equal(await width.inputValue(),'85');
   assert.equal((await draft()).designChatAudit.at(-1).action,'undo');

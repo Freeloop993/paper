@@ -1,7 +1,7 @@
 {
   "name": "drone_configurator_ui",
   "private": true,
-  "version": "3.3.0",
+  "version": "3.4.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -9,12 +9,14 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "studio:chat": "node scripts/design-chat-server.mjs",
+    "studio:fixture": "node scripts/fixture-server.mjs",
     "verify": "node scripts/verify.mjs",
     "evidence": "node scripts/build-evidence.mjs",
     "replay": "node scripts/replay.mjs",
     "check-offline": "node scripts/check-offline.mjs",
-    "package-offline": "npm run build && python scripts/package_offline.py",
+    "package-offline": "npm run build && node scripts/package-offline.mjs",
     "walkthrough": "node scripts/check-offline.mjs --capture",
+    "walkthrough:canvas": "node scripts/canvas-walkthrough.mjs",
     "walkthrough:pr75": "node scripts/walkthrough.mjs"
   },
   "dependencies": {

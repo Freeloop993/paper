@@ -18,9 +18,12 @@ try {
   browser = await launch({port:9341});
   const page = await browser.open(pathToFileURL(join(work,'package','index.html')).href);
   assert.equal(await page.evaluate("document.querySelector('#drone-configurator-app').dataset.stepActive"),'canvas');
-  assert.deepEqual(await page.evaluate("[...document.querySelectorAll('nav [data-step]')].map(x=>x.dataset.step)"),
-    ['canvas','insight','studio','handoff']);
+  // 只有一块画布：目标和造型是画布上的卡片，底部工具条用来添加步骤。
+  assert.equal(await page.evaluate("document.querySelectorAll('nav.canvas-rail').length"),0);
+  assert.deepEqual(await page.evaluate("[...document.querySelectorAll('[data-testid=canvas-dock] [data-dock]')].map(x=>x.dataset.dock)"),
+    ['goal','image','note','direction','generate']);
   assert.equal(await page.evaluate("document.querySelector('[data-testid=workflow-workspace]').dataset.boardId"),'project');
+  assert.deepEqual(await page.evaluate("[...document.querySelectorAll('[data-workflow-node]')].map(x=>x.dataset.stepKind).sort()"),['design','goal']);
   await page.click('[data-board=history]');
   const canvas = await page.evaluate(`(async () => {
     const cards = [...document.querySelectorAll('[data-workflow-node]')];
@@ -37,7 +40,10 @@ try {
     assert.ok(canvas.edges.includes(JSON.stringify([from,to])), from + ' → ' + to);
   assert.ok(canvas.images >= 4);
   if(captures) await page.screenshot(join(captures,'canvas.png'));
-  await page.click('[data-step=insight]');
+  // 旧入口 #step=insight 选中画布上的目标卡片，右侧出现目标面板。
+  const go = async hash => { await page.evaluate(`location.hash=${JSON.stringify(hash)}`); await page.sleep(700); };
+  await go('step=insight&board=project');
+  assert.equal(await page.evaluate("document.querySelector('[data-testid=step-panel]').dataset.panelMode"),'goal');
   const set = async (testId,value) => {
     await page.evaluate(`(() => {const s=document.querySelector('[data-testid="${testId}"]');s.value=${JSON.stringify(value)};s.dispatchEvent(new Event('change',{bubbles:true}));})()`);
   };
@@ -51,12 +57,12 @@ try {
   await page.type('[data-testid=brief-input]','展开时希望机身显得紧凑');
   assert.equal(await page.evaluate("document.querySelector('[data-testid=lookup-result]').dataset.status"),'abstain');
   await page.click('[data-testid=confirm-intent]');
-  await page.click('[data-step=studio]');
+  await go('step=studio&board=project');
+  assert.equal(await page.evaluate("document.querySelector('[data-testid=step-panel]').dataset.panelMode"),'design');
   const axes = () => page.evaluate("document.querySelectorAll('[data-testid=top-view] [data-layer=hub]').length");
   assert.equal(await axes(),6);
   if(captures) await page.screenshot(join(captures,'agricultural-hex.png'));
   await page.click('[data-step=handoff]');
-  await page.click('[data-testid=handoff-advanced] > summary');
   const downloads = join(work,'downloads');
   mkdirSync(downloads);
   await page.setDownloadDir(downloads);
