@@ -103,3 +103,7 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 
 更正当日初稿的两处：L002、L003 是期刊的单页作品展示，原件完整；11 月 18 日已有的 34 张原页方法卡此前没有接进文献库。按 SHA-256 和 DOI 比对后，18 张对应文献库的 L 编号，汇入 [page-evidence.csv](literature/page-evidence.csv)；另补核 7 篇（L002、L007、L031、L043、L044、L053、L072）。文献库 131 项中 44 项有原页证据。[2.6 节比较表与定位段初稿](manuscript/revisions/ch02-2.6-comparison.md)只用核过原页的内容，6 篇最接近的工作仍缺原页。[现行目录](manuscript/outline.md)第 4、5 章按改定的题名对齐了小节，5.4 节待作者定。新增模型调用 0，新增真人场次 0。
 
+## 2026-11-19｜紧凑感评议包（S5 预试）
+
+作者问招募到人之后拿什么让对方做。已交付[评议包](experiments/s5-compactness-pilot/README.md)：一个离线网页文件，用 E1 条件图组的 24 张图（W/L、d/D 各三档、每档四个种子），12 张单图按三组词评分，19 组成对比较问哪一架更紧凑，结果以文件或文字发回，`summarize.py` 汇总。[方案](experiments/s5-compactness-pilot/protocol.md)写明读法和限度，读法待作者确认后冻结。软件走查 27 项通过，用的是三份合成答卷；真人答卷 0 份。外部设计者场次和判读者取点仍不能开始，原因见[研究进度](planning/research-panorama/progress-20261119.md)第六节。
+
