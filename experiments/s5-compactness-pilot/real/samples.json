@@ -1,128 +1,793 @@
 {
  "collected": "2026-11-19",
- "source": "DJI 官方商城（store.dji.com，澳大利亚站）产品页的 3D 展示模型，经内置浏览器读取页面数据得到地址；模型内部名称用于核对机型",
- "render": "model-viewer 3.5.0；正上方俯视，视场 8 度（接近正投影），商城同款环境光；机头朝上",
+ "method": "用 Bing 图片检索各机型的顶视图（检索词和全部候选见 web/search-results*.json），逐张目视筛选真顶视、整机完整、背景干净、来源可查的图；排除 AI 生成的假图、第三方 3D 模型站和带水印的图库图",
+ "processing": "抠成白底、去色、机头朝上、整机外接框长边占画面 80%",
  "samples": {
-  "R01": {
-   "model": "DJI Mini 2 系列（WM161）",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/ecd6727edc061ef6eefa27af3278102d.glb",
-   "glb_sha256": "a54f38099641c78af4fec08aa2c31efea331b2db869d4ab403c305cb284aa087",
-   "glb_bytes": 7707032,
-   "page": "https://store.dji.com/product/dji-mini-3-pro",
-   "yaw_deg": 0,
-   "bbox_w_over_h": 1.257,
-   "fill_of_bbox": 0.281,
-   "mean_gray": 175.6
+  "P01": {
+   "brand": "DJI",
+   "model": "Mavic 4 Pro",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    562,
+    521
+   ],
+   "upscale": 1.46,
+   "bbox_w_over_h": 1.079,
+   "fill_of_bbox": 0.212,
+   "mean_gray": 99.2,
+   "source_type": "图片检索",
+   "image_url": "https://apf-drones.com/wp-content/uploads/2025/06/dji-mavic-4-pro-top-view-800x800.webp",
+   "page_url": "https://apf-drones.com/product/dji-mavic-4-pro/",
+   "page_title": "DJI Mavic 4 Pro – 100MP Triple-Camera Drone with 30km Range",
+   "domain": "apf-drones.com",
+   "sha256": "d096600d875f70b7b5ece12d7683d8cd04122b92405d1f0f3b3fdedc6c347313",
+   "fetched": "original",
+   "original_px": [
+    800,
+    800
+   ]
   },
-  "R02": {
-   "model": "DJI Mini 3",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/385aa9579ba03d6cc2c1f6a395140b13.glb",
-   "glb_sha256": "fc239f2d776d491f7c944f2a2ecaef83422ab87eb01ac82c3a4edb79036630d9",
-   "glb_bytes": 9209040,
-   "page": "https://store.dji.com/product/dji-mini-3",
-   "yaw_deg": 0,
-   "bbox_w_over_h": 1.052,
-   "fill_of_bbox": 0.231,
-   "mean_gray": 176.9
-  },
-  "R03": {
-   "model": "DJI Mini 4 Pro",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/eb2acccc1b1a4a5c3407e0a06555f0b9.glb",
-   "glb_sha256": "0a837c4bab7fee0bb0bf66c2b801ab632cfff43e8b3ba9aa1808f1a0452bd475",
-   "glb_bytes": 3147096,
-   "page": "https://store.dji.com/product/dji-mini-4-pro",
-   "yaw_deg": 0,
-   "bbox_w_over_h": 1.253,
-   "fill_of_bbox": 0.242,
-   "mean_gray": 159.7
-  },
-  "R04": {
-   "model": "DJI Air 2S",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/66371f2fbf595bfe531d2c38ab1b50d6.glb",
-   "glb_sha256": "1e992eec12aaf058039a29fa528e262b6c4ed7ccd36d9f25e4eaf77cfdafbb3d",
-   "glb_bytes": 11052256,
-   "page": "https://store.dji.com/product/dji-air-2s",
-   "yaw_deg": 0,
-   "bbox_w_over_h": 0.935,
-   "fill_of_bbox": 0.233,
-   "mean_gray": 120.4
-  },
-  "R05": {
-   "model": "DJI Air 3",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/c039de9cb62986112676d8ec11fcad0d.glb",
-   "glb_sha256": "156239e7321962ec6c000775eb843c6e2da00993a14b3f79b89c12cff2f3fc7a",
-   "glb_bytes": 2200216,
-   "page": "https://store.dji.com/product/dji-air-3",
-   "yaw_deg": 0,
-   "bbox_w_over_h": 1.054,
-   "fill_of_bbox": 0.204,
-   "mean_gray": 158.0
-  },
-  "R06": {
-   "model": "DJI Air 3S",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/4d82789a6f5701790bacda5e7e37910c.glb",
-   "glb_sha256": "ccd54637c37adf811d5577553d0967ddcd6de05e69e9f1c1ee52f9430b23a648",
-   "glb_bytes": 11469020,
-   "page": "https://store.dji.com/product/dji-air-3s",
-   "yaw_deg": 0,
-   "bbox_w_over_h": 1.238,
-   "fill_of_bbox": 0.196,
-   "mean_gray": 115.8
-  },
-  "R07": {
-   "model": "DJI Mavic 3 Pro",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/ebadae4e6f89889722ac0c1f0ac2ce4a.glb",
-   "glb_sha256": "50e36a66a4f37dbb8ade22df7c5f2fa8ff9044fc62b4de8d98d69b642303a246",
-   "glb_bytes": 10546192,
-   "page": "https://store.dji.com/product/dji-mavic-3-pro",
-   "yaw_deg": 0,
-   "bbox_w_over_h": 1.002,
+  "P02": {
+   "brand": "DJI",
+   "model": "Air 3S",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1895,
+    1812
+   ],
+   "upscale": 0.43,
+   "bbox_w_over_h": 1.046,
    "fill_of_bbox": 0.201,
-   "mean_gray": 115.7
+   "mean_gray": 97.0,
+   "source_type": "图片检索",
+   "image_url": "https://scr.wfcdn.de/28598/DJI-Air-3s-1728922163-0-0.jpg",
+   "page_url": "https://winfuture.de/news,145974.html",
+   "page_title": "DJI Air 3S: Neue Kameradrohne mit 1\"-Sensor vorab im Detail - WinFutur",
+   "domain": "winfuture.de",
+   "sha256": "9fa78b2034af5bbd324e83359c97266bafa6d919c83f92582a45c4a347a40d9b",
+   "fetched": "original",
+   "original_px": [
+    3840,
+    2160
+   ]
   },
-  "R08": {
-   "model": "DJI Mavic 3 Classic",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/d6245c35ede52733cac0ad22a95edbe7.glb",
-   "glb_sha256": "32c326e6189a898e77a4b35e7ab27fd7766b01038bda9bdbc6bbaf793e615baa",
-   "glb_bytes": 11467044,
-   "page": "https://store.dji.com/product/dji-mavic-3-classic",
-   "yaw_deg": 0,
-   "bbox_w_over_h": 0.989,
-   "fill_of_bbox": 0.198,
-   "mean_gray": 93.1
+  "P03": {
+   "brand": "DJI",
+   "model": "Mini 5 Pro",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    919,
+    744
+   ],
+   "upscale": 0.89,
+   "bbox_w_over_h": 1.235,
+   "fill_of_bbox": 0.251,
+   "mean_gray": 101.3,
+   "source_type": "图片检索",
+   "image_url": "https://dronescan.cl/wp-content/uploads/2025/09/Mini-5-Pro-Dron-4.webp",
+   "page_url": "https://dronescan.cl/producto/dji-mini-5-pro-combo-plus/",
+   "page_title": "DJI Mini 5 Pro Fly More Combo Plus (DJI RC2) - Dronescan",
+   "domain": "dronescan.cl",
+   "sha256": "b7efecd048899bc67c39817ea4642efeaff04b26c9d98a6f54b53c66b7181069",
+   "fetched": "original",
+   "original_px": [
+    1280,
+    1280
+   ]
   },
-  "R09": {
-   "model": "DJI Avata 2",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/9bf3095545781b0c16178c1eec89c637.glb",
-   "glb_sha256": "84b72d71799a0544f87a7ae680f1d4f4e6c43ae7ca5a2087f6a058504fff8fe5",
-   "glb_bytes": 4852204,
-   "page": "https://store.dji.com/product/dji-avata-2",
-   "yaw_deg": 180,
+  "P04": {
+   "brand": "DJI",
+   "model": "Mavic Pro",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    540,
+    474
+   ],
+   "upscale": 1.52,
+   "bbox_w_over_h": 1.139,
+   "fill_of_bbox": 0.214,
+   "mean_gray": 86.4,
+   "source_type": "图片检索",
+   "image_url": "https://www.pngall.com/wp-content/uploads/4/DJI-Mavic-Pro-Drone-PNG-File.png",
+   "page_url": "https://www.pngall.com/drone-png/download/40120",
+   "page_title": "DJI Mavic Pro Drone PNG File | PNG All",
+   "domain": "www.pngall.com",
+   "sha256": "9df692d1ba549b202885c15f93e277e3b7e0674ecc66df55ec16106ecadc0834",
+   "fetched": "original",
+   "original_px": [
+    600,
+    600
+   ]
+  },
+  "P05": {
+   "brand": "DJI",
+   "model": "Spark",
+   "type": "小型固定臂",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    402,
+    474
+   ],
+   "upscale": 1.73,
+   "bbox_w_over_h": 0.848,
+   "fill_of_bbox": 0.329,
+   "mean_gray": 154.2,
+   "source_type": "图片检索",
+   "image_url": "https://www.computertroopers.co.za/wp-content/uploads/2019/05/DJI-SPARK-Drone-Top.png",
+   "page_url": "https://www.computertroopers.co.za/shop/drones/dji/spark/dji-spark-fly-more-combo-white/",
+   "page_title": "DJI SPARK FLY MORE COMBO - WHITE | Computer Troopers",
+   "domain": "www.computertroopers.co.za",
+   "sha256": "d2282ba4ccd9e2902bb59e900e5bb419461965dd481af9fddd636d15136576a4",
+   "fetched": "original",
+   "original_px": [
+    600,
+    600
+   ]
+  },
+  "P06": {
+   "brand": "DJI",
+   "model": "Neo",
+   "type": "全包护圈",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1776,
+    1476
+   ],
+   "upscale": 0.46,
+   "bbox_w_over_h": 1.203,
+   "fill_of_bbox": 0.878,
+   "mean_gray": 199.0,
+   "source_type": "图片检索",
+   "image_url": "https://africadroneking.co.za/wp-content/uploads/2024/09/DJI-Neo_from-above_2-scaled.jpg",
+   "page_url": "https://africadroneking.co.za/product/dji-neo/",
+   "page_title": "DJI NEO Drone | Africa Drone Kings",
+   "domain": "africadroneking.co.za",
+   "sha256": "ea7c5debe2e5ac352ed5357ad8c69735ea3b962b9ae20f9f396093011fcba589",
+   "fetched": "original",
+   "original_px": [
+    2560,
+    2158
+   ]
+  },
+  "P07": {
+   "brand": "DJI",
+   "model": "Flip",
+   "type": "全包护圈",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1794,
+    1509
+   ],
+   "upscale": 0.46,
+   "bbox_w_over_h": 1.189,
+   "fill_of_bbox": 0.732,
+   "mean_gray": 212.6,
+   "source_type": "图片检索",
+   "image_url": "https://prizmatech.pe/drones/wp-content/uploads/2025/01/DJI-Flip-DJI-RC-N3-5.jpg",
+   "page_url": "https://prizmatech.pe/drones/producto/dji-flip-dji-rc-2/",
+   "page_title": "DJI Flip (DJI RC 2) - Dron con Pantalla Integrada y Cámara 4K | Prizma",
+   "domain": "prizmatech.pe",
+   "sha256": "8fc81f04791819125f610126f9fd1ebe14a049d83156f57692d45cd0cf4b6ae1",
+   "fetched": "original",
+   "original_px": [
+    2560,
+    2560
+   ]
+  },
+  "P08": {
+   "brand": "DJI",
+   "model": "Matrice 30",
+   "type": "行业机",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    545,
+    464
+   ],
+   "upscale": 1.5,
+   "bbox_w_over_h": 1.175,
+   "fill_of_bbox": 0.192,
+   "mean_gray": 97.7,
+   "source_type": "图片检索",
+   "image_url": "https://pusatdrone.com/wp-content/uploads/DJI-Matrice-30T-top-600x600.webp",
+   "page_url": "https://pusatdrone.com/dji-matrice-30t/",
+   "page_title": "Jual DJI Matrice 30T | Pusat Drone",
+   "domain": "pusatdrone.com",
+   "sha256": "9145093ae9c6ae1a7c04f43df1edbae9bde2b02abe2b4dff6a4e4952d7c4ab0f",
+   "fetched": "original",
+   "original_px": [
+    600,
+    600
+   ]
+  },
+  "P09": {
+   "brand": "DJI",
+   "model": "Inspire 3",
+   "type": "专业影视",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    847,
+    741
+   ],
+   "upscale": 0.97,
+   "bbox_w_over_h": 1.143,
+   "fill_of_bbox": 0.2,
+   "mean_gray": 100.3,
+   "source_type": "图片检索",
+   "image_url": "https://www.ormsdirect.co.za/cdn/shop/products/dji-inspire-3-top.webp?v=1681461821&width=1024",
+   "page_url": "https://www.ormsdirect.co.za/products/dji-inspire-3",
+   "page_title": "DJI Inspire 3 - Orms Direct - South Africa",
+   "domain": "www.ormsdirect.co.za",
+   "sha256": "50ab7b3d9d477b58586daacf87e807c708f8d549b056cd5aeab441ef8f3db372",
+   "fetched": "original",
+   "original_px": [
+    1024,
+    1024
+   ]
+  },
+  "P10": {
+   "brand": "DJI",
+   "model": "Avata 2",
+   "type": "涵道穿越机",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    870,
+    758
+   ],
+   "upscale": 0.94,
    "bbox_w_over_h": 1.148,
    "fill_of_bbox": 0.537,
-   "mean_gray": 94.6
+   "mean_gray": 94.6,
+   "source_type": "厂商官方 3D 模型的顶视渲染",
+   "image_url": "https://se-cdn.djiits.com/uploads/3d/9bf3095545781b0c16178c1eec89c637.glb",
+   "page_url": "https://store.dji.com",
+   "sha256": "84b72d71799a0544f87a7ae680f1d4f4e6c43ae7ca5a2087f6a058504fff8fe5"
   },
-  "R10": {
-   "model": "DJI FPV",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/e4e0a592c53ea71bfc3cd948397e31a1.glb",
-   "glb_sha256": "aa0644be55de6a4740fe88268de3b134ab294c0cb8a18cc53d6fb6a5e0708151",
-   "glb_bytes": 10561988,
-   "page": "https://store.dji.com/product/dji-fpv",
-   "yaw_deg": 0,
+  "P11": {
+   "brand": "DJI",
+   "model": "FPV",
+   "type": "穿越机",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    876,
+    519
+   ],
+   "upscale": 0.94,
    "bbox_w_over_h": 1.688,
    "fill_of_bbox": 0.397,
-   "mean_gray": 81.9
+   "mean_gray": 81.9,
+   "source_type": "厂商官方 3D 模型的顶视渲染",
+   "image_url": "https://se-cdn.djiits.com/uploads/3d/e4e0a592c53ea71bfc3cd948397e31a1.glb",
+   "page_url": "https://store.dji.com",
+   "sha256": "aa0644be55de6a4740fe88268de3b134ab294c0cb8a18cc53d6fb6a5e0708151"
   },
-  "R11": {
-   "model": "DJI Inspire 3",
-   "glb": "https://se-cdn.djiits.com/uploads/3d/8a0121488c580d1ec30ed08ca241eee4.glb",
-   "glb_sha256": "634dce550fb6d46192161173aafe4ffd4364c351386cdb8602ccce9062e44ded",
-   "glb_bytes": 15243248,
-   "page": "https://store.dji.com/product/dji-inspire-3",
-   "yaw_deg": 180,
-   "bbox_w_over_h": 1.21,
-   "fill_of_bbox": 0.194,
-   "mean_gray": 92.8
+  "P12": {
+   "brand": "Autel",
+   "model": "EVO II Pro",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1370,
+    1148
+   ],
+   "upscale": 0.6,
+   "bbox_w_over_h": 1.193,
+   "fill_of_bbox": 0.2,
+   "mean_gray": 85.0,
+   "source_type": "图片检索",
+   "image_url": "https://www.autelpilot.eu/cdn/shop/products/05_650d6fa6-6927-48c1-84de-acf7c148bbd2_2000x.jpg?v=1682500195",
+   "page_url": "https://es.autelpilot.eu/products/autel-robotics-evo-ii-pro-rtk-v3-rugged-bundle",
+   "page_title": "Comprar Autel Robotics Paquete resistente EVO II Pro RTK V3 - Autelpil",
+   "domain": "es.autelpilot.eu",
+   "sha256": "09dc9c8fdc1de4c46920d2b4c6cee27346786f90bc7b8461d744be55735ad99f",
+   "fetched": "original",
+   "original_px": [
+    1500,
+    1500
+   ]
+  },
+  "P13": {
+   "brand": "Parrot",
+   "model": "ANAFI",
+   "type": "折叠航拍",
+   "rotated_deg": 180,
+   "object_px_in_source": [
+    1341,
+    855
+   ],
+   "upscale": 0.61,
+   "bbox_w_over_h": 1.568,
+   "fill_of_bbox": 0.293,
+   "mean_gray": 97.0,
+   "source_type": "图片检索",
+   "image_url": "https://www.dronesdirect.co.uk/Images/PF728050_3_Supersize.png?v=10",
+   "page_url": "https://www.dronesdirect.co.uk/p/a2pf728050/grade-a2-parrot-anafi-4k-hdr-camera-drone-with-fpv-package",
+   "page_title": "GRADE A2 - Parrot Anafi 4K HDR Camera Drone with FPV Package A2 ...",
+   "domain": "www.dronesdirect.co.uk",
+   "sha256": "764388b6d41e7e1b83bac1fc12b9c44c931ee7e2c42c53a26b6a5a6224c10cd2",
+   "fetched": "original",
+   "original_px": [
+    1500,
+    1500
+   ]
+  },
+  "P14": {
+   "brand": "Parrot",
+   "model": "ANAFI Ai",
+   "type": "折叠航拍",
+   "rotated_deg": 180,
+   "object_px_in_source": [
+    1154,
+    707
+   ],
+   "upscale": 0.71,
+   "bbox_w_over_h": 1.632,
+   "fill_of_bbox": 0.324,
+   "mean_gray": 193.2,
+   "source_type": "图片检索",
+   "image_url": "https://enterprise.dronenerds.com/wp-content/uploads/2023/09/Parrot-AANAFI-Ai-1200x770.png",
+   "page_url": "https://enterprise.dronenerds.com/commercial-drone-platforms/parrot-series/parrot-anafi-ai/",
+   "page_title": "Parrot ANAFI Ai | Drone Nerds Enterprise",
+   "domain": "enterprise.dronenerds.com",
+   "sha256": "7d62b6284158be5d231b1b6ed641da1e412dc3f2b0afaaf98b7dd19d61bb07a1",
+   "fetched": "original",
+   "original_px": [
+    1200,
+    770
+   ]
+  },
+  "P15": {
+   "brand": "Parrot",
+   "model": "Bebop 2",
+   "type": "经典固定臂",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    998,
+    856
+   ],
+   "upscale": 0.82,
+   "bbox_w_over_h": 1.166,
+   "fill_of_bbox": 0.233,
+   "mean_gray": 123.8,
+   "source_type": "图片检索",
+   "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/5431/5431100cv11d.jpg",
+   "page_url": "https://www.bestbuy.com/site/parrot-bebop-drone-2-quadcopter-white/5431100.p",
+   "page_title": "Best Buy: Parrot Bebop Drone 2 Quadcopter White 47421BBR",
+   "domain": "www.bestbuy.com",
+   "sha256": "6901a318cd16dc4773808e57cf3d4f5890112ecc7503d8cd09f872d7e374278d",
+   "fetched": "original",
+   "original_px": [
+    1000,
+    857
+   ]
+  },
+  "P16": {
+   "brand": "Skydio",
+   "model": "Skydio 2",
+   "type": "小型固定臂",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1963,
+    1745
+   ],
+   "upscale": 0.42,
+   "bbox_w_over_h": 1.125,
+   "fill_of_bbox": 0.611,
+   "mean_gray": 128.7,
+   "source_type": "图片检索",
+   "image_url": "https://support.skydio.com/hc/article_attachments/1260803896490/Skydio_2_Image_2.png",
+   "page_url": "https://support.skydio.com/hc/en-us/articles/1260807407249-What-do-the-lights-on-Skydio-2-2-Enterprise-indicate",
+   "page_title": "What do the lights on Skydio 2/2+ Enterprise indicate? – Skydio",
+   "domain": "support.skydio.com",
+   "sha256": "74999ad09c4995a9d3fa5cf92e5eb90509aa038a58c698c58b59230f00170e5f",
+   "fetched": "original",
+   "original_px": [
+    2131,
+    1876
+   ]
+  },
+  "P17": {
+   "brand": "Skydio",
+   "model": "X10",
+   "type": "行业机",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1700,
+    1688
+   ],
+   "upscale": 0.48,
+   "bbox_w_over_h": 1.007,
+   "fill_of_bbox": 0.189,
+   "mean_gray": 124.2,
+   "source_type": "图片检索",
+   "image_url": "https://img2.tradewheel.com/uploads/images/products/5/7/0928139001737315839-skydio-x10d.jpg.webp",
+   "page_url": "https://www.tradewheel.com/p/skydio-x10d-2784420/",
+   "page_title": "Buy Skydio X10d from Bayran Gida, Republic of Türkiye | Tradewheel.com",
+   "domain": "www.tradewheel.com",
+   "sha256": "6e526a6f483f6f960e4cea5123edcf4529abf3381607e534703477dba3aefb4f",
+   "fetched": "original",
+   "original_px": [
+    2000,
+    2000
+   ]
+  },
+  "P18": {
+   "brand": "Hubsan",
+   "model": "Zino Mini Pro",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1199,
+    1081
+   ],
+   "upscale": 0.68,
+   "bbox_w_over_h": 1.109,
+   "fill_of_bbox": 0.211,
+   "mean_gray": 170.5,
+   "source_type": "图片检索",
+   "image_url": "https://static.puhy.cz/images/magictoolbox_cache/feabb61ae2a71c1844359f7cbe8b5d82/3/1/3115907/original/2711921053/c_3443403_2.jpg",
+   "page_url": "https://www.puhy.cz/hubsan-zino-mini-pro-2025-dron-rtf-s-kamerou-bila-matna-3115907.html",
+   "page_title": "Hubsan Zino Mini Pro-2025 dron RtF s kamerou bílá (matná) : Půhy.cz",
+   "domain": "www.puhy.cz",
+   "sha256": "30f9f0b9d52876728ca2f0eb4f04f1a338aa0b0e0b5f4d532792358652e18d33",
+   "fetched": "original",
+   "original_px": [
+    1247,
+    1247
+   ]
+  },
+  "P19": {
+   "brand": "FIMI",
+   "model": "X8 Mini",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    559,
+    558
+   ],
+   "upscale": 1.47,
+   "bbox_w_over_h": 1.002,
+   "fill_of_bbox": 0.27,
+   "mean_gray": 165.6,
+   "source_type": "图片检索",
+   "image_url": "https://www.neostore.com.np/assets/uploads/fimi1.jpg",
+   "page_url": "http://www.neostore.com.np/product/fimi-x8-mini-camera-drone",
+   "page_title": "FIMI X8 Mini Camera Drone",
+   "domain": "www.neostore.com.np",
+   "sha256": "9236965dea140c785b57358cc3766501ca7b43d86653701ed502d99f550e473a",
+   "fetched": "original",
+   "original_px": [
+    800,
+    800
+   ]
+  },
+  "P20": {
+   "brand": "Yuneec",
+   "model": "Mantis Q",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    652,
+    562
+   ],
+   "upscale": 1.26,
+   "bbox_w_over_h": 1.16,
+   "fill_of_bbox": 0.276,
+   "mean_gray": 64.1,
+   "source_type": "图片检索",
+   "image_url": "https://img.pccomponentes.com/articles/17/174328/d3.jpg",
+   "page_url": "https://www.pccomponentes.pt/yuneec-mantis-q-drone-plegable-con-camara-4k",
+   "page_title": "Yuneec Mantis Q Drone Plegable con Cámara 4K | PcComponentes.pt",
+   "domain": "www.pccomponentes.pt",
+   "sha256": "b1bd5ef43e56bc2fd60729e88bac5becd84143eb6d7ab4f4f0ebddcacf018c26",
+   "fetched": "original",
+   "original_px": [
+    800,
+    800
+   ]
+  },
+  "P21": {
+   "brand": "Yuneec",
+   "model": "Typhoon Q500 4K",
+   "type": "经典固定臂",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    993,
+    879
+   ],
+   "upscale": 0.82,
+   "bbox_w_over_h": 1.13,
+   "fill_of_bbox": 0.32,
+   "mean_gray": 115.9,
+   "source_type": "图片检索",
+   "image_url": "https://s13emagst.akamaized.net/products/2592/2591407/images/res_11563a24c1a16b45eadee046f8697e66.jpg",
+   "page_url": "https://www.emag.hu/yuneec-typhoon-q500-dron-4k-0813646020222/pd/DQSWQYBBM/",
+   "page_title": "Yuneec Typhoon Q500 Drón, 4k - eMAG.hu",
+   "domain": "www.emag.hu",
+   "sha256": "4518c90b954f25ba404d1bc47fae9aa0c7d44b7bcee46c9c9480bdc17ba04bd1",
+   "fetched": "original",
+   "original_px": [
+    1200,
+    1200
+   ]
+  },
+  "P22": {
+   "brand": "3DR",
+   "model": "Solo",
+   "type": "经典固定臂",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    910,
+    929
+   ],
+   "upscale": 0.88,
+   "bbox_w_over_h": 0.98,
+   "fill_of_bbox": 0.275,
+   "mean_gray": 59.9,
+   "source_type": "图片检索",
+   "image_url": "https://i.pinimg.com/originals/f7/2e/dc/f72edc04283890bb66a1425847c85afd.jpg",
+   "page_url": "https://www.pinterest.com/pin/3dr-solo-drone-top-view--117938083984788361/",
+   "page_title": "3DR Solo Drone - Top View | Top view from drone, Top view aerial drone",
+   "domain": "www.pinterest.com",
+   "sha256": "f228c8248d77d6c31bd0e6b106ce53b0b8e8eb1d26a627a148627c1b71875cd4",
+   "fetched": "original",
+   "original_px": [
+    1000,
+    1000
+   ]
+  },
+  "P23": {
+   "brand": "GoPro",
+   "model": "Karma",
+   "type": "折叠航拍",
+   "rotated_deg": 180,
+   "object_px_in_source": [
+    1014,
+    860
+   ],
+   "upscale": 0.81,
+   "bbox_w_over_h": 1.179,
+   "fill_of_bbox": 0.262,
+   "mean_gray": 125.2,
+   "source_type": "图片检索",
+   "image_url": "https://www.droneflyers.com/wp-content/uploads/2016/10/27518386_Karma_0_HERO5_Black_TD_master-1024x1024.jpg",
+   "page_url": "https://www.droneflyers.com/gopro-karma-drone-instant-karma-bad-karma-or-good-karma/",
+   "page_title": "GoPro Karma Drone - Instant Karma, Bad Karma or Good Karma ...",
+   "domain": "www.droneflyers.com",
+   "sha256": "84f6007b85aa52a1d0e7a6998cc382db79821d5180faf66b34b3f17f8a8bd4cb",
+   "fetched": "original",
+   "original_px": [
+    1024,
+    1024
+   ]
+  },
+  "P24": {
+   "brand": "Insta360",
+   "model": "Antigravity A1",
+   "type": "折叠航拍",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    900,
+    736
+   ],
+   "upscale": 0.91,
+   "bbox_w_over_h": 1.223,
+   "fill_of_bbox": 0.209,
+   "mean_gray": 153.9,
+   "source_type": "图片检索",
+   "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/f3e6b44d-5923-4af0-9533-9cb908439572.png;maxHeight=1920;maxWidth=900?format=webp",
+   "page_url": "https://www.bestbuy.com/product/antigravity-a1-8k-360-remote-control-drone-infinity-bundle-white/J3GWRK52JL",
+   "page_title": "Antigravity A1 8K 360 Remote Control Drone Infinity Bundle White DE001",
+   "domain": "www.bestbuy.com",
+   "sha256": "ecf23abcdfac4ae8dcb5f0755fb2b6928ddf69ba4ad7cbcce39fd35091bdbf29",
+   "fetched": "original",
+   "original_px": [
+    900,
+    736
+   ]
+  },
+  "P25": {
+   "brand": "HOVERAir",
+   "model": "X1 Pro Max",
+   "type": "全包护圈",
+   "rotated_deg": 180,
+   "object_px_in_source": [
+    900,
+    788
+   ],
+   "upscale": 0.91,
+   "bbox_w_over_h": 1.142,
+   "fill_of_bbox": 0.911,
+   "mean_gray": 124.1,
+   "source_type": "图片检索",
+   "image_url": "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/157b30db-2982-41cb-9f5a-1c4f3b4c23cc.png;maxHeight=1920;maxWidth=900?format=webp",
+   "page_url": "https://www.bestbuy.com/product/hoverair-x1-promax-standard-black/JJG6FS33YJ",
+   "page_title": "HOVERAir X1 PROMAX Standard Black SP06H006 - Best Buy",
+   "domain": "www.bestbuy.com",
+   "sha256": "dfe068f4e27de9088a2f8ddb1b1002d7da5b74abe0c264de48a044955fedad6f",
+   "fetched": "original",
+   "original_px": [
+    900,
+    788
+   ]
+  },
+  "P26": {
+   "brand": "Ryze",
+   "model": "Tello",
+   "type": "小型固定臂",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    895,
+    859
+   ],
+   "upscale": 0.92,
+   "bbox_w_over_h": 1.042,
+   "fill_of_bbox": 0.31,
+   "mean_gray": 158.1,
+   "source_type": "图片检索",
+   "image_url": "https://se-cdn.djiits.com/tpc/uploads/sku/cover/9e4b5fd8-325d-47b2-80ee-f47542134048@ultra.png",
+   "page_url": "https://store.dji.com/product/tello",
+   "page_title": "Tello | Ryze Tech - Feel the Fun",
+   "domain": "store.dji.com",
+   "sha256": "6c3a329491d9605b4af4d9d9c26fe41788ea2f71542177a2f740e6a2885cbbd5",
+   "fetched": "original",
+   "original_px": [
+    1280,
+    1280
+   ]
+  },
+  "P27": {
+   "brand": "ZeroTech",
+   "model": "Dobby",
+   "type": "小型折叠",
+   "rotated_deg": 90,
+   "object_px_in_source": [
+    554,
+    443
+   ],
+   "upscale": 1.48,
+   "bbox_w_over_h": 0.8,
+   "fill_of_bbox": 0.431,
+   "mean_gray": 206.9,
+   "source_type": "图片检索",
+   "image_url": "https://dronomania.ru/wp-content/uploads/2017/04/Zerotech-Dobby.png",
+   "page_url": "https://dronomania.ru/vs/bitva-sedfi-dronov-yuneec-breeze-vs-hover-passport-camera-drone-vs-zerotech-dobby.html",
+   "page_title": "Yuneec Breeze vs Hover Passport Camera Drone vs Zerotech Dobby: битва ",
+   "domain": "dronomania.ru",
+   "sha256": "c4cb1d3b7c4412e576d78f27ba966dfbf0534798c84174e7536807dbe854f94a",
+   "fetched": "original",
+   "original_px": [
+    600,
+    600
+   ]
+  },
+  "P28": {
+   "brand": "PowerVision",
+   "model": "PowerEgg X",
+   "type": "异形",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    896,
+    680
+   ],
+   "upscale": 0.91,
+   "bbox_w_over_h": 1.318,
+   "fill_of_bbox": 0.149,
+   "mean_gray": 190.7,
+   "source_type": "图片检索",
+   "image_url": "https://www.jib.co.th/img_master/product/original/2022021409545251604_4.jpg",
+   "page_url": "https://www.jib.co.th/web/product/readProduct/51604/DRONE--",
+   "page_title": "DRONE (โดรน) POWERVISION POWEREGG X EXPLORER",
+   "domain": "www.jib.co.th",
+   "sha256": "4405e07be3965bf8ffa7fa6cbee63b53efcadb5db4c82c8d9e4956fc622c4660",
+   "fetched": "original",
+   "original_px": [
+    1000,
+    1000
+   ]
+  },
+  "P29": {
+   "brand": "iFlight",
+   "model": "Nazgul5",
+   "type": "穿越机",
+   "rotated_deg": 180,
+   "object_px_in_source": [
+    894,
+    855
+   ],
+   "upscale": 0.92,
+   "bbox_w_over_h": 1.046,
+   "fill_of_bbox": 0.261,
+   "mean_gray": 135.4,
+   "source_type": "图片检索",
+   "image_url": "https://rcdrone.top/cdn/shop/files/5_644f60f2-8865-43d0-90c3-b2af7a7facb6.webp?v=1684297604&width=1946",
+   "page_url": "https://rcdrone.top/products/iflight-nazgul-evoque-f5-v2-analog",
+   "page_title": "iFlight Nazgul Evoque F5 V2 - Analog 6S 5inch FPV Drone BNF F5X F5D（Sq",
+   "domain": "rcdrone.top",
+   "sha256": "4fd533a83269675bbe09e2317aa9596c5cffb4f48d3fca9b195cc1b13cc73a5e",
+   "fetched": "original",
+   "original_px": [
+    1000,
+    1000
+   ]
+  },
+  "P30": {
+   "brand": "GEPRC",
+   "model": "CineLog35",
+   "type": "涵道穿越机",
+   "rotated_deg": 180,
+   "object_px_in_source": [
+    1210,
+    1426
+   ],
+   "upscale": 0.57,
+   "bbox_w_over_h": 0.849,
+   "fill_of_bbox": 0.746,
+   "mean_gray": 151.9,
+   "source_type": "图片检索",
+   "image_url": "https://newbeedrone.com/cdn/shop/files/GEPRC-CineLog-35-HD-CineWhoop-Drone-Caddx-Nebula-Pro-TBS-Crossfire-6S-GEPRC-52704128_2000x.jpg?v=1729812479",
+   "page_url": "https://newbeedrone.com/products/geprc-cinelog-35-hd-cinewhoop-drone-caddx-nebula-pro",
+   "page_title": "GEPRC CineLog 35 HD CineWhoop Drone - Caddx Nebula Pro - TBS Crossfire",
+   "domain": "newbeedrone.com",
+   "sha256": "4e6589778a75615ec85e1f855f57a3091f0e1d19120594f012b78752b3cffbdd",
+   "fetched": "original",
+   "original_px": [
+    2000,
+    2000
+   ]
+  },
+  "P31": {
+   "brand": "Sony",
+   "model": "Airpeak S1",
+   "type": "专业影视",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1378,
+    1083
+   ],
+   "upscale": 0.59,
+   "bbox_w_over_h": 1.272,
+   "fill_of_bbox": 0.193,
+   "mean_gray": 76.9,
+   "source_type": "图片检索",
+   "image_url": "https://photorumors.com/wp-content/uploads/2021/06/Sony-Airpeak-S1-drone-2.jpeg",
+   "page_url": "https://photorumors.com/2021/06/09/sony-announces-a-9000-airpeak-s1-drone/",
+   "page_title": "Sony announces a $9,000 Airpeak S1 drone - Photo Rumors",
+   "domain": "photorumors.com",
+   "sha256": "ca22ad9fa1d31631dc0ef3b602d807584aa21c9fd000febfdcc18e2cba871af0",
+   "fetched": "original",
+   "original_px": [
+    2000,
+    1500
+   ]
+  },
+  "P32": {
+   "brand": "Freefly",
+   "model": "Astro",
+   "type": "专业影视",
+   "rotated_deg": 0,
+   "object_px_in_source": [
+    1002,
+    980
+   ],
+   "upscale": 0.82,
+   "bbox_w_over_h": 1.022,
+   "fill_of_bbox": 0.147,
+   "mean_gray": 74.0,
+   "source_type": "图片检索",
+   "image_url": "https://www.dslrpros.com/cdn/shop/files/FreeflyAstroMax_4.webp?v=1761548242&width=1445",
+   "page_url": "https://www.dslrpros.com/products/freefly-astro-max",
+   "page_title": "Buy Freefly Astro Max Aircraft | DSLRPros – DSLRpros",
+   "domain": "www.dslrpros.com",
+   "sha256": "f9e729c7910d99d28242df97d9970df97612f7adcdd0b0a9eca235e8cb664b01",
+   "fetched": "original",
+   "original_px": [
+    1200,
+    1200
+   ]
   }
  }
 }

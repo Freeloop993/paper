@@ -1,8 +1,8 @@
 {
- "version": "S5-pilot-3.0",
- "pack": "7830214685d8",
+ "version": "S5-pilot-4.0",
+ "pack": "9e157f56cc97",
  "frozen_on": "2026-11-19",
- "decided_by": "作者 2026-11-19 把这项数据收集交给 Claude 安排，并要求样本用真实产品",
+ "decided_by": "作者 2026-11-19 把这项数据收集交给 Claude 安排，要求样本用真实产品、品类多样、靠检索图片取得",
  "superseded": [
   {
    "version": "S5-pilot-1.0",
@@ -23,14 +23,19 @@
    "version": "S5-pilot-2.0",
    "pack": "984fd67d571e",
    "reason": "作者指出感知评议应当用真实产品样本，不用模型生成的图。未发出，答卷 0 份"
+  },
+  {
+   "version": "S5-pilot-3.0",
+   "pack": "7830214685d8",
+   "reason": "样本全是 DJI 一个类型；作者要求多品牌、多类型，靠检索图片。未发出，答卷 0 份"
   }
  ],
  "sha256": {
-  "protocol.md": "06ce0e6071099dcb7c70be279e5cb29dac28be21a66287703fcadda48ebf97a9",
-  "participant/无人机外观评议.html": "0a7916f2f15eba6fc093b8898ec1be3cc0483f9cc3395d9980fe7f732df67163",
-  "researcher-key.json": "66882bbdc4c517a7babf9859b8261662950a265e03091c5c599ae3fbfbd94c1f",
+  "protocol.md": "0e2786bbb8b2997a67ba462c8e3f5406fe20f44b0f5e09f8aba70262424e665a",
+  "participant/无人机外观评议.html": "d51d1c3d8ea8e3e6e862ec79e20d016e5a2990a20512d784cb369b351da209d1",
+  "researcher-key.json": "a29935254a99844458e84f621209eb8ae8145d5144fb5ec89aadc0daa610aaed",
   "summarize.py": "e616279edb856c9f5da0d75671e40373008f9e3791179003bd520417cb69afba",
-  "real/samples.json": "3fa573609d99aeb65207ea712497970e523695a2a5b9117e3c34bcbcb72fac6e"
+  "real/samples.json": "a76d5669b9a5438bdffaee977f06bc182ba57c526130704e619fb8453b88c19f"
  },
- "rule": "只作描述：逐款逐人读数与中位数；两对近似外形的评分差；与各项比例的等级相关。不设通过门槛。"
+ "rule": "只作描述：逐款逐人读数与中位数、按类型汇总、与各项比例的等级相关。不设通过门槛。"
 }
