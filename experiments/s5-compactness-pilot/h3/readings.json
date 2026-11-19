@@ -1,0 +1,210 @@
+{
+ "reader": "程序读数，知条件，非独立判读",
+ "cases": {
+  "F1-D220": {
+   "layout": "D220",
+   "target": {
+    "diagonal_mm": 220,
+    "w_over_l": 1.0,
+    "d_over_D": 0.577,
+    "shell_width_over_D": 0.227
+   },
+   "read": {
+    "ok": true,
+    "hubs_px": [
+     [
+      305.8,
+      286.0
+     ],
+     [
+      751.7,
+      320.7
+     ],
+     [
+      732.0,
+      729.3
+     ],
+     [
+      292.1,
+      730.1
+     ]
+    ],
+    "diagonal_px": 615.2,
+    "w_over_l": 1.039,
+    "prop_px": 273.7,
+    "d_over_D": 0.445,
+    "waist_px": 176,
+    "waist_over_D": 0.286,
+    "centre_px": [
+     520.4,
+     516.5
+    ],
+    "smallest_to_largest_blob": 0.69
+   }
+  },
+  "F1-D260": {
+   "layout": "D260",
+   "target": {
+    "diagonal_mm": 260,
+    "w_over_l": 1.0,
+    "d_over_D": 0.488,
+    "shell_width_over_D": 0.192
+   },
+   "read": {
+    "ok": true,
+    "hubs_px": [
+     [
+      304.4,
+      286.4
+     ],
+     [
+      751.5,
+      320.6
+     ],
+     [
+      731.8,
+      729.6
+     ],
+     [
+      292.2,
+      730.4
+     ]
+    ],
+    "diagonal_px": 615.6,
+    "w_over_l": 1.04,
+    "prop_px": 273.6,
+    "d_over_D": 0.444,
+    "waist_px": 181,
+    "waist_over_D": 0.294,
+    "centre_px": [
+     520.0,
+     516.8
+    ],
+    "smallest_to_largest_blob": 0.69
+   }
+  },
+  "F1-D300": {
+   "layout": "D300",
+   "target": {
+    "diagonal_mm": 300,
+    "w_over_l": 1.0,
+    "d_over_D": 0.423,
+    "shell_width_over_D": 0.167
+   },
+   "read": {
+    "ok": true,
+    "hubs_px": [
+     [
+      249.1,
+      244.2
+     ],
+     [
+      791.8,
+      271.5
+     ],
+     [
+      779.5,
+      777.9
+     ],
+     [
+      242.9,
+      774.4
+     ]
+    ],
+    "diagonal_px": 748.4,
+    "w_over_l": 1.041,
+    "prop_px": 275.9,
+    "d_over_D": 0.369,
+    "waist_px": 178,
+    "waist_over_D": 0.238,
+    "centre_px": [
+     515.8,
+     517.0
+    ],
+    "smallest_to_largest_blob": 0.77
+   }
+  },
+  "F1-R125": {
+   "layout": "R125",
+   "target": {
+    "diagonal_mm": 260,
+    "w_over_l": 1.25,
+    "d_over_D": 0.488,
+    "shell_width_over_D": 0.192
+   },
+   "read": {
+    "ok": true,
+    "hubs_px": [
+     [
+      304.6,
+      286.5
+     ],
+     [
+      749.9,
+      319.0
+     ],
+     [
+      732.4,
+      729.8
+     ],
+     [
+      292.1,
+      730.8
+     ]
+    ],
+    "diagonal_px": 616.0,
+    "w_over_l": 1.036,
+    "prop_px": 274.0,
+    "d_over_D": 0.445,
+    "waist_px": 189,
+    "waist_over_D": 0.307,
+    "centre_px": [
+     519.8,
+     516.5
+    ],
+    "smallest_to_largest_blob": 0.71
+   }
+  },
+  "F1-R150": {
+   "layout": "R150",
+   "target": {
+    "diagonal_mm": 260,
+    "w_over_l": 1.5,
+    "d_over_D": 0.488,
+    "shell_width_over_D": 0.192
+   },
+   "read": {
+    "ok": true,
+    "hubs_px": [
+     [
+      305.0,
+      286.1
+     ],
+     [
+      751.5,
+      320.5
+     ],
+     [
+      732.0,
+      729.2
+     ],
+     [
+      292.4,
+      730.2
+     ]
+    ],
+    "diagonal_px": 615.4,
+    "w_over_l": 1.039,
+    "prop_px": 274.1,
+    "d_over_D": 0.445,
+    "waist_px": 182,
+    "waist_over_D": 0.296,
+    "centre_px": [
+     520.2,
+     516.5
+    ],
+    "smallest_to_largest_blob": 0.68
+   }
+  }
+ }
+}

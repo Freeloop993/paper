@@ -43,39 +43,40 @@ def main(paths):
     out += ['', '## 核对题', '']
     c = collections.Counter(verdict(r, pid) for r in rs for pid, v in pk.items() if v['kind'] == 'identical')
     out.append('两张完全相同的图：选“差不多” %d 人，选了某一边 %d 人，无法判断 %d 人。' % (c['same'], c['higher'] + c['lower'], c['na']))
-    for f in ('d/D', 'W/L'):
+    FACT = KEY['factors']
+    for f in FACT:
         rep = [(pid, v['repeat_of']) for pid, v in pk.items() if v['kind'] == 'repeat' and v['factor'] == f]
         same = sum(all(verdict(r, a) == verdict(r, b) for a, b in rep) for r in rs)
         out.append('%s 的重复题（左右对调后再问一次）：前后一致 %d / %d 人。' % (f, same, len(rs)))
-    for f in ('d/D', 'W/L'):
-        out += ['', '## %s 与紧凑感' % f, '', '成对比较：同一种子下两张图只差这一个比例，问哪一张更紧凑。“取值高的一张”指该比例较大的图。', '',
-                '| 比较 | 种子位 | 选取值高的 | 选取值低的 | 差不多 | 无法判断 |', '| --- | --- | ---: | ---: | ---: | ---: |']
+    for f in FACT:
+        hi = FACT[f]['higher']
+        out += ['', '## %s 与紧凑感' % f, '', '成对比较：同一个设计的两张图只差%s，问哪一张更紧凑。' % f, '',
+                '| 比较 | 设计 | 选%s | 选另一张 | 差不多 | 无法判断 |' % hi, '| --- | --- | ---: | ---: | ---: | ---: |']
         tot = collections.Counter()
         for kind, label in [('low-high', '低档对高档'), ('low-mid', '低档对中档'), ('mid-high', '中档对高档')]:
             for pid, v in pk.items():
                 if v['kind'] != kind or v['factor'] != f: continue
                 c = collections.Counter(verdict(r, pid) for r in rs)
                 if kind == 'low-high': tot.update(c)
-                out.append('| %s | r%d | %d | %d | %d | %d |' % (label, v['seed_slot'], c['higher'], c['lower'], c['same'], c['na']))
+                out.append('| %s | %s | %d | %d | %d | %d |' % (label, v['family'], c['higher'], c['lower'], c['same'], c['na']))
         n = sum(tot.values())
-        out += ['', '低档对高档合计 %d 次判断：选取值高的 %d，选取值低的 %d，差不多 %d，无法判断 %d。' % (n, tot['higher'], tot['lower'], tot['same'], tot['na'])]
+        out += ['', '低档对高档合计 %d 次判断：选%s %d，选另一张 %d，差不多 %d，无法判断 %d。' % (n, hi, tot['higher'], tot['lower'], tot['same'], tot['na'])]
         lh = [pid for pid, v in pk.items() if v['kind'] == 'low-high' and v['factor'] == f]
         per = [sum(verdict(r, pid) == 'higher' for pid in lh) - sum(verdict(r, pid) == 'lower' for pid in lh) for r in rs]
-        out.append('逐人（4 个种子里选高的次数减选低的次数）：%s。' % '、'.join('%+d' % x for x in per))
+        out.append('逐人（4 个设计里选“%s”的次数减选另一张的次数）：%s。' % (hi, '、'.join('%+d' % x for x in per)))
         why = [x['reason'].strip() for r in rs for x in r['pairs'] if pk[x['pair']]['factor'] == f and x.get('reason', '').strip()]
         if why: out += ['', '评议者写下的依据：' + '；'.join(sorted(set(why))) + '。']
         out += ['', '单图评分（1 = 左极，7 = 右极；“看不出”不计入中位数）：', '', '| 词对 | 档位 | 逐人逐图读数 | 中位数 | 看不出 |', '| --- | --- | --- | ---: | ---: |']
         for t in KEY['terms']:
-            for lv in sorted({v['level'] for v in img.values() if v['factor'] == f}):
+            for variant, lv in FACT[f]['levels'].items():
                 vals, na = [], 0
                 for r in rs:
                     for x in r['singles']:
-                        m = img[x['image']]
-                        if m['factor'] != f or m['level'] != lv: continue
+                        if img[x['image']]['variant'] != variant: continue
                         k = x['ratings'][t['id']]
                         if k == 'na': na += 1
                         else: vals.append(8 - k if x['flip'][t['id']] else k)
-                out.append('| %s—%s | %.2f | %s | %s | %d |' % (t['left'], t['right'], lv, ' '.join(map(str, vals)), ('%.1f' % statistics.median(vals)) if vals else '—', na))
+                out.append('| %s—%s | %s | %s | %s | %d |' % (t['left'], t['right'], lv, ' '.join(map(str, vals)), ('%.1f' % statistics.median(vals)) if vals else '—', na))
     print('\n'.join(out))
 
 if __name__ == '__main__':

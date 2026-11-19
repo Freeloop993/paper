@@ -1,0 +1,26 @@
+{
+ "sent": "2026-11-19T19:36:52+1100",
+ "http": 200,
+ "elapsed_s": 13.02,
+ "created": 1795077424,
+ "output_format": "png",
+ "usage": {
+  "generated_images": 1,
+  "total_tokens": 10389,
+  "input_tokens": 6293,
+  "output_tokens": 4096,
+  "input_tokens_details": {
+   "text_tokens": 4243,
+   "image_tokens": 2050
+  },
+  "output_tokens_details": {
+   "image_tokens": 4096
+  }
+ },
+ "request_id": "074de8240e61f7b1369e46e6482759f3",
+ "item": {
+  "size": "1024x1024",
+  "revised_prompt": "The square framing and scale of the central diagram in <Picture 1> is <Subject 1>. The four red circular markers at the corners of an X-shaped layout in <Picture 1> are <Subject 2>. The two intersecting blue diagonal lines connecting the opposite corner markers in <Picture 1> are <Subject 3>. The target image replaces the solid black background of <Picture 1> with a plain white studio background and transforms the schematic geometry into a strict orthographic top-down product render of a quadcopter for everyday aerial photography, aligned to <Subject 1>, <Subject 2>, and <Subject 3>. <Subject 1> is fully preserved. <Subject 2> supplies the exact positions transferred to the centers of the quadcopter's four motors. <Subject 3> supplies the exact arm directions and intersection angle transferred to the quadcopter's unfolded arms. The quadcopter is oriented with its nose toward the top edge of the frame, featuring a true X-frame configuration with a 260 mm opposite-motor span and equal horizontal and vertical spacing. At each of the four motor centers defined by <Subject 2>, a cylindrical motor mount supports one stationary charcoal-colored two-blade 5-inch propeller with no propeller guards, showing subtle blade twist and smooth aerodynamic contours under soft overhead studio lighting. Extending outward along the diagonal trajectories of <Subject 3>, four unfolded arms maintain a uniform width of 15 mm at midspan; each arm tapers gradually out of the central body for at least two arm widths before reaching its running width without any joint seam, and joins visibly to its respective motor mount at the outer end. Centered between the inner arm roots lies a rounded pod with a continuous curved outline and a main shell plan envelope proportioned to 90 mm long by 50 mm wide. Within the forward nose outline, a single forward-facing camera housing sits flush inside the pod contour; because the camera points horizontally forward, its optical lens face is completely hidden from directly overhead, leaving only its rounded upper casing visible. A single clean top cover seam runs symmetrically along the centerline of the pod, while the tail end terminates in an uninterrupted curved shell. Both the central pod shell and the four arms feature a satin neutral mid-gray finish that catches soft, even highlights and casts gentle contact shadows onto the plain white background, with all guide marks, red dots, blue lines, and lettering omitted."
+ },
+ "output_sha256": "1dfb8a7772081889710b91ba7bd7c475dd09d07ce1d89a11181485727cea130f"
+}

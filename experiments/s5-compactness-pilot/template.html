@@ -52,9 +52,9 @@ function fresh(){
   const seed = (crypto.getRandomValues(new Uint32Array(1))[0]) >>> 0, r = rng(seed);
   const id = Array.from(crypto.getRandomValues(new Uint8Array(6)), (b) => b.toString(16).padStart(2, '0')).join('');
   const singles = shuffle(PACK.singles, r).map((image) => ({ image, flip: Object.fromEntries(PACK.terms.map((t) => [t.id, r() < 0.5])), ratings: {}, ms: 0 }));
-  // 重复题的左右与首次相反；其余左右随机。重复题排在后半段。
+  // 重复题一定排在原题之后（至少隔两题，且在后半段），左右与原题相反；其余左右随机。
   const side = {}; const firstHalf = shuffle(PACK.pairs.filter((p) => !p.repeatOf), r), reps = PACK.pairs.filter((p) => p.repeatOf);
-  const order = firstHalf.slice(); reps.forEach((p) => order.splice(Math.floor(order.length / 2) + Math.floor(r() * (order.length / 2 + 1)), 0, p));
+  const order = firstHalf.slice(); reps.forEach((p) => { const lo = Math.min(order.length, Math.max(order.findIndex((x) => x.id === p.repeatOf) + 3, Math.floor(order.length / 2))); order.splice(lo + Math.floor(r() * (order.length - lo + 1)), 0, p); });
   const pairs = order.map((p) => { const sw = p.repeatOf ? !side[p.repeatOf] : r() < 0.5; side[p.id] = sw; return { pair: p.id, left: sw ? p.b : p.a, right: sw ? p.a : p.b, choice: null, reason: '', ms: 0 }; });
   return { schema: PACK.schema, pack: PACK.pack, response_id: id, seed, started_at: new Date().toISOString(), finished_at: null, step: 0, consent: false, background: {}, singles, pairs, closing: {},
     device: { w: innerWidth, h: innerHeight, dpr: devicePixelRatio, ua: navigator.userAgent } };

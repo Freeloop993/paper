@@ -1,13 +1,19 @@
 {
- "version": "S5-pilot-1.0",
- "pack": "fc76e183627f",
+ "version": "S5-pilot-1.1",
+ "pack": "c5c99e119d4d",
  "frozen_on": "2026-11-19",
- "confirmed_by": "作者，在与 Claude 的会话中确认方案第四节的读法",
- "sha256": {
-  "protocol.md": "e0a3b722be9a9c1738897390e95b234650ec37170dba17b44aee265ffbf01981",
-  "participant/无人机外观评议.html": "87a08f3002aa5658b25161ba8b5dae69fdbc7d66346a0f5f87a344c6886a97c8",
-  "researcher-key.json": "4638a5f9d750729b1386b8b47b05c14b0b66cc766270e7fac5b8b3f874363fdd",
-  "summarize.py": "20e48ba2502cd2ff5ed81334eadca68535fcc3624581a2dee9dc366bf40ab8c9"
+ "reading_rule_confirmed_by": "作者，2026-11-19，在与 Claude 的会话中确认（当时版本 1.0）；1.1 版只更换材料，读法文字未改",
+ "superseded": {
+  "version": "S5-pilot-1.0",
+  "pack": "fc76e183627f",
+  "reason": "作者审图后要求更换 E1 图；发出前撤回，答卷 0 份"
  },
- "rule": "同一方向的选择在 4 个种子里至少 3 个种子上不少于该题有效答卷的 70%，且全部低档对高档判断中不少于 70%，记为读得出；两个因素都不预设方向。"
+ "sha256": {
+  "protocol.md": "3ff5c6259d95fec7d92b0ae4389f114249b0d8518f747209f07ccf8b400f6255",
+  "participant/无人机外观评议.html": "dded472302cb2918236d2d89d691d9d7b95d569818326bea3d619093e3b6fdb3",
+  "researcher-key.json": "59f20b109fc34ae66dac1495cd1728363ef2dad29d9719aa1a17d3cf8bb9c603",
+  "summarize.py": "82397cb5b831a8040d1e8b693a3a8f500cbbfe0f14c73c261ca19bdbe3e9885e",
+  "h3/derive.json": "fa148fc9ba68d1a76051ca7cbad7c54d53a9b52642af33da4fcc64f2a6968337"
+ },
+ "rule": "同一方向的选择在 4 个设计里至少 3 个设计上不少于该题有效答卷的 70%，且全部低档对高档判断中不少于 70%，记为读得出；两个因素都不预设方向。"
 }

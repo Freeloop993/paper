@@ -1,0 +1,26 @@
+{
+ "sent": "2026-11-19T19:33:13+1100",
+ "http": 200,
+ "elapsed_s": 14.38,
+ "created": 1795077206,
+ "output_format": "png",
+ "usage": {
+  "generated_images": 1,
+  "total_tokens": 9858,
+  "input_tokens": 5762,
+  "output_tokens": 4096,
+  "input_tokens_details": {
+   "text_tokens": 3712,
+   "image_tokens": 2050
+  },
+  "output_tokens_details": {
+   "image_tokens": 4096
+  }
+ },
+ "request_id": "074de74afa06a2a5674399beef7ca3b0",
+ "item": {
+  "size": "1024x1024",
+  "revised_prompt": "The spatial layout and scale of the four red circular points and two intersecting blue diagonal lines in <Picture 1> is <Subject 1>. The target image shows a strict orthographic top-view product render of an everyday aerial photography quadcopter on a plain white background, replacing the black background, red dots, and blue lines of <Picture 1> while matching <Subject 1>. <Subject 1> supplies the exact motor center positions, arm directions, equal horizontal and vertical spacing, and overall framing scale transferred to the new quadcopter's motors and unfolded arms. The quadcopter is oriented with its nose toward the top edge in a true X configuration corresponding to a 260 mm opposite-motor span. At the center lies a rounded pod with a continuous curved outline and a plan envelope of 90 mm long by 50 mm wide, finished in satin neutral mid-gray with a single clean top cover seam. Within the forward nose outline sits a single forward-facing camera housing whose horizontally oriented optical face remains hidden from directly overhead, while the tail ends in uninterrupted shell. Four fully unfolded arms extend diagonally outward along the vectors of <Subject 1>, each measuring 15 mm wide at midspan; each arm tapers smoothly out of the central pod over at least two arm widths before reaching its uniform running width without any joint seam, and joins visibly into its respective motor mount at the four corner centers. Each motor carries one stationary charcoal-colored two-blade 5-inch propeller with no propeller guards. Soft overhead studio lighting illuminates the matte-to-satin gray surfaces and dark rotors, casting subtle contact shadows onto the plain light background with no guide marks or lettering."
+ },
+ "output_sha256": "5873114e78e1a0bb3f82db3adfa3f0d7dbf9690d7be6db8251e5bd5b03478c41"
+}
