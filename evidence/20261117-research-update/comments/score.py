@@ -3,7 +3,9 @@ import argparse, json
 from pathlib import Path
 from functools import lru_cache
 from scipy.stats import hypergeom
-from build import TOPICS
+# 主题表直接写在这里（与 build.py 的 TOPICS 相同），免得评分时还要装分词库
+TOPICS = ['小巧或紧凑', '随身携带', '轻重感受', '整体美感', '折叠收纳', '简洁或繁复', '颜色与辨识', '材质与质感', '其他外形或部件']
+VERSIONS = ('S2-20261117-a', 'S2-20261120-b')   # b 版题目与顺序同 a 版，多了作答者情况、自动保存和逐条用时
 
 @lru_cache(None)
 def interval(x,n,N):
@@ -12,7 +14,7 @@ def interval(x,n,N):
     return [min(possible),max(possible)]
 
 def score(key,data):
-    if data['version']!='S2-20261117-a' or data['complete'] is not True:raise ValueError('需要本版完整答卷')
+    if data['version'] not in VERSIONS or data['complete'] is not True:raise ValueError('需要 a 版或 b 版的完整答卷')
     rows=data['answers']
     if set(rows)!=set(key) or len(rows)!=150:raise ValueError('答卷条目不全或有多余项')
     for r in rows.values():
@@ -28,6 +30,9 @@ def score(key,data):
     out['themes']={t:measure(lambda r:t in r['topics']) for t in TOPICS}
     a,u=out['涉及']['retained_x_of_50'],out['涉及']['excluded_x_of_100']
     out['confirmed_appearance']={'retained_positive_rate':a/50,'excluded_positive_rate':u/100,'estimated_recall':(4.56*a/(4.56*a+10.90*u) if a+u else None)}
+    out['respondent']=data.get('respondent',{})
+    ms=sorted(r.get('ms',0) for r in rows.values())
+    if any(ms): out['seconds_per_item']={'median':round(ms[len(ms)//2]/1000,1),'under_3s':sum(1 for m in ms if m<3000),'total_minutes':round(sum(ms)/60000,1)}
     return out
 if __name__=='__main__':
     p=argparse.ArgumentParser()

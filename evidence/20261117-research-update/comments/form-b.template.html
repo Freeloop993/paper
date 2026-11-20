@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>航拍机评论文字核查</title>
+<style>body{font:17px/1.65 "Microsoft YaHei","PingFang SC",sans-serif;background:#f3f5f1;color:#162e27;margin:0}main{max-width:760px;margin:2rem auto;padding:1rem}article{background:white;padding:1.4rem;border:1px solid #cad6ce;border-radius:12px}blockquote{white-space:pre-wrap;overflow-wrap:anywhere;margin:1rem 0;padding:1rem;border-left:4px solid #307762;background:#eff6f2}button,select,input{font:inherit}button,select{padding:.35rem .7rem;margin:.15rem}label{display:inline-block;padding:.35rem .7rem;margin:.2rem;border:1px solid #bfcac2;border-radius:6px}label.q{display:block;border:0;padding:.2rem 0}input[type=text]{width:95%;padding:.4rem}small{display:block;color:#455a51}nav{margin-top:1rem}button:focus-visible,input:focus-visible{outline:3px solid #18775c}button.go{background:#18775c;color:#fff;border:1px solid #18775c;border-radius:6px}button:disabled{opacity:.45}</style>
+<main id="app"></main>
+<script type="application/json" id="payload">__DATA__</script><script>
+// S2 评论核查，b 版（2026-11-20）。150 条题目与顺序同 a 版，对应键不变。
+// 比 a 版多三样：开始前记下作答者的情况；每次作答自动存在本机浏览器里，关掉页面不丢；记下每条停留的时间。
+const {items,topics}=JSON.parse(document.getElementById('payload').textContent), app=document.getElementById('app'), $=id=>document.getElementById(id);
+const no='以上均未提到', options=['涉及','未涉及','信息不足'], version='S2-20261120-b', KEY='S2-b-draft';
+let S; try{S=JSON.parse(localStorage.getItem(KEY))}catch(e){} if(!S||S.version!==version) S={version,started_at:null,finished_at:null,respondent:{},answers:{},at:0};
+let i=S.at||0, shown=0; const store=()=>{S.at=i; try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}};
+const id=()=>items[i].id, answer=()=>S.answers[id()]??={scope:'',topics:[],note:'',ms:0};
+const valid=r=>r&&options.includes(r.scope)&&Array.isArray(r.topics)&&r.topics.length>0&&r.topics.every(t=>[...topics,no].includes(t))&&(!r.topics.includes(no)||r.topics.length===1);
+const label=(title,type,on,fn)=>{let el=document.createElement('label'),input=document.createElement('input');input.type=type;input.checked=on;input.addEventListener('change',fn);el.append(input,' '+title);return el;};
+const QS=[['role','你现在是',['硕士研究生','博士研究生','其他']],['field','你的专业方向',['设计类','其他工科','其他']],['seen','你是否看过这项研究对这批评论的分类结果、证据卡或论文稿',['没有','看过']],['repo','你是否打开过这项研究的资料库或代码仓库',['没有','打开过']]];
+function intro(){
+  app.innerHTML='<article><h1>航拍机评论文字核查</h1><p>一共 '+items.length+' 条无人机买家评论。每条回答两个问题：它有没有在说机体的外形；文字里明确提到了哪些方面。请按评论者实际说的话判断，拿不准可以选「信息不足」。大约一个小时，可以分几次做：作答会自动存在这台电脑的这个浏览器里，关掉页面再打开会接着上次的位置。</p><p>不需要姓名。页面不联网。全部做完后导出一份文件发回。</p><h2>开始之前</h2><div id="qs"></div><p><button class="go" id="go" disabled>开始</button></p></article>';
+  QS.forEach(([k,q,opts])=>{let l=document.createElement('label');l.className='q';l.textContent=q+'　';let s=document.createElement('select');s.id='q-'+k;s.append(new Option('请选择',''),...opts.map(o=>new Option(o,o)));s.value=S.respondent[k]||'';s.onchange=chk;l.append(s);$('qs').append(l)});
+  function chk(){ $('go').disabled=!QS.every(([k])=>$('q-'+k).value) } chk();
+  $('go').onclick=()=>{QS.forEach(([k])=>S.respondent[k]=$('q-'+k).value); S.started_at=S.started_at||new Date().toISOString(); store(); work()};
+}
+function work(){
+  app.innerHTML='<article><span id="progress"></span><blockquote id="quote"></blockquote><h2>这条评论涉及机体外形吗？</h2><small>涉及轮廓、尺寸观感、折叠形态、部件外观、颜色或表面时选「涉及」。只讲操控、拍摄性能或物流时选「未涉及」。没有说清对象时可选「信息不足」。</small><div id="scope"></div><h2>文字明确提到了哪些主题？</h2><small>可多选。单说「方便带出门」可以勾随身携带；只有提到大小或紧凑时才勾小巧或紧凑。正面、负面、愿望都可以记。没有对应主题可单选「以上均未提到」。</small><div id="tags"></div><p><span>支持判断的原话（可选，摘几个字即可）</span><br><input id="note" type="text" maxlength="160" aria-label="文字依据"></p></article><nav><button id="prev">上一条</button><select id="jump" aria-label="选择条目"></select><button id="next">下一条</button><button id="missing">第一条未完成</button></nav><p><button id="draft">导出草稿</button><button class="go" id="finish">导出完整答卷</button><label>载入草稿 <input id="load" type="file" accept=".json"></label></p><p role="status" id="msg"></p>';
+  const tick=()=>{ if(shown){ answer().ms+=Date.now()-shown } shown=Date.now() };
+  function draw(){let r=answer();$('quote').textContent=items[i].text;$('jump').value=i;$('note').value=r.note;
+    $('progress').textContent=id()+'　共 '+items.length+' 条，已完成 '+Object.values(S.answers).filter(valid).length+' 条';
+    $('scope').replaceChildren(...options.map(v=>label(v,'radio',r.scope===v,()=>{r.scope=v;store();draw()})));
+    $('tags').replaceChildren(...[...topics,no].map(v=>label(v,'checkbox',r.topics.includes(v),()=>{r.topics=r.topics.includes(v)?r.topics.filter(x=>x!==v):v===no?[no]:[...r.topics.filter(x=>x!==no),v];store();draw()})));
+    $('prev').disabled=i===0;$('next').disabled=i===items.length-1}
+  const go=j=>{tick(); i=j; shown=Date.now(); store(); draw()};
+  items.forEach((r,j)=>$('jump').add(new Option(r.id,j)));$('jump').onchange=()=>go(+$('jump').value);
+  $('prev').onclick=()=>{if(i)go(i-1)};$('next').onclick=()=>{if(i+1<items.length)go(i+1)};$('note').oninput=e=>{answer().note=e.target.value;store()};
+  const missing=()=>items.findIndex(r=>!valid(S.answers[r.id]));
+  $('missing').onclick=()=>{let j=missing();if(j>=0)go(j);else $('msg').textContent='全部已完成。'};
+  function save(final){tick(); if(final&&missing()>=0){go(missing());$('msg').textContent='此条仍有未答项，可先导出草稿。';return}
+    if(final&&!S.finished_at) S.finished_at=new Date().toISOString(); store();
+    const out={version,complete:final,started_at:S.started_at,finished_at:final?S.finished_at:null,respondent:S.respondent,answers:S.answers};
+    let u=URL.createObjectURL(new Blob([JSON.stringify(out,null,2)],{type:'application/json'}));let a=document.createElement('a');a.href=u;a.download='S2-'+(final?'完整答卷':'草稿')+'.json';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);
+    $('msg').textContent=final?'已导出完整答卷，请把下载的文件发回。':'已导出草稿。'}
+  $('draft').onclick=()=>save(false);$('finish').onclick=()=>save(true);
+  $('load').onchange=async e=>{try{const v=JSON.parse(await e.target.files[0].text());if(v.version!==version||!v.answers||!Object.entries(v.answers).every(([k,r])=>items.some(x=>x.id===k)&&r&&typeof r.scope==='string'&&Array.isArray(r.topics)&&typeof r.note==='string'))throw Error();Object.values(v.answers).forEach(r=>{r.ms=r.ms||0});S.answers=v.answers;S.respondent=v.respondent||S.respondent;S.started_at=v.started_at||S.started_at;go(Math.max(0,missing()));$('msg').textContent='已载入。'}catch{$('msg').textContent='载入失败，请使用本表导出的答卷。'}};
+  window.addEventListener('pagehide',()=>{tick();store()}); shown=Date.now(); draw();
+  if(Object.values(S.answers).some(valid)) $('msg').textContent='已接着上次的位置。';
+}
+if(S.started_at) work(); else intro();
+</script></html>
