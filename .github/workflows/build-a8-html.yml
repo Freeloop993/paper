@@ -1,0 +1,59 @@
+name: Build A8 quadrotor marking HTML (H1 + H2)
+
+on:
+  push:
+    branches: [tools/a8-html-download-20261120]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout only the source evidence files
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            archive/paper-reading-room/studies/20261117-offline/participants/a8-H1.zip
+            archive/paper-reading-room/studies/20261117-offline/participants/a8-H2.zip
+            archive/paper-reading-room/studies/20261117-offline/researcher/a8/PRIVATE-key.csv
+            archive/paper-reading-room/studies/20261117-offline/researcher/a3/guide-pixels.csv
+          sparse-checkout-cone-mode: false
+
+      - name: Fetch the exact builder from PR 92
+        shell: bash
+        run: |
+          set -euo pipefail
+          D=evidence/20261117-research-update/a8-click
+          mkdir -p "$D"
+          for F in build_pages.py template.html packs.json; do
+            curl --fail --location --silent --show-error --retry 3 "https://raw.githubusercontent.com/lucienzhu/paper/ffc43518c7320f1a8c55194fd3bb378e0293f28e/$D/$F" -o "$D/$F"
+          done
+
+      - name: Check original packages and build HTMLs
+        shell: bash
+        run: |
+          set -euo pipefail
+          D=archive/paper-reading-room/studies/20261117-offline/participants
+          echo "5c468f5fd510535b2a25a01d6c0f43479fd46b054ba47f5563a1469893a1861c  $D/a8-H1.zip" | sha256sum --check -
+          echo "77e46b4430faff9103e20a805eb13eb1a42533e86b8ac77f939923929f712922  $D/a8-H2.zip" | sha256sum --check -
+          python3 evidence/20261117-research-update/a8-click/build_pages.py
+
+      - name: Verify exact registered final HTMLs
+        shell: bash
+        run: |
+          set -euo pipefail
+          D=evidence/20261117-research-update/a8-click/dist
+          echo "c154f4977d052e2a8edf5d7db393afddac364b425d470f5d4d01e68196c0c46e  $D/四旋翼取点-H1.html" | sha256sum --check -
+          echo "eb95504403024a48de935b305f0e76410ccb86bffad569d870445681106a0df3  $D/四旋翼取点-H2.html" | sha256sum --check -
+
+      - name: Upload two ready-to-send HTML files
+        uses: actions/upload-artifact@v4
+        with:
+          name: A8_quadrotor_H1_H2_HTML
+          path: evidence/20261117-research-update/a8-click/dist/*.html
+          if-no-files-found: error
+          retention-days: 30
+          compression-level: 0
