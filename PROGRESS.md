@@ -8,12 +8,12 @@
 
 ## 2026-11-09｜两种修改流程已在同一离线页面验证
 
-- [X01](https://github.com/Freeloop993/paper/issues/2) 已交付[可运行页面与复核步骤](experiments/operator-workbench/README.md)。用两张不同的既有样图实走两种方法，能选初稿、修改稿或均不交，也能登记失败或状态未知后停止。浏览器下载的 7 包共 11 份请求逐份核对了原字节与父图绑定。重载后再次锁稿及过期页面写入均被拒绝。
-- [演练摘要](experiments/operator-workbench/browser-check.json) 只记录软件行为。新增模型调用 0，新增真人场次 0。下一步是另一端复核输入与锁稿，并继续核对独立转轴量测及正式采集条件。
+- [X01](https://github.com/Freeloop993/paper/issues/2) 已交付[可运行页面与复核步骤](archive/experiments/operator-workbench/README.md)。用两张不同的既有样图实走两种方法，能选初稿、修改稿或均不交，也能登记失败或状态未知后停止。浏览器下载的 7 包共 11 份请求逐份核对了原字节与父图绑定。重载后再次锁稿及过期页面写入均被拒绝。
+- [演练摘要](archive/experiments/operator-workbench/browser-check.json) 只记录软件行为。新增模型调用 0，新增真人场次 0。下一步是另一端复核输入与锁稿，并继续核对独立转轴量测及正式采集条件。
 
 ## 2026-11-09｜Claude 已交付首稿，Codex 回核原始分母
 
-Claude 已在 [#1 领取并交付](https://github.com/Freeloop993/paper/issues/1#issuecomment-6741266193)，实际提交六章矩阵和第 1 章候选稿。Codex 根据矩阵列出的缺口重算历史三批数据，详见[逐批计数与口径](evidence/denominators/README.md)。追加批的 39 次受理对应 38 个完成文件、33 种不同的像素内容，其中 1 次受理超时且无原图。第 4、5 章引用时保留批次和样本单位。#2 待另一端复核。
+Claude 已在 [#1 领取并交付](https://github.com/Freeloop993/paper/issues/1#issuecomment-6741266193)，实际提交六章矩阵和第 1 章候选稿。Codex 根据矩阵列出的缺口重算历史三批数据，详见[逐批计数与口径](archive/evidence/denominators/README.md)。追加批的 39 次受理对应 38 个完成文件、33 种不同的像素内容，其中 1 次受理超时且无原图。第 4、5 章引用时保留批次和样本单位。#2 待另一端复核。
 
 ## 2026-11-09｜S1 独立 AI 复测与全局评估材料
 
@@ -41,7 +41,7 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 
 ## G3 收到一份独立真人盲评
 
-作者确认填写者为非作者，填写前未看条件标签或 AI 结论。两张改稿的真人读数已按原规则同 AI 对照复算。对上盖分件及臂根保持方向意见一致，带父图的机壳轮廓存在不可判项，前摄过渡可辨性在两图上均有分歧。原表冻结判据未满足；G3b 出图前的表已将变化观察和目标判定分题。[G3 联合证据](evidence/g3-actual/README.md) · [下一版表述](experiments/g3b/README.md)。
+作者确认填写者为非作者，填写前未看条件标签或 AI 结论。两张改稿的真人读数已按原规则同 AI 对照复算。对上盖分件及臂根保持方向意见一致，带父图的机壳轮廓存在不可判项，前摄过渡可辨性在两图上均有分歧。原表冻结判据未满足；G3b 出图前的表已将变化观察和目标判定分题。[G3 联合证据](evidence/g3-actual/README.md) · [下一版表述](archive/experiments/g3b/README.md)。
 
 ## G2d 原实例分配状态 · 11/10 17:13 北京时间
 
@@ -56,31 +56,31 @@ X09 已交历史部件量测、三档真实输入图与六份待运行请求。X
 
 - 2026-11-10｜[D2 作者决定](https://github.com/Freeloop993/paper/issues/3#issuecomment-6769273544)确定农业植保，回看三款厂家手册的部件总览，登记药箱及喷洒组件的可见性，编制一份六旋植保离线输入。约 22:00 北京时间，原 CompShare 实例关机，同区 4090 24GB 单卡、14 核/64GB 的库存页显示暂无资源。G2d、B02 校准及六旋植保本轮模型提交均为 0。
 
-- 2026-11-10｜GPT Image 使用四旋 B02 简报连续生成六张斜前上视图，六份原始 PNG 均已核验。[实际请求与原图](experiments/gpt-image-b02-visual/README.md)。该批为外部概念材料试读；模型种子、步数与 ControlNet 参数在此接口不可设。
+- 2026-11-10｜GPT Image 使用四旋 B02 简报连续生成六张斜前上视图，六份原始 PNG 均已核验。[实际请求与原图](archive/experiments/gpt-image-b02-visual/README.md)。该批为外部概念材料试读；模型种子、步数与 ControlNet 参数在此接口不可设。
 
-- 2026-11-10｜3.4.3、3.4.4、4.1.2、4.1.3：原桌面参数网页导出方形定位 PNG 与目标坐标；一份 40 cm 四旋布局作为真实图片输入，取得一张 GPT Image 顶视输出。[原件与实测记录](evidence/desktop-parameter-first-example/README.md)。离线网页可直接打开；单次非盲读数不进入正式验证分母。
+- 2026-11-10｜3.4.3、3.4.4、4.1.2、4.1.3：原桌面参数网页导出方形定位 PNG 与目标坐标；一份 40 cm 四旋布局作为真实图片输入，取得一张 GPT Image 顶视输出。[原件与实测记录](archive/evidence/desktop-parameter-first-example/README.md)。离线网页可直接打开；单次非盲读数不进入正式验证分母。
 
-- 2026-11-10｜3.3.2、3.4.2–3.4.4、4.1.2–4.1.3：桌面原型接入四旋航拍与六旋植保需求、按夹角或跨度比布局、可选桨盘，实际核验四组 PNG/JSON。一组四旋 70°/110° 以网页提示和定位图完成一次 GPT Image 调用，原件及非盲读数见[原型 v2](experiments/desktop-parameter-v2/README.md)。
+- 2026-11-10｜3.3.2、3.4.2–3.4.4、4.1.2–4.1.3：桌面原型接入四旋航拍与六旋植保需求、按夹角或跨度比布局、可选桨盘，实际核验四组 PNG/JSON。一组四旋 70°/110° 以网页提示和定位图完成一次 GPT Image 调用，原件及非盲读数见[原型 v2](archive/experiments/desktop-parameter-v2/README.md)。
 
 - 2026-11-10 · Codex 按作者要求移交[脱敏配置器源码](prototypes/drone-configurator/README.md)与[讨论决定及改动验收](docs/configurator-realignment.md)。旧程序区分俯视示意和产品呈现；旧主生图请求仅发文字。私有评论文件核到 5,614 片段、3,603 个不同评论 ID。本次新增模型提交与评议均为 0。Claude 接原型优化，Codex 核实际请求。
 
-- 2026-11-11 · 旧约束造型系列 12 张原图与衍生材料退出新版正式集；保留原反馈。P03 重做技术校验 2 张、正式纳入 0。四旋叶数控制、角度与跨度耦合、桨盘净距及 D/S 主研究见 [变量表](docs/research-variables.md) 和 [样本清单](evidence/formal-reset/README.md)。
+- 2026-11-11 · 旧约束造型系列 12 张原图与衍生材料退出新版正式集；保留原反馈。P03 重做技术校验 2 张、正式纳入 0。四旋叶数控制、角度与跨度耦合、桨盘净距及 D/S 主研究见 [变量表](docs/research-variables.md) 和 [样本清单](archive/evidence/formal-reset/README.md)。
 
 ## 2026-11-11｜随行航拍四旋双叶桨与三档布局
 
-[六份原图与读数](evidence/p04-quad-biblade/README.md)已存档；两轮三档中仅一轮严格递增。逐图、逐桨、两项边界灵敏度与单次知条件 AI 读数限制见原记录。当前正式样本仍为 0。
+[六份原图与读数](archive/evidence/p04-quad-biblade/README.md)已存档；两轮三档中仅一轮严格递增。逐图、逐桨、两项边界灵敏度与单次知条件 AI 读数限制见原记录。当前正式样本仍为 0。
 
 ## 2026-11-11｜作者否决 P04 六张造型，P05 单图诊断
 
-[原图与核验](evidence/p05-quad-equal-blades/README.md)。四副的投影半径与中段叶宽均接近对称，轴位比例和叶尖方向仍有偏差。
+[原图与核验](archive/evidence/p05-quad-equal-blades/README.md)。四副的投影半径与中段叶宽均接近对称，轴位比例和叶尖方向仍有偏差。
 
 ## 2026-11-11｜前摄姿态与视角
 
-[P06 一张新图](evidence/p06-quad-front-camera/README.md)使用与 P05 相同的定位图，仅调整相机文字。机鼻投影相容，前摄整合不可判，轴位比例超差。
+[P06 一张新图](archive/evidence/p06-quad-front-camera/README.md)使用与 P05 相同的定位图，仅调整相机文字。机鼻投影相容，前摄整合不可判，轴位比例超差。
 
 ## 2026-11-11｜机架夹角、静止双叶方向与 CMF
 
-[结构预览、实际输入、单张原图和复算](evidence/quad-guide-cmf-review/README.md)已存档，方向偏差约 1.3°–2.0°，轴心横跨占画幅 50.5%，目标 27.6%。
+[结构预览、实际输入、单张原图和复算](archive/evidence/quad-guide-cmf-review/README.md)已存档，方向偏差约 1.3°–2.0°，轴心横跨占画幅 50.5%，目标 27.6%。
 
 ## 2026-11-12 六章执行入口
 

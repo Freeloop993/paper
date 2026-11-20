@@ -1,6 +1,6 @@
 # 独立评议与场次分配工具（X12）
 
-**11/11 新正式样本口径。** [旧批退役与新图清单](../../evidence/formal-reset/README.md)及[变量表](../../docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
+**11/11 新正式样本口径。** [旧批退役与新图清单](../../archive/evidence/formal-reset/README.md)及[变量表](../../docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
 
 依据 [正式采集材料包第 5–7 节](../../docs/protocols/formal-collection-kit.md)。本版可用于离线校准。正式采集仍需作者落实人选、同意程序、抽签登记和评分规则。研究者保管本目录，评议者只收下述 participant 文件夹。
 

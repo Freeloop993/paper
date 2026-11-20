@@ -167,7 +167,7 @@
 - [ ] `evidence/20261115-review-takeover/README.md`、`e1-open-20261112/geometry-readout.json`、`semantic-cards/README.md`、`real-product-topview/README.md`、`formal-reset/README.md`、`20261117-config-review/A1-extension`、`gpu-day-20261115/analysis-247/说明.md`、`hexa-plant-protection/README.md`、`qwen-shape-pilot/README.md`、`d2-tuning/README.md`、`l1-layout/README.md`、`g3-reference/README.md`、`semantic40-pairing/README.md`、`common-control/README.md`。逐条说明见 [evidence 清点 0.2 节](https://github.com/Freeloop993/paper/blob/a98b3ecdce0330902d9f5dd99336ce41e7fc993e/planning/reorg-20261118/inventory-evidence-experiments.md)。
 
 **【问】：**
-- [ ] **`evidence/20261117-r3-check`：** 与较晚的 `20261117-research-update` 大量重叠。今后以 research-update 为准吗？若是，r3-check 归档。**已定（第 20 题）：以 research-update 为准。** 移动前核对配对已被 `research-update/a1/crosswalk.csv` 覆盖。
+- [ ] **`archive/evidence/20261117-r3-check`：** 与较晚的 `20261117-research-update` 大量重叠。今后以 research-update 为准吗？若是，r3-check 归档。**已定（第 20 题）：以 research-update 为准。** 移动前核对配对已被 `research-update/a1/crosswalk.csv` 覆盖。
 - [ ] **`evidence/section421-h3-span`：** E3 第一轮的 A/B/C 规格是不是由这里的方向卡演变来的？若是，它与相关的三个条目改为方法开发保留，第四章要说明方向的来源；若不是，一起归档。**已核对：是。** `specs-after-review.md` 写明短肩与长渐缩“正式响应字典统一归入‘无缝’”，即表 4.3 中 A、B 同为“无缝”的由来；C 的切角壳、承座、前伸、多块顶盖也一致。四个条目改为方法开发保留。
 - [ ] **图 3.2：** 是否换成按 1,318 簇重算、可复现的新共词图（`20261117-research-update/comments/cooccurrence.png`）？**已定（第 19 题）：换。** 旧的 Gephi 图随之归档；`cards.csv` 与 `early-crawl/` 保留。
 

@@ -23,7 +23,7 @@
 
 ## Claude 的首个改动与验收
 
-请从这个[可编辑原型](../prototypes/drone-configurator/README.md)开一个小 PR。原始意图以[功能需求](../prototypes/drone-configurator/original-design-brief.md)为参照，几何计算优先复用[桌面版实现与导出样例](../experiments/desktop-parameter-v2/README.md)，修订、停止和回选规则参看[既有离线改稿台](../experiments/operator-workbench/README.md)。原型首轮可以离线完成。
+请从这个[可编辑原型](../prototypes/drone-configurator/README.md)开一个小 PR。原始意图以[功能需求](../prototypes/drone-configurator/original-design-brief.md)为参照，几何计算优先复用[桌面版实现与导出样例](../archive/experiments/desktop-parameter-v2/README.md)，修订、停止和回选规则参看[既有离线改稿台](../archive/experiments/operator-workbench/README.md)。原型首轮可以离线完成。
 
 1. 让设计者选择任务，在同一页确认需求依据、目标部位、改变项、保持项和自由项。四旋示例可填“相机更融入机鼻，臂根过渡更连续；保留四轴布局，机壳曲面由设计者决定”。六旋入口应能表达药箱与喷洒部件。
 2. 从同一份已确认规格构建定位图、轴心坐标、最终文本与可选父图引用。把确认后修改、重新预览、导出组织成一条路径。预览与实际导出的请求应一致。身份、版本和哈希可用于跨机器复核。

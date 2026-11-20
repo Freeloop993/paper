@@ -8,7 +8,7 @@
 | 当前执行和阅读次序 | [24项任务及逐节目录](../docs/execution-playbook.md)、[R01–R14阅读地图](../references/reading-map.md)、[14篇逐项原文或出版入口](../references/catalogs/priority-fulltexts.md) | Claude先做T01–03和T23。论证每一步说明采用哪一篇的哪一页、数据或方法以及适用边界。 |
 | 可从仓库取得的参考全文 | [102份原件分支](https://github.com/Freeloop993/paper/tree/reference-fulltexts-20261109/fulltexts)、[逐文件许可与校验值](../references/catalogs/licensed-files.csv) | 远端分支提交82fb03d。核对101个完整PDF，另1篇按3个分片顺序还原；逐件原始字节SHA256与大小均匹配清单。这个历史分支只用于取文献；当前任务看main。 |
 | 更广的文献与笔记 | [归档书目467条](../references/catalogs/archive-references.csv)、[工业设计核心库与BibTeX、飞书100行快照、Obsidian 242条笔记索引](../references/catalogs/README.md) | 各表有交集。没有仓库全文的条目可按作者版、DOI或图书馆权限另取。登记有题录、取得全文、核实页码、纳入正文四种状态。 |
-| 实施依据 | [配置器源码及版本说明](../prototypes/drone-configurator/README.md)、[变量定义](../docs/research-variables.md)、[四旋旧批退役与新样本登记](../evidence/formal-reset/README.md)、[农业植保三款手册案例](../experiments/hexa-plant-protection/README.md) | 需求来自评论语境；尺寸从设计规格独立给定。四旋看前摄和臂根，六旋看药箱和喷洒部件与机架的整合。原始评论、具身份信息的答卷和个人笔记按原权限保管。 |
+| 实施依据 | [配置器源码及版本说明](../prototypes/drone-configurator/README.md)、[变量定义](../docs/research-variables.md)、[四旋旧批退役与新样本登记](../archive/evidence/formal-reset/README.md)、[农业植保三款手册案例](../experiments/hexa-plant-protection/README.md) | 需求来自评论语境；尺寸从设计规格独立给定。四旋看前摄和臂根，六旋看药箱和喷洒部件与机架的整合。原始评论、具身份信息的答卷和个人笔记按原权限保管。 |
 | 作者的纠偏与真实进度 | [审核材料和可编辑思维导图](route-review-20261112/)、[作者Google Doc及既有资料快照](claude-review.md)、[状态及反例](../STATUS.md) | 正交顶视量实体轴心与尺度，产品视图读相机和机臂整合。确认四旋展开双叶，机壳外形可探索。普通附图、ControlNet条件和LoRA训练分开标注；导师对开题范围调整的意见仍待登记。新版正式图0、正式设计者场次0。 |
 
 ## 四份学位论文怎样使用

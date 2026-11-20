@@ -28,7 +28,7 @@ def digest(data):
 def main(commit):
     if not re.fullmatch("[0-9a-f]{40}", commit):
         raise ValueError("Pin the published guide commit with its full SHA.")
-    template = read(ROOT / "experiments/g2d/requests/G2d-r100-s2026111105.json")["prompt"]
+    template = read(ROOT / "archive/experiments/g2d/requests/G2d-r100-s2026111105.json")["prompt"]
     guides = {(s["wl"], s["dd"]): s for s in read(GUIDES/"guides.json")}
     manifest = []
     def record(case, body, **info):

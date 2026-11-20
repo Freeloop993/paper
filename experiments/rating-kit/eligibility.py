@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-REGISTRY = Path(__file__).resolve().parents[2] / "evidence/formal-reset/image-registry.json"
+REGISTRY = Path(__file__).resolve().parents[2] / "archive/evidence/formal-reset/image-registry.json"
 
 
 def read_registry():

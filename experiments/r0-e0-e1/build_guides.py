@@ -9,7 +9,7 @@ from PIL import Image, ImageChops
 
 ROOT = Path(__file__).resolve().parents[2]
 OUT = ROOT / "prototypes/drone-configurator/public/research-guides"
-G2D = ROOT / "experiments/g2d"
+G2D = ROOT / "archive/experiments/g2d"
 legacy = runpy.run_path(str(G2D / "build.py"))
 
 
