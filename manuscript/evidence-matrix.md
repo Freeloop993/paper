@@ -5,9 +5,9 @@
 **2026-11-12 六章执行入口**　[打开24项任务、逐节对照、思维导图及验收条件](../docs/execution-playbook.md)。每条新主张带任务号、样本分母、反例与对应原件，T23–24据此回填。
 
 
-**11/11 新正式样本口径。** [旧批退役与新图清单](../evidence/formal-reset/README.md)及[变量表](../docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
+**11/11 新正式样本口径。** [旧批退役与新图清单](../archive/evidence/formal-reset/README.md)及[变量表](../docs/research-variables.md)优先。下面旧批图、评分和计数仅用于历史追溯，正式效果表、评议发放及方案深化按新清单。
 
-> 已吸收 Codex 的[分母复算](../evidence/denominators/README.md)与 [S1 盲测复测](../evidence/s1-axis-repeat/README.md)。逐项计划见 [docs/research-plan.md](../docs/research-plan.md)。开题第6—7页已直接核读原 PDF。
+> 已吸收 Codex 的[分母复算](../archive/evidence/denominators/README.md)与 [S1 盲测复测](../evidence/s1-axis-repeat/README.md)。逐项计划见 [docs/research-plan.md](../docs/research-plan.md)。开题第6—7页已直接核读原 PDF。
 
 **输入版本：** main `a44695fcb6ab404644c5392badef46e734d0f46f`；依据仓库内 README、STATUS、docs/requirements.md、docs/methods.md、manuscript/outline.md、manuscript/ch05-hexa-results.md、manuscript/source-drafts/01—03.md、references/reading-map.md、evidence/README.md。**未访问**私有原件；开题原 PDF 第6—7页已于第三版计划时直接核读，文献 PDF 仅 priority-fulltexts 所列数篇可在仓库内回核，其余页码仍转引自已登记的定向核读记录，终稿前须回核版本/页码。本表是写作排序工具，不是研究完成证明。
 
@@ -82,7 +82,7 @@
 | 节 | 标记 | 可用来源 | 缺口／不能写 |
 |---|---|---|---|
 | 4.1 任务与原型 | 部分可写 | B02 简报、原网页参数和定位图、后续工作流及已留存的预试 | 4.1.2 写实际接通程度；4.1.3 写旧机壳及自由外形条件的取舍 |
-| 4.2 方案生成与探索 | 正式案例缺证 | S1 为参数诊断；[GPT Image 纯文字六图](../experiments/gpt-image-b02-visual/README.md)为外部试读材料 | 需设计者的多方向规格、条件配置、候选及取舍 |
+| 4.2 方案生成与探索 | 正式案例缺证 | S1 为参数诊断；[GPT Image 纯文字六图](../archive/experiments/gpt-image-b02-visual/README.md)为外部试读材料 | 需设计者的多方向规格、条件配置、候选及取舍 |
 | 4.3 反馈驱动迭代 | 缺证 | 旧有限反馈（6根×2策略）属历史技术批 | 需真实设计者的初稿—修改—终稿与回选记录（X01/正式采集） |
 | 4.4 深化与表达 | 缺证 | 作者曾选J2-02为参考起点（历史） | 新B02方向下的深化、CMF、三视图均无 |
 | 4.5 小结 | 缺证 | — | — |

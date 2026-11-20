@@ -1,14 +1,28 @@
-# 可复算证据与保留边界
+# evidence：现行的证据
 
-当前共享表为[六旋四图的8条历史AI技术标注](hexa4-ai.csv)。每行是一位AI标注对**同一图**的可见中央组件测量；每个任务/条件只有一张输出，非8次独立抽样。图像SHA可供本地核原件；不含参与者答卷或云实例标识。由原协议、历史请求和恢复检查交叉对账。
+2026-11-20 整理后这里只留两类：写论文要引用的正式证据，和说明设计决定由来的方法开发记录。哪一批能进正文、哪一批只能以数字出现，以[哪些数据能进论文](usable-for-writing.md)为准。退役的批次在 [archive/evidence](../archive/evidence/)。
 
-每一条件：IoU＝两条中央组件 `target_iou` 算术平均；高宽比误差＝各标注 `abs(visible_assembly_ratio-input_ratio)` 的平均值，**不是**先平均比例再取绝对差。只在相同任务内以 full 减 structure。标准库复算命令：`python evidence/summarize_hexa.py`。差异和不可归因为参数/拓扑的原因见[第5章段落](../manuscript/ch05-hexa-results.md)。
+## 正式证据
 
-| 核查对象 | 保留标识／出处 | 能说什么 |
-|---|---|---|
-| 开题原PDF | SHA256 `ec94a83e669615fe028f9e1fa77f25f12a89473b699ed85d6310b8c663695171`，PDF第6–7页 | 五项开题承诺，不等于全部完成 |
-| S1协议／原件ZIP | `d9ab939241c5310b2ef3fe0251b76ae1d51e84443d77bc8f64ec350f6ca4b53f`／`67a03cf39c7732bbbf9ee22a55afd10f01fb67abf457230d738d8f65537c4604` | 6次路线诊断，不是正式方法优效 |
-| 六旋原协议／技术记录 | `120dedb33efd5f7a320da8d4ec1991abfcc223b8d097cb3c5810fb355818af62`／`909d8bfa1c952ba0f431e3088533c35ba131d2c5f39b91f6947dbec64d1a9b7f` | 可核4原件和逐标注记录；不可直接说明风格稳定 |
-| 官方构型和载荷语境 | [IF1200A 六臂方位](https://docs.inspiredflight.com/inspired-documentation/products/aircraft/if1200/about-the-if1200/overview)、[相机/云台组合](https://docs.inspiredflight.com/inspired-documentation/products/payloads)、[Acecore Noa](https://acecoretechnologies.com/noa/) | 支持设计“载荷与机体怎样连接”的任务背景；不是新增访谈、性能验证或外形参数真值 |
+| 文件夹 | 是什么 |
+| --- | --- |
+| [semantic-cards](semantic-cards/) | 评论语料的证据卡 |
+| [r0-20261112](r0-20261112/)、[e0-open-20261112](e0-open-20261112/)、[e1-open-20261112](e1-open-20261112/) | R0、E0、E1：部件图条件控制的比例批。图已退役，只留读数（E1 的图已删） |
+| [real-product-topview](real-product-topview/) | 真实机型的顶视图 |
+| [20261117-research-update](20261117-research-update/README.md) | 11 月 17 日的线下数据：真实机型规格与手册量测、设计图复测、评论复算与 S2 题面 |
 
-更多原件、缓存、费用和受限来源只按授权由本地证据保管端核对；用具体工单请求最小必要材料，不把整个设备目录镜像到 GitHub。
+人的评议数据不在这里，在 [experiments/s5-compactness-pilot](../experiments/s5-compactness-pilot/README.md)（S5）。
+
+## 方法开发
+
+| 文件夹 | 说明什么 |
+| --- | --- |
+| [historic-guides](historic-guides/)、[s1-axis-repeat](s1-axis-repeat/)、[s1-decomposition](s1-decomposition/)、[g2-six](g2-six/)、[g2b-actual](g2b-actual/)、[l1-layout-actual](l1-layout-actual/)、[prompt-parameter-review](prompt-parameter-review/) | 条件图的画法和强度是怎么选出来的 |
+| [guide-choice-20261113](guide-choice-20261113/) | 条件图的分工 |
+| [form342-h3-dev](form342-h3-dev/)、[qwen-shape-s4-20261114](qwen-shape-s4-20261114/README.md)、[h3-camera-layout-originals](h3-camera-layout-originals/) | 造型字典的开发，含 H3 的相机布局原图 |
+| [section421-h3-span](section421-h3-span/)、[section421-minimax-review](section421-minimax-review/)、[quad-author-selection](quad-author-selection/) | E3 三个设计方向的来源 |
+| [g3-actual](g3-actual/)、[x12-calibration](x12-calibration/) | 评议工具的校准 |
+
+## 还不在主分支上的正式证据
+
+11 月 18 日清单列为“正式证据”的下列文件夹，主分支上没有，仍在没有合并的分支里（主要是 `claude/e3-quad-qwen` 和 `claude/direction-todo-20261117`）：`gpu-day-20261115`、`20261115-review-takeover`、`20261117-offline-review`、`e2r-hub-readback`、`e5-paired-topview`、`e5-individual-reviewed`、`semantic40-second-coding-20261115`、`semantic40-pairing`、`20261117-config-review`、`20261117-a1-a4-c1`、`20261115-local-edit`。第四章要用的 E3 三轮设计、GPU 日的记录和评议答卷都在其中。合并顺序见[整理清单](../planning/2026-11-18-cleanup-list.md)第二节，还没有执行。

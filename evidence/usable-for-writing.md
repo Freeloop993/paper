@@ -45,13 +45,12 @@
 
 ## 四、不进论文
 
-按 11 月 18 日的清点，以下批次是被否决的试作、闭源模型的诊断图、已被取代的登记或没有运行的计划：
+被否决的试作、闭源模型的诊断图、已被取代的登记和没有运行的计划，2026-11-20 已按 11 月 18 日定下的办法移入 [archive/](../archive/README.md)：
 
-`evidence/` 下的 b02-parent-reference、d2-closed-six、d2-tuning、denominators、desktop-parameter-first-example、formal-reset、h3-e2-local-edit-20261113、hexa4-ai.csv、l1-closed-reference-diagnostic、minimax-junction-pilot、p04-quad-biblade、p05-quad-equal-blades、p06-quad-front-camera、p1-param-prompt、p2-spec-cards、quad-author-selection、quad-guide-cmf-review、section421-minimax-review。
+- `archive/evidence/` 下的 b02-parent-reference、d2-closed-six、d2-tuning、denominators、desktop-parameter-first-example、formal-reset、h3-e2-local-edit-20261113、l1-closed-reference-diagnostic、minimax-junction-pilot、p04-quad-biblade、p05-quad-equal-blades、p06-quad-front-camera、p1-param-prompt、p2-spec-cards、quad-guide-cmf-review，以及旧六旋的 old-hexa-20261103。
+- `archive/experiments/` 下的 b02-view-calibration、common-control、d2-tuning、desktop-parameter-v2、g2d、g3b、gpt-image-b02-visual、hub-annotator、minimax-junction-pilot、operator-workbench、p1-param-prompt、p2-spec-cards。
 
-`experiments/` 下的 b02-view-calibration、common-control、d2-tuning、desktop-parameter-v2、form342-h3-pilot、g2d、g3b、gpt-image-b02-visual、minimax-junction-pilot、operator-workbench、p1-param-prompt、p2-spec-cards。
-
-它们按 11 月 18 日已定的做法应移入 `archive/`，还没有执行。
+本节此前把 section421-minimax-review、quad-author-selection 和 form342-h3-pilot 也列在这里，是错的：11 月 18 日作者已把它们改为“方法开发，保留”（E3 三个方向的来源），它们留在原处。
 
 ## 五、现稿里要改的地方
 

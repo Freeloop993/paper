@@ -10,7 +10,7 @@ data = json.loads((here/"manifest.json").read_bytes())
 rows = data["cases"]
 get = lambda path: json.loads(path.read_bytes())
 hashed = lambda path: sha256(path.read_bytes()).hexdigest()
-base = get(root/"experiments/g2d/requests/G2d-r100-s2026111105.json")["prompt"]
+base = get(root/"archive/experiments/g2d/requests/G2d-r100-s2026111105.json")["prompt"]
 assert Counter((c["stage"],c["arm"]) for c in rows) == {
     ("R0","control"):2, ("E0","control"):6, ("E0","closed"):6, ("E1","control"):24, ("E1","text"):12}
 assert len({c["case"] for c in rows}) == len(rows) == len(list((here/"requests").glob("*.json")))

@@ -5,7 +5,7 @@
 - [逐张看原图、请求、受理记录、运行历史和输入 PNG](by-image.md)
 - [逐张结构化参数与完整正负提示词字典](actual-parameters.json)。每张的 `prompt_pair` 对应同文件里的两段原文。可检索种子、CFG、步数、采样器、降噪、图像缩放、Canny 双阈值、Union 强度与起止、模型文件、图像编辑入口和实际缓存节点。完整输入连线保存在各张请求中。
 - [ComfyUI 提交号、源文件、四项权重的字节数与 SHA-256](../r0-20261112/environment/verified-material.json)；[GPU、依赖版本及原服务启动参数](../r0-20261112/environment/environment-ready.json)；[L1 线上节点及已执行的条件边缘图](../../experiments/l1-layout/step0/README.md)。
-- [四张闭源诊断的实参、输入及原图](../l1-closed-reference-diagnostic/requests-and-originals.json)。工具未返回其内部模型版本、随机种子、采样器或 CFG。用户给它的提示和参考图可以比对，内部参数记为未知。
+- [四张闭源诊断的实参、输入及原图](../../archive/evidence/l1-closed-reference-diagnostic/requests-and-originals.json)。工具未返回其内部模型版本、随机种子、采样器或 CFG。用户给它的提示和参考图可以比对，内部参数记为未知。
 
 ## 请优先核这几处
 

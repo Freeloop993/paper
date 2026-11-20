@@ -10,7 +10,7 @@ SETS = {
     "E0-open": "evidence/e0-open-20261112/E0-actual",
     "E1-open": "evidence/e1-open-20261112/E1-actual",
     "L1": "evidence/l1-layout-actual/L1-actual",
-    "D2": "evidence/d2-tuning/D2-actual",
+    "D2": "archive/evidence/d2-tuning/D2-actual",
 }
 sha = lambda raw: hashlib.sha256(raw).hexdigest()
 
@@ -59,7 +59,7 @@ def gather():
                     guide=ROOT/old[cell]["guide"]
                     expected=old[cell]["guide_sha256"]
                 elif batch=="D2":
-                    source=json.loads((ROOT/"experiments/d2-tuning/input-bindings.json").read_bytes())[name]
+                    source=json.loads((ROOT/"archive/experiments/d2-tuning/input-bindings.json").read_bytes())[name]
                     guide=ROOT/source["source"]
                     expected=source["sha256"]
                 elif name.startswith("E1-control-"):

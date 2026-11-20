@@ -6,6 +6,8 @@
 
 ## 已迁移资料
 
+> 2026-11-20 整理：四篇学位论文里有三篇（邓家乐、厉茜茜、朱天燕）与[文献库](../../literature/README.md)里的 L020、L045、L046 逐字节相同，本目录的副本已删，[逐文件索引](FILE-INDEX.json)里标为 `deduplicated` 并写明留下的那一份。
+
 - [四篇工业设计硕士论文原版 PDF](originals/) · [页数/字节/SHA-256 索引](manifest.json)
 - [早期评论与产品采集数据](datasets/early-crawl/)：**01–07 共 7 个原始 ZIP** 已迁移，[08 ZIP 尚未迁移](MIGRATION-STATUS.md)；[包内逐文件校验清单](datasets/early-crawl/manifest.json) 均已保存
 - [2026-11-17 线下研究资料](studies/20261117-offline/)：S2 150 条题面、S2 研究者对应键、A8 68 张匿名 AI 取点图、AI 取点空表、A3 旧校准及真值、A8 研究者映射与恢复包

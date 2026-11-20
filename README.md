@@ -12,6 +12,7 @@
 | 找导师阅读稿 | [第一至三章 Word](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/manuscript/thesis/review/handoff-20261117/chapters-1-3.docx) · [修订目录](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/planning/outline-revised.docx) · [开题原件](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/planning/proposal-original.pdf) |
 | 了解研究计划、分工与作者决定 | [方向清单的“作者最新决定”](https://github.com/Freeloop993/paper/blob/b3b6fca0dfa1ebcf8f0a249c311330d8d2aae9d0/planning/2026-11-17-direction-and-todo.md) · [人智协同实验预试材料](evidence/20261117-research-update/method/paired-pilot.md) |
 | 查原阅读库已迁移的 PDF、早期评论数据、S2/A8 实验与原始记录 | [阅读库公开补档](archive/paper-reading-room/README.md) · [逐文件状态](archive/paper-reading-room/FILE-INDEX.json) |
+| 找现行证据和退役材料 | [evidence 总索引](evidence/README.md) · [哪些数据能进论文](evidence/usable-for-writing.md) · [archive：不再使用的材料](archive/README.md) |
 | 找实验、已取得的数据与证据范围 | [实验状态及逐批原件入口](STATUS.md) · [本轮线下数据](evidence/20261117-research-update/README.md) |
 | 继续下一项任务 | [接手顺序](docs/handoff.md) · [协作工单 #1](https://github.com/Freeloop993/paper/issues/1) · [作者决策 #3](https://github.com/Freeloop993/paper/issues/3) |
 

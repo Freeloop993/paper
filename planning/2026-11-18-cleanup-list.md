@@ -148,17 +148,17 @@
 - 局部编辑：`20261115-local-edit`；
 - 评议工具：`g3-reference`、`g3-actual`、`rating-kit`、`x12-calibration`。
 
-**归档（32），移入 `archive/`：** 原为 34 个、约 149 MB；11/18 按 #3 第 20、21 题调整，3 个改为方法开发，加入 `20261117-r3-check`。
-- [ ] **GPT Image 与闭源诊断**：`gpt-image-b02-visual`、`b02-view-calibration`、`b02-parent-reference`、`d2-closed-six`、`l1-closed-reference-diagnostic`。注意 `d2-closed-six` 不是 E0 闭源组，归档时不能改标为 E0。
-- [ ] **MiniMax 开发（11 月 13 日）**：`p1-param-prompt`（两处）、`p2-spec-cards`（两处）、`minimax-junction-pilot`（两处）、~~`form342-h3-pilot`、`quad-author-selection`、`section421-minimax-review`~~（改为方法开发保留）。
-- [ ] **D2 调参**：`d2-tuning`（两处）。
+**归档（32），移入 `archive/`：** **2026-11-20 已执行 28 个文件夹和旧六旋三件，引用一并改写（见 [archive/README.md](../archive/README.md)）；`e2-registered` 等那份“E2R 为现行”的说明写好再移，`20261117-r3-check` 主分支上没有。** 原为 34 个、约 149 MB；11/18 按 #3 第 20、21 题调整，3 个改为方法开发，加入 `20261117-r3-check`。
+- [x] **GPT Image 与闭源诊断**：`gpt-image-b02-visual`、`b02-view-calibration`、`b02-parent-reference`、`d2-closed-six`、`l1-closed-reference-diagnostic`。注意 `d2-closed-six` 不是 E0 闭源组，归档时不能改标为 E0。
+- [x] **MiniMax 开发（11 月 13 日）**：`p1-param-prompt`（两处）、`p2-spec-cards`（两处）、`minimax-junction-pilot`（两处）、~~`form342-h3-pilot`、`quad-author-selection`、`section421-minimax-review`~~（改为方法开发保留）。
+- [x] **D2 调参**：`d2-tuning`（两处）。
 - [ ] **E2 旧记录线**：`h3-e2-local-edit-20261113`、`e2-registered`；连同 `recovered-originals-102/01-old-E2` 写一份说明，指明 E2R 为现行。
-- [ ] **11 月 9—11 日的旧口径与旧工具**：`denominators`、`formal-reset`、`desktop-parameter-first-example`、`desktop-parameter-v2`、`operator-workbench`、`quad-guide-cmf-review`、`p04-quad-biblade`、`p05-quad-equal-blades`、`p06-quad-front-camera`、`common-control`、`hub-annotator`。
-- [ ] **从未运行的登记**：`g2d`、`g3b`。
-- [ ] **旧六旋（11 月 3 日）**：`evidence/README.md`、`hexa4-ai.csv`、`summarize_hexa.py`。之后另写一份新的 evidence 总索引。
+- [x] **11 月 9—11 日的旧口径与旧工具**：`denominators`、`formal-reset`、`desktop-parameter-first-example`、`desktop-parameter-v2`、`operator-workbench`、`quad-guide-cmf-review`、`p04-quad-biblade`、`p05-quad-equal-blades`、`p06-quad-front-camera`、`common-control`、`hub-annotator`。
+- [x] **从未运行的登记**：`g2d`、`g3b`。
+- [x] **旧六旋（11 月 3 日）**：`evidence/README.md`、`hexa4-ai.csv`、`summarize_hexa.py`，已移入 `archive/evidence/old-hexa-20261103/`；新的 [evidence 总索引](../evidence/README.md)已写。
 
 **可以删（重复，约 35 MB）：**
-- [ ] E0、E1、R0 的原图各存了两份：一份 ZIP，一份解包目录。我按内容哈希核对过，36/36、6/6、2/2 完全一致。**已定（第 6 题）：留解包目录，删 ZIP，把 ZIP 的 SHA-256 写进 README。** 11/18 复核：三份 ZIP 的全部成员（E0 31 个、E1 181 个、R0 11 个，含 PNG、JSON、CSV）在解包目录中都有内容相同的文件；E1 的 README 已有 ZIP 哈希，E0、R0 要补写。合并后由 Codex 执行，哈希值见 #76。
+- [x] （2026-11-20 执行：E0、R0 的压缩包已删，SHA-256 写在各自目录的 README；E1 的图此前已随退役删除）E0、E1、R0 的原图各存了两份：一份 ZIP，一份解包目录。我按内容哈希核对过，36/36、6/6、2/2 完全一致。**已定（第 6 题）：留解包目录，删 ZIP，把 ZIP 的 SHA-256 写进 README。** 11/18 复核：三份 ZIP 的全部成员（E0 31 个、E1 181 个、R0 11 个，含 PNG、JSON、CSV）在解包目录中都有内容相同的文件；E1 的 README 已有 ZIP 哈希，E0、R0 要补写。合并后由 Codex 执行，哈希值见 #76。
 
 **文献目录：**
 - [ ] `references/catalogs/archive-references.csv` 第 283 行“ParamDrone参数驱动的四旋翼无人机智能设计系统”：作者 11/18 确认由 Codex 撰写。建议在目录中标注“Codex 生成的内部材料，非文献”，PDF 移入 `archive/`。
@@ -167,7 +167,7 @@
 - [ ] `evidence/20261115-review-takeover/README.md`、`e1-open-20261112/geometry-readout.json`、`semantic-cards/README.md`、`real-product-topview/README.md`、`formal-reset/README.md`、`20261117-config-review/A1-extension`、`gpu-day-20261115/analysis-247/说明.md`、`hexa-plant-protection/README.md`、`qwen-shape-pilot/README.md`、`d2-tuning/README.md`、`l1-layout/README.md`、`g3-reference/README.md`、`semantic40-pairing/README.md`、`common-control/README.md`。逐条说明见 [evidence 清点 0.2 节](https://github.com/Freeloop993/paper/blob/a98b3ecdce0330902d9f5dd99336ce41e7fc993e/planning/reorg-20261118/inventory-evidence-experiments.md)。
 
 **【问】：**
-- [ ] **`evidence/20261117-r3-check`：** 与较晚的 `20261117-research-update` 大量重叠。今后以 research-update 为准吗？若是，r3-check 归档。**已定（第 20 题）：以 research-update 为准。** 移动前核对配对已被 `research-update/a1/crosswalk.csv` 覆盖。
+- [ ] **`archive/evidence/20261117-r3-check`：** 与较晚的 `20261117-research-update` 大量重叠。今后以 research-update 为准吗？若是，r3-check 归档。**已定（第 20 题）：以 research-update 为准。** 移动前核对配对已被 `research-update/a1/crosswalk.csv` 覆盖。
 - [ ] **`evidence/section421-h3-span`：** E3 第一轮的 A/B/C 规格是不是由这里的方向卡演变来的？若是，它与相关的三个条目改为方法开发保留，第四章要说明方向的来源；若不是，一起归档。**已核对：是。** `specs-after-review.md` 写明短肩与长渐缩“正式响应字典统一归入‘无缝’”，即表 4.3 中 A、B 同为“无缝”的由来；C 的切角壳、承座、前伸、多块顶盖也一致。四个条目改为方法开发保留。
 - [ ] **图 3.2：** 是否换成按 1,318 簇重算、可复现的新共词图（`20261117-research-update/comments/cooccurrence.png`）？**已定（第 19 题）：换。** 旧的 Gephi 图随之归档；`cards.csv` 与 `early-crawl/` 保留。
 

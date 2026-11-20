@@ -115,31 +115,37 @@
       "source_path": "originals/可供性和产品语义驱动的产品设计方法研究_邓家乐.pdf",
       "bytes": 18854713,
       "git_blob_sha1": "7e13614427be1907365aabceca3cc21e84284111",
-      "status": "published",
+      "status": "deduplicated",
       "published_path": "archive/paper-reading-room/originals/可供性和产品语义驱动的产品设计方法研究_邓家乐.pdf",
       "already_in_paper": [
         "literature/fulltexts/K-需求语义与感性工学/L020_可供性和产品语义驱动的产品设计方法研究_邓家乐.pdf"
-      ]
+      ],
+      "deduplicated_on": "2026-11-20",
+      "kept_copy": "literature/fulltexts/K-需求语义与感性工学/L020_可供性和产品语义驱动的产品设计方法研究_邓家乐.pdf"
     },
     {
       "source_path": "originals/基于参数化形状语法的产品识别设计方法研究_厉茜茜.pdf",
       "bytes": 6400571,
       "git_blob_sha1": "168aeb95b6830fceaf29cea72a8809146606963c",
-      "status": "published",
+      "status": "deduplicated",
       "published_path": "archive/paper-reading-room/originals/基于参数化形状语法的产品识别设计方法研究_厉茜茜.pdf",
       "already_in_paper": [
         "literature/fulltexts/S-形状文法与参数化造型/L045_基于参数化形状语法的产品识别设计方法研究_厉茜茜.pdf"
-      ]
+      ],
+      "deduplicated_on": "2026-11-20",
+      "kept_copy": "literature/fulltexts/S-形状文法与参数化造型/L045_基于参数化形状语法的产品识别设计方法研究_厉茜茜.pdf"
     },
     {
       "source_path": "originals/基于形状文法和交互式遗传算法的产品形态推演设计研究_朱天燕.pdf",
       "bytes": 3541569,
       "git_blob_sha1": "e1f2f171187d26276e353e8dd3dbc4c2045c2b24",
-      "status": "published",
+      "status": "deduplicated",
       "published_path": "archive/paper-reading-room/originals/基于形状文法和交互式遗传算法的产品形态推演设计研究_朱天燕.pdf",
       "already_in_paper": [
         "literature/fulltexts/S-形状文法与参数化造型/L046_基于形状文法和交互式遗传算法的产品形态推演设计研究_朱天燕.pdf"
-      ]
+      ],
+      "deduplicated_on": "2026-11-20",
+      "kept_copy": "literature/fulltexts/S-形状文法与参数化造型/L046_基于形状文法和交互式遗传算法的产品形态推演设计研究_朱天燕.pdf"
     },
     {
       "source_path": "originals/基于肌肉疲劳模型的健身穿戴产品设计研究_何彦.pdf",

@@ -6,7 +6,7 @@
 
 初稿只用三组词对：紧凑—舒展、简洁—繁复、整体—拼凑。“低调—醒目”留到配色深化，所以三个方向的初稿配色相同。
 
-按这份草案的原文，P2 已在 MiniMax 上跑了第一轮 9 张（[登记与标准](../../experiments/p2-spec-cards/README.md)）。作者改动方向后，改动处重新编译、重新出图。
+按这份草案的原文，P2 已在 MiniMax 上跑了第一轮 9 张（[登记与标准](../../archive/experiments/p2-spec-cards/README.md)）。作者改动方向后，改动处重新编译、重新出图。
 
 ## 1. 三个方向一览
 
@@ -79,7 +79,7 @@ A 是基准。B 只在第一组词对上与 A 不同。C 在第二、三组上�
 
 ## 4. 实际会发送的短提示词
 
-规则：固定开头，加该方向四个部位各一句，加固定结尾。三个方向只有中间四句不同。每句是“部位：取值”。发送时在末尾再加一句参考图说明（见 `experiments/p2-spec-cards/run_p2.py`）。
+规则：固定开头，加该方向四个部位各一句，加固定结尾。三个方向只有中间四句不同。每句是“部位：取值”。发送时在末尾再加一句参考图说明（见 `archive/experiments/p2-spec-cards/run_p2.py`）。
 
 **固定开头**
 
@@ -115,18 +115,18 @@ A 是基准。B 只在第一组词对上与 A 不同。C 在第二、三组上�
 
 **按这份草案出的第一轮图**（MiniMax，每行一个方向，从上到下 A、B、C）：
 
-[![P2 第一轮](../../evidence/p2-spec-cards/R1-sheet.jpg)](../../evidence/p2-spec-cards/R1-sheet.jpg)
+[![P2 第一轮](../../archive/evidence/p2-spec-cards/R1-sheet.jpg)](../../archive/evidence/p2-spec-cards/R1-sheet.jpg)
 
 | 方向 | 最接近的图 | 没做到的图 |
 |---|---|---|
-| A | [R1-A-1](../../evidence/p2-spec-cards/R1-A-1.png)：卵石机身，机臂从壳体长出 | [R1-A-3](../../evidence/p2-spec-cards/R1-A-3.png) 画成四叶桨；[R1-A-2](../../evidence/p2-spec-cards/R1-A-2.png) 机头朝下 |
-| B | [R1-B-1](../../evidence/p2-spec-cards/R1-B-1.png)、[R1-B-3](../../evidence/p2-spec-cards/R1-B-3.png)：细梭形机身，机臂可见长度大 | [R1-B-2](../../evidence/p2-spec-cards/R1-B-2.png) 机身偏宽，接近 A |
-| C | [R1-C-1](../../evidence/p2-spec-cards/R1-C-1.png)：切角机身、夹持座、前置相机模块、开孔 | [R1-C-3](../../evidence/p2-spec-cards/R1-C-3.png) 画成四叶桨 |
+| A | [R1-A-1](../../archive/evidence/p2-spec-cards/R1-A-1.png)：卵石机身，机臂从壳体长出 | [R1-A-3](../../archive/evidence/p2-spec-cards/R1-A-3.png) 画成四叶桨；[R1-A-2](../../archive/evidence/p2-spec-cards/R1-A-2.png) 机头朝下 |
+| B | [R1-B-1](../../archive/evidence/p2-spec-cards/R1-B-1.png)、[R1-B-3](../../archive/evidence/p2-spec-cards/R1-B-3.png)：细梭形机身，机臂可见长度大 | [R1-B-2](../../archive/evidence/p2-spec-cards/R1-B-2.png) 机身偏宽，接近 A |
+| C | [R1-C-1](../../archive/evidence/p2-spec-cards/R1-C-1.png)：切角机身、夹持座、前置相机模块、开孔 | [R1-C-3](../../archive/evidence/p2-spec-cards/R1-C-3.png) 画成四叶桨 |
 
 **旧图里的参照。**
 
-- 接近 A 的处理：[蓝色上壳示范](../../evidence/quad-guide-cmf-review/product.png)的上壳是卵石形，机臂从壳体下伸出。作者对它的配色材料不满意，这里只借它看轮廓和臂根。
-- 接近 C 的处理：[桌面原型第一次接通的银色四旋](../../evidence/desktop-parameter-first-example/gpt-image-top.png)，分件线多，有开孔，相机舱是外露的前置模块。
+- 接近 A 的处理：[蓝色上壳示范](../../archive/evidence/quad-guide-cmf-review/product.png)的上壳是卵石形，机臂从壳体下伸出。作者对它的配色材料不满意，这里只借它看轮廓和臂根。
+- 接近 C 的处理：[桌面原型第一次接通的银色四旋](../../archive/evidence/desktop-parameter-first-example/gpt-image-top.png)，分件线多，有开孔，相机舱是外露的前置模块。
 - “拼凑”一极的反面教材：[E1-control-wl1.00-r2](../../evidence/e1-open-20261112/E1-actual/E1-control-wl1.00-r2/original.png)，细杆机臂和机身之间有白缝。这是出图缺陷造成的断开，方向 C 要的是有设计的分件，不是这种断开。
 - 作者一年前并排图的右半：机身方正、臂根连贯，介于 A 与 C 之间。
 

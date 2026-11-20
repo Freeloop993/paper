@@ -750,7 +750,7 @@
   {
     "batch": "h3-e2-edit-preview",
     "case": "H3-control-P1-A",
-    "original": "../h3-e2-local-edit-20261113/H3-control-P1-A/original.png",
+    "original": "../../archive/evidence/h3-e2-local-edit-20261113/H3-control-P1-A/original.png",
     "png_sha256": "cc8c2b0a27eb241d39fd1d17201db2f0e5d5a4d6be83a8ac73e37a8c9df26492",
     "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
     "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
@@ -767,7 +767,7 @@
   {
     "batch": "h3-e2-edit-preview",
     "case": "H3-control-P2-B",
-    "original": "../h3-e2-local-edit-20261113/H3-control-P2-B/original.png",
+    "original": "../../archive/evidence/h3-e2-local-edit-20261113/H3-control-P2-B/original.png",
     "png_sha256": "861423caf8c7d3b6362410b3c3eaeb7f1253abf2346553627e118b6deb3dd3da",
     "guide": "guides/4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e.png",
     "guide_sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e",
@@ -784,7 +784,7 @@
   {
     "batch": "h3-e2-edit-preview",
     "case": "H3-edit-P1-A",
-    "original": "../h3-e2-local-edit-20261113/H3-edit-P1-A/original.png",
+    "original": "../../archive/evidence/h3-e2-local-edit-20261113/H3-edit-P1-A/original.png",
     "png_sha256": "ce6c68b6f5805fa5a34a5a23a6d7c924fe1ae8a2f5c4be2f33f4f5325d6a262e",
     "guide": "guides/a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f.png",
     "guide_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
@@ -801,7 +801,7 @@
   {
     "batch": "h3-e2-edit-preview",
     "case": "H3-edit-P1-B",
-    "original": "../h3-e2-local-edit-20261113/H3-edit-P1-B/original.png",
+    "original": "../../archive/evidence/h3-e2-local-edit-20261113/H3-edit-P1-B/original.png",
     "png_sha256": "7d32f7d56cc98886adcb52b8f79b443a75f29c703d1e87bef78387f6ceaa7645",
     "guide": "guides/a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f.png",
     "guide_sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f",
@@ -818,7 +818,7 @@
   {
     "batch": "h3-e2-edit-preview",
     "case": "H3-edit-P2-A",
-    "original": "../h3-e2-local-edit-20261113/H3-edit-P2-A/original.png",
+    "original": "../../archive/evidence/h3-e2-local-edit-20261113/H3-edit-P2-A/original.png",
     "png_sha256": "31c154ce8ec4516494d4bc1e839620336373eb63a9b39a650f09d88f9652e706",
     "guide": "guides/2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b.png",
     "guide_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
@@ -835,7 +835,7 @@
   {
     "batch": "h3-e2-edit-preview",
     "case": "H3-edit-P2-B",
-    "original": "../h3-e2-local-edit-20261113/H3-edit-P2-B/original.png",
+    "original": "../../archive/evidence/h3-e2-local-edit-20261113/H3-edit-P2-B/original.png",
     "png_sha256": "97fea8d84862cf223b93ffdd713330dba6d2b39be2e24f1594a6e9b5d014b686",
     "guide": "guides/2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b.png",
     "guide_sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b",
