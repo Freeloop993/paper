@@ -132,7 +132,18 @@ ControlNet（L053，2023，被引 13）是条件图控制的依据。Make It Cou
 
 **两篇单页的无人机造型文献是完整的：** L002《六旋翼无人机造型设计》和 L003《面向用户感性意象的纵列双旋翼无人机造型研究与设计》都是期刊的单页作品展示，原件就是 1 页，只能当设计先例用。
 
-**框架文件点名的最接近工作里，还没有核过原页的：** Parametric-ControlNet、Davis 等（CHI 2024）、Yamin 与 Cauchard 2022、Ceci N’est Pas un Drone、Mugge 等 2018、Raghubir 与 Krishna 1999。AutoGen-Insight、Brief2Design 和 DesignWeaver 的 PDF 不在仓库，但 11 月 18 日已有原页方法卡，可以按卡片引用。
+**框架文件点名的最接近工作里，还没有核过原页的 6 篇**（题名 2026-11-20 逐条核对过，供作者找原件）：
+
+| 文献 | 出处 | 用在哪 |
+| --- | --- | --- |
+| Zhou 等，*Parametric-ControlNet: Multimodal Control in Foundation Models for Precise Engineering Design Synthesis* | Journal of Mechanical Design，2025 | 2.6 节。参数加部件图控制生成，并从图上回量参数，是“在输出上量几何”最接近的工作 |
+| Davis 等，*Fashioning Creative Expertise with Generative AI: Graphical Interfaces for Design Space Exploration Better Support Ideation Than Text Prompts* | CHI 2024 | 2.5、2.6 节，RQ3。图形界面对文字提示的对照 |
+| Yamin、Cauchard，*Generative Adversarial Networks and Data Clustering for Likable Drone Design* | Sensors 22(17), 6433，2022，doi:10.3390/s22176433 | 2.1、2.6 节。生成式无人机外观加喜爱度评分 |
+| *Ceci N’est Pas un Drone: Investigating the Impact of Design Representation on Design Decision Making When Using GenAI* | arXiv（稿子已引，版本待核） | RQ1′、RQ3。呈现方式怎样影响设计选择，评议材料的控制依据 |
+| Mugge、Dahl、Schoormans，*“What You See, Is What You Get?” Guidelines for Influencing Consumers’ Perceptions of Consumer Durables through Product Appearance* | Journal of Product Innovation Management 35(3)，309–329，2018，doi:10.1111/jpim.12403 | 3.3 节，S5。外观的设计维度里有一维就是 compressed，与“紧凑”直接相关 |
+| Raghubir、Krishna，*Vital Dimensions in Volume Perception: Can the Eye Fool the Stomach?* | Journal of Marketing Research 36(3)，313–326，1999 | 3.3 节，S5。人凭最长的一边判断体积大小，是“比例影响大小感”的经典依据 |
+
+AutoGen-Insight、Brief2Design 和 DesignWeaver 的 PDF 不在仓库，但 11 月 18 日已有原页方法卡，可以按卡片引用。
 
 **稿子引用了、仓库里没有原件的：** 两份稿子合计 47 条参考文献中，21 条有原件（18 条在本目录，其中 17 条来自这次上传；3 条在历史全文分支），26 条没有。26 条里有 7 条是模型卡和厂商手册，另外 19 条是论文和经典著作，包括 Crilly 等《Seeing things》、InstructPix2Pix、MagicBrush、GenEval、AIdeation、Osgood《The Measurement of Meaning》、Cohen 的 κ。
 

@@ -14,7 +14,10 @@ responses/2026-11-19/README.md：
 2026-11-20 收齐后 7 份 44 张混排的答卷后第三次改，都是补充项：
 1. 合并一组：32 款四旋翼上，44 张混排的答卷与只看 32 张的 3 份合在一起（11 月 20 日新答卷到来之前已定：前 3 人不重答）。
 2. 评议者多于 4 人时，两两等级相关只报中位数和范围，并逐人给出与其余人的平均等级相关。
-3. 给出去掉“与其余人平均相关最低的一份”之后的等级相关，作敏感性对照，不作剔除。"""
+3. 给出去掉“与其余人平均相关最低的一份”之后的等级相关，作敏感性对照，不作剔除。
+
+同日第四次改：作者同意把不合用的答卷换掉。SCREENED 里列出不计入的答卷和理由，它们不进各组的表，在汇总开头单列。
+这条筛除是看到数据之后定的，论文里要照实写；含它的结果见 2026-11-20 上午的 responses/summary.md 历史版本（提交 55d5ddd）。"""
 import base64, collections, itertools, json, pathlib, statistics, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -25,6 +28,8 @@ IMG, TERMS = KEY['images'], KEY['terms']
 # 有瑕疵的评议用图：保留在评议里，汇总时单列（作者 2026-11-20 定）
 FLAGGED = {'P07': '机头朝下', 'P17': '可能是底面视图', 'P18': '机身近白，在白底上很淡', 'P25': '镜像', 'P41': '原图上下被裁，桨不完整', 'P43': '机身横置'}
 flag = lambda c: FLAGGED.get(IMG[c]['name'].split()[0])
+# 不计入的答卷（作者 2026-11-20 同意替换）。判断依据是作答方式，不是它的评分往哪边偏。
+SCREENED = {'489ae649c274': '每张图只停留 3.2 秒（三组词合计），其余答卷最快的是 5.6 秒；与其余九人在四旋翼上的平均等级相关为 −0.10'}
 
 def load(path):
     t = pathlib.Path(path).read_text(encoding='utf-8-sig').strip()
@@ -143,7 +148,7 @@ def block_report(images, rs, n_block, n_blocks, title=None, note=None):
     return out
 
 def main(paths):
-    seen, problems = {}, []
+    seen, problems, screened = {}, [], []
     for p in paths:
         name = pathlib.Path(p).name
         try: r, repaired = load(p)
@@ -152,6 +157,7 @@ def main(paths):
         if not r.get('finished_at') or not r.get('consent'): problems.append('%s：没有完成或没有同意' % name); continue
         if any(x['image'] not in IMG for x in r['singles']): problems.append('%s：含核对键里没有的图' % name); continue
         if r.get('pairs') or any(set(x.get('ratings', {})) != {t['id'] for t in TERMS} for x in r['singles']): problems.append('%s：有漏答或含成对题' % name); continue
+        if r.get('response_id') in SCREENED: screened.append(r['response_id']); continue
         r['_version'] = COMPATIBLE.get(r['pack'], KEY['version']); r['_repaired'] = repaired
         old = seen.get(r['response_id'])
         if old: problems.append('%s：与另一份编号相同，保留完成时间较晚的一份' % name)
@@ -162,6 +168,7 @@ def main(paths):
     for b, rs in blocks.items():
         if len(b) != len(KEY['singles']): out.append('- %d 份只看了 %d 张图（现行页面是 %d 张）。' % (len(rs), len(b), len(KEY['singles'])))
     if problems: out += [''] + ['- ' + x for x in problems]
+    if screened: out += ['', '不计入的答卷（%d 份）：' % len(screened)] + ['- %s：%s。' % (i, SCREENED[i]) for i in screened]
     order = sorted(blocks.items(), key=lambda kv: min(KEY['singles'].index(c) for c in kv[0]))
     for n, (b, rs) in enumerate(order, 1):
         out += block_report([c for c in KEY['singles'] if c in b], rs, n, max(2, len(order)))

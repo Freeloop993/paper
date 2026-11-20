@@ -48,7 +48,9 @@ def section(title, images, rs, R, out):
 def main(paths):
     R = readers(); blocks = collections.defaultdict(list)
     for p in paths:
-        r, _ = S.load(p); blocks[frozenset(x['image'] for x in r['singles'])].append(r)
+        r, _ = S.load(p)
+        if r.get('response_id') in S.SCREENED: continue      # 不计入的答卷，见 summarize.SCREENED
+        blocks[frozenset(x['image'] for x in r['singles'])].append(r)
     for rs in blocks.values(): rs.sort(key=lambda r: r['started_at'])
     allimg = S.KEY['singles']; quad = [c for c in allimg if S.IMG[c]['config'] == '四旋翼']; other = [c for c in allimg if c not in quad]
     full = next((rs for b, rs in blocks.items() if len(b) == len(allimg)), []); only = next((rs for b, rs in blocks.items() if set(b) == set(quad)), [])
