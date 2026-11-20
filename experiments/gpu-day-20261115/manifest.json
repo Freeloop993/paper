@@ -1,0 +1,3018 @@
+{
+  "requests": [
+    {
+      "order": 1,
+      "id": "REV1-edit-B2-r1",
+      "batch": "E3 修订一（父图编辑）",
+      "seed": 2026112131,
+      "input_images": [
+        "E3R3-B2.png"
+      ],
+      "prompt_sha256": "bff58d5f75c7062e4e66c9aaa236c3c772843aa65278866704394584a1d778db",
+      "request_sha256": "e88625a2bb8b84fd8c355b1716a958f082ed68bf765fa5260f8c4a27eb4a071e",
+      "note": "父图 B2，改相机档"
+    },
+    {
+      "order": 1,
+      "id": "REV1-edit-B2-r2",
+      "batch": "E3 修订一（父图编辑）",
+      "seed": 2026112132,
+      "input_images": [
+        "E3R3-B2.png"
+      ],
+      "prompt_sha256": "bff58d5f75c7062e4e66c9aaa236c3c772843aa65278866704394584a1d778db",
+      "request_sha256": "76f808b46bbbcec8847ad27d0524ae4ad8c36d952a5d22cdb6ab474641c3cbd9",
+      "note": "父图 B2，改相机档"
+    },
+    {
+      "order": 1,
+      "id": "REV1-edit-B2-r3",
+      "batch": "E3 修订一（父图编辑）",
+      "seed": 2026112133,
+      "input_images": [
+        "E3R3-B2.png"
+      ],
+      "prompt_sha256": "bff58d5f75c7062e4e66c9aaa236c3c772843aa65278866704394584a1d778db",
+      "request_sha256": "4872884bbce6c04823ab0237d106dd1bf580eac4ead5715682662444e043ae1e",
+      "note": "父图 B2，改相机档"
+    },
+    {
+      "order": 2,
+      "id": "REV1-regen-B-r1",
+      "batch": "E3 修订一对照（按新档位重出）",
+      "seed": 2026112131,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "dcce62bd6e8414553cf576805ed0176c25983027187402e50b668e9422b04cc6",
+      "request_sha256": "5d0d07d88b819b93874521f2b6a804bd73e956c838e57ed06c105a48d221cc91",
+      "note": "B 规格、相机改下挂，同种子"
+    },
+    {
+      "order": 2,
+      "id": "REV1-regen-B-r2",
+      "batch": "E3 修订一对照（按新档位重出）",
+      "seed": 2026112132,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "dcce62bd6e8414553cf576805ed0176c25983027187402e50b668e9422b04cc6",
+      "request_sha256": "06aac17a1046b59bddfe77ba0e9404f0c28fe08b244edeecd59dba886b0dd5d1",
+      "note": "B 规格、相机改下挂，同种子"
+    },
+    {
+      "order": 2,
+      "id": "REV1-regen-B-r3",
+      "batch": "E3 修订一对照（按新档位重出）",
+      "seed": 2026112133,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "dcce62bd6e8414553cf576805ed0176c25983027187402e50b668e9422b04cc6",
+      "request_sha256": "f06223a865f4a20f920e81224bdfbfb710a34c20667d271692ea3aa299d61591",
+      "note": "B 规格、相机改下挂，同种子"
+    },
+    {
+      "order": 3,
+      "id": "E2-control-P1-A",
+      "batch": "E2",
+      "seed": 2026111405,
+      "input_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "prompt_sha256": "90bb21f26cddb88f8cb0bffc652111d90bf410e9fa63a122892008051645fa2d",
+      "request_sha256": "ac5f04c25f648f3f2479a5976713078cbbd58c19cb5ec8154cf1b340025d63fb",
+      "note": "原样取自 experiments/e2-registered"
+    },
+    {
+      "order": 3,
+      "id": "E2-control-P2-B",
+      "batch": "E2",
+      "seed": 2026111406,
+      "input_images": [
+        "wl-1.00-dd-0.50.png"
+      ],
+      "prompt_sha256": "68e99b5fe8e7966b6b1fe87a62e91909303e90663e0f00f1da434ac5bc709bd9",
+      "request_sha256": "303559f0511f678c27d4a8afdbb95553340ce61ae98d2e884eb64a3f4ba1525d",
+      "note": "原样取自 experiments/e2-registered"
+    },
+    {
+      "order": 3,
+      "id": "E2-edit-P1-A",
+      "batch": "E2",
+      "seed": 2026111401,
+      "input_images": [
+        "E1-control-wl1.00-r1.png"
+      ],
+      "prompt_sha256": "ce29b31837b4d158fe531f618b06a338323e658fc372e61a38892ef84ecc2712",
+      "request_sha256": "caaac4069768c1a03fe476e2f7b5c792623dcfa8bcb8107bf373996c99e80ae7",
+      "note": "原样取自 experiments/e2-registered"
+    },
+    {
+      "order": 3,
+      "id": "E2-edit-P1-B",
+      "batch": "E2",
+      "seed": 2026111402,
+      "input_images": [
+        "E1-control-wl1.00-r1.png"
+      ],
+      "prompt_sha256": "024cea792b97f002914bbe4c865882f3604d0abc294541f3ff894c2de23e9359",
+      "request_sha256": "69b5fe8762acdcdd2de5ec35647c2ec40aa20e6bbb8eb273171fc40ffc7c3c62",
+      "note": "原样取自 experiments/e2-registered"
+    },
+    {
+      "order": 3,
+      "id": "E2-edit-P2-A",
+      "batch": "E2",
+      "seed": 2026111403,
+      "input_images": [
+        "E1-control-dd0.50-r1.png"
+      ],
+      "prompt_sha256": "ce29b31837b4d158fe531f618b06a338323e658fc372e61a38892ef84ecc2712",
+      "request_sha256": "5812721f79d40004a332ff1a033ab816b389cd887eb0aa1c0abb827d2d3afa3b",
+      "note": "原样取自 experiments/e2-registered"
+    },
+    {
+      "order": 3,
+      "id": "E2-edit-P2-B",
+      "batch": "E2",
+      "seed": 2026111404,
+      "input_images": [
+        "E1-control-dd0.50-r1.png"
+      ],
+      "prompt_sha256": "024cea792b97f002914bbe4c865882f3604d0abc294541f3ff894c2de23e9359",
+      "request_sha256": "0958334d097f588c39484b877f2cb3431d368ac480b9490a9e8b5c3e469a5d61",
+      "note": "原样取自 experiments/e2-registered"
+    },
+    {
+      "order": 4,
+      "id": "S12-S0-r01",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112001,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "6fb4fdab4c0d1448f2b1509c62670f17246fcfaa20c37e4b1cb2f57a415e2846",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S0-r02",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112002,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "4f07f053414c071bb9c1909fff2e21178bfd7bb2c335ee43386e579417dfb234",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S0-r03",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112003,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "33b647ad108c630df58f80303b646208e17d9bb91024f119680db3c40b391656",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S0-r04",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112004,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "23ed400f8b68f4d0ab243e0d3ba17fe735a967014ac4f13687fd1db35498fc28",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S1-r01",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112013,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "fc42610a917828893e35d3f68954676e5c39c3866418c97244fb90b75dfafc08",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S1-r02",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112014,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "adb47d2d840b5eaf072ef9818a4e0e9687308aa7e75b80ca65b4ae0fa7256dea",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S1-r03",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112015,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "4c5054b5c60c78dbf73d148faad4a4f4ebe9f7db7499bc92175446a391e7205a",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S1-r04",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112016,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "caa151d423a810baaf296e4600b2d427ea78c9677fedc10cc17780fad181c6e9",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S2-r01",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112025,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "8af0cba82c14047ae357388ebca29018fa516ef2b2c98812feffb2ffdc623f1a",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S2-r02",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112026,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "853d145b5696de691513a862afd8eb74ae6842b8cb0678597c4d0efb614e4547",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S2-r03",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112027,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "3d1d32d9d91493fa673c85a8f4b32e95f8b718f8cceca2a510f640f331d7f5c7",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S2-r04",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112028,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "88844ac56452a463579dbb7bd9719dd4217746486d3170e82fd01e0863558d0a",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S3-r01",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112037,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "4b2dbee579a9a09b3917d969c0f5ddf1320a03647642c003d9611181a664fe96",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S3-r02",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112038,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "7e7ad507750acc161ec9ee6e98b02618194c22624d05d4e2114e930f3df1b20a",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S3-r03",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112039,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "296868f044f8ea8533f02a5f3896fd86eb753d1ebfddb51cb60d7553f0caaf47",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S3-r04",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112040,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "6d3fcce345e058e72e43b8102120a3d78ecfab4dae4336c745bebbb4f63d294f",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S4-r01",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112049,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "886c096bb3aacb4c29c7a1bde6f5707bcc7c5046e10996f8ffac8ed0430db838",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S4-r02",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112050,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "141b7372bf92a90df02e334a96992329cc7e509487b34408602dd391f0b2939c",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S4-r03",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112051,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "89204f6481c7081f17e0952064b31ad5b24ffdefba5e3d8c3852995837962e9c",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S4-r04",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112052,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "912dbfcc9fb26cf57b749d4a2f4822fea4d08be4e0265824492b578570c1279d",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S5-r01",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112061,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "66ca1dee24621801de7c4d0b30a8edb6b5ac6503888cec3a711e7de87065377b",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S5-r02",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112062,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "1a0c6f72503bee8f5ddf3cbb7336015f75e06ec35769fa3eb2ec14b55d3ab193",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S5-r03",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112063,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "11bb542c132dfffbf229eb7cb46e36ac14a72563c45680c06fff4508f9eb2566",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 4,
+      "id": "S12-S5-r04",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112064,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "df7ff60f3f4f7f3011ae5204229431fe32176da46632083c0e9aa493b4f74988",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-0.70-r01",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112251,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "ddc3c805cbdd0edb465d825f55b9514386d599b66b7cb130deb33cb55ec0f513",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-0.70-r02",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112252,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "87c1589cfdd2db2b76cb3a2c2a5d04b322db4c26e05e60aa522782e694b23b3b",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-0.70-r03",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112253,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "a547f12bb0e119b5e193f43ad91b086e9137fc4d31805029c8ed05d3af633c62",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-0.70-r04",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112254,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "1d622a30d99f7118d41c4d01c85464f91869f5f5366ad8531b59b3df03ff5dee",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-1.00-r01",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112263,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "6b5ffd40163da4b0f9377dc1e7f1d6837a1d8421839b23112c3ec1c7fd922fa0",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-1.00-r02",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112264,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "21ae0771a1461fa46f8dbfe80e5d54847201767024401d2210f53000478dcfa8",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-1.00-r03",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112265,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "abc44603706c9a6ad9aa7618269f7a6b75075ff33d0dac9e56c4d6b4e763ace2",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-1.00-r04",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112266,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "f8fe062404e8cfcdc73d024afb5af7abd26599dca1106fed489cf176117f9408",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-1.30-r01",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112275,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "c6811ba016488eed48c9bdec3c0e8e9fe98f811c0b8ebb93d8624250be046343",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-1.30-r02",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112276,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "386ae02ae29a37a99789518f6f9b0da0ae380782f09e7589386cde91d83ef3f0",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-1.30-r03",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112277,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "5ddb3239c7c53e281891a5c4a094034fa458e229facb998b1d5aa4d6691b59ac",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 5,
+      "id": "WLQ-1.30-r04",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112278,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "6b32a5825c43e078b71d580e14f7a247e2ef9d5598d2b36acc09a58b197d9c26",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 6,
+      "id": "HEXA-draft-r1",
+      "batch": "E6 首案初稿",
+      "seed": 2026112301,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "38e5798eb9fea205be017a64df7cc5dcee1c1b4262e4b57372dce98335bb1653",
+      "note": "作者确认的首案规格"
+    },
+    {
+      "order": 6,
+      "id": "HEXA-draft-r2",
+      "batch": "E6 首案初稿",
+      "seed": 2026112302,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "c775c1d0e4982f0c3de1b862ec8f1d9bf6cb195456fa1b9df7faf6b51ec2db6d",
+      "note": "作者确认的首案规格"
+    },
+    {
+      "order": 6,
+      "id": "HEXA-draft-r3",
+      "batch": "E6 首案初稿",
+      "seed": 2026112303,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "c65f68a9a890ceafa01bdc2c7c60a9f93290adf3a7af2848a22335dca6b2380b",
+      "note": "作者确认的首案规格"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl0.70-r01",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112311,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "f307c27fe4282153957e499935a3ee29b614fd1df1348745d2a39ac7af06bf97",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl0.70-r02",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112312,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "ceb25b12a0bc7b9c453fb0b4873665c8034310a040263fc0db652a85e3b70bfb",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl0.70-r03",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112313,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "bb99dd04a6e5b70a7c2a61db827d40ae4202d3b6fa2cba4e2bfedaa2c62d164e",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl0.70-r04",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112314,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "38da2a8ec617355e9f088b10cbe6d09f3a0d99fe6a89e31d8296c6fe780648dc",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl1.00-r01",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112323,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "0b162af95e63e94f9a2e35dc45d52ac90028124342c23e943afa04e612620aee",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl1.00-r02",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112324,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "e118445a3c4532b8d0076c0117c23e095a0f07baf57bf6a254c6379e593ff82c",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl1.00-r03",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112325,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "e3f361653fc43748a9549bce112e2877875d753dc718663502341381b47c5aa0",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl1.00-r04",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112326,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "0882d34fed56996ee549ada12bb63fd2680805489c36ab26465634338908aaa5",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl1.30-r01",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112335,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "e6605606a6cfee8f46731b709bc80d648c1906ffd50158220c0facfd4ff19f5b",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl1.30-r02",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112336,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "fed3caf23ff680edb894540077043da64b9e1fce12b91cf9a29bc139e8822829",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl1.30-r03",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112337,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "815c683f75f34d0bab779fd6343507f7456673ef22aa4cffc731364239a2889d",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 7,
+      "id": "HEXA-wl1.30-r04",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112338,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "98608233d500799e67f375f10f5fc1dc5ce7e82be0ddba7e5eca70ae5539211c",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 8,
+      "id": "S16-S0-r01",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112001,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "a5f2940e5332298e6b2d460aba27b3436cd430c9c5742b7989f4a0a3e64a3534",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S0-r02",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112002,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "b03af55e6892e9239085cc0ff80b728a7554e2cdc4ccb157e5dc3d5597871403",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S0-r03",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112003,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "836dcd852533236897cf3edd928cb4c7fcffc63f70e4edcb3c622066f119a028",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S0-r04",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112004,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "a79c63b32dcfeff03499f2e1c54a98b5393a74277b6a1fd6b0de28f0bbed620f",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S1-r01",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112013,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "537677fca485736201e7f2ab2135022545faebf7859d5eccdbac7894a84008e4",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S1-r02",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112014,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "507d0cc67102ac25711e1ab9d77bfdb29e1982d2d7c98e8636aa58ff3e5c5054",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S1-r03",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112015,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "f4c5f1c55e8337759a2b6fdbf156cffe889fd0f0cb861d6034421dd8388a6f5c",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S1-r04",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112016,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "968b84663a97e39dc0c824356b8c570caad20d471ea7a3ff8bdd5ee800360e20",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S2-r01",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112025,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "d61741867c73bff2960093d17b5ce98d069244fc4e019d17a2ce08eebbc9ce09",
+      "request_sha256": "2abd113c9b604ad14b87e4765c97fd15be87644dc6cd43ea82b22f84c4955f14",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S2-r02",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112026,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "d61741867c73bff2960093d17b5ce98d069244fc4e019d17a2ce08eebbc9ce09",
+      "request_sha256": "a3e678a9f3a81befd34ec324243af01d55ce6ba92c8b4b9137cf8f4a93bced66",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S2-r03",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112027,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "d61741867c73bff2960093d17b5ce98d069244fc4e019d17a2ce08eebbc9ce09",
+      "request_sha256": "5ddfe4ebd3949454794065cbf7cef34538710cf37855664993049a914c5dcc5b",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S2-r04",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112028,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "d61741867c73bff2960093d17b5ce98d069244fc4e019d17a2ce08eebbc9ce09",
+      "request_sha256": "67a53ce5f34bfcf6f6a3a2ce17f858c0b2eca0c59ad58e9697ae0fa909b464fd",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S3-r01",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112037,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "574b4c9cbb2af9edcccc2f2dc68177d3b8d65ab3b61dfdf3f38530fd9577d230",
+      "request_sha256": "69693dda0922edeed5303cc6c98354fc76b327b9d1ef9bff0292b0d2718d9e86",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S3-r02",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112038,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "574b4c9cbb2af9edcccc2f2dc68177d3b8d65ab3b61dfdf3f38530fd9577d230",
+      "request_sha256": "e27087e1202421cba85521f6b28fc1179f6d19b4bdbab275eeb2ac92ea906bd2",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S3-r03",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112039,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "574b4c9cbb2af9edcccc2f2dc68177d3b8d65ab3b61dfdf3f38530fd9577d230",
+      "request_sha256": "7bc6199000f1bb7322f19a605c799ad2004d2c8e1a09bb82657d61646f71ae55",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S3-r04",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112040,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "574b4c9cbb2af9edcccc2f2dc68177d3b8d65ab3b61dfdf3f38530fd9577d230",
+      "request_sha256": "48f67faf91e144259078d83757da870020a34ccaf325bb957fac839df9d592a4",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S4-r01",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112049,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "c829d15cd3a2663377dafc67102313c2130cff36ecce15c6111b50f404803a21",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S4-r02",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112050,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "8a421736a2fc498fffb3db56d811ccf24a3f09f069fb3764fb652b0415a10148",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S4-r03",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112051,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "21f638b83e499b3e19899870e0af5a50c89d61e4ae899ee954dc28ad64dc744f",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S4-r04",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112052,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "f61b3ed898740aee277c6a2fcb588456fcb8c4a5d76101391c9318fd88db7a7a",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S5-r01",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112061,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "0e3e4ac522d1396b50473e17241e3ddaebf72daa8e4eabc7a513b6ebf494f0e3",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S5-r02",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112062,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "f0fc4aaa633855e070bfd5e43698ca6a7863846c16a36f0f9936fa0c27cd938c",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S5-r03",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112063,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "7a334a9ae01dac373052bc3311ea428a9dfaf8fdd1a074a5d73b07a815e71b03",
+      "note": ""
+    },
+    {
+      "order": 8,
+      "id": "S16-S5-r04",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112064,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "39cd4c14b8c7329bece17193aae5571b1ddf748c2f765e6a60f620715ee68d69",
+      "note": ""
+    },
+    {
+      "order": 9,
+      "id": "NEW-N1-r01",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112201,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e91f0a8364fcf2ce062d7840f0e4e3c0b7c5ca7a6833f965e962b9e3250bb18d",
+      "request_sha256": "5bd746d1d41f8b87f69040d0e787e3cbe10fad7a12d1233649036848ab9aa906",
+      "note": "{'body_plan': 'faceted'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N1-r02",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112202,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e91f0a8364fcf2ce062d7840f0e4e3c0b7c5ca7a6833f965e962b9e3250bb18d",
+      "request_sha256": "7e9f69f136a2c6a0dd22bdeceb864309df29b5faccb9220703034e78c9a69780",
+      "note": "{'body_plan': 'faceted'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N1-r03",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112203,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e91f0a8364fcf2ce062d7840f0e4e3c0b7c5ca7a6833f965e962b9e3250bb18d",
+      "request_sha256": "d5940ceab4dc702a397c25a50ea8d9e5c933964e56272654fa96b9d4033e5f13",
+      "note": "{'body_plan': 'faceted'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N1-r04",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112204,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e91f0a8364fcf2ce062d7840f0e4e3c0b7c5ca7a6833f965e962b9e3250bb18d",
+      "request_sha256": "6364420c3d8ae6b6e29382404619c2946dc4363e3a42280ca303369c38ccd2bc",
+      "note": "{'body_plan': 'faceted'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N2-r01",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112205,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "8900898d5b58795c1ed4873cd2f25984d1ba3f1b1f2a66e9bfe964192bfe305e",
+      "request_sha256": "440b7eab43d5297cbff6fe7f85faf4ac2223deffe5e3c02a34378537caa00c79",
+      "note": "{'cover': 'split'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N2-r02",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112206,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "8900898d5b58795c1ed4873cd2f25984d1ba3f1b1f2a66e9bfe964192bfe305e",
+      "request_sha256": "aa6c8e28184fbac08186a1c72c3356481eb28ac9f152930ca55c6b36f8afb543",
+      "note": "{'cover': 'split'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N2-r03",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112207,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "8900898d5b58795c1ed4873cd2f25984d1ba3f1b1f2a66e9bfe964192bfe305e",
+      "request_sha256": "7605af444dd345b9513662d242c0e488626ce3d0a10cc4fed7c15987d7954a9b",
+      "note": "{'cover': 'split'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N2-r04",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112208,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "8900898d5b58795c1ed4873cd2f25984d1ba3f1b1f2a66e9bfe964192bfe305e",
+      "request_sha256": "2a89e28d468f10be622a249e186e4006cf176d205f9690d7ac9df5551c3503cc",
+      "note": "{'cover': 'split'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N3-r01",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112209,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "a30f9d17f6e9c1f371290ab31663ba22a02e1b121cf92cb10fbd0b9f66e0b6ec",
+      "request_sha256": "a86bfbac098f06dd56f9c237545e69716dd207143b5417d1bf82aba3e00d72f2",
+      "note": "{'surface': 'sculpted'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N3-r02",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112210,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "a30f9d17f6e9c1f371290ab31663ba22a02e1b121cf92cb10fbd0b9f66e0b6ec",
+      "request_sha256": "abccfc42b52ce0dc6395c764bf2e3bab5638a91b1dd7b0bb993a91e69f3f8e2c",
+      "note": "{'surface': 'sculpted'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N3-r03",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112211,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "a30f9d17f6e9c1f371290ab31663ba22a02e1b121cf92cb10fbd0b9f66e0b6ec",
+      "request_sha256": "c58b96b945ae442d25665f2770dbdd03a20e617005ef8bd2f9281a7189b718e1",
+      "note": "{'surface': 'sculpted'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N3-r04",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112212,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "a30f9d17f6e9c1f371290ab31663ba22a02e1b121cf92cb10fbd0b9f66e0b6ec",
+      "request_sha256": "102849e9a66d8e8adaa9daa12b74234b23158771ccbe1706cff426c329f73c13",
+      "note": "{'surface': 'sculpted'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N4-r01",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112213,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "9a2ac53a2d330fc95dc95d2fcf3f36220ec329be6937b9176c34ea70f4ab665e",
+      "request_sha256": "a504033d90f32847bd9bf77aa9716dbdb242955d06b0a37d24afd77bd9417e16",
+      "note": "{'accent': 'motor_ring'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N4-r02",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112214,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "9a2ac53a2d330fc95dc95d2fcf3f36220ec329be6937b9176c34ea70f4ab665e",
+      "request_sha256": "badedf36277547553be3826db3ec3daf4410b28624dab313d4389b5186366813",
+      "note": "{'accent': 'motor_ring'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N4-r03",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112215,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "9a2ac53a2d330fc95dc95d2fcf3f36220ec329be6937b9176c34ea70f4ab665e",
+      "request_sha256": "db73ca5faa6f82d424a82865adf7ec2b31984752af4017664b618c7325311be3",
+      "note": "{'accent': 'motor_ring'}"
+    },
+    {
+      "order": 9,
+      "id": "NEW-N4-r04",
+      "batch": "v1.6 新增档位单因素响应",
+      "seed": 2026112216,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "9a2ac53a2d330fc95dc95d2fcf3f36220ec329be6937b9176c34ea70f4ab665e",
+      "request_sha256": "15ebcd26c25cd1d0ee156fb3981e0625e4197ac740925e38a712b7651c214a58",
+      "note": "{'accent': 'motor_ring'}"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-inside-single-r1",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112221,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "c1676f9bd6017fc35a031846ccf42085c957fd1488a8fa0cf255ca216965991c",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-inside-single-r2",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112222,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "d04a7c5dbaa690860614d51bd580ef8d93db4d4fdb6d4cfabac9d1933df58408",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-inside-single-r3",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112223,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "a2f2c2040b97c8672daffe6b258dceab7efa0b032fb628f6a256cd538075fa2c",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-inside-multi-r1",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112224,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "f22c766578fee39eeed24802b2123e66f094ea1ffed5684ab67e23ad9cebe9ce",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-inside-multi-r2",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112225,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "9891ce2bc13da046fb9744e900ec2dc70e3d552850eb4c1ba2e0eda5b95b0663",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-inside-multi-r3",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112226,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "4a0a74325eab75f597a5d02cacfb92c105cfb4918bfd518cf5177db27977dc80",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-projecting-single-r1",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112227,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "f15acf190874e7bfb3c13e072a9b3500d26242552bf9b65e40231a32cbe9a9c9",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-projecting-single-r2",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112228,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "8a34a506526bf4b2661275e2ebb9fc838e68d2b2275b84d7d9943ae2dc0cfa02",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-projecting-single-r3",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112229,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "a0e55e72e63e3d0b4816736032aca2e8284fc013ab4e2a9089d47c65da98f298",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-projecting-multi-r1",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112230,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "284b5675afe389815721153c44ca3dc3cc93529ffd9312d7d7740065497fe441",
+      "request_sha256": "ad2c356a3ceeb8436c8d7aa5463114a5816634bc831d7416695263b49ecbac67",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-projecting-multi-r2",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112231,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "284b5675afe389815721153c44ca3dc3cc93529ffd9312d7d7740065497fe441",
+      "request_sha256": "d75ba0d593f517953b491e1524fb5cfc7d5c119fdef0663e60f68dada46d50ca",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-pod-projecting-multi-r3",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112232,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "284b5675afe389815721153c44ca3dc3cc93529ffd9312d7d7740065497fe441",
+      "request_sha256": "b522a161b8d0eeda3b38e8352e64cb028ffb3b8609950952720d1ace5c3d2735",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-inside-single-r1",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112233,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "5e2119390099f1938ffa0e3dc35e193dac4bf44ac7a362b406c89c08021629ff",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-inside-single-r2",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112234,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "5ef542b2a7de548b3b9492a0c2c39e296ad143e115a9837d5ddfa1287207191b",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-inside-single-r3",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112235,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "f960f1c2b7bf41ddb4e51e62929972e9c44f6590d0b0e8d08e5eb59b20c1a7e9",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-inside-multi-r1",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112236,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fc5f0acc154bd5b5186791c024b62a9475025707d32c316434991c209862b905",
+      "request_sha256": "666be364ff9c68d1a8d1febb266a5917d056bd820b8c42116384eb9f28c45d9a",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-inside-multi-r2",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112237,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fc5f0acc154bd5b5186791c024b62a9475025707d32c316434991c209862b905",
+      "request_sha256": "1f790ea86444c770c02caa91cf69ee4d7186c02660d280312085e85a021acb26",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-inside-multi-r3",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112238,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fc5f0acc154bd5b5186791c024b62a9475025707d32c316434991c209862b905",
+      "request_sha256": "47ec25ee3e1f6e6ed8fae3f10882b8629cd2c30cd73a4e8224f511db051b3848",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-projecting-single-r1",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112239,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "32952e9dcd92214eb25a1c92fa72cda3f37c333a6076895bb348de2c3d053d3e",
+      "request_sha256": "61e3e84d1eb69e3c825c1097acd66ba98be3cab5cd9a99b520b74aaafef9bc2c",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-projecting-single-r2",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112240,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "32952e9dcd92214eb25a1c92fa72cda3f37c333a6076895bb348de2c3d053d3e",
+      "request_sha256": "ff422e2dd3142dfaee8a7a3fbf7db1ce2f12a43fdbb7adf39aaa914dd652f21f",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-projecting-single-r3",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112241,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "32952e9dcd92214eb25a1c92fa72cda3f37c333a6076895bb348de2c3d053d3e",
+      "request_sha256": "4761b2d116af7b38924b806379dbc33b75355631304e85f9d404696588c517fc",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-projecting-multi-r1",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112242,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "16a2fd02f64f87ab99f205741cfc06fe57c9ee4bc36cbb71b5686e5ebca629d0",
+      "request_sha256": "d4866e86058fb6ed44440ef597b3adfd01c81ee3c7fd7be9f08ba22074383118",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-projecting-multi-r2",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112243,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "16a2fd02f64f87ab99f205741cfc06fe57c9ee4bc36cbb71b5686e5ebca629d0",
+      "request_sha256": "664d4d1b259aacca2ebebb311c067246dcb9a1c54114aa3a38c3bf766aa2c139",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 10,
+      "id": "COMBO-box-projecting-multi-r3",
+      "batch": "三参数组合（v1.6）",
+      "seed": 2026112244,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "16a2fd02f64f87ab99f205741cfc06fe57c9ee4bc36cbb71b5686e5ebca629d0",
+      "request_sha256": "799b95f829da50fcaadecdf9715bec60f9dcfe749ad6df7c25b9e24e01564d4f",
+      "note": "检验档位叠加是否互相干扰"
+    },
+    {
+      "order": 11,
+      "id": "S12-S0-r05",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112005,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "ad3011eb2163978236cba84c7e971133fedc8ae16f0347405fdd51930d13ed66",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S0-r06",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112006,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "af1c2f1887052ee418078b4330d51673ea4ffcb26906368d25ca46efc95212cf",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S0-r07",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112007,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "d79882805a0ed4d568d02d0c26b829d43bf3b1af3eea4143eb252032dc598b37",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S0-r08",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112008,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "6b2682dc51572ed1ad6f6a7c60fc05aef3bf3415c6ecabe83be148c7649fc6bf",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S0-r09",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112009,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "1c955ee08514c327a74c2c0f9631e93c3472e405403962696adb82aae6e5a6cd",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S0-r10",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112010,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "de87d5608e3a46dbd9320eadcda9225f8a023b152e560a5cf691d59d9bff6dd7",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S0-r11",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112011,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "c88595c9cb52b13b55f5bfed87588f00362ffc7e05d5161a5554e1a0eab73415",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S0-r12",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112012,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "3be7f1ed407bf76d0f1d16050dd485c55c67ceddc53dd12c40b54450780807c2",
+      "request_sha256": "8264e6dc46e7f7378324f4af3828ade5333fdb699531a105a3bd615e056ca382",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S1-r05",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112017,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "e878b47937001975256593babdbaa41c0aca044b9652eac280cbc2db4c08c088",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S1-r06",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112018,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "bec45fd1d471b9450b2fe3f52c736978e41973ff159c8ae045ebeaf0e8d0ef6b",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S1-r07",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112019,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "bba7bf8c5ff4c5bb74e0d86eb0ed6612d51154499b8194031548c336d9f6f335",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S1-r08",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112020,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "ae6a067b998a941c624df41b7b1998225d98c80e5c7681da15384569ee611f92",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S1-r09",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112021,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "ee8bb161b6d7db1e1e162112661f4d4478dbc647a7389ad918443077e8ba5662",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S1-r10",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112022,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "d805a3e54d8a7b6a026d0acd18b3740357b445ae28b689279d5fb9efdf063910",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S1-r11",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112023,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "550ea3b8687a72c631a3454a8782ee2fd372b35a7d56d669cbc95286ec43e49a",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S1-r12",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112024,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0347001092db33ffa5d5ccb08e5b77575de51f60b4fd1a26465f8f9a8c314a29",
+      "request_sha256": "0f68c8dff2bb9fa0ce1e6996d48f4803a4249de819dbca7954056e5fc2d7cef3",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S2-r05",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112029,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "6f34a4461bdbe1395d89aa775f27233fd121e848cf315e588c9f09a916dddccb",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S2-r06",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112030,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "e97ed6046f79884af19b1f84846f3a384b06f8b187520abeaab3715c2473efba",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S2-r07",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112031,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "6379ae3364a6b40b8ab743f682911950fe8fcbe17a6d270b63c2d221aff535be",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S2-r08",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112032,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "f8e7c95d99c6cd501b306facb2bf4bfdd612b0cf5f19592fd28dd71ff38a114c",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S2-r09",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112033,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "3045485207a549130252617358d63733351e79a749f2c7e4a89736e51bfa21ce",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S2-r10",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112034,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "744a9b8eb73d95eeebcb74e8b7646905024c2326ce36ccf596b343ee8b56f16c",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S2-r11",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112035,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "c3a62eb7519b48fd1d2373426266e39a2637533c6f8866ee0d50d19baaf28f60",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S2-r12",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112036,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "2ab461d546caeea48b44231d471c1295c7fb97ef56797aa095ac725af76edaf8",
+      "request_sha256": "9b39653f4d2c365364ad8ea36d4110c0c9a97e660321d64eba718f7c1cc3ad05",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S3-r05",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112041,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "61bc39e86add3ca7b2300235d7904aef2c541d72036e6e9b30c3c817b1b975b9",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S3-r06",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112042,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "da4fd5163ef6bfd79e0e9ffd10971985cfb1ce57860e1ec3cb94791919107325",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S3-r07",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112043,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "155368a2b065156a9f47e509417940376f3db45da450edaed9c60e6474a41c98",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S3-r08",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112044,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "b4e679cf04841cb7390c5b061cbb8617bc1fe90c04535d803440af571c91df51",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S3-r09",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112045,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "7afd10e208ab57f78ec6d4c9ff7fa3c199f93373373409037953a3f999510d0e",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S3-r10",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112046,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "59fe99a9fd542e5263e2a68db2f0c25d53714d69c16f6ef6fcec6a8b535cda3e",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S3-r11",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112047,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "93e1f265e4490da220a37a299e2cb11f3873c466e5e70ba44396a1077f2951fe",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S3-r12",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112048,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "043322042174859f46721823203788dac2e2f966d49f9d51dfdfc2862f081e9a",
+      "request_sha256": "49c9956b8a6b79c17dd31db99e0608f4c84fbd8ff0bcdc16c28b90fe48e54069",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S4-r05",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112053,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "107e953558b3b974d5b21beed5f26389f56740009590d50822d777c0cda833e5",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S4-r06",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112054,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "b7fa8f38dbeff5562bf93de141a60d999d5e2fcdfb82e4520192eff23fce4491",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S4-r07",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112055,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "14f491cb7a912a3348f7002a95b7a114b9bdcce8e4b8c5351423f27a386061d5",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S4-r08",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112056,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "ba7fa161a7d817ac7ad583eb80481c1f026f937586bbf78019d6404403fa6207",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S4-r09",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112057,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "913ebc0d884ecb2974e1c99eea19ba7b2590e1a345deeca315fccad08e62e25b",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S4-r10",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112058,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "c1e46170336f2ccbb5228c8123c728f47bdfaf0d45e95596f1be356082265254",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S4-r11",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112059,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "1c3ae0f51db1ea72ecf732a6464542b21830b96ba3e4f2d4b6d40d62c9693062",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S4-r12",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112060,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "0a53a84e1f89d871203469921e7d532f75cdce358339bb997d629b8fac7d83c9",
+      "request_sha256": "c0afdb1842c6937e358abd444dd63942a855e5bb63acaa5597804dff14e63073",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S5-r05",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112065,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "09b8416a57473e6a1c93c33ec29759c1fdb0d47714f841fb1ce95c9186806e52",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S5-r06",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112066,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "402051059c96462701f55b6b05be5ddd5fe28aeab70c4d5973df32ead0ad90ae",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S5-r07",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112067,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "292ac59372023349a84e9782ec4ce05b955094b1ab9164b646dfac86ab1243c7",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S5-r08",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112068,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "d385edb82791058b0aaf99a7e1970af4892665e12d31325afd482b2563d20fb9",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S5-r09",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112069,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "781f2def0ce7d4a7c7286795dfc1567229d628a4c7e4b55b0666ef9f48e25257",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S5-r10",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112070,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "c9410bbcb17d9ac721f7be829249e4192ccdbf6fec613e3d8cf162215276ad78",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S5-r11",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112071,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "2f4a6ea6c0b2de58cf08bc861aeffd8fa23c31581edd95668f7abb65a8f03924",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 11,
+      "id": "S12-S5-r12",
+      "batch": "5.2.1 造型响应（字典 v1.2）",
+      "seed": 2026112072,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "412376e67fbe3064b907a13165133e2c913629c1927a073c77aaa4556d127ee0",
+      "request_sha256": "63d80b8a80e0b7ad237c75548827b73f8ffad86cac70749bdde4b9d60bcdcb5f",
+      "note": "正式 r1–r4，其余为扩展"
+    },
+    {
+      "order": 12,
+      "id": "S16-S0-r05",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112005,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "a347532c78ecd1fe3fc002d5cb0f8db23bb8e65ea85965150eeef07f3be9f00e",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S0-r06",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112006,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "b1e87fd9bab5272b1d0bd19ea04fe17c83205d8eea1001f8c1bf81c12e7ee3f4",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S0-r07",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112007,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "8187f77df261d9e28edb0c55a8c1f05ef887fbb89d8fdde1a45c48d86106a7ce",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S0-r08",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112008,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "183bed2f754ce20c2fd8f8b087ee88c3a934b210f681d30195c1b3e45c36dd49",
+      "request_sha256": "543ace70f3ea6bda3ef62b95b2d3606a054b335497bb172c4e2b0b112282d265",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S1-r05",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112017,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "a55daef34adac62f102ef01fda04b116d19c48cd64ea01e60c272e79867a184a",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S1-r06",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112018,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "a18455223a63a46a8d6f0d70a4a718758cb178429cf2dbcf1d881d9d53a64511",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S1-r07",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112019,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "a8f71e8f831b9273f543b66ebaa9f71c0489deb2aa963ad110cd5dabaa1d607d",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S1-r08",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112020,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "29c9727d3aa8378700ceb3fbc74f57cb013c442850c5c27f9d2548996d9d98a5",
+      "request_sha256": "cc19f8d96bca564f2faf7d076362cf172fac5931108a9f927189f961b9f2d3f6",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S2-r05",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112029,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "d61741867c73bff2960093d17b5ce98d069244fc4e019d17a2ce08eebbc9ce09",
+      "request_sha256": "4e303672d9cd2d7e8d6bcf12e1bbdff6fea05b6b9bf3f906fddd9f2c74396380",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S2-r06",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112030,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "d61741867c73bff2960093d17b5ce98d069244fc4e019d17a2ce08eebbc9ce09",
+      "request_sha256": "7a2f1f00afb5d0cdc68100fa4c0459e0b33643867b9f2e2e7ce42a113f126854",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S2-r07",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112031,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "d61741867c73bff2960093d17b5ce98d069244fc4e019d17a2ce08eebbc9ce09",
+      "request_sha256": "52ec3aa490e8853fa48ee48bbd5a4445e9a1a4ceddf24d8dd6798d78812e4070",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S2-r08",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112032,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "d61741867c73bff2960093d17b5ce98d069244fc4e019d17a2ce08eebbc9ce09",
+      "request_sha256": "c1d073b539a70e6877e1d8b7c8a68cffec3a24b7d0676589d1f7c0434757589b",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S3-r05",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112041,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "574b4c9cbb2af9edcccc2f2dc68177d3b8d65ab3b61dfdf3f38530fd9577d230",
+      "request_sha256": "b1a23fb5f11f0e235c4bd66efb2758aa5bdbfb670f32fc6762d860b7cea17aaf",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S3-r06",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112042,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "574b4c9cbb2af9edcccc2f2dc68177d3b8d65ab3b61dfdf3f38530fd9577d230",
+      "request_sha256": "dc9dc7744b45393b989495bb03e31d71ca67dc65cfc8e2919e1581ad468e28a7",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S3-r07",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112043,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "574b4c9cbb2af9edcccc2f2dc68177d3b8d65ab3b61dfdf3f38530fd9577d230",
+      "request_sha256": "843a841f570cb82c9c44a22d0da155df9658b298c181e9176a6725c203c5b5ef",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S3-r08",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112044,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "574b4c9cbb2af9edcccc2f2dc68177d3b8d65ab3b61dfdf3f38530fd9577d230",
+      "request_sha256": "029b5d0cb39a071dad3bad08aaccaea9639ebfe87df9a5c31b016e34039eda41",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S4-r05",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112053,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "9d9fc91bd39c20564a38f634fda3175c116e16b4810d99b36c0724c884d8c90f",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S4-r06",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112054,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "273c2480be44be77f0ad671320d2e24839a81f742663fc6f85e8bac4da5e8d27",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S4-r07",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112055,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "e2b5ad16aa2a4ad4ffd49bbb4af8dd6324b39112c358dd96031ddb48819a9e05",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S4-r08",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112056,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "e1666340bea3665cf05ca962c10df31b051263c66629a62df1a419a6fb029fb6",
+      "request_sha256": "8d3becc9105bb49dfdc463908c1ec7d86e575bd6ff4d11cc1cf7689280f38f85",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S5-r05",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112065,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "04eebdefd3513b4b3c985421d7fbabfa1ff595e7babe8d00465cb65e7f704dea",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S5-r06",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112066,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "a7749d35008dfa8ff47d3ab4b3cbe64ccd819c67afacf743339ecc15cac45561",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S5-r07",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112067,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "195758c89d0b9261fe7beece88339eebd3b0d8f2dc479aa7a2d029f6f669e80d",
+      "note": ""
+    },
+    {
+      "order": 12,
+      "id": "S16-S5-r08",
+      "batch": "5.2.1 平行批（字典 v1.6，与 v1.2 同种子配对）",
+      "seed": 2026112068,
+      "input_images": [
+        "qwen-shape-dots-250-15c5ad1c924b.png"
+      ],
+      "prompt_sha256": "fa968354ff9d75aa558a72629f6849f5619a4e54a71705474910897404e35981",
+      "request_sha256": "5057f207ea05c349231b19e9fcbc20ea78a1a5af540e5be9f924f69eb7b2095c",
+      "note": ""
+    },
+    {
+      "order": 13,
+      "id": "WLQ-0.70-r05",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112255,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "0a10ff2694a70a768358360f9d429b0b8f3051628c0fa813343b21cd533a2a1e",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-0.70-r06",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112256,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "8a2354215c85c69c086f8907d93d8f5265a4e696b355585fd765ff5e36fa9a40",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-0.70-r07",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112257,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "745198b502f194bbec6601369766023724422dda32a2f203b99dcf228de0b192",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-0.70-r08",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112258,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "303be7b75bda464b3d1242c89f4d3ea7748cba3414f6478e061510159e9b4fe1",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-0.70-r09",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112259,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "4a90b95224d8d48516476c9eb1ac630da546f061b3bcb58f27b7d8e9a0b956cf",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-0.70-r10",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112260,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "fde5bfe682c02a8ab74a41378dc492a5d1157ccdddf7c7adbe9bf9e58ef0ac98",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-0.70-r11",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112261,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "336391b836b63b0586fdae94ad2836d562900953cd8372a4b38474cd75f31606",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-0.70-r12",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112262,
+      "input_images": [
+        "quad-dots-wl0.70.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "c2fb3d6473c5eaae557d7ebce392bf87e36bf1e656fd7a44bd9f0d500e7b08b5",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.00-r05",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112267,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "51d9031712928c3108b20fb3e94f6a25eb867fd7827b9dac54f5b739f7f1d8f7",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.00-r06",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112268,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "3a477bbd1dc332c5a232f88c277a9eee1cc85e7bada4edbb825216fafc9711cb",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.00-r07",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112269,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "819287301ab3b7171da1635f8091fe82a3d403bc5b87490a509a4720c9341ade",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.00-r08",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112270,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "5ebe51f24bbd5cc346f9ef2437ebdb12adc80c4bb404928a9d9042748812bb62",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.00-r09",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112271,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "aed72e729146bc958c86c6233af767e53710f93af465e1bb90a055aab0274390",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.00-r10",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112272,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "ea60305850dd11d4ca79c9a1908c9026f227ddd2a8287c5308f421438d3db2b4",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.00-r11",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112273,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "0d2981d5d8ac670b5ed7d4c21dbc065ee8afb6a389e6283846e9dfc91088c23f",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.00-r12",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112274,
+      "input_images": [
+        "quad-dots-wl1.00.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "c8b39c0eb657d2669a03939a231e108ae83bced059f5b944bdbafeb27aea8f66",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.30-r05",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112279,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "1a063bc89f39d9a3d7bbcf31657d628703e7e9a9cebd48fb08fcf1b223fba3e4",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.30-r06",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112280,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "afaa05e78d3310b8d71f41e8e4e3a20198bd8d74ac088d00c34dec63ab10f5b5",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.30-r07",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112281,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "61c008e44d90ea12e55c344a900a7f715ebb86f0da1061bff9b8fcacd1c63a57",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.30-r08",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112282,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "929db262a9951c59b8a19282bc29555a378fa7193743a6098d3d65af5020d47b",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.30-r09",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112283,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "e99c7bbe5f87284b438fb7df67f3689749ebedefd04c3d65715d33c9d2f37272",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.30-r10",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112284,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "16f76696d5fa11793138199433addf2a3c8ff8f590284b78531c95a0c0a99a23",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.30-r11",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112285,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "af0a18e4180b0d3ba7b2abdc830d00f2c32d1da82cd36a3ad188d05a54da2a9a",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 13,
+      "id": "WLQ-1.30-r12",
+      "batch": "编辑通路布局响应（四旋）",
+      "seed": 2026112286,
+      "input_images": [
+        "quad-dots-wl1.30.png"
+      ],
+      "prompt_sha256": "504c5eda61ee5409c61055fbb2515b29edba04d5c441f785bad773b1ded78144",
+      "request_sha256": "c8eec7f66d3d37c945430edb9fa306dc88e83571c03f6d7baf87b31ffb4c00d7",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl0.70-r05",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112315,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "3cd90d090c9eb4935ad305c023cd133a4b8b4f2db5075b8dda322babc46e87f6",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl0.70-r06",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112316,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "61e83f617202631fcb741e1f9e85f3f45969d378b23927ee36028448718fb74e",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl0.70-r07",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112317,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "879e478068eef0b09e4e7d53b24aaddd17c3c93b54cec132b223e6376c2680c0",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl0.70-r08",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112318,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "92d4dce54c88c82fc90af7147320671a5863add41fc9c064b93b8760408e1c65",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl0.70-r09",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112319,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "c46e2c6967b16d864f132e2fc36bbcb638faf8dbf37a3c37dc9ccecb64f2986b",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl0.70-r10",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112320,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "7119b225fe7950afb955497eba0c22462091507f59ed23b2f64f0e8e7ace388e",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl0.70-r11",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112321,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "8f405b525ec522873fd815dc5960ab6d7c973cf90ef5dbba5bdaa1652e3febf0",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl0.70-r12",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112322,
+      "input_images": [
+        "hexa-points-0.70.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "3bd8c04611bcad626d28e2e9952014e2d2313f8984f2aaa4f2fd78dfcfb78345",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.00-r05",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112327,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "8a9155735d546733aa6c738d17f7308e245f716b9dfb8988badd2f36eceec211",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.00-r06",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112328,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "2df0f444eaab58ef6e5751397d0a18d8519dee46ce9888269a7d2d618848fba4",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.00-r07",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112329,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "5123f4cdbfb9486881926768443d9f0ad2df94ee27f0c647a789dd134c593c3c",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.00-r08",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112330,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "3a2f73f11e57bdcdc882ea2b0d1b631e572dfcda4ecd8adef276a061c16ee85c",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.00-r09",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112331,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "fc35d9fb4f37e42ca791ca25e1df7fc64a605767e0f1b0b613bc3df2d912aa88",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.00-r10",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112332,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "ac9bc14f10d15cd681ec0d09c705ed5052157d5eb8771dbe24e586fdf758db6e",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.00-r11",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112333,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "7e7eef4fc7a2c8d4ddce9c290a38e875aecd88ddf18fd5d011301b315f8a1913",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.00-r12",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112334,
+      "input_images": [
+        "hexa-points-1.00.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "af8b467fb1b48bf5e07a22ef0b5e5fed967e945b13a7f3c0fbf936a023c6b7d9",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.30-r05",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112339,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "3d8146591e71538d505859400b0e2cb47c93770c4e9115150a095d083c156549",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.30-r06",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112340,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "c2d4e7e457fe8be03751d6725692e698dc7281d16045dc919126480047646d64",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.30-r07",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112341,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "a2058a43f33d033866ee3423632a5ed01ca6c4c2a823dcbf5add06b42a744640",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.30-r08",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112342,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "29ce351a6c20283b2277bd5d70395241ffb85974351c68047c0ed5a17c07933f",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.30-r09",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112343,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "34919f80fb29117400df33e8fd85badd264b1036e453a159dfe0711008ce0a82",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.30-r10",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112344,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "c0338e8c25297a8814f3df7c9f584066f3f6dc3c1d606e576eae6682724199a2",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.30-r11",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112345,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "d804571a9302c1bdc3679c9493738994c2cfffdf16fc9cd024d21d39cd69ffb8",
+      "note": "文字三档相同，只换条件图"
+    },
+    {
+      "order": 14,
+      "id": "HEXA-wl1.30-r12",
+      "batch": "E6 六旋布局响应",
+      "seed": 2026112346,
+      "input_images": [
+        "hexa-points-1.30.png"
+      ],
+      "prompt_sha256": "abdaffae788acab128ba8a26d1528356c14c7792721307ba042937aa243782c0",
+      "request_sha256": "321646a34c9e37fecf4bd6c96c9afadb556401b0177335e06596e2dae221fc34",
+      "note": "文字三档相同，只换条件图"
+    }
+  ],
+  "inputs": [
+    {
+      "input": "E1-control-dd0.50-r1.png",
+      "sha256": "2dbdcc5b0ed94403b3969f4488a52a6b1fa6c6262ddc9b7930d7ef0ac3b0c51b"
+    },
+    {
+      "input": "E1-control-wl1.00-r1.png",
+      "sha256": "a1ea6d00c792f49a167bb7509b84fae4096175c002140a8b6e79574ac62ebc0f"
+    },
+    {
+      "input": "E3R3-B2.png",
+      "sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621"
+    },
+    {
+      "input": "hexa-points-0.70.png",
+      "sha256": "c31f68c2ea22c5aa8e3ab8b483035fe7c500a37d4942dc5fb03a08942acc8293"
+    },
+    {
+      "input": "hexa-points-1.00.png",
+      "sha256": "d0768f8dac4f240316761309551a931b022390c89d06b956bda9f7b028829f5d"
+    },
+    {
+      "input": "hexa-points-1.30.png",
+      "sha256": "096bee936611e874728b371dbe270c3aae4e5e18a1347abccd8aa66205511142"
+    },
+    {
+      "input": "quad-dots-wl0.70.png",
+      "sha256": "96c62555fe2a602b0954aef7821c1d026ef073c49ddee1b22f163e27dc88bc1e"
+    },
+    {
+      "input": "quad-dots-wl1.00.png",
+      "sha256": "99ff37153f5e8106e505795cd8aa7443b00e3f38c8624a02763c3bd01a79e1f1"
+    },
+    {
+      "input": "quad-dots-wl1.30.png",
+      "sha256": "2b81f7667a72c6774271afb5dd7e3c9aeb9dbf1c5872a6f7564f4505dd7841c0"
+    },
+    {
+      "input": "qwen-shape-dots-250-15c5ad1c924b.png",
+      "sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338"
+    },
+    {
+      "input": "wl-1.00-dd-0.50.png",
+      "sha256": "4dd33589a21d710153d912ac8dada8d0fc26fe0ac029883794461e53b0f4628e"
+    }
+  ],
+  "negative_v16": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, camera lens visible from above, upward-facing lens, camera on a neck or stalk, camera on a post, camera at the tail, dark module at the tail, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades",
+  "wl_text": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout exactly. Each motor carries one stationary two-blade, 5-inch propeller. The two blades of each propeller are identical in length and width and point in exactly opposite directions from the hub, never a V shape. No propeller guards.\nThe nose points to the top edge of the image. The rear end of the fuselage is a closed, plain light grey shell: no dark part, opening, camera or module at the tail.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nA plain top cover with no seams crossing it.\nArms in the same matte light grey as the shell.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+  "hexa_text": "Design one six-rotor agricultural plant-protection drone for crop spraying. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the six motor centres and arm directions in the layout exactly. Each motor carries one stationary two-blade propeller whose two blades are identical and point in exactly opposite directions from the hub, never a V shape. No propeller guards.\nA square spray tank sits half-embedded in the central frame: the frame wraps the lower half of the tank, while the tank top and its round filler cap stay exposed.\nA transverse spray boom runs across under the body and extends beyond both sides of the frame.\nEach arm is attached to the frame by a visible folding hinge with a pivot pin.\nMatte light grey frame and arms, white spray tank, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+  "rev1_text": "Edit this drone image. Change only the camera at the nose: remove the dark window strip embedded in the nose and add a small gimbal camera that hangs underneath the front of the fuselage, as on modern foldable camera drones. Seen from directly above, only the top edge of the small dark grey camera housing peeks out just ahead of the nose; the lens faces straight forward toward the top edge of the image, so no lens glass is visible from above. Keep everything else exactly the same: the strict orthographic top view, the body outline, the top cover panels and parting lines, the seamless arms, the motors with their orange rings, the two-blade propellers and their angles, the colours and the plain light background."
+}

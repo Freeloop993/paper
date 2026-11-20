@@ -1,0 +1,28 @@
+{
+  "corrected_batch_completed": {
+    "6": 3,
+    "7": 12,
+    "14": 24
+  },
+  "earlier_negative_prompt_completed": 15,
+  "earlier_ids": [
+    "HEXA-draft-r1",
+    "HEXA-draft-r2",
+    "HEXA-draft-r3",
+    "P2-HEXA-wl0.70-r01",
+    "P2-HEXA-wl0.70-r02",
+    "P2-HEXA-wl0.70-r03",
+    "P2-HEXA-wl0.70-r04",
+    "P2-HEXA-wl1.00-r01",
+    "P2-HEXA-wl1.00-r02",
+    "P2-HEXA-wl1.00-r03",
+    "P2-HEXA-wl1.00-r04",
+    "P2-HEXA-wl1.30-r01",
+    "P2-HEXA-wl1.30-r02",
+    "P2-HEXA-wl1.30-r03",
+    "P2-HEXA-wl1.30-r04"
+  ],
+  "corrected_images": 39,
+  "independent_design_scores": null,
+  "note": "3 个首案、36 个布局响应。按是否完成提交和完整回收计数。造型命中及数据趋势另据独立判读。"
+}

@@ -1,0 +1,130 @@
+[
+  {
+    "run": "S12-S0-r01",
+    "H02_root": "smooth",
+    "H03_root": "smooth",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "single",
+    "H03_cover": "unclear",
+    "cover_equal": false
+  },
+  {
+    "run": "S12-S0-r02",
+    "H02_root": "mixed_or_unclear",
+    "H03_root": "mixed_or_unclear",
+    "root_equal": true,
+    "root_site_differences": [
+      "br",
+      "bl"
+    ],
+    "H02_cover": "multi",
+    "H03_cover": "multi",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S0-r03",
+    "H02_root": "smooth",
+    "H03_root": "smooth",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "single",
+    "H03_cover": "single",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S0-r04",
+    "H02_root": "smooth",
+    "H03_root": "smooth",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "multi",
+    "H03_cover": "single",
+    "cover_equal": false
+  },
+  {
+    "run": "S12-S2-r01",
+    "H02_root": "socket",
+    "H03_root": "hinge",
+    "root_equal": false,
+    "root_site_differences": [
+      "tl",
+      "tr",
+      "br",
+      "bl"
+    ],
+    "H02_cover": "multi",
+    "H03_cover": "multi",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S2-r02",
+    "H02_root": "socket",
+    "H03_root": "socket",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "single",
+    "H03_cover": "single",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S2-r03",
+    "H02_root": "socket",
+    "H03_root": "socket",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "multi",
+    "H03_cover": "multi",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S2-r04",
+    "H02_root": "socket",
+    "H03_root": "socket",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "multi",
+    "H03_cover": "multi",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S5-r01",
+    "H02_root": "smooth",
+    "H03_root": "smooth",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "multi",
+    "H03_cover": "multi",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S5-r02",
+    "H02_root": "smooth",
+    "H03_root": "smooth",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "multi",
+    "H03_cover": "multi",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S5-r03",
+    "H02_root": "smooth",
+    "H03_root": "smooth",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "multi",
+    "H03_cover": "multi",
+    "cover_equal": true
+  },
+  {
+    "run": "S12-S5-r04",
+    "H02_root": "smooth",
+    "H03_root": "smooth",
+    "root_equal": true,
+    "root_site_differences": [],
+    "H02_cover": "multi",
+    "H03_cover": "multi",
+    "cover_equal": true
+  }
+]

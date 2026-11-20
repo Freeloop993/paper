@@ -1,0 +1,98 @@
+[
+  {
+    "id": "Y01",
+    "nose_top_projects": "yes",
+    "no_visible_optics": "uncertain",
+    "non_target_retained": "no",
+    "protrusion": "upper",
+    "evidence": "上缘中央的灰舱和两侧短轴伸出前缘，舱顶的深色圆角嵌片内看不清镜片，后半部顶盖比参照多了一块细长面板。"
+  },
+  {
+    "id": "Y02",
+    "nose_top_projects": "yes",
+    "no_visible_optics": "no",
+    "non_target_retained": "yes",
+    "protrusion": "upper",
+    "evidence": "上缘中央外伸的浅灰舱盖下露出方框和圆形镜片，机身中段的折线分区、圆尾、四臂黑桨和橙色桨毂环与参照相符。"
+  },
+  {
+    "id": "Y03",
+    "nose_top_projects": "no",
+    "no_visible_optics": "no",
+    "non_target_retained": "no",
+    "protrusion": "lower",
+    "evidence": "上缘呈连续圆弧，下缘中央伸出的黑色窗内可见圆形镜片，尾盖两角也比参照多出深色开口。"
+  },
+  {
+    "id": "Y04",
+    "nose_top_projects": "yes",
+    "no_visible_optics": "no",
+    "non_target_retained": "yes",
+    "protrusion": "upper",
+    "evidence": "上缘中央有窄于机身的外伸灰舱盖，两侧轴之间露出方框圆镜片，后方的顶盖分区、尾缘和四臂桨叶与参照相符。"
+  },
+  {
+    "id": "Y05",
+    "nose_top_projects": "no",
+    "no_visible_optics": "no",
+    "non_target_retained": "no",
+    "protrusion": "lower",
+    "evidence": "上缘中央的细黑缝位于灰壳轮廓内，下缘却伸出带黑窗和中心亮点的灰色部件，覆盖了参照中收窄的尾盖。"
+  },
+  {
+    "id": "Y06",
+    "nose_top_projects": "no",
+    "no_visible_optics": "no",
+    "non_target_retained": "no",
+    "protrusion": "lower",
+    "evidence": "上缘中央是连续的浅灰壳面，下缘宽盖板外伸出带横向黑窗的部件，窗内可辨圆环，尾缘轮廓也随之改变。"
+  },
+  {
+    "id": "Y07",
+    "nose_top_projects": "yes",
+    "no_visible_optics": "uncertain",
+    "non_target_retained": "no",
+    "protrusion": "upper",
+    "evidence": "上缘中央伸出带两侧短轴的小舱，舱面暗槽内看不清镜片，机身中段收腰且尾盖两角呈折角，与参照有别。"
+  },
+  {
+    "id": "Y08",
+    "nose_top_projects": "yes",
+    "no_visible_optics": "no",
+    "non_target_retained": "yes",
+    "protrusion": "upper",
+    "evidence": "上缘中央伸出的深灰舱体两侧有短轴，舱面的矩形暗窗内可辨圆形亮点，机身分区、圆尾和四臂桨叶与参照相符。"
+  },
+  {
+    "id": "Y09",
+    "nose_top_projects": "uncertain",
+    "no_visible_optics": "uncertain",
+    "non_target_retained": "no",
+    "protrusion": "both",
+    "evidence": "上缘中央露出一小截深灰梯形边，难辨独立舱顶，下缘伸出的部件末端仅露窄黑口，机头盖板多了纵向分缝。"
+  },
+  {
+    "id": "Y10",
+    "nose_top_projects": "yes",
+    "no_visible_optics": "no",
+    "non_target_retained": "no",
+    "protrusion": "upper",
+    "evidence": "上缘外伸的浅灰舱盖下可见方窗和圆形镜片，下缘中央较参照向内收成浅凹，两侧尾角更突出。"
+  },
+  {
+    "id": "Y11",
+    "nose_top_projects": "yes",
+    "no_visible_optics": "no",
+    "non_target_retained": "yes",
+    "protrusion": "upper",
+    "evidence": "上缘中央有伸出前缘的灰色小舱，方形暗窗中可辨带亮点的圆形镜片，后方顶盖分区、圆尾和四臂桨叶与参照相符。"
+  },
+  {
+    "id": "Y12",
+    "nose_top_projects": "yes",
+    "no_visible_optics": "no",
+    "non_target_retained": "yes",
+    "protrusion": "upper",
+    "evidence": "上缘中央的深灰小舱伸出机身，矩形窗内可见带亮点的深色圆环，顶盖折线、尾缘及带橙环的四个桨毂与参照相符。"
+  }
+]

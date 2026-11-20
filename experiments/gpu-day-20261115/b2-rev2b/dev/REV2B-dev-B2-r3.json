@@ -1,0 +1,111 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "qwen_image_2.1_bf16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_8b_bf16.safetensors",
+        "type": "qwen_image",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "TextEncodeQwenImage21",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "prompt": "Image 1 is the drone to edit; image 2 is a reference for the camera only. Change only the nose of the drone in image 1: give it the same camera arrangement as the nose of the drone in image 2, a small grey camera housing tucked underneath the front of the fuselage that peeks out just ahead of the nose, seen from directly above with only its plain grey top visible and the lens pointing straight forward, hidden from this overhead view. Do not copy anything else from image 2. Keep everything else of image 1 exactly the same: the strict orthographic top view, the body outline, the top cover panels and parting lines, the seamless light grey arms, the motors with their orange rings, the two-blade propellers and their angles, the colours and the plain light background.",
+        "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, camera lens visible from above, upward-facing lens, camera on a neck or stalk, camera on a post, camera at the tail, dark module at the tail, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades, lens glass on the top of the camera, camera window on top, camera lens facing the viewer",
+        "resolution": 1024,
+        "images.image_1": [
+          "15",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ],
+        "images.image_2": [
+          "16",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "4",
+          2
+        ],
+        "seed": 2026112153,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    "11": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "10",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "12": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "11",
+          0
+        ],
+        "filename_prefix": "REV2B-dev-B2-r3"
+      }
+    },
+    "15": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "E3R3-B2.png"
+      }
+    },
+    "16": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "E3R3-C1.png"
+      }
+    }
+  }
+}

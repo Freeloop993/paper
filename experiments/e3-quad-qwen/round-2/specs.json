@@ -1,0 +1,8 @@
+{
+  "note": "E3 第二轮初稿（Claude 按作者 11/15 第一轮评语提出，待作者同意后出图）。A、B 不再同档：A 一道分型线，B 三块顶盖。三方向共用：180° 双叶、机尾素壳、相机句改写、特征线切面、电机橙色细环。",
+  "cards": {
+    "A": {"params": {"body_plan": "pod", "arm_root": "seamless", "camera": "inside", "cover": "split", "surface": "sculpted", "span": "250", "arm_finish": "matte_same", "accent": "motor_ring"}, "seeds": [2026112111, 2026112112, 2026112113]},
+    "B": {"params": {"body_plan": "pod", "arm_root": "seamless", "camera": "inside", "cover": "multi", "surface": "sculpted", "span": "250", "arm_finish": "matte_same", "accent": "motor_ring"}, "seeds": [2026112114, 2026112115, 2026112116]},
+    "C": {"params": {"body_plan": "faceted", "arm_root": "socket", "camera": "projecting", "cover": "multi", "surface": "sculpted", "span": "250", "arm_finish": "exposed_carbon", "accent": "motor_ring"}, "seeds": [2026112117, 2026112118, 2026112119]}
+  }
+}

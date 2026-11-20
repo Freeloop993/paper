@@ -1,0 +1,302 @@
+[
+  {
+    "id": "P2-WLQ-0.70-r01",
+    "points": [
+      [
+        260,
+        255
+      ],
+      [
+        761,
+        255
+      ],
+      [
+        761,
+        756
+      ],
+      [
+        260,
+        756
+      ]
+    ],
+    "width": 501.0,
+    "length": 501.0,
+    "ratio": 1.0,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-0.70-r02",
+    "points": [
+      [
+        255,
+        282
+      ],
+      [
+        769,
+        288
+      ],
+      [
+        753,
+        761
+      ],
+      [
+        268,
+        761
+      ]
+    ],
+    "width": 499.5,
+    "length": 476.0,
+    "ratio": 1.0493697478991597,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-0.70-r03",
+    "points": [
+      [
+        277,
+        260
+      ],
+      [
+        747,
+        268
+      ],
+      [
+        744,
+        733
+      ],
+      [
+        280,
+        731
+      ]
+    ],
+    "width": 467.0,
+    "length": 468.0,
+    "ratio": 0.9978632478632479,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-0.70-r04",
+    "points": [
+      [
+        255,
+        246
+      ],
+      [
+        767,
+        246
+      ],
+      [
+        769,
+        731
+      ],
+      [
+        260,
+        731
+      ]
+    ],
+    "width": 510.5,
+    "length": 485.0,
+    "ratio": 1.052577319587629,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-1.00-r01",
+    "points": [
+      [
+        255,
+        282
+      ],
+      [
+        769,
+        282
+      ],
+      [
+        769,
+        742
+      ],
+      [
+        255,
+        742
+      ]
+    ],
+    "width": 514.0,
+    "length": 460.0,
+    "ratio": 1.117391304347826,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-1.00-r02",
+    "points": [
+      [
+        246,
+        293
+      ],
+      [
+        775,
+        293
+      ],
+      [
+        775,
+        728
+      ],
+      [
+        244,
+        728
+      ]
+    ],
+    "width": 530.0,
+    "length": 435.0,
+    "ratio": 1.2183908045977012,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-1.00-r03",
+    "points": [
+      [
+        277,
+        291
+      ],
+      [
+        747,
+        291
+      ],
+      [
+        747,
+        725
+      ],
+      [
+        274,
+        725
+      ]
+    ],
+    "width": 471.5,
+    "length": 434.0,
+    "ratio": 1.086405529953917,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-1.00-r04",
+    "points": [
+      [
+        252,
+        285
+      ],
+      [
+        772,
+        285
+      ],
+      [
+        775,
+        717
+      ],
+      [
+        252,
+        717
+      ]
+    ],
+    "width": 521.5,
+    "length": 432.0,
+    "ratio": 1.2071759259259258,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-1.30-r01",
+    "points": [
+      [
+        246,
+        310
+      ],
+      [
+        778,
+        310
+      ],
+      [
+        778,
+        700
+      ],
+      [
+        244,
+        700
+      ]
+    ],
+    "width": 533.0,
+    "length": 390.0,
+    "ratio": 1.3666666666666667,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-1.30-r02",
+    "points": [
+      [
+        255,
+        316
+      ],
+      [
+        775,
+        316
+      ],
+      [
+        772,
+        703
+      ],
+      [
+        249,
+        703
+      ]
+    ],
+    "width": 521.5,
+    "length": 387.0,
+    "ratio": 1.347545219638243,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-1.30-r03",
+    "points": [
+      [
+        260,
+        329
+      ],
+      [
+        761,
+        329
+      ],
+      [
+        764,
+        697
+      ],
+      [
+        257,
+        697
+      ]
+    ],
+    "width": 504.0,
+    "length": 368.0,
+    "ratio": 1.3695652173913044,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  },
+  {
+    "id": "P2-WLQ-1.30-r04",
+    "points": [
+      [
+        241,
+        285
+      ],
+      [
+        783,
+        285
+      ],
+      [
+        783,
+        700
+      ],
+      [
+        241,
+        700
+      ]
+    ],
+    "width": 542.0,
+    "length": 415.0,
+    "ratio": 1.306024096385542,
+    "reader": "condition-aware AI, annotated equal-scale panel, motor hubs"
+  }
+]

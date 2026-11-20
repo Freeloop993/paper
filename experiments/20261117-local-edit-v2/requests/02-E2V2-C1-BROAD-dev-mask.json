@@ -1,0 +1,134 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "qwen_image_2.1_bf16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_8b_bf16.safetensors",
+        "type": "qwen_image",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "TextEncodeQwenImage21",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "prompt": "Edit this drone image. Change only the four places where the arms join the fuselage: make each transition from the body into the arm root broader and more smoothly curved, with a larger fillet. Keep the nose, the top cover panels and parting lines, the camera installation and the rest of the body outline unchanged. Keep everything else exactly the same: the strict orthographic top view, the arms beyond their roots, the motors, the two-blade propellers and their angles, the colours and the plain light background.",
+        "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades, extra components, new modules, camera at the tail, dark module at the tail",
+        "resolution": 1024,
+        "images.image_1": [
+          "15",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "18",
+          0
+        ],
+        "seed": 2026117204,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    "11": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "10",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "12": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "11",
+          0
+        ],
+        "filename_prefix": "E2V2-C1-BROAD-dev-mask"
+      }
+    },
+    "15": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "E3R3-C1.png"
+      }
+    },
+    "16": {
+      "class_type": "VAEEncode",
+      "inputs": {
+        "pixels": [
+          "15",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "17": {
+      "class_type": "LoadImageMask",
+      "inputs": {
+        "image": "M-ROOT-C1.png",
+        "channel": "red"
+      }
+    },
+    "18": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "16",
+          0
+        ],
+        "mask": [
+          "17",
+          0
+        ]
+      }
+    }
+  }
+}

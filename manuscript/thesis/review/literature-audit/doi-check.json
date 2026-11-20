@@ -1,0 +1,522 @@
+{
+  "A001": null,
+  "CN": {
+    "doi": "10.1109/ICCV51070.2023.00355",
+    "title": [
+      "Adding Conditional Control to Text-to-Image Diffusion Models"
+    ],
+    "author": [
+      "Zhang",
+      "Rao",
+      "Agrawala"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2023,
+          10,
+          1
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "3813-3824",
+    "article-number": null
+  },
+  "L07": null,
+  "L04": null,
+  "L05": null,
+  "B009": {
+    "doi": "10.35199/EPDE.2024.82",
+    "title": [
+      "LEARNING ACTIVITIES TO DESIGN A PARAMETRIC SOLUTIONS SPACE FOR PRODUCTS IN INDUSTRY 4.0"
+    ],
+    "author": [
+      "Parmentier",
+      "Brosens",
+      "Christiaens"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "485-490",
+    "article-number": null
+  },
+  "B065": {
+    "doi": "10.1017/pds.2026.10691",
+    "title": [
+      "Insights from knowledge-based engineering in industrial practice – a Saab’s perspective"
+    ],
+    "author": [
+      "Tingström",
+      "Munjulury"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2026,
+          7,
+          2
+        ]
+      ]
+    },
+    "volume": "6",
+    "issue": null,
+    "page": "3337-3346",
+    "article-number": null
+  },
+  "A007": {
+    "doi": "10.1017/pds.2025.10264",
+    "title": [
+      "Multimodal generative AI for conceptual design: enabling text-based and sketch-based human-AI conversations"
+    ],
+    "author": [
+      "Baudoux",
+      "Guo",
+      "Goucher-Lambert"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2025,
+          8
+        ]
+      ]
+    },
+    "volume": "5",
+    "issue": null,
+    "page": "2501-2510",
+    "article-number": null
+  },
+  "A008": {
+    "doi": "10.3390/su16208837",
+    "title": [
+      "A Product’s Kansei Appearance Design Method Based on Conditional-Controlled AI Image Generation"
+    ],
+    "author": [
+      "Du",
+      "Liu",
+      "Cai",
+      "Park"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2024,
+          10,
+          12
+        ]
+      ]
+    },
+    "volume": "16",
+    "issue": "20",
+    "page": "8837",
+    "article-number": null
+  },
+  "R08": {
+    "doi": "10.1145/3772318.3791185",
+    "title": [
+      "Partnering with Generative AI: Experimental Evaluation of Model-Led and Human-Led Interaction in Human-AI Co-Creation"
+    ],
+    "author": [
+      "Maier",
+      "Schneider",
+      "Feuerriegel"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          13
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "1-28",
+    "article-number": null
+  },
+  "R14": {
+    "doi": "10.1145/3772318.3791776",
+    "title": [
+      "When Designers Sweat: Behavioral Traces of GenAI Co-Creation"
+    ],
+    "author": [
+      "Cavallin",
+      "Spagnol"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          13
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "1-17",
+    "article-number": null
+  },
+  "R10": {
+    "doi": "10.1145/3742413.3789080",
+    "title": [
+      "Enhancing Generative AI Image Refinement with Scribbles and Annotations: A Comparative Study of Multimodal Prompts"
+    ],
+    "author": [
+      "Park",
+      "Tran",
+      "Luckow",
+      "George"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          22
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "1454-1475",
+    "article-number": null
+  },
+  "R11": {
+    "doi": "10.1145/3706598.3714148",
+    "title": [
+      "AIdeation: Designing a Human-AI Collaborative Ideation System for Concept Designers"
+    ],
+    "author": [
+      "Wang",
+      "Lu",
+      "Ponsa i Campanyà",
+      "Chen"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2025,
+          4,
+          25
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "1-28",
+    "article-number": null
+  },
+  "R12": {
+    "doi": "10.21606/drs.2020.164",
+    "title": [
+      "Using FCE and FAHP to Explore the multirotor drone appearance preference"
+    ],
+    "author": [
+      "Hsiao",
+      "Peng"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2020,
+          8,
+          11
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": null,
+    "article-number": null
+  },
+  "NAGAMACHI": {
+    "doi": "10.1016/0169-8141(94)00052-5",
+    "title": [
+      "Kansei Engineering: A new ergonomic consumer-oriented technology for product development"
+    ],
+    "author": [
+      "Nagamachi"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          1995,
+          1
+        ]
+      ]
+    },
+    "volume": "15",
+    "issue": "1",
+    "page": "3-11",
+    "article-number": null
+  },
+  "UAV-U001": null,
+  "ID-A005": {
+    "doi": "10.3390/app15010135",
+    "title": [
+      "Embrace the Era of Drones: A New Practical Design Approach to Emergency Rescue Drones"
+    ],
+    "author": [
+      "Wang",
+      "Yang",
+      "Wang",
+      "Zhu"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2024,
+          12,
+          27
+        ]
+      ]
+    },
+    "volume": "15",
+    "issue": "1",
+    "page": "135",
+    "article-number": null
+  },
+  "LIGRAM": null,
+  "ZHUGRAM": null,
+  "ZHOUIMAGE": null,
+  "DING": null,
+  "KANSEITEXT": {
+    "doi": "10.1016/j.engappai.2018.05.005",
+    "title": [
+      "Extracting and summarizing affective features and responses from online product descriptions and reviews: A Kansei text mining approach"
+    ],
+    "author": [
+      "Wang",
+      "Li",
+      "Tian",
+      "Wang"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2018,
+          8
+        ]
+      ]
+    },
+    "volume": "73",
+    "issue": null,
+    "page": "149-162",
+    "article-number": null
+  },
+  "LUOCAR": null,
+  "LUOTEAM": null,
+  "YUKNOW": {
+    "doi": "10.3901/JME.2024.13.216",
+    "title": [
+      "Research Review of Product Design Based on Knowledge Engineering"
+    ],
+    "author": [],
+    "year": {
+      "date-parts": [
+        [
+          2024
+        ]
+      ]
+    },
+    "volume": "60",
+    "issue": "13",
+    "page": "216",
+    "article-number": null
+  },
+  "CRILLY": {
+    "doi": "10.1016/j.destud.2004.03.001",
+    "title": [
+      "Seeing things: consumer response to the visual domain in product design"
+    ],
+    "author": [
+      "Crilly",
+      "Moultrie",
+      "Clarkson"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2004,
+          11
+        ]
+      ]
+    },
+    "volume": "25",
+    "issue": "6",
+    "page": "547-577",
+    "article-number": null
+  },
+  "DORST": {
+    "doi": "10.1016/S0142-694X(01)00009-6",
+    "title": [
+      "Creativity in the design process: co-evolution of problem–solution"
+    ],
+    "author": [
+      "Dorst",
+      "Cross"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2001,
+          9
+        ]
+      ]
+    },
+    "volume": "22",
+    "issue": "5",
+    "page": "425-437",
+    "article-number": null
+  },
+  "AMERSHI": {
+    "doi": "10.1145/3290605.3300233",
+    "title": [
+      "Guidelines for Human-AI Interaction"
+    ],
+    "author": [
+      "Amershi",
+      "Weld",
+      "Vorvoreanu",
+      "Fourney"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2019,
+          5,
+          2
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "1-13",
+    "article-number": null
+  },
+  "DOW": {
+    "doi": "10.1145/1879831.1879836",
+    "title": [
+      "Parallel prototyping leads to better design results, more divergence, and increased self-efficacy"
+    ],
+    "author": [
+      "Dow",
+      "Glassco",
+      "Kass",
+      "Schwarz"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2010,
+          12
+        ]
+      ]
+    },
+    "volume": "17",
+    "issue": "4",
+    "page": "1-24",
+    "article-number": null
+  },
+  "FIXATION": {
+    "doi": "10.1016/0142-694X(91)90003-F",
+    "title": [
+      "Design fixation"
+    ],
+    "author": [
+      "Jansson",
+      "Smith"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          1991,
+          1
+        ]
+      ]
+    },
+    "volume": "12",
+    "issue": "1",
+    "page": "3-11",
+    "article-number": null
+  },
+  "COHEN": {
+    "doi": "10.1177/001316446002000104",
+    "title": [
+      "A Coefficient of Agreement for Nominal Scales"
+    ],
+    "author": [
+      "Cohen"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          1960,
+          4
+        ]
+      ]
+    },
+    "volume": "20",
+    "issue": "1",
+    "page": "37-46",
+    "article-number": null
+  },
+  "KAPPA": {
+    "doi": "10.1016/0895-4356(90)90158-L",
+    "title": [
+      "High agreement but low Kappa: I. the problems of two paradoxes"
+    ],
+    "author": [
+      "Feinstein",
+      "Cicchetti"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          1990,
+          1
+        ]
+      ]
+    },
+    "volume": "43",
+    "issue": "6",
+    "page": "543-549",
+    "article-number": null
+  },
+  "EDIT23": {
+    "doi": "10.1109/CVPR52729.2023.01764",
+    "title": [
+      "InstructPix2Pix: Learning to Follow Image Editing Instructions"
+    ],
+    "author": [
+      "Brooks",
+      "Holynski",
+      "Efros"
+    ],
+    "year": {
+      "date-parts": [
+        [
+          2023,
+          6
+        ]
+      ]
+    },
+    "volume": null,
+    "issue": null,
+    "page": "18392-18402",
+    "article-number": null
+  },
+  "MAGIC23": null,
+  "GENEVAL": null
+}

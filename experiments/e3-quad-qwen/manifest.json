@@ -1,0 +1,160 @@
+{
+  "dictionary": "shape-dictionary-v1.4",
+  "guide": "evidence/qwen-shape-s4-20261114/layout.png",
+  "guide_sha256": "15c5ad1c924b8e1c46ae4ffe59c4f7785e8ff5c130f9000432821410b1fd1338",
+  "template_sha256": "3f565874d46be07a96f5673a2f3d88349efbe0e94062377003e1aa7da1a8b25c",
+  "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+  "sampler": {
+    "steps": 40,
+    "cfg": 3,
+    "sampler_name": "euler",
+    "scheduler": "simple",
+    "denoise": 1
+  },
+  "requests": [
+    {
+      "id": "E3-A1",
+      "direction": "A",
+      "slot": 1,
+      "seed": 2026112101,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single",
+        "span": "250",
+        "arm_finish": "matte_same"
+      },
+      "prompt_sha256": "5338e7224fee267b666f3a945357a93f5018fb427588ea1896bc9f97b9dd8321",
+      "request_sha256": "fd2db8208141939274da27d28b5edfe77b87b024177c4bb2e081a251269cbb7d"
+    },
+    {
+      "id": "E3-A2",
+      "direction": "A",
+      "slot": 2,
+      "seed": 2026112102,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single",
+        "span": "250",
+        "arm_finish": "matte_same"
+      },
+      "prompt_sha256": "5338e7224fee267b666f3a945357a93f5018fb427588ea1896bc9f97b9dd8321",
+      "request_sha256": "6bc265b008980cec2b996d9ede4f2a3b1a5a2bc3025282ab13b31580126b3713"
+    },
+    {
+      "id": "E3-A3",
+      "direction": "A",
+      "slot": 3,
+      "seed": 2026112103,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single",
+        "span": "250",
+        "arm_finish": "matte_same"
+      },
+      "prompt_sha256": "5338e7224fee267b666f3a945357a93f5018fb427588ea1896bc9f97b9dd8321",
+      "request_sha256": "5d42c23b5a1f27655e0daeaa65c4a375bf73e0a80c7af2a44e510351d947993a"
+    },
+    {
+      "id": "E3-B1",
+      "direction": "B",
+      "slot": 1,
+      "seed": 2026112104,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single",
+        "span": "250",
+        "arm_finish": "matte_same"
+      },
+      "prompt_sha256": "5338e7224fee267b666f3a945357a93f5018fb427588ea1896bc9f97b9dd8321",
+      "request_sha256": "3cff2a9dd93387524b08d99bbe632d9de5d35981789d3714167159846df77f3b"
+    },
+    {
+      "id": "E3-B2",
+      "direction": "B",
+      "slot": 2,
+      "seed": 2026112105,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single",
+        "span": "250",
+        "arm_finish": "matte_same"
+      },
+      "prompt_sha256": "5338e7224fee267b666f3a945357a93f5018fb427588ea1896bc9f97b9dd8321",
+      "request_sha256": "20675225708bf05ff487fefd11019d25d48488c34555725b8ca6d9ffc069fd53"
+    },
+    {
+      "id": "E3-B3",
+      "direction": "B",
+      "slot": 3,
+      "seed": 2026112106,
+      "params": {
+        "body_plan": "pod",
+        "arm_root": "seamless",
+        "camera": "inside",
+        "cover": "single",
+        "span": "250",
+        "arm_finish": "matte_same"
+      },
+      "prompt_sha256": "5338e7224fee267b666f3a945357a93f5018fb427588ea1896bc9f97b9dd8321",
+      "request_sha256": "926902bd46e9d5de0d22a6a2e80944fd4b85e2b9ef1bd6fbe3d5ee8d11753651"
+    },
+    {
+      "id": "E3-C1",
+      "direction": "C",
+      "slot": 1,
+      "seed": 2026112107,
+      "params": {
+        "body_plan": "box",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "span": "250",
+        "arm_finish": "exposed_carbon"
+      },
+      "prompt_sha256": "e44b70fac25dbc5c923f889637663ef8cb9dfdb6d1450358ddd5c71ed7dbd12c",
+      "request_sha256": "7e0ba7bd2453243801c03f07e0be7a6c0a5816963c68ff140b52358f9dc293c4"
+    },
+    {
+      "id": "E3-C2",
+      "direction": "C",
+      "slot": 2,
+      "seed": 2026112108,
+      "params": {
+        "body_plan": "box",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "span": "250",
+        "arm_finish": "exposed_carbon"
+      },
+      "prompt_sha256": "e44b70fac25dbc5c923f889637663ef8cb9dfdb6d1450358ddd5c71ed7dbd12c",
+      "request_sha256": "fcdc0394966aeee01c3df030266d02f7661bac3168c641ef998115dd8660937d"
+    },
+    {
+      "id": "E3-C3",
+      "direction": "C",
+      "slot": 3,
+      "seed": 2026112109,
+      "params": {
+        "body_plan": "box",
+        "arm_root": "socket",
+        "camera": "projecting",
+        "cover": "multi",
+        "span": "250",
+        "arm_finish": "exposed_carbon"
+      },
+      "prompt_sha256": "e44b70fac25dbc5c923f889637663ef8cb9dfdb6d1450358ddd5c71ed7dbd12c",
+      "request_sha256": "18b26d7d4c575f4e61f2d2479742860a8ceaeca4a4bee81a2d6458f0f74720c1"
+    }
+  ]
+}

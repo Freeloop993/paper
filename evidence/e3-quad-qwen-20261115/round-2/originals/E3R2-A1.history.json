@@ -1,0 +1,164 @@
+{
+  "prompt": [
+    0,
+    "1873ef10-c3bb-467e-b66d-1dec59be5ace",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller whose two blades lie in one straight line, 180 degrees apart. No propeller guards.\nThe nose points to the top edge of the image; the tail end is plain shell with no dark module, opening or camera.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThe top cover is divided by one curved transverse parting line into a nose cap and a main cover.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+          "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, upward-facing camera lens, lens visible from above, camera at the tail, dark module at the tail, bent or swept propeller blades",
+          "resolution": 1024,
+          "images.image_1": [
+            "15",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026112111,
+          "steps": 40,
+          "cfg": 3.0,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1.0
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "E3R2-A1"
+        }
+      },
+      "15": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "qwen-shape-dots-250-15c5ad1c924b.png"
+        }
+      }
+    },
+    {
+      "create_time": 1794673680962
+    },
+    [
+      "12"
+    ]
+  ],
+  "outputs": {
+    "12": {
+      "images": [
+        {
+          "filename": "E3R2-A1_00001_.png",
+          "subfolder": "",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 1024,
+            "height": 1024
+          },
+          "id": "9c5de2d5-6bf5-4609-bdb0-b143e7c8813c"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "1873ef10-c3bb-467e-b66d-1dec59be5ace",
+          "timestamp": 1794673680964
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [],
+          "prompt_id": "1873ef10-c3bb-467e-b66d-1dec59be5ace",
+          "timestamp": 1794673680970
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "1873ef10-c3bb-467e-b66d-1dec59be5ace",
+          "timestamp": 1794673774960
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "12": {
+      "node_id": "12",
+      "display_node": "12",
+      "parent_node": null,
+      "real_node_id": "12"
+    }
+  }
+}

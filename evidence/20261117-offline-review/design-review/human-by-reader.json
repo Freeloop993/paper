@@ -1,0 +1,146 @@
+[
+  {
+    "reader": "H01",
+    "exposure": "yes",
+    "stratum": "单列",
+    "S2": {
+      "target_of_4": 2,
+      "baseline_of_4": 0,
+      "meets_both": false
+    },
+    "S5": {
+      "target_of_4": 4,
+      "baseline_of_4": 3,
+      "meets_both": false
+    },
+    "all_cells": {
+      "S0": {
+        "n": 4,
+        "roots": {
+          "smooth": 4
+        },
+        "cover": {
+          "multi": 3,
+          "single": 1
+        }
+      },
+      "S2": {
+        "n": 4,
+        "roots": {
+          "smooth": 1,
+          "hinge": 1,
+          "socket": 2
+        },
+        "cover": {
+          "multi": 3,
+          "single": 1
+        }
+      },
+      "S5": {
+        "n": 4,
+        "roots": {
+          "smooth": 4
+        },
+        "cover": {
+          "multi": 4
+        }
+      }
+    }
+  },
+  {
+    "reader": "H02",
+    "exposure": "no",
+    "stratum": "未接触材料（自报）",
+    "S2": {
+      "target_of_4": 4,
+      "baseline_of_4": 0,
+      "meets_both": true
+    },
+    "S5": {
+      "target_of_4": 4,
+      "baseline_of_4": 2,
+      "meets_both": false
+    },
+    "all_cells": {
+      "S0": {
+        "n": 4,
+        "roots": {
+          "smooth": 3,
+          "mixed_or_unclear": 1
+        },
+        "cover": {
+          "single": 2,
+          "multi": 2
+        }
+      },
+      "S2": {
+        "n": 4,
+        "roots": {
+          "socket": 4
+        },
+        "cover": {
+          "multi": 3,
+          "single": 1
+        }
+      },
+      "S5": {
+        "n": 4,
+        "roots": {
+          "smooth": 4
+        },
+        "cover": {
+          "multi": 4
+        }
+      }
+    }
+  },
+  {
+    "reader": "H03",
+    "exposure": "no",
+    "stratum": "未接触材料（自报）",
+    "S2": {
+      "target_of_4": 3,
+      "baseline_of_4": 0,
+      "meets_both": true
+    },
+    "S5": {
+      "target_of_4": 4,
+      "baseline_of_4": 1,
+      "meets_both": true
+    },
+    "all_cells": {
+      "S0": {
+        "n": 4,
+        "roots": {
+          "smooth": 3,
+          "mixed_or_unclear": 1
+        },
+        "cover": {
+          "unclear": 1,
+          "multi": 1,
+          "single": 2
+        }
+      },
+      "S2": {
+        "n": 4,
+        "roots": {
+          "hinge": 1,
+          "socket": 3
+        },
+        "cover": {
+          "multi": 3,
+          "single": 1
+        }
+      },
+      "S5": {
+        "n": 4,
+        "roots": {
+          "smooth": 4
+        },
+        "cover": {
+          "multi": 4
+        }
+      }
+    }
+  }
+]

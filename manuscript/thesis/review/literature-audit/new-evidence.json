@@ -1,0 +1,128 @@
+[
+  {
+    "key": "LIGRAM",
+    "doi": "10.3969/j.issn.2095-509X.2019.07.002",
+    "bibliography": "厉茜茜, 周海海. 基于权重化特征与形状文法的产品识别设计[J]. 机械设计与制造工程, 2019, 48(7): 9–14.",
+    "location": "原PDF第1、4–6页，部件权重、修改与识别",
+    "source": "https://doi.org/10.3969/j.issn.2095-509X.2019.07.002"
+  },
+  {
+    "key": "ZHUGRAM",
+    "doi": "10.3969/j.issn.2095-509X.2019.04.003",
+    "bibliography": "朱天燕, 周海海, 唐敦兵, 等. 基于形状文法和交互式遗传算法的产品形态创新设计[J]. 机械设计与制造工程, 2019, 48(4): 12–17.",
+    "location": "原PDF第1–2、6页，生成与修改规则、人工评价停止",
+    "source": "https://doi.org/10.3969/j.issn.2095-509X.2019.04.003"
+  },
+  {
+    "key": "ZHOUIMAGE",
+    "doi": "10.19344/j.cnki.issn1671-5276.2024.03.004",
+    "bibliography": "周海海, 张哲睿, 陈黎, 等. 高技术产品造型意象机器评价方法研究——以航空发动机为例[J]. 机械制造与自动化, 2024, 53(3): 20–24.",
+    "location": "原PDF第1–2、5页，专家注视部位与机器评价",
+    "source": "https://doi.org/10.19344/j.cnki.issn1671-5276.2024.03.004"
+  },
+  {
+    "key": "DING",
+    "doi": "10.13841/j.cnki.jxsj.2020.01.022",
+    "bibliography": "丁满, 程语, 黄晓光, 等. 感性工学设计方法研究现状与进展[J]. 机械设计, 2020, 37(1): 121–127.",
+    "location": "原PDF第1–3页，意象获取与模型建立的区别",
+    "source": "https://doi.org/10.13841/j.cnki.jxsj.2020.01.022"
+  },
+  {
+    "key": "KANSEITEXT",
+    "doi": "10.1016/j.engappai.2018.05.005",
+    "bibliography": "WANG W M, LI Z, TIAN Z G, et al. Extracting and summarizing affective features and responses from online product descriptions and reviews: A Kansei text mining approach[J]. Engineering Applications of Artificial Intelligence, 2018, 73: 149–162.",
+    "location": "原PDF第1–3页，区分产品特征和消费者感受",
+    "source": "https://doi.org/10.1016/j.engappai.2018.05.005"
+  },
+  {
+    "key": "LUOCAR",
+    "doi": "10.13196/j.cims.2025.0330",
+    "bibliography": "罗仕鉴, 易珮琦, 刘悦, 等. 智能技术驱动的汽车造型设计流程再造方法研究[J]. 计算机集成制造系统, 2025, 31(9): 3113–3122.",
+    "location": "原PDF第1–4页，需求、方案与反馈验证的分工",
+    "source": "https://doi.org/10.13196/j.cims.2025.0330"
+  },
+  {
+    "key": "LUOTEAM",
+    "doi": "10.13196/j.cims.2025.0101",
+    "bibliography": "罗仕鉴, 于慧伶, 张景森, 等. 基于人智团队智能体协同进化的群智创新设计方法[J]. 计算机集成制造系统, 2025, 31(3): 711–720.",
+    "location": "原PDF第1–3页，设计者在交互中调节方案",
+    "source": "https://doi.org/10.13196/j.cims.2025.0101"
+  },
+  {
+    "key": "YUKNOW",
+    "doi": "10.3901/JME.2024.13.216",
+    "bibliography": "余隋怀, 王鹏超, 王磊, 等. 基于知识工程的产品设计研究综述[J]. 机械工程学报, 2024, 60(13): 216–234.",
+    "location": "原PDF第1页，知识挖掘、表示、检索与重用",
+    "source": "https://doi.org/10.3901/JME.2024.13.216"
+  },
+  {
+    "key": "CRILLY",
+    "doi": "10.1016/j.destud.2004.03.001",
+    "bibliography": "CRILLY N, MOULTRIE J, CLARKSON P J. Seeing things: consumer response to the visual domain in product design[J]. Design Studies, 2004, 25(6): 547–577.",
+    "location": "作者版第1页，设计者意图与消费者视觉反应",
+    "source": "https://api.repository.cam.ac.uk/server/api/core/bitstreams/67fcdcc9-fc11-48cf-a29c-f3950688c6ab/content"
+  },
+  {
+    "key": "DORST",
+    "doi": "10.1016/S0142-694X(01)00009-6",
+    "bibliography": "DORST K, CROSS N. Creativity in the design process: co-evolution of problem–solution[J]. Design Studies, 2001, 22(5): 425–437.",
+    "location": "作者版摘要与问题—解共同演化的案例分析",
+    "source": "https://oro.open.ac.uk/3278/1/Creativity_-_coevolution.pdf"
+  },
+  {
+    "key": "AMERSHI",
+    "doi": "10.1145/3290605.3300233",
+    "bibliography": "AMERSHI S, WELD D, VORVOREANU M, et al. Guidelines for Human-AI Interaction[C]//Proceedings of CHI 2019. New York: ACM, 2019: 1–13.",
+    "location": "作者版指南表，G7–G9 支持调用、忽略及纠错",
+    "source": "https://www.microsoft.com/en-us/research/wp-content/uploads/2019/01/Guidelines-for-Human-AI-Interaction-camera-ready.pdf"
+  },
+  {
+    "key": "DOW",
+    "doi": "10.1145/1879831.1879836",
+    "bibliography": "DOW S P, GLASSCO A, KASS J, et al. Parallel prototyping leads to better design results, more divergence, and increased self-efficacy[J]. ACM Transactions on Computer-Human Interaction, 2010, 17(4): Article 18.",
+    "location": "作者版摘要与结论，并行和串行原型比较，效果限于原任务",
+    "source": "https://hci.stanford.edu/publications/2010/parallel-prototyping/ParallelPrototyping2010-final.pdf"
+  },
+  {
+    "key": "FIXATION",
+    "doi": "10.1016/0142-694X(91)90003-F",
+    "bibliography": "JANSSON D G, SMITH S M. Design fixation[J]. Design Studies, 1991, 12(1): 3–11.",
+    "location": "出版方摘要，示例与设计固着实验；不能直接推论生成模型机制",
+    "source": "https://doi.org/10.1016/0142-694X(91)90003-F"
+  },
+  {
+    "key": "COHEN",
+    "doi": "10.1177/001316446002000104",
+    "bibliography": "COHEN J. A coefficient of agreement for nominal scales[J]. Educational and Psychological Measurement, 1960, 20(1): 37–46.",
+    "location": "名义分类的一致性系数，方法来源",
+    "source": "https://doi.org/10.1177/001316446002000104"
+  },
+  {
+    "key": "KAPPA",
+    "doi": "10.1016/0895-4356(90)90158-L",
+    "bibliography": "FEINSTEIN A R, CICCHETTI D V. High agreement but low kappa: I. The problems of two paradoxes[J]. Journal of Clinical Epidemiology, 1990, 43(6): 543–549.",
+    "location": "原文摘要，边际分布不平衡影响机会校正一致性",
+    "source": "https://pubmed.ncbi.nlm.nih.gov/2348207/"
+  },
+  {
+    "key": "EDIT23",
+    "doi": "10.1109/CVPR52729.2023.01764",
+    "bibliography": "BROOKS T, HOLYNSKI A, EFROS A A. InstructPix2Pix: Learning to follow image editing instructions[C]//Proceedings of CVPR. 2023: 18392–18402.",
+    "location": "原文第4节，输入保持与编辑方向分别衡量",
+    "source": "https://openaccess.thecvf.com/content/CVPR2023/papers/Brooks_InstructPix2Pix_Learning_To_Follow_Image_Editing_Instructions_CVPR_2023_paper.pdf"
+  },
+  {
+    "key": "MAGIC23",
+    "doi": "10.48550/arXiv.2306.10012",
+    "bibliography": "ZHANG K, MO L, CHEN W, et al. MagicBrush: A manually annotated dataset for instruction-guided image editing[C]//Advances in Neural Information Processing Systems. 2023, 36.",
+    "location": "原文第1页，源图、指令、目标图与单轮、多轮编辑",
+    "source": "https://proceedings.neurips.cc/paper_files/paper/2023/file/64008fa30cba9b4d1ab1bd3bd3d57d61-Paper-Datasets_and_Benchmarks.pdf"
+  },
+  {
+    "key": "GENEVAL",
+    "doi": "10.48550/arXiv.2310.11513",
+    "bibliography": "GHOSH D, HAJISHIRZI H, SCHMIDT L. GenEval: An object-focused framework for evaluating text-to-image alignment[C]//Advances in Neural Information Processing Systems. 2023, 36.",
+    "location": "作者摘要，数量、位置、颜色与共现分别计分",
+    "source": "https://arxiv.org/abs/2310.11513"
+  }
+]

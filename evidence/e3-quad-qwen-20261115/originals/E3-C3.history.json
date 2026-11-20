@@ -1,0 +1,170 @@
+{
+  "prompt": [
+    8,
+    "a43dcec1-3159-492e-a469-e6311682c82e",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.\nA box-shaped shell with straight sides and clipped corners.\nEach arm enters a distinct socket at the shell, with a visible transverse joint seam.\nThe front edge of the camera housing extends slightly beyond the nose of the main shell, toward the top of the image. The lens faces horizontally forward and may be fully hidden by the housing in this overhead view.\nThree or more distinct top cover panels separated by seams.\nExposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell.\nMatte light grey shell, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+          "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera",
+          "resolution": 1024,
+          "images.image_1": [
+            "15",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026112109,
+          "steps": 40,
+          "cfg": 3.0,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1.0
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "E3-C3"
+        }
+      },
+      "15": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "qwen-shape-dots-250-15c5ad1c924b.png"
+        }
+      }
+    },
+    {
+      "create_time": 1794670719773
+    },
+    [
+      "12"
+    ]
+  ],
+  "outputs": {
+    "12": {
+      "images": [
+        {
+          "filename": "E3-C3_00001_.png",
+          "subfolder": "",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 1024,
+            "height": 1024
+          },
+          "id": "15ca940f-c9e1-49a3-aefe-69f15186d83d"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "a43dcec1-3159-492e-a469-e6311682c82e",
+          "timestamp": 1794670719774
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "15"
+          ],
+          "prompt_id": "a43dcec1-3159-492e-a469-e6311682c82e",
+          "timestamp": 1794670719778
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "a43dcec1-3159-492e-a469-e6311682c82e",
+          "timestamp": 1794670795389
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "12": {
+      "node_id": "12",
+      "display_node": "12",
+      "parent_node": null,
+      "real_node_id": "12"
+    }
+  }
+}

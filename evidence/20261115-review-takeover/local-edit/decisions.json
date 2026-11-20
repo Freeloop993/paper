@@ -1,0 +1,62 @@
+{
+  "camera": [
+    {
+      "id": "LE-camera-dev-01",
+      "passed": false,
+      "composite_sha256": "a58b8d860bd5116ee35de8059d9f68e481b400374e86dac4afe6288508c1b135",
+      "reason": "原图下端可见完整舱体；合成中舱体下缘落在遮罩边界，截成有白色晕边的直条。"
+    },
+    {
+      "id": "LE-camera-dev-02",
+      "passed": false,
+      "composite_sha256": "708ae5209980743b3b3c3c1e6ce977c5c017129037e67d9daba76cb26fb3a6f9",
+      "reason": "合成截断舱体侧面与底缘，原图可见的中间小舱体消失。"
+    },
+    {
+      "id": "LE-camera-dev-03",
+      "passed": false,
+      "composite_sha256": "7046c9080fda07d54b773857ea3d0158f9752bce0e7c8454287f7a7274d22053",
+      "reason": "下端有突出的舱体，前沿深色矩形的朝向无法判清，壳面斜向分缝也在拼接处断开。"
+    }
+  ],
+  "cover": [
+    {
+      "id": "LE-cover-dev-01",
+      "passed": false,
+      "composite_sha256": "2cb4d06a4d3b3d49517b5e1826b4bb026777d6b9fd9c99ffb1cbe694b895ea1d",
+      "reason": "正中横缝消失，左右分缝在盖面中途终止，完整盖板周界无法追踪。"
+    },
+    {
+      "id": "LE-cover-dev-02",
+      "passed": false,
+      "composite_sha256": "510d757cf2284013d6c81f1ca94f4928786550f421365d1333ecdd746d6f1176",
+      "reason": "中心变平整；左右边界接缝分别向盖面内伸出短支线，与原始生成的连续周界不同。"
+    },
+    {
+      "id": "LE-cover-dev-03",
+      "passed": false,
+      "composite_sha256": "935e1b8d0fceebfd153261805078dd568d3402a7afa4907cec08a615d3956232",
+      "reason": "正中横缝变浅并消失；两侧留有成对断头斜缝，未形成可连续追踪的单盖边界。"
+    }
+  ],
+  "roots": [
+    {
+      "id": "LE-roots-dev-01",
+      "passed": false,
+      "composite_sha256": "51f44488f84ef2fef9bf8b4ffa3b89e1540c1ff2760c9cc2eff36be1f8a2bd5c",
+      "reason": "四处出现接线及局部凸肩，下侧承座的外缘在合成处淡出，独立台阶无法沿左右两侧完整辨认。"
+    },
+    {
+      "id": "LE-roots-dev-02",
+      "passed": false,
+      "composite_sha256": "188d50c8d954c9db730ac4bde53368794029eb63b64f3d307c0c0b685ec9b587",
+      "reason": "上侧可见条状接件，下侧只见斜向条纹；轮廓仍顺原机臂曲面通过，四处承座未能同时辨明。"
+    },
+    {
+      "id": "LE-roots-dev-03",
+      "passed": false,
+      "composite_sha256": "6d4d5ba30e3d626f410a31f33abeb4f8f6cd5e9ccacab23ea4afc809aa0f90bd",
+      "reason": "原始生成可见承座，合成后上侧承座边界淡入灰面，下侧轮廓亦有断口，无法把四处都记作完整台阶。"
+    }
+  ]
+}

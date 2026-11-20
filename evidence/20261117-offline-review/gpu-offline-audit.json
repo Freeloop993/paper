@@ -1,0 +1,17 @@
+{
+  "commit": "97b1a724c750032fd61c5ee83c19227bb75cf7dd",
+  "preflight_exit": 0,
+  "requested": 73,
+  "per_order": {
+    "1": 9,
+    "2": 8,
+    "3": 16,
+    "4": 40
+  },
+  "masked": 45,
+  "matched_whole_mask_pairs": 20,
+  "input_count": 5,
+  "mask_count": 6,
+  "submitted_this_session": 0,
+  "confirmation": "开发判读之后逐组放行；本回执仅为离线检查。"
+}

@@ -1,0 +1,482 @@
+{
+  "schema_version": 2,
+  "reader": "Codex · 第一位 AI 知型号看图标点",
+  "date": "2026-11-17",
+  "independent_repeat_count": 0,
+  "dpi": 576,
+  "renderer": "pdftoppm 26.07.0; default PPM, RGB; 8 px/PDF pt",
+  "coordinates": "0-based integer pixels in the unrotated crop; origin top left, x right, y down; crop bounds [left,top,right,bottom), in full-page pixels",
+  "samples": [
+    {
+      "id": "Air3",
+      "model": "DJI Air 3",
+      "manual_version": "v1.2 · 2023.09",
+      "group": "rated_quad",
+      "filename": "Air3.pdf",
+      "source_url": "https://dl.djicdn.com/downloads/DJI_Air_3/UM/20230925/1/DJI_Air_3_User_Manual_v1.2_EN.pdf",
+      "pdf_sha256": "0f000300d83b47431d724cb28d787fdb35fe90bc9e2b9f29ef4e3289db1cf1a0",
+      "printed_page": 12,
+      "pdf_page": 12,
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        1952,
+        1680,
+        2848,
+        2464
+      ],
+      "crop_rgb_sha256": "f077079aa69f15ef0c6d9260e2380f73a18b63fe4089f8b55ca60133312182fa",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure_state": "步骤 3 的最右图。四臂展开，桨叶尚未安装，四个电机顶盖露出。",
+      "orientation_evidence": "同页先展开前臂的过程序列，前臂位于图上侧。第 11 页充电图显示尾端接口，第 16 页标出前置云台、尾部电池。",
+      "reading_notes": "四个顶盖中央小圆。侧边在前臂铰座之后仍可连续追踪，取两侧线中心。尾端取电池齐平外缘。前端突出的云台、两侧安装件及上壳线重叠，缺少能唯一归属主体的最前点。",
+      "points": {
+        "FL": [
+          76,
+          134
+        ],
+        "FR": [
+          811,
+          134
+        ],
+        "RL": [
+          126,
+          680
+        ],
+        "RR": [
+          757,
+          680
+        ],
+        "body_left": [
+          351,
+          270
+        ],
+        "body_right": [
+          533,
+          270
+        ],
+        "body_nose": null,
+        "body_tail": [
+          442,
+          552
+        ]
+      },
+      "propellers": {
+        "status": "missing",
+        "reason": "本页展开图未装桨，只有电机盖可见。",
+        "tips": null
+      }
+    },
+    {
+      "id": "Mavic3Pro",
+      "model": "DJI Mavic 3 Pro",
+      "manual_version": "v1.0 · 2023.04",
+      "group": "rated_quad",
+      "filename": "Mavic3Pro.pdf",
+      "source_url": "https://dl.djicdn.com/downloads/DJI_Mavic_3_Pro/DJI_Mavic_3_Pro_User_Manual_EN.pdf",
+      "pdf_sha256": "6b6498ce22e6484ebc7e1217d9d596a63a65f2ac048dba665610d5c20d82d077",
+      "printed_page": 11,
+      "pdf_page": 11,
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        1888,
+        528,
+        2912,
+        1440
+      ],
+      "crop_rgb_sha256": "b96ba591d5ea11bba7d0a25cac4f68db6881bd322f19d04511cb5b0718d6ac89",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure_state": "步骤 3 的最右图。四臂与四副桨叶均展开。",
+      "orientation_evidence": "步骤 3 依次展开前、后臂和桨叶。第 13 页部件 11、16、17 对应图下端上视传感器、尾部接口区域，前置云台位于图上端。",
+      "reading_notes": "轴心取桨夹中央圆。固定上壳前缘取横跨云台的弧形鼻梁顶点，排除更靠前的云台块。尾端取外壳弧底。宽度取前臂根部处可连续追踪的壳侧线，排除外凸的铰座。",
+      "points": {
+        "FL": [
+          194,
+          221
+        ],
+        "FR": [
+          852,
+          221
+        ],
+        "RL": [
+          261,
+          710
+        ],
+        "RR": [
+          785,
+          710
+        ],
+        "body_left": [
+          442,
+          305
+        ],
+        "body_right": [
+          604,
+          305
+        ],
+        "body_nose": [
+          523,
+          165
+        ],
+        "body_tail": [
+          523,
+          579
+        ]
+      },
+      "propellers": {
+        "status": "measured",
+        "window_centers": {
+          "FL": [
+            [
+              346,
+              37
+            ],
+            [
+              41,
+              406
+            ]
+          ],
+          "FR": [
+            [
+              703,
+              33
+            ],
+            [
+              1002,
+              409
+            ]
+          ],
+          "RL": [
+            [
+              85,
+              550
+            ],
+            [
+              437,
+              870
+            ]
+          ],
+          "RR": [
+            [
+              963,
+              553
+            ],
+            [
+              607,
+              869
+            ]
+          ]
+        },
+        "tips": {
+          "FL": [
+            [
+              345,
+              33
+            ],
+            [
+              40,
+              407
+            ]
+          ],
+          "FR": [
+            [
+              702,
+              32
+            ],
+            [
+              1006,
+              407
+            ]
+          ],
+          "RL": [
+            [
+              86,
+              546
+            ],
+            [
+              435,
+              876
+            ]
+          ],
+          "RR": [
+            [
+              967,
+              554
+            ],
+            [
+              608,
+              873
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "Neo",
+      "model": "DJI Neo",
+      "manual_version": "v1.2 · 2024.11",
+      "group": "rated_quad",
+      "filename": "Neo.pdf",
+      "source_url": "https://dl.djicdn.com/downloads/neo/20241106/DJI_Neo_User_Manual_v1.2_en.pdf",
+      "pdf_sha256": "b3129b59e88bec103666e2aadf71246a6df35a60e5cfc7bb471159a31ab0b74a",
+      "printed_page": 71,
+      "pdf_page": 71,
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        1024,
+        416,
+        2096,
+        1288
+      ],
+      "crop_rgb_sha256": "66f67bd3a1487af9d4fd0a7cec5bbc32c8a437bac25554c2d1527bec9bd1abfb",
+      "nose_unit_xy": [
+        0,
+        -1
+      ],
+      "figure_state": "页首拆上护罩图的中央机体。固定式四轴布局，桨叶在位，可拆上护罩已向两侧移开，一体下护圈仍在。",
+      "orientation_evidence": "第 16 页标号 1 的前置云台与标号 5、6 的模式键及指示区位于同一端。第 71 页中央机体的模式键在图上方。第 16 页另一个正投影视图有下视系统，是腹面。",
+      "reading_notes": "三叶桨各以一对螺钉夹持，取两螺钉圆心的中点（取整）。机身取中央隆起壳体的两条连续侧线、云台旁壳肩的前端和尾弧。护圈与侧翼连成一体，此处记录的是可辨的中央壳体。",
+      "points": {
+        "FL": [
+          259,
+          248
+        ],
+        "FR": [
+          821,
+          248
+        ],
+        "RL": [
+          259,
+          638
+        ],
+        "RR": [
+          822,
+          638
+        ],
+        "body_left": [
+          461,
+          375
+        ],
+        "body_right": [
+          621,
+          375
+        ],
+        "body_nose": [
+          475,
+          46
+        ],
+        "body_tail": [
+          540,
+          821
+        ]
+      },
+      "propellers": {
+        "status": "missing",
+        "reason": "该机为三叶桨，任取两叶尖所得为弦长，无法按本批对置双叶尖距的口径取径。",
+        "tips": null
+      }
+    },
+    {
+      "id": "T30",
+      "model": "DJI AGRAS T30",
+      "manual_version": "v1.6 · 2022.09.29",
+      "group": "supplement_hex",
+      "filename": "T30.pdf",
+      "source_url": "https://dl.djicdn.com/downloads/t30/all_update/T30_User_Manual_v1.6_en_new.pdf",
+      "pdf_sha256": "2b2068e4c91b532e782defb7c87fc4426eae1882491c24cbf114d139caa50a03",
+      "printed_page": 27,
+      "pdf_page": 29,
+      "page_size_px": [
+        3130,
+        4649
+      ],
+      "crop_ltrb_px": [
+        680,
+        1120,
+        2240,
+        2920
+      ],
+      "crop_rgb_sha256": "30ebf6405119ab1c04e44e612d6c68a7358ebe2a131b29746088cb7d07f9bf12",
+      "nose_unit_xy": [
+        -1,
+        0
+      ],
+      "figure_state": "重心限制页的上图。六臂、桨叶均在展开位置。",
+      "orientation_evidence": "原图 Aircraft Front 箭头向左，M1 位于机头方向。",
+      "reading_notes": "六个桨夹取成对桨根紧固点的中点。机身处可见药箱、框架、横杆和机臂座，无法按消费机的中央壳体口径分离主体边界。",
+      "points": {
+        "M1": [
+          143,
+          944
+        ],
+        "M2": [
+          416,
+          1658
+        ],
+        "M3": [
+          1167,
+          1658
+        ],
+        "M4": [
+          1437,
+          944
+        ],
+        "M5": [
+          1167,
+          231
+        ],
+        "M6": [
+          416,
+          231
+        ],
+        "body_left": null,
+        "body_right": null,
+        "body_nose": null,
+        "body_tail": null
+      },
+      "propellers": {
+        "status": "measured",
+        "window_centers": {
+          "M1": [
+            [
+              129,
+              582
+            ],
+            [
+              149,
+              1307
+            ]
+          ],
+          "M2": [
+            [
+              76,
+              1533
+            ],
+            [
+              754,
+              1781
+            ]
+          ],
+          "M3": [
+            [
+              1504,
+              1537
+            ],
+            [
+              829,
+              1789
+            ]
+          ],
+          "M4": [
+            [
+              1443,
+              581
+            ],
+            [
+              1430,
+              1306
+            ]
+          ],
+          "M5": [
+            [
+              829,
+              106
+            ],
+            [
+              1507,
+              353
+            ]
+          ],
+          "M6": [
+            [
+              753,
+              100
+            ],
+            [
+              76,
+              354
+            ]
+          ]
+        },
+        "tips": {
+          "M1": [
+            [
+              130,
+              580
+            ],
+            [
+              158,
+              1307
+            ]
+          ],
+          "M2": [
+            [
+              73,
+              1535
+            ],
+            [
+              755,
+              1785
+            ]
+          ],
+          "M3": [
+            [
+              1508,
+              1538
+            ],
+            [
+              828,
+              1793
+            ]
+          ],
+          "M4": [
+            [
+              1451,
+              580
+            ],
+            [
+              1422,
+              1307
+            ]
+          ],
+          "M5": [
+            [
+              826,
+              106
+            ],
+            [
+              1511,
+              348
+            ]
+          ],
+          "M6": [
+            [
+              753,
+              96
+            ],
+            [
+              74,
+              354
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "tip_window_radius_px": 18,
+  "tip_gray_max": 96
+}

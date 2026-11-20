@@ -1,0 +1,34 @@
+{
+  "version": "shape-dictionary-v1.4",
+  "changes_from_v1.3": "只换 camera.projecting 一句：改用 2026-11-14 S4 机鼻前缘轮的写法（evidence/qwen-shape-s4-20261114/s4-nose-edge-2/prompts.md）。作者 2026-11-15 原话：“最新的这次相机好多了，俯视看不见也正常，就按这个写法跑”。camera.inside 保留 v1.2 原句（Qwen 小测 S0 两张均读为无外突、镜头不可见）。仅用于 E3 设计方向；5.2.1 造型响应批仍按 v1.2。",
+  "fixed_lines": {
+    "head": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.",
+    "layout": "Match the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. No propeller guards.",
+    "cmf": "Matte light grey shell and arms in one continuous colour, dark grey motors, black propellers.",
+    "cmf_when_exposed_carbon": "Matte light grey shell, dark grey motors, black propellers.",
+    "tail": "Show the complete product on a plain light background. Omit guide marks and lettering."
+  },
+  "params": {
+    "body_plan": {
+      "pod": "A rounded pod with a continuous curved outline.",
+      "box": "A box-shaped shell with straight sides and clipped corners."
+    },
+    "arm_root": {
+      "seamless": "Each arm grows out of the shell through a smooth seamless blend, with no joint line at the root.",
+      "socket": "Each arm enters a distinct socket at the shell, with a visible transverse joint seam.",
+      "hinge": "Each arm is attached to the shell by a visible folding hinge with a pivot pin."
+    },
+    "camera": {
+      "inside": "The nose shell wraps around the camera; from directly overhead only the smooth top of the nose is seen, with no gimbal arms or side lugs. The camera faces horizontally forward.",
+      "projecting": "The front edge of the camera housing extends slightly beyond the nose of the main shell, toward the top of the image. The lens faces horizontally forward and may be fully hidden by the housing in this overhead view."
+    },
+    "cover": {
+      "single": "A plain top cover with no seams crossing it.",
+      "multi": "Three or more distinct top cover panels separated by seams."
+    },
+    "arm_finish": {
+      "matte_same": "Arms in the same matte light grey as the shell.",
+      "exposed_carbon": "Exposed carbon-fibre arms with a visible weave, held by dark grey sockets at the shell."
+    }
+  }
+}

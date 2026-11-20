@@ -1,0 +1,30 @@
+{
+  "archive_sha256": "9acd14489d036681c9b4af11660fa0e3602e558e1673f41daccc75232db4b1d7",
+  "parent_sha256": "be76d340065555747bff51ba2458449b12eda74f81f629c32847cc34ab1a7621",
+  "records": [
+    {
+      "id": "REV2v2-dev-B2-r1",
+      "prompt_id": "5fbbcbb3-d396-4b98-89e4-93afe55cf567",
+      "seconds": 84.1,
+      "request_sha256": "0b951933308939829edaa5849facacb992c57c99034b566bfdc56536332832fb",
+      "png_sha256": "db7596f21804f3eb4476e9e264471aa422e781cdc6c1395f5da7aeb1d1422f1a",
+      "completed_at": "2026-11-15T08:31:26+0800"
+    },
+    {
+      "id": "REV2v2-dev-B2-r2",
+      "prompt_id": "6fff460e-ef6b-47c2-aa52-50d2a05b7968",
+      "seconds": 80.1,
+      "request_sha256": "756d9f562707c99ba4acb7ea8ddff233ba65e684611b29e9fbb85ea335afa152",
+      "png_sha256": "e63329eb9f0608d5464ed520f9ee6e3eb8d1edc64ee2839cd0a2f895ee68c6ba",
+      "completed_at": "2026-11-15T08:32:46+0800"
+    },
+    {
+      "id": "REV2v2-dev-B2-r3",
+      "prompt_id": "d4b8d9cc-0cb7-4c40-a5f8-eef7502d4086",
+      "seconds": 76.2,
+      "request_sha256": "c5c8bbfc69ea6e7a7c4eb8d842085e6e6595d7348b803eab3678a21e8716635f",
+      "png_sha256": "51e95f12196c14db5fcedcb30399104167e248232d38a36e483674c77b05134c",
+      "completed_at": "2026-11-15T08:34:02+0800"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "prompt": [
+    5,
+    "c0faa8c6-a603-4463-b15f-5d23fa8c339e",
+    {
+      "1": {
+        "class_type": "UNETLoader",
+        "inputs": {
+          "unet_name": "qwen_image_2.1_bf16.safetensors",
+          "weight_dtype": "default"
+        }
+      },
+      "2": {
+        "class_type": "CLIPLoader",
+        "inputs": {
+          "clip_name": "qwen3vl_8b_bf16.safetensors",
+          "type": "qwen_image",
+          "device": "default"
+        }
+      },
+      "3": {
+        "class_type": "VAELoader",
+        "inputs": {
+          "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+        }
+      },
+      "4": {
+        "class_type": "TextEncodeQwenImage21",
+        "inputs": {
+          "clip": [
+            "2",
+            0
+          ],
+          "prompt": "Design a compact quadcopter for everyday aerial photography. Strict orthographic top view, nose toward the top edge, arms fully unfolded.\nMatch the four motor centres and arm directions in the layout. True X, 250 mm opposite-motor span, equal horizontal and vertical spacing. Each motor carries one stationary two-blade, 5-inch propeller. The two blades of each propeller are identical in length and width and point in exactly opposite directions from the hub, forming one straight blade 180 degrees across, never a V shape; each propeller rests at its own natural angle. No propeller guards.\nThe nose points to the top edge of the image. The rear end of the fuselage is a closed, plain light grey shell: no dark part, opening, camera or module at the tail.\nA rounded pod with a continuous curved outline.\nEach arm grows out of the shell through a smooth seamless blend, with no joint line at the root.\nThe camera sits inside the nose, flush with the shell; from directly overhead only a thin dark strip of its front window shows at the very front edge of the nose. The camera faces horizontally forward.\nThree or more distinct top cover panels separated by seams.\nThe top surface carries crisp character lines and subtly stepped side facets, so the shell reads as layered surfaces rather than one smooth block.\nArms in the same matte light grey as the shell.\nEach dark grey motor carries a thin orange accent ring.\nMatte light grey shell and arms in one continuous colour, dark grey motors, black propellers.\nShow the complete product on a plain light background. Omit guide marks and lettering.",
+          "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, camera lens visible from above, upward-facing lens, camera on a neck or stalk, camera on a post, camera at the tail, dark module at the tail, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades",
+          "resolution": 1024,
+          "images.image_1": [
+            "15",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "10": {
+        "class_type": "KSampler",
+        "inputs": {
+          "model": [
+            "1",
+            0
+          ],
+          "positive": [
+            "4",
+            0
+          ],
+          "negative": [
+            "4",
+            1
+          ],
+          "latent_image": [
+            "4",
+            2
+          ],
+          "seed": 2026112126,
+          "steps": 40,
+          "cfg": 3.0,
+          "sampler_name": "euler",
+          "scheduler": "simple",
+          "denoise": 1.0
+        }
+      },
+      "11": {
+        "class_type": "VAEDecode",
+        "inputs": {
+          "samples": [
+            "10",
+            0
+          ],
+          "vae": [
+            "3",
+            0
+          ]
+        }
+      },
+      "12": {
+        "class_type": "SaveImage",
+        "inputs": {
+          "images": [
+            "11",
+            0
+          ],
+          "filename_prefix": "E3R3-B3"
+        }
+      },
+      "15": {
+        "class_type": "LoadImage",
+        "inputs": {
+          "image": "qwen-shape-dots-250-15c5ad1c924b.png"
+        }
+      }
+    },
+    {
+      "create_time": 1794676758454
+    },
+    [
+      "12"
+    ]
+  ],
+  "outputs": {
+    "12": {
+      "images": [
+        {
+          "filename": "E3R3-B3_00001_.png",
+          "subfolder": "",
+          "type": "output",
+          "metadata": {
+            "kind": "image",
+            "width": 1024,
+            "height": 1024
+          },
+          "id": "11d2ced1-27da-4117-a498-85b327328764"
+        }
+      ]
+    }
+  },
+  "status": {
+    "status_str": "success",
+    "completed": true,
+    "messages": [
+      [
+        "execution_start",
+        {
+          "prompt_id": "c0faa8c6-a603-4463-b15f-5d23fa8c339e",
+          "timestamp": 1794676758455
+        }
+      ],
+      [
+        "execution_cached",
+        {
+          "nodes": [
+            "1",
+            "2",
+            "3",
+            "4",
+            "15"
+          ],
+          "prompt_id": "c0faa8c6-a603-4463-b15f-5d23fa8c339e",
+          "timestamp": 1794676758464
+        }
+      ],
+      [
+        "execution_success",
+        {
+          "prompt_id": "c0faa8c6-a603-4463-b15f-5d23fa8c339e",
+          "timestamp": 1794676834386
+        }
+      ]
+    ]
+  },
+  "meta": {
+    "12": {
+      "node_id": "12",
+      "display_node": "12",
+      "parent_node": null,
+      "real_node_id": "12"
+    }
+  }
+}

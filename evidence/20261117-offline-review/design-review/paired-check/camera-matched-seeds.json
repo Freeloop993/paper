@@ -1,0 +1,424 @@
+{
+  "population": "仅 S4 扩展，正式批 r01–04 另报",
+  "matched": [
+    {
+      "seed": 2026112053,
+      "v1.2": {
+        "id": "S12-S4-r05",
+        "seed": 2026112053,
+        "prompt_id": "3a242f7e-1a62-4a3f-b424-f479f35ef365",
+        "request_sha256": "107e953558b3b974d5b21beed5f26389f56740009590d50822d777c0cda833e5",
+        "png_sha256": "75d7ac095cda1ece6ce089f76399dbd321983a319de58c621559fe3aeda6f133",
+        "rgb_sha256": "91ae5341a3c1ca8d5eb69fdb7b4abb66b6b1c637466aa141910bfb5e6fee595e",
+        "readers": {
+          "L": {
+            "camera": "bottom",
+            "nose": "flush",
+            "up_lens": "yes",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "M": {
+            "camera": "bottom",
+            "nose": "flush",
+            "up_lens": "yes",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      "v1.6": {
+        "id": "S16-S4-r05",
+        "seed": 2026112053,
+        "prompt_id": "7ef230db-20af-4190-81fd-cab9ecea9616",
+        "request_sha256": "9d9fc91bd39c20564a38f634fda3175c116e16b4810d99b36c0724c884d8c90f",
+        "png_sha256": "13d6d0836b3948e2045edcdddfacbaeb9abf445cbc79e7cd4a25b35a7f3da575",
+        "rgb_sha256": "4b594e74f8ebfb948ee30d155179a65e8f6c1ee37506f12c2c71f1c8739e20a8",
+        "readers": {
+          "L": {
+            "camera": "top",
+            "nose": "projecting",
+            "up_lens": "?",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "M": {
+            "camera": "top",
+            "nose": "projecting",
+            "up_lens": "?",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      "changed_fields": [
+        "12.inputs.filename_prefix",
+        "4.inputs.negative_prompt",
+        "4.inputs.prompt"
+      ]
+    },
+    {
+      "seed": 2026112054,
+      "v1.2": {
+        "id": "S12-S4-r06",
+        "seed": 2026112054,
+        "prompt_id": "fd177bbf-ca4b-43b6-a250-93309f613d1a",
+        "request_sha256": "b7fa8f38dbeff5562bf93de141a60d999d5e2fcdfb82e4520192eff23fce4491",
+        "png_sha256": "0a14bd26403a1cf662ea53b5cb8f87b68d96d043669ed80b63869294370076af",
+        "rgb_sha256": "f3f94b183abdc2e82aff63b7af803fb513b59cac29d94db26ac073ff3dca477f",
+        "readers": {
+          "L": {
+            "camera": "bottom",
+            "nose": "flush",
+            "up_lens": "yes",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "M": {
+            "camera": "bottom",
+            "nose": "flush",
+            "up_lens": "yes",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      "v1.6": {
+        "id": "S16-S4-r06",
+        "seed": 2026112054,
+        "prompt_id": "a3a7e4f6-6b03-4806-b836-4e35f5087af7",
+        "request_sha256": "273c2480be44be77f0ad671320d2e24839a81f742663fc6f85e8bac4da5e8d27",
+        "png_sha256": "1bebadc10534517fdaaff0b3c5dcdd7cd92f80a9d3109396c1bb80242e81f838",
+        "rgb_sha256": "76734c64289c9e6e4b502fd8246d03ed3c6bea1813a451811d2b6804bf10d1e7",
+        "readers": {
+          "L": {
+            "camera": "top",
+            "nose": "projecting",
+            "up_lens": "?",
+            "blades": [
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          "M": {
+            "camera": "top",
+            "nose": "projecting",
+            "up_lens": "?",
+            "blades": [
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "changed_fields": [
+        "12.inputs.filename_prefix",
+        "4.inputs.negative_prompt",
+        "4.inputs.prompt"
+      ]
+    },
+    {
+      "seed": 2026112055,
+      "v1.2": {
+        "id": "S12-S4-r07",
+        "seed": 2026112055,
+        "prompt_id": "e802712f-03eb-47b4-9cf3-511f61b6c31d",
+        "request_sha256": "14f491cb7a912a3348f7002a95b7a114b9bdcce8e4b8c5351423f27a386061d5",
+        "png_sha256": "d28ad385645db9207bb38fc7d53a32c538fc2e41a701746efa4da2cfa72540a6",
+        "rgb_sha256": "3430c93150b951e7d34ab874976fbdfde7a73b1d9567e63646b9c409f30b08b5",
+        "readers": {
+          "L": {
+            "camera": "bottom",
+            "nose": "flush",
+            "up_lens": "yes",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "M": {
+            "camera": "bottom",
+            "nose": "flush",
+            "up_lens": "yes",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      "v1.6": {
+        "id": "S16-S4-r07",
+        "seed": 2026112055,
+        "prompt_id": "aea62e24-be7e-4f6d-b851-0ec10cf4c863",
+        "request_sha256": "e2b5ad16aa2a4ad4ffd49bbb4af8dd6324b39112c358dd96031ddb48819a9e05",
+        "png_sha256": "f2657a51d522f4c70e4312635c24f9fef907f5b55d8468fd3b0bf6817bc94270",
+        "rgb_sha256": "b121e5a7b1a0dc9a288a4c160dc56be1202d98f3af2cee5b3aea755b13fe74de",
+        "readers": {
+          "L": {
+            "camera": "top",
+            "nose": "projecting",
+            "up_lens": "no",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "M": {
+            "camera": "top",
+            "nose": "projecting",
+            "up_lens": "no",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      "changed_fields": [
+        "12.inputs.filename_prefix",
+        "4.inputs.negative_prompt",
+        "4.inputs.prompt"
+      ]
+    },
+    {
+      "seed": 2026112056,
+      "v1.2": {
+        "id": "S12-S4-r08",
+        "seed": 2026112056,
+        "prompt_id": "3c9378a2-3698-43e3-8d79-a21cba231cdc",
+        "request_sha256": "ba7fa161a7d817ac7ad583eb80481c1f026f937586bbf78019d6404403fa6207",
+        "png_sha256": "fcfe19e348432349060f91d8838708fd9e54ec04c7af8b3782797c49219b8921",
+        "rgb_sha256": "8f49c7298857dceb2ef76de6701bbca2223f522f508f5ecd451bae5746dfc521",
+        "readers": {
+          "L": {
+            "camera": "bottom",
+            "nose": "flush",
+            "up_lens": "yes",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "M": {
+            "camera": "bottom",
+            "nose": "flush",
+            "up_lens": "yes",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      "v1.6": {
+        "id": "S16-S4-r08",
+        "seed": 2026112056,
+        "prompt_id": "0653277a-b625-4851-9895-7eccbb27b8af",
+        "request_sha256": "8d3becc9105bb49dfdc463908c1ec7d86e575bd6ff4d11cc1cf7689280f38f85",
+        "png_sha256": "624918e48c812589602f9ca14ea05ea105f0171f2e11b27963e34e1a2947261c",
+        "rgb_sha256": "835ee4a742a72d809e6d7eb116ce77d9313eea0b1d4b4ecefa8fe7cffc023197",
+        "readers": {
+          "L": {
+            "camera": "top",
+            "nose": "projecting",
+            "up_lens": "?",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          },
+          "M": {
+            "camera": "top",
+            "nose": "projecting",
+            "up_lens": "?",
+            "blades": [
+              2,
+              2,
+              2,
+              2
+            ]
+          }
+        }
+      },
+      "changed_fields": [
+        "12.inputs.filename_prefix",
+        "4.inputs.negative_prompt",
+        "4.inputs.prompt"
+      ]
+    }
+  ],
+  "v12_unmatched": [
+    {
+      "id": "S12-S4-r09",
+      "seed": 2026112057,
+      "prompt_id": "377d05aa-4a92-449f-af82-f4e0f75a3c69",
+      "request_sha256": "913ebc0d884ecb2974e1c99eea19ba7b2590e1a345deeca315fccad08e62e25b",
+      "png_sha256": "34a64c6eb583be14152f82e523b8853181e561847340962239432f6c1fe2c98c",
+      "rgb_sha256": "420a73dbe5ee13053ae24f127bc252c1faa9d919d3cb8e4dbc370caf433114fa",
+      "readers": {
+        "L": {
+          "camera": "bottom",
+          "nose": "flush",
+          "up_lens": "yes",
+          "blades": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "M": {
+          "camera": "bottom",
+          "nose": "flush",
+          "up_lens": "yes",
+          "blades": [
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "S12-S4-r10",
+      "seed": 2026112058,
+      "prompt_id": "c18ce091-dbd7-4341-a64f-d014531ab3b1",
+      "request_sha256": "c1e46170336f2ccbb5228c8123c728f47bdfaf0d45e95596f1be356082265254",
+      "png_sha256": "6dde673b73924c0ebfb7368649981e05bcd518d4fb6ea8e1ba36c098cfe2a432",
+      "rgb_sha256": "b202d8042a92c4ce26a67ccfb08acddf13c9fb2c59d3244a6fd6f638139a672d",
+      "readers": {
+        "L": {
+          "camera": "top",
+          "nose": "projecting",
+          "up_lens": "yes",
+          "blades": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "M": {
+          "camera": "top",
+          "nose": "projecting",
+          "up_lens": "yes",
+          "blades": [
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "S12-S4-r11",
+      "seed": 2026112059,
+      "prompt_id": "3b616e1d-f320-4a42-9cbf-48225e85a581",
+      "request_sha256": "1c3ae0f51db1ea72ecf732a6464542b21830b96ba3e4f2d4b6d40d62c9693062",
+      "png_sha256": "876371fc1e24c8fbce00e981002f3757cc78896e9989f3af4a41662134e7d099",
+      "rgb_sha256": "b44e627abb64e8fc15552a2a5eb1ed672c37927386a6ea65bb4123556cda875d",
+      "readers": {
+        "L": {
+          "camera": "top",
+          "nose": "projecting",
+          "up_lens": "yes",
+          "blades": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "M": {
+          "camera": "top",
+          "nose": "projecting",
+          "up_lens": "yes",
+          "blades": [
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      }
+    },
+    {
+      "id": "S12-S4-r12",
+      "seed": 2026112060,
+      "prompt_id": "ac80a21d-7eeb-402e-8a20-f6b8037c1ee5",
+      "request_sha256": "c0afdb1842c6937e358abd444dd63942a855e5bb63acaa5597804dff14e63073",
+      "png_sha256": "5241240eea3c740b5d98995d4ea02342e66bae353712b33209c88d82eee0871c",
+      "rgb_sha256": "8756c0550468628029cbe4b248a37f46782790c7689e726e728c77bd044ab8ce",
+      "readers": {
+        "L": {
+          "camera": "top",
+          "nose": "projecting",
+          "up_lens": "yes",
+          "blades": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        "M": {
+          "camera": "top",
+          "nose": "projecting",
+          "up_lens": "yes",
+          "blades": [
+            2,
+            2,
+            2,
+            2
+          ]
+        }
+      }
+    }
+  ],
+  "unique_rgb": 12
+}

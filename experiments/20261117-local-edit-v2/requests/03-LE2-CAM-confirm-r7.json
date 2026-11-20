@@ -1,0 +1,134 @@
+{
+  "prompt": {
+    "1": {
+      "class_type": "UNETLoader",
+      "inputs": {
+        "unet_name": "qwen_image_2.1_bf16.safetensors",
+        "weight_dtype": "default"
+      }
+    },
+    "2": {
+      "class_type": "CLIPLoader",
+      "inputs": {
+        "clip_name": "qwen3vl_8b_bf16.safetensors",
+        "type": "qwen_image",
+        "device": "default"
+      }
+    },
+    "3": {
+      "class_type": "VAELoader",
+      "inputs": {
+        "vae_name": "qwen_image_2.1_vae_bf16.safetensors"
+      }
+    },
+    "4": {
+      "class_type": "TextEncodeQwenImage21",
+      "inputs": {
+        "clip": [
+          "2",
+          0
+        ],
+        "prompt": "Edit this drone image. The front of the drone is at the bottom edge of the image. Add a compact gimbal camera that hangs underneath the front end of the fuselage, as on modern foldable camera drones. Seen from directly above, only the grey top of the small camera housing and its two short side gimbal arms peek out just below the bottom end of the body, tucked under the shell edge; the lens faces straight toward the bottom edge of the image, so no lens glass faces the viewer. Do not change the top cover panels or the body outline. Keep everything else exactly the same: the strict orthographic top view, the arms beyond their roots, the motors, the two-blade propellers and their angles, the colours and the plain light background.",
+        "negative_prompt": "flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera, V-shaped propeller, blades at an acute angle, single-blade propeller, missing blade, unequal blades, extra components, new modules, camera at the upper end, camera on a neck or stalk, lens glass facing the viewer",
+        "resolution": 1024,
+        "images.image_1": [
+          "15",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "10": {
+      "class_type": "KSampler",
+      "inputs": {
+        "model": [
+          "1",
+          0
+        ],
+        "positive": [
+          "4",
+          0
+        ],
+        "negative": [
+          "4",
+          1
+        ],
+        "latent_image": [
+          "18",
+          0
+        ],
+        "seed": 2026117107,
+        "steps": 40,
+        "cfg": 3,
+        "sampler_name": "euler",
+        "scheduler": "simple",
+        "denoise": 1
+      }
+    },
+    "11": {
+      "class_type": "VAEDecode",
+      "inputs": {
+        "samples": [
+          "10",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "12": {
+      "class_type": "SaveImage",
+      "inputs": {
+        "images": [
+          "11",
+          0
+        ],
+        "filename_prefix": "LE2-CAM-confirm-r7"
+      }
+    },
+    "15": {
+      "class_type": "LoadImage",
+      "inputs": {
+        "image": "B2-no-window.png"
+      }
+    },
+    "16": {
+      "class_type": "VAEEncode",
+      "inputs": {
+        "pixels": [
+          "15",
+          0
+        ],
+        "vae": [
+          "3",
+          0
+        ]
+      }
+    },
+    "17": {
+      "class_type": "LoadImageMask",
+      "inputs": {
+        "image": "M-CAM-B2low.png",
+        "channel": "red"
+      }
+    },
+    "18": {
+      "class_type": "SetLatentNoiseMask",
+      "inputs": {
+        "samples": [
+          "16",
+          0
+        ],
+        "mask": [
+          "17",
+          0
+        ]
+      }
+    }
+  }
+}

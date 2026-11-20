@@ -1,0 +1,32 @@
+{
+  "reference_only": true,
+  "historical_commit": "e8665ca8e4089ab917567cdb491308e1397663d4",
+  "weights": [
+    {
+      "path": "diffusion_models/qwen_image_2.1_bf16.safetensors",
+      "sha256": "89f4158d066cc33906a199fca85634f766892dd78f49b6698dabf187ac86c4bc",
+      "bytes": 14230280616
+    },
+    {
+      "path": "text_encoders/qwen3vl_8b_bf16.safetensors",
+      "sha256": "68bdc82bc1b66851162ae656225e7e2068166b603db19bd5d5a3b90eb12669a9",
+      "bytes": 17534334616
+    },
+    {
+      "path": "vae/qwen_image_2.1_vae_bf16.safetensors",
+      "sha256": "bb21f7473051e1ac368515dd3f2e15cd44d7a11748ee8823e1ddca3e4876b7c9",
+      "bytes": 675509688
+    },
+    {
+      "path": "model_patches/qwen_image_2.1_fun_controlnet_union_bf16.safetensors",
+      "sha256": "1f9dea8384ba167084f39f624908f1dbf2ea8a223bb4a8108a77dafa9b55bfe1",
+      "bytes": 7550977992
+    }
+  ],
+  "sources": {
+    "comfy_extras/nodes_qwen.py": "54ce02aa9e167c0b497ce026ac6b558f539427d2d1ed4fc1fcc2ec8e6bc529da",
+    "comfy_extras/nodes_model_patch.py": "f5e024c0d9ff32f3f364166dd21fae715bd911a6f2caef0fd3ccfd7d9b5d0dc2",
+    "comfy/ldm/qwen_image21/model.py": "a69dff15ff6fa369fab5ca0d3261f8aaf19aaedd3fc66414e20a1cf7df0aa5ac",
+    "comfy/supported_models.py": "5943d81bc0257b9b72b065a4ecb2f57c51c826e91f86c333b98fbe8a830e0cef"
+  }
+}
