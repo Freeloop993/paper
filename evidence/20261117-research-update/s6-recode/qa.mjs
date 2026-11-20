@@ -1,4 +1,4 @@
-// 编码页面的软件走查：两个模拟的编码者各答完 40 条，检查必答、跟着问的小问题、刷新后续做、各人顺序不同、导出，
+// 编码页面的软件走查：两个模拟的编码者各答完 40 条，检查必答、刷新后续做、各人顺序不同、导出，
 // 再把两份回件交给 score_s6.py，核对算出的一致条数与模拟答案相符。
 // 用法：node qa.mjs <输出目录>。这里产生的文件只用于检查软件，不是编码数据。
 import { createRequire } from 'node:module'; import fs from 'node:fs'; import path from 'node:path'; import { fileURLToPath, pathToFileURL } from 'node:url'; import { execFileSync } from 'node:child_process';
@@ -30,19 +30,15 @@ for (const who of ['A', 'B']) {
     ok('“下一条”起初不可点', await page.isDisabled('#next'));
     for (const k of KEYS) await pick('pair', k, 'N');
     ok('四个方面都选“没谈到”后可以进下一条', !(await page.isDisabled('#next')));
-    await pick('pair', 'span', 'L');
-    ok('选了“偏左边”后出现两个小问题，答完之前不能进下一条', await page.isDisabled('#next') && await page.locator('button.opt[data-g="state"]').count() === 3 && await page.locator('button.opt[data-g="att"][data-k="span"]').count() === 3);
-    await pick('att', 'span', 'pos'); ok('只答了态度还不能进下一条', await page.isDisabled('#next')); await pick('state', 'span', 'carry');
-    ok('两个小问题都答了可以进下一条', !(await page.isDisabled('#next')));
-    await pick('pair', 'plain', 'U'); ok('其余三个方面只问态度，不问时候', await page.locator('button.opt[data-g="state"]').count() === 3 && await page.isDisabled('#next'));
-    await pick('pair', 'plain', 'N'); await pick('pair', 'span', 'N'); const s1 = (await state()).answers[s0.order[0]];
-    ok('改回“没谈到”后小问题收起，已选的态度和时候清掉', s1.att.span === undefined && s1.state === undefined && await page.locator('.follow').count() === 0);
+    await pick('pair', 'span', 'L'); const s1 = (await state()).answers[s0.order[0]];
+    ok('改选以后记下的是新答案，一个方面只留一个答案', s1.span === 'L' && await page.locator('button.opt.on[data-k="span"]').count() === 1);
+    ok('页面只问四个方面，没有别的问题', await page.locator('button.opt').count() === 16);
     await page.fill('#note', '走查备注'); await page.screenshot({ path: path.join(out, 's6-item.png'), fullPage: true });
     await page.click('#tog'); ok('做题时能打开编码手册', await page.locator('#book').isVisible()); await page.click('#tog');
     await page.reload(); ok('刷新后停在同一条、答案和备注还在', (await page.textContent('.mute')).startsWith('第 1 条') && (await state()).answers[s0.order[0]].note === '走查备注' && await page.inputValue('#note') === '走查备注');
   }
   for (let n = 0; n < 40; n++) { const id = (await state()).order[n], a = plan(who, id);
-    for (const k of KEYS) { await pick('pair', k, a[k]); if (a[k] !== 'N') { await pick('att', k, ['pos', 'neg', 'none'][num(id) % 3]); if (k === 'span') await pick('state', 'span', ['carry', 'use', 'unsaid'][num(id) % 3]); } }
+    for (const k of KEYS) await pick('pair', k, a[k]);
     await page.click('#next'); }
   if (who === 'A') { ok('40 条答完后进入结束页', (await page.textContent('h1')).includes('全部答完了')); await page.screenshot({ path: path.join(out, 's6-finish.png') }); }
   const [dl] = await Promise.all([page.waitForEvent('download'), page.click('#dl')]); files[who] = path.join(out, 'coder-' + who + '.json'); await dl.saveAs(files[who]);

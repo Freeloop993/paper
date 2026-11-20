@@ -4,13 +4,12 @@
 - 主要结果：35 条入卡短句上，四个方面各按四类（偏左、偏右、谈到了但看不出、没谈到）报告混淆矩阵、一致条数、Cohen κ 和 Gwet AC1。
 - 同时报告：把“谈到了但看不出”与“没谈到”合为“未表态”后的三类结果；加上 5 条干扰句的 40 条结果。
 - 区间：按条目自助重抽 2,000 次的 2.5% 到 97.5% 分位，种子固定。
-- 态度、时候两个跟着问的小问题，以及两位编码者各自与证据卡换算出的第一编码的对照，只作描述。"""
+- 两位编码者各自与证据卡换算出的第一编码的对照，只作描述。"""
 import base64, collections, json, pathlib, random, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
 PAIRS = [('span', '紧凑—舒展'), ('plain', '简洁—繁复'), ('whole', '整体—拼凑'), ('color', '低调—醒目')]
 CATS = ['L', 'R', 'U', 'N']; LAB = {'L': '偏左', 'R': '偏右', 'U': '谈到了但看不出', 'N': '没谈到', 'X': '未表态'}
-ATT = {'pos': '满意或想要', 'neg': '不满意或不想要', 'none': '没表态'}; STATE = {'carry': '收起来或带着走', 'use': '展开或使用', 'unsaid': '没有说明'}
 # 第一编码：按 11 月 15 日登记的换算规则由证据卡得到（experiments/semantic40-pairing/README.md）；“低调—醒目”当时没有换算规则，这里按词对 v1 第 2 节补上，写于回件之前。
 FIRST = {'span': {'L': ['E001', 'E010', 'E003', 'E009'], 'R': ['E002', 'E006', 'E007'], 'U': ['E004', 'E005']},
          'plain': {'L': ['E011', 'E012', 'E013', 'E014', 'E015', 'E016']},
@@ -76,7 +75,6 @@ def block(P, title, ids, a, b, k):
 
 def main(pa, pb):
     A, B = load(pa), load(pb); P = print
-    quotes = {r.split(',', 1)[0].strip('"'): r for r in (HERE / 'quotes.csv').read_text(encoding='utf-8-sig').splitlines()[1:]}
     import csv
     text = {r['id']: r['text'] for r in csv.DictReader((HERE / 'quotes.csv').open(encoding='utf-8-sig'))}
     cards = json.loads((HERE / 'b-to-card.json').read_text(encoding='utf-8'))
@@ -100,14 +98,6 @@ def main(pa, pb):
     P('## 5 条干扰句\n\n干扰句是随机加进去的无关评论，理想的答案是四个方面都“没谈到”。\n\n| 短句 | 甲 | 乙 |\n| --- | --- | --- |')
     show = lambda r: '、'.join('%s %s' % (n, LAB[r[k]]) for k, n in PAIRS if r[k] != 'N') or '全部没谈到'
     for i in dis: P('| %s | %s | %s |' % (text[i][:40], show(a[i]), show(b[i])))
-    P('\n## 跟着问的两个小问题（只作描述）\n')
-    for k, name in PAIRS:
-        both = [i for i in src if a[i][k] != 'N' and b[i][k] != 'N']
-        if both: P('- %s：两人都判“谈到了”的 %d 条里，态度一致的 %d 条。' % (name, len(both), sum(a[i]['att'].get(k) == b[i]['att'].get(k) for i in both)))
-    both = [i for i in src if a[i]['span'] != 'N' and b[i]['span'] != 'N']
-    if both:
-        P('- 紧凑—舒展说的是什么时候：两人都判“谈到了”的 %d 条里，一致的 %d 条。' % (len(both), sum(a[i].get('state') == b[i].get('state') for i in both)))
-        for nm, d in (('甲', a), ('乙', b)): P('  - %s：%s' % (nm, '；'.join('%s %d 条' % (STATE[s], n) for s, n in collections.Counter(d[i].get('state') for i in src if d[i]['span'] != 'N').most_common())))
     P('\n## 与第一编码的对照（只作描述）\n\n第一编码是按登记的规则由证据卡换算的，不是照这份手册编的，所以这里的数只说明研究者当初的归类与独立编码者差多少。\n\n| 方面 | 甲与第一编码 | 乙与第一编码 |\n| --- | --- | --- |')
     F = first_coding(cards)
     for k, name in PAIRS:
