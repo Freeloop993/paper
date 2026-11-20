@@ -132,16 +132,17 @@ ControlNet（L053，2023，被引 13）是条件图控制的依据。Make It Cou
 
 **两篇单页的无人机造型文献是完整的：** L002《六旋翼无人机造型设计》和 L003《面向用户感性意象的纵列双旋翼无人机造型研究与设计》都是期刊的单页作品展示，原件就是 1 页，只能当设计先例用。
 
-**框架文件点名的最接近工作里，还没有核过原页的 6 篇**（题名 2026-11-20 逐条核对过，供作者找原件）：
+**框架文件点名的最接近工作 6 篇：5 篇已核原页，还差 1 篇（2026-11-21）。** 作者 11 月 20 日上传了 5 篇，页码和适用边界在 [page-evidence.csv](page-evidence.csv)。
 
-| 文献 | 出处 | 用在哪 |
-| --- | --- | --- |
-| Zhou 等，*Parametric-ControlNet: Multimodal Control in Foundation Models for Precise Engineering Design Synthesis* | Journal of Mechanical Design，2025 | 2.6 节。参数加部件图控制生成，并从图上回量参数，是“在输出上量几何”最接近的工作 |
-| Davis 等，*Fashioning Creative Expertise with Generative AI: Graphical Interfaces for Design Space Exploration Better Support Ideation Than Text Prompts* | CHI 2024 | 2.5、2.6 节，RQ3。图形界面对文字提示的对照 |
-| Yamin、Cauchard，*Generative Adversarial Networks and Data Clustering for Likable Drone Design* | Sensors 22(17), 6433，2022，doi:10.3390/s22176433 | 2.1、2.6 节。生成式无人机外观加喜爱度评分 |
-| *Ceci N’est Pas un Drone: Investigating the Impact of Design Representation on Design Decision Making When Using GenAI* | arXiv（稿子已引，版本待核） | RQ1′、RQ3。呈现方式怎样影响设计选择，评议材料的控制依据 |
-| Mugge、Dahl、Schoormans，*“What You See, Is What You Get?” Guidelines for Influencing Consumers’ Perceptions of Consumer Durables through Product Appearance* | Journal of Product Innovation Management 35(3)，309–329，2018，doi:10.1111/jpim.12403 | 3.3 节，S5。外观的设计维度里有一维就是 compressed，与“紧凑”直接相关 |
-| Raghubir、Krishna，*Vital Dimensions in Volume Perception: Can the Eye Fool the Stomach?* | Journal of Marketing Research 36(3)，313–326，1999 | 3.3 节，S5。人凭最长的一边判断体积大小，是“比例影响大小感”的经典依据 |
+| 编号 | 文献 | 核读后要记住的 | 用在哪 |
+| --- | --- | --- | --- |
+| L113 | Zhou 等，*Parametric-ControlNet*，核读的是 arXiv 预印本（2024-12） | 要训练模型（自行车数据 12,506 例）；参数是否遵守由另训的代理模型从图上预测，没有人参与的评价 | 2.4、2.6 节，RQ2 |
+| L114 | Davis 等，CHI 2024。**题名更正：** *…Graphical Interfaces for GAN-Based Design Space Exploration Better Support Ideation Than Text Prompts for Diffusion Models* | 7 名学徒的两项质性研究，加 48 人和 39 人两项线上实验；两种界面背后的模型不同，界面和模型的作用分不开 | 2.5、2.6 节，RQ3 |
+| L115 | Yamin、Cauchard，Sensors 2022 | 360 张无人机图片、379 人评喜爱度；生成不受参数控制；第 5 页有评议用图的取图要求 | 2.1、2.6 节，5.3.1 |
+| L116 | Xu、Martelaro、McComb，*Ceci N’est Pas un Drone*，预印本（2025-12） | 156 人；呈现方式影响取舍；只给数值时选得最准；人偏好常规、对称的方案 | 2.5、3.6 节，RQ1′、RQ3 |
+| L117 | Raghubir、Krishna，JMR 1999 | 七项实验：容器越细长，感到的容量越大；对象是容器，不是产品顶视图 | 3.3 节，5.3.1 |
+
+**还差的 1 篇：** Mugge、Dahl、Schoormans，*“What You See, Is What You Get?” Guidelines for Influencing Consumers’ Perceptions of Consumer Durables through Product Appearance*，Journal of Product Innovation Management 35(3)，309–329，2018。用在 3.3 节：产品外观的设计维度里有“紧凑”一项。作者还在找。
 
 AutoGen-Insight、Brief2Design 和 DesignWeaver 的 PDF 不在仓库，但 11 月 18 日已有原页方法卡，可以按卡片引用。
 
