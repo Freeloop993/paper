@@ -1,0 +1,14 @@
+{
+  "unit": "deduplicated text cluster with Q among product title scopes",
+  "N": 1318,
+  "covered_by_legacy_vocabulary": 1185,
+  "vocabulary": 137,
+  "positive_edges": 5905,
+  "jieba": "0.42.1",
+  "dictionary_sha256": "7197c3211ddd98962b036cdf40324d1ea2bfaa12bd028e68faa70111a88e12a8",
+  "input_sha256": "092615cbf424248743cc7f1b674ecfd30842b37012ec285b79f05b570d2b81e7",
+  "old_matrix_sha256": "7dc517d1445efce14a12feda57410116ceed98527a7024e5c36c4d28940b119c",
+  "sample_seed": 2026111708,
+  "sample_size": 150,
+  "sample_key_sha256": "d98313d96e5e641217c98f4a14a12dbe6110614465882dcdeba3203dee907f8c"
+}

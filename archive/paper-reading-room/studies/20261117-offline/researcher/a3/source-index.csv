@@ -1,0 +1,17 @@
+﻿archive_relative_path,role,sha256,used_for
+2026-11-15/codex-full-handoff/analysis/wlq-final.json,主批12,e1a6bc1e931770c4f7fb6686477bbf72b9717b6208241927d3ec7dc28e3769d5,最终知条件AI四轴点及旧公式结果
+2026-11-15/codex-full-handoff/analysis/wlq-axes.json,主批12,3ceb1491108289971a8a1430807f8f07df10e828b1abb5a85d5541f12dd0bc31,较早取点稿；未作为第二读者
+2026-11-15/codex-full-handoff/analysis/extension-48-measurements.json,扩展24,c87df47dfeeaa6eca863be4e71b983c651af2208b61cb1f661c80e5da3890be2,只用four.records；六旋另批
+2026-11-15/codex-full-handoff/analysis/day247/247个排程位置.csv,图号对照,89b412bb163dedc5b1858361ea44f23538bb12af410fc803bc51b2bf63a361a2,原排程号、实际请求号和原图摘要
+2026-11-15/gpu-day-takeover/manifest-v2.json,实际请求,58372d535b9e214248bedced8aef0d97d89fbb072d6db18b293eaa13d9ddebbb,P2-WLQ共享种子与实际请求摘要
+2026-11-15/GPU原图归档核查/E3三轮原图逐张核对.csv,E3三轮,b8628867a8992f3be1da922fe18f33ce6fc3aec967e1eae3b6641c1944a253ff,27个逐图SHA；公开表略去本机位置
+2026-11-15/GPU原图归档核查/GPU日程原图逐张核对.csv,WLQ,cf4140482a1189609a0cc80660a6bf744232e9ebe9b430965b0ea365c95c80c7,逐图摘要与原图索引
+2026-11-15/GPU原图归档核查/102原图回收清单.json,补收清单,15bff7db82a65b35520c2df4ca0153da0800c35f3d78f2226178c2bc85bb7c82,102个图号与本批无重合
+2026-11-15/e5-individual-v1/论文修订/evidence/e2r-hub-readback/readback.json,两张父图,cfa3b0f532c1b8da4ce6ed729564146ded8746a5b9c8f18b74b67b7587de4744,只取E3R3-B2及C1原图的知情轴心
+2026-11-15/e5-paired-review-v1/README.md,B2锁稿,d5a6b3986a45c90549e615dcd9f2830dea61d2bd0bb1419ba383bc33b4a9cd33,L/H两个版本及来源摘要
+2026-11-15/e5-individual-v1/论文修订/manuscript/thesis/src/ch5.md,第5章快照,6c57baca2bbc4e96bc652aa3f56f03b8b1fd50a486da50a111602100986ec6a9,两批WLQ摘要、E0/E1和E5的独立分母
+2026-11-17/config-review/audit/README.md,方法审查,f0cda139accd495bc612973d48ee39ac88192a38cb67f003adde35d506f9c84d,极差优先，历史两侧均值并列
+2026-11-17/offline-review/results/README.md,N1至N4,0a895779979acc4e013211aef186a18b769d6e99de06eebec1bc76acc5ec86ad,当前离线盲读的批次与读数任务
+2026-11-17/config-review/A2/README.md,A2,7afb3f1c5a738540ad4add226897cfb6dcbd40b0282fdae12ad7be388cdcae54,厂商手册图的机身支撑点与对角距定义
+2026-11-02/ai-geometry-calibration/protocol.json,旧校准,00be97431f38a27373575c16c40141a752d40a3eae9fb407013f748ed18c23a6,隐藏真值的解析图协议
+2026-11-02/ai-geometry-calibration/calibration-results.json,旧校准,fc1e984117c954c2782b6868ac5c9b1e5dfaae8840ca03882750686f53fb3612,两套历史AI的坐标评分；6张共同案例

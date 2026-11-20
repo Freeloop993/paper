@@ -1,0 +1,325 @@
+{
+  "purpose": "AI_visual_annotation_calibration_on_known_analytic_2D_geometry",
+  "analytic_images": 6,
+  "ai_annotation_sets": 2,
+  "annotation_rows": 12,
+  "qwen_generations": 0,
+  "human_participants": 0,
+  "gpu_calls": 0,
+  "ai_receipts": [
+    {
+      "reviewer": "a",
+      "fork_context": false,
+      "annotation_sha256": "9846e9d4da5aae7def5b34e1d0b74480ba872fc0dc585f86525db7528fc83476"
+    },
+    {
+      "reviewer": "b",
+      "fork_context": false,
+      "annotation_sha256": "4f48f291637ed98b6c0230cc7486226a628fe6680bfb8dd18f12187d2fd9bf62"
+    }
+  ],
+  "rows": [
+    {
+      "case_id": "S01",
+      "reviewer": "a",
+      "true_body_ratio": 1.25,
+      "source_sha256": "54213a3b744c50b0a6754f1ea1d6388295a84ae98de6f47b98151521c24d4b3a",
+      "metrics": {
+        "target_iou": 0.9986900278369084,
+        "body_ratio": 1.2475247524752475,
+        "absolute_ratio_error": 0.0024752475247524774,
+        "hub_kpe": 0.0,
+        "tip_proxy": 0.23113207547169815,
+        "true_tip_proxy": 0.22999999999999998,
+        "absolute_tip_proxy_error": 0.001132075471698163
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S02",
+      "reviewer": "a",
+      "true_body_ratio": 1.5,
+      "source_sha256": "a671940effd23a2dc14ec35e4613e87353d9295f70fded97383f103c9dabcef7",
+      "metrics": {
+        "target_iou": 0.9941085455843847,
+        "body_ratio": 1.4916455019382444,
+        "absolute_ratio_error": 0.008354498061755589,
+        "hub_kpe": 0.00045063728866244875,
+        "tip_proxy": 0.22927653935848338,
+        "true_tip_proxy": 0.23000000000000015,
+        "absolute_tip_proxy_error": 0.0007234606415167655
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S03",
+      "reviewer": "a",
+      "true_body_ratio": 1.5,
+      "source_sha256": "6a27f95fb151481c22c78505dd28e16002f9e3de7630c9b4699f499bfb5e4b03",
+      "metrics": {
+        "target_iou": 0.9899560577526679,
+        "body_ratio": 1.5,
+        "absolute_ratio_error": 0.0,
+        "hub_kpe": 0.0,
+        "tip_proxy": 0.23113207547169815,
+        "true_tip_proxy": 0.22999999999999998,
+        "absolute_tip_proxy_error": 0.001132075471698163
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S04",
+      "reviewer": "a",
+      "true_body_ratio": 1.25,
+      "source_sha256": "5811047593a33513f0f1cf5bb126b9f2c25ef570f22f5053967be7ed14c6a230",
+      "metrics": {
+        "target_iou": 0.9944235865724381,
+        "body_ratio": 1.2492027334851936,
+        "absolute_ratio_error": 0.0007972665148063829,
+        "hub_kpe": 0.000659141634310652,
+        "tip_proxy": 0.23034661723469052,
+        "true_tip_proxy": 0.2300000000000001,
+        "absolute_tip_proxy_error": 0.00034661723469042727
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S05",
+      "reviewer": "a",
+      "true_body_ratio": 1.8,
+      "source_sha256": "0995750d8af3df4cb8967b0a85be8846a90b50014ed1474b1c247fdf2e8e1d91",
+      "metrics": {
+        "target_iou": 0.9926411033716706,
+        "body_ratio": 1.7840179390480067,
+        "absolute_ratio_error": 0.015982060951993393,
+        "hub_kpe": 0.0007112228897092548,
+        "tip_proxy": 0.23049500468864695,
+        "true_tip_proxy": 0.23000000000000018,
+        "absolute_tip_proxy_error": 0.0004950046886467718
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S06",
+      "reviewer": "a",
+      "true_body_ratio": 1.8,
+      "source_sha256": "577581fd15559915f470920f6a90541cb6c918874e4b343d35ae27db38685c34",
+      "metrics": {
+        "target_iou": 0.9947911642712453,
+        "body_ratio": 1.803785447639008,
+        "absolute_ratio_error": 0.0037854476390080105,
+        "hub_kpe": 0.0009056967086232026,
+        "tip_proxy": 0.2325392059937989,
+        "true_tip_proxy": 0.23000000000000007,
+        "absolute_tip_proxy_error": 0.0025392059937988376
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S01",
+      "reviewer": "b",
+      "true_body_ratio": 1.25,
+      "source_sha256": "54213a3b744c50b0a6754f1ea1d6388295a84ae98de6f47b98151521c24d4b3a",
+      "metrics": {
+        "target_iou": 0.9897760467380721,
+        "body_ratio": 1.2352941176470589,
+        "absolute_ratio_error": 0.014705882352941124,
+        "hub_kpe": 0.0,
+        "tip_proxy": 0.23113207547169815,
+        "true_tip_proxy": 0.22999999999999998,
+        "absolute_tip_proxy_error": 0.001132075471698163
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S02",
+      "reviewer": "b",
+      "true_body_ratio": 1.5,
+      "source_sha256": "a671940effd23a2dc14ec35e4613e87353d9295f70fded97383f103c9dabcef7",
+      "metrics": {
+        "target_iou": 0.9934308305094822,
+        "body_ratio": 1.492307692307693,
+        "absolute_ratio_error": 0.007692307692306999,
+        "hub_kpe": 0.00045063728866244875,
+        "tip_proxy": 0.22927653935848338,
+        "true_tip_proxy": 0.23000000000000015,
+        "absolute_tip_proxy_error": 0.0007234606415167655
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S03",
+      "reviewer": "b",
+      "true_body_ratio": 1.5,
+      "source_sha256": "6a27f95fb151481c22c78505dd28e16002f9e3de7630c9b4699f499bfb5e4b03",
+      "metrics": {
+        "target_iou": 0.9914675767918089,
+        "body_ratio": 1.5,
+        "absolute_ratio_error": 0.0,
+        "hub_kpe": 0.0,
+        "tip_proxy": 0.23113207547169815,
+        "true_tip_proxy": 0.22999999999999998,
+        "absolute_tip_proxy_error": 0.001132075471698163
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S04",
+      "reviewer": "b",
+      "true_body_ratio": 1.25,
+      "source_sha256": "5811047593a33513f0f1cf5bb126b9f2c25ef570f22f5053967be7ed14c6a230",
+      "metrics": {
+        "target_iou": 0.9937301477696451,
+        "body_ratio": 1.246440452428476,
+        "absolute_ratio_error": 0.003559547571523991,
+        "hub_kpe": 0.000659141634310652,
+        "tip_proxy": 0.23178875597677354,
+        "true_tip_proxy": 0.2300000000000001,
+        "absolute_tip_proxy_error": 0.0017887559767734429
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S05",
+      "reviewer": "b",
+      "true_body_ratio": 1.8,
+      "source_sha256": "0995750d8af3df4cb8967b0a85be8846a90b50014ed1474b1c247fdf2e8e1d91",
+      "metrics": {
+        "target_iou": 0.9933787100060194,
+        "body_ratio": 1.7835739580495775,
+        "absolute_ratio_error": 0.01642604195042252,
+        "hub_kpe": 0.0007112228897092548,
+        "tip_proxy": 0.23049500468864695,
+        "true_tip_proxy": 0.23000000000000018,
+        "absolute_tip_proxy_error": 0.0004950046886467718
+      },
+      "uncertainties": []
+    },
+    {
+      "case_id": "S06",
+      "reviewer": "b",
+      "true_body_ratio": 1.8,
+      "source_sha256": "577581fd15559915f470920f6a90541cb6c918874e4b343d35ae27db38685c34",
+      "metrics": {
+        "target_iou": 0.9940608045202093,
+        "body_ratio": 1.7969729399174452,
+        "absolute_ratio_error": 0.003027060082554822,
+        "hub_kpe": 0.0011475505116406788,
+        "tip_proxy": 0.23309595366788602,
+        "true_tip_proxy": 0.23000000000000007,
+        "absolute_tip_proxy_error": 0.0030959536678859534
+      },
+      "uncertainties": []
+    }
+  ],
+  "per_reviewer": {
+    "a": {
+      "absolute_ratio_error": {
+        "mean": 0.005232420115385976,
+        "known_cases": 6
+      },
+      "hub_kpe": {
+        "mean": 0.00045444975355092636,
+        "known_cases": 6
+      },
+      "target_iou": {
+        "mean": 0.9941017475648858,
+        "known_cases": 6
+      },
+      "absolute_tip_proxy_error": {
+        "mean": 0.0010614065836748547,
+        "known_cases": 6
+      }
+    },
+    "b": {
+      "absolute_ratio_error": {
+        "mean": 0.007568473274958243,
+        "known_cases": 6
+      },
+      "hub_kpe": {
+        "mean": 0.0004947587207205057,
+        "known_cases": 6
+      },
+      "target_iou": {
+        "mean": 0.9926406860558729,
+        "known_cases": 6
+      },
+      "absolute_tip_proxy_error": {
+        "mean": 0.00139455431970321,
+        "known_cases": 6
+      }
+    }
+  },
+  "coordinate_sensitivity": {
+    "S01": {
+      "coordinate_error_assumption_per_axis_px": 2,
+      "body_axis_held_fixed": true,
+      "deterministic_ratio_envelope": [
+        1.2061717091572932,
+        1.2956049920474484
+      ],
+      "not_empirical_confidence_interval_or_pass_threshold": true,
+      "axis_direction_error_not_covered": true
+    },
+    "S02": {
+      "coordinate_error_assumption_per_axis_px": 2,
+      "body_axis_held_fixed": true,
+      "deterministic_ratio_envelope": [
+        1.428779787532487,
+        1.5755232372712655
+      ],
+      "not_empirical_confidence_interval_or_pass_threshold": true,
+      "axis_direction_error_not_covered": true
+    },
+    "S03": {
+      "coordinate_error_assumption_per_axis_px": 2,
+      "body_axis_held_fixed": true,
+      "deterministic_ratio_envelope": [
+        1.4465677669064563,
+        1.555818227111036
+      ],
+      "not_empirical_confidence_interval_or_pass_threshold": true,
+      "axis_direction_error_not_covered": true
+    },
+    "S04": {
+      "coordinate_error_assumption_per_axis_px": 2,
+      "body_axis_held_fixed": true,
+      "deterministic_ratio_envelope": [
+        1.1967079258257027,
+        1.3059420920582374
+      ],
+      "not_empirical_confidence_interval_or_pass_threshold": true,
+      "axis_direction_error_not_covered": true
+    },
+    "S05": {
+      "coordinate_error_assumption_per_axis_px": 2,
+      "body_axis_held_fixed": true,
+      "deterministic_ratio_envelope": [
+        1.7215375226711451,
+        1.8831209605296457
+      ],
+      "not_empirical_confidence_interval_or_pass_threshold": true,
+      "axis_direction_error_not_covered": true
+    },
+    "S06": {
+      "coordinate_error_assumption_per_axis_px": 2,
+      "body_axis_held_fixed": true,
+      "deterministic_ratio_envelope": [
+        1.7124886883931774,
+        1.893346203539127
+      ],
+      "not_empirical_confidence_interval_or_pass_threshold": true,
+      "axis_direction_error_not_covered": true
+    }
+  },
+  "pass_threshold": null,
+  "formal_pass_declared": false,
+  "corrected_main18_using_calibration": false,
+  "limits": [
+    "accuracy on generated object boundaries",
+    "independent human measurement",
+    "physical performance",
+    "stable Qwen parameter control"
+  ],
+  "same_model_family_correlated_error_possible": true
+}

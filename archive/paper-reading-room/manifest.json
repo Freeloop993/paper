@@ -1,0 +1,34 @@
+[
+  {
+    "author": "何彦",
+    "file": "originals/基于肌肉疲劳模型的健身穿戴产品设计研究_何彦.pdf",
+    "pages": 97,
+    "bytes": 5407268,
+    "sha256": "ba66c3ea2b0c436f1914f8e537c3a4f103a9d8363e1031346ec460f7be3e5e7d",
+    "bibliography_entries": 70
+  },
+  {
+    "author": "朱天燕",
+    "file": "originals/基于形状文法和交互式遗传算法的产品形态推演设计研究_朱天燕.pdf",
+    "pages": 80,
+    "bytes": 3541569,
+    "sha256": "0a5d4f5396e01a549f691e6f41d372854c24fba7a7d959f400b4d9cb96f53b9b",
+    "bibliography_entries": 58
+  },
+  {
+    "author": "厉茜茜",
+    "file": "originals/基于参数化形状语法的产品识别设计方法研究_厉茜茜.pdf",
+    "pages": 93,
+    "bytes": 6400571,
+    "sha256": "005ef5e99489312eb34635ec3804977b77134f54154869ddb3d0c473a288126a",
+    "bibliography_entries": 47
+  },
+  {
+    "author": "邓家乐",
+    "file": "originals/可供性和产品语义驱动的产品设计方法研究_邓家乐.pdf",
+    "pages": 104,
+    "bytes": 18854713,
+    "sha256": "9ff187baedde4a2ac9906800f71a8ebb05579f958a40e2dadef42c472ed8b7eb",
+    "bibliography_entries": 63
+  }
+]
