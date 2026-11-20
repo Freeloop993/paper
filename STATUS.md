@@ -1,5 +1,7 @@
 # 论文研究状态 · 11 月 17 日
 
+**11 月 20 日。** 第一批真人数据到位：S5 紧凑感评议，四旋翼 32 款 10 名评议者、44 张混排 7 名，两位判读者各量了一遍规格比例。[结果和读法](experiments/s5-compactness-pilot/responses/README.md)：整机占外接框面积、机壳宽与对角电机距之比与紧凑感相关，电机布局宽长比无关；六、八旋翼上评议者的读法分成相反的两拨。原私有阅读库的材料已迁入 [archive/paper-reading-room](archive/paper-reading-room/README.md)。S2 评论核查的答卷仍是 0 份。[还缺什么的逐项清点](planning/research-panorama/progress-20261119.md#九还缺什么2026-11-20-清点)。
+
 **11 月 19 日。** 作者上传的 226 份文献已检查并整理成[文献库](literature/README.md)（131 项，44 项核过原页）；[研究进度与实际情况](planning/research-panorama/progress-20261119.md)按论证链逐环列出文献依据、现状和下一步。本日没有新增实验数据和真人场次。写作取图取数以[哪些数据能进论文](evidence/usable-for-writing.md)为准。
 
 11 月 18 日已建成[跨设备研究资料库](planning/research-library/README.md)，核对文献、语料及构型，运行了结构化路由、自然语言排序和两次本地文字生成。两份草稿都缺有效卡号。18 份私有材料等待独立编码，本轮新增真人场次为 0。[实测与失败记录](planning/research-library/qa/README.md)
