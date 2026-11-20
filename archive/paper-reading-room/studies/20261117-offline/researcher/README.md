@@ -1,9 +1,9 @@
-# 研究者公开复核入口
+# 研究者完整归档与原始对应键
 
-- A3： [研究说明](a3/README.md) / [取点原表](a3/points.csv) / [历史校准档案](a3/archive/) / [复算脚本](a3/recompute.py)
-- S2： [生成脚本](s2/build.py) / [计分脚本](s2/score.py) / [摘要](s2/summary.json)
-- A8： [原图来源表](a8/github-sources.csv)；不包括匿名分发包或解盲映射。
-- [源仓核验清单](verification.json)
+- [S2 对应键 key.json、构建脚本、评分程序和摘要](s2/)
+- [A8 PRIVATE-key.csv、恢复包和来源表](a8/)
+- [A3 校准结果、gold-private.json 真值及 6 张历史解析图](a3/archive/)；[A3 取点和复算](a3/)
+- [原始版本逐文件 SHA-256 校验表](verification.json)
+- [研究者原 README](SOURCE-README.md)
 
-S2 `key.json`、A8 `PRIVATE-key.csv` 和 `A8-researcher-restore.zip`、A3 的 `gold-private.json` 均只留在原私有仓。执行依赖键的评分时，请在单独的私有工作目录中使用；不得把键作为公开 PR 附件。
-
+这些文件包含研究者独有的评分映射和揭盲内容；本轮已按作者要求原样复制到公开仓库。公开后，不能再以原对应键证明新读者保持盲态。

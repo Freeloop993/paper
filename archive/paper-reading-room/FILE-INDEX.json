@@ -3,8 +3,8 @@
   "source_commit": "cc122ae8757f175cde92484da194b568fcbb7a3a",
   "destination_repository": "Freeloop993/paper",
   "checked_against_main": "2a560c014b089ad60109ce13e322cc1dd36263d6",
-  "published": 42,
-  "private_retained": 87,
+  "published": 126,
+  "private_retained": 0,
   "files": [
     {
       "source_path": ".gitattributes",
@@ -26,65 +26,66 @@
       "source_path": "datasets/early-crawl/01-reviews.zip",
       "bytes": 2006722,
       "git_blob_sha1": "f4cc0b53cbae31d1d89dbc32bf7e93ade19bf6de",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/datasets/early-crawl/01-reviews.zip",
       "already_in_paper": []
     },
     {
       "source_path": "datasets/early-crawl/02-product-listings.zip",
       "bytes": 1013359,
       "git_blob_sha1": "3e90562f3c6a7a058b8dcde919c53d5e216246a7",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/datasets/early-crawl/02-product-listings.zip",
       "already_in_paper": []
     },
     {
       "source_path": "datasets/early-crawl/03-product-details.zip",
       "bytes": 322998,
       "git_blob_sha1": "dd7a8a5a9f6c051cbaa3494ae5a5fb9fd51c845b",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/datasets/early-crawl/03-product-details.zip",
       "already_in_paper": []
     },
     {
       "source_path": "datasets/early-crawl/04-original-archive-and-text-mining.zip",
       "bytes": 2084806,
       "git_blob_sha1": "14fdbbd987e7d981883777f7d0b6d72ffb5bf6d3",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/datasets/early-crawl/04-original-archive-and-text-mining.zip",
       "already_in_paper": []
     },
     {
       "source_path": "datasets/early-crawl/05-analysis-and-gephi.zip",
       "bytes": 2535712,
       "git_blob_sha1": "803f1f417bb77045d68c90dfea6b845e493baeee",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/datasets/early-crawl/05-analysis-and-gephi.zip",
       "already_in_paper": []
     },
     {
       "source_path": "datasets/early-crawl/06-cleaning-and-source-audit.zip",
       "bytes": 2587070,
       "git_blob_sha1": "4f4b9ece67d263097420e2559680d9264b098f96",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/datasets/early-crawl/06-cleaning-and-source-audit.zip",
       "already_in_paper": []
     },
     {
       "source_path": "datasets/early-crawl/07-supplemental-collection.zip",
       "bytes": 1502723,
       "git_blob_sha1": "05d3818c2de1c615021b7c00ee804b81c689a058",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/datasets/early-crawl/07-supplemental-collection.zip",
       "already_in_paper": []
     },
     {
       "source_path": "datasets/early-crawl/08-semantic-analysis.zip",
       "bytes": 13876021,
       "git_blob_sha1": "558110ae5951c053890d72a1a75b986b29f84628",
-      "status": "private_retained",
+      "status": "pending_binary_transfer",
       "published_path": null,
-      "already_in_paper": []
+      "already_in_paper": [],
+      "blocker": "Cross-repository Git object unavailable; large binary content cannot be downloaded through current GitHub connector"
     },
     {
       "source_path": "datasets/early-crawl/README.md",
@@ -152,16 +153,16 @@
       "source_path": "studies/20261117-offline/README.md",
       "bytes": 245,
       "git_blob_sha1": "0fd7b65fa47bd532ce392dfd2fbb68eab639da17",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/SOURCE-README.md",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/README.md",
       "bytes": 792,
       "git_blob_sha1": "69e4aa307dd8a8e543dff9dc485a880e3eaee1d8",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/SOURCE-README.md",
       "already_in_paper": []
     },
     {
@@ -176,584 +177,586 @@
       "source_path": "studies/20261117-offline/participants/a8-AI/04ec45d2f4928c4a.png",
       "bytes": 780424,
       "git_blob_sha1": "7aa05bc5f934dad1e06b48bec686b4c47e955c7b",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/04ec45d2f4928c4a.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/0731604134966f14.png",
       "bytes": 598950,
       "git_blob_sha1": "1b1cc6a8a74271373f147c933324358f1c8499f3",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/0731604134966f14.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/0b76b232b6d292a8.png",
       "bytes": 698378,
       "git_blob_sha1": "014f894c053bbf6229426e4faadbf5a6262224c0",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/0b76b232b6d292a8.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/0dbd7064a32aa2fc.png",
       "bytes": 659145,
       "git_blob_sha1": "4b999f4cc19e7e42843ccb028667a45d734aaedd",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/0dbd7064a32aa2fc.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/1273787646652242.png",
       "bytes": 753882,
       "git_blob_sha1": "57ec4fcce0f2d4d0a3b697c2e8b11baefec4a336",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/1273787646652242.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/1916fb81807b78f4.png",
       "bytes": 651994,
       "git_blob_sha1": "6479e4f68cac049973f2e3b265d8ab951493bc7a",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/1916fb81807b78f4.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/198582b54cde4f25.png",
       "bytes": 711492,
       "git_blob_sha1": "4ba1cff30a411b22e720a1e041e4c706e516b53d",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/198582b54cde4f25.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/19b41244d14f4b2c.png",
       "bytes": 776110,
       "git_blob_sha1": "59fed3a7fbee827fb3859e666eb651de9a6413f3",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/19b41244d14f4b2c.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/1b112dc72506e60f.png",
       "bytes": 791058,
       "git_blob_sha1": "ed951c17dd207aac39805be68d3d0a9ef48deb66",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/1b112dc72506e60f.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/1edc2d1d2c16c8a9.png",
       "bytes": 8013,
       "git_blob_sha1": "f09b37df9ac737496f2144b0961597f3a7b7ea71",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/1edc2d1d2c16c8a9.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/27a80e5b80c62808.png",
       "bytes": 704461,
       "git_blob_sha1": "0491773e29a156fb6bf06ced63601790559baeab",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/27a80e5b80c62808.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/29a537a7d6608603.png",
       "bytes": 756782,
       "git_blob_sha1": "e436fb5d6aa79c6e2d2586adc094bba397c10e86",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/29a537a7d6608603.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/2a874e0589964410.png",
       "bytes": 784415,
       "git_blob_sha1": "07f5b7f18e20d6fab18215a713abf4485cede6f3",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/2a874e0589964410.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/2dd0e2000d5748e2.png",
       "bytes": 772657,
       "git_blob_sha1": "ff1107cf132e62d9002d398eec14f4c8520a80e8",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/2dd0e2000d5748e2.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/30c673b72d105c4b.png",
       "bytes": 675016,
       "git_blob_sha1": "bdb185ce7d0b1d1c29dc301a07e347063704ccdf",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/30c673b72d105c4b.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/367c9efa123ff8e8.png",
       "bytes": 703513,
       "git_blob_sha1": "f3c130a04be6e845f8d684c188c7ea7e474dc97d",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/367c9efa123ff8e8.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/3acfcf5d9782d9b0.png",
       "bytes": 737078,
       "git_blob_sha1": "55a489f9e2bfbfe5b86227f8b32d81fd55da7f8f",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/3acfcf5d9782d9b0.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/44b3a7f6fe102293.png",
       "bytes": 690546,
       "git_blob_sha1": "86c2418c9851a3e2e81513c4be34e4b8260ba099",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/44b3a7f6fe102293.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/47aa0d752b343ff1.png",
       "bytes": 677048,
       "git_blob_sha1": "a152b0013151a836e94302f52c7443084641ad2d",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/47aa0d752b343ff1.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/4814691e1e3785a6.png",
       "bytes": 734922,
       "git_blob_sha1": "054a429aed74c5e78b1f1acd7105907748f80253",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/4814691e1e3785a6.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/531372316bd1bd6c.png",
       "bytes": 753647,
       "git_blob_sha1": "5e8a7528a4056d8899b14ace803381c841b72dcf",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/531372316bd1bd6c.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/583ec72b447cf4ef.png",
       "bytes": 9209,
       "git_blob_sha1": "75dbc3893e50b2b5eafcc33c5b84308c4e9fa61b",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/583ec72b447cf4ef.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/59939465a49ff1a2.png",
       "bytes": 684604,
       "git_blob_sha1": "68466be98f039d2ca438dcb77ff665d3fbe695f4",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/59939465a49ff1a2.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/5ecc95dce0add301.png",
       "bytes": 792358,
       "git_blob_sha1": "889f97b3413813e16cf6d5420dc41e5b7eab3653",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/5ecc95dce0add301.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/5f4df57fedceff62.png",
       "bytes": 702566,
       "git_blob_sha1": "e339c5c1fbcdd34eea20cb114afb3c73c4150bfb",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/5f4df57fedceff62.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/64804da7ba3f4faa.png",
       "bytes": 642943,
       "git_blob_sha1": "b7dd2337169768387443db012c03f8a5adacc6f3",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/64804da7ba3f4faa.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/64d44cab42f013f1.png",
       "bytes": 764240,
       "git_blob_sha1": "40d01b859d56e7aece13958a9956792648dad810",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/64d44cab42f013f1.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/679d07655e12c76e.png",
       "bytes": 792132,
       "git_blob_sha1": "57160b63e1f8530b98878835882a653f5b122ecf",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/679d07655e12c76e.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/7a7d1ddbbde24a0f.png",
       "bytes": 773715,
       "git_blob_sha1": "b5b2b53a7fd60103cd2da729d2d98a5ad4c76c82",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/7a7d1ddbbde24a0f.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/827239aa44364348.png",
       "bytes": 13984,
       "git_blob_sha1": "1d40930a2c1d84d48783b77dedaeae52dfb73fa5",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/827239aa44364348.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/948245277ad9c8c2.png",
       "bytes": 678314,
       "git_blob_sha1": "29fe51122c445b70828775e2f93620c7a485ed93",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/948245277ad9c8c2.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/974bc6ddbfd81793.png",
       "bytes": 710637,
       "git_blob_sha1": "300e8d8d37de00b038335dcc1e394c1917fb8749",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/974bc6ddbfd81793.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/9c945182c3e92c6e.png",
       "bytes": 788500,
       "git_blob_sha1": "e8d2390a1f5f2644768416afcba4dc6e90dc853a",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/9c945182c3e92c6e.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/a8da052d76c7a00e.png",
       "bytes": 688428,
       "git_blob_sha1": "2971846292779d5284447cdb0c6e5599364b5bc4",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/a8da052d76c7a00e.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/b0e85511951fc99e.png",
       "bytes": 735388,
       "git_blob_sha1": "da7fa50cde91169a4c9898ccdf74db4d5cc24394",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/b0e85511951fc99e.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/b586e2188dc4ba21.png",
       "bytes": 700347,
       "git_blob_sha1": "f1dd8cfe505965e52a38ca4053ce820b1901d4f1",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/b586e2188dc4ba21.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/b60fca9face1d3d8.png",
       "bytes": 14757,
       "git_blob_sha1": "4d7ee99b686e296fbc81054915f1e98b24ac4022",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/b60fca9face1d3d8.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/b81f37749d07b952.png",
       "bytes": 698554,
       "git_blob_sha1": "b23c5363d2ea4745e6889b7658849f4e6ffbee5e",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/b81f37749d07b952.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/b8880cf4a0a61b32.png",
       "bytes": 709883,
       "git_blob_sha1": "b1f01d809b2e3775851087268aa0e6e0fed19034",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/b8880cf4a0a61b32.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/b94b25b2f39378d2.png",
       "bytes": 677107,
       "git_blob_sha1": "56c0a012ae1b5113a831a93cf2a1e150df3dc888",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/b94b25b2f39378d2.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/b9b089ae45a26e07.png",
       "bytes": 685742,
       "git_blob_sha1": "83c967e6ccc195627defbb98292bd645a0a0620b",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/b9b089ae45a26e07.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/bc1cbc501497dffc.png",
       "bytes": 700727,
       "git_blob_sha1": "317bf836833aa7960c86f3c7977e851c7eb4b63f",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/bc1cbc501497dffc.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/bd3c096e1f404591.png",
       "bytes": 752399,
       "git_blob_sha1": "0b817f153ca179467e22cd665e81911608e8ff84",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/bd3c096e1f404591.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/ca8846ed9b3e74c3.png",
       "bytes": 668026,
       "git_blob_sha1": "4f67cf7929f3303fec8afb272924bab91d81e6ff",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/ca8846ed9b3e74c3.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/caed9d096e8ac11e.png",
       "bytes": 802051,
       "git_blob_sha1": "7efa95818e9d1d5fe7638d1ad65cf79692a68212",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/caed9d096e8ac11e.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/cd602fe3ee19005e.png",
       "bytes": 663039,
       "git_blob_sha1": "8eb0edcf54c02773c271f0636258823e910a4361",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/cd602fe3ee19005e.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/cfe1b08fda8b98ea.png",
       "bytes": 658437,
       "git_blob_sha1": "e623a8335b72851755e58198fc9402c69b69aae3",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/cfe1b08fda8b98ea.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/d19b538e72c424f9.png",
       "bytes": 677208,
       "git_blob_sha1": "862262bd159227013967225580c08667129a8076",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/d19b538e72c424f9.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/d273d0ca96829f0b.png",
       "bytes": 775524,
       "git_blob_sha1": "46a8808b5c7672f500719d3732d65ee82710f698",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/d273d0ca96829f0b.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/d279409af4d76d02.png",
       "bytes": 751385,
       "git_blob_sha1": "ab57fb46a1c5939be59d52a2c14b07923466eb77",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/d279409af4d76d02.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/d34092f53f23297d.png",
       "bytes": 656014,
       "git_blob_sha1": "7db58fe751c2c63aab532ff266cc413fdb4d8e17",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/d34092f53f23297d.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/d65849efdd5ee46b.png",
       "bytes": 730551,
       "git_blob_sha1": "34d2f7de18ea4ec2017e48e7729ee3f1d4140de9",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/d65849efdd5ee46b.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/d67727600dace277.png",
       "bytes": 802138,
       "git_blob_sha1": "497f9a7f1e9a64f048fb24aafed597feb673f446",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/d67727600dace277.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/d7947f57913eac32.png",
       "bytes": 717460,
       "git_blob_sha1": "46bedfd2008e7bfb86e1ac70d44e7b1c10e83dce",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/d7947f57913eac32.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/dc70360d3999f362.png",
       "bytes": 768330,
       "git_blob_sha1": "a7aaf38eb54b63e0a72e5c075d591ada8a329a3e",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/dc70360d3999f362.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/dc815bddc94ae6d5.png",
       "bytes": 758418,
       "git_blob_sha1": "1e64377d5538eddd7e000dce60fab0a195574c62",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/dc815bddc94ae6d5.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/dd057a14a2ab3c72.png",
       "bytes": 729431,
       "git_blob_sha1": "9875212bbc1f9f8affe0c425ad15810c09a845a3",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/dd057a14a2ab3c72.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/de9c91c5648356fd.png",
       "bytes": 727577,
       "git_blob_sha1": "d6c4bac1aa9983fd82e658a8a6279c546c739347",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/de9c91c5648356fd.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/df6f02973c7683a7.png",
       "bytes": 732893,
       "git_blob_sha1": "b6a95db96c105c170316e0e324d5cc1573e87867",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/df6f02973c7683a7.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/e2f5e8e2f15e5907.png",
       "bytes": 651706,
       "git_blob_sha1": "a7b35faea7c0a7fd0fe714457f5fd0e9dcb2c6b4",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/e2f5e8e2f15e5907.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/e36e76fe771adcc5.png",
       "bytes": 760939,
       "git_blob_sha1": "7abed0682dbeae0f5b4506735235158b88e77b23",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/e36e76fe771adcc5.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/e93ae9ecb4905837.png",
       "bytes": 698557,
       "git_blob_sha1": "c4731d9d9ad2b54a1024c36a72a54c054c7a1b74",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/e93ae9ecb4905837.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/f4e7a099d1fcf985.png",
       "bytes": 766361,
       "git_blob_sha1": "a5aaa0e97ba60e2ed79ebed7e0917c78ea3687df",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/f4e7a099d1fcf985.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/f7af3f52130e963a.png",
       "bytes": 745004,
       "git_blob_sha1": "3c446b116907a0f64f930d4443397aedaeaae5c8",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/f7af3f52130e963a.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/f925db9999ae08b6.png",
       "bytes": 687563,
       "git_blob_sha1": "2ec0ac6c31c80fd726f5cf885e14b1963eda6bd7",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/f925db9999ae08b6.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/f939a1eab2df8697.png",
       "bytes": 763995,
       "git_blob_sha1": "91b410722c6da05168cec030273edd680a8503c5",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/f939a1eab2df8697.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/fa58051446379814.png",
       "bytes": 765443,
       "git_blob_sha1": "7ead196a1922b8ab3ece677f9a486a8c37830f7b",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/fa58051446379814.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/fd47035f1374d9bb.png",
       "bytes": 641906,
       "git_blob_sha1": "7e30bdd7e27ac54a6d4e0784dabeeda7a923161b",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/fd47035f1374d9bb.png",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/instructions.txt",
       "bytes": 1007,
       "git_blob_sha1": "3361d0107bec77fe92c6ba047509129c3afa9bfe",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/instructions.txt",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-AI/response.csv",
       "bytes": 2499,
       "git_blob_sha1": "270a30a3fc0cbb3e88180105f20979b1e7b174d1",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI/response.csv",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-H1.zip",
       "bytes": 14655170,
       "git_blob_sha1": "158bc73d1e6004460ebc579d699db3de5c790dab",
-      "status": "private_retained",
+      "status": "pending_binary_transfer",
       "published_path": null,
-      "already_in_paper": []
+      "already_in_paper": [],
+      "blocker": "Cross-repository Git object unavailable; large binary content cannot be downloaded through current GitHub connector"
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-H2.zip",
       "bytes": 14655170,
       "git_blob_sha1": "6c9e205c482568f5463620c81264454721d7466d",
-      "status": "private_retained",
+      "status": "pending_binary_transfer",
       "published_path": null,
-      "already_in_paper": []
+      "already_in_paper": [],
+      "blocker": "Cross-repository Git object unavailable; large binary content cannot be downloaded through current GitHub connector"
     },
     {
       "source_path": "studies/20261117-offline/researcher/README.md",
       "bytes": 2275,
       "git_blob_sha1": "0db7c73dbb0aa3a0a26b7120c535a26ac56b1106",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/researcher/SOURCE-README.md",
       "already_in_paper": []
     },
     {
@@ -776,8 +779,8 @@
       "source_path": "studies/20261117-offline/researcher/a3/archive/analytic/gold-private.json",
       "bytes": 14864,
       "git_blob_sha1": "d920f734a5b310deccefdb7016382fb907bff730",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/researcher/a3/archive/analytic/gold-private.json",
       "already_in_paper": []
     },
     {
@@ -1010,16 +1013,16 @@
       "source_path": "studies/20261117-offline/researcher/a8/A8-researcher-restore.zip",
       "bytes": 23262,
       "git_blob_sha1": "b7e6448eedc2b9aa6f7b3d91924b84cd2ee82fa2",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/researcher/a8/A8-researcher-restore.zip",
       "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/researcher/a8/PRIVATE-key.csv",
       "bytes": 11999,
       "git_blob_sha1": "4e6541e37a8d118ecf43041a3f672afb38409d9e",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/researcher/a8/PRIVATE-key.csv",
       "already_in_paper": []
     },
     {
@@ -1042,8 +1045,8 @@
       "source_path": "studies/20261117-offline/researcher/s2/key.json",
       "bytes": 8100,
       "git_blob_sha1": "3c4baa7d87f5e190e824a2b14fbd3cb17d4be487",
-      "status": "private_retained",
-      "published_path": null,
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/researcher/s2/key.json",
       "already_in_paper": []
     },
     {
@@ -1072,5 +1075,8 @@
       "published_path": "archive/paper-reading-room/studies/20261117-offline/researcher/verification.json",
       "already_in_paper": []
     }
-  ]
+  ],
+  "pending_binary_transfer": 3,
+  "migration_scope": "full_source_requested",
+  "note": "All source files requested for public migration; three large ZIP files could not be transferred through connected GitHub API"
 }
