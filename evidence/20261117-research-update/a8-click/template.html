@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>四旋翼取点</title>
+<style>
+:root{--ink:#17202a;--mute:#5d6b78;--line:#d5dbe1;--accent:#0b6bcb;--bg:#f6f7f9;--warn:#b42318}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 -apple-system,"PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink);background:var(--bg)}
+main{max-width:1440px;margin:0 auto;padding:16px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:18px 22px;max-width:860px;margin:24px auto}
+h1{font-size:22px;margin:0 0 10px} h2{font-size:17px;margin:18px 0 6px}
+button{font:inherit;padding:7px 14px;border:1px solid var(--line);border-radius:7px;background:#fff;cursor:pointer}
+button.primary{background:var(--accent);border-color:var(--accent);color:#fff} button:disabled{opacity:.45;cursor:default}
+.work{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:16px;align-items:start}
+#stage{width:100%;max-width:min(1026px,calc(100vh - 40px));aspect-ratio:1/1;background:#fff;border:1px solid var(--line);border-radius:8px;cursor:crosshair;display:block;margin:0 auto}
+#lens{width:310px;height:310px;border:1px solid var(--line);border-radius:8px;background:#fff;display:block}
+.side{position:sticky;top:12px;display:flex;flex-direction:column;gap:10px}
+#ask{font-size:17px;font-weight:600;min-height:56px} .mute{color:var(--mute);font-size:14px} #warn{color:var(--warn);font-size:14px;min-height:20px}
+.row{display:flex;gap:8px;flex-wrap:wrap} label{display:block;margin:6px 0}
+textarea{width:100%;font:13px/1.5 inherit} #code{height:110px;font:12px/1.4 monospace}
+#why{display:none;border:1px solid var(--line);border-radius:8px;padding:10px;background:#fffdf5} #why input{width:100%;font:inherit;padding:6px;margin:6px 0}
+ol,ul{padding-left:22px;margin:6px 0} .fig{display:flex;gap:18px;flex-wrap:wrap;align-items:flex-start;margin:8px 0} .fig svg{width:300px;height:300px;border:1px solid var(--line);border-radius:8px;background:#fff;flex:none} .fig div{flex:1;min-width:240px}
+@media (max-width:900px){.work{grid-template-columns:1fr}.side{position:static}}
+</style>
+</head>
+<body>
+<main id="app"></main>
+<script>
+const PACK = __PACK__;
+const KEY = 'a8-click-' + PACK.pack, app = document.getElementById('app'), N = 1024;
+const HUBS = ['tl', 'tr', 'br', 'bl'], SHELL = ['upper', 'lower', 'left', 'right'];
+const NAME = { tl: '左上', tr: '右上', br: '右下', bl: '左下', upper: '上端', lower: '下端', left: '左缘', right: '右缘' };
+const stepsOf = (item) => item.kind === 'diagram' ? HUBS : HUBS.concat(SHELL);
+function fresh(){ const id = Array.from(crypto.getRandomValues(new Uint8Array(6)), (b) => b.toString(16).padStart(2, '0')).join('');
+  return { schema: PACK.schema, tool: PACK.tool, pack: PACK.pack, reader: PACK.reader, reader_id: id, started_at: new Date().toISOString(), finished_at: null, at: -1, background: {}, notes: '', images: {},
+    device: { w: innerWidth, h: innerHeight, dpr: devicePixelRatio, ua: navigator.userAgent } }; }
+let S; try { S = JSON.parse(localStorage.getItem(KEY)); } catch (e) {} if (!S || S.pack !== PACK.pack) S = fresh();
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} };
+// 每张图：pts 里一项还没答是 undefined（存成缺键），定不了是 null（原因记在 why 里），点了就是 [x, y]，原图整数像素。
+const rec = (id) => S.images[id] || (S.images[id] = { pts: {}, why: {}, ms: 0 });
+const lineY = (r) => HUBS.every((h) => r.pts[h]) ? Math.round(HUBS.reduce((s, h) => s + r.pts[h][1], 0) / 4) : null;
+function stepOf(item, r){ for (const k of stepsOf(item)) if (r.pts[k] === undefined) return k; return 'done'; }
+// 四个电机的位置和名称要对得上；机壳的右缘在左缘右边，下端在上端下面。评分程序会拒收对不上的表。
+function problem(r){ const p = r.pts;
+  if (p.tl && p.tr && p.tr[0] <= p.tl[0] || p.bl && p.br && p.br[0] <= p.bl[0] || p.tl && p.bl && p.bl[1] <= p.tl[1] || p.tr && p.br && p.br[1] <= p.tr[1]) return '四个电机的位置和名称对不上（比如把右上点成了左上）。请撤销重点。';
+  if (p.upper && p.lower && p.lower[1] <= p.upper[1]) return '“下端”应该在“上端”的下面。请撤销重点。';
+  if (p.left && p.right && p.right[0] <= p.left[0]) return '“右缘”应该在“左缘”的右边。请撤销重点。';
+  return ''; }
+const done = (item) => { const r = rec(item.id); return stepOf(item, r) === 'done' && !problem(r); };
+
+const FIG = '<svg viewBox="0 0 300 300" role="img" aria-label="取点示意"><g stroke="#9aa3ad" stroke-width="9" stroke-linecap="round"><line x1="150" y1="150" x2="70" y2="75"/><line x1="150" y1="150" x2="230" y2="75"/><line x1="150" y1="150" x2="230" y2="225"/><line x1="150" y1="150" x2="70" y2="225"/></g>' +
+  '<rect x="118" y="78" width="64" height="150" rx="26" fill="#d9dde2" stroke="#7b8590"/><rect x="138" y="60" width="24" height="20" rx="5" fill="#b9c0c8" stroke="#7b8590"/>' +
+  '<g fill="#555" stroke="#333"><circle cx="70" cy="75" r="13"/><circle cx="230" cy="75" r="13"/><circle cx="230" cy="225" r="13"/><circle cx="70" cy="225" r="13"/></g>' +
+  '<line x1="20" y1="150" x2="280" y2="150" stroke="#ff8c00" stroke-dasharray="6 4" stroke-width="1.5"/>' +
+  '<g fill="#00a040"><circle cx="70" cy="75" r="4"/><circle cx="230" cy="75" r="4"/><circle cx="230" cy="225" r="4"/><circle cx="70" cy="225" r="4"/></g><g fill="#0b6bcb"><circle cx="150" cy="78" r="4"/><circle cx="150" cy="228" r="4"/><circle cx="118" cy="150" r="4"/><circle cx="182" cy="150" r="4"/></g>' +
+  '<g font-size="13" fill="#17202a"><text x="30" y="52">1 左上</text><text x="212" y="52">2 右上</text><text x="212" y="258">3 右下</text><text x="30" y="258">4 左下</text><text x="150" y="101" text-anchor="middle">5 上端</text><text x="150" y="216" text-anchor="middle">6 下端</text><text x="72" y="144">7 左缘</text><text x="190" y="144">8 右缘</text><text x="150" y="52" text-anchor="middle" fill="#5d6b78">相机不算</text></g></svg>';
+
+function intro(){
+  const nd = PACK.items.filter((i) => i.kind === 'diagram').length;
+  app.innerHTML = '<div class="card"><h1>四旋翼取点</h1><p>这是一项量位置的工作，不是评价好坏。请在 ' + PACK.items.length + ' 张图上点出几个位置。大约 30 到 40 分钟，可以中途关掉页面，下次用同一个浏览器打开会接着做。请一个人独立完成，不要和别人商量。</p>' +
+  '<h2>每张图点什么</h2><div class="fig">' + FIG + '<div><ol><li><b>四个电机的中心</b>，按提示的顺序：左上、右上、右下、左下（都是指画面上的位置）。点桨叶中间那个圆帽或螺钉的中心。</li>' +
+  '<li><b>机壳的上端和下端。</b>机壳指中间那块固定的主体。点它在画面上最靠上的位置和最靠下的位置。<b>不算</b>伸在外面的相机、机臂和阴影。</li>' +
+  '<li><b>机壳的左缘和右缘。</b>四个电机点完后，图上会出现一条橙色横线。在这条线上点机壳的左边缘和右边缘，页面会自动把点放到线上。</li></ol>' +
+  '<p>有 ' + nd + ' 张是黑底的点线示意图，只有四个红点。这几张只点四个红点的中心。</p></div></div>' +
+  '<h2>怎么操作</h2><ul><li>在大图上点。右边的放大镜跟着鼠标走，十字中心就是落点的位置。</li><li>点完以后可以用键盘方向键把刚点的那个点一像素一像素地挪。</li><li>点错了按“撤销上一点”（或键盘 Z）。</li>' +
+  '<li><b>定不了的不要猜。</b>比如一个电机上看得出两个以上可能的中心，或者机壳的边缘和别的部件分不开。按“这一点定不了”（或键盘 N），写一句原因。</li></ul>' +
+  '<h2>开始之前</h2><label>你是否知道这些图是按什么比例或设置生成的，或者看过别人在这些图上点的位置和读数？ <select id="q1"><option value="">请选择</option><option>没有</option><option>知道或看过</option></select></label>' +
+  '<label>你有没有产品设计或工程制图的训练？ <select id="q2"><option value="">请选择</option><option>有</option><option>没有</option></select></label>' +
+  '<p class="mute">不需要填姓名。页面不联网，结果只保存在你这台电脑的浏览器里，最后由你导出发回。</p><p><button class="primary" id="go" disabled>开始</button></p></div>';
+  const q1 = document.getElementById('q1'), q2 = document.getElementById('q2'), go = document.getElementById('go');
+  q1.value = S.background.exposure || ''; q2.value = S.background.training || '';
+  const chk = () => { go.disabled = !(q1.value && q2.value); }; q1.onchange = q2.onchange = chk; chk();
+  go.onclick = () => { S.background = { exposure: q1.value, training: q2.value }; S.at = Math.max(0, PACK.items.findIndex((it) => !done(it))); save(); work(); };
+}
+
+function work(){
+  if (S.at >= PACK.items.length) return finish();
+  const item = PACK.items[S.at], r = rec(item.id), steps = stepsOf(item); let shownAt = Date.now(), mouse = null;
+  app.innerHTML = '<div class="work"><canvas id="stage" width="' + N + '" height="' + N + '"></canvas><div class="side"><div class="mute" id="prog"></div><div id="ask"></div><div id="warn"></div><canvas id="lens" width="310" height="310"></canvas>' +
+    '<div class="row"><button id="undo">撤销上一点 (Z)</button><button id="na">这一点定不了 (N)</button></div>' +
+    '<div id="why"><div>为什么定不了？写一句就行。</div><input id="whytext" maxlength="120" placeholder="例如：桨帽和电机不同心，有两个可能的中心"><div class="row"><button class="primary" id="whyok">确定</button><button id="whyno">取消</button></div></div>' +
+    '<div class="row"><button id="prev">上一张</button><button class="primary" id="next">下一张</button></div><div class="row"><button id="exp">现在导出</button></div><div class="mute">方向键：把刚点的那个点挪一个像素。</div></div></div>';
+  const $ = (id) => document.getElementById(id), cv = $('stage'), cx = cv.getContext('2d'), lens = $('lens'), lx = lens.getContext('2d'), img = new Image();
+  const what = item.kind === 'diagram' ? '红点' : '电机';
+  const TEXT = { tl: '点【左上】那个' + what + '的中心', tr: '点【右上】那个' + what + '的中心', br: '点【右下】那个' + what + '的中心', bl: '点【左下】那个' + what + '的中心',
+    upper: '点中间机壳的【最上端】（不算伸出去的相机、机臂和阴影）', lower: '点中间机壳的【最下端】', left: '在橙色横线上，点机壳的【左边缘】', right: '在橙色横线上，点机壳的【右边缘】', done: '这一张点完了。可以检查一下，再按“下一张”。' };
+  const answered = () => steps.filter((k) => r.pts[k] !== undefined), lastKey = () => { const a = answered(); return a.length ? a[a.length - 1] : null; };
+  // 四个电机不全时，横线定不出来，左右缘按规则留空，原因由页面写上。
+  function autoskip(){ if (item.kind === 'diagram') return; if (stepOf(item, r) === 'left' && lineY(r) === null) { ['left', 'right'].forEach((k) => { r.pts[k] = null; r.why[k] = '电机中心不全，定不出横线'; }); save(); } }
+  function mark(p, col, lab){ if (!p) return; const x = p[0] + .5, y = p[1] + .5; const cross = () => { cx.beginPath(); cx.arc(x, y, 8, 0, 7); cx.moveTo(x - 15, y); cx.lineTo(x - 3, y); cx.moveTo(x + 3, y); cx.lineTo(x + 15, y); cx.moveTo(x, y - 15); cx.lineTo(x, y - 3); cx.moveTo(x, y + 3); cx.lineTo(x, y + 15); cx.stroke(); };
+    cx.strokeStyle = '#fff'; cx.lineWidth = 4.5; cross(); cx.strokeStyle = col; cx.lineWidth = 2; cross(); cx.font = '600 17px sans-serif'; cx.lineWidth = 4; cx.strokeStyle = '#fff'; cx.strokeText(lab, x + 13, y - 11); cx.fillStyle = col; cx.fillText(lab, x + 13, y - 11); }
+  function draw(){
+    autoskip(); const st = stepOf(item, r), ly = lineY(r), bad = problem(r);
+    cx.clearRect(0, 0, N, N); if (img.complete && img.naturalWidth) cx.drawImage(img, 0, 0, N, N);
+    if (item.kind !== 'diagram' && ly !== null) { cx.strokeStyle = 'rgba(255,140,0,.85)'; cx.lineWidth = 1.5; cx.beginPath(); cx.moveTo(0, ly + .5); cx.lineTo(N, ly + .5); cx.stroke(); }
+    HUBS.forEach((k) => mark(r.pts[k], '#00a040', NAME[k])); SHELL.forEach((k) => mark(r.pts[k], '#0b6bcb', NAME[k]));
+    const skipped = steps.filter((k) => r.pts[k] === null).map((k) => NAME[k]);
+    $('ask').textContent = TEXT[st]; $('warn').textContent = bad || (skipped.length ? '已记为定不了：' + skipped.join('、') : '');
+    $('prog').textContent = '第 ' + (S.at + 1) + ' 张，共 ' + PACK.items.length + ' 张 · 已点完 ' + PACK.items.filter(done).length + ' 张';
+    $('undo').disabled = !lastKey(); $('na').disabled = st === 'done'; $('prev').disabled = S.at === 0; $('next').disabled = st !== 'done' || !!bad; $('next').textContent = S.at === PACK.items.length - 1 ? '完成' : '下一张';
+    drawLens();
+  }
+  function drawLens(){ lx.fillStyle = '#888'; lx.fillRect(0, 0, 310, 310); if (!mouse || !img.naturalWidth) return; const Z = 5, half = 155 / Z; lx.imageSmoothingEnabled = false;
+    lx.drawImage(img, mouse[0] + .5 - half, mouse[1] + .5 - half, half * 2, half * 2, 0, 0, 310, 310);
+    const ly = lineY(r); if (item.kind !== 'diagram' && ly !== null) { const yy = 155 + (ly - mouse[1]) * Z; if (yy > 0 && yy < 310) { lx.strokeStyle = 'rgba(255,140,0,.85)'; lx.lineWidth = 1; lx.beginPath(); lx.moveTo(0, yy); lx.lineTo(310, yy); lx.stroke(); } }
+    const hair = () => { lx.beginPath(); lx.moveTo(155, 0); lx.lineTo(155, 143); lx.moveTo(155, 167); lx.lineTo(155, 310); lx.moveTo(0, 155); lx.lineTo(143, 155); lx.moveTo(167, 155); lx.lineTo(310, 155); lx.stroke(); };
+    lx.strokeStyle = '#fff'; lx.lineWidth = 3; hair(); lx.strokeStyle = '#e00000'; lx.lineWidth = 1; hair(); }
+  const clamp = (v) => Math.max(0, Math.min(N - 1, v));
+  // 画布有 1 像素的边框，换算时按里面的内容区算；屏幕够大时画布按原图 1:1 显示，小屏幕上一次点击可能差一个像素，用放大镜和方向键对准
+  const toImage = (e) => { const b = cv.getBoundingClientRect(); return [clamp(Math.floor((e.clientX - b.left - cv.clientLeft) / cv.clientWidth * N)), clamp(Math.floor((e.clientY - b.top - cv.clientTop) / cv.clientHeight * N))]; };
+  const snap = (st, p) => (st === 'left' || st === 'right') ? [p[0], lineY(r)] : p;
+  cv.onmousemove = (e) => { const st = stepOf(item, r); mouse = st === 'done' ? toImage(e) : snap(st, toImage(e)); drawLens(); };
+  cv.onclick = (e) => { const st = stepOf(item, r); if (st === 'done') return; hideWhy(); r.pts[st] = snap(st, toImage(e)); delete r.why[st]; mouse = r.pts[st].slice(); save(); draw(); };
+  const undo = () => { hideWhy(); const k = lastKey(); if (!k) return; delete r.pts[k]; delete r.why[k];
+    // 左右缘是因为电机不全被页面留空的，撤销时一并退回到电机那一步
+    if (k === 'right' && r.pts.left === null && r.why.left === '电机中心不全，定不出横线') { delete r.pts.left; delete r.why.left; const j = lastKey(); if (j) { delete r.pts[j]; delete r.why[j]; } }
+    save(); draw(); };
+  const showWhy = () => { if (stepOf(item, r) === 'done') return; $('why').style.display = 'block'; $('whytext').value = ''; $('whytext').focus(); };
+  function hideWhy(){ $('why').style.display = 'none'; }
+  const confirmWhy = () => { const st = stepOf(item, r), t = $('whytext').value.trim(); if (st === 'done') return hideWhy(); if (!t) { $('whytext').focus(); return; } r.pts[st] = null; r.why[st] = t; hideWhy(); save(); draw(); };
+  const leave = (d) => { r.ms += Date.now() - shownAt; S.at += d; save(); document.onkeydown = null; work(); };
+  $('undo').onclick = undo; $('na').onclick = showWhy; $('whyok').onclick = confirmWhy; $('whyno').onclick = hideWhy; $('prev').onclick = () => leave(-1); $('next').onclick = () => leave(1);
+  $('whytext').onkeydown = (e) => { e.stopPropagation(); if (e.key === 'Enter') confirmWhy(); if (e.key === 'Escape') hideWhy(); };
+  $('exp').onclick = () => { r.ms += Date.now() - shownAt; shownAt = Date.now(); save(); document.onkeydown = null; finish(true); };
+  document.onkeydown = (e) => { const d = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key];
+    if (d) { const k = lastKey(); if (!k || !r.pts[k]) return; if (k === 'left' || k === 'right') d[1] = 0; const p = r.pts[k]; p[0] = clamp(p[0] + d[0]); p[1] = clamp(p[1] + d[1]); mouse = p.slice(); save(); draw(); e.preventDefault(); }
+    else if (e.key === 'z' || e.key === 'Z') undo(); else if (e.key === 'n' || e.key === 'N') { showWhy(); e.preventDefault(); } };
+  img.onload = draw; img.src = PACK.images[item.id]; draw();
+}
+
+function finish(partial){
+  const n = PACK.items.filter(done).length, all = n === PACK.items.length;
+  app.innerHTML = '<div class="card"><h1>' + (all ? '全部点完了，谢谢！' : '已点完 ' + n + ' 张，共 ' + PACK.items.length + ' 张') + '</h1>' +
+    '<label>有没有哪几张没完全按规则点，或者特别难判？可以不填。<textarea id="notes" rows="3" placeholder="例如：第 7 张机壳下端和尾部的一块分不清，按外轮廓点的"></textarea></label>' +
+    '<p>请把结果发回给邀请你的人，两种方式任选一种：</p><p><button class="primary" id="dl">下载结果文件</button> <span class="mute" id="fname"></span></p>' +
+    '<p>下载不了的话，点“复制结果”，把内容粘贴到聊天里发回。</p><textarea id="code" readonly></textarea><p><button id="cp">复制结果</button> <span id="ok" class="mute"></span></p>' + (all ? '<p><button id="back">回去检查</button></p>' : '<p><button id="back">回去接着点</button></p>') + '</div>';
+  const $ = (id) => document.getElementById(id); $('notes').value = S.notes || '';
+  const pack = () => { S.notes = $('notes').value.trim(); if (all && !S.finished_at) S.finished_at = new Date().toISOString(); save();
+    const out = Object.assign({}, S, { exported_at: new Date().toISOString(), complete: n, total: PACK.items.length }); delete out.at; return JSON.stringify(out); };
+  const name = 'quad-points-' + PACK.reader + '-' + S.reader_id + '.json'; $('fname').textContent = '文件名：' + name;
+  const refresh = () => { $('code').value = 'A8C1:' + btoa(unescape(encodeURIComponent(pack()))); }; refresh(); $('notes').oninput = refresh;
+  $('dl').onclick = () => { const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([pack()], { type: 'application/json' })); a.download = name; document.body.appendChild(a); a.click(); a.remove(); };
+  $('cp').onclick = async () => { refresh(); const t = $('code'); t.select(); try { await navigator.clipboard.writeText(t.value); } catch (e) { document.execCommand('copy'); } $('ok').textContent = '已复制'; };
+  $('back').onclick = () => { S.notes = $('notes').value.trim(); const i = PACK.items.findIndex((it) => !done(it)); S.at = i < 0 ? PACK.items.length - 1 : i; save(); work(); };
+}
+if (S.at < 0) intro(); else work();
+</script>
+</body>
+</html>
