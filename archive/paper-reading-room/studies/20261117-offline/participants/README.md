@@ -1,5 +1,8 @@
-# 已公开的 S2 样本题面
+# 参与者原始材料
 
-[原始 S2 150 条评论抽查 HTML](S2-review.html) 含匿名条目编号与评论文字，适于核查题面、用词和评分界面；**不包含**研究者对应键、真人答卷或答案。
+- [S2 150 条核查题面 HTML](S2-review.html)
+- [A8 AI 原始匿名取点图与 CSV](a8-AI/)（68 张匿名图、说明及空白 CSV）
+- [a8-H1.zip 源文件](https://github.com/Freeloop993/paper-reading-room/blob/main/studies/20261117-offline/participants/a8-H1.zip) —— **未能迁移**
+- [a8-H2.zip 源文件](https://github.com/Freeloop993/paper-reading-room/blob/main/studies/20261117-offline/participants/a8-H2.zip) —— **未能迁移**
 
-A8 参与者独立取点包按原实验安排仍由组织者从私有库单独发放，不在公开目录提供。
+[原研究参与者说明](SOURCE-README.md)。上述已公开原始文件未经脱敏，若继续进行盲测，需要重新封装、分配和封存。

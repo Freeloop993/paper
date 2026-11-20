@@ -1,24 +1,20 @@
-# 阅读库公开补档 / Public backfill
+# paper-reading-room 原件迁移归档（2026-11-20）
 
-> 原仓库：[Freeloop993/paper-reading-room](https://github.com/Freeloop993/paper-reading-room)（私有，保留原样）
-> 
-> 来源分支与提交：`main` / `cc122ae8757f175cde92484da194b568fcbb7a3a`
-> 
-> 归档日期：2026-11-20
+源仓：[`Freeloop993/paper-reading-room`](https://github.com/Freeloop993/paper-reading-room) · 源版本：`cc122ae8757f175cde92484da194b568fcbb7a3a`。原仓有 **129 个文件**，本目录已按**原始二进制或原始文本 Git blob SHA** 迁移 **126 个**，其中包含本次新增的 84 个文件。**另有 3 个大型 ZIP 尚未成功转存**，原因是 GitHub 对跨仓库不存在的 blob SHA 报错、当前连接无法读取大于 1MB 的二进制正文，详情见 [迁移状态](MIGRATION-STATUS.md)。
 
-这个目录将私有阅读库中**可公开、可复算**的内容补入 `paper`，采用独立目录，既不改动主仓既有实验，也不改写原仓。逐个文件记录了 Git SHA-1、大小和是否已在主仓别处存在：见 [FILE-INDEX.json](FILE-INDEX.json)。
+[完整文件索引：129 条逐项 SHA 与状态](FILE-INDEX.json) · [源 README 原文](SOURCE-README.md)
 
-**本次从源仓复制 42 个文件。另 87 个文件不公开，仍在私有源仓。** 不是丢失，详见 [MIGRATION-STATUS.md](MIGRATION-STATUS.md)。
+## 已迁移资料
 
-## 可用材料
+- [四篇工业设计硕士论文原版 PDF](originals/) · [页数/字节/SHA-256 索引](manifest.json)
+- [早期评论与产品采集数据](datasets/early-crawl/)：**01–07 共 7 个原始 ZIP** 已迁移，[08 ZIP 尚未迁移](MIGRATION-STATUS.md)；[包内逐文件校验清单](datasets/early-crawl/manifest.json) 均已保存
+- [2026-11-17 线下研究资料](studies/20261117-offline/)：S2 150 条题面、S2 研究者对应键、A8 68 张匿名 AI 取点图、AI 取点空表、A3 旧校准及真值、A8 研究者映射与恢复包
+- [研究者 A3 完整复核记录](studies/20261117-offline/researcher/a3/) · [研究者 S2 文件](studies/20261117-offline/researcher/s2/) · [研究者 A8 文件](studies/20261117-offline/researcher/a8/)
 
-- **四篇硕士学位论文 PDF 原件**：[原件目录](originals/) · [页数、SHA-256 与参考文献数](manifest.json)。其中三篇字节已存在于主仓文献库，第四篇（何彦）原先缺失。
-- **S2 评论抽查题面（150 条匿名编号评论）**：[原始单文件 HTML](studies/20261117-offline/participants/S2-review.html)。仅含 `S001` 起的匿名项目编号及评论正文，**研究者对应键仍私有**。
-- **A3 图面比例、历史校准与复算原始记录**：[A3 研究说明](studies/20261117-offline/researcher/a3/README.md) · [点表](studies/20261117-offline/researcher/a3/points.csv) · [归档](studies/20261117-offline/researcher/a3/archive/)。其中 `gold-private.json` 未公开。
-- **A8 原图来源表（不含揭盲键）**：[github-sources.csv](studies/20261117-offline/researcher/a8/github-sources.csv)。
-- **S2 处理、评分脚本与样本汇总**：[build.py](studies/20261117-offline/researcher/s2/build.py) · [score.py](studies/20261117-offline/researcher/s2/score.py) · [summary.json](studies/20261117-offline/researcher/s2/summary.json)。
-- **早期爬取数据原件的文件级清单**：[数据说明](datasets/early-crawl/README.md) · [ZIP 校验与包内文件清单](datasets/early-crawl/manifest.json)。原始 ZIP 仍私有。
+两个原仓中的 `README.md` 若与早前迁入的公共导航重名，则将**原文**额外保存在同目录 `SOURCE-README.md`，文件哈希不变；首页使用新导航，源导航和源研究记录均予保留。
 
-此前源仓的 [README 原文](SOURCE-README.md) 随档保存。它含指向原私有仓的绝对链接；在这里请优先使用上面的公开相对路径。原文档涉及的所有私有链接不等于授权公开。
+## 公开状态提醒
 
-请留意：公开的 S2 题面不包含答案、揭盲映射或参与者实际回件；A8 当前公开的也只是已有原图来源记录。**不能据此把待收实验写成已完成。**
+`Freeloop993/paper` 为公开仓库，研究者对应键、原始样本和盲测映射现可被公开访问。已按仓库所有者的要求迁移，不做脱敏、不保留原来的公开范围限制。**公开研究者键会影响盲法独立性**；有后续实验时应重新生成与封存新的键，不要继续当成未泄露材料。
+
+原私有仓库保持不变，未执行删除。

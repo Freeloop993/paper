@@ -1,22 +1,28 @@
-# 迁移范围与保密边界（2026-11-20）
+# 私有阅读库 → paper：实际迁移结果（2026-11-20）
 
-源仓 `Freeloop993/paper-reading-room` 于 `cc122ae8757f175cde92484da194b568fcbb7a3a` 的文件总数：129。经逐文件 Git SHA 对照，目标仓 `main` 已有同字节文件 17 个（不一定同路径）。
+原始库：`Freeloop993/paper-reading-room`，main 提交 `cc122ae8757f175cde92484da194b568fcbb7a3a`。原始库共 **129 个文件**，原始文件字节数合计 **136,283,243**。
 
-| 分类 | 文件 | 处理 |
+| 结果 | 文件数 | 说明 |
 |---|---:|---|
-| 公开补档 | 42 | 保留源内容的 Git blob SHA，在本目录归档。 |
-| 暂留私有 | 87 | 未复制至公开仓，源仓不删除。 |
-| 合计 | 129 | 全部进入 [逐文件对照表](FILE-INDEX.json)。 |
+| 已在前一轮复制 | 42 | 四篇硕士论文及 S2/A3 等可公开材料 |
+| 本轮新增 | 84 | 原始 ZIP 01–07、A8 匿名图与研究者数据、研究者键和旧原始 README |
+| 尚未成功复制 | 3 | 见下方三个二进制包 |
+| **合计** | **129** | [每个文件的 SHA、大小和目的位置](FILE-INDEX.json) |
 
-## 暂留私有的内容
+## 仍缺少 3 个原始 ZIP（共 43,186,361 字节）
 
-1. **8 份早期爬取 ZIP（`datasets/early-crawl/01–08`）**：原仓说明其包含平台评论用户字段及商品原始记录；这些二进制档案未进行逐行脱敏审查，不自动公开。可在私有阅读库中访问。
-2. **A8 盲测分发包和 68 张匿名图像**（`participants/a8-AI/`、`a8-H1.zip`、`a8-H2.zip`）：为避免在任务完成前公开独立评议材料，保留在私有库。
-3. **研究者私钥/盲态真值/映射文件**：`researcher/s2/key.json`、`researcher/a8/PRIVATE-key.csv`、`researcher/a8/A8-researcher-restore.zip`、`researcher/a3/archive/analytic/gold-private.json` 均不公开。
-4. **私有版目录导航**：源 `studies/20261117-offline/README.md`、`participants/README.md`、`researcher/README.md` 含私有领取入口，此处用公开版导航代替。
+| 文件 | 原始字节数 | 源文件 |
+|---|---:|---|
+| `datasets/early-crawl/08-semantic-analysis.zip` | 13,876,021 | [源仓](https://github.com/Freeloop993/paper-reading-room/blob/main/datasets/early-crawl/08-semantic-analysis.zip) |
+| `studies/20261117-offline/participants/a8-H1.zip` | 14,655,170 | [源仓](https://github.com/Freeloop993/paper-reading-room/blob/main/studies/20261117-offline/participants/a8-H1.zip) |
+| `studies/20261117-offline/participants/a8-H2.zip` | 14,655,170 | [源仓](https://github.com/Freeloop993/paper-reading-room/blob/main/studies/20261117-offline/participants/a8-H2.zip) |
 
-**这只是公开可用版本，不是整个私有仓的无差别镜像。** 后续如需将受限数据正式公开，应先核对平台/受试者数据、脱敏情况与实验盲态安排。原件保留在 [私有仓库](https://github.com/Freeloop993/paper-reading-room)。
+**阻塞原因**：GitHub 拒绝在目标仓库直接引用这三个尚未存在的对象（422 `not a valid blob`）。现有 GitHub 连接只能取得这些 ZIP 的哈希和大小，无法读取大体积二进制正文，因此不能声称它们已经上传。源仓三份仍然完好存在，主库没有创建同名空文件或占位 ZIP。
 
-## 校验方式
+## 校验与覆盖策略
 
-`FILE-INDEX.json` 每条包含 `source_path`、`bytes`、`git_blob_sha1`、`status`、`published_path` 与 `already_in_paper`。文件原样复制时，目标相同路径文件 Git SHA 与源 SHA 应一致。对已有同字节文件通过 blob SHA 去重，而不是用名称推测重复。主仓原有文件不删不覆盖。
+- 已发布的 126 个源文件均使用源 Git SHA，避免修改正文。
+- 已存在的 `paper` 原始文件不删除、不覆盖。原始 `README.md` 冲突时副本改名 `SOURCE-README.md`。
+- 研究者对应键、平台采集包和盲测材料按作者本次要求进入公开库；不是脱敏副本。公开提交会永久出现在 Git 历史中。
+- 三个未完成项以 `pending_binary_transfer` 标记，避免误报 129/129。
+
