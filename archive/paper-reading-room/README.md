@@ -1,6 +1,6 @@
 # paper-reading-room 原件迁移归档（2026-11-20）
 
-源仓：[`Freeloop993/paper-reading-room`](https://github.com/Freeloop993/paper-reading-room) · 源版本：`cc122ae8757f175cde92484da194b568fcbb7a3a`。原仓有 **129 个文件**，本目录已按**原始二进制或原始文本 Git blob SHA** 迁移 **126 个**，其中包含本次新增的 84 个文件。**另有 3 个大型 ZIP 尚未成功转存**，原因是 GitHub 对跨仓库不存在的 blob SHA 报错、当前连接无法读取大于 1MB 的二进制正文，详情见 [迁移状态](MIGRATION-STATUS.md)。
+源仓：[`Freeloop993/paper-reading-room`](https://github.com/Freeloop993/paper-reading-room) · 源版本：`cc122ae8757f175cde92484da194b568fcbb7a3a`。原仓有 **129 个文件**，本目录已按**原始二进制或原始文本 Git blob SHA** 迁移 **129 个**，包含后续补传的 3 个 ZIP，详情见 [迁移状态](MIGRATION-STATUS.md)。
 
 [完整文件索引：129 条逐项 SHA 与状态](FILE-INDEX.json) · [源 README 原文](SOURCE-README.md)
 
@@ -9,7 +9,7 @@
 > 2026-11-20 整理：四篇学位论文里有三篇（邓家乐、厉茜茜、朱天燕）与[文献库](../../literature/README.md)里的 L020、L045、L046 逐字节相同，本目录的副本已删，[逐文件索引](FILE-INDEX.json)里标为 `deduplicated` 并写明留下的那一份。
 
 - [四篇工业设计硕士论文原版 PDF](originals/) · [页数/字节/SHA-256 索引](manifest.json)
-- [早期评论与产品采集数据](datasets/early-crawl/)：**01–07 共 7 个原始 ZIP** 已迁移，[08 ZIP 尚未迁移](MIGRATION-STATUS.md)；[包内逐文件校验清单](datasets/early-crawl/manifest.json) 均已保存
+- [早期评论与产品采集数据](datasets/early-crawl/)：**01–08 共 8 个原始 ZIP** 已迁移；[包内逐文件校验清单](datasets/early-crawl/manifest.json) 均已保存
 - [2026-11-17 线下研究资料](studies/20261117-offline/)：S2 150 条题面、S2 研究者对应键、A8 68 张匿名 AI 取点图、AI 取点空表、A3 旧校准及真值、A8 研究者映射与恢复包
 - [研究者 A3 完整复核记录](studies/20261117-offline/researcher/a3/) · [研究者 S2 文件](studies/20261117-offline/researcher/s2/) · [研究者 A8 文件](studies/20261117-offline/researcher/a8/)
 

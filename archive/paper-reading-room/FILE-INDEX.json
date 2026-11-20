@@ -3,7 +3,7 @@
   "source_commit": "cc122ae8757f175cde92484da194b568fcbb7a3a",
   "destination_repository": "Freeloop993/paper",
   "checked_against_main": "2a560c014b089ad60109ce13e322cc1dd36263d6",
-  "published": 126,
+  "published": 129,
   "private_retained": 0,
   "files": [
     {
@@ -82,10 +82,9 @@
       "source_path": "datasets/early-crawl/08-semantic-analysis.zip",
       "bytes": 13876021,
       "git_blob_sha1": "558110ae5951c053890d72a1a75b986b29f84628",
-      "status": "pending_binary_transfer",
-      "published_path": null,
-      "already_in_paper": [],
-      "blocker": "Cross-repository Git object unavailable; large binary content cannot be downloaded through current GitHub connector"
+      "status": "published",
+      "published_path": "archive/paper-reading-room/datasets/early-crawl/08-semantic-analysis.zip",
+      "already_in_paper": []
     },
     {
       "source_path": "datasets/early-crawl/README.md",
@@ -743,19 +742,17 @@
       "source_path": "studies/20261117-offline/participants/a8-H1.zip",
       "bytes": 14655170,
       "git_blob_sha1": "158bc73d1e6004460ebc579d699db3de5c790dab",
-      "status": "pending_binary_transfer",
-      "published_path": null,
-      "already_in_paper": [],
-      "blocker": "Cross-repository Git object unavailable; large binary content cannot be downloaded through current GitHub connector"
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-H1.zip",
+      "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/participants/a8-H2.zip",
       "bytes": 14655170,
       "git_blob_sha1": "6c9e205c482568f5463620c81264454721d7466d",
-      "status": "pending_binary_transfer",
-      "published_path": null,
-      "already_in_paper": [],
-      "blocker": "Cross-repository Git object unavailable; large binary content cannot be downloaded through current GitHub connector"
+      "status": "published",
+      "published_path": "archive/paper-reading-room/studies/20261117-offline/participants/a8-H2.zip",
+      "already_in_paper": []
     },
     {
       "source_path": "studies/20261117-offline/researcher/README.md",
