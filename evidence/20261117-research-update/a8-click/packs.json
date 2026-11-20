@@ -1,0 +1,20 @@
+{
+  "tool": "a8-click 1.0",
+  "template_sha256": "1d04f04a7bff6e774eb2f1167729c5dafefb88f0f9c71957acbe9d0f7e1c0d2d",
+  "pages": {
+    "H1": {
+      "file": "四旋翼取点-H1.html",
+      "pack": "2beb48eec636",
+      "bytes": 19554982,
+      "sha256": "c154f4977d052e2a8edf5d7db393afddac364b425d470f5d4d01e68196c0c46e",
+      "source_zip_sha256": "5c468f5fd510535b2a25a01d6c0f43479fd46b054ba47f5563a1469893a1861c"
+    },
+    "H2": {
+      "file": "四旋翼取点-H2.html",
+      "pack": "29d52d712fbc",
+      "bytes": 19554982,
+      "sha256": "eb95504403024a48de935b305f0e76410ccb86bffad569d870445681106a0df3",
+      "source_zip_sha256": "77e46b4430faff9103e20a805eb13eb1a42533e86b8ac77f939923929f712922"
+    }
+  }
+}
