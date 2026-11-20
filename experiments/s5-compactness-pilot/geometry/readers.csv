@@ -1,0 +1,2 @@
+﻿reader_id,identity,model_version,prompt_record,exposure,method,images,role
+claude-20261120,Claude AI,Claude Fable 5.2（claude-fable-5-2）,取点规则见 geometry/README.md 第二节；三遍读数留在 rough.py、fixes.py、build_points.py,知道机型；标点前已看过四旋翼组的评分汇总,网格拼图读粗点；局部圆对称自动候选；4 倍放大逐点人工修正；2.5 倍大视野复看；机壳左右缘和桨尖由程序量后逐款看叠图，8 款桨尖改人工读,44,第一判读。第二判读（真人）待收
