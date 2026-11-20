@@ -1,0 +1,2672 @@
+{
+  "bundles": [
+    {
+      "file": "01-reviews.zip",
+      "title": "评论采集原表",
+      "files": 6,
+      "bytes": 2006722,
+      "sha256": "15eef514633029543caf38c151ede0e1c3842580b41ca77786c3b8fe042c5890"
+    },
+    {
+      "file": "02-product-listings.zip",
+      "title": "商品列表采集原表",
+      "files": 9,
+      "bytes": 1013359,
+      "sha256": "5a95dcab5cdc2ff9c265be2870f4592a99b6cf79f68cb1971cf6f24b47aa5acb"
+    },
+    {
+      "file": "03-product-details.zip",
+      "title": "商品详情与参数原表",
+      "files": 3,
+      "bytes": 322998,
+      "sha256": "0bc7dbea749f6b75bd47e2f282766d12922d70e2819fbc0574ebd9c59624455f"
+    },
+    {
+      "file": "04-original-archive-and-text-mining.zip",
+      "title": "作者原压缩包、分词文本及早期分析输出",
+      "files": 14,
+      "bytes": 2084806,
+      "sha256": "3db87a423797de865756a1358b9a1a97a59dbf72d0be8cfcccf659d1fad47741"
+    },
+    {
+      "file": "05-analysis-and-gephi.zip",
+      "title": "用户分析、网络图、Gephi 工程及配套文件",
+      "files": 18,
+      "bytes": 2535712,
+      "sha256": "cf39df3a05b4cd844ca1decb20775d2d1748e9a71f08d63c9482bba9bff11e3b"
+    },
+    {
+      "file": "06-cleaning-and-source-audit.zip",
+      "title": "原库清洗、去重、商品参数记录及来源审计",
+      "files": 23,
+      "bytes": 2587070,
+      "sha256": "468202fb977e771a8f1a5086d15f8dbc06c0b7cdbc5e90e1500a43bc30b8c358"
+    },
+    {
+      "file": "07-supplemental-collection.zip",
+      "title": "补采评论、过程记录与验收",
+      "files": 293,
+      "bytes": 1502723,
+      "sha256": "088a39b4c6da44daf1014d8b7b8e3cb4344e3d44403670498e12dbf877b57165"
+    },
+    {
+      "file": "08-semantic-analysis.zip",
+      "title": "语义整理、证据卡、结案台账及产品视图预核",
+      "files": 69,
+      "bytes": 13876021,
+      "sha256": "7aca4c39409daa5c203fe406b041dc76b829085b55c805433c6037491cf735df"
+    }
+  ],
+  "files": [
+    {
+      "bundle": "01-reviews.zip",
+      "path": "原始数据/京东/京东商品全部评论-最新排序.xlsx",
+      "bytes": 10853989,
+      "sha256": "77ebc2a6efea517d9822b9d5bb5716b06ce692583eec8f89abde5eedf8811a8c"
+    },
+    {
+      "bundle": "01-reviews.zip",
+      "path": "原始数据/评论数据爬取/14：14.xlsx",
+      "bytes": 1663958,
+      "sha256": "913f6deb5c3b57a3e28d81170107358bd321361debd86f0d0f61252e46b61de8"
+    },
+    {
+      "bundle": "01-reviews.zip",
+      "path": "原始数据/评论数据爬取/大疆无人机前99条.xlsx",
+      "bytes": 820320,
+      "sha256": "61da0f866bfa61e88ebbba5fdd337cde76ca4ad38ca7bbd077eb2ea5916ace11"
+    },
+    {
+      "bundle": "01-reviews.zip",
+      "path": "原始数据/评论数据爬取/无人机-中间99条.xlsx",
+      "bytes": 1759404,
+      "sha256": "273beb7b2cc345003f2941c075bd2ebb92a63fefb1720efdc81b064a277fe4a4"
+    },
+    {
+      "bundle": "01-reviews.zip",
+      "path": "原始数据/评论数据爬取/无人机-前99条.xlsx",
+      "bytes": 946865,
+      "sha256": "0914b56a05959556be1770de32d905a0b6923bc75e7c0edaf18d46c15881f0a6"
+    },
+    {
+      "bundle": "01-reviews.zip",
+      "path": "原始数据/评论数据爬取/无人机评论后99条.xlsx",
+      "bytes": 1623026,
+      "sha256": "ddef3ddfd62ca0c90d62119dc2a9bc9b396fd81ae43169875dd6f3e534ef0853"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/京东/京东列表页数据采集（list开头网址）.xlsx",
+      "bytes": 496244,
+      "sha256": "3c7b37d4fe39fe2f1faddeaa57d65c51d105b496bc050360c049f1960dfae3d0"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/关键词-商品列表爬取数据/哈博森无人机.xlsx",
+      "bytes": 225618,
+      "sha256": "4f993d0d602f9274787d5e7baaab73b1c48fd119af215518a845b94993e02bfe"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/关键词-商品列表爬取数据/四旋翼无人机.xlsx",
+      "bytes": 514934,
+      "sha256": "d8ed8fc215a17dc077bfeab394a87d07707246c55a7313e3fdb17183db994bf2"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/关键词-商品列表爬取数据/大疆无人机.xlsx",
+      "bytes": 296603,
+      "sha256": "ce8bb5a81d19178e2ace2c824bc64b41aa6327f8bf0f844b570d318d9043adec"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/关键词-商品列表爬取数据/智飞星无人机.xlsx",
+      "bytes": 298555,
+      "sha256": "d1d0e572f61610ca43778f76e437265417de8dbfad583c1792d26b5b0a3eb3a7"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/关键词-商品列表爬取数据/植保无人机.xlsx",
+      "bytes": 290565,
+      "sha256": "216c6820095675df4c7d169715d0b0ab0542e7edf5f0c813428ef6c474ba8300"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/关键词-商品列表爬取数据/派诺特无人机.xlsx",
+      "bytes": 223097,
+      "sha256": "033d69285261a4d0bd7872efd481c080cc9356fdc1a12a72de8d2710b777ffb9"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/关键词-商品列表爬取数据/淘宝网-商品列表页采集【网站反爬请查阅注意事项】.xlsx",
+      "bytes": 959618,
+      "sha256": "17a40f7a9fa164d10926e001ffe1dcc602e1b9ddd1fa34ba791c6ac95f2897aa"
+    },
+    {
+      "bundle": "02-product-listings.zip",
+      "path": "原始数据/关键词-商品列表爬取数据/道通智能无人机.xlsx",
+      "bytes": 96911,
+      "sha256": "4362bff3b9e7d6008e77b3f288a9052a733b2b7f1d7d807ac0617bb099751edd"
+    },
+    {
+      "bundle": "03-product-details.zip",
+      "path": "原始数据/商品参数数据/222.xlsx",
+      "bytes": 295017,
+      "sha256": "f220b641cbc8e7026ecff1eda9b9f28e7ce793f67d4bbbd23943d9393891c242"
+    },
+    {
+      "bundle": "03-product-details.zip",
+      "path": "原始数据/商品参数数据/33.xlsx",
+      "bytes": 199751,
+      "sha256": "f01a7d7e56236f0c8f63f3e1ff2563f44e7a32aa006b9ede68f758c0b2dd4d38"
+    },
+    {
+      "bundle": "03-product-details.zip",
+      "path": "原始数据/商品参数数据/淘宝商品详情采集【网站反爬请查阅注意事项】.xlsx",
+      "bytes": 483812,
+      "sha256": "e2035c0e485859077cbae38ac6f2e3570218f4eb378dd53eea40a2d1ab0e8d2d"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/原始数据.rar",
+      "bytes": 1546678,
+      "sha256": "dd0570909e84391e8b5bed302bbaee1bfc0a7fa24825adcd1da5d55a1a7f1da5"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/Untitled2.png",
+      "bytes": 393475,
+      "sha256": "84f2e67df8a945109d8fbde332eabad4adfbb2ea221e8a947bface568a2912bc"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment--语义网络.txt",
+      "bytes": 1514,
+      "sha256": "07eb1866cf18cb9f4364f7b527d2c911f16c5997326eb035e9873c1cfd449523"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment--语义网络.vna",
+      "bytes": 1543,
+      "sha256": "30370f675e26244f213e2d6ba43c25ddfaf6371644c6a8fa7fb5a49bdc99fd7b"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment-行特征词--共词矩阵.xls",
+      "bytes": 57040,
+      "sha256": "984cd9a07d893bb1ab59b332347308ddfbab2384a423820038fdc0c6a8f80dd4"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment-行特征词.txt",
+      "bytes": 46481,
+      "sha256": "7ae35bcbecaefd5bf4bfaf4762acc4252f98234b43709266d25bd2b8b4245e7c"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment-高频词-共现矩阵词表.txt",
+      "bytes": 836,
+      "sha256": "d405ec17ef9a8cd806e88f5643220c7086eca27637e313b704428bd8646677ee"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment-高频词-高频过滤后.txt",
+      "bytes": 836,
+      "sha256": "d405ec17ef9a8cd806e88f5643220c7086eca27637e313b704428bd8646677ee"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment-高频词.txt",
+      "bytes": 1427,
+      "sha256": "6c2b7546209c761eec1653074fa45ed147109faa8994a8596a8df3f61fb6fd5f"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment.txt",
+      "bytes": 165347,
+      "sha256": "74a95229351f5a7e5f97f0d58047c113c1b6105663b620d2cf6f9f3dc988b1a4"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment_分词后.txt",
+      "bytes": 219784,
+      "sha256": "cb629a6f046dd2346ea2323d9a69127dc69d2083b4f51b6e35eab71a47f52742"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/comment_分词后_词频.txt",
+      "bytes": 949,
+      "sha256": "0b6b53f785ace9d0d5449e1a2e3fac4d4fbe952f3cdd217b9531d8c822c90ea5"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/gephi.csv",
+      "bytes": 20450,
+      "sha256": "0ef9cbac9670d84ff917ed4298bd0d3a386a872be921fb7a9819601a48f8872d"
+    },
+    {
+      "bundle": "04-original-archive-and-text-mining.zip",
+      "path": "原始数据/评论数据爬取/共轭词表.csv",
+      "bytes": 20168,
+      "sha256": "aa5a8a81c899c83bcdae6394a8f65c9c9aaedacb9f867304c7854fa32f353830"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "0.0.txt",
+      "bytes": 246126,
+      "sha256": "55a799f24bf061b7fe7b55506defc533799a4c884b45d6b599c451b0e8e8d9ed"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "hit_stopwords.txt",
+      "bytes": 5273,
+      "sha256": "84e526454db0245cab0d167df067f00298d271ad2c86391d45f5e880c422cbae"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/Untitled.png",
+      "bytes": 256104,
+      "sha256": "22a665c12ea4ca88b72c0f12825cdb31ceacd96694d4e52b4ca6d8faa6d04ab7"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/Untitled2.png",
+      "bytes": 232515,
+      "sha256": "fc3fd3acdad4b5e6c9668ec3c008724f9b681785f5ae7481f025fd0efa86ecc5"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/cooccurrence_to_edgelist.py",
+      "bytes": 933,
+      "sha256": "ff7376816b64dd7b89107132818913fe17892dbf97dbf69f44e33f1b61f84eb0"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/visualize_chord_diagram.py",
+      "bytes": 1787,
+      "sha256": "85abde7bf58301125d61da20c24c0aa89e441a11834700e0c70e6ae56bfcc0b1"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/visualize_cooccurrence_network.py",
+      "bytes": 1998,
+      "sha256": "964e896d82ef5f5fea587008d82b88a1b2e6f80253704465cef9f1cc11f91ad1"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/visualize_radar_chart.py",
+      "bytes": 1343,
+      "sha256": "c0983a583ac1dced20fbb8014e325795b0fca2857ffc366895d817d9a7e18c0d"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/共词桑基图_分层优化版.html",
+      "bytes": 8321,
+      "sha256": "f90dd33f3be4e6f7c511b1fe0f884cc1320a39c28616de792666cb98c7d3364b"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/共词热力图.png",
+      "bytes": 400740,
+      "sha256": "df214eb724d1401c33dcf2174d291483fe701401f7effbca0d0d8ed5c2befe75"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/共词矩阵.csv",
+      "bytes": 20940,
+      "sha256": "08b4bb757d83592d7516c3fe6456f39418fd7d3f83c71b2af5dc329310a9929a"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/共词边列表.csv",
+      "bytes": 2055,
+      "sha256": "367ec358cbf0ac6a7aee373c2bf1495c95ab62f71c116ff2af40779314911c69"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/共词雷达图.png",
+      "bytes": 516365,
+      "sha256": "df782f2fd07124a4cdaff4dd7bc7a56b85957f0cabfdb2ef4a08ea29d90ce640"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/参数信息-行特征词--共词矩阵.xls",
+      "bytes": 108250,
+      "sha256": "70d22b0a3c5eb4b410b6c9bab7effb341d5f1d678a82d11aeb59c02590ca1846"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/参数信息.csv",
+      "bytes": 37964,
+      "sha256": "59843f9dfa67837397c97aad0d66e525d50169d629a47c7c7c085c360a9448c2"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "处理后的数据/评论-行特征词--共词矩阵.xls",
+      "bytes": 58076,
+      "sha256": "b4cdc42ba855b83974c29e3261e0c96ad6a9564aeb5a46de918fbd69fdbe3473"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "桌面原件/无人机评论.gephi",
+      "bytes": 11880,
+      "sha256": "af65dc18b5ba804b274ff45781391336d1ce69823e21e40cdb5ad9fa79f59e0f"
+    },
+    {
+      "bundle": "05-analysis-and-gephi.zip",
+      "path": "用户分析.docx",
+      "bytes": 1255501,
+      "sha256": "ef5f40fa5d9d176d47b32feef2ebae613ef193a228e46f374b14ef11bfca79f2"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/00-来源文件清单.json",
+      "bytes": 9373,
+      "sha256": "12ec676efd05ccaeace0254c5305ef4db198ec49d9309c727227b2d35b3e696c"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/01-工作簿与日期审计.json",
+      "bytes": 12753,
+      "sha256": "222266402af0de54bf9b297b8f3e3bc401bda043b1f6a505c3a9e60aa8a9b654"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/02-匿名评论记录.jsonl",
+      "bytes": 10196906,
+      "sha256": "d430f71b0af77b7f9c81e35cd78c08d7ea8a1b04be0ce7f1cc5f40ec97354b45"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/03-去重文本语料.jsonl",
+      "bytes": 6445024,
+      "sha256": "ae4ce49861dac648c56259504e8c3ecee67d82e9b54fa219f61259e7a7da3fae"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/04-造型相关候选.jsonl",
+      "bytes": 1596304,
+      "sha256": "3dfcdb4524ca4bbdace58cdf507d3ccb5ca80f874870f1563a5ef594e9febe91"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/05-商品展示与参数记录.jsonl",
+      "bytes": 2273190,
+      "sha256": "3416319d77a88f522f6269ac31255fc5afda8c75efa3af2fdd3c854df017c05e"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/06-旧报告词对与文本资产.json",
+      "bytes": 15178,
+      "sha256": "9c6b00f94a27afa45167390e2440a9c8178aa2a2c568eada4b6f52da08a23b32"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/07-清洗结果摘要.json",
+      "bytes": 1914,
+      "sha256": "b802382b54466b65ec95daf2635cec8cef56d87fcc7a14d5cc87baf3de465c78"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/08-前期调研首轮结果.md",
+      "bytes": 3295,
+      "sha256": "0249d055993b27f1fec3482857ce96308b5a4db29ad1484eb0eef79a028cc797"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/09-公开补充证据.json",
+      "bytes": 7418,
+      "sha256": "2d2480a722102a6c9d573767f2913ea659ec394d9de96e562612d34e36f485e6"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/10-Mcode语义初编码.json",
+      "bytes": 42698,
+      "sha256": "c5159ca16c44de4d0afa9363a4e6a361d0b8ebc0b1cb891c2ce864dad710ea4c"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/11-主审语义裁决.json",
+      "bytes": 24350,
+      "sha256": "7067b359fae4c07c9467b4e0e92f927b23a2afb6c97414fc4f53212155f07ec5"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/12-公开补充来源核验.json",
+      "bytes": 3354,
+      "sha256": "803b178d6ddfea2b93fd27307ce3a5f4aade3aeb2f5b317d9536454cca723962"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/13-本轮数据验收.json",
+      "bytes": 1067,
+      "sha256": "5cbd1d89ffe179ca3a88a7f04f8f49ae04f22b3ac0d3b2646cf7f4072ddc83e4"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/14-候选语义与试验边界.md",
+      "bytes": 3111,
+      "sha256": "662e720be23681aafa1d1c985ecb156e9e50d73334a3fb3e20c00f7c3ce6e5d8"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/15-本轮公开来源与核验.json",
+      "bytes": 9964,
+      "sha256": "e4c48ae6e8a082717c29b33536f4d62d906dcd1dba6ba590372242ce3d30ff01"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/16-新增反馈意义单元.jsonl",
+      "bytes": 25899,
+      "sha256": "17b942876a807a2338e966e39777aad4b2ce29b8a66af767bcc6d2aefcc44c84"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/17-Mcode新增单元初编码.json",
+      "bytes": 11630,
+      "sha256": "b9fc1c4d5fdab618ba044bebdb5326ca0f5bfebb831bb98fd182e481a511a88f"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/18-新增单元主审裁决.json",
+      "bytes": 15672,
+      "sha256": "7fa2ca1c1a776edfc41e0024e0702ec5068228d503acf1e4e65c482d47db1de4"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/19-官方机型参数核验.json",
+      "bytes": 11972,
+      "sha256": "effca55dcaf3b209bc27c8a16065e4c41aab3b99b91b8d2924d6db1cee482686"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/20-检索候选与机型覆盖审计.json",
+      "bytes": 24814,
+      "sha256": "cf6eb10075b324038ec0a4c36fad9b76350a6afd18192d89bf91db007232ebf6"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/21-近期补采与下一轮规则.md",
+      "bytes": 3916,
+      "sha256": "9ebf8fd588e108f95d28c3f3692d11bc5eae9ead8091f6daaf9729ade47715aa"
+    },
+    {
+      "bundle": "06-cleaning-and-source-audit.zip",
+      "path": "补充调研_2026-10-09/22-本轮扩样验收.json",
+      "bytes": 1666,
+      "sha256": "683214158e0ac01bdd9fbf199759f35fc5b1feb63dbf06841d84960168fa4011"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/23-京东Flip浏览器试采.json",
+      "bytes": 51708,
+      "sha256": "4d9ebe81d3712a46b124d10817aaac7ef44c7c986f2c2dcef69a57abb150d9a1"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/24-Mcode京东试采初编.json",
+      "bytes": 8415,
+      "sha256": "29e2ddd626ac3e8da959ecc248d9327adebde32cd6310cd2369198de659b9a41"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/25-京东试采主审.json",
+      "bytes": 14950,
+      "sha256": "74bd64a8fcced28808630dc0d5d43c2db77c969e6f2a30a75b91a20d80952b86"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/26-京东试采验收.json",
+      "bytes": 2796,
+      "sha256": "e5a8762425aa4b4a7c9d5abab06493e0617b407127f21ae00467051b5e9e4915"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/27-京东试采与批量采集规则.md",
+      "bytes": 2757,
+      "sha256": "8362b1872b614fdf27e9af32925dfb11ac3d8a2c4593013f2dfead3cdd356dec"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/28-京东Flip批采原文.json",
+      "bytes": 27090,
+      "sha256": "2e3bac162fe3cf18b3099544edfd211138aca9713282da2a446fe1900423526d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/29-京东批采执行与验收.json",
+      "bytes": 16336,
+      "sha256": "09bc05a798a8cbb5f75f0bd9b03e993486f175d513defcd9912e53977454d8da"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/30-Mcode京东批采新增初编.json",
+      "bytes": 3240,
+      "sha256": "ccd7d727e50e8d98583ad516cfca71eb9081bc9bebe1377a7885950012a5e1d3"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/31-京东批采新增主审.json",
+      "bytes": 4577,
+      "sha256": "ab59445f18fd666af0f23ecfc790f601411d99b732f91e79bbdce307fb744224"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/32-CLI夜间采集/sources.json",
+      "bytes": 2614,
+      "sha256": "0f2c13043be0d9a01c7c81c1557a3f838eb49e6608e0393567725cb1bcb279f5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/33-京东侧栏AX续采原文.json",
+      "bytes": 51721,
+      "sha256": "9b2570396280298e917115d19fe8d840c97cdc48b6a2280cb76c553bc985b72c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/34-Mcode侧栏新增17条初编.json",
+      "bytes": 6688,
+      "sha256": "c3b1a0d7714efa9a0a0eecd6d1b9763bc6f6e6a5fdd6bd1c11b57531ace2dcee"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/35-京东侧栏新增17条主审.json",
+      "bytes": 11064,
+      "sha256": "25887b45f90b8f4e0c58a95ea2f33f4ad35e4c14dfd7f4bc5ca996cf58d66f19"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/36-京东侧栏续采验收.json",
+      "bytes": 1898,
+      "sha256": "0bd2e1b4eed6f114acd393cae370e9cc4b084c1ccea58ba1bca2a8be96186c8e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/37-京东自动滚动验证基线53条.json",
+      "bytes": 51721,
+      "sha256": "9b2570396280298e917115d19fe8d840c97cdc48b6a2280cb76c553bc985b72c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/38-京东自动滚动验证原文.json",
+      "bytes": 57408,
+      "sha256": "2a744e8ba7c96c31f326c54a18753172b34598640d0e5f2810d21f84dde8f8bd"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/39-自动滚动验证新增3条主审.json",
+      "bytes": 1809,
+      "sha256": "7409eb36e5a261c33cd90380c606958e6761371537eb0ff413deea1e17d0c15e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/40-京东自动滚动真实验证验收.json",
+      "bytes": 1849,
+      "sha256": "308bbf3b2eb9c478574bfc15d7d491f1e3b6d99ceb4b3184d3958a041079220c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/41-第二机型候选与验证状态.json",
+      "bytes": 2776,
+      "sha256": "5993db9815adf4d7850c810f6e6508beb3cf1c25013941d15aa690bc7b8a11ba"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/42-京东Neo2空基线.json",
+      "bytes": 745,
+      "sha256": "ef7d0aa1f63634372c5a3b5a11b7c2ff9e4c402368b2a5340ca35b1ee63603e3"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/43-京东Neo2首次展示原文.json",
+      "bytes": 5972,
+      "sha256": "344029a5af1b5500fa160f04197c034ca6a0475f2b57792a034b5575c8783278"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/44-京东Neo2最新排序试采原文.json",
+      "bytes": 16424,
+      "sha256": "8bfbaf0e63d3c208ce3223367ac3d6aee709a1036488b7f6ebd581a7c5bc12f1"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/45-京东Neo2扩样原文.json",
+      "bytes": 28583,
+      "sha256": "b10adf02f50ca9dff9eb502e2b79bdd79ca14f5fbdc3ee7dbcc88805f8bd657e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/46-Mcode京东Neo2初编.json",
+      "bytes": 8317,
+      "sha256": "651c42664f1142c303f1211ca1fcdbf931906ed1c93db4f9867eeb692a9c580b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/47-京东Neo2主审.json",
+      "bytes": 5956,
+      "sha256": "102a81e0d96684c16712826484a81baec4abca87597eedf4d80776cd6eb85636"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/48-京东Neo2实采验收.json",
+      "bytes": 4816,
+      "sha256": "b9cadd1630ded6bf2efc493958b94388cad09f1fbdab55efeaa7a4987b25985b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/49-哈浮X1系列来源核验.json",
+      "bytes": 1970,
+      "sha256": "313fb689274ea572a1b5af7752f94c6b30944095f240cc403f595390ec2794bd"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/50-哈浮X1系列空基线.json",
+      "bytes": 843,
+      "sha256": "54ff1bf7e44f7274087bac6eea41173cd4fb717a5d7f77c3c6e4a0e9c2df5bf5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/51-哈浮X1系列首次展示原文.json",
+      "bytes": 5824,
+      "sha256": "867bc54ecc9accbbab4b7f2d48c7d2904da3d77c94c28d3fb8d384babf425ad0"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/52-哈浮X1系列最新排序试采原文.json",
+      "bytes": 23171,
+      "sha256": "bf6db8d581539fb869e688cde40c928d55789262f5a1869faed549895c60083b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/53-哈浮X1系列旧库对照.json",
+      "bytes": 5982,
+      "sha256": "9cb1a76488c83f379412a3106ad89930e876a568d105e71038f527b8feb29a68"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/54-Mcode哈浮X1系列初编.json",
+      "bytes": 8245,
+      "sha256": "475a69fcf8749acc5f6d2962d33cb2101204d2af1d15603c6dc7218fa7da0197"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/55-哈浮X1系列主审.json",
+      "bytes": 7193,
+      "sha256": "1ff34d9cb762cdc1747cf78208e6b15e329883f98057dfa254a518ba1bb9ba97"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/56-哈浮X1系列实采验收.json",
+      "bytes": 8104,
+      "sha256": "58a2ad50860a22511158a94e82262f67cf88bbe826ceb27cbdc63bdb7d213d29"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/58-Reddit少量核验与待定摘录.json",
+      "bytes": 5798,
+      "sha256": "31d8660aa2f7de7c23417e367d545aa2d648e13df530989590e3316891e69202"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/air3s-empty-baseline.json",
+      "bytes": 588,
+      "sha256": "1afefa91766bd5575ca51dfdfe4b99fa8b7a36e131b2324ef48d3e0fb5b03952"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/air3s-initial.json",
+      "bytes": 5437,
+      "sha256": "a6cefeb7c59797e714f2f6de1b06bf340eda34760d349078d4b6ac4f7c611cf1"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/air3s-source-verification.json",
+      "bytes": 725,
+      "sha256": "c75334d0c69041e0f8d73d9b24e2e65b6c3b904ca6cd444df7d10a62472d3df7"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/atom2-empty-baseline.json",
+      "bytes": 1037,
+      "sha256": "8e5aa465aacff374a979220bd5d273fbacd0d8c3abc2f02996f457570073b37e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/atom2-initial.json",
+      "bytes": 5995,
+      "sha256": "960da74d75040bb4bfbd48afc82d27aae6bb0848e639bbf104fa95684d76c0a5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/autel-whole-unit-empty-baseline.json",
+      "bytes": 1484,
+      "sha256": "4f6473eea57fa2634b639783f5e88d19ee069c5beccffc7d2e5b9da1cadfc091"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0001-quality.json",
+      "bytes": 1172,
+      "sha256": "7c1d173f95f3a29b763006d0c285f6aa2e301bc8ce092eef483851abe5a256f8"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0001.json",
+      "bytes": 34063,
+      "sha256": "609f9d45b14b6bdf8c6253fcde0152d2e8511ca55ed4921bfc985b86a64d6903"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0002.json",
+      "bytes": 36303,
+      "sha256": "bb09480b4023d41f3e791de830385f9e3cec5bae2be7e18a8503019e5bd0ea97"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0003-main.json",
+      "bytes": 2562,
+      "sha256": "3afae3ba2669d8fc40228720ce813a36f795acb3610ecc542944b710f4635f8a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0003.json",
+      "bytes": 32941,
+      "sha256": "7abda7e722baa3e886449c6d5fbc2413bdc5bd52330bdaf4edd741de1fff4011"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0004.json",
+      "bytes": 35280,
+      "sha256": "9215d3b184a84124c4ff60041db16ead4b46f6973018701097ded2fb09c53e7e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0005-recovery-observation.json",
+      "bytes": 22017,
+      "sha256": "91860bab048a673c78b23855fa97fe247ec293bbf7227dd9897467384031fc24"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0005.json",
+      "bytes": 20717,
+      "sha256": "507860f423c6c5a78d1e0835e4fa59013be25fe3e7e144f74b127ff98db9d671"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0006.json",
+      "bytes": 24384,
+      "sha256": "8c05b4a73dde82343e6b54869fa33d14012ed985d873b7af8dc6511cbe9db1ac"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0007.json",
+      "bytes": 34930,
+      "sha256": "245d7dab277e80d66e559c84138f26cac1cffd2958919746d14ab5c8bedb4944"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0008-review-receipt.json",
+      "bytes": 3208,
+      "sha256": "a3940807ea624f490d871eb96b2badcef22d565644676773bb1ef7b35d86845b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0008.json",
+      "bytes": 40225,
+      "sha256": "05a3744f9d1a7bb00b3750c28ecf019e6b2be0e5bdcafcddcdba8f2540a1f9d3"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0009.json",
+      "bytes": 47094,
+      "sha256": "ca9f31f2a75c71c1141371300dfbf89c176193eed6ae58e58e179d45002a244c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0010.json",
+      "bytes": 54069,
+      "sha256": "0f036b476b83b86c7acc89981ddf63171967a54009d2114f118b4482ccd3e40a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0011.json",
+      "bytes": 21052,
+      "sha256": "7c7fc3d5f82553e825ace03732c888fe07f7f733be259377db233b15c21d3784"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0012.json",
+      "bytes": 31634,
+      "sha256": "a869d1506b74ebafbce1dfe08d8a55e352b6e8b6e18e9f23b156c9570800adca"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0013.json",
+      "bytes": 38120,
+      "sha256": "35c79286bc932b3cb0f62a1c0fb39177efa316aa94046b3a82b42c59fb3a128c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0014.json",
+      "bytes": 37775,
+      "sha256": "32366855281d188a2ac6f35b3fb729df92dea648483a8aa5a35e4c6371601035"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0015.json",
+      "bytes": 36863,
+      "sha256": "5594281df6e288df58de68823579dd0e415dd8bd6b811e6c5a4e55f35f7ee32e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0016.json",
+      "bytes": 45036,
+      "sha256": "b53cca253917375f4ff864b03071eb8db5a27c23e1d076ec23f229bb8f9eacd9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0017.json",
+      "bytes": 48247,
+      "sha256": "8dda632d606125352b1b94a62278de9a47ebb4dcbc97fce826adc214c6c56f60"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0018.json",
+      "bytes": 48590,
+      "sha256": "33f5002601fb0f2d5ab1b6f331d2357a92f64adae90479b5531d6d47c21c9f65"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0019.json",
+      "bytes": 47575,
+      "sha256": "300254ffb4195c6412042a96330a054633b49a5215ec16a32ec40c310ed04f25"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0020.json",
+      "bytes": 20684,
+      "sha256": "f0847e9fc5e4ccc1763aee62b8c2990bc56cc75243da4f2d3cba96a337fc3826"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0021-stage-audit.json",
+      "bytes": 2262,
+      "sha256": "8ec26f99570debbdae093f89216c382b18db66a24fd8d16c9ab3b21168e173fc"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0021.json",
+      "bytes": 29730,
+      "sha256": "02977a4e53dd158740879e96a03001f6769bed42bf87fa5131cb25f7f54b3f59"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0022.json",
+      "bytes": 36299,
+      "sha256": "ea2992aabb4fb83a6b2908172ba1f6b8af4ce5a75615e979fcc22c19be1a1c91"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0023.json",
+      "bytes": 41891,
+      "sha256": "8b4b2cfa23970c149124879598da829e932a31a24dd1d6594617ca051aa44848"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0024.json",
+      "bytes": 48818,
+      "sha256": "0aae5c51b1d621579821ae50589585a9a847e32fb561f49c9f5c7238402902a4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0025.json",
+      "bytes": 55828,
+      "sha256": "99e75f900972a4fc59e1892eea3df3d1e9e7009d33d5d09253207deee39881fe"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0026.json",
+      "bytes": 60923,
+      "sha256": "a1b33f1404b5207d157e49f8ea2e95713afad6f7ebbfab4f76340a1bcad67a24"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0027.json",
+      "bytes": 65676,
+      "sha256": "29ffcf377a1211da2407e706a174ab0ad0a738da246a4ab5d6475c0279adf63c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0028.json",
+      "bytes": 71304,
+      "sha256": "582e6efb974b76e15178721184c0089b3973f84be900ccff59fe56b3e8133c4d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0029.json",
+      "bytes": 78651,
+      "sha256": "e9926db67d838363dd9ae06b24f928d60a7e17ccc3425525def79c53513c0278"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0030.json",
+      "bytes": 83900,
+      "sha256": "546a600243bc293420fa6433e595d07f1cc84ac415937200c5b6054ee69d3309"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0031.json",
+      "bytes": 89565,
+      "sha256": "9ccbdc3841d4a4dd31c665d79298a511a27a25087d5fd9a53e906584855ff67c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0032.json",
+      "bytes": 95303,
+      "sha256": "31b0f1760c3622f022f0ce6d626fd2c4a063f7ba48bc28d0c6528e826147d336"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0033.json",
+      "bytes": 100223,
+      "sha256": "55b70f774831d65ec0cd59b5b14e2ac8b4098130fce0f7f6b4fe1b10c659b2f4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0034.json",
+      "bytes": 107110,
+      "sha256": "2db077ea989e089353d480d7db368cf2609aad6fe1f4c2c3be4a04d3c74d17bf"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0035.json",
+      "bytes": 30161,
+      "sha256": "2741f7b29261525f24b82f70f5b7ae47a4938c7e70dc2b3abb1e3455472ccf60"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0036.json",
+      "bytes": 29934,
+      "sha256": "0b56eb43fe47c802859b235152e876c2ce7c313f701c906e1977dbe8983191bd"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0037.json",
+      "bytes": 34183,
+      "sha256": "5e285e12d4b9f93e2f40b7f098f1c95bf90a3d24227a3458cb00ae505b0a94d8"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0038.json",
+      "bytes": 39230,
+      "sha256": "ac029f5865ace04ffe5f1eb48ca8d062dc58aa70dfaf433ffc9e2f2f6a83fa91"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0039.json",
+      "bytes": 49528,
+      "sha256": "4b0447db34ab07680c17eaf13acb7e1040c5653e5d94634696bbe8ac706f5a99"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0040.json",
+      "bytes": 58433,
+      "sha256": "8b1c25e9a734226ff02fe421a576b6eee0c5dc27133e96f59a72a7ec77c7cf48"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0041.json",
+      "bytes": 68075,
+      "sha256": "ccf96c506c34f771f660378534d8b654d0d5836a5ee598c857e2ecd35daa8409"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0042.json",
+      "bytes": 76415,
+      "sha256": "e93db3a54c42b90b9eade5cdfb8be6a3550e980a8097ea6bde62cd3d9b061ab9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0043.json",
+      "bytes": 85816,
+      "sha256": "f6f36c92bb07b476899d017fd415b4c2b5d2bdef41b0eb4a583f5b81e045d555"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0044.json",
+      "bytes": 96505,
+      "sha256": "4f0c3c78b01e3a7340f30e46e5a810fa27a0d528b41cc766c863a7a1bcbb2d78"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0045.json",
+      "bytes": 106103,
+      "sha256": "9ad5276f10b66c9d85584baa62d3c2ad74683d1065073f73d1ac4dce7149c834"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0046.json",
+      "bytes": 115767,
+      "sha256": "cad416590f80e37fb9861e7c97e9eb3ca4f647bfae0f7aedeb9ac94686a756e4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0047.json",
+      "bytes": 118084,
+      "sha256": "442e4bda85c189bbff51f71d503e06e50cafd7a33973041c1064b4936e702826"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0048.json",
+      "bytes": 114412,
+      "sha256": "9e2b297e7293087292dcf495a87d4d5f66b570ceee06705c8b86f6125b76287b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0049.json",
+      "bytes": 122835,
+      "sha256": "5310fb09dd36ba8899e037cad173718bfa796d60f4519fae17751a6b6bf1c508"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0050.json",
+      "bytes": 124530,
+      "sha256": "bb17aa1664bb2012af233aef753fd045836b09be7ce049a1b282244ecfc95f64"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0051.json",
+      "bytes": 18920,
+      "sha256": "9fba0432378298f95f2e203c77fbd060544ff91afcdb8323a0b6550e656e1781"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0052.json",
+      "bytes": 26688,
+      "sha256": "061ad4735a1b5753e234eb8658b7f53193e02a5926c8a63124157ea9dd7b6483"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0053.json",
+      "bytes": 24735,
+      "sha256": "68363ada966e362c697ff7ba431d7e2d960e107735b5f8255a1e8bcee74eab3a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0054.json",
+      "bytes": 28536,
+      "sha256": "d7b18101a68b1f1686e034868f14e5a18825847d7d868d570bea067467dd7696"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0055.json",
+      "bytes": 25189,
+      "sha256": "cea25feafaeeec5b72e25fc4dcac48a439e59586a4a82f7824b273c2aac880ec"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0056.json",
+      "bytes": 39997,
+      "sha256": "9168302146461b8d5793a1dbdbd156358f9339d5bf93d1e63eceac227f91f739"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0057.json",
+      "bytes": 51641,
+      "sha256": "f7559c405da9196f8d76792f0056ba07a3a59a41ffbfc7a20f9268ce782c4de8"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0058.json",
+      "bytes": 62357,
+      "sha256": "62ae335913362a0a325ff8b79a9c5db18dd923b6f798942ede55b02bccaf508b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0059.json",
+      "bytes": 70991,
+      "sha256": "419fd9b69921704c2d646dac0f0e957d1ca7db8b776864750bc704e4eddc4445"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0060.json",
+      "bytes": 76614,
+      "sha256": "86b6f5d25c5cc7d0d92e330c1e9123ec714c014bbde1a6d25630af0a511a13e9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0061.json",
+      "bytes": 84426,
+      "sha256": "9e0cfa00953af6f3f4cad7d8e9c1f096266d6f428eb9c063a37512affd384d0f"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0062.json",
+      "bytes": 90509,
+      "sha256": "1ea8b4e0a56a674b67237e897e7c28de01328e3db4bcdda4002e3e84c7f45fa0"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0063.json",
+      "bytes": 96801,
+      "sha256": "3e3c0e4cd8ec5a7fe4361003695ff1e9e348b824310511cf341a4528303d687b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0064.json",
+      "bytes": 106956,
+      "sha256": "6db5c528bb03d01bee85bb1ef80554174c357e4e944e341e919bf3cb7a354f2b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0065.json",
+      "bytes": 117188,
+      "sha256": "fb2c42a1b73db1324ce6def3f87f5c93ac973200c1faa4f8cece80bfde0bae48"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0066.json",
+      "bytes": 118345,
+      "sha256": "f184ec98ebffbe97083e4890e7cf16d336c5ca8512a3c90ff6ef6cc9d460f69e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0067.json",
+      "bytes": 115600,
+      "sha256": "62561ba7c403ac30bb96cde27616bbc3f7963063ed79e94a748c9903261399e6"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0068.json",
+      "bytes": 24502,
+      "sha256": "55e2d579d93312ccb9326822498c98e24175cbbb70301bf8b3ae20fdf9b40d0b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0069.json",
+      "bytes": 40057,
+      "sha256": "a067db2b0ccd2e0177aee02909f946d32d0649e7908705a1842d8de6877efe94"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0070.json",
+      "bytes": 49894,
+      "sha256": "599ff81e800c192b900e0d8662aa90a09d933ba1d981e8518ece553da7a81b76"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0071.json",
+      "bytes": 58048,
+      "sha256": "a7a338b1b795891d171725c123c020db3a0d3ba389d9f43e7638cbbf6b130a58"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0072.json",
+      "bytes": 65903,
+      "sha256": "e2a78811dc8328cd0981ac0f4f7a57482eb4ccbb789332f5608c2240cb546375"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0073.json",
+      "bytes": 76851,
+      "sha256": "6e02a9387e4f447abcb07f16b61a6c52a329272e36aedc89bb8ac67376b0c7c3"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0074.json",
+      "bytes": 85683,
+      "sha256": "11b2dc3ac33c5d737fd8f3bec05a7542b04886fe911cf899a4fb7f03b5f0220d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0075.json",
+      "bytes": 89496,
+      "sha256": "da23235b2f113fd0ce2e85350d13a84f1c92d01cdce5bc8baa5eed0fa2c00ddc"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0076.json",
+      "bytes": 97350,
+      "sha256": "ad691005a92859225a2abac204b305071c55d4612de859f56d607d846de02aee"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0077.json",
+      "bytes": 104599,
+      "sha256": "2811ec3e16833d4a796cd239b7b6ac2e197e7062156f1624f4a15ac78559b8b6"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0078.json",
+      "bytes": 113859,
+      "sha256": "ecd3d39c3544df6f1950ceb7d54d23e2189cb7eeaad8bd9a6aeb94a4aba0b8e7"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0079.json",
+      "bytes": 114165,
+      "sha256": "3b17e6f6ad66e30c82059fa67816b5f77c33f547af45d150d13956799c835d7e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0080.json",
+      "bytes": 111402,
+      "sha256": "f3893cdffe663d44b2093a44f48f6a0135128590d0815db95d13284dcf643803"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0081.json",
+      "bytes": 116052,
+      "sha256": "c23d8aa1c28abeafe7d8b9b7d5ae568cae82fe1753e001c79ba2592c6013a82f"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0082.json",
+      "bytes": 117183,
+      "sha256": "f8a6a2de92c76992cfc7ccbef791d87e6a2d0bf87133ffe76db1905e3a4bdeac"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0083.json",
+      "bytes": 57053,
+      "sha256": "df3c79ff895212eb50b387bb9ea2d635e424320a37156a3c78ffb4be5e82ad1c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/batch-0084.json",
+      "bytes": 58101,
+      "sha256": "c8f93d30e115cc4463ed5cae7b68cb8f97a93274e1d8bb584c6b66bebbc86d93"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/eight-hour-completion-audit.json",
+      "bytes": 55838,
+      "sha256": "d2aa47f2c0987a68389f9dcf8d617644c57be9bb17c69d09d59726f4bcbf5a79"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/first-three-batches-receipt.json",
+      "bytes": 3002,
+      "sha256": "13925ca580fb8b5e11e193ff9d08d022583a875530ac1409cdf1af6afa27f613"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/hubsan-candidate-unusable.json",
+      "bytes": 559,
+      "sha256": "a8a2eb15b148be33d4fb7c02fe9e14a40a401d6bd1c5f1907cb267639203c9c6"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mavic3pro-empty-baseline.json",
+      "bytes": 1104,
+      "sha256": "67822a0d9dec8ec65ed9b5190d00167f1ba1bd0e08200fddf884dec43c47a8c4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mavic3pro-initial.json",
+      "bytes": 5938,
+      "sha256": "11167e74671232535ad81d7b0ba37d80998fbc6ddb9c826d61c7bd5e3753607d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini3-empty-baseline.json",
+      "bytes": 1081,
+      "sha256": "e2de31ad3183a040517f7f807368b598348b16b6b58daba8e52371537a37e739"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini3-initial.json",
+      "bytes": 5908,
+      "sha256": "f3527a2494e40dc1a2adb7e064c1eaf0183b541d32ed988effa12b6b3b40b0c6"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini3-negative-maintenance-observation.json",
+      "bytes": 522,
+      "sha256": "52e36b0a218bf7ab24ebd17f412ed4d26541ba88851545e8d1755d3b6e996451"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4k-empty-baseline.json",
+      "bytes": 1194,
+      "sha256": "8862813b85a18ab77b064764f02160340c57c659bbfd140ec46d5b48b439b557"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4k-initial.json",
+      "bytes": 5759,
+      "sha256": "f7da497287ef649d520fc929513e5aed652fb865fff89e4e4df03774e450441f"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4k-negative-view-verification.json",
+      "bytes": 612,
+      "sha256": "e2424c529018bfec017971093d53fd8c2363e0f7a2f0fabcdaa63222b68ea3ba"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4pro-empty-baseline.json",
+      "bytes": 470,
+      "sha256": "94c654d914cce85bfa111b03b89bb040101630858e5bf144aaad13096cc3c76e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4pro-initial.json",
+      "bytes": 5177,
+      "sha256": "319940c6a2ab4dea6f4c67cad94beb5d332febd20f822404f2ec6a5110cf84b2"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4pro-maintenance-screenshot-confirmation.json",
+      "bytes": 517,
+      "sha256": "f72b5376711fcaccd5369034a7e12c04456369b047f40fa522a665651e051229"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4pro-negative-view-verification.json",
+      "bytes": 466,
+      "sha256": "fa679017adaec6ad5930797e23a1eeb688037e2b0ce72d4391632736fe43ebec"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4pro-portable-view-maintenance.json",
+      "bytes": 484,
+      "sha256": "66934ca5dc99ea0be6a08868182385f1418ca80db4f5cfd92ef62a8004bd55dc"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/mini4pro-source-verification.json",
+      "bytes": 773,
+      "sha256": "35fe68b70c52c21404a917fe9350f14af2b14899eeb18f47889ce7ea12c0e46d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/negative-view-verification.json",
+      "bytes": 844,
+      "sha256": "063f3ad329e9ce65aa026cdb7e361913e69f372e75e881f23ab2814643480c16"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/neo2-negative-view-verification-controller.json",
+      "bytes": 857,
+      "sha256": "abcdfcdcbbfb16b60e090b3810e56c9aba83fa01c5dc5ed52fb53063f86768d4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/neo2-negative-view-verification.json",
+      "bytes": 551,
+      "sha256": "413ec32292057e2a06db8de4b65c129e04028c244f1856f1806f9f1864f14830"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/neo2-return-verification.json",
+      "bytes": 472,
+      "sha256": "612a17a92e3eea50e4f0b09547cfdd680bcdd592e5b606f1b0920a3d0fc5c512"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/stage-0042-audit.json",
+      "bytes": 1631,
+      "sha256": "1d8b2dec729d40c90af83d31821987063e92a14b3f40c6fc07bee07fe55769e9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/stage-0056-audit.json",
+      "bytes": 1894,
+      "sha256": "f9fbd3a7318a22cc9df6ff06fc832aee820fad8ab520752e50bd872dd9ef7873"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/stage-0069-audit.json",
+      "bytes": 1978,
+      "sha256": "e633dc56285ad4cede0e066fc50a5e7d8c4319e23f14cca5318192fa9c4b2706"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0009.json",
+      "bytes": 4066,
+      "sha256": "6116bb788576fbe7a6c9a99cb2f148663b1edf2ecd17f87bac5ccf9452b51f6d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0009验收.json",
+      "bytes": 1440,
+      "sha256": "acf94325f019e8cbe0f56e5bb9ff207e8ede67fbe928778089c8bf82908e8f47"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0011.json",
+      "bytes": 5070,
+      "sha256": "9bcd6e7c30b1396bf68d9c0fee2046555840362787d6934864ea920833338443"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0011验收.json",
+      "bytes": 1440,
+      "sha256": "bd5021d2f095dba1e6bf29dda23581983528278ab1cc1ad8394890f6d6000667"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0016.json",
+      "bytes": 4751,
+      "sha256": "05be7395fff9784dd1c1279944d7164c63df75e010c0e1802e24972de50cba0f"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0016验收.json",
+      "bytes": 1441,
+      "sha256": "75c0357e968cd942266cde6a9c1065a3ab07c2a13d57e5f56f4ac0d1e18b8074"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0020.json",
+      "bytes": 4443,
+      "sha256": "055a7d0af035e7d8e7b4e02f279623546c74fb67c92e2aeddf2af2847f9eb3e5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0020验收.json",
+      "bytes": 1441,
+      "sha256": "6e080eac4fe12dd9f78ac330b72a60293c50c4738fc7e3b55dd0ee528ee42b39"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0023.json",
+      "bytes": 4303,
+      "sha256": "8c575df6f2f0975ccc5c3d105246d96507ac5e13ea869d338b056b978e66268d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0023验收.json",
+      "bytes": 1443,
+      "sha256": "ec9c146528a95cc2bfa2186c504346a56cff743e9092f1d85f55b4f9844bf56d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0026.json",
+      "bytes": 4452,
+      "sha256": "c413b628ae60aca0925116bcb9dea64c171daae43b9b0f4e2e43de00f907b551"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0026验收.json",
+      "bytes": 1605,
+      "sha256": "d7b6bef35bb992156a23c8d132707dfcf8131b2b6bfa8998aef74dc8cec760e9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0029.json",
+      "bytes": 4575,
+      "sha256": "f07a5d2132d020fde15278eef3b20d4c7dca620b6b1a5d97bc2a40532b6253c4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0029验收.json",
+      "bytes": 1606,
+      "sha256": "752c414f06249364e592df83177cde3becde2d9cf0b9693bf99b9de78b0be2d6"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0033.json",
+      "bytes": 5562,
+      "sha256": "81cbb9f4cfc7f60b933e9bbe088617c6e1aea1f8df19ef09c88d6a00d72a331b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0033验收.json",
+      "bytes": 1606,
+      "sha256": "f6e6500a10bf448d54e178b9c65b24d688c135a2ee2880de9f1fbc1702e31def"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0039.json",
+      "bytes": 6341,
+      "sha256": "67bbebb15a19ba8c08483b258331f55e35751fc3e800d64953ff284a11550155"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0039验收.json",
+      "bytes": 1606,
+      "sha256": "b4f846b4041a76cf6a901d966bebb8c9b37116851dde67f44abae9350160031a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0041.json",
+      "bytes": 5140,
+      "sha256": "e2c8675c2d59e86e356e0ba2e4f6cea03f1d182e20b19d663ee4bcc6f6567dc9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0041验收.json",
+      "bytes": 1606,
+      "sha256": "28ca522bf979830e7a5a31ccaa7f5b6469013186b47f4bf74ce7ef7a054a40f8"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0044.json",
+      "bytes": 6886,
+      "sha256": "8cceff19e745160895f36aeace282ae9e61c179bcca246c74b274a20c96cd126"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0044验收.json",
+      "bytes": 1606,
+      "sha256": "4ecfb631f6352f02bb550f8aa3eeed82beb09e2257349318df757ef945dd034d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0048.json",
+      "bytes": 6261,
+      "sha256": "cdc70055ca24a50d36a7f124e6fc08c05db8501ad044fec70db106797348cb2b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0048验收.json",
+      "bytes": 1606,
+      "sha256": "d5121ed730a32ab5344ad4e5225704e7aef4a8114236c0cccaa6b01431f73530"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0050.json",
+      "bytes": 2498,
+      "sha256": "70e314b57340ce31322b3360d44a0b5afc4217e464110b76ed14b4ed9d9b3841"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0050验收.json",
+      "bytes": 1604,
+      "sha256": "cd786f4389a775f28cd490714ea7a705d6ec5a3376ab8f0b1b530f0803b15d0e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0052.json",
+      "bytes": 3983,
+      "sha256": "390ec21617b50cac0aefe611b83e7cfde3efb2b0ab7cdeadbec307fa6eeddde4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0052验收.json",
+      "bytes": 1605,
+      "sha256": "303bf9f0c5b3c5003e70b19e9830ada39cf79abaf6c03f6d52d025fc61979133"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0054.json",
+      "bytes": 6035,
+      "sha256": "55d489fdd842e0995917b050863555bd3440406c44d7cecddfd887499d48f738"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0054验收.json",
+      "bytes": 1606,
+      "sha256": "bc5082e30bcea3256e5d542384b57919849419f333fd2eb971cb8e19937eff89"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0055.json",
+      "bytes": 5351,
+      "sha256": "76c73d3194a8a09ec12069e5a2b86568eb262d128dcf9562a590b58f0b56546c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0055验收.json",
+      "bytes": 1606,
+      "sha256": "6cd0dbbfc08d6ffaf54ccffd1d3054155a35602d62ed2379119b1fe29a3e304e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0058.json",
+      "bytes": 7042,
+      "sha256": "dfdba2a7c7277f3472801b2059ca328e21f4051207a8bfe3d98393346a6df8ed"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0058验收.json",
+      "bytes": 1606,
+      "sha256": "3b0c9ce891d1f64ef192c5f3feefe215587dde550a4c03040fc737af98f7b180"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0061.json",
+      "bytes": 5998,
+      "sha256": "cb62d5ab075cf4c95f63a2adb3f9a1efe02b491c62a995978328acd239954371"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0061验收.json",
+      "bytes": 1606,
+      "sha256": "202d3b969e191ff0f2449d44abe6aaa555ad4b7cce23c2a55113d1f3df835261"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0064.json",
+      "bytes": 6228,
+      "sha256": "6aaceb9f1108b503a266d8472a79a957842ff3834f87d2884792ae87cf0899df"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0064验收.json",
+      "bytes": 1606,
+      "sha256": "2cdc76523a6bd3224b2da945eff38b7fa6ddf695ee3d0be1d06c14964318106e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0067.json",
+      "bytes": 3260,
+      "sha256": "b4ad84f83674ea074645efab2721c3bf0133d02f3306b4354505164a8889299e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0067验收.json",
+      "bytes": 1604,
+      "sha256": "e7ba4f9e5409ff89c36c5ed4bd2a34fc841af5f8f0b7c85dbc88f4f2f2185455"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0068.json",
+      "bytes": 4558,
+      "sha256": "992b6e9de6beb1b3bf2764378a846151736ea3e71c33e6f9917d9d171cc76ded"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0068验收.json",
+      "bytes": 1606,
+      "sha256": "33782e7943a0b1d00a9be90cc3b18970837e3d0e58a3decb0bdb129172439df9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0070.json",
+      "bytes": 4757,
+      "sha256": "1e24f7523f3ce47627d41cfb20a19a3112e70558d0a51b129c2ab179d0e9c711"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0070验收.json",
+      "bytes": 1606,
+      "sha256": "7bf69bd7d15279c70858e396110687ccfc0abd1655b96a4f4443f0beb976192a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0073.json",
+      "bytes": 6193,
+      "sha256": "40b11ec7e24e03c8b927cd6cf2a7398aa255a5cd468260f21ad57df73a44b9ac"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0073验收.json",
+      "bytes": 1606,
+      "sha256": "81931f51295e1a749e0b4cfdcc6a82125bea9740c2088367a3a513daa4e8c288"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0075.json",
+      "bytes": 3570,
+      "sha256": "8875666a9c2915986ffe90a79a099d5ad4112fdb70a5f8ab51ac0f530621fdaf"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0075验收.json",
+      "bytes": 1606,
+      "sha256": "637d958621ab2eeb438236a8ce7eea389e401f952d95f4c60d7900cd7c38de9c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0078.json",
+      "bytes": 5742,
+      "sha256": "8636f82b0ae1d1a2b5e79684b0775b24031bab4aac2f8f8f9d2a1ac7973d2bd0"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0078验收.json",
+      "bytes": 1606,
+      "sha256": "209302f1fea93c3016cc72d0822a6790b19edac8231ec450e648e9eda3167b41"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0082.json",
+      "bytes": 1856,
+      "sha256": "a3efea9cbef267f6a6c53c7b7be93bdff9a287ae9637a88029bc9df168be10ed"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/主审批次0082验收.json",
+      "bytes": 1604,
+      "sha256": "08d306bd770dde696b7a70c99642a386fb48e42dd18615c2e36052e05e0fa8e9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/59-侧栏八小时试采/批次6主审16条.json",
+      "bytes": 3911,
+      "sha256": "53947cc7e73b61e55f00348aa43c72ac1f91808bd47552ae874efb9a9aa8272c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0001.json",
+      "bytes": 11533,
+      "sha256": "8ace9545a7df39448fc7ee341e2cfe85b6fd26172cebded4ee6a551d85882a70"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0002.json",
+      "bytes": 11695,
+      "sha256": "3b5936d38dd60f8ed06ef028a4d6bbc6dcf21fb0def3c6d5c5e103821e2e99c7"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0003.json",
+      "bytes": 11735,
+      "sha256": "7488022bddb1e33dda4b2eae074f39744400695f5f0186a1e1d46fe6fead7cf4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0004.json",
+      "bytes": 11735,
+      "sha256": "c2ad50f6713c6ced5431389094ac741536e4bddeb478e5e87dd36b35e90ff368"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0005.json",
+      "bytes": 11735,
+      "sha256": "fff00eecaaf848a4545f40d2afe9f3ac5005116bf994a95c5bcef394b3c6b9e1"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0006.json",
+      "bytes": 11735,
+      "sha256": "864ad0751cfe7012781ad504625a7e74e9792ed18ebba2127180d8db3ef74c16"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0007.json",
+      "bytes": 11735,
+      "sha256": "924f3d78e7ad4e65fc09c893cb4ade3c3a05fb0c6f3d370bcd0cdfadf0feafe5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0008.json",
+      "bytes": 11735,
+      "sha256": "504faf87d9134b3a1e209345072ce3894066124c388641054dfd19dca0c4af19"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0009.json",
+      "bytes": 11735,
+      "sha256": "01baf241b6cca47d414bd3de942dcd16015e7c925d8b05b11c5ef89165d3e782"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/prior-public-link-crosscheck-0010.json",
+      "bytes": 11735,
+      "sha256": "ee0895b9ee414dd0951181a4b61c0030e22bf3ccb1cc149f67d6304b3786bb29"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0001.json",
+      "bytes": 16415,
+      "sha256": "397edfa4c9920abb8e167c6d93fdd40a2aa662bb5884f205f87abdcc63c33cdf"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0002.json",
+      "bytes": 16415,
+      "sha256": "c4eca48ace90d1a0685e849c114b79c9ad64f1cdbe1579bd96fd111d8bdb7a42"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0003.json",
+      "bytes": 23156,
+      "sha256": "5212b88e5d32022e819ed0f461bf424cfbee043732adba16721483477c1be77e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0004.json",
+      "bytes": 24172,
+      "sha256": "c7e1b59804430fa9aa0d89ac06d0de319b85a63836c1bdb6a8449b660a91a194"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0005.json",
+      "bytes": 24172,
+      "sha256": "eb5a85d497aa39cc654648a84676669390a8dd5975a53525006039d8bd01c261"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0006.json",
+      "bytes": 24172,
+      "sha256": "19619f693f23da16c2d78fe193a090db4e1ccd79d7106f1e7f1a0ed51ecbbe64"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0007.json",
+      "bytes": 25783,
+      "sha256": "05742c448e68cc8facce40f24a31659c6dcec63956e9c4c6d2c46db430805234"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0008.json",
+      "bytes": 32528,
+      "sha256": "7b38d91c480aa64115a1c75a5da83916a5f810899ea4912b4bbc27ba3972d45b"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0009.json",
+      "bytes": 37656,
+      "sha256": "17cfe6fe3fb3fe43b17470d2b8ce61545ac2b44419bd31694178457b70641797"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0010.json",
+      "bytes": 39366,
+      "sha256": "75db8d2adb7ce8340e97694caf38a9bca6a864022b98d028f5836f8322518814"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0011.json",
+      "bytes": 41076,
+      "sha256": "aaf8212ac0d1c1a8e6b325ea5dc96788711d0c8c893ae2ffa07d164ba28a70cc"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0012.json",
+      "bytes": 42786,
+      "sha256": "47a09ef1025bdab0c4a5d02cf638db326366ace7bc683d20df58888bdb9bab82"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/progress-audit-0013.json",
+      "bytes": 44496,
+      "sha256": "8478a3fbfb4fa5c5b44100432131f14eb57057df6402c29a3457d304b88ff892"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0001.json",
+      "bytes": 1852,
+      "sha256": "836e65daaba3738a63aa445f00482a9ff469b3a16e1643839ec0bb3b38466ec5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0002.json",
+      "bytes": 2030,
+      "sha256": "270eadf82ed412a8ac2f60818fdeb683370885b7dea5d0a9758e04aad8b38174"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0003.json",
+      "bytes": 2058,
+      "sha256": "f67cae4ce663b5fa9a0a6b50291afd34889d7ed5f15606dc53aeec159ccf8bc4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0004.json",
+      "bytes": 3388,
+      "sha256": "936755c05a8eaa5d0661ad0228e1d5bc082529b85f767e6c232aacea482e0df5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0005.json",
+      "bytes": 2116,
+      "sha256": "72cfcf6730187329078264a9a0e6ee0e07bec2e36dac96408bea93c9f628395d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0006.json",
+      "bytes": 3072,
+      "sha256": "ed75ecc01eb859528034642dc007d91851423541ebd10fef8b75e6d4b3cc860c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0007.json",
+      "bytes": 2037,
+      "sha256": "1e5d74004f27ebc0d86b74176d277b9e9a87c3e3c89f061e67ff0dfe53d31ea3"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0008.json",
+      "bytes": 4693,
+      "sha256": "adb3dfce494c36f8d1985ef5bda0268dac7309f6c05a22c0937259401a83075e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0009.json",
+      "bytes": 8331,
+      "sha256": "44063b1d3267980d46004f1c34d10b2b4f3bb20b3aeae9ae72424e96a5ccb026"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0010.json",
+      "bytes": 2706,
+      "sha256": "aa65cfd61d03ff7763ce2320e81015fcdd2e58af90c44be07e874bf98066d5c3"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0011.json",
+      "bytes": 4638,
+      "sha256": "ab4cffff0f926db3e61aa6766c1e9c024fb8314e641e938cc2d357f6dd182f7d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0012.json",
+      "bytes": 7193,
+      "sha256": "02e8d096434189cf7077fac1d99e5a56b8314c3356af7a45147c7ba883a93ac5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0013.json",
+      "bytes": 3583,
+      "sha256": "db0975d03995296969c991fdedd6519259ba572960090031ccb4529a376ce791"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0014.json",
+      "bytes": 3640,
+      "sha256": "f64630ce1dfc5411964d3789c0fcc85f49546f7d36123a43edd462335c72a6a1"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0015.json",
+      "bytes": 6893,
+      "sha256": "e868712c9ecf19b7d819a06da905bb38ac119be354242b6c9cda641b9f708d72"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0016.json",
+      "bytes": 2804,
+      "sha256": "30df1130577f340546f586e280f55517c0cd250f715f8d3087a9214aefb7db42"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0017.json",
+      "bytes": 2351,
+      "sha256": "22a6f998c22a04fa82f0da9c080a29947c704b20702a4702ccea6b1ac12a5c90"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0018.json",
+      "bytes": 4304,
+      "sha256": "8c10cf4c62ea9707fcb2d3a6586f265bce9636dbb80a9268190b9e72692c727e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0019.json",
+      "bytes": 10237,
+      "sha256": "3bef78805512aeff004c7dec9fa04688c9f238d2b4ea39c02ad4fa76576f7fb6"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0020.json",
+      "bytes": 15716,
+      "sha256": "1dde35b080499b560fb26a50137b6ffcd5b135f423654f66d2740a1c49fe540f"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0021.json",
+      "bytes": 27108,
+      "sha256": "7e39d9df63bbc4b359f06cafee6b6eb527a00be2d2018347ca35816569863eec"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0022.json",
+      "bytes": 16579,
+      "sha256": "3d5cd592804f769d9bd97541b8e097272b37e02e05758db57bf0284317af3ef1"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0023.json",
+      "bytes": 9133,
+      "sha256": "6e6c453ff5cd859482f7c1f7f4579b7fb9939b75b77b5e8cc79aa2eb1139836a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0024.json",
+      "bytes": 11531,
+      "sha256": "3c93d6a16fe4b3a03b4ca88f50dc15cade5c78ff8f588c8d95ec7e1ab5c938ec"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0025.json",
+      "bytes": 11876,
+      "sha256": "fdfeea49efc31ca99cb3ebae4de8ffab734829519ab961b9023b43c72b54c3dd"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0026.json",
+      "bytes": 7900,
+      "sha256": "b07cb08c69d43d897a27a439d8531e488b29a95284326530b111df838fddb2ee"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0027.json",
+      "bytes": 4168,
+      "sha256": "667952393033f0e2ca7f799e21a40b29aa517515dcee47cd75f7e4b72004c4da"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0028.json",
+      "bytes": 4058,
+      "sha256": "206db8fe45dcae42747fc6f1796c2f71382e1cc4bb25f505af7760e881c56e20"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0029.json",
+      "bytes": 7768,
+      "sha256": "338a42c7aea1e12b505ee3cbe4760d59478e473a38ad12e6b95d2c7ce9ca55f0"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0030.json",
+      "bytes": 4303,
+      "sha256": "f3974f39fc154bdd6d2a5f0eec9a0dd2ebd68a081a1e2df37a50c4477f749b45"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0031.json",
+      "bytes": 6300,
+      "sha256": "dd398b07832c963f01d8b94a90878e82a4eaef1310a56937ea63932aaa541cc9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-batch-0032.json",
+      "bytes": 11143,
+      "sha256": "668e4accd096e2643e9effade490e6746daf9172841ac9cb23bac5856399baf5"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-cli-audit-0001.json",
+      "bytes": 4163,
+      "sha256": "7fc9fc34b4e73fb4fe8a212a2270b0e42b2bb74c5d4efa415a0eb5aad07ebf6a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-cli-audit-0002.json",
+      "bytes": 6894,
+      "sha256": "e68f5bfb0b32633d25f1e61dfc62c204aedfea3ca7fa82fe6dce49521f70032a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-cli-audit-0003.json",
+      "bytes": 6894,
+      "sha256": "fec0dd76699786d6f616c5d13278190f03ddbe0fd2dd6381fa51f5f1f8bab07e"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-cli-audit-0004.json",
+      "bytes": 10666,
+      "sha256": "f928e2a5a2be6784c846f6ce2b51c0d91782a1c3d6d16355f74c25f76e93fec0"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-cli-audit-0005.json",
+      "bytes": 12941,
+      "sha256": "62069f92616912aee80f59be4f23892afbd3024f764d9142a005287ab3b3cd25"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-cli-audit-0006.json",
+      "bytes": 21131,
+      "sha256": "e33c0868982bc0313ae9e019facc780abfa5adb030002f2791fad812174a4631"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-cli-audit-0007.json",
+      "bytes": 32051,
+      "sha256": "e44d38ed277d32f3977a6167d47e181cf5549c4ff933d59e05f800abf3bd2b26"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-discovery-review-0002.json",
+      "bytes": 16507,
+      "sha256": "71d7d7a5a15cfc514b9e3ce21da4a225422ee173399988037dfe4ee651384c2f"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-discovery-review-0003.json",
+      "bytes": 7765,
+      "sha256": "ff76c003e7249a57f43b07fc8a294021b74cc48f43ab69b7d4a7b97d9abc1388"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-discovery-review-0004.json",
+      "bytes": 10162,
+      "sha256": "43b252aa2254e0acebe2f6d44023f8bbecbd46af49e7617acb9b12900e12e8ca"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0001.json",
+      "bytes": 19708,
+      "sha256": "10792d9d4771475de04e5548167e811dc38136e5e3db91b961ede6a78df2b5e9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0002.json",
+      "bytes": 8778,
+      "sha256": "d906f6049b0aab54df0306908a432b5c7e75e39e8917c15831a620adb0e09d36"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0003.json",
+      "bytes": 19105,
+      "sha256": "d666c3ddf1b8982e698a080d7950cf58653fd329237506117670f3c73fac8a6f"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0004.json",
+      "bytes": 12076,
+      "sha256": "95567e31ad40d302b79706ffaf518b1eed24cf1d58c46268db10f1b19c534bc7"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0005.json",
+      "bytes": 6582,
+      "sha256": "1bc40852d2c54f615eb64629a97a2e54c15bbe7f0760eba4a0f91d641e05a1fb"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0006.json",
+      "bytes": 16654,
+      "sha256": "fd1174a70908e20a1607b7831d3758dd7024b4a000f4eda800ce7d1ff4ca146a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0007.json",
+      "bytes": 9344,
+      "sha256": "58e94069988096b5a4f6e35f2234eaf5a5e78a9195d5b5aac5fd6bf0e129717d"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0008.json",
+      "bytes": 17092,
+      "sha256": "5a54362a92ffb3f11ed86d1c7877d18ee90de99e0c6a6c34d2f464ec56a564d4"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0009.json",
+      "bytes": 24699,
+      "sha256": "bed5866517a0a8468a69a95ee852722ed7ea6069c2ef7ca6c0e8f6eb7d1eff74"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0010.json",
+      "bytes": 36775,
+      "sha256": "dfec6b1e8f9f9428d5d0500a321d5740f2953cf82e6a601bb85b69efa32877ac"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0011.json",
+      "bytes": 65850,
+      "sha256": "b4439e5100f63a4057515aa27a99e5d4bc98e1568287bb97df1cb0eaff635148"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0012.json",
+      "bytes": 6907,
+      "sha256": "f6a6d3fed6de03cd7372d1a215bcef0ec6a2c412321990126e1e83340703f074"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0014.json",
+      "bytes": 7085,
+      "sha256": "8b191b8d23133cb5c1655ce9d24a48efbcbbe1d41b5fc1b103a5ca54a34adb0a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0015.json",
+      "bytes": 12857,
+      "sha256": "0d37c525d4305d899257f061c422f0e7fd3a31c5d055cf7cb4ddc5da510801ca"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0016.json",
+      "bytes": 7521,
+      "sha256": "45fd2f74ad95fac8ecf9208ebd33ece8e6cea5a84d655a39971aa665e0a88c27"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0017.json",
+      "bytes": 10838,
+      "sha256": "f4dcab9b9494f87021d99720cd81ebeae4d7d1dd1fd99a36f551099e77535018"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-0018.json",
+      "bytes": 18960,
+      "sha256": "85839e77c2ab5fea1eddd681d9d7599c8d919b075bd2825d181056fa81e872a9"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-main-review-followup-0001.json",
+      "bytes": 1957,
+      "sha256": "369ed12e291a499a9405b429f8b2161132e5ba17e0dee219c313682d7e07799c"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/public-quarantine-0027.json",
+      "bytes": 1134,
+      "sha256": "363c2f842f812a8ee87465b3f1eeabc5519c9c904fb44f3e5d59a45760502449"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/source-verification-lito-0001.json",
+      "bytes": 856,
+      "sha256": "b87945511af4d80fd6613ebedf2a0d30c27f4377e8bb829b094edd930dfbd13a"
+    },
+    {
+      "bundle": "07-supplemental-collection.zip",
+      "path": "补充调研_2026-10-09/60-侧栏24小时续采_2026-10-11/window-start-baseline-manifest.json",
+      "bytes": 7711,
+      "sha256": "367057f7789a097b814a1e43180a052ecd9dcb616dc862be003f299f4da03144"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/00-整理验收与来源.json",
+      "bytes": 24422,
+      "sha256": "52d833e4e8d6a7374b3d06ed6072e430083e4c3c305f351b57c7835a6f7af486"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/01-补充文本台账.json",
+      "bytes": 1001877,
+      "sha256": "5ff58f0779c6c94addf5e718698153a6d1a270dfe7a0e3c20d6fd8d4c5cca792"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/02-可筛候选124条.json",
+      "bytes": 248267,
+      "sha256": "ad04350ea5adf814975acb00c2622a7d22eba2f3c8af92d2c0b4ea1005381c13"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/03-主题归并与主审.json",
+      "bytes": 171968,
+      "sha256": "9869c1b90f67347cde1a63d4934e3e1863d672327497a3774862a1b2cd62dbc8"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/04-实验输入准备.json",
+      "bytes": 6519,
+      "sha256": "832680061ca8914bd18d1cd502edad832abc10263509c36123ee09bbcd8c6b90"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/06-交付验收.json",
+      "bytes": 2926,
+      "sha256": "a0b40083cbd7a350e38645707ad3686c0ad7a86e1c2985807360b5d7f72fd64a"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/workbook-error-scan.json",
+      "bytes": 380,
+      "sha256": "bf0506e94bbff0bd1e783b2adfc4c922edecb2dc4442ffd54e593e1e531efc27"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/workbook-inspection.json",
+      "bytes": 382,
+      "sha256": "96f6a6b7747d967140b70386b60c0829e262f2b149d5f62dcdec8920f324172b"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/候选证据-preview.png",
+      "bytes": 125069,
+      "sha256": "ca1a6c70c4591ea0238913fbc9a20d24dc548264eb3111afe190ecd8cef60058"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/整理概览-preview.png",
+      "bytes": 115810,
+      "sha256": "aa813d363d4ea5c8d891e5c7479c72922c6c77ab74a900859ddaafe4755e8c1e"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/补充文本-preview.png",
+      "bytes": 138978,
+      "sha256": "ef458d43f6d0faac1bd16da4244af63e2105148d10b8c4902c320570d4b9d719"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/论文语义整理v01.xlsx",
+      "bytes": 175045,
+      "sha256": "ac5eb413080aea084473a062f2e11fbb2ce51c68320e2052e89d5c8502fc91da"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/论文语义整理v01.xlsx.inspect.ndjson",
+      "bytes": 3456626,
+      "sha256": "dc01b17cd27eb5965919f12d53ece387d5262edb71bdeb3d086b94e3bbbadc78"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/词项归组-preview.png",
+      "bytes": 84440,
+      "sha256": "2fdc47d9c077f7f80544d6b2b3307d71643000940ff5c73e950aa656068d6f8c"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/61-语义整理与实验输入_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/预试准备-preview.png",
+      "bytes": 201569,
+      "sha256": "492204c6edd23a5a523982895179320b6be1ea5b1748b8c028576d64e9b478c8"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/00-原始库与批次登记.json",
+      "bytes": 252838,
+      "sha256": "2c886bf08b291e42b81784b24c0c4f6320db3d7e4c7777b13b58c123e31859bb"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/01-全量文本台账.json",
+      "bytes": 6089463,
+      "sha256": "0f3da36efcbe8832a1dcbe760ecd86ee69700d269a30381525fae7dbbe9c4920"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/02-商品标题语境分层.json",
+      "bytes": 48962,
+      "sha256": "abfb3dcdfb2cf11ea3bb70a7e340bc668e46314fffbf3e9ac9cb3218931f4b09"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/03-商品语境主审与边界.json",
+      "bytes": 279404,
+      "sha256": "dbfe0a027de04e783944521d1db5c5d78a15bd8651e16060b7452234bbd4944e"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/04-Mcode二次语义校验.json",
+      "bytes": 549012,
+      "sha256": "3b52a97a417c460175478064fa208cd12823c3d7a2340728195dee8d941fbcf5"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/05-主研究者逐条裁决.json",
+      "bytes": 183516,
+      "sha256": "1bf78cfbe488cdfea5ff1df4a80adcee8f97531907db314018d3d24f46fb6397"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/06-补漏与分层抽查裁决.json",
+      "bytes": 42580,
+      "sha256": "05a7681da6252b6ba107062047cb9a215acf3bd0c094f1797f92a7fa216aaeda"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/07-旧库整理台账7443条.json",
+      "bytes": 14052153,
+      "sha256": "19c70b336dad857be4183715c170e2680c0afdcc966c716ff99b82c810dae124"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/08-旧库语义候选池.json",
+      "bytes": 2561516,
+      "sha256": "7b651c6ec7aadbe7bb9ba1a6b37400206aca642c4613d602686e9f7f79c50cc1"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/09-新旧文本交叉登记.json",
+      "bytes": 128201,
+      "sha256": "5661504b1e67f6ca6dde9c19557533f5793fd8193e42eb4d7a656f906665d7ab"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/10-统一词项与探索归组.json",
+      "bytes": 1407431,
+      "sha256": "eadcb6148a4ad976db2c2d896bbfd2bbe0f1aa5c488831de7a7f959e2a636605"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/11-语义使用分层与边界.json",
+      "bytes": 721747,
+      "sha256": "ea7eb82726b83693b99e87451aa323ca8b0052a0bb525cbba8cd95f03358513e"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/12-全量整理验收.json",
+      "bytes": 5737,
+      "sha256": "6e398593903c39611859f11146ed1c65f2e605ca343328e1d466a6c29fbc3b36"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/workbook-error-scan.json",
+      "bytes": 380,
+      "sha256": "2a9c90d44e61e7e5d1fb5001d050c904b231c27a5212572e5a30b31d53de7311"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/workbook-inspection.json",
+      "bytes": 382,
+      "sha256": "275b0f13dec9327f8de23edf680707ef4d0ed1bed1cf7a0504a3039082efa9b3"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/使用分层-preview.png",
+      "bytes": 38901,
+      "sha256": "48bd8a61d3e79b631acc165419dc0f3c903928db4794fb5bcd2abc422a55313e"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/商品语境-preview.png",
+      "bytes": 114599,
+      "sha256": "d304dbe675f3ffa812e4479d3a60ac151f8f21f8d0178f00571e32c013f80b86"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/待核记录-preview.png",
+      "bytes": 93589,
+      "sha256": "753d5b43e6ee14f73635c41f0eecbe902c2808c9b110b10d28bab2c28ce78300"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/整理概览-preview.png",
+      "bytes": 176843,
+      "sha256": "ad8fd3ef391bd8c40b47b77c0cc0c3a54103a6084164b589e10f3f8d65df3147"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/旧库全量-preview.png",
+      "bytes": 76933,
+      "sha256": "a966df573efb1117dfb15b1dd2114e42449a196a0dc0b5ef35c8b5272f75f95b"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/补充库-preview.png",
+      "bytes": 122639,
+      "sha256": "cbec6db385ba0792fa592d67f8e172554a24788234250213ae1acd24a72154af"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/论文旧库全量整理.xlsx",
+      "bytes": 2079028,
+      "sha256": "e895ce5495fdbb5312b203cc3e3fc2a1da097ed68b68d0d8192bc79c2d4c0d44"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/论文旧库全量整理.xlsx.inspect.ndjson",
+      "bytes": 48493603,
+      "sha256": "cdcb2641ee0836f602a03136e24c55afeac487e5c8598fe308e8716f7929250d"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/词项归组-preview.png",
+      "bytes": 62137,
+      "sha256": "a4136a200db2e6503d7f253b116c7ed89af8c55dd14a591284fa29cf62859881"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/语义候选-preview.png",
+      "bytes": 78262,
+      "sha256": "b03d6a9fdad7c028edccf3254e02ffc6ad725e53a66ac50a8e019fd07473c91b"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/62-旧库全量语义整理_v01_2026-10-11/整理统计暂存.json",
+      "bytes": 720,
+      "sha256": "96a38f6f5eccfe43bfc5e8bae6251ba2faeb00c5f6aa95afb09b10bc57770c36"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/00-输入冻结与讨论口径.json",
+      "bytes": 1744,
+      "sha256": "64b5feaf38a5979464882c763abd55d6f58808cf67b91536c2a56439a942615a"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/01-可讨论证据池393条.json",
+      "bytes": 534263,
+      "sha256": "8620e02e97258de40009b753bdefbc4b66a78d8db17b8bcf7ae5637de3a8169b"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/02-主题覆盖与方向检索.json",
+      "bytes": 152216,
+      "sha256": "9f9c1ebfa0238bebaf46c7ddf78cfd53a6185aa1be442df89a85619cc8320ba8"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/03-Mcode整理与主研究者取舍.json",
+      "bytes": 1965,
+      "sha256": "79d5071ba333af928b95b35b94f420a350b3303fe7aae6740395a30226035e27"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/04-主研究者方向证据卡.json",
+      "bytes": 32374,
+      "sha256": "eb21ed6fe7d461f3dc281a7dd49b6d2c4ec0610a618265327c313bc6a2c8aab6"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/05-语义方向与变量转译草案.json",
+      "bytes": 6427,
+      "sha256": "5c0903b83013b325fe0cd627a37404fa37fef70554791dae52ec2eed5accfa5d"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/06-本轮主审范围与边界核查.json",
+      "bytes": 5334,
+      "sha256": "38df2e311319b80aa50930a3f19ddde6e6a50a1603cf745f824eb156e14f4806"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/07-方向整理验收.json",
+      "bytes": 3325,
+      "sha256": "fe7b47fdf366d541a13400ca32585df6c10a6a80f41576a231400eca984f6fed"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/63-语义方向与变量转译_v01_2026-10-11/语义方向与证据卡.md",
+      "bytes": 15104,
+      "sha256": "ffbc87e1f775c12088cb8ad3abba63b32feef3c93d7a19c64dd6275b23d9213d"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/01-新增逐正文模型复核.json",
+      "bytes": 293718,
+      "sha256": "2b6193518a972362e58da91b271a5869cfacba0d1dd07d9d0215e218c48de606"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/02-待核69条主审裁决.json",
+      "bytes": 34123,
+      "sha256": "35922777da16ef95bc40cfe260448f493e745b4479d86aea9b9ee160045164c9"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/03-辅助候选严格模型复核.json",
+      "bytes": 215474,
+      "sha256": "bfd07df87a77785e68076ffd96666fb3463ead82873f90a9262c79c8443b038b"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/04-辅助73条分歧主审裁决.json",
+      "bytes": 42476,
+      "sha256": "2f1c7d104a229ea2a4c48b0515b13785722254a5dfe707feada0850f3213f421"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/05-严格复核未返回26条主审裁决.json",
+      "bytes": 14331,
+      "sha256": "a0e67021034c8101cda0d88e78629771b9083619602570440c9a6c1ed9a340d0"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/06-旧库结案台账7443条.json",
+      "bytes": 20899862,
+      "sha256": "092615cbf424248743cc7f1b674ecfd30842b37012ec285b79f05b570d2b81e7"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/07-旧词项证据状态审计.json",
+      "bytes": 330693,
+      "sha256": "6c6c38e3f5e20bed67460b763b32d4f728d388e234ebea05120c5beee488852d"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/08-旧库结案验收.json",
+      "bytes": 1585,
+      "sha256": "00b59c5714cbf9a31071d23ab4c46ecc82ed36fb648c72108814282b23f305b9"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/09-交付与下一步预核验收.json",
+      "bytes": 1419,
+      "sha256": "2de4f91f6f67e1f9610197ff3fe997913806baca612734594eab36fcf8a07749"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/formula-error-scan.json",
+      "bytes": 380,
+      "sha256": "fc4e30a9fb48c04d5e16932288c02cbbb8be52c5fa0258f556bdbd97e8be383c"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/ledger-preview.png",
+      "bytes": 78171,
+      "sha256": "02e4070f498e06ec9e627151293879cf72280907bea2cc6e98f1e3191ae0c335"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/overview-inspection.json",
+      "bytes": 382,
+      "sha256": "7a277acd08abd9314fa37ac669c7e1f32bd8abdf0b3f630f9c5d5a826f716006"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/overview-preview.png",
+      "bytes": 112582,
+      "sha256": "ff232239a513e39ac995b6937984460c8aac29fea19e892c1ea5d7a28980747f"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/terms-preview.png",
+      "bytes": 87353,
+      "sha256": "a5a58ceb7cdd25c9845ad0da296a6db51c47ab24211142929ab9d5285b9c3e53"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/论文旧库结案台账.xlsx",
+      "bytes": 1528976,
+      "sha256": "0198445c67e5f0b368fdbc3c23b6fbb77978ec15bbe436d633dcedb2b92388de"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/64-旧库待核与辅助候选收尾_v01_2026-10-12/outputs/01a11eb5-1ee6-78a1-90d7-cf26742dec73/论文旧库结案台账.xlsx.inspect.ndjson",
+      "bytes": 41364282,
+      "sha256": "fd9d05962b066d1ff3e6c9b7a90622b873f019ab3c9db371f25ccb7cd7268049"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/65-真实产品视图预核_v01_2026-10-12/01-五款候选视图状态.json",
+      "bytes": 3606,
+      "sha256": "a9eb7ee6820ab4cce17f5efa16baec71dd345408514bc10683953ff3e40a2c64"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/65-真实产品视图预核_v01_2026-10-12/02-五款官方视图与首轮可见性试编码.json",
+      "bytes": 6238,
+      "sha256": "1a02b7188b8849ab995944b3a30925ffb3954caeeac9c40c80d205b3ede727a5"
+    },
+    {
+      "bundle": "08-semantic-analysis.zip",
+      "path": "补充调研_2026-10-09/65-真实产品视图预核_v01_2026-10-12/03-三款俯视示意首轮定位_v01.json",
+      "bytes": 5815,
+      "sha256": "e6951ff6af22f6e027ce3fcbdc5306a194a9183ba0832b328ab263f33fa3d46a"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "purpose": "AI_visual_annotation_calibration_on_known_analytic_2D_geometry",
+  "images": 6,
+  "review_sets": 2,
+  "new_qwen_generations": 0,
+  "real_human_participants": 0,
+  "gpu_calls": 0,
+  "blinding": "fresh context, image-only instructions, no gold/parameters/history/metadata access",
+  "analysis_predefined": [
+    "complete_shell_ratio_absolute_error",
+    "hub_position_error_over_true_diagonal",
+    "shell_IoU",
+    "visible_tip_proxy_error"
+  ],
+  "pass_threshold": null,
+  "no_posthoc_pass_threshold": true,
+  "not_established_by_this_calibration": [
+    "accuracy on generated object boundaries",
+    "independent human measurement",
+    "physical performance",
+    "stable Qwen parameter control"
+  ],
+  "source_images_sha256": {
+    "S01": "54213a3b744c50b0a6754f1ea1d6388295a84ae98de6f47b98151521c24d4b3a",
+    "S02": "a671940effd23a2dc14ec35e4613e87353d9295f70fded97383f103c9dabcef7",
+    "S03": "6a27f95fb151481c22c78505dd28e16002f9e3de7630c9b4699f499bfb5e4b03",
+    "S04": "5811047593a33513f0f1cf5bb126b9f2c25ef570f22f5053967be7ed14c6a230",
+    "S05": "0995750d8af3df4cb8967b0a85be8846a90b50014ed1474b1c247fdf2e8e1d91",
+    "S06": "577581fd15559915f470920f6a90541cb6c918874e4b343d35ae27db38685c34"
+  }
+}
