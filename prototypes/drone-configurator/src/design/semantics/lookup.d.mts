@@ -5,7 +5,7 @@ export interface Card {
 export interface LookupResult {
   version: string; corpus: string; status: 'retrieve' | 'clarify' | 'abstain'; query: SemanticQuery;
   component?: string; reason: string; choices: string[]; choiceField: 'topic' | 'state' | null;
-  groups: {source: string; cards: Card[]}[]; hypotheses: {id: string; description: string}[];
+  groups: {source: string; cards: Card[]}[]; hypotheses: {id: string; description: string; evidence?: string}[];
 }
 export function vocabulary(): { topics: {id: string; label: string; states: {state: string; component: string}[]}[] };
 export type TopicTag = { id: string; label: string };

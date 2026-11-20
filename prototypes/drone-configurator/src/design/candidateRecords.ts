@@ -19,7 +19,7 @@ export interface FrozenAttempt {
   runId?: string; candidates: Candidate[]; decisions: Decision[];
 }
 export interface H3Archive {
-  model: 'MiniMax-H3-Image';
+  model: 'MiniMax-H3-Image' | 'Qwen-Image-2.1';
   status: 'ready' | 'submitting' | 'running' | 'succeeded' | 'failed';
   request?: Blob;
   acknowledgement?: Blob;

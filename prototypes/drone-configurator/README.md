@@ -38,6 +38,21 @@ npm run studio:chat -- --port 4178
 
 检索来自36张公开的脱敏短引，界面区分卡数、来源数和答复提及的卡号。设计者可以预览、采纳、写明驳回理由或撤销。保存版本、冻结轮次和导出规格时会保留当时的对话与决定；读入上一版规格时，已有参数和意图仍可使用。生成图的服务回执、作者对图片的取舍与设计助手的文字建议分别保留。
 
+## 图像后端：开发用 MiniMax，计入论文的场次用 Qwen
+
+画布上的「生成」可以接两个后端，由启动本机服务时的参数决定，界面上会写明当前接的是哪一个。
+
+| 后端 | 怎样启动 | 用途 |
+| --- | --- | --- |
+| MiniMax H3 Image（默认） | `npm run studio:chat -- --port 4178`，另设 `MINIMAX_API_KEY` | 开发和走查。界面上标“开发用，不计入论文数据” |
+| Qwen-Image 2.1，本机 ComfyUI | `npm run studio:chat -- --port 4178 --image-backend qwen-comfy --comfy-url http://GPU主机:8188` | 计入论文的设计场次。论文全文只用这一个模型 |
+
+Qwen 后端发出的是第 4 章 E3 设计通路已归档的同一套工作流：`TextEncodeQwenImage21` 接条件图和可选的父图，40 步、cfg 3、euler／simple，负面词与 `experiments/e3-quad-qwen/requests` 里的请求相同。三个权重文件名默认取归档请求里的名字，GPU 主机上的文件名不同时用环境变量 `QWEN_UNET`、`QWEN_CLIP`、`QWEN_VAE` 改。种子由轮次编号算出，同一轮重交不会变，并记在本轮记录里。
+
+每一轮实际发出的请求、入队回执和运行历史原样存在本机的图像作业目录（`WORKBENCH_IMAGE_JOBS_DIR`，文件名是 `轮次编号.comfy-request.json`、`.comfy-ack.json`、`.comfy-history.json`），回图存为 `QWEN-轮次编号.png`。主持人登记场次时从这里取原件。
+
+**还没有对真实的 GPU 主机测过。** 现有的检查用的是冒充 ComfyUI 接口的软件夹具（`npm run studio:fixture -- --port 4178 --image-backend qwen-comfy`，以及 `node --test scripts/image-jobs.test.mjs`）。开机后的第一件事是在画布上生成一张，核对三样：回图是 1024 × 1024 的 PNG；存下的请求里节点和权重文件名与主机一致；同一轮重交不产生第二次调用。
+
 只想走查界面、不调用模型时，用 `npm run studio:fixture -- --port 4178` 代替上面最后一条命令。这个服务照常检索公开卡，图像作业由软件夹具应答：它把本轮的布局条件图原样当作“回图”返回，只用来检查画布上的提交、回图、取舍和继续生成是否连得上。
 
 ## 在本机试用带证据的设计对话

@@ -119,7 +119,7 @@ function retrieve(lookup, { context, message, history, topic, state }) {
     }
     return {
       topic: askedTopic, state: result.query.state, status: result.status, reason: result.reason, ids,
-      hypotheses: result.hypotheses.map(({ id, description, status }) => ({ id, description, status })),
+      hypotheses: result.hypotheses.map(({ id, description, status, evidence }) => ({ id, description, status, ...(evidence ? { evidence } : {}) })),
     };
   });
   const first = branches[0];

@@ -11,6 +11,7 @@ import { compilePrompt } from '../../design/partPrompt';
 import { chatContext, chatScopeKey } from '../../design/designChatAudit';
 import { candidateRetained, type FrozenAttempt } from '../../design/candidateRecords';
 import { generationStatus, retryCollection } from '../../design/generation';
+import { useImageBackend } from '../../design/imageBackend';
 import { aircraftParameters } from '../../data/aircraft';
 import type { WorkflowBoard, WorkflowEdge, WorkflowNode } from '../../design/workflow/types';
 import type { PendingStep } from '../../design/workflow/workspaceRecords';
@@ -174,6 +175,7 @@ function GeneratePanel({ node, nodes, attempts, steps, starting, ops }: Pick<Pro
   const step = node.pending ? steps.find(s => s.id === node.recordId) : undefined;
   const attempt = node.attemptId ? attempts.find(a => a.id === node.attemptId) : undefined;
   const [goal, setGoal] = useState(step?.goal ?? '');
+  const backend = useImageBackend();
   useEffect(() => { setGoal(step?.goal ?? ''); }, [step?.id]); // eslint-disable-line react-hooks/exhaustive-deps
   const layout = useMemo(() => computeLayout(parameters), [parameters]);
   const [error, setError] = useState('');
@@ -184,7 +186,7 @@ function GeneratePanel({ node, nodes, attempts, steps, starting, ops }: Pick<Pro
     const busy = starting.has(step.id);
     return <div className="cv-generate" data-testid="generate-panel">
       <h2>生成效果图</h2>
-      <p className="cv-muted">点「生成」后，下面三样内容会发给 MiniMax H3 Image，返回一张 1024 × 1024 的效果图。提交前可以继续改造型和目标。</p>
+      <p className="cv-muted">点「生成」后，下面三样内容会发给 {backend.label}，返回一张 1024 × 1024 的效果图。提交前可以继续改造型和目标。</p>
       <label className="cv-field">这一轮想改变什么<span>选填</span>
         <textarea rows={2} value={goal} data-testid="generation-goal" placeholder={intent.note.trim() || '例如，让机鼻和相机的过渡更圆润'}
           onChange={event => setGoal(event.target.value)} onBlur={() => { if (goal !== step.goal) ops.setStepGoal(step.id, goal); }}/>
@@ -212,7 +214,7 @@ function GeneratePanel({ node, nodes, attempts, steps, starting, ops }: Pick<Pro
           {busy ? <LoaderCircle size={15} className="animate-spin"/> : <Sparkles size={15}/>}{busy ? '正在提交' : '生成'}</button>
         <button type="button" onClick={() => ops.removeStep(node)} disabled={busy}><Trash2 size={14}/>移除这一步</button>
       </div>
-      <p className="cv-provider" data-testid="generation-model">MiniMax H3 Image</p>
+      <p className="cv-provider" data-testid="generation-model">{backend.label}{backend.provider === 'minimax' ? ' · 开发用，不计入论文数据' : ''}</p>
     </div>;
   }
   const status = attempt && generationStatus(attempt);

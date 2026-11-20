@@ -223,11 +223,11 @@ export const references = {
   },
   bodyWidthOverD: {
     measured: [{ v: 0.208, label: 'Air 3' }, { v: 0.211, label: 'Mavic 3 Pro' }, { v: 0.234, label: 'Neo' }, { v: 0.325, label: 'Neo 2' }],
-    note: '机身宽/D 是待检验的视觉紧凑代理量；图面量测 4 款，壳体边界取法见 A2。',
+    note: '机身宽/D 是待检验的视觉紧凑代理量；手册图面量测 4 款。32 款真实四旋翼产品图上量得的中位数是 0.23（四分位 0.18–0.29），这个比值越大越被评为紧凑（相关，未作检验）。',
   },
   bodyLengthOverWidth: {
     measured: [{ v: 2.556, label: 'Mavic 3 Pro' }, { v: 3.654, label: 'Neo 2' }, { v: 4.844, label: 'Neo' }],
-    note: '机身长/宽取决于中央壳体的界定，Neo 系列含护圈连桥时差别很大。',
+    note: '机身长/宽取决于中央壳体的界定，Neo 系列含护圈连桥时差别很大。32 款真实四旋翼产品图上的中位数是 2.76（四分位 2.38–3.59）。量测时机壳上下端取外轮廓；两位读者之间仍有约 7% 的出入。',
   },
   diagonal: {
     published: [{ v: 170, label: 'Spark' }, { v: 219, label: 'ATOM 2' }, { v: 239, label: 'ATOM 3' }, { v: 335, label: 'Mavic Pro' }],
