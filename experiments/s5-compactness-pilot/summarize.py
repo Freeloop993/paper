@@ -9,7 +9,12 @@ responses/2026-11-19/README.md：
 4. 补充：评议者之间的一致程度（冻结的读法里没有这一项）。
 
 2026-11-20 再改一次，在后 7 名评议者的答卷到来之前定下：标点时发现 6 张图有瑕疵（geometry/README.md 第七节），
-作者决定 44 张全部保留。汇总时把这 6 张单列，等级相关另给一组剔除它们之后的数。"""
+作者决定 44 张全部保留。汇总时把这 6 张单列，等级相关另给一组剔除它们之后的数。
+
+2026-11-20 收齐后 7 份 44 张混排的答卷后第三次改，都是补充项：
+1. 合并一组：32 款四旋翼上，44 张混排的答卷与只看 32 张的 3 份合在一起（11 月 20 日新答卷到来之前已定：前 3 人不重答）。
+2. 评议者多于 4 人时，两两等级相关只报中位数和范围，并逐人给出与其余人的平均等级相关。
+3. 给出去掉“与其余人平均相关最低的一份”之后的等级相关，作敏感性对照，不作剔除。"""
 import base64, collections, itertools, json, pathlib, statistics, sys
 
 HERE = pathlib.Path(__file__).resolve().parent
@@ -50,15 +55,31 @@ def score(resp, image, term):
     if k == 'na': return None
     return 8 - k if x['flip'][term] else k
 
-def block_report(images, rs, n_block, n_blocks):
+def mean_rho(images, rs, term='span'):
+    """每位评议者与其余各人的等级相关的平均值。"""
+    sc = [[score(r, c, term) for c in images] for r in rs]; out = []
+    for i in range(len(rs)):
+        v = []
+        for j in range(len(rs)):
+            if i == j: continue
+            pts = [(a, b) for a, b in zip(sc[i], sc[j]) if a is not None and b is not None]
+            if len(pts) >= 5: v.append(spearman([a for a, _ in pts], [b for _, b in pts]))
+        out.append(sum(v) / len(v) if v else float('nan'))
+    return out
+
+def block_report(images, rs, n_block, n_blocks, title=None, note=None):
     cfg = collections.Counter(IMG[c].get('config', '') for c in images)
-    out = ['', '# 第 %d 组：%d 张图（%s），%d 份答卷' % (n_block, len(images), '、'.join('%s %d' % kv for kv in cfg.most_common()), len(rs)) if n_blocks > 1 else '']
+    out = ['', title or ('# 第 %d 组：%d 张图（%s），%d 份答卷' % (n_block, len(images), '、'.join('%s %d' % kv for kv in cfg.most_common()), len(rs)) if n_blocks > 1 else '')]
+    if note: out += ['', note]
     if len(rs) < 3:
         out += ['', '少于 3 份，按方案不报告。']; return out
-    out += ['', '## 答卷', '', '| 序号 | 编号 | 页面版本 | 开始（UTC） | 各页用时相加（分钟） | 看不出 | 文件修补 |', '| ---: | --- | --- | --- | ---: | ---: | --- |']
+    mr = mean_rho(images, rs)
+    out += ['', '## 答卷', '', '用时是这份答卷全部图的各页用时相加；每张图的用时取中位数。最后一栏是这位评议者在“紧凑—舒展”上与其余各人的等级相关的平均值。', '',
+            '| 序号 | 编号 | 页面版本 | 这份答卷的图数 | 开始（UTC） | 用时（分钟） | 每张图（秒） | 看不出 | 文件修补 | 与其余人的平均相关 |', '| ---: | --- | --- | ---: | --- | ---: | ---: | ---: | --- | ---: |']
     for i, r in enumerate(rs, 1):
         na = sum(score(r, c, t['id']) is None for c in images for t in TERMS)
-        out.append('| %d | %s | %s | %s | %.1f | %d | %s |' % (i, r['response_id'], r['_version'], r['started_at'][:16].replace('T', ' '), sum(x['ms'] for x in r['singles']) / 60000, na, '补了结尾的花括号' if r['_repaired'] else '无'))
+        out.append('| %d | %s | %s | %d | %s | %.1f | %.1f | %d | %s | %+.2f |' % (i, r['response_id'], r['_version'], len(r['singles']), r['started_at'][:16].replace('T', ' '), sum(x['ms'] for x in r['singles']) / 60000,
+                   statistics.median(x['ms'] for x in r['singles']) / 1000, na, '补了结尾的花括号' if r['_repaired'] else '无', mr[i - 1]))
     out += ['', '## 评议者自报', '', '| 项目 | 分布 |', '| --- | --- |']
     for k, name in [('design', '设计背景'), ('years', '年限'), ('drone', '无人机熟悉程度'), ('relation', '与研究者'), ('exposure', '此前接触')]:
         c = collections.Counter(r['background'].get(k) for r in rs); out.append('| %s | %s |' % (name, '；'.join('%s %d' % kv for kv in c.most_common())))
@@ -85,6 +106,8 @@ def block_report(images, rs, n_block, n_blocks):
             pts = [(table[c][t['id']][a], table[c][t['id']][b]) for c in images]; pts = [p for p in pts if None not in p]
             rho.append('%+.2f' % spearman([p[0] for p in pts], [p[1] for p in pts]) if len(pts) >= 5 else '—')
         spread = [max(vals(c, t['id'])) - min(vals(c, t['id'])) for c in images if len(vals(c, t['id'])) >= 2]
+        if len(rho) > 6:
+            num = sorted(float(x) for x in rho if x != '—'); rho = ['中位数 %+.2f，范围 %+.2f 到 %+.2f（%d 对）' % (statistics.median(num), num[0], num[-1], len(num))]
         out.append('| %s—%s | %s | %d | %d | %d |' % (t['left'], t['right'], '、'.join(rho), sum(s <= 1 for s in spread), sum(2 <= s <= 3 for s in spread), sum(s >= 4 for s in spread)))
     use = ['%d：%s' % (i, ' '.join('%d×%d' % (k, n) for k, n in sorted(collections.Counter(v for c in images for v in [table[c]['span'][i - 1]] if v is not None).items()))) for i in range(1, len(rs) + 1)]
     out += ['', '各人在“紧凑—舒展”上用到的分值（分值×次数）：' + '；'.join(use) + '。']
@@ -108,6 +131,13 @@ def block_report(images, rs, n_block, n_blocks):
         out += ['', '剔除这 %d 款后（%d 款）的等级相关：' % (len(bad), len(images) - len(bad)), '']
         for m, label in KEY['measures'].items():
             pts = [(IMG[c].get(m), med(vals(c, 'span'))) for c in images if c not in bad]; pts = [(a, b) for a, b in pts if a is not None and b is not None]
+            if len(pts) >= 5: out.append('- %s：%+.2f（%d 款）' % (label, spearman([a for a, _ in pts], [b for _, b in pts]), len(pts)))
+    if len(rs) >= 5:
+        low = min(range(len(rs)), key=lambda i: mr[i]); keep = [i for i in range(len(rs)) if i != low]
+        m2 = {c: med([table[c]['span'][i] for i in keep if table[c]['span'][i] is not None]) for c in images}
+        out += ['', '敏感性对照（补充项，不作剔除）：去掉与其余人平均相关最低的一份（序号 %d，%s，平均相关 %+.2f）后：' % (low + 1, rs[low]['response_id'], mr[low]), '']
+        for m, label in KEY['measures'].items():
+            pts = [(IMG[c].get(m), m2[c]) for c in images]; pts = [(a, b) for a, b in pts if a is not None and b is not None]
             if len(pts) >= 5: out.append('- %s：%+.2f（%d 款）' % (label, spearman([a for a, _ in pts], [b for _, b in pts]), len(pts)))
     out += ['', '这三项是程序在图上直接量的，不是规格里的参数。规格用的比例（电机中心的宽长比、机身长宽比、机身宽与对角电机距之比、桨径与轴距之比）要在图上标电机中心和机身外廓才有，这批图还没有标。']
     return out
@@ -135,6 +165,12 @@ def main(paths):
     order = sorted(blocks.items(), key=lambda kv: min(KEY['singles'].index(c) for c in kv[0]))
     for n, (b, rs) in enumerate(order, 1):
         out += block_report([c for c in KEY['singles'] if c in b], rs, n, max(2, len(order)))
+    # 合并一组：四旋翼 32 款。44 张混排的答卷与只看这 32 张的答卷合在一起；只看 12 张非四旋翼的答卷不并入。
+    quad = [c for c in KEY['singles'] if IMG[c].get('config') == '四旋翼']; full = [rs for b, rs in blocks.items() if len(b) == len(KEY['singles'])]; only = [rs for b, rs in blocks.items() if set(b) == set(quad)]
+    if quad and full and only:
+        both = sorted(full[0] + only[0], key=lambda r: r['started_at'])
+        out += block_report(quad, both, 0, 2, title='# 合并：四旋翼 %d 款，%d 份答卷' % (len(quad), len(both)),
+                            note='其中 %d 份是在 44 张混排里评的，%d 份只看了这 %d 张四旋翼。两种情形下同一款周围的图不一样，分值的松紧可能不同；这里合在一起只看各款之间的先后。只看 12 张非四旋翼图的答卷没有并入。' % (len(full[0]), len(only[0]), len(quad)))
     print('\n'.join(out))
 
 if __name__ == '__main__':

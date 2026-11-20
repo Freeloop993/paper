@@ -1,2 +1,3 @@
 ﻿reader_id,identity,model_version,prompt_record,exposure,method,images,role
-claude-20261120,Claude AI,Claude Fable 5.2（claude-fable-5-2）,取点规则见 geometry/README.md 第二节；三遍读数留在 rough.py、fixes.py、build_points.py,知道机型；标点前已看过四旋翼组的评分汇总,网格拼图读粗点；局部圆对称自动候选；4 倍放大逐点人工修正；2.5 倍大视野复看；机壳左右缘和桨尖由程序量后逐款看叠图，8 款桨尖改人工读,44,第一判读。第二判读（真人）待收
+claude-20261120,Claude AI,Claude Fable 5.2（claude-fable-5-2）,取点规则见 geometry/README.md 第二节；三遍读数留在 rough.py、fixes.py、build_points.py,知道机型；标点前已看过四旋翼组的评分汇总,网格拼图读粗点；局部圆对称自动候选；4 倍放大逐点人工修正；2.5 倍大视野复看；机壳左右缘和桨尖由程序量后逐款看叠图，8 款桨尖改人工读,44,第一判读
+0b8f82094f4c,真人,取点页面 geometry/annotator/无人机取点.html，包 e4dcbb96a567,页面首屏的取点说明,自报没看过评分和已有的点；自报有产品设计或工程制图训练,在 720 像素的图上点选，放大镜 5 倍，方向键微调；44 张用时 46 分钟,44,第二判读。回件 geometry/returns/标点电机.json，2026-11-20

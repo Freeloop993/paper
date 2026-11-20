@@ -20,6 +20,9 @@ def to_row(base, r):
     for i, h in enumerate(ref, 1):
         j = min(range(len(mine)), key=lambda j: math.dist(h, mine[j])); dist.append(math.dist(h, mine[j])); row['hub%d_x' % i], row['hub%d_y' % i] = mine[j]
     for key, src, axis in [('body_top_y', 'front', 1), ('body_bottom_y', 'rear', 1), ('body_left_x', 'left', 0), ('body_right_x', 'right', 0)]: row[key] = '' if r.get(src) is None else r[src][axis] * k
+    # 前后、左右点反了的（比如机头朝下的图），按位置排回来
+    for lo, hi in [('body_top_y', 'body_bottom_y'), ('body_left_x', 'body_right_x')]:
+        if row[lo] != '' and row[hi] != '' and row[lo] > row[hi]: row[lo], row[hi] = row[hi], row[lo]
     for i in range(1, 9): row['tip%d_x' % i] = row['tip%d_y' % i] = ''
     if r.get('tip'):
         t = (r['tip'][0] * k, r['tip'][1] * k); j = min(range(n), key=lambda j: math.dist(t, (row['hub%d_x' % (j + 1)], row['hub%d_y' % (j + 1)]))); row['tip%d_x' % (j + 1)], row['tip%d_y' % (j + 1)] = t
