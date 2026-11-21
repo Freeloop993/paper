@@ -1,0 +1,45 @@
+name: Export merged workbench 3.6.0 preview
+
+on:
+  push:
+    branches:
+      - tools/workbench-360-preview-20261121
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  package-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            prototypes/drone-configurator/configurator-offline.zip
+            prototypes/drone-configurator/review/20261121-defaults-free-prompt/screenshots
+          sparse-checkout-cone-mode: false
+          fetch-depth: 1
+      - name: Verify app files
+        run: |
+          set -euo pipefail
+          f="prototypes/drone-configurator/configurator-offline.zip"
+          test -s "$f"
+          unzip -t "$f" | tail -n 1
+          unzip -Z1 "$f" | grep -q 'index.html'
+          ls -lh "$f"
+      - name: Upload official offline package (unchanged)
+        uses: actions/upload-artifact@v4
+        with:
+          name: drone-configurator-3-6-0-offline
+          path: prototypes/drone-configurator/configurator-offline.zip
+          if-no-files-found: error
+          retention-days: 14
+          compression-level: 0
+      - name: Upload actual UI review screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: drone-configurator-3-6-0-screenshots
+          path: prototypes/drone-configurator/review/20261121-defaults-free-prompt/screenshots/*.png
+          if-no-files-found: error
+          retention-days: 14
