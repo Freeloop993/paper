@@ -1,0 +1,14 @@
+{
+ "source_pack": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI",
+ "source_response_sha256": "a103269c7557e618bbfcbc0d52478c37f69a6703cb37f205bff4b577d82ac008",
+ "tool_sha256": "265603c18a9b84622b22c0b807005e0e58ffd0b053115a481b45c77f62a24d61",
+ "rules_sha256": "d395b5b12ee461cf95e225b9e878f1b5577538207de631352ab2127710237747",
+ "batches": 4,
+ "per_batch": [
+  17,
+  17,
+  17,
+  17
+ ],
+ "rekey_sha256": "84245d690a842cb4da3979f8c19b364c8b082ffbeb5a5eaec226fb5db4ce5c8f"
+}

@@ -1,0 +1,14 @@
+{
+ "tool": "a8-ai-reader 1.0",
+ "finished_at": "2026-11-21T11:41:09+00:00",
+ "images": 17,
+ "commands_logged": 1513,
+ "first_command_at": "2026-11-21T10:49:45+00:00",
+ "response_sha256": "670bc512b18e62a245f284caf8697cc449123f3b08214cbf8333c4424c598c4d",
+ "self_report": {
+  "model": "Claude Opus 5.5 (claude-opus-5-5), running as a Claude Code subagent",
+  "exposure": "None of these images, their generation conditions, target values or anyone else's readings were seen. Note: the session harness auto-injected the project's CLAUDE.md and a memory index into my context (not opened by me); it mentions a drone-design thesis, a workbench that generates images with Qwen, rating stimuli and an S5 compactness pilot, but contains no values or readings for these images. I did not use it.",
+  "deviations": "None from the registered rules. Interpretations applied consistently: (1) edge pixels for left/right/upper/lower = outermost pixel that is at least 50% body by grey value (antialiased pixels below 50% excluded; image 1 was corrected to this after first using a looser cut); (2) where the top or bottom outline is a flat run, the representative x is the body centre (about 512); (3) hub points = centre of the visible centre cap/screw, located from the ring/edge profile in row/column grey values and checked with crosshairs; half-pixel ties rounded by the majority of estimates; (4) in images with a front gimbal camera, the camera, its housing and side lobes were excluded and the upper end taken on the shell edge beneath it.",
+  "hard": "4c87b120fb5526e5: oblique view, each motor bell appears ~40 px below its hub cap; per rule 2 I marked the visible central knob/cap centre (vertical extent of the knob uncertain by ~2 px); gimbal excluded; dark rear band counted as shell. f97421e7ce43fcd2: hub centres are dark recesses with a fuzzy upper half (+-1 px); I treated the gimbal mount plate (y~205-223) as part of the camera assembly - if it counts as body, upper would be ~(512,205). ec282e15e98114e1: bottom edge has a 1-3 px dark rim; lowest pixel is (540,680) on that rim, centre is (512,679); if the rim is shadow, use 679. 333d9adce797bf32 and 0393362af2e20238: a narrower rear lip/step at the bottom was included as shell. 8e26b370f5b6c7de and bee0605179f6ea6e: small or asymmetrically shaded caps, hub centres +-1 px. db031f9afa1d8d57: slight oblique view (motor bell offset below cap) and front camera excluded."
+ }
+}
