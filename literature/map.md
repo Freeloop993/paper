@@ -132,7 +132,7 @@ ControlNet（L053，2023，被引 13）是条件图控制的依据。Make It Cou
 
 **两篇单页的无人机造型文献是完整的：** L002《六旋翼无人机造型设计》和 L003《面向用户感性意象的纵列双旋翼无人机造型研究与设计》都是期刊的单页作品展示，原件就是 1 页，只能当设计先例用。
 
-**框架文件点名的最接近工作 6 篇：5 篇已核原页，还差 1 篇（2026-11-21）。** 作者 11 月 20 日上传了 5 篇，页码和适用边界在 [page-evidence.csv](page-evidence.csv)。
+**框架文件点名的最接近工作 6 篇：5 篇已核原页，第 6 篇不补（2026-11-21）。** 作者 11 月 20 日上传了 5 篇，页码和适用边界在 [page-evidence.csv](page-evidence.csv)。
 
 | 编号 | 文献 | 核读后要记住的 | 用在哪 |
 | --- | --- | --- | --- |
@@ -142,7 +142,19 @@ ControlNet（L053，2023，被引 13）是条件图控制的依据。Make It Cou
 | L116 | Xu、Martelaro、McComb，*Ceci N’est Pas un Drone*，预印本（2025-12） | 156 人；呈现方式影响取舍；只给数值时选得最准；人偏好常规、对称的方案 | 2.5、3.6 节，RQ1′、RQ3 |
 | L117 | Raghubir、Krishna，JMR 1999 | 七项实验：容器越细长，感到的容量越大；对象是容器，不是产品顶视图 | 3.3 节，5.3.1 |
 
-**还差的 1 篇：** Mugge、Dahl、Schoormans，*“What You See, Is What You Get?” Guidelines for Influencing Consumers’ Perceptions of Consumer Durables through Product Appearance*，Journal of Product Innovation Management 35(3)，309–329，2018。用在 3.3 节：产品外观的设计维度里有“紧凑”一项。作者还在找。
+**第 6 篇不补（作者 2026-11-21 倾向不补，核对后同意）。** Mugge、Dahl、Schoormans（2018，JPIM 35(3)，309–329）原先不是给 2.6 节用的，是给 3.3 节用的：想引它说明“紧凑”是已有的产品外观感知维度。不补的理由有三条：稿子里没有引它；11 月 18 日只看到摘要，摘要里那个维度叫 *compressed*，当时的方法卡已经写明不能把它等同于展开顶视下的“紧凑”；“紧凑能不能落到比例上”现在有本文自己的数据（32 款真实产品、10 名评议者），知觉上的依据有 Raghubir 与 Krishna（L117）。写 3.3 节时不再提这篇即可。
+
+**2.6 节的比较，现有原件够不够（2026-11-21 核对）。** 2.6 节要交代的是框架里那张“不能声称”的表，一共五行：
+
+| 表里的一行 | 依据 | 够不够 |
+| --- | --- | --- |
+| 评论 → 参数 → 生成 | AutoGen-Insight：11 月 18 日的原页方法卡，PDF 不在库里；感性工学一线 L028、L029、L030、L031、L032、A09 已核原页 | 够。能拿到 PDF 的话入库更稳 |
+| 参数化可控生成 | L113 Parametric-ControlNet，已核原页（预印本） | 够 |
+| 生成式 AI 用于无人机造型 | L115 Yamin 与 Cauchard，已核原页；Chen 等（2026）有原页方法卡 | 够 |
+| 结构化与自由提示的对照 | L114 Davis 等，已核原页；DesignWeaver、Brief2Design 有原页方法卡 | 够 |
+| 编辑达成与其余保持分开评 | 表里点名的 PIE-Bench、EditBench、InstructPix2Pix、MagicBrush **四篇都没有原件**；第 2 章已经引了 InstructPix2Pix。库里核过原页、做法相同的只有 SR-Edit（A06） | **这一行有缺口** |
+
+所以缺的不是第 6 篇，是第五行。两个办法任选其一：把稿子已经引用的 InstructPix2Pix 和 MagicBrush 两篇原件补进来核页；或者这一行只按 SR-Edit 写，稿子里对那四篇的说法收到核过的范围内。它影响的是 2.4、2.6 和 5.2.2（RQ2c），不影响工作台和预试。
 
 AutoGen-Insight、Brief2Design 和 DesignWeaver 的 PDF 不在仓库，但 11 月 18 日已有原页方法卡，可以按卡片引用。
 
