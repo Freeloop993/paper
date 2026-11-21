@@ -4,6 +4,7 @@ import { computeLayout, frameRules, taskLabels, type Task } from './design';
 import { compilePrompt } from './partPrompt';
 import { suggestFields } from './semantics/brief';
 import { backendOf, imageBackend, modelLabel } from './imageBackend';
+import type { DesignIntent, DroneParameters } from '../types/DroneParameters';
 
 const endpoint = '/api/h3/jobs';
 const preparing = new Map<string, Promise<string>>();
@@ -11,7 +12,7 @@ const workers = new Map<string, Promise<void>>();
 const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 type ImageInput = {role: 'layout' | 'parent'; name: string; sha256: string; dataUrl: string};
-interface H3Request { attemptId: string; prompt: string; inputs: ImageInput[] }
+interface H3Request { attemptId: string; prompt: string; inputs: ImageInput[]; condition?: 'free' }
 interface H3Job {
   provider: string; model: string; jobId: string; attemptId: string;
   status?: 'queued' | 'running' | 'succeeded' | 'failed';
@@ -19,7 +20,7 @@ interface H3Job {
   outputs?: {name: string; mimeType: string; sha256: string; dataUrl: string}[];
   error?: string;
   evidence?: {
-    request?: {model?: string; prompt?: string; n?: number; output_format?: string; endpoint?: string; images?: {role:string;sha256:string}[]};
+    request?: {model?: string; prompt?: string; n?: number; output_format?: string; endpoint?: string; condition?: string; images?: {role:string;sha256:string}[]};
     response?: {traceId?: string; outputHashes?: string[]; httpStatus?: number};
   };
 }
@@ -51,9 +52,10 @@ async function originalRequest(row: FrozenAttempt) {
     const sha256 = await hashBlob(file);
     return {role, name:role + '-' + sha256 + '.png', sha256, dataUrl:await dataUrl(file)};
   };
-  const inputs = [await input('layout',row.guide)];
+  // 自由提示不带布局条件图：发出去的只有设计者的原文，和他自己接上的那一张图（如果有）。
+  const inputs = row.condition === 'free' ? [] : [await input('layout',row.guide)];
   if (row.parentImage) inputs.push(await input('parent',row.parentImage));
-  return new Blob([JSON.stringify({attemptId:row.id,prompt:row.confirmedText,inputs})],{type:'application/json'});
+  return new Blob([JSON.stringify({attemptId:row.id,prompt:row.confirmedText,inputs,...(row.condition === 'free' ? {condition:'free'} : {})})],{type:'application/json'});
 }
 
 function verifyIdentity(row: FrozenAttempt, job: H3Job) {
@@ -70,20 +72,21 @@ function decodePng(src: string) {
 async function storeResult(row: FrozenAttempt, request: Blob, raw: Blob, job: H3Job) {
   verifyIdentity(row,job);
   const sent: H3Request = JSON.parse(await request.text());
-  const originals = [row.guide, ...(row.parentImage ? [row.parentImage] : [])];
-  if (sent.attemptId !== row.id || sent.prompt !== row.confirmedText || sent.inputs.length !== originals.length ||
+  const free = row.condition === 'free';
+  const originals = [...(free ? [] : [row.guide]), ...(row.parentImage ? [row.parentImage] : [])];
+  if (sent.attemptId !== row.id || sent.prompt !== row.confirmedText || sent.inputs.length !== originals.length || (sent.condition === 'free') !== free ||
     !Array.isArray(job.inputHashes) || job.inputHashes.length !== originals.length)
     throw new Error('H3 回执的设计输入和本轮冻结记录不一致。');
   for (let index = 0; index < originals.length; index++) {
     const digest = await hashBlob(originals[index]), input = sent.inputs[index];
-    if (input.role !== (index === 0 ? 'layout' : 'parent') || input.sha256 !== digest ||
+    if (input.role !== (!free && index === 0 ? 'layout' : 'parent') || input.sha256 !== digest ||
       job.inputHashes[index] !== digest || await hashBlob(decodePng(input.dataUrl)) !== digest)
-      throw new Error('H3 请求的布局图或父图与本轮原件不一致。');
+      throw new Error('请求里的布局图或父图与本轮原件不一致。');
   }
   const traceId = job.evidence?.response?.traceId;
   const evidence = job.evidence?.request;
   const backend = backendOf(row.h3?.model);
-  if (!evidence || evidence.model !== backend.model || evidence.prompt !== row.confirmedText ||
+  if (!evidence || evidence.model !== backend.model || evidence.prompt !== row.confirmedText || (evidence.condition === 'free') !== free ||
     evidence.n !== 1 || evidence.output_format !== 'png' || evidence.endpoint !== backend.endpoint ||
     !Array.isArray(evidence.images) || evidence.images.length !== sent.inputs.length ||
     sent.inputs.some((image,index) => evidence.images?.[index]?.role !== image.role || evidence.images[index].sha256 !== image.sha256))
@@ -179,6 +182,8 @@ export async function retryCollection(id: string) {
 }
 export interface GenerationOptions {
   id: string; task: Task; goal?: string; parentCandidateId?: string;
+  /** 自由提示：text 是设计者写的原文，原样发给模型。 */
+  method?: 'free'; text?: string;
   /** 画布上的参考图：编号是它在画布上的节点，原件须为 PNG。 */
   reference?: { id: string; file: Blob };
 }
@@ -200,7 +205,30 @@ export async function referencePng(source: Blob): Promise<Blob> {
   } finally { picture.close(); }
 }
 
-async function start({id, task, goal: requestedGoal, parentCandidateId, reference}: GenerationOptions) {
+/**
+ * 结构化方式实际发给模型的全文：读条件图的固定说明、由造型和目标编译的文字、第二张图的读法（如果接了图）、这一轮的目标（如果写了）。
+ * 生成面板显示的和冻结、发出的是这同一段，设计者确认的就是模型收到的。
+ */
+export function structuredText(parameters: DroneParameters, touched: Record<string, boolean>, intent: DesignIntent,
+  second: 'candidate' | 'reference' | undefined, requestedGoal?: string) {
+  const prompt = compilePrompt(parameters, touched, intent, computeLayout(parameters));
+  let text = 'Image 1 is a motor-axis layout guide only. Replace dots and lines with a complete industrial product and omit all visible guide marks.\n' + prompt.text;
+  if (second === 'candidate') text += '\nImage 2 is the appearance parent to revise. Preserve its visual identity while applying the current layout and design changes.';
+  else if (second === 'reference') text += '\nImage 2 is an appearance reference chosen by the designer. Borrow its form language and surface treatment where they fit, while the motor-axis layout follows Image 1.';
+  if (requestedGoal?.trim()) {
+    const context = suggestFields(requestedGoal).state;
+    const storageOnly = ['folded','carrying'].includes(context) ||
+      (requestedGoal.trim() === intent.note.trim() && !prompt.sentences.some(sentence => sentence.id === 'intent_note'));
+    if (storageOnly) text += '\nRender the specified unfolded layout. The designer’s storage or carrying goal concerns a separate use state and does not alter unfolded proportions.';
+    else text += '\nDesign goal for this version: ' + requestedGoal.trim();
+  }
+  return text;
+}
+
+/** 自由提示这一轮在画布上的标题：原文的第一行，过长时截短。发给模型的仍是全文。 */
+export const freeTitle = (text: string) => { const line = text.trim().split(/\r?\n/)[0]; return line.length > 60 ? line.slice(0, 58) + '…' : line; };
+
+async function start({id, task, goal: requestedGoal, parentCandidateId, reference, method, text: freeText}: GenerationOptions) {
   // Read the live draft at click time; a saved variant snapshot can be older.
   const {parameters, touched, intent, designChatAudit, variants, activeVariant, workflowOrigin} = taskStores[task].getState();
   const state = structuredClone({parameters, touched, intent, designChatAudit});
@@ -214,17 +242,16 @@ async function start({id, task, goal: requestedGoal, parentCandidateId, referenc
       : undefined;
     if (parentCandidateId && !candidate) throw new Error('找不到所选候选的原图，请重新选择。');
     const parent = candidate ?? reference;
-    const prompt = compilePrompt(state.parameters, state.touched, state.intent, computeLayout(state.parameters));
-    let text = 'Image 1 is a motor-axis layout guide only. Replace dots and lines with a complete industrial product and omit all visible guide marks.\n' + prompt.text;
-    if (candidate) text += '\nImage 2 is the appearance parent to revise. Preserve its visual identity while applying the current layout and design changes.';
-    else if (reference) text += '\nImage 2 is an appearance reference chosen by the designer. Borrow its form language and surface treatment where they fit, while the motor-axis layout follows Image 1.';
-    if (requestedGoal?.trim()) {
-      const context = suggestFields(requestedGoal).state;
-      const storageOnly = ['folded','carrying'].includes(context) ||
-        (requestedGoal.trim() === intent.note.trim() && !prompt.sentences.some(sentence => sentence.id === 'intent_note'));
-      if (storageOnly) text += '\nRender the specified unfolded layout. The designer’s storage or carrying goal concerns a separate use state and does not alter unfolded proportions.';
-      else text += '\nDesign goal for this version: ' + requestedGoal.trim();
+    if (method === 'free') {
+      // 不编译、不加前后缀：冻结并发出的就是设计者写下的这段话。
+      const words = (freeText ?? '').trim();
+      if (!words) throw new Error('先写下要发给模型的文字。');
+      await freezeAttempt(state, {variantId: activeVariant, variantName: name, variantScope, workflowOrigin, goal: freeTitle(words), keep: '', condition: 'free',
+        h3: {model: (await imageBackend()).model, status: 'ready'}}, words, parent, undefined, id);
+      ensureRunning(id);
+      return id;
     }
+    const text = structuredText(state.parameters, state.touched, state.intent, candidate ? 'candidate' : reference ? 'reference' : undefined, requestedGoal);
     await freezeAttempt(state, {variantId: activeVariant, variantName: name, variantScope, workflowOrigin, goal, keep: '', condition: 'structured',
       h3: {model: (await imageBackend()).model, status: 'ready'}}, '', parent, text, id);
   }

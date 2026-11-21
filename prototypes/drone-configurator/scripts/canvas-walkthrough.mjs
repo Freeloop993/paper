@@ -178,12 +178,12 @@ try {
   await page.getByTestId('goal-card-save').click();
   await cards('goal').filter({ has: goal }).getByText('已确认').waitFor();
   await cards('design').filter({ has: page.locator('[data-testid=top-view]') }).locator('.cv-head').click();
-  await page.locator('[data-frame="Wide X"]').click();
+  await page.locator('[data-frame="True X"]').click();
   const frames = await page.locator('[data-step-kind=design] .cv-tag:not(.is-plain)').allTextContents();
   assert.deepEqual([...frames].sort(), ['宽 X 型', '真 X 型']);
   await page.getByRole('button', { name: '适应全图' }).click();
   await page.locator('[data-step-kind=design]').filter({ has: page.locator('[data-testid=top-view-static]') }).locator('.cv-head').click();
-  await page.waitForFunction(() => document.querySelector('[data-testid=studio]')?.dataset.frameName === '真 X 型');
+  await page.waitForFunction(() => document.querySelector('[data-testid=studio]')?.dataset.frameName === '宽 X 型');
   await shot('06-两个方向.png');
 
   // 9. 研究留档默认收起，需要时在同一块画布上展开；完整记录里能核对实发输入。

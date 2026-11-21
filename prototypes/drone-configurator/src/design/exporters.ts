@@ -51,7 +51,7 @@ function sideDiagram(p: DroneParameters, layout: Layout) {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${left} -14 ${right-left} ${height}"><title>共轴构型侧视示意，机头朝左，层间距仅作示意</title><rect x="${left}" y="-14" width="${right-left}" height="${height}" fill="white"/><g fill="none" stroke-width="2">${lines.join('')}</g><rect x="${-size.length/2}" y="0" width="${size.length}" height="${size.height}" rx="3" fill="#cbd5e1" stroke="#19324d"/></svg>`;
 }
 
-const basisText = { definition: '几何定义', experimental: '实验档位', designer: '设计者输入' } as const;
+const basisText = { definition: '几何定义', reference: '真实产品量测的中位数', experimental: '实验档位', designer: '设计者输入' } as const;
 
 export function buildExport(state: ExportState, options: ExportOptions) {
   const { parameters, touched, intent } = state;
@@ -102,7 +102,8 @@ export function buildExport(state: ExportState, options: ExportOptions) {
       span_ratio_wl: basisText[wlBasis(parameters.frame)],
       frame_geometry: basisText[layout.basis],
       prop_diameter: touched['propulsion.prop_diameter_inch'] ? '设计者输入' : '默认值',
-      body_dimensions: '设计者输入或默认值；是包络尺寸，不是外形',
+      body_dimensions: touched['fuselage.fuselage_dimensions_mm.length'] || touched['fuselage.fuselage_dimensions_mm.width']
+        ? '设计者输入；是包络尺寸，不是外形' : '起始设计值或读入的规格；是包络尺寸，不是外形',
       reference_tables: topologyOf(parameters.frame.frame_type).layout_key === 'quad' && (intent.taskId ?? 'consumer_camera') === 'consumer_camera' ? references.sources : null,
       note: '毫米数均为设计值。厂商公布值、手册图面量测值只作对照，不会自动写入参数。',
     },

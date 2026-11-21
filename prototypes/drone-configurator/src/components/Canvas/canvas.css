@@ -244,3 +244,18 @@
   .cv-actions button { padding: 0 8px; font-size: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { .cv-card, .cv-port { transition: none; } }
+
+/* 研究场次设置：这一场的方式，登记的实验条件 */
+.cv-session { margin-top: 18px; }
+.cv-session h3 { margin: 6px 4px 0; font-size: 12.5px; font-weight: 650; }
+.cv-session .cv-muted { padding: 0 4px; }
+.cv-session-methods { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 0 4px; }
+.cv-session-methods button { min-height: 32px; border: 1px solid #d4dfd8; border-radius: 8px; font-size: 12.5px; font-weight: 560; background: #fff; color: #2c443a; }
+.cv-session-methods button:hover { border-color: #90afa2; }
+.cv-session-methods button[aria-checked="true"] { background: #1f5a4a; border-color: #1f5a4a; color: #fff; }
+.cv-session-condition { margin: 0 4px; padding: 10px; border: 1px solid #e0e6df; border-radius: 9px; background: #f8faf7; }
+.cv-session-condition p { margin: 0; font-size: 12.5px; line-height: 1.6; }
+.cv-session-condition .cv-muted { padding: 0; margin-top: 4px; }
+.cv-session-condition button { display: inline-flex; align-items: center; gap: 5px; margin-top: 8px; min-height: 30px; padding: 4px 10px; border: 1px solid #d4dfd8; border-radius: 8px; font-size: 12.5px; font-weight: 560; background: #fff; color: #2c443a; }
+.cv-session-condition button:disabled { opacity: .6; cursor: default; }
+.cv-session-condition[data-met="yes"] { border-color: #b9d2c3; background: #eef5f0; }

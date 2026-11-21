@@ -10,8 +10,9 @@ export const qwenModel = 'Qwen-Image-2.1';
 export const comfyDefaults = { unet:'qwen_image_2.1_bf16.safetensors', clip:'qwen3vl_8b_bf16.safetensors', vae:'qwen_image_2.1_vae_bf16.safetensors',
   steps:40, cfg:3, sampler_name:'euler', scheduler:'simple',
   negative_prompt:'flat schematic, line drawing, collage, text, labels, logo, cropped rotor, disconnected arm, extra rotor, perspective camera' };
+// 不带图的自由提示与 E1 纯文字组已归档的请求同构（evidence/e1-open-20261112/E1-actual/E1-text-*/request.json）：编码器只接文字，不接 VAE。
 export function comfyGraph(id, prompt, seed, imageNames, s=comfyDefaults) {
-  const encoder={clip:['2',0],vae:['3',0],prompt,negative_prompt:s.negative_prompt,resolution:1024};
+  const encoder={clip:['2',0],...(imageNames.length ? {vae:['3',0]} : {}),prompt,negative_prompt:s.negative_prompt,resolution:1024};
   const graph={
     '1':{class_type:'UNETLoader',inputs:{unet_name:s.unet,weight_dtype:'default'}},
     '2':{class_type:'CLIPLoader',inputs:{clip_name:s.clip,type:'qwen_image',device:'default'}},
@@ -38,18 +39,21 @@ function checkedPng(bytes, inbound) {
   const w=bytes.readUInt32BE(16), h=bytes.readUInt32BE(20);
   return inbound ? Math.min(w,h)>=128 && Math.max(w,h)<=8192 && Math.max(w,h)/Math.min(w,h)<=4 : w===1024 && h===1024;
 }
+// 两种方式共用同一个入口。结构化：布局条件图在前，可再带一张父图或参考图。自由提示：只有设计者的原文，可带一张父图或参考图，不带布局条件图。
 function validate(request) {
   const {attemptId,prompt,inputs}=request ?? {};
+  if (![undefined,'structured','free'].includes(request?.condition)) fail(400,'图像请求的生成方式无法识别。');
+  const free=request.condition==='free';
   if (typeof attemptId!=='string' || !uuid.test(attemptId) || typeof prompt!=='string' || !prompt.trim() ||
-      prompt.length>32000 || !Array.isArray(inputs) || ![1,2].includes(inputs.length)) fail(400,'图像请求缺少本轮目标或布局图。');
+      prompt.length>32000 || !Array.isArray(inputs) || !(free ? [0,1] : [1,2]).includes(inputs.length)) fail(400,free ? '自由提示请求缺少文字，或带了多余的图。' : '图像请求缺少本轮目标或布局图。');
   const references=inputs.map((input,i)=>{
-    if (input?.role!==(i===0?'layout':'parent') || typeof input.dataUrl!=='string' || !input.dataUrl.startsWith(dataHeader) ||
+    if (input?.role!==(!free && i===0?'layout':'parent') || typeof input.dataUrl!=='string' || !input.dataUrl.startsWith(dataHeader) ||
         !/^[a-f\d]{64}$/.test(input.sha256)) fail(400,'参考图格式或顺序与本轮规格不符。');
     const bytes=Buffer.from(input.dataUrl.slice(dataHeader.length),'base64');
     if(!checkedPng(bytes,true) || sha(bytes)!==input.sha256) fail(400,'参考图的尺寸、格式或内容摘要校验失败。');
     return {role:input.role, sha256:input.sha256, dataUrl:input.dataUrl};
   });
-  return {attemptId,prompt,references};
+  return {attemptId,prompt,references,free};
 }
 
 function providerMessage(status, code, detail) {
@@ -100,6 +104,8 @@ export function createImageJobs({apiKey,region='global',fetchImpl=globalThis.fet
       // 实际发出的请求、入队回执和运行历史原样存盘，供主持人登记场次时使用。
       const body=JSON.stringify({client_id:'studio-'+record.jobId,prompt:comfyGraph(record.jobId,req.prompt,req.seed,names,comfy)});
       await writeFile(path.join(directory,record.jobId+'.comfy-request.json'),body,{mode:0o600});
+      // 实际发给模型的文字另存一份纯文本（不加换行），主持人登记时直接引用。自由提示这一份就是设计者的原文。
+      await writeFile(path.join(directory,record.jobId+'.prompt.txt'),req.prompt,{mode:0o600});
       const ackText=await (await call('/prompt',{method:'POST',headers:{'Content-Type':'application/json'},body})).text();
       await writeFile(path.join(directory,record.jobId+'.comfy-ack.json'),ackText,{mode:0o600});
       const ack=JSON.parse(ackText);
@@ -124,6 +130,9 @@ export function createImageJobs({apiKey,region='global',fetchImpl=globalThis.fet
       if(!checkedPng(png,false)) throw new Error('Qwen 回图未通过 1024 × 1024 PNG 校验。');
       const hash=sha(png), name='QWEN-'+record.jobId+'.png';
       await writeFile(path.join(directory,name),png,{mode:0o600});
+      // 主持人的登记工具要求回图以后端报告的原文件名附上，所以按原名再存一份（文件名里带轮次编号，不会相互覆盖）。
+      const original=path.basename(String(images[0].filename));
+      if(/^[\w.-]+\.png$/i.test(original) && original!==name) await writeFile(path.join(directory,original),png,{mode:0o600});
       record.outputs=[{name,mimeType:'image/png',sha256:hash}];
       Object.assign(record.evidence.response,{outputHashes:[hash],outputName:images[0].filename});
       record.status='succeeded';
@@ -172,13 +181,16 @@ export function createImageJobs({apiKey,region='global',fetchImpl=globalThis.fet
     await save(record);
   }
   async function submit(raw) {
-    const {attemptId,prompt,references}=validate(raw);
+    const {attemptId,prompt,references,free}=validate(raw);
+    // MiniMax 的接口是改图接口，必须带图。它只作开发用，不为它另接一个文生图接口。
+    if(free && !comfy && !references.length) fail(400,'开发用的 MiniMax 后端不接受不带图的自由提示。请用 Qwen 后端启动工作台。');
     const hashes=references.map(x=>x.sha256);
     const images=references.map(({role,sha256})=>({role,sha256}));
+    // 两种方式的模型、画幅、步数、引导强度、采样器、负向词和种子规则完全相同；差别只在发什么文字、带不带布局条件图。
     const request=comfy ? {model:qwenModel,prompt,size:'1024x1024',n:1,output_format:'png',endpoint:'/prompt',seed:seedOf(attemptId),
         steps:comfy.steps,cfg:comfy.cfg,sampler_name:comfy.sampler_name,scheduler:comfy.scheduler,negative_prompt:comfy.negative_prompt,
-        weights:{unet:comfy.unet,clip:comfy.clip,vae:comfy.vae},images}
-      : {model:imageModel,prompt,size:'1024x1024',n:1,response_format:'b64_json',output_format:'png',endpoint:'/v1/images/edits',images};
+        weights:{unet:comfy.unet,clip:comfy.clip,vae:comfy.vae},images,...(free ? {condition:'free'} : {})}
+      : {model:imageModel,prompt,size:'1024x1024',n:1,response_format:'b64_json',output_format:'png',endpoint:'/v1/images/edits',images,...(free ? {condition:'free'} : {})};
     const fingerprint=sha(JSON.stringify(request));
     await mkdir(directory,{recursive:true,mode:0o700});
     const record={...baseRecord(attemptId),status:'running',inputHashes:hashes,fingerprint,ownerPid:process.pid,startedAt:new Date().toISOString(),evidence:{request}};

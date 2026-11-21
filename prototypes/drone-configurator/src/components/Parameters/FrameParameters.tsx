@@ -2,6 +2,7 @@ import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
 import { computeLayout, frameRules, unitHubs, topologyOf, usesConsumerReferences, type FrameType } from '../../design/design';
 import { armMaterialOptions, armRootOptions, references } from '../../design/fields';
+import { designStart } from '../../design/defaults';
 import { Choice, Field, Group, OpenChoice, Slider, TabHeading } from '../controls/controls';
 
 const frameTypes = Object.keys(frameRules) as FrameType[];
@@ -58,13 +59,14 @@ const FrameParameters: React.FC = () => {
         <Field path="frame.span_ratio_wl" value={layout.W_over_L.toFixed(2)}
           hint="电机左右跨度 ÷ 前后跨度。数值越大，机架越宽扁。"
           reference={consumer && <>
-            <b className="font-medium text-ink">实验档：</b>0.70、1.00、1.30。<br />
+            <b className="font-medium text-ink">起始值：</b>1.35，32 款真实四旋翼产品的中位数。<br />
+            <b className="font-medium text-ink">实验档（研究登记的条件，不是起始值）：</b>0.70、1.00、1.30。<br />
             <b className="font-medium text-ink">真实机型（手册图面量测）：</b>{measured.map(m => `${m.label} ${m.v.toFixed(2)}`).join('、')}。<br />
             {references.wl.note}
           </>}>
           <Slider path="frame.span_ratio_wl" min={rule.wl.min} max={rule.wl.max} step={0.01} unit="" digits={2}
             presets={!consumer ? [] : references.wl.experimental.filter(m => m.v >= rule.wl.min && m.v <= rule.wl.max).map(m => ({ v: m.v, label: `${m.v.toFixed(2)} 实验${m.label}` }))
-              .concat(rule.wl.max >= 1.41 ? [{ v: 1.41, label: '1.41 真实机型中位' }] : [])} />
+              .concat(rule.wl.min <= designStart.span_ratio_wl && rule.wl.max >= designStart.span_ratio_wl ? [{ v: designStart.span_ratio_wl, label: designStart.span_ratio_wl.toFixed(2) + ' 真实产品中位' }] : [])} />
         </Field>
       ) : (
         <p className="rounded-lg bg-canvas px-3 py-2 text-sm text-ink-soft">

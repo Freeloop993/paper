@@ -76,11 +76,13 @@ export function buildProject(draft: ProjectDraft, attempts: FrozenAttempt[], rec
     if (frozen.has(step.id)) continue; // 已提交，由同一编号的生成轮次接替。
     const variant = draft.variants.find(v => (v.workflowKey ?? v.id) === step.variantKey);
     if (!variant) continue;
-    const id = runNodeId(step.id), spec = draftId(draft.task, step.variantKey);
-    nodes.push({ id, kind: 'run', pending: true, progress: 'pending', recordId: step.id, variantId: variant.id,
-      variantScope: draft.task + '/' + step.variantKey, title: '生成效果图', subtitle: '待生成', detail: step.goal,
-      parentId: spec, source: '画布上尚未提交的生成步骤', createdAt: step.createdAt });
-    edges.push(relation(spec, id, '布局与文字'));
+    const free = step.method === 'free';
+    // 自由提示不用造型草稿，接在目标后面；结构化的生成接在造型后面。
+    const id = runNodeId(step.id), from = free ? briefId(draft.task, step.variantKey) : draftId(draft.task, step.variantKey);
+    nodes.push({ id, kind: 'run', pending: true, progress: 'pending', recordId: step.id, variantId: variant.id, method: free ? 'free' : 'structured',
+      variantScope: draft.task + '/' + step.variantKey, title: free ? '自由提示' : '生成效果图', subtitle: '待生成', detail: free ? step.text ?? '' : step.goal,
+      parentId: from, source: free ? '画布上尚未提交的自由提示' : '画布上尚未提交的生成步骤', createdAt: step.createdAt });
+    edges.push(relation(from, id, free ? '自由提示' : '布局与文字'));
     if (step.parentNodeId && present.has(step.parentNodeId)) edges.push(relation(step.parentNodeId, id, '参考图', 'reference'));
   }
   // A later adoption can connect the same pair as an earlier manual reference. Preserve both records.
@@ -110,8 +112,9 @@ export function designerView(graph: WorkflowGraph, task: Task): WorkflowGraph {
   const edges = graph.edges.filter(e => !hidden.has(e.source) && !hidden.has(e.target));
   for (const run of graph.nodes) {
     if (run.kind !== 'run' || run.pending || !run.variantScope?.startsWith(task + '/')) continue;
-    const spec = draftId(task, run.variantScope.slice(task.length + 1));
-    if (ids.has(spec)) edges.push(relation(spec, run.id, '生成'));
+    const key = run.variantScope.slice(task.length + 1);
+    const origin = run.method === 'free' ? briefId(task, key) : draftId(task, key);
+    if (ids.has(origin)) edges.push(relation(origin, run.id, run.method === 'free' ? '自由提示' : '生成'));
   }
   const linked = new Set(edges.flatMap(e => [e.source, e.target]));
   // 只为留档节点服务的证据卡和对照问题随之收起。

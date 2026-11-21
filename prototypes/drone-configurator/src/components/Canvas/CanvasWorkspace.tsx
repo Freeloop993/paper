@@ -2,12 +2,13 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { XYPosition } from '@xyflow/react';
 import {
-  ArrowLeftRight, BookOpen, Check, GitBranch, ImagePlus, Link2, Maximize2, PanelRightOpen, SlidersHorizontal, Sparkles, StickyNote, Trash2, X,
+  ArrowLeftRight, BookOpen, Check, GitBranch, ImagePlus, Link2, Maximize2, PanelRightOpen, PenLine, SlidersHorizontal, Sparkles, StickyNote, Trash2, X,
 } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
 import { useWorkflowGraph, type WorkflowNode } from '../../design/workflowGraph';
 import { recordDecision } from '../../design/candidateRecords';
 import { referencePng, startDesignGeneration } from '../../design/generation';
+import { shownIn, useSessionMethod } from '../../design/session';
 import WorkflowImage from '../../design/workflow/WorkflowImage';
 import { useCanvasUi } from './canvasUi';
 import DesignBoard, { type BoardHandle } from './DesignBoard';
@@ -48,6 +49,15 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
   const { task, activeVariant, variants, switchVariant, addVariant } = store;
   const ui = useCanvasUi();
   const historical = board === 'history';
+  // 研究场次只用一种方式时，另一种方式的卡片不出现在画布上；记录都还在，换回「不限」即可看到。
+  const session = useSessionMethod();
+  const method = historical ? 'open' : session;
+  const nodes = useMemo(() => method === 'open' ? graph.nodes : graph.nodes.filter(n => shownIn(method, n)), [graph.nodes, method]);
+  const edges = useMemo(() => {
+    if (method === 'open') return graph.edges;
+    const ids = new Set(nodes.map(n => n.id));
+    return graph.edges.filter(e => ids.has(e.source) && ids.has(e.target));
+  }, [graph.edges, nodes, method]);
   const [selectedId, setSelected] = useState<string | null>(initialSelected ?? null);
   const [panelOpen, setPanelOpen] = useState(() => window.matchMedia('(min-width: 900px)').matches || Boolean(initialSelected || initialFocus));
   const [tab, setTab] = useState<PanelTab>('step');
@@ -66,11 +76,11 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
   const dialog = useRef<HTMLDialogElement>(null);
   const upload = useRef<HTMLInputElement>(null);
   const dropAt = useRef<XYPosition | null>(null);
-  const selected = graph.nodes.find(node => node.id === selectedId);
-  const brief = graph.nodes.find(node => node.kind === 'brief' && node.variantId === activeVariant);
-  const draft = graph.nodes.find(node => node.isDraft && node.variantId === activeVariant);
+  const selected = nodes.find(node => node.id === selectedId);
+  const brief = nodes.find(node => node.kind === 'brief' && node.variantId === activeVariant);
+  const draft = nodes.find(node => node.isDraft && node.variantId === activeVariant);
   const variantKey = (id: string) => { const v = variants.find(item => item.id === id); return v?.workflowKey ?? v?.id ?? id; };
-  const pictures = graph.nodes.filter(n => n.image);
+  const pictures = nodes.filter(n => n.image);
   const fail = (e: unknown, fallback: string) => setError(e instanceof Error ? e.message : fallback);
 
   useEffect(() => { if (!message) return; const id = setTimeout(() => setMessage(''), 4500); return () => clearTimeout(id); }, [message]);
@@ -86,20 +96,20 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
   }, [focusOnce, historical, brief, draft]);
   // 新放到画布上的卡片（例如证据卡）排好位置后，平移到能看见它。
   useEffect(() => {
-    if (!reveal || !graph.nodes.some(n => n.id === reveal)) return;
+    if (!reveal || !nodes.some(n => n.id === reveal)) return;
     const id = requestAnimationFrame(() => { boardRef.current?.reveal(reveal); setReveal(null); });
     return () => cancelAnimationFrame(id);
-  }, [reveal, graph.nodes]);
+  }, [reveal, nodes]);
   // 刚提交的那一轮回图后，把候选图移进视野；设计者正在别处操作时不打扰。
   useEffect(() => {
     if (!awaiting) return;
-    const output = graph.nodes.find(n => n.candidateId && n.attemptId === awaiting);
-    const round = graph.nodes.find(n => n.id === 'run-' + awaiting);
+    const output = nodes.find(n => n.candidateId && n.attemptId === awaiting);
+    const round = nodes.find(n => n.id === 'run-' + awaiting);
     if (output) {
       if (!selectedId || selectedId === round?.id) { setSelected(output.id); setPanelOpen(true); setTab('step'); }
       setMessage('效果图已生成，放在这一轮的后面。'); setAwaiting(null);
     } else if (round?.progress === 'issue') setAwaiting(null);
-  }, [awaiting, graph.nodes, selectedId]);
+  }, [awaiting, nodes, selectedId]);
   // 关闭的添加菜单不挡住画布。
   useEffect(() => {
     if (!adding) return;
@@ -116,10 +126,10 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
     setSelected(id);
     if (!id) return;
     setPanelOpen(true); setTab('step');
-    const node = graph.nodes.find(n => n.id === id);
+    const node = nodes.find(n => n.id === id);
     // 点另一个方向的目标、造型或待生成步骤，就切换到那个方向编辑。
     if (!historical && node && (node.isDraft || node.kind === 'brief' || node.pending) && node.variantId && node.variantId !== activeVariant) switchVariant(node.variantId);
-  }, [graph.nodes, historical, activeVariant, switchVariant, selectedId]);
+  }, [nodes, historical, activeVariant, switchVariant, selectedId]);
 
   /** 设计者指定了位置（双击空白处、拖入图片）就放在那里；从底部工具条添加时放在视野中央。有来源的卡片由画布自动放在来源旁边。 */
   function settle(id: string, size: { width: number; height: number }, at?: XYPosition) {
@@ -135,9 +145,20 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
       setSelected('run-' + id); setPanelOpen(true); setTab('step');
     } catch (e) { fail(e, '无法添加生成步骤。'); }
   }
+  /** 在画布上放一个自由提示步骤：只写文字，不用造型草稿。 */
+  async function addFree(parentNodeId?: string) {
+    try {
+      const id = await graph.addStep(variantKey(activeVariant), parentNodeId, 'free');
+      if (method === 'free') settle('run-' + id, { width: 240, height: 176 });
+      setSelected('run-' + id); setPanelOpen(true); setTab('step');
+    } catch (e) { fail(e, '无法添加自由提示步骤。'); }
+  }
+  /** 从一张图继续：这一场只用自由提示，或这张图本来就出自自由提示时，接一个自由提示步骤。 */
+  const continueFrom = (node?: WorkflowNode) => method === 'free' || (method === 'open' && node?.method === 'free') ? addFree(node?.id) : addGenerate(node?.id);
   async function run(node: WorkflowNode) {
     const step = graph.records.steps.find(item => item.id === node.recordId);
     if (!step || starting.has(step.id)) return;
+    if (step.method === 'free' && !(node.detail ?? step.text ?? '').trim()) { setError('先写下要发给模型的文字。'); setSelected(node.id); setPanelOpen(true); setTab('step'); return; }
     if (!['http:', 'https:'].includes(window.location.protocol)) { setError('在线生成需要从本机工作台服务打开页面。离线包可以继续编辑、保存版本和导出规格。'); return; }
     setStarting(current => new Set(current).add(step.id)); setError('');
     try {
@@ -148,11 +169,11 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
         if (!parent.image) throw new Error('参考图还没有读取完成，请稍后再试。');
         reference = { id: parent.id, file: await referencePng(await (await fetch(parent.image)).blob()) };
       }
-      const goal = (node.detail ?? step.goal).trim();
-      await startDesignGeneration({ id: step.id, task, goal, parentCandidateId: parent?.candidateId, reference });
+      if (step.method === 'free') await startDesignGeneration({ id: step.id, task, method: 'free', text: node.detail ?? step.text ?? '', parentCandidateId: parent?.candidateId, reference });
+      else await startDesignGeneration({ id: step.id, task, goal: (node.detail ?? step.goal).trim(), parentCandidateId: parent?.candidateId, reference });
       await graph.removeStep(step.id);
       setAwaiting(step.id);
-      setMessage('已提交生成。可以继续调整造型，回图会出现在这张卡片后面。');
+      setMessage(step.method === 'free' ? '已提交。回图会出现在这张卡片后面。' : '已提交生成。可以继续调整造型，回图会出现在这张卡片后面。');
     } catch (e) { fail(e, '生成未能开始。'); }
     finally { setStarting(current => { const next = new Set(current); next.delete(step.id); return next; }); }
   }
@@ -187,7 +208,7 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
     catch (e) { fail(e, '无法放置这张证据卡。'); }
   }
   async function connect(from: string, to: string) {
-    const target = graph.nodes.find(n => n.id === to), source = graph.nodes.find(n => n.id === from);
+    const target = nodes.find(n => n.id === to), source = nodes.find(n => n.id === from);
     try {
       if (target?.pending && target.recordId && source?.image) {
         await graph.updateStep(target.recordId, { parentNodeId: from });
@@ -200,7 +221,7 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
     } catch (e) { fail(e, '无法添加这条关联。'); }
   }
   function openVersion(nodeId: string) {
-    const node = graph.nodes.find(n => n.id === nodeId);
+    const node = nodes.find(n => n.id === nodeId);
     if (!node?.canBranch) return;
     setVersionName(''); setVersionOf(node); setError('');
   }
@@ -234,7 +255,7 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
       else if (node.removable) await graph.removeImage(node.id);
       else if (node.kind === 'evidence') {
         // 只移开设计者自己放上来的证据卡；随目标采纳的卡要在目标面板里撤销。
-        const pinnedLinks = graph.edges.filter(e => e.removable && e.source === node.id);
+        const pinnedLinks = edges.filter(e => e.removable && e.source === node.id);
         if (!pinnedLinks.length) return;
         for (const link of pinnedLinks) await graph.removeReference(link.id);
       }
@@ -280,10 +301,12 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
       zoom,
     ];
     if (node.kind === 'run' && node.pending) return [{ id: 'remove', label: '移除这一步', icon: Trash2, run: () => void removeNode(node) }];
-    if (node.kind === 'run') return [{ id: 'again', label: '再生成一轮', icon: Sparkles, primary: true, run: () => void addGenerate() }];
+    if (node.kind === 'run') return node.method === 'free'
+      ? [{ id: 'again', label: '再写一轮', icon: PenLine, primary: true, run: () => void addFree() }]
+      : [{ id: 'again', label: '再生成一轮', icon: Sparkles, primary: true, run: () => void addGenerate() }];
     if (node.candidateId) return [
       { id: 'keep', label: node.retained ? '已保留' : '保留', icon: Check, primary: !node.retained, disabled: node.retained || !node.firstShown, run: () => void keep(node) },
-      { id: 'continue', label: '以此图继续', icon: Sparkles, primary: !!node.retained, disabled: !node.firstShown, run: () => void addGenerate(node.id) },
+      { id: 'continue', label: '以此图继续', icon: Sparkles, primary: !!node.retained, disabled: !node.firstShown, run: () => void continueFrom(node) },
       { id: 'compare', label: '对照', icon: ArrowLeftRight, run: () => startCompare(node) },
     ];
     if (node.kind === 'spec' && node.canRestore) return [
@@ -291,12 +314,12 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
       { id: 'version', label: '存为分支', icon: GitBranch, run: () => openVersion(node.id) },
     ];
     if (node.image && node.removable) return [
-      { id: 'use', label: '以此图生成', icon: Sparkles, primary: true, run: () => void addGenerate(node.id) },
+      { id: 'use', label: '以此图生成', icon: Sparkles, primary: true, run: () => void continueFrom(node) },
       { id: 'compare', label: '对照', icon: ArrowLeftRight, run: () => startCompare(node) },
       { id: 'remove', label: '移除', icon: Trash2, run: () => void removeNode(node) },
     ];
     if (node.editable) return [{ id: 'remove', label: '移除', icon: Trash2, run: () => void removeNode(node) }];
-    if (node.kind === 'evidence' && graph.edges.some(e => e.removable && e.source === node.id))
+    if (node.kind === 'evidence' && edges.some(e => e.removable && e.source === node.id))
       return [{ id: 'unpin', label: '从画布移开', icon: Trash2, title: '只移开这张卡在画布上的摆放，不影响已采纳的依据', run: () => void removeNode(node) }];
     return [];
   }
@@ -308,10 +331,12 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
     onNoteChange: (id, text) => void graph.updateNote(id, text).catch(e => fail(e, '便签没有保存。')),
     actionsFor,
   };
-  const pinned = useMemo(() => new Set(graph.nodes.filter(n => n.kind === 'evidence').map(n => n.id.replace(/^evidence-/, ''))), [graph.nodes]);
+  const pinned = useMemo(() => new Set(nodes.filter(n => n.kind === 'evidence').map(n => n.id.replace(/^evidence-/, ''))), [nodes]);
   const ops: PanelOps = {
-    select, addGenerate: parent => void addGenerate(parent), run: node => void run(node), removeStep: node => void removeNode(node),
+    select, addGenerate: parent => void addGenerate(parent), addFree: parent => void addFree(parent), continueFrom: node => void continueFrom(node),
+    run: node => void run(node), removeStep: node => void removeNode(node), method,
     setStepGoal: (id, goal) => void graph.updateStep(id, { goal }).catch(e => fail(e, '这一轮的目标没有保存。')),
+    setStepText: (id, text) => void graph.updateStep(id, { text }).catch(e => fail(e, '这段文字没有保存。')),
     setStepParent: (id, parentNodeId) => void graph.updateStep(id, { parentNodeId }).catch(e => fail(e, '参考图没有更新。')),
     keep: node => void keep(node), compare: startCompare, saveVersion: openVersion, restore: id => void restore(id), newDirection,
     removeNode: node => void removeNode(node),
@@ -320,11 +345,13 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
     openResearch: node => onResearch(node?.attemptId ? { attemptId: node.attemptId } : undefined),
     report: setMessage, pins: { pinned, onPin: id => void pin(id) },
   };
+  const freeOnly = method === 'free';
   const dock = [
-    { id: 'goal', label: '目标', icon: BookOpen, title: '写下或修改这次的设计目标，查用户依据', run: () => brief && select(brief.id) },
+    ...(freeOnly ? [] : [{ id: 'goal', label: '目标', icon: BookOpen, title: '写下或修改这次的设计目标，查用户依据', run: () => brief && select(brief.id) }]),
     { id: 'image', label: '参考图', icon: ImagePlus, title: '把一张图片放到画布上作参考', run: () => { dropAt.current = null; upload.current?.click(); } },
     { id: 'note', label: '便签', icon: StickyNote, title: '在画布上记一条想法', run: () => void addNote() },
-    { id: 'direction', label: '新方向', icon: GitBranch, title: '把当前方向复制一份，并排继续改', run: newDirection },
+    ...(freeOnly ? [] : [{ id: 'direction', label: '新方向', icon: GitBranch, title: '把当前方向复制一份，并排继续改', run: newDirection }]),
+    ...(method === 'open' ? [{ id: 'free', label: '自由提示', icon: PenLine, title: '只写一段文字发给模型，不带布局条件图和由造型编译的文字', run: () => void addFree() }] : []),
   ];
 
   return <section className="cv-workspace" aria-label="设计画布" data-testid="workflow-workspace" data-board-id={board}>
@@ -334,15 +361,17 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
     }}/>
     <div className={"cv-layout" + (panelOpen ? " has-panel" : "")}>
       <div className="cv-stage-area">
-        <DesignBoard ref={boardRef} nodes={graph.nodes} edges={graph.edges} boardId={board} selectedId={selectedId} kit={kit} showLabels={historical || research} loading={graph.loading}
+        <DesignBoard ref={boardRef} nodes={nodes} edges={edges} boardId={board} selectedId={selectedId} kit={kit} showLabels={historical || research} loading={graph.loading}
           onSelect={select} onOpen={id => boardRef.current?.focus(id, true)}
-          onRemove={historical ? undefined : id => { const node = graph.nodes.find(n => n.id === id); if (node) void removeNode(node); }} onConnect={historical ? undefined : (from, to) => void connect(from, to)}
+          onRemove={historical ? undefined : id => { const node = nodes.find(n => n.id === id); if (node) void removeNode(node); }} onConnect={historical ? undefined : (from, to) => void connect(from, to)}
           onAddAt={historical ? undefined : (position, screen) => setAdding({ position, ...screen })}
           onDropFiles={historical ? undefined : (files, position) => void addImages(files, position)}/>
         {!historical && <nav className="cv-dock" aria-label="添加到画布" data-testid="canvas-dock">
           {dock.map(item => <button key={item.id} type="button" title={item.title} data-dock={item.id} onClick={item.run}><item.icon size={16}/><span>{item.label}</span></button>)}
           <i/>
-          <button type="button" className="is-primary" data-dock="generate" data-testid="canvas-generate" disabled={!draft} title="在当前造型后面加一个生成步骤" onClick={() => void addGenerate()}><Sparkles size={16}/><span>生成效果图</span></button>
+          {freeOnly
+            ? <button type="button" className="is-primary" data-dock="free" data-testid="canvas-free" title="写一段文字发给模型" onClick={() => void addFree()}><PenLine size={16}/><span>自由提示</span></button>
+            : <button type="button" className="is-primary" data-dock="generate" data-testid="canvas-generate" disabled={!draft} title="在当前造型后面加一个生成步骤" onClick={() => void addGenerate()}><Sparkles size={16}/><span>生成效果图</span></button>}
         </nav>}
         {historical && <nav className="cv-dock" aria-label="案例操作">
           {pictures.length >= 2 && <button type="button" data-testid="compare-images" onClick={() => startCompare()}><ArrowLeftRight size={16}/><span>图片对照</span></button>}
@@ -351,15 +380,16 @@ export default function CanvasWorkspace({ board, research, initialSelected, init
         {adding && <div className="cv-add-menu" role="menu" aria-label="添加到这里" style={{ left: adding.x, top: adding.y }}>
           <button type="button" role="menuitem" onClick={() => { const at = adding.position; setAdding(null); void addNote(at); }}><StickyNote size={15}/>便签</button>
           <button type="button" role="menuitem" onClick={() => { dropAt.current = adding.position; setAdding(null); upload.current?.click(); }}><ImagePlus size={15}/>参考图</button>
-          <button type="button" role="menuitem" onClick={() => { setAdding(null); newDirection(); }}><GitBranch size={15}/>新方向</button>
-          <button type="button" role="menuitem" onClick={() => { setAdding(null); void addGenerate(); }}><Sparkles size={15}/>生成效果图</button>
+          {!freeOnly && <button type="button" role="menuitem" onClick={() => { setAdding(null); newDirection(); }}><GitBranch size={15}/>新方向</button>}
+          {!freeOnly && <button type="button" role="menuitem" onClick={() => { setAdding(null); void addGenerate(); }}><Sparkles size={15}/>生成效果图</button>}
+          {method !== 'structured' && <button type="button" role="menuitem" onClick={() => { setAdding(null); void addFree(); }}><PenLine size={15}/>自由提示</button>}
         </div>}
         {!panelOpen && <button type="button" className="cv-panel-open" onClick={() => setPanelOpen(true)} aria-label="展开步骤面板" data-testid="panel-open"><PanelRightOpen size={16}/><span>{selected ? '编辑这一步' : '步骤与对话'}</span></button>}
         {(error || graph.error) && !versionOf && <div className="graph-feedback issue" role="alert">{error || graph.error}{error && <button aria-label="关闭提示" onClick={() => setError('')}><X size={13}/></button>}</div>}
         {!error && message && <div className="graph-feedback" role="status"><Check size={14}/>{message}</div>}
-        {graph.loading && graph.nodes.length === 0 && <div role="status" className="graph-loading">正在读取本机设计记录…</div>}
+        {graph.loading && nodes.length === 0 && <div role="status" className="graph-loading">正在读取本机设计记录…</div>}
       </div>
-      {panelOpen && <StepPanel board={board} node={selected} nodes={graph.nodes} edges={graph.edges} attempts={graph.attempts} steps={graph.records.steps} starting={starting}
+      {panelOpen && <StepPanel board={board} node={selected} nodes={nodes} edges={edges} attempts={graph.attempts} steps={graph.records.steps} starting={starting}
         tab={tab} onTab={setTab} onClose={() => { setPanelOpen(false); ui.setPreview(null); }} ops={ops}/>}
     </div>
     {compare && <CompareImages pictures={pictures} initial={compare} onClose={() => setCompare(null)}/>}

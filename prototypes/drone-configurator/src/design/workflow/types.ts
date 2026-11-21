@@ -37,6 +37,8 @@ export interface WorkflowNode extends Partial<Snapshot> {
   retained?: boolean;
   /** 设计者上传或引用的参考图，可以移除。 */
   removable?: boolean;
+  /** 这一轮（及它的回图、取舍）用的是哪一种方式。 */
+  method?: 'structured' | 'free';
 }
 export interface WorkflowEdge {
   id: string;

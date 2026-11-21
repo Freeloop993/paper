@@ -7,12 +7,14 @@ import { computeLayout, layoutExport, frameRules } from '../src/design/design.ts
 import { compilePrompt, diffSentences, auditPrompt } from '../src/design/partPrompt.ts';
 import { openDecisions } from '../src/design/fields.ts';
 import { buildExport, parseImported } from '../src/design/exporters.ts';
+import { designStart, legacyStart, meetsCondition, realQuadrotors, study } from '../src/design/defaults.ts';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const results = [];
 const check = (name, ok, detail = '') => { results.push({ name, ok, detail }); console.log(`${ok ? '通过' : '失败'}  ${name}${detail ? '  —  ' + detail : ''}`); };
 const near = (a, b, tol) => Math.abs(a - b) <= tol;
 
+// 核对用的固定规格：3.5.0 及以前的起始值（真 X、W/L 1.00、机身 100 × 80），与起始设计值无关，改起始值不影响下面这些核对。
 const base = () => ({
   frame: { frame_type: 'True X', wheelbase_mm: 250, span_ratio_wl: 1, arm_thickness_mm: '4mm', arm_width_mm: '15mm', material_visual: '', arm_root: '' },
   propulsion: { prop_diameter_inch: 5, prop_blade_count: '2叶', motor_tilt_degree: 0, prop_guard: 'none' },
@@ -21,13 +23,15 @@ const base = () => ({
   accessories: { has_camera_gimbal: true, camera_mount: '', custom_prompt_additions: '', drone_primary_color: '', surface_finish: '' },
 });
 const withFrame = (type, extra = {}) => { const p = base(); p.frame.frame_type = type; p.frame.span_ratio_wl = frameRules[type].wl.value; Object.assign(p.frame, extra); return p; };
+/** 研究登记的三档 W/L，各自落在哪一种构型的可调范围里。 */
+const studyLevel = wl => withFrame(wl < 1 ? 'Stretch X' : wl > 1 ? 'Wide X' : 'True X', { span_ratio_wl: wl });
 const noIntent = { targets: {}, note: '', cards: [], log: [] };
 const prompt = (p, touched = {}, intent = noIntent) => compilePrompt(p, touched, intent, computeLayout(p));
 
 // 1. 真 X 与宽 X：同一设计轴距下 W/L 不同，D 均值相同
-const tx = computeLayout(withFrame('True X')), wx = computeLayout(withFrame('Wide X'));
+const tx = computeLayout(withFrame('True X')), wx = computeLayout(studyLevel(1.3));
 check('真 X 的 W/L 为 1.00', near(tx.W_over_L, 1, 1e-9), tx.W_over_L.toFixed(4));
-check('宽 X 的 W/L 为 1.30，与真 X 不同', near(wx.W_over_L, 1.3, 1e-9) && !near(wx.W_over_L, tx.W_over_L, 0.05), wx.W_over_L.toFixed(4));
+check('宽 X 取实验宽档时 W/L 为 1.30，与真 X 不同', near(wx.W_over_L, 1.3, 1e-9) && !near(wx.W_over_L, tx.W_over_L, 0.05), wx.W_over_L.toFixed(4));
 check('两者对角距均值都等于设计值 250 mm', near(tx.D_mean_mm, 250, 1e-9) && near(wx.D_mean_mm, 250, 1e-9));
 check('真 X 相邻夹角 90·90·90·90', tx.adjacent_deg.every(a => near(a, 90, 1e-9)));
 check('宽 X 相邻夹角可由坐标复算', (() => {
@@ -39,7 +43,8 @@ check('宽 X 相邻夹角可由坐标复算', (() => {
 const guides = JSON.parse(readFileSync(resolve(here, '../public/research-guides/guides.json'), 'utf8'));
 for (const [type, wl] of [['Stretch X', 0.7], ['True X', 1.0], ['Wide X', 1.3]]) {
   const g = guides.find(x => x.wl === wl && x.dd === 0.5);
-  const mine = computeLayout(withFrame(type)).hubs.map(h => [h.x_px, h.y_px]);
+  // 实验档按登记的数值取，不依赖构型的缺省值：起始设计值改了，这三档的条件图不变。
+  const mine = computeLayout(studyLevel(wl)).hubs.map(h => [h.x_px, h.y_px]);
   const worst = Math.max(...mine.map(([x, y]) => Math.min(...g.centers_px.map(([u, v]) => Math.hypot(x - u, y - v)))));
   check(`${type}（W/L ${wl.toFixed(2)}）四个轴心与研究条件图 ${g.file} 相差不超过 1 px`, worst <= 1, `最大偏差 ${worst.toFixed(3)} px`);
 }
@@ -143,6 +148,39 @@ const storageIntent = { ...noIntent, note: storageText, log: [{ action: 'brief',
   brief: { action: 'accept', text: storageText, query: { state: 'folded' } } }] };
 const storage = buildExport({parameters: base(), intent: storageIntent, touched: {}}, {note: '', stamp: 'test'});
 check('折叠意图保留在简报，展开顶视输入不混入收纳原话', storage.intent.designer_note === storageText && !storage.prompt.text.includes(storageText));
+
+// 9. 起始设计值：取自真实产品量测，落在四分位之内，几何上放得下
+const start = base();
+Object.assign(start.frame, { frame_type: designStart.frame_type, span_ratio_wl: designStart.span_ratio_wl, wheelbase_mm: designStart.wheelbase_mm });
+start.fuselage.fuselage_dimensions_mm = { ...designStart.fuselage_dimensions_mm };
+const sl = computeLayout(start), q = realQuadrotors;
+const within = (v, r) => v >= r.q1 && v <= r.q3;
+check('起始 W/L 等于 32 款真实四旋翼产品的中位数，记为“真实产品量测的中位数”', near(sl.W_over_L, q.wl.median, 1e-9) && sl.basis === 'reference', `W/L ${sl.W_over_L.toFixed(2)}，四分位 ${q.wl.q1}–${q.wl.q3}`);
+check('起始机身宽/D 在真实产品的四分位之内，与中位数相差不到 0.02', within(sl.body_width_over_D, q.bodyWidthOverD) && near(sl.body_width_over_D, q.bodyWidthOverD.median, 0.02), `${sl.body_width_over_D.toFixed(3)}，中位数 ${q.bodyWidthOverD.median}，四分位 ${q.bodyWidthOverD.q1}–${q.bodyWidthOverD.q3}`);
+check('起始机身长/宽在真实产品的四分位之内，与中位数相差不到 0.05', within(sl.body_length_over_width, q.bodyLengthOverWidth) && near(sl.body_length_over_width, q.bodyLengthOverWidth.median, 0.05), `${sl.body_length_over_width.toFixed(3)}，中位数 ${q.bodyLengthOverWidth.median}，四分位 ${q.bodyLengthOverWidth.q1}–${q.bodyLengthOverWidth.q3}`);
+check('起始布局：相邻桨盘不重叠，没有几何警告', sl.disk_gap_mm > 0 && sl.warnings.length === 0, `相邻桨盘间隙 ${sl.disk_gap_mm.toFixed(1)} mm`);
+// 机身包络（矩形）到各桨盘的最近距离；正数表示留有间隙
+const bodyClearance = (layout, size) => Math.min(...layout.hubs.map(h => Math.hypot(
+  Math.max(Math.abs(h.x_mm) - size.width / 2, 0), Math.max(Math.abs(h.y_mm) - size.length / 2, 0)) - layout.prop_diameter_mm / 2));
+const startClear = bodyClearance(sl, start.fuselage.fuselage_dimensions_mm);
+check('起始布局：机身包络不伸进桨盘', startClear > 0, `最近处留 ${startClear.toFixed(1)} mm`);
+check('起始布局：四个轴心落在 1024 画幅内', sl.hubs.every(h => h.x_px > 20 && h.x_px < 1004 && h.y_px > 20 && h.y_px < 1004));
+
+// 10. 实验条件与起始设计值分开：三档 W/L 仍是登记的数，记为“实验档位”；C2 预试条件可由登记表载入
+check('研究登记的三档 W/L 仍是 0.70、1.00、1.30', JSON.stringify(study.wlLevels) === '[0.7,1,1.3]');
+check('宽 X 取 1.30 时记为实验档位，取起始值时不是', computeLayout(studyLevel(1.3)).basis === 'experimental' && sl.basis !== 'experimental');
+check('伸展 X 的缺省值仍是实验窄档 0.70', near(frameRules['Stretch X'].wl.value, 0.7, 1e-9) && computeLayout(studyLevel(0.7)).basis === 'experimental');
+const c2 = study.conditions.find(c => c.id === 'c2-pilot');
+const pilot = structuredClone(start); Object.assign(pilot.frame, c2.frame);
+const pl = computeLayout(pilot);
+check('载入 C2 预试条件后：4 个轴、W/L 1.00、对角轴距 250 mm（登记工具的检查项）', pl.hubs.length === 4 && near(pl.W_over_L, 1, 0.001) && near(pl.D_mean_mm, 250, 0.01) && meetsCondition(pilot, c2, pl.W_over_L));
+check('起始设计值不符合 C2 预试条件，须先载入登记条件', !meetsCondition(start, c2, sl.W_over_L));
+check('载入 C2 预试条件不改机身尺寸（登记的只有布局三项）', JSON.stringify(pilot.fuselage) === JSON.stringify(start.fuselage));
+const pilotGuide = guides.find(x => x.wl === 1.0 && x.dd === 0.5);
+check('C2 预试条件的轴心与研究条件图 ' + pilotGuide.file + ' 相差不超过 1 px',
+  Math.max(...pl.hubs.map(h => Math.min(...pilotGuide.centers_px.map(([u, v]) => Math.hypot(h.x_px - u, h.y_px - v))))) <= 1);
+check('旧起始值（真 X、机身 100 × 80）仍可照原样复算', near(computeLayout(base()).body_width_over_D, legacyStart.fuselage_dimensions_mm.width / 250, 1e-9) && near(computeLayout(base()).body_length_over_width, 1.25, 1e-9));
+console.log(`\n说明：C2 预试条件（W/L 1.00）下，起始机身包络到桨盘的最近距离是 ${bodyClearance(pl, pilot.fuselage.fuselage_dimensions_mm).toFixed(1)} mm；旧起始机身（100 × 80）是 ${bodyClearance(computeLayout(base()), base().fuselage.fuselage_dimensions_mm).toFixed(1)} mm。负数表示包络四角伸进桨盘。`);
 
 const failed = results.filter(r => !r.ok);
 console.log(`\n共 ${results.length} 项，通过 ${results.length - failed.length}，失败 ${failed.length}`);

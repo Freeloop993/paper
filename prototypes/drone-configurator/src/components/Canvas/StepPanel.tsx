@@ -3,14 +3,15 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import {
   AlertCircle, Anchor, ArrowLeftRight, ArrowRight, Box, Camera, Check, ChevronDown, Eye, FileText, GitBranch, Image as ImageIcon,
-  LoaderCircle, MessageCircle, PanelRightClose, Ruler, ScanLine, Settings, SlidersHorizontal, Sparkles, Trash2, Undo2, Video, Zap,
+  LoaderCircle, MessageCircle, PanelRightClose, PenLine, Ruler, ScanLine, Settings, SlidersHorizontal, Sparkles, Trash2, Undo2, Video, Zap,
 } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
-import { computeLayout, frameRules, taskLabels } from '../../design/design';
-import { compilePrompt } from '../../design/partPrompt';
+import { computeLayout, effectiveWl, frameRules, taskLabels } from '../../design/design';
+import { designStart, meetsCondition, study } from '../../design/defaults';
+import { sessionMethods, setSessionMethod, type SessionMethod } from '../../design/session';
 import { chatContext, chatScopeKey } from '../../design/designChatAudit';
 import { candidateRetained, type FrozenAttempt } from '../../design/candidateRecords';
-import { generationStatus, retryCollection } from '../../design/generation';
+import { generationStatus, retryCollection, structuredText } from '../../design/generation';
 import { useImageBackend } from '../../design/imageBackend';
 import { aircraftParameters } from '../../data/aircraft';
 import type { WorkflowBoard, WorkflowEdge, WorkflowNode } from '../../design/workflow/types';
@@ -36,6 +37,13 @@ import { kindName } from './StepCards';
 export interface PanelOps {
   select: (id: string | null) => void;
   addGenerate: (parentNodeId?: string) => void;
+  /** 放一个自由提示步骤。 */
+  addFree: (parentNodeId?: string) => void;
+  /** 从一张图继续，按这一场的方式接结构化生成或自由提示。 */
+  continueFrom: (node?: WorkflowNode) => void;
+  /** 这一场的方式。 */
+  method: SessionMethod;
+  setStepText: (recordId: string, text: string) => void;
   run: (node: WorkflowNode) => void;
   removeStep: (node: WorkflowNode) => void;
   setStepGoal: (recordId: string, goal: string) => void;
@@ -101,6 +109,24 @@ function Overview({ nodes, ops }: Pick<Props, 'nodes' | 'ops'>) {
     { id: 'keep', icon: ImageIcon, name: '取舍', value: pictures.length ? `${pictures.length} 张候选，已保留 ${kept.length} 张` : '回图后在这里取舍', done: kept.length > 0,
       open: () => pictures.length ? ops.select((kept[0] ?? pictures[0]).id) : undefined },
   ];
+  if (ops.method === 'free') {
+    const free = nodes.filter(n => n.kind === 'run');
+    const waitingFree = free.find(n => n.pending);
+    return <div className="cv-overview" data-testid="canvas-overview">
+      <h2>自由提示</h2>
+      <p>这一场只用文字。写一段话发给模型，看回图，保留、放弃，或接着上一张图再写一轮。发出去的就是你写的原文，工作台不改写、不补充。</p>
+      <ol className="cv-steps">
+        <li><button type="button" data-overview-step="free" data-next={!free.length || waitingFree ? 'yes' : undefined} onClick={() => waitingFree ? ops.select(waitingFree.id) : ops.addFree()}>
+          <span className={'cv-step-mark' + (free.some(n => n.progress === 'done') ? ' is-done' : '')}>{free.some(n => n.progress === 'done') ? <Check size={13}/> : 1}</span>
+          <span className="cv-step-text"><strong>写提示</strong><small>{free.length ? `${free.length} 轮${waitingFree ? '，1 轮待提交' : ''}` : '还没有写'}</small></span>
+          {(!free.length || waitingFree) && <em>下一步</em>}</button></li>
+        <li><button type="button" data-overview-step="keep" onClick={() => pictures.length ? ops.select((kept[0] ?? pictures[0]).id) : undefined}>
+          <span className={'cv-step-mark' + (kept.length ? ' is-done' : '')}>{kept.length ? <Check size={13}/> : 2}</span>
+          <span className="cv-step-text"><strong>取舍</strong><small>{pictures.length ? `${pictures.length} 张候选，已保留 ${kept.length} 张` : '回图后在这里取舍'}</small></span></button></li>
+      </ol>
+      <SessionSetup method={ops.method}/>
+    </div>;
+  }
   return <div className="cv-overview" data-testid="canvas-overview">
     <h2>在画布上设计</h2>
     <p>每一步都是画布上的一张卡片。点卡片直接改，这里会换成那一步需要的内容；选中卡片后，上方会出现可以接着做的下一步。</p>
@@ -117,7 +143,36 @@ function Overview({ nodes, ops }: Pick<Props, 'nodes' | 'ops'>) {
       <li>把图片直接拖进画布，就是一张参考图；把它连到「生成」卡片，就随这一轮一起提交。</li>
       <li>在「造型」卡片里直接拖橙色轴心、机身边缘和桨盘。</li>
     </ul>
+    <SessionSetup method={ops.method}/>
   </div>;
+}
+
+/** 研究场次设置：这一场用哪一种方式；是否载入登记的实验条件。平时设计不用动它。 */
+function SessionSetup({ method }: { method: SessionMethod }) {
+  const { parameters, setMany } = useDroneStore();
+  const wl = effectiveWl(parameters.frame);
+  return <details className="cv-fold is-plain cv-session" data-testid="session-setup">
+    <summary>研究场次设置（主持人用）<ChevronDown size={15}/></summary>
+    <div className="cv-fold-body">
+      <p className="cv-muted">平时设计不用改这里。做登记的场次时，由主持人在开场前设好。</p>
+      <h3>这一场的方式</h3>
+      <div className="cv-session-methods" role="radiogroup" aria-label="这一场的方式">{sessionMethods.map(item =>
+        <button key={item.id} type="button" role="radio" aria-checked={method === item.id} data-session-method={item.id} onClick={() => setSessionMethod(item.id)}>{item.label}</button>)}</div>
+      <p className="cv-muted">{sessionMethods.find(item => item.id === method)?.note} 两种方式用同一个模型后端、同样的生成设置，轮次记录的格式也相同。</p>
+      <h3>登记的实验条件</h3>
+      {study.conditions.map(condition => {
+        const met = meetsCondition(parameters, condition, wl);
+        return <div key={condition.id} className="cv-session-condition" data-condition={condition.id} data-met={met ? 'yes' : 'no'}>
+          <p><strong>{condition.label}</strong> · {condition.note}</p>
+          <p className="cv-muted">当前布局：{frameRules[parameters.frame.frame_type].zh} · W/L {wl.toFixed(2)} · 轴距 {parameters.frame.wheelbase_mm} mm，{met ? '符合登记条件。' : '不符合登记条件。'}</p>
+          <button type="button" disabled={met} data-testid="load-condition" onClick={() => setMany([['frame.frame_type', condition.frame.frame_type],
+            ['frame.span_ratio_wl', condition.frame.span_ratio_wl], ['frame.wheelbase_mm', condition.frame.wheelbase_mm]], '载入' + condition.label + '的登记条件')}>
+            <Check size={14}/>{met ? '已是登记条件' : '载入登记条件'}</button>
+        </div>;
+      })}
+      <p className="cv-muted">工作台的起始值（{frameRules[designStart.frame_type].zh} · W/L {designStart.span_ratio_wl.toFixed(2)} · 机身 {designStart.fuselage_dimensions_mm.length} × {designStart.fuselage_dimensions_mm.width} mm）取自真实产品的量测，不是实验条件。载入登记条件只改布局的三项，不动机身尺寸。</p>
+    </div>
+  </details>;
 }
 
 /** 造型：部件页签与参数。选中画布上的部件，这里就切到对应页签。 */
@@ -179,9 +234,43 @@ function GeneratePanel({ node, nodes, attempts, steps, starting, ops }: Pick<Pro
   useEffect(() => { setGoal(step?.goal ?? ''); }, [step?.id]); // eslint-disable-line react-hooks/exhaustive-deps
   const layout = useMemo(() => computeLayout(parameters), [parameters]);
   const [error, setError] = useState('');
-  if (step) {
-    const text = compilePrompt(parameters, touched, intent, layout).text;
+  const [words, setWords] = useState(step?.text ?? '');
+  useEffect(() => { setWords(step?.text ?? ''); }, [step?.id]); // eslint-disable-line react-hooks/exhaustive-deps
+  if (step?.method === 'free') {
     const parent = step.parentNodeId ? nodes.find(n => n.id === step.parentNodeId) : undefined;
+    const choices = nodes.filter(n => n.image && (n.candidateId || n.removable));
+    const busy = starting.has(step.id);
+    const save = () => { if (words !== (step.text ?? '')) ops.setStepText(step.id, words); };
+    return <div className="cv-generate" data-testid="free-panel">
+      <h2>自由提示</h2>
+      <p className="cv-muted">写下你想要的图。点「生成」后，这段文字原样发给 {backend.label}，返回一张 1024 × 1024 的效果图。工作台不改写、不补充，也不附带布局条件图。</p>
+      <label className="cv-field">发给模型的文字
+        <textarea rows={7} value={words} data-testid="free-text" placeholder="用你自己的话描述这架无人机" onChange={event => setWords(event.target.value)} onBlur={save}/>
+      </label>
+      <div className="cv-input-row">
+        {parent?.image ? <WorkflowImage node={parent} alt={parent.title} className="cv-input-thumb"/> : <span className="cv-input-thumb is-empty"><ImageIcon size={18}/></span>}
+        <div><strong>参考图</strong>
+          <p>{parent ? (parent.candidateId ? '这张候选图会和文字一起发给模型。' : '这张参考图会和文字一起发给模型。') : '可不接。要在上一张图的基础上改，就在下面选它。'}</p>
+          <select aria-label="选择参考图" value={parent?.id ?? ''} data-testid="generation-parent" onChange={event => ops.setStepParent(step.id, event.target.value || null)}>
+            <option value="">不使用参考图</option>
+            {choices.map(n => <option key={n.id} value={n.id}>{pictureName(n, attempts)}</option>)}
+          </select>
+        </div>
+      </div>
+      {offline() && <p className="cv-warning"><AlertCircle size={14}/>在线生成需要从本机工作台服务打开页面。</p>}
+      {backend.provider === 'minimax' && !parent && <p className="cv-warning"><AlertCircle size={14}/>当前接的是开发用的 MiniMax 后端，它不接受不带图的自由提示。计入论文的场次请用 Qwen 后端启动工作台。</p>}
+      <div className="cv-panel-actions">
+        <button type="button" className="cv-primary" disabled={busy || !words.trim()} data-testid="generate-current" onClick={() => { save(); ops.run({ ...node, detail: words }); }}>
+          {busy ? <LoaderCircle size={15} className="animate-spin"/> : <Sparkles size={15}/>}{busy ? '正在提交' : '生成'}</button>
+        <button type="button" onClick={() => ops.removeStep(node)} disabled={busy}><Trash2 size={14}/>移除这一步</button>
+      </div>
+      <p className="cv-provider" data-testid="generation-model">{backend.label}{backend.provider === 'minimax' ? ' · 开发用，不计入论文数据' : ''} · 生成设置与结构化方式相同</p>
+    </div>;
+  }
+  if (step) {
+    const parent = step.parentNodeId ? nodes.find(n => n.id === step.parentNodeId) : undefined;
+    // 显示的就是点「生成」后发出去的全文，包括读条件图的固定说明和这一轮的目标。
+    const text = structuredText(parameters, touched, intent, parent ? (parent.candidateId ? 'candidate' : 'reference') : undefined, goal);
     const choices = nodes.filter(n => n.image && (n.candidateId || n.removable));
     const busy = starting.has(step.id);
     return <div className="cv-generate" data-testid="generate-panel">
@@ -205,8 +294,8 @@ function GeneratePanel({ node, nodes, attempts, steps, starting, ops }: Pick<Pro
         </div>
       </div>
       <details className="cv-fold is-plain"><summary>文字 · 由造型和目标编译<ChevronDown size={15}/></summary>
-        <p className="cv-prompt" lang="en">{text}</p>
-        <p className="cv-muted">未指定的造型项不写入文字，留给模型和后续修订。逐句来源见「研究详情与导出」。</p>
+        <p className="cv-prompt" lang="en" data-testid="generation-text">{text}</p>
+        <p className="cv-muted">这就是发给模型的全文：第一句是读条件图的固定说明，中间由造型和目标编译，接了图或写了这一轮的目标时各加一句。未指定的造型项不写入文字。逐句来源见「研究详情与导出」。</p>
       </details>
       {offline() && <p className="cv-warning"><AlertCircle size={14}/>在线生成需要从本机工作台服务打开页面。离线包可以继续编辑、保存版本和导出规格。</p>}
       <div className="cv-panel-actions">
@@ -223,7 +312,7 @@ function GeneratePanel({ node, nodes, attempts, steps, starting, ops }: Pick<Pro
   const outputs = nodes.filter(n => n.candidateId && n.attemptId === node.attemptId);
   return <div className="cv-generate" data-testid="generate-panel">
     <h2>{node.title}</h2>
-    <p className="cv-muted">{stamp(node.createdAt)}{attempt && ' · ' + frameRules[attempt.config.parameters.frame.frame_type].zh + ' · ' + taskLabels[attempt.config.task_id]}</p>
+    <p className="cv-muted">{stamp(node.createdAt)}{attempt && (attempt.condition === 'free' ? ' · 自由提示' : ' · ' + frameRules[attempt.config.parameters.frame.frame_type].zh + ' · ' + taskLabels[attempt.config.task_id])}</p>
     {status && <div className={'cv-status' + (issue ? ' is-issue' : '')} data-testid="generation-status" role="status">
       {issue ? <AlertCircle size={16}/> : done ? <Check size={16}/> : <LoaderCircle size={16} className="animate-spin"/>}
       <div><strong>{status.title}</strong><p>{status.detail}</p>
@@ -234,7 +323,9 @@ function GeneratePanel({ node, nodes, attempts, steps, starting, ops }: Pick<Pro
       <WorkflowImage node={output} alt={output.title}/><span>{output.retained ? '已保留 · ' : ''}查看这张候选</span></button>)}</div>}
     {error && <p className="cv-warning" role="alert">{error}</p>}
     <div className="cv-panel-actions">
-      <button type="button" className="cv-primary" onClick={() => ops.addGenerate()}><Sparkles size={15}/>按当前造型再生成一轮</button>
+      {node.method === 'free'
+        ? <button type="button" className="cv-primary" onClick={() => ops.addFree()}><PenLine size={15}/>再写一轮自由提示</button>
+        : <button type="button" className="cv-primary" onClick={() => ops.addGenerate()}><Sparkles size={15}/>按当前造型再生成一轮</button>}
       <button type="button" onClick={() => ops.openResearch(node)}><ArrowRight size={14}/>查看轮次记录</button>
     </div>
     <details className="cv-fold is-plain"><summary>这一轮实际提交的文字<ChevronDown size={15}/></summary><p className="cv-prompt" lang="en">{node.detail}</p></details>
@@ -253,7 +344,7 @@ function CandidatePanel({ node, nodes, edges, attempts, ops }: Pick<Props, 'node
     <div className="cv-panel-actions">
       <button type="button" className="cv-primary" disabled={!node.firstShown || retained} data-retain-candidate={node.candidateId} onClick={() => ops.keep(node)}>
         <Check size={15}/>{retained ? '已保留' : '保留此方案'}</button>
-      <button type="button" disabled={!node.firstShown} data-generate-from={node.candidateId} onClick={() => ops.addGenerate(node.id)}><Sparkles size={14}/>以此图继续生成</button>
+      <button type="button" disabled={!node.firstShown} data-generate-from={node.candidateId} onClick={() => ops.continueFrom(node)}><Sparkles size={14}/>以此图继续生成</button>
       <button type="button" onClick={() => ops.compare(node)} data-testid="compare-images"><ArrowLeftRight size={14}/>图片对照</button>
       <button type="button" onClick={() => ops.openResearch(node)}><ArrowRight size={14}/>驳回、回选与轮次记录</button>
     </div>
@@ -281,13 +372,15 @@ export default function StepPanel({ board, node, nodes, edges, attempts, steps, 
   const mine = project && node?.variantId === activeVariant;
   const mode = !node ? 'overview' : project && node.kind === 'brief' && mine ? 'goal' : project && node.isDraft && mine ? 'design'
     : project && node.kind === 'run' ? 'generate' : project && node.candidateId ? 'candidate' : 'detail';
-  const title = !node ? (project ? '开始' : '案例') : mode === 'detail' ? kindName(node) : { goal: '目标', design: '造型', generate: '生成', candidate: '候选图' }[mode as 'goal'];
-  const showing = project ? tab : 'step';
+  const title = !node ? (project ? '开始' : '案例') : mode === 'detail' ? kindName(node) : mode === 'generate' && node.method === 'free' ? '自由提示'
+    : { goal: '目标', design: '造型', generate: '生成', candidate: '候选图' }[mode as 'goal'];
+  const chat = project && ops.method !== 'free';
+  const showing = chat ? tab : 'step';
   return <aside className="cv-panel" aria-label="步骤面板" data-testid="step-panel" data-panel-mode={mode}>
     <header className="cv-panel-head">
       <div className="cv-panel-tabs" role="tablist" aria-label="面板内容">
         <button type="button" role="tab" aria-selected={showing === 'step'} data-panel-tab="step" onClick={() => onTab('step')}>{title}</button>
-        {project && <button type="button" role="tab" aria-selected={showing === 'chat'} data-panel-tab="chat" data-testid="graph-chat-tab" onClick={() => onTab('chat')}><MessageCircle size={14}/>设计对话</button>}
+        {chat && <button type="button" role="tab" aria-selected={showing === 'chat'} data-panel-tab="chat" data-testid="graph-chat-tab" onClick={() => onTab('chat')}><MessageCircle size={14}/>设计对话</button>}
       </div>
       <button type="button" className="canvas-icon-button" onClick={onClose} aria-label="收起面板"><PanelRightClose size={16}/></button>
     </header>
@@ -299,8 +392,8 @@ export default function StepPanel({ board, node, nodes, edges, attempts, steps, 
       {mode === 'generate' && node && <GeneratePanel key={node.id} node={node} nodes={nodes} attempts={attempts} steps={steps} starting={starting} ops={ops}/>}
       {mode === 'candidate' && node && <CandidatePanel node={node} nodes={nodes} edges={edges} attempts={attempts} ops={ops}/>}
       {mode === 'detail' && node && <GraphInspector node={node} nodes={nodes} edges={edges} boardId={board} onSelect={ops.select} onBranch={ops.saveVersion} onRestore={ops.restore}
-        onHandoff={ops.openResearch} onGenerateFrom={n => ops.addGenerate(n.id)} onRemove={ops.removeNode} onRemoveReference={ops.removeReference} onCopyReference={ops.copyReference}/>}
+        onHandoff={ops.openResearch} onGenerateFrom={n => ops.continueFrom(n)} onRemove={ops.removeNode} onRemoveReference={ops.removeReference} onCopyReference={ops.copyReference}/>}
     </div>
-    {project && showing === 'chat' && <div className="cv-panel-chat"><ChatTab pins={ops.pins}/></div>}
+    {chat && showing === 'chat' && <div className="cv-panel-chat"><ChatTab pins={ops.pins}/></div>}
   </aside>;
 }

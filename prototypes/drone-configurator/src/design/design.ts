@@ -1,13 +1,14 @@
 // 布局几何的唯一来源。屏幕预览、相邻夹角、点线条件图、导出坐标和提示词的布局句
 // 全部读取 computeLayout() 返回的同一组轴心，避免各处各算一遍。
 import type { DroneParameters, FrameParameters } from '../types/DroneParameters.ts';
+import { designStart, realQuadrotors, study } from './defaults.ts';
 
 export type Task = 'quad' | 'hexa';
 export const quadBladeCount: DroneParameters['propulsion']['prop_blade_count'] = '2叶';
 export type FrameType = FrameParameters['frame_type'];
 
-/** 依据类别：定义＝几何定义；experimental＝研究登记的实验档；designer＝缺厂商或图面依据，记为设计者输入。 */
-export type Basis = 'definition' | 'experimental' | 'designer';
+/** 依据类别：定义＝几何定义；reference＝真实产品量测的中位数；experimental＝研究登记的实验档；designer＝缺厂商或图面依据，记为设计者输入。 */
+export type Basis = 'definition' | 'reference' | 'experimental' | 'designer';
 
 export type LayoutKey = 'quad' | 'tri' | 'flat_hex' | 'flat_octo' | 'coax_hex' | 'coax_octo';
 export const taskLabels = {
@@ -39,8 +40,8 @@ export const frameRules: Record<FrameType, FrameRule> = {
     shape_en: 'the four motor centres sit at the corners of a square',
   },
   'Wide X': {
-    zh: '宽 X 型', en: 'Wide X', hubs: 4, wl: { value: 1.3, min: 1.05, max: 1.6, adjustable: true }, basis: 'experimental',
-    rule: '四个轴心位于横向较宽的矩形四角。缺省 W/L 取研究登记的宽档 1.30（实验探测档，不是行业标准）；改动后记为设计者输入。',
+    zh: '宽 X 型', en: 'Wide X', hubs: 4, wl: { value: designStart.span_ratio_wl, min: 1.05, max: 1.6, adjustable: true }, basis: 'reference',
+    rule: `四个轴心位于横向较宽的矩形四角。缺省 W/L 取 ${realQuadrotors.n} 款真实四旋翼产品图面量测的中位数 ${designStart.span_ratio_wl.toFixed(2)}（四分位 ${realQuadrotors.wl.q1.toFixed(2)}–${realQuadrotors.wl.q3.toFixed(2)}）。研究登记的宽档 1.30 是实验条件，另列；其余取值记为设计者输入。`,
     desc: '左右比前后更宽；手册图面量过的 11 款消费航拍机都属于这一类。',
     shape_en: 'the four motor centres sit at the corners of a rectangle that is wider than it is long',
   },
@@ -203,11 +204,14 @@ export function effectiveWl(frame: FrameParameters): number {
   return Math.min(rule.wl.max, Math.max(rule.wl.min, v));
 }
 
-/** W/L 的来源：与规则缺省值一致时沿用规则依据，否则是设计者输入。 */
+/** W/L 的来源：与规则缺省值一致时沿用规则依据；等于研究登记的实验档时记为实验档；否则是设计者输入。 */
 export function wlBasis(frame: FrameParameters): Basis {
   const rule = frameRules[frame.frame_type];
   if (!rule.wl.adjustable) return rule.basis;
-  return Math.abs(effectiveWl(frame) - rule.wl.value) < 1e-9 ? rule.basis : 'designer';
+  const wl = effectiveWl(frame);
+  if (Math.abs(wl - rule.wl.value) < 1e-9) return rule.basis;
+  const xFamily = frame.frame_type === 'Wide X' || frame.frame_type === 'Stretch X';
+  return xFamily && study.wlLevels.some(level => Math.abs(wl - level) < 1e-9) ? 'experimental' : 'designer';
 }
 
 export function computeLayout(parameters: DroneParameters): Layout {
