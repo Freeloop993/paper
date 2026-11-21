@@ -1,5 +1,6 @@
 import { createContext, useContext } from 'react';
 import { frameRules, layoutKey, taskLabels, quadBladeCount, type Task } from '../design/design';
+import { designStart, legacyStart } from '../design/defaults';
 import { fieldByPath, getPath, setPath, wordPairs } from '../design/fields';
 import { create } from 'zustand';
 import type {
@@ -10,14 +11,15 @@ import type { BriefDecision } from '../design/semantics/brief';
 import { canUndoChatWidth, chatContext, chatScopeKey, isWidthTarget, readDesignChatAudit, redactChatText, type DesignChatEvent, type DesignChatContext } from '../design/designChatAudit';
 import type { PromptOptimizationResult } from '../services/geminiPromptOptimizer';
 
-// 默认参数值。造型项（材料、臂根、机身轮廓、顶盖、相机安装、主色、表面处理）默认留白，由设计者决定。
+// 起始设计值。布局比例和机身尺寸取自真实产品量测（见 design/defaults.ts），不是实验条件；做登记的实验时在「研究场次」里载入登记条件。
+// 造型项（材料、臂根、机身轮廓、顶盖、相机安装、主色、表面处理）默认留白，由设计者决定。
 const defaultParameters: DroneParameters = {
   frame: {
-    frame_type: 'True X', wheelbase_mm: 250, span_ratio_wl: 1, arm_thickness_mm: '4mm', arm_width_mm: '15mm',
+    frame_type: designStart.frame_type, wheelbase_mm: designStart.wheelbase_mm, span_ratio_wl: designStart.span_ratio_wl, arm_thickness_mm: '4mm', arm_width_mm: '15mm',
     material_visual: '', arm_root: '',
   },
   propulsion: { prop_diameter_inch: 5.0, prop_blade_count: '3叶', motor_tilt_degree: 0, prop_guard: 'none' },
-  fuselage: { fuselage_style: '', top_cover: '', fuselage_dimensions_mm: { length: 100, width: 80, height: 30 } },
+  fuselage: { fuselage_style: '', top_cover: '', fuselage_dimensions_mm: { ...designStart.fuselage_dimensions_mm } },
   landing_gear: { landing_gear_style: '低矮滑撬/支腿', landing_gear_height_mm: 40 },
   accessories: { has_camera_gimbal: false, camera_mount: '', custom_prompt_additions: '', drone_primary_color: '', surface_finish: '' },
 };
@@ -122,6 +124,8 @@ export function createTaskStore(task: Task) {
     initial.frame.wheelbase_mm = 1400;
     initial.frame.span_ratio_wl = frameRules['Radial Hex'].wl.value;
     initial.propulsion.prop_diameter_inch = 20;
+    // 四旋翼的真实产品数据不适用于农业六旋，机身起始值保持原样。
+    initial.fuselage.fuselage_dimensions_mm = { ...legacyStart.fuselage_dimensions_mm };
   } else {
     initial.propulsion.prop_blade_count = quadBladeCount;
     initial.accessories.has_camera_gimbal = true;

@@ -4,6 +4,7 @@ import { parseImported } from '../exporters';
 import { candidateRetained } from '../candidateRecords';
 import { generationStatus, isGenerationPending } from '../generation';
 import { relation, type WorkflowGraph } from './types';
+import { modelLabel } from '../imageBackend';
 
 const choices: Record<DecisionKind, string> = {
   accept: '采纳候选', reject: '驳回候选', restore: '回选候选', manual: '人工深化', stop: '结束本轮',
@@ -30,18 +31,22 @@ export function appendAttempts(graph: WorkflowGraph, attempts: FrozenAttempt[], 
   const candidates = new Set(attempts.flatMap(a => a.candidates.map(c => c.id)));
   const localIds = new Set(nodes.map(n => n.id));
   const references = new Set(nodes.filter(n => n.kind === 'image').map(n => n.id));
-  for (const a of attempts) localIds.add('frozen-spec-' + a.id);
+  for (const a of attempts) if (a.condition === 'structured') localIds.add('frozen-spec-' + a.id);
   for (const a of attempts) {
     const specId = 'frozen-spec-' + a.id, runId = 'run-' + a.id;
-    const meta = { attemptId: a.id, variantId: a.variantId, createdAt: a.createdAt };
-    const snapshot = a.snapshot ?? parseImported(a.config, a.config.parameters);
-    const ancestor = a.workflowOrigin?.task === task && localIds.has(a.workflowOrigin.id) ? a.workflowOrigin.id : undefined;
-    nodes.push({ ...meta, id: specId, kind: 'spec', research: true, title: a.variantName + ' · 冻结规格', parentId: ancestor,
-      subtitle: frameRules[snapshot.parameters.frame.frame_type].zh, source: '本轮冻结配置', ...snapshot,
-      detail: a.goal, canBranch: true, canRestore: true, facts: [{ label: '保持项', value: a.keep || '未指定' },
-        { label: '规格来源', value: a.snapshot ? '冻结时的完整草稿' : '按旧归档的配置、已选字段和意图还原' }] });
-    if (ancestor) edges.push(relation(ancestor, specId, '沿用分支编辑'));
-    const inputState = a.h3 ? (a.h3.status === 'succeeded' ? 'H3 已回图' : '冻结时指定') :
+    const free = a.condition === 'free';
+    const meta = { attemptId: a.id, variantId: a.variantId, createdAt: a.createdAt, method: a.condition };
+    // 自由提示没有用到规格和条件图，不为它画冻结规格。
+    if (!free) {
+      const snapshot = a.snapshot ?? parseImported(a.config, a.config.parameters);
+      const ancestor = a.workflowOrigin?.task === task && localIds.has(a.workflowOrigin.id) ? a.workflowOrigin.id : undefined;
+      nodes.push({ ...meta, id: specId, kind: 'spec', research: true, title: a.variantName + ' · 冻结规格', parentId: ancestor,
+        subtitle: frameRules[snapshot.parameters.frame.frame_type].zh, source: '本轮冻结配置', ...snapshot,
+        detail: a.goal, canBranch: true, canRestore: true, facts: [{ label: '保持项', value: a.keep || '未指定' },
+          { label: '规格来源', value: a.snapshot ? '冻结时的完整草稿' : '按旧归档的配置、已选字段和意图还原' }] });
+      if (ancestor) edges.push(relation(ancestor, specId, '沿用分支编辑'));
+    }
+    const inputState = a.h3 ? (a.h3.status === 'succeeded' ? '已回图' : '冻结时指定') :
       a.receipt ? '回图工作流已核对' : a.dispatch?.ack ? '服务已接收' : '冻结时指定';
     const status = a.h3 ? generationStatus(a).title : a.receipt ? '已核对回图' : a.failure ? '运行失败或中止' : a.dispatch?.ack ? '服务已入队'
       : a.dispatch?.error ? '提交异常' : a.dispatch ? '已登记请求' : '待提交';
@@ -50,13 +55,13 @@ export function appendAttempts(graph: WorkflowGraph, attempts: FrozenAttempt[], 
     // 旧记录没有登记草稿范围时，只有四旋的方案 A 可以确定归属。
     const variantScope = a.variantScope ?? (task === 'quad' && a.variantId === 'A' ? 'quad/A' : undefined);
     nodes.push({ ...meta, id: runId, kind: 'run', title: a.goal, subtitle: status, progress, variantScope,
-      source: a.h3 ? 'MiniMax H3 Image · 本机轮次记录' : '本机设计轮次', parentId: specId, detail: a.confirmedText,
-      facts: [{ label: '输入方式', value: a.condition === 'structured' ? '结构化提示与条件图' : '自由提示' },
+      source: a.h3 ? modelLabel(a.h3.model) + ' · 本机轮次记录' : '本机设计轮次', parentId: free ? undefined : specId, detail: a.confirmedText,
+      facts: [{ label: '输入方式', value: a.condition === 'structured' ? '结构化提示与条件图' : '自由提示（只发设计者的原文' + (a.parentImage ? '和一张参考图' : '') + '）' },
         { label: '状态', value: status }, { label: '轮次编号', value: a.id },
         ...(a.h3?.issue ? [{ label: '服务记录', value: a.h3.issue }] : []),
         ...(a.runId ? [{ label: a.h3 ? '本机任务号' : '服务作业号', value: a.runId }] : []),
         ...(a.h3?.traceId ? [{ label: '服务追踪号', value: a.h3.traceId }] : [])] });
-    edges.push(relation(specId, runId, '冻结输入'));
+    if (!free) edges.push(relation(specId, runId, '冻结输入'));
     if (a.condition === 'structured') {
       const id = guideId(a.id);
       nodes.push({ ...meta, id, kind: 'image', research: true, title: '本轮布局条件图', subtitle: '冻结输入', source: '冻结的结构化条件图',
@@ -75,7 +80,7 @@ export function appendAttempts(graph: WorkflowGraph, attempts: FrozenAttempt[], 
     for (const c of a.candidates) {
       const id = candidateNodeId(c.id);
       nodes.push({ ...meta, id, parentId: runId, kind: 'image', title: c.name, subtitle: '回执候选', image: images.get(id),
-        candidateId: c.id, firstShown: c.firstShown, retained: candidateRetained(a, c.id), source: a.h3?.status === 'succeeded' ? 'MiniMax H3 Image · 服务回图' : '服务回执与候选原件',
+        candidateId: c.id, firstShown: c.firstShown, retained: candidateRetained(a, c.id), source: a.h3?.status === 'succeeded' ? modelLabel(a.h3.model) + ' · 服务回图' : '服务回执与候选原件',
         detail: a.receipt?.inputVerification, facts: [{ label: '原图 SHA-256', value: c.hash }] });
       edges.push(relation(runId, id, '返回候选'));
     }

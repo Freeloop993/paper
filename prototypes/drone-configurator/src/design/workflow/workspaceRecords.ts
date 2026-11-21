@@ -16,7 +16,13 @@ export type Attachment = { id: string; title: string; createdAt: string } & Imag
 /** 设计者直接放到画布上的便签。 */
 export interface StickyNote { id: string; text: string; createdAt: string }
 /** 已放到画布、尚未提交的生成步骤。提交后由同一编号的冻结轮次接替。 */
-export interface PendingStep { id: string; variantKey: string; parentNodeId?: string; goal: string; createdAt: string }
+export interface PendingStep {
+  id: string; variantKey: string; parentNodeId?: string; goal: string; createdAt: string;
+  /** 自由提示：只把设计者写的文字发给模型，不带布局条件图，也不带由造型编译的文字。 */
+  method?: 'free';
+  /** 自由提示的原文。 */
+  text?: string;
+}
 export interface BoardRecords {
   branches: Branch[];
   images: Attachment[];

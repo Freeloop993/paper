@@ -88,7 +88,10 @@ export const topics = {
 export const widthHypothesis = {
   id: "CW-1.0",
   origin: "research_protocol",
-  status: "untested_perceptual_link",
+  // 2026-11-21：真实产品评议（S5 第一步）给出了相关性的支持；只差一个比例的配对评议还没做，所以仍是待检验的假设。
+  status: "correlational_support_untested_cause",
   description: "在同一展开顶视图上只改壳体相对宽度，再让独立读者比较紧凑感。",
+  evidence: "现有依据：32 款真实四旋翼产品、10 名评议者，机身宽与对角电机距之比越大，越被评为紧凑（等级相关 −0.59 和 −0.65，两位判读者各量一遍）。这是相关，不是检验。",
+  evidenceSource: "experiments/s5-compactness-pilot/responses/README.md",
   source: "planning/advisor-20261118/semantic/README.md#2-一条评论怎样走到设计和实验"
 };

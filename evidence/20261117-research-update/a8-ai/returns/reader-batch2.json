@@ -1,0 +1,14 @@
+{
+ "tool": "a8-ai-reader 1.0",
+ "finished_at": "2026-11-21T11:41:04+00:00",
+ "images": 17,
+ "commands_logged": 2046,
+ "first_command_at": "2026-11-21T10:49:21+00:00",
+ "response_sha256": "c0161757f8903c2983b35e63cf4864f91b369788532a2b6613565f5626f67a54",
+ "self_report": {
+  "model": "Claude Opus 5.5 (claude-opus-5-5), run as a Claude Code subagent; read date 2026-11-21; software: tool.py a8-ai-reader 1.0 with the provided venv Python",
+  "exposure": "none. I had not seen these images, their conditions or any readings. Note: the session harness automatically placed the project's CLAUDE.md and a memory index in my context (I did not open them); they describe the research project only in general terms (multirotor configuration study, a compactness pilot, generated images) and contain no conditions, target values or readings for these images; I did not use them.",
+  "deviations": "none from the written rules. Interpretations used: (1) where the hub cap and the motor ring are not concentric I followed 说明2 (cap or screw takes precedence) and did not blank under the registered 偏心 clause; this affects efe020d1cb948e72 and 4c84e816d2790140 most, and 81332ff7b046a25b, 07116405218e9b36, a79124d3db8cdd64 to a lesser degree. (2) An anti-aliased edge pixel was counted as body when its grey value was at least halfway between background and the adjacent body/rim value. (3) On a flat top or bottom, x was taken at the middle of the qualifying run on the extreme row. (4) The front sensor window sitting inside the top of the shell was treated as part of the shell outline; protruding gimbals/cameras were excluded (a16f7f627cbc48fb lower, efe020d1cb948e72 and 4c84e816d2790140 upper). (5) Hub centres were located from pixel-value profiles of the cap's dark outline ring, then checked on the hubs sheet.",
+  "hard": "efe020d1cb948e72: hub domes clearly offset from the orange motor rings; dome edges partly merge with blade roots (about +/-1 px). 4c84e816d2790140: small caps offset from motor rings; inner screw ring and shadowed outer ring not concentric (about 1 px), compromise centre taken. a79124d3db8cdd64: caps irregular and partly hidden by clamps, centres +/-1-2 px (TR, BR least certain). 81332ff7b046a25b, 07116405218e9b36: caps offset from motor bells; concentric cap rings used. a16f7f627cbc48fb lower: shell meets the gimbal at a 1-px light seam (rows 678/679); took 678, last shell row. Borderline edge pixels at 46-49% coverage decided by the halfway rule: efe020d1cb948e72 left/right, 3bd8e80796bf974e right and upper, 5425428ce5a7c805 lower, 13e90ba7576c5838 upper, 7fc8e69fca0a15fc lower. 794eb92685400b1b (diagram): dot centres fall near x.5 sub-pixel, rounded."
+ }
+}

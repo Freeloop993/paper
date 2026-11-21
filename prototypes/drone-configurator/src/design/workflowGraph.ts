@@ -233,20 +233,21 @@ export function useWorkflowGraph(board: WorkflowBoard, research = false) {
   }
 
   /** 在画布上放一个待生成步骤。提交前可以改这一轮的目标和参考图。 */
-  async function addStep(variantKey: string, parentNodeId?: string) {
+  async function addStep(variantKey: string, parentNodeId?: string, method?: 'free') {
     projectOnly();
     const id = crypto.randomUUID();
     setRecords(await updateRecords(task, latest => {
-      latest.steps.push({ id, variantKey, parentNodeId, goal: '', createdAt: new Date().toISOString() });
+      latest.steps.push({ id, variantKey, parentNodeId, goal: '', createdAt: new Date().toISOString(), ...(method ? { method, text: '' } : {}) });
     }));
     return id;
   }
-  async function updateStep(id: string, change: { goal?: string; parentNodeId?: string | null }) {
+  async function updateStep(id: string, change: { goal?: string; text?: string; parentNodeId?: string | null }) {
     projectOnly();
     setRecords(await updateRecords(task, latest => {
       const step = latest.steps.find(item => item.id === id);
       if (!step) return;
       if (change.goal !== undefined) step.goal = change.goal.slice(0, 1600);
+      if (change.text !== undefined) step.text = change.text.slice(0, 8000);
       if (change.parentNodeId === null) delete step.parentNodeId;
       else if (change.parentNodeId) step.parentNodeId = change.parentNodeId;
     }));

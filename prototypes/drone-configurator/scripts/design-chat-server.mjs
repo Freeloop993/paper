@@ -87,6 +87,9 @@ export function createDesignServer(chat, evidence, imageJobs) {
           const result = pathname === '/api/design/evidence' ? evidence(input) : await chat(input, { signal: controller.signal });
           if (!res.destroyed) sendJson(res, 200, result);
         } finally { res.off('close', cancel); }
+      } else if (imageJobs && pathname==='/api/h3/backend') {
+        if (req.method!=='GET') fail(405,'method_not_allowed','后端信息仅支持 GET。');
+        sendJson(res,200,imageJobs.describe());
       } else if (imageJobs && pathname==='/api/h3/jobs') {
         if (req.method!=='POST') fail(405,'method_not_allowed','图像生成仅支持 POST。');
         sendJson(res,202,await imageJobs.submit(await readInput(req,64*1024*1024)));
@@ -108,15 +111,20 @@ export function createDesignServer(chat, evidence, imageJobs) {
 }
 
 async function main() {
-  const { values } = parseArgs({ options: { port: { type: 'string' } } });
+  const { values } = parseArgs({ options: { port: { type: 'string' }, 'image-backend': { type: 'string' }, 'comfy-url': { type: 'string' } } });
   const port = Number(values.port ?? process.env.PORT ?? 4178);
   if (!Number.isInteger(port) || port < 1 || port > 65535) throw new Error('端口必须为 1 至 65535 的整数。');
   const { chat, evidence } = await createDesignService({ apiKey: process.env.MINIMAX_API_KEY?.trim(), region: process.env.MINIMAX_REGION ?? 'cn' });
-  const imageJobs=createImageJobs({apiKey:process.env.MINIMAX_IMAGE_API_KEY?.trim() || process.env.MINIMAX_API_KEY?.trim(),
+  // 计入论文的场次用 Qwen：--image-backend qwen-comfy --comfy-url http://GPU主机:8188（或环境变量 WORKBENCH_IMAGE_BACKEND、COMFY_URL）。
+  const backendName = values['image-backend'] ?? process.env.WORKBENCH_IMAGE_BACKEND ?? 'minimax';
+  if (!['minimax', 'qwen-comfy'].includes(backendName)) throw new Error('图像后端只能是 minimax 或 qwen-comfy。');
+  const backend = backendName === 'qwen-comfy' ? { provider: 'qwen-comfy', url: (values['comfy-url'] ?? process.env.COMFY_URL ?? '').trim(),
+    unet: process.env.QWEN_UNET, clip: process.env.QWEN_CLIP, vae: process.env.QWEN_VAE } : undefined;
+  const imageJobs=createImageJobs({apiKey:process.env.MINIMAX_IMAGE_API_KEY?.trim() || process.env.MINIMAX_API_KEY?.trim(),backend,
     region:process.env.MINIMAX_IMAGE_REGION ?? process.env.MINIMAX_REGION ?? 'cn',directory:process.env.WORKBENCH_IMAGE_JOBS_DIR});
   const server = createDesignServer(chat, evidence, imageJobs);
   server.on('error', () => { console.error('本机设计对话服务启动失败，请核对端口。'); process.exitCode = 1; });
-  server.listen(port, '127.0.0.1', () => console.log(`本机多旋翼设计工作台 http://127.0.0.1:${port}/`));
+  server.listen(port, '127.0.0.1', () => console.log(`本机多旋翼设计工作台 http://127.0.0.1:${port}/ · 图像后端：${imageJobs.describe().label}`));
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {

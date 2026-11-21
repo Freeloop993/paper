@@ -1,0 +1,14 @@
+{
+ "tool": "a8-ai-reader 1.0",
+ "finished_at": "2026-11-21T11:44:13+00:00",
+ "images": 17,
+ "commands_logged": 802,
+ "first_command_at": "2026-11-21T10:49:34+00:00",
+ "response_sha256": "74e60cfa4480c759639395c1c5f6ae653cbce417cda849141bf3e330ebec1caa",
+ "self_report": {
+  "model": "Claude Opus 5.5 (claude-opus-5-5), run as a Claude Code subagent",
+  "exposure": "none for these images, their conditions, intended values or any other readings. Note: my session context was auto-loaded (not opened by me) with the project's standing instructions and a memory index, which mention that the project concerns drone stimuli and rating packages, and a git status line listing an untracked evidence/20261117-research-update/a8-ai/ directory. I did not open any of these and nothing in them describes these images.",
+  "deviations": "No departure from the point rules. Method notes: (1) edge points (left, right, upper, lower) were taken as the integer pixel nearest the anti-aliased boundary estimated from grey values; I settled this after image 5 and re-recorded the edge points of images 1-4 the same way (changes of 1 px). For dark sensor slots at the body top, the edge was taken as the first pixel not mostly background. (2) Where the top or bottom of the body is a flat segment, the x of upper/lower is the middle of that segment. (3) Hub centres were estimated from the cap outline (left/right and top/bottom dark rings, circle fit where the lower edge is shadowed); several sit within about 1 px of a half-pixel and were rounded. (4) Embedded dark sensor windows flush with the body outline were treated as part of the body (e.g. 53bffc4f651b1baa lower).",
+  "hard": "9de211230a51001e: a narrow dark tab protrudes about 5 px below the grey body at the lower end; I judged it an external camera/gimbal and took lower at the grey shell (686); if it counts as a tail insert the end would be about 691. a63f215e9bae3ae0 and 0fd0b9cf20aa3bf7: upper blanked (protruding front module, cannot tell shell vs camera). 53bffc4f651b1baa: upper blanked (camera neck and black side pieces ahead of the body); lower includes a black rear window set into the shell. f5b1ca19f3002fef: no centre cap or screw on any hub, so all four hubs and left/right blanked. 06bd3e71a98d2481: lower blanked (large dark tail piece, shell vs insert/battery undecidable). 2d91b24661054d20: low-contrast hub caps, about 1 px uncertainty. c7b42f4e82713869: dome caps look slightly teardrop-shaped from shading; centre from circle fit of upper outline. Several hub centres in 2d91, 53bf, 00ae, 6781, 06bd lay close to a half pixel."
+ }
+}

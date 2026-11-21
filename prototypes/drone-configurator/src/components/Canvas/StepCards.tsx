@@ -3,7 +3,7 @@ import { createContext, memo, useContext, useEffect, useMemo, useState } from 'r
 import { Handle, NodeToolbar, Position } from '@xyflow/react';
 import type { Node, NodeProps } from '@xyflow/react';
 import {
-  AlertCircle, Check, CheckCheck, FileText, Image as ImageIcon, LoaderCircle, PencilLine, Plus, Quote,
+  AlertCircle, Check, CheckCheck, FileText, Image as ImageIcon, LoaderCircle, PencilLine, PenLine, Plus, Quote,
   ScanLine, SlidersHorizontal, Sparkles, StickyNote, type LucideIcon,
 } from 'lucide-react';
 import WorkflowImage from '../../design/workflow/WorkflowImage';
@@ -137,14 +137,14 @@ function RunCard({ item }: { item: WorkflowNode }) {
   const starting = !!item.recordId && kit.starting.has(item.recordId);
   const progress = starting ? 'running' : item.progress;
   return <>
-    <div className="cv-head"><span className="cv-kind"><ScanLine size={14}/>生成</span>
+    <div className="cv-head"><span className="cv-kind">{item.method === 'free' ? <><PenLine size={14}/>自由提示</> : <><ScanLine size={14}/>生成</>}</span>
       <span className={'cv-progress is-' + progress}>
         {progress === 'running' ? <><LoaderCircle size={12} className="animate-spin"/>生成中</> : progress === 'done' ? <><Check size={12}/>已回图</>
           : progress === 'issue' ? <><AlertCircle size={12}/>需处理</> : '待生成'}
       </span>
     </div>
     <div className="cv-content">
-      {item.pending ? <p className="cv-text">{item.detail || '按当前造型和目标生成一张效果图。'}</p> : <h3 title={item.title}>{item.title}</h3>}
+      {item.pending ? <p className="cv-text">{item.detail || (item.method === 'free' ? '在右侧写下要发给模型的文字。' : '按当前造型和目标生成一张效果图。')}</p> : <h3 title={item.title}>{item.title}</h3>}
       {!item.pending && <p className="cv-sub">{item.subtitle}</p>}
     </div>
     {item.pending && kit.editable && <button type="button" className="cv-run nodrag" disabled={starting} data-testid="canvas-run-step"

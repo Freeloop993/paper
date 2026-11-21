@@ -2,6 +2,7 @@ import React from 'react';
 import { useDroneStore } from '../../store/droneStore';
 import { computeLayout, usesConsumerReferences } from '../../design/design';
 import { fuselageStyleOptions, legacyFuselageStyles, references, topCoverOptions } from '../../design/fields';
+import { realQuadrotors } from '../../design/defaults';
 import { Field, Group, OpenChoice, Slider, TabHeading } from '../controls/controls';
 
 const list = (items: { v: number; label: string }[]) => items.map(m => `${m.label} ${m.v}`).join('、');
@@ -32,7 +33,7 @@ const FuselageParameters: React.FC = () => {
         </div>
         <p className="mt-1 text-xs leading-relaxed text-ink-soft">
           想让展开俯视显得紧凑，可以试试调这两个比例；是否真的显得紧凑，要靠出图后的评议来判断。
-          {usesConsumerReferences(parameters.frame.frame_type, intent.taskId) && <>同类机型的机身宽 ÷ 轴距（手册图面量测）：{list(references.bodyWidthOverD.measured)}。</>}
+          {usesConsumerReferences(parameters.frame.frame_type, intent.taskId) && <>32 款真实四旋翼产品：机身宽 ÷ 轴距中位数 {realQuadrotors.bodyWidthOverD.median.toFixed(2)}（四分位 {realQuadrotors.bodyWidthOverD.q1.toFixed(2)}–{realQuadrotors.bodyWidthOverD.q3.toFixed(2)}），机身长 ÷ 宽中位数 {realQuadrotors.bodyLengthOverWidth.median.toFixed(2)}（{realQuadrotors.bodyLengthOverWidth.q1.toFixed(2)}–{realQuadrotors.bodyLengthOverWidth.q3.toFixed(2)}）；起始值取在中位数附近。手册图面量测的机身宽 ÷ 轴距：{list(references.bodyWidthOverD.measured)}。</>}
         </p>
       </div>
 

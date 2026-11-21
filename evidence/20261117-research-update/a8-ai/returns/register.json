@@ -1,0 +1,80 @@
+{
+ "tool": "a8-ai-reader 1.0",
+ "pack": {
+  "source_pack": "archive/paper-reading-room/studies/20261117-offline/participants/a8-AI",
+  "source_response_sha256": "a103269c7557e618bbfcbc0d52478c37f69a6703cb37f205bff4b577d82ac008",
+  "tool_sha256": "265603c18a9b84622b22c0b807005e0e58ffd0b053115a481b45c77f62a24d61",
+  "rules_sha256": "d395b5b12ee461cf95e225b9e878f1b5577538207de631352ab2127710237747",
+  "batches": 4,
+  "per_batch": [
+   17,
+   17,
+   17,
+   17
+  ],
+  "rekey_sha256": "6166499a1e686e1f312dbdc01ca70f0f6e5f53d43ad2cd5e2667dd156196da48"
+ },
+ "batches": [
+  {
+   "batch": 1,
+   "images": 17,
+   "commands": 2292,
+   "first_command_at": "2026-11-21T10:49:11+00:00",
+   "finished_at": "2026-11-21T11:46:11+00:00",
+   "oplog_sha256": "354aa7a197671d37aabfeb0488c1f17349e6bd4938f437124fdea04a141491ea",
+   "response_sha256": "2bb8abb8c1613ad3c1bb43c3455c5b613b6f4ac96c749391bd129b991f3065d2",
+   "self_report": {
+    "model": "Claude Opus 5.5 (claude-opus-5-5), running as a Claude Code subagent",
+    "exposure": "none: had not seen these images, their conditions or any readings before. Note: the harness auto-loaded the project's standing instructions and a memory index into my context (I did not open any file); they mention that the project works with drone top-view images (Qwen generation, an S5 compactness pilot, rater stimuli) but give no target values, conditions or readings for these images. Not used.",
+    "deviations": "none from the rules. Interpretations used: edge pixel = outermost pixel with >=50% body coverage against background (one exact-50% case included: 289be34320318948 upper); where the extreme row is flat, upper/lower x placed at body centre; where the cap has nested rings (dome inside outer disc) the cap/dome outline centre was used; inserts flush with the shell outline were counted as outline (b7bff7b8662a8315 upper), inserts protruding beyond the light shell were blanked; e56db4860bd12ef5 upper/lower taken at the true extreme pixels (shell horn beside slot y211, rear corner nubs y676) rather than centre (y213 / y673); 6931b032549059fa left/right include the thin dark strip that forms the body side edge on that row (shell-only edge would be ~2 px inward); d7b9ba6f367ae099 upper is the light shell edge directly under the excluded gimbal camera (y150; shell corners at y152).",
+    "hard": "8246aafc49eb79d0 upper blank (dark front window insert protrudes ~6 px above light shell); 86d7f502705cb00f lower blank (dark rear insert protrudes ~7 px below grey shell); 2d58bad7b5e80fe8 upper blank (front sensor housing protrudes ~10 px), hubs show a spiral/concentric pattern, centre judged from rings; 7ed3841d6753a647 squarish caps, motor ring not concentric with cap, cap used, vertical +-1 px; 62699152e4a33416 large flat caps with bevel, centres from pixel profiles (first visual guess for br was ~10 px off, corrected); b7bff7b8662a8315 dome and outer disc centres differ ~2 px, averaged, +-1 px; 3d3e4e7691704c7b and f40838ac0c37821a unevenly lit domes, vertical +-1 px; e56db4860bd12ef5 upper/lower extremes off-centre (see deviations); 6931b032549059fa dark side strips at the left/right row; d7b9ba6f367ae099 gimbal camera at front, body top under camera."
+   }
+  },
+  {
+   "batch": 2,
+   "images": 17,
+   "commands": 2046,
+   "first_command_at": "2026-11-21T10:49:21+00:00",
+   "finished_at": "2026-11-21T11:41:04+00:00",
+   "oplog_sha256": "07a0bf6a23e33784bc7122580aa73eb6df6410b58d045425f0fa0ef57b88b437",
+   "response_sha256": "c0161757f8903c2983b35e63cf4864f91b369788532a2b6613565f5626f67a54",
+   "self_report": {
+    "model": "Claude Opus 5.5 (claude-opus-5-5), run as a Claude Code subagent; read date 2026-11-21; software: tool.py a8-ai-reader 1.0 with the provided venv Python",
+    "exposure": "none. I had not seen these images, their conditions or any readings. Note: the session harness automatically placed the project's CLAUDE.md and a memory index in my context (I did not open them); they describe the research project only in general terms (multirotor configuration study, a compactness pilot, generated images) and contain no conditions, target values or readings for these images; I did not use them.",
+    "deviations": "none from the written rules. Interpretations used: (1) where the hub cap and the motor ring are not concentric I followed 说明2 (cap or screw takes precedence) and did not blank under the registered 偏心 clause; this affects efe020d1cb948e72 and 4c84e816d2790140 most, and 81332ff7b046a25b, 07116405218e9b36, a79124d3db8cdd64 to a lesser degree. (2) An anti-aliased edge pixel was counted as body when its grey value was at least halfway between background and the adjacent body/rim value. (3) On a flat top or bottom, x was taken at the middle of the qualifying run on the extreme row. (4) The front sensor window sitting inside the top of the shell was treated as part of the shell outline; protruding gimbals/cameras were excluded (a16f7f627cbc48fb lower, efe020d1cb948e72 and 4c84e816d2790140 upper). (5) Hub centres were located from pixel-value profiles of the cap's dark outline ring, then checked on the hubs sheet.",
+    "hard": "efe020d1cb948e72: hub domes clearly offset from the orange motor rings; dome edges partly merge with blade roots (about +/-1 px). 4c84e816d2790140: small caps offset from motor rings; inner screw ring and shadowed outer ring not concentric (about 1 px), compromise centre taken. a79124d3db8cdd64: caps irregular and partly hidden by clamps, centres +/-1-2 px (TR, BR least certain). 81332ff7b046a25b, 07116405218e9b36: caps offset from motor bells; concentric cap rings used. a16f7f627cbc48fb lower: shell meets the gimbal at a 1-px light seam (rows 678/679); took 678, last shell row. Borderline edge pixels at 46-49% coverage decided by the halfway rule: efe020d1cb948e72 left/right, 3bd8e80796bf974e right and upper, 5425428ce5a7c805 lower, 13e90ba7576c5838 upper, 7fc8e69fca0a15fc lower. 794eb92685400b1b (diagram): dot centres fall near x.5 sub-pixel, rounded."
+   }
+  },
+  {
+   "batch": 3,
+   "images": 17,
+   "commands": 802,
+   "first_command_at": "2026-11-21T10:49:34+00:00",
+   "finished_at": "2026-11-21T11:44:13+00:00",
+   "oplog_sha256": "9d1b0f70f1b6d0ac02877fd0e2e82eff19ad7a6d4d2c0f803540c49268b9a8a9",
+   "response_sha256": "74e60cfa4480c759639395c1c5f6ae653cbce417cda849141bf3e330ebec1caa",
+   "self_report": {
+    "model": "Claude Opus 5.5 (claude-opus-5-5), run as a Claude Code subagent",
+    "exposure": "none for these images, their conditions, intended values or any other readings. Note: my session context was auto-loaded (not opened by me) with the project's standing instructions and a memory index, which mention that the project concerns drone stimuli and rating packages, and a git status line listing an untracked evidence/20261117-research-update/a8-ai/ directory. I did not open any of these and nothing in them describes these images.",
+    "deviations": "No departure from the point rules. Method notes: (1) edge points (left, right, upper, lower) were taken as the integer pixel nearest the anti-aliased boundary estimated from grey values; I settled this after image 5 and re-recorded the edge points of images 1-4 the same way (changes of 1 px). For dark sensor slots at the body top, the edge was taken as the first pixel not mostly background. (2) Where the top or bottom of the body is a flat segment, the x of upper/lower is the middle of that segment. (3) Hub centres were estimated from the cap outline (left/right and top/bottom dark rings, circle fit where the lower edge is shadowed); several sit within about 1 px of a half-pixel and were rounded. (4) Embedded dark sensor windows flush with the body outline were treated as part of the body (e.g. 53bffc4f651b1baa lower).",
+    "hard": "9de211230a51001e: a narrow dark tab protrudes about 5 px below the grey body at the lower end; I judged it an external camera/gimbal and took lower at the grey shell (686); if it counts as a tail insert the end would be about 691. a63f215e9bae3ae0 and 0fd0b9cf20aa3bf7: upper blanked (protruding front module, cannot tell shell vs camera). 53bffc4f651b1baa: upper blanked (camera neck and black side pieces ahead of the body); lower includes a black rear window set into the shell. f5b1ca19f3002fef: no centre cap or screw on any hub, so all four hubs and left/right blanked. 06bd3e71a98d2481: lower blanked (large dark tail piece, shell vs insert/battery undecidable). 2d91b24661054d20: low-contrast hub caps, about 1 px uncertainty. c7b42f4e82713869: dome caps look slightly teardrop-shaped from shading; centre from circle fit of upper outline. Several hub centres in 2d91, 53bf, 00ae, 6781, 06bd lay close to a half pixel."
+   }
+  },
+  {
+   "batch": 4,
+   "images": 17,
+   "commands": 1513,
+   "first_command_at": "2026-11-21T10:49:45+00:00",
+   "finished_at": "2026-11-21T11:41:09+00:00",
+   "oplog_sha256": "0d1fad8df575472d69438066a4397476dacc42a64127c2dd22639683440c8a47",
+   "response_sha256": "670bc512b18e62a245f284caf8697cc449123f3b08214cbf8333c4424c598c4d",
+   "self_report": {
+    "model": "Claude Opus 5.5 (claude-opus-5-5), running as a Claude Code subagent",
+    "exposure": "None of these images, their generation conditions, target values or anyone else's readings were seen. Note: the session harness auto-injected the project's CLAUDE.md and a memory index into my context (not opened by me); it mentions a drone-design thesis, a workbench that generates images with Qwen, rating stimuli and an S5 compactness pilot, but contains no values or readings for these images. I did not use it.",
+    "deviations": "None from the registered rules. Interpretations applied consistently: (1) edge pixels for left/right/upper/lower = outermost pixel that is at least 50% body by grey value (antialiased pixels below 50% excluded; image 1 was corrected to this after first using a looser cut); (2) where the top or bottom outline is a flat run, the representative x is the body centre (about 512); (3) hub points = centre of the visible centre cap/screw, located from the ring/edge profile in row/column grey values and checked with crosshairs; half-pixel ties rounded by the majority of estimates; (4) in images with a front gimbal camera, the camera, its housing and side lobes were excluded and the upper end taken on the shell edge beneath it.",
+    "hard": "4c87b120fb5526e5: oblique view, each motor bell appears ~40 px below its hub cap; per rule 2 I marked the visible central knob/cap centre (vertical extent of the knob uncertain by ~2 px); gimbal excluded; dark rear band counted as shell. f97421e7ce43fcd2: hub centres are dark recesses with a fuzzy upper half (+-1 px); I treated the gimbal mount plate (y~205-223) as part of the camera assembly - if it counts as body, upper would be ~(512,205). ec282e15e98114e1: bottom edge has a 1-3 px dark rim; lowest pixel is (540,680) on that rim, centre is (512,679); if the rim is shadow, use 679. 333d9adce797bf32 and 0393362af2e20238: a narrower rear lip/step at the bottom was included as shell. 8e26b370f5b6c7de and bee0605179f6ea6e: small or asymmetrically shaded caps, hub centres +-1 px. db031f9afa1d8d57: slight oblique view (motor bell offset below cap) and front camera excluded."
+   }
+  }
+ ],
+ "response_sha256": "27f017e07d4e38a98a789e4abef6d145d47058699b784ef8fd75dcabf571a4da"
+}

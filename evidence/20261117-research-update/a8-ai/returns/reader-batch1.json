@@ -1,0 +1,14 @@
+{
+ "tool": "a8-ai-reader 1.0",
+ "finished_at": "2026-11-21T11:46:11+00:00",
+ "images": 17,
+ "commands_logged": 2292,
+ "first_command_at": "2026-11-21T10:49:11+00:00",
+ "response_sha256": "2bb8abb8c1613ad3c1bb43c3455c5b613b6f4ac96c749391bd129b991f3065d2",
+ "self_report": {
+  "model": "Claude Opus 5.5 (claude-opus-5-5), running as a Claude Code subagent",
+  "exposure": "none: had not seen these images, their conditions or any readings before. Note: the harness auto-loaded the project's standing instructions and a memory index into my context (I did not open any file); they mention that the project works with drone top-view images (Qwen generation, an S5 compactness pilot, rater stimuli) but give no target values, conditions or readings for these images. Not used.",
+  "deviations": "none from the rules. Interpretations used: edge pixel = outermost pixel with >=50% body coverage against background (one exact-50% case included: 289be34320318948 upper); where the extreme row is flat, upper/lower x placed at body centre; where the cap has nested rings (dome inside outer disc) the cap/dome outline centre was used; inserts flush with the shell outline were counted as outline (b7bff7b8662a8315 upper), inserts protruding beyond the light shell were blanked; e56db4860bd12ef5 upper/lower taken at the true extreme pixels (shell horn beside slot y211, rear corner nubs y676) rather than centre (y213 / y673); 6931b032549059fa left/right include the thin dark strip that forms the body side edge on that row (shell-only edge would be ~2 px inward); d7b9ba6f367ae099 upper is the light shell edge directly under the excluded gimbal camera (y150; shell corners at y152).",
+  "hard": "8246aafc49eb79d0 upper blank (dark front window insert protrudes ~6 px above light shell); 86d7f502705cb00f lower blank (dark rear insert protrudes ~7 px below grey shell); 2d58bad7b5e80fe8 upper blank (front sensor housing protrudes ~10 px), hubs show a spiral/concentric pattern, centre judged from rings; 7ed3841d6753a647 squarish caps, motor ring not concentric with cap, cap used, vertical +-1 px; 62699152e4a33416 large flat caps with bevel, centres from pixel profiles (first visual guess for br was ~10 px off, corrected); b7bff7b8662a8315 dome and outer disc centres differ ~2 px, averaged, +-1 px; 3d3e4e7691704c7b and f40838ac0c37821a unevenly lit domes, vertical +-1 px; e56db4860bd12ef5 upper/lower extremes off-centre (see deviations); 6931b032549059fa dark side strips at the left/right row; d7b9ba6f367ae099 gimbal camera at front, body top under camera."
+ }
+}

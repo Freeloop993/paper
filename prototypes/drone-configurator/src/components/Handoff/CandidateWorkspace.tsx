@@ -1,3 +1,4 @@
+import { modelLabel } from '../../design/imageBackend';
 import { useEffect, useRef, useState } from 'react';
 import { FileClock, FolderInput, Save } from 'lucide-react';
 import { useDroneStore } from '../../store/droneStore';
@@ -43,7 +44,7 @@ function AttemptView({attempt,onParent}:{attempt:FrozenAttempt;onParent:(id:stri
       <button data-attach-receipt className="btn-dark mt-3" disabled={busy||!files.request||!files.ack||!files.history||!outputs.length}
         onClick={()=>void act(()=>attachReceipt(attempt.id,files.request!,files.ack!,files.history!,outputs),'已核对全部候选。')}><FolderInput size={14}/>核对并归档</button></details>}
     {attempt.failure&&<p className="mt-3 text-sm text-rose-700">后端已确认失败或中止 · {attempt.failure.status}，原始回执已归档。</p>}
-    {attempt.h3&&<p className="mt-3 text-sm">MiniMax H3 Image · {attempt.h3.traceId ? '供应商追踪号 '+attempt.h3.traceId : '本机轮次 '+attempt.id}{attempt.h3.issue && ' · '+attempt.h3.issue}</p>}
+    {attempt.h3&&<p className="mt-3 text-sm">{modelLabel(attempt.h3.model)} · {attempt.h3.traceId ? '服务追踪号 '+attempt.h3.traceId : '本机轮次 '+attempt.id}{attempt.h3.issue && ' · '+attempt.h3.issue}</p>}
     {(attempt.receipt||attempt.h3?.status==='succeeded')&&<div className="mt-3"><p className="text-sm font-semibold">候选 · {attempt.candidates.length}</p><p className="mt-1 text-xs text-ink-soft">{attempt.h3?'已核对供应商记录、布局图、所附父图和候选原图摘要。':(attempt.dispatch?'已登记实发':'外部原件导入')+' · '+attempt.receipt?.inputVerification}</p>
       <div className="mt-2 grid gap-2 sm:grid-cols-2">{attempt.candidates.map(c=><div key={c.id} className="rounded-lg border border-line bg-white p-3"><div className="break-all text-xs font-medium">{c.name}</div><CandidatePreview candidate={c} onError={setMessage} onVisible={()=>markPresented(attempt.id,c.id)}/><p className="mt-1 text-xs text-ink-soft">{c.firstShown?'首次展示 '+stamp(c.firstShown):'首次展示待登记'}</p></div>)}</div>
     </div>}

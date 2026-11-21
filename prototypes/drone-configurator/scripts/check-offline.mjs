@@ -21,7 +21,7 @@ try {
   // 只有一块画布：目标和造型是画布上的卡片，底部工具条用来添加步骤。
   assert.equal(await page.evaluate("document.querySelectorAll('nav.canvas-rail').length"),0);
   assert.deepEqual(await page.evaluate("[...document.querySelectorAll('[data-testid=canvas-dock] [data-dock]')].map(x=>x.dataset.dock)"),
-    ['goal','image','note','direction','generate']);
+    ['goal','image','note','direction','free','generate']);
   assert.equal(await page.evaluate("document.querySelector('[data-testid=workflow-workspace]').dataset.boardId"),'project');
   assert.deepEqual(await page.evaluate("[...document.querySelectorAll('[data-workflow-node]')].map(x=>x.dataset.stepKind).sort()"),['design','goal']);
   await page.click('[data-board=history]');

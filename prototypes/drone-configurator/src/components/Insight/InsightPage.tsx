@@ -60,7 +60,7 @@ export default function GoalPanel({ pins }: { pins?: EvidencePins }) {
         {related.length > 0 && <div className="research-topics"><span>检索到的相近话题</span>{related.map(t =>
           <button type="button" key={t.id} onClick={()=>chooseTopic(t)}>{t.label}</button>)}</div>}
         {(state === 'folded' || state === 'carrying') && <p className="goal-note">收纳目标会随方案保存。要核对适配，还需折叠态或携带情境的资料。</p>}
-        {result?.hypotheses.map(h=><p key={h.id} className="goal-note"><b>待验证的比较方法</b> · {h.description}</p>)}
+        {result?.hypotheses.map(h=><p key={h.id} className="goal-note"><b>待验证的比较方法</b> · {h.description}{h.evidence ? <><br/>{h.evidence}</> : null}</p>)}
         {result && <EvidenceGroups groups={result.groups} pins={pins} open/>}
         <details className="knowledge-disclosure" data-testid="goal-filters"><summary>调整检索条件{topicalLabel && ' · ' + topicalLabel}</summary>
           <div className="goal-field-grid">
